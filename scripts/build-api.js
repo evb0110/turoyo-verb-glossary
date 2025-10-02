@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { readdir, readFile, writeFile, mkdir } from 'fs/promises'
+import { readdir, readFile, writeFile, mkdir, stat } from 'fs/promises'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
@@ -7,37 +7,54 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 const rootDir = join(__dirname, '..')
 
+async function tryLoadJSON(path) {
+  try {
+    await stat(path)
+    return JSON.parse(await readFile(path, 'utf-8'))
+  } catch {
+    return null
+  }
+}
+
 async function buildAPI() {
   console.log('🔨 Building API data from source...')
+
+  // Preferred: new v5 fully-segmented dataset
+  const v5 = await tryLoadJSON(join(rootDir, 'data/verbs_final_v5.json'))
 
   // 1. Load all source files
   const sourceDir = join(rootDir, 'data/source/verbs')
   let allVerbs = []
 
-  try {
-    const files = await readdir(sourceDir)
-    const jsonFiles = files.filter(f => f.endsWith('.json'))
+  if (v5 && Array.isArray(v5.verbs) && v5.verbs.length > 0) {
+    console.log(`✅ Using v5 dataset: ${v5.verbs.length} verbs`)
+    allVerbs = v5.verbs
+  } else {
+    try {
+      const files = await readdir(sourceDir)
+      const jsonFiles = files.filter(f => f.endsWith('.json'))
 
-    if (jsonFiles.length === 0) {
-      // Fallback: if no source files, try to load from complete file
-      console.log('⚠️  No source files found, loading from turoyo_verbs_complete.json...')
+      if (jsonFiles.length === 0) {
+        // Fallback: if no source files, try to load from complete file
+        console.log('⚠️  No source files found, loading from turoyo_verbs_complete.json...')
+        const completeFile = join(rootDir, 'data/turoyo_verbs_complete.json')
+        const data = JSON.parse(await readFile(completeFile, 'utf-8'))
+        allVerbs = data.verbs
+      } else {
+        console.log(`📂 Loading ${jsonFiles.length} source files...`)
+        for (const file of jsonFiles) {
+          const data = JSON.parse(await readFile(join(sourceDir, file), 'utf-8'))
+          if (data.verbs && Array.isArray(data.verbs)) {
+            allVerbs.push(...data.verbs)
+          }
+        }
+      }
+    } catch (error) {
+      console.log('⚠️  Source directory not found, loading from turoyo_verbs_complete.json...')
       const completeFile = join(rootDir, 'data/turoyo_verbs_complete.json')
       const data = JSON.parse(await readFile(completeFile, 'utf-8'))
       allVerbs = data.verbs
-    } else {
-      console.log(`📂 Loading ${jsonFiles.length} source files...`)
-      for (const file of jsonFiles) {
-        const data = JSON.parse(await readFile(join(sourceDir, file), 'utf-8'))
-        if (data.verbs && Array.isArray(data.verbs)) {
-          allVerbs.push(...data.verbs)
-        }
-      }
     }
-  } catch (error) {
-    console.log('⚠️  Source directory not found, loading from turoyo_verbs_complete.json...')
-    const completeFile = join(rootDir, 'data/turoyo_verbs_complete.json')
-    const data = JSON.parse(await readFile(completeFile, 'utf-8'))
-    allVerbs = data.verbs
   }
 
   console.log(`📚 Loaded ${allVerbs.length} verbs`)
@@ -116,7 +133,7 @@ async function buildAPI() {
           if (ex.turoyo) {
             const words = ex.turoyo.split(/[\s\-.,;:!?()]+/).filter(w => w.length > 2)
             for (const word of words) {
-              const cleanWord = word.replace(/[=\[\]()\"<>]/g, '')
+              const cleanWord = word.replace(/[=\[\]()"<>]/g, '')
               // Only index words that:
               // - Are at least 3 chars long
               // - Don't contain numbers, slashes, underscores, or special markers

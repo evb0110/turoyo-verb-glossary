@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   pages: true,
   devServer: {
     host: 'localhost',
-    port: 3000
+    port: 3456
   },
   vite: {
     server: {
