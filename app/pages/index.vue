@@ -29,9 +29,7 @@
 </template>
 
 <script setup lang="ts">
-import { h } from 'vue'
 import { useDebounceFn } from '@vueuse/core'
-import type { VerbIndexEntry } from '~/composables/useVerbs'
 
 const { loadIndex, loadStatistics, search } = useVerbs()
 
@@ -84,20 +82,25 @@ watch(
 
 const filtered = computed(() => {
   const all = index?.roots || []
-  const set = results.value.length ? new Set(results.value) : null
+
+  // If no search query, return empty array (don't show all verbs)
+  if (!q.value || q.value.trim().length < 2) {
+    return []
+  }
+
+  // If no results from search, return empty array
+  if (results.value.length === 0) {
+    return []
+  }
+
+  const set = new Set(results.value)
   console.log('[Index] Filtered computing:', {
     all_count: all.length,
     results_count: results.value.length,
-    set_size: set?.size,
-    has_set: !!set
+    set_size: set.size
   })
 
-  if (set && all.length > 0 && results.value.length > 0) {
-    console.log('[Index] Sample results:', results.value.slice(0, 5))
-    console.log('[Index] Sample index roots:', all.slice(0, 5).map(v => v.root))
-  }
-
-  const result = (set ? all.filter(v => set.has(v.root)) : all)
+  const result = all.filter(v => set.has(v.root))
   console.log('[Index] Filtered result count:', result.length)
   return result
 })
