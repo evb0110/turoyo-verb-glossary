@@ -78,8 +78,8 @@ async function buildAPI() {
       return {
         root: v.root,
         etymology_source: v.etymology?.source || null,
-        binyanim: (v.stems || []).map(s => s.binyan),
-        has_detransitive: (v.stems || []).some(s => s.binyan === 'Detransitive'),
+        stems: (v.stems || []).map(s => s.stem),
+        has_detransitive: (v.stems || []).some(s => s.stem === 'Detransitive'),
         cross_reference: v.cross_reference,
         example_count: exampleCount,
         forms: forms
@@ -173,7 +173,7 @@ async function buildAPI() {
     total_stems: allVerbs.reduce((sum, v) => sum + (v.stems || []).length, 0),
     total_examples: 0,
     by_etymology: {},
-    by_binyan: {},
+    by_stem: {},
     by_letter: {}
   }
 
@@ -189,9 +189,9 @@ async function buildAPI() {
     const src = verb.etymology?.source || 'Unknown'
     stats.by_etymology[src] = (stats.by_etymology[src] || 0) + 1
 
-    // Binyan stats
+    // Stem stats
     for (const stem of verb.stems || []) {
-      stats.by_binyan[stem.binyan] = (stats.by_binyan[stem.binyan] || 0) + 1
+      stats.by_stem[stem.stem] = (stats.by_stem[stem.stem] || 0) + 1
     }
 
     // Letter stats

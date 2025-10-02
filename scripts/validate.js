@@ -125,9 +125,9 @@ class DataValidator {
   }
 
   validateStem(root, stem, index) {
-    // Check binyan
-    if (!stem.binyan) {
-      this.addError(`Verb ${root}, stem ${index}: missing binyan`)
+    // Check stem
+    if (!stem.stem) {
+      this.addError(`Verb ${root}, stem ${index}: missing stem`)
     }
 
     // Check forms
@@ -152,7 +152,7 @@ class DataValidator {
 
       for (let j = 0; j < examples.length; j++) {
         hasExamples = true
-        this.validateExample(root, stem.binyan, conjugationType, examples[j], j)
+        this.validateExample(root, stem.stem, conjugationType, examples[j], j)
       }
     }
 
@@ -161,33 +161,33 @@ class DataValidator {
     }
   }
 
-  validateExample(root, binyan, conjugationType, example, index) {
+  validateExample(root, stem, conjugationType, example, index) {
     // Check turoyo field
     if (example.turoyo === undefined) {
-      this.addError(`Verb ${root}, ${binyan}, ${conjugationType}, example ${index}: missing 'turoyo' field`)
+      this.addError(`Verb ${root}, ${stem}, ${conjugationType}, example ${index}: missing 'turoyo' field`)
     } else if (example.turoyo === null || example.turoyo === '') {
       // Check if this is one of the legitimate empty cases
       if (!LEGITIMATE_EMPTY_TUROYO.includes(root)) {
-        this.addError(`Verb ${root}, ${binyan}, ${conjugationType}, example ${index}: empty 'turoyo' field (not in legitimate list)`)
+        this.addError(`Verb ${root}, ${stem}, ${conjugationType}, example ${index}: empty 'turoyo' field (not in legitimate list)`)
       }
     } else if (typeof example.turoyo !== 'string') {
-      this.addError(`Verb ${root}, ${binyan}, ${conjugationType}, example ${index}: 'turoyo' should be a string`)
+      this.addError(`Verb ${root}, ${stem}, ${conjugationType}, example ${index}: 'turoyo' should be a string`)
     }
 
     // Check translations
     if (!example.translations) {
-      this.addWarning(`Verb ${root}, ${binyan}, ${conjugationType}, example ${index}: missing 'translations' field`)
+      this.addWarning(`Verb ${root}, ${stem}, ${conjugationType}, example ${index}: missing 'translations' field`)
     } else if (!Array.isArray(example.translations)) {
-      this.addError(`Verb ${root}, ${binyan}, ${conjugationType}, example ${index}: 'translations' should be an array`)
+      this.addError(`Verb ${root}, ${stem}, ${conjugationType}, example ${index}: 'translations' should be an array`)
     } else if (example.translations.length === 0) {
-      this.addWarning(`Verb ${root}, ${binyan}, ${conjugationType}, example ${index}: empty 'translations' array`)
+      this.addWarning(`Verb ${root}, ${stem}, ${conjugationType}, example ${index}: empty 'translations' array`)
     }
 
     // Check references
     if (!example.references) {
-      this.addWarning(`Verb ${root}, ${binyan}, ${conjugationType}, example ${index}: missing 'references' field`)
+      this.addWarning(`Verb ${root}, ${stem}, ${conjugationType}, example ${index}: missing 'references' field`)
     } else if (!Array.isArray(example.references)) {
-      this.addError(`Verb ${root}, ${binyan}, ${conjugationType}, example ${index}: 'references' should be an array`)
+      this.addError(`Verb ${root}, ${stem}, ${conjugationType}, example ${index}: 'references' should be an array`)
     }
   }
 
