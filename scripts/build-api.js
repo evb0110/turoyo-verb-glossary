@@ -116,8 +116,13 @@ async function buildAPI() {
           if (ex.turoyo) {
             const words = ex.turoyo.split(/[\s\-.,;:!?()]+/).filter(w => w.length > 2)
             for (const word of words) {
-              const cleanWord = word.replace(/[=\[\]()]/g, '')
-              if (cleanWord.length > 2) {
+              const cleanWord = word.replace(/[=\[\]()\"<>]/g, '')
+              // Only index words that:
+              // - Are at least 3 chars long
+              // - Don't contain numbers, slashes, underscores, or special markers
+              // - Contain only valid Turoyo letters (including diacritics)
+              const isValidTuroyoWord = /^[a-zʕṭḥṣčǧġšžḏṯʔāēīōūăĕĭŏŭ]+$/i.test(cleanWord)
+              if (cleanWord.length > 2 && isValidTuroyoWord) {
                 if (!searchIndex.turoyo_index[cleanWord]) {
                   searchIndex.turoyo_index[cleanWord] = []
                 }

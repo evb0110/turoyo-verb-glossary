@@ -93,7 +93,18 @@ export const useVerbs = () => {
    */
   const loadSearchIndex = async (): Promise<SearchIndex> => {
     if (!searchIndex.value) {
-      searchIndex.value = await $fetch('/data/api/search.json')
+      try {
+        console.log('[useVerbs] Loading search index...')
+        searchIndex.value = await $fetch('/data/api/search.json')
+        console.log('[useVerbs] Search index loaded:', {
+          turoyo_keys: Object.keys(searchIndex.value.turoyo_index).length,
+          translation_keys: Object.keys(searchIndex.value.translation_index).length,
+          etymology_keys: Object.keys(searchIndex.value.etymology_index).length
+        })
+      } catch (error) {
+        console.error('[useVerbs] Failed to load search index:', error)
+        throw error
+      }
     }
     return searchIndex.value
   }
@@ -158,6 +169,8 @@ export const useVerbs = () => {
       maxResults = 100
     } = options
 
+    console.log('[useVerbs] Search called with query:', query, 'options:', options)
+
     const idx = await loadSearchIndex()
     const roots = new Set<string>()
     const lowerQuery = query.toLowerCase()
@@ -190,7 +203,10 @@ export const useVerbs = () => {
     }
 
     const results = Array.from(roots)
-    return maxResults ? results.slice(0, maxResults) : results
+    console.log('[useVerbs] Search found', results.length, 'total results')
+    const final = maxResults ? results.slice(0, maxResults) : results
+    console.log('[useVerbs] Returning', final.length, 'results (after maxResults filter)')
+    return final
   }
 
   /**
