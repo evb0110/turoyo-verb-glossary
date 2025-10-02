@@ -13,36 +13,16 @@
 
         <UInput v-model="q" placeholder="Search…" clearable />
 
-        <div v-if="displayed.length === 0" class="text-center py-8 text-gray-500">
-          No data
-        </div>
-
-        <div v-else class="border rounded">
-          <table class="min-w-full divide-y divide-gray-200">
-            <thead class="bg-gray-50">
-              <tr>
-                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Root</th>
-                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Etymology</th>
-                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Examples</th>
-              </tr>
-            </thead>
-            <tbody class="bg-white divide-y divide-gray-200">
-              <tr v-for="row in displayed" :key="row.root">
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <NuxtLink :to="`/verbs/${row.root}`" class="font-semibold text-primary hover:underline">
-                    {{ row.root }}
-                  </NuxtLink>
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {{ row.etymology_source || '-' }}
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {{ row.example_count }}
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <UTable :data="displayed" :columns="columns">
+          <template #root-cell="{ row }">
+            <NuxtLink
+              :to="`/verbs/${row.original.root}`"
+              class="font-semibold text-primary hover:underline"
+            >
+              {{ row.original.root }}
+            </NuxtLink>
+          </template>
+        </UTable>
       </div>
     </UCard>
   </div>
@@ -133,19 +113,16 @@ const displayed = computed(() => {
 
 const columns = [
   {
-    id: 'root',
-    key: 'root',
-    label: 'Root'
+    accessorKey: 'root',
+    header: 'Root'
   },
   {
-    id: 'etymology_source',
-    key: 'etymology_source',
-    label: 'Etymology'
+    accessorKey: 'etymology_source',
+    header: 'Etymology'
   },
   {
-    id: 'example_count',
-    key: 'example_count',
-    label: 'Examples'
+    accessorKey: 'example_count',
+    header: 'Examples'
   }
 ]
 </script>
