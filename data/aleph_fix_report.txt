@@ -1,0 +1,75 @@
+================================================================================
+ALEPH SECTION FIX - COMPLETE REPORT
+================================================================================
+
+PROBLEM IDENTIFIED:
+------------------
+The aleph (ʔ) section header in Turoyo_all_2024.html has TWO special features:
+1. A soft hyphen (&shy;) BEFORE the ʔ character
+2. A NEWLINE between <h1> and <span> tags
+
+HTML structure:
+  <h1 lang="en-GB" class="western">
+  <span style="background: transparent">&shy;ʔ</span></h1>
+
+The old regex pattern expected:
+  <h1[^>]*><span[^>]*>([ʔʕb...])
+  
+This failed because:
+  - [^>]* doesn't match newlines by default
+  - The pattern expected ʔ to be the FIRST character in <span>, but &shy; came first
+
+ROOT CAUSE:
+-----------
+Parser v2 regex: r'<h1[^>]*><span[^>]*>([ʔʕbčd...)</span></h1>'
+- Matched 27 sections (missing ʔ)
+- Extracted 1,186 verbs (missing 18 aleph verbs)
+
+SOLUTION APPLIED:
+-----------------
+Parser v3 regex: r'<h1[^>]*>\s*<span[^>]*>(?:&shy;)?([ʔʕbčd...)</span></h1>'
+                                ^^               ^^^^^^^^^
+                                |                |
+                    Match whitespace (newline)   Optional soft hyphen
+
+Changes made to extract_clean_v3.py:
+1. Line 42: Added \s* after <h1[^>]*> to match newline
+2. Line 42: Added (?:&shy;)? to optionally match soft hyphen before letter
+3. Updated parser version to 5.1.0-aleph-fix
+
+VERIFICATION RESULTS:
+---------------------
+✅ All 18 aleph verbs successfully extracted:
+   1. ʔbʕ   ✓    10. ʔss   ✓
+   2. ʔdb   ✓    11. ʔṣr   ✓
+   3. ʔḏʕ   ✓    12. ʔšr   ✓
+   4. ʔḏy   ✓    13. ʔty   ✓
+   5. ʔǧd   ✓    14. ʔṯr   ✓
+   6. ʔḥḏ   ✓    15. ʔṯy   ✓
+   7. ʔlf   ✓    16. ʔxl   ✓
+   8. ʔmn   ✓    17. ʔxr   ✓
+   9. ʔnn   ✓    18. ʔzl   ✓
+
+STATISTICS COMPARISON:
+----------------------
+                          V2 (BROKEN)    V3 (FIXED)    DIFFERENCE
+Letter sections:                27             28           +1 (ʔ)
+Total verb entries:          1,197          1,215          +18
+Unique verbs:                1,186          1,204          +18
+Aleph verbs:                     0             18          +18 ✅
+Total stems:                 1,727          1,752          +25
+Total examples:              5,331          5,487         +156
+
+OUTPUT FILES:
+-------------
+✅ Parser: /Users/evb/WebstormProjects/turoyo-verb-glossary/parser/extract_clean_v3.py
+✅ Data:   /Users/evb/WebstormProjects/turoyo-verb-glossary/data/verbs_clean_v3.json
+✅ Report: /Users/evb/WebstormProjects/turoyo-verb-glossary/data/aleph_fix_report.txt
+
+CONCLUSION:
+-----------
+The fix is successful. All 1,204 unique verbs are now captured, including all
+18 aleph verbs that were previously missing. The parser correctly handles the
+special HTML formatting of the aleph section header.
+
+================================================================================

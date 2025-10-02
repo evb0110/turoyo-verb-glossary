@@ -1,0 +1,37 @@
+name: Build API Data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/source/**'
+  pull_request:
+    paths:
+      - 'data/source/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build API data
+        run: node scripts/build-api.js
+
+      - name: Validate data
+        run: node scripts/validate.js
+
+      - name: Commit built files
+        if: github.event_name == 'push'
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add data/api/
+          git diff --quiet && git diff --staged --quiet || \
+            git commit -m "chore: rebuild API data [skip ci]"
+          git push

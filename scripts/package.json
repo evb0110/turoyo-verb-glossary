@@ -1,0 +1,18 @@
+{
+  "name": "turoyo-verb-glossary-scripts",
+  "version": "1.0.0",
+  "description": "Build and validation scripts for Turoyo Verb Glossary",
+  "type": "module",
+  "scripts": {
+    "build": "node build-api.js",
+    "validate": "node validate.js",
+    "test": "npm run validate && npm run build"
+  },
+  "keywords": [
+    "turoyo",
+    "linguistics",
+    "data"
+  ],
+  "author": "",
+  "license": "MIT"
+}
