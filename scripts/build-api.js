@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { readdir, readFile, writeFile, mkdir, stat } from 'fs/promises'
+import { readdir, readFile, writeFile, mkdir, stat, rm } from 'fs/promises'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
@@ -62,6 +62,11 @@ async function buildAPI() {
   // 2. Create individual verb files
   const verbsDir = join(rootDir, 'data/api/verbs')
   await mkdir(verbsDir, { recursive: true })
+  // Cleanup stale files
+  try {
+    const existing = await readdir(verbsDir)
+    await Promise.all(existing.map(name => rm(join(verbsDir, name), { force: true })))
+  } catch {}
 
   for (const verb of allVerbs) {
     const filename = join(verbsDir, `${verb.root}.json`)
