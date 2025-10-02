@@ -8,9 +8,6 @@
               <h1 class="text-3xl font-semibold tracking-tight">
                 {{ verb?.root }}
               </h1>
-              <p v-if="verb?.etymology?.meaning" class="text-sm text-muted">
-                {{ verb.etymology.meaning }}
-              </p>
             </div>
 
             <div class="flex flex-wrap items-center gap-2">
@@ -26,16 +23,19 @@
             </div>
           </div>
 
-          <div v-if="verb?.cross_reference" class="rounded-lg border border-primary/30 bg-primary/5 px-4 py-3 text-sm">
-            See related entry
-            <NuxtLink :to="`/verbs/${verb.cross_reference}`" class="font-medium text-primary">
-              {{ verb.cross_reference }}
-            </NuxtLink>
+          <div v-if="headerTokens?.length" class="prose max-w-none text-sm">
+            <span v-for="(t, i) in headerTokens" :key="i" :class="t.italic ? 'italic' : ''">{{ t.text }}</span>
           </div>
+          <div v-else-if="verb?.lemma_header_raw" class="prose max-w-none text-sm">
+            <div v-html="verb.lemma_header_raw"></div>
+          </div>
+          <p v-else-if="verb?.etymology?.meaning" class="text-sm text-muted">
+            {{ verb.etymology.meaning }}
+          </p>
         </div>
       </template>
 
-      <div v-if="verb?.etymology" class="grid gap-6 md:grid-cols-2">
+      <div v-if="verb?.etymology && !verb?.lemma_header_tokens?.length && !verb?.lemma_header_raw" class="grid gap-6 md:grid-cols-2">
         <div class="space-y-2 text-sm">
           <h2 class="text-xs font-semibold uppercase tracking-wider text-muted">
             Etymology
@@ -89,14 +89,23 @@
           class="border border-transparent transition hover:border-primary/40"
           :ui="{ body: 'space-y-4' }"
         >
-          <div class="flex flex-wrap items-center justify-between gap-3">
+          <div v-if="item.label_tokens?.length" class="prose max-w-none text-sm">
+            <span v-for="(t, i) in item.label_tokens" :key="i" :class="t.italic ? 'italic' : ''">{{ t.text }}</span>
+          </div>
+          <div v-else-if="item.label_raw" class="prose max-w-none text-sm">
+            <div v-html="item.label_raw"></div>
+          </div>
+          <div v-else class="flex flex-wrap items-center justify-between gap-3">
             <div>
               <h3 class="text-lg font-semibold">Stem {{ item.stem }}</h3>
               <p class="text-sm text-muted">
                 {{ item.forms.join(', ') || 'No recorded forms' }}
               </p>
             </div>
+          </div>
 
+          <div class="flex flex-wrap items-center justify-between gap-3">
+            <div></div>
             <UBadge color="gray" variant="soft">
               {{ item.exampleCount }} examples
             </UBadge>
@@ -178,6 +187,8 @@ if (error.value) {
   })
 }
 
+const headerTokens = computed(() => verb.value?.lemma_header_tokens || [])
+
 const totalExamples = computed(() => {
   if (!verb.value) return 0
   return verb.value.stems.reduce((sum, stem) => {
@@ -212,7 +223,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: verb.value?.etymology?.meaning || 'Detailed view of a Turoyo verb'
+      content: (headerTokens.value?.map(t => t.text).join(' ').slice(0, 200)) || verb.value?.etymology?.meaning || 'Detailed view of a Turoyo verb'
     }
   ]
 })
