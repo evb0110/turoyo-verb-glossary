@@ -7,7 +7,6 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "III",
       "forms": [
         "manʕele",
         "manʕəl"
@@ -24,10 +23,25 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "III",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">III:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">manʕele/manʕəl</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">verfluchen;</span></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">Detransitive</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "III:\n"
+        },
+        {
+          "italic": false,
+          "text": "verfluchen;"
+        },
+        {
+          "italic": false,
+          "text": "Detransitive"
+        }
+      ]
     },
     {
-      "stem": "II",
       "forms": [
         "mnaʕele",
         "mnaʕəl"
@@ -54,10 +68,21 @@
             "references": []
           }
         ]
-      }
+      },
+      "stem": "II",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">II:\n</span></b></font></font><font color=\"#00000a\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mnaʕele/mnaʕəl</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">(Pferde,\nEsel...) beschlagen</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "II:\n"
+        },
+        {
+          "italic": false,
+          "text": "(Pferde,\nEsel...) beschlagen"
+        }
+      ]
     },
     {
-      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Participle_Passive": [
@@ -92,8 +117,20 @@
             "references": []
           }
         ]
-      }
+      },
+      "stem": "Detransitive"
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">nʕl</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt;Arab. nʕl 2 cf. Kinderib 143: verfluchen; &lt; MEA naʕelāṯā\ncf. SL 928: curses; consider also Arb. lʕn ‘verfluchen,\nverwünschen’ Wehr 1157 with metathesis, proposed by Tezel 65)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "nʕl"
+    },
+    {
+      "italic": true,
+      "text": "\n(<Arab. nʕl 2 cf. Kinderib 143: verfluchen; < MEA naʕelāṯā\ncf. SL 928: curses; consider also Arb. lʕn ‘verfluchen,\nverwünschen’ Wehr 1157 with metathesis, proposed by Tezel 65)"
+    }
+  ]
 }

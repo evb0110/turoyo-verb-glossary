@@ -9,7 +9,6 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
       "forms": [
         "raqəq",
         "roqəq"
@@ -22,13 +21,14 @@
               "‘The heart of this priest did not softenʼ;"
             ],
             "references": [
-              "495; 47/47"
+              "495",
+              "47/47"
             ]
           }
         ],
         "Participle_Active": [
           {
-            "turoyo": "raqiqo",
+            "turoyo": "",
             "translations": [
               "dünn"
             ],
@@ -37,10 +37,21 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "I",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">raqəq/roqəq</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">weich,\ndünn werden; soften (fig.)</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "I:\n"
+        },
+        {
+          "italic": false,
+          "text": "weich,\ndünn werden; soften (fig.)"
+        }
+      ]
     },
     {
-      "stem": "II",
       "forms": [
         "mraqaqle",
         "mraqəq"
@@ -57,17 +68,39 @@
         ],
         "Infectum-wa": [
           {
-            "turoyo": ", w bǝṯr mraqqiwaynale sayminawayna kore moṭǝnwa lu qṭoro. After that we made it (clay) thin and we produced silos .;2018_07_08_au_003_NE_1F ; 17:37",
+            "turoyo": "w bǝṯr mraqqiwaynale sayminawayna kore moṭǝnwa lu qṭoro.",
+            "translations": [],
+            "references": []
+          },
+          {
+            "turoyo": "After that we made it (clay) thin and we produced silos",
             "translations": [],
             "references": [
-              "for grain"
+              "for grain",
+              "2018"
             ]
+          },
+          {
+            "turoyo": "_07_08_au_003_NE_1F ; 17:37",
+            "translations": [],
+            "references": []
           }
         ]
-      }
+      },
+      "stem": "II",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">II:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mraqaqle/mraqəq</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">dünn\nmachen;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "II:\n"
+        },
+        {
+          "italic": false,
+          "text": "dünn\nmachen;"
+        }
+      ]
     },
     {
-      "stem": "III",
       "forms": [
         "marqaqle",
         "marqəq"
@@ -80,12 +113,56 @@
               "man giesst heisses Wasser darüber und knetet den Teig gut zu kleinen Kugeln. Diese macht hohl und dünnwandig"
             ],
             "references": [
-              "495; 94/239"
+              "495",
+              "94/239"
             ]
           }
         ]
-      }
+      },
+      "stem": "III",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">III:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">marqaqle/marqəq</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">dünn\nmachen;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "III:\n"
+        },
+        {
+          "italic": false,
+          "text": "dünn\nmachen;"
+        }
+      ]
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">rqq</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; MEA</span></i></font></font><font color=\"#000000\"><i><span style=\"background: transparent\">\n</span></i></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">rqq</span></i></font></font><font color=\"#000000\"><sup><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">2</span></i></font></sup></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(Af.) cf. SL 1490: to make thin by hammering; &lt; MEA </span></i></font></font><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">raqqīqā,\nSL 1489: thin, slender, tender;</span></i></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "rqq"
+    },
+    {
+      "italic": true,
+      "text": "\n(< MEA"
+    },
+    {
+      "italic": true,
+      "text": "rqq"
+    },
+    {
+      "italic": true,
+      "text": "2"
+    },
+    {
+      "italic": true,
+      "text": "\n(Af.) cf. SL 1490: to make thin by hammering; < MEA "
+    },
+    {
+      "italic": true,
+      "text": "raqqīqā,\nSL 1489: thin, slender, tender;"
+    },
+    {
+      "italic": true,
+      "text": ")"
+    }
+  ]
 }

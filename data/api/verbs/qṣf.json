@@ -9,7 +9,6 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
       "forms": [
         "qṣəfle",
         "qoṣəf"
@@ -17,18 +16,19 @@
       "conjugations": {
         "Infectum-wa": [
           {
-            "turoyo": "1) aloho d-qoṣaf-wa ʕomre d-u=zlām-awo",
+            "turoyo": ") aloho d-qoṣaf-wa ʕomre d-u=zlām-awo",
             "translations": [
               "wenn Gott das Leben jenes Mannes verkürzen möchte"
             ],
             "references": [
-              "213; 57/85"
+              "213",
+              "57/85"
             ]
           }
         ],
         "Preterit": [
           {
-            "turoyo": "2) u=zʕur-ano hēš me-naʕmiṯe qṣīf",
+            "turoyo": ") u=zʕur-ano hēš me-naʕmiṯe qṣīf",
             "translations": [
               "dieser Knabe ist schon von Jungen auf in der Entwicklung zurückgeblieben"
             ],
@@ -37,15 +37,26 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "I",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">qṣəfle/qoṣəf</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">1)\nabbrechen, verkürzen (Leben); 2) (Detrans.) in der Entwicklung\nzurückbleiben, nicht zur Vollreife gelangen;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "I:\n"
+        },
+        {
+          "italic": false,
+          "text": "1)\nabbrechen, verkürzen (Leben); 2) (Detrans.) in der Entwicklung\nzurückbleiben, nicht zur Vollreife gelangen;"
+        }
+      ]
     },
     {
-      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "2) u=zʕur-ano hēš me-naʕmiṯe qṣīf",
+            "turoyo": ") u=zʕur-ano hēš me-naʕmiṯe qṣīf",
             "translations": [
               "dieser Knabe ist schon von Jungen auf in der Entwicklung zurückgeblieben"
             ],
@@ -54,8 +65,20 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "Detransitive"
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">qṣf</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; Arab. qṣf cf. Wehr 1032: zerbrechen, zerschmettern;\nbedrängen, hart zusetzen;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "qṣf"
+    },
+    {
+      "italic": true,
+      "text": "\n(< Arab. qṣf cf. Wehr 1032: zerbrechen, zerschmettern;\nbedrängen, hart zusetzen;)"
+    }
+  ]
 }

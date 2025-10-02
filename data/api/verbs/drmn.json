@@ -9,7 +9,6 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
       "forms": [
         "mdarmalle",
         "mdarmən"
@@ -17,9 +16,19 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mawfaqle darmono, mdarmalle i=səsto 773; prs 134/20; 205/1; omər zux annaqla hat səmlux mdarmanlux iḏux hat b-iḏux, hano-yo u=darmon-ayḏa",
+            "turoyo": "mawfaqle darmono, mdarmalle i=səsto",
             "translations": [
-              "er nahm Heilpulver heraus und legte seinem Pferde auf",
+              "er nahm Heilpulver heraus und legte seinem Pferde auf"
+            ],
+            "references": [
+              "773",
+              "prs 134/20",
+              "205/1"
+            ]
+          },
+          {
+            "turoyo": "omər zux annaqla hat səmlux mdarmanlux iḏux hat b-iḏux, hano-yo u=darmon-ayḏa",
+            "translations": [
               "‘He (doctor, m.) said: “Now go, you have single-handedly cured your own hand. And that (the thing that you have done) is the cure for it’ LuF 302/59;"
             ],
             "references": []
@@ -32,12 +41,36 @@
               "sie behandelte seine Wunden, bis er gesund war"
             ],
             "references": [
-              "773; 64/185"
+              "773",
+              "64/185"
             ]
           }
         ]
-      }
+      },
+      "stem": "I",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mdarmalle/mdarmən</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">mit\nHeilmitteln behandeln, beimischen (einer Flüssigkeit), sie versetzen\nmit;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "I:\n"
+        },
+        {
+          "italic": false,
+          "text": "mit\nHeilmitteln behandeln, beimischen (einer Flüssigkeit), sie versetzen\nmit;"
+        }
+      ]
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">drmn</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; MEA darmānā cf. SL 324: remedy, medicine;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "drmn"
+    },
+    {
+      "italic": true,
+      "text": "\n(< MEA darmānā cf. SL 324: remedy, medicine;)"
+    }
+  ]
 }

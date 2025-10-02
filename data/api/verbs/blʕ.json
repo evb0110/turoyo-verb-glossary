@@ -9,7 +9,6 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
       "forms": [
         "bləʕle",
         "boləʕ"
@@ -17,11 +16,14 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "aṯi u=gamāz, bləʕle i=kačke w i=nunto b-iḏa 67; prs 56/36;",
+            "turoyo": "aṯi u=gamāz, bləʕle i=kačke w i=nunto b-iḏa",
             "translations": [
               "da kam der Hai und verschluckte das Mädchen nebst dem Fische in ihrer Hand"
             ],
-            "references": []
+            "references": [
+              "67",
+              "prs 56/36"
+            ]
           }
         ],
         "Infectum": [
@@ -31,14 +33,26 @@
               "die Speise wird, ehe sie heruntergeschluckt wird, mit den Zähnen gekaut"
             ],
             "references": [
-              "129; 3/36"
+              "129",
+              "3/36"
             ]
           }
         ]
-      }
+      },
+      "stem": "I",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">bləʕle/boləʕ</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">(herunter)schlucken,\nverschlingen;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "I:\n"
+        },
+        {
+          "italic": false,
+          "text": "(herunter)schlucken,\nverschlingen;"
+        }
+      ]
     },
     {
-      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Infectum": [
@@ -48,12 +62,25 @@
               "die Speise wird, ehe sie heruntergeschluckt wird, mit den Zähnen gekaut"
             ],
             "references": [
-              "129; 3/36"
+              "129",
+              "3/36"
             ]
           }
         ]
-      }
+      },
+      "stem": "Detransitive"
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">blʕ</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; MEA blʕ cf. SL 158: to swallow;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "blʕ"
+    },
+    {
+      "italic": true,
+      "text": "\n(< MEA blʕ cf. SL 158: to swallow;)"
+    }
+  ]
 }

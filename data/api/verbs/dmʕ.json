@@ -9,7 +9,6 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
       "forms": [
         "dməʕle",
         "doməʕ"
@@ -17,9 +16,17 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ʕayna g-dəmʕi 97; i=naqqa d-g-məžġolutu səryoyo ʕam an=noše d-a=dkoṯ-ani, hala, ʕam an=noše d-aq=qəryawoṯo m-fṣəḥuṯaṯṯe, ʕaynayye gəd-dumʕi",
+            "turoyo": "ʕayna g-dəmʕi",
             "translations": [
-              "ihre Augen tränen",
+              "ihre Augen tränen"
+            ],
+            "references": [
+              "97"
+            ]
+          },
+          {
+            "turoyo": "i=naqqa d-g-məžġolutu səryoyo ʕam an=noše d-a=dkoṯ-ani, hala, ʕam an=noše d-aq=qəryawoṯo m-fṣəḥuṯaṯṯe, ʕaynayye gəd-dumʕi",
+            "translations": [
               "wenn ihr mit den Leuten dort syrisch sprechen werdet und gar mit den Leuten aus den Dörfern, werden ihre Augen vor Freude feucht werden"
             ],
             "references": [
@@ -27,10 +34,21 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "I",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">dməʕle/doməʕ</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">tränen;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "I:\n"
+        },
+        {
+          "italic": false,
+          "text": "tränen;"
+        }
+      ]
     },
     {
-      "stem": "II",
       "forms": [
         "mdaməʕ",
         "midaməʕ"
@@ -45,10 +63,25 @@
             "references": []
           }
         ]
-      }
+      },
+      "stem": "II",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">II:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mdaməʕ/midaməʕ</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">(Detrans)\ntränen;</span></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">Detransitive</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "II:\n"
+        },
+        {
+          "italic": false,
+          "text": "(Detrans)\ntränen;"
+        },
+        {
+          "italic": false,
+          "text": "Detransitive"
+        }
+      ]
     },
     {
-      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Preterit": [
@@ -60,8 +93,20 @@
             "references": []
           }
         ]
-      }
+      },
+      "stem": "Detransitive"
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">dmʕ</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; MEA dmʕ cf. SL 311: to cry, weep;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "dmʕ"
+    },
+    {
+      "italic": true,
+      "text": "\n(< MEA dmʕ cf. SL 311: to cry, weep;)"
+    }
+  ]
 }

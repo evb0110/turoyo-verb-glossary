@@ -9,7 +9,6 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
       "forms": [
         "saməq",
         "soməq"
@@ -22,7 +21,8 @@
               "wieso denn, mein Sohn? Ist denn dein Körper nicht schon kräftig und dein Gesicht frisch rot geworden?"
             ],
             "references": [
-              "87; 76/140"
+              "87",
+              "76/140"
             ]
           }
         ],
@@ -44,10 +44,21 @@
             "references": []
           }
         ]
-      }
+      },
+      "stem": "I",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">saməq/soməq</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">rot\nwerden;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "I:\n"
+        },
+        {
+          "italic": false,
+          "text": "rot\nwerden;"
+        }
+      ]
     },
     {
-      "stem": "III",
       "forms": [
         "masmaqle",
         "masməq"
@@ -68,7 +79,9 @@
             "translations": [
               "As for the bladesmiths, their work is as follows: they hammer the steel, then heat it in the forge and make blades of it’ 94/12 [MT]"
             ],
-            "references": []
+            "references": [
+              "2"
+            ]
           },
           {
             "turoyo": "ann=emoṯayḏan veǧa gd-əmmi-wa de kŭre-m tux masamqina ab=beʕe",
@@ -80,13 +93,41 @@
         ],
         "Infectum-wa": [
           {
-            "turoyo": "gd-oṯən-wa aʕ=ʕaṭore, əmmi-way-le ḥa Šēx Máḥmud, amṭe-wa darmōnkat veǧa makráx-wa-lle, w masamqi-wa ab=beʕe ‘Es kamen Trödler, einer von ihnen hiess Šēx Máḥmud, der bracht Färbmittel und zog mit ihnen umher, und man färbte die Eier’ JL 5.10.6;",
+            "turoyo": "gd-oṯən-wa aʕ=ʕaṭore, əmmi-way-le ḥa Šēx Máḥmud, amṭe-wa darmōnkat veǧa makráx-wa-lle, w masamqi-wa ab=beʕe",
+            "translations": [],
+            "references": []
+          },
+          {
+            "turoyo": "‘Es kamen Trödler, einer von ihnen hiess Šēx Máḥmud, der bracht Färbmittel und zog mit ihnen umher, und man färbte die Eier’ JL 5.10.6;",
             "translations": [],
             "references": []
           }
         ]
-      }
+      },
+      "stem": "III",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">III:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">masmaqle/masməq</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><font size=\"2\" style=\"font-size: 10pt\"><span style=\"background: transparent\">1)\nrot(glühend) machen; 2) färben (Shabo)</span></font></font></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "III:\n"
+        },
+        {
+          "italic": false,
+          "text": "1)\nrot(glühend) machen; 2) färben (Shabo)"
+        }
+      ]
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">smq</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; MEA smq cf. SL 1021: to be red;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "smq"
+    },
+    {
+      "italic": true,
+      "text": "\n(< MEA smq cf. SL 1021: to be red;)"
+    }
+  ]
 }

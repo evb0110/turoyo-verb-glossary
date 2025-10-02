@@ -4,15 +4,29 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
       "forms": [
         "bčəqle",
         "bočəq"
       ],
-      "conjugations": {}
+      "conjugations": {},
+      "stem": "I",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">bčəqle/bočəq</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">zerquetschen,\nzermalmen;</span></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">PrS\n32/31</span></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "I:\n"
+        },
+        {
+          "italic": false,
+          "text": "zerquetschen,\nzermalmen;"
+        },
+        {
+          "italic": false,
+          "text": "PrS\n32/31"
+        }
+      ]
     },
     {
-      "stem": "II",
       "forms": [
         "mbačaqle",
         "mbačəq"
@@ -20,15 +34,49 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mbačaqle 227; Why tröpfeln?",
+            "turoyo": "mbačaqle",
             "translations": [
               "es fing an zu tröpfeln"
             ],
+            "references": [
+              "227"
+            ]
+          },
+          {
+            "turoyo": "Why tröpfeln?",
+            "translations": [],
             "references": []
           }
         ]
-      }
+      },
+      "stem": "II",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">II:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mbačaqle/mbačəq</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">zerquetschen,\nzermalmen;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "II:\n"
+        },
+        {
+          "italic": false,
+          "text": "zerquetschen,\nzermalmen;"
+        }
+      ]
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">bčq</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; piçuçke ‘klein’; Ritter B: 393; (auch biçuçke ‘kleines\nJunge’; Ritter B: 71); &lt; Kurd. biçûk cf. Ku 112: малый,\nмаленький, незначительный;) Может, просто\nсделать ссылку на </span></i></font></font><font color=\"#000000\"><i><span style=\"background: transparent\">pčq?</span></i></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "bčq"
+    },
+    {
+      "italic": true,
+      "text": "\n(< piçuçke ‘klein’; Ritter B: 393; (auch biçuçke ‘kleines\nJunge’; Ritter B: 71); < Kurd. biçûk cf. Ku 112: малый,\nмаленький, незначительный;) Может, просто\nсделать ссылку на "
+    },
+    {
+      "italic": true,
+      "text": "pčq?"
+    }
+  ]
 }

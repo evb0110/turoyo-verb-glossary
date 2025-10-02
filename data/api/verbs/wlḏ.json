@@ -9,15 +9,37 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "III",
       "forms": [
         "mawlaḏle",
         "mawləḏ"
       ],
-      "conjugations": {}
+      "conjugations": {},
+      "stem": "III",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">III:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mawlaḏle/mawləḏ</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">gebären;</span></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><font size=\"2\" style=\"font-size: 10pt\"><span style=\"background: transparent\">Detr.\nPret. mtawləd ‘he was born’ Xori Caziz 26b line 3.</span></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">wlwl\n</span><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">(&lt;\nArab. wlwl, Wehr 1437: “wehe” rufen; wehklagen, Klagegeheul\nerheben)</span></i></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "III:\n"
+        },
+        {
+          "italic": false,
+          "text": "gebären;"
+        },
+        {
+          "italic": false,
+          "text": "Detr.\nPret. mtawləd ‘he was born’ Xori Caziz 26b line 3."
+        },
+        {
+          "italic": false,
+          "text": "wlwl\n"
+        },
+        {
+          "italic": true,
+          "text": "(<\nArab. wlwl, Wehr 1437: “wehe” rufen; wehklagen, Klagegeheul\nerheben)"
+        }
+      ]
     },
     {
-      "stem": "I",
       "forms": [
         "mwalwele",
         "mwalwəl"
@@ -25,9 +47,22 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ko-mwalwəl, k-moḥe ʕal ṣadre, k-omər: «aḥuni, mvayəʕ!» ‘er jammerte, schlug sich an die Brust und sprach: ’; 24/281 [MT]; g-buxyo w-g-mwalwəlo b-i=skūt, b-u=sabab g-zayʕo m-af=ferisin d-u=babo, d-kət-ne baṭle",
+            "turoyo": "ko-mwalwəl, k-moḥe ʕal ṣadre, k-omər: «aḥuni, mvayəʕ!»",
+            "translations": [],
+            "references": []
+          },
+          {
+            "turoyo": "‘er jammerte, schlug sich an die Brust und sprach:",
             "translations": [
-              "Mein Bruder ist verloren gegangen",
+              "Mein Bruder ist verloren gegangen"
+            ],
+            "references": [
+              "24/281"
+            ]
+          },
+          {
+            "turoyo": "[MT]; g-buxyo w-g-mwalwəlo b-i=skūt, b-u=sabab g-zayʕo m-af=ferisin d-u=babo, d-kət-ne baṭle",
+            "translations": [
               "‘Es (das Mädchen, f) weinte und jammerte still vor sich hin; denn es hatte Angst vor den Rittern des Vaters, die große Recken waren’;"
             ],
             "references": [
@@ -35,8 +70,31 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "I",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mwalwele/mwalwəl</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">jammern;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "I:\n"
+        },
+        {
+          "italic": false,
+          "text": "jammern;"
+        }
+      ]
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">wlḏ</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; Arab. wld (II) cf. Wehr 1434: Geburtshilfe leisten;\nhervorbringen, erzeugen, produzieren;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "wlḏ"
+    },
+    {
+      "italic": true,
+      "text": "\n(< Arab. wld (II) cf. Wehr 1434: Geburtshilfe leisten;\nhervorbringen, erzeugen, produzieren;)"
+    }
+  ]
 }

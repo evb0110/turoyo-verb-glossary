@@ -9,7 +9,6 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
       "forms": [
         "ntəšle",
         "notəš"
@@ -26,10 +25,18 @@
         ],
         "Infectum": [
           {
-            "turoyo": "ko-notəš i=ġare t-awo 187; 66/288; (t = d-h)",
+            "turoyo": "ko-notəš i=ġare t-awo",
             "translations": [
               "er schnappte jenem die Murmel weg"
             ],
+            "references": [
+              "187",
+              "66/288"
+            ]
+          },
+          {
+            "turoyo": "(t = d-h)",
+            "translations": [],
             "references": []
           }
         ],
@@ -40,14 +47,26 @@
               "jedes Jahr wuchs darauf (Apfelbaum) ein Apfel. Da kam immer ein Vogel und stibitzte den Apfel"
             ],
             "references": [
-              "187; 21/2"
+              "187",
+              "21/2"
             ]
           }
         ]
-      }
+      },
+      "stem": "I",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">ntəšle/notəš</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">abreissen,\nwegreissen, entreissen, schnell wegnehmen, wegschnappen, entführen;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "I:\n"
+        },
+        {
+          "italic": false,
+          "text": "abreissen,\nwegreissen, entreissen, schnell wegnehmen, wegschnappen, entführen;"
+        }
+      ]
     },
     {
-      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Preterit": [
@@ -59,8 +78,20 @@
             "references": []
           }
         ]
-      }
+      },
+      "stem": "Detransitive"
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">ntš</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; MEA ntš cf. SL 957: to tear to pieces, lacerate;) (не уверен\nв правильности этимологии)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "ntš"
+    },
+    {
+      "italic": true,
+      "text": "\n(< MEA ntš cf. SL 957: to tear to pieces, lacerate;) (не уверен\nв правильности этимологии)"
+    }
+  ]
 }

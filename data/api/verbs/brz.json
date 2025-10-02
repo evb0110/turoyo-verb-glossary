@@ -9,7 +9,6 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
       "forms": [
         "barəz",
         "borəz"
@@ -22,7 +21,8 @@
               "wenn sie so halbtrocken geworden ist, schneidet man sie in Stücke und legt sie in irdene Kisten"
             ],
             "references": [
-              "196; 94/141"
+              "196",
+              "94/141"
             ]
           }
         ],
@@ -35,10 +35,21 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "I",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">barəz/borəz</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">leicht\nantrocken, trocken werden;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "I:\n"
+        },
+        {
+          "italic": false,
+          "text": "leicht\nantrocken, trocken werden;"
+        }
+      ]
     },
     {
-      "stem": "II",
       "forms": [
         "mbarazle",
         "mbarəz"
@@ -46,7 +57,7 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "2) u=kalbo mbarəz qumi",
+            "turoyo": ") u=kalbo mbarəz qumi",
             "translations": [
               "der Hund blieb eigensinnig, böse von mir stehen"
             ],
@@ -55,15 +66,26 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "II",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">II:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mbarazle/mbarəz</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">1)\ngrobe Worte sagen; 2) (Detrans.) eigensinnig stehen bleiben;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "II:\n"
+        },
+        {
+          "italic": false,
+          "text": "1)\ngrobe Worte sagen; 2) (Detrans.) eigensinnig stehen bleiben;"
+        }
+      ]
     },
     {
-      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "2) u=kalbo mbarəz qumi",
+            "turoyo": ") u=kalbo mbarəz qumi",
             "translations": [
               "der Hund blieb eigensinnig, böse von mir stehen"
             ],
@@ -72,8 +94,20 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "Detransitive"
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">brz</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; Arab. barāz cf. Lane 187: a field, plain, or wide expanse of\nland, without trees, an open tract of land destitute of herbage and\ntrees and without hills or mountains, a place in which is no covert\nof trees or other things;;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "brz"
+    },
+    {
+      "italic": true,
+      "text": "\n(< Arab. barāz cf. Lane 187: a field, plain, or wide expanse of\nland, without trees, an open tract of land destitute of herbage and\ntrees and without hills or mountains, a place in which is no covert\nof trees or other things;;)"
+    }
+  ]
 }

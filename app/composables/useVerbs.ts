@@ -19,6 +19,9 @@ export interface Stem {
   conjugations: {
     [key: string]: Example[]
   }
+  // Optional fields from parser
+  binyan?: string
+  label_raw?: string
 }
 
 export interface Verb {
@@ -27,6 +30,8 @@ export interface Verb {
   cross_reference: string | null
   stems: Stem[]
   uncertain: boolean
+  // Optional raw header HTML preserved verbatim
+  lemma_header_raw?: string
 }
 
 export interface VerbIndexEntry {

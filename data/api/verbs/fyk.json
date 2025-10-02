@@ -9,7 +9,6 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
       "forms": [
         "fəkle",
         "foyək"
@@ -17,13 +16,22 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "fəkle droʕe 505; səmle lə=səmle, lə=fəkle mine",
+            "turoyo": "fəkle droʕe",
             "translations": [
-              "er renkte sich den Arm aus",
+              "er renkte sich den Arm aus"
+            ],
+            "references": [
+              "505"
+            ]
+          },
+          {
+            "turoyo": "səmle lə=səmle, lə=fəkle mine",
+            "translations": [
               "was der andere auch tat, er liess nicht von ihm ab"
             ],
             "references": [
-              "505; 52/50"
+              "505",
+              "52/50"
             ]
           }
         ],
@@ -34,14 +42,26 @@
               "seit fünfzig Jahren war dieser Unhold eingesperrt, and dann geht ein Mann, ein Mensch, hin und löst ihm die Ketten von den Schultern"
             ],
             "references": [
-              "517; 57/86"
+              "517",
+              "57/86"
             ]
           }
         ]
-      }
+      },
+      "stem": "I",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">fəkle/foyək</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">lösen,\nablassen;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "I:\n"
+        },
+        {
+          "italic": false,
+          "text": "lösen,\nablassen;"
+        }
+      ]
     },
     {
-      "stem": "III",
       "forms": [
         "mafəkle",
         "mafək"
@@ -54,36 +74,66 @@
               "du hast ihn losgemacht, und er hat deine Braut entführt und ist fortgegangen"
             ],
             "references": [
-              "539; 69/498"
+              "539",
+              "69/498"
             ]
           }
         ],
         "Infectum": [
           {
-            "turoyo": "d-lo b-u=qliḏ-awo mitafiko, lə=k-owe d-noše qodər d-šorela, w d-mawfaqla 551-552; 107/104;",
+            "turoyo": "d-lo b-u=qliḏ-awo mitafiko, lə=k-owe d-noše qodər d-šorela, w d-mawfaqla",
             "translations": [
               "wenn sie nicht mit diesem Schlüssel losgemacht wurde, konnte sie niemand losbinden und (aus dem Stalle) herausholen"
             ],
-            "references": []
+            "references": [
+              "551",
+              "-552; 107/104"
+            ]
           }
         ]
-      }
+      },
+      "stem": "III",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">III:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mafəkle/mafək</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">aufmachen,\nlosmachen;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "III:\n"
+        },
+        {
+          "italic": false,
+          "text": "aufmachen,\nlosmachen;"
+        }
+      ]
     },
     {
-      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "d-lo b-u=qliḏ-awo mitafiko, lə=k-owe d-noše qodər d-šorela, w d-mawfaqla 551-552; 107/104;",
+            "turoyo": "d-lo b-u=qliḏ-awo mitafiko, lə=k-owe d-noše qodər d-šorela, w d-mawfaqla",
             "translations": [
               "wenn sie nicht mit diesem Schlüssel losgemacht wurde, konnte sie niemand losbinden und (aus dem Stalle) herausholen"
             ],
-            "references": []
+            "references": [
+              "551",
+              "-552; 107/104"
+            ]
           }
         ]
-      }
+      },
+      "stem": "Detransitive"
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">fyk</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; MEA pkk cf. SL 1191: to break, pound; &lt; MEA pkk (Pa.) cf. SL\n1191: to shatter;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "fyk"
+    },
+    {
+      "italic": true,
+      "text": "\n(< MEA pkk cf. SL 1191: to break, pound; < MEA pkk (Pa.) cf. SL\n1191: to shatter;)"
+    }
+  ]
 }

@@ -9,7 +9,6 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
       "forms": [
         "brele",
         "bore"
@@ -26,10 +25,25 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "I",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">brele/bore</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">freisprechen;</span></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">Detransitive</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "I:\n"
+        },
+        {
+          "italic": false,
+          "text": "freisprechen;"
+        },
+        {
+          "italic": false,
+          "text": "Detransitive"
+        }
+      ]
     },
     {
-      "stem": "II",
       "forms": [
         "mbarele",
         "mbare"
@@ -42,14 +56,26 @@
               "ich begehre von dir nur, dass ich wieder dorthin gehen kann und dass du mich von der Verwandtschaft mit dem Wesir lossprichst"
             ],
             "references": [
-              "420; 27/75"
+              "420",
+              "27/75"
             ]
           }
         ]
-      }
+      },
+      "stem": "II",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">II:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mbarele/mbare</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">lossprechen;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "II:\n"
+        },
+        {
+          "italic": false,
+          "text": "lossprechen;"
+        }
+      ]
     },
     {
-      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Infectum": [
@@ -59,12 +85,25 @@
               "ich begehre von dir nur, dass ich wieder dorthin gehen kann und dass du mich von der Verwandtschaft mit dem Wesir lossprichst"
             ],
             "references": [
-              "420; 27/75"
+              "420",
+              "27/75"
             ]
           }
         ]
-      }
+      },
+      "stem": "Detransitive"
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">bry</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; MEA bry (Pa.) cf. SL 188: to free;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "bry"
+    },
+    {
+      "italic": true,
+      "text": "\n(< MEA bry (Pa.) cf. SL 188: to free;)"
+    }
+  ]
 }

@@ -9,7 +9,6 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
       "forms": [
         "barəq",
         "borəq"
@@ -26,10 +25,21 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "I",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">barəq/borəq</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">geblendet\nwerden;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "I:\n"
+        },
+        {
+          "italic": false,
+          "text": "geblendet\nwerden;"
+        }
+      ]
     },
     {
-      "stem": "III",
       "forms": [
         "mabraqle",
         "mabrəq"
@@ -37,13 +47,32 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "foṯa ḥewarto, ko-mabarqo 143; 77/127; yawmo d-qáyṭo-yo, hawa basǝ́mto-yo; i=šəmšo k-mábrəqo w k-obo šḥanṯo l-hawīr 4/11; kile kit b-iḏa šayro d-almās, k-mabrəq ax d-u=kukwo ‘S ’; 24/140",
+            "turoyo": "foṯa ḥewarto, ko-mabarqo",
             "translations": [
-              "ihr gesicht war weiss und sie leuchtete wie der Blitz",
-              "es ist ein Sommertag; das Wetter ist schön, die Sonne leuchtet hell und spendet Wärme ringsumher",
+              "ihr gesicht war weiss und sie leuchtete wie der Blitz"
+            ],
+            "references": [
+              "143",
+              "77/127"
+            ]
+          },
+          {
+            "turoyo": "yawmo d-qáyṭo-yo, hawa basǝ́mto-yo; i=šəmšo k-mábrəqo w k-obo šḥanṯo l-hawīr",
+            "translations": [
+              "es ist ein Sommertag; das Wetter ist schön, die Sonne leuchtet hell und spendet Wärme ringsumher"
+            ],
+            "references": [
+              "4/11"
+            ]
+          },
+          {
+            "turoyo": "kile kit b-iḏa šayro d-almās, k-mabrəq ax d-u=kukwo ‘S",
+            "translations": [
               "ie hat an der Hand ein Diamantarmband, das blitzt wie ein Stern"
             ],
-            "references": []
+            "references": [
+              "24/140"
+            ]
           }
         ],
         "Infectum-wa": [
@@ -53,12 +82,36 @@
               "seine Augen funkelten wie ein Stern, und es (das Tier) schoss auf uns los und bewegte sich vorwärts wie der Blitz"
             ],
             "references": [
-              "150; 63/63"
+              "150",
+              "63/63"
             ]
           }
         ]
-      }
+      },
+      "stem": "III",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">III:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mabraqle/mabrəq</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">glänzen,\nstrahlen, funkeln;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "III:\n"
+        },
+        {
+          "italic": false,
+          "text": "glänzen,\nstrahlen, funkeln;"
+        }
+      ]
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">brq</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; MEA brq cf. SL 192: to flash;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "brq"
+    },
+    {
+      "italic": true,
+      "text": "\n(< MEA brq cf. SL 192: to flash;)"
+    }
+  ]
 }

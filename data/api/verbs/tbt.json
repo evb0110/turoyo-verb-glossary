@@ -4,7 +4,6 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "II",
       "forms": [
         "mtabət",
         "mitabət"
@@ -32,10 +31,25 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "II",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">II:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mtabət/mitabət</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">(Detrans.)\nRuhe haben, Ruhe halten, Geduld haben;</span></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">Detransitive</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "II:\n"
+        },
+        {
+          "italic": false,
+          "text": "(Detrans.)\nRuhe haben, Ruhe halten, Geduld haben;"
+        },
+        {
+          "italic": false,
+          "text": "Detransitive"
+        }
+      ]
     },
     {
-      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Infectum": [
@@ -60,8 +74,32 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "Detransitive"
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">tbt</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(</span></i></font></font><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">&lt;\ndenom. tabāta</span></i></font><font size=\"2\" style=\"font-size: 11pt\"><span style=\"background: transparent\">\ncf. Tur. 520: die Geduld &lt;</span></font><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">Kurd.\ntebat cf. Ku 728: терпение, выносливость,\nвыдержка;)</span></i></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "tbt"
+    },
+    {
+      "italic": true,
+      "text": "\n("
+    },
+    {
+      "italic": true,
+      "text": "<\ndenom. tabāta"
+    },
+    {
+      "italic": false,
+      "text": "\ncf. Tur. 520: die Geduld <"
+    },
+    {
+      "italic": true,
+      "text": "Kurd.\ntebat cf. Ku 728: терпение, выносливость,\nвыдержка;)"
+    }
+  ]
 }

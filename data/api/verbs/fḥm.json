@@ -9,7 +9,6 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "II",
       "forms": [
         "mfaḥamle",
         "mfaḥəm"
@@ -17,11 +16,15 @@
       "conjugations": {
         "Preterit-wa": [
           {
-            "turoyo": "mfaḥam-wo, lo=maǧre-wo mqadam-wo m-az=zŭgurd-anək 163; 29/464; [MT]",
+            "turoyo": "mfaḥam-wo, lo=maǧre-wo mqadam-wo m-az=zŭgurd-anək",
             "translations": [
               "er ärgerte sich, aber er wagte wegen jener Habenichtse nicht hervorzutreten"
             ],
-            "references": []
+            "references": [
+              "163",
+              "29/464",
+              "; [MT]"
+            ]
           }
         ],
         "Infectum-wa": [
@@ -35,10 +38,21 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "II",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">II:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mfaḥamle/mfaḥəm</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">sich\närgern;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "II:\n"
+        },
+        {
+          "italic": false,
+          "text": "sich\närgern;"
+        }
+      ]
     },
     {
-      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Infectum-wa": [
@@ -52,8 +66,20 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "Detransitive"
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">fḥm</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; Arab. fḥm cf. Wehr 946: unfähig sein zu antworten;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "fḥm"
+    },
+    {
+      "italic": true,
+      "text": "\n(< Arab. fḥm cf. Wehr 946: unfähig sein zu antworten;)"
+    }
+  ]
 }

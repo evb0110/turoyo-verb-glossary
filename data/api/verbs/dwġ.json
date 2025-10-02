@@ -9,7 +9,6 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
       "forms": [
         "dwəġle",
         "dowəġ"
@@ -33,10 +32,21 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "I",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">dwəġle/dowəġ</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">ein\nBrandmal aufdrücken, kauterisieren;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "I:\n"
+        },
+        {
+          "italic": false,
+          "text": "ein\nBrandmal aufdrücken, kauterisieren;"
+        }
+      ]
     },
     {
-      "stem": "II",
       "forms": [
         "mdawaġle",
         "mdawəġ"
@@ -44,15 +54,42 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "naqla maglalle ʕal ṭize d-u=kačălōk w-mdawaġġe 478; 44/158; [MT]",
+            "turoyo": "naqla maglalle ʕal ṭize d-u=kačălōk w-mdawaġġe",
             "translations": [
               "He bared the bald-headed’s buttocks at once and branded them"
             ],
-            "references": []
+            "references": [
+              "478",
+              "44/158",
+              "; [MT]"
+            ]
           }
         ]
-      }
+      },
+      "stem": "II",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">II:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mdawaġle/mdawəġ</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">ein\nBrandmal aufdrücken;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "II:\n"
+        },
+        {
+          "italic": false,
+          "text": "ein\nBrandmal aufdrücken;"
+        }
+      ]
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">dwġ</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; Kurd. daġ cf. Ku 177: клеймо, тавро, знак,\nметка; see also Tezel 126-127, who lists Arb. dwġ (II) ‘ein\nMal aufprägen’ Wehr 417 as a possible source)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "dwġ"
+    },
+    {
+      "italic": true,
+      "text": "\n(< Kurd. daġ cf. Ku 177: клеймо, тавро, знак,\nметка; see also Tezel 126-127, who lists Arb. dwġ (II) ‘ein\nMal aufprägen’ Wehr 417 as a possible source)"
+    }
+  ]
 }

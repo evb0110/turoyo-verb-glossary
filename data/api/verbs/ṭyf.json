@@ -9,7 +9,6 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
       "forms": [
         "ṭayəf",
         "ṭoyəf"
@@ -17,9 +16,18 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "ṭayəf u=lăgan semo w dahwo 511; prs 12/24; i=ṭaṣe ṭayifo ḥalwo",
+            "turoyo": "ṭayəf u=lăgan semo w dahwo",
             "translations": [
-              "das Becken floss über mit Silber und Gold",
+              "das Becken floss über mit Silber und Gold"
+            ],
+            "references": [
+              "511",
+              "prs 12/24"
+            ]
+          },
+          {
+            "turoyo": "i=ṭaṣe ṭayifo ḥalwo",
+            "translations": [
               "die Milch in der Schale floss über"
             ],
             "references": [
@@ -27,10 +35,21 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "I",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">ṭayəf/ṭoyəf</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">überfliessen;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "I:\n"
+        },
+        {
+          "italic": false,
+          "text": "überfliessen;"
+        }
+      ]
     },
     {
-      "stem": "III",
       "forms": [
         "maṭəfle",
         "maṭəf"
@@ -47,8 +66,31 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "III",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">III:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">maṭəfle/maṭəf</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">überfliessen\nlassen;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "III:\n"
+        },
+        {
+          "italic": false,
+          "text": "überfliessen\nlassen;"
+        }
+      ]
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">ṭyf</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; MEA ṭwp cf. SL 519: to inundate, overflow;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "ṭyf"
+    },
+    {
+      "italic": true,
+      "text": "\n(< MEA ṭwp cf. SL 519: to inundate, overflow;)"
+    }
+  ]
 }

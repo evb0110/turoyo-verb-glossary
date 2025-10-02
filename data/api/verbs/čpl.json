@@ -9,7 +9,6 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "II",
       "forms": [
         "mčapele",
         "mčapəl"
@@ -33,7 +32,8 @@
               "aber der Rauch, der aus ihnen aufsteigt, verschmutzt ein wenig die Luft um den Bosporus herum"
             ],
             "references": [
-              "309; 4/41"
+              "309",
+              "4/41"
             ]
           }
         ],
@@ -48,10 +48,21 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "II",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">II:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mčapele/mčapəl</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">beschmutzen;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "II:\n"
+        },
+        {
+          "italic": false,
+          "text": "beschmutzen;"
+        }
+      ]
     },
     {
-      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Participle_Passive": [
@@ -65,8 +76,24 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "Detransitive"
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">čpl</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n</span></i></font></font><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">(&lt;\ndenom. čäpäl cf. RW 97: schmutzig; čipil cf. RW 104: schmutzig</span></i></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n&lt; Kurd. čepel cf. Ku 159: грязный, нечистый;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "čpl"
+    },
+    {
+      "italic": true,
+      "text": "(<\ndenom. čäpäl cf. RW 97: schmutzig; čipil cf. RW 104: schmutzig"
+    },
+    {
+      "italic": true,
+      "text": "\n< Kurd. čepel cf. Ku 159: грязный, нечистый;)"
+    }
+  ]
 }

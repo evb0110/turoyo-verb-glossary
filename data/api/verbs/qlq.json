@@ -9,7 +9,6 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "II",
       "forms": [
         "mqalaqle",
         "mqaləq"
@@ -26,10 +25,21 @@
             ]
           }
         ]
-      }
+      },
+      "stem": "II",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">II:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mqalaqle/mqaləq</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">vollreden;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "II:\n"
+        },
+        {
+          "italic": false,
+          "text": "vollreden;"
+        }
+      ]
     },
     {
-      "stem": "III",
       "forms": [
         "maqlaqle",
         "maqləq"
@@ -37,9 +47,18 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ġắlabe ko-maqləq k-obəʕ d-əzzeyo, laf Zaynāl Bage w laf Ramazano 143; 65/452; b-u=fəkr-ano k-mqaləq, k-maqləb w-k-maṭrəṣ b-u=fəkər diḏe, w-žġaliye lə=g-məžġəl ʕam u=zʕuro",
+            "turoyo": "ġắlabe ko-maqləq k-obəʕ d-əzzeyo, laf Zaynāl Bage w laf Ramazano",
             "translations": [
-              "er war in grosser Unruhe und wollte zu Zeinal Bäge und Ramazan reiten",
+              "er war in grosser Unruhe und wollte zu Zeinal Bäge und Ramazan reiten"
+            ],
+            "references": [
+              "143",
+              "65/452"
+            ]
+          },
+          {
+            "turoyo": "b-u=fəkr-ano k-mqaləq, k-maqləb w-k-maṭrəṣ b-u=fəkər diḏe, w-žġaliye lə=g-məžġəl ʕam u=zʕuro",
+            "translations": [
               "‘Bei diesem Gedanken wird er unruhig, wälzt die Gedanken hin und her und spricht kein Wort mit dem Jüngling’; 29/318 [MT]"
             ],
             "references": []
@@ -52,12 +71,36 @@
               "wenn aber seine Hand nach sie (einer Figur) ausstreckte, und jener zurückzuckte, sich bewegte und unruhig wurde, so spielte er sie nicht aus, sondern behielt sie in der Hand"
             ],
             "references": [
-              "150; 104/19"
+              "150",
+              "104/19"
             ]
           }
         ]
-      }
+      },
+      "stem": "III",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">III:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">maqlaqle/maqləq\n </span></b></i></font></font>\n</p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">unruhig\nwerden;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "III:\n"
+        },
+        {
+          "italic": false,
+          "text": "unruhig\nwerden;"
+        }
+      ]
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">qlq</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; Arab. qlq (IV) cf. Wehr 1054: stören, beunruhigen; unruhig,\nruhelos machen, aufregen, erregen;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "qlq"
+    },
+    {
+      "italic": true,
+      "text": "\n(< Arab. qlq (IV) cf. Wehr 1054: stören, beunruhigen; unruhig,\nruhelos machen, aufregen, erregen;)"
+    }
+  ]
 }

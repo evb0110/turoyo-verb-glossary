@@ -9,7 +9,6 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
       "forms": [
         "ṭḥənle",
         "ṭoḥən"
@@ -17,11 +16,14 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "maṭʕalle u=ṭaʕnayḏe, azzé l-i=raḥyo, ṭḥəlle u=ṭaʕno, aṯi l-u=bayto 261; prs 139/37;",
+            "turoyo": "maṭʕalle u=ṭaʕnayḏe, azzé l-i=raḥyo, ṭḥəlle u=ṭaʕno, aṯi l-u=bayto",
             "translations": [
               "er lud den Sack selber auf, ging zur Mühle, liess mahlen und kehrte nach Hause zurück"
             ],
-            "references": []
+            "references": [
+              "261",
+              "prs 139/37"
+            ]
           }
         ],
         "Infectum": [
@@ -42,10 +44,21 @@
             "references": []
           }
         ]
-      }
+      },
+      "stem": "I",
+      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">ṭḥənle/ṭoḥən</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">mahlen,\nmahlen lassen, zerreiben;</span></p>",
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "I:\n"
+        },
+        {
+          "italic": false,
+          "text": "mahlen,\nmahlen lassen, zerreiben;"
+        }
+      ]
     },
     {
-      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Infectum-wa": [
@@ -57,8 +70,20 @@
             "references": []
           }
         ]
-      }
+      },
+      "stem": "Detransitive"
     }
   ],
-  "uncertain": false
+  "uncertain": false,
+  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">ṭḥn</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; MEA ṭḥn cf. SL 523-524: to grind, mill;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
+  "lemma_header_tokens": [
+    {
+      "italic": false,
+      "text": "ṭḥn"
+    },
+    {
+      "italic": true,
+      "text": "\n(< MEA ṭḥn cf. SL 523-524: to grind, mill;)"
+    }
+  ]
 }
