@@ -82,71 +82,74 @@
         <UBadge variant="soft">{{ verb?.stems.length || 0 }} entries</UBadge>
       </div>
 
-      <UAccordion :items="stemItems" multiple>
-        <template #default="{ item }">
-          <UCard class="border border-transparent transition hover:border-primary/40" :ui="{ body: 'space-y-4' }">
-            <div class="flex flex-wrap items-center justify-between gap-3">
-              <div>
-                <h3 class="text-lg font-semibold">Stem {{ item.stem }}</h3>
-                <p class="text-sm text-muted">
-                  {{ item.forms.join(', ') || 'No recorded forms' }}
-                </p>
-              </div>
-
-              <UBadge color="gray" variant="soft">
-                {{ item.exampleCount }} examples
-              </UBadge>
+      <div class="space-y-4">
+        <UCard
+          v-for="item in stemItems"
+          :key="item.stem"
+          class="border border-transparent transition hover:border-primary/40"
+          :ui="{ body: 'space-y-4' }"
+        >
+          <div class="flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <h3 class="text-lg font-semibold">Stem {{ item.stem }}</h3>
+              <p class="text-sm text-muted">
+                {{ item.forms.join(', ') || 'No recorded forms' }}
+              </p>
             </div>
 
-            <div v-if="item.conjugationGroups.length" class="space-y-4">
-              <div
-                v-for="group in item.conjugationGroups"
-                :key="group.name"
-                class="space-y-3"
-              >
-                <div class="flex items-center gap-2">
-                  <UIcon name="i-heroicons-book-open" class="h-4 w-4 text-primary" />
-                  <h4 class="font-medium">{{ group.name }}</h4>
-                </div>
+            <UBadge color="gray" variant="soft">
+              {{ item.exampleCount }} examples
+            </UBadge>
+          </div>
 
-                <div class="grid gap-3">
-                  <UCard
-                    v-for="(example, index) in group.examples"
-                    :key="`${group.name}-${index}`"
-                    variant="ghost"
-                    class="border-l-4 border-primary/40"
-                    :ui="{ body: 'space-y-3' }"
-                  >
-                    <div class="text-lg font-medium font-['SBL BibLit',serif]">
-                      {{ example.turoyo || '—' }}
-                    </div>
+          <div v-if="item.conjugationGroups.length" class="space-y-4">
+            <div
+              v-for="group in item.conjugationGroups"
+              :key="group.name"
+              class="space-y-3"
+            >
+              <div class="flex items-center gap-2">
+                <UIcon name="i-heroicons-book-open" class="h-4 w-4 text-primary" />
+                <h4 class="font-medium">{{ group.name }}</h4>
+              </div>
 
-                    <div v-if="example.translations?.length" class="space-y-1 text-sm">
-                      <p class="text-xs font-semibold uppercase text-muted">Translations</p>
-                      <ul class="list-disc space-y-1 pl-4">
-                        <li v-for="(translation, tIndex) in example.translations" :key="tIndex">
-                          {{ translation }}
-                        </li>
-                      </ul>
-                    </div>
+              <div class="grid gap-3">
+                <UCard
+                  v-for="(example, index) in group.examples"
+                  :key="`${group.name}-${index}`"
+                  variant="ghost"
+                  class="border-l-4 border-primary/40"
+                  :ui="{ body: 'space-y-3' }"
+                >
+                  <div class="text-lg font-medium font-['SBL BibLit',serif]">
+                    {{ example.turoyo || '—' }}
+                  </div>
 
-                    <div v-if="example.references?.length" class="space-y-1 text-xs">
-                      <p class="font-semibold uppercase text-muted">References</p>
-                      <div class="flex flex-wrap gap-1">
-                        <UBadge v-for="(ref, rIndex) in example.references" :key="rIndex" variant="soft">
-                          {{ ref }}
-                        </UBadge>
-                      </div>
+                  <div v-if="example.translations?.length" class="space-y-1 text-sm">
+                    <p class="text-xs font-semibold uppercase text-muted">Translations</p>
+                    <ul class="list-disc space-y-1 pl-4">
+                      <li v-for="(translation, tIndex) in example.translations" :key="tIndex">
+                        {{ translation }}
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div v-if="example.references?.length" class="space-y-1 text-xs">
+                    <p class="font-semibold uppercase text-muted">References</p>
+                    <div class="flex flex-wrap gap-1">
+                      <UBadge v-for="(ref, rIndex) in example.references" :key="rIndex" variant="soft">
+                        {{ ref }}
+                      </UBadge>
                     </div>
-                  </UCard>
-                </div>
+                  </div>
+                </UCard>
               </div>
             </div>
+          </div>
 
-            <p v-else class="text-sm text-muted">No examples available.</p>
-          </UCard>
-        </template>
-      </UAccordion>
+          <p v-else class="text-sm text-muted">No examples available.</p>
+        </UCard>
+      </div>
     </div>
 
     <div class="flex justify-end">
