@@ -22,6 +22,7 @@ export interface Stem {
   // Optional fields from parser
   binyan?: string
   label_raw?: string
+  label_gloss_tokens?: { italic: boolean; text: string }[]
 }
 
 export interface Verb {
@@ -134,6 +135,10 @@ export const useVerbs = () => {
     return crossRefs.value
   }
 
+  // Slug helpers for homonymous roots (e.g., "bdy 1" → "bdy-1")
+  const rootToSlug = (root: string) => root.replace(/\s+/g, '-')
+  const slugToRoot = (slug: string) => slug.replace(/-/g, ' ')
+
   /**
    * Get a single verb by root (lazy loaded, ~2-5KB per verb)
    * @param root - The root of the verb to fetch
@@ -146,9 +151,10 @@ export const useVerbs = () => {
    * Get a verb following cross-references if needed
    * @param root - The root to look up
    */
-  const getVerbWithCrossRef = async (root: string): Promise<Verb> => {
+  const getVerbWithCrossRef = async (rootOrSlug: string): Promise<Verb> => {
+    const canonicalRoot = slugToRoot(rootOrSlug)
     const refs = await loadCrossReferences()
-    const targetRoot = refs[root] || root
+    const targetRoot = refs[canonicalRoot] || canonicalRoot
     return await getVerb(targetRoot)
   }
 
@@ -247,6 +253,10 @@ export const useVerbs = () => {
     loadSearchIndex,
     loadStatistics,
     loadCrossReferences,
+
+    // Slugs
+    rootToSlug,
+    slugToRoot,
 
     // Single verb access
     getVerb,

@@ -11,7 +11,7 @@ from parser.extract_clean_v4 import CleanTuroyoParser
 ALLOWED = 'ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzžḏṯẓāēīūə'
 # Match: <p class="western"><font...><span>ROOT</span> ...
 ROOT_PATTERN = re.compile(
-    rf'<p[^>]*class="western"[^>]*><font[^>]*><span[^>]*>(?:&shy;)?([{ALLOWED}]{{2,6}})(?:\s*\d+)?</span>',
+    rf'<p[^>]*class="western"[^>]*><font[^>]*><span[^>]*>(?:&shy;)?([{ALLOWED}]{{2,6}}(?:\s*\d+)?)[^<]*</span>',
     re.DOTALL
 )
 
@@ -27,6 +27,8 @@ def segment_entries(html: str):
     segments = []
     for i, m in enumerate(matches):
         root = m.group(1)
+        # Normalize whitespace within captured root (e.g., "bdy\n1" → "bdy 1")
+        root = ' '.join(root.split())
         start = m.start()
         end = matches[i+1].start() if i + 1 < len(matches) else len(html)
         frag = html[start:end]

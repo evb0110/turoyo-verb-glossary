@@ -47,7 +47,7 @@
         <UTable :data="displayed" :columns="columns" :loading="pending">
           <template #root-cell="{ row }">
             <NuxtLink
-              :to="`/verbs/${row.original.root}`"
+              :to="`/verbs/${rootToSlug(row.original.root)}`"
               class="font-semibold text-primary hover:underline"
             >
               {{ row.original.root }}
@@ -59,7 +59,7 @@
           </template>
 
           <template #example_count-cell="{ row }">
-            <UBadge color="gray" variant="soft">{{ row.original.example_count }}</UBadge>
+            <UBadge color="neutral" variant="soft">{{ row.original.example_count }}</UBadge>
           </template>
         </UTable>
 
@@ -95,7 +95,7 @@
 import { useDebounceFn } from '@vueuse/core'
 import type { Filters } from '~/types/types/search'
 
-const { loadIndex, loadStatistics, search } = useVerbs()
+const { loadIndex, loadStatistics, search, rootToSlug } = useVerbs()
 
 const pending = ref(false)
 const [index, stats] = await Promise.all([loadIndex(), loadStatistics()])

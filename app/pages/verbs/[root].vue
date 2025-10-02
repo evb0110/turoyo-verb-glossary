@@ -28,7 +28,7 @@
 
           <div v-if="verb?.cross_reference" class="rounded-lg border px-4 py-3 text-sm">
             See related entry
-            <NuxtLink :to="`/verbs/${verb.cross_reference}`" class="font-medium">
+            <NuxtLink :to="`/verbs/${rootToSlug(verb.cross_reference)}`" class="font-medium">
               {{ verb.cross_reference }}
             </NuxtLink>
           </div>
@@ -73,8 +73,8 @@
           class="border border-transparent transition hover:border-primary/40"
           :ui="{ body: 'space-y-4' }"
         >
-          <div v-if="item.label_tokens?.length" class="prose max-w-none text-sm">
-            <span v-for="(t, i) in item.label_tokens" :key="i" :class="t.italic ? 'italic' : ''">{{ t.text }}</span>
+          <div v-if="item.label_gloss_tokens?.length" class="prose max-w-none text-sm">
+            <span v-for="(t, i) in item.label_gloss_tokens" :key="i" :class="t.italic ? 'italic' : ''">{{ t.text }}</span>
           </div>
           <div v-else-if="item.label_raw" class="prose max-w-none text-sm">
             <div v-html="item.label_raw"></div>
@@ -103,7 +103,7 @@
                 <UCard
                   v-for="(example, index) in group.examples"
                   :key="`${group.name}-${index}`"
-                  variant="ghost"
+                  variant="soft"
                   class="border-l-4 border-primary/40"
                   :ui="{ body: 'space-y-3' }"
                 >
@@ -112,7 +112,6 @@
                   </div>
 
                   <div v-if="example.translations?.length" class="space-y-1 text-sm">
-                    <p class="text-xs font-semibold uppercase text-muted">Translations</p>
                     <ul class="list-disc space-y-1 pl-4">
                       <li v-for="(translation, tIndex) in example.translations" :key="tIndex">
                         {{ translation }}
@@ -121,7 +120,6 @@
                   </div>
 
                   <div v-if="example.references?.length" class="space-y-1 text-xs">
-                    <p class="font-semibold uppercase text-muted">References</p>
                     <div class="flex flex-wrap gap-1">
                       <UBadge v-for="(ref, rIndex) in example.references.filter(r => r && r.trim().length)" :key="rIndex" variant="soft">
                         {{ ref }}
@@ -142,7 +140,7 @@
 
 <script setup lang="ts">
 const route = useRoute()
-const { getVerbWithCrossRef } = useVerbs()
+const { getVerbWithCrossRef, slugToRoot, rootToSlug } = useVerbs()
 
 const root = computed(() => route.params.root as string)
 
@@ -168,7 +166,7 @@ const etymologyText = computed(() => {
   if (e?.raw) return e.raw
   const tokens: any[] = (verb.value as any)?.lemma_header_tokens || []
   if (Array.isArray(tokens) && tokens.length) {
-    const joined = tokens.map(t => t.text).join(' ')
+    const joined = tokens.map(t => t.text).join('')
     const start = joined.indexOf('(')
     const end = joined.lastIndexOf(')')
     if (start !== -1 && end !== -1 && end > start) {
