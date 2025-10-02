@@ -11,7 +11,12 @@ export default defineEventHandler(async event => {
     })
   }
 
-  const relativePath = Array.isArray(segments) ? segments.join('/') : segments
+  // Decode URL-encoded path segments
+  const decodedSegments = Array.isArray(segments)
+    ? segments.map(s => decodeURIComponent(s))
+    : decodeURIComponent(segments)
+
+  const relativePath = Array.isArray(decodedSegments) ? decodedSegments.join('/') : decodedSegments
   const filePath = join(process.cwd(), 'data', 'api', relativePath)
 
   try {
