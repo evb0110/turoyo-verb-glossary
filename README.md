@@ -90,7 +90,7 @@ Each verb entry contains:
   },
   "stems": [
     {
-      "binyan": "I",
+      "stem": "I",
       "forms": ["ʕabər", "ʕobər"],
       "conjugations": {
         "Preterit Intransitive": [
@@ -112,7 +112,7 @@ Each verb entry contains:
 
 - **root**: Triconsonantal root (e.g., ʕbr, ʔmr)
 - **etymology**: Source language, root, reference, meaning
-- **stems**: Array of binyanim (I, II, III, Detransitive)
+- **stems**: Array of stems (I, II, III, Detransitive)
   - **forms**: Preterit/Infinitive forms
   - **conjugations**: Tables (Preterit, Infectum, Imperative, Participles)
     - **turoyo**: Original Turoyo text
@@ -132,7 +132,7 @@ Each verb entry contains:
 ### Known Issues
 - 215 verbs missing etymology (acceptable - loan words)
 - 17 verbs with no stems (likely incomplete in source)
-- 121 verbs with duplicate binyanim (needs review)
+- 121 verbs with duplicate stems (needs review)
 - 190 empty Turoyo cells (notes only)
 - 47 uncertain entries (marked ??? in source)
 
@@ -210,7 +210,7 @@ python3 parser/verify_against_source.py
 Ready to build:
 - **Search**: By root, meaning, etymology
 - **Browse**: 27 alphabetical sections
-- **Filter**: By binyan, source language
+- **Filter**: By stem, source language
 - **Full-text search**: In examples
 - **Export**: PDF, CSV, Excel
 
@@ -224,7 +224,7 @@ Add:
 
 ### Option 3: Improve Parser
 Based on verification:
-- Fix duplicate binyanim
+- Fix duplicate stems
 - Better empty cell handling
 - Enhanced etymology parsing
 

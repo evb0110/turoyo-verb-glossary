@@ -14,7 +14,7 @@ export interface Example {
 }
 
 export interface Stem {
-  binyan: string
+  stem: string
   forms: string[]
   conjugations: {
     [key: string]: Example[]
@@ -32,7 +32,7 @@ export interface Verb {
 export interface VerbIndexEntry {
   root: string
   etymology_source: string | null
-  binyanim: string[]
+  stems: string[]
   has_detransitive: boolean
   cross_reference: string | null
   example_count: number
@@ -57,7 +57,7 @@ export interface Statistics {
   total_stems: number
   total_examples: number
   by_etymology: { [key: string]: number }
-  by_binyan: { [key: string]: number }
+  by_stem: { [key: string]: number }
   by_letter: { [key: string]: number }
 }
 
@@ -219,12 +219,12 @@ export const useVerbs = () => {
   }
 
   /**
-   * Get verbs by binyan
-   * @param binyan - Binyan name (e.g., "I", "II", "III", "Detransitive")
+   * Get verbs by stem
+   * @param stem - Stem name (e.g., "I", "II", "III", "Detransitive")
    */
-  const getVerbsByBinyan = async (binyan: string): Promise<VerbIndexEntry[]> => {
+  const getVerbsByStem = async (stem: string): Promise<VerbIndexEntry[]> => {
     const idx = await loadIndex()
-    return idx.roots.filter(r => r.binyanim.includes(binyan))
+    return idx.roots.filter(r => r.stems.includes(stem))
   }
 
   /**
@@ -250,7 +250,7 @@ export const useVerbs = () => {
     // Search and filtering
     search,
     getVerbsByEtymology,
-    getVerbsByBinyan,
+    getVerbsByStem,
     getVerbsByLetter,
 
     // State access (for direct use if needed)

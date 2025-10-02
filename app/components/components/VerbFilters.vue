@@ -4,15 +4,15 @@ const modelValue = defineModel<Filters>('modelValue', { required: true })
 const props = defineProps<{
   letters: SelectOption[]
   etymologies: SelectOption[]
-  binyanim: SelectOption[]
+  stems: SelectOption[]
 }>()
 
 const emits = defineEmits<{(e: 'reset'): void}>()
 
-const filtersActive = computed(() => Boolean(modelValue.value.letter || modelValue.value.etymology || modelValue.value.binyan))
+const filtersActive = computed(() => Boolean(modelValue.value.letter || modelValue.value.etymology || modelValue.value.stem))
 
 function reset() {
-  modelValue.value = { letter: null, etymology: null, binyan: null }
+  modelValue.value = { letter: null, etymology: null, stem: null }
   emits('reset')
 }
 </script>
@@ -45,8 +45,8 @@ function reset() {
         <USelect v-model="modelValue.etymology" :options="props.etymologies" option-attribute="label" />
       </div>
       <div>
-        <label class="text-sm font-medium">Binyan</label>
-        <USelect v-model="modelValue.binyan" :options="props.binyanim" option-attribute="label" />
+        <label class="text-sm font-medium">Stem</label>
+        <USelect v-model="modelValue.stem" :options="props.stems" option-attribute="label" />
       </div>
     </div>
   </UCard>
