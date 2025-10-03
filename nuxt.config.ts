@@ -13,6 +13,9 @@ export default defineNuxtConfig({
   vite: {
     server: {
       strictPort: true
+    },
+    build: {
+      sourcemap: false
     }
   },
   components: [{ path: '~/components', pathPrefix: false }],
