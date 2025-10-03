@@ -1,0 +1,4 @@
+---
+alwaysApply: true
+---
+If we find an error for a verb, we shouldn't fix it in the files we have after parsing, but we should analyze how to make it not to happen anymore and reparse the source, so that the fix applies to all the other cases
