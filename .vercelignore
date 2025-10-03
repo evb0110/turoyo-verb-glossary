@@ -1,0 +1,51 @@
+# Development & Build Tools
+.venv/
+parser/
+scripts/
+node_modules/
+.nuxt/
+.output/
+
+# Source & Archive Files
+source/
+.archive/
+.data/
+
+# Large Data Files (keep only API data)
+data/*
+!data/api/
+
+# IDE & Editor Files
+.cursor/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Git & CI/CD
+.git/
+.github/
+.gitignore
+
+# Documentation
+README.md
+*.md
+!data/api/**/*.md
+
+# Logs & Reports
+*.log
+*.txt
+!data/api/**/*.txt
+
+# Python Files
+*.py
+*.pyc
+__pycache__/
+*.egg-info/
+
+# Temporary Files
+*.tmp
+*.bak
+.cache/
