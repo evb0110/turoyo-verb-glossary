@@ -15,5 +15,8 @@ export default defineNuxtConfig({
       strictPort: true
     }
   },
-  components: [{ path: '~/components', pathPrefix: false }]
+  components: [{ path: '~/components', pathPrefix: false }],
+  nitro: {
+    preset: process.env.VERCEL ? 'vercel' : undefined
+  }
 })
