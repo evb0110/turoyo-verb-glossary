@@ -11,7 +11,7 @@
 
           <div class="flex flex-wrap items-start justify-between gap-4">
             <div class="space-y-1">
-              <h1 class="text-3xl font-semibold tracking-tight">
+              <h1 class="text-3xl font-semibold tracking-tight turoyo-text">
                 {{ verb?.root }}
               </h1>
             </div>
@@ -73,20 +73,33 @@
           class="border border-transparent transition hover:border-primary/40"
           :ui="{ body: 'space-y-4' }"
         >
-          <div v-if="item.label_gloss_tokens?.length" class="prose max-w-none text-sm">
-            <span v-for="(t, i) in item.label_gloss_tokens" :key="i" :class="t.italic ? 'italic' : ''">{{ t.text }}</span>
-          </div>
-          <div v-else-if="item.label_raw" class="prose max-w-none text-sm">
-            <div v-html="item.label_raw"></div>
-          </div>
-          <div v-else class="flex flex-wrap items-center justify-between gap-3">
-            <div>
-              <h3 class="text-lg font-semibold">Stem {{ item.stem }}</h3>
-              <p class="text-sm text-muted">
-                {{ item.forms.join(', ') || 'No recorded forms' }}
-              </p>
+          <template v-if="item.label_gloss_tokens?.length || item.label_raw">
+            <div class="prose max-w-none text-sm">
+              <div class="font-semibold">
+                {{ `${item.stem}: ${item.forms?.length ? item.forms.join('/') : 'No recorded forms'}` }}
+              </div>
+              <div v-if="item.label_gloss_tokens?.length">
+                <span
+                  v-for="(t, i) in item.glossTokens"
+                  :key="i"
+                  :class="{ italic: t.italic }"
+                >
+                  {{ t.text }}
+                </span>
+              </div>
+              <div v-else-if="item.label_raw" v-html="item.label_raw"></div>
             </div>
-          </div>
+          </template>
+          <template v-else>
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <h3 class="text-lg font-semibold">Stem {{ item.stem }}</h3>
+                <p class="text-sm text-muted">
+                  {{ item.forms.join(', ') || 'No recorded forms' }}
+                </p>
+              </div>
+            </div>
+          </template>
 
           <div v-if="item.conjugationGroups.length" class="space-y-4">
             <div
@@ -107,7 +120,7 @@
                   class="border-l-4 border-primary/40"
                   :ui="{ body: 'space-y-3' }"
                 >
-                  <div class="text-lg font-medium font-['SBL BibLit',serif]">
+                  <div class="text-lg font-medium turoyo-text">
                     {{ example.turoyo || '—' }}
                   </div>
 
@@ -130,7 +143,6 @@
               </div>
             </div>
           </div>
-
           <p v-else class="text-sm text-muted">No examples available.</p>
         </UCard>
       </div>
@@ -168,9 +180,19 @@ const etymologyText = computed(() => {
   if (Array.isArray(tokens) && tokens.length) {
     const joined = tokens.map(t => t.text).join('')
     const start = joined.indexOf('(')
-    const end = joined.lastIndexOf(')')
-    if (start !== -1 && end !== -1 && end > start) {
-      return joined.slice(start + 1, end).trim()
+    if (start !== -1) {
+      let depth = 0
+      let end = -1
+      for (let i = start; i < joined.length; i++) {
+        const ch = joined[i]
+        if (ch === '(') depth++
+        else if (ch === ')') {
+          depth--
+          if (depth === 0) { end = i; break }
+        }
+      }
+      const inner = end !== -1 ? joined.slice(start + 1, end).trim() : joined.slice(start + 1).trim()
+      if (inner) return `(${inner})`
     }
   }
   if (e && (e.source || e.source_root || e.reference || e.meaning)) {
@@ -209,7 +231,14 @@ const stemItems = computed(() => {
     return {
       ...stem,
       exampleCount: conjugationGroups.reduce((count, group) => count + group.examples.length, 0),
-      conjugationGroups
+      conjugationGroups,
+      glossTokens: Array.isArray((stem as any).label_gloss_tokens)
+        ? (stem as any).label_gloss_tokens.filter((t: any, idx: number, arr: any[]) => {
+            const first = arr[0]?.text?.trim?.() || ''
+            if (idx === 0 && /^[IVX]+\s*:/.test(first)) return false
+            return true
+          })
+        : []
     }
   })
 })
