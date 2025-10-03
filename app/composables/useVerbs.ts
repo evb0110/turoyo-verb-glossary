@@ -177,38 +177,50 @@ export const useVerbs = () => {
       searchTuroyo = true,
       searchTranslations = true,
       searchEtymology = true,
-      maxResults = 100
+      maxResults
     } = options
 
     console.log('[useVerbs] Search called with query:', query, 'options:', options)
 
-    const idx = await loadSearchIndex()
     const roots = new Set<string>()
     const lowerQuery = query.toLowerCase()
 
-    // Search in Turoyo index
-    if (searchTuroyo) {
-      for (const [word, verbRoots] of Object.entries(idx.turoyo_index)) {
-        if (word.toLowerCase().includes(lowerQuery)) {
-          verbRoots.forEach(r => roots.add(r))
+    // If only searching roots (not translations or etymology), search directly in roots
+    if (searchTuroyo && !searchTranslations && !searchEtymology) {
+      const allVerbs = await loadIndex()
+      for (const verb of allVerbs.roots) {
+        if (verb.root.toLowerCase().includes(lowerQuery)) {
+          roots.add(verb.root)
         }
       }
-    }
+    } else {
+      // Otherwise use the search index
+      const idx = await loadSearchIndex()
 
-    // Search in translation index
-    if (searchTranslations) {
-      for (const [word, verbRoots] of Object.entries(idx.translation_index)) {
-        if (word.toLowerCase().includes(lowerQuery)) {
-          verbRoots.forEach(r => roots.add(r))
+      // Search in Turoyo index (all Turoyo words: forms, examples, etc.)
+      if (searchTuroyo) {
+        for (const [word, verbRoots] of Object.entries(idx.turoyo_index)) {
+          if (word.toLowerCase().includes(lowerQuery)) {
+            verbRoots.forEach(r => roots.add(r))
+          }
         }
       }
-    }
 
-    // Search in etymology index
-    if (searchEtymology) {
-      for (const [source, verbRoots] of Object.entries(idx.etymology_index)) {
-        if (source.toLowerCase().includes(lowerQuery)) {
-          verbRoots.forEach(r => roots.add(r))
+      // Search in translation index
+      if (searchTranslations) {
+        for (const [word, verbRoots] of Object.entries(idx.translation_index)) {
+          if (word.toLowerCase().includes(lowerQuery)) {
+            verbRoots.forEach(r => roots.add(r))
+          }
+        }
+      }
+
+      // Search in etymology index
+      if (searchEtymology) {
+        for (const [source, verbRoots] of Object.entries(idx.etymology_index)) {
+          if (source.toLowerCase().includes(lowerQuery)) {
+            verbRoots.forEach(r => roots.add(r))
+          }
         }
       }
     }

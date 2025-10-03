@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { Filters, SelectOption } from '~/types/types/search'
+
 const modelValue = defineModel<Filters>('modelValue', { required: true })
 
 const props = defineProps<{
@@ -18,36 +20,50 @@ function reset() {
 </script>
 
 <template>
-  <UCard>
-    <template #header>
-      <div class="flex items-center justify-between">
-        <h2 class="text-base font-semibold">Filters</h2>
-        <UTooltip text="Reset all filters">
-          <UButton
-            v-if="filtersActive"
-            icon="i-heroicons-arrow-path"
-            color="gray"
-            variant="ghost"
-            size="sm"
-            @click="reset"
-          />
-        </UTooltip>
-      </div>
-    </template>
-
-    <div class="grid gap-4">
-      <div>
-        <label class="text-sm font-medium">Letter</label>
-        <USelect v-model="modelValue.letter" :options="props.letters" option-attribute="label" />
-      </div>
-      <div>
-        <label class="text-sm font-medium">Etymology</label>
-        <USelect v-model="modelValue.etymology" :options="props.etymologies" option-attribute="label" />
-      </div>
-      <div>
-        <label class="text-sm font-medium">Stem</label>
-        <USelect v-model="modelValue.stem" :options="props.stems" option-attribute="label" />
-      </div>
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+    <div>
+      <label class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">Letter</label>
+      <USelect
+        v-model="modelValue.letter"
+        :items="letters"
+        placeholder="All letters"
+        class="w-full"
+        :disabled="letters.length <= 1"
+      />
     </div>
-  </UCard>
+
+    <div>
+      <label class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">Etymology</label>
+      <USelect
+        v-model="modelValue.etymology"
+        :items="etymologies"
+        placeholder="All etymologies"
+        class="w-full"
+        :disabled="etymologies.length <= 1"
+      />
+    </div>
+
+    <div>
+      <label class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">Stem</label>
+      <USelect
+        v-model="modelValue.stem"
+        :items="stems"
+        placeholder="All stems"
+        class="w-full"
+        :disabled="stems.length <= 1"
+      />
+    </div>
+
+    <div v-if="filtersActive" class="sm:col-span-3 flex justify-end pt-2">
+      <UButton
+        icon="i-heroicons-x-mark"
+        color="gray"
+        variant="soft"
+        size="sm"
+        @click="reset"
+      >
+        Clear all filters
+      </UButton>
+    </div>
+  </div>
 </template>

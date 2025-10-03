@@ -1,54 +1,98 @@
 <template>
-  <div class="space-y-6 p-6">
-    <UCard>
-      <template #header>
-        <div class="space-y-4">
-          <div class="flex flex-col gap-2">
-            <h1 class="text-2xl font-semibold tracking-tight">Turoyo Verb Glossary</h1>
-            <p class="text-sm text-muted">
-              Explore detailed verb entries with stems, examples, translations, and etymology.
-            </p>
-          </div>
-
-          <div v-if="stats" class="grid gap-4 sm:grid-cols-3">
-            <div class="rounded-lg border px-4 py-3">
-              <p class="text-xs uppercase text-muted">Verbs</p>
-              <p class="text-xl font-semibold">{{ stats.total_verbs }}</p>
-            </div>
-            <div class="rounded-lg border px-4 py-3">
-              <p class="text-xs uppercase text-muted">Stems</p>
-              <p class="text-xl font-semibold">{{ stats.total_stems }}</p>
-            </div>
-            <div class="rounded-lg border px-4 py-3">
-              <p class="text-xs uppercase text-muted">Examples</p>
-              <p class="text-xl font-semibold">{{ stats.total_examples }}</p>
-            </div>
-          </div>
+  <div class="sticky top-0 z-10 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <div class="mx-auto max-w-5xl px-6 py-3">
+      <div class="flex items-baseline gap-4 ml-10 mr-10">
+        <h1 class="text-lg font-semibold mr-auto whitespace-nowrap">Turoyo Verb Glossary</h1>
+        <div v-if="stats" class="flex gap-3 text-xs text-muted whitespace-nowrap">
+          <span>{{ stats.total_verbs }} verbs</span>
+          <span>•</span>
+          <span>{{ stats.total_stems }} stems</span>
+          <span>•</span>
+          <span>{{ stats.total_examples }} examples</span>
         </div>
-      </template>
+      </div>
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-5xl space-y-6 px-6 py-4">
+    <UCard>
 
       <div class="space-y-4">
-        <UInput
-          v-model="q"
-          placeholder="Search for roots, forms, translations, or etymology keywords…"
-          clearable
-          icon="i-heroicons-magnifying-glass"
-        />
+        <div class="flex flex-col gap-3">
+          <div class="flex items-center gap-3">
+            <span class="text-sm text-gray-600 dark:text-gray-400">Search type:</span>
+            <span
+              class="text-sm cursor-pointer transition-all"
+              :class="!searchEverything ? 'text-gray-900 dark:text-white underline underline-offset-4' : 'text-gray-500 dark:text-gray-500'"
+              @click="searchEverything = false"
+            >
+              Roots only
+            </span>
+            <USwitch v-model="searchEverything" />
+            <span
+              class="text-sm cursor-pointer transition-all"
+              :class="searchEverything ? 'text-gray-900 dark:text-white underline underline-offset-4' : 'text-gray-500 dark:text-gray-500'"
+              @click="searchEverything = true"
+            >
+              Everything
+            </span>
+          </div>
 
-        <div class="flex flex-wrap items-center gap-3 text-sm text-muted">
+          <div class="flex gap-2">
+            <UInput
+              v-model="q"
+              :placeholder="searchEverything ? 'Search for roots, forms, translations, or etymology keywords…' : 'Search for verb roots…'"
+              icon="i-heroicons-magnifying-glass"
+              clearable
+              class="flex-1"
+              @keydown.enter="performSearch"
+              @update:model-value="(value) => { if (!value) clearSearch() }"
+            />
+            <UButton
+              icon="i-heroicons-magnifying-glass"
+              :disabled="!q || q.trim().length < 2"
+              color="neutral"
+              variant="outline"
+              @click="performSearch"
+            >
+              Search
+            </UButton>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <VerbFilters
+            v-model="filters"
+            :letters="letterOptions"
+            :etymologies="etymologyOptions"
+            :stems="stemOptions"
+            @reset="resetFilters"
+          />
+        </div>
+
+        <div v-if="searchQuery.length >= 2" class="flex flex-wrap items-center gap-3 pt-4 text-sm text-muted">
           <span>
-            Showing {{ displayed.length }} of {{ filtered.length }} matches
+            {{ displayed.length }} {{ displayed.length === 1 ? 'match' : 'matches' }}
           </span>
-          <UBadge v-if="q.length" variant="soft">
-            Query: {{ q }}
+          <UBadge v-if="searchQuery.length" variant="soft">
+            Query: {{ searchQuery }}
+          </UBadge>
+          <UBadge v-if="filters.letter" variant="soft" color="primary">
+            Letter: {{ filters.letter }}
+          </UBadge>
+          <UBadge v-if="filters.etymology" variant="soft" color="success">
+            Etymology: {{ filters.etymology }}
+          </UBadge>
+          <UBadge v-if="filters.stem" variant="soft" color="info">
+            Stem: {{ filters.stem }}
           </UBadge>
         </div>
 
-        <UTable :data="displayed" :columns="columns" :loading="pending">
+        <UTable v-if="searchQuery.length >= 2" :data="displayed" :columns="columns" :loading="pending">
           <template #root-cell="{ row }">
             <NuxtLink
               :to="`/verbs/${rootToSlug(row.original.root)}`"
-              class="font-semibold text-primary hover:underline"
+              class="font-semibold text-primary hover:underline turoyo-text"
             >
               {{ row.original.root }}
             </NuxtLink>
@@ -64,35 +108,17 @@
         </UTable>
 
         <div
-          v-if="q.length >= 2 && filtered.length === 0 && !pending"
+          v-if="searchQuery.length >= 2 && filtered.length === 0 && !pending"
           class="rounded-lg border border-dashed px-4 py-6 text-center text-sm text-muted"
         >
           No matches found. Try another keyword or broaden your search.
         </div>
       </div>
     </UCard>
-
-    <UCard>
-      <template #header>
-        <div class="flex flex-wrap items-center justify-between gap-3">
-          <h2 class="text-lg font-semibold">Browse Filters</h2>
-          <div class="text-sm text-muted">Narrow results by letter, etymology, or stem</div>
-        </div>
-      </template>
-
-      <VerbFilters
-        v-model="filters"
-        :letters="letterOptions"
-        :etymologies="etymologyOptions"
-        :stems="stemOptions"
-        @reset="resetFilters"
-      />
-    </UCard>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useDebounceFn } from '@vueuse/core'
 import type { Filters } from '~/types/types/search'
 
 const { loadIndex, loadStatistics, search, rootToSlug } = useVerbs()
@@ -101,33 +127,95 @@ const pending = ref(false)
 const [index, stats] = await Promise.all([loadIndex(), loadStatistics()])
 
 const q = ref('')
+const searchQuery = ref('')
+const searchEverything = ref(false)
 const results = ref<string[]>([])
 const filters = ref<Filters>({ letter: null, etymology: null, stem: null })
 
+function performSearch() {
+  searchQuery.value = q.value
+}
+
+function clearSearch() {
+  q.value = ''
+  searchQuery.value = ''
+  results.value = []
+  filters.value = { letter: null, etymology: null, stem: null }
+}
+
+const baseResults = computed(() => {
+  const all = index?.roots || []
+  if (!searchQuery.value || searchQuery.value.trim().length < 2 || results.value.length === 0) {
+    return []
+  }
+  const matches = new Set(results.value)
+  return all.filter(v => matches.has(v.root))
+})
+
 const letterOptions = computed(() => {
-  const roots = index?.roots || []
-  const letters = Array.from(new Set(roots.map(v => v.root[0]))).sort()
-  return letters.map(letter => ({ label: letter, value: letter }))
+  const currentResults = baseResults.value
+
+  if (currentResults.length === 0) {
+    return [{ label: 'All letters', value: null }]
+  }
+
+  const letterCounts = new Map<string, number>()
+  currentResults.forEach(v => {
+    const letter = v.root?.[0]
+    if (letter) {
+      letterCounts.set(letter, (letterCounts.get(letter) || 0) + 1)
+    }
+  })
+
+  return [
+    { label: 'All letters', value: null },
+    ...Array.from(letterCounts.entries())
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([letter, count]) => ({ label: `${letter} (${count})`, value: letter }))
+  ]
 })
 
 const etymologyOptions = computed(() => {
-  if (!stats) return []
-  return Object.entries(stats.by_etymology)
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([source, count]) => ({
-      label: `${source} (${count})`,
-      value: source
-    }))
+  const currentResults = baseResults.value
+
+  if (currentResults.length === 0) {
+    return [{ label: 'All etymologies', value: null }]
+  }
+
+  const etymCounts = new Map<string, number>()
+  currentResults.forEach(v => {
+    const source = v.etymology_source || 'Unknown'
+    etymCounts.set(source, (etymCounts.get(source) || 0) + 1)
+  })
+
+  return [
+    { label: 'All etymologies', value: null },
+    ...Array.from(etymCounts.entries())
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([source, count]) => ({ label: `${source} (${count})`, value: source }))
+  ]
 })
 
 const stemOptions = computed(() => {
-  if (!stats) return []
-  return Object.entries(stats.by_stem)
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([stem, count]) => ({
-      label: `${stem} (${count})`,
-      value: stem
-    }))
+  const currentResults = baseResults.value
+
+  if (currentResults.length === 0) {
+    return [{ label: 'All stems', value: null }]
+  }
+
+  const stemCounts = new Map<string, number>()
+  currentResults.forEach(v => {
+    v.stems.forEach(stem => {
+      stemCounts.set(stem, (stemCounts.get(stem) || 0) + 1)
+    })
+  })
+
+  return [
+    { label: 'All stems', value: null },
+    ...Array.from(stemCounts.entries())
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([stem, count]) => ({ label: `${stem} (${count})`, value: stem }))
+  ]
 })
 
 function resetFilters() {
@@ -135,9 +223,9 @@ function resetFilters() {
 }
 
 watch(
-  q,
-  useDebounceFn(async (value: string) => {
-    console.log('[Index] Watch triggered with value:', value)
+  [searchQuery, searchEverything],
+  async ([value]) => {
+    console.log('[Index] Watch triggered with value:', value, 'searchEverything:', searchEverything.value)
 
     if (!value || value.trim().length < 2) {
       console.log('[Index] Query too short, clearing results')
@@ -148,53 +236,71 @@ watch(
 
     pending.value = true
 
-    const primary = await search(value, {
-      searchTuroyo: true,
-      searchTranslations: true,
-      searchEtymology: true,
-      maxResults: 200
-    })
+    if (searchEverything.value) {
+      // Search everything: roots, forms, translations, etymology
+      const primary = await search(value, {
+        searchTuroyo: true,
+        searchTranslations: true,
+        searchEtymology: true
+      })
 
-    console.log('[Index] Primary search returned:', primary.length, 'results')
+      console.log('[Index] Primary search returned:', primary.length, 'results')
 
-    if (primary.length === 0) {
-      console.log('[Index] No primary results, using fallback search')
-      const lower = value.toLowerCase()
-      const all = index?.roots || []
-      const alt = all
-        .filter(v => {
-          if (v.root.toLowerCase().includes(lower)) return true
-          if (v.etymology_source && v.etymology_source.toLowerCase().includes(lower)) return true
-          if (v.forms && v.forms.some(f => f.toLowerCase().includes(lower))) return true
-          return false
-        })
-        .map(v => v.root)
+      if (primary.length === 0) {
+        console.log('[Index] No primary results, using fallback search')
+        const lower = value.toLowerCase()
+        const all = index?.roots || []
+        const alt = all
+          .filter(v => {
+            if (v.root.toLowerCase().includes(lower)) return true
+            if (v.etymology_source && v.etymology_source.toLowerCase().includes(lower)) return true
+            if (v.forms && v.forms.some(f => f.toLowerCase().includes(lower))) return true
+            return false
+          })
+          .map(v => v.root)
 
-      console.log('[Index] Fallback found:', alt.length, 'results')
-      results.value = alt.slice(0, 200)
+        console.log('[Index] Fallback found:', alt.length, 'results')
+        results.value = alt
+      } else {
+        console.log('[Index] Using primary results')
+        results.value = primary
+      }
     } else {
-      console.log('[Index] Using primary results')
-      results.value = primary
+      // Search roots only
+      const primary = await search(value, {
+        searchTuroyo: true,
+        searchTranslations: false,
+        searchEtymology: false
+      })
+
+      console.log('[Index] Roots-only search returned:', primary.length, 'results')
+
+      if (primary.length === 0) {
+        console.log('[Index] No primary results, using fallback root search')
+        const lower = value.toLowerCase()
+        const all = index?.roots || []
+        const alt = all
+          .filter(v => v.root.toLowerCase().includes(lower))
+          .map(v => v.root)
+
+        console.log('[Index] Fallback found:', alt.length, 'results')
+        results.value = alt
+      } else {
+        results.value = primary
+      }
     }
 
     console.log('[Index] Final results.value:', results.value.length, 'results')
     pending.value = false
-  }, 250)
+  }
 )
 
 const filtered = computed(() => {
-  const all = index?.roots || []
+  let result = baseResults.value
 
-  if (!q.value || q.value.trim().length < 2) {
+  if (result.length === 0) {
     return []
   }
-
-  if (results.value.length === 0) {
-    return []
-  }
-
-  const matches = new Set(results.value)
-  let result = all.filter(v => matches.has(v.root))
 
   if (filters.value.letter) {
     result = result.filter(v => v.root.startsWith(filters.value.letter as string))
@@ -213,7 +319,7 @@ const filtered = computed(() => {
 })
 
 const displayed = computed(() => {
-  const result = filtered.value.slice(0, 200)
+  const result = filtered.value
   console.log('[Index] Displayed count:', result.length)
   if (result.length > 0) {
     console.log('[Index] First displayed item:', result[0])
