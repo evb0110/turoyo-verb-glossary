@@ -213,6 +213,15 @@ watch(
   async ([value]) => {
     console.log('[Index] Watch triggered with value:', value, 'searchEverything:', searchEverything.value)
 
+    if (!index.value?.roots?.length) {
+      try {
+        const loaded = await loadIndex()
+        index.value = loaded as any
+      } catch (e) {
+        console.error('[Index] Index not ready', e)
+      }
+    }
+
     if (!value || value.trim().length < 2) {
       console.log('[Index] Query too short, clearing results')
       results.value = []

@@ -78,18 +78,22 @@ export interface CrossReferences {
 export const useVerbs = () => {
   async function readPublicJson<T>(path: string): Promise<T> {
     const normalized = path.startsWith('/') ? path : `/${path}`
-    const withoutLeading = normalized.slice(1)
-    const apiRelative = withoutLeading.startsWith('appdata/api/')
-      ? withoutLeading.slice('appdata/api/'.length)
-      : withoutLeading
-
-    const apiUrl = `/api/data/${apiRelative}`
-
-    try {
-      return await $fetch<T>(apiUrl)
-    } catch {
-      return await $fetch<T>(normalized)
+    // On server: use internal API (Nitro assets storage)
+    if (process.server) {
+      const withoutLeading = normalized.slice(1)
+      const apiRelative = withoutLeading.startsWith('appdata/api/')
+        ? withoutLeading.slice('appdata/api/'.length)
+        : withoutLeading
+      const apiUrl = `/api/data/${apiRelative}`
+      try {
+        return await $fetch<T>(apiUrl)
+      } catch {
+        // Fallback to static path if route is unavailable
+        return await $fetch<T>(normalized)
+      }
     }
+    // On client: fetch directly from the CDN/static public path
+    return await $fetch<T>(normalized)
   }
   // State management for cached data
   const index = useState<VerbIndex | null>('verbs-index', () => null)
