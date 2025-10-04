@@ -244,7 +244,7 @@ const stemItems = computed(() => {
 })
 
 useHead({
-  title: () => (verb.value ? `${verb.value.root} · Turoyo Verb Glossary` : 'Turoyo Verb Glossary'),
+  title: () => (verb.value ? `${verb.value.root}` : undefined),
   meta: [
     {
       name: 'description',
