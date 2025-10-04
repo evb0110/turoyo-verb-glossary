@@ -12,24 +12,38 @@ export default defineEventHandler(async event => {
     throw createError({ statusCode: 400, statusMessage: 'Invalid path' })
   }
 
-  // Read directly from the public directory to ensure availability in dev
-  const { join } = await import('node:path')
-  const { promises: fsp } = await import('node:fs')
-
-  const filePath = join(process.cwd(), 'public', 'appdata', 'api', relativePath)
-
-  try {
-    const ext = relativePath.split('.').pop()
-    if (ext === 'json') {
-      setHeader(event, 'content-type', 'application/json; charset=utf-8')
-      const data = await fsp.readFile(filePath, 'utf-8')
-      return data
-    }
-    const buffer = await fsp.readFile(filePath)
-    return buffer
-  } catch {
-    throw createError({ statusCode: 404, statusMessage: 'Data file not found' })
+  // Prefer Nitro assets storage (works on serverless platforms)
+  const storage = useStorage('assets:public')
+  const key = `/appdata/api/${relativePath}`
+  let raw = await storage.getItemRaw(key)
+  if (!raw) {
+    const alt = key.startsWith('/') ? key.slice(1) : key
+    raw = await storage.getItemRaw(alt)
   }
+
+  if (!raw) {
+    // Dev fallback: read from filesystem
+    try {
+      const { join } = await import('node:path')
+      const { promises: fsp } = await import('node:fs')
+      const filePath = join(process.cwd(), 'public', 'appdata', 'api', relativePath)
+      const ext = relativePath.split('.').pop()
+      if (ext === 'json') {
+        setHeader(event, 'content-type', 'application/json; charset=utf-8')
+        return await fsp.readFile(filePath, 'utf-8')
+      }
+      return await fsp.readFile(filePath)
+    } catch {
+      throw createError({ statusCode: 404, statusMessage: 'Data file not found' })
+    }
+  }
+
+  const ext = relativePath.split('.').pop()
+  if (ext === 'json') {
+    setHeader(event, 'content-type', 'application/json; charset=utf-8')
+  }
+
+  return raw
 })
 
 
