@@ -1,8 +1,8 @@
 export default defineNuxtRouteMiddleware(async () => {
-  const dataPath = '/data/api/index.json'
+  if (process.client) return
 
   try {
-    await $fetch(dataPath)
+    await $fetch('/data/api/index.json')
   } catch (error) {
     console.error('Failed to load data index', error)
     throw createError({
