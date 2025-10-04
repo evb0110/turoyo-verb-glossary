@@ -108,7 +108,19 @@ import type { Filters } from '~/types/types/search'
 const { loadIndex, loadStatistics, search, rootToSlug } = useVerbs()
 
 const pending = ref(false)
-const [index, stats] = await Promise.all([loadIndex(), loadStatistics()])
+let index: any = null
+let stats: any = null
+try {
+  ;[index, stats] = await Promise.all([loadIndex(), loadStatistics()])
+} catch (e) {
+  console.error('[Index] Initial data load failed', e)
+  try {
+    index = await loadIndex()
+  } catch (e2) {
+    console.error('[Index] Fallback index load failed', e2)
+    index = { roots: [] }
+  }
+}
 
 const q = ref('')
 const searchQuery = ref('')

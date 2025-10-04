@@ -10,8 +10,8 @@ source/
 .archive/
 .data/
 
-# Large Data Files (API data is now in public/data/api/)
-data/
+# Large Data Files (only ignore top-level /data, keep public/data)
+/data/
 
 # IDE & Editor Files
 .cursor/

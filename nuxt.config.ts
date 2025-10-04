@@ -20,6 +20,7 @@ export default defineNuxtConfig({
   },
   components: [{ path: '~/components', pathPrefix: false }],
   nitro: {
-    preset: process.env.VERCEL ? 'vercel' : undefined
+    preset: process.env.VERCEL ? 'vercel' : undefined,
+    ignore: process.env.VERCEL ? ['server/routes/data/api/**'] : []
   }
 })

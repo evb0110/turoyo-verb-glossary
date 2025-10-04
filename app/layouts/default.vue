@@ -27,5 +27,11 @@
 
 <script setup lang="ts">
 const { loadIndex, loadStatistics } = useVerbs()
-const [, stats] = await Promise.all([loadIndex(), loadStatistics()])
+let stats: any = null
+try {
+  await loadIndex()
+  stats = await loadStatistics()
+} catch (e) {
+  console.error('[layout] failed to load initial stats', e)
+}
 </script>
