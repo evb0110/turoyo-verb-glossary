@@ -76,6 +76,10 @@ export interface CrossReferences {
  * Provides efficient loading and searching of verb information
  */
 export const useVerbs = () => {
+  async function readPublicJson<T>(path: string): Promise<T> {
+    const normalized = path.startsWith('/') ? path : `/${path}`
+    return await $fetch<T>(normalized)
+  }
   // State management for cached data
   const index = useState<VerbIndex | null>('verbs-index', () => null)
   const searchIndex = useState<SearchIndex | null>('search-index', () => null)
@@ -88,9 +92,9 @@ export const useVerbs = () => {
    */
   const loadIndex = async (): Promise<VerbIndex> => {
     if (!index.value) {
-      index.value = await $fetch('/data/api/index.json')
+      index.value = await readPublicJson<VerbIndex>('appdata/api/index.json')
     }
-    return index.value
+    return index.value as VerbIndex
   }
 
   /**
@@ -101,18 +105,18 @@ export const useVerbs = () => {
     if (!searchIndex.value) {
       try {
         console.log('[useVerbs] Loading search index...')
-        searchIndex.value = await $fetch('/data/api/search.json')
+        searchIndex.value = await readPublicJson<SearchIndex>('appdata/api/search.json')
         console.log('[useVerbs] Search index loaded:', {
-          turoyo_keys: Object.keys(searchIndex.value.turoyo_index).length,
-          translation_keys: Object.keys(searchIndex.value.translation_index).length,
-          etymology_keys: Object.keys(searchIndex.value.etymology_index).length
+          turoyo_keys: Object.keys((searchIndex.value as SearchIndex).turoyo_index).length,
+          translation_keys: Object.keys((searchIndex.value as SearchIndex).translation_index).length,
+          etymology_keys: Object.keys((searchIndex.value as SearchIndex).etymology_index).length
         })
       } catch (error) {
         console.error('[useVerbs] Failed to load search index:', error)
         throw error
       }
     }
-    return searchIndex.value
+    return searchIndex.value as SearchIndex
   }
 
   /**
@@ -120,9 +124,9 @@ export const useVerbs = () => {
    */
   const loadStatistics = async (): Promise<Statistics> => {
     if (!statistics.value) {
-      statistics.value = await $fetch('/data/api/statistics.json')
+      statistics.value = await readPublicJson<Statistics>('appdata/api/statistics.json')
     }
-    return statistics.value
+    return statistics.value as Statistics
   }
 
   /**
@@ -130,9 +134,9 @@ export const useVerbs = () => {
    */
   const loadCrossReferences = async (): Promise<CrossReferences> => {
     if (!crossRefs.value) {
-      crossRefs.value = await $fetch('/data/api/cross-refs.json')
+      crossRefs.value = await readPublicJson<CrossReferences>('appdata/api/cross-refs.json')
     }
-    return crossRefs.value
+    return crossRefs.value as CrossReferences
   }
 
   // Slug helpers for homonymous roots (e.g., "bdy 1" → "bdy-1")
@@ -144,7 +148,7 @@ export const useVerbs = () => {
    * @param root - The root of the verb to fetch
    */
   const getVerb = async (root: string): Promise<Verb> => {
-    return await $fetch(`/data/api/verbs/${root}.json`)
+    return await readPublicJson<Verb>(`appdata/api/verbs/${root}.json`)
   }
 
   /**
