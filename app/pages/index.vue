@@ -1,22 +1,6 @@
 <template>
-  <div class="sticky top-0 z-10 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-    <div class="mx-auto max-w-5xl px-6 py-3">
-      <div class="flex items-baseline gap-4 ml-10 mr-10">
-        <h1 class="text-lg font-semibold mr-auto whitespace-nowrap">Turoyo Verb Glossary</h1>
-        <div v-if="stats" class="flex gap-3 text-xs text-muted whitespace-nowrap">
-          <span>{{ stats.total_verbs }} verbs</span>
-          <span>•</span>
-          <span>{{ stats.total_stems }} stems</span>
-          <span>•</span>
-          <span>{{ stats.total_examples }} examples</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="mx-auto max-w-5xl space-y-6 px-6 py-4">
     <UCard>
-
       <div class="space-y-4">
         <div class="flex flex-col gap-3">
           <div class="flex items-center gap-3">
