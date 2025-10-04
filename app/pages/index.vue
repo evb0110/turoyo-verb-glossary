@@ -108,19 +108,9 @@ import type { Filters } from '~/types/types/search'
 const { loadIndex, loadStatistics, search, rootToSlug } = useVerbs()
 
 const pending = ref(false)
-let index: any = null
-let stats: any = null
-try {
-  ;[index, stats] = await Promise.all([loadIndex(), loadStatistics()])
-} catch (e) {
-  console.error('[Index] Initial data load failed', e)
-  try {
-    index = await loadIndex()
-  } catch (e2) {
-    console.error('[Index] Fallback index load failed', e2)
-    index = { roots: [] }
-  }
-}
+
+const { data: index } = await useAsyncData('index-list', () => loadIndex())
+const { data: stats } = await useAsyncData('index-stats', () => loadStatistics())
 
 const q = ref('')
 const searchQuery = ref('')
@@ -140,7 +130,7 @@ function clearSearch() {
 }
 
 const baseResults = computed(() => {
-  const all = index?.roots || []
+  const all = index.value?.roots || []
   if (!searchQuery.value || searchQuery.value.trim().length < 2 || results.value.length === 0) {
     return []
   }
@@ -245,7 +235,7 @@ watch(
       if (primary.length === 0) {
         console.log('[Index] No primary results, using fallback search')
         const lower = value.toLowerCase()
-        const all = index?.roots || []
+      const all = index.value?.roots || []
         const alt = all
           .filter(v => {
             if (v.root.toLowerCase().includes(lower)) return true
@@ -274,7 +264,7 @@ watch(
       if (primary.length === 0) {
         console.log('[Index] No primary results, using fallback root search')
         const lower = value.toLowerCase()
-        const all = index?.roots || []
+        const all = index.value?.roots || []
         const alt = all
           .filter(v => v.root.toLowerCase().includes(lower))
           .map(v => v.root)
@@ -337,5 +327,8 @@ const columns = [
     header: 'Examples'
   }
 ]
+
+// Intentionally not setting a page title here so the global
+// default site title is used in the tab.
 </script>
 

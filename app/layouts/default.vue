@@ -27,11 +27,9 @@
 
 <script setup lang="ts">
 const { loadIndex, loadStatistics } = useVerbs()
-let stats: any = null
-try {
+
+const { data: stats } = await useAsyncData('layout-stats', async () => {
   await loadIndex()
-  stats = await loadStatistics()
-} catch (e) {
-  console.error('[layout] failed to load initial stats', e)
-}
+  return await loadStatistics()
+})
 </script>
