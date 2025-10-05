@@ -91,7 +91,7 @@ class CompleteTuroyoParser:
         return {'raw': etym_text}
 
     def parse_meanings(self, text):
-        """Extract meanings from text after binyan header"""
+        """Extract meanings from text after stem header"""
         # Pattern: "1) meaning; 2) other meaning; 3) third meaning"
         meanings = []
 
@@ -223,17 +223,17 @@ class CompleteTuroyoParser:
         header = header.strip()
         return mapping.get(header, header)
 
-    def parse_binyan_header(self, entry_html):
-        """Extract binyan info with forms and meanings"""
-        binyanim = []
+    def parse_stem_header(self, entry_html):
+        """Extract stem info with forms and meanings"""
+        stems = []
 
-        # Pattern for binyan headers
-        binyan_pattern = r'<p[^>]*><font[^>]*><font size="4"[^>]*><b><span[^>]*>([IVX]+):\s*</span></b></font></font><font[^>]*><font[^>]*><i><b><span[^>]*>([^<]+)</span></b></i></font></font>(?:</p>\s*<p[^>]*><span[^>]*>)?(.*?)?(?=</p>)'
+        # Pattern for stem headers
+        stem_pattern = r'<p[^>]*><font[^>]*><font size="4"[^>]*><b><span[^>]*>([IVX]+):\s*</span></b></font></font><font[^>]*><font[^>]*><i><b><span[^>]*>([^<]+)</span></b></i></font></font>(?:</p>\s*<p[^>]*><span[^>]*>)?(.*?)?(?=</p>)'
 
-        matches = list(re.finditer(binyan_pattern, entry_html, re.DOTALL))
+        matches = list(re.finditer(stem_pattern, entry_html, re.DOTALL))
 
         for match in matches:
-            binyan_num = match.group(1)
+            stem_num = match.group(1)
             forms_text = match.group(2).strip()
             meanings_text = match.group(3) if match.group(3) else ""
 
@@ -242,14 +242,14 @@ class CompleteTuroyoParser:
             # Extract meanings if present
             meanings = self.parse_meanings(meanings_text) if meanings_text else []
 
-            binyanim.append({
-                'binyan': binyan_num,
+            stems.append({
+                'stem': stem_num,
                 'forms': forms,
                 'meanings': meanings,
                 'position': match.start()
             })
 
-        return binyanim
+        return stems
 
     def parse_entry(self, root, entry_html):
         """Parse complete verb entry"""
@@ -278,32 +278,32 @@ class CompleteTuroyoParser:
         # Parse etymology
         entry['etymology'] = self.parse_etymology(entry_html)
 
-        # Find all binyanim
-        binyanim = self.parse_binyan_header(entry_html)
+        # Find all stemim
+        stems = self.parse_stem_header(entry_html)
 
-        # Extract tables for each binyan
+        # Extract tables for each stem
         tables = list(re.finditer(r'<table[^>]*>(.*?)</table>', entry_html, re.DOTALL))
 
-        for binyan in binyanim:
-            # Find tables between this binyan and next one
-            start_pos = binyan['position']
+        for stem in stems:
+            # Find tables between this stem and next one
+            start_pos = stem['position']
 
-            # Find next binyan position or end
-            next_positions = [b['position'] for b in binyanim if b['position'] > start_pos]
+            # Find next stem position or end
+            next_positions = [b['position'] for b in stems if b['position'] > start_pos]
             end_pos = min(next_positions) if next_positions else len(entry_html)
 
             # Find tables in this range
-            binyan_tables = {}
+            stem_tables = {}
             for table_match in tables:
                 if start_pos < table_match.start() < end_pos:
                     table_data = self.extract_table_data(table_match.group(0))
-                    binyan_tables.update(table_data)
+                    stem_tables.update(table_data)
 
             stem = {
-                'binyan': binyan['binyan'],
-                'forms': binyan['forms'],
-                'meanings': binyan['meanings'],
-                'conjugations': binyan_tables
+                'stem': stem['stem'],
+                'forms': stem['forms'],
+                'meanings': stem['meanings'],
+                'conjugations': stem_tables
             }
 
             entry['stems'].append(stem)
@@ -322,7 +322,7 @@ class CompleteTuroyoParser:
                     detrans_tables.update(table_data)
 
             entry['stems'].append({
-                'binyan': 'Detransitive',
+                'stem': 'Detransitive',
                 'forms': [],
                 'meanings': [],
                 'conjugations': detrans_tables

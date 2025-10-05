@@ -27,7 +27,6 @@ export interface Stem {
     [key: string]: Example[]
   }
   // Optional fields from parser
-  binyan?: string
   label_raw?: string
   label_gloss_tokens?: { italic: boolean; text: string }[]
 }

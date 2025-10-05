@@ -175,7 +175,7 @@ class CleanTuroyoParser:
         # Remove trailing semicolon for processing
         etym_text = etym_text.rstrip(';').strip()
 
-        # CRITICAL: Check for truncation - if ends with open paren + binyan indicator, it's truncated
+        # CRITICAL: Check for truncation - if ends with open paren + stem indicator, it's truncated
         if re.search(r'\([IVX]+$', etym_text) or re.search(r'\((?:Pa|Af|Ap|Et)\.$', etym_text):
             # This is truncated - skip to prevent bad data
             return None
@@ -187,8 +187,8 @@ class CleanTuroyoParser:
         etym_text = re.sub(r'<[^>]+>', '', etym_text)  # Remove remaining HTML
         etym_text = self.normalize_whitespace(etym_text)
 
-        # Try structured format: Source root (binyan) cf. Reference: meaning
-        # Updated to handle optional binyan in parentheses
+        # Try structured format: Source root (stem) cf. Reference: meaning
+        # Updated to handle optional stem in parentheses
         structured = re.match(
             r'([A-Za-z.]+)\s+([^\s]+)\s+(?:\([^)]+\)\s+)?cf\.\s+([^:]+):\s*(.+)',
             etym_text,
@@ -457,23 +457,23 @@ class CleanTuroyoParser:
         header = self.normalize_whitespace(header)
         return mapping.get(header, header)
 
-    def parse_binyanim(self, entry_html):
-        """Find binyan headers"""
-        binyan_pattern = r'<font size="4"[^>]*><b><span[^>]*>([IVX]+):\s*</span></b></font></font><font[^>]*><font[^>]*><i><b><span[^>]*>([^<]+)</span>'
+    def parse_stems(self, entry_html):
+        """Find stem headers"""
+        stem_pattern = r'<font size="4"[^>]*><b><span[^>]*>([IVX]+):\s*</span></b></font></font><font[^>]*><font[^>]*><i><b><span[^>]*>([^<]+)</span>'
 
-        binyanim = []
-        for match in re.finditer(binyan_pattern, entry_html):
-            binyan_num = match.group(1)
+        stems = []
+        for match in re.finditer(stem_pattern, entry_html):
+            stem_num = match.group(1)
             forms_text = match.group(2).strip()
             forms = [self.normalize_whitespace(f) for f in forms_text.split('/') if f.strip()]
 
-            binyanim.append({
-                'binyan': binyan_num,
+            stems.append({
+                'stem': stem_num,
                 'forms': forms,
                 'position': match.start()
             })
 
-        return binyanim
+        return stems
 
     def parse_entry(self, root, entry_html):
         """Parse verb entry"""
@@ -500,16 +500,16 @@ class CleanTuroyoParser:
         # Etymology
         entry['etymology'] = self.parse_etymology(entry_html)
 
-        # Binyanim
-        binyanim = self.parse_binyanim(entry_html)
+        # Stems
+        stems = self.parse_stems(entry_html)
 
-        for i, binyan in enumerate(binyanim):
-            next_pos = binyanim[i+1]['position'] if i+1 < len(binyanim) else len(entry_html)
-            conjugations = self.extract_tables(entry_html, binyan['position'], next_pos)
+        for i, stem in enumerate(stems):
+            next_pos = stems[i+1]['position'] if i+1 < len(stems) else len(entry_html)
+            conjugations = self.extract_tables(entry_html, stem['position'], next_pos)
 
             entry['stems'].append({
-                'binyan': binyan['binyan'],
-                'forms': binyan['forms'],
+                'stem': stem['stem'],
+                'forms': stem['forms'],
                 'conjugations': conjugations
             })
 
@@ -529,7 +529,7 @@ class CleanTuroyoParser:
             conjugations = self.extract_tables(entry_html, detrans_match.end())
 
             entry['stems'].append({
-                'binyan': 'Detransitive',
+                'stem': 'Detransitive',
                 'forms': [],
                 'conjugations': conjugations
             })

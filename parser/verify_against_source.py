@@ -73,7 +73,7 @@ class SourceVerifier:
         print(f"  Stems: {len(verb_data.get('stems', []))}")
 
         for i, stem in enumerate(verb_data.get('stems', []), 1):
-            print(f"\n  Stem {i}: {stem['binyan']}")
+            print(f"\n  Stem {i}: {stem['stem']}")
             print(f"    Forms: {', '.join(stem['forms'])}")
             print(f"    Conjugations: {', '.join(stem['conjugations'].keys())}")
 

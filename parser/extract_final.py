@@ -204,23 +204,23 @@ class FinalTuroyoParser:
 
         return mapping.get(header.strip(), header.strip())
 
-    def parse_binyanim(self, entry_html):
-        """Find all binyan headers"""
-        binyan_pattern = r'<font size="4"[^>]*><b><span[^>]*>([IVX]+):\s*</span></b></font></font><font[^>]*><font[^>]*><i><b><span[^>]*>([^<]+)</span>'
+    def parse_stems(self, entry_html):
+        """Find all stem headers"""
+        stem_pattern = r'<font size="4"[^>]*><b><span[^>]*>([IVX]+):\s*</span></b></font></font><font[^>]*><font[^>]*><i><b><span[^>]*>([^<]+)</span>'
 
-        binyanim = []
-        for match in re.finditer(binyan_pattern, entry_html):
-            binyan_num = match.group(1)
+        stems = []
+        for match in re.finditer(stem_pattern, entry_html):
+            stem_num = match.group(1)
             forms_text = match.group(2).strip()
             forms = [f.strip() for f in forms_text.split('/') if f.strip()]
 
-            binyanim.append({
-                'binyan': binyan_num,
+            stems.append({
+                'stem': stem_num,
                 'forms': forms,
                 'position': match.start()
             })
 
-        return binyanim
+        return stems
 
     def parse_entry(self, root, entry_html):
         """Parse complete entry"""
@@ -248,19 +248,19 @@ class FinalTuroyoParser:
         # Etymology
         entry['etymology'] = self.parse_etymology(entry_html)
 
-        # Binyanim
-        binyanim = self.parse_binyanim(entry_html)
+        # Stems
+        stems = self.parse_stems(entry_html)
 
-        for i, binyan in enumerate(binyanim):
-            # Find next binyan position
-            next_pos = binyanim[i+1]['position'] if i+1 < len(binyanim) else len(entry_html)
+        for i, stem in enumerate(stems):
+            # Find next stem position
+            next_pos = stems[i+1]['position'] if i+1 < len(stems) else len(entry_html)
 
-            # Extract tables for this binyan
-            conjugations = self.extract_tables(entry_html, binyan['position'], next_pos)
+            # Extract tables for this stem
+            conjugations = self.extract_tables(entry_html, stem['position'], next_pos)
 
             entry['stems'].append({
-                'binyan': binyan['binyan'],
-                'forms': binyan['forms'],
+                'stem': stem['stem'],
+                'forms': stem['forms'],
                 'conjugations': conjugations
             })
 
@@ -274,7 +274,7 @@ class FinalTuroyoParser:
             conjugations = self.extract_tables(entry_html, detrans_match.end())
 
             entry['stems'].append({
-                'binyan': 'Detransitive',
+                'stem': 'Detransitive',
                 'forms': [],
                 'conjugations': conjugations
             })

@@ -20,7 +20,6 @@ export interface Verb {
   cross_reference: string | null
   stems: Array<{
     stem?: string
-    binyan?: string
     forms: string[]
     conjugations: Record<string, Array<{
       turoyo: string

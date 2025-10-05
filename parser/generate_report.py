@@ -23,7 +23,7 @@ def main():
         'uncertain_entries': 0,
         'with_etymology': 0,
         'etymology_sources': Counter(),
-        'binyanim': Counter(),
+        'stems': Counter(),
         'conjugation_types': Counter(),
         'total_stems': 0,
         'total_examples': 0,
@@ -55,8 +55,8 @@ def main():
             stats['verbs_with_multiple_stems'] += 1
 
         for stem in stems:
-            binyan = stem.get('binyan', 'Unknown')
-            stats['binyanim'][binyan] += 1
+            stem_name = stem.get('stem', 'Unknown')
+            stats['stems'][stem_name] += 1
 
             for conj_type, examples in stem.get('conjugations', {}).items():
                 stats['conjugation_types'][conj_type] += len(examples)
@@ -88,12 +88,12 @@ def main():
         pct = count / stats['with_etymology'] * 100
         print(f"     {source:12} {count:4} ({pct:5.1f}%)")
 
-    print(f"\n🔤 BINYANIM (STEMS)")
+    print(f"\n🔤 STEMS")
     print(f"   Verbs with multiple stems: {stats['verbs_with_multiple_stems']}")
     print(f"\n   Distribution:")
-    for binyan, count in sorted(stats['binyanim'].items(), key=lambda x: (x[0] not in ['I', 'II', 'III'], x[0])):
+    for stem_name, count in sorted(stats['stems'].items(), key=lambda x: (x[0] not in ['I', 'II', 'III'], x[0])):
         pct = count / stats['total_stems'] * 100
-        print(f"     {binyan:15} {count:4} ({pct:5.1f}%)")
+        print(f"     {stem_name:15} {count:4} ({pct:5.1f}%)")
 
     print(f"\n📝 CONJUGATION TYPES")
     print(f"   Total conjugation examples: {stats['total_examples']:,}")
@@ -166,7 +166,7 @@ def main():
                 'with_etymology': stats['with_etymology'],
             },
             'etymology_sources': dict(stats['etymology_sources']),
-            'binyanim': dict(stats['binyanim']),
+            'stems': dict(stats['stems']),
             'top_conjugations': dict(stats['conjugation_types'].most_common(20)),
         }, f, ensure_ascii=False, indent=2)
 
