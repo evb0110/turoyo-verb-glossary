@@ -33,7 +33,7 @@ def main():
                     if frags:
                         fragmented_examples.append({
                             'root': verb['root'],
-                            'binyan': stem['binyan'],
+                            'stem': stem['stem'],
                             'conjugation': conj_type,
                             'turoyo': turoyo,
                             'fragments': frags
@@ -44,7 +44,7 @@ def main():
 
     # Show first 10
     for i, ex in enumerate(fragmented_examples[:10], 1):
-        print(f"\n{i}. Root: {ex['root']} ({ex['binyan']} - {ex['conjugation']})")
+        print(f"\n{i}. Root: {ex['root']} ({ex['stem']} - {ex['conjugation']})")
         print(f"   Fragments: {ex['fragments']}")
         print(f"   Text: {ex['turoyo'][:150]}...")
         print("-"*80)

@@ -133,20 +133,20 @@ class TuroyoParser:
 
         return None
 
-    def parse_binyan_header(self, text: str) -> Optional[Tuple[str, str]]:
-        """Parse binyan header like 'I: abəʕ/obəʕ' or 'II: mʔadəb/miʔadəb'"""
+    def parse_stem_header(self, text: str) -> Optional[Tuple[str, str]]:
+        """Parse stem header like 'I: abəʕ/obəʕ' or 'II: mʔadəb/miʔadəb'"""
         # Match patterns like "I:", "II:", "III:"
-        binyan_match = re.search(r'^([IVX]+):\s*(.*)$', text.strip())
+        stem_match = re.search(r'^([IVX]+):\s*(.*)$', text.strip())
 
-        if binyan_match:
-            binyan_num = binyan_match.group(1)
-            forms_text = binyan_match.group(2).strip()
+        if stem_match:
+            stem_num = stem_match.group(1)
+            forms_text = stem_match.group(2).strip()
 
             # Extract forms (usually italic bold)
             # Forms are separated by /
             forms = [f.strip() for f in forms_text.split('/') if f.strip()]
 
-            return (binyan_num, forms)
+            return (stem_num, forms)
 
         return None
 
@@ -229,11 +229,11 @@ class TuroyoParser:
 
                 # Binyan header (I:, II:, III:)
                 if elem.name == 'p' and re.search(r'font-size:\s*14pt', str(elem)):
-                    binyan_data = self.parse_binyan_header(elem_text)
-                    if binyan_data:
+                    stem_data = self.parse_stem_header(elem_text)
+                    if stem_data:
                         current_stem = {
-                            'binyan': binyan_data[0],
-                            'forms': binyan_data[1] if isinstance(binyan_data[1], list) else [],
+                            'stem': stem_data[0],
+                            'forms': stem_data[1] if isinstance(stem_data[1], list) else [],
                             'meanings': [],
                             'conjugations': {}
                         }
@@ -242,14 +242,14 @@ class TuroyoParser:
                 # Detransitive marker
                 if 'Detransitive' in elem_text and 'font-size: 16pt' in str(elem):
                     current_stem = {
-                        'binyan': 'Detransitive',
+                        'stem': 'Detransitive',
                         'forms': [],
                         'meanings': [],
                         'conjugations': {}
                     }
                     entry['stems'].append(current_stem)
 
-                # Meanings (small font paragraphs after binyan)
+                # Meanings (small font paragraphs after stem)
                 if elem.name == 'p' and current_stem and 'font-size: 10pt' in str(elem):
                     meaning_text = elem_text
                     # Extract numbered meanings: 1) ...; 2) ...

@@ -23,7 +23,7 @@ class TuroyoAnalyzer:
         print("🔍 Analyzing Turoyo HTML structure...\n")
 
         self.analyze_roots()
-        self.analyze_binyanim()
+        self.analyze_stems()
         self.analyze_table_headers()
         self.analyze_etymology()
         self.analyze_cross_references()
@@ -53,18 +53,18 @@ class TuroyoAnalyzer:
         numbered_roots = [r for r in simple_roots if any(c.isdigit() for c in r)]
         self.stats['numbered_roots'] = numbered_roots
 
-    def analyze_binyanim(self):
-        """Find all binyan markers and patterns"""
+    def analyze_stems(self):
+        """Find all stem markers and patterns"""
         # Pattern: I:, II:, III:, etc.
-        binyan_pattern = r'<font size="4" style="font-size: (\d+)pt"><b><span[^>]*>(.*?):</span>'
-        binyanim = re.findall(binyan_pattern, self.content)
+        stem_pattern = r'<font size="4" style="font-size: (\d+)pt"><b><span[^>]*>(.*?):</span>'
+        stems_list = re.findall(stem_pattern, self.content)
 
-        binyan_types = Counter([b[1] for b in binyanim])
-        self.stats['binyan_types'] = dict(binyan_types)
+        stem_types = Counter([b[1] for b in stems_list])
+        self.stats['stem_types'] = dict(stem_types)
 
         # Check for inconsistencies in font sizes
-        binyan_fonts = Counter([b[0] for b in binyanim])
-        self.stats['binyan_font_sizes'] = dict(binyan_fonts)
+        stem_fonts = Counter([b[0] for b in stems_list])
+        self.stats['stem_font_sizes'] = dict(stem_fonts)
 
         # Find "Detransitive" markers
         detrans = re.findall(
@@ -178,8 +178,8 @@ class TuroyoAnalyzer:
         print(f"  Uncertain entries (???): {self.stats.get('uncertain_entries', 0)}")
 
         print("\n📚 BINYAN DISTRIBUTION:")
-        for binyan, count in sorted(self.stats.get('binyan_types', {}).items()):
-            print(f"  {binyan}: {count}")
+        for stem_name, count in sorted(self.stats.get('stem_types', {}).items()):
+            print(f"  {stem_name}: {count}")
 
         print("\n📋 TABLE HEADERS (top 15):")
         headers = self.stats.get('table_headers', {})

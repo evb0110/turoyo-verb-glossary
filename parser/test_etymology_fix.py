@@ -58,7 +58,7 @@ def parse_etymology_new(entry_html):
     # Remove trailing semicolon for processing
     etym_text = etym_text.rstrip(';').strip()
 
-    # Try structured format: Source root (binyan) cf. Reference: meaning
+    # Try structured format: Source root (stem) cf. Reference: meaning
     structured = re.match(
         r'([A-Za-z.]+)\s+([^\s]+)\s+(?:\([^)]+\)\s+)?cf\.\s+([^:]+):\s*(.+)',
         etym_text

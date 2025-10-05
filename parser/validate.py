@@ -60,11 +60,11 @@ class TuroyoValidator:
                 for stem in verb['stems']:
                     # Check forms
                     if not stem.get('forms'):
-                        self.issues['no_forms'].append(f"{verb['root']} - {stem['binyan']}")
+                        self.issues['no_forms'].append(f"{verb['root']} - {stem['stem']}")
 
                     # Check conjugations
                     if not stem.get('conjugations'):
-                        self.issues['no_conjugations'].append(f"{verb['root']} - {stem['binyan']}")
+                        self.issues['no_conjugations'].append(f"{verb['root']} - {stem['stem']}")
 
     def check_data_quality(self):
         """Check quality of extracted data"""
@@ -77,7 +77,7 @@ class TuroyoValidator:
                         # Check if Turoyo text exists
                         if not example.get('turoyo'):
                             self.issues['empty_turoyo'].append(
-                                f"{verb['root']} - {stem['binyan']} - {conj_type}"
+                                f"{verb['root']} - {stem['stem']} - {conj_type}"
                             )
 
                         # Check for very short examples (likely parsing errors)
@@ -166,10 +166,10 @@ class TuroyoValidator:
                     f"{verb['root']}: {len(verb['stems'])} stems"
                 )
 
-            # Check for duplicate binyanim
-            binyanim = [s['binyan'] for s in verb.get('stems', [])]
-            if len(binyanim) != len(set(binyanim)):
-                self.issues['duplicate_binyanim'].append(verb['root'])
+            # Check for duplicate stems
+            stems = [s['stem'] for s in verb.get('stems', [])]
+            if len(stems) != len(set(stems)):
+                self.issues['duplicate_stems'].append(verb['root'])
 
     def print_report(self):
         """Print validation report"""
@@ -199,7 +199,7 @@ class TuroyoValidator:
             ('short_turoyo', 'Suspiciously short Turoyo'),
             ('very_long_example', 'Very long examples'),
             ('too_many_stems', 'Too many stems'),
-            ('duplicate_binyanim', 'Duplicate binyanim'),
+            ('duplicate_stems', 'Duplicate stems'),
         ]
 
         for issue_key, issue_name in issue_types:

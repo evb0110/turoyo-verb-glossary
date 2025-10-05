@@ -80,33 +80,33 @@ class SimpleTuroyoParser:
         if etym_match:
             entry['etymology'] = etym_match.group(1).strip()
 
-        # Find binyan markers (I:, II:, III:)
-        binyan_pattern = r'<font size="4"[^>]*><b><span[^>]*>([IVX]+):\s*</span></b></font></font><font[^>]*><font[^>]*><i><b><span[^>]*>([^<]+)</span>'
+        # Find stem markers (I:, II:, III:)
+        stem_pattern = r'<font size="4"[^>]*><b><span[^>]*>([IVX]+):\s*</span></b></font></font><font[^>]*><font[^>]*><i><b><span[^>]*>([^<]+)</span>'
 
-        for binyan_match in re.finditer(binyan_pattern, entry_html):
-            binyan_num = binyan_match.group(1)
-            forms = binyan_match.group(2).strip()
+        for stem_match in re.finditer(stem_pattern, entry_html):
+            stem_num = stem_match.group(1)
+            forms = stem_match.group(2).strip()
 
             stem = {
-                'binyan': binyan_num,
+                'stem': stem_num,
                 'forms': [f.strip() for f in forms.split('/')],
                 'conjugations': {}
             }
 
-            # Extract tables after this binyan
-            # Find tables between this binyan and next binyan/detransitive
-            stem_start = binyan_match.end()
+            # Extract tables after this stem
+            # Find tables between this stem and next stem/detransitive
+            stem_start = stem_match.end()
 
-            # Find next binyan or end
-            next_binyan = re.search(binyan_pattern, entry_html[stem_start:])
+            # Find next stem or end
+            next_stem = re.search(stem_pattern, entry_html[stem_start:])
             next_detrans = re.search(r'<font size="4" style="font-size: 16pt"><b><span[^>]*>Detransitive',
                                       entry_html[stem_start:])
 
             stem_end = len(entry_html)
-            if next_binyan and next_detrans:
-                stem_end = stem_start + min(next_binyan.start(), next_detrans.start())
-            elif next_binyan:
-                stem_end = stem_start + next_binyan.start()
+            if next_stem and next_detrans:
+                stem_end = stem_start + min(next_stem.start(), next_detrans.start())
+            elif next_stem:
+                stem_end = stem_start + next_stem.start()
             elif next_detrans:
                 stem_end = stem_start + next_detrans.start()
 
@@ -129,7 +129,7 @@ class SimpleTuroyoParser:
             tables = self.extract_tables(detrans_html)
 
             entry['stems'].append({
-                'binyan': 'Detransitive',
+                'stem': 'Detransitive',
                 'forms': [],
                 'conjugations': tables
             })

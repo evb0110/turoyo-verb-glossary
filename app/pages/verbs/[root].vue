@@ -1,7 +1,7 @@
 <template>
     <div class="space-y-6 p-6">
         <div class="flex justify-end">
-            <UButton to="/" variant="ghost" icon="i-heroicons-arrow-left-circle">
+            <UButton icon="i-heroicons-arrow-left-circle" to="/" variant="ghost">
                 Back to verb list
             </UButton>
         </div>
@@ -47,8 +47,8 @@
                             v-if="verb.etymology.relationship && idx > 0"
                             class="text-xs text-muted italic"
                         >
-              ({{ verb.etymology.relationship }})
-            </span>
+                          ({{ verb.etymology.relationship }})
+                        </span>
                     </div>
                     
                     <div v-for="(etymon, eIdx) in group.etymons" :key="eIdx" class="pl-4 space-y-1 text-sm">
@@ -79,8 +79,8 @@
                 <UCard
                     v-for="item in stemItems"
                     :key="item.stem"
-                    class="border border-transparent transition hover:border-primary/40"
                     :ui="{ body: 'space-y-4' }"
+                    class="border border-transparent transition hover:border-primary/40"
                 >
                     <template v-if="item.label_gloss_tokens?.length || item.label_raw">
                         <div class="prose max-w-none text-sm">
@@ -88,13 +88,13 @@
                                 {{ `${item.stem}: ${item.forms?.length ? item.forms.join('/') : 'No recorded forms'}` }}
                             </div>
                             <div v-if="item.label_gloss_tokens?.length">
-                <span
-                    v-for="(t, i) in item.glossTokens"
-                    :key="i"
-                    :class="{ italic: t.italic }"
-                >
-                  {{ t.text }}
-                </span>
+                                <span
+                                    v-for="(t, i) in item.glossTokens"
+                                    :key="i"
+                                    :class="{ italic: t.italic }"
+                                >
+                                  {{ t.text }}
+                                </span>
                             </div>
                             <div v-else-if="item.label_raw" v-html="item.label_raw"></div>
                         </div>
@@ -117,7 +117,7 @@
                             class="space-y-3"
                         >
                             <div class="flex items-center gap-2">
-                                <UIcon name="i-heroicons-book-open" class="h-4 w-4"/>
+                                <UIcon class="h-4 w-4" name="i-heroicons-book-open"/>
                                 <h4 class="font-medium">{{ group.name }}</h4>
                             </div>
                             
@@ -125,9 +125,9 @@
                                 <UCard
                                     v-for="(example, index) in group.examples"
                                     :key="`${group.name}-${index}`"
-                                    variant="soft"
-                                    class="border-l-4 border-primary/40"
                                     :ui="{ body: 'space-y-3' }"
+                                    class="border-l-4 border-primary/40"
+                                    variant="soft"
                                 >
                                     <div class="text-lg font-medium turoyo-text">
                                         {{ example.turoyo || '—' }}
@@ -161,7 +161,7 @@
     </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 const route = useRoute();
 const { getVerbWithCrossRef, slugToRoot, rootToSlug } = useVerbs();
 

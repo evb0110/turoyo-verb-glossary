@@ -33,8 +33,8 @@ async function generateSearchIndex() {
       index.push({
         root: verb.root,
         etymology_sources: verb.etymology?.etymons?.map(e => e.source) || [],
-        stems: verb.stems.map(s => s.stem || s.binyan).filter(Boolean),
-        has_detransitive: verb.stems.some(s => (s.stem || s.binyan) === 'Detransitive'),
+        stems: verb.stems.map(s => s.stem).filter(Boolean),
+        has_detransitive: verb.stems.some(s => s.stem === 'Detransitive'),
         cross_reference: verb.cross_reference,
         example_count: verb.stems.reduce((sum, s) =>
           sum + Object.values(s.conjugations || {}).reduce((c, exs) => c + exs.length, 0), 0

@@ -114,11 +114,11 @@ def main():
             # Stem labels (verbatim + tokens), plus split gloss
             labels = extract_stem_labels(frag)
             for stem in entry.get('stems', []):
-                roman = stem.get('stem') or stem.get('binyan')
+                roman = stem.get('stem') or stem.get('stem')
                 if roman:
                     stem['stem'] = roman
-                if 'binyan' in stem:
-                    del stem['binyan']
+                if 'stem' in stem:
+                    del stem['stem']
                 if roman and roman in labels:
                     label_html = labels[roman]
                     stem['label_raw'] = label_html
