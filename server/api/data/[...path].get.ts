@@ -55,6 +55,8 @@ export default defineEventHandler(async event => {
   const ext = relativePath.split('.').pop()
   if (ext === 'json') {
     setHeader(event, 'content-type', 'application/json; charset=utf-8')
+    // Ensure JSON responses are returned as text, not raw bytes
+    return (raw as Buffer).toString('utf-8')
   }
 
   return raw

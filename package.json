@@ -4,6 +4,7 @@
   "description": "Turoyo Verb Glossary - A comprehensive database of Turoyo verbs",
   "type": "module",
   "scripts": {
+    "prebuild": "node scripts/generate-search-index.js",
     "build": "nuxt build",
     "validate": "node scripts/validate.js",
     "build:all": "npm run build && npm run validate",
