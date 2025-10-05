@@ -18,7 +18,7 @@
         </header>
         
         <main class="pb-6">
-            <UContainer>
+            <UContainer class="max-w-5xl mx-auto">
                 <slot/>
             </UContainer>
         </main>

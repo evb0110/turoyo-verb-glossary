@@ -4,3 +4,5 @@ export default defineEventHandler(event => {
   return sendRedirect(event, '/favicon.svg?v=2', 302)
 })
 
+
+
