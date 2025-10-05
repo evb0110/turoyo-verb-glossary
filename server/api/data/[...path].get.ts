@@ -22,7 +22,7 @@ export default defineEventHandler(async event => {
   }
 
   if (!raw) {
-    // Dev fallback: read from filesystem
+    // Dev fallback: filesystem, and finally absolute fetch from the same host (Vercel static CDN)
     try {
       const { join } = await import('node:path')
       const { promises: fsp } = await import('node:fs')
@@ -34,7 +34,21 @@ export default defineEventHandler(async event => {
       }
       return await fsp.readFile(filePath)
     } catch {
-      throw createError({ statusCode: 404, statusMessage: 'Data file not found' })
+      try {
+        const proto = getRequestHeader(event, 'x-forwarded-proto') || 'https'
+        const host = getRequestHeader(event, 'x-forwarded-host') || getRequestHeader(event, 'host')
+        if (!host) throw new Error('no-host')
+        const url = `${proto}://${host}/appdata/api/${relativePath}`
+        const ext = relativePath.split('.').pop()
+        const response = await $fetch(url, { responseType: ext === 'json' ? 'text' : 'arrayBuffer' })
+        if (ext === 'json') {
+          setHeader(event, 'content-type', 'application/json; charset=utf-8')
+          return response as string
+        }
+        return new Uint8Array(response as ArrayBuffer)
+      } catch {
+        throw createError({ statusCode: 404, statusMessage: 'Data file not found' })
+      }
     }
   }
 

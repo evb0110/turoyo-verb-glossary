@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+:root {
+  --ui-primary: #2e7d73;
+}
 
 .turoyo-text {
   font-style: italic;
