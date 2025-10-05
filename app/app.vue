@@ -1,5 +1,5 @@
 <template>
-  <UApp>
+  <UApp :ui="{ primary: 'teal', gray: 'slate' }">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

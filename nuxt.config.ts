@@ -12,12 +12,11 @@ export default defineNuxtConfig({
       title: 'Turoyo Verb Glossary',
       titleTemplate: ((title?: string) => title ? `${title} · Turoyo Verb Glossary` : 'Turoyo Verb Glossary') as any,
       meta: [
-        { name: 'theme-color', content: '#0EA5E9' }
+        { name: 'theme-color', content: '#2e7d73' }
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#0EA5E9' }
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg?v=2' },
+        { rel: 'mask-icon', href: '/safari-pinned-tab.svg?v=2', color: '#2e7d73' }
       ]
     }
   },
