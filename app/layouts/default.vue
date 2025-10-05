@@ -27,52 +27,13 @@
 
 
 <script setup lang="ts">
-const { loadIndex, loadStatistics } = useVerbs()
-
-const { data: stats } = await useAsyncData('layout-stats', async () => {
-  if (process.server && process.env.VERCEL_URL) {
-    try {
-      const origin = `https://${process.env.VERCEL_URL}`
-      const s = await $fetch(`${origin}/appdata/api/statistics.json`)
-      if (process.server) console.info('[layout] SSR stats from VERCEL_URL statistics.json')
-      return s
-    } catch (e) {
-      try {
-        const origin = `https://${process.env.VERCEL_URL}`
-        const idx: any = await $fetch(`${origin}/appdata/api/index.json`)
-        const roots: any[] = idx?.roots || []
-        const computed = {
-          total_verbs: idx?.total_verbs ?? roots.length,
-          total_stems: roots.reduce((sum, r) => sum + ((r.stems || []).length), 0),
-          total_examples: roots.reduce((sum, r) => sum + (r.example_count || 0), 0)
-        }
-        if (process.server) console.info('[layout] SSR stats computed from VERCEL_URL index.json')
-        return computed
-      } catch {}
-    }
-  }
-  try {
-    const s = await loadStatistics()
-    if (process.server) console.info('[layout] SSR stats from statistics.json', s)
-    return s
-  } catch (e) {
-    if (process.server) console.warn('[layout] SSR stats fallback from index.json', e)
-    const idx: any = await loadIndex()
-    const roots: any[] = idx?.roots || []
-    const computed = {
-      total_verbs: idx?.total_verbs ?? roots.length,
-      total_stems: roots.reduce((sum, r) => sum + ((r.stems || []).length), 0),
-      total_examples: roots.reduce((sum, r) => sum + (r.example_count || 0), 0)
-    }
-    if (process.server) console.info('[layout] SSR stats computed', computed)
-    return computed
-  }
-})
+// Load pre-computed stats from /api/stats (generated at build time)
+const { data: stats } = await useAsyncData('layout-stats', () =>
+  $fetch('/api/stats')
+)
 
 const displayStats = computed(() => {
-    const s: any = stats.value || { total_verbs: '—', total_stems: '—', total_examples: '—' };
-    return s;
-});
-
-// No client-time mutation to avoid hydration mismatches; SSR must provide stats
+  const s: any = stats.value || { total_verbs: '—', total_stems: '—', total_examples: '—' }
+  return s
+})
 </script>

@@ -36,6 +36,8 @@ export default defineNuxtConfig({
   nitro: {
     preset: process.env.VERCEL ? 'vercel' : undefined,
     publicAssets: [{ dir: 'public', baseURL: '/' }],
-    ignore: process.env.VERCEL ? ['server/routes/data/api/**'] : []
+    ignore: process.env.VERCEL ? ['server/routes/data/api/**'] : [],
+    // Explicitly tell Nitro where server files are (since srcDir is 'app')
+    scanDirs: ['server']
   }
 })

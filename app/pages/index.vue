@@ -83,7 +83,7 @@
                     </template>
                     
                     <template #etymology_source-cell="{ row }">
-                        <span class="text-sm">{{ row.original.etymology_source || '—' }}</span>
+                        <span class="text-sm">{{ row.original.etymology_sources?.join(', ') || '—' }}</span>
                     </template>
                     
                     <template #example_count-cell="{ row }">
@@ -170,8 +170,10 @@ const etymologyOptions = computed(() => {
     
     const etymCounts = new Map<string, number>();
     currentResults.forEach(v => {
-        const source = v.etymology_source || 'Unknown';
-        etymCounts.set(source, (etymCounts.get(source) || 0) + 1);
+        const sources = v.etymology_sources?.length ? v.etymology_sources : ['Unknown'];
+        sources.forEach(source => {
+            etymCounts.set(source, (etymCounts.get(source) || 0) + 1);
+        });
     });
     
     return [
@@ -232,15 +234,14 @@ watch(
         pending.value = true;
         
         if (searchEverything.value) {
-            // Search everything: roots, forms, translations, etymology
+            // Search everything: roots, forms, translations
             const primary = await search(value, {
-                searchTuroyo: true,
-                searchTranslations: true,
-                searchEtymology: true
+                rootsOnly: false,
+                searchTranslations: true
             });
-            
-            console.log('[Index] Primary search returned:', primary.length, 'results');
-            
+
+            console.log('[Index] Everything search returned:', primary.length, 'results');
+
             if (primary.length === 0) {
                 console.log('[Index] No primary results, using fallback search');
                 const lower = value.toLowerCase();
@@ -248,12 +249,12 @@ watch(
                 const alt = all
                     .filter(v => {
                         if (v.root.toLowerCase().includes(lower)) return true;
-                        if (v.etymology_source && v.etymology_source.toLowerCase().includes(lower)) return true;
+                        if (v.etymology_sources?.some(s => s.toLowerCase().includes(lower))) return true;
                         if (v.forms && v.forms.some(f => f.toLowerCase().includes(lower))) return true;
                         return false;
                     })
                     .map(v => v.root);
-                
+
                 console.log('[Index] Fallback found:', alt.length, 'results');
                 results.value = alt;
             } else {
@@ -261,15 +262,14 @@ watch(
                 results.value = primary;
             }
         } else {
-            // Search roots only
+            // Search roots only (not forms or translations)
             const primary = await search(value, {
-                searchTuroyo: true,
-                searchTranslations: false,
-                searchEtymology: false
+                rootsOnly: true,
+                searchTranslations: false
             });
-            
+
             console.log('[Index] Roots-only search returned:', primary.length, 'results');
-            
+
             if (primary.length === 0) {
                 console.log('[Index] No primary results, using fallback root search');
                 const lower = value.toLowerCase();
@@ -277,7 +277,7 @@ watch(
                 const alt = all
                     .filter(v => v.root.toLowerCase().includes(lower))
                     .map(v => v.root);
-                
+
                 console.log('[Index] Fallback found:', alt.length, 'results');
                 results.value = alt;
             } else {
@@ -302,7 +302,10 @@ const filtered = computed(() => {
     }
     
     if (filters.value.etymology) {
-        result = result.filter(v => (v.etymology_source || 'Unknown') === filters.value.etymology);
+        result = result.filter(v =>
+            v.etymology_sources?.includes(filters.value.etymology as string) ||
+            (!v.etymology_sources?.length && filters.value.etymology === 'Unknown')
+        );
     }
     
     if (filters.value.stem) {

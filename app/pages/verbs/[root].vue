@@ -35,28 +35,36 @@
         </div>
       </template>
 
-      <div v-if="hasEtymologyDetails || etymologyText" class="space-y-2">
-        <div class="space-y-2 text-sm">
-          <h2 class="text-xs font-semibold uppercase tracking-wider text-muted">
-            Etymology
-          </h2>
-          <p v-if="etymologyText">
-            {{ etymologyText }}
-          </p>
-          <template v-else>
-            <p v-if="verb?.etymology?.source">
-              <span class="font-medium">Source:</span>
-              {{ verb?.etymology?.source }}
+      <div v-if="verb?.etymology?.etymons?.length" class="space-y-3">
+        <h2 class="text-xs font-semibold uppercase tracking-wider text-muted">
+          Etymology
+        </h2>
+
+        <div v-for="(group, idx) in groupedEtymons" :key="idx" class="space-y-2">
+          <div class="flex items-baseline gap-2">
+            <span class="font-medium text-sm">{{ group.source }}:</span>
+            <span v-if="verb.etymology.relationship && idx > 0" class="text-xs text-muted italic">
+              ({{ verb.etymology.relationship }})
+            </span>
+          </div>
+
+          <div v-for="(etymon, eIdx) in group.etymons" :key="eIdx" class="pl-4 space-y-1 text-sm">
+            <div class="flex items-baseline gap-2">
+              <span v-if="etymon.stem || etymon.binyan" class="font-medium text-primary">
+                Stem {{ etymon.stem || etymon.binyan }}:
+              </span>
+              <span v-if="etymon.source_root" class="text-muted">{{ etymon.source_root }}</span>
+            </div>
+            <p v-if="etymon.meaning" class="text-muted">
+              {{ etymon.meaning }}
             </p>
-            <p v-if="verb?.etymology?.source_root">
-              <span class="font-medium">Source root:</span>
-              {{ verb?.etymology?.source_root }}
+            <p v-if="etymon.reference" class="text-xs text-muted">
+              Ref: {{ etymon.reference }}
             </p>
-            <p v-if="verb?.etymology?.reference">
-              <span class="font-medium">Reference:</span>
-              {{ verb?.etymology?.reference }}
+            <p v-if="etymon.raw" class="text-xs text-muted italic">
+              {{ etymon.raw }}
             </p>
-          </template>
+          </div>
         </div>
       </div>
     </UCard>
@@ -154,7 +162,10 @@
 const route = useRoute()
 const { getVerbWithCrossRef, slugToRoot, rootToSlug } = useVerbs()
 
-const root = computed(() => route.params.root as string)
+const root = computed(() => {
+  const raw = route.params.root as string
+  try { return decodeURIComponent(raw) } catch { return raw }
+})
 
 const { data: verb, error } = await useAsyncData(
   `verb-${root.value}`,
@@ -168,43 +179,22 @@ if (error.value) {
   })
 }
 
-const hasEtymologyDetails = computed(() => {
-  const e = verb.value?.etymology as any
-  return !!e && !!(e.source || e.source_root || e.reference || e.meaning || e.raw)
-})
+const groupedEtymons = computed(() => {
+  if (!verb.value?.etymology?.etymons) return []
 
-const etymologyText = computed(() => {
-  const e: any = verb.value?.etymology
-  if (e?.raw) return e.raw
-  const tokens: any[] = (verb.value as any)?.lemma_header_tokens || []
-  if (Array.isArray(tokens) && tokens.length) {
-    const joined = tokens.map(t => t.text).join('')
-    const start = joined.indexOf('(')
-    if (start !== -1) {
-      let depth = 0
-      let end = -1
-      for (let i = start; i < joined.length; i++) {
-        const ch = joined[i]
-        if (ch === '(') depth++
-        else if (ch === ')') {
-          depth--
-          if (depth === 0) { end = i; break }
-        }
-      }
-      const inner = end !== -1 ? joined.slice(start + 1, end).trim() : joined.slice(start + 1).trim()
-      if (inner) return `(${inner})`
+  const groups = new Map<string, any[]>()
+  for (const etymon of verb.value.etymology.etymons) {
+    const source = etymon.source
+    if (!groups.has(source)) {
+      groups.set(source, [])
     }
+    groups.get(source)!.push(etymon)
   }
-  if (e && (e.source || e.source_root || e.reference || e.meaning)) {
-    const parts = [
-      e.source,
-      e.source_root,
-      e.reference ? `cf. ${e.reference}` : undefined,
-    ].filter(Boolean)
-    const head = parts.filter(Boolean).join(' ')
-    return head + (e.meaning ? `: ${e.meaning}` : '')
-  }
-  return ''
+
+  return Array.from(groups.entries()).map(([source, etymons]) => ({
+    source,
+    etymons
+  }))
 })
 
 const totalExamples = computed(() => {

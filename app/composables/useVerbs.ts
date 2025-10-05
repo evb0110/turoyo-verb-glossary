@@ -1,10 +1,17 @@
 // Type definitions for Turoyo Verb data structures
 
-export interface Etymology {
+export interface Etymon {
   source: string
   source_root?: string
   reference?: string
   meaning?: string
+  stem?: string  // I, II, III, IV, Pa., Af., etc.
+  raw?: string
+}
+
+export interface Etymology {
+  etymons: Etymon[]
+  relationship?: 'also' | 'or' | 'and'
 }
 
 export interface Example {
@@ -37,7 +44,7 @@ export interface Verb {
 
 export interface VerbIndexEntry {
   root: string
-  etymology_source: string | null
+  etymology_sources: string[]
   stems: string[]
   has_detransitive: boolean
   cross_reference: string | null
@@ -50,12 +57,6 @@ export interface VerbIndex {
   total_verbs: number
   last_updated: string
   roots: VerbIndexEntry[]
-}
-
-export interface SearchIndex {
-  turoyo_index: { [key: string]: string[] }
-  translation_index: { [key: string]: string[] }
-  etymology_index: { [key: string]: string[] }
 }
 
 export interface Statistics {
@@ -85,6 +86,16 @@ export const useVerbs = () => {
         ? withoutLeading.slice('appdata/api/'.length)
         : withoutLeading
       const apiUrl = `/api/data/${apiRelative}`
+      // On Vercel, prefer absolute fetch from the deployment origin to bypass any server route issues
+      const vercelHost = process.env.VERCEL_URL
+      if (vercelHost) {
+        try {
+          const absolute = `https://${vercelHost}${normalized}`
+          return await $fetch<T>(absolute)
+        } catch {
+          // fall through to internal API
+        }
+      }
       try {
         return await $fetch<T>(apiUrl)
       } catch {
@@ -97,59 +108,57 @@ export const useVerbs = () => {
   }
   // State management for cached data
   const index = useState<VerbIndex | null>('verbs-index', () => null)
-  const searchIndex = useState<SearchIndex | null>('search-index', () => null)
   const statistics = useState<Statistics | null>('statistics', () => null)
   const crossRefs = useState<CrossReferences | null>('cross-refs', () => null)
 
   /**
-   * Load the verb index (lightweight, ~100KB)
-   * Call this once on app initialization
+   * Load the verb index from server API
+   * Uses useAsyncData for SSR hydration
    */
   const loadIndex = async (): Promise<VerbIndex> => {
-    if (!index.value) {
-      index.value = await readPublicJson<VerbIndex>('appdata/api/index.json')
+    const { data } = await useAsyncData('verbs-index', () =>
+      $fetch<{ total: number; verbs: VerbIndexEntry[] }>('/api/verbs')
+    )
+
+    if (data.value) {
+      index.value = {
+        version: '1.0',
+        last_updated: new Date().toISOString(),
+        total_verbs: data.value.total,
+        roots: data.value.verbs
+      }
     }
+
     return index.value as VerbIndex
   }
 
-  /**
-   * Load the search index (optimized for search, ~500KB)
-   * Call this on first search or load on demand
-   */
-  const loadSearchIndex = async (): Promise<SearchIndex> => {
-    if (!searchIndex.value) {
-      try {
-        console.log('[useVerbs] Loading search index...')
-        searchIndex.value = await readPublicJson<SearchIndex>('appdata/api/search.json')
-        console.log('[useVerbs] Search index loaded:', {
-          turoyo_keys: Object.keys((searchIndex.value as SearchIndex).turoyo_index).length,
-          translation_keys: Object.keys((searchIndex.value as SearchIndex).translation_index).length,
-          etymology_keys: Object.keys((searchIndex.value as SearchIndex).etymology_index).length
-        })
-      } catch (error) {
-        console.error('[useVerbs] Failed to load search index:', error)
-        throw error
-      }
-    }
-    return searchIndex.value as SearchIndex
-  }
 
   /**
-   * Load statistics data
+   * Load statistics from server API
+   * Uses useAsyncData for SSR hydration
    */
   const loadStatistics = async (): Promise<Statistics> => {
-    if (!statistics.value) {
-      statistics.value = await readPublicJson<Statistics>('appdata/api/statistics.json')
+    const { data } = await useAsyncData('statistics', () =>
+      $fetch<Statistics>('/api/stats')
+    )
+
+    if (data.value) {
+      statistics.value = data.value
     }
+
     return statistics.value as Statistics
   }
 
   /**
-   * Load cross-references mapping
+   * Load cross-references mapping (generated from verb files)
    */
   const loadCrossReferences = async (): Promise<CrossReferences> => {
     if (!crossRefs.value) {
-      crossRefs.value = await readPublicJson<CrossReferences>('appdata/api/cross-refs.json')
+      // Cross-refs are now built dynamically from verb files
+      // We get them from the server index which loads all verbs
+      await loadIndex()
+      // The cross-refs are built server-side during loadAllVerbs()
+      crossRefs.value = await $fetch<CrossReferences>('/api/cross-refs')
     }
     return crossRefs.value as CrossReferences
   }
@@ -179,72 +188,53 @@ export const useVerbs = () => {
 
   /**
    * Search for verbs matching a query
-   * Searches across Turoyo forms, translations, and etymology
+   * Uses server API to search across all verb data
    * @param query - Search query string
    * @param options - Search options
    */
   const search = async (
     query: string,
     options: {
-      searchTuroyo?: boolean
+      rootsOnly?: boolean
       searchTranslations?: boolean
-      searchEtymology?: boolean
       maxResults?: number
     } = {}
   ): Promise<string[]> => {
     const {
-      searchTuroyo = true,
-      searchTranslations = true,
-      searchEtymology = true,
+      rootsOnly = false,
+      searchTranslations = false,
       maxResults
     } = options
 
     console.log('[useVerbs] Search called with query:', query, 'options:', options)
 
-    const roots = new Set<string>()
-    const lowerQuery = query.toLowerCase()
-
-    // If only searching roots (not translations or etymology), search directly in roots
-    if (searchTuroyo && !searchTranslations && !searchEtymology) {
-      const allVerbs = await loadIndex()
-      for (const verb of allVerbs.roots) {
-        if (verb.root.toLowerCase().includes(lowerQuery)) {
-          roots.add(verb.root)
-        }
-      }
-    } else {
-      // Otherwise use the search index
-      const idx = await loadSearchIndex()
-
-      // Search in Turoyo index (all Turoyo words: forms, examples, etc.)
-      if (searchTuroyo) {
-        for (const [word, verbRoots] of Object.entries(idx.turoyo_index)) {
-          if (word.toLowerCase().includes(lowerQuery)) {
-            verbRoots.forEach(r => roots.add(r))
-          }
-        }
-      }
-
-      // Search in translation index
-      if (searchTranslations) {
-        for (const [word, verbRoots] of Object.entries(idx.translation_index)) {
-          if (word.toLowerCase().includes(lowerQuery)) {
-            verbRoots.forEach(r => roots.add(r))
-          }
-        }
-      }
-
-      // Search in etymology index
-      if (searchEtymology) {
-        for (const [source, verbRoots] of Object.entries(idx.etymology_index)) {
-          if (source.toLowerCase().includes(lowerQuery)) {
-            verbRoots.forEach(r => roots.add(r))
-          }
-        }
-      }
+    // Build query params for server API
+    const params: Record<string, string> = {
+      q: query
     }
 
-    const results = Array.from(roots)
+    if (rootsOnly) {
+      params.rootsOnly = 'true'
+    }
+
+    if (searchTranslations) {
+      params.searchTranslations = 'true'
+    }
+
+    // Use useAsyncData with dynamic key based on query
+    const cacheKey = `search-${query}-${rootsOnly ? 'roots' : 'all'}-${searchTranslations ? 'trans' : 'notrans'}`
+    const { data } = await useAsyncData(
+      cacheKey,
+      () => $fetch<{ total: number; verbs: VerbIndexEntry[] }>('/api/verbs', {
+        query: params
+      })
+    )
+
+    if (!data.value) {
+      return []
+    }
+
+    const results = data.value.verbs.map(v => v.root)
     console.log('[useVerbs] Search found', results.length, 'total results')
     const final = maxResults ? results.slice(0, maxResults) : results
     console.log('[useVerbs] Returning', final.length, 'results (after maxResults filter)')
@@ -256,8 +246,14 @@ export const useVerbs = () => {
    * @param source - Etymology source (e.g., "Arab.", "MA", "Kurd.")
    */
   const getVerbsByEtymology = async (source: string): Promise<string[]> => {
-    const idx = await loadSearchIndex()
-    return idx.etymology_index[source] || []
+    const { data } = await useAsyncData(
+      `etymology-${source}`,
+      () => $fetch<{ total: number; verbs: VerbIndexEntry[] }>('/api/verbs', {
+        query: { etymology: source }
+      })
+    )
+
+    return data.value?.verbs.map(v => v.root) || []
   }
 
   /**
@@ -265,8 +261,14 @@ export const useVerbs = () => {
    * @param stem - Stem name (e.g., "I", "II", "III", "Detransitive")
    */
   const getVerbsByStem = async (stem: string): Promise<VerbIndexEntry[]> => {
-    const idx = await loadIndex()
-    return idx.roots.filter(r => r.stems.includes(stem))
+    const { data } = await useAsyncData(
+      `stem-${stem}`,
+      () => $fetch<{ total: number; verbs: VerbIndexEntry[] }>('/api/verbs', {
+        query: { stem }
+      })
+    )
+
+    return data.value?.verbs || []
   }
 
   /**
@@ -274,14 +276,19 @@ export const useVerbs = () => {
    * @param letter - First letter of the root
    */
   const getVerbsByLetter = async (letter: string): Promise<VerbIndexEntry[]> => {
-    const idx = await loadIndex()
-    return idx.roots.filter(r => r.root.startsWith(letter))
+    const { data } = await useAsyncData(
+      `letter-${letter}`,
+      () => $fetch<{ total: number; verbs: VerbIndexEntry[] }>('/api/verbs', {
+        query: { letter }
+      })
+    )
+
+    return data.value?.verbs || []
   }
 
   return {
     // Data loading
     loadIndex,
-    loadSearchIndex,
     loadStatistics,
     loadCrossReferences,
 
@@ -301,7 +308,6 @@ export const useVerbs = () => {
 
     // State access (for direct use if needed)
     index: readonly(index),
-    searchIndex: readonly(searchIndex),
     statistics: readonly(statistics),
     crossRefs: readonly(crossRefs)
   }
