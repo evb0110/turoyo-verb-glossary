@@ -4,7 +4,7 @@
     >
         <UContainer class="flex items-center justify-between gap-4 py-4 max-w-5xl mx-auto ">
             <NuxtLink to="/" class="flex items-center gap-2 font-semibold text-lg whitespace-nowrap">
-                <UIcon name="i-heroicons-book-open" class="h-6 w-6 text-primary"/>
+                <UIcon name="i-heroicons-book-open" class="h-6 w-6 text-primary" />
                 <span>Turoyo Verb Glossary</span>
             </NuxtLink>
             <div class="flex gap-3 text-xs text-muted whitespace-nowrap">
@@ -21,7 +21,7 @@
 <script setup lang="ts">
 // Load pre-computed stats from /api/stats (generated at build time)
 const { data: stats } = await useAsyncData('layout-stats', () =>
-  $fetch('/api/stats')
+    $fetch('/api/stats')
 )
 
 const displayStats = computed(() => {

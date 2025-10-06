@@ -1,7 +1,6 @@
 export default {
-  ui: {
-    primary: 'teal',
-    gray: 'slate'
-  }
+    ui: {
+        primary: 'teal',
+        gray: 'slate'
+    }
 }
-
