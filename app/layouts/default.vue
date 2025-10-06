@@ -4,7 +4,7 @@
 
         <main class="pb-6">
             <UContainer class="max-w-5xl mx-auto">
-                <slot/>
+                <slot />
             </UContainer>
         </main>
     </div>

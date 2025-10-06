@@ -1,61 +1,61 @@
-export default defineEventHandler(async event => {
-  const query = getQuery(event)
+export default defineEventHandler(async (event) => {
+    const query = getQuery(event)
 
-  // Load search index (lightweight, single file)
-  const searchIndex = await loadSearchIndex()
-  const allVerbs = searchIndex.verbs || []
+    // Load search index (lightweight, single file)
+    const searchIndex = await loadSearchIndex()
+    const allVerbs = searchIndex.verbs || []
 
-  // Apply filters
-  let filtered = allVerbs
+    // Apply filters
+    let filtered = allVerbs
 
-  // Filter by etymology source
-  if (query.etymology) {
-    const etymSource = String(query.etymology)
-    filtered = filtered.filter(v =>
-      v.etymology_sources && v.etymology_sources.includes(etymSource)
-    )
-  }
+    // Filter by etymology source
+    if (query.etymology) {
+        const etymSource = String(query.etymology)
+        filtered = filtered.filter(v =>
+            v.etymology_sources && v.etymology_sources.includes(etymSource)
+        )
+    }
 
-  // Filter by stem
-  if (query.stem) {
-    const stemFilter = String(query.stem)
-    filtered = filtered.filter(v =>
-      v.stems && v.stems.includes(stemFilter)
-    )
-  }
+    // Filter by stem
+    if (query.stem) {
+        const stemFilter = String(query.stem)
+        filtered = filtered.filter(v =>
+            v.stems && v.stems.includes(stemFilter)
+        )
+    }
 
-  // Filter by letter
-  if (query.letter) {
-    const letter = String(query.letter)
-    filtered = filtered.filter(v => v.root.charAt(0) === letter)
-  }
+    // Filter by letter
+    if (query.letter) {
+        const letter = String(query.letter)
+        filtered = filtered.filter(v => v.root.charAt(0) === letter)
+    }
 
-  // Search query
-  if (query.q) {
-    const searchQuery = String(query.q).toLowerCase()
-    const rootsOnly = query.rootsOnly === 'true'
+    // Search query
+    if (query.q) {
+        const searchQuery = String(query.q).toLowerCase()
+        const rootsOnly = query.rootsOnly === 'true'
 
-    filtered = filtered.filter(v => {
-      // Search in root
-      if (v.root.toLowerCase().includes(searchQuery)) return true
+        filtered = filtered.filter((v) => {
+            // Search in root
+            if (v.root.toLowerCase().includes(searchQuery)) return true
 
-      // If roots only, stop here
-      if (rootsOnly) return false
+            // If roots only, stop here
+            if (rootsOnly) return false
 
-      // Search in forms
-      if (v.forms && v.forms.some(f => f.toLowerCase().includes(searchQuery))) return true
+            // Search in forms
+            if (v.forms && v.forms.some(f => f.toLowerCase().includes(searchQuery))) return true
 
-      // Note: Translation search not available in search index
-      // Users need to search by root/form only
+            // Note: Translation search not available in search index
+            // Users need to search by root/form only
 
-      return false
-    })
-  }
+            return false
+        })
+    }
 
-  // Search index already has the right format, just return it
-  setHeader(event, 'content-type', 'application/json; charset=utf-8')
-  return {
-    total: filtered.length,
-    verbs: filtered
-  }
+    // Search index already has the right format, just return it
+    setHeader(event, 'content-type', 'application/json; charset=utf-8')
+    return {
+        total: filtered.length,
+        verbs: filtered
+    }
 })
