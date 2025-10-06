@@ -2,6 +2,12 @@
 
 A Nuxt 4 web application for browsing 1,197 Turoyo verbs with etymology, conjugations, and examples. Data extracted from HTML source into structured JSON.
 
+## Package Manager
+
+**This project uses pnpm:**
+- ✓ Use `pnpm add`, `pnpm install`, `pnpm run`
+- ✗ Never use `npm` or `yarn` commands
+
 ## Terminology
 
 **Use "stem" not "binyan":**
@@ -22,10 +28,13 @@ A Nuxt 4 web application for browsing 1,197 Turoyo verbs with etymology, conjuga
 **NEVER do these without explicit user request:**
 - ❌ `git commit` - Only commit when user explicitly asks
 - ❌ `git push` - Only push when user explicitly asks
-- ❌ `npm run dev` / dev server - Dev server likely already running (port 3456)
+- ❌ `pnpm run dev` / dev server - Dev server likely already running (port 3456)
   - Check if server is running before suggesting to start it
   - Starting duplicate servers causes port conflicts
-  - If you need to test SSR, use `curl http://localhost:3456` on existing server
+  - Server is always running - after each code change, check with curl:
+    - `curl http://localhost:3456` for homepage
+    - `curl http://localhost:3456/verbs/[root]` for verb pages
+  - Never rely on browser overlay errors - always verify with curl
 
 ## Development
 
@@ -41,6 +50,6 @@ A Nuxt 4 web application for browsing 1,197 Turoyo verbs with etymology, conjuga
 - See: `app/composables/useVerbs.ts`
 
 **Build process:**
-1. `npm run prebuild` - Generates search index
-2. `npm run build` - Nuxt build
-3. `npm run validate` - Data validation
+1. `pnpm run prebuild` - Generates search index
+2. `pnpm run build` - Nuxt build
+3. `pnpm run validate` - Data validation

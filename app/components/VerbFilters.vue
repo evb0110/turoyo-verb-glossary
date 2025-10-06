@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import type { Filters, SelectOption } from '~/types/types/search'
+import type { SelectOption } from '~/types/types/search'
 
-const modelValue = defineModel<Filters>('modelValue', { required: true })
+const letter = defineModel<string | null>('letter')
+const etymology = defineModel<string | null>('etymology')
+const stem = defineModel<string | null>('stem')
 
 const props = defineProps<{
   letters: SelectOption[]
@@ -11,10 +13,12 @@ const props = defineProps<{
 
 const emits = defineEmits<{(e: 'reset'): void}>()
 
-const filtersActive = computed(() => Boolean(modelValue.value.letter || modelValue.value.etymology || modelValue.value.stem))
+const filtersActive = computed(() => Boolean(letter.value || etymology.value || stem.value))
 
 function reset() {
-  modelValue.value = { letter: null, etymology: null, stem: null }
+  letter.value = null
+  etymology.value = null
+  stem.value = null
   emits('reset')
 }
 </script>
@@ -24,7 +28,7 @@ function reset() {
     <div>
       <label class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">Letter</label>
       <USelect
-        v-model="modelValue.letter"
+        v-model="letter"
         :items="letters"
         placeholder="All letters"
         class="w-full"
@@ -35,7 +39,7 @@ function reset() {
     <div>
       <label class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">Etymology</label>
       <USelect
-        v-model="modelValue.etymology"
+        v-model="etymology"
         :items="etymologies"
         placeholder="All etymologies"
         class="w-full"
@@ -46,7 +50,7 @@ function reset() {
     <div>
       <label class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">Stem</label>
       <USelect
-        v-model="modelValue.stem"
+        v-model="stem"
         :items="stems"
         placeholder="All stems"
         class="w-full"

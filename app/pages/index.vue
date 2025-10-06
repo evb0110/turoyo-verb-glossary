@@ -46,7 +46,9 @@
                 
                 <div class="pt-2">
                     <VerbFilters
-                        v-model="filters"
+                        v-model:letter="filterLetter"
+                        v-model:etymology="filterEtymology"
+                        v-model:stem="filterStem"
                         :letters="letterOptions"
                         :etymologies="etymologyOptions"
                         :stems="stemOptions"
@@ -103,6 +105,7 @@
 </template>
 
 <script setup lang="ts">
+import { useRouteQuery } from '@vueuse/router';
 import type { Filters } from '~/types/types/search';
 
 const { loadIndex, loadStatistics, search, rootToSlug } = useVerbs();
@@ -112,11 +115,38 @@ const pending = ref(false);
 const { data: index } = await useAsyncData('index-list', () => loadIndex());
 const { data: stats } = await useAsyncData('index-stats', () => loadStatistics());
 
-const q = ref('');
-const searchQuery = ref('');
-const searchEverything = ref(false);
+// Sync search state with URL query params
+const q = useRouteQuery('q', '');
+const searchType = useRouteQuery<'roots' | 'all'>('type', 'roots');
+const filterLetter = useRouteQuery<string | null>('letter', null);
+const filterEtymology = useRouteQuery<string | null>('etymology', null);
+const filterStem = useRouteQuery<string | null>('stem', null);
+
+// Derived state
+const searchEverything = computed({
+  get: () => searchType.value === 'all',
+  set: (value) => { searchType.value = value ? 'all' : 'roots'; }
+});
+
+// Filters as computed getter for reactive access
+const filters = computed<Filters>(() => ({
+  letter: filterLetter.value,
+  etymology: filterEtymology.value,
+  stem: filterStem.value
+}));
+
+// Initialize searchQuery from URL on mount, then sync with q
+const searchQuery = ref(q.value);
 const results = ref<string[]>([]);
-const filters = ref<Filters>({ letter: null, etymology: null, stem: null });
+
+// Perform initial search from URL during SSR
+if (searchQuery.value && searchQuery.value.trim().length >= 2) {
+    const initialResults = await search(searchQuery.value, {
+        rootsOnly: !searchEverything.value,
+        searchTranslations: searchEverything.value
+    });
+    results.value = initialResults;
+}
 
 function performSearch() {
     searchQuery.value = q.value;
@@ -126,7 +156,9 @@ function clearSearch() {
     q.value = '';
     searchQuery.value = '';
     results.value = [];
-    filters.value = { letter: null, etymology: null, stem: null };
+    filterLetter.value = null;
+    filterEtymology.value = null;
+    filterStem.value = null;
 }
 
 const baseResults = computed(() => {
@@ -207,14 +239,16 @@ const stemOptions = computed(() => {
 });
 
 function resetFilters() {
-    filters.value = { letter: null, etymology: null, stem: null };
+    filterLetter.value = null;
+    filterEtymology.value = null;
+    filterStem.value = null;
 }
 
 watch(
     [searchQuery, searchEverything],
     async ([value]) => {
         console.log('[Index] Watch triggered with value:', value, 'searchEverything:', searchEverything.value);
-        
+
         if (!index.value?.roots?.length) {
             try {
                 const loaded = await loadIndex();
@@ -223,16 +257,16 @@ watch(
                 console.error('[Index] Index not ready', e);
             }
         }
-        
+
         if (!value || value.trim().length < 2) {
             console.log('[Index] Query too short, clearing results');
             results.value = [];
             pending.value = false;
             return;
         }
-        
+
         pending.value = true;
-        
+
         if (searchEverything.value) {
             // Search everything: roots, forms, translations
             const primary = await search(value, {
@@ -284,7 +318,7 @@ watch(
                 results.value = primary;
             }
         }
-        
+
         console.log('[Index] Final results.value:', results.value.length, 'results');
         pending.value = false;
     }
@@ -292,26 +326,26 @@ watch(
 
 const filtered = computed(() => {
     let result = baseResults.value;
-    
+
     if (result.length === 0) {
         return [];
     }
-    
+
     if (filters.value.letter) {
         result = result.filter(v => v.root.startsWith(filters.value.letter as string));
     }
-    
+
     if (filters.value.etymology) {
         result = result.filter(v =>
             v.etymology_sources?.includes(filters.value.etymology as string) ||
             (!v.etymology_sources?.length && filters.value.etymology === 'Unknown')
         );
     }
-    
+
     if (filters.value.stem) {
         result = result.filter(v => v.stems.includes(filters.value.stem as string));
     }
-    
+
     console.log('[Index] Filtered result count:', result.length);
     return result;
 });
