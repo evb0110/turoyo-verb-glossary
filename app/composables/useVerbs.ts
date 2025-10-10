@@ -198,12 +198,14 @@ export const useVerbs = () => {
             rootsOnly?: boolean
             searchTranslations?: boolean
             maxResults?: number
+            useRegex?: boolean
         } = {}
     ): Promise<string[]> => {
         const {
             rootsOnly = false,
             searchTranslations = false,
-            maxResults
+            maxResults,
+            useRegex = false
         } = options
 
         console.log('[useVerbs] Search called with query:', query, 'options:', options)
@@ -221,8 +223,12 @@ export const useVerbs = () => {
             params.searchTranslations = 'true'
         }
 
+        if (useRegex) {
+            params.useRegex = 'true'
+        }
+
         // Use useAsyncData with dynamic key based on query
-        const cacheKey = `search-${query}-${rootsOnly ? 'roots' : 'all'}-${searchTranslations ? 'trans' : 'notrans'}`
+        const cacheKey = `search-${query}-${rootsOnly ? 'roots' : 'all'}-${searchTranslations ? 'trans' : 'notrans'}-${useRegex ? 'regex' : 'plain'}`
         const { data } = await useAsyncData(
             cacheKey,
             () => $fetch<{ total: number, verbs: VerbIndexEntry[] }>('/api/verbs', {
