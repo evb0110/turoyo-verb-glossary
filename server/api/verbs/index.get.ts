@@ -1,3 +1,5 @@
+import { matchesPattern } from '../../utils/regexSearch'
+
 export default defineEventHandler(async (event) => {
     const query = getQuery(event)
 
@@ -32,18 +34,19 @@ export default defineEventHandler(async (event) => {
 
     // Search query
     if (query.q) {
-        const searchQuery = String(query.q).toLowerCase()
+        const searchQuery = String(query.q)
         const rootsOnly = query.rootsOnly === 'true'
+        const useRegex = query.useRegex === 'true'
 
         filtered = filtered.filter((v) => {
-            // Search in root
-            if (v.root.toLowerCase().includes(searchQuery)) return true
+            // Search in root (supports regex with \c and \v)
+            if (matchesPattern(v.root, searchQuery, { useRegex })) return true
 
             // If roots only, stop here
             if (rootsOnly) return false
 
-            // Search in forms
-            if (v.forms && v.forms.some(f => f.toLowerCase().includes(searchQuery))) return true
+            // Search in forms (supports regex with \c and \v)
+            if (v.forms && v.forms.some(f => matchesPattern(f, searchQuery, { useRegex }))) return true
 
             // Note: Translation search not available in search index
             // Users need to search by root/form only
