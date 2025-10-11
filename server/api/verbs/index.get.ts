@@ -5,10 +5,8 @@ export default defineEventHandler(async (event) => {
 
     // Load search index (lightweight, single file)
     const searchIndex = await loadSearchIndex()
-    const allVerbs = searchIndex.verbs || []
-
     // Apply filters
-    let filtered = allVerbs
+    let filtered = searchIndex.verbs || []
 
     // Filter by etymology source
     if (query.etymology) {

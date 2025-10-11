@@ -297,10 +297,10 @@ const caseSensitive = computed({
 })
 
 function getSearchPlaceholder() {
-    if (useRegex.value) {
+    if (regexMode.value === 'on') {
         return 'Regex search (use \\c for consonants, \\v for vowels)…'
     }
-    return searchEverything.value
+    return searchType.value === 'all'
         ? 'Search for roots, forms, translations, or etymology keywords…'
         : 'Search for verb roots…'
 }
@@ -319,11 +319,15 @@ const resultsTableRef = ref()
 
 // Perform initial search from URL during SSR
 if (searchQuery.value && searchQuery.value.trim().length >= 2) {
+    const isSearchingEverything = searchType.value === 'all'
+    const isUsingRegex = regexMode.value === 'on'
+    const isCaseSensitive = caseParam.value === 'on'
+
     const initialResults = await search(searchQuery.value, {
-        rootsOnly: !searchEverything.value,
-        searchTranslations: searchEverything.value,
-        useRegex: useRegex.value,
-        caseSensitive: caseSensitive.value
+        rootsOnly: !isSearchingEverything,
+        searchTranslations: isSearchingEverything,
+        useRegex: isUsingRegex,
+        caseSensitive: isCaseSensitive
     })
     results.value = initialResults
 }
@@ -425,10 +429,13 @@ function resetFilters() {
 }
 
 watch(
-    [searchQuery, searchEverything, useRegex, caseSensitive],
+    [searchQuery, searchType, regexMode, caseParam],
     async () => {
         const value = searchQuery.value
-        console.log('[Index] Watch triggered with value:', value, 'searchEverything:', searchEverything.value, 'useRegex:', useRegex.value)
+        const isSearchingEverything = searchType.value === 'all'
+        const isUsingRegex = regexMode.value === 'on'
+        const isCaseSensitive = caseParam.value === 'on'
+        console.log('[Index] Watch triggered with value:', value, 'searchEverything:', isSearchingEverything, 'useRegex:', isUsingRegex)
 
         if (!index.value?.roots?.length) {
             try {
@@ -449,18 +456,18 @@ watch(
 
         pending.value = true
 
-        if (searchEverything.value) {
+        if (isSearchingEverything) {
             // Search everything: roots, forms, translations
             const primary = await search(value, {
                 rootsOnly: false,
                 searchTranslations: true,
-                useRegex: useRegex.value,
-                caseSensitive: caseSensitive.value
+                useRegex: isUsingRegex,
+                caseSensitive: isCaseSensitive
             })
 
             console.log('[Index] Everything search returned:', primary.length, 'results')
 
-            if (primary.length === 0 && !useRegex.value) {
+            if (primary.length === 0 && !isUsingRegex) {
                 console.log('[Index] No primary results, using fallback search')
                 const lower = value.toLowerCase()
                 const all = index.value?.roots || []
@@ -486,13 +493,13 @@ watch(
             const primary = await search(value, {
                 rootsOnly: true,
                 searchTranslations: false,
-                useRegex: useRegex.value,
-                caseSensitive: caseSensitive.value
+                useRegex: isUsingRegex,
+                caseSensitive: isCaseSensitive
             })
 
             console.log('[Index] Roots-only search returned:', primary.length, 'results')
 
-            if (primary.length === 0 && !useRegex.value) {
+            if (primary.length === 0 && !isUsingRegex) {
                 console.log('[Index] No primary results, using fallback root search')
                 const lower = value.toLowerCase()
                 const all = index.value?.roots || []
@@ -560,9 +567,12 @@ if (import.meta.client) {
             }
             // Choose plain or regex-based highlighting
             let ranges
-            if (useRegex.value) {
+            const isUsingRegex = regexMode.value === 'on'
+            const isCaseSensitive = caseParam.value === 'on'
+
+            if (isUsingRegex) {
                 try {
-                    const re = createSearchRegex(qText, { caseSensitive: caseSensitive.value })
+                    const re = createSearchRegex(qText, { caseSensitive: isCaseSensitive })
                     // Force global matching; helper will add 'g' anyway
                     ranges = findRegexRanges(container, re)
                 }
@@ -571,7 +581,7 @@ if (import.meta.client) {
                     return
                 }
             } else {
-                ranges = findTextRanges(container, qText, { caseSensitive: caseSensitive.value })
+                ranges = findTextRanges(container, qText, { caseSensitive: isCaseSensitive })
             }
             setHighlights('search-match', container, ranges)
         }
@@ -580,7 +590,7 @@ if (import.meta.client) {
         }
     }
 
-    watch([displayed, searchQuery, caseSensitive, useRegex], async () => {
+    watch([displayed, searchQuery, caseParam, regexMode], async () => {
         await nextTick()
         applyHighlights()
     })
