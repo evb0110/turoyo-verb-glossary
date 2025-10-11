@@ -20,6 +20,7 @@ export default defineEventHandler(async (event) => {
     console.log(`[Translation Search] Searching ${roots.length} verbs for: "${query}"`)
 
     const matchingRoots: string[] = []
+    const verbData: Record<string, Verb> = {} // Cache loaded verbs to return
 
     // Process in batches to avoid memory issues
     const BATCH_SIZE = 50
@@ -40,12 +41,14 @@ export default defineEventHandler(async (event) => {
 
                 // Search in root
                 if (matchesPattern(verb.root, query, { useRegex, caseSensitive })) {
+                    verbData[root] = verb // Cache the loaded verb
                     return root
                 }
 
                 // Search in forms
                 for (const stem of verb.stems) {
                     if (stem.forms?.some(f => matchesPattern(f, query, { useRegex, caseSensitive }))) {
+                        verbData[root] = verb
                         return root
                     }
 
@@ -53,16 +56,33 @@ export default defineEventHandler(async (event) => {
                     if (stem.label_gloss_tokens) {
                         for (const token of stem.label_gloss_tokens) {
                             if (matchesPattern(token.text, query, { useRegex, caseSensitive })) {
+                                verbData[root] = verb
                                 return root
                             }
                         }
                     }
 
-                    // Search in translations
+                    // Search in examples (translations, turoyo text, and references)
                     for (const examples of Object.values(stem.conjugations)) {
                         for (const example of examples) {
+                            // Search in English translations
                             for (const translation of example.translations) {
                                 if (matchesPattern(translation, query, { useRegex, caseSensitive })) {
+                                    verbData[root] = verb
+                                    return root
+                                }
+                            }
+
+                            // Search in Turoyo text
+                            if (matchesPattern(example.turoyo, query, { useRegex, caseSensitive })) {
+                                verbData[root] = verb
+                                return root
+                            }
+
+                            // Search in references/citations
+                            for (const reference of example.references) {
+                                if (matchesPattern(reference, query, { useRegex, caseSensitive })) {
+                                    verbData[root] = verb
                                     return root
                                 }
                             }
@@ -74,6 +94,7 @@ export default defineEventHandler(async (event) => {
                 if (verb.etymology) {
                     for (const etymon of verb.etymology.etymons) {
                         if (etymon.meaning && matchesPattern(etymon.meaning, query, { useRegex, caseSensitive })) {
+                            verbData[root] = verb
                             return root
                         }
                     }
@@ -93,8 +114,10 @@ export default defineEventHandler(async (event) => {
 
     console.log(`[Translation Search] Found ${matchingRoots.length} matches`)
 
+    // Return both roots and cached verb data to avoid duplicate client-side loading
     return {
         total: matchingRoots.length,
-        roots: matchingRoots
+        roots: matchingRoots,
+        verbData // Include full verb data for previews (already loaded during search)
     }
 })

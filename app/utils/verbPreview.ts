@@ -4,12 +4,14 @@
 
 import type { Verb, VerbIndexEntry } from '~/composables/useVerbs'
 import { createSearchRegex } from '~/utils/regexSearch'
+import { highlightMatches } from '~/utils/highlightSSR'
 
 export interface Excerpt {
     type: 'form' | 'example' | 'translation' | 'etymology' | 'gloss'
     stem?: string
     conjugationType?: string
     text: string
+    html: string // HTML version with highlights
     label: string
 }
 
@@ -69,6 +71,7 @@ export function generateExcerpts(
                     type: 'form',
                     stem: stem.stem,
                     text: form,
+                    html: highlightMatches(form, query, opts),
                     label: `Form (Stem ${stem.stem})`
                 })
             }
@@ -89,6 +92,7 @@ export function generateExcerpts(
                         type: 'gloss',
                         stem: stem.stem,
                         text: excerptText,
+                        html: highlightMatches(excerptText, query, opts),
                         label: `Meaning (Stem ${stem.stem}):`
                     })
                 }
@@ -115,6 +119,7 @@ export function generateExcerpts(
                                 stem: stem.stem,
                                 conjugationType: conjType,
                                 text: excerptText,
+                                html: highlightMatches(excerptText, query, opts),
                                 label: `${conjType}:`
                             })
                         }
@@ -138,6 +143,7 @@ export function generateExcerpts(
                                     stem: stem.stem,
                                     conjugationType: conjType,
                                     text: excerptText,
+                                    html: highlightMatches(excerptText, query, opts),
                                     label: `Translation:`
                                 })
                             }
@@ -164,6 +170,7 @@ export function generateExcerpts(
                         excerpts.push({
                             type: 'etymology',
                             text: excerptText,
+                            html: highlightMatches(excerptText, query, opts),
                             label: `Etymology:`
                         })
                     }
