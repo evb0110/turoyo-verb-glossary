@@ -9,11 +9,19 @@
   font-style: italic;
 }
 
-/* CSS Custom Highlight for search matches */
+/* CSS Custom Highlight for search matches (client-side API) */
 ::highlight(search-match) {
   background-color: color-mix(in srgb, var(--ui-primary) 28%, transparent);
   color: inherit;
   border-radius: 2px;
+}
+
+/* SSR-compatible highlight using mark tags */
+mark.highlight-match {
+  background-color: color-mix(in srgb, var(--ui-primary) 28%, transparent);
+  color: inherit;
+  border-radius: 2px;
+  padding: 0 2px;
 }
 
 /* Verb preview in search results */

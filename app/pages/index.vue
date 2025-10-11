@@ -155,15 +155,8 @@
                                 />
                             </template>
                             <template v-else>
-                                <!-- Try to show excerpts for "everything" mode -->
-                                <div
-                                    v-if="generateExcerpts(
-                                        verbDetails.get(row.original.root)!,
-                                        searchQuery,
-                                        { useRegex: regexMode === 'on', caseSensitive: caseParam === 'on', maxExcerpts: 5 }
-                                    ).length > 0"
-                                    class="preview-excerpts"
-                                >
+                                <!-- Show excerpts for "everything" mode -->
+                                <div class="preview-excerpts">
                                     <div
                                         v-for="(excerpt, i) in generateExcerpts(
                                             verbDetails.get(row.original.root)!,
@@ -174,15 +167,9 @@
                                         class="preview-excerpt"
                                     >
                                         <span class="excerpt-label">{{ excerpt.label }}</span>
-                                        <span class="excerpt-text">{{ excerpt.text }}</span>
+                                        <span class="excerpt-text" v-html="excerpt.html"></span>
                                     </div>
                                 </div>
-                                <!-- Fallback to full preview if no excerpts found -->
-                                <div
-                                    v-else
-                                    class="preview-content"
-                                    v-html="generateFullPreview(verbDetails.get(row.original.root)!)"
-                                />
                             </template>
                         </div>
                         <div v-else class="text-sm text-gray-400">
@@ -295,8 +282,6 @@
 import { useRouteQuery } from '@vueuse/router'
 import type { Filters } from '~/types/types/search'
 import type { Verb } from '~/composables/useVerbs'
-import { clearHighlights, findTextRanges, findRegexRanges, setHighlights } from '~/utils/highlight'
-import { createSearchRegex } from '~/utils/regexSearch'
 import { loadVerbsForResults, generateExcerpts, generateFullPreview } from '~/utils/verbPreview'
 
 const { loadIndex, search, rootToSlug } = useVerbs()
@@ -368,22 +353,14 @@ if (searchQuery.value && searchQuery.value.trim().length >= 2) {
     const isUsingRegex = regexMode.value === 'on'
     const isCaseSensitive = caseParam.value === 'on'
 
-    // Try fast index search first (roots + forms)
-    const initialResults = await search(searchQuery.value, {
-        rootsOnly: !isSearchingEverything,
-        searchTranslations: false,
-        useRegex: isUsingRegex,
-        caseSensitive: isCaseSensitive
-    })
-
-    // If "everything" mode with 0 results, do translation search during SSR
-    if (isSearchingEverything && initialResults.length === 0) {
-        console.log('[SSR] No index results, searching translations on server...')
+    if (isSearchingEverything) {
+        // In "everything" mode, always do comprehensive translation search
+        console.log('[SSR] Searching everything (comprehensive translation search)...')
         const all = index.value?.roots || []
         const allRootNames = all.map(v => v.root)
 
         try {
-            const response = await $fetch<{ total: number, roots: string[] }>('/api/verbs-translation-search', {
+            const response = await $fetch<{ total: number, roots: string[], verbData?: Record<string, Verb> }>('/api/verbs-translation-search', {
                 method: 'POST',
                 body: {
                     roots: allRootNames,
@@ -394,6 +371,12 @@ if (searchQuery.value && searchQuery.value.trim().length >= 2) {
             })
             console.log('[SSR] Translation search found:', response.total, 'matches')
             results.value = response.roots
+
+            // Use cached verb data from server to avoid client-side reload
+            if (response.verbData) {
+                console.log('[SSR] Using cached verb data from server:', Object.keys(response.verbData).length, 'verbs')
+                verbDetails.value = new Map(Object.entries(response.verbData))
+            }
         }
         catch (e) {
             console.error('[SSR] Translation search failed:', e)
@@ -401,6 +384,13 @@ if (searchQuery.value && searchQuery.value.trim().length >= 2) {
         }
     }
     else {
+        // In "roots only" mode, use fast index search
+        const initialResults = await search(searchQuery.value, {
+            rootsOnly: true,
+            searchTranslations: false,
+            useRegex: isUsingRegex,
+            caseSensitive: isCaseSensitive
+        })
         results.value = initialResults
     }
 }
@@ -523,55 +513,49 @@ watch(
         if (!value || value.trim().length < 2) {
             console.log('[Index] Query too short, clearing results')
             results.value = []
+            verbDetails.value.clear() // Clear stale verb data
             pending.value = false
             return
         }
 
+        // Clear old results and verb details immediately to prevent flash of stale content
+        results.value = []
+        verbDetails.value.clear()
         pending.value = true
 
         if (isSearchingEverything) {
-            // Search everything: roots, forms, translations
-            // First try fast index search (roots + forms)
-            const primary = await search(value, {
-                rootsOnly: false,
-                searchTranslations: false,
-                useRegex: isUsingRegex,
-                caseSensitive: isCaseSensitive
-            })
+            // In "everything" mode, always do comprehensive translation search
+            console.log('[Index] Searching everything (comprehensive translation search)...')
+            const all = index.value?.roots || []
+            const allRootNames = all.map(v => v.root)
 
-            console.log('[Index] Primary search returned:', primary.length, 'results')
+            try {
+                const response = await $fetch<{ total: number, roots: string[], verbData?: Record<string, Verb> }>('/api/verbs-translation-search', {
+                    method: 'POST',
+                    body: {
+                        roots: allRootNames,
+                        query: value,
+                        useRegex: isUsingRegex,
+                        caseSensitive: isCaseSensitive
+                    }
+                })
 
-            // If no results, do server-side translation search
-            if (primary.length === 0) {
-                console.log('[Index] No results in index, searching translations on server...')
-                const all = index.value?.roots || []
-                const allRootNames = all.map(v => v.root)
+                console.log('[Index] Translation search found:', response.total, 'matches')
+                results.value = response.roots
 
-                try {
-                    const response = await $fetch<{ total: number, roots: string[] }>('/api/verbs-translation-search', {
-                        method: 'POST',
-                        body: {
-                            roots: allRootNames,
-                            query: value,
-                            useRegex: isUsingRegex,
-                            caseSensitive: isCaseSensitive
-                        }
-                    })
-
-                    console.log('[Index] Translation search found:', response.total, 'matches')
-                    results.value = response.roots
-                }
-                catch (e) {
-                    console.error('[Index] Translation search failed:', e)
-                    results.value = []
+                // Use cached verb data from server to avoid client-side reload
+                if (response.verbData) {
+                    console.log('[Index] Using cached verb data from server:', Object.keys(response.verbData).length, 'verbs')
+                    verbDetails.value = new Map(Object.entries(response.verbData))
                 }
             }
-            else {
-                results.value = primary
+            catch (e) {
+                console.error('[Index] Translation search failed:', e)
+                results.value = []
             }
         }
         else {
-            // Search roots only (not forms or translations)
+            // In "roots only" mode, use fast index search
             const primary = await search(value, {
                 rootsOnly: true,
                 searchTranslations: false,
@@ -644,11 +628,23 @@ watch(filtered, async (newFiltered) => {
         return
     }
 
-    // Load verb details for all displayed results
+    // Check if we already have verb data (from translation search cache)
+    const missingRoots = newFiltered.filter(v => !verbDetails.value.has(v.root))
+
+    if (missingRoots.length === 0) {
+        console.log('[Index] All verb details already cached, skipping load')
+        return
+    }
+
+    // Load only missing verb details
+    console.log(`[Index] Loading ${missingRoots.length} missing verb details...`)
     loadingDetails.value = true
     try {
-        const details = await loadVerbsForResults(newFiltered)
-        verbDetails.value = details
+        const details = await loadVerbsForResults(missingRoots)
+        // Merge with existing details
+        for (const [root, verb] of details.entries()) {
+            verbDetails.value.set(root, verb)
+        }
     }
     catch (e) {
         console.error('[Index] Failed to load verb details:', e)
@@ -657,50 +653,6 @@ watch(filtered, async (newFiltered) => {
         loadingDetails.value = false
     }
 }, { immediate: true })
-
-// Apply custom highlights on the client for non-regex search
-if (import.meta.client) {
-    const applyHighlights = () => {
-        try {
-            const container: HTMLElement | undefined = (resultsTableRef as any).value?.$el || (resultsTableRef as any).value?.$refs?.table || (resultsTableRef as any).value
-            const qText = searchQuery.value?.trim() || ''
-            if (!container || !qText || qText.length < 2) {
-                clearHighlights('search-match')
-                return
-            }
-            // Choose plain or regex-based highlighting
-            let ranges
-            const isUsingRegex = regexMode.value === 'on'
-            const isCaseSensitive = caseParam.value === 'on'
-
-            if (isUsingRegex) {
-                try {
-                    const re = createSearchRegex(qText, { caseSensitive: isCaseSensitive })
-                    // Force global matching; helper will add 'g' anyway
-                    ranges = findRegexRanges(container, re)
-                }
-                catch {
-                    clearHighlights('search-match')
-                    return
-                }
-            } else {
-                ranges = findTextRanges(container, qText, { caseSensitive: isCaseSensitive })
-            }
-            setHighlights('search-match', container, ranges)
-        }
-        catch {
-            // ignore
-        }
-    }
-
-    watch([displayed, searchQuery, caseParam, regexMode, verbDetails], async () => {
-        await nextTick()
-        applyHighlights()
-    })
-
-    onMounted(() => applyHighlights())
-    onBeforeUnmount(() => clearHighlights('search-match'))
-}
 
 const columns = [
     {
