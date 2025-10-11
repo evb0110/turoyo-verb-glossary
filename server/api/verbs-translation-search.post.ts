@@ -45,6 +45,16 @@ export default defineEventHandler(async (event) => {
                     return root
                 }
 
+                // Search in lemma header (contains bibliographic references, citations, attributions)
+                if (verb.lemma_header_tokens) {
+                    for (const token of verb.lemma_header_tokens) {
+                        if (matchesPattern(token.text, query, { useRegex, caseSensitive })) {
+                            verbData[root] = verb
+                            return root
+                        }
+                    }
+                }
+
                 // Search in forms
                 for (const stem of verb.stems) {
                     if (stem.forms?.some(f => matchesPattern(f, query, { useRegex, caseSensitive }))) {
