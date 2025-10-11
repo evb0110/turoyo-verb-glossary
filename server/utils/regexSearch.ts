@@ -13,81 +13,82 @@ const TUROYO_CONSONANTS = '(?:b|d|f|g|h|k|l|m|n|p|q|r|s|t|v|w|x|y|z|č|ġ|š|ž|
  * Convert search pattern with \c and \v shortcuts to proper regex
  */
 export function expandRegexShortcuts(pattern: string): string {
-  return pattern
-    .replace(/\\v/gi, TUROYO_VOWELS)
-    .replace(/\\c/gi, TUROYO_CONSONANTS)
+    return pattern
+        .replace(/\\v/gi, TUROYO_VOWELS)
+        .replace(/\\c/gi, TUROYO_CONSONANTS)
 }
 
 /**
  * Check if a pattern contains regex special characters or shortcuts
  */
 export function isRegexPattern(pattern: string): boolean {
-  // Check for \c or \v shortcuts
-  if (/\\[cv]/i.test(pattern)) {
-    return true
-  }
+    // Check for \c or \v shortcuts
+    if (/\\[cv]/i.test(pattern)) {
+        return true
+    }
 
-  // Check for common regex metacharacters
-  const regexMetaChars = /[.*+?^${}()|[\]]/
-  return regexMetaChars.test(pattern)
+    // Check for common regex metacharacters
+    const regexMetaChars = /[.*+?^${}()|[\]]/
+    return regexMetaChars.test(pattern)
 }
 
 /**
  * Create a RegExp from a pattern with \c and \v shortcuts
  */
 export function createSearchRegex(
-  pattern: string,
-  options: {
-    caseSensitive?: boolean
-  } = {}
+    pattern: string,
+    options: {
+        caseSensitive?: boolean
+    } = {}
 ): RegExp | null {
-  const { caseSensitive = false } = options
+    const { caseSensitive = false } = options
 
-  // Expand \c and \v shortcuts
-  const expandedPattern = expandRegexShortcuts(pattern)
+    // Expand \c and \v shortcuts
+    const expandedPattern = expandRegexShortcuts(pattern)
 
-  // Build flags
-  const flags = `${caseSensitive ? '' : 'i'}u` // always use unicode flag
+    // Build flags
+    const flags = `${caseSensitive ? '' : 'i'}u` // always use unicode flag
 
-  try {
-    return new RegExp(expandedPattern, flags)
-  } catch {
-    return null
-  }
+    try {
+        return new RegExp(expandedPattern, flags)
+    }
+    catch {
+        return null
+    }
 }
 
 /**
  * Test if a string matches a search pattern with \c and \v support
  */
 export function matchesPattern(
-  text: string,
-  pattern: string,
-  options: {
-    caseSensitive?: boolean
-    useRegex?: boolean
-  } = {}
+    text: string,
+    pattern: string,
+    options: {
+        caseSensitive?: boolean
+        useRegex?: boolean
+    } = {}
 ): boolean {
-  const { caseSensitive = false, useRegex = false } = options
+    const { caseSensitive = false, useRegex = false } = options
 
-  if (!pattern) {
-    return false
-  }
+    if (!pattern) {
+        return false
+    }
 
-  // If regex toggle is off, always do a plain-text includes match
-  if (!useRegex) {
-    return caseSensitive
-      ? text.includes(pattern)
-      : text.toLowerCase().includes(pattern.toLowerCase())
-  }
+    // If regex toggle is off, always do a plain-text includes match
+    if (!useRegex) {
+        return caseSensitive
+            ? text.includes(pattern)
+            : text.toLowerCase().includes(pattern.toLowerCase())
+    }
 
-  // Use regex matching
-  const regex = createSearchRegex(pattern, { caseSensitive })
-  if (!regex) {
+    // Use regex matching
+    const regex = createSearchRegex(pattern, { caseSensitive })
+    if (!regex) {
     // If regex fails, fall back to simple includes
-    return caseSensitive
-      ? text.includes(pattern)
-      : text.toLowerCase().includes(pattern.toLowerCase())
-  }
+        return caseSensitive
+            ? text.includes(pattern)
+            : text.toLowerCase().includes(pattern.toLowerCase())
+    }
 
-  return regex.test(text)
+    return regex.test(text)
 }

@@ -24,9 +24,9 @@ const TUROYO_CONSONANTS = '(?:b|d|f|g|h|k|l|m|n|p|q|r|s|t|v|w|x|y|z|č|ġ|š|ž|
  * expandRegexShortcuts('\\c\\v\\c') // → '(?:b|d|f|...)(?:a|e|i|...)(?:b|d|f|...)'
  */
 export function expandRegexShortcuts(pattern: string): string {
-  return pattern
-    .replace(/\\v/gi, TUROYO_VOWELS)
-    .replace(/\\c/gi, TUROYO_CONSONANTS)
+    return pattern
+        .replace(/\\v/gi, TUROYO_VOWELS)
+        .replace(/\\c/gi, TUROYO_CONSONANTS)
 }
 
 /**
@@ -37,15 +37,15 @@ export function expandRegexShortcuts(pattern: string): string {
  * @returns true if pattern appears to use regex syntax
  */
 export function isRegexPattern(pattern: string): boolean {
-  // Check for \c or \v shortcuts
-  if (/\\[cv]/i.test(pattern)) {
-    return true
-  }
+    // Check for \c or \v shortcuts
+    if (/\\[cv]/i.test(pattern)) {
+        return true
+    }
 
-  // Check for common regex metacharacters
-  // Note: We need to be careful not to match literal dots in normal text
-  const regexMetaChars = /[.*+?^${}()|[\]]/
-  return regexMetaChars.test(pattern)
+    // Check for common regex metacharacters
+    // Note: We need to be careful not to match literal dots in normal text
+    const regexMetaChars = /[.*+?^${}()|[\]]/
+    return regexMetaChars.test(pattern)
 }
 
 /**
@@ -59,30 +59,31 @@ export function isRegexPattern(pattern: string): boolean {
  * @throws Error if the regex pattern is invalid
  */
 export function createSearchRegex(
-  pattern: string,
-  options: {
-    caseSensitive?: boolean
-    wholeWord?: boolean
-  } = {}
+    pattern: string,
+    options: {
+        caseSensitive?: boolean
+        wholeWord?: boolean
+    } = {}
 ): RegExp {
-  const { caseSensitive = false, wholeWord = false } = options
+    const { caseSensitive = false, wholeWord = false } = options
 
-  // Expand \c and \v shortcuts
-  let expandedPattern = expandRegexShortcuts(pattern)
+    // Expand \c and \v shortcuts
+    let expandedPattern = expandRegexShortcuts(pattern)
 
-  // Add word boundaries if requested
-  if (wholeWord) {
-    expandedPattern = `\\b${expandedPattern}\\b`
-  }
+    // Add word boundaries if requested
+    if (wholeWord) {
+        expandedPattern = `\\b${expandedPattern}\\b`
+    }
 
-  // Build flags
-  const flags = `${caseSensitive ? '' : 'i'}u` // always use unicode flag
+    // Build flags
+    const flags = `${caseSensitive ? '' : 'i'}u` // always use unicode flag
 
-  try {
-    return new RegExp(expandedPattern, flags)
-  } catch (error) {
-    throw new Error(`Invalid regex pattern: ${pattern}. ${error instanceof Error ? error.message : ''}`)
-  }
+    try {
+        return new RegExp(expandedPattern, flags)
+    }
+    catch (error) {
+        throw new Error(`Invalid regex pattern: ${pattern}. ${error instanceof Error ? error.message : ''}`)
+    }
 }
 
 /**
@@ -94,45 +95,76 @@ export function createSearchRegex(
  * @returns true if the pattern matches the text
  */
 export function matchesPattern(
-  text: string,
-  pattern: string,
-  options: {
-    caseSensitive?: boolean
-    useRegex?: boolean
-  } = {}
+    text: string,
+    pattern: string,
+    options: {
+        caseSensitive?: boolean
+        useRegex?: boolean
+    } = {}
 ): boolean {
-  const { caseSensitive = false, useRegex = false } = options
+    const { caseSensitive = false, useRegex = false } = options
 
-  if (!pattern) {
-    return false
-  }
+    if (!pattern) {
+        return false
+    }
 
-  // If regex toggle is off, always do a plain-text includes match
-  if (!useRegex) {
-    return caseSensitive
-      ? text.includes(pattern)
-      : text.toLowerCase().includes(pattern.toLowerCase())
-  }
+    // If regex toggle is off, always do a plain-text includes match
+    if (!useRegex) {
+        return caseSensitive
+            ? text.includes(pattern)
+            : text.toLowerCase().includes(pattern.toLowerCase())
+    }
 
-  // Use regex matching
-  try {
-    const regex = createSearchRegex(pattern, { caseSensitive })
-    return regex.test(text)
-  } catch {
+    // Use regex matching
+    try {
+        const regex = createSearchRegex(pattern, { caseSensitive })
+        return regex.test(text)
+    }
+    catch {
     // If regex fails, fall back to simple includes
-    return caseSensitive
-      ? text.includes(pattern)
-      : text.toLowerCase().includes(pattern.toLowerCase())
-  }
+        return caseSensitive
+            ? text.includes(pattern)
+            : text.toLowerCase().includes(pattern.toLowerCase())
+    }
+}
+
+/**
+ * Create a global version of a regex for multiple matches
+ * @param regex - Original regex pattern
+ * @returns Regex with global flag enabled
+ */
+export function makeGlobalRegex(regex: RegExp): RegExp {
+    const flags = regex.flags.includes('g') ? regex.flags : `g${regex.flags}`
+    return new RegExp(regex.source, flags)
+}
+
+/**
+ * Iterator that safely handles zero-length matches
+ * Prevents infinite loops when matching patterns like `\b` or `(?=...)`
+ * @param text - Text to search in
+ * @param regex - Regular expression to match
+ * @yields RegExpExecArray for each match
+ */
+export function* matchAll(text: string, regex: RegExp): Generator<RegExpExecArray> {
+    const globalRegex = makeGlobalRegex(regex)
+    let match: RegExpExecArray | null
+
+    while ((match = globalRegex.exec(text)) !== null) {
+        yield match
+        // Prevent infinite loop on zero-length matches
+        if (match[0].length === 0) {
+            globalRegex.lastIndex += 1
+        }
+    }
 }
 
 /**
  * Get helpful examples for regex shortcuts
  */
 export const REGEX_EXAMPLES = [
-  { pattern: '\\c\\v\\c', description: 'Any consonant-vowel-consonant pattern (e.g., "bdy", "ktb")' },
-  { pattern: 'b\\vd', description: 'Words with "b" + vowel + "d" (e.g., "bdy", "bod")' },
-  { pattern: '^\\c\\c\\c$', description: 'Exactly three consonants (e.g., "bdy", "ktb")' },
-  { pattern: 'ʕ\\v', description: 'ʕ followed by any vowel' },
-  { pattern: '\\vl$', description: 'Ends with vowel + "l"' },
+    { pattern: '\\c\\v\\c', description: 'Any consonant-vowel-consonant pattern (e.g., "bdy", "ktb")' },
+    { pattern: 'b\\vd', description: 'Words with "b" + vowel + "d" (e.g., "bdy", "bod")' },
+    { pattern: '^\\c\\c\\c$', description: 'Exactly three consonants (e.g., "bdy", "ktb")' },
+    { pattern: 'ʕ\\v', description: 'ʕ followed by any vowel' },
+    { pattern: '\\vl$', description: 'Ends with vowel + "l"' }
 ] as const
