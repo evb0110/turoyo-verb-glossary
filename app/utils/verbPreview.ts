@@ -58,11 +58,13 @@ export function generateExcerpts(
     const excerpts: Excerpt[] = []
     const regex = createSearchRegex(query, opts)
     const maxExcerpts = opts.maxExcerpts ?? 5
+    const seenTexts = new Set<string>() // Track unique texts to avoid duplicates
 
     // 1. Search in forms
     for (const stem of verb.stems) {
         for (const form of stem.forms) {
-            if (regex.test(form)) {
+            if (regex.test(form) && !seenTexts.has(form)) {
+                seenTexts.add(form)
                 excerpts.push({
                     type: 'form',
                     stem: stem.stem,
@@ -80,12 +82,16 @@ export function generateExcerpts(
 
             const glossMatch = glossText.match(regex)
             if (glossMatch && glossMatch.index !== undefined) {
-                excerpts.push({
-                    type: 'gloss',
-                    stem: stem.stem,
-                    text: extractContext(glossText, glossMatch.index, glossMatch[0].length, 60),
-                    label: `Meaning (Stem ${stem.stem}):`
-                })
+                const excerptText = extractContext(glossText, glossMatch.index, glossMatch[0].length, 60)
+                if (!seenTexts.has(excerptText)) {
+                    seenTexts.add(excerptText)
+                    excerpts.push({
+                        type: 'gloss',
+                        stem: stem.stem,
+                        text: excerptText,
+                        label: `Meaning (Stem ${stem.stem}):`
+                    })
+                }
             }
         }
 
@@ -101,13 +107,17 @@ export function generateExcerpts(
                 if (example.turoyo) {
                     const tMatch = example.turoyo.match(regex)
                     if (tMatch && tMatch.index !== undefined) {
-                        excerpts.push({
-                            type: 'example',
-                            stem: stem.stem,
-                            conjugationType: conjType,
-                            text: extractContext(example.turoyo, tMatch.index, tMatch[0].length, 60),
-                            label: `${conjType}:`
-                        })
+                        const excerptText = extractContext(example.turoyo, tMatch.index, tMatch[0].length, 60)
+                        if (!seenTexts.has(excerptText)) {
+                            seenTexts.add(excerptText)
+                            excerpts.push({
+                                type: 'example',
+                                stem: stem.stem,
+                                conjugationType: conjType,
+                                text: excerptText,
+                                label: `${conjType}:`
+                            })
+                        }
                     }
                 }
 
@@ -120,13 +130,17 @@ export function generateExcerpts(
                     if (translation) {
                         const trMatch = translation.match(regex)
                         if (trMatch && trMatch.index !== undefined) {
-                            excerpts.push({
-                                type: 'translation',
-                                stem: stem.stem,
-                                conjugationType: conjType,
-                                text: extractContext(translation, trMatch.index, trMatch[0].length, 60),
-                                label: `Translation:`
-                            })
+                            const excerptText = extractContext(translation, trMatch.index, trMatch[0].length, 60)
+                            if (!seenTexts.has(excerptText)) {
+                                seenTexts.add(excerptText)
+                                excerpts.push({
+                                    type: 'translation',
+                                    stem: stem.stem,
+                                    conjugationType: conjType,
+                                    text: excerptText,
+                                    label: `Translation:`
+                                })
+                            }
                         }
                     }
                 }
@@ -134,7 +148,7 @@ export function generateExcerpts(
         }
     }
 
-    // 3. Search in etymology
+    // 4. Search in etymology
     if (verb.etymology) {
         for (const etymon of verb.etymology.etymons) {
             if (excerpts.length >= maxExcerpts) {
@@ -144,11 +158,15 @@ export function generateExcerpts(
             if (etymon.meaning) {
                 const eMatch = etymon.meaning.match(regex)
                 if (eMatch && eMatch.index !== undefined) {
-                    excerpts.push({
-                        type: 'etymology',
-                        text: extractContext(etymon.meaning, eMatch.index, eMatch[0].length, 60),
-                        label: `Etymology:`
-                    })
+                    const excerptText = extractContext(etymon.meaning, eMatch.index, eMatch[0].length, 60)
+                    if (!seenTexts.has(excerptText)) {
+                        seenTexts.add(excerptText)
+                        excerpts.push({
+                            type: 'etymology',
+                            text: excerptText,
+                            label: `Etymology:`
+                        })
+                    }
                 }
             }
         }
