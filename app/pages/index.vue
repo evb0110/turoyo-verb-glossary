@@ -630,6 +630,44 @@ watch(filtered, async (newFiltered) => {
     }
 }, { immediate: true })
 
+// Trigger translation search on mount if needed (SSR only did index search)
+if (import.meta.client) {
+    onMounted(async () => {
+        // If we're in "everything" mode with a query but 0 results, trigger translation search
+        if (searchType.value === 'all' && searchQuery.value && searchQuery.value.trim().length >= 2 && results.value.length === 0) {
+            console.log('[Index] Client mounted with 0 results, triggering translation search')
+            pending.value = true
+
+            const all = index.value?.roots || []
+            const allRootNames = all.map(v => v.root)
+            const isUsingRegex = regexMode.value === 'on'
+            const isCaseSensitive = caseParam.value === 'on'
+
+            try {
+                const response = await $fetch<{ total: number, roots: string[] }>('/api/verbs-translation-search', {
+                    method: 'POST',
+                    body: {
+                        roots: allRootNames,
+                        query: searchQuery.value,
+                        useRegex: isUsingRegex,
+                        caseSensitive: isCaseSensitive
+                    }
+                })
+
+                console.log('[Index] Translation search found:', response.total, 'matches')
+                results.value = response.roots
+            }
+            catch (e) {
+                console.error('[Index] Translation search failed:', e)
+                results.value = []
+            }
+            finally {
+                pending.value = false
+            }
+        }
+    })
+}
+
 // Apply custom highlights on the client for non-regex search
 if (import.meta.client) {
     const applyHighlights = () => {
