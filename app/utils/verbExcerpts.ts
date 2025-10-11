@@ -161,19 +161,27 @@ export function generateExcerpts(
         }
     }
 
-    // 5. Search in etymology
-    if (verb.etymology) {
+    // 5. Search in etymology (all fields: meaning, notes, raw, source_root)
+    if (verb.etymology && Array.isArray(verb.etymology.etymons)) {
         for (const etymon of verb.etymology.etymons) {
             if (excerpts.length >= maxExcerpts) {
                 break
             }
 
-            if (etymon.meaning) {
+            // Search in all text fields of the etymon
+            const searchFields = [
+                etymon.meaning,
+                etymon.notes,
+                etymon.raw,
+                etymon.source_root
+            ].filter(Boolean) // Remove undefined/null values
+
+            for (const field of searchFields) {
                 // Find ALL matches using the matchAll generator
-                for (const match of matchAll(etymon.meaning, regex)) {
+                for (const match of matchAll(field, regex)) {
                     if (excerpts.length >= maxExcerpts) break
 
-                    const excerptText = extractContext(etymon.meaning, match.index, match[0].length, 60)
+                    const excerptText = extractContext(field, match.index, match[0].length, 60)
                     addExcerpt(excerpts, seenTexts, excerptText, {
                         type: 'etymology',
                         html: highlightMatches(excerptText, query, opts),

@@ -105,7 +105,7 @@ class FinalTuroyoParser:
         return bool(re.search(r'[ʔʕḥṣṭḏṯẓġǧəǝščž]', text or ''))
 
     def parse_etymology(self, entry_html):
-        """Parse etymology with support for nested parentheses and edge cases"""
+        """Parse etymology with support for nested parentheses, edge cases, and multiple sources"""
         etym_pattern = r'\(&lt;\s*(.+?)\s*\)(?:\s*[A-Z<]|$)'
         match = re.search(etym_pattern, entry_html, re.DOTALL)
 
@@ -121,6 +121,39 @@ class FinalTuroyoParser:
         etym_text = re.sub(r'<[^>]+>', '', etym_text)
         etym_text = self.normalize_whitespace(etym_text)
 
+        # Check for complex etymologies with "also", "or", "and" relationships
+        relationship = None
+        etymon_parts = [etym_text]
+
+        if ' also ' in etym_text:
+            relationship = 'also'
+            etymon_parts = [part.strip() for part in etym_text.split(' also ')]
+        elif ' or ' in etym_text:
+            relationship = 'or'
+            etymon_parts = [part.strip() for part in etym_text.split(' or ')]
+        elif '; and ' in etym_text or ', and ' in etym_text:
+            relationship = 'and'
+            etymon_parts = [part.strip() for part in re.split(r'[;,]\s*and\s+', etym_text)]
+
+        # Parse each etymon part
+        etymons = []
+        for part in etymon_parts:
+            etymon = self._parse_single_etymon(part)
+            if etymon:
+                etymons.append(etymon)
+
+        # Return structured etymology with etymons array
+        if not etymons:
+            return None
+
+        result = {'etymons': etymons}
+        if relationship:
+            result['relationship'] = relationship
+
+        return result
+
+    def _parse_single_etymon(self, etym_text):
+        """Parse a single etymon (helper for parse_etymology)"""
         structured = re.match(
             r'([A-Za-z.]+)\s+([^\s]+)\s+(?:\([^)]+\)\s+)?cf\.\s+([^:]+):\s*(.+)',
             etym_text,
@@ -523,14 +556,26 @@ class FinalTuroyoParser:
             for idx, verb in entries:
                 etym = verb.get('etymology')
                 if etym:
-                    # Create signature from key fields
-                    sig = (
-                        etym.get('source', ''),
-                        etym.get('source_root', ''),
-                        etym.get('notes', ''),
-                        etym.get('raw', ''),
-                        etym.get('reference', '')
-                    )
+                    # Handle new structure with etymons array
+                    if 'etymons' in etym and etym['etymons']:
+                        # Extract signature from first etymon in array
+                        first_etymon = etym['etymons'][0]
+                        sig = (
+                            first_etymon.get('source', ''),
+                            first_etymon.get('source_root', ''),
+                            first_etymon.get('notes', ''),
+                            first_etymon.get('raw', ''),
+                            first_etymon.get('reference', '')
+                        )
+                    else:
+                        # Fallback for legacy flat structure (shouldn't happen with new parser)
+                        sig = (
+                            etym.get('source', ''),
+                            etym.get('source_root', ''),
+                            etym.get('notes', ''),
+                            etym.get('raw', ''),
+                            etym.get('reference', '')
+                        )
                 else:
                     sig = None
                 etymologies.append((idx, sig))

@@ -28,7 +28,7 @@ export function generateLetterOptions(results: VerbIndexEntry[]): SelectOption[]
     return [
         { label: 'All letters', value: null },
         ...Array.from(letterCounts.entries())
-            .sort(([a], [b]) => a.localeCompare(b))
+            .sort(([a], [b]) => (a || '').localeCompare(b || ''))
             .map(([letter, count]) => ({ label: `${letter} (${count})`, value: letter }))
     ]
 }
@@ -45,14 +45,17 @@ export function generateEtymologyOptions(results: VerbIndexEntry[]): SelectOptio
     results.forEach((v) => {
         const sources = v.etymology_sources?.length ? v.etymology_sources : ['Unknown']
         sources.forEach((source) => {
-            etymCounts.set(source, (etymCounts.get(source) || 0) + 1)
+            // Filter out null/undefined values
+            if (source && source !== 'null' && source !== 'undefined') {
+                etymCounts.set(source, (etymCounts.get(source) || 0) + 1)
+            }
         })
     })
 
     return [
         { label: 'All etymologies', value: null },
         ...Array.from(etymCounts.entries())
-            .sort(([a], [b]) => a.localeCompare(b))
+            .sort(([a], [b]) => (a || '').localeCompare(b || ''))
             .map(([source, count]) => ({ label: `${source} (${count})`, value: source }))
     ]
 }
@@ -75,7 +78,7 @@ export function generateStemOptions(results: VerbIndexEntry[]): SelectOption[] {
     return [
         { label: 'All stems', value: null },
         ...Array.from(stemCounts.entries())
-            .sort(([a], [b]) => a.localeCompare(b))
+            .sort(([a], [b]) => (a || '').localeCompare(b || ''))
             .map(([stem, count]) => ({ label: `${stem} (${count})`, value: stem }))
     ]
 }

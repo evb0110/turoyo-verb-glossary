@@ -105,10 +105,10 @@ function getSearchPlaceholder() {
 }
 
 // Filters as computed getter for reactive access
-const filters = computed<Filters>(() => ({
-    letter: filterLetter.value,
-    etymology: filterEtymology.value,
-    stem: filterStem.value
+const filters = computed(() => ({
+    letter: filterLetter.value ?? null,
+    etymology: filterEtymology.value ?? null,
+    stem: filterStem.value ?? null
 }))
 
 // Initialize searchQuery from URL on mount, then sync with q
@@ -197,6 +197,95 @@ function clearSearch() {
     filterStem.value = null
 }
 
+async function runSearch(value: string) {
+    const isSearchingEverything = searchType.value === 'all'
+    const isUsingRegex = regexMode.value === 'on'
+    const isCaseSensitive = caseParam.value === 'on'
+    console.log('[Index] Run search with value:', value, 'searchEverything:', isSearchingEverything, 'useRegex:', isUsingRegex)
+
+    if (!index.value?.roots?.length) {
+        try {
+            const loaded = await loadIndex()
+            index.value = loaded
+        }
+        catch (e) {
+            console.error('[Index] Index not ready', e)
+        }
+    }
+
+    if (!value || value.trim().length < 2) {
+        console.log('[Index] Query too short, clearing results')
+        results.value = []
+        verbDetails.value.clear()
+        pending.value = false
+        return
+    }
+
+    results.value = []
+    verbDetails.value.clear()
+    pending.value = true
+
+    if (isSearchingEverything) {
+        // In "everything" mode, always do comprehensive translation search
+        console.log('[Index] Searching everything (comprehensive translation search)...')
+        const all = index.value?.roots || []
+        const allRootNames = all.map(v => v.root)
+
+        try {
+            const response = await $fetch<{ total: number, roots: string[], verbData?: Record<string, Verb> }>('/api/verbs-translation-search', {
+                method: 'POST',
+                body: {
+                    roots: allRootNames,
+                    query: value,
+                    useRegex: isUsingRegex,
+                    caseSensitive: isCaseSensitive
+                }
+            })
+
+            console.log('[Index] Translation search found:', response.total, 'matches')
+            results.value = response.roots
+
+            if (response.verbData) {
+                console.log('[Index] Using cached verb data from server:', Object.keys(response.verbData).length, 'verbs')
+                verbDetails.value = new Map(Object.entries(response.verbData))
+            }
+        }
+        catch (e) {
+            console.error('[Index] Translation search failed:', e)
+            results.value = []
+        }
+    }
+    else {
+        // In "roots only" mode, use fast index search
+        const primary = await search(value, {
+            rootsOnly: true,
+            searchTranslations: false,
+            useRegex: isUsingRegex,
+            caseSensitive: isCaseSensitive
+        })
+
+        console.log('[Index] Roots-only search returned:', primary.length, 'results')
+
+        if (primary.length === 0 && !isUsingRegex) {
+            console.log('[Index] No primary results, using fallback root search')
+            const lower = value.toLowerCase()
+            const all = index.value?.roots || []
+            const alt = all
+                .filter(v => v.root.toLowerCase().includes(lower))
+                .map(v => v.root)
+
+            console.log('[Index] Fallback found:', alt.length, 'results')
+            results.value = alt
+        }
+        else {
+            results.value = primary
+        }
+    }
+
+    console.log('[Index] Final results.value:', results.value.length, 'results')
+    pending.value = false
+}
+
 const baseResults = computed(() => {
     const all = index.value?.roots || []
     if (!searchQuery.value || searchQuery.value.trim().length < 2 || results.value.length === 0) {
@@ -218,98 +307,15 @@ function resetFilters() {
 
 watch(
     [searchQuery, searchType, regexMode, caseParam],
-    async () => {
-        const value = searchQuery.value
-        const isSearchingEverything = searchType.value === 'all'
-        const isUsingRegex = regexMode.value === 'on'
-        const isCaseSensitive = caseParam.value === 'on'
-        console.log('[Index] Watch triggered with value:', value, 'searchEverything:', isSearchingEverything, 'useRegex:', isUsingRegex)
-
-        if (!index.value?.roots?.length) {
-            try {
-                const loaded = await loadIndex()
-                index.value = loaded
-            }
-            catch (e) {
-                console.error('[Index] Index not ready', e)
-            }
-        }
-
-        if (!value || value.trim().length < 2) {
-            console.log('[Index] Query too short, clearing results')
-            results.value = []
-            verbDetails.value.clear() // Clear stale verb data
-            pending.value = false
-            return
-        }
-
-        // Clear old results and verb details immediately to prevent flash of stale content
-        results.value = []
-        verbDetails.value.clear()
-        pending.value = true
-
-        if (isSearchingEverything) {
-            // In "everything" mode, always do comprehensive translation search
-            console.log('[Index] Searching everything (comprehensive translation search)...')
-            const all = index.value?.roots || []
-            const allRootNames = all.map(v => v.root)
-
-            try {
-                const response = await $fetch<{ total: number, roots: string[], verbData?: Record<string, Verb> }>('/api/verbs-translation-search', {
-                    method: 'POST',
-                    body: {
-                        roots: allRootNames,
-                        query: value,
-                        useRegex: isUsingRegex,
-                        caseSensitive: isCaseSensitive
-                    }
-                })
-
-                console.log('[Index] Translation search found:', response.total, 'matches')
-                results.value = response.roots
-
-                // Use cached verb data from server to avoid client-side reload
-                if (response.verbData) {
-                    console.log('[Index] Using cached verb data from server:', Object.keys(response.verbData).length, 'verbs')
-                    verbDetails.value = new Map(Object.entries(response.verbData))
-                }
-            }
-            catch (e) {
-                console.error('[Index] Translation search failed:', e)
-                results.value = []
-            }
-        }
-        else {
-            // In "roots only" mode, use fast index search
-            const primary = await search(value, {
-                rootsOnly: true,
-                searchTranslations: false,
-                useRegex: isUsingRegex,
-                caseSensitive: isCaseSensitive
-            })
-
-            console.log('[Index] Roots-only search returned:', primary.length, 'results')
-
-            if (primary.length === 0 && !isUsingRegex) {
-                console.log('[Index] No primary results, using fallback root search')
-                const lower = value.toLowerCase()
-                const all = index.value?.roots || []
-                const alt = all
-                    .filter(v => v.root.toLowerCase().includes(lower))
-                    .map(v => v.root)
-
-                console.log('[Index] Fallback found:', alt.length, 'results')
-                results.value = alt
-            }
-            else {
-                results.value = primary
-            }
-        }
-
-        console.log('[Index] Final results.value:', results.value.length, 'results')
-        pending.value = false
+    () => {
+        runSearch(searchQuery.value)
     }
 )
+
+// Keep searchQuery in sync when q changes (e.g., via Cmd/Ctrl+K global search)
+watch(q, (newQ) => {
+    searchQuery.value = newQ
+})
 
 const filtered = computed(() => {
     const result = baseResults.value

@@ -100,10 +100,15 @@ export default defineEventHandler(async (event) => {
                     }
                 }
 
-                // Search in etymology
-                if (verb.etymology) {
+                // Search in etymology (all fields: meaning, notes, raw, source_root)
+                if (verb.etymology && Array.isArray(verb.etymology.etymons)) {
                     for (const etymon of verb.etymology.etymons) {
-                        if (etymon.meaning && matchesPattern(etymon.meaning, query, { useRegex, caseSensitive })) {
+                        if (
+                            (etymon.meaning && matchesPattern(etymon.meaning, query, { useRegex, caseSensitive })) ||
+                            (etymon.notes && matchesPattern(etymon.notes, query, { useRegex, caseSensitive })) ||
+                            (etymon.raw && matchesPattern(etymon.raw, query, { useRegex, caseSensitive })) ||
+                            (etymon.source_root && matchesPattern(etymon.source_root, query, { useRegex, caseSensitive }))
+                        ) {
                             verbData[root] = verb
                             return root
                         }

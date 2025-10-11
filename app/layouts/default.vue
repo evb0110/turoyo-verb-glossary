@@ -7,5 +7,7 @@
                 <slot />
             </UContainer>
         </main>
+
+        <GlobalSearchModal />
     </div>
 </template>
