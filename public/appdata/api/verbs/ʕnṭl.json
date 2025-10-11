@@ -1,9 +1,15 @@
 {
   "root": "ʕnṭl",
-  "etymology": null,
+  "etymology": {
+    "source": "Arab.",
+    "source_root": "ʕrḍ",
+    "reference": "Wehr 827",
+    "meaning": "anbieten, antragen, vorschlagen;"
+  },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "I",
       "forms": [
         "mʕanṭele",
         "mʕanṭəl"
@@ -16,39 +22,28 @@
             "references": []
           }
         ]
-      },
+      }
+    },
+    {
       "stem": "I",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mʕanṭele/mʕanṭəl</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">liegen\nlassen, verschieben (Arbeit);</span></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "I:\n"
-        },
-        {
-          "italic": false,
-          "text": "liegen\nlassen, verschieben (Arbeit);"
-        }
-      ]
+      "forms": [
+        "ʕrəḏ̣le",
+        "ʕorəḏ̣"
+      ],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "ko-qoyəm ḥa=yawmo ko-ʕorəḏ̣ aʕle k-omər",
+            "translations": [
+              "so\n\t\t\tentschloss er sich eines Tages und trug jenem die Sache vor. Er\n\t\t\tsprach..."
+            ],
+            "references": [
+              "99; 89/11;"
+            ]
+          }
+        ]
+      }
     }
   ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">ʕnṭl</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(</span></i></font></font><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">cf.\nTuroyo ʕanṭala: b-ʕanṭala, RW 10: langsam arbeitend, essend\nusw.; cf. Syr. ʕṭl (Ethpa.), SL 1092: to show s.o. to be\ndifficult; to be offended; to be hindered;</span></i></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\ncf. Arab. ʕṭl Wehr 850: arbeitslos sein;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "ʕnṭl"
-    },
-    {
-      "italic": true,
-      "text": "\n("
-    },
-    {
-      "italic": true,
-      "text": "cf.\nTuroyo ʕanṭala: b-ʕanṭala, RW 10: langsam arbeitend, essend\nusw.; cf. Syr. ʕṭl (Ethpa.), SL 1092: to show s.o. to be\ndifficult; to be offended; to be hindered;"
-    },
-    {
-      "italic": true,
-      "text": "\ncf. Arab. ʕṭl Wehr 850: arbeitslos sein;)"
-    }
-  ]
+  "uncertain": false
 }

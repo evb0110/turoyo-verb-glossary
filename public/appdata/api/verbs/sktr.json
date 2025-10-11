@@ -1,18 +1,15 @@
 {
   "root": "sktr",
   "etymology": {
-    "etymons": [
-      {
-        "source": "Turk.",
-        "source_root": "sektirmek",
-        "reference": "Маг 526",
-        "meaning": "заставить бежать вприпрыжку"
-      }
-    ]
+    "source": "Turk.",
+    "source_root": "sektirmek",
+    "reference": "Маг 526",
+    "meaning": "заставить бежать"
   },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "I",
       "forms": [
         "msaktalle",
         "msaktər"
@@ -20,88 +17,31 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "maqəmle u=paša, msaktalle",
+            "turoyo": "maqəmle u=paša, msaktalle 788; prs 112/8; qayəm l-u=greʕo mḥéle-le lakmo ʕal foṯe w-msaktalle",
             "translations": [
-              "er absetzte den Statthalter und ihm sagte, er möge sich packen"
+              "er\n\t\t\tabsetzte den Statthalter und ihm sagte, er möge sich packen",
+              "‘The servant gave him a slap in the face and drove away’;\n\t\t\t43/26 [MT]"
             ],
-            "references": [
-              "788",
-              "prs 112/8"
-            ]
-          },
-          {
-            "turoyo": "qayəm l-u=greʕo mḥéle-le lakmo ʕal foṯe w-msaktalle",
-            "translations": [
-              "‘The servant gave him a slap in the face and drove away’; 43/26 [MT]"
-            ],
-            "references": []
-          }
-        ],
-        "Imperative": [
-          {
-            "turoyo": "elo qum misaktǝ́r me-taḥt u=konayḏi",
-            "translations": [
-              "aber steh auf und scher dich Weg aus meinem Zelte"
-            ],
-            "references": [
-              "788",
-              "65/238"
-            ]
-          },
-          {
-            "turoyo": "507;",
-            "translations": [],
             "references": []
           }
         ]
-      },
-      "stem": "I",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">msaktalle/msaktər</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">mit\ngroben Beschimpfungen fortjagen;</span></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "I:\n"
-        },
-        {
-          "italic": false,
-          "text": "mit\ngroben Beschimpfungen fortjagen;"
-        }
-      ]
+      }
     },
     {
+      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Imperative": [
           {
-            "turoyo": "elo qum misaktǝ́r me-taḥt u=konayḏi",
+            "turoyo": "elo qum misaktǝ́r me-taḥt u=konayḏi 788; 65/238, 507;",
             "translations": [
-              "aber steh auf und scher dich Weg aus meinem Zelte"
+              "aber\n\t\t\tsteh auf und scher dich Weg aus meinem Zelte"
             ],
-            "references": [
-              "788",
-              "65/238"
-            ]
-          },
-          {
-            "turoyo": "507;",
-            "translations": [],
             "references": []
           }
         ]
-      },
-      "stem": "Detransitive"
+      }
     }
   ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">sktr</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; Turk. sektirmek cf. Маг 526: заставить бежать\nвприпрыжку;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "sktr"
-    },
-    {
-      "italic": true,
-      "text": "\n(< Turk. sektirmek cf. Маг 526: заставить бежать\nвприпрыжку;)"
-    }
-  ]
+  "uncertain": false
 }

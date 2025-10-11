@@ -1,9 +1,15 @@
 {
   "root": "gyb",
-  "etymology": null,
+  "etymology": {
+    "source": "Kurd.",
+    "source_root": "gež",
+    "reference": "Ku 277",
+    "meaning": "пораженный, ошеломленный,"
+  },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "III",
       "forms": [
         "magəble",
         "magəb"
@@ -13,39 +19,66 @@
           {
             "turoyo": "zayəʕ mene ġắlabe magəble mene",
             "translations": [
-              "da bekam er Angst und erschrak vor ihm"
+              "da\n\t\t\tbekam er Angst und erschrak vor ihm"
             ],
             "references": [
-              "581",
-              "29/219"
+              "581; 29/219;"
             ]
           }
         ]
-      },
-      "stem": "III",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">III:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">magəble/magəb\n </span></b></i></font></font>\n</p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">sich\nfürchten, Angst bekommen;</span></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "III:\n"
-        },
-        {
-          "italic": false,
-          "text": "sich\nfürchten, Angst bekommen;"
-        }
-      ]
-    }
-  ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">gyb</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(unknown)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "gyb"
+      }
     },
     {
-      "italic": true,
-      "text": "\n(unknown)"
+      "stem": "I",
+      "forms": [
+        "gayəž",
+        "goyəž"
+      ],
+      "conjugations": {
+        "Preterit Intransitive": [
+          {
+            "turoyo": "gayəž 512; me-qole d-u=buġro w m-i=həmmayḏe gayižono",
+            "translations": [
+              "er\n\t\t\twurde betäubt, verrückt",
+              "vom\n\t\t\tKnall der Flinte und der Gewalt der Kugel blieb ich ohnmächtig\n\t\t\tliegen"
+            ],
+            "references": [
+              ";"
+            ]
+          }
+        ],
+        "Participle_Active": [
+          {
+            "turoyo": "xd-u=gayížo-no. kīt d-əmmət ʕəlbe d-zaḥfarān ʕal lebi",
+            "translations": [
+              "ich\n\t\t\tbin wie schwiemelig, als ob ich einen Scheffel Safran im Leibe\n\t\t\thätte"
+            ],
+            "references": [
+              "528; 112/207;"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "stem": "III",
+      "forms": [
+        "magəžle",
+        "magəž"
+      ],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "magǝ́žlux-li 539-540;magəžlux-lan! kul=naqla qd-əmmət lo=yətwutu b-u=margano! kət-le more w-kət-le hne! de mə=hawi? ‘",
+            "translations": [
+              "du\n\t\t\thast mich schon ganz verrückt gemacht",
+              "You\n\t\t\thave made us paranoid! Every time you say: “Do not stay at this\n\t\t\tpasture. It has its owners and so and so!” Well, has anything\n\t\t\thappened (yet)?’ 73/110-111;"
+            ],
+            "references": []
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "uncertain": false
 }

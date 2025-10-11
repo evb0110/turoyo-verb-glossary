@@ -1,9 +1,13 @@
 {
   "root": "ṣhr",
-  "etymology": null,
+  "etymology": {
+    "source": "Arab.",
+    "notes": "sḥr (II"
+  },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "I",
       "forms": [
         "ṣhəlle",
         "ṣohər"
@@ -13,42 +17,15 @@
           {
             "turoyo": "u=ṣaḥoro",
             "translations": [
-              "der Zauberer"
+              "der\n\t\t\tZauberer"
             ],
             "references": [
-              "MM 110"
+              "MM 110;"
             ]
           }
         ]
-      },
-      "stem": "I",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">ṣhəlle/ṣohər</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">verzaubern;</span></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "I:\n"
-        },
-        {
-          "italic": false,
-          "text": "verzaubern;"
-        }
-      ]
+      }
     }
   ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">ṣhr</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; Arab. sḥr (II) cf. Wehr 556: verzaubern;), cf. s</span></i></font></font><font color=\"#000000\"><i><span style=\"background: transparent\">ḥr</span></i></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "ṣhr"
-    },
-    {
-      "italic": true,
-      "text": "\n(< Arab. sḥr (II) cf. Wehr 556: verzaubern;), cf. s"
-    },
-    {
-      "italic": true,
-      "text": "ḥr"
-    }
-  ]
+  "uncertain": false
 }

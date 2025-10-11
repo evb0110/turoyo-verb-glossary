@@ -1,9 +1,15 @@
 {
   "root": "lbx",
-  "etymology": null,
+  "etymology": {
+    "source": "Arab.",
+    "source_root": "lḏ̣y",
+    "reference": "Wehr 1155",
+    "meaning": "hell brennen, flammen, lodern;"
+  },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "II",
       "forms": [
         "mlabaxle",
         "mlabəx"
@@ -11,41 +17,33 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mlabaxle l-u=taʕlo foṯe d-u=dewo w qarʕe b-u=ṭino",
+            "turoyo": "mlabaxle l-u=taʕlo foṯe d-u=dewo w qarʕe b-u=ṭino 160; prs 215/23;",
             "translations": [
-              "der Fuchs bestrich Gesicht und Kopf des Wolfes mit dem Kot"
+              "der\n\t\t\tFuchs bestrich Gesicht und Kopf des Wolfes mit dem Kot"
             ],
-            "references": [
-              "160",
-              "prs 215/23"
-            ]
+            "references": []
           }
         ]
-      },
-      "stem": "II",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">II:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mlabaxle/mlabəx</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">beschmieren;</span></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "II:\n"
-        },
-        {
-          "italic": false,
-          "text": "beschmieren;"
-        }
-      ]
-    }
-  ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">lbx</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(unknown)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "lbx"
+      }
     },
     {
-      "italic": true,
-      "text": "\n(unknown)"
+      "stem": "III",
+      "forms": [
+        "malḏ̣ele",
+        "malḏ̣e"
+      ],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "ko-malḏ̣yo 392; PrS 23/7",
+            "translations": [
+              "sie\n\t\t\tleuchtet"
+            ],
+            "references": []
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "uncertain": false
 }

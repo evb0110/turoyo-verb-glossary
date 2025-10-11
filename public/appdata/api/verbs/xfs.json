@@ -1,80 +1,58 @@
 {
   "root": "xfs",
   "etymology": {
-    "etymons": [
-      {
-        "source": "Arab.",
-        "source_root": "xfs",
-        "reference": "Wehr 350",
-        "meaning": "zerstören, niederreissen"
-      }
-    ]
+    "source": "Arab.",
+    "source_root": "xfs",
+    "reference": "Wehr 350",
+    "meaning": "zerstören, niederreissen;"
   },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "I",
       "forms": [
         "xfīs",
         "məxfəs"
       ],
+      "conjugations": {}
+    },
+    {
+      "stem": "II",
+      "forms": [
+        "mxažele",
+        "mxažəl"
+      ],
       "conjugations": {
-        "Preterit": [
+        "Infectum": [
           {
-            "turoyo": "xfiso i=mʕarṯo",
+            "turoyo": "abri madām ki g-quṭlat-li, w gə-mxažlát-li qm-u=ʕulm-ano kule, šqu-lox u=tālano",
             "translations": [
-              "die Höhle stürzte ein"
+              "mein\n\t\t\tSohn, wenn du mich denn töten und mich vor all diesen Leuten\n\t\t\tbeschämen willst, so nimm all dies geraubte Vieh"
             ],
             "references": [
-              "127"
+              "309; 29/450;"
             ]
           }
         ]
-      },
-      "stem": "I",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">xfīs/məxfəs</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">(Detrans.)\neinstürzen;</span></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">Detransitive</span></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "I:\n"
-        },
-        {
-          "italic": false,
-          "text": "(Detrans.)\neinstürzen;"
-        },
-        {
-          "italic": false,
-          "text": "Detransitive"
-        }
-      ]
+      }
     },
     {
+      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Preterit": [
           {
             "turoyo": "xfiso i=mʕarṯo",
             "translations": [
-              "die Höhle stürzte ein"
+              "die\n\t\t\tHöhle stürzte ein"
             ],
             "references": [
-              "127"
+              "127;"
             ]
           }
         ]
-      },
-      "stem": "Detransitive"
+      }
     }
   ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">xfs</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; Arab. xfs cf. Wehr 350: zerstören, niederreissen;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "xfs"
-    },
-    {
-      "italic": true,
-      "text": "\n(< Arab. xfs cf. Wehr 350: zerstören, niederreissen;)"
-    }
-  ]
+  "uncertain": false
 }

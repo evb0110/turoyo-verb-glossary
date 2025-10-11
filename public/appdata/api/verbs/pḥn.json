@@ -1,9 +1,15 @@
 {
   "root": "pḥn",
-  "etymology": null,
+  "etymology": {
+    "source": "Kurd.",
+    "source_root": "pîj",
+    "reference": "Ku 602",
+    "meaning": "осколок;"
+  },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "II",
       "forms": [
         "mpaḥalle",
         "mpaḥən"
@@ -16,31 +22,45 @@
             "references": []
           }
         ]
-      },
-      "stem": "II",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">II:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mpaḥalle/mpaḥən</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">Faul\ndasitzen und vor sich hinstieren;</span></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "II:\n"
-        },
-        {
-          "italic": false,
-          "text": "Faul\ndasitzen und vor sich hinstieren;"
-        }
-      ]
-    }
-  ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">pḥn</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(unknown)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "pḥn"
+      }
     },
     {
-      "italic": true,
-      "text": "\n(unknown)"
+      "stem": "II",
+      "forms": [
+        "mpažele",
+        "mpažəl"
+      ],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "qayəm-le Kandar, mpažele 307; prs 23/30;",
+            "translations": [
+              "Kander\n\t\t\tging auf ihn (der Riese) los und hieb ihn mit seinem Schwert in\n\t\t\tStücke"
+            ],
+            "references": []
+          }
+        ],
+        "Infectum": [
+          {
+            "turoyo": "gə-mpažánno-le",
+            "translations": [
+              "ich\n\t\t\twerde ihn in Stücke hauen"
+            ],
+            "references": [
+              "310;"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "stem": "II",
+      "forms": [
+        "mpažele",
+        "mpaže"
+      ],
+      "conjugations": {}
     }
-  ]
+  ],
+  "uncertain": false
 }

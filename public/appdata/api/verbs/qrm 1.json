@@ -1,9 +1,15 @@
 {
   "root": "qrm 1",
-  "etymology": null,
+  "etymology": {
+    "source": "MEA",
+    "source_root": "qrm",
+    "reference": "SL 1411",
+    "meaning": "(Pe."
+  },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "II",
       "forms": [
         "mqarəm",
         "miqarəm"
@@ -11,68 +17,68 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "hul də-mṯabatli mene i=ḥəkkoye d-Zine Wazira, w Badrxān, mqarəm lišoni b-u=mamro",
+            "turoyo": "hul də-mṯabatli mene i=ḥəkkoye d-Zine Wazira, w Badrxān, mqarəm lišoni b-u=mamro hawo u=ḥreno mqarmi ʕayne b-u=darbo ḥaṣi mqarəm ST; mqarmina b-u=ytowo",
             "translations": [
-              "bis ich aber von ihm die Geschichte von"
+              "bis\n\t\t\tich aber von ihm die Geschichte von “Zine Wazire und Badrchan”\n\t\t\taufgenommen hatte, hatte ich mir den Mund fusselig geredet",
+              "‘The other man’s eyes strained [to gaze] at the way’; 44/60;",
+              "‘mein\n\t\t\tRücken ist steif geworden’;",
+              "‘wir\n\t\t\tsind vom Sitzen steif geworden’;"
             ],
             "references": [
-              "188",
-              "11/264"
-            ]
-          },
-          {
-            "turoyo": "hawo u=ḥreno mqarmi ʕayne b-u=darbo",
-            "translations": [
-              "‘The other man’s eyes strained [to gaze] at the way’; 44/60;"
-            ],
-            "references": []
-          },
-          {
-            "turoyo": "ḥaṣi mqarəm",
-            "translations": [
-              "‘mein Rücken ist steif geworden’;"
-            ],
-            "references": []
-          },
-          {
-            "turoyo": "ST; mqarmina b-u=ytowo",
-            "translations": [
-              "‘wir sind vom Sitzen steif geworden’;"
-            ],
-            "references": [
-              "ST"
+              "188; 11/264;",
+              "ST;"
             ]
           }
         ]
-      },
-      "stem": "II",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">II:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mqarəm/miqarəm</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">(Detrans.)\nsich überanstrengen, vorübergehend Schmerz empfinden;</span></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">Detransitive\n</span>\n</p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "II:\n"
-        },
-        {
-          "italic": false,
-          "text": "(Detrans.)\nsich überanstrengen, vorübergehend Schmerz empfinden;"
-        },
-        {
-          "italic": false,
-          "text": "Detransitive\n"
-        }
-      ]
-    }
-  ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">qrm\n1</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(see Tezel 117; &lt; Kurd. qerimîn ‘to tire (intr.), become tired’\nChyet 482-483;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "qrm\n1"
+      }
     },
     {
-      "italic": true,
-      "text": "\n(see Tezel 117; < Kurd. qerimîn ‘to tire (intr.), become tired’\nChyet 482-483;)"
+      "stem": "II",
+      "forms": [
+        "mqarəm",
+        "miqarəm"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "gud Assyriska qərmo u=šteʕinyayḏa u=ḥaroyo g-səlqo l-u=līg qamoyo d-u=Swēd",
+            "translations": [
+              "‘wenn\n\t\t\tAssyriska sein letztes Spiel gewinnt, steigt es in die erste\n\t\t\tschwedische Liga’;"
+            ],
+            "references": [
+              "ST;"
+            ]
+          }
+        ],
+        "Participle_Passive": [
+          {
+            "turoyo": "i=qaqwoniṯo mqarámto-wa ʕal ač=čičəkayḏa i=naqla d-ḥəzyoli taḥt i=sato",
+            "translations": [
+              "‘das Steinhuhn brütete gerade seine Küken als ich es unter dem\n\t\t\tWeinstock entdeckte’;"
+            ],
+            "references": [
+              "IT;"
+            ]
+          }
+        ],
+        "Preterit": [
+          {
+            "turoyo": "Syrianska qrəmla u=mačayḏa u=qamoyo",
+            "translations": [
+              "‘Syrianska\n\t\t\that sein erstes Spiel gewonnen’;"
+            ],
+            "references": [
+              "ST;"
+            ]
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "uncertain": false
 }

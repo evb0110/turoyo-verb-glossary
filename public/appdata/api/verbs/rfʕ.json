@@ -1,9 +1,15 @@
 {
   "root": "rfʕ",
-  "etymology": null,
+  "etymology": {
+    "source": "Arab.",
+    "source_root": "rfḍ",
+    "reference": "Wehr 484",
+    "meaning": "abweisen, zurückweisen, ablehnen,"
+  },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "I",
       "forms": [
         "rafəʕ",
         "rofəʕ"
@@ -11,42 +17,59 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "əšmo=ḥrenoməd-rafəʕ i=dukṯo d-u=nargo naqla qrifo i=dawmo taḥte w-nafilo",
+            "turoyo": "əšmo=ḥreno məd-rafəʕ i=dukṯo d-u=nargo naqla qrifo i=dawmo taḥte w-nafilo",
             "translations": [
-              "After a while, since the place [where] the axe [was chopping] had become thin, the tree under him broke at once and fell"
+              "After\n\t\t\ta while, since the place [where] the axe [was chopping] had become\n\t\t\tthin, the tree under him broke at once and fell"
             ],
             "references": [
-              "88",
-              "46/8",
-              "; [MT]"
+              "88; 46/8; [MT]"
             ]
           }
         ]
-      },
-      "stem": "I",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">rafəʕ/rofəʕ</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">dünn\nwerden;</span></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "I:\n"
-        },
-        {
-          "italic": false,
-          "text": "dünn\nwerden;"
-        }
-      ]
-    }
-  ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">rfʕ</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(unknown)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "rfʕ"
+      }
     },
     {
-      "italic": true,
-      "text": "\n(unknown)"
+      "stem": "I",
+      "forms": [
+        "rfəḏ̣le",
+        "rofəḏ̣"
+      ],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "lazəm d-fayšət muxtār” huwe rfəḏ̣le lo=mtanele ʕal də-ḥzele d-kulle rfəḏ̣ḏ̣e u=amr-ayḏeb-ṣafro aṯən ann=aġawat d-u=aṯro w-ar=rabe d-aq=qəryawoṯe w-kul ḥa mənne rfəḏ̣le u=mede də-ṭləble mene l-u=ʕmiro",
+            "translations": [
+              "“du\n\t\t\tmuss Schultheiss bleiben!” Er lehnte aber ab",
+              "‘Er erwiderte nichts, da er sah, daß alle seinen Befehl\n\t\t\tmißachteten’; 36/15;",
+              "‘Am morgen kamen die Aghas des Landes und die Vorsteher der\n\t\t\tDörfer, und jeder von ihnen lehnte das ab, was der Emir von ihm\n\t\t\tverlangte’; 36/22"
+            ],
+            "references": [
+              "72; 33/51;"
+            ]
+          }
+        ],
+        "Preterit-wa": [
+          {
+            "turoyo": "azzeyo l-u=quṣr-ayḏe, w-qrele l-ar=rabe, w-l-ann=aġawat, w-l-am=maxatīr d-rfǝ́ḏ̣-wa-lle u=xabr-ayḏe w-mǧazalle",
+            "translations": [
+              "he\n\t\t\twent to his fortress and invited nobles, aghas and mayors who had\n\t\t\tdespised his word and punished them’;"
+            ],
+            "references": [
+              "83; 36/104; [MT]"
+            ]
+          }
+        ],
+        "Infectum": [
+          {
+            "turoyo": "ono maṭino l-arke ʕal d-ḥzeli d-u=ʕamo d-i=walay-ayḏi ko-rufḏ̣i u=xabr-ayḏi w-nošo mənne lo=k-məʕtabar-li ắbadan",
+            "translations": [
+              "‘I came here since I had noticed that the people of my town\n\t\t\tdespised my word and no one of them paid heed on me’; 36/69 [MT]"
+            ],
+            "references": []
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "uncertain": false
 }

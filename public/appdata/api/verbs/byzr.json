@@ -1,18 +1,15 @@
 {
   "root": "byzr",
   "etymology": {
-    "etymons": [
-      {
-        "source": "Kurd.",
-        "source_root": "bazar",
-        "reference": "Ku 65",
-        "meaning": "рынок, базар"
-      }
-    ]
+    "source": "Kurd.",
+    "source_root": "bazar",
+    "reference": "Ku 65",
+    "meaning": "рынок, базар;"
   },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "I",
       "forms": [
         "mbayzalle",
         "mbayzər"
@@ -20,49 +17,43 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "kə-mbayzal-le ʕam u=farmašči b-laḥmo",
+            "turoyo": "kə-mbayzal-le ʕam u=farmašči b-laḥmo 771; prs 218/2;",
             "translations": [
-              "er sucht ihn (den Fuchs) dem Bäcker gegen ein Brot zu verhandeln"
+              "er\n\t\t\tsucht ihn (den Fuchs) dem Bäcker gegen ein Brot zu verhandeln"
             ],
-            "references": [
-              "771",
-              "prs 218/2"
-            ]
+            "references": []
           }
         ]
-      },
-      "stem": "I",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mbayzalle/mbayzər</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><font size=\"2\" style=\"font-size: 10pt\"><span style=\"background: transparent\">(</span></font></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 10pt\"><i><span style=\"background: transparent\">b-</span></i></font></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 10pt\"><span style=\"background: transparent\">)\num etwas feilschen, verhandeln;</span></font></font></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "I:\n"
-        },
-        {
-          "italic": false,
-          "text": "("
-        },
-        {
-          "italic": true,
-          "text": "b-"
-        },
-        {
-          "italic": false,
-          "text": ")\num etwas feilschen, verhandeln;"
-        }
-      ]
-    }
-  ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">byzr</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; Kurd. bazar cf. Ku 65: рынок, базар;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "byzr"
+      }
     },
     {
-      "italic": true,
-      "text": "\n(< Kurd. bazar cf. Ku 65: рынок, базар;)"
+      "stem": "I",
+      "forms": [
+        "bzəlle",
+        "bozər"
+      ],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "naqqa bzərle a=ṭlawḥe b-u=darbo",
+            "translations": [
+              "‘He scattered the lentils along the way at once’; 44/73"
+            ],
+            "references": []
+          }
+        ],
+        "Infectum-wa": [
+          {
+            "turoyo": "bə-ḥḏo=naqla, bozár-way-n-e ; lə=bəzrí-way-na i=arʕo kula b-naqla",
+            "translations": [
+              "ʻI\n\t\t\tsowed it (the furrow) at one go’",
+              "besäten\n\t\t\twir nicht das ganze Feld auf einmal"
+            ],
+            "references": []
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "uncertain": false
 }

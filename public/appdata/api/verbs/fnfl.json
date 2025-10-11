@@ -1,18 +1,15 @@
 {
   "root": "fnfl",
   "etymology": {
-    "etymons": [
-      {
-        "source": "MEA",
-        "source_root": "npl",
-        "reference": "SL 931-932",
-        "meaning": "to fall; to leave, forsake; to become useless"
-      }
-    ]
+    "source": "MEA",
+    "source_root": "npl",
+    "reference": "SL 931-932",
+    "meaning": "to fall; to leave, forsake; to become"
   },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "I",
       "forms": [
         "mfanfele",
         "mfanfəl"
@@ -20,66 +17,52 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mfanfele",
-            "translations": [],
-            "references": [
-              "775"
-            ]
-          }
-        ],
-        "Participle_Passive": [
-          {
-            "turoyo": "u=bərgəl-ano mfánflo-yo",
+            "turoyo": "",
             "translations": [
-              "diese Weizengrütze ist nicht richtig zusammengekocht, die Teilchen sind einzeln geblieben"
+              "mfanfele; 775;"
+            ],
+            "references": []
+          }
+        ]
+      }
+    },
+    {
+      "stem": "I",
+      "forms": [
+        "fnele",
+        "fone"
+      ],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "ko-fone-lux b-kul šafluṯo, ono mən flān qriṯo",
+            "translations": [
+              "antwortet\n\t\t\ter dir voller Bescheidenheit: Ich bin aus dem und dem Dorf!"
             ],
             "references": [
-              "775"
+              "DD\n\t\t\t390/9;"
             ]
           }
         ]
-      },
-      "stem": "I",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mfanfele/mfanfəl</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">in\neinzelnen Flocken fallen;</span></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "I:\n"
-        },
-        {
-          "italic": false,
-          "text": "in\neinzelnen Flocken fallen;"
-        }
-      ]
+      }
     },
     {
+      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Participle_Passive": [
           {
             "turoyo": "u=bərgəl-ano mfánflo-yo",
             "translations": [
-              "diese Weizengrütze ist nicht richtig zusammengekocht, die Teilchen sind einzeln geblieben"
+              "diese\n\t\t\tWeizengrütze ist nicht richtig zusammengekocht, die Teilchen sind\n\t\t\teinzeln geblieben"
             ],
             "references": [
-              "775"
+              "775;"
             ]
           }
         ]
-      },
-      "stem": "Detransitive"
+      }
     }
   ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">fnfl</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; MEA npl cf. SL 931-932: to fall; to leave, forsake; to become\nuseless;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "fnfl"
-    },
-    {
-      "italic": true,
-      "text": "\n(< MEA npl cf. SL 931-932: to fall; to leave, forsake; to become\nuseless;)"
-    }
-  ]
+  "uncertain": false
 }

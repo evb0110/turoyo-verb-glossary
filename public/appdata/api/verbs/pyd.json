@@ -1,18 +1,15 @@
 {
   "root": "pyd",
   "etymology": {
-    "etymons": [
-      {
-        "source": "Kurd.",
-        "source_root": "peyda",
-        "reference": "Ku 601",
-        "meaning": "найтись, отыскаться; появляться, возникать"
-      }
-    ]
+    "source": "Kurd.",
+    "source_root": "peyda",
+    "reference": "Ku 601",
+    "meaning": "найтись, отыскаться;"
   },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "II",
       "forms": [
         "mpayadle",
         "mpayəd"
@@ -20,53 +17,64 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "k-azzino mpayadn-a a=ḥrene",
+            "turoyo": "k-azzino mpayadn-a a=ḥrene 494; prs 103/140;",
             "translations": [
-              "ich will gehen und ihr die anderen herbeischaffen"
+              "ich\n\t\t\twill gehen und ihr die anderen herbeischaffen"
             ],
-            "references": [
-              "494",
-              "prs 103/140"
-            ]
+            "references": []
           }
         ],
         "Imperative": [
           {
-            "turoyo": "payad-la aʕ=ʕəsri=ḥrene",
+            "turoyo": "payad-la aʕ=ʕəsri=ḥrene 494; prs 194/27;",
             "translations": [
-              "schaffe ihr die übrigen zwanzig (Piaster) zur Stelle"
+              "schaffe\n\t\t\tihr die übrigen zwanzig (Piaster) zur Stelle"
+            ],
+            "references": []
+          }
+        ]
+      }
+    },
+    {
+      "stem": "I",
+      "forms": [
+        "payəḏ̣",
+        "poyəḏ̣"
+      ],
+      "conjugations": {
+        "Preterit Intransitive": [
+          {
+            "turoyo": "b-i=šato d-ann=alfo čaʕmo, šēṯ w ḥamši ḥzalle nuhro d-fayəḏ̣ ʕul m-u=hayklo d-i=ʕito",
+            "translations": [
+              "im\n\t\t\tJahre 1956 sahen sie ein Licht, das über dem Schiff der Kirche\n\t\t\teinströmte"
             ],
             "references": [
-              "494",
-              "prs 194/27"
+              "576; 11/118;"
             ]
           }
         ]
-      },
-      "stem": "II",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">II:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mpayadle/mpayəd</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">herbeischaffen,\nZur Stelle schaffen, auftreiben, finden;</span></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "II:\n"
-        },
-        {
-          "italic": false,
-          "text": "herbeischaffen,\nZur Stelle schaffen, auftreiben, finden;"
-        }
-      ]
-    }
-  ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">pyd</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; Kurd. peyda cf. Ku 601: найтись, отыскаться;\nпоявляться, возникать;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "pyd"
+      }
     },
     {
-      "italic": true,
-      "text": "\n(< Kurd. peyda cf. Ku 601: найтись, отыскаться;\nпоявляться, возникать;)"
+      "stem": "III",
+      "forms": [
+        "mapəḏ̣le",
+        "mapəḏ̣"
+      ],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "ko-mapəḏ̣no",
+            "translations": [
+              "ich\n\t\t\thabe Nasenbluten"
+            ],
+            "references": [
+              "576;"
+            ]
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "uncertain": false
 }

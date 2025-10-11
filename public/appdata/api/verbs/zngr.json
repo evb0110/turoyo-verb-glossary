@@ -1,106 +1,47 @@
 {
   "root": "zngr",
   "etymology": {
-    "etymons": [
-      {
-        "source": "Kurd.",
-        "source_root": "zenggirtî",
-        "reference": "Ku 803",
-        "meaning": "ржавый, заржавленный"
-      }
-    ]
+    "source": "Kurd.",
+    "source_root": "zenggirtî",
+    "reference": "Ku 803",
+    "meaning": "ржавый, заржавленный;"
   },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "I",
       "forms": [
         "mzangər",
         "mizangər"
       ],
-      "conjugations": {
-        "Preterit": [
-          {
-            "turoyo": "ono-ste hani iḏoṯi ko-məhnən-ne mzangri",
-            "translations": [
-              "schon lange jucken mich die Hände, sie sind schon ganz eingerostet"
-            ],
-            "references": [
-              "795",
-              "73/429"
-            ]
-          }
-        ],
-        "Infectum": [
-          {
-            "turoyo": "k-mizangər",
-            "translations": [
-              "rostetet ein"
-            ],
-            "references": [
-              "795",
-              "-796"
-            ]
-          }
-        ]
-      },
-      "stem": "I",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mzangər/mizangər</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">(Detrans.)\nrosten, einrosten;</span></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">Detransitive</span></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "I:\n"
-        },
-        {
-          "italic": false,
-          "text": "(Detrans.)\nrosten, einrosten;"
-        },
-        {
-          "italic": false,
-          "text": "Detransitive"
-        }
-      ]
+      "conjugations": {}
     },
     {
+      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Preterit": [
           {
             "turoyo": "ono-ste hani iḏoṯi ko-məhnən-ne mzangri",
             "translations": [
-              "schon lange jucken mich die Hände, sie sind schon ganz eingerostet"
+              "schon\n\t\t\tlange jucken mich die Hände, sie sind schon ganz\n\t\t\teingerostet"
             ],
             "references": [
-              "795",
-              "73/429"
+              "795;\n\t\t\t73/429;"
             ]
           }
         ],
         "Infectum": [
           {
-            "turoyo": "k-mizangər",
+            "turoyo": "k-mizangər 795-796;",
             "translations": [
-              "rostetet ein"
+              "rostetet\n\t\t\tein"
             ],
-            "references": [
-              "795",
-              "-796"
-            ]
+            "references": []
           }
         ]
-      },
-      "stem": "Detransitive"
+      }
     }
   ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">zngr</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; Kurd. zenggirtî cf. Ku 803: ржавый, заржавленный;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "zngr"
-    },
-    {
-      "italic": true,
-      "text": "\n(< Kurd. zenggirtî cf. Ku 803: ржавый, заржавленный;)"
-    }
-  ]
+  "uncertain": false
 }

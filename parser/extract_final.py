@@ -36,11 +36,21 @@ class FinalTuroyoParser:
 
     def extract_roots_from_section(self, section_html):
         """Extract verb entries"""
-        root_pattern = r'<p[^>]*class="western"[^>]*><font[^>]*><span[^>]*>([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzḏṯẓāēīūə]{2,6})</span>'
+        # Updated pattern to handle roots with numbers (e.g., "ṭʕn\n1")
+        root_pattern = r'<p[^>]*class="western"[^>]*><font[^>]*><span[^>]*>([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzḏṯẓāēīūə]{2,6})(?:\s*\d+)?</span>'
         roots = []
 
         for match in re.finditer(root_pattern, section_html):
-            root = match.group(1)
+            root_chars = match.group(1)
+            # Check if there's a number after the root
+            full_match = match.group(0)
+            number_match = re.search(r'([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzḏṯẓāēīūə]{2,6})\s*(\d+)', full_match)
+
+            if number_match:
+                root = f"{root_chars} {number_match.group(2)}"
+            else:
+                root = root_chars
+
             start_pos = match.start()
 
             next_match = re.search(root_pattern, section_html[match.end():])
@@ -101,9 +111,9 @@ class FinalTuroyoParser:
             for element in para.descendants:
                 if isinstance(element, Tag):
                     if element.name == 'i':
-                        # This is Turoyo text
-                        text = element.get_text().strip()
-                        if text:
+                        # This is Turoyo text - DON'T strip yet to preserve word boundaries
+                        text = element.get_text()
+                        if text:  # Include even whitespace-only elements for spacing
                             parts.append(('turoyo', text))
 
                     elif element.name == 'span' and not element.find_parent('i'):
@@ -124,8 +134,9 @@ class FinalTuroyoParser:
                 for typ, text in parts:
                     if typ == 'turoyo':
                         # Check if this is a reference (numbers and slashes)
-                        if re.match(r'^[\d;/\s\[\]A-Z]+$', text):
-                            current_example['references'].append(text)
+                        stripped = text.strip()
+                        if re.match(r'^[\d;/\s\[\]A-Z]+$', stripped):
+                            current_example['references'].append(stripped)
                         else:
                             current_example['turoyo'].append(text)
                     elif typ == 'translation':
@@ -136,9 +147,13 @@ class FinalTuroyoParser:
                         elif len(text) > 10:  # Long enough to be meaningful
                             current_example['translations'].append(text)
 
-                # Clean up
+                # Clean up - join without adding spaces, then normalize whitespace
+                turoyo_text = ''.join(current_example['turoyo'])
+                # Normalize: collapse multiple whitespace chars into single space
+                turoyo_text = re.sub(r'\s+', ' ', turoyo_text).strip()
+
                 example = {
-                    'turoyo': ' '.join(current_example['turoyo']).strip(),
+                    'turoyo': turoyo_text,
                     'translations': [t.strip() for t in current_example['translations'] if t.strip()],
                     'references': [r.strip() for r in current_example['references'] if r.strip()]
                 }
@@ -222,6 +237,22 @@ class FinalTuroyoParser:
 
         return stems
 
+    def find_detransitive_position(self, entry_html):
+        """Find Detransitive section position (handles both formats)"""
+        # Format 1: Bold, large font (rare)
+        detrans_pattern1 = r'<font size="4" style="font-size: 16pt"><b><span[^>]*>Detransitive'
+        match1 = re.search(detrans_pattern1, entry_html)
+        if match1:
+            return match1.start()
+
+        # Format 2: Simple format (common)
+        detrans_pattern2 = r'<p[^>]*><span[^>]*>Detransitive</span></p>'
+        match2 = re.search(detrans_pattern2, entry_html)
+        if match2:
+            return match2.start()
+
+        return None
+
     def parse_entry(self, root, entry_html):
         """Parse complete entry"""
         entry = {
@@ -248,12 +279,30 @@ class FinalTuroyoParser:
         # Etymology
         entry['etymology'] = self.parse_etymology(entry_html)
 
+        # Find Detransitive position (if any) to use as boundary
+        detrans_pos = self.find_detransitive_position(entry_html)
+
         # Stems
         stems = self.parse_stems(entry_html)
 
         for i, stem in enumerate(stems):
-            # Find next stem position
-            next_pos = stems[i+1]['position'] if i+1 < len(stems) else len(entry_html)
+            # Find next boundary: next stem, or Detransitive, or end of entry
+            boundaries = []
+
+            # Add next stem position
+            if i+1 < len(stems):
+                boundaries.append(stems[i+1]['position'])
+
+            # Add Detransitive position if it's after current stem and before next stem
+            if detrans_pos and detrans_pos > stem['position']:
+                if i+1 >= len(stems) or detrans_pos < stems[i+1]['position']:
+                    boundaries.append(detrans_pos)
+
+            # Add end of entry
+            boundaries.append(len(entry_html))
+
+            # Use the earliest boundary
+            next_pos = min(boundaries)
 
             # Extract tables for this stem
             conjugations = self.extract_tables(entry_html, stem['position'], next_pos)
@@ -266,12 +315,17 @@ class FinalTuroyoParser:
 
             self.stats['stems_parsed'] += 1
 
-        # Detransitive
-        detrans_pattern = r'<font size="4" style="font-size: 16pt"><b><span[^>]*>Detransitive'
-        detrans_match = re.search(detrans_pattern, entry_html)
+        # Detransitive (extract tables after its position)
+        if detrans_pos:
+            # Find next stem after Detransitive (if any)
+            next_stem_pos = None
+            for stem in stems:
+                if stem['position'] > detrans_pos:
+                    if next_stem_pos is None or stem['position'] < next_stem_pos:
+                        next_stem_pos = stem['position']
 
-        if detrans_match:
-            conjugations = self.extract_tables(entry_html, detrans_match.end())
+            end_pos = next_stem_pos if next_stem_pos else len(entry_html)
+            conjugations = self.extract_tables(entry_html, detrans_pos, end_pos)
 
             entry['stems'].append({
                 'stem': 'Detransitive',

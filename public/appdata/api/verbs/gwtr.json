@@ -1,18 +1,15 @@
 {
   "root": "gwtr",
   "etymology": {
-    "etymons": [
-      {
-        "source": "Kurd.",
-        "source_root": "gotar",
-        "reference": "Ku 287",
-        "meaning": "слово, изречение"
-      }
-    ]
+    "source": "Kurd.",
+    "source_root": "gotar",
+    "reference": "Ku 287",
+    "meaning": "слово, изречение;"
   },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "I",
       "forms": [
         "mgawtalle",
         "mgawtər"
@@ -20,53 +17,32 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": ") ḥəs diḏi mgawtər",
-            "translations": [],
+            "turoyo": "1) mgawtalli ḥəs diḏi",
+            "translations": [
+              "ich\n\t\t\thabe mit lauter Stimme gesungen"
+            ],
             "references": [
-              "778"
+              "778;"
             ]
           }
         ]
-      },
-      "stem": "I",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mgawtalle/mgawtər</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">1)\nlaut erklingen lassen (Stimme); 2) (Detrans.) laut klingen;</span></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "I:\n"
-        },
-        {
-          "italic": false,
-          "text": "1)\nlaut erklingen lassen (Stimme); 2) (Detrans.) laut klingen;"
-        }
-      ]
+      }
     },
     {
+      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": ") ḥəs diḏi mgawtər",
-            "translations": [],
-            "references": [
-              "778"
-            ]
+            "turoyo": "",
+            "translations": [
+              "2) ḥəs diḏi mgawtər;\n\t\t\t778;"
+            ],
+            "references": []
           }
         ]
-      },
-      "stem": "Detransitive"
+      }
     }
   ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">gwtr</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; Kurd. gotar cf. Ku 287: слово, изречение;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "gwtr"
-    },
-    {
-      "italic": true,
-      "text": "\n(< Kurd. gotar cf. Ku 287: слово, изречение;)"
-    }
-  ]
+  "uncertain": false
 }

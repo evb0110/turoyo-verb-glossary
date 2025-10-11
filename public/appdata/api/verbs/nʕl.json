@@ -1,26 +1,21 @@
 {
   "root": "nʕl",
   "etymology": {
-    "etymons": [
-      {
-        "source": "MEA",
-        "source_root": "nʕl",
-        "reference": "SL 928",
-        "meaning": "to shoe a horse"
-      },
-      {
-        "source": "Arab.",
-        "source_root": "nʕl",
-        "reference": "Wehr 870",
-        "meaning": "mit Schuhen versehen, beschlagen (Pferd)",
-        "stem": null
-      }
-    ],
-    "relationship": "or"
+    "source": "Arab.",
+    "notes": "nʕl 2 cf. Kinderib 143: verfluchen; &lt; MEA naʕelāṯā"
   },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "III",
+      "forms": [
+        "manʕele",
+        "manʕəl"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "II",
       "forms": [
         "mnaʕele",
         "mnaʕəl"
@@ -47,31 +42,25 @@
             "references": []
           }
         ]
-      },
-      "stem": "II",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">II:\n</span></b></font></font><font color=\"#00000a\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mnaʕele/mnaʕəl</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">(Pferde,\nEsel...) beschlagen</span></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "II:\n"
-        },
-        {
-          "italic": false,
-          "text": "(Pferde,\nEsel...) beschlagen"
-        }
-      ]
-    }
-  ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#00000a\"><span style=\"background: transparent\">nʕl²</span></font><font color=\"#00000a\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; MEA nʕl (Pa.) cf. SL 928: to shoe a horse; or &lt; Arab. nʕl\n(II/IV) cf. Wehr 870: mit Schuhen versehen, beschlagen (Pferd)) </span></i></font></font>\n</p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#00000a\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "nʕl²"
+      }
     },
     {
-      "italic": true,
-      "text": "\n(< MEA nʕl (Pa.) cf. SL 928: to shoe a horse; or < Arab. nʕl\n(II/IV) cf. Wehr 870: mit Schuhen versehen, beschlagen (Pferd)) "
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Participle_Passive": [
+          {
+            "turoyo": "manʕlo",
+            "translations": [
+              "Verfluchter"
+            ],
+            "references": [
+              "306;"
+            ]
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "uncertain": false
 }

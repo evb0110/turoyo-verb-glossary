@@ -1,25 +1,15 @@
 {
   "root": "frʕ 1",
   "etymology": {
-    "etymons": [
-      {
-        "source": "Arab.",
-        "source_root": "frʕ",
-        "reference": "Lane 2378",
-        "meaning": "to smite"
-      },
-      {
-        "source": "Arab.",
-        "source_root": "frʕ",
-        "reference": "Wehr 956",
-        "meaning": "Zweige, Äste treiben; see also Tezel 70-71",
-        "stem": "II"
-      }
-    ]
+    "source": "Arab.",
+    "source_root": "frʕ",
+    "reference": "Lane 2378",
+    "meaning": "to smite; &lt; Arab. frʕ (II"
   },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "I",
       "forms": [
         "farəʕ",
         "forəʕ"
@@ -29,66 +19,92 @@
           {
             "turoyo": "fariʕo druʕi",
             "translations": [
-              "ich habe mir den Arm verstaucht"
+              "ich\n\t\t\thabe mir den Arm verstaucht"
             ],
             "references": [
-              "199"
-            ]
-          }
-        ],
-        "Preterit": [
-          {
-            "turoyo": "iḏe friʕo nafiqo m-i=dukṯo",
-            "translations": [
-              "er renkt sich den Arm aus"
-            ],
-            "references": [
-              "199"
+              "199;"
             ]
           }
         ]
-      },
-      "stem": "I",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">farəʕ/forəʕ</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">vom\nheftigen Schlage lahm werden, sich verstauchen;</span></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "I:\n"
-        },
-        {
-          "italic": false,
-          "text": "vom\nheftigen Schlage lahm werden, sich verstauchen;"
-        }
-      ]
+      }
     },
     {
+      "stem": "II",
+      "forms": [
+        "mfaraʕle",
+        "mfarəʕ"
+      ],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "",
+            "translations": [
+              "mfaradli mo waroqe b ʕaṣro ʕaṣrowat. I changed hundred liras",
+              "ten tens. (Ilyas p.c)"
+            ],
+            "references": []
+          }
+        ],
+        "Infectum": [
+          {
+            "turoyo": "",
+            "translations": [
+              "gǝmfaradno u laḥmo bayn a tlawḥe. I will crumble the bread in\n\t\t\tthe lentil (soup). (Ilyas p.c)"
+            ],
+            "references": []
+          },
+          {
+            "turoyo": "",
+            "translations": [
+              "gǝmfaradno\n\t\t\tak kallawatayḏi kulle. I will change all my money. (Ilyas p.c)"
+            ],
+            "references": []
+          },
+          {
+            "turoyo": "",
+            "translations": [
+              "gǝmfaradno\n\t\t\tu šakar bi čaye. I will crumble the sugar in the tea.(Ilyas p.c)"
+            ],
+            "references": []
+          }
+        ]
+      }
+    },
+    {
+      "stem": "I",
+      "forms": [
+        "frəḏ̣le",
+        "forəḏ̣"
+      ],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "lazəm d-əzzano l-i=walay-aṯe d-qoṭəʕ i=šariʕayḏan, ənkān eli g-furḏ̣o aw elux gəd-furḏ̣o 99; 60/26, 123, 127;",
+            "translations": [
+              "wir\n\t\t\tmüssen in die Stadt gehen, damit er unseren Rechtsfall\n\t\t\tentscheidet, ob sie von Rechtswegen mir oder dir gehören soll"
+            ],
+            "references": []
+          }
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Preterit": [
           {
             "turoyo": "iḏe friʕo nafiqo m-i=dukṯo",
             "translations": [
-              "er renkt sich den Arm aus"
+              "er\n\t\t\trenkt sich den Arm aus"
             ],
             "references": [
-              "199"
+              "199;"
             ]
           }
         ]
-      },
-      "stem": "Detransitive"
+      }
     }
   ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">frʕ\n1</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; Arab. frʕ cf. Lane 2378: to smite; &lt; Arab. frʕ (II) cf.\nWehr 956: Zweige, Äste treiben; see also Tezel 70-71)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "frʕ\n1"
-    },
-    {
-      "italic": true,
-      "text": "\n(< Arab. frʕ cf. Lane 2378: to smite; < Arab. frʕ (II) cf.\nWehr 956: Zweige, Äste treiben; see also Tezel 70-71)"
-    }
-  ]
+  "uncertain": false
 }

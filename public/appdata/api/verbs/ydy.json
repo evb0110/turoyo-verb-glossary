@@ -1,15 +1,13 @@
 {
   "root": "ydy",
   "etymology": {
-    "etymons": [
-      {
-        "source": "MEA"
-      }
-    ]
+    "source": "MEA",
+    "notes": "ypy (Af."
   },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "III",
       "forms": [
         "mawdele",
         "mawde"
@@ -19,47 +17,87 @@
           {
             "turoyo": "mən hadiye ŭbína-le l-u=zlām-ano, ḥatta də-mʕawḏ̣ina, d-mawfena i=ṭowuṯ-ayḏe?",
             "translations": [
-              "welches Geschenk sollen wir diesem Manne geben, um ihn seine Wohltat zu entgelten und gebührend zu belohnen"
+              "welches\n\t\t\tGeschenk sollen wir diesem Manne geben, um ihn seine Wohltat zu\n\t\t\tentgelten und gebührend zu belohnen"
             ],
             "references": [
-              "24/100",
-              "; [MT]"
+              "24/100; [MT]"
             ]
           }
         ]
-      },
+      }
+    },
+    {
       "stem": "III",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">III:\n</span></b></font><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mawfele/mawfe</span></b></i></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">auszahlen,\nerfüllen;</span></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "III:\n"
-        },
-        {
-          "italic": false,
-          "text": "auszahlen,\nerfüllen;"
-        }
-      ]
+      "forms": [
+        "mawžadle",
+        "mawžəd"
+      ],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "mawžadle iḏe 665; l-u=ʕmiro mojadle u=maktubayḏe l-qum u=šulṭono",
+            "translations": [
+              "er\n\t\t\tstreckte seine Hand aus",
+              "der\n\t\t\tEmir streckte seinen Brief dem Sultan hin"
+            ],
+            "references": [
+              "665;\n\t\t\t36/57;"
+            ]
+          }
+        ],
+        "Infectum": [
+          {
+            "turoyo": "g-məždo raġla",
+            "translations": [
+              "sie\n\t\t\twird ihren Fuss ausstrecken"
+            ],
+            "references": [
+              "665; 75/283;"
+            ]
+          }
+        ],
+        "Imperative": [
+          {
+            "turoyo": "",
+            "translations": [
+              "mžad; možád; ožád; 665;"
+            ],
+            "references": []
+          }
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "ko-mitawžəd; 666;",
+            "translations": [],
+            "references": []
+          }
+        ],
+        "Participle_Passive": [
+          {
+            "turoyo": "mžido; mžətto; 666;",
+            "translations": [
+              "62.\n\t\t\tFāš hawxa Oṣmán Aġá kalé taḥt i+k̇onayḏe mәždo, \n\t\t\tmožadle ruḥe kalé taḥt i+k̇onayḏe yatiwo (Aḥmad Aġa\n\t\t\t12_08_2020)"
+            ],
+            "references": []
+          }
+        ],
+        "Infinitive": [
+          {
+            "turoyo": "mžodo 664; tawžido; 665;",
+            "translations": [
+              "ausstrecken"
+            ],
+            "references": []
+          }
+        ]
+      }
     }
   ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">ydy</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><span style=\"background: transparent\">\n</span></font></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><span style=\"background: transparent\">(</span></font></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">&lt;\nMEA ydy, cf. SL 563: to acknowledge, confess</span></i></font></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><span style=\"background: transparent\">)</span></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "ydy"
-    },
-    {
-      "italic": false,
-      "text": "("
-    },
-    {
-      "italic": true,
-      "text": "<\nMEA ydy, cf. SL 563: to acknowledge, confess"
-    },
-    {
-      "italic": false,
-      "text": ")"
-    }
-  ]
+  "uncertain": false
 }

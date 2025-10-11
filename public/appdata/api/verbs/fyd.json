@@ -1,18 +1,15 @@
 {
   "root": "fyd",
   "etymology": {
-    "etymons": [
-      {
-        "source": "Kurd.",
-        "source_root": "peyda",
-        "reference": "Ku 601",
-        "meaning": "найтись, отыскаться; появляться, возникать"
-      }
-    ]
+    "source": "Kurd.",
+    "source_root": "peyda",
+    "reference": "Ku 601",
+    "meaning": "найтись, отыскаться;"
   },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "II",
       "forms": [
         "mfayadle",
         "mfayəd"
@@ -20,13 +17,12 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "lo ənəs w lo ǧəns lə=k-mifayəd eba",
+            "turoyo": "ak=kallawat-ani lo hat ko-mfaydat-te",
             "translations": [
-              "weder Menschen noch Geister sind darin zu finden"
+              "nicht\n\t\t\tdu beschaffst dieses Geld"
             ],
             "references": [
-              "494",
-              "113/69"
+              "494; 102/25;"
             ]
           }
         ],
@@ -34,54 +30,71 @@
           {
             "turoyo": "g-əzzá-way-na gə-mfaydí-way-na-lan tre=gorəsyoṯe",
             "translations": [
-              "gingen wir und suchten uns zwei grosse Handmühlen"
+              "gingen\n\t\t\twir und suchten uns zwei grosse Handmühlen"
             ],
             "references": []
           }
         ]
-      },
-      "stem": "II",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">II:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mfayadle/mfayəd</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">herbeischaffen,\nZur Stelle schaffen, auftreiben, finden;</span></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "II:\n"
-        },
-        {
-          "italic": false,
-          "text": "herbeischaffen,\nZur Stelle schaffen, auftreiben, finden;"
-        }
-      ]
+      }
     },
     {
+      "stem": "I",
+      "forms": [
+        "fayəḏ̣",
+        "foyəḏ̣"
+      ],
+      "conjugations": {
+        "Preterit Intransitive": [
+          {
+            "turoyo": "l-u=ḥasyo d-Miḏyaḏ, Ḥasyó Iyawannīs Afrám, w l-i=ǧamaʕa ḥzalle nuhro, d-fayəḏ̣ ʕul m-u=hayklo d-i=ʕito",
+            "translations": [
+              "der\n\t\t\tMetropolit von Mi",
+              "asyo\n\t\t\tJohannes Afram, und die Gemeinde sahen ein Licht, das über dem\n\t\t\tSchiff der Kirche einströmte"
+            ],
+            "references": [
+              "576;\n\t\t\t11/118;"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "stem": "III",
+      "forms": [
+        "mafəḏ̣le",
+        "mafəḏ̣"
+      ],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "ko-mafəḏ̣no",
+            "translations": [
+              "ich\n\t\t\thabe Nasenbluten"
+            ],
+            "references": [
+              "576;"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Infectum": [
           {
             "turoyo": "lo ənəs w lo ǧəns lə=k-mifayəd eba",
             "translations": [
-              "weder Menschen noch Geister sind darin zu finden"
+              "weder\n\t\t\tMenschen noch Geister sind darin zu finden"
             ],
             "references": [
-              "494",
-              "113/69"
+              "494; 113/69;"
             ]
           }
         ]
-      },
-      "stem": "Detransitive"
+      }
     }
   ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">fyd</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; Kurd. peyda cf. Ku 601: найтись, отыскаться;\nпоявляться, возникать;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "fyd"
-    },
-    {
-      "italic": true,
-      "text": "\n(< Kurd. peyda cf. Ku 601: найтись, отыскаться;\nпоявляться, возникать;)"
-    }
-  ]
+  "uncertain": false
 }

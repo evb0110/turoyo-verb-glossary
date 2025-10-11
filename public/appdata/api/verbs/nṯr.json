@@ -1,18 +1,15 @@
 {
   "root": "nṯr",
   "etymology": {
-    "etymons": [
-      {
-        "source": "MEA",
-        "source_root": "ntr",
-        "reference": "SL 956",
-        "meaning": "to fall; to waste away, dwindle"
-      }
-    ]
+    "source": "MEA",
+    "source_root": "ntr",
+    "reference": "SL 956",
+    "meaning": "to fall; to waste away, dwindle"
   },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "I",
       "forms": [
         "naṯər",
         "noṯər"
@@ -22,28 +19,17 @@
           {
             "turoyo": "ko-noṯər ṣaʕri",
             "translations": [
-              "das Haar fällt mir aus"
+              "das\n\t\t\tHaar fällt mir aus"
             ],
             "references": [
-              "235"
+              "235;"
             ]
           }
         ]
-      },
-      "stem": "I",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">naṯər/noṯər</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">(aus)fallen;</span></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "I:\n"
-        },
-        {
-          "italic": false,
-          "text": "(aus)fallen;"
-        }
-      ]
+      }
     },
     {
+      "stem": "III",
       "forms": [
         "manṯalle",
         "manṯər"
@@ -53,39 +39,60 @@
           {
             "turoyo": "g-manaṯro u=ṣaʕro",
             "translations": [
-              "sie lässt einem die Haare ausfallen"
+              "sie\n\t\t\tlässt einem die Haare ausfallen"
             ],
             "references": [
-              "241",
-              "115/294"
+              "241; 115/294;"
             ]
           }
         ]
-      },
-      "stem": "III",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">III:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">manṯalle/manṯər</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">(aus)fallen\nlassen;</span></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "III:\n"
-        },
-        {
-          "italic": false,
-          "text": "(aus)fallen\nlassen;"
-        }
-      ]
-    }
-  ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">nṯr</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; MEA ntr cf. SL 956: to fall; to waste away, dwindle) </span></i></font></font>\n</p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "nṯr"
+      }
     },
     {
-      "italic": true,
-      "text": "\n(< MEA ntr cf. SL 956: to fall; to waste away, dwindle) "
+      "stem": "I",
+      "forms": [
+        "mnawhalle",
+        "mnawhər"
+      ],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "i=emo d-u=zʕuro ko-mnawhro aʕle",
+            "translations": [
+              "die\n\t\t\tMutter beruhigt den Jungen durch Singen"
+            ],
+            "references": [
+              "784;"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "stem": "I",
+      "forms": [
+        "mnawhər",
+        "minawhər"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "an=naʕime d-aw=walayat ko-minawhri",
+            "translations": [
+              "die\n\t\t\tStadtkinder werden helle, klug"
+            ],
+            "references": [
+              "784;"
+            ]
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "uncertain": false
 }

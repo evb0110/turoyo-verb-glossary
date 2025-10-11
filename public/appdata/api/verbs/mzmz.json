@@ -1,9 +1,13 @@
 {
   "root": "mzmz",
-  "etymology": null,
+  "etymology": {
+    "source": "MEA",
+    "notes": "yšṭ (Af."
+  },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "I",
       "forms": [
         "mazmazle",
         "mazməz"
@@ -13,46 +17,116 @@
           {
             "turoyo": "ko-mazməz lebi l-u=mukl-ano",
             "translations": [
-              "ich habe grossen Appetit auf diese Essen"
+              "ich\n\t\t\thabe grossen Appetit auf diese Essen"
             ],
             "references": [
-              "800"
+              "800;"
             ]
           }
         ]
-      },
-      "stem": "I",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mazmazle/mazməz</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><font size=\"2\" style=\"font-size: 10pt\"><span style=\"background: transparent\">grossen\nAppetit haben (mit </span></font></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 10pt\"><i><span style=\"background: transparent\">lebo</span></i></font></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 10pt\"><span style=\"background: transparent\">);</span></font></font></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "I:\n"
-        },
-        {
-          "italic": false,
-          "text": "grossen\nAppetit haben (mit "
-        },
-        {
-          "italic": true,
-          "text": "lebo"
-        },
-        {
-          "italic": false,
-          "text": ");"
-        }
-      ]
-    }
-  ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">mzmz</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(unknown)  </span></i></font></font>\n</p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "mzmz"
+      }
     },
     {
-      "italic": true,
-      "text": "\n(unknown)  "
+      "stem": "I",
+      "forms": [
+        "mžədle",
+        "možəd"
+      ],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "mžədle b-i=arʕo 665; 69/322; i=naqla d-mḥalaqlan ruḥan l-i=arʕo mžədlan ruḥan, w-naqqa aṯi mḥele ʕal aḏni Lehrbuch 18.7.11; mžədli ruḥi u=ḥa=yawmo, k-ḥŭzeno, killa Lili, mžədla ruḥa b-u=šubbak, killa k-munqo u=farxo d-i=qaṭən",
+            "translations": [
+              "er\n\t\t\tstreckte ihn auf der Erde aus, legte ihn flach auf die Erde",
+              "als\n\t\t\twir uns hinwarfen und auf der Erde ausstreckten, kam (der\n\t\t\tUnteroffizier) und versetzte mir einen Schlag aufs Ohr",
+              "ich\n\t\t\tlegte mich hin",
+              "‘eines Tages sehe ich, wie Lily, am Fenster ausgestreckt, dieses\n\t\t\tKatzenjunge säugt’;"
+            ],
+            "references": [
+              "LB\n\t\t\t67;",
+              "2/102;"
+            ]
+          },
+          {
+            "turoyo": "l-u=ʕmiro možadle u=maktub-ayḏe l-qum u=šulṭono",
+            "translations": [
+              "‘Der Emir streckte seinen Brief dem Sultan hin’; 36/57"
+            ],
+            "references": []
+          }
+        ],
+        "Infectum": [
+          {
+            "turoyo": "məd-aṯi u=šulṭono, u=ʕmiro ṭro možəd iḏe w-obe-le u=maktūb l-u=šulṭonokit šeno rabṯo ʕam gabe d-i=ʕayno ʕal i=šen-ayo ko-məždo ruḥa",
+            "translations": [
+              "‘Wenn der Sultan kommt, möge der Emir seine Hand ausstrecken\n\t\t\tund den Brief dem Sultan geben’; 36/49;",
+              "‘There is a big cliff near the spring. On this cliff she (the\n\t\t\tmother lion, f.) stretches herself’ 75/285;"
+            ],
+            "references": []
+          }
+        ],
+        "Imperative": [
+          {
+            "turoyo": "mžad; možád; ožád; 665; mžad raġlux mžad ruḥux",
+            "translations": [
+              "strecke\n\t\t\tdeine Beine aus!",
+              "lege\n\t\t\tdich hin!"
+            ],
+            "references": [
+              "LB 50;",
+              "LB 66;"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "mžīd",
+            "translations": [
+              "er\n\t\t\tstreckte sich aus"
+            ],
+            "references": [
+              "665;"
+            ]
+          }
+        ],
+        "Infectum": [
+          {
+            "turoyo": "ko-məmžəd",
+            "translations": [
+              "er\n\t\t\tstreckt sich jetzt aus"
+            ],
+            "references": [
+              "665;"
+            ]
+          }
+        ],
+        "Participle_Passive": [
+          {
+            "turoyo": "mžido; mžītto; 666; ga kale zlām mžido tamo w-ʕayne ftiḥeaṯi u=zʕuro u=garwono zbəṭle u=məšḥo w-kfəxle b-feme d-Kayalo w-hiye damixo l=ule w-lo=šqile našəf b-dukṯe (…) nafiqo i=žənəke ko-ḥayro Kayalo kale mžido qayiso našifo",
+            "translations": [
+              "‘There lies a man with open eyes’; 46/30;",
+              "‘The bald boy came, grabbed the (boiling) butter and poured it\n\t\t\tin Kayalo’s mouth, while he was sleeping. He did not move, he\n\t\t\tstiffened where he sat (…). The woman came out and saw that\n\t\t\tKayalo was stretched and completely frozen’ 76/153-155;"
+            ],
+            "references": []
+          }
+        ],
+        "Infinitive": [
+          {
+            "turoyo": "mžodo 664; tawžido; 665;",
+            "translations": [
+              "ausstrecken"
+            ],
+            "references": []
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "uncertain": false
 }

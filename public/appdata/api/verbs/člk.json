@@ -1,18 +1,15 @@
 {
   "root": "člk",
   "etymology": {
-    "etymons": [
-      {
-        "source": "Kurd.",
-        "source_root": "çilk",
-        "reference": "Ku 167",
-        "meaning": "капля"
-      }
-    ]
+    "source": "Kurd.",
+    "source_root": "çilk",
+    "reference": "Ku 167",
+    "meaning": "капля;"
   },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "II",
       "forms": [
         "mčalakle",
         "mčalək"
@@ -20,85 +17,43 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "u=gubo mčalək",
+            "turoyo": "mčalakle maye m-u=gubo",
             "translations": [
-              "die Zisterne ist erschöpft"
+              "er\n\t\t\tschöpfte mit kleinen Gefässen Wasser aus der fast leeren\n\t\t\tZisterne"
             ],
             "references": [
-              "225"
-            ]
-          }
-        ],
-        "Infectum": [
-          {
-            "turoyo": "Behn diḏi komičalak",
-            "translations": [],
-            "references": []
-          },
-          {
-            "turoyo": "‘I'm out of breath’",
-            "translations": [],
-            "references": [
-              "p.c. Ilyas 7/11/23"
+              "225;"
             ]
           }
         ]
-      },
-      "stem": "II",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">II:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">mčalakle/mčalək</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><span style=\"background: transparent\">erschöpfen,\nganz ausschöpfen (Zisterne);</span></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "II:\n"
-        },
-        {
-          "italic": false,
-          "text": "erschöpfen,\nganz ausschöpfen (Zisterne);"
-        }
-      ]
+      }
     },
     {
+      "stem": "Detransitive",
       "forms": [],
       "conjugations": {
         "Infectum": [
           {
             "turoyo": "Behn diḏi komičalak",
-            "translations": [],
+            "translations": [
+              "‘I'm\n\t\t\tout of breath’ (p.c. Ilyas 7/11/23)"
+            ],
             "references": []
-          },
-          {
-            "turoyo": "‘I'm out of breath’",
-            "translations": [],
-            "references": [
-              "p.c. Ilyas 7/11/23"
-            ]
           }
         ],
         "Preterit": [
           {
             "turoyo": "u=gubo mčalək",
             "translations": [
-              "die Zisterne ist erschöpft"
+              "die\n\t\t\tZisterne ist erschöpft"
             ],
             "references": [
-              "225"
+              "225;"
             ]
           }
         ]
-      },
-      "stem": "Detransitive"
+      }
     }
   ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">člk</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(&lt; Kurd. çilk cf. Ku 167: капля;)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "člk"
-    },
-    {
-      "italic": true,
-      "text": "\n(< Kurd. çilk cf. Ku 167: капля;)"
-    }
-  ]
+  "uncertain": false
 }

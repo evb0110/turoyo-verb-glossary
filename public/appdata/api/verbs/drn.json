@@ -1,9 +1,15 @@
 {
   "root": "drn",
-  "etymology": null,
+  "etymology": {
+    "source": "MEA",
+    "source_root": "drk",
+    "reference": "SL 322-323",
+    "meaning": "to give birth; to propagate;"
+  },
   "cross_reference": null,
   "stems": [
     {
+      "stem": "I",
       "forms": [
         "drəlle",
         "dorən"
@@ -11,46 +17,35 @@
       "conjugations": {
         "Imperative": [
           {
-            "turoyo": "dran-e b-u=doruno",
-            "translations": [],
+            "turoyo": "",
+            "translations": [
+              "dran-e b-u=doruno; 267;"
+            ],
+            "references": []
+          }
+        ]
+      }
+    },
+    {
+      "stem": "I",
+      "forms": [
+        "drəxle",
+        "dorəx"
+      ],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "an=noše gabayna ko-dərxi ar=rawṭe d-as=sate b-ad=dəkoṯe xalye",
+            "translations": [
+              "die\n\t\t\tLeute bei uns pflanzen die Weinranken an leere Stelle über"
+            ],
             "references": [
-              "267"
+              "177;"
             ]
           }
         ]
-      },
-      "stem": "I",
-      "label_raw": "<font size=\"4\" style=\"font-size: 14pt\"><b><span style=\"background: transparent\">I:\n</span></b></font></font><font color=\"#000000\"><font size=\"4\" style=\"font-size: 14pt\"><i><b><span style=\"background: transparent\">drəlle/dorən</span></b></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><font size=\"2\" style=\"font-size: 10pt\"><span style=\"background: transparent\">mit\ndem schwarzen, glatten Stein </span></font></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 10pt\"><i><span style=\"background: transparent\">dōrūno</span></i></font></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 10pt\"><span style=\"background: transparent\">\nglätten (getünchte Wand);</span></font></font></p>",
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "I:\n"
-        },
-        {
-          "italic": false,
-          "text": "mit\ndem schwarzen, glatten Stein "
-        },
-        {
-          "italic": true,
-          "text": "dōrūno"
-        },
-        {
-          "italic": false,
-          "text": "\nglätten (getünchte Wand);"
-        }
-      ]
+      }
     }
   ],
-  "uncertain": false,
-  "lemma_header_raw": "<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\"><span style=\"background: transparent\">drn</span></font><font color=\"#000000\"><font size=\"2\" style=\"font-size: 11pt\"><i><span style=\"background: transparent\">\n(unknown)</span></i></font></font></p>\n<p lang=\"en-GB\" class=\"western\"><font color=\"#000000\">",
-  "lemma_header_tokens": [
-    {
-      "italic": false,
-      "text": "drn"
-    },
-    {
-      "italic": true,
-      "text": "\n(unknown)"
-    }
-  ]
+  "uncertain": false
 }
