@@ -62,7 +62,34 @@ export function generateExcerpts(
     const maxExcerpts = opts.maxExcerpts ?? 5
     const seenTexts = new Set<string>() // Track unique texts to avoid duplicates
 
-    // 1. Search in forms
+    // 1. Search in lemma header (bibliographic references, citations, attributions)
+    if (verb.lemma_header_tokens) {
+        const headerText = verb.lemma_header_tokens
+            .map(token => token.text)
+            .join('')
+
+        // Find ALL matches, not just the first one
+        const globalRegex = new RegExp(regex.source, regex.flags.includes('g') ? regex.flags : `g${regex.flags}`)
+        let headerMatch: RegExpExecArray | null
+        while ((headerMatch = globalRegex.exec(headerText)) !== null && excerpts.length < maxExcerpts) {
+            const excerptText = extractContext(headerText, headerMatch.index, headerMatch[0].length, 60)
+            if (!seenTexts.has(excerptText)) {
+                seenTexts.add(excerptText)
+                excerpts.push({
+                    type: 'etymology', // Using 'etymology' type for header citations
+                    text: excerptText,
+                    html: highlightMatches(excerptText, query, opts),
+                    label: 'Citation:'
+                })
+            }
+            // Prevent infinite loop on zero-length matches
+            if (headerMatch[0].length === 0) {
+                globalRegex.lastIndex += 1
+            }
+        }
+    }
+
+    // 2. Search in forms
     for (const stem of verb.stems) {
         for (const form of stem.forms) {
             if (regex.test(form) && !seenTexts.has(form)) {
@@ -77,14 +104,16 @@ export function generateExcerpts(
             }
         }
 
-        // 2. Search in stem glosses (German meanings)
+        // 3. Search in stem glosses (German meanings)
         if (stem.label_gloss_tokens) {
             const glossText = stem.label_gloss_tokens
                 .map(token => token.text)
                 .join('')
 
-            const glossMatch = glossText.match(regex)
-            if (glossMatch && glossMatch.index !== undefined) {
+            // Find ALL matches, not just the first one
+            const globalRegex = new RegExp(regex.source, regex.flags.includes('g') ? regex.flags : `g${regex.flags}`)
+            let glossMatch: RegExpExecArray | null
+            while ((glossMatch = globalRegex.exec(glossText)) !== null && excerpts.length < maxExcerpts) {
                 const excerptText = extractContext(glossText, glossMatch.index, glossMatch[0].length, 60)
                 if (!seenTexts.has(excerptText)) {
                     seenTexts.add(excerptText)
@@ -96,10 +125,14 @@ export function generateExcerpts(
                         label: `Meaning (Stem ${stem.stem}):`
                     })
                 }
+                // Prevent infinite loop on zero-length matches
+                if (glossMatch[0].length === 0) {
+                    globalRegex.lastIndex += 1
+                }
             }
         }
 
-        // 3. Search in conjugation examples
+        // 4. Search in conjugation examples
         for (const [conjType, examples] of Object.entries(stem.conjugations)) {
             for (const example of examples) {
                 // Skip if we have enough excerpts
@@ -154,7 +187,7 @@ export function generateExcerpts(
         }
     }
 
-    // 4. Search in etymology
+    // 5. Search in etymology
     if (verb.etymology) {
         for (const etymon of verb.etymology.etymons) {
             if (excerpts.length >= maxExcerpts) {
@@ -162,8 +195,10 @@ export function generateExcerpts(
             }
 
             if (etymon.meaning) {
-                const eMatch = etymon.meaning.match(regex)
-                if (eMatch && eMatch.index !== undefined) {
+                // Find ALL matches, not just the first one
+                const globalRegex = new RegExp(regex.source, regex.flags.includes('g') ? regex.flags : `g${regex.flags}`)
+                let eMatch: RegExpExecArray | null
+                while ((eMatch = globalRegex.exec(etymon.meaning)) !== null && excerpts.length < maxExcerpts) {
                     const excerptText = extractContext(etymon.meaning, eMatch.index, eMatch[0].length, 60)
                     if (!seenTexts.has(excerptText)) {
                         seenTexts.add(excerptText)
@@ -173,6 +208,10 @@ export function generateExcerpts(
                             html: highlightMatches(excerptText, query, opts),
                             label: `Etymology:`
                         })
+                    }
+                    // Prevent infinite loop on zero-length matches
+                    if (eMatch[0].length === 0) {
+                        globalRegex.lastIndex += 1
                     }
                 }
             }
