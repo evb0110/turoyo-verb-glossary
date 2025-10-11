@@ -1,8 +1,12 @@
 <template>
     <div>
-        <UModal v-if="open" v-model:open="open" :ui="{ content: 'p-0 sm:max-w-lg' }">
+        <UModal
+            v-if="open"
+            v-model:open="open"
+            title="Quick search"
+        >
             <template #body>
-                <div class="p-4 space-y-3">
+                <div class="">
                     <UInput
                         ref="inputRef"
                         v-model="query"
@@ -15,15 +19,12 @@
                         <div>
                             Press Enter to search
                         </div>
-                        <div class="hidden sm:flex items-center gap-2">
-                            <UKbd class="hidden sm:inline">Enter</UKbd>
-                        </div>
                     </div>
                 </div>
             </template>
         </UModal>
     </div>
-    
+
     <UButton
         class="sr-only"
         aria-hidden="true"
@@ -49,9 +50,9 @@ function onKeydown(e: KeyboardEvent) {
     const target = e.target as HTMLElement | null
     const tag = (target?.tagName || '').toLowerCase()
     const isEditable = target && (
-        tag === 'input' ||
-        tag === 'textarea' ||
-        (target as HTMLElement).isContentEditable
+        tag === 'input'
+        || tag === 'textarea'
+        || (target as HTMLElement).isContentEditable
     )
     if (isEditable) return
 
@@ -85,6 +86,14 @@ function submit() {
     const caseParam = (currentQuery.case as string) || 'off'
 
     open.value = false
+
+    console.log({
+        q,
+        type,
+        regex,
+        case: caseParam
+    })
+
     router.push({
         path: '/',
         query: {
@@ -99,5 +108,3 @@ function submit() {
 
 <style scoped>
 </style>
-
-

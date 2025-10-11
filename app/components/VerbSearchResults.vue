@@ -8,7 +8,7 @@
     >
         <template #root-cell="{ row }">
             <NuxtLink
-                :to="`/verbs/${rootToSlug(row.original.root)}`"
+                :to="{ path: `/verbs/${rootToSlug(row.original.root)}`, query: route.query }"
                 class="font-semibold text-primary hover:underline turoyo-text"
             >
                 {{ row.original.root }}
@@ -70,6 +70,11 @@ defineProps<{
     loadingDetails: boolean
     pending: boolean
 }>()
+
+const route = useRoute()
+watchEffect(() => {
+    console.log(route?.query)
+})
 
 const columns = [
     {

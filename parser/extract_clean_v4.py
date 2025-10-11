@@ -261,8 +261,13 @@ class CleanTuroyoParser:
         """
         Walk DOM tree and extract text while tracking italic context.
         Returns list of (is_italic, text) tuples.
+
+        Adds spacing after block-level elements to preserve word boundaries.
         """
         result = []
+
+        # Block-level elements that should add spacing after
+        block_elements = {'p', 'div', 'br', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'li', 'tr', 'td'}
 
         if isinstance(element, NavigableString):
             text = str(element)
@@ -276,6 +281,12 @@ class CleanTuroyoParser:
         # Recurse to children
         for child in element.children:
             result.extend(self.walk_and_extract(child, current_italic))
+
+        # Add spacing after block-level elements (unless it's the root being processed)
+        if element.name in block_elements and result:
+            # Add a space token after this block element, preserving the italic context of the last token
+            last_italic = result[-1][0] if result else in_italic
+            result.append((last_italic, ' '))
 
         return result
 

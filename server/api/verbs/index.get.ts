@@ -1,6 +1,6 @@
 import { matchesPattern } from '../../utils/regexSearch'
 
-export default defineEventHandler(async (event) => {
+export default eventHandler(async (event) => {
     const query = getQuery(event)
 
     // Load search index (lightweight, single file)

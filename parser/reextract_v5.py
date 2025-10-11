@@ -5,8 +5,8 @@ from pathlib import Path
 from collections import defaultdict
 from bs4 import BeautifulSoup
 
-# Reuse parsing logic from v4 for tables and stems
-from parser.extract_clean_v4 import CleanTuroyoParser
+# Use the correct final parser that handles Detransitive boundaries properly
+from parser.extract_final import FinalTuroyoParser
 
 ALLOWED = 'ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzžḏṯẓāēīūə'
 # Match: <p class="western"><font...><span>ROOT</span> ...
@@ -16,7 +16,7 @@ ROOT_PATTERN = re.compile(
 )
 
 SRC_HTML = Path('source/Turoyo_all_2024.html')
-OUT_JSON = Path('data/verbs_final_v5.json')
+OUT_JSON = Path('data/verbs_final.json')  # Changed from v5 to match split_verbs.py expectation
 
 # Stem header marker to locate the start of the first stem block
 STEM_HEADER = re.compile(r'<font size="4"[^>]*><b><span[^>]*>([IVX]+):\s*</span>', re.DOTALL)
@@ -63,14 +63,16 @@ def extract_stem_labels(fragment_html: str):
     return labels
 
 
-def html_to_tokens(parser: CleanTuroyoParser, html: str):
+def html_to_tokens(parser: FinalTuroyoParser, html: str):
     if not html:
         return []
     soup = BeautifulSoup(html, 'html.parser')
     pairs = parser.walk_and_extract(soup)
     tokens = []
     for is_italic, text in pairs:
-        if text and text.strip():
+        # Keep tokens if they have content OR if they're a single space (block separator)
+        # Filter out tokens that are only newlines/tabs or empty
+        if text and (text.strip() or text == ' '):
             tokens.append({ 'italic': bool(is_italic), 'text': text })
     return tokens
 
@@ -96,7 +98,7 @@ def main():
     html = SRC_HTML.read_text(encoding='utf-8')
     segments = segment_entries(html)
 
-    parser = CleanTuroyoParser(str(SRC_HTML))
+    parser = FinalTuroyoParser(str(SRC_HTML))
 
     verbs = []
     stats = defaultdict(int)
@@ -114,11 +116,7 @@ def main():
             # Stem labels (verbatim + tokens), plus split gloss
             labels = extract_stem_labels(frag)
             for stem in entry.get('stems', []):
-                roman = stem.get('stem') or stem.get('stem')
-                if roman:
-                    stem['stem'] = roman
-                if 'stem' in stem:
-                    del stem['stem']
+                roman = stem.get('stem')
                 if roman and roman in labels:
                     label_html = labels[roman]
                     stem['label_raw'] = label_html
