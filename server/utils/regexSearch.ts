@@ -73,11 +73,8 @@ export function matchesPattern(
     return false
   }
 
-  // Auto-detect regex if useRegex is not explicitly set
-  const shouldUseRegex = useRegex || isRegexPattern(pattern)
-
-  // If not using regex and no shortcuts, use simple includes
-  if (!shouldUseRegex) {
+  // If regex toggle is off, always do a plain-text includes match
+  if (!useRegex) {
     return caseSensitive
       ? text.includes(pattern)
       : text.toLowerCase().includes(pattern.toLowerCase())

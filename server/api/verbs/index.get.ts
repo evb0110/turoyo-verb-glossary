@@ -37,16 +37,17 @@ export default defineEventHandler(async (event) => {
         const searchQuery = String(query.q)
         const rootsOnly = query.rootsOnly === 'true'
         const useRegex = query.useRegex === 'true'
+        const caseSensitive = query.caseSensitive === 'true'
 
         filtered = filtered.filter((v) => {
             // Search in root (supports regex with \c and \v)
-            if (matchesPattern(v.root, searchQuery, { useRegex })) return true
+            if (matchesPattern(v.root, searchQuery, { useRegex, caseSensitive })) return true
 
             // If roots only, stop here
             if (rootsOnly) return false
 
             // Search in forms (supports regex with \c and \v)
-            if (v.forms && v.forms.some(f => matchesPattern(f, searchQuery, { useRegex }))) return true
+            if (v.forms && v.forms.some(f => matchesPattern(f, searchQuery, { useRegex, caseSensitive }))) return true
 
             // Note: Translation search not available in search index
             // Users need to search by root/form only

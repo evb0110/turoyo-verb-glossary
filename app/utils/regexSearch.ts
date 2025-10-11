@@ -107,8 +107,8 @@ export function matchesPattern(
     return false
   }
 
-  // If not using regex and no shortcuts, use simple includes
-  if (!useRegex && !isRegexPattern(pattern)) {
+  // If regex toggle is off, always do a plain-text includes match
+  if (!useRegex) {
     return caseSensitive
       ? text.includes(pattern)
       : text.toLowerCase().includes(pattern.toLowerCase())
