@@ -52,6 +52,25 @@
                         >
                             Help
                         </UButton>
+
+                        <span class="text-sm text-gray-400 dark:text-gray-600">|</span>
+
+                        <span class="text-sm text-gray-600 dark:text-gray-400">Case sensitive:</span>
+                        <span
+                            :class="!caseSensitive ? 'text-gray-900 dark:text-white underline underline-offset-4' : 'text-gray-500 dark:text-gray-500'"
+                            class="text-sm cursor-pointer transition-all"
+                            @click="caseSensitive = false"
+                        >
+                            Off
+                        </span>
+                        <USwitch v-model="caseSensitive" />
+                        <span
+                            :class="caseSensitive ? 'text-gray-900 dark:text-white underline underline-offset-4' : 'text-gray-500 dark:text-gray-500'"
+                            class="text-sm cursor-pointer transition-all"
+                            @click="caseSensitive = true"
+                        >
+                            On
+                        </span>
                     </div>
 
                     <div class="flex gap-2">
@@ -111,6 +130,7 @@
                     :columns="columns"
                     :data="displayed"
                     :loading="pending"
+                    ref="resultsTableRef"
                 >
                     <template #root-cell="{ row }">
                         <NuxtLink
@@ -235,6 +255,8 @@
 <script lang="ts" setup>
 import { useRouteQuery } from '@vueuse/router'
 import type { Filters } from '~/types/types/search'
+import { clearHighlights, findTextRanges, findRegexRanges, setHighlights } from '~/utils/highlight'
+import { createSearchRegex } from '~/utils/regexSearch'
 
 const { loadIndex, search, rootToSlug } = useVerbs()
 
@@ -246,7 +268,8 @@ const { data: index } = await useAsyncData('index-list', loadIndex)
 // Sync search state with URL query params
 const q = useRouteQuery<string>('q', '')
 const searchType = useRouteQuery<'roots' | 'all'>('type', 'roots')
-const regexMode = useRouteQuery<'on' | 'off'>('regex', 'off')
+const regexMode = useRouteQuery<'on' | 'off'>('regex', 'on')
+const caseParam = useRouteQuery<'on' | 'off'>('case', 'off')
 const filterLetter = useRouteQuery<string | null>('letter', null)
 const filterEtymology = useRouteQuery<string | null>('etymology', null)
 const filterStem = useRouteQuery<string | null>('stem', null)
@@ -263,6 +286,13 @@ const useRegex = computed({
     get: () => regexMode.value === 'on',
     set: (value) => {
         regexMode.value = value ? 'on' : 'off'
+    }
+})
+
+const caseSensitive = computed({
+    get: () => caseParam.value === 'on',
+    set: (value) => {
+        caseParam.value = value ? 'on' : 'off'
     }
 })
 
@@ -285,13 +315,15 @@ const filters = computed<Filters>(() => ({
 // Initialize searchQuery from URL on mount, then sync with q
 const searchQuery = ref<string>(q.value)
 const results = ref<string[]>([])
+const resultsTableRef = ref()
 
 // Perform initial search from URL during SSR
 if (searchQuery.value && searchQuery.value.trim().length >= 2) {
     const initialResults = await search(searchQuery.value, {
         rootsOnly: !searchEverything.value,
         searchTranslations: searchEverything.value,
-        useRegex: useRegex.value
+        useRegex: useRegex.value,
+        caseSensitive: caseSensitive.value
     })
     results.value = initialResults
 }
@@ -393,7 +425,7 @@ function resetFilters() {
 }
 
 watch(
-    [searchQuery, searchEverything, useRegex],
+    [searchQuery, searchEverything, useRegex, caseSensitive],
     async () => {
         const value = searchQuery.value
         console.log('[Index] Watch triggered with value:', value, 'searchEverything:', searchEverything.value, 'useRegex:', useRegex.value)
@@ -422,7 +454,8 @@ watch(
             const primary = await search(value, {
                 rootsOnly: false,
                 searchTranslations: true,
-                useRegex: useRegex.value
+                useRegex: useRegex.value,
+                caseSensitive: caseSensitive.value
             })
 
             console.log('[Index] Everything search returned:', primary.length, 'results')
@@ -453,7 +486,8 @@ watch(
             const primary = await search(value, {
                 rootsOnly: true,
                 searchTranslations: false,
-                useRegex: useRegex.value
+                useRegex: useRegex.value,
+                caseSensitive: caseSensitive.value
             })
 
             console.log('[Index] Roots-only search returned:', primary.length, 'results')
@@ -513,6 +547,47 @@ const displayed = computed(() => {
     }
     return result
 })
+
+// Apply custom highlights on the client for non-regex search
+if (import.meta.client) {
+    const applyHighlights = () => {
+        try {
+            const container: HTMLElement | undefined = (resultsTableRef as any).value?.$el || (resultsTableRef as any).value?.$refs?.table || (resultsTableRef as any).value
+            const qText = searchQuery.value?.trim() || ''
+            if (!container || !qText || qText.length < 2) {
+                clearHighlights('search-match')
+                return
+            }
+            // Choose plain or regex-based highlighting
+            let ranges
+            if (useRegex.value) {
+                try {
+                    const re = createSearchRegex(qText, { caseSensitive: caseSensitive.value })
+                    // Force global matching; helper will add 'g' anyway
+                    ranges = findRegexRanges(container, re)
+                }
+                catch {
+                    clearHighlights('search-match')
+                    return
+                }
+            } else {
+                ranges = findTextRanges(container, qText, { caseSensitive: caseSensitive.value })
+            }
+            setHighlights('search-match', container, ranges)
+        }
+        catch {
+            // ignore
+        }
+    }
+
+    watch([displayed, searchQuery, caseSensitive, useRegex], async () => {
+        await nextTick()
+        applyHighlights()
+    })
+
+    onMounted(() => applyHighlights())
+    onBeforeUnmount(() => clearHighlights('search-match'))
+}
 
 const columns = [
     {
