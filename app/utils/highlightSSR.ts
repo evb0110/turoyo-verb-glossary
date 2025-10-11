@@ -25,10 +25,12 @@ export function highlightMatches(
         if (useRegex) {
             const regex = createSearchRegex(query, { caseSensitive })
             return highlightWithRegex(text, regex)
-        } else {
+        }
+        else {
             return highlightWithPlainText(text, query, caseSensitive)
         }
-    } catch (e) {
+    }
+    catch {
         // If highlighting fails, return escaped text without highlights
         return escapeHtml(text)
     }
@@ -118,8 +120,8 @@ function escapeHtml(text: string): string {
         '<': '&lt;',
         '>': '&gt;',
         '"': '&quot;',
-        "'": '&#39;'
+        '\'': '&#39;'
     }
 
-    return text.replace(/[&<>"']/g, (char) => htmlEscapes[char] || char)
+    return text.replace(/[&<>"']/g, char => htmlEscapes[char] || char)
 }
