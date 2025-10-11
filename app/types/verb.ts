@@ -5,6 +5,7 @@ export interface Etymon {
     source_root?: string
     reference?: string
     meaning?: string
+    notes?: string
     stem?: string // I, II, III, IV, Pa., Af., etc.
     raw?: string
 }
@@ -39,6 +40,8 @@ export interface Verb {
     uncertain: boolean
     // Optional raw header HTML preserved verbatim
     lemma_header_raw?: string
+    // Structured header tokens (bibliographic references, citations)
+    lemma_header_tokens?: { italic: boolean, text: string }[]
 }
 
 export interface VerbIndexEntry {

@@ -92,3 +92,33 @@ export function matchesPattern(
 
     return regex.test(text)
 }
+
+/**
+ * Create a global version of a regex for multiple matches
+ * @param regex - Original regex pattern
+ * @returns Regex with global flag enabled
+ */
+export function makeGlobalRegex(regex: RegExp): RegExp {
+    const flags = regex.flags.includes('g') ? regex.flags : `g${regex.flags}`
+    return new RegExp(regex.source, flags)
+}
+
+/**
+ * Iterator that safely handles zero-length matches
+ * Prevents infinite loops when matching patterns like `\b` or `(?=...)`
+ * @param text - Text to search in
+ * @param regex - Regular expression to match
+ * @yields RegExpExecArray for each match
+ */
+export function* matchAll(text: string, regex: RegExp): Generator<RegExpExecArray> {
+    const globalRegex = makeGlobalRegex(regex)
+    let match: RegExpExecArray | null
+
+    while ((match = globalRegex.exec(text)) !== null) {
+        yield match
+        // Prevent infinite loop on zero-length matches
+        if (match[0].length === 0) {
+            globalRegex.lastIndex += 1
+        }
+    }
+}

@@ -1,12 +1,12 @@
 /**
- * Utilities for generating contextual excerpts from verb data
+ * Server-side utilities for generating contextual excerpts from verb data
  * Used for "everything" search mode to show matches in context
  */
 
-import type { Verb } from '~/types/verb'
-import { createSearchRegex, matchAll } from '~/utils/regexSearch'
-import { extractContext, tokenTextToString } from '~/utils/textUtils'
-import { highlightMatches } from '~/utils/highlightSSR'
+import type { Verb } from './verbs'
+import { createSearchRegex, matchAll } from './regexSearch'
+import { extractContext, tokenTextToString } from './textUtils'
+import { highlightMatches } from './highlightSSR'
 
 export interface Excerpt {
     type: 'form' | 'example' | 'translation' | 'etymology' | 'gloss'
@@ -63,6 +63,10 @@ export function generateExcerpts(
 ): Excerpt[] {
     const excerpts: Excerpt[] = []
     const regex = createSearchRegex(query, opts)
+    if (!regex) {
+        return excerpts // Invalid regex, return empty
+    }
+
     const maxExcerpts = opts.maxExcerpts ?? 5
     const seenTexts = new Set<string>() // Track unique texts to avoid duplicates
 
@@ -174,7 +178,7 @@ export function generateExcerpts(
                 etymon.notes,
                 etymon.raw,
                 etymon.source_root
-            ].filter(Boolean) // Remove undefined/null values
+            ].filter((field): field is string => Boolean(field)) // Type-safe filter
 
             for (const field of searchFields) {
                 // Find ALL matches using the matchAll generator

@@ -1,6 +1,5 @@
 /**
  * Server-side text highlighting using HTML mark tags
- * Works in both SSR and client environments
  */
 
 import { createSearchRegex } from './regexSearch'
@@ -24,6 +23,9 @@ export function highlightMatches(
     try {
         if (useRegex) {
             const regex = createSearchRegex(query, { caseSensitive })
+            if (!regex) {
+                return escapeHtml(text)
+            }
             return highlightWithRegex(text, regex)
         }
         else {

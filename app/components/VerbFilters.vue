@@ -61,7 +61,7 @@ function reset() {
         <div v-if="filtersActive" class="sm:col-span-3 flex justify-end pt-2">
             <UButton
                 icon="i-heroicons-x-mark"
-                color="gray"
+                color="neutral"
                 variant="soft"
                 size="sm"
                 @click="reset"

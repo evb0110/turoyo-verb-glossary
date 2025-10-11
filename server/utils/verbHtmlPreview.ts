@@ -1,10 +1,16 @@
 /**
- * Utilities for generating HTML previews of verb articles
+ * Server-side utilities for generating HTML previews of verb articles
  * Used for "roots only" search mode to show full article previews
  */
 
-import type { Verb, Example } from '~/types/verb'
-import { truncateText, tokenTextToString } from '~/utils/textUtils'
+import type { Verb } from './verbs'
+import { truncateText, tokenTextToString } from './textUtils'
+
+interface Example {
+    turoyo: string
+    translations: string[]
+    references: string[]
+}
 
 /**
  * Collect examples from conjugations, up to a maximum count
@@ -103,10 +109,10 @@ export function generateFullPreview(
         if (examples.length > 0) {
             const exampleItems = examples.map((ex) => {
                 const turoyo = truncateText(ex.turoyo, maxExampleLength)
-                const translation = ex.translations.length > 0
+                const translation = ex.translations[0]
                     ? truncateText(ex.translations[0], maxExampleLength)
                     : ''
-                const refs = ex.references.length > 0
+                const refs = ex.references[0]
                     ? ` <span class="preview-ref">[${ex.references[0]}]</span>`
                     : ''
 

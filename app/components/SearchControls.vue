@@ -79,7 +79,6 @@
                     clearable
                     icon="i-heroicons-magnifying-glass"
                     @keydown.enter="$emit('search')"
-                    @update:model-value="(value) => { if (!value) $emit('clear') }"
                 />
                 <UButton
                     :disabled="!query || query.trim().length < 2"

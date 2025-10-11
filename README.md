@@ -5,8 +5,8 @@ A comprehensive digital conversion of the Turoyo verb glossary from HTML to stru
 ## 📊 Dataset Overview
 
 ```
-1,197 verbs | 1,730 stems | 4,237 examples
-27 alphabetical sections | 10+ etymology sources
+1,450 verbs | 1,758 stems | 4,980 examples
+29 alphabetical sections | 10+ etymology sources
 ```
 
 ## 🎯 Project Status
@@ -35,10 +35,9 @@ turoyo-verb-glossary/
 │       ├── issues_sample.json         # Potential issues for review
 │       └── report.html                # HTML validation report
 ├── parser/
-│   ├── extract_final.py               # Main extraction script
-│   ├── validate.py                    # Validation tool
-│   ├── verify_against_source.py       # Source comparison tool
-│   └── analyze_structure.py           # Structure analyzer
+│   ├── parse_verbs.py                 # MASTER PARSER (run this)
+│   ├── split_verbs.py                 # Individual file splitter
+│   └── validate.py                    # Data validation tool
 ├── EXTRACTION_SUMMARY.md              # Detailed extraction report
 └── README.md                          # This file
 ```
@@ -58,21 +57,26 @@ open data/verification/report.html
 python3 -c "import json; d=json.load(open('data/verbs_final.json')); print(d['metadata'])"
 ```
 
-### Run Verification
+### Run Validation
 
 ```bash
 # Validate extracted data
 python3 parser/validate.py
-
-# Verify against original HTML
-python3 parser/verify_against_source.py
 ```
 
-### Re-extract (if needed)
+### Re-parse from Source
 
 ```bash
-# Extract everything from scratch
-python3 parser/extract_final.py
+# Parse everything from scratch (ONE COMMAND does it all)
+python3 parser/parse_verbs.py
+
+# This automatically:
+# - Parses HTML source
+# - Adds homonym numbering
+# - Generates tokens with proper spacing
+# - Splits into individual files
+# - Generates search index
+# - Creates statistics
 ```
 
 ## 📖 Data Structure
@@ -175,34 +179,32 @@ Or use `random` to check a random verb.
 
 ## 🛠️ Tools & Scripts
 
-### Extract Data
+### Master Parser (THE ONLY PARSER)
 ```python
-# parser/extract_final.py
-python3 parser/extract_final.py
+# parser/parse_verbs.py - RUN THIS FOR ALL PARSING
+python3 parser/parse_verbs.py
 ```
+**This is the ONE canonical parser. It does EVERYTHING:**
 - Parses 137K lines of HTML
-- Extracts all fields
+- Extracts all fields (stems, conjugations, etymology)
+- Adds homonym numbering for duplicate roots
+- Generates tokens with proper spacing (fixes text concatenation)
+- Splits into 1,450 individual verb JSON files
+- Generates search index
+- Creates statistics
 - Fault-tolerant (continues on errors)
-- ~30 seconds runtime
+- ~60 seconds runtime
+
+**IMPORTANT**: Never create multiple parser scripts. All parsing logic is consolidated here.
 
 ### Validate Data
 ```python
 # parser/validate.py
 python3 parser/validate.py
 ```
-- Checks completeness
+- Checks data completeness
 - Detects anomalies
-- Generates samples
-- Creates HTML report
-
-### Verify Against Source
-```python
-# parser/verify_against_source.py
-python3 parser/verify_against_source.py
-```
-- Compare JSON vs HTML
-- Spot-check specific verbs
-- Interactive mode
+- Validates structure
 
 ## 💡 Next Steps
 

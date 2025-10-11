@@ -67,7 +67,7 @@ useHead({
     meta: [
         {
             name: 'description',
-            content: verb.value?.etymology?.meaning || 'Detailed view of a Turoyo verb'
+            content: verb.value?.etymology?.etymons?.[0]?.meaning || 'Detailed view of a Turoyo verb'
         }
     ]
 })

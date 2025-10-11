@@ -11,6 +11,7 @@ export interface Verb {
             source_root?: string
             reference?: string
             meaning?: string
+            notes?: string
             stem?: string
             raw?: string
         }>
@@ -29,6 +30,8 @@ export interface Verb {
         label_gloss_tokens?: Array<{ italic: boolean, text: string }>
     }>
     uncertain: boolean
+    lemma_header_raw?: string
+    lemma_header_tokens?: Array<{ italic: boolean, text: string }>
 }
 
 interface SearchIndex {
@@ -47,6 +50,7 @@ let searchIndexCache: SearchIndex | null = null
 // Full verbs cache (heavy, only loaded when needed for stats)
 let verbsCache: Verb[] | null = null
 let verbsCacheTime: number = 0
+let crossRefsCache: Record<string, string> = {}
 const CACHE_TTL = 3600000 // 1 hour cache
 
 /**

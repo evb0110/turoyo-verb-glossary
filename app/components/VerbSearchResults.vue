@@ -20,23 +20,19 @@
         </template>
 
         <template #preview-cell="{ row }">
-            <div v-if="verbDetails.has(row.original.root)" class="max-h-64 overflow-y-auto">
-                <template v-if="searchType === 'roots'">
-                    <!-- Full article preview for "roots only" mode -->
+            <div v-if="verbPreviews.has(row.original.root)" class="max-h-64 overflow-y-auto">
+                <template v-if="searchType === 'roots' && verbPreviews.get(row.original.root)?.preview">
+                    <!-- Pre-rendered full article preview for "roots only" mode -->
                     <div
                         class="preview-content whitespace-normal break-words"
-                        v-html="generateFullPreview(verbDetails.get(row.original.root)!)"
+                        v-html="verbPreviews.get(row.original.root)!.preview"
                     />
                 </template>
-                <template v-else>
-                    <!-- Show excerpts for "everything" mode -->
+                <template v-else-if="verbPreviews.get(row.original.root)?.excerpts">
+                    <!-- Pre-rendered excerpts for "everything" mode -->
                     <div class="preview-excerpts space-y-2">
                         <div
-                            v-for="(excerpt, i) in generateExcerpts(
-                                verbDetails.get(row.original.root)!,
-                                searchQuery,
-                                { useRegex: regexMode === 'on', caseSensitive: caseParam === 'on', maxExcerpts: 5 }
-                            )"
+                            v-for="(excerpt, i) in verbPreviews.get(row.original.root)!.excerpts"
                             :key="i"
                             class="preview-excerpt"
                         >
@@ -54,9 +50,21 @@
 </template>
 
 <script setup lang="ts">
-import type { Verb, VerbIndexEntry } from '~/types/verb'
-import { generateExcerpts } from '~/utils/verbExcerpts'
-import { generateFullPreview } from '~/utils/verbHtmlPreview'
+import type { VerbIndexEntry } from '~/types/verb'
+
+interface Excerpt {
+    type: 'form' | 'example' | 'translation' | 'etymology' | 'gloss'
+    stem?: string
+    conjugationType?: string
+    text: string
+    html: string
+    label: string
+}
+
+interface VerbPreview {
+    excerpts?: Excerpt[]
+    preview?: string
+}
 
 const { rootToSlug } = useVerbs()
 
@@ -66,7 +74,7 @@ defineProps<{
     regexMode: 'on' | 'off'
     caseParam: 'on' | 'off'
     displayed: VerbIndexEntry[]
-    verbDetails: Map<string, Verb>
+    verbPreviews: Map<string, VerbPreview>
     loadingDetails: boolean
     pending: boolean
 }>()

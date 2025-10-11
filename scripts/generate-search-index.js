@@ -14,7 +14,7 @@ const rootDir = join(__dirname, '..')
 async function generateSearchIndex() {
     console.log('📝 Generating search index from verb files...')
 
-    const verbsDir = join(rootDir, 'public', 'appdata', 'api', 'verbs')
+    const verbsDir = join(rootDir, 'server', 'assets', 'appdata', 'api', 'verbs')
     const files = await readdir(verbsDir)
     const verbFiles = files.filter(f => f.endsWith('.json'))
 

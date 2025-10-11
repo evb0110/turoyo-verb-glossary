@@ -37,7 +37,7 @@
                     :regex-mode="regexMode"
                     :case-param="caseParam"
                     :displayed="displayed"
-                    :verb-details="verbDetails"
+                    :verb-previews="verbPreviews"
                     :loading-details="loadingDetails"
                     :pending="pending"
                 />
@@ -58,9 +58,21 @@
 <script lang="ts" setup>
 import { useRouteQuery } from '@vueuse/router'
 import type { Filters } from '~/types/types/search'
-import type { Verb } from '~/types/verb'
-import { loadVerbsForResults } from '~/utils/verbPreview'
 import { generateLetterOptions, generateEtymologyOptions, generateStemOptions, applyFilters } from '~/utils/searchFilters'
+
+interface Excerpt {
+    type: 'form' | 'example' | 'translation' | 'etymology' | 'gloss'
+    stem?: string
+    conjugationType?: string
+    text: string
+    html: string
+    label: string
+}
+
+interface VerbPreview {
+    excerpts?: Excerpt[]
+    preview?: string
+}
 
 const { loadIndex } = useVerbs()
 const { search } = useVerbSearch()
@@ -115,72 +127,36 @@ const filters = computed(() => ({
 const searchQuery = ref<string>(q.value)
 const results = ref<string[]>([])
 
-// Store full verb data for previews
-const verbDetails = ref<Map<string, Verb>>(new Map())
+// Store pre-rendered HTML previews from server
+const verbPreviews = ref<Map<string, VerbPreview>>(new Map())
 const loadingDetails = ref(false)
 
 // Perform initial search from URL during SSR
+// Use unified search endpoint for both "roots only" and "everything" modes
 if (searchQuery.value && searchQuery.value.trim().length >= 2) {
-    const isSearchingEverything = searchType.value === 'all'
     const isUsingRegex = regexMode.value === 'on'
     const isCaseSensitive = caseParam.value === 'on'
 
-    if (isSearchingEverything) {
-    // In "everything" mode, always do comprehensive translation search
-        console.log('[SSR] Searching everything (comprehensive translation search)...')
-        const all = index.value?.roots || []
-        const allRootNames = all.map(v => v.root)
-
-        try {
-            const response = await $fetch<{ total: number, roots: string[], verbData?: Record<string, Verb> }>('/api/verbs-translation-search', {
-                method: 'POST',
-                body: {
-                    roots: allRootNames,
-                    query: searchQuery.value,
-                    useRegex: isUsingRegex,
-                    caseSensitive: isCaseSensitive
-                }
-            })
-            console.log('[SSR] Translation search found:', response.total, 'matches')
-            results.value = response.roots
-
-            // Use cached verb data from server to avoid client-side reload
-            if (response.verbData) {
-                console.log('[SSR] Using cached verb data from server:', Object.keys(response.verbData).length, 'verbs')
-                verbDetails.value = new Map(Object.entries(response.verbData))
+    console.log(`[SSR] Searching with unified endpoint: "${searchQuery.value}"`)
+    try {
+        const response = await $fetch<{ total: number, roots: string[], verbPreviews?: Record<string, VerbPreview> }>('/api/verbs-fulltext-search', {
+            method: 'POST',
+            body: {
+                query: searchQuery.value,
+                useRegex: isUsingRegex,
+                caseSensitive: isCaseSensitive,
+                searchType: searchType.value
             }
-        }
-        catch (e) {
-            console.error('[SSR] Translation search failed:', e)
-            results.value = [] // Empty on error
+        })
+
+        results.value = response.roots
+        if (response.verbPreviews) {
+            console.log(`[SSR] Got ${response.roots.length} results with previews`)
+            verbPreviews.value = new Map(Object.entries(response.verbPreviews))
         }
     }
-    else {
-    // In "roots only" mode, use fast index search
-        const initialResults = await search(searchQuery.value, {
-            rootsOnly: true,
-            searchTranslations: false,
-            useRegex: isUsingRegex,
-            caseSensitive: isCaseSensitive
-        })
-        results.value = initialResults
-
-        // Load verb details for SSR preview generation
-        if (results.value.length > 0 && index.value?.roots) {
-            console.log('[SSR] Loading verb details for', results.value.length, 'results...')
-            const all = index.value.roots
-            const matches = new Set(results.value)
-            const matchedEntries = all.filter(v => matches.has(v.root))
-
-            try {
-                const details = await loadVerbsForResults(matchedEntries)
-                verbDetails.value = details
-                console.log('[SSR] Loaded', details.size, 'verb details for SSR')
-            }
-            catch (e) {
-                console.error('[SSR] Failed to load verb details:', e)
-            }
-        }
+    catch (e) {
+        console.error('[SSR] Search failed:', e)
     }
 }
 
@@ -192,105 +168,61 @@ function clearSearch() {
     q.value = ''
     searchQuery.value = ''
     results.value = []
+    verbPreviews.value.clear()
     filterLetter.value = null
     filterEtymology.value = null
     filterStem.value = null
 }
 
 async function runSearch(value: string) {
-    const isSearchingEverything = searchType.value === 'all'
     const isUsingRegex = regexMode.value === 'on'
     const isCaseSensitive = caseParam.value === 'on'
-    console.log('[Index] Run search with value:', value, 'searchEverything:', isSearchingEverything, 'useRegex:', isUsingRegex)
-
-    if (!index.value?.roots?.length) {
-        try {
-            const loaded = await loadIndex()
-            index.value = loaded
-        }
-        catch (e) {
-            console.error('[Index] Index not ready', e)
-        }
-    }
+    console.log('[Index] Run search:', value, 'mode:', searchType.value, 'regex:', isUsingRegex)
 
     if (!value || value.trim().length < 2) {
         console.log('[Index] Query too short, clearing results')
         results.value = []
-        verbDetails.value.clear()
+        verbPreviews.value.clear()
         pending.value = false
         return
     }
 
     results.value = []
-    verbDetails.value.clear()
+    verbPreviews.value.clear()
     pending.value = true
 
-    if (isSearchingEverything) {
-        // In "everything" mode, always do comprehensive translation search
-        console.log('[Index] Searching everything (comprehensive translation search)...')
-        const all = index.value?.roots || []
-        const allRootNames = all.map(v => v.root)
-
-        try {
-            const response = await $fetch<{ total: number, roots: string[], verbData?: Record<string, Verb> }>('/api/verbs-translation-search', {
-                method: 'POST',
-                body: {
-                    roots: allRootNames,
-                    query: value,
-                    useRegex: isUsingRegex,
-                    caseSensitive: isCaseSensitive
-                }
-            })
-
-            console.log('[Index] Translation search found:', response.total, 'matches')
-            results.value = response.roots
-
-            if (response.verbData) {
-                console.log('[Index] Using cached verb data from server:', Object.keys(response.verbData).length, 'verbs')
-                verbDetails.value = new Map(Object.entries(response.verbData))
+    // Use unified search endpoint for both modes
+    try {
+        const response = await $fetch<{ total: number, roots: string[], verbPreviews?: Record<string, VerbPreview> }>('/api/verbs-fulltext-search', {
+            method: 'POST',
+            body: {
+                query: value,
+                useRegex: isUsingRegex,
+                caseSensitive: isCaseSensitive,
+                searchType: searchType.value
             }
-        }
-        catch (e) {
-            console.error('[Index] Translation search failed:', e)
-            results.value = []
-        }
-    }
-    else {
-        // In "roots only" mode, use fast index search
-        const primary = await search(value, {
-            rootsOnly: true,
-            searchTranslations: false,
-            useRegex: isUsingRegex,
-            caseSensitive: isCaseSensitive
         })
 
-        console.log('[Index] Roots-only search returned:', primary.length, 'results')
-
-        if (primary.length === 0 && !isUsingRegex) {
-            console.log('[Index] No primary results, using fallback root search')
-            const lower = value.toLowerCase()
-            const all = index.value?.roots || []
-            const alt = all
-                .filter(v => v.root.toLowerCase().includes(lower))
-                .map(v => v.root)
-
-            console.log('[Index] Fallback found:', alt.length, 'results')
-            results.value = alt
-        }
-        else {
-            results.value = primary
+        results.value = response.roots
+        if (response.verbPreviews) {
+            console.log(`[Index] Got ${response.roots.length} results with previews`)
+            verbPreviews.value = new Map(Object.entries(response.verbPreviews))
         }
     }
-
-    console.log('[Index] Final results.value:', results.value.length, 'results')
-    pending.value = false
+    catch (e) {
+        console.error('[Index] Search failed:', e)
+    }
+    finally {
+        pending.value = false
+    }
 }
 
 const baseResults = computed(() => {
-    const all = index.value?.roots || []
     if (!searchQuery.value || searchQuery.value.trim().length < 2 || results.value.length === 0) {
         return []
     }
+    // Load full index for filtering options
+    const all = index.value?.roots || []
     const matches = new Set(results.value)
     return all.filter(v => matches.has(v.root))
 })
@@ -335,36 +267,5 @@ const displayed = computed(() => {
     return result
 })
 
-// Load full verb data for previews when results change (client-side only)
-watch(filtered, async (newFiltered) => {
-    if (newFiltered.length === 0) {
-        verbDetails.value.clear()
-        return
-    }
-
-    // Check if we already have verb data (from SSR or translation search cache)
-    const missingRoots = newFiltered.filter(v => !verbDetails.value.has(v.root))
-
-    if (missingRoots.length === 0) {
-        console.log('[Index] All verb details already cached, skipping load')
-        return
-    }
-
-    // Load only missing verb details
-    console.log(`[Index] Loading ${missingRoots.length} missing verb details...`)
-    loadingDetails.value = true
-    try {
-        const details = await loadVerbsForResults(missingRoots)
-        // Merge with existing details
-        for (const [root, verb] of details.entries()) {
-            verbDetails.value.set(root, verb)
-        }
-    }
-    catch (e) {
-        console.error('[Index] Failed to load verb details:', e)
-    }
-    finally {
-        loadingDetails.value = false
-    }
-})
+// No longer need to watch filtered - unified search endpoint returns previews directly!
 </script>

@@ -1,5 +1,4 @@
 import type { Verb, VerbIndex, VerbIndexEntry, Statistics, CrossReferences } from '~/types/verb'
-import { readPublicJson } from '~/utils/dataFetch'
 import { rootToSlug, slugToRoot } from '~/utils/slugify'
 
 /**
@@ -68,9 +67,10 @@ export const useVerbs = () => {
    * @param root - The root of the verb to fetch
    */
     const getVerb = async (root: string): Promise<Verb> => {
-    // URL-encode the root to handle Unicode characters (ṣ, š, ǧ, etc.)
+        // URL-encode the root to handle Unicode characters (ṣ, š, ǧ, etc.)
         const encodedRoot = encodeURIComponent(root)
-        return await readPublicJson<Verb>(`appdata/api/verbs/${encodedRoot}.json`)
+        // Use API endpoint that serves from server assets (works in SSR and client)
+        return await $fetch<Verb>(`/api/verbs/${encodedRoot}`)
     }
 
     /**

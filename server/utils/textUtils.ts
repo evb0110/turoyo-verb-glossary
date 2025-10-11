@@ -1,5 +1,5 @@
 /**
- * Reusable text manipulation utilities
+ * Reusable text manipulation utilities (server-side)
  */
 
 /**

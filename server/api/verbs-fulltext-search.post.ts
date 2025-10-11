@@ -4,50 +4,113 @@ import { generateExcerpts, type Excerpt } from '../utils/verbExcerpts'
 import { generateFullPreview } from '../utils/verbHtmlPreview'
 
 /**
- * Server-side translation search endpoint
- * Loads verb files and searches through translations/glosses
- * POST to avoid URL length limits and send roots array
+ * Unified verb search endpoint
  *
- * Returns pre-rendered HTML for both "roots only" and "everything" modes
+ * "Roots only" mode: Searches filenames (super fast - no file reads!)
+ * "Everything" mode: Searches all fields in all verb files
+ *
+ * Returns matching roots and pre-rendered HTML previews (SSR-ready)
  */
 export default defineEventHandler(async (event) => {
     const body = await readBody(event)
-    const { roots, query, useRegex, caseSensitive, searchType } = body
+    const { query, useRegex, caseSensitive, searchType } = body
 
-    if (!roots || !Array.isArray(roots) || !query) {
+    if (!query) {
         throw createError({
             statusCode: 400,
-            message: 'Invalid request: roots array and query required'
+            message: 'Invalid request: query required'
         })
     }
 
-    console.log(`[Translation Search] Searching ${roots.length} verbs for: "${query}" (mode: ${searchType})`)
+    console.log(`[Verb Search] Query: "${query}", Mode: ${searchType}, Regex: ${useRegex}, Case: ${caseSensitive}`)
 
-    const matchingRoots: string[] = []
-    const verbPreviews: Record<string, { excerpts?: Excerpt[], preview?: string }> = {} // Pre-rendered HTML
-
-    // Use Nitro's server assets storage (works in both dev and production)
-    // Files from server/assets/ are bundled with server code
     const storage = useStorage('assets:server')
+    const matchingRoots: string[] = []
+    const verbPreviews: Record<string, { excerpts?: Excerpt[], preview?: string }> = {}
 
-    // Process in batches to avoid memory issues
-    const BATCH_SIZE = 50
-    for (let i = 0; i < roots.length; i += BATCH_SIZE) {
-        const batch = roots.slice(i, i + BATCH_SIZE)
+    // Get all verb filenames (the filenames ARE the roots!)
+    // Note: storage.getKeys() returns keys relative to the base path
+    const allFiles = await storage.getKeys('appdata/api/verbs')
+    const verbFiles = allFiles.filter(f => f.endsWith('.json'))
 
-        const batchPromises = batch.map(async (root: string) => {
-            try {
-                // Load verb file from server assets (bundled with server code)
-                const verb = await storage.getItem<Verb>(`appdata/api/verbs/${root}.json`)
+    console.log(`[Verb Search] Total verb files: ${verbFiles.length}`)
+    if (verbFiles.length > 0) {
+        console.log(`[Verb Search] First 3 file paths:`, verbFiles.slice(0, 3))
+    }
 
-                if (!verb) {
-                    console.warn(`[Translation Search] No data for ${root}`)
+    // Extract roots from filenames
+    // Storage keys use colons as delimiters: "appdata:api:verbs:kfr.json"
+    const allRoots = verbFiles.map(f => {
+        // Get the filename only (everything after last colon)
+        const filename = f.split(':').pop() || f
+        // Remove .json extension
+        const root = filename.replace(/\.json$/, '')
+        return root
+    })
+
+    if (allRoots.length > 0) {
+        console.log(`[Verb Search] First 3 extracted roots:`, allRoots.slice(0, 3))
+    }
+
+    // MODE 1: "Roots only" - Search filenames only (super fast!)
+    if (searchType === 'roots') {
+        console.log('[Verb Search] Roots-only mode: searching filenames...')
+
+        // Filter roots by query
+        const filteredRoots = allRoots.filter(root =>
+            matchesPattern(root, query, { useRegex, caseSensitive })
+        )
+
+        console.log(`[Verb Search] Found ${filteredRoots.length} matching roots`)
+
+        // Load matched verb files to generate previews
+        const BATCH_SIZE = 50
+        for (let i = 0; i < filteredRoots.length; i += BATCH_SIZE) {
+            const batch = filteredRoots.slice(i, i + BATCH_SIZE)
+
+            const batchPromises = batch.map(async (root: string) => {
+                try {
+                    const verb = await storage.getItem<Verb>(`appdata/api/verbs/${root}.json`)
+                    if (!verb) return null
+
+                    // Generate full article preview for roots-only mode
+                    verbPreviews[root] = { preview: generateFullPreview(verb) }
+                    return root
+                }
+                catch (e) {
+                    console.warn(`[Verb Search] Failed to load ${root}:`, e)
                     return null
                 }
+            })
+
+            const batchResults = await Promise.all(batchPromises)
+            matchingRoots.push(...batchResults.filter((r): r is string => r !== null))
+        }
+
+        return {
+            total: matchingRoots.length,
+            roots: matchingRoots,
+            verbPreviews
+        }
+    }
+
+    // MODE 2: "Everything" - Search all fields in all files
+    console.log('[Verb Search] Everything mode: scanning all verb content...')
+
+    // Process in batches to avoid memory issues
+    const BATCH_SIZE = 100
+    for (let i = 0; i < verbFiles.length; i += BATCH_SIZE) {
+        const batch = verbFiles.slice(i, i + BATCH_SIZE)
+
+        const batchPromises = batch.map(async (filePath: string) => {
+            try {
+                const verb = await storage.getItem<Verb>(filePath)
+                if (!verb) return null
+
+                const root = verb.root
 
                 // Search in root
                 if (matchesPattern(verb.root, query, { useRegex, caseSensitive })) {
-                    // Generate appropriate preview based on search type
                     if (searchType === 'roots') {
                         verbPreviews[root] = { preview: generateFullPreview(verb) }
                     }
@@ -57,7 +120,7 @@ export default defineEventHandler(async (event) => {
                     return root
                 }
 
-                // Search in lemma header (contains bibliographic references, citations, attributions)
+                // Search in lemma header (bibliographic references, citations, attributions)
                 if (verb.lemma_header_tokens) {
                     for (const token of verb.lemma_header_tokens) {
                         if (matchesPattern(token.text, query, { useRegex, caseSensitive })) {
@@ -72,8 +135,9 @@ export default defineEventHandler(async (event) => {
                     }
                 }
 
-                // Search in forms
+                // Search in forms and glosses
                 for (const stem of verb.stems) {
+                    // Search in forms
                     if (stem.forms?.some(f => matchesPattern(f, query, { useRegex, caseSensitive }))) {
                         if (searchType === 'roots') {
                             verbPreviews[root] = { preview: generateFullPreview(verb) }
@@ -84,7 +148,7 @@ export default defineEventHandler(async (event) => {
                         return root
                     }
 
-                    // Search in glosses
+                    // Search in glosses (meanings)
                     if (stem.label_gloss_tokens) {
                         for (const token of stem.label_gloss_tokens) {
                             if (matchesPattern(token.text, query, { useRegex, caseSensitive })) {
@@ -165,7 +229,7 @@ export default defineEventHandler(async (event) => {
                 return null
             }
             catch (e) {
-                console.warn(`[Translation Search] Failed to load ${root}:`, e)
+                console.warn(`[Full-text Search] Failed to load ${filePath}:`, e)
                 return null
             }
         })
@@ -174,9 +238,9 @@ export default defineEventHandler(async (event) => {
         matchingRoots.push(...batchResults.filter((r): r is string => r !== null))
     }
 
-    console.log(`[Translation Search] Found ${matchingRoots.length} matches`)
+    console.log(`[Full-text Search] Found ${matchingRoots.length} matches`)
 
-    // Return both roots and pre-rendered HTML previews (SSR)
+    // Return matching roots and pre-rendered HTML previews
     return {
         total: matchingRoots.length,
         roots: matchingRoots,
