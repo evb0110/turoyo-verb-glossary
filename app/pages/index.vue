@@ -297,7 +297,7 @@ import type { Filters } from '~/types/types/search'
 import type { Verb } from '~/composables/useVerbs'
 import { clearHighlights, findTextRanges, findRegexRanges, setHighlights } from '~/utils/highlight'
 import { createSearchRegex } from '~/utils/regexSearch'
-import { loadVerbsForResults, generateExcerpts, generateFullPreview, searchTranslations } from '~/utils/verbPreview'
+import { loadVerbsForResults, generateExcerpts, generateFullPreview } from '~/utils/verbPreview'
 
 const { loadIndex, search, rootToSlug } = useVerbs()
 
@@ -362,22 +362,19 @@ const resultsTableRef = ref()
 const verbDetails = ref<Map<string, Verb>>(new Map())
 const loadingDetails = ref(false)
 
-// Perform initial search from URL during SSR
-// Note: Only do basic server-side search; client-side translation search will happen in watch
-if (searchQuery.value && searchQuery.value.trim().length >= 2 && import.meta.server) {
-    console.log('[Index] SSR: Performing initial server-side search')
+// Perform initial search from URL during SSR (index only, translation search happens client-side)
+if (searchQuery.value && searchQuery.value.trim().length >= 2) {
     const isSearchingEverything = searchType.value === 'all'
     const isUsingRegex = regexMode.value === 'on'
     const isCaseSensitive = caseParam.value === 'on'
 
     const initialResults = await search(searchQuery.value, {
         rootsOnly: !isSearchingEverything,
-        searchTranslations: false, // Server can't do translation search
+        searchTranslations: false, // Translation search is client-side only
         useRegex: isUsingRegex,
         caseSensitive: isCaseSensitive
     })
     results.value = initialResults
-    console.log('[Index] SSR: Got', initialResults.length, 'results')
 }
 
 function performSearch() {
@@ -506,32 +503,42 @@ watch(
 
         if (isSearchingEverything) {
             // Search everything: roots, forms, translations
+            // First try fast index search (roots + forms)
             const primary = await search(value, {
                 rootsOnly: false,
-                searchTranslations: true,
+                searchTranslations: false,
                 useRegex: isUsingRegex,
                 caseSensitive: isCaseSensitive
             })
 
-            console.log('[Index] Everything search returned:', primary.length, 'results')
+            console.log('[Index] Primary search returned:', primary.length, 'results')
 
+            // If no results, do server-side translation search
             if (primary.length === 0) {
-                console.log('[Index] No primary results, searching in translations...')
+                console.log('[Index] No results in index, searching translations on server...')
                 const all = index.value?.roots || []
                 const allRootNames = all.map(v => v.root)
 
-                // Search translations (expensive: loads all verb files)
-                const translationMatches = await searchTranslations(
-                    allRootNames,
-                    value,
-                    { useRegex: isUsingRegex, caseSensitive: isCaseSensitive }
-                )
+                try {
+                    const response = await $fetch<{ total: number, roots: string[] }>('/api/verbs-translation-search', {
+                        method: 'POST',
+                        body: {
+                            roots: allRootNames,
+                            query: value,
+                            useRegex: isUsingRegex,
+                            caseSensitive: isCaseSensitive
+                        }
+                    })
 
-                console.log('[Index] Translation search found:', translationMatches.length, 'results')
-                results.value = translationMatches
+                    console.log('[Index] Translation search found:', response.total, 'matches')
+                    results.value = response.roots
+                }
+                catch (e) {
+                    console.error('[Index] Translation search failed:', e)
+                    results.value = []
+                }
             }
             else {
-                console.log('[Index] Using primary results')
                 results.value = primary
             }
         }
@@ -622,36 +629,6 @@ watch(filtered, async (newFiltered) => {
         loadingDetails.value = false
     }
 }, { immediate: true })
-
-// Trigger client-side translation search after hydration if needed
-if (import.meta.client) {
-    onMounted(async () => {
-        console.log('[Index] Client mounted, checking if translation search needed')
-        console.log('[Index] searchQuery:', searchQuery.value)
-        console.log('[Index] searchType:', searchType.value)
-        console.log('[Index] results.value.length:', results.value.length)
-
-        // If we have a query in "everything" mode with 0 results, trigger translation search
-        if (searchQuery.value && searchQuery.value.trim().length >= 2 && searchType.value === 'all' && results.value.length === 0) {
-            console.log('[Index] Triggering client-side translation search')
-            pending.value = true
-            const all = index.value?.roots || []
-            const allRootNames = all.map(v => v.root)
-            const isUsingRegex = regexMode.value === 'on'
-            const isCaseSensitive = caseParam.value === 'on'
-
-            const translationMatches = await searchTranslations(
-                allRootNames,
-                searchQuery.value,
-                { useRegex: isUsingRegex, caseSensitive: isCaseSensitive }
-            )
-
-            console.log('[Index] Translation search completed:', translationMatches.length, 'results')
-            results.value = translationMatches
-            pending.value = false
-        }
-    })
-}
 
 // Apply custom highlights on the client for non-regex search
 if (import.meta.client) {
