@@ -145,10 +145,49 @@
                         <span class="text-sm">{{ row.original.etymology_sources?.join(', ') || '—' }}</span>
                     </template>
 
-                    <template #example_count-cell="{ row }">
-                        <UBadge color="neutral" variant="soft">
-                            {{ row.original.example_count }}
-                        </UBadge>
+                    <template #preview-cell="{ row }">
+                        <div v-if="verbDetails.has(row.original.root)" class="verb-preview">
+                            <template v-if="searchType === 'roots'">
+                                <!-- Full article preview for "roots only" mode -->
+                                <div
+                                    class="preview-content"
+                                    v-html="generateFullPreview(verbDetails.get(row.original.root)!)"
+                                />
+                            </template>
+                            <template v-else>
+                                <!-- Try to show excerpts for "everything" mode -->
+                                <div
+                                    v-if="generateExcerpts(
+                                        verbDetails.get(row.original.root)!,
+                                        searchQuery,
+                                        { useRegex: regexMode === 'on', caseSensitive: caseParam === 'on', maxExcerpts: 5 }
+                                    ).length > 0"
+                                    class="preview-excerpts"
+                                >
+                                    <div
+                                        v-for="(excerpt, i) in generateExcerpts(
+                                            verbDetails.get(row.original.root)!,
+                                            searchQuery,
+                                            { useRegex: regexMode === 'on', caseSensitive: caseParam === 'on', maxExcerpts: 5 }
+                                        )"
+                                        :key="i"
+                                        class="preview-excerpt"
+                                    >
+                                        <span class="excerpt-label">{{ excerpt.label }}</span>
+                                        <span class="excerpt-text">{{ excerpt.text }}</span>
+                                    </div>
+                                </div>
+                                <!-- Fallback to full preview if no excerpts found -->
+                                <div
+                                    v-else
+                                    class="preview-content"
+                                    v-html="generateFullPreview(verbDetails.get(row.original.root)!)"
+                                />
+                            </template>
+                        </div>
+                        <div v-else class="text-sm text-gray-400">
+                            {{ loadingDetails ? 'Loading...' : '—' }}
+                        </div>
                     </template>
                 </UTable>
 
@@ -255,8 +294,10 @@
 <script lang="ts" setup>
 import { useRouteQuery } from '@vueuse/router'
 import type { Filters } from '~/types/types/search'
+import type { Verb } from '~/composables/useVerbs'
 import { clearHighlights, findTextRanges, findRegexRanges, setHighlights } from '~/utils/highlight'
 import { createSearchRegex } from '~/utils/regexSearch'
+import { loadVerbsForResults, generateExcerpts, generateFullPreview, searchTranslations } from '~/utils/verbPreview'
 
 const { loadIndex, search, rootToSlug } = useVerbs()
 
@@ -317,19 +358,26 @@ const searchQuery = ref<string>(q.value)
 const results = ref<string[]>([])
 const resultsTableRef = ref()
 
+// Store full verb data for previews
+const verbDetails = ref<Map<string, Verb>>(new Map())
+const loadingDetails = ref(false)
+
 // Perform initial search from URL during SSR
-if (searchQuery.value && searchQuery.value.trim().length >= 2) {
+// Note: Only do basic server-side search; client-side translation search will happen in watch
+if (searchQuery.value && searchQuery.value.trim().length >= 2 && import.meta.server) {
+    console.log('[Index] SSR: Performing initial server-side search')
     const isSearchingEverything = searchType.value === 'all'
     const isUsingRegex = regexMode.value === 'on'
     const isCaseSensitive = caseParam.value === 'on'
 
     const initialResults = await search(searchQuery.value, {
         rootsOnly: !isSearchingEverything,
-        searchTranslations: isSearchingEverything,
+        searchTranslations: false, // Server can't do translation search
         useRegex: isUsingRegex,
         caseSensitive: isCaseSensitive
     })
     results.value = initialResults
+    console.log('[Index] SSR: Got', initialResults.length, 'results')
 }
 
 function performSearch() {
@@ -467,21 +515,20 @@ watch(
 
             console.log('[Index] Everything search returned:', primary.length, 'results')
 
-            if (primary.length === 0 && !isUsingRegex) {
-                console.log('[Index] No primary results, using fallback search')
-                const lower = value.toLowerCase()
+            if (primary.length === 0) {
+                console.log('[Index] No primary results, searching in translations...')
                 const all = index.value?.roots || []
-                const alt = all
-                    .filter((v) => {
-                        if (v.root.toLowerCase().includes(lower)) return true
-                        if (v.etymology_sources?.some(s => s.toLowerCase().includes(lower))) return true
-                        if (v.forms && v.forms.some(f => f.toLowerCase().includes(lower))) return true
-                        return false
-                    })
-                    .map(v => v.root)
+                const allRootNames = all.map(v => v.root)
 
-                console.log('[Index] Fallback found:', alt.length, 'results')
-                results.value = alt
+                // Search translations (expensive: loads all verb files)
+                const translationMatches = await searchTranslations(
+                    allRootNames,
+                    value,
+                    { useRegex: isUsingRegex, caseSensitive: isCaseSensitive }
+                )
+
+                console.log('[Index] Translation search found:', translationMatches.length, 'results')
+                results.value = translationMatches
             }
             else {
                 console.log('[Index] Using primary results')
@@ -555,6 +602,57 @@ const displayed = computed(() => {
     return result
 })
 
+// Load full verb data for previews when results change
+watch(filtered, async (newFiltered) => {
+    if (newFiltered.length === 0) {
+        verbDetails.value.clear()
+        return
+    }
+
+    // Load verb details for all displayed results
+    loadingDetails.value = true
+    try {
+        const details = await loadVerbsForResults(newFiltered)
+        verbDetails.value = details
+    }
+    catch (e) {
+        console.error('[Index] Failed to load verb details:', e)
+    }
+    finally {
+        loadingDetails.value = false
+    }
+}, { immediate: true })
+
+// Trigger client-side translation search after hydration if needed
+if (import.meta.client) {
+    onMounted(async () => {
+        console.log('[Index] Client mounted, checking if translation search needed')
+        console.log('[Index] searchQuery:', searchQuery.value)
+        console.log('[Index] searchType:', searchType.value)
+        console.log('[Index] results.value.length:', results.value.length)
+
+        // If we have a query in "everything" mode with 0 results, trigger translation search
+        if (searchQuery.value && searchQuery.value.trim().length >= 2 && searchType.value === 'all' && results.value.length === 0) {
+            console.log('[Index] Triggering client-side translation search')
+            pending.value = true
+            const all = index.value?.roots || []
+            const allRootNames = all.map(v => v.root)
+            const isUsingRegex = regexMode.value === 'on'
+            const isCaseSensitive = caseParam.value === 'on'
+
+            const translationMatches = await searchTranslations(
+                allRootNames,
+                searchQuery.value,
+                { useRegex: isUsingRegex, caseSensitive: isCaseSensitive }
+            )
+
+            console.log('[Index] Translation search completed:', translationMatches.length, 'results')
+            results.value = translationMatches
+            pending.value = false
+        }
+    })
+}
+
 // Apply custom highlights on the client for non-regex search
 if (import.meta.client) {
     const applyHighlights = () => {
@@ -590,7 +688,7 @@ if (import.meta.client) {
         }
     }
 
-    watch([displayed, searchQuery, caseParam, regexMode], async () => {
+    watch([displayed, searchQuery, caseParam, regexMode, verbDetails], async () => {
         await nextTick()
         applyHighlights()
     })
@@ -602,15 +700,17 @@ if (import.meta.client) {
 const columns = [
     {
         accessorKey: 'root',
-        header: 'Root'
+        header: 'Root',
+        size: 150
     },
     {
         accessorKey: 'etymology_source',
-        header: 'Etymology'
+        header: 'Etymology',
+        size: 120
     },
     {
-        accessorKey: 'example_count',
-        header: 'Examples'
+        accessorKey: 'preview',
+        header: 'Article Preview'
     }
 ]
 
