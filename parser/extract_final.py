@@ -8,7 +8,7 @@ import re
 import json
 from pathlib import Path
 from collections import defaultdict
-from bs4 import BeautifulSoup, Tag
+from bs4 import BeautifulSoup, Tag, NavigableString
 
 class FinalTuroyoParser:
     def __init__(self, html_path):
@@ -22,7 +22,7 @@ class FinalTuroyoParser:
 
     def split_by_letters(self):
         """Split into letter sections"""
-        letter_pattern = r'<h1[^>]*><span[^>]*>([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzḏṯẓāēīūə])</span></h1>'
+        letter_pattern = r'<h1[^>]*>\s*<span[^>]*>(?:&shy;)?([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzžḏṯẓāēīūə])</span></h1>'
         matches = list(re.finditer(letter_pattern, self.html))
 
         sections = []
@@ -36,20 +36,48 @@ class FinalTuroyoParser:
 
     def extract_roots_from_section(self, section_html):
         """Extract verb entries"""
-        # Updated pattern to handle roots with numbers (e.g., "ṭʕn\n1")
-        root_pattern = r'<p[^>]*class="western"[^>]*><font[^>]*><span[^>]*>([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzḏṯẓāēīūə]{2,6})(?:\s*\d+)?</span>'
+        # Updated pattern to handle roots with numbers and include 'ž'
+        root_pattern = r'<p[^>]*class="western"[^>]*><font[^>]*><span[^>]*>([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzžḏṯẓāēīūə]{2,6})(?:\s*\d+)?</span>'
         roots = []
 
         for match in re.finditer(root_pattern, section_html):
             root_chars = match.group(1)
-            # Check if there's a number after the root
+
+            # Check for root continuation in next span (e.g., ṣyb + r = ṣybr)
+            # Pattern: </font><font><span>r</span> (no </span></font> between)
+            lookahead_cont = section_html[match.end():match.end()+100]
+            cont_match = re.search(r'</font><font[^>]*><span[^>]*>([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzžḏṯẓāēīūə]+)</span>', lookahead_cont)
+            if cont_match:
+                root_chars = root_chars + cont_match.group(1)
+
+            # Check if there's a number inside the span
             full_match = match.group(0)
-            number_match = re.search(r'([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzḏṯẓāēīūə]{2,6})\s*(\d+)', full_match)
+            number_match = re.search(r'([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzžḏṯẓāēīūə]{2,6})\s*(\d+)', full_match)
 
             if number_match:
                 root = f"{root_chars} {number_match.group(2)}"
             else:
-                root = root_chars
+                # Look ahead for number in separate span or italic tag
+                lookahead = section_html[match.end():match.end()+300]
+
+                # Pattern 1: Number in italic span (e.g., <i><span>2 (etymology...)</span></i>)
+                italic_num = re.search(r'<i><span[^>]*>\s*(\d+)\s+\(', lookahead)
+                if italic_num:
+                    root = f"{root_chars} {italic_num.group(1)}"
+                else:
+                    # Pattern 2: Number in separate regular span
+                    # Fixed: Don't require </span> at start of lookahead (lookahead starts AFTER first </span>)
+                    sep_num = re.search(r'<span[^>]*>\s*(\d+)\s*</span>', lookahead, re.DOTALL)
+                    if sep_num:
+                        root = f"{root_chars} {sep_num.group(1)}"
+                    else:
+                        # Pattern 3: Superscript homonym marker
+                        # Fixed: Number can be inside nested tags within <sup> (e.g., <sup><span>1</span></sup>)
+                        sup_num = re.search(r'<sup[^>]*>.*?(\d+).*?</sup>', lookahead, re.DOTALL)
+                        if sup_num:
+                            root = f"{root_chars} {sup_num.group(1)}"
+                        else:
+                            root = root_chars
 
             start_pos = match.start()
 
@@ -61,36 +89,92 @@ class FinalTuroyoParser:
 
         return roots
 
+    def normalize_whitespace(self, text: str) -> str:
+        if not text:
+            return ""
+        return re.sub(r'\s+', ' ', text).strip()
+
+    def clean_reference(self, ref: str):
+        if ref is None:
+            return None
+        ref = ref.rstrip(';:,.')
+        ref = self.normalize_whitespace(ref)
+        return ref if ref else None
+
+    def has_turoyo_chars(self, text: str) -> bool:
+        return bool(re.search(r'[ʔʕḥṣṭḏṯẓġǧəǝščž]', text or ''))
+
     def parse_etymology(self, entry_html):
-        """Parse etymology"""
-        etym_pattern = r'\(&lt;\s*([^)]{1,300})\)'
-        match = re.search(etym_pattern, entry_html)
+        """Parse etymology with support for nested parentheses and edge cases"""
+        etym_pattern = r'\(&lt;\s*(.+?)\s*\)(?:\s*[A-Z<]|$)'
+        match = re.search(etym_pattern, entry_html, re.DOTALL)
 
         if not match:
             return None
 
         etym_text = match.group(1).strip()
+        etym_text = etym_text.rstrip(';').strip()
 
-        # Structured: SOURCE root cf. REF: meaning
+        etym_text = re.sub(r'</span></i></font></font><font[^>]*><font[^>]*><i><span[^>]*>', ' ', etym_text)
+        etym_text = re.sub(r'</span></i></font></font><font[^>]*><span[^>]*>', ' ', etym_text)
+        etym_text = re.sub(r'</span></i></font><font[^>]*><i><span[^>]*>', ' ', etym_text)
+        etym_text = re.sub(r'<[^>]+>', '', etym_text)
+        etym_text = self.normalize_whitespace(etym_text)
+
         structured = re.match(
-            r'([A-Za-z.]+)\s+([^\s]+)\s+cf\.\s+([^:]+):\s*(.+)',
-            etym_text
+            r'([A-Za-z.]+)\s+([^\s]+)\s+(?:\([^)]+\)\s+)?cf\.\s+([^:]+):\s*(.+)',
+            etym_text,
+            re.DOTALL
         )
-
         if structured:
             return {
                 'source': structured.group(1).strip(),
                 'source_root': structured.group(2).strip(),
                 'reference': structured.group(3).strip(),
-                'meaning': structured.group(4).strip(),
+                'meaning': self.normalize_whitespace(structured.group(4)),
             }
 
-        # Simple: SOURCE info
+        no_cf = re.match(
+            r'([A-Za-z.]+)\s+([^\s,]+),\s+([^:]+):\s*(.+)',
+            etym_text,
+            re.DOTALL
+        )
+        if no_cf:
+            return {
+                'source': no_cf.group(1).strip(),
+                'source_root': no_cf.group(2).strip(),
+                'reference': no_cf.group(3).strip(),
+                'meaning': self.normalize_whitespace(no_cf.group(4)),
+            }
+
+        no_colon = re.match(
+            r'([A-Za-z.]+)\s+([^\s]+)\s+(?:\([^)]+\)\s+)?cf\.\s+(.+)',
+            etym_text,
+            re.DOTALL
+        )
+        if no_colon:
+            ref_part = no_colon.group(3).strip()
+            if ':' in ref_part:
+                ref, meaning = ref_part.split(':', 1)
+                return {
+                    'source': no_colon.group(1).strip(),
+                    'source_root': no_colon.group(2).strip(),
+                    'reference': self.normalize_whitespace(ref),
+                    'meaning': self.normalize_whitespace(meaning),
+                }
+            else:
+                return {
+                    'source': no_colon.group(1).strip(),
+                    'source_root': no_colon.group(2).strip(),
+                    'reference': self.normalize_whitespace(ref_part),
+                    'meaning': '',
+                }
+
         simple = re.match(r'([A-Za-z.]+)\s+(.+)', etym_text)
         if simple:
             return {
                 'source': simple.group(1).strip(),
-                'notes': simple.group(2).strip(),
+                'notes': self.normalize_whitespace(simple.group(2)),
             }
 
         return {'raw': etym_text}
@@ -184,43 +268,65 @@ class FinalTuroyoParser:
                 cells = re.findall(r'<td[^>]*>(.*?)</td>', row, re.DOTALL)
 
                 if len(cells) >= 2:
-                    # First cell: header
                     header_match = re.search(r'<span[^>]*>([^<]+)</span>', cells[0])
                     if not header_match:
                         continue
 
-                    header = self.normalize_header(header_match.group(1).strip())
+                    headers = self.normalize_header(header_match.group(1).strip())
 
-                    # Second cell: examples
                     examples = self.parse_table_cell_examples(cells[1])
 
                     if examples:
-                        tables_data[header] = examples
+                        for h in headers:
+                            if h in tables_data:
+                                tables_data[h].extend(examples)
+                            else:
+                                tables_data[h] = examples[:]
 
         return tables_data
 
     def normalize_header(self, header):
-        """Normalize headers"""
+        """Normalize headers and return list (supports multi-headers like 'Infectum and Infectum-wa')"""
+        h = self.normalize_whitespace(header)
         mapping = {
             'Imperativ': 'Imperative',
             'Infinitiv': 'Infinitive',
             'Preterite': 'Preterit',
+            'Preterit 1': 'Preterit 1',
+            'Preterit 2': 'Preterit 2',
+            'k-Preterit': 'k-Preterit',
+            'ko-Preterit': 'ko-Preterit',
             ' Infectum': 'Infectum',
             'Infectum - wa': 'Infectum-wa',
             'Infectum – wa': 'Infectum-wa',
+            'Infectum – Transitive': 'Infectum-Transitive',
+            'Detransitive infectum': 'Detransitive Infectum',
             'Part act.': 'Participle_Active',
             'Part. act.': 'Participle_Active',
             'Part. Act.': 'Participle_Active',
+            'Part act': 'Participle_Active',
             'Part pass.': 'Participle_Passive',
             'Part. pass.': 'Participle_Passive',
             'Part. Pass.': 'Participle_Passive',
             'Part.Pass': 'Participle_Passive',
+            'Pass. Part.': 'Participle_Passive',
+            'Passive Part.': 'Participle_Passive',
+            'Part': 'Participle',
+            'Participle': 'Participle',
+            'Nomen Patiens': 'Nomen Patiens',
+            'Nomen Patientis?': 'Nomen Patiens',
+            'Nomen Actionis': 'Nomen Actionis',
+            'Nomen agentis': 'Nomen agentis',
         }
-
-        return mapping.get(header.strip(), header.strip())
+        h = mapping.get(h, h)
+        if ' and ' in h:
+            parts = [mapping.get(p.strip(), p.strip()) for p in h.split(' and ') if p.strip()]
+            return parts
+        return [h]
 
     def parse_stems(self, entry_html):
         """Find all stem headers"""
+        # Primary pattern: standard bold, large font
         stem_pattern = r'<font size="4"[^>]*><b><span[^>]*>([IVX]+):\s*</span></b></font></font><font[^>]*><font[^>]*><i><b><span[^>]*>([^<]+)</span>'
 
         stems = []
@@ -234,6 +340,68 @@ class FinalTuroyoParser:
                 'forms': forms,
                 'position': match.start()
             })
+
+        # Alternative primary pattern: stem and forms in SAME bold span
+        # e.g., <span>II:\nmṣaybarle/mṣaybar </span>
+        combined_pattern = r'<font size="4"[^>]*><b><span[^>]*>([IVX]+):\s*([^<]+)</span></b></font>'
+        for match in re.finditer(combined_pattern, entry_html):
+            # Check if already captured
+            if any(s['position'] == match.start() for s in stems):
+                continue
+
+            stem_num = match.group(1)
+            forms_text = match.group(2).strip()
+            # Only process if it looks like forms (contains slash or Turoyo chars)
+            if '/' in forms_text or any(c in forms_text for c in 'ʔʕġǧḥṣštṭḏṯẓāēīūə'):
+                forms = [f.strip() for f in forms_text.split('/') if f.strip()]
+                if forms:
+                    stems.append({
+                        'stem': stem_num,
+                        'forms': forms,
+                        'position': match.start()
+                    })
+
+        # Fallback pattern: simple format without bold/large font
+        # Handles cases like: <p><span>II:</span></p> followed by forms
+        fallback_pattern = r'<p[^>]*>.*?<span[^>]*>([IVX]+):</span>.*?</p>'
+
+        for match in re.finditer(fallback_pattern, entry_html):
+            stem_num = match.group(1)
+
+            # Check if this position is already captured by primary pattern
+            if any(s['position'] == match.start() for s in stems):
+                continue
+
+            # Look ahead for forms in next tags
+            lookahead = entry_html[match.end():match.end()+500]
+
+            # Try to find italic forms
+            forms_match = re.search(r'<i><b><span[^>]*>([^<]+)</span>', lookahead)
+            if not forms_match:
+                # Try alternative format
+                forms_match = re.search(r'<i><span[^>]*>([^<]+)</span>', lookahead)
+
+            if not forms_match:
+                # Try plain span with slash (very non-standard format)
+                # Skip past Detransitive marker if present
+                lookahead_skip = re.sub(r'<p[^>]*><span[^>]*>Detransitive.*?</p>', '', lookahead, flags=re.DOTALL)
+                forms_match = re.search(r'<span[^>]*>([^<]*\/[^<]+)</span>', lookahead_skip)
+
+            if forms_match:
+                forms_text = forms_match.group(1).strip()
+                # Filter out "?" markers
+                forms_text = forms_text.replace('?', '').replace('/', '/').strip()
+                forms = [f.strip() for f in forms_text.split('/') if f.strip() and f != '?']
+
+                if forms:  # Only add if we found actual forms
+                    stems.append({
+                        'stem': stem_num,
+                        'forms': forms,
+                        'position': match.start()
+                    })
+
+        # Sort by position to maintain order
+        stems.sort(key=lambda x: x['position'])
 
         return stems
 
@@ -337,6 +505,53 @@ class FinalTuroyoParser:
 
         return entry
 
+    def add_homonym_numbers(self):
+        """Add sequential numbers to homonyms with different etymologies"""
+        # Group by root
+        root_groups = defaultdict(list)
+        for idx, verb in enumerate(self.verbs):
+            root_groups[verb['root']].append((idx, verb))
+
+        # Process duplicates
+        numbered_count = 0
+        for root, entries in root_groups.items():
+            if len(entries) <= 1:
+                continue
+
+            # Extract comparable etymology signatures
+            etymologies = []
+            for idx, verb in entries:
+                etym = verb.get('etymology')
+                if etym:
+                    # Create signature from key fields
+                    sig = (
+                        etym.get('source', ''),
+                        etym.get('source_root', ''),
+                        etym.get('notes', ''),
+                        etym.get('raw', ''),
+                        etym.get('reference', '')
+                    )
+                else:
+                    sig = None
+                etymologies.append((idx, sig))
+
+            # Check if etymologies differ
+            unique_etyms = set(sig for _, sig in etymologies)
+
+            # Only number if there are DIFFERENT etymologies
+            # This ensures we're not hallucinating - we only number genuine homonyms
+            if len(unique_etyms) > 1:
+                print(f"   ℹ️  Found homonyms for '{root}' with {len(unique_etyms)} different etymologies")
+                for entry_num, (idx, sig) in enumerate(etymologies, 1):
+                    old_root = self.verbs[idx]['root']
+                    self.verbs[idx]['root'] = f"{root} {entry_num}"
+                    print(f"      {old_root} → {self.verbs[idx]['root']} (etymology: {sig[0] if sig else 'None'})")
+                numbered_count += len(entries)
+
+        if numbered_count > 0:
+            self.stats['homonyms_numbered'] = numbered_count
+            print(f"   ✅ Auto-numbered {numbered_count} homonym entries")
+
     def parse_all(self):
         """Main parsing"""
         print("🔄 Parsing complete verb data...")
@@ -358,6 +573,11 @@ class FinalTuroyoParser:
                     self.stats['errors'] += 1
 
         print(f"\n✅ Parsed {self.stats['verbs_parsed']} verbs, {self.stats['stems_parsed']} stems")
+
+        # Auto-number homonyms with different etymologies
+        print("🔍 Checking for homonyms with different etymologies...")
+        self.add_homonym_numbers()
+
         return self.verbs
 
     def save_json(self, output_path):

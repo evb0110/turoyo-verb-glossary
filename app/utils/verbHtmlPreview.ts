@@ -63,7 +63,7 @@ export function generateFullPreview(
     const parts: string[] = []
 
     // Etymology section
-    if (verb.etymology && verb.etymology.etymons.length > 0) {
+    if (verb.etymology?.etymons && verb.etymology.etymons.length > 0) {
         const etymonParts = verb.etymology.etymons.map((etymon) => {
             const sourcePart = etymon.source_root
                 ? `${etymon.source} ${etymon.source_root}`

@@ -164,6 +164,23 @@ if (searchQuery.value && searchQuery.value.trim().length >= 2) {
             caseSensitive: isCaseSensitive
         })
         results.value = initialResults
+
+        // Load verb details for SSR preview generation
+        if (results.value.length > 0 && index.value?.roots) {
+            console.log('[SSR] Loading verb details for', results.value.length, 'results...')
+            const all = index.value.roots
+            const matches = new Set(results.value)
+            const matchedEntries = all.filter(v => matches.has(v.root))
+
+            try {
+                const details = await loadVerbsForResults(matchedEntries)
+                verbDetails.value = details
+                console.log('[SSR] Loaded', details.size, 'verb details for SSR')
+            }
+            catch (e) {
+                console.error('[SSR] Failed to load verb details:', e)
+            }
+        }
     }
 }
 
@@ -312,14 +329,14 @@ const displayed = computed(() => {
     return result
 })
 
-// Load full verb data for previews when results change
+// Load full verb data for previews when results change (client-side only)
 watch(filtered, async (newFiltered) => {
     if (newFiltered.length === 0) {
         verbDetails.value.clear()
         return
     }
 
-    // Check if we already have verb data (from translation search cache)
+    // Check if we already have verb data (from SSR or translation search cache)
     const missingRoots = newFiltered.filter(v => !verbDetails.value.has(v.root))
 
     if (missingRoots.length === 0) {
@@ -343,5 +360,5 @@ watch(filtered, async (newFiltered) => {
     finally {
         loadingDetails.value = false
     }
-}, { immediate: true })
+})
 </script>
