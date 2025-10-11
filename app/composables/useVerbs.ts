@@ -172,7 +172,9 @@ export const useVerbs = () => {
    * @param root - The root of the verb to fetch
    */
     const getVerb = async (root: string): Promise<Verb> => {
-        return await readPublicJson<Verb>(`appdata/api/verbs/${root}.json`)
+        // URL-encode the root to handle Unicode characters (ṣ, š, ǧ, etc.)
+        const encodedRoot = encodeURIComponent(root)
+        return await readPublicJson<Verb>(`appdata/api/verbs/${encodedRoot}.json`)
     }
 
     /**
