@@ -36,6 +36,58 @@ A Nuxt 4 web application for browsing 1,197 Turoyo verbs with etymology, conjuga
     - `curl http://localhost:3456/verbs/[root]` for verb pages
   - Never rely on browser overlay errors - always verify with curl
 
+## Testing Requirements
+
+**MANDATORY: Test extensively before committing any major change**
+
+Major changes include: API changes, search functionality, data loading, SSR/client differences
+
+### Required Testing Process:
+
+1. **Test Server-Side** (test with `curl` and compare with source data):
+   ```bash
+   # Test API endpoints
+   curl "http://localhost:3456/api/verbs?q=form&type=all"
+
+   # Compare with source HTML
+   grep -i "form" source/Turoyo_all_2024.html | wc -l
+   ```
+
+2. **Test Client-Side** (test in browser console):
+   - Open dev tools console
+   - Search for test queries in all modes:
+     - "Roots only" mode with various roots
+     - "Everything" mode with translation matches
+     - With/without regex enabled
+     - With/without case sensitivity
+   - Verify console logs show expected behavior
+   - Check network tab for API calls
+
+3. **Test SSR vs Client Rendering**:
+   ```bash
+   # Test SSR output
+   curl "http://localhost:3456/?q=form&type=all" | grep "matches"
+
+   # Then verify client-side hydration works in browser
+   ```
+
+4. **Compare Results with Source Data**:
+   ```bash
+   # Always verify against source HTML
+   grep -io "search-term" source/Turoyo_all_2024.html | wc -l
+
+   # Check specific verb files
+   jq '.stems[].conjugations[][] | .translations[]' public/appdata/api/verbs/root.json | grep -i "term"
+   ```
+
+5. **Test Edge Cases**:
+   - Empty results
+   - Unicode characters in queries
+   - Very long result sets
+   - Network errors / timeout scenarios
+
+**If tests fail or show unexpected results, FIX BEFORE COMMITTING**
+
 ## Development
 
 **Tech stack:**
