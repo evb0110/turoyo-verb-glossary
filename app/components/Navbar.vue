@@ -7,12 +7,15 @@
                 <UIcon name="i-heroicons-book-open" class="h-6 w-6 text-primary" />
                 <span>Turoyo Verb Glossary</span>
             </NuxtLink>
-            <div class="flex gap-3 text-xs text-muted whitespace-nowrap">
-                <span>{{ displayStats.total_verbs }} verbs</span>
-                <span>•</span>
-                <span>{{ displayStats.total_stems }} stems</span>
-                <span>•</span>
-                <span>{{ displayStats.total_examples }} examples</span>
+            <div class="flex items-center gap-4">
+                <div class="flex gap-3 text-xs text-muted whitespace-nowrap">
+                    <span>{{ displayStats.total_verbs }} verbs</span>
+                    <span>•</span>
+                    <span>{{ displayStats.total_stems }} stems</span>
+                    <span>•</span>
+                    <span>{{ displayStats.total_examples }} examples</span>
+                </div>
+                <UserAuth />
             </div>
         </UContainer>
     </header>
