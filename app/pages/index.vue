@@ -1,5 +1,13 @@
 <template>
-    <div class="space-y-6 px-6 py-4">
+    <div v-if="sessionStatus === 'loading' || sessionStatus === 'idle'" class="flex items-center justify-center min-h-[400px]">
+        <div class="text-center">
+            <div class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]" role="status">
+                <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Loading...</span>
+            </div>
+            <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">Loading...</p>
+        </div>
+    </div>
+    <div v-else-if="isApproved" class="space-y-6 px-6 py-4">
         <UCard>
             <div class="space-y-4">
                 <SearchControls
@@ -59,6 +67,15 @@
 import { useRouteQuery } from '@vueuse/router'
 import type { Filters } from '~/types/types/search'
 import { generateLetterOptions, generateEtymologyOptions, generateStemOptions, applyFilters } from '~/utils/searchFilters'
+
+const { sessionStatus, isApproved } = useAuth()
+
+// Redirect to login if not authenticated
+watch(sessionStatus, (status) => {
+    if (status === 'guest') {
+        navigateTo('/login')
+    }
+}, { immediate: true })
 
 interface Excerpt {
     type: 'form' | 'example' | 'translation' | 'etymology' | 'gloss'

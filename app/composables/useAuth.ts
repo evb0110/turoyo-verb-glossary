@@ -14,9 +14,19 @@ function getAuthClient() {
     return authClient
 }
 
+export type UserRole = 'admin' | 'user' | 'pending' | 'blocked'
+
+export interface AuthUser {
+    id: string
+    name: string
+    email: string
+    image?: string | null
+    role: UserRole
+}
+
 export const useAuth = () => {
     const client = getAuthClient()
-    const user = useState<{ name: string; email: string; image?: string | null } | null>('auth:user', () => null)
+    const user = useState<AuthUser | null>('auth:user', () => null)
     const loading = useState<boolean>('auth:loading', () => false)
     const sessionStatus = useState<'idle' | 'loading' | 'authenticated' | 'guest'>('auth:sessionStatus', () => 'idle')
 
@@ -24,6 +34,12 @@ export const useAuth = () => {
     const isSessionKnown = computed(() =>
         sessionStatus.value === 'authenticated' || sessionStatus.value === 'guest'
     )
+
+    // Role-based computed helpers
+    const isAdmin = computed(() => user.value?.role === 'admin')
+    const isPending = computed(() => user.value?.role === 'pending')
+    const isBlocked = computed(() => user.value?.role === 'blocked')
+    const isApproved = computed(() => user.value?.role === 'user' || user.value?.role === 'admin')
 
     const pendingKey = 'turoyo-verb-glossary:auth-returning'
 
@@ -54,11 +70,14 @@ export const useAuth = () => {
         try {
             const session = await client.getSession()
             console.log('Session:', session)
-            user.value = session.data?.user || null
 
-            if (user.value) {
+            if (session.data?.user) {
+                // Fetch full user data including role from our API
+                const response = await $fetch<AuthUser>('/api/user/me')
+                user.value = response
                 sessionStatus.value = 'authenticated'
             } else {
+                user.value = null
                 sessionStatus.value = 'guest'
             }
         } catch (error) {
@@ -90,6 +109,10 @@ export const useAuth = () => {
         loading,
         sessionStatus,
         isSessionKnown,
+        isAdmin,
+        isPending,
+        isBlocked,
+        isApproved,
         signIn,
         signOut,
         checkSession
