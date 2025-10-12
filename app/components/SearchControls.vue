@@ -73,19 +73,19 @@
 
             <div class="flex gap-2">
                 <UInput
-                    v-model="query"
+                    v-model="internalQuery"
                     :placeholder="placeholder"
                     class="flex-1"
                     clearable
                     icon="i-heroicons-magnifying-glass"
-                    @keydown.enter="$emit('search')"
+                    @keydown.enter="handleSearch"
                 />
                 <UButton
-                    :disabled="!query || query.trim().length < 2"
+                    :disabled="!internalQuery || internalQuery.trim().length < 2"
                     color="neutral"
                     icon="i-heroicons-magnifying-glass"
                     variant="outline"
-                    @click="$emit('search')"
+                    @click="handleSearch"
                 >
                     Search
                 </UButton>
@@ -100,13 +100,27 @@ const searchEverything = defineModel<boolean>('searchEverything', { required: tr
 const useRegex = defineModel<boolean>('useRegex', { required: true })
 const caseSensitive = defineModel<boolean>('caseSensitive', { required: true })
 
+// Local state for input - only sync to model on submit
+const internalQuery = ref(query.value)
+
+// Sync back when model changes externally (e.g., route navigation)
+watch(query, (newValue) => {
+    internalQuery.value = newValue
+})
+
 defineProps<{
     placeholder: string
 }>()
 
-defineEmits<{
+const emit = defineEmits<{
     'search': []
     'clear': []
     'show-help': []
 }>()
+
+// Update model and trigger search
+function handleSearch() {
+    query.value = internalQuery.value
+    emit('search')
+}
 </script>
