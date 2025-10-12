@@ -76,10 +76,20 @@
                     v-model="internalQuery"
                     :placeholder="placeholder"
                     class="flex-1"
-                    clearable
                     icon="i-heroicons-magnifying-glass"
                     @keydown.enter="handleSearch"
-                />
+                >
+                    <template v-if="internalQuery" #trailing>
+                        <UButton
+                            color="neutral"
+                            variant="link"
+                            size="xs"
+                            icon="i-heroicons-x-mark"
+                            aria-label="Clear search"
+                            @click="internalQuery = ''"
+                        />
+                    </template>
+                </UInput>
                 <UButton
                     :disabled="!internalQuery || internalQuery.trim().length < 2"
                     color="neutral"

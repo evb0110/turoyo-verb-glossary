@@ -1,7 +1,7 @@
 <template>
     <div class="space-y-6 p-6">
         <div class="flex justify-end">
-            <UButton icon="i-heroicons-arrow-left-circle" to="/" variant="ghost">
+            <UButton icon="i-heroicons-arrow-left-circle" :to="toBack" variant="ghost">
                 Back to verb list
             </UButton>
         </div>
@@ -38,6 +38,14 @@
  * Displays a single verb with etymology, stems, conjugations, and examples
  */
 const route = useRoute()
+
+const toBack = computed(() => {
+    return {
+        path: '/',
+        query: route.query
+    }
+})
+
 const { getVerbWithCrossRef, rootToSlug } = useVerbs()
 
 const root = computed(() => {
