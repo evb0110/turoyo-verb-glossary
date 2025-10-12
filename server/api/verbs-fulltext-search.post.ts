@@ -11,6 +11,31 @@ import { generateFullPreview } from '../utils/verbHtmlPreview'
  *
  * Returns matching roots and pre-rendered HTML previews (SSR-ready)
  */
+interface VerbMetadata {
+    root: string
+    etymology_sources: string[]
+    stems: string[]
+}
+
+/**
+ * Extract metadata from a verb for filtering
+ */
+function extractMetadata(verb: Verb): VerbMetadata {
+    const etymologySources = verb.etymology?.etymons
+        ? verb.etymology.etymons.map(e => e.source).filter(Boolean)
+        : []
+
+    const stems = verb.stems
+        .map(s => s.stem)
+        .filter((s): s is string => Boolean(s))
+
+    return {
+        root: verb.root,
+        etymology_sources: etymologySources,
+        stems
+    }
+}
+
 export default defineEventHandler(async (event) => {
     const body = await readBody(event)
     const { query, useRegex, caseSensitive, searchType } = body
@@ -27,6 +52,7 @@ export default defineEventHandler(async (event) => {
     const storage = useStorage('assets:server')
     const matchingRoots: string[] = []
     const verbPreviews: Record<string, { excerpts?: Excerpt[], preview?: string }> = {}
+    const verbMetadata: Record<string, VerbMetadata> = {}
 
     // Get all verb filenames (the filenames ARE the roots!)
     // Note: storage.getKeys() returns keys relative to the base path
@@ -75,6 +101,10 @@ export default defineEventHandler(async (event) => {
 
                     // Generate full article preview for roots-only mode
                     verbPreviews[root] = { preview: generateFullPreview(verb) }
+
+                    // Extract metadata for filtering
+                    verbMetadata[root] = extractMetadata(verb)
+
                     return root
                 }
                 catch (e) {
@@ -90,7 +120,8 @@ export default defineEventHandler(async (event) => {
         return {
             total: matchingRoots.length,
             roots: matchingRoots,
-            verbPreviews
+            verbPreviews,
+            verbMetadata
         }
     }
 
@@ -117,6 +148,7 @@ export default defineEventHandler(async (event) => {
                     else {
                         verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
                     }
+                    verbMetadata[root] = extractMetadata(verb)
                     return root
                 }
 
@@ -130,6 +162,7 @@ export default defineEventHandler(async (event) => {
                             else {
                                 verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
                             }
+                            verbMetadata[root] = extractMetadata(verb)
                             return root
                         }
                     }
@@ -145,6 +178,7 @@ export default defineEventHandler(async (event) => {
                         else {
                             verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
                         }
+                        verbMetadata[root] = extractMetadata(verb)
                         return root
                     }
 
@@ -158,6 +192,7 @@ export default defineEventHandler(async (event) => {
                                 else {
                                     verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
                                 }
+                                verbMetadata[root] = extractMetadata(verb)
                                 return root
                             }
                         }
@@ -175,6 +210,7 @@ export default defineEventHandler(async (event) => {
                                     else {
                                         verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
                                     }
+                                    verbMetadata[root] = extractMetadata(verb)
                                     return root
                                 }
                             }
@@ -187,6 +223,7 @@ export default defineEventHandler(async (event) => {
                                 else {
                                     verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
                                 }
+                                verbMetadata[root] = extractMetadata(verb)
                                 return root
                             }
 
@@ -199,6 +236,7 @@ export default defineEventHandler(async (event) => {
                                     else {
                                         verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
                                     }
+                                    verbMetadata[root] = extractMetadata(verb)
                                     return root
                                 }
                             }
@@ -221,6 +259,7 @@ export default defineEventHandler(async (event) => {
                             else {
                                 verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
                             }
+                            verbMetadata[root] = extractMetadata(verb)
                             return root
                         }
                     }
@@ -240,10 +279,11 @@ export default defineEventHandler(async (event) => {
 
     console.log(`[Full-text Search] Found ${matchingRoots.length} matches`)
 
-    // Return matching roots and pre-rendered HTML previews
+    // Return matching roots, pre-rendered HTML previews, and metadata for filters
     return {
         total: matchingRoots.length,
         roots: matchingRoots,
-        verbPreviews // Pre-rendered HTML (either excerpts or full previews)
+        verbPreviews, // Pre-rendered HTML (either excerpts or full previews)
+        verbMetadata // Metadata for generating filter options
     }
 })

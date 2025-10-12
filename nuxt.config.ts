@@ -4,6 +4,11 @@ export default defineNuxtConfig({
     pages: true,
     components: [{ path: '~/components', pathPrefix: false }],
     devtools: { enabled: true },
+    icon: {
+        serverBundle: {
+            collections: ['heroicons', 'lucide']
+        }
+    },
     app: {
         head: {
             title: 'Turoyo Verb Glossary',

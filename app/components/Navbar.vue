@@ -7,33 +7,31 @@
                 <UIcon name="i-heroicons-book-open" class="h-6 w-6 text-primary" />
                 <span>Turoyo Verb Glossary</span>
             </NuxtLink>
-            <ClientOnly>
-                <div v-if="sessionStatus === 'authenticated'" class="flex items-center gap-4">
-                    <div class="flex gap-3 text-xs text-muted whitespace-nowrap">
-                        <span>{{ displayStats.total_verbs }} verbs</span>
-                        <span>•</span>
-                        <span>{{ displayStats.total_stems }} stems</span>
-                        <span>•</span>
-                        <span>{{ displayStats.total_examples }} examples</span>
-                    </div>
-                    <UButton
-                        v-if="isAdmin"
-                        to="/admin"
-                        size="sm"
-                        color="purple"
-                        variant="soft"
-                        icon="i-heroicons-cog-6-tooth"
-                    >
-                        Admin
-                        <template v-if="pendingCount > 0" #trailing>
-                            <UBadge color="orange" variant="solid" size="xs">
-                                {{ pendingCount }}
-                            </UBadge>
-                        </template>
-                    </UButton>
-                    <UserAuth />
+            <div v-if="isAuthenticated" class="flex items-center gap-4">
+                <div class="flex gap-3 text-xs text-muted whitespace-nowrap">
+                    <span>{{ displayStats.total_verbs }} verbs</span>
+                    <span>•</span>
+                    <span>{{ displayStats.total_stems }} stems</span>
+                    <span>•</span>
+                    <span>{{ displayStats.total_examples }} examples</span>
                 </div>
-            </ClientOnly>
+                <UButton
+                    v-if="isAdmin"
+                    to="/admin"
+                    size="sm"
+                    color="purple"
+                    variant="soft"
+                    icon="i-heroicons-cog-6-tooth"
+                >
+                    Admin
+                    <template v-if="pendingCount > 0" #trailing>
+                        <UBadge color="orange" variant="solid" size="xs">
+                            {{ pendingCount }}
+                        </UBadge>
+                    </template>
+                </UButton>
+                <UserAuth />
+            </div>
         </UContainer>
     </header>
 </template>
@@ -46,29 +44,49 @@ const { data: stats } = await useAsyncData('layout-stats', () =>
     $fetch('/api/stats')
 )
 
+const isAuthenticated = computed(() => sessionStatus.value === 'authenticated')
+
 const displayStats = computed(() => {
     return stats.value || { total_verbs: '—', total_stems: '—', total_examples: '—' }
 })
 
 // Fetch pending users count for admin (only when authenticated AND admin)
-const shouldFetchPending = computed(() => sessionStatus.value === 'authenticated' && isAdmin.value)
+const shouldFetchPending = computed(() => isAuthenticated.value && isAdmin.value)
 
-const { data: pendingData, refresh: refreshPendingCount } = await useFetch<{ count: number }>('/api/admin/pending-count', {
-    watch: false,
-    server: false,
-    lazy: true,
-    immediate: false // Don't fetch immediately, wait for auth check
-})
+// Fetch pending count - use useAsyncData to properly hydrate from SSR
+const { data: pendingData, refresh: refreshPendingCount } = await useAsyncData(
+    'admin-pending-count',
+    async () => {
+        // Skip if not admin (avoid 403 errors)
+        if (!isAdmin.value) return { count: 0 }
+        try {
+            return await $fetch<{ count: number }>('/api/admin/pending-count')
+        }
+        catch {
+            return { count: 0 }
+        }
+    }
+)
 
 const pendingCount = computed(() => pendingData.value?.count || 0)
 
 // Fetch pending count when user becomes authenticated admin
 if (import.meta.client) {
-    watch(shouldFetchPending, (should) => {
-        if (should) {
+    // Track if we've hydrated to avoid refetching data that came from SSR
+    const hasHydrated = ref(false)
+    onMounted(() => {
+        hasHydrated.value = true
+    })
+
+    // Don't use immediate:true to avoid re-fetching on hydration
+    watch(shouldFetchPending, (should, wasShould) => {
+        // Only fetch if:
+        // 1. We've finished hydrating
+        // 2. Changed from false to true (user just logged in or became admin)
+        if (hasHydrated.value && should && !wasShould) {
             refreshPendingCount()
         }
-    }, { immediate: true })
+    })
 
     // Show toast notification on login if there are pending users
     watch(pendingCount, (newCount, oldCount) => {

@@ -1,0 +1,30 @@
+import { auth } from '../../lib/auth'
+import { db } from '../../db'
+import { user } from '../../db/schema'
+import { eq } from 'drizzle-orm'
+
+export default defineEventHandler(async (event) => {
+    try {
+        const session = await auth.api.getSession({ headers: event.headers })
+
+        if (!session?.user) {
+            return { authenticated: false }
+        }
+
+        // Get the full user data including role
+        const userData = await db.select().from(user).where(eq(user.id, session.user.id)).limit(1)
+        const currentUser = userData[0]
+
+        if (!currentUser) {
+            return { authenticated: false }
+        }
+
+        return {
+            authenticated: true,
+            role: currentUser.role
+        }
+    } catch (error) {
+        console.error('Auth check error:', error)
+        return { authenticated: false }
+    }
+})

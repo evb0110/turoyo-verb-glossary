@@ -65,6 +65,12 @@ export const useAuth = () => {
     }
 
     const checkSession = async () => {
+        // Skip if already authenticated from SSR
+        if (sessionStatus.value === 'authenticated' && user.value) {
+            console.log('Session already loaded from SSR')
+            return
+        }
+
         sessionStatus.value = 'loading'
 
         try {
@@ -73,9 +79,14 @@ export const useAuth = () => {
 
             if (session.data?.user) {
                 // Fetch full user data including role from our API
-                const response = await $fetch<AuthUser>('/api/user/me')
-                user.value = response
-                sessionStatus.value = 'authenticated'
+                const response = await $fetch<AuthUser | null>('/api/user/me')
+                if (response) {
+                    user.value = response
+                    sessionStatus.value = 'authenticated'
+                } else {
+                    user.value = null
+                    sessionStatus.value = 'guest'
+                }
             } else {
                 user.value = null
                 sessionStatus.value = 'guest'

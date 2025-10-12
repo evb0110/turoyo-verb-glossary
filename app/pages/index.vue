@@ -1,13 +1,5 @@
 <template>
-    <div v-if="sessionStatus === 'loading' || sessionStatus === 'idle'" class="flex items-center justify-center min-h-[400px]">
-        <div class="text-center">
-            <div class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]" role="status">
-                <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Loading...</span>
-            </div>
-            <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">Loading...</p>
-        </div>
-    </div>
-    <div v-else-if="isApproved" class="space-y-6 px-6 py-4">
+    <div class="space-y-6 px-6 py-4">
         <UCard>
             <div class="space-y-4">
                 <SearchControls
@@ -66,16 +58,20 @@
 <script lang="ts" setup>
 import { useRouteQuery } from '@vueuse/router'
 import type { Filters } from '~/types/types/search'
+import type { VerbIndex } from '~/types/verb'
 import { generateLetterOptions, generateEtymologyOptions, generateStemOptions, applyFilters } from '~/utils/searchFilters'
 
 const { sessionStatus, isApproved } = useAuth()
 
-// Redirect to login if not authenticated
-watch(sessionStatus, (status) => {
-    if (status === 'guest') {
-        navigateTo('/login')
-    }
-}, { immediate: true })
+// Client-side only: redirect to login if not authenticated
+// NOTE: Don't use immediate:true to avoid triggering on hydration
+if (import.meta.client) {
+    watch(sessionStatus, (status) => {
+        if (status === 'guest') {
+            navigateTo('/login')
+        }
+    })
+}
 
 interface Excerpt {
     type: 'form' | 'example' | 'translation' | 'etymology' | 'gloss'
@@ -91,13 +87,19 @@ interface VerbPreview {
     preview?: string
 }
 
-const { loadIndex } = useVerbs()
+interface VerbMetadata {
+    root: string
+    etymology_sources: string[]
+    stems: string[]
+}
+
 const { search } = useVerbSearch()
 
 const pending = ref(false)
 const showRegexHelp = ref(false)
 
-const { data: index } = await useAsyncData('index-list', loadIndex)
+// Store metadata from search results (instead of loading huge index!)
+const verbMetadata = ref<Map<string, VerbMetadata>>(new Map())
 
 // Sync search state with URL query params
 const q = useRouteQuery<string>('q', '')
@@ -156,7 +158,12 @@ if (searchQuery.value && searchQuery.value.trim().length >= 2) {
 
     console.log(`[SSR] Searching with unified endpoint: "${searchQuery.value}"`)
     try {
-        const response = await $fetch<{ total: number, roots: string[], verbPreviews?: Record<string, VerbPreview> }>('/api/verbs-fulltext-search', {
+        const response = await $fetch<{
+            total: number
+            roots: string[]
+            verbPreviews?: Record<string, VerbPreview>
+            verbMetadata?: Record<string, VerbMetadata>
+        }>('/api/verbs-fulltext-search', {
             method: 'POST',
             body: {
                 query: searchQuery.value,
@@ -170,6 +177,9 @@ if (searchQuery.value && searchQuery.value.trim().length >= 2) {
         if (response.verbPreviews) {
             console.log(`[SSR] Got ${response.roots.length} results with previews`)
             verbPreviews.value = new Map(Object.entries(response.verbPreviews))
+        }
+        if (response.verbMetadata) {
+            verbMetadata.value = new Map(Object.entries(response.verbMetadata))
         }
     }
     catch (e) {
@@ -186,6 +196,7 @@ function clearSearch() {
     searchQuery.value = ''
     results.value = []
     verbPreviews.value.clear()
+    verbMetadata.value.clear()
     filterLetter.value = null
     filterEtymology.value = null
     filterStem.value = null
@@ -200,17 +211,24 @@ async function runSearch(value: string) {
         console.log('[Index] Query too short, clearing results')
         results.value = []
         verbPreviews.value.clear()
+        verbMetadata.value.clear()
         pending.value = false
         return
     }
 
     results.value = []
     verbPreviews.value.clear()
+    verbMetadata.value.clear()
     pending.value = true
 
     // Use unified search endpoint for both modes
     try {
-        const response = await $fetch<{ total: number, roots: string[], verbPreviews?: Record<string, VerbPreview> }>('/api/verbs-fulltext-search', {
+        const response = await $fetch<{
+            total: number
+            roots: string[]
+            verbPreviews?: Record<string, VerbPreview>
+            verbMetadata?: Record<string, VerbMetadata>
+        }>('/api/verbs-fulltext-search', {
             method: 'POST',
             body: {
                 query: value,
@@ -225,6 +243,9 @@ async function runSearch(value: string) {
             console.log(`[Index] Got ${response.roots.length} results with previews`)
             verbPreviews.value = new Map(Object.entries(response.verbPreviews))
         }
+        if (response.verbMetadata) {
+            verbMetadata.value = new Map(Object.entries(response.verbMetadata))
+        }
     }
     catch (e) {
         console.error('[Index] Search failed:', e)
@@ -234,14 +255,15 @@ async function runSearch(value: string) {
     }
 }
 
+// Convert metadata map to VerbIndexEntry array for filter functions
 const baseResults = computed(() => {
     if (!searchQuery.value || searchQuery.value.trim().length < 2 || results.value.length === 0) {
         return []
     }
-    // Load full index for filtering options
-    const all = index.value?.roots || []
-    const matches = new Set(results.value)
-    return all.filter(v => matches.has(v.root))
+    // Use metadata from search results instead of loading huge index
+    return results.value
+        .map(root => verbMetadata.value.get(root))
+        .filter((m): m is VerbMetadata => m !== undefined)
 })
 
 const letterOptions = computed(() => generateLetterOptions(baseResults.value))

@@ -7,29 +7,36 @@ import { rootToSlug, slugToRoot } from '~/utils/slugify'
  */
 export const useVerbs = () => {
     // State management for cached data
-    const index = useState<VerbIndex | null>('verbs-index', () => null)
+    // NOTE: index is NOT in useState to avoid serializing 540KB of data into HTML
+    // Only statistics and cross-refs need to be shared state
     const statistics = useState<Statistics | null>('statistics', () => null)
     const crossRefs = useState<CrossReferences | null>('cross-refs', () => null)
 
+    // Local cache for index (not shared state)
+    let indexCache: VerbIndex | null = null
+
     /**
    * Load the verb index from server API
-   * Uses useAsyncData for SSR hydration
+   * @deprecated No longer needed! Search now returns metadata directly.
+   * This function loads 540KB of data and is kept only for backward compatibility.
    */
     const loadIndex = async (): Promise<VerbIndex> => {
-        const { data } = await useAsyncData('verbs-index', () =>
-            $fetch<{ total: number, verbs: VerbIndexEntry[] }>('/api/verbs')
-        )
+        console.warn('[useVerbs] loadIndex is deprecated - search now returns metadata directly')
 
-        if (data.value) {
-            index.value = {
-                version: '1.0',
-                last_updated: new Date().toISOString(),
-                total_verbs: data.value.total,
-                roots: data.value.verbs
-            }
+        if (indexCache) {
+            return indexCache
         }
 
-        return index.value as VerbIndex
+        const data = await $fetch<{ total: number, verbs: VerbIndexEntry[] }>('/api/verbs')
+
+        indexCache = {
+            version: '1.0',
+            last_updated: new Date().toISOString(),
+            total_verbs: data.total,
+            roots: data.verbs
+        }
+
+        return indexCache
     }
 
     /**
@@ -49,14 +56,11 @@ export const useVerbs = () => {
     }
 
     /**
-   * Load cross-references mapping (generated from verb files)
+   * Load cross-references mapping (from static file generated at build time)
    */
     const loadCrossReferences = async (): Promise<CrossReferences> => {
         if (!crossRefs.value) {
-            // Cross-refs are now built dynamically from verb files
-            // We get them from the server index which loads all verbs
-            await loadIndex()
-            // The cross-refs are built server-side during loadAllVerbs()
+            // Cross-refs are built at build time and served as static JSON
             crossRefs.value = await $fetch<CrossReferences>('/api/cross-refs')
         }
         return crossRefs.value as CrossReferences
@@ -99,7 +103,6 @@ export const useVerbs = () => {
         getVerbWithCrossRef,
 
         // State access (for direct use if needed)
-        index: readonly(index),
         statistics: readonly(statistics),
         crossRefs: readonly(crossRefs)
     }

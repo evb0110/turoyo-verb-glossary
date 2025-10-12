@@ -1,11 +1,46 @@
-export default defineNuxtRouteMiddleware((to) => {
-    // Skip middleware on server-side and during hydration
-    if (import.meta.server) return
-
-    const { user, sessionStatus } = useAuth()
-
+export default defineNuxtRouteMiddleware(async (to) => {
     // Public routes that don't require authentication
     const publicRoutes = ['/login', '/blocked']
+
+    // Server-side auth check
+    if (import.meta.server) {
+        const event = useRequestEvent()
+        if (!event) return
+
+        try {
+            // Use event.$fetch to properly forward cookies
+            const response = await event.$fetch<{ authenticated: boolean, role?: string }>('/api/auth/check')
+
+            // Not authenticated - redirect to login (except for public routes)
+            if (!response.authenticated && !publicRoutes.includes(to.path)) {
+                return navigateTo('/login')
+            }
+
+            // Authenticated - check role-based access
+            if (response.authenticated) {
+                // Blocked users
+                if (response.role === 'blocked' && to.path !== '/blocked') {
+                    return navigateTo('/blocked')
+                }
+
+                // Redirect authenticated users away from login page
+                if (to.path === '/login') {
+                    return navigateTo('/')
+                }
+
+                // Admin-only routes
+                if (to.path.startsWith('/admin') && response.role !== 'admin') {
+                    return navigateTo('/')
+                }
+            }
+        } catch (error) {
+            console.error('Server auth check error:', error)
+        }
+        return
+    }
+
+    // Client-side auth check
+    const { user, sessionStatus } = useAuth()
 
     // Wait for session to be loaded
     if (sessionStatus.value === 'idle' || sessionStatus.value === 'loading') {

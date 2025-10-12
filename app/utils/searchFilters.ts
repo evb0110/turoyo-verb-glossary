@@ -2,7 +2,12 @@
  * Utility functions for generating search filter options
  */
 
-import type { VerbIndexEntry } from '~/types/verb'
+// Minimal metadata needed for filtering
+interface FilterableVerb {
+    root: string
+    etymology_sources: string[]
+    stems: string[]
+}
 
 export interface SelectOption {
     label: string
@@ -12,7 +17,7 @@ export interface SelectOption {
 /**
  * Generate letter filter options from search results
  */
-export function generateLetterOptions(results: VerbIndexEntry[]): SelectOption[] {
+export function generateLetterOptions(results: FilterableVerb[]): SelectOption[] {
     if (results.length === 0) {
         return [{ label: 'All letters', value: null }]
     }
@@ -36,7 +41,7 @@ export function generateLetterOptions(results: VerbIndexEntry[]): SelectOption[]
 /**
  * Generate etymology filter options from search results
  */
-export function generateEtymologyOptions(results: VerbIndexEntry[]): SelectOption[] {
+export function generateEtymologyOptions(results: FilterableVerb[]): SelectOption[] {
     if (results.length === 0) {
         return [{ label: 'All etymologies', value: null }]
     }
@@ -63,7 +68,7 @@ export function generateEtymologyOptions(results: VerbIndexEntry[]): SelectOptio
 /**
  * Generate stem filter options from search results
  */
-export function generateStemOptions(results: VerbIndexEntry[]): SelectOption[] {
+export function generateStemOptions(results: FilterableVerb[]): SelectOption[] {
     if (results.length === 0) {
         return [{ label: 'All stems', value: null }]
     }
@@ -84,16 +89,16 @@ export function generateStemOptions(results: VerbIndexEntry[]): SelectOption[] {
 }
 
 /**
- * Apply filters to verb index entries
+ * Apply filters to verb metadata
  */
 export function applyFilters(
-    results: VerbIndexEntry[],
+    results: FilterableVerb[],
     filters: {
         letter: string | null
         etymology: string | null
         stem: string | null
     }
-): VerbIndexEntry[] {
+): FilterableVerb[] {
     let filtered = results
 
     if (filters.letter) {

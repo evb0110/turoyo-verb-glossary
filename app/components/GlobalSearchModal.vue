@@ -87,13 +87,6 @@ function submit() {
 
     open.value = false
 
-    console.log({
-        q,
-        type,
-        regex,
-        case: caseParam
-    })
-
     router.push({
         path: '/',
         query: {
