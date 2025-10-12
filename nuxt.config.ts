@@ -7,7 +7,27 @@ export default defineNuxtConfig({
     icon: {
         serverBundle: {
             collections: ['heroicons', 'lucide']
-        }
+        },
+        clientBundle: {
+            scan: true,
+            sizeLimitKb: 512,
+            // Explicitly include Nuxt UI's default lucide icons
+            icons: [
+                'lucide:check',
+                'lucide:loader-circle',
+                'lucide:x',
+                'lucide:chevron-down',
+                'lucide:circle-alert',
+                'lucide:circle-check',
+                'lucide:circle-x',
+                'lucide:info',
+                'lucide:triangle-alert'
+            ]
+        },
+        fallbackToApi: false,
+        localApiEndpoint: false,
+        mode: 'svg',
+        provider: 'iconify'
     },
     app: {
         head: {
