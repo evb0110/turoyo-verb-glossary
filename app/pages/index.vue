@@ -93,8 +93,6 @@ interface VerbMetadata {
     stems: string[]
 }
 
-const { search } = useVerbSearch()
-
 const pending = ref(false)
 const showRegexHelp = ref(false)
 

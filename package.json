@@ -4,7 +4,6 @@
   "description": "Turoyo Verb Glossary - A comprehensive database of Turoyo verbs",
   "type": "module",
   "scripts": {
-    "prebuild": "node scripts/generate-search-index.js",
     "build": "nuxt build",
     "validate": "node scripts/validate.js",
     "build:all": "npm run build && npm run validate",
@@ -40,8 +39,6 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@iconify-json/heroicons": "^1.2.3",
-    "@iconify-json/lucide": "^1.2.69",
     "@types/node": "^24.6.2",
     "tailwindcss": "^4.1.14"
   }
