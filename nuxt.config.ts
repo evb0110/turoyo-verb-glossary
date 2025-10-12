@@ -4,31 +4,6 @@ export default defineNuxtConfig({
     pages: true,
     components: [{ path: '~/components', pathPrefix: false }],
     devtools: { enabled: true },
-    icon: {
-        serverBundle: {
-            collections: ['heroicons', 'lucide']
-        },
-        clientBundle: {
-            scan: true,
-            sizeLimitKb: 512,
-            // Explicitly include Nuxt UI's default lucide icons
-            icons: [
-                'lucide:check',
-                'lucide:loader-circle',
-                'lucide:x',
-                'lucide:chevron-down',
-                'lucide:circle-alert',
-                'lucide:circle-check',
-                'lucide:circle-x',
-                'lucide:info',
-                'lucide:triangle-alert'
-            ]
-        },
-        fallbackToApi: false,
-        localApiEndpoint: false,
-        mode: 'svg',
-        provider: 'iconify'
-    },
     app: {
         head: {
             title: 'Turoyo Verb Glossary',
@@ -85,5 +60,25 @@ export default defineNuxtConfig({
                 commaDangle: 'never'
             }
         }
+    },
+
+    icon: {
+        serverBundle: {
+            collections: ['heroicons', 'lucide']
+        },
+        clientBundle: {
+            scan: true,
+            sizeLimitKb: 512,
+            // Just the minimal icons we actually use on the main page
+            icons: [
+                'lucide:check',
+                'lucide:loader-circle',
+                'lucide:x'
+            ]
+        },
+        fallbackToApi: false,
+        localApiEndpoint: false,
+        mode: 'svg',
+        provider: 'iconify'
     }
 })
