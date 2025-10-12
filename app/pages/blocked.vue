@@ -7,7 +7,7 @@ definePageMeta({
 
 const handleSignOut = async () => {
     await signOut()
-    navigateTo('/login')
+    // Note: Redirect to /login is handled by app/plugins/auth-redirect.client.ts
 }
 </script>
 

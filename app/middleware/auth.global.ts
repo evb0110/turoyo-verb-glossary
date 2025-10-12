@@ -23,6 +23,11 @@ export default defineNuxtRouteMiddleware(async (to) => {
                     return navigateTo('/blocked')
                 }
 
+                // Unblocked users should not stay on blocked page
+                if (response.role !== 'blocked' && to.path === '/blocked') {
+                    return navigateTo('/')
+                }
+
                 // Redirect authenticated users away from login page
                 if (to.path === '/login') {
                     return navigateTo('/')
@@ -57,6 +62,11 @@ export default defineNuxtRouteMiddleware(async (to) => {
         // If blocked user, redirect to blocked page
         if (user.value.role === 'blocked' && to.path !== '/blocked') {
             return navigateTo('/blocked')
+        }
+
+        // Unblocked users should not stay on blocked page
+        if (user.value.role !== 'blocked' && to.path === '/blocked') {
+            return navigateTo('/')
         }
 
         // If user is on login page and authenticated, redirect to home

@@ -19,13 +19,13 @@
                     v-if="isAdmin"
                     to="/admin"
                     size="sm"
-                    color="purple"
+                    color="primary"
                     variant="soft"
                     icon="i-heroicons-cog-6-tooth"
                 >
                     Admin
                     <template v-if="pendingCount > 0" #trailing>
-                        <UBadge color="orange" variant="solid" size="xs">
+                        <UBadge color="warning" variant="solid" size="xs">
                             {{ pendingCount }}
                         </UBadge>
                     </template>
@@ -95,7 +95,7 @@ if (import.meta.client) {
             toast.add({
                 title: 'Pending Users',
                 description: `You have ${newCount} user${newCount > 1 ? 's' : ''} waiting for approval`,
-                color: 'orange',
+                color: 'warning',
                 icon: 'i-heroicons-bell'
             })
         }

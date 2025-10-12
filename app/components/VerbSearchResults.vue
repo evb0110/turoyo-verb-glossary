@@ -50,7 +50,12 @@
 </template>
 
 <script setup lang="ts">
-import type { VerbIndexEntry } from '~/types/verb'
+// Minimal metadata needed for display
+interface VerbMetadata {
+    root: string
+    etymology_sources: string[]
+    stems: string[]
+}
 
 interface Excerpt {
     type: 'form' | 'example' | 'translation' | 'etymology' | 'gloss'
@@ -73,7 +78,7 @@ defineProps<{
     searchType: 'roots' | 'all'
     regexMode: 'on' | 'off'
     caseParam: 'on' | 'off'
-    displayed: VerbIndexEntry[]
+    displayed: VerbMetadata[]
     verbPreviews: Map<string, VerbPreview>
     loadingDetails: boolean
     pending: boolean

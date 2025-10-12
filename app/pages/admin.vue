@@ -1,14 +1,10 @@
 <script setup lang="ts">
 import type { AuthUser } from '~/composables/useAuth'
 
-const { user, isAdmin } = useAuth()
-
-// Redirect non-admin users
-if (!isAdmin.value) {
-    navigateTo('/')
-}
+const { user } = useAuth()
 
 // Fetch users list
+// Note: Auth redirects are handled by app/plugins/auth-redirect.client.ts
 const { data: users, refresh: refreshUsers } = await useFetch<AuthUser[]>('/api/admin/users', {
     watch: false
 })
@@ -26,16 +22,18 @@ const approveUser = async (userId: string) => {
         toastStore.add({
             title: 'User approved',
             description: 'User has been approved successfully',
-            color: 'green'
+            color: 'success'
         })
-    } catch (error) {
+    }
+    catch (error) {
         console.error('Error approving user:', error)
         toastStore.add({
             title: 'Error',
             description: 'Failed to approve user',
-            color: 'red'
+            color: 'error'
         })
-    } finally {
+    }
+    finally {
         loading.value = null
     }
 }
@@ -50,16 +48,18 @@ const blockUser = async (userId: string) => {
         toastStore.add({
             title: 'User blocked',
             description: 'User has been blocked successfully',
-            color: 'orange'
+            color: 'warning'
         })
-    } catch (error) {
+    }
+    catch (error) {
         console.error('Error blocking user:', error)
         toastStore.add({
             title: 'Error',
             description: 'Failed to block user',
-            color: 'red'
+            color: 'error'
         })
-    } finally {
+    }
+    finally {
         loading.value = null
     }
 }
@@ -74,16 +74,18 @@ const unblockUser = async (userId: string) => {
         toastStore.add({
             title: 'User unblocked',
             description: 'User has been unblocked successfully',
-            color: 'green'
+            color: 'success'
         })
-    } catch (error) {
+    }
+    catch (error) {
         console.error('Error unblocking user:', error)
         toastStore.add({
             title: 'Error',
             description: 'Failed to unblock user',
-            color: 'red'
+            color: 'error'
         })
-    } finally {
+    }
+    finally {
         loading.value = null
     }
 }
@@ -91,15 +93,15 @@ const unblockUser = async (userId: string) => {
 const getRoleBadgeColor = (role: string) => {
     switch (role) {
         case 'admin':
-            return 'purple'
+            return 'primary'
         case 'user':
-            return 'green'
+            return 'success'
         case 'pending':
-            return 'orange'
+            return 'warning'
         case 'blocked':
-            return 'red'
+            return 'error'
         default:
-            return 'gray'
+            return 'neutral'
     }
 }
 
@@ -119,8 +121,12 @@ const formatDate = (date: string) => {
         <div class="mb-8">
             <div class="flex items-center justify-between">
                 <div>
-                    <h1 class="text-3xl font-bold text-gray-900 dark:text-white">User Management</h1>
-                    <p class="mt-2 text-gray-600 dark:text-gray-400">Manage user access and permissions</p>
+                    <h1 class="text-3xl font-bold text-gray-900 dark:text-white">
+                        User Management
+                    </h1>
+                    <p class="mt-2 text-gray-600 dark:text-gray-400">
+                        Manage user access and permissions
+                    </p>
                 </div>
                 <UButton
                     to="/"
@@ -187,7 +193,8 @@ const formatDate = (date: string) => {
                                     <UButton
                                         v-if="u.role === 'pending'"
                                         size="xs"
-                                        color="green"
+                                        color="success"
+                                        variant="outline"
                                         :loading="loading === u.id"
                                         @click="approveUser(u.id)"
                                     >
@@ -196,8 +203,8 @@ const formatDate = (date: string) => {
                                     <UButton
                                         v-if="u.role === 'user' && u.id !== user?.id"
                                         size="xs"
-                                        color="red"
-                                        variant="soft"
+                                        color="error"
+                                        variant="outline"
                                         :loading="loading === u.id"
                                         @click="blockUser(u.id)"
                                     >
@@ -206,16 +213,14 @@ const formatDate = (date: string) => {
                                     <UButton
                                         v-if="u.role === 'blocked'"
                                         size="xs"
-                                        color="green"
-                                        variant="soft"
+                                        color="success"
+                                        variant="outline"
                                         :loading="loading === u.id"
                                         @click="unblockUser(u.id)"
                                     >
                                         Unblock
                                     </UButton>
-                                    <span v-if="u.id === user?.id" class="text-xs text-gray-400 dark:text-gray-600 px-2 py-1">
-                                        -
-                                    </span>
+                                    <span v-if="u.id === user?.id" class="text-xs text-gray-400 dark:text-gray-600 px-2 py-1" />
                                 </div>
                             </td>
                         </tr>
@@ -225,7 +230,9 @@ const formatDate = (date: string) => {
         </UCard>
 
         <div v-if="!users || users.length === 0" class="text-center py-12">
-            <p class="text-gray-500 dark:text-gray-400">No users found</p>
+            <p class="text-gray-500 dark:text-gray-400">
+                No users found
+            </p>
         </div>
     </div>
 </template>

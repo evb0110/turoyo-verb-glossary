@@ -61,17 +61,9 @@ import type { Filters } from '~/types/types/search'
 import type { VerbIndex } from '~/types/verb'
 import { generateLetterOptions, generateEtymologyOptions, generateStemOptions, applyFilters } from '~/utils/searchFilters'
 
-const { sessionStatus, isApproved } = useAuth()
+const { isApproved } = useAuth()
 
-// Client-side only: redirect to login if not authenticated
-// NOTE: Don't use immediate:true to avoid triggering on hydration
-if (import.meta.client) {
-    watch(sessionStatus, (status) => {
-        if (status === 'guest') {
-            navigateTo('/login')
-        }
-    })
-}
+// Note: Auth redirects are handled by app/plugins/auth-redirect.client.ts
 
 interface Excerpt {
     type: 'form' | 'example' | 'translation' | 'etymology' | 'gloss'

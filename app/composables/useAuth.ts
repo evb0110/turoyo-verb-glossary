@@ -1,7 +1,6 @@
 import { createAuthClient } from 'better-auth/vue'
-import type { BetterAuthClient } from 'better-auth/vue'
 
-let authClient: BetterAuthClient | null = null
+let authClient: ReturnType<typeof createAuthClient> | null = null
 
 function getAuthClient() {
     if (authClient) return authClient
@@ -22,6 +21,7 @@ export interface AuthUser {
     email: string
     image?: string | null
     role: UserRole
+    createdAt: string
 }
 
 export const useAuth = () => {
