@@ -1,5 +1,5 @@
 <template>
-    <div class="space-y-6 px-6 py-4">
+    <div class="space-y-6 py-4">
         <UCard>
             <div class="space-y-4">
                 <SearchControls
