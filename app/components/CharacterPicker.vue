@@ -1,11 +1,12 @@
 <template>
     <UPopover v-model:open="isOpen">
         <UButton
-            color="neutral"
-            variant="outline"
+            color="primary"
+            variant="soft"
+            size="lg"
             icon="i-heroicons-language"
         >
-            Special Chars
+            Virtual keyboard
         </UButton>
 
         <template #content>

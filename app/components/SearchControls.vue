@@ -71,12 +71,13 @@
                 </span>
             </div>
 
-            <div class="flex gap-2">
+            <div class="flex gap-3">
                 <UInput
                     ref="searchInput"
                     v-model="internalQuery"
                     :placeholder="placeholder"
-                    class="flex-1"
+                    class="flex-1 text-base"
+                    size="lg"
                     icon="i-heroicons-magnifying-glass"
                     @keydown.enter="handleSearch"
                 >
@@ -93,9 +94,10 @@
                 </UInput>
                 <UButton
                     :disabled="!internalQuery || internalQuery.trim().length < 2"
-                    color="neutral"
+                    color="primary"
                     icon="i-heroicons-magnifying-glass"
-                    variant="outline"
+                    size="lg"
+                    variant="solid"
                     @click="handleSearch"
                 >
                     Search
