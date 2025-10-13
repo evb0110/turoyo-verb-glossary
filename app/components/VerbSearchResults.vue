@@ -20,30 +20,32 @@
         </template>
 
         <template #preview-cell="{ row }">
-            <div v-if="verbPreviews.has(row.original.root)" class="max-h-64 overflow-y-auto">
-                <template v-if="searchType === 'roots' && verbPreviews.get(row.original.root)?.preview">
-                    <!-- Pre-rendered full article preview for "roots only" mode -->
-                    <div
-                        class="preview-content whitespace-normal break-words"
-                        v-html="verbPreviews.get(row.original.root)!.preview"
-                    />
-                </template>
-                <template v-else-if="verbPreviews.get(row.original.root)?.excerpts">
-                    <!-- Pre-rendered excerpts for "everything" mode -->
-                    <div class="preview-excerpts space-y-2">
+            <div class="py-4">
+                <div v-if="verbPreviews.has(row.original.root)" class="max-h-64 px-4 overflow-y-auto">
+                    <template v-if="searchType === 'roots' && verbPreviews.get(row.original.root)?.preview">
+                        <!-- Pre-rendered full article preview for "roots only" mode -->
                         <div
-                            v-for="(excerpt, i) in verbPreviews.get(row.original.root)!.excerpts"
-                            :key="i"
-                            class="preview-excerpt"
-                        >
-                            <span class="excerpt-label block text-xs font-semibold text-gray-600 dark:text-gray-400">{{ excerpt.label }}</span>
-                            <span class="excerpt-text block whitespace-normal break-words" v-html="excerpt.html" />
+                            class="preview-content whitespace-normal break-words"
+                            v-html="verbPreviews.get(row.original.root)!.preview"
+                        />
+                    </template>
+                    <template v-else-if="verbPreviews.get(row.original.root)?.excerpts">
+                        <!-- Pre-rendered excerpts for "everything" mode -->
+                        <div class="preview-excerpts space-y-2">
+                            <div
+                                v-for="(excerpt, i) in verbPreviews.get(row.original.root)!.excerpts"
+                                :key="i"
+                                class="preview-excerpt"
+                            >
+                                <span class="excerpt-label block text-xs font-semibold text-gray-600 dark:text-gray-400">{{ excerpt.label }}</span>
+                                <span class="excerpt-text block whitespace-normal break-words" v-html="excerpt.html" />
+                            </div>
                         </div>
-                    </div>
-                </template>
-            </div>
-            <div v-else class="text-sm text-gray-400">
-                {{ loadingDetails ? 'Loading...' : '—' }}
+                    </template>
+                </div>
+                <div v-else class="text-sm text-gray-400">
+                    {{ loadingDetails ? 'Loading...' : '—' }}
+                </div>
             </div>
         </template>
     </UTable>
@@ -100,7 +102,12 @@ const columns = [
     },
     {
         accessorKey: 'preview',
-        header: 'Article Preview'
+        header: 'Article Preview',
+        meta: {
+            class: {
+                td: 'p-0'
+            }
+        }
     }
 ]
 </script>

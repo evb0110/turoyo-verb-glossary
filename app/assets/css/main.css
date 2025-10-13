@@ -23,6 +23,61 @@ mark.highlight-match {
   border-radius: 2px;
 }
 
+/* Apply custom scrollbar globally to all scrollable containers */
+.overflow-auto::-webkit-scrollbar,
+.overflow-y-auto::-webkit-scrollbar,
+.overflow-x-auto::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.overflow-auto::-webkit-scrollbar-track,
+.overflow-y-auto::-webkit-scrollbar-track,
+.overflow-x-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb,
+.overflow-y-auto::-webkit-scrollbar-thumb,
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb:hover,
+.overflow-y-auto::-webkit-scrollbar-thumb:hover,
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* Firefox scrollbar styling */
+.overflow-auto,
+.overflow-y-auto,
+.overflow-x-auto {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
+}
+
+/* Dark mode scrollbar */
+.dark .overflow-auto::-webkit-scrollbar-thumb,
+.dark .overflow-y-auto::-webkit-scrollbar-thumb,
+.dark .overflow-x-auto::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.dark .overflow-auto::-webkit-scrollbar-thumb:hover,
+.dark .overflow-y-auto::-webkit-scrollbar-thumb:hover,
+.dark .overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Firefox dark mode */
+.dark .overflow-auto,
+.dark .overflow-y-auto,
+.dark .overflow-x-auto {
+  scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+}
+
 /* Verb preview in search results */
 .verb-preview {
   max-height: 200px;
@@ -30,23 +85,6 @@ mark.highlight-match {
   font-size: 0.875rem;
   line-height: 1.5;
   padding: 0.25rem 0;
-}
-
-.verb-preview::-webkit-scrollbar {
-  width: 6px;
-}
-
-.verb-preview::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.verb-preview::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-}
-
-.verb-preview::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.3);
 }
 
 /* Full article preview styling */
@@ -111,4 +149,3 @@ mark.highlight-match {
 .excerpt-text {
   color: #374151;
 }
-
