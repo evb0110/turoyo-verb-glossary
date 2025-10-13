@@ -38,7 +38,6 @@
                     :case-param="caseParam"
                     :displayed="displayed"
                     :verb-previews="verbPreviews"
-                    :loading-details="loadingDetails"
                     :pending="pending"
                 />
 
@@ -134,7 +133,6 @@ const results = ref<string[]>([])
 
 // Store pre-rendered HTML previews from server
 const verbPreviews = ref<Map<string, VerbPreview>>(new Map())
-const loadingDetails = ref(false)
 
 // Perform initial search from URL during SSR
 // Use unified search endpoint for both "roots only" and "everything" modes

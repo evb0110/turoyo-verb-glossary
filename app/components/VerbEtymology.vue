@@ -5,7 +5,8 @@
         </h2>
 
         <div v-for="(group, idx) in groupedEtymons" :key="idx" class="space-y-2">
-            <div class="flex items-baseline gap-2">
+            <!-- Only show source label if there's actually a source -->
+            <div v-if="group.source" class="flex items-baseline gap-2">
                 <span class="font-medium text-sm">{{ group.source }}:</span>
                 <span
                     v-if="etymology.relationship && idx > 0"
@@ -15,10 +16,11 @@
                 </span>
             </div>
 
-            <div v-for="(etymon, eIdx) in group.etymons" :key="eIdx" class="pl-4 space-y-1 text-sm">
-                <div class="flex items-baseline gap-2">
-                    <span>{{ etymon.source_root }}</span>
-                    <span>{{ etymon.stem }}</span>
+            <div v-for="(etymon, eIdx) in group.etymons" :key="eIdx" :class="group.source ? 'pl-4' : ''" class="space-y-1 text-sm">
+                <!-- Structured etymon (has source_root, meaning, etc.) -->
+                <div v-if="etymon.source_root || etymon.stem" class="flex items-baseline gap-2">
+                    <span v-if="etymon.source_root">{{ etymon.source_root }}</span>
+                    <span v-if="etymon.stem">{{ etymon.stem }}</span>
                 </div>
                 <p v-if="etymon.meaning" class="text-muted">
                     {{ etymon.meaning }}
@@ -26,7 +28,8 @@
                 <p v-if="etymon.reference" class="text-xs text-muted">
                     Ref: {{ etymon.reference }}
                 </p>
-                <p v-if="etymon.raw" class="text-xs text-muted italic">
+                <!-- Raw etymon (fallback - just show the raw text) -->
+                <p v-if="etymon.raw" class="text-muted italic">
                     {{ etymon.raw }}
                 </p>
             </div>
@@ -47,9 +50,10 @@ const props = defineProps<{
 const groupedEtymons = computed(() => {
     if (!props.etymology?.etymons) return []
 
-    const groups = new Map<string, Etymon[]>()
+    const groups = new Map<string | undefined, Etymon[]>()
     for (const etymon of props.etymology.etymons) {
-        const source = etymon.source
+        // Use source if available, otherwise undefined (for raw-only etymons)
+        const source = etymon.source || undefined
         if (!groups.has(source)) {
             groups.set(source, [])
         }

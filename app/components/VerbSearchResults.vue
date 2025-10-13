@@ -21,7 +21,12 @@
 
         <template #preview-cell="{ row }">
             <div class="py-4">
-                <div v-if="verbPreviews.has(row.original.root)" class="max-h-64 px-4 overflow-y-auto">
+                <!-- Show loading state while fetching -->
+                <div v-if="pending" class="text-sm text-gray-400">
+                    Loading...
+                </div>
+                <!-- Show preview once loaded (all rows get previews in single response) -->
+                <div v-else-if="hasAnyPreviews" class="max-h-64 px-4 overflow-y-auto">
                     <template v-if="searchType === 'roots' && verbPreviews.get(row.original.root)?.preview">
                         <!-- Pre-rendered full article preview for "roots only" mode -->
                         <div
@@ -37,14 +42,17 @@
                                 :key="i"
                                 class="preview-excerpt"
                             >
-                                <span class="excerpt-label block text-xs font-semibold text-gray-600 dark:text-gray-400">{{ excerpt.label }}</span>
+                                <span class="excerpt-label block text-xs font-semibold text-gray-600 dark:text-gray-400">
+                                    {{ excerpt.label }}
+                                </span>
                                 <span class="excerpt-text block whitespace-normal break-words" v-html="excerpt.html" />
                             </div>
                         </div>
                     </template>
                 </div>
+                <!-- Show placeholder if no previews available -->
                 <div v-else class="text-sm text-gray-400">
-                    {{ loadingDetails ? 'Loading...' : '—' }}
+                    —
                 </div>
             </div>
         </template>
@@ -75,21 +83,20 @@ interface VerbPreview {
 
 const { rootToSlug } = useVerbs()
 
-defineProps<{
+const props = defineProps<{
     searchQuery: string
     searchType: 'roots' | 'all'
     regexMode: 'on' | 'off'
     caseParam: 'on' | 'off'
     displayed: VerbMetadata[]
     verbPreviews: Map<string, VerbPreview>
-    loadingDetails: boolean
     pending: boolean
 }>()
 
 const route = useRoute()
-watchEffect(() => {
-    console.log(route?.query)
-})
+
+// Check once if we have any previews (applies to all rows since API returns all previews in single response)
+const hasAnyPreviews = computed(() => props.verbPreviews.size > 0)
 
 const columns = [
     {

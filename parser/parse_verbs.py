@@ -22,6 +22,7 @@ Last Updated: 2025-10-11
 import re
 import json
 import subprocess
+import html
 from pathlib import Path
 from collections import defaultdict
 from bs4 import BeautifulSoup, Tag, NavigableString
@@ -62,10 +63,21 @@ class TuroyoVerbParser:
         # Pattern handles: roots, numbers, variant spellings (e.g., "fhr, fxr")
         # Note: <font> tag is optional (e.g., ʕmr 1 has <p><span>, ʕmr 2 has <p><font><span>)
         root_pattern = r'<p[^>]*class="western"[^>]*>(?:<font[^>]*>)?<span[^>]*>([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzžḏṯẓāēīūə]{2,6})(?:\s*\d+)?[^<]*</span>'
-        roots = []
 
+        # STEP 1: Collect all valid root matches (filtering out glosses)
+        valid_matches = []
         for match in re.finditer(root_pattern, section_html):
             root_chars = match.group(1)
+
+            # FILTER: Skip German glosses (e.g., "speichern;")
+            # Glosses end with semicolon and have no etymology/stem markup
+            span_content = match.group(0)
+            span_text_match = re.search(r'<span[^>]*>([^<]+)</span>', span_content)
+            if span_text_match:
+                full_span_text = span_text_match.group(1).strip()
+                # If the span contains ONLY German text ending with semicolon, skip it
+                if ';' in full_span_text and not any(c in full_span_text for c in 'ʔʕġǧḥṣštṭḏṯẓāēīūə'):
+                    continue
 
             # Check for root continuation (e.g., ṣyb + r = ṣybr)
             lookahead_cont = section_html[match.end():match.end()+100]
@@ -100,10 +112,14 @@ class TuroyoVerbParser:
                         else:
                             root = root_chars
 
-            start_pos = match.start()
-            next_match = re.search(root_pattern, section_html[match.end():])
-            end_pos = (match.end() + next_match.start()) if next_match else len(section_html)
+            valid_matches.append((root, match))
 
+        # STEP 2: Extract entry HTML using filtered match boundaries
+        roots = []
+        for i, (root, match) in enumerate(valid_matches):
+            start_pos = match.start()
+            # Use next VALID match as boundary, not raw pattern search
+            end_pos = valid_matches[i+1][1].start() if i+1 < len(valid_matches) else len(section_html)
             entry_html = section_html[start_pos:end_pos]
             roots.append((root, entry_html))
 
@@ -182,6 +198,8 @@ class TuroyoVerbParser:
         etym_text = re.sub(r'</span></i></font></font><font[^>]*><span[^>]*>', ' ', etym_text)
         etym_text = re.sub(r'</span></i></font><font[^>]*><i><span[^>]*>', ' ', etym_text)
         etym_text = re.sub(r'<[^>]+>', '', etym_text)
+        # Decode HTML entities (&lt; → <, &amp; → &, etc.)
+        etym_text = html.unescape(etym_text)
         etym_text = self.normalize_whitespace(etym_text)
 
         # Check for complex etymologies with relationships
@@ -787,9 +805,17 @@ class TuroyoVerbParser:
                     source = etymon.get('source', 'Unknown')
                     etym_sources[source] += 1
 
+        # Count total examples
+        total_examples = sum(
+            sum(len(conj_data) for conj_data in stem['conjugations'].values())
+            for verb in self.verbs
+            for stem in verb['stems']
+        )
+
         stats = {
             'total_verbs': len(self.verbs),
             'total_stems': self.stats['stems_parsed'],
+            'total_examples': total_examples,
             'stem_counts': dict(stem_counts),
             'etymology_sources': dict(etym_sources),
             'cross_references': self.stats.get('cross_references', 0),
