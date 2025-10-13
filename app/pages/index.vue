@@ -7,7 +7,7 @@
                     v-model:search-everything="searchEverything"
                     v-model:use-regex="useRegex"
                     v-model:case-sensitive="caseSensitive"
-                    :placeholder="getSearchPlaceholder()"
+                    :placeholder="searchPlaceholder"
                     @search="performSearch"
                     @clear="clearSearch"
                     @show-help="showRegexHelp = true"
@@ -116,14 +116,14 @@ const caseSensitive = computed({
     set: (value) => { caseParam.value = value ? 'on' : 'off' }
 })
 
-function getSearchPlaceholder() {
+const searchPlaceholder = computed(() => {
     if (regexMode.value === 'on') {
         return 'Regex search (use \\c for consonants, \\v for vowels)…'
     }
     return searchType.value === 'all'
         ? 'Search for roots, forms, translations, or etymology keywords…'
         : 'Search for verb roots…'
-}
+})
 
 // Filters as computed getter for reactive access
 const filters = computed(() => ({
