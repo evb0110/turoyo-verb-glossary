@@ -23,7 +23,8 @@ export default defineEventHandler(async (event) => {
             authenticated: true,
             role: currentUser.role
         }
-    } catch (error) {
+    }
+    catch (error) {
         console.error('Auth check error:', error)
         return { authenticated: false }
     }

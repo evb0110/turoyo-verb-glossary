@@ -13,17 +13,17 @@
  */
 
 export default defineNuxtPlugin(async () => {
-  const { sessionStatus, user } = useAuth()
-  const router = useRouter()
+    const { sessionStatus, user } = useAuth()
+    const router = useRouter()
 
-  // Import redirect utilities
-  const { handleAuthRedirect } = await import('~/utils/auth-redirect')
+    // Import redirect utilities
+    const { handleAuthRedirect } = await import('~/utils/auth-redirect')
 
-  if (import.meta.dev) {
-    console.log('[Auth Redirect Plugin] Initialized')
-  }
+    if (import.meta.dev) {
+        console.log('[Auth Redirect Plugin] Initialized')
+    }
 
-  /**
+    /**
    * Watch for auth state changes and trigger redirects
    *
    * This watcher handles:
@@ -33,24 +33,24 @@ export default defineNuxtPlugin(async () => {
    * 4. User loses admin role while on /admin → redirect to /
    * 5. User gains authentication while on /login → redirect to /
    */
-  watch(
-    [sessionStatus, user, () => router.currentRoute.value.path],
-    async ([status, currentUser, currentPath]) => {
-      // Skip if session is still loading
-      if (status === 'idle' || status === 'loading') {
-        return
-      }
+    watch(
+        [sessionStatus, user, () => router.currentRoute.value.path],
+        async ([status, currentUser, currentPath]) => {
+            // Skip if session is still loading
+            if (status === 'idle' || status === 'loading') {
+                return
+            }
 
-      // Handle redirect logic
-      await handleAuthRedirect(
-        currentPath,
-        status,
-        currentUser?.role
-      )
-    },
-    {
-      // Don't run immediately on mount - let middleware handle initial navigation
-      immediate: false,
-    }
-  )
+            // Handle redirect logic
+            await handleAuthRedirect(
+                currentPath,
+                status,
+                currentUser?.role
+            )
+        },
+        {
+            // Don't run immediately on mount - let middleware handle initial navigation
+            immediate: false
+        }
+    )
 })

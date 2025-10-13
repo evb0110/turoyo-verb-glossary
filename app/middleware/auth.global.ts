@@ -38,7 +38,8 @@ export default defineNuxtRouteMiddleware(async (to) => {
                     return navigateTo('/')
                 }
             }
-        } catch (error) {
+        }
+        catch (error) {
             console.error('Server auth check error:', error)
         }
         return

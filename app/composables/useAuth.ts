@@ -54,12 +54,14 @@ export const useAuth = () => {
                 provider: 'google',
                 callbackURL: '/'
             })
-        } catch (error) {
+        }
+        catch (error) {
             console.error('Sign in error:', error)
             if (typeof window !== 'undefined') {
                 window.sessionStorage.removeItem(pendingKey)
             }
-        } finally {
+        }
+        finally {
             loading.value = false
         }
     }
@@ -83,19 +85,23 @@ export const useAuth = () => {
                 if (response) {
                     user.value = response
                     sessionStatus.value = 'authenticated'
-                } else {
+                }
+                else {
                     user.value = null
                     sessionStatus.value = 'guest'
                 }
-            } else {
+            }
+            else {
                 user.value = null
                 sessionStatus.value = 'guest'
             }
-        } catch (error) {
+        }
+        catch (error) {
             console.error('Session check error:', error)
             user.value = null
             sessionStatus.value = 'guest'
-        } finally {
+        }
+        finally {
             if (typeof window !== 'undefined') {
                 window.sessionStorage.removeItem(pendingKey)
             }
@@ -110,7 +116,8 @@ export const useAuth = () => {
             if (typeof window !== 'undefined') {
                 window.sessionStorage.removeItem(pendingKey)
             }
-        } catch (error) {
+        }
+        catch (error) {
             console.error('Sign out error:', error)
         }
     }

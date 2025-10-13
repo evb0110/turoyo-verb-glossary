@@ -50,7 +50,6 @@ let searchIndexCache: SearchIndex | null = null
 // Full verbs cache (heavy, only loaded when needed for stats)
 let verbsCache: Verb[] | null = null
 let verbsCacheTime: number = 0
-let crossRefsCache: Record<string, string> = {}
 const CACHE_TTL = 3600000 // 1 hour cache
 
 /**
@@ -115,7 +114,6 @@ export async function loadAllVerbs(): Promise<Verb[]> {
             console.log(`[loadAllVerbs] Loaded ${verbs.length} verbs successfully`)
             verbsCache = verbs
             verbsCacheTime = now
-            crossRefsCache = crossRefs
             return verbs
         }
 

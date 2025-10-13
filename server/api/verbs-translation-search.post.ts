@@ -146,10 +146,10 @@ export default defineEventHandler(async (event) => {
                 if (verb.etymology && Array.isArray(verb.etymology.etymons)) {
                     for (const etymon of verb.etymology.etymons) {
                         if (
-                            (etymon.meaning && matchesPattern(etymon.meaning, query, { useRegex, caseSensitive })) ||
-                            (etymon.notes && matchesPattern(etymon.notes, query, { useRegex, caseSensitive })) ||
-                            (etymon.raw && matchesPattern(etymon.raw, query, { useRegex, caseSensitive })) ||
-                            (etymon.source_root && matchesPattern(etymon.source_root, query, { useRegex, caseSensitive }))
+                            (etymon.meaning && matchesPattern(etymon.meaning, query, { useRegex, caseSensitive }))
+                            || (etymon.notes && matchesPattern(etymon.notes, query, { useRegex, caseSensitive }))
+                            || (etymon.raw && matchesPattern(etymon.raw, query, { useRegex, caseSensitive }))
+                            || (etymon.source_root && matchesPattern(etymon.source_root, query, { useRegex, caseSensitive }))
                         ) {
                             if (searchType === 'roots') {
                                 verbPreviews[root] = { preview: generateFullPreview(verb) }

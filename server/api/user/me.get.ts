@@ -28,7 +28,8 @@ export default defineEventHandler(async (event) => {
         }
 
         return userData[0]
-    } catch (error) {
+    }
+    catch (error) {
         console.error('Error fetching user:', error)
         setResponseStatus(event, 500)
         return null

@@ -57,11 +57,7 @@
 
 <script lang="ts" setup>
 import { useRouteQuery } from '@vueuse/router'
-import type { Filters } from '~/types/types/search'
-import type { VerbIndex } from '~/types/verb'
 import { generateLetterOptions, generateEtymologyOptions, generateStemOptions, applyFilters } from '~/utils/searchFilters'
-
-const { isApproved } = useAuth()
 
 // Note: Auth redirects are handled by app/plugins/auth-redirect.client.ts
 

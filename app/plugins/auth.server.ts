@@ -1,4 +1,12 @@
-export default defineNuxtPlugin(async (nuxtApp) => {
+interface AuthUser {
+    id: string
+    name: string
+    email: string
+    image?: string | null
+    role: string
+}
+
+export default defineNuxtPlugin(async (_nuxtApp) => {
     // Only run on server
     if (import.meta.client) return
 
@@ -7,7 +15,7 @@ export default defineNuxtPlugin(async (nuxtApp) => {
 
     try {
         // Fetch user data with role during SSR
-        const userData = await $fetch<{ id: string, name: string, email: string, image?: string | null, role: string } | null>('/api/user/me', {
+        const userData = await $fetch<AuthUser | null>('/api/user/me', {
             headers: event.headers as HeadersInit
         }).catch(() => null)
 
@@ -15,7 +23,7 @@ export default defineNuxtPlugin(async (nuxtApp) => {
 
         if (userData) {
             // Set initial auth state that will be hydrated on client
-            const authState = useState<any>('auth:user', () => null)
+            const authState = useState<AuthUser | null>('auth:user', () => null)
             const sessionStatus = useState<string>('auth:sessionStatus', () => 'idle')
 
             authState.value = userData
@@ -23,7 +31,8 @@ export default defineNuxtPlugin(async (nuxtApp) => {
 
             console.log('[auth.server.ts] State set:', { user: authState.value, status: sessionStatus.value })
         }
-    } catch (error) {
+    }
+    catch (error) {
         console.error('Server auth initialization error:', error)
     }
 })
