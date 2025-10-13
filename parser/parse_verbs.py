@@ -60,7 +60,8 @@ class TuroyoVerbParser:
     def extract_roots_from_section(self, section_html):
         """Extract verb entries from a letter section"""
         # Pattern handles: roots, numbers, variant spellings (e.g., "fhr, fxr")
-        root_pattern = r'<p[^>]*class="western"[^>]*><font[^>]*><span[^>]*>([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzžḏṯẓāēīūə]{2,6})(?:\s*\d+)?[^<]*</span>'
+        # Note: <font> tag is optional (e.g., ʕmr 1 has <p><span>, ʕmr 2 has <p><font><span>)
+        root_pattern = r'<p[^>]*class="western"[^>]*>(?:<font[^>]*>)?<span[^>]*>([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzžḏṯẓāēīūə]{2,6})(?:\s*\d+)?[^<]*</span>'
         roots = []
 
         for match in re.finditer(root_pattern, section_html):
@@ -723,22 +724,32 @@ class TuroyoVerbParser:
     def split_into_files(self):
         """Split verbs into individual JSON files"""
         print("\n🔄 Splitting into individual files...")
-        output_dir = Path('public/appdata/api/verbs')
-        output_dir.mkdir(parents=True, exist_ok=True)
 
-        # Clear existing files
-        for f in output_dir.glob('*.json'):
-            f.unlink()
+        # Define both output directories
+        output_dirs = [
+            Path('public/appdata/api/verbs'),      # For static client access
+            Path('server/assets/appdata/api/verbs') # For Nitro storage API
+        ]
 
+        # Create directories and clear existing files
+        for output_dir in output_dirs:
+            output_dir.mkdir(parents=True, exist_ok=True)
+            for f in output_dir.glob('*.json'):
+                f.unlink()
+
+        # Write to both locations
         for verb in self.verbs:
             root = verb['root']
             filename = f"{root}.json"
-            filepath = output_dir / filename
 
-            with open(filepath, 'w', encoding='utf-8') as f:
-                json.dump(verb, f, ensure_ascii=False, indent=2)
+            for output_dir in output_dirs:
+                filepath = output_dir / filename
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    json.dump(verb, f, ensure_ascii=False, indent=2)
 
-        print(f"✅ Created {len(self.verbs)} individual verb files in {output_dir}")
+        print(f"✅ Created {len(self.verbs)} individual verb files in:")
+        for output_dir in output_dirs:
+            print(f"   • {output_dir}")
 
     def generate_search_index(self):
         """Generate search index"""
