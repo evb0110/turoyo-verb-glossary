@@ -32,6 +32,18 @@ def generate_search_index():
                 source = etymon.get('source', '')
                 if source and source not in etymology_sources:
                     etymology_sources.append(source)
+                # For raw-only etymons (no structured source), use a placeholder
+                elif not source and etymon.get('raw'):
+                    # Extract first word from raw text as pseudo-source
+                    raw = etymon['raw']
+                    # Try to find language abbreviation at start (e.g., "Kurd.", "Arab.")
+                    import re
+                    lang_match = re.match(r'^([A-Z][a-z]+\.?)', raw)
+                    if lang_match and lang_match.group(1) not in etymology_sources:
+                        etymology_sources.append(lang_match.group(1))
+                    elif 'Unknown' not in etymology_sources:
+                        # Fallback: mark as having etymology but unknown source
+                        etymology_sources.append('Unknown')
 
         # Extract stems
         stems = []

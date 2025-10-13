@@ -21,9 +21,35 @@ interface VerbMetadata {
  * Extract metadata from a verb for filtering
  */
 function extractMetadata(verb: Verb): VerbMetadata {
-    const etymologySources = verb.etymology?.etymons
-        ? verb.etymology.etymons.map(e => e.source).filter(Boolean)
-        : []
+    const etymologySources: string[] = []
+
+    // Extract etymology sources from both structured and raw fields
+    if (verb.etymology?.etymons) {
+        for (const etymon of verb.etymology.etymons) {
+            // Prefer structured source field
+            if (etymon.source) {
+                if (!etymologySources.includes(etymon.source)) {
+                    etymologySources.push(etymon.source)
+                }
+            }
+            // For raw-only etymons, extract language abbreviation from raw text
+            else if (etymon.raw) {
+                // Try to find language abbreviation anywhere (e.g., "< Kurd.", "cf. <MEA", "Arab.")
+                // Look for patterns like: "< MEA", "cf. <Kurd.", "< Arab."
+                const langMatch = etymon.raw.match(/(?:cf\.\s*)?<\s*([A-Z][a-z]*\.?)/)
+                if (langMatch && langMatch[1]) {
+                    const lang = langMatch[1]
+                    if (!etymologySources.includes(lang)) {
+                        etymologySources.push(lang)
+                    }
+                }
+                else if (!etymologySources.includes('Unknown')) {
+                    // Fallback: mark as having etymology but unknown source
+                    etymologySources.push('Unknown')
+                }
+            }
+        }
+    }
 
     const stems = verb.stems
         .map(s => s.stem)

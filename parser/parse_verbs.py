@@ -10,13 +10,12 @@ It does EVERYTHING automatically in one run:
 - Generate tokens with proper spacing (fixes text concatenation)
 - Extract lemma headers and stem labels
 - Split into individual verb JSON files
-- Generate search index
 - Generate statistics
 
 Usage: python3 parser/parse_verbs.py
 
 Author: Claude Code
-Last Updated: 2025-10-11
+Last Updated: 2025-10-13
 """
 
 import re
@@ -769,23 +768,6 @@ class TuroyoVerbParser:
         for output_dir in output_dirs:
             print(f"   • {output_dir}")
 
-    def generate_search_index(self):
-        """Generate search index"""
-        print("\n🔄 Generating search index...")
-        try:
-            result = subprocess.run(
-                ['python3', 'parser/generate_search_index.py'],
-                capture_output=True,
-                text=True,
-                timeout=60
-            )
-            if result.returncode == 0:
-                print("✅ Search index generated")
-            else:
-                print(f"⚠️  Search index generation failed: {result.stderr}")
-        except Exception as e:
-            print(f"⚠️  Search index generation failed: {e}")
-
     def generate_stats(self):
         """Generate statistics"""
         print("\n🔄 Generating statistics...")
@@ -836,6 +818,25 @@ class TuroyoVerbParser:
 
 def main():
     """Run the complete parsing pipeline"""
+    import argparse
+    import sys
+
+    # Parse command line arguments
+    arg_parser = argparse.ArgumentParser(
+        description='Parse Turoyo verb glossary from HTML source'
+    )
+    arg_parser.add_argument(
+        '--validate',
+        action='store_true',
+        help='Validate output against baseline after parsing'
+    )
+    arg_parser.add_argument(
+        '--update-baseline',
+        action='store_true',
+        help='Update baseline snapshot after parsing'
+    )
+    args = arg_parser.parse_args()
+
     print("=" * 80)
     print("TUROYO VERB GLOSSARY - MASTER PARSER")
     print("=" * 80)
@@ -851,10 +852,7 @@ def main():
     # Step 3: Split into individual files
     parser.split_into_files()
 
-    # Step 4: Generate search index
-    parser.generate_search_index()
-
-    # Step 5: Generate statistics
+    # Step 4: Generate statistics
     parser.generate_stats()
 
     print("\n" + "=" * 80)
@@ -866,6 +864,40 @@ def main():
     print(f"❓ Uncertain entries: {parser.stats.get('uncertain_entries', 0)}")
     print(f"🔢 Homonyms numbered: {parser.stats.get('homonyms_numbered', 0)}")
     print("=" * 80)
+
+    # Step 5: Validate against baseline (optional)
+    if args.validate:
+        print("\n" + "=" * 80)
+        print("VALIDATING AGAINST BASELINE")
+        print("=" * 80)
+        try:
+            result = subprocess.run(
+                ['python3', 'parser/regression_validator.py'],
+                timeout=300
+            )
+            if result.returncode != 0:
+                print("\n❌ VALIDATION FAILED - Regressions detected!")
+                sys.exit(1)
+        except Exception as e:
+            print(f"\n❌ Validation failed: {e}")
+            sys.exit(1)
+
+    # Step 6: Update baseline (optional)
+    if args.update_baseline:
+        print("\n" + "=" * 80)
+        print("UPDATING BASELINE SNAPSHOT")
+        print("=" * 80)
+        try:
+            result = subprocess.run(
+                ['python3', 'parser/snapshot_baseline.py'],
+                timeout=300
+            )
+            if result.returncode == 0:
+                print("✅ Baseline updated successfully")
+            else:
+                print("⚠️  Baseline update failed")
+        except Exception as e:
+            print(f"⚠️  Baseline update failed: {e}")
 
 
 if __name__ == '__main__':

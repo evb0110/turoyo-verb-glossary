@@ -1,4 +1,5 @@
-import searchIndexData from '../../public/appdata/api/search-index.json'
+// NOTE: search-index.json has been eliminated - search is now done at runtime
+// See server/api/verbs-fulltext-search.post.ts for the runtime search implementation
 import crossRefsData from '../../public/appdata/api/cross-refs.json'
 import statsData from '../../public/appdata/api/stats.json'
 
@@ -33,6 +34,12 @@ export interface Verb {
     lemma_header_tokens?: Array<{ italic: boolean, text: string }>
 }
 
+/**
+ * DEPRECATED: Search index has been removed in favor of runtime search
+ * Use /api/verbs-fulltext-search instead for search functionality
+ *
+ * This interface is kept for backward compatibility but should not be used
+ */
 interface SearchIndex {
     verbs?: Array<{
         root: string
@@ -43,20 +50,17 @@ interface SearchIndex {
     }>
 }
 
-// Search index cache (lightweight, loaded from static file)
-let searchIndexCache: SearchIndex | null = null
-
 /**
- * Load search index (lightweight, single file)
- * Used for fast filtering/search operations
+ * DEPRECATED: Static search index has been eliminated
+ * Use server/api/verbs-fulltext-search.post.ts for runtime search instead
+ *
+ * @deprecated This function will throw an error
  */
 export async function loadSearchIndex(): Promise<SearchIndex> {
-    if (!searchIndexCache) {
-    // Use imported JSON data (bundled at build time)
-        searchIndexCache = searchIndexData as SearchIndex
-        console.log(`[loadSearchIndex] Loaded search index with ${searchIndexCache?.verbs?.length || 0} verbs`)
-    }
-    return searchIndexCache
+    throw new Error(
+        'loadSearchIndex() is deprecated. Static search index has been eliminated. ' +
+        'Use /api/verbs-fulltext-search for runtime search instead.'
+    )
 }
 
 /**
@@ -73,11 +77,4 @@ export async function getCrossReferences(): Promise<Record<string, string>> {
 export function getStatistics() {
     // Use imported JSON data (bundled at build time)
     return statsData
-}
-
-/**
- * Clear the search index cache (useful for development)
- */
-export function clearSearchIndexCache() {
-    searchIndexCache = null
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parser Regression Report</title>
+<style>
+
+            body { font-family: system-ui, -apple-system, sans-serif; margin: 20px; background: #f5f5f5; }
+            .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+            h1 { color: #1a1a1a; border-bottom: 3px solid #007bff; padding-bottom: 10px; }
+            h2 { color: #333; margin-top: 30px; border-bottom: 2px solid #e0e0e0; padding-bottom: 8px; }
+            h3 { color: #555; margin-top: 20px; }
+            .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
+            .summary-card { background: #f8f9fa; padding: 15px; border-radius: 6px; border-left: 4px solid #007bff; }
+            .summary-card.success { border-left-color: #28a745; }
+            .summary-card.warning { border-left-color: #ffc107; }
+            .summary-card.danger { border-left-color: #dc3545; }
+            .summary-card .label { font-size: 12px; color: #666; text-transform: uppercase; }
+            .summary-card .value { font-size: 24px; font-weight: bold; color: #1a1a1a; }
+            .change-item { background: #f8f9fa; padding: 15px; margin: 10px 0; border-radius: 6px; border-left: 4px solid #6c757d; }
+            .change-item.improvement { border-left-color: #28a745; background: #f0f9f4; }
+            .change-item.regression { border-left-color: #dc3545; background: #fef5f6; }
+            .change-item.neutral { border-left-color: #17a2b8; background: #f0f8ff; }
+            .change-item.added { border-left-color: #28a745; background: #f0f9f4; }
+            .change-item.removed { border-left-color: #dc3545; background: #fef5f6; }
+            .change-header { font-weight: bold; margin-bottom: 8px; }
+            .change-details { font-size: 14px; color: #555; margin-left: 15px; }
+            .change-details li { margin: 4px 0; }
+            .badge { display: inline-block; padding: 3px 8px; border-radius: 3px; font-size: 11px; font-weight: bold; text-transform: uppercase; }
+            .badge.improvement { background: #28a745; color: white; }
+            .badge.regression { background: #dc3545; color: white; }
+            .badge.neutral { background: #17a2b8; color: white; }
+            .badge.added { background: #28a745; color: white; }
+            .badge.removed { background: #dc3545; color: white; }
+            .error-list { background: #fef5f6; padding: 15px; border-left: 4px solid #dc3545; border-radius: 6px; margin: 15px 0; }
+            .error-list li { color: #721c24; margin: 5px 0; }
+            .status-icon { font-size: 48px; text-align: center; margin: 20px 0; }
+            .collapsible { cursor: pointer; padding: 10px; background: #e9ecef; border-radius: 4px; margin-top: 5px; }
+            .collapsible:hover { background: #dee2e6; }
+            .content { display: none; padding: 10px; background: white; border: 1px solid #e9ecef; border-radius: 4px; margin-top: 5px; }
+            .content.active { display: block; }
+            pre { background: #f4f4f4; padding: 10px; border-radius: 4px; overflow-x: auto; font-size: 12px; }
+        
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🧪 Parser Regression Report</h1>
+<p>Generated: 2025-10-13 20:17:25</p>
+<div class="status-icon">✅</div>
+<h2 style="color: #28a745; text-align: center;">NO REGRESSIONS</h2>
+<h2>Summary</h2>
+<div class="summary">
+<div class="summary-card success"><div class="label">Unchanged</div><div class="value">1561</div></div>
+<div class="summary-card success"><div class="label">Improvements</div><div class="value">0</div></div>
+<div class="summary-card warning"><div class="label">Neutral Changes</div><div class="value">0</div></div>
+<div class="summary-card danger"><div class="label">Regressions</div><div class="value">0</div></div>
+<div class="summary-card success"><div class="label">Added</div><div class="value">0</div></div>
+<div class="summary-card danger"><div class="label">Removed</div><div class="value">0</div></div>
+</div>
+</div>
+<script>
+
+            document.querySelectorAll('.collapsible').forEach(item => {
+                item.addEventListener('click', () => {
+                    const content = item.nextElementSibling;
+                    content.classList.toggle('active');
+                });
+            });
+        
+</script>
+</body>
+</html>

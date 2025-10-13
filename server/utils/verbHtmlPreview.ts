@@ -71,6 +71,12 @@ export function generateFullPreview(
     // Etymology section
     if (verb.etymology?.etymons && verb.etymology.etymons.length > 0) {
         const etymonParts = verb.etymology.etymons.map((etymon) => {
+            // For raw-only etymons (no structured source), display the raw text
+            if (!etymon.source && etymon.raw) {
+                return etymon.raw
+            }
+
+            // For structured etymons, format nicely
             const sourcePart = etymon.source_root
                 ? `${etymon.source} ${etymon.source_root}`
                 : etymon.source
