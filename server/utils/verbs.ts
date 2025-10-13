@@ -58,8 +58,8 @@ interface SearchIndex {
  */
 export async function loadSearchIndex(): Promise<SearchIndex> {
     throw new Error(
-        'loadSearchIndex() is deprecated. Static search index has been eliminated. ' +
-        'Use /api/verbs-fulltext-search for runtime search instead.'
+        'loadSearchIndex() is deprecated. Static search index has been eliminated. '
+        + 'Use /api/verbs-fulltext-search for runtime search instead.'
     )
 }
 

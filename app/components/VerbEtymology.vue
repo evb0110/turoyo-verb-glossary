@@ -16,7 +16,12 @@
                 </span>
             </div>
 
-            <div v-for="(etymon, eIdx) in group.etymons" :key="eIdx" :class="group.source ? 'pl-4' : ''" class="space-y-1 text-sm">
+            <div
+                v-for="(etymon, eIdx) in group.etymons"
+                :key="eIdx"
+                :class="group.source ? 'pl-4' : ''"
+                class="space-y-1 text-sm"
+            >
                 <!-- Structured etymon (has source_root, meaning, etc.) -->
                 <div v-if="etymon.source_root || etymon.stem" class="flex items-baseline gap-2">
                     <span v-if="etymon.source_root">{{ etymon.source_root }}</span>

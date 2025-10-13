@@ -58,8 +58,6 @@
 import { useRouteQuery } from '@vueuse/router'
 import { generateLetterOptions, generateEtymologyOptions, generateStemOptions, applyFilters } from '~/utils/searchFilters'
 
-// Note: Auth redirects are handled by app/plugins/auth-redirect.client.ts
-
 interface Excerpt {
     type: 'form' | 'example' | 'translation' | 'etymology' | 'gloss'
     stem?: string
@@ -80,11 +78,7 @@ interface VerbMetadata {
     stems: string[]
 }
 
-const pending = ref(false)
 const showRegexHelp = ref(false)
-
-// Store metadata from search results (instead of loading huge index!)
-const verbMetadata = ref<Map<string, VerbMetadata>>(new Map())
 
 // Sync search state with URL query params
 const q = useRouteQuery<string>('q', '')
@@ -128,21 +122,20 @@ const filters = computed(() => ({
 }))
 
 // Initialize searchQuery from URL on mount, then sync with q
-const searchQuery = ref<string>(q.value)
-const results = ref<string[]>([])
+const searchQuery = ref(q.value)
 
-// Store pre-rendered HTML previews from server
-const verbPreviews = ref<Map<string, VerbPreview>>(new Map())
+// Single source of truth for search results - handles SSR and client-side searches
+const { data: searchResults, pending } = await useAsyncData(
+    // Unique key for cache invalidation
+    () => `search-${searchQuery.value}-${searchType.value}-${regexMode.value}-${caseParam.value}`,
+    async () => {
+        if (!searchQuery.value || searchQuery.value.trim().length < 2) {
+            return null
+        }
 
-// Perform initial search from URL during SSR
-// Use unified search endpoint for both "roots only" and "everything" modes
-if (searchQuery.value && searchQuery.value.trim().length >= 2) {
-    const isUsingRegex = regexMode.value === 'on'
-    const isCaseSensitive = caseParam.value === 'on'
+        console.log(`[Search] Query: "${searchQuery.value}", type: ${searchType.value}`)
 
-    console.log(`[SSR] Searching with unified endpoint: "${searchQuery.value}"`)
-    try {
-        const response = await $fetch<{
+        return await $fetch<{
             total: number
             roots: string[]
             verbPreviews?: Record<string, VerbPreview>
@@ -151,25 +144,26 @@ if (searchQuery.value && searchQuery.value.trim().length >= 2) {
             method: 'POST',
             body: {
                 query: searchQuery.value,
-                useRegex: isUsingRegex,
-                caseSensitive: isCaseSensitive,
+                useRegex: regexMode.value === 'on',
+                caseSensitive: caseParam.value === 'on',
                 searchType: searchType.value
             }
         })
+    },
+    {
+        // Watch for changes and refetch automatically
+        watch: [searchQuery, searchType, regexMode, caseParam]
+    }
+)
 
-        results.value = response.roots
-        if (response.verbPreviews) {
-            console.log(`[SSR] Got ${response.roots.length} results with previews`)
-            verbPreviews.value = new Map(Object.entries(response.verbPreviews))
-        }
-        if (response.verbMetadata) {
-            verbMetadata.value = new Map(Object.entries(response.verbMetadata))
-        }
-    }
-    catch (e) {
-        console.error('[SSR] Search failed:', e)
-    }
-}
+// Derive data from search results (computed for reactivity)
+const verbPreviews = computed(() =>
+    new Map(Object.entries(searchResults.value?.verbPreviews || {}))
+)
+
+const verbMetadata = computed(() =>
+    new Map(Object.entries(searchResults.value?.verbMetadata || {}))
+)
 
 function performSearch() {
     searchQuery.value = q.value
@@ -178,75 +172,25 @@ function performSearch() {
 function clearSearch() {
     q.value = ''
     searchQuery.value = ''
-    results.value = []
-    verbPreviews.value.clear()
-    verbMetadata.value.clear()
     filterLetter.value = null
     filterEtymology.value = null
     filterStem.value = null
 }
 
-async function runSearch(value: string) {
-    const isUsingRegex = regexMode.value === 'on'
-    const isCaseSensitive = caseParam.value === 'on'
-    console.log('[Index] Run search:', value, 'mode:', searchType.value, 'regex:', isUsingRegex)
+// Keep searchQuery in sync when q changes (e.g., via Cmd/Ctrl+K global search)
+watch(q, (newQ) => {
+    searchQuery.value = newQ
+})
 
-    if (!value || value.trim().length < 2) {
-        console.log('[Index] Query too short, clearing results')
-        results.value = []
-        verbPreviews.value.clear()
-        verbMetadata.value.clear()
-        pending.value = false
-        return
-    }
-
-    results.value = []
-    verbPreviews.value.clear()
-    verbMetadata.value.clear()
-    pending.value = true
-
-    // Use unified search endpoint for both modes
-    try {
-        const response = await $fetch<{
-            total: number
-            roots: string[]
-            verbPreviews?: Record<string, VerbPreview>
-            verbMetadata?: Record<string, VerbMetadata>
-        }>('/api/verbs-fulltext-search', {
-            method: 'POST',
-            body: {
-                query: value,
-                useRegex: isUsingRegex,
-                caseSensitive: isCaseSensitive,
-                searchType: searchType.value
-            }
-        })
-
-        results.value = response.roots
-        if (response.verbPreviews) {
-            console.log(`[Index] Got ${response.roots.length} results with previews`)
-            verbPreviews.value = new Map(Object.entries(response.verbPreviews))
-        }
-        if (response.verbMetadata) {
-            verbMetadata.value = new Map(Object.entries(response.verbMetadata))
-        }
-    }
-    catch (e) {
-        console.error('[Index] Search failed:', e)
-    }
-    finally {
-        pending.value = false
-    }
-}
-
-// Convert metadata map to VerbIndexEntry array for filter functions
+// Convert metadata to array for filter functions
 const baseResults = computed(() => {
-    if (!searchQuery.value || searchQuery.value.trim().length < 2 || results.value.length === 0) {
+    if (!searchResults.value?.roots || searchResults.value.roots.length === 0) {
         return []
     }
-    // Use metadata from search results instead of loading huge index
-    return results.value
-        .map(root => verbMetadata.value.get(root))
+
+    const metadata = verbMetadata.value
+    return searchResults.value.roots
+        .map(root => metadata.get(root))
         .filter((m): m is VerbMetadata => m !== undefined)
 })
 
@@ -259,18 +203,6 @@ function resetFilters() {
     filterEtymology.value = null
     filterStem.value = null
 }
-
-watch(
-    [searchQuery, searchType, regexMode, caseParam],
-    () => {
-        runSearch(searchQuery.value)
-    }
-)
-
-// Keep searchQuery in sync when q changes (e.g., via Cmd/Ctrl+K global search)
-watch(q, (newQ) => {
-    searchQuery.value = newQ
-})
 
 const filtered = computed(() => {
     const result = baseResults.value
