@@ -73,6 +73,7 @@
 
             <div class="flex gap-2">
                 <UInput
+                    ref="searchInput"
                     v-model="internalQuery"
                     :placeholder="placeholder"
                     class="flex-1"
@@ -99,6 +100,70 @@
                 >
                     Search
                 </UButton>
+
+                <UPopover v-model:open="isCharPickerOpen">
+                    <UButton
+                        color="neutral"
+                        variant="outline"
+                        icon="i-heroicons-language"
+                    >
+                        Special Chars
+                    </UButton>
+
+                    <template #content>
+                        <div class="p-4 space-y-3 w-80">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-sm font-medium text-gray-900 dark:text-white">
+                                    Special Characters
+                                </h3>
+                                <UButton
+                                    color="neutral"
+                                    variant="ghost"
+                                    size="xs"
+                                    icon="i-heroicons-x-mark"
+                                    aria-label="Close"
+                                    @click="isCharPickerOpen = false"
+                                />
+                            </div>
+
+                            <div>
+                                <p class="text-xs text-gray-600 dark:text-gray-400 mb-2">
+                                    Turoyo
+                                </p>
+                                <div class="flex flex-wrap gap-1">
+                                    <UButton
+                                        v-for="char in turoyoChars"
+                                        :key="char"
+                                        size="sm"
+                                        variant="outline"
+                                        color="neutral"
+                                        @click.stop="insertChar(char)"
+                                    >
+                                        {{ char }}
+                                    </UButton>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="text-xs text-gray-600 dark:text-gray-400 mb-2">
+                                    German
+                                </p>
+                                <div class="flex flex-wrap gap-1">
+                                    <UButton
+                                        v-for="char in germanChars"
+                                        :key="char"
+                                        size="sm"
+                                        variant="outline"
+                                        color="neutral"
+                                        @click.stop="insertChar(char)"
+                                    >
+                                        {{ char }}
+                                    </UButton>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </UPopover>
             </div>
         </div>
     </div>
@@ -128,9 +193,39 @@ const emit = defineEmits<{
     'show-help': []
 }>()
 
+// Character picker state
+const isCharPickerOpen = ref(false)
+const searchInput = ref<{ $el?: { querySelector: (selector: string) => HTMLInputElement | null } } | null>(null)
+
+// Character sets (alphabetical)
+const turoyoChars = ['ʔ', 'ʕ', 'č', 'ḏ', 'ə', 'ġ', 'ǧ', 'ḥ', 'ṣ', 'š', 'ṭ', 'ṯ', 'ž']
+const germanChars = ['ä', 'ö', 'ü', 'ß']
+
+// Insert character at cursor position
+function insertChar(char: string) {
+    const input = searchInput.value?.$el?.querySelector('input')
+    if (!input) {
+        internalQuery.value += char
+        return
+    }
+
+    const start = input.selectionStart ?? internalQuery.value.length
+    const end = input.selectionEnd ?? internalQuery.value.length
+    const text = internalQuery.value
+
+    internalQuery.value = text.slice(0, start) + char + text.slice(end)
+
+    // Update cursor position without focusing (to keep popover open)
+    nextTick(() => {
+        const newPosition = start + char.length
+        input.setSelectionRange(newPosition, newPosition)
+    })
+}
+
 // Update model and trigger search
 function handleSearch() {
     query.value = internalQuery.value
+    isCharPickerOpen.value = false
     emit('search')
 }
 </script>
