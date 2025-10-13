@@ -36,7 +36,6 @@ turoyo-verb-glossary/
 │       └── report.html                # HTML validation report
 ├── parser/
 │   ├── parse_verbs.py                 # MASTER PARSER (run this)
-│   ├── split_verbs.py                 # Individual file splitter
 │   └── validate.py                    # Data validation tool
 ├── EXTRACTION_SUMMARY.md              # Detailed extraction report
 └── README.md                          # This file
@@ -74,8 +73,7 @@ python3 parser/parse_verbs.py
 # - Parses HTML source
 # - Adds homonym numbering
 # - Generates tokens with proper spacing
-# - Splits into individual files
-# - Generates search index
+# - Splits into individual files (public/ and server/assets/)
 # - Creates statistics
 ```
 
@@ -189,8 +187,7 @@ python3 parser/parse_verbs.py
 - Extracts all fields (stems, conjugations, etymology)
 - Adds homonym numbering for duplicate roots
 - Generates tokens with proper spacing (fixes text concatenation)
-- Splits into 1,450 individual verb JSON files
-- Generates search index
+- Splits into individual verb JSON files (public/ and server/assets/)
 - Creates statistics
 - Fault-tolerant (continues on errors)
 - ~60 seconds runtime

@@ -46,7 +46,7 @@ const toBack = computed(() => {
     }
 })
 
-const { getVerbWithCrossRef, rootToSlug } = useVerbs()
+const { getVerb, rootToSlug } = useVerbs()
 
 const root = computed(() => {
     const raw = route.params.root as string
@@ -60,7 +60,7 @@ const root = computed(() => {
 
 const { data: verb, error } = await useAsyncData(
     `verb-${root.value}`,
-    () => getVerbWithCrossRef(root.value)
+    () => getVerb(root.value)
 )
 
 if (error.value) {

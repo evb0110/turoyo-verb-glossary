@@ -368,7 +368,7 @@ turoyo-verb-glossary/
 5. **Integration Tests**
    - End-to-end parser pipeline tests
    - API endpoint validation
-   - Search index validation
+   - Runtime search validation
 
 ---
 

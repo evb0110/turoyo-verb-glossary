@@ -9,7 +9,7 @@
  * @param root - The root string (e.g., "bdy 1")
  * @returns URL-safe slug (e.g., "bdy-1")
  */
-export const rootToSlug = (root: string): string => root.replace(/\s+/g, '-')
+export const rootToSlug = (root: string): string => root.replace(/\s/g, '-')
 
 /**
  * Convert a slug back to a root
