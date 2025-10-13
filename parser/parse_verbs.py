@@ -68,15 +68,34 @@ class TuroyoVerbParser:
         for match in re.finditer(root_pattern, section_html):
             root_chars = match.group(1)
 
-            # FILTER: Skip German glosses (e.g., "speichern;")
-            # Glosses end with semicolon and have no etymology/stem markup
+            # FILTER 1: Skip German glosses (e.g., "speichern;")
+            # Note: Check ONLY for special Turoyo characters that DON'T appear in German
+            # Exclude common letters that appear in both languages (b,d,f,g,h,k,l,m,n,p,q,r,s,t,w,x,y,z)
+            # and certain diacritics that might appear in loan words
+            SPECIAL_TUROYO_CHARS = 'ʔʕġǧḥṣṭḏṯẓčšžāēīūə'
+
             span_content = match.group(0)
             span_text_match = re.search(r'<span[^>]*>([^<]+)</span>', span_content)
             if span_text_match:
                 full_span_text = span_text_match.group(1).strip()
-                # If the span contains ONLY German text ending with semicolon, skip it
-                if ';' in full_span_text and not any(c in full_span_text for c in 'ʔʕġǧḥṣštṭḏṯẓāēīūə'):
+                # If span contains semicolon AND no special Turoyo chars → German gloss
+                if ';' in full_span_text and not any(c in full_span_text for c in SPECIAL_TUROYO_CHARS):
                     continue
+
+            # FILTER 2: Skip orphaned Detransitive/Action Noun forms
+            # These appear as standalone paragraphs after "Detransitive" or "Action Noun/noun" headers
+            # Look back 300 chars to see if immediately preceded by such headers
+            lookbehind_start = max(0, match.start() - 300)
+            lookbehind = section_html[lookbehind_start:match.start()]
+            # Check if this paragraph comes right after Detransitive or Action Noun marker (case-insensitive for 'noun')
+            if re.search(r'<span[^>]*>(?:Detransitive|Action\s+[Nn]oun)</span></p>\s*$', lookbehind, re.DOTALL):
+                continue
+
+            # FILTER 3: Skip German glosses that appear right after stem headers
+            # These are translation paragraphs within verb entries (e.g., "grob sieben..." after "I: ṣrəḏle")
+            # Look back to check if preceded by a stem header like "I:", "II:", etc.
+            if re.search(r'<span[^>]*>[IVX]+:\s*</span></b></font></font>.*?<i><b><span[^>]*>[^<]+</span></b></i></font></font></p>\s*$', lookbehind, re.DOTALL):
+                continue
 
             # Check for root continuation (e.g., ṣyb + r = ṣybr)
             lookahead_cont = section_html[match.end():match.end()+100]
@@ -754,10 +773,27 @@ class TuroyoVerbParser:
             for f in output_dir.glob('*.json'):
                 f.unlink()
 
+        # Track written files to detect duplicates
+        written_files = set()
+
         # Write to both locations
         for verb in self.verbs:
             root = verb['root']
             filename = f"{root}.json"
+
+            # Check for duplicates (indicates parser bug)
+            if filename in written_files:
+                print(f"\n❌ ERROR: Duplicate root detected: '{root}'")
+                print(f"   This indicates a parser bug - likely a German gloss that wasn't filtered.")
+                print(f"   Check the etymology and content of this verb.")
+                # Print some debug info
+                etym = verb.get('etymology')
+                stems = verb.get('stems', [])
+                print(f"   Etymology: {etym}")
+                print(f"   Stems: {len(stems)}")
+                raise ValueError(f"Duplicate root '{root}' - would overwrite existing file! Check parser's German gloss filter.")
+
+            written_files.add(filename)
 
             for output_dir in output_dirs:
                 filepath = output_dir / filename
