@@ -221,6 +221,4 @@ const displayed = computed(() => {
     }
     return result
 })
-
-// No longer need to watch filtered - unified search endpoint returns previews directly!
 </script>
