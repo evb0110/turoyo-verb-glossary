@@ -8,7 +8,7 @@
     >
         <template #root-cell="{ row }">
             <NuxtLink
-                :to="{ path: `/verbs/${rootToSlug(row.original.root)}`, query: route.query }"
+                :to="getTo(row)"
                 class="font-semibold text-primary hover:underline turoyo-text"
             >
                 {{ row.original.root }}
@@ -16,26 +16,24 @@
         </template>
 
         <template #etymology_source-cell="{ row }">
-            <span class="text-sm">{{ row.original.etymology_sources?.join(', ') || '—' }}</span>
+            <span class="text-sm">
+                {{ row.original.etymology_sources?.join(', ') || '—' }}
+            </span>
         </template>
 
         <template #preview-cell="{ row }">
             <div class="py-4">
-                <!-- Show loading state while fetching -->
                 <div v-if="pending" class="text-sm text-gray-400">
                     Loading...
                 </div>
-                <!-- Show preview once loaded (all rows get previews in single response) -->
                 <div v-else-if="hasAnyPreviews" class="max-h-64 px-4 overflow-y-auto">
                     <template v-if="searchType === 'roots' && verbPreviews.get(row.original.root)?.preview">
-                        <!-- Pre-rendered full article preview for "roots only" mode -->
                         <div
                             class="preview-content whitespace-normal break-words"
                             v-html="verbPreviews.get(row.original.root)!.preview"
                         />
                     </template>
                     <template v-else-if="verbPreviews.get(row.original.root)?.excerpts">
-                        <!-- Pre-rendered excerpts for "everything" mode -->
                         <div class="preview-excerpts space-y-2">
                             <div
                                 v-for="(excerpt, i) in verbPreviews.get(row.original.root)!.excerpts"
@@ -50,7 +48,6 @@
                         </div>
                     </template>
                 </div>
-                <!-- Show placeholder if no previews available -->
                 <div v-else class="text-sm text-gray-400">
                     —
                 </div>
@@ -60,6 +57,7 @@
 </template>
 
 <script setup lang="ts">
+import type { RouteLocationRaw } from '#vue-router'
 import { rootToSlug } from '~/utils/slugify'
 
 // Minimal metadata needed for display
@@ -83,6 +81,10 @@ interface VerbPreview {
     preview?: string
 }
 
+interface TableRow {
+    original: VerbMetadata
+}
+
 const props = defineProps<{
     searchQuery: string
     searchType: 'roots' | 'all'
@@ -95,7 +97,13 @@ const props = defineProps<{
 
 const route = useRoute()
 
-// Check once if we have any previews (applies to all rows since API returns all previews in single response)
+function getTo(row: TableRow): RouteLocationRaw {
+    return {
+        path: `/verbs/${rootToSlug(row.original.root)}`,
+        query: route.query
+    }
+}
+
 const hasAnyPreviews = computed(() => props.verbPreviews.size > 0)
 
 const columns = [
