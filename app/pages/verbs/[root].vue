@@ -8,7 +8,7 @@
 
         <UCard>
             <template #header>
-                <VerbHeader :verb="verb!" :root-to-slug="rootToSlug" />
+                <VerbHeader :verb="verb!" />
             </template>
 
             <VerbEtymology :etymology="verb?.etymology ?? null" />
@@ -37,6 +37,9 @@
  * Verb detail page
  * Displays a single verb with etymology, stems, conjugations, and examples
  */
+import type { Verb } from '~/types/verb'
+import { slugToRoot } from '~/utils/slugify'
+
 const route = useRoute()
 
 const toBack = computed(() => {
@@ -45,8 +48,6 @@ const toBack = computed(() => {
         query: route.query
     }
 })
-
-const { getVerb, rootToSlug } = useVerbs()
 
 const root = computed(() => {
     const raw = route.params.root as string
@@ -59,8 +60,12 @@ const root = computed(() => {
 })
 
 const { data: verb, error } = await useAsyncData(
-    `verb-${root.value}`,
-    () => getVerb(root.value)
+    () => `verb-${root.value}`,
+    () => {
+        const decodedRoot = slugToRoot(root.value)
+        const encodedRoot = encodeURIComponent(decodedRoot)
+        return $fetch<Verb>(`/api/verbs/${encodedRoot}`)
+    }
 )
 
 if (error.value) {

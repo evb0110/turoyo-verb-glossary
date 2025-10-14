@@ -60,6 +60,8 @@
 </template>
 
 <script setup lang="ts">
+import { rootToSlug } from '~/utils/slugify'
+
 // Minimal metadata needed for display
 interface VerbMetadata {
     root: string
@@ -80,8 +82,6 @@ interface VerbPreview {
     excerpts?: Excerpt[]
     preview?: string
 }
-
-const { rootToSlug } = useVerbs()
 
 const props = defineProps<{
     searchQuery: string

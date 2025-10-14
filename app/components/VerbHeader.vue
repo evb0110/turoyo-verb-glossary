@@ -28,12 +28,12 @@
 
 <script lang="ts" setup>
 import type { Verb } from '~/types/verb'
+import { rootToSlug } from '~/utils/slugify'
 
 /**
  * Displays the verb header with root, badges, and cross-reference notice
  */
 defineProps<{
     verb: Verb
-    rootToSlug: (root: string) => string
 }>()
 </script>
