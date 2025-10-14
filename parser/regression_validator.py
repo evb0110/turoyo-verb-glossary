@@ -111,7 +111,6 @@ class RegressionValidator:
         baseline_roots = set(self.baseline['verbs'].keys())
         current_roots = set(self.current.keys())
 
-        # Added verbs
         added = current_roots - baseline_roots
         for root in sorted(added):
             self.changes['added'].append({
@@ -119,7 +118,6 @@ class RegressionValidator:
                 'data': self.current[root]['data']
             })
 
-        # Removed verbs
         removed = baseline_roots - current_roots
         for root in sorted(removed):
             self.changes['removed'].append({
@@ -127,14 +125,12 @@ class RegressionValidator:
                 'baseline': self.baseline['verbs'][root]
             })
 
-        # Modified verbs (compare hashes)
         common = baseline_roots & current_roots
         for root in sorted(common):
             baseline_hash = self.baseline['verbs'][root]['hash']
             current_hash = self.current[root]['hash']
 
             if baseline_hash != current_hash:
-                # File changed - classify the change
                 change_type = self.classify_change(
                     root,
                     self.baseline['verbs'][root],
@@ -169,7 +165,6 @@ class RegressionValidator:
         improvement_indicators = []
         neutral_indicators = []
 
-        # Check stem count
         baseline_stems = baseline_struct['stem_count']
         current_stems = current_struct['stem_count']
         if current_stems < baseline_stems:
@@ -177,7 +172,6 @@ class RegressionValidator:
         elif current_stems > baseline_stems:
             improvement_indicators.append(f"Added stems: {baseline_stems} → {current_stems}")
 
-        # Check etymology
         baseline_etym = baseline_struct.get('has_etymology', False)
         current_etym = current_struct.get('has_etymology', False)
         if baseline_etym and not current_etym:
@@ -185,7 +179,6 @@ class RegressionValidator:
         elif not baseline_etym and current_etym:
             improvement_indicators.append("Added etymology")
 
-        # Check examples per stem
         for i, baseline_stem in enumerate(baseline_struct.get('stems', [])):
             if i < len(current_struct.get('stems', [])):
                 current_stem = current_struct['stems'][i]
@@ -201,11 +194,9 @@ class RegressionValidator:
                         f"Stem {current_stem['stem']}: Added examples ({baseline_examples} → {current_examples})"
                     )
 
-        # Check for HTML artifacts (regression)
         if self.has_html_artifacts(current_data):
             regression_indicators.append("Contains HTML artifacts")
 
-        # Check conjugation types
         baseline_conj_types = set()
         current_conj_types = set()
         for stem in baseline_struct.get('stems', []):
@@ -220,7 +211,6 @@ class RegressionValidator:
         if added_conj:
             improvement_indicators.append(f"Added conjugations: {', '.join(sorted(added_conj))}")
 
-        # Classify
         if regression_indicators:
             return ChangeType.REGRESSION
         elif improvement_indicators:
@@ -259,7 +249,6 @@ class RegressionValidator:
         baseline_struct = baseline_entry['structure']
         current_struct = self.extract_structure(current_data)
 
-        # Stem changes
         if baseline_struct['stem_count'] != current_struct['stem_count']:
             details.append({
                 'field': 'stem_count',
@@ -267,7 +256,6 @@ class RegressionValidator:
                 'current': current_struct['stem_count']
             })
 
-        # Etymology changes
         if baseline_struct['has_etymology'] != current_struct['has_etymology']:
             details.append({
                 'field': 'etymology',
@@ -279,10 +267,8 @@ class RegressionValidator:
 
     def has_html_artifacts(self, verb_data):
         """Check for HTML tags in text fields (indicates parsing error)"""
-        # Check all text fields recursively
         def check_value(val):
             if isinstance(val, str):
-                # Check for common HTML tags
                 html_patterns = ['<p>', '<span>', '<font>', '<i>', '<b>', '&lt;', '&gt;', '&amp;']
                 return any(pattern in val for pattern in html_patterns)
             elif isinstance(val, dict):
@@ -297,7 +283,6 @@ class RegressionValidator:
         """Run validation rules"""
         print("🔍 Running validation rules...")
 
-        # Rule 1: Total verb count must not decrease
         baseline_count = len(self.baseline['verbs'])
         current_count = len(self.current)
         removed_count = len(self.changes['removed'])
@@ -307,13 +292,11 @@ class RegressionValidator:
                 f"REGRESSION: Total verb count decreased ({baseline_count} → {current_count})"
             )
 
-        # Rule 2: Check for missing verbs (removals)
         if self.changes['removed']:
             self.validation_errors.append(
                 f"REGRESSION: {removed_count} verbs removed from baseline"
             )
 
-        # Rule 3: Check for data loss in modified verbs
         for change in self.changes['modified'][ChangeType.REGRESSION]:
             self.validation_errors.append(
                 f"REGRESSION: {change['root']} - {', '.join(d['field'] for d in change['details'])}"
@@ -378,20 +361,17 @@ class RegressionValidator:
         html.append('<body>')
         html.append('<div class="container">')
 
-        # Header
         html.append('<h1>🧪 Parser Regression Report</h1>')
         html.append(f'<p>Generated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}</p>')
 
-        # Status
         has_regressions = bool(self.validation_errors or self.changes['removed'] or self.changes['modified'][ChangeType.REGRESSION])
         if has_regressions:
             html.append('<div class="status-icon">❌</div>')
-            html.append('<h2 style="color: #dc3545; text-align: center;">REGRESSIONS DETECTED</h2>')
+            html.append('<h2 style="color:
         else:
             html.append('<div class="status-icon">✅</div>')
-            html.append('<h2 style="color: #28a745; text-align: center;">NO REGRESSIONS</h2>')
+            html.append('<h2 style="color:
 
-        # Summary
         html.append('<h2>Summary</h2>')
         html.append('<div class="summary">')
         html.append(f'<div class="summary-card success"><div class="label">Unchanged</div><div class="value">{len(self.changes["unchanged"])}</div></div>')
@@ -402,7 +382,6 @@ class RegressionValidator:
         html.append(f'<div class="summary-card danger"><div class="label">Removed</div><div class="value">{len(self.changes["removed"])}</div></div>')
         html.append('</div>')
 
-        # Validation Errors
         if self.validation_errors:
             html.append('<h2>Validation Errors</h2>')
             html.append('<div class="error-list"><ul>')
@@ -410,7 +389,6 @@ class RegressionValidator:
                 html.append(f'<li>{error}</li>')
             html.append('</ul></div>')
 
-        # Regressions
         if self.changes['modified'][ChangeType.REGRESSION]:
             html.append('<h2>🔴 Regressions</h2>')
             for change in self.changes['modified'][ChangeType.REGRESSION]:
@@ -423,7 +401,6 @@ class RegressionValidator:
                     html.append('</ul>')
                 html.append('</div>')
 
-        # Removed verbs
         if self.changes['removed']:
             html.append('<h2>🔴 Removed Verbs</h2>')
             for change in self.changes['removed']:
@@ -431,7 +408,6 @@ class RegressionValidator:
                 html.append(f'<div class="change-header"><span class="badge removed">Removed</span> {change["root"]}</div>')
                 html.append('</div>')
 
-        # Improvements
         if self.changes['modified'][ChangeType.IMPROVEMENT]:
             html.append('<h2>✅ Improvements</h2>')
             for change in self.changes['modified'][ChangeType.IMPROVEMENT]:
@@ -444,7 +420,6 @@ class RegressionValidator:
                     html.append('</ul>')
                 html.append('</div>')
 
-        # Added verbs
         if self.changes['added']:
             html.append('<h2>✅ Added Verbs</h2>')
             for change in self.changes['added']:
@@ -452,7 +427,6 @@ class RegressionValidator:
                 html.append(f'<div class="change-header"><span class="badge added">Added</span> {change["root"]}</div>')
                 html.append('</div>')
 
-        # Neutral changes
         if self.changes['modified'][ChangeType.NEUTRAL]:
             html.append('<h2>ℹ️  Neutral Changes</h2>')
             html.append('<p>These changes are neither improvements nor regressions (e.g., formatting, whitespace).</p>')
@@ -515,7 +489,6 @@ class RegressionValidator:
         self.detect_changes()
         self.run_validation_rules()
 
-        # Generate reports
         report_file = self.generate_html_report()
         summary = self.generate_json_summary()
 

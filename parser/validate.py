@@ -38,31 +38,25 @@ class TuroyoValidator:
         print("  Checking completeness...")
 
         for verb in self.verbs:
-            # Check root
             if not verb.get('root'):
                 self.issues['missing_root'].append(verb)
 
-            # Check if cross-reference
             if verb.get('cross_reference'):
                 self.stats['cross_references'] += 1
                 continue
 
-            # Check etymology
             if not verb.get('etymology'):
                 self.issues['missing_etymology'].append(verb['root'])
                 self.stats['missing_etymology'] += 1
 
-            # Check stems
             if not verb.get('stems'):
                 self.issues['no_stems'].append(verb['root'])
                 self.stats['no_stems'] += 1
             else:
                 for stem in verb['stems']:
-                    # Check forms
                     if not stem.get('forms'):
                         self.issues['no_forms'].append(f"{verb['root']} - {stem['stem']}")
 
-                    # Check conjugations
                     if not stem.get('conjugations'):
                         self.issues['no_conjugations'].append(f"{verb['root']} - {stem['stem']}")
 
@@ -74,24 +68,20 @@ class TuroyoValidator:
             for stem in verb.get('stems', []):
                 for conj_type, examples in stem.get('conjugations', {}).items():
                     for example in examples:
-                        # Check if Turoyo text exists
                         if not example.get('turoyo'):
                             self.issues['empty_turoyo'].append(
                                 f"{verb['root']} - {stem['stem']} - {conj_type}"
                             )
 
-                        # Check for very short examples (likely parsing errors)
                         turoyo = example.get('turoyo', '')
                         if turoyo and len(turoyo.strip()) < 3:
                             self.issues['short_turoyo'].append(
                                 f"{verb['root']}: '{turoyo}'"
                             )
 
-                        # Check translations
                         if not example.get('translations'):
                             self.stats['no_translation'] += 1
 
-                        # Check for suspiciously long text (possible HTML remnants)
                         if len(turoyo) > 1000:
                             self.issues['very_long_example'].append(
                                 f"{verb['root']} - {len(turoyo)} chars"
@@ -143,7 +133,6 @@ class TuroyoValidator:
                 for conj_type, examples in stem.get('conjugations', {}).items():
                     for example in examples:
                         for ref in example.get('references', []):
-                            # Classify reference type
                             if '/' in ref:
                                 ref_patterns['page_reference'] += 1
                             elif ref.isupper():
@@ -160,13 +149,11 @@ class TuroyoValidator:
         print("  Detecting anomalies...")
 
         for verb in self.verbs:
-            # Check for verbs with many stems (might be parsing errors)
             if len(verb.get('stems', [])) > 8:
                 self.issues['too_many_stems'].append(
                     f"{verb['root']}: {len(verb['stems'])} stems"
                 )
 
-            # Check for duplicate stems
             stems = [s['stem'] for s in verb.get('stems', [])]
             if len(stems) != len(set(stems)):
                 self.issues['duplicate_stems'].append(verb['root'])
@@ -214,12 +201,10 @@ class TuroyoValidator:
         output_dir = Path('data/verification')
         output_dir.mkdir(exist_ok=True)
 
-        # Sample 1: Random verbs
         random_sample = random.sample(self.verbs, min(20, len(self.verbs)))
         with open(output_dir / 'random_sample.json', 'w', encoding='utf-8') as f:
             json.dump(random_sample, f, ensure_ascii=False, indent=2)
 
-        # Sample 2: Verbs with most examples
         verbs_with_counts = [
             (v, sum(len(examples) for stem in v.get('stems', [])
                     for examples in stem.get('conjugations', {}).values()))
@@ -229,12 +214,10 @@ class TuroyoValidator:
         with open(output_dir / 'top_examples.json', 'w', encoding='utf-8') as f:
             json.dump([v[0] for v in top_examples], f, ensure_ascii=False, indent=2)
 
-        # Sample 3: Verbs with most stems
         verbs_by_stems = sorted(self.verbs, key=lambda v: -len(v.get('stems', [])))[:10]
         with open(output_dir / 'most_stems.json', 'w', encoding='utf-8') as f:
             json.dump(verbs_by_stems, f, ensure_ascii=False, indent=2)
 
-        # Sample 4: Issues for review
         issues_sample = {
             'missing_etymology': self.issues.get('missing_etymology', [])[:10],
             'no_stems': self.issues.get('no_stems', [])[:10],
@@ -246,7 +229,6 @@ class TuroyoValidator:
         with open(output_dir / 'issues_sample.json', 'w', encoding='utf-8') as f:
             json.dump(issues_sample, f, ensure_ascii=False, indent=2)
 
-        # Sample 5: Uncertain entries
         uncertain = [v for v in self.verbs if v.get('uncertain')]
         with open(output_dir / 'uncertain_entries.json', 'w', encoding='utf-8') as f:
             json.dump(uncertain, f, ensure_ascii=False, indent=2)
@@ -303,7 +285,6 @@ class TuroyoValidator:
         </tr>
 """
 
-        # Sample first 20 verbs
         for verb in self.verbs[:20]:
             etym = verb.get('etymology') or {}
             etym_str = f"{etym.get('source', 'N/A')}" if isinstance(etym, dict) else 'N/A'

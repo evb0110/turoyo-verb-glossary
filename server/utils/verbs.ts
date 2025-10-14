@@ -31,10 +31,6 @@ export interface Verb {
     lemma_header_tokens?: Array<{ italic: boolean, text: string }>
 }
 
-/**
- * Get pre-computed statistics (generated at build time)
- */
 export function getStatistics() {
-    // Use imported JSON data (bundled at build time)
     return statsData
 }

@@ -8,12 +8,10 @@ export default defineEventHandler(async (event) => {
         const session = await auth.api.getSession({ headers: event.headers })
 
         if (!session?.user) {
-            // Return null instead of throwing for SSR compatibility
             setResponseStatus(event, 401)
             return null
         }
 
-        // Get the full user data including role
         const userData = await db.select({
             id: user.id,
             name: user.name,

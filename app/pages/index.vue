@@ -27,7 +27,7 @@
 
                 <SearchResultsMetadata
                     :search-query="searchQuery"
-                    :displayed-count="displayed.length"
+                    :displayed-count="filtered.length"
                     :filters="filters"
                 />
 
@@ -36,7 +36,7 @@
                     :search-type="searchType"
                     :regex-mode="regexMode"
                     :case-param="caseParam"
-                    :displayed="displayed"
+                    :displayed="filtered"
                     :verb-previews="verbPreviews"
                     :pending="pending"
                 />
@@ -56,7 +56,12 @@
 
 <script lang="ts" setup>
 import { useRouteQuery } from '@vueuse/router'
-import { generateLetterOptions, generateEtymologyOptions, generateStemOptions, applyFilters } from '~/utils/searchFilters'
+import {
+    applyFilters,
+    generateEtymologyOptions,
+    generateLetterOptions,
+    generateStemOptions
+} from '~/utils/searchFilters'
 
 interface Excerpt {
     type: 'form' | 'example' | 'translation' | 'etymology' | 'gloss'
@@ -80,7 +85,6 @@ interface VerbMetadata {
 
 const showRegexHelp = ref(false)
 
-// Sync search state with URL query params
 const q = useRouteQuery<string>('q', '')
 const searchType = useRouteQuery<'roots' | 'all'>('type', 'roots')
 const regexMode = useRouteQuery<'on' | 'off'>('regex', 'on')
@@ -89,7 +93,6 @@ const filterLetter = useRouteQuery<string | null>('letter', null)
 const filterEtymology = useRouteQuery<string | null>('etymology', null)
 const filterStem = useRouteQuery<string | null>('stem', null)
 
-// Derived state
 const searchEverything = computed({
     get: () => searchType.value === 'all',
     set: (value) => { searchType.value = value ? 'all' : 'roots' }
@@ -114,26 +117,20 @@ const searchPlaceholder = computed(() => {
         : 'Search for verb roots…'
 })
 
-// Filters as computed getter for reactive access
 const filters = computed(() => ({
     letter: filterLetter.value ?? null,
     etymology: filterEtymology.value ?? null,
     stem: filterStem.value ?? null
 }))
 
-// Initialize searchQuery from URL on mount, then sync with q
 const searchQuery = ref(q.value)
 
-// Single source of truth for search results - handles SSR and client-side searches
 const { data: searchResults, pending } = await useAsyncData(
-    // Unique key for cache invalidation
     () => `search-${searchQuery.value}-${searchType.value}-${regexMode.value}-${caseParam.value}`,
     async () => {
         if (!searchQuery.value || searchQuery.value.trim().length < 2) {
             return null
         }
-
-        console.log(`[Search] Query: "${searchQuery.value}", type: ${searchType.value}`)
 
         return await $fetch<{
             total: number
@@ -151,12 +148,10 @@ const { data: searchResults, pending } = await useAsyncData(
         })
     },
     {
-        // Watch for changes and refetch automatically
         watch: [searchQuery, searchType, regexMode, caseParam]
     }
 )
 
-// Derive data from search results (computed for reactivity)
 const verbPreviews = computed(() =>
     new Map(Object.entries(searchResults.value?.verbPreviews || {}))
 )
@@ -177,12 +172,10 @@ function clearSearch() {
     filterStem.value = null
 }
 
-// Keep searchQuery in sync when q changes (e.g., via Cmd/Ctrl+K global search)
 watch(q, (newQ) => {
     searchQuery.value = newQ
 })
 
-// Convert metadata to array for filter functions
 const baseResults = computed(() => {
     if (!searchResults.value?.roots || searchResults.value.roots.length === 0) {
         return []
@@ -206,19 +199,10 @@ function resetFilters() {
 
 const filtered = computed(() => {
     const result = baseResults.value
-    if (result.length === 0) return []
-
-    const applied = applyFilters(result, filters.value)
-    console.log('[Index] Filtered result count:', applied.length)
-    return applied
-})
-
-const displayed = computed(() => {
-    const result = filtered.value
-    console.log('[Index] Displayed count:', result.length)
-    if (result.length > 0) {
-        console.log('[Index] First displayed item:', result[0])
+    if (result.length === 0) {
+        return []
     }
-    return result
+
+    return applyFilters(result, filters.value)
 })
 </script>

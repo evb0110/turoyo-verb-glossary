@@ -1,8 +1,3 @@
-/**
- * Server-side utilities for generating HTML previews of verb articles
- * Used for "roots only" search mode to show full article previews
- */
-
 import type { Verb } from './verbs'
 import { truncateText, tokenTextToString } from './textUtils'
 
@@ -12,14 +7,6 @@ interface Example {
     references: string[]
 }
 
-/**
- * Collect examples from conjugations, up to a maximum count
- * Internal helper for generateFullPreview
- *
- * @param conjugations - Conjugation data from a stem
- * @param maxCount - Maximum number of examples to collect
- * @returns Array of examples with turoyo text, translations, and references
- */
 function collectExamples(
     conjugations: { [key: string]: Example[] },
     maxCount: number
@@ -32,7 +19,6 @@ function collectExamples(
                 return examples
             }
 
-            // Skip empty examples
             if (example.turoyo && example.turoyo.trim()) {
                 examples.push(example)
             }
@@ -42,20 +28,6 @@ function collectExamples(
     return examples
 }
 
-/**
- * Generate full article preview for root search mode
- * Shows etymology, stems with forms, glosses, and sample examples
- *
- * @param verb - The verb to generate a preview for
- * @param opts - Preview generation options
- * @returns HTML string with formatted preview content
- *
- * @example
- * const previewHtml = generateFullPreview(verb, {
- *   maxExamplesPerStem: 3,
- *   maxExampleLength: 150
- * })
- */
 export function generateFullPreview(
     verb: Verb,
     opts: {
@@ -68,15 +40,12 @@ export function generateFullPreview(
 
     const parts: string[] = []
 
-    // Etymology section
     if (verb.etymology?.etymons && verb.etymology.etymons.length > 0) {
         const etymonParts = verb.etymology.etymons.map((etymon) => {
-            // For raw-only etymons (no structured source), display the raw text
             if (!etymon.source && etymon.raw) {
                 return etymon.raw
             }
 
-            // For structured etymons, format nicely
             const sourcePart = etymon.source_root
                 ? `${etymon.source} ${etymon.source_root}`
                 : etymon.source
@@ -89,18 +58,15 @@ export function generateFullPreview(
         )
     }
 
-    // Stems
     for (const stem of verb.stems) {
         const stemParts: string[] = []
 
-        // Stem header with forms
         const formsText = stem.forms.length > 0 ? stem.forms.join(', ') : '(no forms)'
         stemParts.push(`<div class="preview-stem-header"><strong>Stem ${stem.stem}:</strong> <span class="turoyo-text">${formsText}</span></div>`)
 
-        // Gloss (German meaning) if available
         if (stem.label_gloss_tokens && stem.label_gloss_tokens.length > 0) {
             const glossText = tokenTextToString(stem.label_gloss_tokens)
-                .replace(/^(I{1,3}|IV|Pa\.|Af\.|Detransitive):\s*/i, '') // Remove stem label prefix
+                .replace(/^(I{1,3}|IV|Pa\.|Af\.|Detransitive):\s*/i, '')
                 .trim()
 
             if (glossText) {
@@ -109,7 +75,6 @@ export function generateFullPreview(
             }
         }
 
-        // Sample examples
         const examples = collectExamples(stem.conjugations, maxExamplesPerStem)
 
         if (examples.length > 0) {

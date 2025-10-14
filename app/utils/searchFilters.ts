@@ -1,8 +1,3 @@
-/**
- * Utility functions for generating search filter options
- */
-
-// Minimal metadata needed for filtering
 interface FilterableVerb {
     root: string
     etymology_sources: string[]
@@ -14,9 +9,6 @@ export interface SelectOption {
     value: string | null
 }
 
-/**
- * Generate letter filter options from search results
- */
 export function generateLetterOptions(results: FilterableVerb[]): SelectOption[] {
     if (results.length === 0) {
         return [{ label: 'All letters', value: null }]
@@ -38,9 +30,6 @@ export function generateLetterOptions(results: FilterableVerb[]): SelectOption[]
     ]
 }
 
-/**
- * Generate etymology filter options from search results
- */
 export function generateEtymologyOptions(results: FilterableVerb[]): SelectOption[] {
     if (results.length === 0) {
         return [{ label: 'All etymologies', value: null }]
@@ -50,7 +39,6 @@ export function generateEtymologyOptions(results: FilterableVerb[]): SelectOptio
     results.forEach((v) => {
         const sources = v.etymology_sources?.length ? v.etymology_sources : ['Unknown']
         sources.forEach((source) => {
-            // Filter out null/undefined values
             if (source && source !== 'null' && source !== 'undefined') {
                 etymCounts.set(source, (etymCounts.get(source) || 0) + 1)
             }
@@ -65,9 +53,6 @@ export function generateEtymologyOptions(results: FilterableVerb[]): SelectOptio
     ]
 }
 
-/**
- * Generate stem filter options from search results
- */
 export function generateStemOptions(results: FilterableVerb[]): SelectOption[] {
     if (results.length === 0) {
         return [{ label: 'All stems', value: null }]
@@ -88,9 +73,6 @@ export function generateStemOptions(results: FilterableVerb[]): SelectOption[] {
     ]
 }
 
-/**
- * Apply filters to verb metadata
- */
 export function applyFilters(
     results: FilterableVerb[],
     filters: {

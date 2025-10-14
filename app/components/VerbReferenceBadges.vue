@@ -13,10 +13,6 @@
 </template>
 
 <script lang="ts" setup>
-/**
- * Displays reference badges for a verb example
- * Filters out empty or whitespace-only references
- */
 const props = defineProps<{
     references: string[]
 }>()

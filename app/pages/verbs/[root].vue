@@ -33,10 +33,6 @@
 </template>
 
 <script lang="ts" setup>
-/**
- * Verb detail page
- * Displays a single verb with etymology, stems, conjugations, and examples
- */
 import type { Verb } from '~/types/verb'
 import { slugToRoot } from '~/utils/slugify'
 

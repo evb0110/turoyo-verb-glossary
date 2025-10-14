@@ -60,7 +60,6 @@
 import type { RouteLocationRaw } from '#vue-router'
 import { rootToSlug } from '~/utils/slugify'
 
-// Minimal metadata needed for display
 interface VerbMetadata {
     root: string
     etymology_sources: string[]
@@ -128,13 +127,11 @@ const columns = [
 </script>
 
 <style>
-/* Use global styles for table layout (scoped styles don't work well with :deep()) */
 .verb-results-table table {
     table-layout: fixed !important;
     width: 100% !important;
 }
 
-/* Root column - fixed width */
 .verb-results-table th:nth-child(1),
 .verb-results-table td:nth-child(1) {
     width: 100px !important;
@@ -142,7 +139,6 @@ const columns = [
     max-width: 100px !important;
 }
 
-/* Etymology column - fixed width */
 .verb-results-table th:nth-child(2),
 .verb-results-table td:nth-child(2) {
     width: 150px !important;
@@ -150,14 +146,12 @@ const columns = [
     max-width: 150px !important;
 }
 
-/* Preview column - takes remaining space */
 .verb-results-table th:nth-child(3),
 .verb-results-table td:nth-child(3) {
     width: auto !important;
     min-width: 0 !important;
 }
 
-/* Ensure all cells wrap content */
 .verb-results-table td,
 .verb-results-table th {
     overflow-wrap: break-word !important;

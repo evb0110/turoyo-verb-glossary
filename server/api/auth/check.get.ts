@@ -11,7 +11,6 @@ export default defineEventHandler(async (event) => {
             return { authenticated: false }
         }
 
-        // Get the full user data including role
         const userData = await db.select().from(user).where(eq(user.id, session.user.id)).limit(1)
         const currentUser = userData[0]
 

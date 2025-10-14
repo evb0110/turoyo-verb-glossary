@@ -1,13 +1,5 @@
-/**
- * Server-side text highlighting using HTML mark tags
- */
-
 import { createSearchRegex } from './regexSearch'
 
-/**
- * Highlight all matches in text by wrapping them in <mark> tags
- * Escapes HTML to prevent XSS
- */
 export function highlightMatches(
     text: string,
     query: string,
@@ -33,14 +25,10 @@ export function highlightMatches(
         }
     }
     catch {
-        // If highlighting fails, return escaped text without highlights
         return escapeHtml(text)
     }
 }
 
-/**
- * Highlight using plain text search
- */
 function highlightWithPlainText(text: string, query: string, caseSensitive: boolean): string {
     const parts: string[] = []
     const searchText = caseSensitive ? text : text.toLowerCase()
@@ -50,12 +38,10 @@ function highlightWithPlainText(text: string, query: string, caseSensitive: bool
     let index = searchText.indexOf(searchQuery, lastIndex)
 
     while (index !== -1) {
-        // Add text before match (escaped)
         if (index > lastIndex) {
             parts.push(escapeHtml(text.slice(lastIndex, index)))
         }
 
-        // Add highlighted match
         const matchText = text.slice(index, index + query.length)
         parts.push(`<mark class="highlight-match">${escapeHtml(matchText)}</mark>`)
 
@@ -63,7 +49,6 @@ function highlightWithPlainText(text: string, query: string, caseSensitive: bool
         index = searchText.indexOf(searchQuery, lastIndex)
     }
 
-    // Add remaining text (escaped)
     if (lastIndex < text.length) {
         parts.push(escapeHtml(text.slice(lastIndex)))
     }
@@ -71,13 +56,9 @@ function highlightWithPlainText(text: string, query: string, caseSensitive: bool
     return parts.join('')
 }
 
-/**
- * Highlight using regex search
- */
 function highlightWithRegex(text: string, regex: RegExp): string {
     const parts: string[] = []
 
-    // Ensure global flag
     const flags = regex.flags.includes('g') ? regex.flags : `g${regex.flags}`
     const globalRegex = new RegExp(regex.source, flags)
 
@@ -88,24 +69,20 @@ function highlightWithRegex(text: string, regex: RegExp): string {
         const matchText = match[0]
         const matchIndex = match.index
 
-        // Avoid infinite loops on zero-length matches
         if (matchText.length === 0) {
             globalRegex.lastIndex += 1
             continue
         }
 
-        // Add text before match (escaped)
         if (matchIndex > lastIndex) {
             parts.push(escapeHtml(text.slice(lastIndex, matchIndex)))
         }
 
-        // Add highlighted match
         parts.push(`<mark class="highlight-match">${escapeHtml(matchText)}</mark>`)
 
         lastIndex = matchIndex + matchText.length
     }
 
-    // Add remaining text (escaped)
     if (lastIndex < text.length) {
         parts.push(escapeHtml(text.slice(lastIndex)))
     }
@@ -113,9 +90,6 @@ function highlightWithRegex(text: string, regex: RegExp): string {
     return parts.join('')
 }
 
-/**
- * Escape HTML special characters to prevent XSS
- */
 function escapeHtml(text: string): string {
     const htmlEscapes: Record<string, string> = {
         '&': '&amp;',

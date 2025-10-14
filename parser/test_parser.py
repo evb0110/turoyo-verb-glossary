@@ -25,7 +25,6 @@ import unittest
 import sys
 from pathlib import Path
 
-# Add parser directory to path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from parse_verbs import TuroyoVerbParser
@@ -36,7 +35,6 @@ class TestRootExtraction(unittest.TestCase):
 
     def setUp(self):
         """Create parser instance with mock HTML"""
-        # Use minimal HTML for testing
         self.parser = TuroyoVerbParser.__new__(TuroyoVerbParser)
         self.parser.stats = {}
         self.parser.errors = []
@@ -71,7 +69,6 @@ class TestRootExtraction(unittest.TestCase):
         <p class="western"><span>speichern;</span></p>
         '''
         roots = self.parser.extract_roots_from_section(html)
-        # Should only get the root, not the German gloss
         self.assertEqual(len(roots), 1)
         self.assertEqual(roots[0][0], 'ʔmr')
 
@@ -152,7 +149,6 @@ class TestTokenGeneration(unittest.TestCase):
         """Test italic text is marked"""
         html = '<p>Normal <i>italic</i> text</p>'
         tokens = self.parser.html_to_tokens(html)
-        # Should have both italic and non-italic tokens
         italic_tokens = [t for t in tokens if t['italic']]
         non_italic_tokens = [t for t in tokens if not t['italic']]
         self.assertTrue(len(italic_tokens) > 0)
@@ -162,8 +158,7 @@ class TestTokenGeneration(unittest.TestCase):
         """Test that block elements add spacing"""
         html = '<p>First</p><p>Second</p>'
         tokens = self.parser.html_to_tokens(html)
-        # Should have spacing between blocks
-        self.assertTrue(len(tokens) > 2)  # More than just two text tokens
+        self.assertTrue(len(tokens) > 2)
 
 
 class TestConjugationExtraction(unittest.TestCase):
@@ -174,7 +169,6 @@ class TestConjugationExtraction(unittest.TestCase):
 
     def test_conjugation_header_normalization(self):
         """Test conjugation header normalization"""
-        # Test various header formats
         self.assertEqual(self.parser.normalize_header('Imperativ'), ['Imperative'])
         self.assertEqual(self.parser.normalize_header('Infinitiv'), ['Infinitive'])
         self.assertEqual(self.parser.normalize_header('Part act.'), ['Participle_Active'])
@@ -204,7 +198,6 @@ class TestEdgeCases(unittest.TestCase):
     def test_malformed_html(self):
         """Test handling of malformed HTML"""
         html = '<p>Unclosed tag'
-        # Should not raise exception
         try:
             tokens = self.parser.html_to_tokens(html)
             self.assertIsInstance(tokens, list)
@@ -216,7 +209,6 @@ class TestEdgeCases(unittest.TestCase):
         html = '<p>ʔʕġǧḥṣštṭḏṯẓāēīūə</p>'
         tokens = self.parser.html_to_tokens(html)
         self.assertTrue(len(tokens) > 0)
-        # Check Unicode characters are preserved
         full_text = ''.join(t['text'] for t in tokens)
         self.assertIn('ʔ', full_text)
 
@@ -224,11 +216,10 @@ class TestEdgeCases(unittest.TestCase):
         """Test HTML entity decoding in etymology"""
         html = '(&lt; MEA ʔmr &amp; test)'
         result = self.parser.parse_etymology(html)
-        # Entities should be decoded
         if result:
             raw_text = str(result)
-            self.assertIn('<', raw_text)  # &lt; decoded
-            self.assertIn('&', raw_text)  # &amp; decoded
+            self.assertIn('<', raw_text)
+            self.assertIn('&', raw_text)
 
 
 class TestDataIntegrity(unittest.TestCase):
@@ -236,7 +227,6 @@ class TestDataIntegrity(unittest.TestCase):
 
     def test_no_html_in_output(self):
         """Test that output has no HTML tags in text fields"""
-        # This would be run on actual output
         pass
 
     def test_utf8_encoding(self):
@@ -269,7 +259,6 @@ class TestHomonymNumbering(unittest.TestCase):
             }
         ]
         self.parser.add_homonym_numbers()
-        # Should be numbered
         self.assertEqual(self.parser.verbs[0]['root'], 'ʔmr 1')
         self.assertEqual(self.parser.verbs[1]['root'], 'ʔmr 2')
 
@@ -291,18 +280,14 @@ class TestHomonymNumbering(unittest.TestCase):
         ]
         original_roots = [v['root'] for v in self.parser.verbs]
         self.parser.add_homonym_numbers()
-        # Should NOT be numbered (same etymology)
-        # Note: In reality this shouldn't happen, but testing the logic
         self.assertEqual(self.parser.verbs[0]['root'], 'ʔmr')
 
 
 def run_tests():
     """Run all tests"""
-    # Create test suite
     loader = unittest.TestLoader()
     suite = unittest.TestSuite()
 
-    # Add all test classes
     suite.addTests(loader.loadTestsFromTestCase(TestRootExtraction))
     suite.addTests(loader.loadTestsFromTestCase(TestEtymologyParsing))
     suite.addTests(loader.loadTestsFromTestCase(TestStemParsing))
@@ -311,11 +296,9 @@ def run_tests():
     suite.addTests(loader.loadTestsFromTestCase(TestEdgeCases))
     suite.addTests(loader.loadTestsFromTestCase(TestHomonymNumbering))
 
-    # Run tests
     runner = unittest.TextTestRunner(verbosity=2)
     result = runner.run(suite)
 
-    # Return exit code
     return 0 if result.wasSuccessful() else 1
 
 
@@ -340,10 +323,7 @@ def main():
 
 
 if __name__ == '__main__':
-    # Check for command line args
     if len(sys.argv) > 1:
-        # Run with unittest's command line interface
         unittest.main()
     else:
-        # Run our custom test runner
         main()

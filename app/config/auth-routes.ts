@@ -1,24 +1,11 @@
-/**
- * Centralized Auth Routes Configuration
- * Single source of truth for all auth-related routing logic
- */
-
 import type { UserRole } from '~/composables/useAuth'
 
 export const AUTH_ROUTES = {
-    /**
-   * Public routes accessible without authentication
-   */
+
     public: ['/login', '/blocked'] as const,
 
-    /**
-   * Admin-only routes requiring admin role
-   */
     admin: ['/admin'] as const,
 
-    /**
-   * Default redirect targets for various auth states
-   */
     redirectTargets: {
         guest: '/login', // Where to send unauthenticated users
         blocked: '/blocked', // Where to send blocked users
@@ -27,30 +14,18 @@ export const AUTH_ROUTES = {
     }
 } as const
 
-/**
- * Check if a path matches any of the given route patterns
- */
 export function matchesRoutePattern(path: string, patterns: readonly string[]): boolean {
     return patterns.some(pattern => path === pattern || path.startsWith(`${pattern}/`))
 }
 
-/**
- * Check if a path is a public route
- */
 export function isPublicRoute(path: string): boolean {
     return matchesRoutePattern(path, AUTH_ROUTES.public)
 }
 
-/**
- * Check if a path is an admin route
- */
 export function isAdminRoute(path: string): boolean {
     return matchesRoutePattern(path, AUTH_ROUTES.admin)
 }
 
-/**
- * Redirect rule for determining where to redirect based on auth state
- */
 export interface RedirectRule {
     name: string
     priority: number
@@ -58,9 +33,6 @@ export interface RedirectRule {
     target: (context: RedirectContext) => string
 }
 
-/**
- * Context passed to redirect rules
- */
 export interface RedirectContext {
     currentPath: string
     sessionStatus: 'idle' | 'loading' | 'authenticated' | 'guest'
@@ -69,10 +41,6 @@ export interface RedirectContext {
     isAdmin: boolean
 }
 
-/**
- * Priority-ordered redirect rules
- * Higher priority = checked first
- */
 export const REDIRECT_RULES: RedirectRule[] = [
     {
         name: 'blocked-user-redirect',
@@ -111,20 +79,13 @@ export const REDIRECT_RULES: RedirectRule[] = [
     }
 ]
 
-/**
- * Determine redirect target based on current context
- * Returns null if no redirect is needed
- */
 export function determineRedirect(context: RedirectContext): string | null {
-    // Sort rules by priority (highest first)
     const sortedRules = [...REDIRECT_RULES].sort((a, b) => b.priority - a.priority)
 
-    // Find first matching rule
     for (const rule of sortedRules) {
         if (rule.condition(context)) {
             const target = rule.target(context)
 
-            // Prevent redirect to same page (loop prevention)
             if (target === context.currentPath) {
                 return null
             }

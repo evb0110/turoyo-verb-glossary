@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: ['@nuxt/eslint', '@nuxt/ui'],
     pages: true,
@@ -7,8 +6,7 @@ export default defineNuxtConfig({
     app: {
         head: {
             title: 'Turoyo Verb Glossary',
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            titleTemplate: ((title?: string) => title ? `${title} · Turoyo Verb Glossary` : 'Turoyo Verb Glossary') as any,
+            titleTemplate: '%s · Turoyo Verb Glossary',
             meta: [
                 { name: 'theme-color', content: '#2e7d73' }
             ],
@@ -40,7 +38,6 @@ export default defineNuxtConfig({
         preset: process.env.VERCEL ? 'vercel' : undefined,
         publicAssets: [{ dir: 'public', baseURL: '/' }],
         ignore: process.env.VERCEL ? ['server/routes/data/api/**'] : [],
-        // Explicitly tell Nitro where server files are (since srcDir is 'app')
         scanDirs: ['server']
     },
     vite: {
@@ -69,7 +66,6 @@ export default defineNuxtConfig({
         clientBundle: {
             scan: true,
             sizeLimitKb: 512,
-            // Just the minimal icons we actually use on the main page
             icons: [
                 'lucide:check',
                 'lucide:loader-circle',

@@ -63,7 +63,6 @@ class BaselineSnapshot:
             }
             structure['stems'].append(stem_info)
 
-        # Etymology details
         if verb_data.get('etymology'):
             etym = verb_data['etymology']
             structure['etymology_details'] = {
@@ -99,24 +98,19 @@ class BaselineSnapshot:
             }
         }
 
-        # Process each verb file
         verb_files = sorted(self.verbs_dir.glob('*.json'))
         for i, filepath in enumerate(verb_files, 1):
             if i % 100 == 0:
                 print(f"   [{i}/{len(verb_files)}] Processing...", end='\r')
 
             try:
-                # Read and parse
                 with open(filepath, 'r', encoding='utf-8') as f:
                     verb_data = json.load(f)
 
-                # Compute hash
                 file_hash = self.compute_file_hash(filepath)
 
-                # Extract structure
                 structure = self.extract_verb_structure(verb_data)
 
-                # Store in baseline
                 root = verb_data['root']
                 baseline['verbs'][root] = {
                     'filename': filepath.name,
@@ -124,7 +118,6 @@ class BaselineSnapshot:
                     'structure': structure
                 }
 
-                # Update summary statistics
                 baseline['summary']['total_files'] += 1
                 baseline['summary']['total_stems'] += structure['stem_count']
 
@@ -134,12 +127,10 @@ class BaselineSnapshot:
                     for conj_type in stem['conjugation_types']:
                         baseline['summary']['conjugation_type_counts'][conj_type] += 1
 
-                # Track etymology sources
                 if 'etymology_details' in structure:
                     for source in structure['etymology_details']['sources']:
                         baseline['summary']['etymology_sources'][source] += 1
 
-                # Track special cases
                 if ' ' in root and root[-1].isdigit():
                     baseline['summary']['roots_with_homonyms'].append(root)
                 if verb_data.get('cross_reference'):
@@ -153,7 +144,6 @@ class BaselineSnapshot:
 
         print(f"\n   ✅ Processed {baseline['summary']['total_files']} verb files")
 
-        # Convert defaultdicts to regular dicts for JSON serialization
         baseline['summary']['stem_type_counts'] = dict(baseline['summary']['stem_type_counts'])
         baseline['summary']['conjugation_type_counts'] = dict(baseline['summary']['conjugation_type_counts'])
         baseline['summary']['etymology_sources'] = dict(baseline['summary']['etymology_sources'])
@@ -175,7 +165,6 @@ class BaselineSnapshot:
         print(f"      • Cross-references: {len(baseline['summary']['roots_with_cross_refs'])}")
         print(f"      • Uncertain entries: {len(baseline['summary']['uncertain_roots'])}")
 
-        # Save summary separately for quick access
         summary_file = self.baseline_dir / 'summary.json'
         with open(summary_file, 'w', encoding='utf-8') as f:
             json.dump(baseline['summary'], f, ensure_ascii=False, indent=2)

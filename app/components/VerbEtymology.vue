@@ -5,7 +5,6 @@
         </h2>
 
         <div v-for="(group, idx) in groupedEtymons" :key="idx" class="space-y-2">
-            <!-- Only show source label if there's actually a source -->
             <div v-if="group.source" class="flex items-baseline gap-2">
                 <span class="font-medium text-sm">{{ group.source }}:</span>
                 <span
@@ -22,7 +21,6 @@
                 :class="group.source ? 'pl-4' : ''"
                 class="space-y-1 text-sm"
             >
-                <!-- Structured etymon (has source_root, meaning, etc.) -->
                 <div v-if="etymon.source_root || etymon.stem" class="flex items-baseline gap-2">
                     <span v-if="etymon.source_root">{{ etymon.source_root }}</span>
                     <span v-if="etymon.stem">{{ etymon.stem }}</span>
@@ -33,7 +31,6 @@
                 <p v-if="etymon.reference" class="text-xs text-muted">
                     Ref: {{ etymon.reference }}
                 </p>
-                <!-- Raw etymon (fallback - just show the raw text) -->
                 <p v-if="etymon.raw" class="text-muted italic">
                     {{ etymon.raw }}
                 </p>
@@ -45,9 +42,6 @@
 <script lang="ts" setup>
 import type { Etymology, Etymon } from '~/types/verb'
 
-/**
- * Displays etymology information grouped by source language
- */
 const props = defineProps<{
     etymology: Etymology | null
 }>()
@@ -57,7 +51,6 @@ const groupedEtymons = computed(() => {
 
     const groups = new Map<string | undefined, Etymon[]>()
     for (const etymon of props.etymology.etymons) {
-        // Use source if available, otherwise undefined (for raw-only etymons)
         const source = etymon.source || undefined
         if (!groups.has(source)) {
             groups.set(source, [])

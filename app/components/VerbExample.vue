@@ -17,9 +17,6 @@
 <script lang="ts" setup>
 import type { Example } from '~/types/verb'
 
-/**
- * Displays a single verb example with Turoyo text, translations, and references
- */
 defineProps<{
     example: Example
 }>()

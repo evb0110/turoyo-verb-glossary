@@ -30,12 +30,10 @@ export const useAuth = () => {
     const loading = useState<boolean>('auth:loading', () => false)
     const sessionStatus = useState<'idle' | 'loading' | 'authenticated' | 'guest'>('auth:sessionStatus', () => 'idle')
 
-    // Helper computed for UI states
     const isSessionKnown = computed(() =>
         sessionStatus.value === 'authenticated' || sessionStatus.value === 'guest'
     )
 
-    // Role-based computed helpers
     const isAdmin = computed(() => user.value?.role === 'admin')
     const isPending = computed(() => user.value?.role === 'pending')
     const isBlocked = computed(() => user.value?.role === 'blocked')
@@ -67,7 +65,6 @@ export const useAuth = () => {
     }
 
     const checkSession = async () => {
-        // Skip if already authenticated from SSR
         if (sessionStatus.value === 'authenticated' && user.value) {
             console.log('Session already loaded from SSR')
             return
@@ -80,7 +77,6 @@ export const useAuth = () => {
             console.log('Session:', session)
 
             if (session.data?.user) {
-                // Fetch full user data including role from our API
                 const response = await $fetch<AuthUser | null>('/api/user/me')
                 if (response) {
                     user.value = response

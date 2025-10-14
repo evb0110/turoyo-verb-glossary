@@ -9,9 +9,6 @@
 </template>
 
 <script lang="ts" setup>
-/**
- * Displays a list of translations for a verb example
- */
 defineProps<{
     translations: string[]
 }>()

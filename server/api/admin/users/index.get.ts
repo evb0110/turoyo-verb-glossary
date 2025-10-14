@@ -4,7 +4,6 @@ import { user } from '../../../db/schema'
 import { desc, eq } from 'drizzle-orm'
 
 export default defineEventHandler(async (event) => {
-    // Check if user is authenticated and is admin
     const session = await auth.api.getSession({ headers: event.headers })
 
     if (!session?.user) {
@@ -14,7 +13,6 @@ export default defineEventHandler(async (event) => {
         })
     }
 
-    // Get the full user data including role
     const currentUser = await db.select().from(user).where(eq(user.id, session.user.id)).limit(1)
 
     if (!currentUser[0] || currentUser[0].role !== 'admin') {
@@ -24,7 +22,6 @@ export default defineEventHandler(async (event) => {
         })
     }
 
-    // Return all users ordered by creation date
     const users = await db.select({
         id: user.id,
         name: user.name,

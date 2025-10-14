@@ -40,7 +40,6 @@ const router = useRouter()
 const open = ref(false)
 const query = ref('')
 
-// Type for the UInput component ref
 interface UInputRef {
     $el?: HTMLElement
 }
@@ -67,7 +66,6 @@ function onKeydown(e: KeyboardEvent) {
         e.preventDefault()
         open.value = true
         nextTick(() => {
-            // Access the native input element from the UInput component
             const component = inputRef.value as UInputRef | undefined
             const el = component?.$el?.querySelector?.('input') || inputRef.value as HTMLInputElement | undefined
             if (el && typeof el.focus === 'function') el.focus()

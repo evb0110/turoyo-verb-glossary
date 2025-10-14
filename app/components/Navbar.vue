@@ -39,7 +39,6 @@
 <script setup lang="ts">
 const { isAdmin, sessionStatus } = useAuth()
 
-// Load pre-computed stats from /api/stats (generated at build time)
 const { data: stats } = await useAsyncData('layout-stats', () =>
     $fetch('/api/stats')
 )
@@ -50,14 +49,11 @@ const displayStats = computed(() => {
     return stats.value || { total_verbs: '—', total_stems: '—', total_examples: '—' }
 })
 
-// Fetch pending users count for admin (only when authenticated AND admin)
 const shouldFetchPending = computed(() => isAuthenticated.value && isAdmin.value)
 
-// Fetch pending count - use useAsyncData to properly hydrate from SSR
 const { data: pendingData, refresh: refreshPendingCount } = await useAsyncData(
     'admin-pending-count',
     async () => {
-        // Skip if not admin (avoid 403 errors)
         if (!isAdmin.value) return { count: 0 }
         try {
             return await $fetch<{ count: number }>('/api/admin/pending-count')
@@ -70,25 +66,18 @@ const { data: pendingData, refresh: refreshPendingCount } = await useAsyncData(
 
 const pendingCount = computed(() => pendingData.value?.count || 0)
 
-// Fetch pending count when user becomes authenticated admin
 if (import.meta.client) {
-    // Track if we've hydrated to avoid refetching data that came from SSR
     const hasHydrated = ref(false)
     onMounted(() => {
         hasHydrated.value = true
     })
 
-    // Don't use immediate:true to avoid re-fetching on hydration
     watch(shouldFetchPending, (should, wasShould) => {
-        // Only fetch if:
-        // 1. We've finished hydrating
-        // 2. Changed from false to true (user just logged in or became admin)
         if (hasHydrated.value && should && !wasShould) {
             refreshPendingCount()
         }
     })
 
-    // Show toast notification on login if there are pending users
     watch(pendingCount, (newCount, oldCount) => {
         if (isAdmin.value && newCount > 0 && oldCount === 0) {
             const toast = useToast()

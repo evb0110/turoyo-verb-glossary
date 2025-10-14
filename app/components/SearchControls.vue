@@ -118,10 +118,8 @@ const searchEverything = defineModel<boolean>('searchEverything', { required: tr
 const useRegex = defineModel<boolean>('useRegex', { required: true })
 const caseSensitive = defineModel<boolean>('caseSensitive', { required: true })
 
-// Local state for input - only sync to model on submit
 const internalQuery = ref(query.value)
 
-// Sync back when model changes externally (e.g., route navigation)
 watch(query, (newValue) => {
     internalQuery.value = newValue
 })
@@ -136,11 +134,9 @@ const emit = defineEmits<{
     'show-help': []
 }>()
 
-// Character picker state
 const isCharPickerOpen = ref(false)
 const searchInput = ref<{ $el?: { querySelector: (selector: string) => HTMLInputElement | null } } | null>(null)
 
-// Insert character at cursor position
 function insertChar(char: string) {
     const input = searchInput.value?.$el?.querySelector('input')
     if (!input) {
@@ -154,14 +150,12 @@ function insertChar(char: string) {
 
     internalQuery.value = text.slice(0, start) + char + text.slice(end)
 
-    // Update cursor position without focusing (to keep popover open)
     nextTick(() => {
         const newPosition = start + char.length
         input.setSelectionRange(newPosition, newPosition)
     })
 }
 
-// Update model and trigger search
 function handleSearch() {
     query.value = internalQuery.value
     isCharPickerOpen.value = false

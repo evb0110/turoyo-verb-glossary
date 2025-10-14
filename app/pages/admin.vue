@@ -3,8 +3,6 @@ import type { AuthUser } from '~/composables/useAuth'
 
 const { user } = useAuth()
 
-// Fetch users list
-// Note: Auth redirects are handled by app/plugins/auth-redirect.client.ts
 const { data: users, refresh: refreshUsers } = await useFetch<AuthUser[]>('/api/admin/users', {
     watch: false
 })

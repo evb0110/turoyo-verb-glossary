@@ -1,8 +1,3 @@
-/**
- * Server-side utilities for generating contextual excerpts from verb data
- * Used for "everything" search mode to show matches in context
- */
-
 import type { Verb } from './verbs'
 import { createSearchRegex, matchAll } from './regexSearch'
 import { extractContext, tokenTextToString } from './textUtils'
@@ -17,10 +12,6 @@ export interface Excerpt {
     label: string
 }
 
-/**
- * Helper to add an excerpt if it's unique
- * Reduces duplication of excerpt creation pattern
- */
 function addExcerpt(
     excerpts: Excerpt[],
     seenTexts: Set<string>,
@@ -36,22 +27,6 @@ function addExcerpt(
     }
 }
 
-/**
- * Generate contextual excerpts showing matches in verb content
- * Used for "everything" search mode
- *
- * @param verb - The verb to search within
- * @param query - Search query string
- * @param opts - Search options
- * @returns Array of excerpts with highlighted matches
- *
- * @example
- * const excerpts = generateExcerpts(verb, 'learn', {
- *   useRegex: false,
- *   caseSensitive: false,
- *   maxExcerpts: 5
- * })
- */
 export function generateExcerpts(
     verb: Verb,
     query: string,
@@ -70,11 +45,9 @@ export function generateExcerpts(
     const maxExcerpts = opts.maxExcerpts ?? 5
     const seenTexts = new Set<string>() // Track unique texts to avoid duplicates
 
-    // 1. Search in lemma header (bibliographic references, citations, attributions)
     if (verb.lemma_header_tokens) {
         const headerText = tokenTextToString(verb.lemma_header_tokens)
 
-        // Find ALL matches using the matchAll generator
         for (const match of matchAll(headerText, regex)) {
             if (excerpts.length >= maxExcerpts) break
 
@@ -87,7 +60,6 @@ export function generateExcerpts(
         }
     }
 
-    // 2. Search in forms
     for (const stem of verb.stems) {
         for (const form of stem.forms) {
             if (regex.test(form)) {
@@ -100,11 +72,9 @@ export function generateExcerpts(
             }
         }
 
-        // 3. Search in stem glosses (German meanings)
         if (stem.label_gloss_tokens) {
             const glossText = tokenTextToString(stem.label_gloss_tokens)
 
-            // Find ALL matches using the matchAll generator
             for (const match of matchAll(glossText, regex)) {
                 if (excerpts.length >= maxExcerpts) break
 
@@ -118,15 +88,12 @@ export function generateExcerpts(
             }
         }
 
-        // 4. Search in conjugation examples
         for (const [conjType, examples] of Object.entries(stem.conjugations)) {
             for (const example of examples) {
-                // Skip if we have enough excerpts
                 if (excerpts.length >= maxExcerpts) {
                     return excerpts
                 }
 
-                // Search in turoyo text
                 if (example.turoyo) {
                     const tMatch = example.turoyo.match(regex)
                     if (tMatch && tMatch.index !== undefined) {
@@ -141,7 +108,6 @@ export function generateExcerpts(
                     }
                 }
 
-                // Search in translations
                 for (const translation of example.translations) {
                     if (excerpts.length >= maxExcerpts) {
                         return excerpts
@@ -165,14 +131,12 @@ export function generateExcerpts(
         }
     }
 
-    // 5. Search in etymology (all fields: meaning, notes, raw, source_root)
     if (verb.etymology && Array.isArray(verb.etymology.etymons)) {
         for (const etymon of verb.etymology.etymons) {
             if (excerpts.length >= maxExcerpts) {
                 break
             }
 
-            // Search in all text fields of the etymon
             const searchFields = [
                 etymon.meaning,
                 etymon.notes,
@@ -181,7 +145,6 @@ export function generateExcerpts(
             ].filter((field): field is string => Boolean(field)) // Type-safe filter
 
             for (const field of searchFields) {
-                // Find ALL matches using the matchAll generator
                 for (const match of matchAll(field, regex)) {
                     if (excerpts.length >= maxExcerpts) break
 

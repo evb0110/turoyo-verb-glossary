@@ -1,5 +1,3 @@
-// Type definitions for Turoyo Verb data structures
-
 export interface Etymon {
     source: string
     source_root?: string
@@ -27,7 +25,7 @@ export interface Stem {
     conjugations: {
         [key: string]: Example[]
     }
-    // Optional fields from parser
+
     label_raw?: string
     label_gloss_tokens?: { italic: boolean, text: string }[]
 }
@@ -38,9 +36,9 @@ export interface Verb {
     cross_reference: string | null
     stems: Stem[]
     uncertain: boolean
-    // Optional raw header HTML preserved verbatim
+
     lemma_header_raw?: string
-    // Structured header tokens (bibliographic references, citations)
+
     lemma_header_tokens?: { italic: boolean, text: string }[]
 }
 

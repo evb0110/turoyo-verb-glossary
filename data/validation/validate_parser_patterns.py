@@ -13,7 +13,6 @@ import json
 from pathlib import Path
 from collections import defaultdict
 
-# Source HTML path
 SOURCE_HTML = Path('source/Turoyo_all_2024.html')
 
 
@@ -29,18 +28,15 @@ def test_root_pattern(html):
     print("TEST 1: ROOT PATTERN VALIDATION")
     print("=" * 80)
 
-    # Parser's root pattern
     root_pattern = r'<p[^>]*class="western"[^>]*>(?:<font[^>]*>)?<span[^>]*>([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzžḏṯẓāēīūə]{2,6})(?:\s*\d+)?[^<]*</span>'
 
     matches = list(re.finditer(root_pattern, html))
     print(f"\n✓ Found {len(matches)} potential root matches")
 
-    # Sample first 20 matches
     print("\nFirst 20 matches:")
     for i, match in enumerate(matches[:20], 1):
         root = match.group(1)
         context = html[match.start():match.end()]
-        # Extract full span text for gloss check
         span_match = re.search(r'<span[^>]*>([^<]+)</span>', context)
         if span_match:
             full_text = span_match.group(1)
@@ -50,7 +46,6 @@ def test_root_pattern(html):
 
             print(f"{i:3}. '{root}' | Full: '{full_text[:30]}...' | Gloss? {gloss_candidate}")
 
-    # Check for German glosses
     print("\n" + "-" * 80)
     print("Checking for German gloss false positives...")
 
@@ -62,8 +57,7 @@ def test_root_pattern(html):
     found_glosses = []
     for gloss in german_glosses:
         if gloss in html:
-            # Check if this gloss matched the root pattern
-            gloss_pattern = re.escape(gloss[:2])  # First 2 chars
+            gloss_pattern = re.escape(gloss[:2])
             for match in matches:
                 if match.group(1) == gloss[:2]:
                     found_glosses.append((gloss, match.group(1)))
@@ -85,13 +79,10 @@ def test_stem_pattern(html):
     print("TEST 2: STEM PATTERN VALIDATION")
     print("=" * 80)
 
-    # Primary pattern
     stem_pattern_primary = r'<font size="4"[^>]*><b><span[^>]*>([IVX]+):\s*</span></b></font></font><font[^>]*><font[^>]*><i><b><span[^>]*>([^<]+)</span>'
 
-    # Combined pattern
     stem_pattern_combined = r'<font size="4"[^>]*><b><span[^>]*>([IVX]+):\s*([^<]+)</span></b></font>'
 
-    # Fallback pattern
     stem_pattern_fallback = r'<p[^>]*>.*?<span[^>]*>([IVX]+):</span>.*?</p>'
 
     matches_primary = list(re.finditer(stem_pattern_primary, html))
@@ -103,7 +94,6 @@ def test_stem_pattern(html):
     print(f"✓ Fallback pattern: {len(matches_fallback)} matches")
     print(f"✓ Total unique stems: ~{len(matches_primary) + len(matches_combined) + len(matches_fallback)}")
 
-    # Sample matches
     print("\nSample primary pattern matches:")
     for match in matches_primary[:5]:
         stem = match.group(1)
@@ -128,17 +118,14 @@ def test_etymology_pattern(html):
 
     print(f"\n✓ Found {len(matches)} etymology blocks")
 
-    # Sample matches
     print("\nFirst 10 etymology blocks:")
     for i, match in enumerate(matches[:10], 1):
         etym_text = match.group(1).strip()
-        # Clean for display
         etym_text = re.sub(r'<[^>]+>', '', etym_text)
         etym_text = etym_text.replace('\n', ' ')
         etym_text = re.sub(r'\s+', ' ', etym_text)
         print(f"{i:3}. {etym_text[:80]}...")
 
-    # Check for complex etymologies
     print("\n" + "-" * 80)
     print("Checking for relationship keywords...")
 
@@ -159,11 +146,8 @@ def test_number_detection(html):
     print("TEST 4: HOMONYM NUMBER DETECTION")
     print("=" * 80)
 
-    # Pattern 1: Number in italic span with paren
     pattern1 = r'<i><span[^>]*>\s*(\d+)\s+\('
-    # Pattern 2: Number in separate span
     pattern2 = r'<span[^>]*>\s*(\d+)\s*</span>'
-    # Pattern 3: Superscript
     pattern3 = r'<sup[^>]*>.*?(\d+).*?</sup>'
 
     matches1 = list(re.finditer(pattern1, html))
@@ -174,7 +158,6 @@ def test_number_detection(html):
     print(f"✓ Separate span: {len(matches2)} matches")
     print(f"✓ Superscript: {len(matches3)} matches")
 
-    # Look for pre-numbered roots in source
     print("\n" + "-" * 80)
     print("Looking for pre-numbered roots in source HTML...")
 
@@ -203,30 +186,25 @@ def test_table_structure(html):
     print("TEST 5: TABLE STRUCTURE VALIDATION")
     print("=" * 80)
 
-    # Count tables
     table_pattern = r'<table[^>]*>(.*?)</table>'
     tables = list(re.finditer(table_pattern, html, re.DOTALL))
 
     print(f"\n✓ Found {len(tables)} tables in source HTML")
 
-    # Sample first table
     if tables:
         first_table = tables[0].group(0)
         rows = re.findall(r'<tr[^>]*>(.*?)</tr>', first_table, re.DOTALL)
         print(f"\nFirst table has {len(rows)} rows")
 
-        # Analyze first row
         if rows:
             cells = re.findall(r'<td[^>]*>(.*?)</td>', rows[0], re.DOTALL)
             print(f"First row has {len(cells)} cells")
 
             if len(cells) >= 2:
-                # Check header format
                 header = cells[0]
                 header_text = re.sub(r'<[^>]+>', '', header).strip()
                 print(f"First cell (header): '{header_text[:50]}...'")
 
-                # Check example format
                 example = cells[1]
                 has_italic = '<i>' in example
                 has_span = '<span>' in example
@@ -241,7 +219,6 @@ def test_edge_cases(html):
     print("TEST 6: EDGE CASES AND KNOWN ISSUES")
     print("=" * 80)
 
-    # Test 1: ʕmr homonyms (known issue with missing <font> tags)
     print("\nTest 1: ʕmr homonym patterns...")
     omr_pattern1 = r'<p[^>]*class="western"[^>]*><span[^>]*>ʕmr'
     omr_pattern2 = r'<p[^>]*class="western"[^>]*><font[^>]*><span[^>]*>ʕmr'
@@ -257,7 +234,6 @@ def test_edge_cases(html):
     else:
         print(f"  ⚠️  All ʕmr entries have <font> tags")
 
-    # Test 2: Detransitive sections
     print("\nTest 2: Detransitive sections...")
     detrans1 = len(re.findall(r'<font[^>]*size="4"[^>]*><b><span[^>]*>Detransitive', html))
     detrans2 = len(re.findall(r'<p[^>]*><span[^>]*>Detransitive</span></p>', html))
@@ -266,7 +242,6 @@ def test_edge_cases(html):
     print(f"  - Detransitive in paragraph: {detrans2}")
     print(f"  - Total detransitive sections: {detrans1 + detrans2}")
 
-    # Test 3: Cross-references
     print("\nTest 3: Cross-references...")
     xref_pattern = r'→\s*([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzžḏṯẓāēīūə]+)'
     xrefs = re.findall(xref_pattern, html)
@@ -275,12 +250,10 @@ def test_edge_cases(html):
     if xrefs:
         print(f"  - Sample: {', '.join(xrefs[:5])}")
 
-    # Test 4: Uncertain entries (???)
     print("\nTest 4: Uncertain entries...")
     uncertain = len(re.findall(r'\?\?\?', html))
     print(f"  - Entries with '???': {uncertain}")
 
-    # Test 5: Root continuations
     print("\nTest 5: Root continuations...")
     cont_pattern = r'</span></font><font[^>]*><span[^>]*>([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzžḏṯẓāēīūə]+)</span>'
     continuations = len(re.findall(cont_pattern, html))
@@ -318,7 +291,6 @@ def generate_report(results):
     print(f"  - Tables: {report['total_tables']}")
     print(f"  - Pre-numbered roots: {report['pre_numbered_roots']}")
 
-    # Save report
     output_file = Path('data/validation/pattern_validation_report.json')
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(report, f, indent=2, ensure_ascii=False)
@@ -340,7 +312,6 @@ def main():
     html = load_source_html()
     print(f"✓ Loaded source HTML ({len(html):,} bytes)")
 
-    # Run tests
     results = {}
     results['roots'] = test_root_pattern(html)
     results['stems'] = test_stem_pattern(html)
@@ -350,7 +321,6 @@ def main():
 
     test_edge_cases(html)
 
-    # Generate report
     generate_report(results)
 
     print("\n" + "=" * 80)

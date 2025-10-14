@@ -39,9 +39,6 @@ class TuroyoVerbParser:
         self.stats = defaultdict(int)
         self.errors = []
 
-    # ============================================================================
-    # SECTION 1: HTML SEGMENTATION
-    # ============================================================================
 
     def split_by_letters(self):
         """Split HTML into letter sections"""
@@ -59,71 +56,50 @@ class TuroyoVerbParser:
 
     def extract_roots_from_section(self, section_html):
         """Extract verb entries from a letter section"""
-        # Pattern handles: roots, numbers, variant spellings (e.g., "fhr, fxr")
-        # Note: <font> tag is optional (e.g., ʕmr 1 has <p><span>, ʕmr 2 has <p><font><span>)
         root_pattern = r'<p[^>]*class="western"[^>]*>(?:<font[^>]*>)?<span[^>]*>([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzžḏṯẓāēīūə]{2,6})(?:\s*\d+)?[^<]*</span>'
 
-        # STEP 1: Collect all valid root matches (filtering out glosses)
         valid_matches = []
         for match in re.finditer(root_pattern, section_html):
             root_chars = match.group(1)
 
-            # FILTER 1: Skip German glosses (e.g., "speichern;")
-            # Note: Check ONLY for special Turoyo characters that DON'T appear in German
-            # Exclude common letters that appear in both languages (b,d,f,g,h,k,l,m,n,p,q,r,s,t,w,x,y,z)
-            # and certain diacritics that might appear in loan words
             SPECIAL_TUROYO_CHARS = 'ʔʕġǧḥṣṭḏṯẓčšžāēīūə'
 
             span_content = match.group(0)
             span_text_match = re.search(r'<span[^>]*>([^<]+)</span>', span_content)
             if span_text_match:
                 full_span_text = span_text_match.group(1).strip()
-                # If span contains semicolon AND no special Turoyo chars → German gloss
                 if ';' in full_span_text and not any(c in full_span_text for c in SPECIAL_TUROYO_CHARS):
                     continue
 
-            # FILTER 2: Skip orphaned Detransitive/Action Noun forms
-            # These appear as standalone paragraphs after "Detransitive" or "Action Noun/noun" headers
-            # Look back 300 chars to see if immediately preceded by such headers
             lookbehind_start = max(0, match.start() - 300)
             lookbehind = section_html[lookbehind_start:match.start()]
-            # Check if this paragraph comes right after Detransitive or Action Noun marker (case-insensitive for 'noun')
             if re.search(r'<span[^>]*>(?:Detransitive|Action\s+[Nn]oun)</span></p>\s*$', lookbehind, re.DOTALL):
                 continue
 
-            # FILTER 3: Skip German glosses that appear right after stem headers
-            # These are translation paragraphs within verb entries (e.g., "grob sieben..." after "I: ṣrəḏle")
-            # Look back to check if preceded by a stem header like "I:", "II:", etc.
             if re.search(r'<span[^>]*>[IVX]+:\s*</span></b></font></font>.*?<i><b><span[^>]*>[^<]+</span></b></i></font></font></p>\s*$', lookbehind, re.DOTALL):
                 continue
 
-            # Check for root continuation (e.g., ṣyb + r = ṣybr)
             lookahead_cont = section_html[match.end():match.end()+100]
             cont_match = re.search(r'</font><font[^>]*><span[^>]*>([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzžḏṯẓāēīūə]+)</span>', lookahead_cont)
             if cont_match:
                 root_chars = root_chars + cont_match.group(1)
 
-            # Check for number in span
             full_match = match.group(0)
             number_match = re.search(r'([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzžḏṯẓāēīūə]{2,6})\s*(\d+)', full_match)
 
             if number_match:
                 root = f"{root_chars} {number_match.group(2)}"
             else:
-                # Look ahead for number in various formats
                 lookahead = section_html[match.end():match.end()+300]
 
-                # Pattern 1: Number in italic span
                 italic_num = re.search(r'<i><span[^>]*>\s*(\d+)\s+\(', lookahead)
                 if italic_num:
                     root = f"{root_chars} {italic_num.group(1)}"
                 else:
-                    # Pattern 2: Number in separate span
                     sep_num = re.search(r'<span[^>]*>\s*(\d+)\s*</span>', lookahead, re.DOTALL)
                     if sep_num:
                         root = f"{root_chars} {sep_num.group(1)}"
                     else:
-                        # Pattern 3: Superscript homonym marker
                         sup_num = re.search(r'<sup[^>]*>.*?(\d+).*?</sup>', lookahead, re.DOTALL)
                         if sup_num:
                             root = f"{root_chars} {sup_num.group(1)}"
@@ -132,20 +108,15 @@ class TuroyoVerbParser:
 
             valid_matches.append((root, match))
 
-        # STEP 2: Extract entry HTML using filtered match boundaries
         roots = []
         for i, (root, match) in enumerate(valid_matches):
             start_pos = match.start()
-            # Use next VALID match as boundary, not raw pattern search
             end_pos = valid_matches[i+1][1].start() if i+1 < len(valid_matches) else len(section_html)
             entry_html = section_html[start_pos:end_pos]
             roots.append((root, entry_html))
 
         return roots
 
-    # ============================================================================
-    # SECTION 2: TOKEN GENERATION (for display with proper spacing)
-    # ============================================================================
 
     def walk_and_extract(self, element, in_italic=False):
         """
@@ -156,7 +127,6 @@ class TuroyoVerbParser:
         """
         result = []
 
-        # Block-level elements that should add spacing after
         block_elements = {'p', 'div', 'br', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'li', 'tr', 'td'}
 
         if isinstance(element, NavigableString):
@@ -165,14 +135,11 @@ class TuroyoVerbParser:
                 result.append((in_italic, text))
             return result
 
-        # Check if this element is or contains <i>
         current_italic = in_italic or (element.name == 'i')
 
-        # Recurse to children
         for child in element.children:
             result.extend(self.walk_and_extract(child, current_italic))
 
-        # Add spacing after block-level elements
         if element.name in block_elements and result:
             last_italic = result[-1][0] if result else in_italic
             result.append((last_italic, ' '))
@@ -187,14 +154,10 @@ class TuroyoVerbParser:
         pairs = self.walk_and_extract(soup)
         tokens = []
         for is_italic, text in pairs:
-            # Keep tokens if they have content OR if they're a single space (block separator)
             if text and (text.strip() or text == ' '):
                 tokens.append({'italic': bool(is_italic), 'text': text})
         return tokens
 
-    # ============================================================================
-    # SECTION 3: ETYMOLOGY PARSING
-    # ============================================================================
 
     def normalize_whitespace(self, text):
         if not text:
@@ -211,16 +174,13 @@ class TuroyoVerbParser:
 
         etym_text = match.group(1).strip().rstrip(';').strip()
 
-        # Clean HTML tags
         etym_text = re.sub(r'</span></i></font></font><font[^>]*><font[^>]*><i><span[^>]*>', ' ', etym_text)
         etym_text = re.sub(r'</span></i></font></font><font[^>]*><span[^>]*>', ' ', etym_text)
         etym_text = re.sub(r'</span></i></font><font[^>]*><i><span[^>]*>', ' ', etym_text)
         etym_text = re.sub(r'<[^>]+>', '', etym_text)
-        # Decode HTML entities (&lt; → <, &amp; → &, etc.)
         etym_text = html.unescape(etym_text)
         etym_text = self.normalize_whitespace(etym_text)
 
-        # Check for complex etymologies with relationships
         relationship = None
         etymon_parts = [etym_text]
 
@@ -234,7 +194,6 @@ class TuroyoVerbParser:
             relationship = 'and'
             etymon_parts = [part.strip() for part in re.split(r'[;,]\s*and\s+', etym_text)]
 
-        # Parse each etymon
         etymons = []
         for part in etymon_parts:
             etymon = self._parse_single_etymon(part)
@@ -252,7 +211,6 @@ class TuroyoVerbParser:
 
     def _parse_single_etymon(self, etym_text):
         """Parse a single etymon"""
-        # Pattern 1: Full structure with cf.
         structured = re.match(
             r'([A-Za-z.]+)\s+([^\s]+)\s+(?:\([^)]+\)\s+)?cf\.\s+([^:]+):\s*(.+)',
             etym_text, re.DOTALL
@@ -265,7 +223,6 @@ class TuroyoVerbParser:
                 'meaning': self.normalize_whitespace(structured.group(4)),
             }
 
-        # Pattern 2: Without cf.
         no_cf = re.match(
             r'([A-Za-z.]+)\s+([^\s,]+),\s+([^:]+):\s*(.+)',
             etym_text, re.DOTALL
@@ -278,7 +235,6 @@ class TuroyoVerbParser:
                 'meaning': self.normalize_whitespace(no_cf.group(4)),
             }
 
-        # Pattern 3: Simple format
         simple = re.match(r'([A-Za-z.]+)\s+(.+)', etym_text)
         if simple:
             return {
@@ -288,9 +244,6 @@ class TuroyoVerbParser:
 
         return {'raw': etym_text}
 
-    # ============================================================================
-    # SECTION 4: STEM AND CONJUGATION EXTRACTION
-    # ============================================================================
 
     def parse_stems(self, entry_html):
         """Find all stem headers"""
@@ -308,7 +261,6 @@ class TuroyoVerbParser:
                 'position': match.start()
             })
 
-        # Alternative pattern: stem and forms in same span
         combined_pattern = r'<font size="4"[^>]*><b><span[^>]*>([IVX]+):\s*([^<]+)</span></b></font>'
         for match in re.finditer(combined_pattern, entry_html):
             if any(s['position'] == match.start() for s in stems):
@@ -325,7 +277,6 @@ class TuroyoVerbParser:
                         'position': match.start()
                     })
 
-        # Fallback pattern
         fallback_pattern = r'<p[^>]*>.*?<span[^>]*>([IVX]+):</span>.*?</p>'
         for match in re.finditer(fallback_pattern, entry_html):
             if any(s['position'] == match.start() for s in stems):
@@ -496,9 +447,6 @@ class TuroyoVerbParser:
             return parts
         return [h]
 
-    # ============================================================================
-    # SECTION 5: LABEL AND HEADER EXTRACTION (for display tokens)
-    # ============================================================================
 
     def extract_lemma_header_raw(self, fragment_html):
         """Extract the lemma header HTML (between root and first stem)"""
@@ -541,9 +489,6 @@ class TuroyoVerbParser:
         except Exception:
             return ''
 
-    # ============================================================================
-    # SECTION 6: MAIN PARSING LOGIC
-    # ============================================================================
 
     def parse_entry(self, root, entry_html):
         """Parse complete verb entry"""
@@ -555,7 +500,6 @@ class TuroyoVerbParser:
             'uncertain': False
         }
 
-        # Cross-reference?
         xref_pattern = root + r'\s*→\s*([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzḏṯẓāēīūə]+)'
         xref = re.search(xref_pattern, entry_html)
         if xref:
@@ -563,28 +507,22 @@ class TuroyoVerbParser:
             self.stats['cross_references'] += 1
             return entry
 
-        # Uncertain?
         if '???' in entry_html:
             entry['uncertain'] = True
             self.stats['uncertain_entries'] += 1
 
-        # Etymology
         entry['etymology'] = self.parse_etymology(entry_html)
 
-        # Lemma header (with tokens)
         header_html = self.extract_lemma_header_raw(entry_html)
         entry['lemma_header_raw'] = header_html
         entry['lemma_header_tokens'] = self.html_to_tokens(header_html)
 
-        # Find Detransitive position
         detrans_pos = self.find_detransitive_position(entry_html)
 
-        # Stems
         stems = self.parse_stems(entry_html)
         stem_labels = self.extract_stem_labels(entry_html)
 
         for i, stem in enumerate(stems):
-            # Find next boundary
             boundaries = []
             if i+1 < len(stems):
                 boundaries.append(stems[i+1]['position'])
@@ -594,7 +532,6 @@ class TuroyoVerbParser:
             boundaries.append(len(entry_html))
             next_pos = min(boundaries)
 
-            # Extract tables
             conjugations = self.extract_tables(entry_html, stem['position'], next_pos)
 
             stem_data = {
@@ -603,7 +540,6 @@ class TuroyoVerbParser:
                 'conjugations': conjugations
             }
 
-            # Add label (with tokens)
             roman = stem['stem']
             if roman in stem_labels:
                 label_html = stem_labels[roman]
@@ -614,7 +550,6 @@ class TuroyoVerbParser:
             entry['stems'].append(stem_data)
             self.stats['stems_parsed'] += 1
 
-        # Detransitive
         if detrans_pos:
             next_stem_pos = None
             for stem in stems:
@@ -634,9 +569,6 @@ class TuroyoVerbParser:
 
         return entry
 
-    # ============================================================================
-    # SECTION 7: HOMONYM NUMBERING
-    # ============================================================================
 
     def add_homonym_numbers(self):
         """Add sequential numbers to homonyms with different etymologies"""
@@ -649,7 +581,6 @@ class TuroyoVerbParser:
             if len(entries) <= 1:
                 continue
 
-            # Extract etymology signatures
             etymologies = []
             for idx, verb in entries:
                 etym = verb.get('etymology')
@@ -675,10 +606,8 @@ class TuroyoVerbParser:
                     sig = None
                 etymologies.append((idx, sig))
 
-            # Check if etymologies differ
             unique_etyms = set(sig for _, sig in etymologies)
 
-            # Only number if there are DIFFERENT etymologies
             if len(unique_etyms) > 1:
                 print(f"   ℹ️  Found homonyms for '{root}' with {len(unique_etyms)} different etymologies")
                 for entry_num, (idx, sig) in enumerate(etymologies, 1):
@@ -691,9 +620,6 @@ class TuroyoVerbParser:
             self.stats['homonyms_numbered'] = numbered_count
             print(f"   ✅ Auto-numbered {numbered_count} homonym entries")
 
-    # ============================================================================
-    # SECTION 8: MAIN EXECUTION
-    # ============================================================================
 
     def parse_all(self):
         """Main parsing pipeline"""
@@ -716,7 +642,6 @@ class TuroyoVerbParser:
 
         print(f"\n✅ Parsed {self.stats['verbs_parsed']} verbs, {self.stats['stems_parsed']} stems")
 
-        # Auto-number homonyms
         print("🔍 Checking for homonyms with different etymologies...")
         self.add_homonym_numbers()
 
@@ -727,7 +652,6 @@ class TuroyoVerbParser:
         output_file = Path(output_path)
         output_file.parent.mkdir(exist_ok=True, parents=True)
 
-        # Count examples
         total_examples = sum(
             sum(len(conj_data) for conj_data in stem['conjugations'].values())
             for verb in self.verbs
@@ -761,32 +685,26 @@ class TuroyoVerbParser:
         """Split verbs into individual JSON files"""
         print("\n🔄 Splitting into individual files...")
 
-        # Define both output directories
         output_dirs = [
-            Path('public/appdata/api/verbs'),      # For static client access
-            Path('server/assets/appdata/api/verbs') # For Nitro storage API
+            Path('public/appdata/api/verbs'),
+            Path('server/assets/appdata/api/verbs')
         ]
 
-        # Create directories and clear existing files
         for output_dir in output_dirs:
             output_dir.mkdir(parents=True, exist_ok=True)
             for f in output_dir.glob('*.json'):
                 f.unlink()
 
-        # Track written files to detect duplicates
         written_files = set()
 
-        # Write to both locations
         for verb in self.verbs:
             root = verb['root']
             filename = f"{root}.json"
 
-            # Check for duplicates (indicates parser bug)
             if filename in written_files:
                 print(f"\n❌ ERROR: Duplicate root detected: '{root}'")
                 print(f"   This indicates a parser bug - likely a German gloss that wasn't filtered.")
                 print(f"   Check the etymology and content of this verb.")
-                # Print some debug info
                 etym = verb.get('etymology')
                 stems = verb.get('stems', [])
                 print(f"   Etymology: {etym}")
@@ -808,13 +726,11 @@ class TuroyoVerbParser:
         """Generate statistics"""
         print("\n🔄 Generating statistics...")
 
-        # Count by stem type
         stem_counts = defaultdict(int)
         for verb in self.verbs:
             for stem in verb.get('stems', []):
                 stem_counts[stem.get('stem', 'Unknown')] += 1
 
-        # Etymology sources
         etym_sources = defaultdict(int)
         for verb in self.verbs:
             etym = verb.get('etymology')
@@ -823,7 +739,6 @@ class TuroyoVerbParser:
                     source = etymon.get('source', 'Unknown')
                     etym_sources[source] += 1
 
-        # Count total examples
         total_examples = sum(
             sum(len(conj_data) for conj_data in stem['conjugations'].values())
             for verb in self.verbs
@@ -848,16 +763,11 @@ class TuroyoVerbParser:
         print(f"✅ Statistics saved to {stats_file}")
 
 
-# ============================================================================
-# MAIN ENTRY POINT
-# ============================================================================
-
 def main():
     """Run the complete parsing pipeline"""
     import argparse
     import sys
 
-    # Parse command line arguments
     arg_parser = argparse.ArgumentParser(
         description='Parse Turoyo verb glossary from HTML source'
     )
@@ -879,16 +789,12 @@ def main():
 
     parser = TuroyoVerbParser('source/Turoyo_all_2024.html')
 
-    # Step 1: Parse HTML
     parser.parse_all()
 
-    # Step 2: Save complete data
     parser.save_json('data/verbs_final.json')
 
-    # Step 3: Split into individual files
     parser.split_into_files()
 
-    # Step 4: Generate statistics
     parser.generate_stats()
 
     print("\n" + "=" * 80)
@@ -901,7 +807,6 @@ def main():
     print(f"🔢 Homonyms numbered: {parser.stats.get('homonyms_numbered', 0)}")
     print("=" * 80)
 
-    # Step 5: Validate against baseline (optional)
     if args.validate:
         print("\n" + "=" * 80)
         print("VALIDATING AGAINST BASELINE")
@@ -918,7 +823,6 @@ def main():
             print(f"\n❌ Validation failed: {e}")
             sys.exit(1)
 
-    # Step 6: Update baseline (optional)
     if args.update_baseline:
         print("\n" + "=" * 80)
         print("UPDATING BASELINE SNAPSHOT")

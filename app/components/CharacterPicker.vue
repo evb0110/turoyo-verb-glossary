@@ -72,7 +72,6 @@ const emit = defineEmits<{
     select: [char: string]
 }>()
 
-// Character sets (alphabetical)
 const turoyoChars = ['ʔ', 'ʕ', 'č', 'ḏ', 'ə', 'ġ', 'ǧ', 'ḥ', 'ṣ', 'š', 'ṭ', 'ṯ', 'ž']
 const germanChars = ['ä', 'ö', 'ü', 'ß']
 

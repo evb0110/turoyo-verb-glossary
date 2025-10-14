@@ -3,7 +3,6 @@
         :ui="{ body: 'space-y-4' }"
         class="border border-transparent transition hover:border-primary/40"
     >
-        <!-- Stem header with label or title -->
         <template v-if="transformedStem.label_gloss_tokens?.length || transformedStem.label_raw">
             <div class="prose max-w-none text-sm">
                 <div class="font-semibold">
@@ -34,7 +33,6 @@
             </div>
         </template>
 
-        <!-- Conjugation groups with examples -->
         <div v-if="transformedStem.conjugationGroups.length" class="space-y-4">
             <div
                 v-for="group in transformedStem.conjugationGroups"
@@ -67,9 +65,6 @@
 import type { Stem } from '~/types/verb'
 import { transformStemForDisplay } from '~/utils/verbTransform'
 
-/**
- * Displays a single stem card with conjugations and examples
- */
 const props = defineProps<{
     stem: Stem
 }>()
