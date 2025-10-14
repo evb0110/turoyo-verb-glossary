@@ -43,7 +43,7 @@
 import type { Etymology, Etymon } from '~/types/verb'
 
 const props = defineProps<{
-    etymology: Etymology | null
+    etymology: Etymology | null | undefined
 }>()
 
 const groupedEtymons = computed(() => {

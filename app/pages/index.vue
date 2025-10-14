@@ -33,9 +33,7 @@
 
                 <VerbSearchResults
                     :search-query="searchQuery"
-                    :search-type="searchType"
-                    :regex-mode="regexMode"
-                    :case-param="caseParam"
+                    :search-type="searchEverything ? 'all' : 'roots'"
                     :displayed="filtered"
                     :verb-previews="verbPreviews"
                     :pending="pending"
@@ -55,7 +53,6 @@
 </template>
 
 <script lang="ts" setup>
-import { useRouteQuery } from '@vueuse/router'
 import {
     applyFilters,
     generateEtymologyOptions,
@@ -85,48 +82,33 @@ interface VerbMetadata {
 
 const showRegexHelp = ref(false)
 
-const q = useRouteQuery<string>('q', '')
-const searchType = useRouteQuery<'roots' | 'all'>('type', 'roots')
-const regexMode = useRouteQuery<'on' | 'off'>('regex', 'on')
-const caseParam = useRouteQuery<'on' | 'off'>('case', 'off')
-const filterLetter = useRouteQuery<string | null>('letter', null)
-const filterEtymology = useRouteQuery<string | null>('etymology', null)
-const filterStem = useRouteQuery<string | null>('stem', null)
-
-const searchEverything = computed({
-    get: () => searchType.value === 'all',
-    set: (value) => { searchType.value = value ? 'all' : 'roots' }
-})
-
-const useRegex = computed({
-    get: () => regexMode.value === 'on',
-    set: (value) => { regexMode.value = value ? 'on' : 'off' }
-})
-
-const caseSensitive = computed({
-    get: () => caseParam.value === 'on',
-    set: (value) => { caseParam.value = value ? 'on' : 'off' }
-})
+const q = useQuery('q', '')
+const searchEverything = useQuery('type', false, 'all', 'roots')
+const useRegex = useQuery('regex', true)
+const caseSensitive = useQuery('case', false)
+const filterLetter = useQuery('letter')
+const filterEtymology = useQuery('etymology')
+const filterStem = useQuery('stem')
 
 const searchPlaceholder = computed(() => {
-    if (regexMode.value === 'on') {
+    if (useRegex.value) {
         return 'Regex search (use \\c for consonants, \\v for vowels)…'
     }
-    return searchType.value === 'all'
+    return searchEverything.value
         ? 'Search for roots, forms, translations, or etymology keywords…'
         : 'Search for verb roots…'
 })
 
 const filters = computed(() => ({
-    letter: filterLetter.value ?? null,
-    etymology: filterEtymology.value ?? null,
-    stem: filterStem.value ?? null
+    letter: filterLetter.value,
+    etymology: filterEtymology.value,
+    stem: filterStem.value
 }))
 
 const searchQuery = ref(q.value)
 
 const { data: searchResults, pending } = await useAsyncData(
-    () => `search-${searchQuery.value}-${searchType.value}-${regexMode.value}-${caseParam.value}`,
+    () => `search-${searchQuery.value}-${searchEverything.value}-${useRegex.value}-${caseSensitive.value}`,
     async () => {
         if (!searchQuery.value || searchQuery.value.trim().length < 2) {
             return null
@@ -141,14 +123,14 @@ const { data: searchResults, pending } = await useAsyncData(
             method: 'POST',
             body: {
                 query: searchQuery.value,
-                useRegex: regexMode.value === 'on',
-                caseSensitive: caseParam.value === 'on',
-                searchType: searchType.value
+                useRegex: useRegex.value,
+                caseSensitive: caseSensitive.value,
+                searchType: searchEverything.value ? 'all' : 'roots'
             }
         })
     },
     {
-        watch: [searchQuery, searchType, regexMode, caseParam]
+        watch: [searchQuery, searchEverything, useRegex, caseSensitive]
     }
 )
 

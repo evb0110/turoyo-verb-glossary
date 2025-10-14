@@ -87,8 +87,6 @@ interface TableRow {
 const props = defineProps<{
     searchQuery: string
     searchType: 'roots' | 'all'
-    regexMode: 'on' | 'off'
-    caseParam: 'on' | 'off'
     displayed: VerbMetadata[]
     verbPreviews: Map<string, VerbPreview>
     pending: boolean
