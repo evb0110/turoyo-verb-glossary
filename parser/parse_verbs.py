@@ -73,6 +73,11 @@ class TuroyoVerbParser:
 
             lookbehind_start = max(0, match.start() - 300)
             lookbehind = section_html[lookbehind_start:match.start()]
+
+            if not any(c in root_chars for c in SPECIAL_TUROYO_CHARS):
+                form_with_slash = re.search(r'<span[^>]*>[^<]*\/[^<]+</span></p>\s*$', lookbehind, re.DOTALL)
+                if form_with_slash:
+                    continue
             if re.search(r'<span[^>]*>(?:Detransitive|Action\s+[Nn]oun)</span></p>\s*$', lookbehind, re.DOTALL):
                 continue
 

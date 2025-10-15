@@ -367,10 +367,10 @@ class RegressionValidator:
         has_regressions = bool(self.validation_errors or self.changes['removed'] or self.changes['modified'][ChangeType.REGRESSION])
         if has_regressions:
             html.append('<div class="status-icon">❌</div>')
-            html.append('<h2 style="color:
+            html.append('<h2 style="color: #dc3545;">Validation Failed</h2>')
         else:
             html.append('<div class="status-icon">✅</div>')
-            html.append('<h2 style="color:
+            html.append('<h2 style="color: #28a745;">Validation Passed</h2>')
 
         html.append('<h2>Summary</h2>')
         html.append('<div class="summary">')
