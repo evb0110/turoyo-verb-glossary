@@ -1,7 +1,6 @@
 import { matchesPattern } from '../utils/regexSearch'
 import type { Verb, Excerpt, VerbMetadata } from '~/types/verb'
 import { generateExcerpts } from '../utils/verbExcerpts'
-import { generateFullPreview } from '../utils/verbHtmlPreview'
 
 function extractMetadata(verb: Verb): VerbMetadata {
     const etymologySources: string[] = []
@@ -55,7 +54,7 @@ export default defineEventHandler(async (event) => {
 
     const storage = useStorage('assets:server')
     const matchingRoots: string[] = []
-    const verbPreviews: Record<string, { excerpts?: Excerpt[], preview?: string }> = {}
+    const verbPreviews: Record<string, { excerpts?: Excerpt[], verb?: Verb }> = {}
     const verbMetadata: Record<string, VerbMetadata> = {}
 
     const allFiles = await storage.getKeys('verbs')
@@ -95,7 +94,7 @@ export default defineEventHandler(async (event) => {
                     const verb = await storage.getItem<Verb>(`verbs/${root}.json`)
                     if (!verb) return null
 
-                    verbPreviews[root] = { preview: generateFullPreview(verb) }
+                    verbPreviews[root] = { verb }
 
                     verbMetadata[root] = extractMetadata(verb)
 
@@ -134,7 +133,7 @@ export default defineEventHandler(async (event) => {
 
                 if (matchesPattern(verb.root, query, { useRegex, caseSensitive })) {
                     if (searchType === 'roots') {
-                        verbPreviews[root] = { preview: generateFullPreview(verb) }
+                        verbPreviews[root] = { verb }
                     }
                     else {
                         verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
@@ -147,7 +146,7 @@ export default defineEventHandler(async (event) => {
                     for (const token of verb.lemma_header_tokens) {
                         if (matchesPattern(token.text, query, { useRegex, caseSensitive })) {
                             if (searchType === 'roots') {
-                                verbPreviews[root] = { preview: generateFullPreview(verb) }
+                                verbPreviews[root] = { verb }
                             }
                             else {
                                 verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
@@ -161,7 +160,7 @@ export default defineEventHandler(async (event) => {
                 for (const stem of verb.stems) {
                     if (stem.forms?.some(f => matchesPattern(f, query, { useRegex, caseSensitive }))) {
                         if (searchType === 'roots') {
-                            verbPreviews[root] = { preview: generateFullPreview(verb) }
+                            verbPreviews[root] = { verb }
                         }
                         else {
                             verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
@@ -174,7 +173,7 @@ export default defineEventHandler(async (event) => {
                         for (const token of stem.label_gloss_tokens) {
                             if (matchesPattern(token.text, query, { useRegex, caseSensitive })) {
                                 if (searchType === 'roots') {
-                                    verbPreviews[root] = { preview: generateFullPreview(verb) }
+                                    verbPreviews[root] = { verb }
                                 }
                                 else {
                                     verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
@@ -190,7 +189,7 @@ export default defineEventHandler(async (event) => {
                             for (const translation of example.translations) {
                                 if (matchesPattern(translation, query, { useRegex, caseSensitive })) {
                                     if (searchType === 'roots') {
-                                        verbPreviews[root] = { preview: generateFullPreview(verb) }
+                                        verbPreviews[root] = { verb }
                                     }
                                     else {
                                         verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
@@ -202,7 +201,7 @@ export default defineEventHandler(async (event) => {
 
                             if (matchesPattern(example.turoyo, query, { useRegex, caseSensitive })) {
                                 if (searchType === 'roots') {
-                                    verbPreviews[root] = { preview: generateFullPreview(verb) }
+                                    verbPreviews[root] = { verb }
                                 }
                                 else {
                                     verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
@@ -214,7 +213,7 @@ export default defineEventHandler(async (event) => {
                             for (const reference of example.references) {
                                 if (matchesPattern(reference, query, { useRegex, caseSensitive })) {
                                     if (searchType === 'roots') {
-                                        verbPreviews[root] = { preview: generateFullPreview(verb) }
+                                        verbPreviews[root] = { verb }
                                     }
                                     else {
                                         verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
@@ -236,7 +235,7 @@ export default defineEventHandler(async (event) => {
                             || (etymon.source_root && matchesPattern(etymon.source_root, query, { useRegex, caseSensitive }))
                         ) {
                             if (searchType === 'roots') {
-                                verbPreviews[root] = { preview: generateFullPreview(verb) }
+                                verbPreviews[root] = { verb }
                             }
                             else {
                                 verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
@@ -264,7 +263,7 @@ export default defineEventHandler(async (event) => {
     return {
         total: matchingRoots.length,
         roots: matchingRoots,
-        verbPreviews, // Pre-rendered HTML (either excerpts or full previews)
-        verbMetadata // Metadata for generating filter options
+        verbPreviews,
+        verbMetadata
     }
 })

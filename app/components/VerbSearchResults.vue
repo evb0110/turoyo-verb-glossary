@@ -27,11 +27,8 @@
                     Loading...
                 </div>
                 <div v-else-if="hasAnyPreviews" class="max-h-64 px-4 overflow-y-auto">
-                    <template v-if="searchType === 'roots' && verbPreviews.get(row.original.root)?.preview">
-                        <div
-                            class="preview-content whitespace-normal break-words"
-                            v-html="verbPreviews.get(row.original.root)!.preview"
-                        />
+                    <template v-if="searchType === 'roots' && verbPreviews.get(row.original.root)?.verb">
+                        <VerbPreview :verb="verbPreviews.get(row.original.root)!.verb!" />
                     </template>
                     <template v-else-if="verbPreviews.get(row.original.root)?.excerpts">
                         <div class="preview-excerpts space-y-2">
@@ -59,6 +56,7 @@
 <script setup lang="ts">
 import type { RouteLocationRaw } from '#vue-router'
 import { rootToSlug } from '~/utils/slugify'
+import type { Verb, Excerpt } from '~/types/verb'
 
 interface VerbMetadata {
     root: string
@@ -66,18 +64,9 @@ interface VerbMetadata {
     stems: string[]
 }
 
-interface Excerpt {
-    type: 'form' | 'example' | 'translation' | 'etymology' | 'gloss'
-    stem?: string
-    conjugationType?: string
-    text: string
-    html: string
-    label: string
-}
-
 interface VerbPreview {
     excerpts?: Excerpt[]
-    preview?: string
+    verb?: Verb
 }
 
 interface TableRow {

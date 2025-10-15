@@ -44,7 +44,10 @@ export default defineEventHandler(async (event) => {
             stats.stem_counts[stemType] = (stats.stem_counts[stemType] || 0) + 1
 
             for (const conjugationType in stem.conjugations) {
-                stats.total_examples += stem.conjugations[conjugationType].length
+                const examples = stem.conjugations[conjugationType]
+                if (examples) {
+                    stats.total_examples += examples.length
+                }
             }
         }
 

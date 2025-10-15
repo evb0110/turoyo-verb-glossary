@@ -59,25 +59,11 @@ import {
     generateLetterOptions,
     generateStemOptions
 } from '~/utils/searchFilters'
-
-interface Excerpt {
-    type: 'form' | 'example' | 'translation' | 'etymology' | 'gloss'
-    stem?: string
-    conjugationType?: string
-    text: string
-    html: string
-    label: string
-}
+import type { Verb, Excerpt, VerbMetadata } from '~/types/verb'
 
 interface VerbPreview {
     excerpts?: Excerpt[]
-    preview?: string
-}
-
-interface VerbMetadata {
-    root: string
-    etymology_sources: string[]
-    stems: string[]
+    verb?: Verb
 }
 
 const showRegexHelp = ref(false)
