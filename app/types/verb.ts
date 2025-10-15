@@ -71,3 +71,18 @@ export interface Statistics {
 export interface CrossReferences {
     [key: string]: string
 }
+
+export interface Excerpt {
+    type: 'form' | 'example' | 'translation' | 'etymology' | 'gloss'
+    stem?: string
+    conjugationType?: string
+    text: string
+    html: string
+    label: string
+}
+
+export interface VerbMetadata {
+    root: string
+    etymology_sources: string[]
+    stems: string[]
+}

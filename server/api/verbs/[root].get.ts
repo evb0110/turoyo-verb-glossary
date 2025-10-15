@@ -1,4 +1,4 @@
-import type { Verb } from '../../utils/verbs'
+import type { Verb } from '~/types/verb'
 import { slugToRoot } from '~/utils/slugify'
 
 export default defineEventHandler(async (event) => {

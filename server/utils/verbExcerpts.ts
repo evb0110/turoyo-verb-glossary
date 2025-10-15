@@ -1,16 +1,7 @@
-import type { Verb } from './verbs'
+import type { Verb, Excerpt } from '~/types/verb'
 import { createSearchRegex, matchAll } from './regexSearch'
 import { extractContext, tokenTextToString } from './textUtils'
 import { highlightMatches } from './highlightSSR'
-
-export interface Excerpt {
-    type: 'form' | 'example' | 'translation' | 'etymology' | 'gloss'
-    stem?: string
-    conjugationType?: string
-    text: string
-    html: string // HTML version with highlights
-    label: string
-}
 
 function addExcerpt(
     excerpts: Excerpt[],

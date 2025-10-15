@@ -1,6 +1,6 @@
 import { matchesPattern } from '../utils/regexSearch'
-import type { Verb } from '../utils/verbs'
-import { generateExcerpts, type Excerpt } from '../utils/verbExcerpts'
+import type { Verb, Excerpt } from '~/types/verb'
+import { generateExcerpts } from '../utils/verbExcerpts'
 import { generateFullPreview } from '../utils/verbHtmlPreview'
 
 export default defineEventHandler(async (event) => {

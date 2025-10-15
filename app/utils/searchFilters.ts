@@ -1,12 +1,9 @@
+import type { SelectOption } from '~/types/types/search'
+
 interface FilterableVerb {
     root: string
     etymology_sources: string[]
     stems: string[]
-}
-
-export interface SelectOption {
-    label: string
-    value: string | null
 }
 
 export function generateLetterOptions(results: FilterableVerb[]): SelectOption[] {

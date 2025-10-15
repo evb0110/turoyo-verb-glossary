@@ -1,13 +1,7 @@
 import { matchesPattern } from '../utils/regexSearch'
-import type { Verb } from '../utils/verbs'
-import { generateExcerpts, type Excerpt } from '../utils/verbExcerpts'
+import type { Verb, Excerpt, VerbMetadata } from '~/types/verb'
+import { generateExcerpts } from '../utils/verbExcerpts'
 import { generateFullPreview } from '../utils/verbHtmlPreview'
-
-interface VerbMetadata {
-    root: string
-    etymology_sources: string[]
-    stems: string[]
-}
 
 function extractMetadata(verb: Verb): VerbMetadata {
     const etymologySources: string[] = []

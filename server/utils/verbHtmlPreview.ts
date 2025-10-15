@@ -1,11 +1,5 @@
-import type { Verb } from './verbs'
+import type { Verb, Example } from '~/types/verb'
 import { truncateText, tokenTextToString } from './textUtils'
-
-interface Example {
-    turoyo: string
-    translations: string[]
-    references: string[]
-}
 
 function collectExamples(
     conjugations: { [key: string]: Example[] },
