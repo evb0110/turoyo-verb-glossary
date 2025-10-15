@@ -58,7 +58,7 @@ export default defineEventHandler(async (event) => {
     const verbPreviews: Record<string, { excerpts?: Excerpt[], preview?: string }> = {}
     const verbMetadata: Record<string, VerbMetadata> = {}
 
-    const allFiles = await storage.getKeys('appdata/api/verbs')
+    const allFiles = await storage.getKeys('verbs')
     const verbFiles = allFiles.filter(f => f.endsWith('.json'))
 
     console.log(`[Verb Search] Total verb files: ${verbFiles.length}`)
@@ -92,7 +92,7 @@ export default defineEventHandler(async (event) => {
 
             const batchPromises = batch.map(async (root: string) => {
                 try {
-                    const verb = await storage.getItem<Verb>(`appdata/api/verbs/${root}.json`)
+                    const verb = await storage.getItem<Verb>(`verbs/${root}.json`)
                     if (!verb) return null
 
                     verbPreviews[root] = { preview: generateFullPreview(verb) }

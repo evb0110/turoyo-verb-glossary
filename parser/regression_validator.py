@@ -41,7 +41,7 @@ class ChangeType:
 class RegressionValidator:
     """Validate parser output against baseline"""
 
-    def __init__(self, verbs_dir='public/appdata/api/verbs', baseline_dir='data/baseline'):
+    def __init__(self, verbs_dir='server/assets/verbs', baseline_dir='data/baseline'):
         self.verbs_dir = Path(verbs_dir)
         self.baseline_dir = Path(baseline_dir)
         self.validation_dir = Path('data/validation')

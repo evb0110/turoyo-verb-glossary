@@ -27,7 +27,7 @@ export default defineEventHandler(async (event) => {
 
         const batchPromises = batch.map(async (root: string) => {
             try {
-                const verb = await storage.getItem<Verb>(`appdata/api/verbs/${root}.json`)
+                const verb = await storage.getItem<Verb>(`verbs/${root}.json`)
 
                 if (!verb) {
                     console.warn(`[Translation Search] No data for ${root}`)

@@ -5,7 +5,7 @@ BASELINE SNAPSHOT GENERATOR
 Creates a "known good" baseline of parser output for regression testing.
 
 This script:
-- Reads all verb JSON files from public/appdata/api/verbs/
+- Reads all verb JSON files from server/assets/verbs/
 - Generates SHA256 checksums for each file
 - Creates summary statistics (counts, structures, etc.)
 - Saves baseline data to data/baseline/
@@ -15,7 +15,7 @@ Usage:
     python3 parser/snapshot_baseline.py --report     # Show current baseline info
 
 Author: Claude Code
-Created: 2025-10-13
+Last Updated: 2025-10-16
 """
 
 import json
@@ -29,7 +29,7 @@ from datetime import datetime
 class BaselineSnapshot:
     """Generate baseline snapshot of parser output"""
 
-    def __init__(self, verbs_dir='public/appdata/api/verbs'):
+    def __init__(self, verbs_dir='server/assets/verbs'):
         self.verbs_dir = Path(verbs_dir)
         self.baseline_dir = Path('data/baseline')
         self.baseline_dir.mkdir(parents=True, exist_ok=True)

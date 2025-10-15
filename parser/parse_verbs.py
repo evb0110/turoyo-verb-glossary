@@ -10,12 +10,11 @@ It does EVERYTHING automatically in one run:
 - Generate tokens with proper spacing (fixes text concatenation)
 - Extract lemma headers and stem labels
 - Split into individual verb JSON files
-- Generate statistics
 
 Usage: python3 parser/parse_verbs.py
 
 Author: Claude Code
-Last Updated: 2025-10-13
+Last Updated: 2025-10-16
 """
 
 import re
@@ -690,15 +689,11 @@ class TuroyoVerbParser:
         """Split verbs into individual JSON files"""
         print("\n🔄 Splitting into individual files...")
 
-        output_dirs = [
-            Path('public/appdata/api/verbs'),
-            Path('server/assets/appdata/api/verbs')
-        ]
+        output_dir = Path('server/assets/verbs')
+        output_dir.mkdir(parents=True, exist_ok=True)
 
-        for output_dir in output_dirs:
-            output_dir.mkdir(parents=True, exist_ok=True)
-            for f in output_dir.glob('*.json'):
-                f.unlink()
+        for f in output_dir.glob('*.json'):
+            f.unlink()
 
         written_files = set()
 
@@ -718,54 +713,11 @@ class TuroyoVerbParser:
 
             written_files.add(filename)
 
-            for output_dir in output_dirs:
-                filepath = output_dir / filename
-                with open(filepath, 'w', encoding='utf-8') as f:
-                    json.dump(verb, f, ensure_ascii=False, indent=2)
+            filepath = output_dir / filename
+            with open(filepath, 'w', encoding='utf-8') as f:
+                json.dump(verb, f, ensure_ascii=False, indent=2)
 
-        print(f"✅ Created {len(self.verbs)} individual verb files in:")
-        for output_dir in output_dirs:
-            print(f"   • {output_dir}")
-
-    def generate_stats(self):
-        """Generate statistics"""
-        print("\n🔄 Generating statistics...")
-
-        stem_counts = defaultdict(int)
-        for verb in self.verbs:
-            for stem in verb.get('stems', []):
-                stem_counts[stem.get('stem', 'Unknown')] += 1
-
-        etym_sources = defaultdict(int)
-        for verb in self.verbs:
-            etym = verb.get('etymology')
-            if etym and 'etymons' in etym:
-                for etymon in etym['etymons']:
-                    source = etymon.get('source', 'Unknown')
-                    etym_sources[source] += 1
-
-        total_examples = sum(
-            sum(len(conj_data) for conj_data in stem['conjugations'].values())
-            for verb in self.verbs
-            for stem in verb['stems']
-        )
-
-        stats = {
-            'total_verbs': len(self.verbs),
-            'total_stems': self.stats['stems_parsed'],
-            'total_examples': total_examples,
-            'stem_counts': dict(stem_counts),
-            'etymology_sources': dict(etym_sources),
-            'cross_references': self.stats.get('cross_references', 0),
-            'uncertain_entries': self.stats.get('uncertain_entries', 0),
-            'homonyms': self.stats.get('homonyms_numbered', 0)
-        }
-
-        stats_file = Path('public/appdata/api/stats.json')
-        with open(stats_file, 'w', encoding='utf-8') as f:
-            json.dump(stats, f, ensure_ascii=False, indent=2)
-
-        print(f"✅ Statistics saved to {stats_file}")
+        print(f"✅ Created {len(self.verbs)} individual verb files in {output_dir}")
 
 
 def main():
@@ -799,8 +751,6 @@ def main():
     parser.save_json('data/verbs_final.json')
 
     parser.split_into_files()
-
-    parser.generate_stats()
 
     print("\n" + "=" * 80)
     print("✅ PARSING COMPLETE!")
