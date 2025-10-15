@@ -11,7 +11,7 @@ export default defineEventHandler(async (event) => {
         })
     }
 
-    const root = slugToRoot(slug)
+    const root = slugToRoot(decodeURIComponent(slug))
 
     const storage = useStorage('assets:server')
     const verb = await storage.getItem<Verb>(`appdata/api/verbs/${root}.json`)
