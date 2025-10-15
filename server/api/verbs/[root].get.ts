@@ -1,24 +1,25 @@
 import type { Verb } from '../../utils/verbs'
+import { slugToRoot } from '~/utils/slugify'
 
 export default defineEventHandler(async (event) => {
-    const root = getRouterParam(event, 'root')
+    const slug = getRouterParam(event, 'root')
 
-    if (!root) {
+    if (!slug) {
         throw createError({
             statusCode: 400,
-            message: 'Verb root is required'
+            message: 'Verb slug is required'
         })
     }
 
-    const decodedRoot = decodeURIComponent(root)
+    const root = slugToRoot(slug)
 
     const storage = useStorage('assets:server')
-    const verb = await storage.getItem<Verb>(`appdata/api/verbs/${decodedRoot}.json`)
+    const verb = await storage.getItem<Verb>(`appdata/api/verbs/${root}.json`)
 
     if (!verb) {
         throw createError({
             statusCode: 404,
-            message: `Verb not found: ${decodedRoot}`
+            message: `Verb not found: ${root}`
         })
     }
 

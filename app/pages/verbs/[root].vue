@@ -33,9 +33,6 @@
 </template>
 
 <script lang="ts" setup>
-import type { Verb } from '~/types/verb'
-import { slugToRoot } from '~/utils/slugify'
-
 const route = useRoute()
 
 const toBack = computed(() => {
@@ -45,24 +42,7 @@ const toBack = computed(() => {
     }
 })
 
-const root = computed(() => {
-    const raw = route.params.root as string
-    try {
-        return decodeURIComponent(raw)
-    }
-    catch {
-        return raw
-    }
-})
-
-const { data: verb, error } = await useAsyncData(
-    () => `verb-${root.value}`,
-    () => {
-        const decodedRoot = slugToRoot(root.value)
-        const encodedRoot = encodeURIComponent(decodedRoot)
-        return $fetch<Verb>(`/api/verbs/${encodedRoot}`)
-    }
-)
+const { data: verb, error } = await useFetch(() => `/api/verbs/${route.params.root}`)
 
 if (error.value) {
     throw createError({
@@ -72,7 +52,7 @@ if (error.value) {
 }
 
 useHead({
-    title: () => (verb.value ? `${verb.value.root}` : undefined),
+    title: () => verb.value?.root,
     meta: [
         {
             name: 'description',
