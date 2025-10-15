@@ -110,7 +110,8 @@ const searchQuery = ref(q.value)
 const { data: searchResults, pending } = await useAsyncData(
     () => `search-${searchQuery.value}-${searchEverything.value}-${useRegex.value}-${caseSensitive.value}`,
     async () => {
-        if (!searchQuery.value || searchQuery.value.trim().length < 2) {
+        const query = (searchQuery.value || '').trim()
+        if (query.length < 2) {
             return null
         }
 
@@ -122,7 +123,7 @@ const { data: searchResults, pending } = await useAsyncData(
         }>('/api/verbs-fulltext-search', {
             method: 'POST',
             body: {
-                query: searchQuery.value,
+                query,
                 useRegex: useRegex.value,
                 caseSensitive: caseSensitive.value,
                 searchType: searchEverything.value ? 'all' : 'roots'

@@ -48,6 +48,12 @@ export default defineNuxtConfig({
             sourcemap: false
         }
     },
+    routeRules: {
+        '/_nuxt/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
+        '/favicon.ico': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
+        '/favicon.svg': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
+        '/safari-pinned-tab.svg': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } }
+    },
     eslint: {
         config: {
             stylistic: {
