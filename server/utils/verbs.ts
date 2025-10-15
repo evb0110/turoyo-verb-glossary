@@ -16,7 +16,7 @@ export interface Verb {
     } | null
     cross_reference: string | null
     stems: Array<{
-        stem?: string
+        stem: string
         forms: string[]
         conjugations: Record<string, Array<{
             turoyo: string

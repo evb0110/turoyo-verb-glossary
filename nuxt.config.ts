@@ -29,6 +29,12 @@ export default defineNuxtConfig({
     },
     dir: { public: 'public' },
     srcDir: 'app',
+    routeRules: {
+        '/_nuxt/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
+        '/favicon.ico': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
+        '/favicon.svg': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
+        '/safari-pinned-tab.svg': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } }
+    },
     devServer: {
         host: 'localhost',
         port: 3456
@@ -47,12 +53,6 @@ export default defineNuxtConfig({
         build: {
             sourcemap: false
         }
-    },
-    routeRules: {
-        '/_nuxt/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
-        '/favicon.ico': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
-        '/favicon.svg': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
-        '/safari-pinned-tab.svg': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } }
     },
     eslint: {
         config: {

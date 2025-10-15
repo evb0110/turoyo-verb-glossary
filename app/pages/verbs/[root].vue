@@ -23,7 +23,7 @@
 
             <div class="space-y-4">
                 <VerbStemCard
-                    v-for="stem in verb?.stems"
+                    v-for="stem in stems"
                     :key="stem.stem"
                     :stem="stem"
                 />
@@ -43,6 +43,10 @@ const toBack = computed(() => {
 })
 
 const { data: verb, error } = await useFetch(() => `/api/verbs/${route.params.root}`)
+
+const stems = computed(() => {
+    return (verb.value?.stems || []).filter(Boolean)
+})
 
 if (error.value) {
     throw createError({
