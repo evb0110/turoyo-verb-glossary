@@ -107,8 +107,17 @@ const filters = computed(() => ({
 
 const searchQuery = ref(q.value)
 
+const searchKey = computed(() => {
+    return [
+        'search',
+        searchQuery.value,
+        searchEverything.value,
+        useRegex.value,
+        caseSensitive.value
+    ].join('-')
+})
 const { data: searchResults, pending } = await useAsyncData(
-    () => `search-${searchQuery.value}-${searchEverything.value}-${useRegex.value}-${caseSensitive.value}`,
+    searchKey,
     async () => {
         const query = (searchQuery.value || '').trim()
         if (query.length < 2) {
@@ -129,9 +138,6 @@ const { data: searchResults, pending } = await useAsyncData(
                 searchType: searchEverything.value ? 'all' : 'roots'
             }
         })
-    },
-    {
-        watch: [searchQuery, searchEverything, useRegex, caseSensitive]
     }
 )
 

@@ -28,6 +28,13 @@ export default defineNuxtPlugin(async (_nuxtApp) => {
 
             console.log('[auth.server.ts] State set:', { user: authState.value, status: sessionStatus.value })
         }
+        else {
+            const authState = useState<AuthUser | null>('auth:user', () => null)
+            const sessionStatus = useState<string>('auth:sessionStatus', () => 'idle')
+
+            authState.value = null
+            sessionStatus.value = 'guest'
+        }
     }
     catch (error) {
         console.error('Server auth initialization error:', error)
