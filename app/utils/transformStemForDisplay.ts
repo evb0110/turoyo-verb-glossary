@@ -1,6 +1,6 @@
 import type { IStem } from '~/types/IStem'
-import type { ITransformedStem } from '~/utils/ITransformedStem'
 import { filterGlossTokens } from '~/utils/filterGlossTokens'
+import type { ITransformedStem } from '~/utils/ITransformedStem'
 
 export function transformStemForDisplay(stem: IStem): ITransformedStem {
     const conjugationGroups = Object.entries(stem.conjugations || {}).map(([name, examples]) => ({

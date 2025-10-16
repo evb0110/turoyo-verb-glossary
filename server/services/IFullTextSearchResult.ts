@@ -1,6 +1,6 @@
+import type { IExcerpt } from '~/types/IExcerpt'
 import type { IVerb } from '~/types/IVerb'
 import type { IVerbMetadata } from '~/types/IVerbMetadata'
-import type { IExcerpt } from '~/types/IExcerpt'
 
 export interface IFullTextSearchResult {
     total: number

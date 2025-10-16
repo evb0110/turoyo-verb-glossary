@@ -1,11 +1,11 @@
+import type { IExcerpt } from '~/types/IExcerpt'
 import type { IVerb } from '~/types/IVerb'
 import type { IVerbMetadata } from '~/types/IVerbMetadata'
-import type { IExcerpt } from '~/types/IExcerpt'
-import type { ISearchOptions } from '~~/server/services/ISearchOptions'
+import { extractMetadata } from '~~/server/services/extractMetadata'
 import type { IFullTextSearchResult } from '~~/server/services/IFullTextSearchResult'
+import type { ISearchOptions } from '~~/server/services/ISearchOptions'
 import { matchesPattern } from '~~/server/utils/matchesPattern'
 import { generateExcerpts } from '~~/server/utils/verbExcerpts'
-import { extractMetadata } from '~~/server/services/extractMetadata'
 
 export async function searchFullText(
     verbFiles: string[],

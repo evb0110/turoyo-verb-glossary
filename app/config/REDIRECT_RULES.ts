@@ -1,5 +1,5 @@
-import type { IRedirectRule } from '~/config/IRedirectRule'
 import { AUTH_ROUTES } from '~/config/AUTH_ROUTES'
+import type { IRedirectRule } from '~/config/IRedirectRule'
 
 export const REDIRECT_RULES: IRedirectRule[] = [
     {

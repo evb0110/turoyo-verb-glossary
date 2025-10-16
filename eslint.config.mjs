@@ -35,6 +35,36 @@ export default withNuxt(
             'import/max-dependencies': 'off',
             'import/no-default-export': 'off',
 
+            'import/order': ['error', {
+                'groups': [
+                    'builtin',
+                    'external',
+                    'internal',
+                    ['parent', 'sibling'],
+                    'index',
+                    'object',
+                    'type',
+                ],
+                'pathGroups': [
+                    {
+                        pattern: '~/**',
+                        group: 'internal',
+                        position: 'after',
+                    },
+                    {
+                        pattern: '~~/**',
+                        group: 'internal',
+                        position: 'after',
+                    },
+                ],
+                'pathGroupsExcludedImportTypes': ['builtin'],
+                'newlines-between': 'never',
+                'alphabetize': {
+                    order: 'asc',
+                    caseInsensitive: true,
+                },
+            }],
+
             '@stylistic/comma-dangle': ['error', {
                 arrays: 'always-multiline',
                 objects: 'always-multiline',

@@ -32,11 +32,11 @@
 </template>
 
 <script setup lang="ts">
-import type { IVerb } from '~/types/IVerb'
-import type { IStem } from '~/types/IStem'
 import type { IExample } from '~/types/IExample'
-import { truncateText } from '~/utils/truncateText'
+import type { IStem } from '~/types/IStem'
+import type { IVerb } from '~/types/IVerb'
 import { tokenTextToString } from '~/utils/tokenTextToString'
+import { truncateText } from '~/utils/truncateText'
 
 interface ProcessedExample {
     turoyo: string

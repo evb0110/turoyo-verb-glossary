@@ -55,13 +55,13 @@
 </template>
 
 <script lang="ts" setup>
+import type { IExcerpt } from '~/types/IExcerpt'
+import type { IVerb } from '~/types/IVerb'
+import type { IVerbMetadata } from '~/types/IVerbMetadata'
 import { applyFilters } from '~/utils/applyFilters'
 import { generateEtymologyOptions } from '~/utils/generateEtymologyOptions'
 import { generateLetterOptions } from '~/utils/generateLetterOptions'
 import { generateStemOptions } from '~/utils/generateStemOptions'
-import type { IVerb } from '~/types/IVerb'
-import type { IExcerpt } from '~/types/IExcerpt'
-import type { IVerbMetadata } from '~/types/IVerbMetadata'
 
 interface VerbPreview {
     excerpts?: IExcerpt[]

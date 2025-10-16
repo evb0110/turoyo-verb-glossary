@@ -1,6 +1,6 @@
-import { requireAdmin } from '~~/server/services/requireAdmin'
-import { updateUserRole } from '~~/server/repositories/updateUserRole'
 import { auth } from '~~/server/lib/auth'
+import { updateUserRole } from '~~/server/repositories/updateUserRole'
+import { requireAdmin } from '~~/server/services/requireAdmin'
 
 export default defineEventHandler(async (event) => {
     await requireAdmin(event)

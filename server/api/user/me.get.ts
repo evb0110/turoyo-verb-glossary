@@ -1,7 +1,7 @@
-import { auth } from '~~/server/lib/auth'
+import { eq } from 'drizzle-orm'
 import { db } from '~~/server/db'
 import { user } from '~~/server/db/schema'
-import { eq } from 'drizzle-orm'
+import { auth } from '~~/server/lib/auth'
 
 export default defineEventHandler(async (event) => {
     try {

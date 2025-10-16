@@ -1,7 +1,7 @@
-import type { IRedirectContext } from '~/config/IRedirectContext'
 import type { TUserRole } from '~/composables/TUserRole'
-import { isPublicRoute } from '~/config/isPublicRoute'
+import type { IRedirectContext } from '~/config/IRedirectContext'
 import { isAdminRoute } from '~/config/isAdminRoute'
+import { isPublicRoute } from '~/config/isPublicRoute'
 
 export function buildRedirectContext(
     currentPath: string,

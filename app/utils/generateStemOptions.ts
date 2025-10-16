@@ -1,5 +1,5 @@
-import type { ISelectOption } from '~/types/ISelectOption'
 import type { IFilterableVerb } from '~/types/IFilterableVerb'
+import type { ISelectOption } from '~/types/ISelectOption'
 
 export function generateStemOptions(results: IFilterableVerb[]): ISelectOption[] {
     if (results.length === 0) {

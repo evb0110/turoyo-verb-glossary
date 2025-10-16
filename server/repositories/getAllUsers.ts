@@ -1,6 +1,6 @@
+import { desc } from 'drizzle-orm'
 import { db } from '~~/server/db'
 import { user } from '~~/server/db/schema'
-import { desc } from 'drizzle-orm'
 
 export async function getAllUsers() {
     return db.select({

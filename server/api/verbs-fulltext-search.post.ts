@@ -1,7 +1,7 @@
-import { getVerbRoots } from '~~/server/repositories/getVerbRoots'
 import { getVerbFiles } from '~~/server/repositories/getVerbFiles'
-import { searchRoots } from '~~/server/services/searchRoots'
+import { getVerbRoots } from '~~/server/repositories/getVerbRoots'
 import { searchFullText } from '~~/server/services/searchFullText'
+import { searchRoots } from '~~/server/services/searchRoots'
 
 export default defineEventHandler(async (event) => {
     const body = await readBody(event)

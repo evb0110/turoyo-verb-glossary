@@ -1,8 +1,8 @@
-import type { IVerb } from '~/types/IVerb'
 import type { IExcerpt } from '~/types/IExcerpt'
+import type { IVerb } from '~/types/IVerb'
 import { createSearchRegex } from '~~/server/utils/createSearchRegex'
-import { matchAll } from '~~/server/utils/matchAll'
 import { extractContext } from '~~/server/utils/extractContext'
+import { matchAll } from '~~/server/utils/matchAll'
 import { tokenTextToString } from '~~/server/utils/tokenTextToString'
 
 function shouldAddExcerpt(excerptText: string, seenTexts: Set<string>): boolean {

@@ -1,6 +1,6 @@
-import { matchesPattern } from '~~/server/utils/matchesPattern'
-import type { IVerb } from '~/types/IVerb'
 import type { IExcerpt } from '~/types/IExcerpt'
+import type { IVerb } from '~/types/IVerb'
+import { matchesPattern } from '~~/server/utils/matchesPattern'
 import { generateExcerpts } from '~~/server/utils/verbExcerpts'
 
 export default defineEventHandler(async (event) => {

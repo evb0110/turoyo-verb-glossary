@@ -61,11 +61,11 @@
 </template>
 
 <script setup lang="ts">
-import type { RouteLocationRaw } from '#vue-router'
-import { rootToSlug } from '~/utils/rootToSlug'
-import type { IVerb } from '~/types/IVerb'
 import type { IExcerpt } from '~/types/IExcerpt'
+import type { IVerb } from '~/types/IVerb'
 import type { IVerbMetadata } from '~/types/IVerbMetadata'
+import { rootToSlug } from '~/utils/rootToSlug'
+import type { RouteLocationRaw } from '#vue-router'
 
 interface VerbPreview {
     excerpts?: IExcerpt[]

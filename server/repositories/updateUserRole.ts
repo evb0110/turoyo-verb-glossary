@@ -1,7 +1,7 @@
-import { db } from '~~/server/db'
-import { user } from '~~/server/db/schema'
 import { eq } from 'drizzle-orm'
 import type { TUserRole } from '~/composables/TUserRole'
+import { db } from '~~/server/db'
+import { user } from '~~/server/db/schema'
 
 export async function updateUserRole(userId: string, role: TUserRole) {
     const updated = await db.update(user)
