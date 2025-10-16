@@ -1,8 +1,8 @@
 import type { IVerb } from '~/types/IVerb'
+import type { IVerbMetadataWithPreview } from '~/types/IVerbMetadataWithPreview'
 import { setVerbMetadataWithPreview } from '~~/server/services/setVerbMetadataWithPreview'
 import type { IFullTextSearchResult } from '~~/server/types/IFullTextSearchResult'
 import type { ISearchOptions } from '~~/server/types/ISearchOptions'
-import type { IVerbMetadataWithPreview } from '~~/server/types/IVerbMetadataWithPreview'
 import { matchesPattern } from '~~/server/utils/matchesPattern'
 
 export async function searchFullText(

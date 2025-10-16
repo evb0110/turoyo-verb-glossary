@@ -1,7 +1,8 @@
 import { updateUserRole } from '~~/server/repositories/updateUserRole'
 import { requireAdmin } from '~~/server/services/requireAdmin'
+import type { IUserActionResponse } from '~~/server/types/IUserActionResponse'
 
-export default defineEventHandler(async (event) => {
+export default defineEventHandler<Promise<IUserActionResponse>>(async (event) => {
     await requireAdmin(event)
 
     const userId = getRouterParam(event, 'id')

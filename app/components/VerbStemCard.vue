@@ -1,3 +1,14 @@
+<script lang="ts" setup>
+import type { IStem } from '~/types/IStem'
+import { transformStemForDisplay } from '~/utils/transformStemForDisplay'
+
+const props = defineProps<{
+    stem: IStem
+}>()
+
+const transformedStem = computed(() => transformStemForDisplay(props.stem))
+</script>
+
 <template>
     <UCard
         :ui="{ body: 'space-y-4' }"
@@ -17,19 +28,17 @@
                         {{ t.text }}
                     </span>
                 </div>
-                <div v-else v-html="transformedStem.label_raw" />
+                <div v-else v-html="transformedStem.label_raw"></div>
             </div>
         </template>
         <template v-else>
             <div class="flex flex-wrap items-center justify-between gap-3">
-                <div>
-                    <h3 class="text-lg font-semibold">
-                        Stem {{ transformedStem.stem }}
-                    </h3>
-                    <p class="text-sm text-muted">
-                        {{ transformedStem.formsListDisplay }}
-                    </p>
-                </div>
+                <h3 class="text-lg font-semibold">
+                    Stem {{ transformedStem.stem }}
+                </h3>
+                <p class="text-sm text-muted">
+                    {{ transformedStem.formsListDisplay }}
+                </p>
             </div>
         </template>
 
@@ -40,7 +49,7 @@
                 class="space-y-3"
             >
                 <div class="flex items-center gap-2">
-                    <UIcon class="h-4 w-4" name="i-heroicons-book-open" />
+                    <UIcon class="h-4 w-4" name="i-heroicons-book-open"/>
                     <h4 class="font-medium">
                         {{ group.name }}
                     </h4>
@@ -60,14 +69,3 @@
         </p>
     </UCard>
 </template>
-
-<script lang="ts" setup>
-import type { IStem } from '~/types/IStem'
-import { transformStemForDisplay } from '~/utils/transformStemForDisplay'
-
-const props = defineProps<{
-    stem: IStem
-}>()
-
-const transformedStem = computed(() => transformStemForDisplay(props.stem))
-</script>

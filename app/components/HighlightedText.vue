@@ -1,12 +1,3 @@
-<template>
-    <span>
-        <template v-for="(segment, i) in segments" :key="i">
-            <mark v-if="segment.isMatch" class="highlight-match">{{ segment.text }}</mark>
-            <template v-else>{{ segment.text }}</template>
-        </template>
-    </span>
-</template>
-
 <script setup lang="ts">
 import { parseHighlights } from '~/utils/highlightText'
 
@@ -30,3 +21,12 @@ const segments = computed(() => {
     })
 })
 </script>
+
+<template>
+    <span>
+        <template v-for="(segment, i) in segments" :key="i">
+            <mark v-if="segment.isMatch" class="highlight-match">{{ segment.text }}</mark>
+            <template v-else>{{ segment.text }}</template>
+        </template>
+    </span>
+</template>

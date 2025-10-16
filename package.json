@@ -10,8 +10,10 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "lint": "eslint . --fix"
+    "postinstall": "nuxt prepare && husky install",
+    "lint": "eslint . --fix",
+    "typecheck": "nuxi typecheck",
+    "prepare": "husky"
   },
   "keywords": [
     "turoyo",
@@ -42,6 +44,13 @@
     "@iconify-json/lucide": "^1.2.69",
     "@types/node": "^24.6.2",
     "eslint-plugin-import": "^2.32.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.6.2",
     "tailwindcss": "^4.1.14"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": "eslint --fix",
+    "*.{json,md}": "prettier --write"
   }
 }

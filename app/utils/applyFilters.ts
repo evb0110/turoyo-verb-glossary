@@ -7,7 +7,7 @@ export function applyFilters(
         etymology: string | null
         stem: string | null
     }
-): IFilterableVerb[] {
+) {
     let filtered = results
 
     if (filters.letter) {

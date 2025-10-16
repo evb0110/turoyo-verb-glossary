@@ -1,3 +1,13 @@
+<script lang="ts" setup>
+const props = defineProps<{
+    references: string[]
+}>()
+
+const filteredReferences = computed(() =>
+    props.references.filter(r => r && r.trim().length)
+)
+</script>
+
 <template>
     <div v-if="references?.length" class="space-y-1 text-xs">
         <div class="flex flex-wrap gap-1">
@@ -11,13 +21,3 @@
         </div>
     </div>
 </template>
-
-<script lang="ts" setup>
-const props = defineProps<{
-    references: string[]
-}>()
-
-const filteredReferences = computed(() =>
-    props.references.filter(r => r && r.trim().length)
-)
-</script>

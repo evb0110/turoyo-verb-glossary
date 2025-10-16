@@ -1,3 +1,11 @@
+<script lang="ts" setup>
+import type { IExample } from '~/types/IExample'
+
+defineProps<{
+    example: IExample
+}>()
+</script>
+
 <template>
     <UCard
         :ui="{ body: 'space-y-3' }"
@@ -8,16 +16,8 @@
             {{ example.turoyo || '—' }}
         </div>
 
-        <VerbTranslationList :translations="example.translations" />
+        <VerbTranslationList :translations="example.translations"/>
 
-        <VerbReferenceBadges :references="example.references" />
+        <VerbReferenceBadges :references="example.references"/>
     </UCard>
 </template>
-
-<script lang="ts" setup>
-import type { IExample } from '~/types/IExample'
-
-defineProps<{
-    example: IExample
-}>()
-</script>

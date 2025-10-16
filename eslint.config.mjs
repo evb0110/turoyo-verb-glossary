@@ -30,6 +30,42 @@ export default withNuxt(
                     multiline: 'always',
                 },
             }],
+            'vue/html-closing-bracket-spacing': ['error', {
+                startTag: 'never',
+                endTag: 'never',
+                selfClosingTag: 'never',
+            }],
+            'vue/html-quotes': ['error', 'double'],
+            'vue/html-self-closing': ['error', {
+                html: {
+                    void: 'always',
+                    normal: 'never',
+                    component: 'always',
+                },
+                svg: 'always',
+                math: 'always',
+            }],
+            'vue/mustache-interpolation-spacing': ['error', 'always'],
+            'vue/no-multi-spaces': 'error',
+            'vue/no-spaces-around-equal-signs-in-attribute': 'error',
+            'vue/attributes-order': ['error', {
+                order: [
+                    'DEFINITION',
+                    'LIST_RENDERING',
+                    'CONDITIONALS',
+                    'RENDER_MODIFIERS',
+                    'GLOBAL',
+                    ['UNIQUE', 'SLOT'],
+                    'TWO_WAY_BINDING',
+                    'OTHER_DIRECTIVES',
+                    'OTHER_ATTR',
+                    'EVENTS',
+                    'CONTENT',
+                ],
+            }],
+            'vue/block-order': ['error', {
+                order: ['script', 'template', 'style'],
+            }],
             'vue/multi-word-component-names': 'off',
             'vue/no-v-html': 'off',
 

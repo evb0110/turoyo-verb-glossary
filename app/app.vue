@@ -8,9 +8,9 @@ if (import.meta.client && sessionStatus.value === 'idle') {
 
 <template>
     <UApp :ui="{ primary: 'teal', gray: 'slate' }">
-        <NuxtLoadingIndicator />
+        <NuxtLoadingIndicator/>
         <NuxtLayout>
-            <NuxtPage />
+            <NuxtPage/>
         </NuxtLayout>
     </UApp>
 </template>

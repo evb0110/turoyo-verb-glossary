@@ -1,4 +1,4 @@
-import type { TUserRole } from '~/composables/TUserRole'
+import type { TUserRole } from '~/types/TUserRole'
 
 export interface IUser {
     id: string

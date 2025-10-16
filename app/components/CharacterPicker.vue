@@ -1,3 +1,20 @@
+<script setup lang="ts">
+const isOpen = defineModel<boolean>('open', {
+    default: false,
+})
+
+const emit = defineEmits<{
+    select: [char: string]
+}>()
+
+const turoyoChars = ['ʔ', 'ʕ', 'č', 'ḏ', 'ə', 'ġ', 'ǧ', 'ḥ', 'ṣ', 'š', 'ṭ', 'ṯ', 'ž']
+const germanChars = ['ä', 'ö', 'ü', 'ß']
+
+function handleCharClick(char: string) {
+    emit('select', char)
+}
+</script>
+
 <template>
     <UPopover v-model:open="isOpen">
         <UButton
@@ -64,20 +81,3 @@
         </template>
     </UPopover>
 </template>
-
-<script setup lang="ts">
-const isOpen = defineModel<boolean>('open', {
-    default: false,
-})
-
-const emit = defineEmits<{
-    select: [char: string]
-}>()
-
-const turoyoChars = ['ʔ', 'ʕ', 'č', 'ḏ', 'ə', 'ġ', 'ǧ', 'ḥ', 'ṣ', 'š', 'ṭ', 'ṯ', 'ž']
-const germanChars = ['ä', 'ö', 'ü', 'ß']
-
-function handleCharClick(char: string) {
-    emit('select', char)
-}
-</script>

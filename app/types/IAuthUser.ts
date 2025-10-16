@@ -1,4 +1,4 @@
-import type { TUserRole } from '~/composables/TUserRole'
+import type { TUserRole } from '~/types/TUserRole'
 
 export interface IAuthUser {
     id: string
@@ -6,5 +6,5 @@ export interface IAuthUser {
     email: string
     image?: string | null
     role: TUserRole
-    createdAt: string
+    createdAt: Date | string
 }

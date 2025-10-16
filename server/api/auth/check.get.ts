@@ -2,8 +2,9 @@ import { eq } from 'drizzle-orm'
 import { db } from '~~/server/db'
 import { user } from '~~/server/db/schema'
 import { auth } from '~~/server/lib/auth'
+import type { IAuthCheckResponse } from '~~/server/types/IAuthCheckResponse'
 
-export default defineEventHandler(async (event) => {
+export default defineEventHandler<Promise<IAuthCheckResponse>>(async (event) => {
     try {
         const session = await auth.api.getSession({
             headers: event.headers,

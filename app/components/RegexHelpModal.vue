@@ -1,3 +1,9 @@
+<script setup lang="ts">
+const isOpen = defineModel<boolean>('open', {
+    required: true,
+})
+</script>
+
 <template>
     <UModal v-model:open="isOpen" :ui="{ content: 'sm:max-w-2xl' }" title="Regex Search Help">
         <template #body>
@@ -110,9 +116,3 @@
         </template>
     </UModal>
 </template>
-
-<script setup lang="ts">
-const isOpen = defineModel<boolean>('open', {
-    required: true,
-})
-</script>

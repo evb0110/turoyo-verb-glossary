@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { IAuthUser } from '~/composables/IAuthUser'
+import type { IAuthUser } from '~/types/IAuthUser'
 
 const { user } = useAuth()
 
@@ -7,7 +7,7 @@ const { data: users, refresh: refreshUsers } = await useFetch<IAuthUser[]>('/api
     watch: false,
 })
 
-const loading = ref<string | null>(null)
+const loading = ref(null as string | null)
 const toastStore = useToast()
 
 const approveUser = async (userId: string) => {
@@ -103,7 +103,7 @@ const getRoleBadgeColor = (role: string) => {
     }
 }
 
-const formatDate = (date: string) => {
+const formatDate = (date: string | Date) => {
     return new Date(date).toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'short',
@@ -241,7 +241,7 @@ const formatDate = (date: string) => {
                                         v-if="u.id === user?.id"
                                         class="text-xs text-gray-400
                                         dark:text-gray-600 px-2 py-1"
-                                    />
+                                    ></span>
                                 </div>
                             </td>
                         </tr>

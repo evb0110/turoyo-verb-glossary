@@ -6,7 +6,7 @@ const { isPending } = useAuth()
     <div v-if="isPending" class="bg-orange-50 dark:bg-orange-900/20 border-b border-orange-200 dark:border-orange-800">
         <div class="container mx-auto px-4 py-4 max-w-5xl">
             <div class="flex flex-col items-center gap-3 text-center">
-                <Icon name="i-heroicons-clock" class="w-6 h-6 text-orange-600 dark:text-orange-400" />
+                <Icon name="i-heroicons-clock" class="w-6 h-6 text-orange-600 dark:text-orange-400"/>
                 <div>
                     <h3 class="text-sm font-semibold text-orange-900 dark:text-orange-200">
                         Account Pending Approval

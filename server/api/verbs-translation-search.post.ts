@@ -1,9 +1,10 @@
 import type { IExcerpt } from '~/types/IExcerpt'
 import type { IVerb } from '~/types/IVerb'
+import type { ITranslationSearchResponse } from '~~/server/types/ITranslationSearchResponse'
 import { matchesPattern } from '~~/server/utils/matchesPattern'
 import { generateExcerpts } from '~~/server/utils/verbExcerpts'
 
-export default defineEventHandler(async (event) => {
+export default defineEventHandler<Promise<ITranslationSearchResponse>>(async (event) => {
     const body = await readBody(event)
     const {
         roots, query, useRegex, caseSensitive, searchType,

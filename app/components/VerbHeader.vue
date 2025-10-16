@@ -1,3 +1,12 @@
+<script lang="ts" setup>
+import type { IVerb } from '~/types/IVerb'
+import { rootToSlug } from '~/utils/rootToSlug'
+
+defineProps<{
+    verb: IVerb
+}>()
+</script>
+
 <template>
     <div class="flex flex-col gap-4">
         <div class="flex flex-wrap items-start justify-between gap-4">
@@ -25,12 +34,3 @@
         </div>
     </div>
 </template>
-
-<script lang="ts" setup>
-import type { IVerb } from '~/types/IVerb'
-import { rootToSlug } from '~/utils/rootToSlug'
-
-defineProps<{
-    verb: IVerb
-}>()
-</script>

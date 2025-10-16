@@ -1,57 +1,3 @@
-<template>
-    <div class="space-y-6 py-4">
-        <UCard>
-            <div class="space-y-4">
-                <SearchControls
-                    v-model:query="q"
-                    v-model:search-everything="searchEverything"
-                    v-model:use-regex="useRegex"
-                    v-model:case-sensitive="caseSensitive"
-                    :placeholder="searchPlaceholder"
-                    @search="performSearch"
-                    @clear="clearSearch"
-                    @show-help="showRegexHelp = true"
-                />
-
-                <div class="pt-2">
-                    <VerbFilters
-                        v-model:etymology="filterEtymology"
-                        v-model:letter="filterLetter"
-                        v-model:stem="filterStem"
-                        :etymologies="etymologyOptions"
-                        :letters="letterOptions"
-                        :stems="stemOptions"
-                        @reset="resetFilters"
-                    />
-                </div>
-
-                <SearchResultsMetadata
-                    :search-query="searchQuery"
-                    :displayed-count="filtered.length"
-                    :filters="filters"
-                />
-
-                <VerbSearchResults
-                    :search-query="searchQuery"
-                    :displayed="filtered"
-                    :pending="pending"
-                    :use-regex="useRegex"
-                    :case-sensitive="caseSensitive"
-                />
-
-                <div
-                    v-if="searchQuery.length >= 2 && filtered.length === 0 && !pending"
-                    class="rounded-lg border border-dashed px-4 py-6 text-center text-sm text-muted"
-                >
-                    No matches found. Try another keyword or broaden your search.
-                </div>
-            </div>
-        </UCard>
-
-        <RegexHelpModal v-model:open="showRegexHelp" />
-    </div>
-</template>
-
 <script lang="ts" setup>
 import type { IVerbMetadataWithPreview } from '~/types/IVerbMetadataWithPreview'
 import { applyFilters } from '~/utils/applyFilters'
@@ -169,3 +115,57 @@ const filtered = computed(() => {
     return applyFilters(result, filters.value)
 })
 </script>
+
+<template>
+    <div class="space-y-6 py-4">
+        <UCard>
+            <div class="space-y-4">
+                <SearchControls
+                    v-model:query="q"
+                    v-model:search-everything="searchEverything"
+                    v-model:use-regex="useRegex"
+                    v-model:case-sensitive="caseSensitive"
+                    :placeholder="searchPlaceholder"
+                    @search="performSearch"
+                    @clear="clearSearch"
+                    @show-help="showRegexHelp = true"
+                />
+
+                <div class="pt-2">
+                    <VerbFilters
+                        v-model:etymology="filterEtymology"
+                        v-model:letter="filterLetter"
+                        v-model:stem="filterStem"
+                        :etymologies="etymologyOptions"
+                        :letters="letterOptions"
+                        :stems="stemOptions"
+                        @reset="resetFilters"
+                    />
+                </div>
+
+                <SearchResultsMetadata
+                    :search-query="searchQuery"
+                    :displayed-count="filtered.length"
+                    :filters="filters"
+                />
+
+                <VerbSearchResults
+                    :search-query="searchQuery"
+                    :displayed="filtered"
+                    :pending="pending"
+                    :use-regex="useRegex"
+                    :case-sensitive="caseSensitive"
+                />
+
+                <div
+                    v-if="searchQuery.length >= 2 && filtered.length === 0 && !pending"
+                    class="rounded-lg border border-dashed px-4 py-6 text-center text-sm text-muted"
+                >
+                    No matches found. Try another keyword or broaden your search.
+                </div>
+            </div>
+        </UCard>
+
+        <RegexHelpModal v-model:open="showRegexHelp"/>
+    </div>
+</template>

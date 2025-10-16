@@ -2,8 +2,9 @@ import { eq, count } from 'drizzle-orm'
 import { db } from '~~/server/db'
 import { user } from '~~/server/db/schema'
 import { auth } from '~~/server/lib/auth'
+import type { IPendingCountResponse } from '~~/server/types/IPendingCountResponse'
 
-export default defineEventHandler(async (event) => {
+export default defineEventHandler<Promise<IPendingCountResponse>>(async (event) => {
     const session = await auth.api.getSession({
         headers: event.headers,
     })

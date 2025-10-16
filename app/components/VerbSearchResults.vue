@@ -1,3 +1,50 @@
+<script setup lang="ts">
+import type { IVerbMetadataWithPreview } from '~/types/IVerbMetadataWithPreview'
+import { rootToSlug } from '~/utils/rootToSlug'
+import type { RouteLocationRaw } from '#vue-router'
+
+interface TableRow {
+    original: IVerbMetadataWithPreview
+}
+
+defineProps<{
+    searchQuery: string
+    displayed: IVerbMetadataWithPreview[]
+    pending: boolean
+    useRegex: boolean
+    caseSensitive: boolean
+}>()
+
+const route = useRoute()
+
+function getTo(row: TableRow): RouteLocationRaw {
+    return {
+        path: `/verbs/${rootToSlug(row.original.root)}`,
+        query: route.query,
+    }
+}
+
+const columns = [
+    {
+        accessorKey: 'root',
+        header: 'Root',
+    },
+    {
+        accessorKey: 'etymology_source',
+        header: 'Etymology',
+    },
+    {
+        accessorKey: 'preview',
+        header: 'Article Preview',
+        meta: {
+            class: {
+                td: 'p-0',
+            },
+        },
+    },
+]
+</script>
+
 <template>
     <UTable
         v-if="searchQuery.length >= 2"
@@ -62,53 +109,6 @@
         </template>
     </UTable>
 </template>
-
-<script setup lang="ts">
-import type { IVerbMetadataWithPreview } from '~/types/IVerbMetadataWithPreview'
-import { rootToSlug } from '~/utils/rootToSlug'
-import type { RouteLocationRaw } from '#vue-router'
-
-interface TableRow {
-    original: IVerbMetadataWithPreview
-}
-
-defineProps<{
-    searchQuery: string
-    displayed: IVerbMetadataWithPreview[]
-    pending: boolean
-    useRegex: boolean
-    caseSensitive: boolean
-}>()
-
-const route = useRoute()
-
-function getTo(row: TableRow): RouteLocationRaw {
-    return {
-        path: `/verbs/${rootToSlug(row.original.root)}`,
-        query: route.query,
-    }
-}
-
-const columns = [
-    {
-        accessorKey: 'root',
-        header: 'Root',
-    },
-    {
-        accessorKey: 'etymology_source',
-        header: 'Etymology',
-    },
-    {
-        accessorKey: 'preview',
-        header: 'Article Preview',
-        meta: {
-            class: {
-                td: 'p-0',
-            },
-        },
-    },
-]
-</script>
 
 <style>
 .verb-results-table table {

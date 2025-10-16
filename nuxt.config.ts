@@ -91,6 +91,9 @@ export default defineNuxtConfig({
             sourcemap: false,
         },
     },
+    typescript: {
+        typeCheck: true,
+    },
     eslint: {
         config: {
             stylistic: {

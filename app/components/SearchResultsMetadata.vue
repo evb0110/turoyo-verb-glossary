@@ -1,3 +1,13 @@
+<script setup lang="ts">
+import type { IFilters } from '~/types/IFilters'
+
+defineProps<{
+    searchQuery: string
+    displayedCount: number
+    filters: IFilters
+}>()
+</script>
+
 <template>
     <div v-if="searchQuery.length >= 2" class="flex flex-wrap items-center gap-3 pt-4 text-sm text-muted">
         <span>
@@ -17,13 +27,3 @@
         </UBadge>
     </div>
 </template>
-
-<script setup lang="ts">
-import type { IFilters } from '~/types/IFilters'
-
-defineProps<{
-    searchQuery: string
-    displayedCount: number
-    filters: IFilters
-}>()
-</script>

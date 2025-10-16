@@ -1,38 +1,3 @@
-<template>
-    <div>
-        <UModal
-            v-if="open"
-            v-model:open="open"
-            title="Quick search"
-        >
-            <template #body>
-                <div class="">
-                    <UInput
-                        ref="inputRef"
-                        v-model="query"
-                        icon="i-heroicons-magnifying-glass"
-                        :placeholder="placeholder"
-                        class="w-full"
-                        @keydown.enter.prevent="submit"
-                    />
-                    <div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
-                        <div>
-                            Press Enter to search
-                        </div>
-                    </div>
-                </div>
-            </template>
-        </UModal>
-    </div>
-
-    <UButton
-        class="sr-only"
-        aria-hidden="true"
-        tabindex="-1"
-        @click="open = true"
-    />
-</template>
-
 <script setup lang="ts">
 const route = useRoute()
 const router = useRouter()
@@ -103,6 +68,41 @@ function submit() {
     })
 }
 </script>
+
+<template>
+    <div>
+        <UModal
+            v-if="open"
+            v-model:open="open"
+            title="Quick search"
+        >
+            <template #body>
+                <div class="">
+                    <UInput
+                        ref="inputRef"
+                        v-model="query"
+                        icon="i-heroicons-magnifying-glass"
+                        :placeholder="placeholder"
+                        class="w-full"
+                        @keydown.enter.prevent="submit"
+                    />
+                    <div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+                        <div>
+                            Press Enter to search
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </UModal>
+    </div>
+
+    <UButton
+        class="sr-only"
+        aria-hidden="true"
+        tabindex="-1"
+        @click="open = true"
+    />
+</template>
 
 <style scoped>
 </style>

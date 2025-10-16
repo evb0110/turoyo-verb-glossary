@@ -1,37 +1,3 @@
-<template>
-    <div class="space-y-6 p-6">
-        <div class="flex justify-end">
-            <UButton icon="i-heroicons-arrow-left-circle" :to="toBack" variant="ghost">
-                Back to verb list
-            </UButton>
-        </div>
-
-        <UCard>
-            <template #header>
-                <VerbHeader :verb="verb!" />
-            </template>
-
-            <VerbEtymology v-if="verb?.etymology" :etymology="verb?.etymology" />
-        </UCard>
-
-        <div class="space-y-4">
-            <div class="flex items-center justify-between">
-                <h2 class="text-xl font-semibold">
-                    Stems
-                </h2>
-            </div>
-
-            <div class="space-y-4">
-                <VerbStemCard
-                    v-for="stem in stems"
-                    :key="stem.stem"
-                    :stem="stem"
-                />
-            </div>
-        </div>
-    </div>
-</template>
-
 <script lang="ts" setup>
 const route = useRoute()
 
@@ -65,3 +31,37 @@ useHead({
     ],
 })
 </script>
+
+<template>
+    <div class="space-y-6 p-6">
+        <div class="flex justify-end">
+            <UButton icon="i-heroicons-arrow-left-circle" :to="toBack" variant="ghost">
+                Back to verb list
+            </UButton>
+        </div>
+
+        <UCard>
+            <template #header>
+                <VerbHeader :verb="verb!"/>
+            </template>
+
+            <VerbEtymology v-if="verb?.etymology" :etymology="verb?.etymology"/>
+        </UCard>
+
+        <div class="space-y-4">
+            <div class="flex items-center justify-between">
+                <h2 class="text-xl font-semibold">
+                    Stems
+                </h2>
+            </div>
+
+            <div class="space-y-4">
+                <VerbStemCard
+                    v-for="stem in stems"
+                    :key="stem.stem"
+                    :stem="stem"
+                />
+            </div>
+        </div>
+    </div>
+</template>

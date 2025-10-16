@@ -1,5 +1,5 @@
 import { eq } from 'drizzle-orm'
-import type { TUserRole } from '~/composables/TUserRole'
+import type { TUserRole } from '~/types/TUserRole'
 import { db } from '~~/server/db'
 import { user } from '~~/server/db/schema'
 

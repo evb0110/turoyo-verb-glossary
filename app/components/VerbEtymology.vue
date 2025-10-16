@@ -1,3 +1,30 @@
+<script lang="ts" setup>
+import type { IEtymology } from '~/types/IEtymology'
+import type { IEtymon } from '~/types/IEtymon'
+
+const props = defineProps<{
+    etymology: IEtymology | null | undefined
+}>()
+
+const groupedEtymons = computed(() => {
+    if (!props.etymology?.etymons) return []
+
+    const groups = new Map<string | undefined, IEtymon[]>()
+    for (const etymon of props.etymology.etymons) {
+        const source = etymon.source || undefined
+        if (!groups.has(source)) {
+            groups.set(source, [])
+        }
+        groups.get(source)!.push(etymon)
+    }
+
+    return Array.from(groups.entries()).map(([source, etymons]) => ({
+        source,
+        etymons,
+    }))
+})
+</script>
+
 <template>
     <div v-if="etymology?.etymons?.length" class="space-y-3">
         <h2 class="text-xs font-semibold uppercase tracking-wider text-muted">
@@ -38,30 +65,3 @@
         </div>
     </div>
 </template>
-
-<script lang="ts" setup>
-import type { IEtymology } from '~/types/IEtymology'
-import type { IEtymon } from '~/types/IEtymon'
-
-const props = defineProps<{
-    etymology: IEtymology | null | undefined
-}>()
-
-const groupedEtymons = computed(() => {
-    if (!props.etymology?.etymons) return []
-
-    const groups = new Map<string | undefined, IEtymon[]>()
-    for (const etymon of props.etymology.etymons) {
-        const source = etymon.source || undefined
-        if (!groups.has(source)) {
-            groups.set(source, [])
-        }
-        groups.get(source)!.push(etymon)
-    }
-
-    return Array.from(groups.entries()).map(([source, etymons]) => ({
-        source,
-        etymons,
-    }))
-})
-</script>

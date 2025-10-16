@@ -1,6 +1,6 @@
-import type { IStem } from '~/types/IStem'
 import type { IConjugationGroup } from '~/types/IConjugationGroup'
 import type { IGlossToken } from '~/types/IGlossToken'
+import type { IStem } from '~/types/IStem'
 
 export interface ITransformedStem extends IStem {
     exampleCount: number
