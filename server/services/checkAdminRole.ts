@@ -1,11 +1,6 @@
-import type { TUserRole } from '~/composables/TUserRole'
+import type { IUser } from '~~/server/types/IUser'
 
-type TUser = {
-    id: string
-    role: TUserRole
-} | null
-
-export function checkAdminRole<T extends TUser>(user: T) {
+export function checkAdminRole<T extends IUser>(user: T | null) {
     if (!user) {
         return { ok: false, error: 'not_found' } as const
     }
@@ -14,5 +9,5 @@ export function checkAdminRole<T extends TUser>(user: T) {
         return { ok: false, error: 'forbidden' } as const
     }
 
-    return { ok: true as const, data: user as NonNullable<T> }
+    return { ok: true as const, data: user }
 }
