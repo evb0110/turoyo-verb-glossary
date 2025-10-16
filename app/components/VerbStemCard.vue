@@ -2,11 +2,11 @@
 import type { IStem } from '~/types/IStem'
 import { transformStemForDisplay } from '~/utils/transformStemForDisplay'
 
-const props = defineProps<{
+const { stem } = defineProps<{
     stem: IStem
 }>()
 
-const transformedStem = computed(() => transformStemForDisplay(props.stem))
+const transformedStem = computed(() => transformStemForDisplay(stem))
 </script>
 
 <template>
@@ -14,58 +14,7 @@ const transformedStem = computed(() => transformStemForDisplay(props.stem))
         :ui="{ body: 'space-y-4' }"
         class="border border-transparent transition hover:border-primary/40"
     >
-        <template v-if="transformedStem.hasGlossInfo">
-            <div class="prose max-w-none text-sm">
-                <div class="font-semibold">
-                    {{ transformedStem.stemLabel }}
-                </div>
-                <div v-if="transformedStem.glossTokens.length">
-                    <span
-                        v-for="(t, i) in transformedStem.glossTokens"
-                        :key="i"
-                        :class="{ italic: t.italic }"
-                    >
-                        {{ t.text }}
-                    </span>
-                </div>
-                <div v-else v-html="transformedStem.label_raw"></div>
-            </div>
-        </template>
-        <template v-else>
-            <div class="flex flex-wrap items-center justify-between gap-3">
-                <h3 class="text-lg font-semibold">
-                    Stem {{ transformedStem.stem }}
-                </h3>
-                <p class="text-sm text-muted">
-                    {{ transformedStem.formsListDisplay }}
-                </p>
-            </div>
-        </template>
-
-        <div v-if="transformedStem.hasExamples" class="space-y-4">
-            <div
-                v-for="group in transformedStem.conjugationGroups"
-                :key="group.name"
-                class="space-y-3"
-            >
-                <div class="flex items-center gap-2">
-                    <UIcon class="h-4 w-4" name="i-heroicons-book-open"/>
-                    <h4 class="font-medium">
-                        {{ group.name }}
-                    </h4>
-                </div>
-
-                <div class="grid gap-3">
-                    <VerbExample
-                        v-for="(example, index) in group.examples"
-                        :key="`${group.name}-${index}`"
-                        :example="example"
-                    />
-                </div>
-            </div>
-        </div>
-        <p v-else class="text-sm text-muted">
-            No examples available.
-        </p>
+        <StemHeader :stem="transformedStem"/>
+        <StemExamples :stem="transformedStem"/>
     </UCard>
 </template>

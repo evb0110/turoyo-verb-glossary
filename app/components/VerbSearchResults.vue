@@ -78,30 +78,13 @@ const columns = [
                     :verb="row.original.verbPreview"
                     class="max-h-64 px-4 overflow-y-auto"
                 />
-                <div
+                <ExcerptsPreview
                     v-else-if="row.original.excerpts"
-                    class="preview-excerpts space-y-2 max-h-64 px-4 overflow-y-auto"
-                >
-                    <div
-                        v-for="(excerpt, i) in row.original.excerpts"
-                        :key="i"
-                        class="preview-excerpt"
-                    >
-                        <span
-                            class="excerpt-label block text-xs font-semibold text-gray-600 dark:text-gray-400"
-                        >
-                            {{ excerpt.label }}
-                        </span>
-                        <span class="excerpt-text block whitespace-normal break-words">
-                            <HighlightedText
-                                :text="excerpt.text"
-                                :query="searchQuery"
-                                :use-regex="useRegex"
-                                :case-sensitive="caseSensitive"
-                            />
-                        </span>
-                    </div>
-                </div>
+                    :excerpts="row.original.excerpts"
+                    :search-query="searchQuery"
+                    :use-regex="useRegex"
+                    :case-sensitive="caseSensitive"
+                />
                 <div v-else class="text-sm text-gray-400">
                     —
                 </div>
