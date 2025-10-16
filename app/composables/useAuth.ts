@@ -58,7 +58,6 @@ export const useAuth = () => {
 
     const checkSession = async () => {
         if (sessionStatus.value === 'authenticated' && user.value) {
-            console.log('Session already loaded from SSR')
             return
         }
 
@@ -66,7 +65,6 @@ export const useAuth = () => {
 
         try {
             const session = await client.getSession()
-            console.log('Session:', session)
 
             if (session.data?.user) {
                 const response = await $fetch<IAuthUser | null>('/api/user/me')
