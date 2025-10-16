@@ -1,9 +1,12 @@
 // @ts-check
 import withNuxt from './.nuxt/eslint.config.mjs'
+import preferGenericTypeAnnotation from './eslint-rules/prefer-generic-type-annotation.mjs'
 
 export default withNuxt(
     {
+        plugins: { 'custom-rules': { rules: { 'prefer-generic-type-annotation': preferGenericTypeAnnotation } } },
         rules: {
+            'custom-rules/prefer-generic-type-annotation': 'error',
             'vue/html-indent': ['error', 4],
             'vue/max-attributes-per-line': ['error', {
                 singleline: 3,
