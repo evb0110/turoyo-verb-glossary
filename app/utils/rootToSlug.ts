@@ -1,1 +1,1 @@
-export const rootToSlug = (root: string): string => root.replace(/\s/g, '-')
+export const rootToSlug = (root: string) => root.replace(/\s/g, '-')

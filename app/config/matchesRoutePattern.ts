@@ -1,3 +1,3 @@
-export function matchesRoutePattern(path: string, patterns: readonly string[]): boolean {
+export function matchesRoutePattern(path: string, patterns: readonly string[]) {
     return patterns.some(pattern => path === pattern || path.startsWith(`${pattern}/`))
 }
