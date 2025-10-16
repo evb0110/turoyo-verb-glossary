@@ -40,7 +40,14 @@
                                 <span class="excerpt-label block text-xs font-semibold text-gray-600 dark:text-gray-400">
                                     {{ excerpt.label }}
                                 </span>
-                                <span class="excerpt-text block whitespace-normal break-words" v-html="excerpt.html" />
+                                <span class="excerpt-text block whitespace-normal break-words">
+                                    <HighlightedText
+                                        :text="excerpt.text"
+                                        :query="searchQuery"
+                                        :use-regex="useRegex"
+                                        :case-sensitive="caseSensitive"
+                                    />
+                                </span>
                             </div>
                         </div>
                     </template>
@@ -79,6 +86,8 @@ const props = defineProps<{
     displayed: VerbMetadata[]
     verbPreviews: Map<string, VerbPreview>
     pending: boolean
+    useRegex: boolean
+    caseSensitive: boolean
 }>()
 
 const route = useRoute()

@@ -1,7 +1,6 @@
 import type { Verb, Excerpt } from '~/types/verb'
 import { createSearchRegex, matchAll } from './regexSearch'
 import { extractContext, tokenTextToString } from './textUtils'
-import { highlightMatches } from './highlightSSR'
 
 function addExcerpt(
     excerpts: Excerpt[],
@@ -44,8 +43,8 @@ export function generateExcerpts(
 
             const excerptText = extractContext(headerText, match.index, match[0].length, 60)
             addExcerpt(excerpts, seenTexts, excerptText, {
-                type: 'etymology', // Using 'etymology' type for header citations
-                html: highlightMatches(excerptText, query, opts),
+                type: 'etymology',
+                html: excerptText,
                 label: 'Citation:'
             })
         }
@@ -57,7 +56,7 @@ export function generateExcerpts(
                 addExcerpt(excerpts, seenTexts, form, {
                     type: 'form',
                     stem: stem.stem,
-                    html: highlightMatches(form, query, opts),
+                    html: form,
                     label: `Form (Stem ${stem.stem})`
                 })
             }
@@ -73,7 +72,7 @@ export function generateExcerpts(
                 addExcerpt(excerpts, seenTexts, excerptText, {
                     type: 'gloss',
                     stem: stem.stem,
-                    html: highlightMatches(excerptText, query, opts),
+                    html: excerptText,
                     label: `Meaning (Stem ${stem.stem}):`
                 })
             }
@@ -93,7 +92,7 @@ export function generateExcerpts(
                             type: 'example',
                             stem: stem.stem,
                             conjugationType: conjType,
-                            html: highlightMatches(excerptText, query, opts),
+                            html: excerptText,
                             label: `${conjType}:`
                         })
                     }
@@ -112,7 +111,7 @@ export function generateExcerpts(
                                 type: 'translation',
                                 stem: stem.stem,
                                 conjugationType: conjType,
-                                html: highlightMatches(excerptText, query, opts),
+                                html: excerptText,
                                 label: `Translation:`
                             })
                         }
@@ -142,7 +141,7 @@ export function generateExcerpts(
                     const excerptText = extractContext(field, match.index, match[0].length, 60)
                     addExcerpt(excerpts, seenTexts, excerptText, {
                         type: 'etymology',
-                        html: highlightMatches(excerptText, query, opts),
+                        html: excerptText,
                         label: `Etymology:`
                     })
                 }

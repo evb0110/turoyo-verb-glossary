@@ -1,14 +1,31 @@
-import { createSearchRegex } from './regexSearch'
+interface TextSegment {
+    text: string
+    isMatch: boolean
+}
 
-export function highlightMatches(
+function createSearchRegex(query: string, opts: { caseSensitive?: boolean } = {}): RegExp | null {
+    const { caseSensitive = false } = opts
+
+    try {
+        const flags = caseSensitive ? 'g' : 'gi'
+        return new RegExp(query.replace(/[|\\{}()[\]^$+*?.]/g, '\\$&'), flags)
+    }
+    catch {
+        return null
+    }
+}
+
+export function parseHighlights(
     text: string,
     query: string,
     opts: {
         useRegex?: boolean
         caseSensitive?: boolean
     } = {}
-): string {
-    if (!text || !query) return escapeHtml(text)
+): TextSegment[] {
+    if (!text || !query) {
+        return [{ text, isMatch: false }]
+    }
 
     const { useRegex = false, caseSensitive = false } = opts
 
@@ -16,21 +33,21 @@ export function highlightMatches(
         if (useRegex) {
             const regex = createSearchRegex(query, { caseSensitive })
             if (!regex) {
-                return escapeHtml(text)
+                return [{ text, isMatch: false }]
             }
-            return highlightWithRegex(text, regex)
+            return parseWithRegex(text, regex)
         }
         else {
-            return highlightWithPlainText(text, query, caseSensitive)
+            return parseWithPlainText(text, query, caseSensitive)
         }
     }
     catch {
-        return escapeHtml(text)
+        return [{ text, isMatch: false }]
     }
 }
 
-function highlightWithPlainText(text: string, query: string, caseSensitive: boolean): string {
-    const parts: string[] = []
+function parseWithPlainText(text: string, query: string, caseSensitive: boolean): TextSegment[] {
+    const segments: TextSegment[] = []
     const searchText = caseSensitive ? text : text.toLowerCase()
     const searchQuery = caseSensitive ? query : query.toLowerCase()
 
@@ -39,25 +56,25 @@ function highlightWithPlainText(text: string, query: string, caseSensitive: bool
 
     while (index !== -1) {
         if (index > lastIndex) {
-            parts.push(escapeHtml(text.slice(lastIndex, index)))
+            segments.push({ text: text.slice(lastIndex, index), isMatch: false })
         }
 
         const matchText = text.slice(index, index + query.length)
-        parts.push(`<mark class="highlight-match">${escapeHtml(matchText)}</mark>`)
+        segments.push({ text: matchText, isMatch: true })
 
         lastIndex = index + query.length
         index = searchText.indexOf(searchQuery, lastIndex)
     }
 
     if (lastIndex < text.length) {
-        parts.push(escapeHtml(text.slice(lastIndex)))
+        segments.push({ text: text.slice(lastIndex), isMatch: false })
     }
 
-    return parts.join('')
+    return segments
 }
 
-function highlightWithRegex(text: string, regex: RegExp): string {
-    const parts: string[] = []
+function parseWithRegex(text: string, regex: RegExp): TextSegment[] {
+    const segments: TextSegment[] = []
 
     const flags = regex.flags.includes('g') ? regex.flags : `g${regex.flags}`
     const globalRegex = new RegExp(regex.source, flags)
@@ -75,29 +92,17 @@ function highlightWithRegex(text: string, regex: RegExp): string {
         }
 
         if (matchIndex > lastIndex) {
-            parts.push(escapeHtml(text.slice(lastIndex, matchIndex)))
+            segments.push({ text: text.slice(lastIndex, matchIndex), isMatch: false })
         }
 
-        parts.push(`<mark class="highlight-match">${escapeHtml(matchText)}</mark>`)
+        segments.push({ text: matchText, isMatch: true })
 
         lastIndex = matchIndex + matchText.length
     }
 
     if (lastIndex < text.length) {
-        parts.push(escapeHtml(text.slice(lastIndex)))
+        segments.push({ text: text.slice(lastIndex), isMatch: false })
     }
 
-    return parts.join('')
-}
-
-function escapeHtml(text: string): string {
-    const htmlEscapes: Record<string, string> = {
-        '&': '&amp;',
-        '<': '&lt;',
-        '>': '&gt;',
-        '"': '&quot;',
-        '\'': '&#39;'
-    }
-
-    return text.replace(/[&<>"']/g, char => htmlEscapes[char] || char)
+    return segments
 }

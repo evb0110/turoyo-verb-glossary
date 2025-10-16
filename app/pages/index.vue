@@ -37,6 +37,8 @@
                     :displayed="filtered"
                     :verb-previews="verbPreviews"
                     :pending="pending"
+                    :use-regex="useRegex"
+                    :case-sensitive="caseSensitive"
                 />
 
                 <div
