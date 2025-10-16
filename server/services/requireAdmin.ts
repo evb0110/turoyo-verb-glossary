@@ -1,6 +1,7 @@
 import type { H3Event } from 'h3'
 import { auth } from '~~/server/lib/auth'
 import { getUserById } from '~~/server/repositories/getUserById'
+import { checkAdminRole } from '~~/server/services/checkAdminRole'
 
 export async function requireAdmin(event: H3Event) {
     const session = await auth.api.getSession({ headers: event.headers })
@@ -14,12 +15,16 @@ export async function requireAdmin(event: H3Event) {
 
     const currentUser = await getUserById(session.user.id)
 
-    if (!currentUser || currentUser.role !== 'admin') {
+    const authResult = checkAdminRole(currentUser)
+
+    if (!authResult.ok) {
         throw createError({
-            statusCode: 403,
-            statusMessage: 'Forbidden: Admin access required'
+            statusCode: authResult.error === 'not_found' ? 404 : 403,
+            statusMessage: authResult.error === 'not_found'
+                ? 'User not found'
+                : 'Forbidden: Admin access required'
         })
     }
 
-    return currentUser
+    return authResult.data
 }

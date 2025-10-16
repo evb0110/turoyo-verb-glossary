@@ -29,11 +29,15 @@ export default withNuxt(
                     group: ['.*', '../*'],
                     message: 'Relative imports are not allowed. Use absolute imports with ~/ or ~~/ instead.'
                 }]
-            }]
+            }],
+
+            'import/no-anonymous-default-export': 'off',
+            'import/max-dependencies': 'off',
+            'import/no-default-export': 'off'
         }
     },
     {
-        files: ['eslint.config.mjs', 'nuxt.config.ts', '*.config.{js,ts,mjs}'],
+        files: ['eslint.config.mjs', 'nuxt.config.ts', '*.config.{js,ts,mjs}', 'server/db/schema.ts'],
         rules: {
             'no-restricted-imports': 'off'
         }

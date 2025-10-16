@@ -1,4 +1,4 @@
-import { slugToRoot } from '~/utils/slugify'
+import { slugToRoot } from '~/utils/slugToRoot'
 import { getVerbByRoot } from '~~/server/repositories/getVerbByRoot'
 
 export default defineEventHandler(async (event) => {

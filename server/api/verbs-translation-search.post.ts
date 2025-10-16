@@ -1,4 +1,4 @@
-import { matchesPattern } from '~~/server/utils/regexSearch'
+import { matchesPattern } from '~~/server/utils/matchesPattern'
 import type { IVerb } from '~/types/IVerb'
 import type { IExcerpt } from '~/types/IExcerpt'
 import { generateExcerpts } from '~~/server/utils/verbExcerpts'

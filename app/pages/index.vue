@@ -55,12 +55,10 @@
 </template>
 
 <script lang="ts" setup>
-import {
-    applyFilters,
-    generateEtymologyOptions,
-    generateLetterOptions,
-    generateStemOptions
-} from '~/utils/searchFilters'
+import { applyFilters } from '~/utils/applyFilters'
+import { generateEtymologyOptions } from '~/utils/generateEtymologyOptions'
+import { generateLetterOptions } from '~/utils/generateLetterOptions'
+import { generateStemOptions } from '~/utils/generateStemOptions'
 import type { IVerb } from '~/types/IVerb'
 import type { IExcerpt } from '~/types/IExcerpt'
 import type { IVerbMetadata } from '~/types/IVerbMetadata'

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { AuthUser } from '~/composables/useAuth'
+import type { IAuthUser } from '~/composables/IAuthUser'
 
 const { user } = useAuth()
 
-const { data: users, refresh: refreshUsers } = await useFetch<AuthUser[]>('/api/admin/users', {
+const { data: users, refresh: refreshUsers } = await useFetch<IAuthUser[]>('/api/admin/users', {
     watch: false
 })
 

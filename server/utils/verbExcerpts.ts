@@ -1,21 +1,12 @@
 import type { IVerb } from '~/types/IVerb'
 import type { IExcerpt } from '~/types/IExcerpt'
-import { createSearchRegex, matchAll } from '~~/server/utils/regexSearch'
-import { extractContext, tokenTextToString } from '~~/server/utils/textUtils'
+import { createSearchRegex } from '~~/server/utils/createSearchRegex'
+import { matchAll } from '~~/server/utils/matchAll'
+import { extractContext } from '~~/server/utils/extractContext'
+import { tokenTextToString } from '~~/server/utils/tokenTextToString'
 
-function addExcerpt(
-    excerpts: IExcerpt[],
-    seenTexts: Set<string>,
-    excerptText: string,
-    excerpt: Omit<IExcerpt, 'text'>
-) {
-    if (!seenTexts.has(excerptText)) {
-        seenTexts.add(excerptText)
-        excerpts.push({
-            ...excerpt,
-            text: excerptText
-        })
-    }
+function shouldAddExcerpt(excerptText: string, seenTexts: Set<string>): boolean {
+    return !seenTexts.has(excerptText)
 }
 
 export function generateExcerpts(
@@ -30,11 +21,11 @@ export function generateExcerpts(
     const excerpts: IExcerpt[] = []
     const regex = createSearchRegex(query, opts)
     if (!regex) {
-        return excerpts // Invalid regex, return empty
+        return excerpts
     }
 
     const maxExcerpts = opts.maxExcerpts ?? 5
-    const seenTexts = new Set<string>() // Track unique texts to avoid duplicates
+    const seenTexts = new Set<string>()
 
     if (verb.lemma_header_tokens) {
         const headerText = tokenTextToString(verb.lemma_header_tokens)
@@ -43,23 +34,31 @@ export function generateExcerpts(
             if (excerpts.length >= maxExcerpts) break
 
             const excerptText = extractContext(headerText, match.index, match[0].length, 60)
-            addExcerpt(excerpts, seenTexts, excerptText, {
-                type: 'etymology',
-                html: excerptText,
-                label: 'Citation:'
-            })
+            if (shouldAddExcerpt(excerptText, seenTexts)) {
+                seenTexts.add(excerptText)
+                excerpts.push({
+                    type: 'etymology',
+                    html: excerptText,
+                    label: 'Citation:',
+                    text: excerptText
+                })
+            }
         }
     }
 
     for (const stem of verb.stems) {
         for (const form of stem.forms) {
             if (regex.test(form)) {
-                addExcerpt(excerpts, seenTexts, form, {
-                    type: 'form',
-                    stem: stem.stem,
-                    html: form,
-                    label: `Form (Stem ${stem.stem})`
-                })
+                if (shouldAddExcerpt(form, seenTexts)) {
+                    seenTexts.add(form)
+                    excerpts.push({
+                        type: 'form',
+                        stem: stem.stem,
+                        html: form,
+                        label: `Form (Stem ${stem.stem})`,
+                        text: form
+                    })
+                }
             }
         }
 
@@ -70,12 +69,16 @@ export function generateExcerpts(
                 if (excerpts.length >= maxExcerpts) break
 
                 const excerptText = extractContext(glossText, match.index, match[0].length, 60)
-                addExcerpt(excerpts, seenTexts, excerptText, {
-                    type: 'gloss',
-                    stem: stem.stem,
-                    html: excerptText,
-                    label: `Meaning (Stem ${stem.stem}):`
-                })
+                if (shouldAddExcerpt(excerptText, seenTexts)) {
+                    seenTexts.add(excerptText)
+                    excerpts.push({
+                        type: 'gloss',
+                        stem: stem.stem,
+                        html: excerptText,
+                        label: `Meaning (Stem ${stem.stem}):`,
+                        text: excerptText
+                    })
+                }
             }
         }
 
@@ -89,13 +92,17 @@ export function generateExcerpts(
                     const tMatch = example.turoyo.match(regex)
                     if (tMatch && tMatch.index !== undefined) {
                         const excerptText = extractContext(example.turoyo, tMatch.index, tMatch[0].length, 60)
-                        addExcerpt(excerpts, seenTexts, excerptText, {
-                            type: 'example',
-                            stem: stem.stem,
-                            conjugationType: conjType,
-                            html: excerptText,
-                            label: `${conjType}:`
-                        })
+                        if (shouldAddExcerpt(excerptText, seenTexts)) {
+                            seenTexts.add(excerptText)
+                            excerpts.push({
+                                type: 'example',
+                                stem: stem.stem,
+                                conjugationType: conjType,
+                                html: excerptText,
+                                label: `${conjType}:`,
+                                text: excerptText
+                            })
+                        }
                     }
                 }
 
@@ -108,13 +115,17 @@ export function generateExcerpts(
                         const trMatch = translation.match(regex)
                         if (trMatch && trMatch.index !== undefined) {
                             const excerptText = extractContext(translation, trMatch.index, trMatch[0].length, 60)
-                            addExcerpt(excerpts, seenTexts, excerptText, {
-                                type: 'translation',
-                                stem: stem.stem,
-                                conjugationType: conjType,
-                                html: excerptText,
-                                label: `Translation:`
-                            })
+                            if (shouldAddExcerpt(excerptText, seenTexts)) {
+                                seenTexts.add(excerptText)
+                                excerpts.push({
+                                    type: 'translation',
+                                    stem: stem.stem,
+                                    conjugationType: conjType,
+                                    html: excerptText,
+                                    label: `Translation:`,
+                                    text: excerptText
+                                })
+                            }
                         }
                     }
                 }
@@ -133,18 +144,22 @@ export function generateExcerpts(
                 etymon.notes,
                 etymon.raw,
                 etymon.source_root
-            ].filter((field): field is string => Boolean(field)) // Type-safe filter
+            ].filter((field): field is string => Boolean(field))
 
             for (const field of searchFields) {
                 for (const match of matchAll(field, regex)) {
                     if (excerpts.length >= maxExcerpts) break
 
                     const excerptText = extractContext(field, match.index, match[0].length, 60)
-                    addExcerpt(excerpts, seenTexts, excerptText, {
-                        type: 'etymology',
-                        html: excerptText,
-                        label: `Etymology:`
-                    })
+                    if (shouldAddExcerpt(excerptText, seenTexts)) {
+                        seenTexts.add(excerptText)
+                        excerpts.push({
+                            type: 'etymology',
+                            html: excerptText,
+                            label: `Etymology:`,
+                            text: excerptText
+                        })
+                    }
                 }
             }
         }

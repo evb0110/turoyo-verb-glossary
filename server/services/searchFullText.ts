@@ -3,7 +3,7 @@ import type { IVerbMetadata } from '~/types/IVerbMetadata'
 import type { IExcerpt } from '~/types/IExcerpt'
 import type { ISearchOptions } from '~~/server/services/ISearchOptions'
 import type { IFullTextSearchResult } from '~~/server/services/IFullTextSearchResult'
-import { matchesPattern } from '~~/server/utils/regexSearch'
+import { matchesPattern } from '~~/server/utils/matchesPattern'
 import { generateExcerpts } from '~~/server/utils/verbExcerpts'
 import { extractMetadata } from '~~/server/services/extractMetadata'
 

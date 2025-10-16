@@ -35,7 +35,8 @@
 import type { IVerb } from '~/types/IVerb'
 import type { IStem } from '~/types/IStem'
 import type { IExample } from '~/types/IExample'
-import { truncateText, tokenTextToString } from '~/utils/textUtils'
+import { truncateText } from '~/utils/truncateText'
+import { tokenTextToString } from '~/utils/tokenTextToString'
 
 interface ProcessedExample {
     turoyo: string

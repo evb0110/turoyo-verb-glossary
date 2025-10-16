@@ -1,4 +1,5 @@
 import { createAuthClient } from 'better-auth/vue'
+import type { IAuthUser } from '~/composables/IAuthUser'
 
 let authClient: ReturnType<typeof createAuthClient> | null = null
 
@@ -13,20 +14,9 @@ function getAuthClient() {
     return authClient
 }
 
-export type UserRole = 'admin' | 'user' | 'pending' | 'blocked'
-
-export interface AuthUser {
-    id: string
-    name: string
-    email: string
-    image?: string | null
-    role: UserRole
-    createdAt: string
-}
-
 export const useAuth = () => {
     const client = getAuthClient()
-    const user = useState<AuthUser | null>('auth:user', () => null)
+    const user = useState<IAuthUser | null>('auth:user', () => null)
     const loading = useState<boolean>('auth:loading', () => false)
     const sessionStatus = useState<'idle' | 'loading' | 'authenticated' | 'guest'>('auth:sessionStatus', () => 'idle')
 
@@ -77,7 +67,7 @@ export const useAuth = () => {
             console.log('Session:', session)
 
             if (session.data?.user) {
-                const response = await $fetch<AuthUser | null>('/api/user/me')
+                const response = await $fetch<IAuthUser | null>('/api/user/me')
                 if (response) {
                     user.value = response
                     sessionStatus.value = 'authenticated'

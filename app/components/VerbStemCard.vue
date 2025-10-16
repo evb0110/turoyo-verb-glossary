@@ -63,7 +63,7 @@
 
 <script lang="ts" setup>
 import type { IStem } from '~/types/IStem'
-import { transformStemForDisplay } from '~/utils/verbTransform'
+import { transformStemForDisplay } from '~/utils/transformStemForDisplay'
 
 const props = defineProps<{
     stem: IStem

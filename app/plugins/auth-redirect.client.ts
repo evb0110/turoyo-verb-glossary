@@ -2,7 +2,7 @@ export default defineNuxtPlugin(async () => {
     const { sessionStatus, user } = useAuth()
     const router = useRouter()
 
-    const { handleAuthRedirect } = await import('~/utils/auth-redirect')
+    const { handleAuthRedirect } = await import('~/utils/handleAuthRedirect')
 
     if (import.meta.dev) {
         console.log('[Auth Redirect Plugin] Initialized')

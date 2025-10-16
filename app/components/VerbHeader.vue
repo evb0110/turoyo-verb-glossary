@@ -28,7 +28,7 @@
 
 <script lang="ts" setup>
 import type { IVerb } from '~/types/IVerb'
-import { rootToSlug } from '~/utils/slugify'
+import { rootToSlug } from '~/utils/rootToSlug'
 
 defineProps<{
     verb: IVerb
