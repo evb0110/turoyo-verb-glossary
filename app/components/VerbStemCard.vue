@@ -62,11 +62,11 @@
 </template>
 
 <script lang="ts" setup>
-import type { Stem } from '~/types/verb'
+import type { IStem } from '~/types/IStem'
 import { transformStemForDisplay } from '~/utils/verbTransform'
 
 const props = defineProps<{
-    stem: Stem
+    stem: IStem
 }>()
 
 const transformedStem = computed(() => transformStemForDisplay(props.stem))

@@ -1,6 +1,7 @@
-import { matchesPattern } from '../utils/regexSearch'
-import type { Verb, Excerpt } from '~/types/verb'
-import { generateExcerpts } from '../utils/verbExcerpts'
+import { matchesPattern } from '~~/server/utils/regexSearch'
+import type { IVerb } from '~/types/IVerb'
+import type { IExcerpt } from '~/types/IExcerpt'
+import { generateExcerpts } from '~~/server/utils/verbExcerpts'
 
 export default defineEventHandler(async (event) => {
     const body = await readBody(event)
@@ -16,7 +17,7 @@ export default defineEventHandler(async (event) => {
     console.log(`[Translation Search] Searching ${roots.length} verbs for: "${query}" (mode: ${searchType})`)
 
     const matchingRoots: string[] = []
-    const verbPreviews: Record<string, { excerpts?: Excerpt[], verb?: Verb }> = {}
+    const verbPreviews: Record<string, { excerpts?: IExcerpt[], verb?: IVerb }> = {}
 
     const storage = useStorage('assets:server')
 
@@ -26,7 +27,7 @@ export default defineEventHandler(async (event) => {
 
         const batchPromises = batch.map(async (root: string) => {
             try {
-                const verb = await storage.getItem<Verb>(`verbs/${root}.json`)
+                const verb = await storage.getItem<IVerb>(`verbs/${root}.json`)
 
                 if (!verb) {
                     console.warn(`[Translation Search] No data for ${root}`)

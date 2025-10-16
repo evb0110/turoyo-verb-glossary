@@ -11,7 +11,7 @@
                 <VerbHeader :verb="verb!" />
             </template>
 
-            <VerbEtymology :etymology="verb?.etymology" />
+            <VerbEtymology v-if="verb?.etymology" :etymology="verb?.etymology" />
         </UCard>
 
         <div class="space-y-4">

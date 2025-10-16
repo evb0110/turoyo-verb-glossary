@@ -1,13 +1,14 @@
-import type { Verb, Excerpt } from '~/types/verb'
-import { createSearchRegex, matchAll } from './regexSearch'
-import { extractContext, tokenTextToString } from './textUtils'
+import type { IVerb } from '~/types/IVerb'
+import type { IExcerpt } from '~/types/IExcerpt'
+import { createSearchRegex, matchAll } from '~~/server/utils/regexSearch'
+import { extractContext, tokenTextToString } from '~~/server/utils/textUtils'
 
 function addExcerpt(
-    excerpts: Excerpt[],
+    excerpts: IExcerpt[],
     seenTexts: Set<string>,
     excerptText: string,
-    excerpt: Omit<Excerpt, 'text'>
-): void {
+    excerpt: Omit<IExcerpt, 'text'>
+) {
     if (!seenTexts.has(excerptText)) {
         seenTexts.add(excerptText)
         excerpts.push({
@@ -18,15 +19,15 @@ function addExcerpt(
 }
 
 export function generateExcerpts(
-    verb: Verb,
+    verb: IVerb,
     query: string,
     opts: {
         useRegex?: boolean
         caseSensitive?: boolean
         maxExcerpts?: number
     } = {}
-): Excerpt[] {
-    const excerpts: Excerpt[] = []
+): IExcerpt[] {
+    const excerpts: IExcerpt[] = []
     const regex = createSearchRegex(query, opts)
     if (!regex) {
         return excerpts // Invalid regex, return empty

@@ -1,63 +1,9 @@
-import type { Verb } from '~/types/verb'
+import { getAllVerbs } from '~~/server/repositories/getAllVerbs'
+import { calculateStats } from '~~/server/services/calculateStats'
 
 export default defineEventHandler(async (event) => {
-    const storage = useStorage('assets:server')
-
-    const keys = await storage.getKeys('verbs')
-
-    const verbs = await Promise.all(
-        keys.map(key => storage.getItem<Verb>(key))
-    )
-
-    const stats = {
-        total_verbs: 0,
-        total_stems: 0,
-        total_examples: 0,
-        stem_counts: {} as Record<string, number>,
-        etymology_sources: {} as Record<string, number>,
-        cross_references: 0,
-        uncertain_entries: 0,
-        homonyms: 0
-    }
-
-    for (const verb of verbs) {
-        if (!verb) continue
-
-        stats.total_verbs++
-
-        if (verb.cross_reference) {
-            stats.cross_references++
-        }
-
-        if (verb.uncertain) {
-            stats.uncertain_entries++
-        }
-
-        if (/\s+\d+$/.test(verb.root)) {
-            stats.homonyms++
-        }
-
-        for (const stem of verb.stems) {
-            stats.total_stems++
-
-            const stemType = stem.stem
-            stats.stem_counts[stemType] = (stats.stem_counts[stemType] || 0) + 1
-
-            for (const conjugationType in stem.conjugations) {
-                const examples = stem.conjugations[conjugationType]
-                if (examples) {
-                    stats.total_examples += examples.length
-                }
-            }
-        }
-
-        if (verb.etymology?.etymons) {
-            for (const etymon of verb.etymology.etymons) {
-                const source = etymon.source || 'Unknown'
-                stats.etymology_sources[source] = (stats.etymology_sources[source] || 0) + 1
-            }
-        }
-    }
+    const verbs = await getAllVerbs()
+    const stats = calculateStats(verbs)
 
     setHeader(event, 'content-type', 'application/json; charset=utf-8')
     return stats

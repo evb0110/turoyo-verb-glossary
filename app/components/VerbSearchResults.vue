@@ -63,27 +63,23 @@
 <script setup lang="ts">
 import type { RouteLocationRaw } from '#vue-router'
 import { rootToSlug } from '~/utils/slugify'
-import type { Verb, Excerpt } from '~/types/verb'
-
-interface VerbMetadata {
-    root: string
-    etymology_sources: string[]
-    stems: string[]
-}
+import type { IVerb } from '~/types/IVerb'
+import type { IExcerpt } from '~/types/IExcerpt'
+import type { IVerbMetadata } from '~/types/IVerbMetadata'
 
 interface VerbPreview {
-    excerpts?: Excerpt[]
-    verb?: Verb
+    excerpts?: IExcerpt[]
+    verb?: IVerb
 }
 
 interface TableRow {
-    original: VerbMetadata
+    original: IVerbMetadata
 }
 
 const props = defineProps<{
     searchQuery: string
     searchType: 'roots' | 'all'
-    displayed: VerbMetadata[]
+    displayed: IVerbMetadata[]
     verbPreviews: Map<string, VerbPreview>
     pending: boolean
     useRegex: boolean

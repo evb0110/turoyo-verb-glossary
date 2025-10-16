@@ -15,9 +15,9 @@
 </template>
 
 <script lang="ts" setup>
-import type { Example } from '~/types/verb'
+import type { IExample } from '~/types/IExample'
 
 defineProps<{
-    example: Example
+    example: IExample
 }>()
 </script>

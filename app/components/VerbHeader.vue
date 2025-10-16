@@ -27,10 +27,10 @@
 </template>
 
 <script lang="ts" setup>
-import type { Verb } from '~/types/verb'
+import type { IVerb } from '~/types/IVerb'
 import { rootToSlug } from '~/utils/slugify'
 
 defineProps<{
-    verb: Verb
+    verb: IVerb
 }>()
 </script>

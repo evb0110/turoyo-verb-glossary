@@ -1,5 +1,5 @@
-import type { Verb } from '~/types/verb'
 import { slugToRoot } from '~/utils/slugify'
+import { getVerbByRoot } from '~~/server/repositories/getVerbByRoot'
 
 export default defineEventHandler(async (event) => {
     const slug = getRouterParam(event, 'root')
@@ -12,9 +12,7 @@ export default defineEventHandler(async (event) => {
     }
 
     const root = slugToRoot(decodeURIComponent(slug))
-
-    const storage = useStorage('assets:server')
-    const verb = await storage.getItem<Verb>(`verbs/${root}.json`)
+    const verb = await getVerbByRoot(root)
 
     if (!verb) {
         throw createError({

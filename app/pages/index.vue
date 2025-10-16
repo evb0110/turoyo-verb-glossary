@@ -61,11 +61,13 @@ import {
     generateLetterOptions,
     generateStemOptions
 } from '~/utils/searchFilters'
-import type { Verb, Excerpt, VerbMetadata } from '~/types/verb'
+import type { IVerb } from '~/types/IVerb'
+import type { IExcerpt } from '~/types/IExcerpt'
+import type { IVerbMetadata } from '~/types/IVerbMetadata'
 
 interface VerbPreview {
-    excerpts?: Excerpt[]
-    verb?: Verb
+    excerpts?: IExcerpt[]
+    verb?: IVerb
 }
 
 const showRegexHelp = ref(false)
@@ -116,7 +118,7 @@ const { data: searchResults, pending } = await useAsyncData(
             total: number
             roots: string[]
             verbPreviews?: Record<string, VerbPreview>
-            verbMetadata?: Record<string, VerbMetadata>
+            verbMetadata?: Record<string, IVerbMetadata>
         }>('/api/verbs-fulltext-search', {
             method: 'POST',
             body: {
@@ -161,7 +163,7 @@ const baseResults = computed(() => {
     const metadata = verbMetadata.value
     return searchResults.value.roots
         .map(root => metadata.get(root))
-        .filter((m): m is VerbMetadata => m !== undefined)
+        .filter((m): m is IVerbMetadata => m !== undefined)
 })
 
 const letterOptions = computed(() => generateLetterOptions(baseResults.value))

@@ -40,16 +40,17 @@
 </template>
 
 <script lang="ts" setup>
-import type { Etymology, Etymon } from '~/types/verb'
+import type { IEtymology } from '~/types/IEtymology'
+import type { IEtymon } from '~/types/IEtymon'
 
 const props = defineProps<{
-    etymology: Etymology | null | undefined
+    etymology: IEtymology | null | undefined
 }>()
 
 const groupedEtymons = computed(() => {
     if (!props.etymology?.etymons) return []
 
-    const groups = new Map<string | undefined, Etymon[]>()
+    const groups = new Map<string | undefined, IEtymon[]>()
     for (const etymon of props.etymology.etymons) {
         const source = etymon.source || undefined
         if (!groups.has(source)) {

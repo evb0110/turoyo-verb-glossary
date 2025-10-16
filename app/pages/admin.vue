@@ -13,7 +13,7 @@ const toastStore = useToast()
 const approveUser = async (userId: string) => {
     loading.value = userId
     try {
-        await $fetch(`/api/admin/users/${userId}/approve`, {
+        await $fetch(`/api/admin/users/${userId}/activate`, {
             method: 'PATCH'
         })
         await refreshUsers()
@@ -65,7 +65,7 @@ const blockUser = async (userId: string) => {
 const unblockUser = async (userId: string) => {
     loading.value = userId
     try {
-        await $fetch(`/api/admin/users/${userId}/unblock`, {
+        await $fetch(`/api/admin/users/${userId}/activate`, {
             method: 'PATCH'
         })
         await refreshUsers()

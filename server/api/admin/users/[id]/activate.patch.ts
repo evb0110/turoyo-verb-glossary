@@ -1,11 +1,8 @@
 import { requireAdmin } from '~~/server/services/requireAdmin'
 import { updateUserRole } from '~~/server/repositories/updateUserRole'
-import { auth } from '~~/server/lib/auth'
 
 export default defineEventHandler(async (event) => {
     await requireAdmin(event)
-
-    const session = await auth.api.getSession({ headers: event.headers })
 
     const userId = getRouterParam(event, 'id')
 
@@ -16,14 +13,7 @@ export default defineEventHandler(async (event) => {
         })
     }
 
-    if (userId === session?.user?.id) {
-        throw createError({
-            statusCode: 400,
-            statusMessage: 'Cannot block yourself'
-        })
-    }
-
-    const updated = await updateUserRole(userId, 'blocked')
+    const updated = await updateUserRole(userId, 'user')
 
     if (!updated) {
         throw createError({

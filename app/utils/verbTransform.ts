@@ -1,4 +1,4 @@
-import type { Stem } from '~/types/verb'
+import type { IStem } from '~/types/IStem'
 
 export interface GlossToken {
     italic: boolean
@@ -14,7 +14,7 @@ export interface ConjugationGroup {
     }>
 }
 
-export interface TransformedStem extends Stem {
+export interface TransformedStem extends IStem {
     exampleCount: number
     conjugationGroups: ConjugationGroup[]
     glossTokens: GlossToken[]
@@ -31,7 +31,7 @@ export function filterGlossTokens(tokens: GlossToken[]): GlossToken[] {
     })
 }
 
-export function transformStemForDisplay(stem: Stem): TransformedStem {
+export function transformStemForDisplay(stem: IStem): TransformedStem {
     const conjugationGroups = Object.entries(stem.conjugations || {}).map(([name, examples]) => ({
         name,
         examples
