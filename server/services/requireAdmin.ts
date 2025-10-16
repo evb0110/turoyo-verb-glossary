@@ -4,7 +4,9 @@ import { checkAdminRole } from '~~/server/services/checkAdminRole'
 import type { H3Event } from 'h3'
 
 export async function requireAdmin(event: H3Event) {
-    const session = await auth.api.getSession({ headers: event.headers })
+    const session = await auth.api.getSession({
+        headers: event.headers,
+    })
 
     if (!session?.user) {
         throw createError({

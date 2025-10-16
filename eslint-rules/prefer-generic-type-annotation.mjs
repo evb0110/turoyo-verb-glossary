@@ -7,7 +7,9 @@ export default {
             recommended: true,
         },
         fixable: null,
-        messages: { useGenericSyntax: 'Use generic type syntax {{functionName}}<Type> instead of return type annotation. Example: {{functionName}}<SomeType>(() => {})' },
+        messages: {
+            useGenericSyntax: 'Use generic type syntax {{functionName}}<Type> instead of return type annotation. Example: {{functionName}}<SomeType>(() => {})',
+        },
     },
     create(context) {
         const compositionFunctions = new Set(['computed', 'ref', 'watch', 'watchEffect', 'provide', 'inject'])
@@ -29,7 +31,9 @@ export default {
                     context.report({
                         node: firstArg.returnType,
                         messageId: 'useGenericSyntax',
-                        data: { functionName: calleeName },
+                        data: {
+                            functionName: calleeName,
+                        },
                     })
                 }
             },

@@ -58,12 +58,16 @@ const shouldFetchPending = computed(() => isAuthenticated.value && isAdmin.value
 const { data: pendingData, refresh: refreshPendingCount } = await useAsyncData(
     'admin-pending-count',
     async () => {
-        if (!isAdmin.value) return { count: 0 }
+        if (!isAdmin.value) return {
+            count: 0,
+        }
         try {
             return await $fetch<{ count: number }>('/api/admin/pending-count')
         }
         catch {
-            return { count: 0 }
+            return {
+                count: 0,
+            }
         }
     }
 )

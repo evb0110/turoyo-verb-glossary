@@ -42,7 +42,9 @@ export default defineEventHandler(async (event) => {
                     caseSensitive,
                 })) {
                     if (searchType === 'roots') {
-                        verbPreviews[root] = { verb }
+                        verbPreviews[root] = {
+                            verb,
+                        }
                     }
                     else {
                         verbPreviews[root] = {
@@ -62,7 +64,9 @@ export default defineEventHandler(async (event) => {
                             caseSensitive,
                         })) {
                             if (searchType === 'roots') {
-                                verbPreviews[root] = { verb }
+                                verbPreviews[root] = {
+                                    verb,
+                                }
                             }
                             else {
                                 verbPreviews[root] = {
@@ -83,7 +87,9 @@ export default defineEventHandler(async (event) => {
                         caseSensitive,
                     }))) {
                         if (searchType === 'roots') {
-                            verbPreviews[root] = { verb }
+                            verbPreviews[root] = {
+                                verb,
+                            }
                         }
                         else {
                             verbPreviews[root] = {
@@ -103,7 +109,9 @@ export default defineEventHandler(async (event) => {
                                 caseSensitive,
                             })) {
                                 if (searchType === 'roots') {
-                                    verbPreviews[root] = { verb }
+                                    verbPreviews[root] = {
+                                        verb,
+                                    }
                                 }
                                 else {
                                     verbPreviews[root] = {
@@ -126,7 +134,9 @@ export default defineEventHandler(async (event) => {
                                     caseSensitive,
                                 })) {
                                     if (searchType === 'roots') {
-                                        verbPreviews[root] = { verb }
+                                        verbPreviews[root] = {
+                                            verb,
+                                        }
                                     }
                                     else {
                                         verbPreviews[root] = {
@@ -145,7 +155,9 @@ export default defineEventHandler(async (event) => {
                                 caseSensitive,
                             })) {
                                 if (searchType === 'roots') {
-                                    verbPreviews[root] = { verb }
+                                    verbPreviews[root] = {
+                                        verb,
+                                    }
                                 }
                                 else {
                                     verbPreviews[root] = {
@@ -164,7 +176,9 @@ export default defineEventHandler(async (event) => {
                                     caseSensitive,
                                 })) {
                                     if (searchType === 'roots') {
-                                        verbPreviews[root] = { verb }
+                                        verbPreviews[root] = {
+                                            verb,
+                                        }
                                     }
                                     else {
                                         verbPreviews[root] = {
@@ -202,7 +216,9 @@ export default defineEventHandler(async (event) => {
                             }))
                         ) {
                             if (searchType === 'roots') {
-                                verbPreviews[root] = { verb }
+                                verbPreviews[root] = {
+                                    verb,
+                                }
                             }
                             else {
                                 verbPreviews[root] = {

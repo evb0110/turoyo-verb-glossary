@@ -33,6 +33,8 @@ export async function handleAuthRedirect(
         await safeNavigate(target, currentPath)
     }
     else {
-        log('No redirect needed', { path: currentPath })
+        log('No redirect needed', {
+            path: currentPath,
+        })
     }
 }

@@ -113,10 +113,18 @@
 </template>
 
 <script setup lang="ts">
-const query = defineModel<string>('query', { required: true })
-const searchEverything = defineModel<boolean>('searchEverything', { required: true })
-const useRegex = defineModel<boolean>('useRegex', { required: true })
-const caseSensitive = defineModel<boolean>('caseSensitive', { required: true })
+const query = defineModel<string>('query', {
+    required: true,
+})
+const searchEverything = defineModel<boolean>('searchEverything', {
+    required: true,
+})
+const useRegex = defineModel<boolean>('useRegex', {
+    required: true,
+})
+const caseSensitive = defineModel<boolean>('caseSensitive', {
+    required: true,
+})
 
 const internalQuery = ref(query.value)
 

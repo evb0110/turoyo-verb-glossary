@@ -31,7 +31,9 @@ export function parseHighlights(
 
     try {
         if (useRegex) {
-            const regex = createSearchRegex(query, { caseSensitive })
+            const regex = createSearchRegex(query, {
+                caseSensitive,
+            })
             if (!regex) {
                 return [{
                     text,

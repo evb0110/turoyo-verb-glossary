@@ -5,7 +5,9 @@ import { user } from '~~/server/db/schema'
 
 export async function updateUserRole(userId: string, role: TUserRole) {
     const updated = await db.update(user)
-        .set({ role })
+        .set({
+            role,
+        })
         .where(eq(user.id, userId))
         .returning()
 

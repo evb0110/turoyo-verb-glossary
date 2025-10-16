@@ -107,5 +107,7 @@
 </template>
 
 <script setup lang="ts">
-const isOpen = defineModel<boolean>('open', { required: true })
+const isOpen = defineModel<boolean>('open', {
+    required: true,
+})
 </script>

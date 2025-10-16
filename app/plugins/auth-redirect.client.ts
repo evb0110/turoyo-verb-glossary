@@ -21,6 +21,8 @@ export default defineNuxtPlugin(async () => {
                 currentUser?.role
             )
         },
-        { immediate: false }
+        {
+            immediate: false,
+        }
     )
 })

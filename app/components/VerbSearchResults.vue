@@ -109,7 +109,11 @@ const columns = [
     {
         accessorKey: 'preview',
         header: 'Article Preview',
-        meta: { class: { td: 'p-0' } },
+        meta: {
+            class: {
+                td: 'p-0',
+            },
+        },
     },
 ]
 </script>

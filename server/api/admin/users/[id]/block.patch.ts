@@ -5,7 +5,9 @@ import { requireAdmin } from '~~/server/services/requireAdmin'
 export default defineEventHandler(async (event) => {
     await requireAdmin(event)
 
-    const session = await auth.api.getSession({ headers: event.headers })
+    const session = await auth.api.getSession({
+        headers: event.headers,
+    })
 
     const userId = getRouterParam(event, 'id')
 

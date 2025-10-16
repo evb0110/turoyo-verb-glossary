@@ -30,7 +30,9 @@ export async function searchRoots(
                 const verb = await storage.getItem<IVerb>(`verbs/${root}.json`)
                 if (!verb) return null
 
-                verbPreviews[root] = { verb }
+                verbPreviews[root] = {
+                    verb,
+                }
                 verbMetadata[root] = extractMetadata(verb)
 
                 return root

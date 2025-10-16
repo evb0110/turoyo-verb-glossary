@@ -20,7 +20,9 @@ export function matchesPattern(
             : text.toLowerCase().includes(pattern.toLowerCase())
     }
 
-    const regex = createSearchRegex(pattern, { caseSensitive })
+    const regex = createSearchRegex(pattern, {
+        caseSensitive,
+    })
     if (!regex) {
         return caseSensitive
             ? text.includes(pattern)

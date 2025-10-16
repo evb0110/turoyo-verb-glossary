@@ -4,7 +4,13 @@ import preferGenericTypeAnnotation from './eslint-rules/prefer-generic-type-anno
 
 export default withNuxt(
     {
-        plugins: { 'custom-rules': { rules: { 'prefer-generic-type-annotation': preferGenericTypeAnnotation } } },
+        plugins: {
+            'custom-rules': {
+                rules: {
+                    'prefer-generic-type-annotation': preferGenericTypeAnnotation,
+                },
+            },
+        },
         rules: {
             'custom-rules/prefer-generic-type-annotation': 'error',
             'vue/html-indent': ['error', 4],
@@ -79,7 +85,7 @@ export default withNuxt(
             '@stylistic/object-curly-newline': ['error', {
                 ObjectExpression: {
                     multiline: true,
-                    minProperties: 2,
+                    minProperties: 1,
                 },
                 ObjectPattern: {
                     multiline: true,
@@ -89,7 +95,9 @@ export default withNuxt(
                 ExportDeclaration: 'never',
             }],
 
-            '@stylistic/object-property-newline': ['error', { allowAllPropertiesOnSameLine: false }],
+            '@stylistic/object-property-newline': ['error', {
+                allowAllPropertiesOnSameLine: false,
+            }],
         },
     },
     {
@@ -123,6 +131,8 @@ export default withNuxt(
     },
     {
         files: ['eslint.config.mjs', 'nuxt.config.ts', '*.config.{js,ts,mjs}', 'server/db/schema.ts'],
-        rules: { 'no-restricted-imports': 'off' },
+        rules: {
+            'no-restricted-imports': 'off',
+        },
     }
 )

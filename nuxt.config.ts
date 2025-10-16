@@ -5,7 +5,9 @@ export default defineNuxtConfig({
         path: '~/components',
         pathPrefix: false,
     }],
-    devtools: { enabled: true },
+    devtools: {
+        enabled: true,
+    },
     app: {
         head: {
             title: 'Turoyo Verb Glossary',
@@ -41,13 +43,31 @@ export default defineNuxtConfig({
                 || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3456'),
         },
     },
-    dir: { public: 'public' },
+    dir: {
+        public: 'public',
+    },
     srcDir: 'app',
     routeRules: {
-        '/_nuxt/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
-        '/favicon.ico': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
-        '/favicon.svg': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
-        '/safari-pinned-tab.svg': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
+        '/_nuxt/**': {
+            headers: {
+                'cache-control': 'public, max-age=31536000, immutable',
+            },
+        },
+        '/favicon.ico': {
+            headers: {
+                'cache-control': 'public, max-age=31536000, immutable',
+            },
+        },
+        '/favicon.svg': {
+            headers: {
+                'cache-control': 'public, max-age=31536000, immutable',
+            },
+        },
+        '/safari-pinned-tab.svg': {
+            headers: {
+                'cache-control': 'public, max-age=31536000, immutable',
+            },
+        },
     },
     devServer: {
         host: 'localhost',
@@ -64,8 +84,12 @@ export default defineNuxtConfig({
         scanDirs: ['server'],
     },
     vite: {
-        server: { strictPort: true },
-        build: { sourcemap: false },
+        server: {
+            strictPort: true,
+        },
+        build: {
+            sourcemap: false,
+        },
     },
     eslint: {
         config: {
@@ -79,7 +103,9 @@ export default defineNuxtConfig({
     },
 
     icon: {
-        serverBundle: { collections: ['heroicons', 'lucide'] },
+        serverBundle: {
+            collections: ['heroicons', 'lucide'],
+        },
         clientBundle: {
             scan: true,
             sizeLimitKb: 512,
