@@ -90,7 +90,7 @@ function getStemExamples(stem: IStem) {
 
         <div v-for="stem in verb.stems" :key="stem.stem" class="preview-stem mb-4">
             <div class="preview-stem-header mb-2">
-                <strong>Stem {{ stem.stem }}:</strong>
+                <strong>Stem {{ stem.stem }}: </strong>
                 <span class="turoyo-text">
                     {{ stem.forms.length > 0 ? stem.forms.join(', ') : '(no forms)' }}
                 </span>

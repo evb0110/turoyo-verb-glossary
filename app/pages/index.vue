@@ -31,6 +31,7 @@ const filters = computed(() => ({
 }))
 
 const searchQuery = ref(q.value)
+const isSearching = ref(false)
 
 const searchKey = computed(() => {
     return [
@@ -47,24 +48,30 @@ const {
 } = await useAsyncData(
     searchKey,
     async () => {
-        const query = (searchQuery.value || '').trim()
-        if (query.length < 2) {
-            return null
-        }
+        isSearching.value = true
+        try {
+            const query = (searchQuery.value || '').trim()
+            if (query.length < 2) {
+                return null
+            }
 
-        const endpoint = searchEverything.value ? '/api/search/fulltext' : '/api/search/roots'
-        return await $fetch<{
-            total: number
-            roots: string[]
-            verbMetadata?: Record<string, IVerbMetadataWithPreview>
-        }>(endpoint, {
-            method: 'POST',
-            body: {
-                query,
-                useRegex: useRegex.value,
-                caseSensitive: caseSensitive.value,
-            },
-        })
+            const endpoint = searchEverything.value ? '/api/search/fulltext' : '/api/search/roots'
+            return await $fetch<{
+                total: number
+                roots: string[]
+                verbMetadata?: Record<string, IVerbMetadataWithPreview>
+            }>(endpoint, {
+                method: 'POST',
+                body: {
+                    query,
+                    useRegex: useRegex.value,
+                    caseSensitive: caseSensitive.value,
+                },
+            })
+        }
+        finally {
+            isSearching.value = false
+        }
     }
 )
 
@@ -89,6 +96,10 @@ watch(q, (newQ) => {
 })
 
 const baseResults = computed(() => {
+    if (isSearching.value) {
+        return []
+    }
+
     if (!searchResults.value?.roots || searchResults.value.roots.length === 0) {
         return []
     }
