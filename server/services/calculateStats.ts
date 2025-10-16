@@ -1,7 +1,7 @@
 import type { IVerb } from '~/types/IVerb'
 import type { IVerbStats } from '~~/server/services/IVerbStats'
 
-export function calculateStats(verbs: (IVerb | null)[]) {
+export function calculateStats(verbs: Array<IVerb | null>) {
     const stats: IVerbStats = {
         total_verbs: 0,
         total_stems: 0,

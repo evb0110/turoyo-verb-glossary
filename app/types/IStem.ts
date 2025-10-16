@@ -8,6 +8,8 @@ export interface IStem {
     }
 
     label_raw?: string
-    label_gloss_tokens?: { italic: boolean
-        text: string }[]
+    label_gloss_tokens?: Array<{
+        italic: boolean
+        text: string
+    }>
 }

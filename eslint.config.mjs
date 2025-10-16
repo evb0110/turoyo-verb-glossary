@@ -63,6 +63,11 @@ export default withNuxt(
         files: ['**/*.ts', '**/*.tsx'],
         ignores: ['*.config.ts', '*.config.mts', '*.config.mjs', 'eslint.config.mjs', 'nuxt.config.ts', 'server/db/schema.ts', '**/*.d.ts'],
         rules: {
+            '@typescript-eslint/array-type': ['error', {
+                default: 'array-simple',
+                readonly: 'array-simple',
+            }],
+
             '@typescript-eslint/naming-convention': ['error',
                 {
                     selector: 'typeAlias',
