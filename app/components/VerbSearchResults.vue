@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { IVerbMetadataWithPreview } from '~/types/IVerbMetadataWithPreview'
+import { rootToSlug } from '~/utils/rootToSlug'
 import type { RouteLocationRaw } from '#vue-router'
 
 interface TableRow {
@@ -20,7 +21,7 @@ function getTo(row: TableRow): RouteLocationRaw {
     return {
         name: 'verbs-root',
         params: {
-            root: row.original.root,
+            root: rootToSlug(row.original.root),
         },
         query: route.query,
     }

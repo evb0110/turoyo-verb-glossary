@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import type { IVerb } from '~/types/IVerb'
+import { rootToSlug } from '~/utils/rootToSlug'
 
 defineProps<{
     verb: IVerb
@@ -30,7 +31,7 @@ defineProps<{
             <NuxtLink
                 :to="{
                     name: 'verbs-root',
-                    params: { root: verb.cross_reference }
+                    params: { root: rootToSlug(verb.cross_reference) }
                 }"
                 class="font-medium"
             >
