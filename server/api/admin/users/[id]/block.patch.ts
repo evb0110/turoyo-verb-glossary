@@ -12,14 +12,14 @@ export default defineEventHandler(async (event) => {
     if (!userId) {
         throw createError({
             statusCode: 400,
-            statusMessage: 'User ID is required'
+            statusMessage: 'User ID is required',
         })
     }
 
     if (userId === session?.user?.id) {
         throw createError({
             statusCode: 400,
-            statusMessage: 'Cannot block yourself'
+            statusMessage: 'Cannot block yourself',
         })
     }
 
@@ -28,9 +28,12 @@ export default defineEventHandler(async (event) => {
     if (!updated) {
         throw createError({
             statusCode: 404,
-            statusMessage: 'User not found'
+            statusMessage: 'User not found',
         })
     }
 
-    return { success: true, user: updated }
+    return {
+        success: true,
+        user: updated,
+    }
 })

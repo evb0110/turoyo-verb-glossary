@@ -9,7 +9,7 @@ export default defineEventHandler(async (event) => {
     if (!userId) {
         throw createError({
             statusCode: 400,
-            statusMessage: 'User ID is required'
+            statusMessage: 'User ID is required',
         })
     }
 
@@ -18,9 +18,12 @@ export default defineEventHandler(async (event) => {
     if (!updated) {
         throw createError({
             statusCode: 404,
-            statusMessage: 'User not found'
+            statusMessage: 'User not found',
         })
     }
 
-    return { success: true, user: updated }
+    return {
+        success: true,
+        user: updated,
+    }
 })

@@ -34,6 +34,6 @@ export function extractMetadata(verb: IVerb): IVerbMetadata {
     return {
         root: verb.root,
         etymology_sources: etymologySources,
-        stems
+        stems,
     }
 }

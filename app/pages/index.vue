@@ -90,7 +90,7 @@ const searchPlaceholder = computed(() => {
 const filters = computed(() => ({
     letter: filterLetter.value,
     etymology: filterEtymology.value,
-    stem: filterStem.value
+    stem: filterStem.value,
 }))
 
 const searchQuery = ref(q.value)
@@ -101,7 +101,7 @@ const searchKey = computed(() => {
         searchQuery.value,
         searchEverything.value,
         useRegex.value,
-        caseSensitive.value
+        caseSensitive.value,
     ].join('-')
 })
 const { data: searchResults, pending } = await useAsyncData(
@@ -123,8 +123,8 @@ const { data: searchResults, pending } = await useAsyncData(
                 query,
                 useRegex: useRegex.value,
                 caseSensitive: caseSensitive.value,
-                searchType: searchEverything.value ? 'all' : 'roots'
-            }
+                searchType: searchEverything.value ? 'all' : 'roots',
+            },
         })
     }
 )

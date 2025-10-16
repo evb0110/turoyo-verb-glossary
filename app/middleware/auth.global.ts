@@ -6,7 +6,8 @@ export default defineNuxtRouteMiddleware(async (to) => {
         if (!event) return
 
         try {
-            const response = await event.$fetch<{ authenticated: boolean, role?: string }>('/api/auth/check')
+            const response = await event.$fetch<{ authenticated: boolean
+                role?: string }>('/api/auth/check')
 
             if (!response.authenticated && !publicRoutes.includes(to.path)) {
                 return navigateTo('/login')

@@ -18,8 +18,8 @@ export function useQuery(
         return useRouteQuery<string | null, string>(name, null, {
             transform: {
                 get: val => val ?? defaultValue,
-                set: val => val === defaultValue ? null : val
-            }
+                set: val => val === defaultValue ? null : val,
+            },
         })
     }
 
@@ -35,7 +35,7 @@ export function useQuery(
             set: (val) => {
                 const targetValue = val ? truthy : falsy
                 return targetValue === defaultUrlValue ? null : targetValue
-            }
-        }
+            },
+        },
     })
 }

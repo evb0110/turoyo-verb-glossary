@@ -8,6 +8,6 @@ export const AUTH_ROUTES = {
         guest: '/login',
         blocked: '/blocked',
         authenticated: '/',
-        unauthorized: '/'
-    }
+        unauthorized: '/',
+    },
 } as const

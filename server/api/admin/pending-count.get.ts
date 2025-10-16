@@ -9,7 +9,7 @@ export default defineEventHandler(async (event) => {
     if (!session?.user) {
         throw createError({
             statusCode: 401,
-            statusMessage: 'Unauthorized'
+            statusMessage: 'Unauthorized',
         })
     }
 
@@ -18,7 +18,7 @@ export default defineEventHandler(async (event) => {
     if (!currentUser[0] || currentUser[0].role !== 'admin') {
         throw createError({
             statusCode: 403,
-            statusMessage: 'Forbidden: Admin access required'
+            statusMessage: 'Forbidden: Admin access required',
         })
     }
 

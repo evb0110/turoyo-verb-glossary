@@ -1,9 +1,7 @@
 <script setup lang="ts">
 const { signIn, loading } = useAuth()
 
-definePageMeta({
-    layout: false
-})
+definePageMeta({ layout: false })
 </script>
 
 <template>

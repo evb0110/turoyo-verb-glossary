@@ -3,9 +3,7 @@ import type { IAuthUser } from '~/composables/IAuthUser'
 
 const { user } = useAuth()
 
-const { data: users, refresh: refreshUsers } = await useFetch<IAuthUser[]>('/api/admin/users', {
-    watch: false
-})
+const { data: users, refresh: refreshUsers } = await useFetch<IAuthUser[]>('/api/admin/users', { watch: false })
 
 const loading = ref<string | null>(null)
 const toastStore = useToast()
@@ -13,14 +11,12 @@ const toastStore = useToast()
 const approveUser = async (userId: string) => {
     loading.value = userId
     try {
-        await $fetch(`/api/admin/users/${userId}/activate`, {
-            method: 'PATCH'
-        })
+        await $fetch(`/api/admin/users/${userId}/activate`, { method: 'PATCH' })
         await refreshUsers()
         toastStore.add({
             title: 'User approved',
             description: 'User has been approved successfully',
-            color: 'success'
+            color: 'success',
         })
     }
     catch (error) {
@@ -28,7 +24,7 @@ const approveUser = async (userId: string) => {
         toastStore.add({
             title: 'Error',
             description: 'Failed to approve user',
-            color: 'error'
+            color: 'error',
         })
     }
     finally {
@@ -39,14 +35,12 @@ const approveUser = async (userId: string) => {
 const blockUser = async (userId: string) => {
     loading.value = userId
     try {
-        await $fetch(`/api/admin/users/${userId}/block`, {
-            method: 'PATCH'
-        })
+        await $fetch(`/api/admin/users/${userId}/block`, { method: 'PATCH' })
         await refreshUsers()
         toastStore.add({
             title: 'User blocked',
             description: 'User has been blocked successfully',
-            color: 'warning'
+            color: 'warning',
         })
     }
     catch (error) {
@@ -54,7 +48,7 @@ const blockUser = async (userId: string) => {
         toastStore.add({
             title: 'Error',
             description: 'Failed to block user',
-            color: 'error'
+            color: 'error',
         })
     }
     finally {
@@ -65,14 +59,12 @@ const blockUser = async (userId: string) => {
 const unblockUser = async (userId: string) => {
     loading.value = userId
     try {
-        await $fetch(`/api/admin/users/${userId}/activate`, {
-            method: 'PATCH'
-        })
+        await $fetch(`/api/admin/users/${userId}/activate`, { method: 'PATCH' })
         await refreshUsers()
         toastStore.add({
             title: 'User unblocked',
             description: 'User has been unblocked successfully',
-            color: 'success'
+            color: 'success',
         })
     }
     catch (error) {
@@ -80,7 +72,7 @@ const unblockUser = async (userId: string) => {
         toastStore.add({
             title: 'Error',
             description: 'Failed to unblock user',
-            color: 'error'
+            color: 'error',
         })
     }
     finally {
@@ -109,7 +101,7 @@ const formatDate = (date: string) => {
         month: 'short',
         day: 'numeric',
         hour: '2-digit',
-        minute: '2-digit'
+        minute: '2-digit',
     })
 }
 </script>

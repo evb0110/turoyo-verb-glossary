@@ -6,7 +6,11 @@ export function findAllMatches(text: string, regex: RegExp): RegExpExecArray[] {
     let match: RegExpExecArray | null
 
     while ((match = globalRegex.exec(text)) !== null) {
-        results.push({ ...match, index: match.index, input: match.input } as RegExpExecArray)
+        results.push({
+            ...match,
+            index: match.index,
+            input: match.input,
+        } as RegExpExecArray)
 
         if (match[0].length === 0) {
             globalRegex.lastIndex += 1

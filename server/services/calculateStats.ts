@@ -10,7 +10,7 @@ export function calculateStats(verbs: (IVerb | null)[]) {
         etymology_sources: {},
         cross_references: 0,
         uncertain_entries: 0,
-        homonyms: 0
+        homonyms: 0,
     }
 
     for (const verb of verbs) {

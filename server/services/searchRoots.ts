@@ -49,6 +49,6 @@ export async function searchRoots(
         total: matchingRoots.length,
         roots: matchingRoots,
         verbPreviews,
-        verbMetadata
+        verbMetadata,
     }
 }

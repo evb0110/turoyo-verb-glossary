@@ -21,7 +21,10 @@ export function parseHighlights(
     } = {}
 ): ITextSegment[] {
     if (!text || !query) {
-        return [{ text, isMatch: false }]
+        return [{
+            text,
+            isMatch: false,
+        }]
     }
 
     const { useRegex = false, caseSensitive = false } = opts
@@ -30,7 +33,10 @@ export function parseHighlights(
         if (useRegex) {
             const regex = createSearchRegex(query, { caseSensitive })
             if (!regex) {
-                return [{ text, isMatch: false }]
+                return [{
+                    text,
+                    isMatch: false,
+                }]
             }
             return parseWithRegex(text, regex)
         }
@@ -39,7 +45,10 @@ export function parseHighlights(
         }
     }
     catch {
-        return [{ text, isMatch: false }]
+        return [{
+            text,
+            isMatch: false,
+        }]
     }
 }
 
@@ -53,18 +62,27 @@ function parseWithPlainText(text: string, query: string, caseSensitive: boolean)
 
     while (index !== -1) {
         if (index > lastIndex) {
-            segments.push({ text: text.slice(lastIndex, index), isMatch: false })
+            segments.push({
+                text: text.slice(lastIndex, index),
+                isMatch: false,
+            })
         }
 
         const matchText = text.slice(index, index + query.length)
-        segments.push({ text: matchText, isMatch: true })
+        segments.push({
+            text: matchText,
+            isMatch: true,
+        })
 
         lastIndex = index + query.length
         index = searchText.indexOf(searchQuery, lastIndex)
     }
 
     if (lastIndex < text.length) {
-        segments.push({ text: text.slice(lastIndex), isMatch: false })
+        segments.push({
+            text: text.slice(lastIndex),
+            isMatch: false,
+        })
     }
 
     return segments
@@ -89,16 +107,25 @@ function parseWithRegex(text: string, regex: RegExp): ITextSegment[] {
         }
 
         if (matchIndex > lastIndex) {
-            segments.push({ text: text.slice(lastIndex, matchIndex), isMatch: false })
+            segments.push({
+                text: text.slice(lastIndex, matchIndex),
+                isMatch: false,
+            })
         }
 
-        segments.push({ text: matchText, isMatch: true })
+        segments.push({
+            text: matchText,
+            isMatch: true,
+        })
 
         lastIndex = matchIndex + matchText.length
     }
 
     if (lastIndex < text.length) {
-        segments.push({ text: text.slice(lastIndex), isMatch: false })
+        segments.push({
+            text: text.slice(lastIndex),
+            isMatch: false,
+        })
     }
 
     return segments

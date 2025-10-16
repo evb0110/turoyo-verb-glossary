@@ -5,12 +5,14 @@ import { searchFullText } from '~~/server/services/searchFullText'
 
 export default defineEventHandler(async (event) => {
     const body = await readBody(event)
-    const { query, useRegex, caseSensitive, searchType } = body
+    const {
+        query, useRegex, caseSensitive, searchType,
+    } = body
 
     if (!query) {
         throw createError({
             statusCode: 400,
-            message: 'Invalid request: query required'
+            message: 'Invalid request: query required',
         })
     }
 
@@ -25,7 +27,10 @@ export default defineEventHandler(async (event) => {
             console.log(`[Verb Search] First 3 roots:`, allRoots.slice(0, 3))
         }
 
-        return searchRoots(allRoots, query, { useRegex, caseSensitive })
+        return searchRoots(allRoots, query, {
+            useRegex,
+            caseSensitive,
+        })
     }
 
     console.log('[Verb Search] Everything mode: scanning all verb content...')
@@ -36,5 +41,9 @@ export default defineEventHandler(async (event) => {
         console.log(`[Verb Search] First 3 file paths:`, verbFiles.slice(0, 3))
     }
 
-    return searchFullText(verbFiles, query, { useRegex, caseSensitive, searchType })
+    return searchFullText(verbFiles, query, {
+        useRegex,
+        caseSensitive,
+        searchType,
+    })
 })

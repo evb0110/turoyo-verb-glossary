@@ -9,6 +9,6 @@ export async function getAllUsers() {
         email: user.email,
         role: user.role,
         image: user.image,
-        createdAt: user.createdAt
+        createdAt: user.createdAt,
     }).from(user).orderBy(desc(user.createdAt))
 }

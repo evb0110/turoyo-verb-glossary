@@ -13,7 +13,7 @@ export function canNavigate(
         return {
             shouldNavigate: false,
             reason: 'Already on target page',
-            newState: state
+            newState: state,
         }
     }
 
@@ -23,7 +23,7 @@ export function canNavigate(
         return {
             shouldNavigate: false,
             reason: 'Navigation in progress',
-            newState: state
+            newState: state,
         }
     }
 
@@ -31,7 +31,7 @@ export function canNavigate(
         return {
             shouldNavigate: false,
             reason: `Cooldown active (${timeSinceLastRedirect}ms < ${REDIRECT_COOLDOWN_MS}ms)`,
-            newState: state
+            newState: state,
         }
     }
 
@@ -40,7 +40,7 @@ export function canNavigate(
         newState: {
             isNavigating: true,
             lastRedirectTime: now,
-            lastRedirectTarget: target
-        }
+            lastRedirectTarget: target,
+        },
     }
 }

@@ -40,7 +40,7 @@ export const useAuth = () => {
             sessionStatus.value = 'loading'
             await client.signIn.social({
                 provider: 'google',
-                callbackURL: '/'
+                callbackURL: '/',
             })
         }
         catch (error) {
@@ -119,6 +119,6 @@ export const useAuth = () => {
         isApproved,
         signIn,
         signOut,
-        checkSession
+        checkSession,
     }
 }

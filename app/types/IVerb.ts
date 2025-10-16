@@ -10,5 +10,6 @@ export interface IVerb {
 
     lemma_header_raw?: string
 
-    lemma_header_tokens?: { italic: boolean, text: string }[]
+    lemma_header_tokens?: { italic: boolean
+        text: string }[]
 }

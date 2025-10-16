@@ -52,7 +52,7 @@ const props = withDefaults(
     }>(),
     {
         maxExamplesPerStem: 3,
-        maxExampleLength: 150
+        maxExampleLength: 150,
     }
 )
 
@@ -116,7 +116,7 @@ function getStemExamples(stem: IStem): ProcessedExample[] {
         translation: ex.translations[0]
             ? truncateText(ex.translations[0], props.maxExampleLength)
             : '',
-        reference: ex.references[0] || ''
+        reference: ex.references[0] || '',
     }))
 }
 </script>

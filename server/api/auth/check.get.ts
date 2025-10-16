@@ -20,7 +20,7 @@ export default defineEventHandler(async (event) => {
 
         return {
             authenticated: true,
-            role: currentUser.role
+            role: currentUser.role,
         }
     }
     catch (error) {

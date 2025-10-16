@@ -46,7 +46,11 @@ const { data: stats } = await useAsyncData('layout-stats', () =>
 const isAuthenticated = computed(() => sessionStatus.value === 'authenticated')
 
 const displayStats = computed(() => {
-    return stats.value || { total_verbs: '—', total_stems: '—', total_examples: '—' }
+    return stats.value || {
+        total_verbs: '—',
+        total_stems: '—',
+        total_examples: '—',
+    }
 })
 
 const shouldFetchPending = computed(() => isAuthenticated.value && isAdmin.value)
@@ -85,7 +89,7 @@ if (import.meta.client) {
                 title: 'Pending Users',
                 description: `You have ${newCount} user${newCount > 1 ? 's' : ''} waiting for approval`,
                 color: 'warning',
-                icon: 'i-heroicons-bell'
+                icon: 'i-heroicons-bell',
             })
         }
     })

@@ -9,13 +9,13 @@ export const auth = betterAuth({
     secret: config.betterAuthSecret,
     database: drizzleAdapter(db, {
         provider: 'pg',
-        schema
+        schema,
     }),
     socialProviders: {
         google: {
             clientId: config.googleClientId,
             clientSecret: config.googleClientSecret,
-            prompt: 'select_account'
-        }
-    }
+            prompt: 'select_account',
+        },
+    },
 })

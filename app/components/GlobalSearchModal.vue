@@ -98,8 +98,8 @@ function submit() {
             q,
             type,
             regex,
-            case: caseParam
-        }
+            case: caseParam,
+        },
     })
 }
 </script>

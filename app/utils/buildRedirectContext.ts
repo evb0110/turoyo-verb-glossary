@@ -13,6 +13,6 @@ export function buildRedirectContext(
         sessionStatus,
         userRole: userRole as TUserRole | undefined,
         isPublic: isPublicRoute(currentPath),
-        isAdmin: isAdminRoute(currentPath)
+        isAdmin: isAdminRoute(currentPath),
     }
 }

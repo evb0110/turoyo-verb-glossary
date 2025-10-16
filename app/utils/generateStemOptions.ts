@@ -3,7 +3,10 @@ import type { IFilterableVerb } from '~/types/IFilterableVerb'
 
 export function generateStemOptions(results: IFilterableVerb[]): ISelectOption[] {
     if (results.length === 0) {
-        return [{ label: 'All stems', value: null }]
+        return [{
+            label: 'All stems',
+            value: null,
+        }]
     }
 
     const stemCounts = new Map<string, number>()
@@ -14,9 +17,15 @@ export function generateStemOptions(results: IFilterableVerb[]): ISelectOption[]
     })
 
     return [
-        { label: 'All stems', value: null },
+        {
+            label: 'All stems',
+            value: null,
+        },
         ...Array.from(stemCounts.entries())
             .sort(([a], [b]) => (a || '').localeCompare(b || ''))
-            .map(([stem, count]) => ({ label: `${stem} (${count})`, value: stem }))
+            .map(([stem, count]) => ({
+                label: `${stem} (${count})`,
+                value: stem,
+            })),
     ]
 }

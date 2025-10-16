@@ -7,7 +7,7 @@ export default defineEventHandler(async (event) => {
     if (!slug) {
         throw createError({
             statusCode: 400,
-            message: 'Verb slug is required'
+            message: 'Verb slug is required',
         })
     }
 
@@ -17,7 +17,7 @@ export default defineEventHandler(async (event) => {
     if (!verb) {
         throw createError({
             statusCode: 404,
-            message: `Verb not found: ${root}`
+            message: `Verb not found: ${root}`,
         })
     }
 

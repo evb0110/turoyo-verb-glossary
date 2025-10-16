@@ -18,7 +18,10 @@ export async function safeNavigate(
     const decision = canNavigate(target, currentPath, now, navigationState)
 
     if (!decision.shouldNavigate) {
-        log(`Skipped: ${decision.reason}`, { target, currentPath })
+        log(`Skipped: ${decision.reason}`, {
+            target,
+            currentPath,
+        })
         return
     }
 

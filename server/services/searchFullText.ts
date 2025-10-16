@@ -14,7 +14,8 @@ export async function searchFullText(
 ): Promise<IFullTextSearchResult> {
     const storage = useStorage('assets:server')
     const matchingRoots: string[] = []
-    const verbPreviews: Record<string, { verb?: IVerb, excerpts?: IExcerpt[] }> = {}
+    const verbPreviews: Record<string, { verb?: IVerb
+        excerpts?: IExcerpt[] }> = {}
     const verbMetadata: Record<string, IVerbMetadata> = {}
 
     const BATCH_SIZE = 100
@@ -161,6 +162,6 @@ export async function searchFullText(
         total: matchingRoots.length,
         roots: matchingRoots,
         verbPreviews,
-        verbMetadata
+        verbMetadata,
     }
 }

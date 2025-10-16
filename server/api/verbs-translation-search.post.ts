@@ -5,19 +5,22 @@ import { generateExcerpts } from '~~/server/utils/verbExcerpts'
 
 export default defineEventHandler(async (event) => {
     const body = await readBody(event)
-    const { roots, query, useRegex, caseSensitive, searchType } = body
+    const {
+        roots, query, useRegex, caseSensitive, searchType,
+    } = body
 
     if (!roots || !Array.isArray(roots) || !query) {
         throw createError({
             statusCode: 400,
-            message: 'Invalid request: roots array and query required'
+            message: 'Invalid request: roots array and query required',
         })
     }
 
     console.log(`[Translation Search] Searching ${roots.length} verbs for: "${query}" (mode: ${searchType})`)
 
     const matchingRoots: string[] = []
-    const verbPreviews: Record<string, { excerpts?: IExcerpt[], verb?: IVerb }> = {}
+    const verbPreviews: Record<string, { excerpts?: IExcerpt[]
+        verb?: IVerb }> = {}
 
     const storage = useStorage('assets:server')
 
@@ -34,24 +37,40 @@ export default defineEventHandler(async (event) => {
                     return null
                 }
 
-                if (matchesPattern(verb.root, query, { useRegex, caseSensitive })) {
+                if (matchesPattern(verb.root, query, {
+                    useRegex,
+                    caseSensitive,
+                })) {
                     if (searchType === 'roots') {
                         verbPreviews[root] = { verb }
                     }
                     else {
-                        verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
+                        verbPreviews[root] = {
+                            excerpts: generateExcerpts(verb, query, {
+                                useRegex,
+                                caseSensitive,
+                            }),
+                        }
                     }
                     return root
                 }
 
                 if (verb.lemma_header_tokens) {
                     for (const token of verb.lemma_header_tokens) {
-                        if (matchesPattern(token.text, query, { useRegex, caseSensitive })) {
+                        if (matchesPattern(token.text, query, {
+                            useRegex,
+                            caseSensitive,
+                        })) {
                             if (searchType === 'roots') {
                                 verbPreviews[root] = { verb }
                             }
                             else {
-                                verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
+                                verbPreviews[root] = {
+                                    excerpts: generateExcerpts(verb, query, {
+                                        useRegex,
+                                        caseSensitive,
+                                    }),
+                                }
                             }
                             return root
                         }
@@ -59,24 +78,40 @@ export default defineEventHandler(async (event) => {
                 }
 
                 for (const stem of verb.stems) {
-                    if (stem.forms?.some(f => matchesPattern(f, query, { useRegex, caseSensitive }))) {
+                    if (stem.forms?.some(f => matchesPattern(f, query, {
+                        useRegex,
+                        caseSensitive,
+                    }))) {
                         if (searchType === 'roots') {
                             verbPreviews[root] = { verb }
                         }
                         else {
-                            verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
+                            verbPreviews[root] = {
+                                excerpts: generateExcerpts(verb, query, {
+                                    useRegex,
+                                    caseSensitive,
+                                }),
+                            }
                         }
                         return root
                     }
 
                     if (stem.label_gloss_tokens) {
                         for (const token of stem.label_gloss_tokens) {
-                            if (matchesPattern(token.text, query, { useRegex, caseSensitive })) {
+                            if (matchesPattern(token.text, query, {
+                                useRegex,
+                                caseSensitive,
+                            })) {
                                 if (searchType === 'roots') {
                                     verbPreviews[root] = { verb }
                                 }
                                 else {
-                                    verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
+                                    verbPreviews[root] = {
+                                        excerpts: generateExcerpts(verb, query, {
+                                            useRegex,
+                                            caseSensitive,
+                                        }),
+                                    }
                                 }
                                 return root
                             }
@@ -86,34 +121,58 @@ export default defineEventHandler(async (event) => {
                     for (const examples of Object.values(stem.conjugations)) {
                         for (const example of examples) {
                             for (const translation of example.translations) {
-                                if (matchesPattern(translation, query, { useRegex, caseSensitive })) {
+                                if (matchesPattern(translation, query, {
+                                    useRegex,
+                                    caseSensitive,
+                                })) {
                                     if (searchType === 'roots') {
                                         verbPreviews[root] = { verb }
                                     }
                                     else {
-                                        verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
+                                        verbPreviews[root] = {
+                                            excerpts: generateExcerpts(verb, query, {
+                                                useRegex,
+                                                caseSensitive,
+                                            }),
+                                        }
                                     }
                                     return root
                                 }
                             }
 
-                            if (matchesPattern(example.turoyo, query, { useRegex, caseSensitive })) {
+                            if (matchesPattern(example.turoyo, query, {
+                                useRegex,
+                                caseSensitive,
+                            })) {
                                 if (searchType === 'roots') {
                                     verbPreviews[root] = { verb }
                                 }
                                 else {
-                                    verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
+                                    verbPreviews[root] = {
+                                        excerpts: generateExcerpts(verb, query, {
+                                            useRegex,
+                                            caseSensitive,
+                                        }),
+                                    }
                                 }
                                 return root
                             }
 
                             for (const reference of example.references) {
-                                if (matchesPattern(reference, query, { useRegex, caseSensitive })) {
+                                if (matchesPattern(reference, query, {
+                                    useRegex,
+                                    caseSensitive,
+                                })) {
                                     if (searchType === 'roots') {
                                         verbPreviews[root] = { verb }
                                     }
                                     else {
-                                        verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
+                                        verbPreviews[root] = {
+                                            excerpts: generateExcerpts(verb, query, {
+                                                useRegex,
+                                                caseSensitive,
+                                            }),
+                                        }
                                     }
                                     return root
                                 }
@@ -125,16 +184,33 @@ export default defineEventHandler(async (event) => {
                 if (verb.etymology && Array.isArray(verb.etymology.etymons)) {
                     for (const etymon of verb.etymology.etymons) {
                         if (
-                            (etymon.meaning && matchesPattern(etymon.meaning, query, { useRegex, caseSensitive }))
-                            || (etymon.notes && matchesPattern(etymon.notes, query, { useRegex, caseSensitive }))
-                            || (etymon.raw && matchesPattern(etymon.raw, query, { useRegex, caseSensitive }))
-                            || (etymon.source_root && matchesPattern(etymon.source_root, query, { useRegex, caseSensitive }))
+                            (etymon.meaning && matchesPattern(etymon.meaning, query, {
+                                useRegex,
+                                caseSensitive,
+                            }))
+                            || (etymon.notes && matchesPattern(etymon.notes, query, {
+                                useRegex,
+                                caseSensitive,
+                            }))
+                            || (etymon.raw && matchesPattern(etymon.raw, query, {
+                                useRegex,
+                                caseSensitive,
+                            }))
+                            || (etymon.source_root && matchesPattern(etymon.source_root, query, {
+                                useRegex,
+                                caseSensitive,
+                            }))
                         ) {
                             if (searchType === 'roots') {
                                 verbPreviews[root] = { verb }
                             }
                             else {
-                                verbPreviews[root] = { excerpts: generateExcerpts(verb, query, { useRegex, caseSensitive }) }
+                                verbPreviews[root] = {
+                                    excerpts: generateExcerpts(verb, query, {
+                                        useRegex,
+                                        caseSensitive,
+                                    }),
+                                }
                             }
                             return root
                         }
@@ -158,6 +234,6 @@ export default defineEventHandler(async (event) => {
     return {
         total: matchingRoots.length,
         roots: matchingRoots,
-        verbPreviews
+        verbPreviews,
     }
 })

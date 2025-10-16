@@ -5,6 +5,7 @@ import type { IExcerpt } from '~/types/IExcerpt'
 export interface IFullTextSearchResult {
     total: number
     roots: string[]
-    verbPreviews: Record<string, { verb?: IVerb, excerpts?: IExcerpt[] }>
+    verbPreviews: Record<string, { verb?: IVerb
+        excerpts?: IExcerpt[] }>
     verbMetadata: Record<string, IVerbMetadata>
 }

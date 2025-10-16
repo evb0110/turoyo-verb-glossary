@@ -3,7 +3,10 @@ import type { IFilterableVerb } from '~/types/IFilterableVerb'
 
 export function generateEtymologyOptions(results: IFilterableVerb[]): ISelectOption[] {
     if (results.length === 0) {
-        return [{ label: 'All etymologies', value: null }]
+        return [{
+            label: 'All etymologies',
+            value: null,
+        }]
     }
 
     const etymCounts = new Map<string, number>()
@@ -17,9 +20,15 @@ export function generateEtymologyOptions(results: IFilterableVerb[]): ISelectOpt
     })
 
     return [
-        { label: 'All etymologies', value: null },
+        {
+            label: 'All etymologies',
+            value: null,
+        },
         ...Array.from(etymCounts.entries())
             .sort(([a], [b]) => (a || '').localeCompare(b || ''))
-            .map(([source, count]) => ({ label: `${source} (${count})`, value: source }))
+            .map(([source, count]) => ({
+                label: `${source} (${count})`,
+                value: source,
+            })),
     ]
 }

@@ -40,7 +40,7 @@ export function generateExcerpts(
                     type: 'etymology',
                     html: excerptText,
                     label: 'Citation:',
-                    text: excerptText
+                    text: excerptText,
                 })
             }
         }
@@ -56,7 +56,7 @@ export function generateExcerpts(
                         stem: stem.stem,
                         html: form,
                         label: `Form (Stem ${stem.stem})`,
-                        text: form
+                        text: form,
                     })
                 }
             }
@@ -76,7 +76,7 @@ export function generateExcerpts(
                         stem: stem.stem,
                         html: excerptText,
                         label: `Meaning (Stem ${stem.stem}):`,
-                        text: excerptText
+                        text: excerptText,
                     })
                 }
             }
@@ -100,7 +100,7 @@ export function generateExcerpts(
                                 conjugationType: conjType,
                                 html: excerptText,
                                 label: `${conjType}:`,
-                                text: excerptText
+                                text: excerptText,
                             })
                         }
                     }
@@ -123,7 +123,7 @@ export function generateExcerpts(
                                     conjugationType: conjType,
                                     html: excerptText,
                                     label: `Translation:`,
-                                    text: excerptText
+                                    text: excerptText,
                                 })
                             }
                         }
@@ -143,7 +143,7 @@ export function generateExcerpts(
                 etymon.meaning,
                 etymon.notes,
                 etymon.raw,
-                etymon.source_root
+                etymon.source_root,
             ].filter((field): field is string => Boolean(field))
 
             for (const field of searchFields) {
@@ -157,7 +157,7 @@ export function generateExcerpts(
                             type: 'etymology',
                             html: excerptText,
                             label: `Etymology:`,
-                            text: excerptText
+                            text: excerptText,
                         })
                     }
                 }

@@ -20,13 +20,16 @@ export async function handleAuthRedirect(
         status: sessionStatus,
         role: userRole,
         isPublic: context.isPublic,
-        isAdmin: context.isAdmin
+        isAdmin: context.isAdmin,
     })
 
     const target = determineRedirect(context)
 
     if (target) {
-        log('Redirect required', { from: currentPath, to: target })
+        log('Redirect required', {
+            from: currentPath,
+            to: target,
+        })
         await safeNavigate(target, currentPath)
     }
     else {

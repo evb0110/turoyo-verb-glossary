@@ -61,7 +61,7 @@ const groupedEtymons = computed(() => {
 
     return Array.from(groups.entries()).map(([source, etymons]) => ({
         source,
-        etymons
+        etymons,
     }))
 })
 </script>

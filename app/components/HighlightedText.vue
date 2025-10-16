@@ -19,14 +19,14 @@ const props = withDefaults(
     }>(),
     {
         useRegex: false,
-        caseSensitive: false
+        caseSensitive: false,
     }
 )
 
 const segments = computed(() => {
     return parseHighlights(props.text, props.query, {
         useRegex: props.useRegex,
-        caseSensitive: props.caseSensitive
+        caseSensitive: props.caseSensitive,
     })
 })
 </script>

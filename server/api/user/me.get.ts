@@ -17,7 +17,7 @@ export default defineEventHandler(async (event) => {
             name: user.name,
             email: user.email,
             image: user.image,
-            role: user.role
+            role: user.role,
         }).from(user).where(eq(user.id, session.user.id)).limit(1)
 
         if (!userData[0]) {

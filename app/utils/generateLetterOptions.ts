@@ -3,7 +3,10 @@ import type { IFilterableVerb } from '~/types/IFilterableVerb'
 
 export function generateLetterOptions(results: IFilterableVerb[]): ISelectOption[] {
     if (results.length === 0) {
-        return [{ label: 'All letters', value: null }]
+        return [{
+            label: 'All letters',
+            value: null,
+        }]
     }
 
     const letterCounts = new Map<string, number>()
@@ -15,9 +18,15 @@ export function generateLetterOptions(results: IFilterableVerb[]): ISelectOption
     })
 
     return [
-        { label: 'All letters', value: null },
+        {
+            label: 'All letters',
+            value: null,
+        },
         ...Array.from(letterCounts.entries())
             .sort(([a], [b]) => (a || '').localeCompare(b || ''))
-            .map(([letter, count]) => ({ label: `${letter} (${count})`, value: letter }))
+            .map(([letter, count]) => ({
+                label: `${letter} (${count})`,
+                value: letter,
+            })),
     ]
 }

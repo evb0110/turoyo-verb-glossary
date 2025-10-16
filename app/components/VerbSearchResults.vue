@@ -91,7 +91,7 @@ const route = useRoute()
 function getTo(row: TableRow): RouteLocationRaw {
     return {
         path: `/verbs/${rootToSlug(row.original.root)}`,
-        query: route.query
+        query: route.query,
     }
 }
 
@@ -100,21 +100,17 @@ const hasAnyPreviews = computed(() => props.verbPreviews.size > 0)
 const columns = [
     {
         accessorKey: 'root',
-        header: 'Root'
+        header: 'Root',
     },
     {
         accessorKey: 'etymology_source',
-        header: 'Etymology'
+        header: 'Etymology',
     },
     {
         accessorKey: 'preview',
         header: 'Article Preview',
-        meta: {
-            class: {
-                td: 'p-0'
-            }
-        }
-    }
+        meta: { class: { td: 'p-0' } },
+    },
 ]
 </script>
 

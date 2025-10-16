@@ -38,7 +38,7 @@ const route = useRoute()
 const toBack = computed(() => {
     return {
         path: '/',
-        query: route.query
+        query: route.query,
     }
 })
 
@@ -51,7 +51,7 @@ const stems = computed(() => {
 if (error.value) {
     throw createError({
         statusCode: 404,
-        statusMessage: 'Verb not found'
+        statusMessage: 'Verb not found',
     })
 }
 
@@ -60,8 +60,8 @@ useHead({
     meta: [
         {
             name: 'description',
-            content: verb.value?.etymology?.etymons?.[0]?.meaning || 'Detailed view of a Turoyo verb'
-        }
-    ]
+            content: verb.value?.etymology?.etymons?.[0]?.meaning || 'Detailed view of a Turoyo verb',
+        },
+    ],
 })
 </script>

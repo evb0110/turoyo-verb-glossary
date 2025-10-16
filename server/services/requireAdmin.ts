@@ -9,7 +9,7 @@ export async function requireAdmin(event: H3Event) {
     if (!session?.user) {
         throw createError({
             statusCode: 401,
-            statusMessage: 'Unauthorized'
+            statusMessage: 'Unauthorized',
         })
     }
 
@@ -22,7 +22,7 @@ export async function requireAdmin(event: H3Event) {
             statusCode: authResult.error === 'not_found' ? 404 : 403,
             statusMessage: authResult.error === 'not_found'
                 ? 'User not found'
-                : 'Forbidden: Admin access required'
+                : 'Forbidden: Admin access required',
         })
     }
 

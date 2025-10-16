@@ -1,9 +1,7 @@
 <script setup lang="ts">
 const { signOut, user } = useAuth()
 
-definePageMeta({
-    layout: false
-})
+definePageMeta({ layout: false })
 
 const handleSignOut = async () => {
     await signOut()
