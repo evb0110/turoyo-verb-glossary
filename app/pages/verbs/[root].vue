@@ -8,7 +8,10 @@ const toBack = computed(() => {
     }
 })
 
-const { data: verb, error } = await useFetch(() => `/api/verbs/${route.params.root}`)
+const {
+    data: verb,
+    error,
+} = await useFetch(() => `/api/verb/${route.params.root}`)
 
 const stems = computed(() => {
     return (verb.value?.stems || []).filter(Boolean)

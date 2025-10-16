@@ -18,18 +18,14 @@ export async function safeNavigate(
     setNavigationState(decision.newState)
 
     try {
-        await navigateTo(target, {
-            replace: true,
-        })
+        await navigateTo(target, { replace: true })
     }
     catch (error) {
         console.error('[Auth Redirect] Navigation error:', error)
     }
     finally {
         setTimeout(() => {
-            updateNavigationState({
-                isNavigating: false,
-            })
+            updateNavigationState({ isNavigating: false })
         }, 100)
     }
 }

@@ -5,7 +5,7 @@ import { extractContext } from '~~/server/utils/extractContext'
 import { matchAll } from '~~/server/utils/matchAll'
 import { tokenTextToString } from '~~/server/utils/tokenTextToString'
 
-function shouldAddExcerpt(excerptText: string, seenTexts: Set<string>): boolean {
+function shouldAddExcerpt(excerptText: string, seenTexts: Set<string>) {
     return !seenTexts.has(excerptText)
 }
 

@@ -1,5 +1,8 @@
 <script setup lang="ts">
-const { user: authUser, signOut } = useAuth()
+const {
+    user: authUser,
+    signOut,
+} = useAuth()
 const sessionUser = computed(() => authUser.value)
 const loggingOut = ref(false)
 

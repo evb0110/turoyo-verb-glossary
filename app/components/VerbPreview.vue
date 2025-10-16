@@ -1,19 +1,13 @@
 <script setup lang="ts">
 import type { IExample } from '~/types/IExample'
 import type { IStem } from '~/types/IStem'
-import type { IVerb } from '~/types/IVerb'
 import { tokenTextToString } from '~/utils/tokenTextToString'
 import { truncateText } from '~/utils/truncateText'
-
-interface ProcessedExample {
-    turoyo: string
-    translation: string
-    reference: string
-}
+import type { IVerbPreview } from '~~/server/services/extractVerbPreview'
 
 const props = withDefaults(
     defineProps<{
-        verb: IVerb
+        verb: IVerbPreview
         maxExamplesPerStem?: number
         maxExampleLength?: number
     }>(),
@@ -45,7 +39,7 @@ const etymologyText = computed(() => {
     return etymonParts.join('; ')
 })
 
-function getStemGloss(stem: IStem): string {
+function getStemGloss(stem: IStem) {
     if (!stem.label_gloss_tokens || stem.label_gloss_tokens.length === 0) {
         return ''
     }
@@ -57,7 +51,7 @@ function getStemGloss(stem: IStem): string {
     return glossText ? truncateText(glossText, 100) : ''
 }
 
-function collectExamples(conjugations: { [key: string]: IExample[] }, maxCount: number): IExample[] {
+function collectExamples(conjugations: { [key: string]: IExample[] }, maxCount: number) {
     const examples: IExample[] = []
 
     for (const exampleList of Object.values(conjugations)) {
@@ -75,7 +69,7 @@ function collectExamples(conjugations: { [key: string]: IExample[] }, maxCount: 
     return examples
 }
 
-function getStemExamples(stem: IStem): ProcessedExample[] {
+function getStemExamples(stem: IStem) {
     const examples = collectExamples(stem.conjugations, props.maxExamplesPerStem)
 
     return examples.map(ex => ({

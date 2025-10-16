@@ -1,18 +1,118 @@
 import type { IVerb } from '~/types/IVerb'
 import type { IVerbMetadataWithPreview } from '~/types/IVerbMetadataWithPreview'
-import { setVerbMetadataWithPreview } from '~~/server/services/setVerbMetadataWithPreview'
+import { generateVerbMetadata } from '~~/server/services/generateVerbMetadata'
 import type { IFullTextSearchResult } from '~~/server/types/IFullTextSearchResult'
 import type { ISearchOptions } from '~~/server/types/ISearchOptions'
 import { matchesPattern } from '~~/server/utils/matchesPattern'
 
-export async function searchFullText(
-    verbFiles: string[],
+function mergeVerbMetadata(
+    existing: IVerbMetadataWithPreview | undefined,
+    newMetadata: IVerbMetadataWithPreview
+): IVerbMetadataWithPreview {
+    if (!existing) {
+        return newMetadata
+    }
+
+    return {
+        ...existing,
+        excerpts: [
+            ...(existing.excerpts ?? []),
+            ...(newMetadata.excerpts ?? []),
+        ],
+    }
+}
+
+function exampleMatches(
+    example: IVerb['stems'][number]['conjugations'][string][number],
     query: string,
-    opts: ISearchOptions & { searchType: 'roots' | 'all' }
+    opts: ISearchOptions
+): boolean {
+    if (example.turoyo && matchesPattern(example.turoyo, query, opts)) {
+        return true
+    }
+
+    if (example.translations?.some(translation => matchesPattern(translation, query, opts))) {
+        return true
+    }
+
+    return example.references?.some(reference => matchesPattern(reference, query, opts))
+}
+
+function stemMatches(
+    stem: IVerb['stems'][number],
+    query: string,
+    opts: ISearchOptions
+): boolean {
+    if (stem.forms?.some(f => matchesPattern(f, query, opts))) {
+        return true
+    }
+
+    if (stem.label_gloss_tokens?.some(token => matchesPattern(token.text, query, opts))) {
+        return true
+    }
+
+    for (const examples of Object.values(stem.conjugations)) {
+        for (const example of examples) {
+            if (exampleMatches(example, query, opts)) {
+                return true
+            }
+        }
+    }
+
+    return false
+}
+
+function etymologyMatches(
+    etymology: IVerb['etymology'],
+    query: string,
+    opts: ISearchOptions
+): boolean {
+    return etymology?.etymons?.some(etymon =>
+        (etymon.meaning && matchesPattern(etymon.meaning, query, opts))
+        || (etymon.notes && matchesPattern(etymon.notes, query, opts))
+        || (etymon.raw && matchesPattern(etymon.raw, query, opts))
+        || (etymon.source_root && matchesPattern(etymon.source_root, query, opts))
+    ) ?? false
+}
+
+function verbMatches(
+    verb: IVerb,
+    query: string,
+    opts: ISearchOptions
+): boolean {
+    return (
+        matchesPattern(verb.root, query, opts)
+        || verb.lemma_header_tokens?.some(token => matchesPattern(token.text, query, opts)) === true
+        || verb.stems.some(stem => stemMatches(stem, query, opts))
+        || etymologyMatches(verb.etymology, query, opts)
+    )
+}
+
+function processVerbFile(
+    verb: IVerb,
+    query: string,
+    opts: ISearchOptions
+): { root: string
+    metadata: IVerbMetadataWithPreview } | null {
+    if (!verbMatches(verb, query, opts)) {
+        return null
+    }
+
+    return {
+        root: verb.root,
+        metadata: generateVerbMetadata(verb, 'all', query, opts),
+    }
+}
+
+export async function searchFullText(
+    query: string,
+    opts: ISearchOptions
 ): Promise<IFullTextSearchResult> {
     const storage = useStorage('assets:server')
-    const matchingRoots: string[] = []
     const verbMetadata: Record<string, IVerbMetadataWithPreview> = {}
+
+    const allFiles = await storage.getKeys('verbs')
+    const verbFiles = allFiles.filter(f => f.endsWith('.json'))
 
     const BATCH_SIZE = 100
     for (let i = 0; i < verbFiles.length; i += BATCH_SIZE) {
@@ -22,77 +122,7 @@ export async function searchFullText(
             try {
                 const verb = await storage.getItem<IVerb>(filePath)
                 if (!verb) return null
-
-                const root = verb.root
-
-                if (matchesPattern(verb.root, query, opts)) {
-                    setVerbMetadataWithPreview(verb, opts.searchType, query, opts, verbMetadata)
-                    return root
-                }
-
-                if (verb.lemma_header_tokens) {
-                    for (const token of verb.lemma_header_tokens) {
-                        if (matchesPattern(token.text, query, opts)) {
-                            setVerbMetadataWithPreview(verb, opts.searchType, query, opts, verbMetadata)
-                            return root
-                        }
-                    }
-                }
-
-                for (const stem of verb.stems) {
-                    if (stem.forms?.some(f => matchesPattern(f, query, opts))) {
-                        setVerbMetadataWithPreview(verb, opts.searchType, query, opts, verbMetadata)
-                        return root
-                    }
-
-                    if (stem.label_gloss_tokens) {
-                        for (const token of stem.label_gloss_tokens) {
-                            if (matchesPattern(token.text, query, opts)) {
-                                setVerbMetadataWithPreview(verb, opts.searchType, query, opts, verbMetadata)
-                                return root
-                            }
-                        }
-                    }
-
-                    for (const examples of Object.values(stem.conjugations)) {
-                        for (const example of examples) {
-                            for (const translation of example.translations) {
-                                if (matchesPattern(translation, query, opts)) {
-                                    setVerbMetadataWithPreview(verb, opts.searchType, query, opts, verbMetadata)
-                                    return root
-                                }
-                            }
-
-                            if (matchesPattern(example.turoyo, query, opts)) {
-                                setVerbMetadataWithPreview(verb, opts.searchType, query, opts, verbMetadata)
-                                return root
-                            }
-
-                            for (const reference of example.references) {
-                                if (matchesPattern(reference, query, opts)) {
-                                    setVerbMetadataWithPreview(verb, opts.searchType, query, opts, verbMetadata)
-                                    return root
-                                }
-                            }
-                        }
-                    }
-                }
-
-                if (verb.etymology && Array.isArray(verb.etymology.etymons)) {
-                    for (const etymon of verb.etymology.etymons) {
-                        if (
-                            (etymon.meaning && matchesPattern(etymon.meaning, query, opts))
-                            || (etymon.notes && matchesPattern(etymon.notes, query, opts))
-                            || (etymon.raw && matchesPattern(etymon.raw, query, opts))
-                            || (etymon.source_root && matchesPattern(etymon.source_root, query, opts))
-                        ) {
-                            setVerbMetadataWithPreview(verb, opts.searchType, query, opts, verbMetadata)
-                            return root
-                        }
-                    }
-                }
-
-                return null
+                return processVerbFile(verb, query, opts)
             }
             catch (e) {
                 console.warn(`[Full-text Search] Failed to load ${filePath}:`, e)
@@ -101,9 +131,17 @@ export async function searchFullText(
         })
 
         const batchResults = await Promise.all(batchPromises)
-        matchingRoots.push(...batchResults.filter((r): r is string => r !== null))
+        for (const result of batchResults) {
+            if (result !== null) {
+                verbMetadata[result.root] = mergeVerbMetadata(
+                    verbMetadata[result.root],
+                    result.metadata
+                )
+            }
+        }
     }
 
+    const matchingRoots = Object.keys(verbMetadata)
     console.log(`[Full-text Search] Found ${matchingRoots.length} matches`)
 
     return {

@@ -1,8 +1,8 @@
 import type { IExcerpt } from '~/types/IExcerpt'
-import type { IVerb } from '~/types/IVerb'
 import type { IVerbMetadata } from '~/types/IVerbMetadata'
+import type { IVerbPreview } from '~~/server/services/extractVerbPreview'
 
 export interface IVerbMetadataWithPreview extends IVerbMetadata {
-    verbPreview?: IVerb
+    verbPreview?: IVerbPreview
     excerpts?: IExcerpt[]
 }

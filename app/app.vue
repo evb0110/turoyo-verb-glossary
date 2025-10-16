@@ -1,5 +1,8 @@
 <script setup lang="ts">
-const { checkSession, sessionStatus } = useAuth()
+const {
+    checkSession,
+    sessionStatus,
+} = useAuth()
 
 if (import.meta.client && sessionStatus.value === 'idle') {
     checkSession()

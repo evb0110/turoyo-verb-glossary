@@ -3,9 +3,10 @@ import type { IAuthUser } from '~/types/IAuthUser'
 
 const { user } = useAuth()
 
-const { data: users, refresh: refreshUsers } = await useFetch<IAuthUser[]>('/api/admin/users', {
-    watch: false,
-})
+const {
+    data: users,
+    refresh: refreshUsers,
+} = await useFetch<IAuthUser[]>('/api/admin/users', { watch: false })
 
 const loading = ref(null as string | null)
 const toastStore = useToast()
@@ -13,9 +14,7 @@ const toastStore = useToast()
 const approveUser = async (userId: string) => {
     loading.value = userId
     try {
-        await $fetch(`/api/admin/users/${userId}/activate`, {
-            method: 'PATCH',
-        })
+        await $fetch(`/api/admin/users/${userId}/activate`, { method: 'PATCH' })
         await refreshUsers()
         toastStore.add({
             title: 'User approved',
@@ -39,9 +38,7 @@ const approveUser = async (userId: string) => {
 const blockUser = async (userId: string) => {
     loading.value = userId
     try {
-        await $fetch(`/api/admin/users/${userId}/block`, {
-            method: 'PATCH',
-        })
+        await $fetch(`/api/admin/users/${userId}/block`, { method: 'PATCH' })
         await refreshUsers()
         toastStore.add({
             title: 'User blocked',
@@ -65,9 +62,7 @@ const blockUser = async (userId: string) => {
 const unblockUser = async (userId: string) => {
     loading.value = userId
     try {
-        await $fetch(`/api/admin/users/${userId}/activate`, {
-            method: 'PATCH',
-        })
+        await $fetch(`/api/admin/users/${userId}/activate`, { method: 'PATCH' })
         await refreshUsers()
         toastStore.add({
             title: 'User unblocked',

@@ -41,7 +41,10 @@ const searchKey = computed(() => {
         caseSensitive.value,
     ].join('-')
 })
-const { data: searchResults, pending } = await useAsyncData(
+const {
+    data: searchResults,
+    pending,
+} = await useAsyncData(
     searchKey,
     async () => {
         const query = (searchQuery.value || '').trim()
@@ -49,17 +52,17 @@ const { data: searchResults, pending } = await useAsyncData(
             return null
         }
 
+        const endpoint = searchEverything.value ? '/api/search/fulltext' : '/api/search/roots'
         return await $fetch<{
             total: number
             roots: string[]
             verbMetadata?: Record<string, IVerbMetadataWithPreview>
-        }>('/api/verbs-fulltext-search', {
+        }>(endpoint, {
             method: 'POST',
             body: {
                 query,
                 useRegex: useRegex.value,
                 caseSensitive: caseSensitive.value,
-                searchType: searchEverything.value ? 'all' : 'roots',
             },
         })
     }

@@ -10,9 +10,7 @@ function getAuthClient() {
         ? window.location.origin
         : useRuntimeConfig().public.siteUrl
 
-    authClient = createAuthClient({
-        baseURL,
-    })
+    authClient = createAuthClient({ baseURL })
     return authClient
 }
 

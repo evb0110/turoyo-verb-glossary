@@ -7,8 +7,11 @@ export function matchesPattern(
         caseSensitive?: boolean
         useRegex?: boolean
     } = {}
-): boolean {
-    const { caseSensitive = false, useRegex = false } = options
+) {
+    const {
+        caseSensitive = false,
+        useRegex = false,
+    } = options
 
     if (!pattern) {
         return false
@@ -20,9 +23,7 @@ export function matchesPattern(
             : text.toLowerCase().includes(pattern.toLowerCase())
     }
 
-    const regex = createSearchRegex(pattern, {
-        caseSensitive,
-    })
+    const regex = createSearchRegex(pattern, { caseSensitive })
     if (!regex) {
         return caseSensitive
             ? text.includes(pattern)

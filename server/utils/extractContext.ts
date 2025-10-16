@@ -3,7 +3,7 @@ export function extractContext(
     matchPos: number,
     matchLength: number,
     contextLength = 50
-): string {
+) {
     const start = Math.max(0, matchPos - contextLength)
     const end = Math.min(text.length, matchPos + matchLength + contextLength)
 

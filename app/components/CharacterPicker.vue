@@ -1,7 +1,5 @@
 <script setup lang="ts">
-const isOpen = defineModel<boolean>('open', {
-    default: false,
-})
+const isOpen = defineModel<boolean>('open', { default: false })
 
 const emit = defineEmits<{
     select: [char: string]

@@ -37,7 +37,10 @@ export default defineNuxtRouteMiddleware(async (to) => {
         return
     }
 
-    const { user, sessionStatus } = useAuth()
+    const {
+        user,
+        sessionStatus,
+    } = useAuth()
 
     if (sessionStatus.value === 'idle' || sessionStatus.value === 'loading') {
         return

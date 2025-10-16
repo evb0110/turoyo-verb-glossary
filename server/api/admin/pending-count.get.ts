@@ -5,9 +5,7 @@ import { auth } from '~~/server/lib/auth'
 import type { IPendingCountResponse } from '~~/server/types/IPendingCountResponse'
 
 export default defineEventHandler<Promise<IPendingCountResponse>>(async (event) => {
-    const session = await auth.api.getSession({
-        headers: event.headers,
-    })
+    const session = await auth.api.getSession({ headers: event.headers })
 
     if (!session?.user) {
         throw createError({
@@ -25,11 +23,7 @@ export default defineEventHandler<Promise<IPendingCountResponse>>(async (event) 
         })
     }
 
-    const result = await db.select({
-        count: count(),
-    }).from(user).where(eq(user.role, 'pending'))
+    const result = await db.select({ count: count() }).from(user).where(eq(user.role, 'pending'))
 
-    return {
-        count: result[0]?.count || 0,
-    }
+    return { count: result[0]?.count || 0 }
 })

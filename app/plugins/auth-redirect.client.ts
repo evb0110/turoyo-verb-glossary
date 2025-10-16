@@ -1,5 +1,8 @@
 export default defineNuxtPlugin(async () => {
-    const { sessionStatus, user } = useAuth()
+    const {
+        sessionStatus,
+        user,
+    } = useAuth()
     const router = useRouter()
 
     const { handleAuthRedirect } = await import('~/utils/handleAuthRedirect')
@@ -17,8 +20,6 @@ export default defineNuxtPlugin(async () => {
                 currentUser?.role
             )
         },
-        {
-            immediate: false,
-        }
+        { immediate: false }
     )
 })

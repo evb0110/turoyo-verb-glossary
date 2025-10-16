@@ -20,9 +20,7 @@ const route = useRoute()
 function getTo(row: TableRow): RouteLocationRaw {
     return {
         name: 'verbs-root',
-        params: {
-            root: rootToSlug(row.original.root),
-        },
+        params: { root: rootToSlug(row.original.root) },
         query: route.query,
     }
 }
@@ -39,11 +37,7 @@ const columns = [
     {
         accessorKey: 'preview',
         header: 'Article Preview',
-        meta: {
-            class: {
-                td: 'p-0',
-            },
-        },
+        meta: { class: { td: 'p-0' } },
     },
 ]
 </script>

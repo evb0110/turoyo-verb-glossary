@@ -1,4 +1,4 @@
-export function isRegexPattern(pattern: string): boolean {
+export function isRegexPattern(pattern: string) {
     if (/\\[cv]/i.test(pattern)) {
         return true
     }

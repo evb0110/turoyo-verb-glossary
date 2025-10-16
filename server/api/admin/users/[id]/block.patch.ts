@@ -6,9 +6,7 @@ import type { IUserActionResponse } from '~~/server/types/IUserActionResponse'
 export default defineEventHandler<Promise<IUserActionResponse>>(async (event) => {
     await requireAdmin(event)
 
-    const session = await auth.api.getSession({
-        headers: event.headers,
-    })
+    const session = await auth.api.getSession({ headers: event.headers })
 
     const userId = getRouterParam(event, 'id')
 

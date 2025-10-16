@@ -27,13 +27,14 @@ export function parseHighlights(
         }]
     }
 
-    const { useRegex = false, caseSensitive = false } = opts
+    const {
+        useRegex = false,
+        caseSensitive = false,
+    } = opts
 
     try {
         if (useRegex) {
-            const regex = createSearchRegex(query, {
-                caseSensitive,
-            })
+            const regex = createSearchRegex(query, { caseSensitive })
             if (!regex) {
                 return [{
                     text,

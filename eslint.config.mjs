@@ -1,5 +1,6 @@
 // @ts-check
 import withNuxt from './.nuxt/eslint.config.mjs'
+import enforceDestructuringNewline from './eslint-rules/enforce-destructuring-newline.mjs'
 import preferGenericTypeAnnotation from './eslint-rules/prefer-generic-type-annotation.mjs'
 
 export default withNuxt(
@@ -8,11 +9,13 @@ export default withNuxt(
             'custom-rules': {
                 rules: {
                     'prefer-generic-type-annotation': preferGenericTypeAnnotation,
+                    'enforce-destructuring-newline': enforceDestructuringNewline,
                 },
             },
         },
         rules: {
             'custom-rules/prefer-generic-type-annotation': 'error',
+            'custom-rules/enforce-destructuring-newline': 'error',
             'vue/html-indent': ['error', 4],
             'vue/max-attributes-per-line': ['error', {
                 singleline: 3,
@@ -63,9 +66,7 @@ export default withNuxt(
                     'CONTENT',
                 ],
             }],
-            'vue/block-order': ['error', {
-                order: ['script', 'template', 'style'],
-            }],
+            'vue/block-order': ['error', { order: ['script', 'template', 'style'] }],
             'vue/multi-word-component-names': 'off',
             'vue/no-v-html': 'off',
 
@@ -121,19 +122,17 @@ export default withNuxt(
             '@stylistic/object-curly-newline': ['error', {
                 ObjectExpression: {
                     multiline: true,
-                    minProperties: 1,
+                    minProperties: 2,
                 },
                 ObjectPattern: {
                     multiline: true,
-                    minProperties: 3,
+                    minProperties: 2,
                 },
                 ImportDeclaration: 'never',
                 ExportDeclaration: 'never',
             }],
 
-            '@stylistic/object-property-newline': ['error', {
-                allowAllPropertiesOnSameLine: false,
-            }],
+            '@stylistic/object-property-newline': ['error', { allowAllPropertiesOnSameLine: false }],
 
             '@stylistic/max-len': ['error', {
                 code: 120,
@@ -178,9 +177,7 @@ export default withNuxt(
     },
     {
         files: ['eslint.config.mjs', 'nuxt.config.ts', '*.config.{js,ts,mjs}', 'server/db/schema.ts'],
-        rules: {
-            'no-restricted-imports': 'off',
-        },
+        rules: { 'no-restricted-imports': 'off' },
     },
     {
         files: ['**/*.vue'],
