@@ -1,10 +1,9 @@
 import { db } from '~~/server/db'
 import { user } from '~~/server/db/schema'
 import { eq } from 'drizzle-orm'
+import type { TUserRole } from '~/composables/TUserRole'
 
-type UserRole = 'admin' | 'user' | 'pending' | 'blocked'
-
-export async function updateUserRole(userId: string, role: UserRole) {
+export async function updateUserRole(userId: string, role: TUserRole) {
     const updated = await db.update(user)
         .set({ role })
         .where(eq(user.id, userId))

@@ -1,17 +1,13 @@
-interface FilterableVerb {
-    root: string
-    etymology_sources: string[]
-    stems: string[]
-}
+import type { IFilterableVerb } from '~/types/IFilterableVerb'
 
 export function applyFilters(
-    results: FilterableVerb[],
+    results: IFilterableVerb[],
     filters: {
         letter: string | null
         etymology: string | null
         stem: string | null
     }
-): FilterableVerb[] {
+): IFilterableVerb[] {
     let filtered = results
 
     if (filters.letter) {

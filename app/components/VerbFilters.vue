@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import type { SelectOption } from '~/types/types/search'
+import type { ISelectOption } from '~/types/ISelectOption'
 
 const letter = defineModel<string | null>('letter')
 const etymology = defineModel<string | null>('etymology')
 const stem = defineModel<string | null>('stem')
 
 defineProps<{
-    letters: SelectOption[]
-    etymologies: SelectOption[]
-    stems: SelectOption[]
+    letters: ISelectOption[]
+    etymologies: ISelectOption[]
+    stems: ISelectOption[]
 }>()
 
 const emits = defineEmits<{ (e: 'reset'): void }>()

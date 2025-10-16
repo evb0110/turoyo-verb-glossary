@@ -1,7 +1,4 @@
-interface TextSegment {
-    text: string
-    isMatch: boolean
-}
+import type { ITextSegment } from '~/types/ITextSegment'
 
 function createSearchRegex(query: string, opts: { caseSensitive?: boolean } = {}): RegExp | null {
     const { caseSensitive = false } = opts
@@ -22,7 +19,7 @@ export function parseHighlights(
         useRegex?: boolean
         caseSensitive?: boolean
     } = {}
-): TextSegment[] {
+): ITextSegment[] {
     if (!text || !query) {
         return [{ text, isMatch: false }]
     }
@@ -46,8 +43,8 @@ export function parseHighlights(
     }
 }
 
-function parseWithPlainText(text: string, query: string, caseSensitive: boolean): TextSegment[] {
-    const segments: TextSegment[] = []
+function parseWithPlainText(text: string, query: string, caseSensitive: boolean): ITextSegment[] {
+    const segments: ITextSegment[] = []
     const searchText = caseSensitive ? text : text.toLowerCase()
     const searchQuery = caseSensitive ? query : query.toLowerCase()
 
@@ -73,8 +70,8 @@ function parseWithPlainText(text: string, query: string, caseSensitive: boolean)
     return segments
 }
 
-function parseWithRegex(text: string, regex: RegExp): TextSegment[] {
-    const segments: TextSegment[] = []
+function parseWithRegex(text: string, regex: RegExp): ITextSegment[] {
+    const segments: ITextSegment[] = []
 
     const flags = regex.flags.includes('g') ? regex.flags : `g${regex.flags}`
     const globalRegex = new RegExp(regex.source, flags)

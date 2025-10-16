@@ -1,9 +1,11 @@
-type User = {
+import type { TUserRole } from '~/composables/TUserRole'
+
+type TUser = {
     id: string
-    role: 'admin' | 'user' | 'pending' | 'blocked'
+    role: TUserRole
 } | null
 
-export function checkAdminRole<T extends User>(user: T) {
+export function checkAdminRole<T extends TUser>(user: T) {
     if (!user) {
         return { ok: false, error: 'not_found' } as const
     }

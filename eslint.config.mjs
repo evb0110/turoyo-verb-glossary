@@ -37,6 +37,30 @@ export default withNuxt(
         }
     },
     {
+        files: ['**/*.ts', '**/*.tsx'],
+        ignores: ['*.config.ts', '*.config.mts', '*.config.mjs', 'eslint.config.mjs', 'nuxt.config.ts', 'server/db/schema.ts', '**/*.d.ts'],
+        rules: {
+            '@typescript-eslint/naming-convention': ['error',
+                {
+                    selector: 'typeAlias',
+                    format: ['PascalCase'],
+                    custom: {
+                        regex: '^T[A-Z]',
+                        match: true
+                    }
+                },
+                {
+                    selector: 'interface',
+                    format: ['PascalCase'],
+                    custom: {
+                        regex: '^I[A-Z]',
+                        match: true
+                    }
+                }
+            ]
+        }
+    },
+    {
         files: ['eslint.config.mjs', 'nuxt.config.ts', '*.config.{js,ts,mjs}', 'server/db/schema.ts'],
         rules: {
             'no-restricted-imports': 'off'

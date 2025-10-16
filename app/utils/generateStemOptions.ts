@@ -1,12 +1,7 @@
-import type { SelectOption } from '~/types/types/search'
+import type { ISelectOption } from '~/types/ISelectOption'
+import type { IFilterableVerb } from '~/types/IFilterableVerb'
 
-interface FilterableVerb {
-    root: string
-    etymology_sources: string[]
-    stems: string[]
-}
-
-export function generateStemOptions(results: FilterableVerb[]): SelectOption[] {
+export function generateStemOptions(results: IFilterableVerb[]): ISelectOption[] {
     if (results.length === 0) {
         return [{ label: 'All stems', value: null }]
     }

@@ -1,12 +1,7 @@
-import type { SelectOption } from '~/types/types/search'
+import type { ISelectOption } from '~/types/ISelectOption'
+import type { IFilterableVerb } from '~/types/IFilterableVerb'
 
-interface FilterableVerb {
-    root: string
-    etymology_sources: string[]
-    stems: string[]
-}
-
-export function generateEtymologyOptions(results: FilterableVerb[]): SelectOption[] {
+export function generateEtymologyOptions(results: IFilterableVerb[]): ISelectOption[] {
     if (results.length === 0) {
         return [{ label: 'All etymologies', value: null }]
     }

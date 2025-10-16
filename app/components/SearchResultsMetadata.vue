@@ -19,11 +19,11 @@
 </template>
 
 <script setup lang="ts">
-import type { Filters } from '~/types/types/search'
+import type { IFilters } from '~/types/IFilters'
 
 defineProps<{
     searchQuery: string
     displayedCount: number
-    filters: Filters
+    filters: IFilters
 }>()
 </script>
