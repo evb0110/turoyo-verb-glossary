@@ -1,6 +1,6 @@
 import type { IStem } from '~/types/IStem'
+import type { ITransformedStem } from '~/types/ITransformedStem'
 import { filterGlossTokens } from '~/utils/filterGlossTokens'
-import type { ITransformedStem } from '~/utils/ITransformedStem'
 
 export function transformStemForDisplay(stem: IStem): ITransformedStem {
     const conjugationGroups = Object.entries(stem.conjugations || {}).map(([name, examples]) => ({
@@ -8,10 +8,20 @@ export function transformStemForDisplay(stem: IStem): ITransformedStem {
         examples,
     }))
 
+    const glossTokens = filterGlossTokens(stem.label_gloss_tokens || [])
+    const hasGlossInfo = glossTokens.length > 0 || !!stem.label_raw
+    const formsStr = stem.forms?.length ? stem.forms.join('/') : 'No recorded forms'
+    const formsListDisplay = stem.forms?.length ? stem.forms.join(', ') : 'No recorded forms'
+    const exampleCount = conjugationGroups.reduce((count, group) => count + group.examples.length, 0)
+
     return {
         ...stem,
-        exampleCount: conjugationGroups.reduce((count, group) => count + group.examples.length, 0),
+        exampleCount,
         conjugationGroups,
-        glossTokens: filterGlossTokens(stem.label_gloss_tokens || []),
+        glossTokens,
+        hasGlossInfo,
+        stemLabel: `${stem.stem}: ${formsStr}`,
+        formsListDisplay,
+        hasExamples: exampleCount > 0,
     }
 }

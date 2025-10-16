@@ -1,4 +1,4 @@
-import type { IGlossToken } from '~/utils/IGlossToken'
+import type { IGlossToken } from '~/types/IGlossToken'
 
 export function filterGlossTokens(tokens: IGlossToken[]): IGlossToken[] {
     if (!Array.isArray(tokens)) return []

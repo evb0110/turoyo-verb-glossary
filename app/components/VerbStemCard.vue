@@ -3,12 +3,12 @@
         :ui="{ body: 'space-y-4' }"
         class="border border-transparent transition hover:border-primary/40"
     >
-        <template v-if="transformedStem.label_gloss_tokens?.length || transformedStem.label_raw">
+        <template v-if="transformedStem.hasGlossInfo">
             <div class="prose max-w-none text-sm">
                 <div class="font-semibold">
-                    {{ `${transformedStem.stem}: ${transformedStem.forms?.length ? transformedStem.forms.join('/') : 'No recorded forms'}` }}
+                    {{ transformedStem.stemLabel }}
                 </div>
-                <div v-if="transformedStem.label_gloss_tokens?.length">
+                <div v-if="transformedStem.glossTokens.length">
                     <span
                         v-for="(t, i) in transformedStem.glossTokens"
                         :key="i"
@@ -17,7 +17,7 @@
                         {{ t.text }}
                     </span>
                 </div>
-                <div v-else-if="transformedStem.label_raw" v-html="transformedStem.label_raw" />
+                <div v-else v-html="transformedStem.label_raw" />
             </div>
         </template>
         <template v-else>
@@ -27,13 +27,13 @@
                         Stem {{ transformedStem.stem }}
                     </h3>
                     <p class="text-sm text-muted">
-                        {{ transformedStem.forms.join(', ') || 'No recorded forms' }}
+                        {{ transformedStem.formsListDisplay }}
                     </p>
                 </div>
             </div>
         </template>
 
-        <div v-if="transformedStem.conjugationGroups.length" class="space-y-4">
+        <div v-if="transformedStem.hasExamples" class="space-y-4">
             <div
                 v-for="group in transformedStem.conjugationGroups"
                 :key="group.name"

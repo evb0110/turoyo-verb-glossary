@@ -9,11 +9,16 @@
                     <div class="space-y-2 text-sm">
                         <div class="flex gap-3">
                             <code class="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded font-mono">\c</code>
-                            <span class="text-gray-600 dark:text-gray-400">Matches any Turoyo consonant (b, d, f, g, h, k, l, m, n, p, q, r, s, t, v, w, x, y, z, č, ġ, š, ž, ǧ, ʔ, ʕ, ḏ, ḥ, ṣ, ṭ, etc.)</span>
+                            <span class="text-gray-600 dark:text-gray-400">
+                                Matches any Turoyo consonant (b, d, f, g, h, k, l, m, n, p, q, r, s,
+                                t, v, w, x, y, z, č, ġ, š, ž, ǧ, ʔ, ʕ, ḏ, ḥ, ṣ, ṭ, etc.)
+                            </span>
                         </div>
                         <div class="flex gap-3">
                             <code class="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded font-mono">\v</code>
-                            <span class="text-gray-600 dark:text-gray-400">Matches any Turoyo vowel (a, e, i, o, u, ə, ǝ, é, ī, á, etc.)</span>
+                            <span class="text-gray-600 dark:text-gray-400">
+                                Matches any Turoyo vowel (a, e, i, o, u, ə, ǝ, é, ī, á, etc.)
+                            </span>
                         </div>
                     </div>
                 </div>

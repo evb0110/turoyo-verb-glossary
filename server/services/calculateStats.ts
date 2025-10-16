@@ -1,5 +1,5 @@
 import type { IVerb } from '~/types/IVerb'
-import type { IVerbStats } from '~~/server/services/IVerbStats'
+import type { IVerbStats } from '~~/server/types/IVerbStats'
 
 export function calculateStats(verbs: Array<IVerb | null>) {
     const stats: IVerbStats = {

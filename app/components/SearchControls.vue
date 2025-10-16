@@ -4,7 +4,9 @@
             <div class="flex items-center gap-3 flex-wrap">
                 <span class="text-sm text-gray-600 dark:text-gray-400">Search type:</span>
                 <span
-                    :class="!searchEverything ? 'text-gray-900 dark:text-white underline underline-offset-4' : 'text-gray-500 dark:text-gray-500'"
+                    :class="!searchEverything
+                        ? 'text-gray-900 dark:text-white underline underline-offset-4'
+                        : 'text-gray-500 dark:text-gray-500'"
                     class="text-sm cursor-pointer transition-all"
                     @click="searchEverything = false"
                 >
@@ -12,7 +14,9 @@
                 </span>
                 <USwitch v-model="searchEverything" />
                 <span
-                    :class="searchEverything ? 'text-gray-900 dark:text-white underline underline-offset-4' : 'text-gray-500 dark:text-gray-500'"
+                    :class="searchEverything
+                        ? 'text-gray-900 dark:text-white underline underline-offset-4'
+                        : 'text-gray-500 dark:text-gray-500'"
                     class="text-sm cursor-pointer transition-all"
                     @click="searchEverything = true"
                 >
@@ -23,7 +27,9 @@
 
                 <span class="text-sm text-gray-600 dark:text-gray-400">Regex:</span>
                 <span
-                    :class="!useRegex ? 'text-gray-900 dark:text-white underline underline-offset-4' : 'text-gray-500 dark:text-gray-500'"
+                    :class="!useRegex
+                        ? 'text-gray-900 dark:text-white underline underline-offset-4'
+                        : 'text-gray-500 dark:text-gray-500'"
                     class="text-sm cursor-pointer transition-all"
                     @click="useRegex = false"
                 >
@@ -31,7 +37,9 @@
                 </span>
                 <USwitch v-model="useRegex" />
                 <span
-                    :class="useRegex ? 'text-gray-900 dark:text-white underline underline-offset-4' : 'text-gray-500 dark:text-gray-500'"
+                    :class="useRegex
+                        ? 'text-gray-900 dark:text-white underline underline-offset-4'
+                        : 'text-gray-500 dark:text-gray-500'"
                     class="text-sm cursor-pointer transition-all"
                     @click="useRegex = true"
                 >
@@ -55,7 +63,9 @@
 
                 <span class="text-sm text-gray-600 dark:text-gray-400">Case sensitive:</span>
                 <span
-                    :class="!caseSensitive ? 'text-gray-900 dark:text-white underline underline-offset-4' : 'text-gray-500 dark:text-gray-500'"
+                    :class="!caseSensitive
+                        ? 'text-gray-900 dark:text-white underline underline-offset-4'
+                        : 'text-gray-500 dark:text-gray-500'"
                     class="text-sm cursor-pointer transition-all"
                     @click="caseSensitive = false"
                 >
@@ -63,7 +73,9 @@
                 </span>
                 <USwitch v-model="caseSensitive" />
                 <span
-                    :class="caseSensitive ? 'text-gray-900 dark:text-white underline underline-offset-4' : 'text-gray-500 dark:text-gray-500'"
+                    :class="caseSensitive
+                        ? 'text-gray-900 dark:text-white underline underline-offset-4'
+                        : 'text-gray-500 dark:text-gray-500'"
                     class="text-sm cursor-pointer transition-all"
                     @click="caseSensitive = true"
                 >

@@ -26,31 +26,34 @@
                 <div v-if="pending" class="text-sm text-gray-400">
                     Loading...
                 </div>
-                <div v-else-if="hasAnyPreviews" class="max-h-64 px-4 overflow-y-auto">
-                    <template v-if="searchType === 'roots' && verbPreviews.get(row.original.root)?.verb">
-                        <VerbPreview :verb="verbPreviews.get(row.original.root)!.verb!" />
-                    </template>
-                    <template v-else-if="verbPreviews.get(row.original.root)?.excerpts">
-                        <div class="preview-excerpts space-y-2">
-                            <div
-                                v-for="(excerpt, i) in verbPreviews.get(row.original.root)!.excerpts"
-                                :key="i"
-                                class="preview-excerpt"
-                            >
-                                <span class="excerpt-label block text-xs font-semibold text-gray-600 dark:text-gray-400">
-                                    {{ excerpt.label }}
-                                </span>
-                                <span class="excerpt-text block whitespace-normal break-words">
-                                    <HighlightedText
-                                        :text="excerpt.text"
-                                        :query="searchQuery"
-                                        :use-regex="useRegex"
-                                        :case-sensitive="caseSensitive"
-                                    />
-                                </span>
-                            </div>
-                        </div>
-                    </template>
+                <VerbPreview
+                    v-else-if="row.original.verbPreview"
+                    :verb="row.original.verbPreview"
+                    class="max-h-64 px-4 overflow-y-auto"
+                />
+                <div
+                    v-else-if="row.original.excerpts"
+                    class="preview-excerpts space-y-2 max-h-64 px-4 overflow-y-auto"
+                >
+                    <div
+                        v-for="(excerpt, i) in row.original.excerpts"
+                        :key="i"
+                        class="preview-excerpt"
+                    >
+                        <span
+                            class="excerpt-label block text-xs font-semibold text-gray-600 dark:text-gray-400"
+                        >
+                            {{ excerpt.label }}
+                        </span>
+                        <span class="excerpt-text block whitespace-normal break-words">
+                            <HighlightedText
+                                :text="excerpt.text"
+                                :query="searchQuery"
+                                :use-regex="useRegex"
+                                :case-sensitive="caseSensitive"
+                            />
+                        </span>
+                    </div>
                 </div>
                 <div v-else class="text-sm text-gray-400">
                     —
@@ -61,26 +64,17 @@
 </template>
 
 <script setup lang="ts">
-import type { IExcerpt } from '~/types/IExcerpt'
-import type { IVerb } from '~/types/IVerb'
-import type { IVerbMetadata } from '~/types/IVerbMetadata'
+import type { IVerbMetadataWithPreview } from '~/types/IVerbMetadataWithPreview'
 import { rootToSlug } from '~/utils/rootToSlug'
 import type { RouteLocationRaw } from '#vue-router'
 
-interface VerbPreview {
-    excerpts?: IExcerpt[]
-    verb?: IVerb
-}
-
 interface TableRow {
-    original: IVerbMetadata
+    original: IVerbMetadataWithPreview
 }
 
-const props = defineProps<{
+defineProps<{
     searchQuery: string
-    searchType: 'roots' | 'all'
-    displayed: IVerbMetadata[]
-    verbPreviews: Map<string, VerbPreview>
+    displayed: IVerbMetadataWithPreview[]
     pending: boolean
     useRegex: boolean
     caseSensitive: boolean
@@ -94,8 +88,6 @@ function getTo(row: TableRow): RouteLocationRaw {
         query: route.query,
     }
 }
-
-const hasAnyPreviews = computed(() => props.verbPreviews.size > 0)
 
 const columns = [
     {

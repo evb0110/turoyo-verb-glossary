@@ -142,19 +142,34 @@ const formatDate = (date: string) => {
                 <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
                     <thead>
                         <tr>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                            <th
+                                class="px-6 py-3 text-left text-xs font-medium text-gray-500
+                                dark:text-gray-400 uppercase tracking-wider"
+                            >
                                 User
                             </th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                            <th
+                                class="px-6 py-3 text-left text-xs font-medium text-gray-500
+                                dark:text-gray-400 uppercase tracking-wider"
+                            >
                                 Email
                             </th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                            <th
+                                class="px-6 py-3 text-left text-xs font-medium text-gray-500
+                                dark:text-gray-400 uppercase tracking-wider"
+                            >
                                 Role
                             </th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                            <th
+                                class="px-6 py-3 text-left text-xs font-medium text-gray-500
+                                dark:text-gray-400 uppercase tracking-wider"
+                            >
                                 Joined
                             </th>
-                            <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                            <th
+                                class="px-6 py-3 text-right text-xs font-medium text-gray-500
+                                dark:text-gray-400 uppercase tracking-wider"
+                            >
                                 Actions
                             </th>
                         </tr>
@@ -171,7 +186,11 @@ const formatDate = (date: string) => {
                                     />
                                     <div class="text-sm font-medium text-gray-900 dark:text-white">
                                         {{ u.name }}
-                                        <span v-if="u.id === user?.id" class="ml-2 text-xs text-gray-500 dark:text-gray-400">(You)</span>
+                                        <span
+                                            v-if="u.id === user?.id"
+                                            class="ml-2 text-xs text-gray-500
+                                            dark:text-gray-400"
+                                        >(You)</span>
                                     </div>
                                 </div>
                             </td>
@@ -218,7 +237,11 @@ const formatDate = (date: string) => {
                                     >
                                         Unblock
                                     </UButton>
-                                    <span v-if="u.id === user?.id" class="text-xs text-gray-400 dark:text-gray-600 px-2 py-1" />
+                                    <span
+                                        v-if="u.id === user?.id"
+                                        class="text-xs text-gray-400
+                                        dark:text-gray-600 px-2 py-1"
+                                    />
                                 </div>
                             </td>
                         </tr>

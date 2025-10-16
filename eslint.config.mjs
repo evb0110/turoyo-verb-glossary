@@ -98,6 +98,17 @@ export default withNuxt(
             '@stylistic/object-property-newline': ['error', {
                 allowAllPropertiesOnSameLine: false,
             }],
+
+            '@stylistic/max-len': ['error', {
+                code: 120,
+                tabWidth: 4,
+                comments: 120,
+                ignoreComments: false,
+                ignoreStrings: true,
+                ignoreTemplateLiterals: true,
+                ignoreUrls: true,
+                ignorePattern: '^\\s*(class=|:class=|v-|@|ref=|key=)',
+            }],
         },
     },
     {
@@ -133,6 +144,21 @@ export default withNuxt(
         files: ['eslint.config.mjs', 'nuxt.config.ts', '*.config.{js,ts,mjs}', 'server/db/schema.ts'],
         rules: {
             'no-restricted-imports': 'off',
+        },
+    },
+    {
+        files: ['**/*.vue'],
+        rules: {
+            '@stylistic/max-len': ['error', {
+                code: 120,
+                tabWidth: 4,
+                comments: 120,
+                ignoreComments: false,
+                ignoreStrings: true,
+                ignoreTemplateLiterals: true,
+                ignoreUrls: true,
+                ignorePattern: 'd="',
+            }],
         },
     }
 )

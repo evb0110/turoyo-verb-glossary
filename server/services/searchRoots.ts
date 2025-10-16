@@ -1,8 +1,8 @@
 import type { IVerb } from '~/types/IVerb'
-import type { IVerbMetadata } from '~/types/IVerbMetadata'
 import { extractMetadata } from '~~/server/services/extractMetadata'
-import type { IRootsSearchResult } from '~~/server/services/IRootsSearchResult'
-import type { ISearchOptions } from '~~/server/services/ISearchOptions'
+import type { IRootsSearchResult } from '~~/server/types/IRootsSearchResult'
+import type { ISearchOptions } from '~~/server/types/ISearchOptions'
+import type { IVerbMetadataWithPreview } from '~~/server/types/IVerbMetadataWithPreview'
 import { matchesPattern } from '~~/server/utils/matchesPattern'
 
 export async function searchRoots(
@@ -12,8 +12,7 @@ export async function searchRoots(
 ): Promise<IRootsSearchResult> {
     const storage = useStorage('assets:server')
     const matchingRoots: string[] = []
-    const verbPreviews: Record<string, { verb?: IVerb }> = {}
-    const verbMetadata: Record<string, IVerbMetadata> = {}
+    const verbMetadata: Record<string, IVerbMetadataWithPreview> = {}
 
     const filteredRoots = allRoots.filter(root =>
         matchesPattern(root, query, opts)
@@ -28,12 +27,14 @@ export async function searchRoots(
         const batchPromises = batch.map(async (root: string) => {
             try {
                 const verb = await storage.getItem<IVerb>(`verbs/${root}.json`)
-                if (!verb) return null
+                if (!verb)
+                    return null
 
-                verbPreviews[root] = {
-                    verb,
+                const metadata = extractMetadata(verb)
+                verbMetadata[root] = {
+                    ...metadata,
+                    verbPreview: verb,
                 }
-                verbMetadata[root] = extractMetadata(verb)
 
                 return root
             }
@@ -50,7 +51,6 @@ export async function searchRoots(
     return {
         total: matchingRoots.length,
         roots: matchingRoots,
-        verbPreviews,
         verbMetadata,
     }
 }

@@ -15,7 +15,11 @@ const handleSignOut = async () => {
 </script>
 
 <template>
-    <div v-if="sessionUser" class="flex items-center gap-2 rounded-lg bg-white/70 dark:bg-white/10 border border-black/5 dark:border-white/10 px-3 h-12 min-w-[200px] shadow-sm backdrop-blur-md">
+    <div
+        v-if="sessionUser"
+        class="flex items-center gap-2 rounded-lg bg-white/70 dark:bg-white/10 border
+            border-black/5 dark:border-white/10 px-3 h-12 min-w-[200px] shadow-sm backdrop-blur-md"
+    >
         <UAvatar
             v-if="sessionUser.image"
             size="sm"
@@ -29,7 +33,9 @@ const handleSignOut = async () => {
             icon="i-heroicons-user-circle"
         />
         <div class="flex min-w-0 flex-1 flex-col leading-tight">
-            <span class="text-sm font-medium text-gray-900 dark:text-white truncate">{{ sessionUser.name || sessionUser.email }}</span>
+            <span class="text-sm font-medium text-gray-900 dark:text-white truncate">
+                {{ sessionUser.name || sessionUser.email }}
+            </span>
         </div>
         <UButton
             size="xs"

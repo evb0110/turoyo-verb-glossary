@@ -1,11 +1,9 @@
-import type { IExcerpt } from '~/types/IExcerpt'
 import type { IVerb } from '~/types/IVerb'
-import type { IVerbMetadata } from '~/types/IVerbMetadata'
-import { extractMetadata } from '~~/server/services/extractMetadata'
-import type { IFullTextSearchResult } from '~~/server/services/IFullTextSearchResult'
-import type { ISearchOptions } from '~~/server/services/ISearchOptions'
+import { setVerbMetadataWithPreview } from '~~/server/services/setVerbMetadataWithPreview'
+import type { IFullTextSearchResult } from '~~/server/types/IFullTextSearchResult'
+import type { ISearchOptions } from '~~/server/types/ISearchOptions'
+import type { IVerbMetadataWithPreview } from '~~/server/types/IVerbMetadataWithPreview'
 import { matchesPattern } from '~~/server/utils/matchesPattern'
-import { generateExcerpts } from '~~/server/utils/verbExcerpts'
 
 export async function searchFullText(
     verbFiles: string[],
@@ -14,9 +12,7 @@ export async function searchFullText(
 ): Promise<IFullTextSearchResult> {
     const storage = useStorage('assets:server')
     const matchingRoots: string[] = []
-    const verbPreviews: Record<string, { verb?: IVerb
-        excerpts?: IExcerpt[] }> = {}
-    const verbMetadata: Record<string, IVerbMetadata> = {}
+    const verbMetadata: Record<string, IVerbMetadataWithPreview> = {}
 
     const BATCH_SIZE = 100
     for (let i = 0; i < verbFiles.length; i += BATCH_SIZE) {
@@ -30,34 +26,14 @@ export async function searchFullText(
                 const root = verb.root
 
                 if (matchesPattern(verb.root, query, opts)) {
-                    if (opts.searchType === 'roots') {
-                        verbPreviews[root] = {
-                            verb,
-                        }
-                    }
-                    else {
-                        verbPreviews[root] = {
-                            excerpts: generateExcerpts(verb, query, opts),
-                        }
-                    }
-                    verbMetadata[root] = extractMetadata(verb)
+                    setVerbMetadataWithPreview(verb, opts.searchType, query, opts, verbMetadata)
                     return root
                 }
 
                 if (verb.lemma_header_tokens) {
                     for (const token of verb.lemma_header_tokens) {
                         if (matchesPattern(token.text, query, opts)) {
-                            if (opts.searchType === 'roots') {
-                                verbPreviews[root] = {
-                                    verb,
-                                }
-                            }
-                            else {
-                                verbPreviews[root] = {
-                                    excerpts: generateExcerpts(verb, query, opts),
-                                }
-                            }
-                            verbMetadata[root] = extractMetadata(verb)
+                            setVerbMetadataWithPreview(verb, opts.searchType, query, opts, verbMetadata)
                             return root
                         }
                     }
@@ -65,34 +41,14 @@ export async function searchFullText(
 
                 for (const stem of verb.stems) {
                     if (stem.forms?.some(f => matchesPattern(f, query, opts))) {
-                        if (opts.searchType === 'roots') {
-                            verbPreviews[root] = {
-                                verb,
-                            }
-                        }
-                        else {
-                            verbPreviews[root] = {
-                                excerpts: generateExcerpts(verb, query, opts),
-                            }
-                        }
-                        verbMetadata[root] = extractMetadata(verb)
+                        setVerbMetadataWithPreview(verb, opts.searchType, query, opts, verbMetadata)
                         return root
                     }
 
                     if (stem.label_gloss_tokens) {
                         for (const token of stem.label_gloss_tokens) {
                             if (matchesPattern(token.text, query, opts)) {
-                                if (opts.searchType === 'roots') {
-                                    verbPreviews[root] = {
-                                        verb,
-                                    }
-                                }
-                                else {
-                                    verbPreviews[root] = {
-                                        excerpts: generateExcerpts(verb, query, opts),
-                                    }
-                                }
-                                verbMetadata[root] = extractMetadata(verb)
+                                setVerbMetadataWithPreview(verb, opts.searchType, query, opts, verbMetadata)
                                 return root
                             }
                         }
@@ -102,49 +58,19 @@ export async function searchFullText(
                         for (const example of examples) {
                             for (const translation of example.translations) {
                                 if (matchesPattern(translation, query, opts)) {
-                                    if (opts.searchType === 'roots') {
-                                        verbPreviews[root] = {
-                                            verb,
-                                        }
-                                    }
-                                    else {
-                                        verbPreviews[root] = {
-                                            excerpts: generateExcerpts(verb, query, opts),
-                                        }
-                                    }
-                                    verbMetadata[root] = extractMetadata(verb)
+                                    setVerbMetadataWithPreview(verb, opts.searchType, query, opts, verbMetadata)
                                     return root
                                 }
                             }
 
                             if (matchesPattern(example.turoyo, query, opts)) {
-                                if (opts.searchType === 'roots') {
-                                    verbPreviews[root] = {
-                                        verb,
-                                    }
-                                }
-                                else {
-                                    verbPreviews[root] = {
-                                        excerpts: generateExcerpts(verb, query, opts),
-                                    }
-                                }
-                                verbMetadata[root] = extractMetadata(verb)
+                                setVerbMetadataWithPreview(verb, opts.searchType, query, opts, verbMetadata)
                                 return root
                             }
 
                             for (const reference of example.references) {
                                 if (matchesPattern(reference, query, opts)) {
-                                    if (opts.searchType === 'roots') {
-                                        verbPreviews[root] = {
-                                            verb,
-                                        }
-                                    }
-                                    else {
-                                        verbPreviews[root] = {
-                                            excerpts: generateExcerpts(verb, query, opts),
-                                        }
-                                    }
-                                    verbMetadata[root] = extractMetadata(verb)
+                                    setVerbMetadataWithPreview(verb, opts.searchType, query, opts, verbMetadata)
                                     return root
                                 }
                             }
@@ -160,17 +86,7 @@ export async function searchFullText(
                             || (etymon.raw && matchesPattern(etymon.raw, query, opts))
                             || (etymon.source_root && matchesPattern(etymon.source_root, query, opts))
                         ) {
-                            if (opts.searchType === 'roots') {
-                                verbPreviews[root] = {
-                                    verb,
-                                }
-                            }
-                            else {
-                                verbPreviews[root] = {
-                                    excerpts: generateExcerpts(verb, query, opts),
-                                }
-                            }
-                            verbMetadata[root] = extractMetadata(verb)
+                            setVerbMetadataWithPreview(verb, opts.searchType, query, opts, verbMetadata)
                             return root
                         }
                     }
@@ -193,7 +109,6 @@ export async function searchFullText(
     return {
         total: matchingRoots.length,
         roots: matchingRoots,
-        verbPreviews,
         verbMetadata,
     }
 }

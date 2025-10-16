@@ -33,9 +33,7 @@
 
                 <VerbSearchResults
                     :search-query="searchQuery"
-                    :search-type="searchEverything ? 'all' : 'roots'"
                     :displayed="filtered"
-                    :verb-previews="verbPreviews"
                     :pending="pending"
                     :use-regex="useRegex"
                     :case-sensitive="caseSensitive"
@@ -55,18 +53,11 @@
 </template>
 
 <script lang="ts" setup>
-import type { IExcerpt } from '~/types/IExcerpt'
-import type { IVerb } from '~/types/IVerb'
-import type { IVerbMetadata } from '~/types/IVerbMetadata'
+import type { IVerbMetadataWithPreview } from '~/types/IVerbMetadataWithPreview'
 import { applyFilters } from '~/utils/applyFilters'
 import { generateEtymologyOptions } from '~/utils/generateEtymologyOptions'
 import { generateLetterOptions } from '~/utils/generateLetterOptions'
 import { generateStemOptions } from '~/utils/generateStemOptions'
-
-interface VerbPreview {
-    excerpts?: IExcerpt[]
-    verb?: IVerb
-}
 
 const showRegexHelp = ref(false)
 
@@ -115,8 +106,7 @@ const { data: searchResults, pending } = await useAsyncData(
         return await $fetch<{
             total: number
             roots: string[]
-            verbPreviews?: Record<string, VerbPreview>
-            verbMetadata?: Record<string, IVerbMetadata>
+            verbMetadata?: Record<string, IVerbMetadataWithPreview>
         }>('/api/verbs-fulltext-search', {
             method: 'POST',
             body: {
@@ -127,10 +117,6 @@ const { data: searchResults, pending } = await useAsyncData(
             },
         })
     }
-)
-
-const verbPreviews = computed(() =>
-    new Map(Object.entries(searchResults.value?.verbPreviews || {}))
 )
 
 const verbMetadata = computed(() =>
@@ -161,7 +147,7 @@ const baseResults = computed(() => {
     const metadata = verbMetadata.value
     return searchResults.value.roots
         .map(root => metadata.get(root))
-        .filter((m): m is IVerbMetadata => m !== undefined)
+        .filter((m): m is IVerbMetadataWithPreview => m !== undefined)
 })
 
 const letterOptions = computed(() => generateLetterOptions(baseResults.value))

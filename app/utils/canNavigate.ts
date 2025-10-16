@@ -1,5 +1,5 @@
-import type { INavigationDecision } from '~/utils/INavigationDecision'
-import type { INavigationState } from '~/utils/INavigationState'
+import type { INavigationDecision } from '~/types/INavigationDecision'
+import type { INavigationState } from '~/types/INavigationState'
 
 const REDIRECT_COOLDOWN_MS = 500
 
