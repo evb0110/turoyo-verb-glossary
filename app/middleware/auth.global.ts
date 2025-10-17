@@ -1,3 +1,5 @@
+import type { IAuthUser } from '#shared/types/IAuthUser'
+
 export default defineNuxtRouteMiddleware(async (to) => {
     const publicRoutes = ['/login', '/blocked']
 
@@ -6,19 +8,21 @@ export default defineNuxtRouteMiddleware(async (to) => {
         if (!event) return
 
         try {
-            const response = await event.$fetch<{ authenticated: boolean
-                role?: string }>('/api/auth/check')
+            const userData = await $fetch<IAuthUser | null>('/api/user/me', { headers: event.headers as HeadersInit }).catch(() => null)
 
-            if (!response.authenticated && !publicRoutes.includes(to.path)) {
+            useState('auth:user').value = userData
+            useState('auth:sessionStatus').value = userData ? 'authenticated' : 'guest'
+
+            if (!userData && !publicRoutes.includes(to.path)) {
                 return navigateTo('/login')
             }
 
-            if (response.authenticated) {
-                if (response.role === 'blocked' && to.path !== '/blocked') {
+            if (userData) {
+                if (userData.role === 'blocked' && to.path !== '/blocked') {
                     return navigateTo('/blocked')
                 }
 
-                if (response.role !== 'blocked' && to.path === '/blocked') {
+                if (userData.role !== 'blocked' && to.path === '/blocked') {
                     return navigateTo('/')
                 }
 
@@ -26,7 +30,7 @@ export default defineNuxtRouteMiddleware(async (to) => {
                     return navigateTo('/')
                 }
 
-                if (to.path.startsWith('/admin') && response.role !== 'admin') {
+                if (to.path.startsWith('/admin') && userData.role !== 'admin') {
                     return navigateTo('/')
                 }
             }
