@@ -1,5 +1,5 @@
 import { auth } from '~~/server/lib/auth'
-import { getUserById } from '~~/server/repositories/getUserById'
+import { getUserById } from '~~/server/repositories/auth/getUserById'
 import { checkAdminRole } from '~~/server/services/checkAdminRole'
 import type { H3Event } from 'h3'
 

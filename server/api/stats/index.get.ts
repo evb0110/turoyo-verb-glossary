@@ -1,4 +1,4 @@
-import { getAllVerbs } from '~~/server/repositories/getAllVerbs'
+import { getAllVerbs } from '~~/server/repositories/verbs/getAllVerbs'
 import { calculateStats } from '~~/server/services/calculateStats'
 
 export default defineEventHandler(async (event) => {

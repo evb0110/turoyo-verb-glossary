@@ -1,5 +1,5 @@
 import { slugToRoot } from '~/utils/slugToRoot'
-import { getVerbByRoot } from '~~/server/repositories/getVerbByRoot'
+import { getVerbByRoot } from '~~/server/repositories/verbs/getVerbByRoot'
 
 export default defineEventHandler(async (event) => {
     const slug = getRouterParam(event, 'root')

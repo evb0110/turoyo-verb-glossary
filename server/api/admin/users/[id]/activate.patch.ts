@@ -1,4 +1,4 @@
-import { updateUserRole } from '~~/server/repositories/updateUserRole'
+import { updateUserRole } from '~~/server/repositories/auth/updateUserRole'
 import { requireAdmin } from '~~/server/services/requireAdmin'
 import type { IUserActionResponse } from '~~/server/types/IUserActionResponse'
 

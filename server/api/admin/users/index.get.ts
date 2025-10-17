@@ -1,4 +1,4 @@
-import { getAllUsers } from '~~/server/repositories/getAllUsers'
+import { getAllUsers } from '~~/server/repositories/auth/getAllUsers'
 import { requireAdmin } from '~~/server/services/requireAdmin'
 
 export default defineEventHandler(async (event) => {
