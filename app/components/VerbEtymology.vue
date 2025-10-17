@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { IEtymon } from '~/types/IEtymon'
-import type { IEtymology } from '~~/types/IEtymology'
+import type { IEtymology } from '#shared/types/IEtymology'
 
 const props = defineProps<{
     etymology: IEtymology | null | undefined

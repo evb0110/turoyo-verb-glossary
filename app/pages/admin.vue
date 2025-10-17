@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { IAuthUser } from '~~/types/IAuthUser'
+import type { IAuthUser } from '#shared/types/IAuthUser'
 
 const { user } = useAuth()
 

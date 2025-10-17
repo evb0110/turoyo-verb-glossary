@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { rootToSlug } from '~/utils/rootToSlug'
-import type { IVerb } from '~~/types/IVerb'
+import type { IVerb } from '#shared/types/IVerb'
 
 defineProps<{
     verb: IVerb

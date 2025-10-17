@@ -1,4 +1,4 @@
-import type { TUserRole } from '~~/types/TUserRole'
+import type { TUserRole } from '#shared/types/TUserRole'
 
 export interface IUser {
     id: string

@@ -1,4 +1,4 @@
-import type { IVerb } from '~~/types/IVerb'
+import type { IVerb } from '#shared/types/IVerb'
 
 export async function getVerbByRoot(root: string) {
     const storage = useStorage('assets:server')

@@ -3,7 +3,7 @@ import type { IExample } from '~/types/IExample'
 import { tokenTextToString } from '~/utils/tokenTextToString'
 import { truncateText } from '~/utils/truncateText'
 import type { IVerbPreview } from '~~/server/services/extractVerbPreview'
-import type { IStem } from '~~/types/IStem'
+import type { IStem } from '#shared/types/IStem'
 
 const props = withDefaults(
     defineProps<{

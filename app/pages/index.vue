@@ -3,7 +3,7 @@ import { applyFilters } from '~/utils/applyFilters'
 import { generateEtymologyOptions } from '~/utils/generateEtymologyOptions'
 import { generateLetterOptions } from '~/utils/generateLetterOptions'
 import { generateStemOptions } from '~/utils/generateStemOptions'
-import type { IVerbMetadataWithPreview } from '~~/types/IVerbMetadataWithPreview'
+import type { IVerbMetadataWithPreview } from '#shared/types/IVerbMetadataWithPreview'
 
 const showRegexHelp = ref(false)
 

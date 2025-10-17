@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { rootToSlug } from '~/utils/rootToSlug'
-import type { IVerbMetadataWithPreview } from '~~/types/IVerbMetadataWithPreview'
+import type { IVerbMetadataWithPreview } from '#shared/types/IVerbMetadataWithPreview'
 import type { RouteLocationRaw } from '#vue-router'
 
 interface TableRow {

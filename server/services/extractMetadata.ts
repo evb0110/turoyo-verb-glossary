@@ -1,5 +1,5 @@
-import type { IVerb } from '~~/types/IVerb'
-import type { IVerbMetadata } from '~~/types/IVerbMetadata'
+import type { IVerb } from '#shared/types/IVerb'
+import type { IVerbMetadata } from '#shared/types/IVerbMetadata'
 
 export function extractMetadata(verb: IVerb): IVerbMetadata {
     const etymologySources: string[] = []

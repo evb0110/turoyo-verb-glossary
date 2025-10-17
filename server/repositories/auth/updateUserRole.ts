@@ -1,7 +1,7 @@
 import { eq } from 'drizzle-orm'
 import { db } from '~~/server/db'
 import { user } from '~~/server/db/schema'
-import type { TUserRole } from '~~/types/TUserRole'
+import type { TUserRole } from '#shared/types/TUserRole'
 
 export async function updateUserRole(userId: string, role: TUserRole) {
     const updated = await db.update(user)

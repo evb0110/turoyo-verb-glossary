@@ -2,8 +2,8 @@ import { createSearchRegex } from '~~/server/utils/createSearchRegex'
 import { extractContext } from '~~/server/utils/extractContext'
 import { matchAll } from '~~/server/utils/matchAll'
 import { tokenTextToString } from '~~/server/utils/tokenTextToString'
-import type { IExcerpt } from '~~/types/IExcerpt'
-import type { IVerb } from '~~/types/IVerb'
+import type { IExcerpt } from '#shared/types/IExcerpt'
+import type { IVerb } from '#shared/types/IVerb'
 
 function shouldAddExcerpt(excerptText: string, seenTexts: Set<string>) {
     return !seenTexts.has(excerptText)

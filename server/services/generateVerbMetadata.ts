@@ -2,8 +2,8 @@ import { extractMetadata } from '~~/server/services/extractMetadata'
 import { extractVerbPreview } from '~~/server/services/extractVerbPreview'
 import type { ISearchOptions } from '~~/server/types/ISearchOptions'
 import { generateExcerpts } from '~~/server/utils/verbExcerpts'
-import type { IVerb } from '~~/types/IVerb'
-import type { IVerbMetadataWithPreview } from '~~/types/IVerbMetadataWithPreview'
+import type { IVerb } from '#shared/types/IVerb'
+import type { IVerbMetadataWithPreview } from '#shared/types/IVerbMetadataWithPreview'
 
 export function generateVerbMetadata(
     verb: IVerb,

@@ -1,6 +1,6 @@
-import type { IEtymology } from '~~/types/IEtymology'
-import type { IStem } from '~~/types/IStem'
-import type { IVerb } from '~~/types/IVerb'
+import type { IEtymology } from '#shared/types/IEtymology'
+import type { IStem } from '#shared/types/IStem'
+import type { IVerb } from '#shared/types/IVerb'
 
 export interface IVerbPreview {
     root: string

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { transformStemForDisplay } from '~/utils/transformStemForDisplay'
-import type { IStem } from '~~/types/IStem'
+import type { IStem } from '#shared/types/IStem'
 
 const { stem } = defineProps<{
     stem: IStem
