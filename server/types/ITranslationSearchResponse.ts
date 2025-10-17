@@ -1,5 +1,5 @@
-import type { IExcerpt } from '~/types/IExcerpt'
-import type { IVerb } from '~/types/IVerb'
+import type { IExcerpt } from '~~/types/IExcerpt'
+import type { IVerb } from '~~/types/IVerb'
 
 export interface ITranslationSearchResponse {
     total: number

@@ -1,4 +1,4 @@
-import type { IAuthUser } from '~/types/IAuthUser'
+import type { IAuthUser } from '~~/types/IAuthUser'
 
 export interface IUserActionResponse {
     success: boolean

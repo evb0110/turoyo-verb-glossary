@@ -1,4 +1,4 @@
-import type { IAuthUser } from '~/types/IAuthUser'
+import type { IAuthUser } from '~~/types/IAuthUser'
 
 export default defineNuxtPlugin(async (_nuxtApp) => {
     if (import.meta.client) return

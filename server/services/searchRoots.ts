@@ -1,9 +1,9 @@
-import type { IVerb } from '~/types/IVerb'
-import type { IVerbMetadataWithPreview } from '~/types/IVerbMetadataWithPreview'
 import { generateVerbMetadata } from '~~/server/services/generateVerbMetadata'
 import type { IRootsSearchResult } from '~~/server/types/IRootsSearchResult'
 import type { ISearchOptions } from '~~/server/types/ISearchOptions'
 import { matchesPattern } from '~~/server/utils/matchesPattern'
+import type { IVerb } from '~~/types/IVerb'
+import type { IVerbMetadataWithPreview } from '~~/types/IVerbMetadataWithPreview'
 
 export async function searchRoots(
     query: string,

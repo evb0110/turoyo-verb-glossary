@@ -1,5 +1,5 @@
 import { createAuthClient } from 'better-auth/vue'
-import type { IAuthUser } from '~/types/IAuthUser'
+import type { IAuthUser } from '~~/types/IAuthUser'
 
 let authClient: ReturnType<typeof createAuthClient> | null = null
 

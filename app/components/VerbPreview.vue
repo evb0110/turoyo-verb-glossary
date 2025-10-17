@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import type { IExample } from '~/types/IExample'
-import type { IStem } from '~/types/IStem'
 import { tokenTextToString } from '~/utils/tokenTextToString'
 import { truncateText } from '~/utils/truncateText'
 import type { IVerbPreview } from '~~/server/services/extractVerbPreview'
+import type { IStem } from '~~/types/IStem'
 
 const props = withDefaults(
     defineProps<{

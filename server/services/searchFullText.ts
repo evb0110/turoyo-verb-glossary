@@ -1,9 +1,9 @@
-import type { IVerb } from '~/types/IVerb'
-import type { IVerbMetadataWithPreview } from '~/types/IVerbMetadataWithPreview'
 import { generateVerbMetadata } from '~~/server/services/generateVerbMetadata'
 import type { IFullTextSearchResult } from '~~/server/types/IFullTextSearchResult'
 import type { ISearchOptions } from '~~/server/types/ISearchOptions'
 import { matchesPattern } from '~~/server/utils/matchesPattern'
+import type { IVerb } from '~~/types/IVerb'
+import type { IVerbMetadataWithPreview } from '~~/types/IVerbMetadataWithPreview'
 
 function mergeVerbMetadata(
     existing: IVerbMetadataWithPreview | undefined,

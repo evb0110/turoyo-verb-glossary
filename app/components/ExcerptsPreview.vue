@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { IExcerpt } from '~/types/IExcerpt'
+import type { IExcerpt } from '~~/types/IExcerpt'
 
 defineProps<{
     excerpts: IExcerpt[]

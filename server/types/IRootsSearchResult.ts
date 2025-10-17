@@ -1,4 +1,4 @@
-import type { IVerbMetadataWithPreview } from '~/types/IVerbMetadataWithPreview'
+import type { IVerbMetadataWithPreview } from '~~/types/IVerbMetadataWithPreview'
 
 export interface IRootsSearchResult {
     total: number
