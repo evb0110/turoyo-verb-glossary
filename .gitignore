@@ -75,3 +75,21 @@ server/assets/verbs/
 
 # Parser validation baseline (contains verb data)
 data/baseline/baseline.json
+
+# Exclude most data/ directory (contains linguistic data or generated files)
+data/verbs_final.json
+data/verbs_final_sample.json
+data/turoyo_verbs*.json
+data/source/
+data/verification/
+data/api/
+data/baseline/
+
+# Keep only documentation and reports in data/
+!data/*.txt
+!data/*.md
+!data/validation/*.md
+!data/validation/*.py
+!data/validation/regression_report.html
+!data/validation/regression_summary.json
+!data/validation/pattern_validation_report.json
