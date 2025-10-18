@@ -1,268 +1,281 @@
-# Turoyo Verb Glossary - Digital Edition
+# Turoyo Verb Glossary
 
-A comprehensive digital conversion of the Turoyo verb glossary from HTML to structured JSON data.
+> Modern web application for browsing and searching Turoyo verbs with etymology and conjugations.
 
-## 📊 Dataset Overview
+A comprehensive digital glossary featuring **1,696 Turoyo verbs** with full conjugation tables, etymological information, and cross-references. Built with modern web technologies for fast, responsive browsing.
 
+## Features
+
+- **🔍 Smart Search** - Search by root, meaning, or full-text across all examples
+- **📚 Comprehensive Data** - 3,553 stems, 4,685 conjugation examples
+- **🌐 Etymology** - 10+ source languages (Arabic, Middle Eastern Aramaic, Kurdish, Turkish, etc.)
+- **⚡ Fast SSR** - Server-side rendering for instant page loads
+- **🎨 Modern UI** - Clean, responsive interface built with Tailwind CSS 4
+- **🔐 Authentication** - Google OAuth integration via Better Auth
+- **📱 Mobile-Friendly** - Fully responsive design
+
+## Tech Stack
+
+### Frontend
+
+- **[Nuxt 4](https://nuxt.com)** - Vue 3 meta-framework with SSR
+- **[Vue 3](https://vuejs.org)** - Progressive JavaScript framework
+- **[TypeScript](https://www.typescriptlang.org)** - Type-safe development
+- **[Tailwind CSS 4](https://tailwindcss.com)** - Utility-first CSS framework
+- **[@nuxt/ui](https://ui.nuxt.com)** - Beautiful UI components
+- **[VueUse](https://vueuse.org)** - Composition API utilities
+
+### Backend
+
+- **[Nitro](https://nitro.unjs.io)** - Universal web server
+- **[Better Auth](https://www.better-auth.com)** - Modern authentication
+- **[Drizzle ORM](https://orm.drizzle.team)** - Type-safe database toolkit
+- **[Neon Database](https://neon.tech)** - Serverless Postgres
+
+### Development
+
+- **[ESLint](https://eslint.org)** - Code linting and formatting
+- **[Husky](https://typicode.github.io/husky)** - Git hooks for quality control
+- **[lint-staged](https://github.com/lint-staged/lint-staged)** - Pre-commit checks
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 20+ (or 22+)
+- pnpm 9+
+- Python 3.10+ (for parser)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/evb0110/turoyo-verb-glossary.git
+cd turoyo-verb-glossary
+
+# Install dependencies
+pnpm install
+
+# Generate verb data
+python3 parser/parse_verbs.py
+
+# Set up environment variables
+cp .env.example .env
+# Add your database and OAuth credentials
 ```
-1,450 verbs | 1,758 stems | 4,980 examples
-29 alphabetical sections | 10+ etymology sources
+
+### Development
+
+```bash
+# Start dev server at http://localhost:3456
+pnpm run dev
+
+# Type checking
+pnpm run typecheck
+
+# Linting
+pnpm run lint
 ```
 
-## 🎯 Project Status
+### Production Build
 
-✅ **Data Extraction Complete**
-- All verb entries extracted from source HTML
-- Full conjugation tables with examples
-- Etymology and cross-references captured
-- Translations (German/English/Russian) preserved
-- References maintained
+```bash
+# Build for production
+pnpm run build
 
-## 📁 Project Structure
+# Preview production build
+pnpm run preview
+```
+
+## Project Structure
 
 ```
 turoyo-verb-glossary/
-├── source/
-│   └── Turoyo_all_2024.html          # Original 14.8MB HTML
-├── data/
-│   ├── verbs_final.json               # Main dataset (1,197 verbs)
-│   ├── verbs_final_sample.json        # Sample for inspection
-│   └── verification/                  # Validation samples
-│       ├── random_sample.json         # 20 random verbs
-│       ├── top_examples.json          # Verbs with most examples
-│       ├── most_stems.json            # Verbs with most stems
-│       ├── uncertain_entries.json     # 47 uncertain entries (???)
-│       ├── issues_sample.json         # Potential issues for review
-│       └── report.html                # HTML validation report
-├── parser/
-│   ├── parse_verbs.py                 # MASTER PARSER (run this)
-│   └── validate.py                    # Data validation tool
-├── EXTRACTION_SUMMARY.md              # Detailed extraction report
-└── README.md                          # This file
+├── app/                          # Nuxt application
+│   ├── components/               # Vue components
+│   ├── composables/              # Vue composables
+│   ├── layouts/                  # Layout components
+│   ├── middleware/               # Route middleware
+│   ├── pages/                    # Page components
+│   └── plugins/                  # Nuxt plugins
+├── server/                       # Nitro server
+│   ├── api/                      # API routes
+│   ├── assets/verbs/             # Verb JSON files (generated)
+│   ├── db/                       # Database schema
+│   ├── lib/                      # Server utilities
+│   ├── repositories/             # Data access layer
+│   ├── routes/                   # Custom routes
+│   └── services/                 # Business logic
+├── parser/                       # Python parser
+│   ├── parse_verbs.py            # Master parser
+│   ├── snapshot_baseline.py      # Validation baseline
+│   └── html_utils.py             # HTML utilities
+├── public/                       # Static assets
+└── nuxt.config.ts               # Nuxt configuration
 ```
 
-## 🚀 Quick Start
+## Architecture
 
-### View the Data
+### Three-Layer Architecture
 
-```bash
-# View sample
-cat data/verbs_final_sample.json
+The application follows a clean three-layer architecture:
 
-# View validation report
-open data/verification/report.html
+1. **Controllers** (`server/api/**/*.ts`) - HTTP layer
+   - Handle requests/responses
+   - Route to services/repositories
+   - Minimal business logic
 
-# Check stats
-python3 -c "import json; d=json.load(open('data/verbs_final.json')); print(d['metadata'])"
+2. **Services** (`server/services/*.ts`) - Business logic
+   - Pure functions
+   - Reusable calculations
+   - Orchestration
+
+3. **Repositories** (`server/repositories/*.ts`) - Data access
+   - Pure functions
+   - Database queries
+   - Storage access
+
+### Data Pipeline
+
+```
+Source HTML → Parser → JSON Files → API → Frontend
 ```
 
-### Run Validation
+- **Source**: Proprietary HTML glossary (not in repo)
+- **Parser**: `parser/parse_verbs.py` - Extracts and structures data
+- **Storage**: `server/assets/verbs/*.json` - Individual verb files
+- **API**: Nitro endpoints serve data via `useStorage('assets:server')`
+- **Stats**: Calculated dynamically from verb files
 
-```bash
-# Validate extracted data
-python3 parser/validate.py
+## API Routes
+
+```
+GET /api/verbs              # Search verbs (query params: q, type)
+GET /api/verbs/:root        # Get specific verb by root
+GET /api/stats              # Get dataset statistics
+GET /api/auth/*             # Authentication endpoints
+GET /api/user/me            # Current user info
 ```
 
-### Re-parse from Source
+## Data Generation
+
+Verb data is generated from source HTML using the parser:
 
 ```bash
-# Parse everything from scratch (ONE COMMAND does it all)
+# Generate all verb files
 python3 parser/parse_verbs.py
 
-# This automatically:
-# - Parses HTML source
-# - Adds homonym numbering
-# - Generates tokens with proper spacing
-# - Splits into individual files (public/ and server/assets/)
-# - Creates statistics
+# With validation
+python3 parser/parse_verbs.py --validate
+
+# Create validation baseline
+python3 parser/snapshot_baseline.py
 ```
 
-## 📖 Data Structure
+The parser:
 
-Each verb entry contains:
+- Extracts 1,696 verbs from HTML source
+- Generates individual JSON files
+- Adds homonym numbering
+- Creates validation reports
+- Validates against baseline (prevents regressions)
 
-```json
-{
-  "root": "ʕbr",
-  "etymology": {
-    "source": "MEA",
-    "source_root": "ʕbr",
-    "reference": "SL 1064-1065",
-    "meaning": "to pass, cross over..."
-  },
-  "stems": [
-    {
-      "stem": "I",
-      "forms": ["ʕabər", "ʕobər"],
-      "conjugations": {
-        "Preterit Intransitive": [
-          {
-            "turoyo": "aṯi ʕabər, ḥzele...",
-            "translations": ["darauf trat er ein..."],
-            "references": ["233", "prs 130/22"]
-          }
-        ]
-      }
-    }
-  ],
-  "uncertain": false,
-  "cross_reference": null
-}
-```
+**Note**: Generated verb files are not included in version control. Run the parser to generate them locally.
 
-### Fields Explained
-
-- **root**: Triconsonantal root (e.g., ʕbr, ʔmr)
-- **etymology**: Source language, root, reference, meaning
-- **stems**: Array of stems (I, II, III, Detransitive)
-  - **forms**: Preterit/Infinitive forms
-  - **conjugations**: Tables (Preterit, Infectum, Imperative, Participles)
-    - **turoyo**: Original Turoyo text
-    - **translations**: German/English translations
-    - **references**: Page/source references
-- **uncertain**: Marked with ??? in source
-- **cross_reference**: Points to another root
-
-## 📊 Data Quality
-
-### Statistics
-- **Complete verbs**: 1,180 (98.6%)
-- **With etymology**: 982 (82.0%)
-- **Average examples/verb**: 3.5
-- **Range**: 0-30+ examples per verb
-
-### Known Issues
-- 215 verbs missing etymology (acceptable - loan words)
-- 17 verbs with no stems (likely incomplete in source)
-- 121 verbs with duplicate stems (needs review)
-- 190 empty Turoyo cells (notes only)
-- 47 uncertain entries (marked ??? in source)
-
-See `EXTRACTION_SUMMARY.md` for full details.
-
-## 🔍 Manual Verification Guide
-
-### Priority Checks
-
-1. **Random Sample** (20 verbs)
-   ```bash
-   cat data/verification/random_sample.json
-   ```
-
-2. **Top Examples** (10 verbs)
-   ```bash
-   cat data/verification/top_examples.json
-   ```
-
-3. **Uncertain Entries** (47 verbs)
-   ```bash
-   cat data/verification/uncertain_entries.json
-   ```
-
-4. **Potential Issues**
-   ```bash
-   cat data/verification/issues_sample.json
-   ```
-
-### Compare Against Source
+## Environment Variables
 
 ```bash
-# Interactive verification
-python3 parser/verify_against_source.py
+# Database
+DATABASE_URL=postgresql://...
+
+# Better Auth
+BETTER_AUTH_SECRET=...  # Generate: openssl rand -base64 32
+
+# Google OAuth
+GOOGLE_CLIENT_ID=...
+GOOGLE_CLIENT_SECRET=...
+
+# Site URL (auto-detected on Vercel)
+NUXT_PUBLIC_SITE_URL=http://localhost:3456
 ```
 
-Then enter roots like: `ʕbr`, `ʔmr`, `ḥwrb`
+## Deployment
 
-Or use `random` to check a random verb.
+The application is deployed via Vercel CLI:
 
-## 🛠️ Tools & Scripts
+```bash
+# Deploy to production
+vercel deploy --prod
 
-### Master Parser (THE ONLY PARSER)
-```python
-# parser/parse_verbs.py - RUN THIS FOR ALL PARSING
-python3 parser/parse_verbs.py
+# Deploy to preview
+vercel deploy
 ```
-**This is the ONE canonical parser. It does EVERYTHING:**
-- Parses 137K lines of HTML
-- Extracts all fields (stems, conjugations, etymology)
-- Adds homonym numbering for duplicate roots
-- Generates tokens with proper spacing (fixes text concatenation)
-- Splits into individual verb JSON files (public/ and server/assets/)
-- Creates statistics
-- Fault-tolerant (continues on errors)
-- ~60 seconds runtime
 
-**IMPORTANT**: Never create multiple parser scripts. All parsing logic is consolidated here.
+Configuration:
 
-### Validate Data
-```python
-# parser/validate.py
-python3 parser/validate.py
+- **Preset**: Vercel (automatic in Vercel environment)
+- **Node.js**: 20.x
+- **Build Command**: `pnpm run build`
+- **Output Directory**: `.output`
+
+## Development Workflow
+
+### Before Committing
+
+```bash
+# Run type checking and linting
+pnpm run lint && pnpm run typecheck
 ```
-- Checks data completeness
-- Detects anomalies
-- Validates structure
 
-## 💡 Next Steps
+Pre-commit hooks automatically:
 
-### Option 1: Build Vue.js App
-Ready to build:
-- **Search**: By root, meaning, etymology
-- **Browse**: 27 alphabetical sections
-- **Filter**: By stem, source language
-- **Full-text search**: In examples
-- **Export**: PDF, CSV, Excel
+- Lint and format code
+- Check for type errors
+- Validate imports
 
-### Option 2: Data Enrichment
-Add:
-- Audio pronunciations
-- IPA transcriptions
-- Usage frequency
-- Related verb families
-- Dialectal variants
+### Parser Changes
 
-### Option 3: Improve Parser
-Based on verification:
-- Fix duplicate stems
-- Better empty cell handling
-- Enhanced etymology parsing
+When modifying the parser:
 
-## 📚 Etymology Sources
+```bash
+# 1. Create baseline (first time)
+python3 parser/snapshot_baseline.py
 
-| Source | Count | Description |
-|--------|-------|-------------|
-| Arab.  | 484   | Classical Arabic |
-| MEA    | 388   | Middle Eastern Aramaic |
-| Kurd.  | 63    | Kurdish |
-| Turk.  | 20    | Turkish |
-| Others | 27    | Various (denom., Anat., etc.) |
+# 2. Make changes
+vim parser/parse_verbs.py
 
-## 🌐 Character Encoding
+# 3. Validate (prevents regressions)
+python3 parser/parse_verbs.py --validate
 
-All data is UTF-8 encoded with full support for:
-- Turoyo diacritics: ʔ, ʕ, ə, ḥ, ṭ, ḏ, ġ, ǧ, ṣ, š, ṯ, ẓ
-- German umlauts: ä, ö, ü
-- Cyrillic (Russian notes)
+# 4. Check results
+open data/validation/regression_report.html
+```
 
-## 📝 License
+## Code Style
 
-[Specify license for extracted data]
+- **Package Manager**: pnpm only (never npm/yarn)
+- **Formatting**: Enforced by ESLint
+- **Imports**: Absolute paths (`~/` for app, `~~/` for server)
+- **File Organization**: One export per file
+- **Naming**: Interfaces use `I` prefix, Types use `T` prefix
+- **Functions**: Pure functions preferred
 
-Original glossary © [Original authors/institution]
-Digital extraction: Technical conversion only
+## Contributing
 
-## 🙏 Credits
+This is a personal project, but feedback and suggestions are welcome! Please open an issue to discuss any changes.
 
-- **Original Glossary**: Academic researchers
-- **Digital Conversion**: Claude Code (Anthropic)
-- **Date**: October 2025
+## License
 
-## 📧 Contact
+MIT License - See LICENSE file for details
 
-For questions about:
-- **Original data**: [Contact original authors]
-- **Extraction/technical**: [Your contact]
+## Acknowledgments
+
+- Original glossary data from academic research
+- Built with modern open-source technologies
+- Powered by Vercel's edge network
 
 ---
 
-**Status**: ✅ Extraction complete and validated. Ready for application development or manual verification.
+**Status**: ✅ Active development | Deployed at [turoyo-verbs.vercel.app]
+
+**Version**: 1.0.0 | **Last Updated**: October 2025
