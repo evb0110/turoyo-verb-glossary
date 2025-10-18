@@ -1,31 +1,15 @@
-import { eq } from 'drizzle-orm'
-import { db } from '~~/server/db'
-import { user } from '~~/server/db/schema'
-import { auth } from '~~/server/lib/auth'
+import { getCurrentUser } from '~~/server/repositories/auth/getCurrentUser'
 
 export default defineEventHandler(async (event) => {
     try {
-        const session = await auth.api.getSession({ headers: event.headers })
+        const userData = await getCurrentUser(event)
 
-        if (!session?.user) {
+        if (!userData) {
             setResponseStatus(event, 401)
             return null
         }
 
-        const userData = await db.select({
-            id: user.id,
-            name: user.name,
-            email: user.email,
-            image: user.image,
-            role: user.role,
-        }).from(user).where(eq(user.id, session.user.id)).limit(1)
-
-        if (!userData[0]) {
-            setResponseStatus(event, 404)
-            return null
-        }
-
-        return userData[0]
+        return userData
     }
     catch (error) {
         console.error('Error fetching user:', error)
