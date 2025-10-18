@@ -10,9 +10,8 @@ A comprehensive digital glossary featuring **1,696 Turoyo verbs** with full conj
 - **📚 Comprehensive Data** - 3,553 stems, 4,685 conjugation examples
 - **🌐 Etymology** - 10+ source languages (Arabic, Middle Eastern Aramaic, Kurdish, Turkish, etc.)
 - **⚡ Fast SSR** - Server-side rendering for instant page loads
-- **🎨 Modern UI** - Clean, responsive interface built with Tailwind CSS 4
+- **🎨 Modern UI** - Clean interface built with Tailwind CSS 4
 - **🔐 Authentication** - Google OAuth integration via Better Auth
-- **📱 Mobile-Friendly** - Fully responsive design
 
 ## Tech Stack
 
@@ -276,6 +275,6 @@ MIT License - See LICENSE file for details
 
 ---
 
-**Status**: ✅ Active development | Deployed at [turoyo-verbs.vercel.app]
+**Status**: ✅ Active development | Deployed at [turoyo-verbs.vercel.app](https://turoyo-verbs.vercel.app)
 
 **Version**: 1.0.0 | **Last Updated**: October 2025
