@@ -38,7 +38,7 @@ export default defineNuxtConfig({
         googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
         public: {
             siteUrl: process.env.NUXT_PUBLIC_SITE_URL
-                || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3456'),
+                || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://turoyo-verb-glossary.lvh.me:3456'),
         },
     },
     dir: { public: 'public' },
@@ -50,7 +50,7 @@ export default defineNuxtConfig({
         '/safari-pinned-tab.svg': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
     },
     devServer: {
-        host: 'localhost',
+        host: '0.0.0.0',
         port: 3456,
     },
     compatibilityDate: '2025-07-15',
@@ -68,6 +68,13 @@ export default defineNuxtConfig({
         build: { sourcemap: false },
     },
     typescript: { typeCheck: true },
+
+    hooks: {
+        listen() {
+            const devUrl = 'http://turoyo-verb-glossary.lvh.me:3456'
+            console.log(`\n  ➜ Dev URL: \x1b[36m${devUrl}\x1b[0m`)
+        },
+    },
     eslint: {
         config: {
             stylistic: {

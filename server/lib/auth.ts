@@ -6,6 +6,7 @@ import * as schema from '~~/server/db/schema'
 const config = useRuntimeConfig()
 
 export const auth = betterAuth({
+    baseURL: config.public.siteUrl,
     secret: config.betterAuthSecret,
     database: drizzleAdapter(db, {
         provider: 'pg',
