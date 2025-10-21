@@ -275,6 +275,6 @@ MIT License - See LICENSE file for details
 
 ---
 
-**Status**: ✅ Active development | Deployed at [turoyo-verbs.vercel.app](https://turoyo-verbs.vercel.app)
+**Status**: ✅ Active development | Deployed at [turoyo-verb-glossary.vercel.app](https://turoyo-verb-glossary.vercel.app)
 
 **Version**: 1.0.0 | **Last Updated**: October 2025
