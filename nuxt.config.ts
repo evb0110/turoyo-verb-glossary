@@ -1,3 +1,9 @@
+import { homedir } from 'node:os'
+import { join } from 'node:path'
+import mkcert from 'vite-plugin-mkcert'
+
+const mkcertDir = join(homedir(), '.vite-plugin-mkcert')
+
 export default defineNuxtConfig({
     modules: ['@nuxt/eslint', '@nuxt/ui'],
     pages: true,
@@ -38,7 +44,7 @@ export default defineNuxtConfig({
         googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
         public: {
             siteUrl: process.env.NUXT_PUBLIC_SITE_URL
-                || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://turoyo-verb-glossary.lvh.me:3456'),
+                || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://turoyo-verb-glossary.lvh.me:3456'),
         },
     },
     dir: { public: 'public' },
@@ -52,6 +58,10 @@ export default defineNuxtConfig({
     devServer: {
         host: '0.0.0.0',
         port: 3456,
+        https: {
+            key: join(mkcertDir, 'dev.pem'),
+            cert: join(mkcertDir, 'cert.pem'),
+        },
     },
     compatibilityDate: '2025-07-15',
     nitro: {
@@ -64,6 +74,9 @@ export default defineNuxtConfig({
         scanDirs: ['server'],
     },
     vite: {
+        plugins: [
+            mkcert({ hosts: ['*.lvh.me', 'lvh.me', 'localhost'] }),
+        ],
         server: { strictPort: true },
         build: { sourcemap: false },
     },
@@ -71,8 +84,8 @@ export default defineNuxtConfig({
 
     hooks: {
         listen() {
-            const devUrl = 'http://turoyo-verb-glossary.lvh.me:3456'
-            console.log(`\n  ➜ Dev URL: \x1b[36m${devUrl}\x1b[0m`)
+            const devUrl = 'https://turoyo-verb-glossary.lvh.me:3456'
+            console.log(`\n  ➜ Dev URL (HTTPS): \x1b[36m${devUrl}\x1b[0m`)
         },
     },
     eslint: {
