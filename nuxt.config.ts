@@ -38,14 +38,11 @@ export default defineNuxtConfig({
     },
     css: ['~/assets/css/main.css'],
     runtimeConfig: {
-        betterAuthSecret: process.env.BETTER_AUTH_SECRET,
-        databaseUrl: process.env.DATABASE_URL,
-        googleClientId: process.env.GOOGLE_CLIENT_ID,
-        googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
-        public: {
-            siteUrl: process.env.NUXT_PUBLIC_SITE_URL
-                || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://turoyo-verb-glossary.lvh.me:3456'),
-        },
+        betterAuthSecret: '',
+        databaseUrl: '',
+        googleClientId: '',
+        googleClientSecret: '',
+        public: { siteUrl: 'https://turoyo-verb-glossary.lvh.me:3456' },
     },
     dir: { public: 'public' },
     srcDir: 'app',
