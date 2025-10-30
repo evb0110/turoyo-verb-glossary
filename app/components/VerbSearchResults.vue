@@ -120,6 +120,6 @@ const columns = [
 .verb-results-table th {
     overflow-wrap: break-word !important;
     word-wrap: break-word !important;
-    word-break: break-word !important;
+    word-break: normal !important;
 }
 </style>
