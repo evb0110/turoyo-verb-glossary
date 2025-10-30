@@ -354,15 +354,15 @@ class TuroyoVerbParser:
                     if typ == 'turoyo':
                         stripped = text.strip()
                         if re.match(r'^[\d;/\s\[\]A-Z]+$', stripped):
-                            current_example['references'].append(stripped)
+                            current_example['references'].append(self.normalize_whitespace(stripped))
                         else:
                             current_example['turoyo'].append(text)
                     elif typ == 'translation':
                         quotes = re.findall(r'[ʻ\'\"]([^ʼ\'\"]{3,})[ʼ\'\"]', text)
                         if quotes:
-                            current_example['translations'].extend(quotes)
+                            current_example['translations'].extend([self.normalize_whitespace(q) for q in quotes])
                         elif len(text) > 10:
-                            current_example['translations'].append(text)
+                            current_example['translations'].append(self.normalize_whitespace(text))
 
                 turoyo_text = ''.join(current_example['turoyo'])
                 turoyo_text = re.sub(r'\s+', ' ', turoyo_text).strip()
@@ -370,7 +370,7 @@ class TuroyoVerbParser:
                 example = {
                     'turoyo': turoyo_text,
                     'translations': [t.strip() for t in current_example['translations'] if t.strip()],
-                    'references': [r.strip() for r in current_example['references'] if r.strip()]
+                    'references': [self.normalize_whitespace(r) for r in current_example['references'] if r.strip()]
                 }
 
                 if example['turoyo'] or example['translations']:
