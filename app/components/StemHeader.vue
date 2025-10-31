@@ -11,11 +11,11 @@ defineProps<{
         <StemGlossInfo :stem="stem"/>
     </template>
     <template v-else>
-        <div class="flex flex-wrap items-center justify-between gap-3">
+        <div class="flex flex-wrap items-baseline gap-5">
             <h3 class="text-lg font-semibold">
                 Stem {{ stem.stem }}
             </h3>
-            <p class="text-sm text-muted">
+            <p>
                 {{ stem.formsListDisplay }}
             </p>
         </div>
