@@ -1,0 +1,40 @@
+{
+  "filename": "bsm.json",
+  "hash": "1f8c54482a1b16c168c5b24b28db730652904f0c965cf07a5fa6369dfbdc9327",
+  "structure": {
+    "root": "bsm",
+    "has_etymology": true,
+    "has_cross_reference": false,
+    "is_uncertain": false,
+    "stem_count": 3,
+    "stems": [
+      {
+        "stem": "I",
+        "form_count": 2,
+        "conjugation_types": [
+          "Infectum",
+          "Infectum-wa",
+          "Preterit Intransitive"
+        ],
+        "example_count": 5
+      },
+      {
+        "stem": "II",
+        "form_count": 2,
+        "conjugation_types": ["Imperative", "Infectum", "Preterit"],
+        "example_count": 3
+      },
+      {
+        "stem": "Detransitive",
+        "form_count": 0,
+        "conjugation_types": ["Infectum"],
+        "example_count": 1
+      }
+    ],
+    "etymology_details": {
+      "etymon_count": 1,
+      "has_relationship": false,
+      "sources": ["MEA"]
+    }
+  }
+}

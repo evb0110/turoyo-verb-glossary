@@ -1,0 +1,44 @@
+{
+  "filename": "ṭlb.json",
+  "hash": "02cfc496601a571136a6cdc972d37b95fd5d7c8dc74fa4d2c819b7d0374e7a02",
+  "structure": {
+    "root": "ṭlb",
+    "has_etymology": true,
+    "has_cross_reference": false,
+    "is_uncertain": false,
+    "stem_count": 3,
+    "stems": [
+      {
+        "stem": "I",
+        "form_count": 2,
+        "conjugation_types": [
+          "Imperative",
+          "Infectum",
+          "Infectum-wa",
+          "Infinitive",
+          "Participle_Active",
+          "Preterit",
+          "Preterit-wa"
+        ],
+        "example_count": 10
+      },
+      {
+        "stem": "II",
+        "form_count": 2,
+        "conjugation_types": ["Preterit"],
+        "example_count": 1
+      },
+      {
+        "stem": "Detransitive",
+        "form_count": 0,
+        "conjugation_types": ["Infectum", "Infinitive", "Participle_Passive"],
+        "example_count": 4
+      }
+    ],
+    "etymology_details": {
+      "etymon_count": 1,
+      "has_relationship": false,
+      "sources": ["Arab."]
+    }
+  }
+}

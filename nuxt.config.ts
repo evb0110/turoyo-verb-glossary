@@ -62,7 +62,7 @@ export default defineNuxtConfig({
     },
     compatibilityDate: '2025-07-15',
     nitro: {
-        preset: process.env.VERCEL ? 'vercel' : undefined,
+        preset: process.env.VERCEL ? 'vercel' : process.env.CLOUDFLARE ? 'cloudflare-pages' : undefined,
         publicAssets: [{
             dir: 'public',
             baseURL: '/',

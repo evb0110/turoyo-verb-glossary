@@ -1,0 +1,41 @@
+{
+  "filename": "th.json",
+  "hash": "1f952586a9b5e905481b356e2e5b57ac96c5adac9c4b95deac8242a7e9d4a512",
+  "structure": {
+    "root": "th",
+    "has_etymology": true,
+    "has_cross_reference": false,
+    "is_uncertain": false,
+    "stem_count": 3,
+    "stems": [
+      {
+        "stem": "III",
+        "form_count": 4,
+        "conjugation_types": [
+          "Imperative",
+          "Infectum",
+          "Infinitive",
+          "Preterit"
+        ],
+        "example_count": 4
+      },
+      {
+        "stem": "I",
+        "form_count": 2,
+        "conjugation_types": ["Preterit"],
+        "example_count": 1
+      },
+      {
+        "stem": "Detransitive",
+        "form_count": 0,
+        "conjugation_types": ["Infectum", "Infectum-wa", "Infinitive"],
+        "example_count": 4
+      }
+    ],
+    "etymology_details": {
+      "etymon_count": 1,
+      "has_relationship": false,
+      "sources": ["MEA"]
+    }
+  }
+}

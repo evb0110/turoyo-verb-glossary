@@ -1,0 +1,41 @@
+{
+  "filename": "qbl.json",
+  "hash": "6531dafa901a16fc309cf3f767e44780f1dfe467148324288436a1268b675025",
+  "structure": {
+    "root": "qbl",
+    "has_etymology": true,
+    "has_cross_reference": false,
+    "is_uncertain": false,
+    "stem_count": 3,
+    "stems": [
+      {
+        "stem": "II",
+        "form_count": 2,
+        "conjugation_types": ["Infectum"],
+        "example_count": 1
+      },
+      {
+        "stem": "III",
+        "form_count": 2,
+        "conjugation_types": [
+          "Imperative",
+          "Infectum",
+          "Infectum-wa",
+          "Preterit"
+        ],
+        "example_count": 6
+      },
+      {
+        "stem": "Detransitive",
+        "form_count": 0,
+        "conjugation_types": ["Infectum"],
+        "example_count": 1
+      }
+    ],
+    "etymology_details": {
+      "etymon_count": 1,
+      "has_relationship": false,
+      "sources": ["MEA"]
+    }
+  }
+}

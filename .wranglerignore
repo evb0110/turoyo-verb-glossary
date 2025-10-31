@@ -1,0 +1,46 @@
+# Development & Build Tools
+node_modules/
+.venv/
+parser/
+.nuxt/
+.output/
+.devkit/
+.wrangler/
+
+# Source & Archive Files
+source/
+.archive/
+.data/
+.backup/
+
+# Large Data Files (only ignore top-level /data, keep public/data)
+/data/
+
+# IDE & Editor Files
+.cursor/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Git & CI/CD
+.git/
+.github/
+.gitignore
+.vercelignore
+
+# Claude Configuration
+.claude/
+
+# Documentation
+README.md
+
+# Temporary Files
+*.tmp
+*.bak
+.cache/
+
+# Vercel
+.vercel/

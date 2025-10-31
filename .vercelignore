@@ -1,13 +1,16 @@
 # Development & Build Tools
+node_modules/
 .venv/
 parser/
 .nuxt/
 .output/
+.devkit/
 
 # Source & Archive Files
 source/
 .archive/
 .data/
+.backup/
 
 # Large Data Files (only ignore top-level /data, keep public/data)
 /data/
@@ -25,6 +28,9 @@ source/
 .git/
 .github/
 .gitignore
+
+# Claude Configuration
+.claude/
 
 # Documentation
 README.md

@@ -1,0 +1,41 @@
+{
+  "filename": "rby.json",
+  "hash": "eefcc6e1ba0f9f36d08c03e860ba684938f52719404819bb68b937074b7825bc",
+  "structure": {
+    "root": "rby",
+    "has_etymology": true,
+    "has_cross_reference": false,
+    "is_uncertain": false,
+    "stem_count": 3,
+    "stems": [
+      {
+        "stem": "I",
+        "form_count": 2,
+        "conjugation_types": ["Infectum", "Preterit Intransitive"],
+        "example_count": 2
+      },
+      {
+        "stem": "II",
+        "form_count": 2,
+        "conjugation_types": [
+          "Infectum",
+          "Participle_Active",
+          "Preterit",
+          "Preterit-wa"
+        ],
+        "example_count": 4
+      },
+      {
+        "stem": "Detransitive",
+        "form_count": 0,
+        "conjugation_types": ["Participle_Passive"],
+        "example_count": 1
+      }
+    ],
+    "etymology_details": {
+      "etymon_count": 1,
+      "has_relationship": false,
+      "sources": ["MEA"]
+    }
+  }
+}

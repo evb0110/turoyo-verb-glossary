@@ -1,0 +1,51 @@
+{
+  "filename": "str.json",
+  "hash": "1164274ce6cfdf6de22c162955a550f2791257341e6d824cf40255e2d0adeff8",
+  "structure": {
+    "root": "str",
+    "has_etymology": true,
+    "has_cross_reference": false,
+    "is_uncertain": true,
+    "stem_count": 4,
+    "stems": [
+      {
+        "stem": "I",
+        "form_count": 2,
+        "conjugation_types": [
+          "Imperative",
+          "Infectum",
+          "Preterit Intransitive"
+        ],
+        "example_count": 3
+      },
+      {
+        "stem": "II",
+        "form_count": 2,
+        "conjugation_types": ["Infectum", "Preterit"],
+        "example_count": 2
+      },
+      {
+        "stem": "III",
+        "form_count": 2,
+        "conjugation_types": [
+          "Imperative",
+          "Infectum",
+          "Infectum-wa",
+          "Preterit"
+        ],
+        "example_count": 4
+      },
+      {
+        "stem": "Detransitive",
+        "form_count": 0,
+        "conjugation_types": ["Infectum", "Participle_Passive", "Preterit"],
+        "example_count": 3
+      }
+    ],
+    "etymology_details": {
+      "etymon_count": 1,
+      "has_relationship": false,
+      "sources": ["MEA"]
+    }
+  }
+}

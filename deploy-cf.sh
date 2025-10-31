@@ -1,0 +1,1 @@
+pnpm run build:c && npx wrangler pages deploy dist

@@ -1,0 +1,42 @@
+{
+  "filename": "brx.json",
+  "hash": "d399156c2a2f6f88103494d1b26f8b10a552970e79b3bfc04b148e39d99b899d",
+  "structure": {
+    "root": "brx",
+    "has_etymology": true,
+    "has_cross_reference": false,
+    "is_uncertain": false,
+    "stem_count": 3,
+    "stems": [
+      {
+        "stem": "I",
+        "form_count": 2,
+        "conjugation_types": [],
+        "example_count": 0
+      },
+      {
+        "stem": "II",
+        "form_count": 2,
+        "conjugation_types": [
+          "Imperative",
+          "Infectum",
+          "Infinitive",
+          "Participle_Passive",
+          "Preterit"
+        ],
+        "example_count": 7
+      },
+      {
+        "stem": "Detransitive",
+        "form_count": 0,
+        "conjugation_types": ["Participle_Passive"],
+        "example_count": 2
+      }
+    ],
+    "etymology_details": {
+      "etymon_count": 1,
+      "has_relationship": false,
+      "sources": ["MEA"]
+    }
+  }
+}

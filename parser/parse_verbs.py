@@ -251,7 +251,7 @@ class TuroyoVerbParser:
 
     def parse_stems(self, entry_html):
         """Find all stem headers"""
-        stem_pattern = r'<font size="4"[^>]*><b><span[^>]*>([IVX]+):\s*</span></b></font></font><font[^>]*><font[^>]*><i><b><span[^>]*>([^<]+)</span>'
+        stem_pattern = r'<font size="4"[^>]*><b><span[^>]*>([IVX]+)(?:[^:]*)?:\s*</span></b></font></font><font[^>]*><font[^>]*><i><b><span[^>]*>([^<]+)</span>'
 
         stems = []
         for match in re.finditer(stem_pattern, entry_html):
@@ -264,6 +264,22 @@ class TuroyoVerbParser:
                 'forms': forms,
                 'position': match.start()
             })
+
+        no_colon_pattern = r'<font size="4"[^>]*><b><span[^>]*>([IVX]+)</span></b></font></font><font[^>]*><font[^>]*><i><b><span[^>]*>([^<]+)</span>'
+        for match in re.finditer(no_colon_pattern, entry_html):
+            if any(s['position'] == match.start() for s in stems):
+                continue
+
+            stem_num = match.group(1)
+            forms_text = match.group(2).strip()
+            if '/' in forms_text or any(c in forms_text for c in 'ʔʕġǧḥṣštṭḏṯẓāēīūə'):
+                forms = [f.strip() for f in forms_text.split('/') if f.strip()]
+                if forms:
+                    stems.append({
+                        'stem': stem_num,
+                        'forms': forms,
+                        'position': match.start()
+                    })
 
         combined_pattern = r'<font size="4"[^>]*><b><span[^>]*>([IVX]+):\s*([^<]+)</span></b></font>'
         for match in re.finditer(combined_pattern, entry_html):
@@ -662,12 +678,16 @@ class TuroyoVerbParser:
             for stem in verb['stems']
         )
 
+        total_stems_including_detrans = self.stats['stems_parsed'] + self.stats.get('detransitive_entries', 0)
+
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump({
                 'verbs': self.verbs,
                 'metadata': {
                     'total_verbs': len(self.verbs),
                     'total_stems': self.stats['stems_parsed'],
+                    'detransitive_stems': self.stats.get('detransitive_entries', 0),
+                    'total_stems_including_detransitive': total_stems_including_detrans,
                     'total_examples': total_examples,
                     'cross_references': self.stats.get('cross_references', 0),
                     'uncertain_entries': self.stats.get('uncertain_entries', 0),
@@ -677,7 +697,7 @@ class TuroyoVerbParser:
             }, f, ensure_ascii=False, indent=2)
 
         print(f"💾 Saved: {output_file}")
-        print(f"   📊 {total_examples} examples across {self.stats['stems_parsed']} stems")
+        print(f"   📊 {total_examples} examples across {total_stems_including_detrans} total stems ({self.stats['stems_parsed']} Roman + {self.stats.get('detransitive_entries', 0)} Detransitive)")
 
         if self.errors:
             error_file = output_file.parent / 'parsing_errors.txt'
@@ -757,6 +777,7 @@ def main():
     print("=" * 80)
     print(f"📚 Total verbs: {len(parser.verbs)}")
     print(f"📖 Total stems: {parser.stats['stems_parsed']}")
+    print(f"🔄 Detransitive stems: {parser.stats.get('detransitive_entries', 0)}")
     print(f"🔗 Cross-references: {parser.stats.get('cross_references', 0)}")
     print(f"❓ Uncertain entries: {parser.stats.get('uncertain_entries', 0)}")
     print(f"🔢 Homonyms numbered: {parser.stats.get('homonyms_numbered', 0)}")

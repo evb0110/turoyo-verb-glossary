@@ -1,0 +1,41 @@
+{
+  "filename": "slm.json",
+  "hash": "8d6d53fb5832545cf7cac1bbb813bb868920229c3104787aa7bf4a5563a93b87",
+  "structure": {
+    "root": "slm",
+    "has_etymology": true,
+    "has_cross_reference": false,
+    "is_uncertain": true,
+    "stem_count": 3,
+    "stems": [
+      {
+        "stem": "II",
+        "form_count": 2,
+        "conjugation_types": [
+          "Imperative",
+          "Infectum",
+          "Infectum-wa",
+          "Preterit"
+        ],
+        "example_count": 7
+      },
+      {
+        "stem": "III",
+        "form_count": 2,
+        "conjugation_types": ["Imperative", "Infectum", "Preterit"],
+        "example_count": 3
+      },
+      {
+        "stem": "Detransitive",
+        "form_count": 0,
+        "conjugation_types": ["Infectum", "Infectum-wa"],
+        "example_count": 2
+      }
+    ],
+    "etymology_details": {
+      "etymon_count": 1,
+      "has_relationship": false,
+      "sources": ["Arab."]
+    }
+  }
+}

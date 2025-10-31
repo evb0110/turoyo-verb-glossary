@@ -1,0 +1,42 @@
+{
+  "filename": "lym.json",
+  "hash": "5b9506ad4ba79091593255b478d229b97c486363f9c99b752f3e4a9837c318e2",
+  "structure": {
+    "root": "lym",
+    "has_etymology": true,
+    "has_cross_reference": false,
+    "is_uncertain": false,
+    "stem_count": 3,
+    "stems": [
+      {
+        "stem": "I",
+        "form_count": 2,
+        "conjugation_types": ["Preterit Intransitive"],
+        "example_count": 1
+      },
+      {
+        "stem": "III",
+        "form_count": 2,
+        "conjugation_types": [
+          "Imperative",
+          "Infectum",
+          "Infectum-wa",
+          "Preterit",
+          "Preterit-wa"
+        ],
+        "example_count": 5
+      },
+      {
+        "stem": "Detransitive",
+        "form_count": 0,
+        "conjugation_types": ["Infectum", "Infinitive"],
+        "example_count": 2
+      }
+    ],
+    "etymology_details": {
+      "etymon_count": 1,
+      "has_relationship": false,
+      "sources": ["MEA"]
+    }
+  }
+}

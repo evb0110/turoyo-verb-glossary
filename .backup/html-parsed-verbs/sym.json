@@ -1,0 +1,50 @@
+{
+  "filename": "sym.json",
+  "hash": "c2eb483e7da5c6eeee889b753c125809ffa982cb2ec2de431b12974a105849df",
+  "structure": {
+    "root": "sym",
+    "has_etymology": true,
+    "has_cross_reference": false,
+    "is_uncertain": true,
+    "stem_count": 3,
+    "stems": [
+      {
+        "stem": "I",
+        "form_count": 2,
+        "conjugation_types": [
+          "Imperative",
+          "Infectum",
+          "Infectum-wa",
+          "Participle_Active",
+          "Preterit",
+          "Preterit-wa",
+          "ko-Preterit"
+        ],
+        "example_count": 21
+      },
+      {
+        "stem": "III",
+        "form_count": 2,
+        "conjugation_types": ["Imperative", "Infectum-wa", "Preterit"],
+        "example_count": 3
+      },
+      {
+        "stem": "Detransitive",
+        "form_count": 0,
+        "conjugation_types": [
+          "Infectum",
+          "Infectum-wa",
+          "Infinitive",
+          "Participle_Passive",
+          "Preterit"
+        ],
+        "example_count": 7
+      }
+    ],
+    "etymology_details": {
+      "etymon_count": 1,
+      "has_relationship": false,
+      "sources": ["MEA"]
+    }
+  }
+}

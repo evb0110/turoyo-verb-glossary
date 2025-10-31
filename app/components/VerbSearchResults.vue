@@ -118,8 +118,12 @@ const columns = [
 
 .verb-results-table td,
 .verb-results-table th {
+    white-space: normal !important;
+    word-break: keep-all !important;
+}
+
+.verb-results-table th:nth-child(2),
+.verb-results-table td:nth-child(2) {
     overflow-wrap: break-word !important;
-    word-wrap: break-word !important;
-    word-break: normal !important;
 }
 </style>
