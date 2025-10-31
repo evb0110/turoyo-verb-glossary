@@ -7,7 +7,7 @@ export default defineNuxtRouteMiddleware(async (to) => {
         if (!event) return
 
         try {
-            const userData = await $fetch<IAuthUser | null>('/api/user/me', { headers: event.headers }).catch(() => null)
+            const userData = await $fetch<IAuthUser | null>('/api/user/me', { headers: { cookie: event.headers.get('cookie') || '' } })
 
             useState('auth:user').value = userData
             useState('auth:sessionStatus').value = userData ? 'authenticated' : 'guest'
@@ -22,6 +22,8 @@ export default defineNuxtRouteMiddleware(async (to) => {
         }
         catch (error) {
             console.error('Server auth check error:', error)
+            useState('auth:user').value = null
+            useState('auth:sessionStatus').value = 'guest'
         }
         return
     }

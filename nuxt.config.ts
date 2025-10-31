@@ -42,7 +42,7 @@ export default defineNuxtConfig({
         databaseUrl: '',
         googleClientId: '',
         googleClientSecret: '',
-        public: { siteUrl: 'https://turoyo-verb-glossary.lvh.me:3456' },
+        public: { siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://turoyo-verb-glossary.lvh.me:3456' },
     },
     dir: { public: 'public' },
     srcDir: 'app',
