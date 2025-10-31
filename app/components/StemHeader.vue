@@ -11,7 +11,7 @@ defineProps<{
         <StemGlossInfo :stem="stem"/>
     </template>
     <template v-else>
-        <div class="flex flex-wrap items-baseline gap-5">
+        <div class="flex flex-wrap justify-items-start items-baseline gap-5">
             <h3 class="text-lg font-semibold">
                 Stem {{ stem.stem }}
             </h3>
