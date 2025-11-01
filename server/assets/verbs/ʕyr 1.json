@@ -20,7 +20,7 @@
             "translations": [
               "‘die Voltspannung ist hier 220. Ich habe das Gerät nach dieser Voltstärke eingestellt’"
             ],
-            "references": ["220", "220", "13/5"],
+            "references": ["220", "13/5"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -59,28 +59,14 @@
                 "value": ";"
               }
             ],
-            "text": "u=wolt d-arke 220, maṯe w ʕǝ́sri-yo. mʕayalli i=makina l-goran d-u=wolt-ano ‘die Voltspannung ist hier 220. Ich habe das Gerät nach dieser Voltstärke eingestellt’; 13/5;",
-            "segments": [
-              {
-                "turoyo": "u=wolt d-arke , maṯe w ʕǝ́sri-yo. mʕayalli i=makina l-goran d-u=wolt-ano",
-                "translations": [
-                  "‘die Voltspannung ist hier 220. Ich habe das Gerät nach dieser Voltstärke eingestellt’"
-                ],
-                "references": ["220"]
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["13/5"]
-              }
-            ]
+            "text": "u=wolt d-arke 220, maṯe w ʕǝ́sri-yo. mʕayalli i=makina l-goran d-u=wolt-ano ‘die Voltspannung ist hier 220. Ich habe das Gerät nach dieser Voltstärke eingestellt’; 13/5;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "Bu qayṭo ema gdoṯat? – Lu+goranawo gəmʕarno ruḥi Ilyas p.c. May",
+            "turoyo": "Bu qayṭo ema gdoṯat? – Lu+goranawo gəmʕarno ruḥi Ilyas p.c.",
             "translations": [],
-            "references": ["6", "2025"],
+            "references": ["May 6", "2025"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -92,11 +78,11 @@
               },
               {
                 "kind": "turoyo",
-                "value": "Ilyas p.c. May "
+                "value": "Ilyas p.c. "
               },
               {
                 "kind": "ref",
-                "value": "6"
+                "value": "May 6"
               },
               {
                 "kind": "punct",
@@ -115,14 +101,7 @@
                 "value": ")"
               }
             ],
-            "text": "Bu qayṭo ema gdoṯat? – Lu+goranawo gəmʕarno ruḥi (Ilyas p.c. May 6, 2025)",
-            "segments": [
-              {
-                "turoyo": "Bu qayṭo ema gdoṯat? – Lu+goranawo gəmʕarno ruḥi (Ilyas p.c. May , )",
-                "translations": [],
-                "references": ["6", "2025"]
-              }
-            ]
+            "text": "Bu qayṭo ema gdoṯat? – Lu+goranawo gəmʕarno ruḥi (Ilyas p.c. May 6, 2025)"
           }
         ]
       }

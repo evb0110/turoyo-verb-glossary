@@ -497,7 +497,7 @@ class FixedDocxParser:
             '"': '"',
         }
 
-        ref_regex = re.compile(r'(?:[A-Z]{1,4}\s*\d+(?:/\d+)?|\d+(?:/\d+)?)(?=(?:[^\w]|$))')
+        ref_regex = re.compile(r'(?:(?<![A-Za-z])[A-Z][A-Za-z]{0,3}\s+\d+(?:[./]\d+)*|\d+(?:[./]\d+)*)(?=(?:[^\w]|$))')
 
         while i < n:
             c = raw[i]
@@ -760,46 +760,13 @@ class FixedDocxParser:
 
     def _extract_reference_groups(self, tokens):
         """
-        Construct reference strings from token sequences, preserving labels and punctuation:
-        - Supports labels of 1–4 ASCII letters (e.g., LB, LuF, jl) preceding numbers
-        - Supports dotted or slashed numeric series (e.g., 18.7.11, 286/44)
-        - Avoids picking up random digits from prose by requiring a number token to start a group
+        Extract reference strings from tokens exactly as tokenized.
+        The tokenizer already captures full references like "LuF 286/44" or "147".
         """
         refs = []
-
-        def is_label_token(t):
-            if t.get('kind') != 'turoyo':
-                return False
-            val = t.get('value', '').strip()
-            return bool(re.fullmatch(r'[A-Za-z]{1,4}', val))
-
-        i = 0
-        n = len(tokens)
-        while i < n:
-            label = None
-            t = tokens[i]
-            if is_label_token(t) and i + 1 < n and tokens[i + 1].get('kind') == 'ref':
-                label = t.get('value', '').strip()
-                i += 1
-                t = tokens[i]
-
-            if t.get('kind') == 'ref':
-                parts = [t.get('value', '').strip()]
-                j = i + 1
-                while j + 1 < n and tokens[j].get('kind') == 'punct' and tokens[j].get('value') in {'.', '/'} and tokens[j + 1].get('kind') == 'ref':
-                    parts.append(tokens[j].get('value'))
-                    parts.append(tokens[j + 1].get('value', '').strip())
-                    j += 2
-
-                ref_text = ''.join(parts)
-                if label:
-                    ref_text = f"{label} {ref_text}"
-                refs.append(ref_text)
-                i = j
-                continue
-
-            i += 1
-
+        for token in tokens:
+            if token.get('kind') == 'ref':
+                refs.append(token.get('value', '').strip())
         return refs
 
     def parse_table_cell(self, cell):
@@ -808,7 +775,7 @@ class FixedDocxParser:
         - Prefer italic runs as Turoyo when present
         - Otherwise, detect Turoyo via character heuristics
         - Extract translations from quoted segments
-        - Extract references (supports labels like LB/LuF/jl and dotted/slashed numbers)
+        - Extract references as-is from tokenizer (e.g., "LuF 286/44", "147", "jl 18.7.11")
         - Merge consecutive Turoyo/translation-only lines
         """
         examples = []
@@ -856,7 +823,7 @@ class FixedDocxParser:
 
                 # no italic-based fallback; turoyo will be formed from non-translation tokens
 
-                # References: build from tokens to preserve labels and punctuation (e.g., LB 147, LuF 286/44, jl 18.7.11)
+                # References: extract as-is from tokenizer (e.g., "LB 147", "LuF 286/44", "jl 18.7.11")
                 references = self._extract_reference_groups(tokens)
 
                 # Join all turoyo tokens for a searchable turoyo_text snapshot
@@ -868,7 +835,7 @@ class FixedDocxParser:
                     examples.append({
                         'turoyo': turoyo_text,
                         'translations': translations,
-                        'references': references[:3] if references else [],
+                        'references': references if references else [],
                         'tokens': tokens,
                         'text': self.normalize_whitespace(item_plain),
                     })

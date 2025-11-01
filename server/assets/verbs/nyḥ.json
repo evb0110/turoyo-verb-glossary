@@ -18,12 +18,12 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "iḏe lo=msaqṭo w-nayiḥo Lu u=ʕădāb-ano ko-noḥət me-raġla hul d-azze saʕaye ṯniḥo nayiḥo u=Sargey qarʕe nāḥ Ilyas p.c. Dec",
+            "turoyo": "iḏe lo=msaqṭo w-nayiḥo u=ʕădāb-ano ko-noḥət me-raġla hul d-azze saʕaye ṯniḥo nayiḥo u=Sargey qarʕe nāḥ Ilyas p.c.",
             "translations": [
               "‘His hand was not disabled, it was fine’",
               "‘Pus ran down her leg until some time passed and she calmed down and got better’"
             ],
-            "references": ["1", "F 300/53", "75/300"],
+            "references": ["1", "LuF 300/53", "75/300", "26", "Dec 2020"],
             "tokens": [
               {
                 "kind": "ref",
@@ -43,11 +43,11 @@
               },
               {
                 "kind": "turoyo",
-                "value": " Lu"
+                "value": " "
               },
               {
                 "kind": "ref",
-                "value": "F 300/53"
+                "value": "LuF 300/53"
               },
               {
                 "kind": "punct",
@@ -99,37 +99,18 @@
               },
               {
                 "kind": "turoyo",
-                "value": " Dec "
+                "value": " "
               },
               {
                 "kind": "ref",
-                "value": "2020"
+                "value": "Dec 2020"
               },
               {
                 "kind": "punct",
                 "value": ")"
               }
             ],
-            "text": "1) iḏe lo=msaqṭo w-nayiḥo ‘His hand was not disabled, it was fine’ LuF 300/53; u=ʕădāb-ano ko-noḥət me-raġla hul d-azze saʕaye ṯniḥo nayiḥo ‘Pus ran down her leg until some time passed and she calmed down and got better’ 75/300; u=Sargey, qarʕe nāḥ (Ilyas p.c. 26 Dec 2020)",
-            "segments": [
-              {
-                "turoyo": ") iḏe lo=msaqṭo w-nayiḥo Lu",
-                "translations": ["‘His hand was not disabled, it was fine’"],
-                "references": ["1", "F 300/53"]
-              },
-              {
-                "turoyo": "u=ʕădāb-ano ko-noḥət me-raġla hul d-azze saʕaye ṯniḥo nayiḥo",
-                "translations": [
-                  "‘Pus ran down her leg until some time passed and she calmed down and got better’"
-                ],
-                "references": ["75/300"]
-              },
-              {
-                "turoyo": "u=Sargey, qarʕe nāḥ (Ilyas p.c. Dec )",
-                "translations": [],
-                "references": ["26", "2020"]
-              }
-            ]
+            "text": "1) iḏe lo=msaqṭo w-nayiḥo ‘His hand was not disabled, it was fine’ LuF 300/53; u=ʕădāb-ano ko-noḥət me-raġla hul d-azze saʕaye ṯniḥo nayiḥo ‘Pus ran down her leg until some time passed and she calmed down and got better’ 75/300; u=Sargey, qarʕe nāḥ (Ilyas p.c. 26 Dec 2020)"
           },
           {
             "turoyo": "nayəḥ-le l-u-darwēš prs prs prs prs prs prs u=yawmo d-a=tloṯo qayimo ʕal raġla nayəḥ-la hul arbaʕ w-ʕəsri saʕat qlif u=garw-awo w-qlif u=ǧídariy-awo mene w-nayəḥ-le ḥolo ḥzi! nayəḥ-le l-u=tawr-ayḏan",
@@ -139,7 +120,19 @@
               "‘innerhalb von 24 Stunden schälten sich die Pocken von ihm ab und er wurde gesund’",
               "‘Uncle, look! Our cow has got better’"
             ],
-            "references": ["2", "559", "30/18"],
+            "references": [
+              "2",
+              "559",
+              "30/18",
+              "38/7",
+              "44/27",
+              "64/4",
+              "193/12",
+              "224/22",
+              "24/92",
+              "30/23",
+              "44/95"
+            ],
             "tokens": [
               {
                 "kind": "ref",
@@ -338,89 +331,12 @@
                 "value": "44/95"
               }
             ],
-            "text": "2) nayəḥ-le l-u-darwēš ʻder Derwisch wurde gesundʼ; 559; prs 30/18; prs 38/7; prs 44/27; prs 64/4; prs 193/12; prs 224/22; u=yawmo d-a=tloṯo qayimo ʕal raġla, nayəḥ-la ‘Am dritten Tage stand sie auf und war gesund’; 24/92; hul arbaʕ w-ʕəsri saʕat qlif u=garw-awo w-qlif u=ǧídariy-awo mene w-nayəḥ-le ‘innerhalb von 24 Stunden schälten sich die Pocken von ihm ab und er wurde gesund’; 30/23 [LTN] [MT]; ḥolo ḥzi! nayəḥ-le l-u=tawr-ayḏan ‘Uncle, look! Our cow has got better’; 44/95",
-            "segments": [
-              {
-                "turoyo": ") nayəḥ-le l-u-darwēš",
-                "translations": ["ʻder Derwisch wurde gesundʼ"],
-                "references": ["2"]
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["559"]
-              },
-              {
-                "turoyo": "prs",
-                "translations": [],
-                "references": ["30/18"]
-              },
-              {
-                "turoyo": "prs",
-                "translations": [],
-                "references": ["38/7"]
-              },
-              {
-                "turoyo": "prs",
-                "translations": [],
-                "references": ["44/27"]
-              },
-              {
-                "turoyo": "prs",
-                "translations": [],
-                "references": ["64/4"]
-              },
-              {
-                "turoyo": "prs",
-                "translations": [],
-                "references": ["193/12"]
-              },
-              {
-                "turoyo": "prs",
-                "translations": [],
-                "references": ["224/22"]
-              },
-              {
-                "turoyo": "u=yawmo d-a=tloṯo qayimo ʕal raġla, nayəḥ-la",
-                "translations": [
-                  "‘Am dritten Tage stand sie auf und war gesund’"
-                ],
-                "references": []
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["24/92"]
-              },
-              {
-                "turoyo": "hul arbaʕ w-ʕəsri saʕat qlif u=garw-awo w-qlif u=ǧídariy-awo mene w-nayəḥ-le",
-                "translations": [
-                  "‘innerhalb von 24 Stunden schälten sich die Pocken von ihm ab und er wurde gesund’"
-                ],
-                "references": []
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["30/23"],
-                "notes": ["[LTN]", "[MT]"]
-              },
-              {
-                "turoyo": "ḥolo ḥzi! nayəḥ-le l-u=tawr-ayḏan",
-                "translations": ["‘Uncle, look! Our cow has got better’"],
-                "references": []
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["44/95"]
-              }
-            ]
+            "text": "2) nayəḥ-le l-u-darwēš ʻder Derwisch wurde gesundʼ; 559; prs 30/18; prs 38/7; prs 44/27; prs 64/4; prs 193/12; prs 224/22; u=yawmo d-a=tloṯo qayimo ʕal raġla, nayəḥ-la ‘Am dritten Tage stand sie auf und war gesund’; 24/92; hul arbaʕ w-ʕəsri saʕat qlif u=garw-awo w-qlif u=ǧídariy-awo mene w-nayəḥ-le ‘innerhalb von 24 Stunden schälten sich die Pocken von ihm ab und er wurde gesund’; 30/23 [LTN] [MT]; ḥolo ḥzi! nayəḥ-le l-u=tawr-ayḏan ‘Uncle, look! Our cow has got better’; 44/95"
           },
           {
-            "turoyo": "Ksenya hēš lo nāḥlax? Ilyas Oct",
+            "turoyo": "Ksenya hēš lo nāḥlax? Ilyas",
             "translations": [],
-            "references": ["31", "2024"],
+            "references": ["Oct 31", "2024"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -448,11 +364,11 @@
               },
               {
                 "kind": "turoyo",
-                "value": " Oct "
+                "value": " "
               },
               {
                 "kind": "ref",
-                "value": "31"
+                "value": "Oct 31"
               },
               {
                 "kind": "turoyo",
@@ -467,14 +383,7 @@
                 "value": ")"
               }
             ],
-            "text": "Ksenya, hēš lo nāḥlax? (Ilyas, Oct 31 2024)",
-            "segments": [
-              {
-                "turoyo": "Ksenya, hēš lo nāḥlax? (Ilyas, Oct )",
-                "translations": [],
-                "references": ["31", "2024"]
-              }
-            ]
+            "text": "Ksenya, hēš lo nāḥlax? (Ilyas, Oct 31 2024)"
           }
         ],
         "Infectum": [
@@ -484,7 +393,7 @@
               "mache das Ding da warm und richte es in die Höhe, dann komm und lege es hierher, so wird es (die Wunde m) heil; das ist das rechte Pflaster dafür",
               "sie bekam Aussatz im Gesicht, und der Arzt hatte ihr befohlen, das Gesicht im Meere zu waschen, dann würde es gesund werden"
             ],
-            "references": ["1", "559", "29/6"],
+            "references": ["1", "559", "29/6", "559", "119/20"],
             "tokens": [
               {
                 "kind": "ref",
@@ -599,43 +508,7 @@
                 "value": ";"
               }
             ],
-            "text": "1) šaḥǝ́n hano aqəm-e w itóx ḥeṭ-e harke gən-noyəḥ, háno-yo u=darmonayḏe ʻmache das Ding da warm und richte es in die Höhe, dann komm und lege es hierher, so wird es (die Wunde m) heil; das ist das rechte Pflaster dafürʼ; 559; prs 29/6; mgarwono foṯa, mǝ́lle-la l-u=ḥakimo, omər ašəġ-a b-u=baḥar, g-nayḥo ʻsie bekam Aussatz im Gesicht, und der Arzt hatte ihr befohlen, das Gesicht im Meere zu waschen, dann würde es gesund werdenʼ; 559; prs 119/20;",
-            "segments": [
-              {
-                "turoyo": ") šaḥǝ́n hano aqəm-e w itóx ḥeṭ-e harke gən-noyəḥ, háno-yo u=darmonayḏe",
-                "translations": [
-                  "ʻmache das Ding da warm und richte es in die Höhe, dann komm und lege es hierher, so wird es (die Wunde m) heil; das ist das rechte Pflaster dafürʼ"
-                ],
-                "references": ["1"]
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["559"]
-              },
-              {
-                "turoyo": "prs",
-                "translations": [],
-                "references": ["29/6"]
-              },
-              {
-                "turoyo": "mgarwono foṯa, mǝ́lle-la l-u=ḥakimo, omər ašəġ-a b-u=baḥar, g-nayḥo",
-                "translations": [
-                  "ʻsie bekam Aussatz im Gesicht, und der Arzt hatte ihr befohlen, das Gesicht im Meere zu waschen, dann würde es gesund werdenʼ"
-                ],
-                "references": []
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["559"]
-              },
-              {
-                "turoyo": "prs",
-                "translations": [],
-                "references": ["119/20"]
-              }
-            ]
+            "text": "1) šaḥǝ́n hano aqəm-e w itóx ḥeṭ-e harke gən-noyəḥ, háno-yo u=darmonayḏe ʻmache das Ding da warm und richte es in die Höhe, dann komm und lege es hierher, so wird es (die Wunde m) heil; das ist das rechte Pflaster dafürʼ; 559; prs 29/6; mgarwono foṯa, mǝ́lle-la l-u=ḥakimo, omər ašəġ-a b-u=baḥar, g-nayḥo ʻsie bekam Aussatz im Gesicht, und der Arzt hatte ihr befohlen, das Gesicht im Meere zu waschen, dann würde es gesund werdenʼ; 559; prs 119/20;"
           },
           {
             "turoyo": "barṯe d-u=malko d-an=núne-no kŭyawle l-babi ummi zex tay əšmo d-sawko m-d-u=šulṭono g-naḥ-le l-babəx prs ġamo layt. hul d-nŭyaḥ-le balki b-i=mawhabṯo d-aloho d-nŭyaḥ-li b-u=admo d-i=ġăzal-aṯe w d-ṭašn-e l-i=laš-ayḏi",
@@ -644,7 +517,7 @@
               "‘schadet nichts! Mag er erst gesund werden’",
               "vielleicht, dass ich durch die Gnadengabe Gottes durch das Blut dieser Gazelle gesund werde, wenn ich meinen Körper damit bestreiche"
             ],
-            "references": ["2", "559", "119/35"],
+            "references": ["2", "559", "119/35", "11/261", "30/21"],
             "tokens": [
               {
                 "kind": "ref",
@@ -787,54 +660,7 @@
                 "value": "[MT]"
               }
             ],
-            "text": "2) barṯe d-u=malko d-an=núne-no, kŭyawle l-babi, ummi zex tay əšmo d-sawko m-d-u=šulṭono, g-naḥ-le l-babəx ʻich bin die Tochter des Königs der Fische, mein Vater war erkrankt, und man sagte mir, ich möchte etwas vom Haare des Sultans holen, dann würde mein Vater genesenʼ; 559; prs 119/35; ġamo layt. hul d-nŭyaḥ-le ‘schadet nichts! Mag er erst gesund werden’; 11/261; balki b-i=mawhabṯo d-aloho, d-nŭyaḥ-li b-u=admo d-i=ġăzal-aṯe, w d-ṭašn-e l-i=laš-ayḏi ʻvielleicht, dass ich durch die Gnadengabe Gottes durch das Blut dieser Gazelle gesund werde, wenn ich meinen Körper damit bestreicheʼ; 30/21; [MT]",
-            "segments": [
-              {
-                "turoyo": ") barṯe d-u=malko d-an=núne-no, kŭyawle l-babi, ummi zex tay əšmo d-sawko m-d-u=šulṭono, g-naḥ-le l-babəx",
-                "translations": [
-                  "ʻich bin die Tochter des Königs der Fische, mein Vater war erkrankt, und man sagte mir, ich möchte etwas vom Haare des Sultans holen, dann würde mein Vater genesenʼ"
-                ],
-                "references": ["2"]
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["559"]
-              },
-              {
-                "turoyo": "prs",
-                "translations": [],
-                "references": ["119/35"]
-              },
-              {
-                "turoyo": "ġamo layt. hul d-nŭyaḥ-le",
-                "translations": ["‘schadet nichts! Mag er erst gesund werden’"],
-                "references": []
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["11/261"]
-              },
-              {
-                "turoyo": "balki b-i=mawhabṯo d-aloho, d-nŭyaḥ-li b-u=admo d-i=ġăzal-aṯe, w d-ṭašn-e l-i=laš-ayḏi",
-                "translations": [
-                  "ʻvielleicht, dass ich durch die Gnadengabe Gottes durch das Blut dieser Gazelle gesund werde, wenn ich meinen Körper damit bestreicheʼ"
-                ],
-                "references": []
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["30/21"]
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": [],
-                "notes": ["[MT]"]
-              }
-            ]
+            "text": "2) barṯe d-u=malko d-an=núne-no, kŭyawle l-babi, ummi zex tay əšmo d-sawko m-d-u=šulṭono, g-naḥ-le l-babəx ʻich bin die Tochter des Königs der Fische, mein Vater war erkrankt, und man sagte mir, ich möchte etwas vom Haare des Sultans holen, dann würde mein Vater genesenʼ; 559; prs 119/35; ġamo layt. hul d-nŭyaḥ-le ‘schadet nichts! Mag er erst gesund werden’; 11/261; balki b-i=mawhabṯo d-aloho, d-nŭyaḥ-li b-u=admo d-i=ġăzal-aṯe, w d-ṭašn-e l-i=laš-ayḏi ʻvielleicht, dass ich durch die Gnadengabe Gottes durch das Blut dieser Gazelle gesund werde, wenn ich meinen Körper damit bestreicheʼ; 30/21; [MT]"
           }
         ],
         "Infinitiv": [
@@ -896,26 +722,7 @@
                 "value": ";"
               }
             ],
-            "text": "2) yabo, e kət-le nyoḥo ʻgibt es denn ein Heilmittel für ihn, Vater?ʼ; 559; 115/309;",
-            "segments": [
-              {
-                "turoyo": ") yabo, e kət-le nyoḥo",
-                "translations": [
-                  "ʻgibt es denn ein Heilmittel für ihn, Vater?ʼ"
-                ],
-                "references": ["2"]
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["559"]
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["115/309"]
-              }
-            ]
+            "text": "2) yabo, e kət-le nyoḥo ʻgibt es denn ein Heilmittel für ihn, Vater?ʼ; 559; 115/309;"
           }
         ]
       }
@@ -932,7 +739,7 @@
               "‘Dieser Jäger hat mich mit Gazellenblut gesund gemacht’",
               "‘My uncle took off his pants and I wrapped them over it (the cow, m) little by little and God healed it (the cow, m) up’"
             ],
-            "references": ["559", "66/33", "30/53"],
+            "references": ["559", "66/33", "30/53", "44/113"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -1023,48 +830,7 @@
                 "value": "44/113"
               }
             ],
-            "text": "manəḥḥe l-aḥ=ḥakime ʻdie Ärzte heilten ihnʼ; 559; prs 66/33; u=mṣaydon-ano b-u=admo d-i=ġazale manə́ḥle-li ‘Dieser Jäger hat mich mit Gazellenblut gesund gemacht’; 30/53; qayəm l-ḥoli šləḥle u=šarwol-ayḏe w-qayəmno maləfli aʕle čike čike, l-aloho manəḥle ‘My uncle took off his pants and I wrapped them over it (the cow, m) little by little and God healed it (the cow, m) up’; 44/113",
-            "segments": [
-              {
-                "turoyo": "manəḥḥe l-aḥ=ḥakime",
-                "translations": ["ʻdie Ärzte heilten ihnʼ"],
-                "references": []
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["559"]
-              },
-              {
-                "turoyo": "prs",
-                "translations": [],
-                "references": ["66/33"]
-              },
-              {
-                "turoyo": "u=mṣaydon-ano b-u=admo d-i=ġazale manə́ḥle-li",
-                "translations": [
-                  "‘Dieser Jäger hat mich mit Gazellenblut gesund gemacht’"
-                ],
-                "references": []
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["30/53"]
-              },
-              {
-                "turoyo": "qayəm l-ḥoli šləḥle u=šarwol-ayḏe w-qayəmno maləfli aʕle čike čike, l-aloho manəḥle",
-                "translations": [
-                  "‘My uncle took off his pants and I wrapped them over it (the cow, m) little by little and God healed it (the cow, m) up’"
-                ],
-                "references": []
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["44/113"]
-              }
-            ]
+            "text": "manəḥḥe l-aḥ=ḥakime ʻdie Ärzte heilten ihnʼ; 559; prs 66/33; u=mṣaydon-ano b-u=admo d-i=ġazale manə́ḥle-li ‘Dieser Jäger hat mich mit Gazellenblut gesund gemacht’; 30/53; qayəm l-ḥoli šləḥle u=šarwol-ayḏe w-qayəmno maləfli aʕle čike čike, l-aloho manəḥle ‘My uncle took off his pants and I wrapped them over it (the cow, m) little by little and God healed it (the cow, m) up’; 44/113"
           }
         ],
         "Infectum": [
@@ -1075,7 +841,15 @@
               "‘Ich bin nämlich ein Arzt; jede Krankheit, jedes Leiden kann ich heilen’",
               "‘Ich habe eine kranke Tochter; kannst du sie heilen?’"
             ],
-            "references": ["560", "128/31", "49/34"],
+            "references": [
+              "560",
+              "128/31",
+              "49/34",
+              "115/303",
+              "309",
+              "24/56",
+              "24/66"
+            ],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -1202,58 +976,7 @@
                 "value": "24/66"
               }
             ],
-            "text": "nošo lo=qadər d-manəḥ ʕayne ʻniemand konnte seine Augen heilenʼ; 560; prs 128/31; 49/34; 115/303, 309; uno ḥakimo-no. kul ʕəlle, kul kewo kibi manəḥno ‘Ich bin nämlich ein Arzt; jede Krankheit, jedes Leiden kann ich heilen’; 24/56; kət-li uno barṯo kayuṯo. hal k-qudrət manəḥat-la? ‘Ich habe eine kranke Tochter; kannst du sie heilen?’; 24/66",
-            "segments": [
-              {
-                "turoyo": "nošo lo=qadər d-manəḥ ʕayne",
-                "translations": ["ʻniemand konnte seine Augen heilenʼ"],
-                "references": []
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["560"]
-              },
-              {
-                "turoyo": "prs",
-                "translations": [],
-                "references": ["128/31"]
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["49/34"]
-              },
-              {
-                "turoyo": ",",
-                "translations": [],
-                "references": ["115/303", "309"]
-              },
-              {
-                "turoyo": "uno ḥakimo-no. kul ʕəlle, kul kewo kibi manəḥno",
-                "translations": [
-                  "‘Ich bin nämlich ein Arzt; jede Krankheit, jedes Leiden kann ich heilen’"
-                ],
-                "references": []
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["24/56"]
-              },
-              {
-                "turoyo": "kət-li uno barṯo kayuṯo. hal k-qudrət manəḥat-la?",
-                "translations": [
-                  "‘Ich habe eine kranke Tochter; kannst du sie heilen?’"
-                ],
-                "references": []
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["24/66"]
-              }
-            ]
+            "text": "nošo lo=qadər d-manəḥ ʕayne ʻniemand konnte seine Augen heilenʼ; 560; prs 128/31; 49/34; 115/303, 309; uno ḥakimo-no. kul ʕəlle, kul kewo kibi manəḥno ‘Ich bin nämlich ein Arzt; jede Krankheit, jedes Leiden kann ich heilen’; 24/56; kət-li uno barṯo kayuṯo. hal k-qudrət manəḥat-la? ‘Ich habe eine kranke Tochter; kannst du sie heilen?’; 24/66"
           }
         ],
         "Imperativ": [
@@ -1338,32 +1061,7 @@
                 "value": ";"
               }
             ],
-            "text": "qrele l-ʕAmar; omər: “ʕAmar, ḥzay, ḥzay i=ḥurm-aṯe, maniḥ-a ʻer rief “Omar” und sprach zu ihm: “Omar, sieh diese Frau! Mach sie gesund”ʼ; 560; 78/225;",
-            "segments": [
-              {
-                "turoyo": "qrele l-ʕAmar",
-                "translations": [],
-                "references": []
-              },
-              {
-                "turoyo": "omər: und sprach zu ihm: ʼ",
-                "translations": [
-                  "“ʕAmar, ḥzay, ḥzay i=ḥurm-aṯe, maniḥ-a ʻer rief “Omar”",
-                  "“Omar, sieh diese Frau! Mach sie gesund”"
-                ],
-                "references": []
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["560"]
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["78/225"]
-              }
-            ]
+            "text": "qrele l-ʕAmar; omər: “ʕAmar, ḥzay, ḥzay i=ḥurm-aṯe, maniḥ-a ʻer rief “Omar” und sprach zu ihm: “Omar, sieh diese Frau! Mach sie gesund”ʼ; 560; 78/225;"
           }
         ]
       }
@@ -1429,26 +1127,7 @@
                 "value": ";"
               }
             ],
-            "text": "hən m-as=samye b-ʕamaliye k-mitaniḥi ʻmanche Blinde können durch eine Operation geheilt werdenʼ; 560; 3/26, 27;",
-            "segments": [
-              {
-                "turoyo": "hən m-as=samye b-ʕamaliye k-mitaniḥi",
-                "translations": [
-                  "ʻmanche Blinde können durch eine Operation geheilt werdenʼ"
-                ],
-                "references": []
-              },
-              {
-                "turoyo": "",
-                "translations": [],
-                "references": ["560"]
-              },
-              {
-                "turoyo": ",",
-                "translations": [],
-                "references": ["3/26", "27"]
-              }
-            ]
+            "text": "hən m-as=samye b-ʕamaliye k-mitaniḥi ʻmanche Blinde können durch eine Operation geheilt werdenʼ; 560; 3/26, 27;"
           }
         ]
       }
