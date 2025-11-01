@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mšantalle",
-        "mšantər"
-      ],
+      "forms": ["mšantalle", "mšantər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mšantrole",
+            "translations": ["er schleuderte sie"],
+            "references": ["790"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mšantrole "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer schleuderte sieʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "790"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mšantrole ʻer schleuderte sieʼ; 790;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mšantrole",
+                "translations": ["ʻer schleuderte sieʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["790"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "schleudern;"
-  ],
+  "idioms": ["schleudern;"],
   "uncertain": false
 }

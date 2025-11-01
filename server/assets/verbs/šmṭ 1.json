@@ -14,33 +14,427 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "šməṭle",
-        "šoməṭ"
-      ],
+      "forms": ["šməṭle", "šoməṭ"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "1) šməṭle aǧ=ǧule m-u=šulṭono ʻer zog dem Sultan die Kleider ausʼ; 193; prs 119/33; 2) ḥzele a=tloṯo səsye, šməṭle kul səsyo manṯo m-danwe, maḥtile b-kise ʻer erblickte die drei Pferde: er zog einem jeden ein Haar aus dem Schweife und steckte es in seine Tascheʼ; 193; prs 107/5;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "šməṭle aǧ=ǧule m-u=šulṭono prs",
+            "translations": ["er zog dem Sultan die Kleider aus"],
+            "references": ["1", "193", "119/33"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " šməṭle aǧ=ǧule m-u=šulṭono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer zog dem Sultan die Kleider ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "193"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "119/33"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) šməṭle aǧ=ǧule m-u=šulṭono ʻer zog dem Sultan die Kleider ausʼ; 193; prs 119/33;",
+            "segments": [
+              {
+                "turoyo": ") šməṭle aǧ=ǧule m-u=šulṭono",
+                "translations": ["ʻer zog dem Sultan die Kleider ausʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["193"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["119/33"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "ḥzele a=tloṯo səsye šməṭle kul səsyo manṯo m-danwe maḥtile b-kise prs",
+            "translations": [
+              "er erblickte die drei Pferde: er zog einem jeden ein Haar aus dem Schweife und steckte es in seine Tasche"
+            ],
+            "references": ["2", "193", "107/5"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥzele a=tloṯo səsye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šməṭle kul səsyo manṯo m-danwe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥtile b-kise "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer erblickte die drei Pferde: er zog einem jeden ein Haar aus dem Schweife und steckte es in seine Tascheʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "193"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "107/5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) ḥzele a=tloṯo səsye, šməṭle kul səsyo manṯo m-danwe, maḥtile b-kise ʻer erblickte die drei Pferde: er zog einem jeden ein Haar aus dem Schweife und steckte es in seine Tascheʼ; 193; prs 107/5;",
+            "segments": [
+              {
+                "turoyo": ") ḥzele a=tloṯo səsye, šməṭle kul səsyo manṯo m-danwe, maḥtile b-kise",
+                "translations": [
+                  "ʻer erblickte die drei Pferde: er zog einem jeden ein Haar aus dem Schweife und steckte es in seine Tascheʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["193"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["107/5"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "1) aṯyo haṯi i=kačke xd-i=ʕade d-i=briṯo, maḥatla i=baxčayḏa d-aǧ=ǧule, k-ubʕo d-šəmṭo ʻdas Mädchen kommt, wie es der Brauch der Welt ist, setzt ihr Kleiderbündelchen ab und will sich ausziehenʼ; 193; 88/64; 2) ko-šəmṭo at=tarte=aḏnoṯayḏe ʻsie reisst ihm beide Ohren abʼ; 193; 88/181;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "aṯyo haṯi i=kačke xd-i=ʕade d-i=briṯo maḥatla i=baxčayḏa d-aǧ=ǧule k-ubʕo d-šəmṭo",
+            "translations": [
+              "das Mädchen kommt, wie es der Brauch der Welt ist, setzt ihr Kleiderbündelchen ab und will sich ausziehen"
+            ],
+            "references": ["1", "193", "88/64"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aṯyo haṯi i=kačke xd-i=ʕade d-i=briṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥatla i=baxčayḏa d-aǧ=ǧule"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ubʕo d-šəmṭo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Mädchen kommt, wie es der Brauch der Welt ist, setzt ihr Kleiderbündelchen ab und will sich ausziehenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "193"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "88/64"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) aṯyo haṯi i=kačke xd-i=ʕade d-i=briṯo, maḥatla i=baxčayḏa d-aǧ=ǧule, k-ubʕo d-šəmṭo ʻdas Mädchen kommt, wie es der Brauch der Welt ist, setzt ihr Kleiderbündelchen ab und will sich ausziehenʼ; 193; 88/64;",
+            "segments": [
+              {
+                "turoyo": ") aṯyo haṯi i=kačke xd-i=ʕade d-i=briṯo, maḥatla i=baxčayḏa d-aǧ=ǧule, k-ubʕo d-šəmṭo",
+                "translations": [
+                  "ʻdas Mädchen kommt, wie es der Brauch der Welt ist, setzt ihr Kleiderbündelchen ab und will sich ausziehenʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["193"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["88/64"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "ko-šəmṭo at=tarte=aḏnoṯayḏe",
+            "translations": ["sie reisst ihm beide Ohren ab"],
+            "references": ["2", "193", "88/181"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-šəmṭo at=tarte=aḏnoṯayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie reisst ihm beide Ohren abʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "193"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "88/181"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) ko-šəmṭo at=tarte=aḏnoṯayḏe ʻsie reisst ihm beide Ohren abʼ; 193; 88/181;",
+            "segments": [
+              {
+                "turoyo": ") ko-šəmṭo at=tarte=aḏnoṯayḏe",
+                "translations": ["ʻsie reisst ihm beide Ohren abʼ"],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["193"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["88/181"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "kīt tloṯo=səsye b-i=zarzamine šmaṭ kul səsyo manṯo m-danwe prs",
+            "translations": [
+              "im Erdschlund sind drei Rosse, einem jeden ziehe ein Haar aus dem Schweife"
+            ],
+            "references": ["2", "194", "106/33"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kīt tloṯo=səsye b-i=zarzamine"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šmaṭ kul səsyo manṯo m-danwe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻim Erdschlund sind drei Rosse, einem jeden ziehe ein Haar aus dem Schweifeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "194"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "106/33"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) kīt tloṯo=səsye b-i=zarzamine, šmaṭ kul səsyo manṯo m-danwe ʻim Erdschlund sind drei Rosse, einem jeden ziehe ein Haar aus dem Schweifeʼ; 194; prs 106/33;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") kīt tloṯo=səsye b-i=zarzamine, šmaṭ kul səsyo manṯo m-danwe",
+                "translations": [
+                  "ʻim Erdschlund sind drei Rosse, einem jeden ziehe ein Haar aus dem Schweifeʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["194"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["106/33"]
+              }
+            ]
           }
         ]
       }
@@ -51,10 +445,167 @@
       "conjugations": {
         "Preterit": [
           {
-            "text": "1) i=ʕisaqṯayḏi šmiṭo m-iḏi w u=səḥr diḏi tle ʻmein Ring streifte sich ab, und mein Zauber wurde aufgehobenʼ; 193; 96/235; 2) aṯi droʕo d-u=ḥolo aʕme, šmīṭ m-i=laše u=droʕo ʻaber der Arm allein blieb in seiner Hand zurück, vom Körper abgerissenʼ; 194; prs 117/16;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "i=ʕisaqṯayḏi šmiṭo m-iḏi w u=səḥr diḏi tle",
+            "translations": [
+              "mein Ring streifte sich ab, und mein Zauber wurde aufgehoben"
+            ],
+            "references": ["1", "193", "96/235"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=ʕisaqṯayḏi šmiṭo m-iḏi w u=səḥr diḏi tle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmein Ring streifte sich ab, und mein Zauber wurde aufgehobenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "193"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "96/235"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) i=ʕisaqṯayḏi šmiṭo m-iḏi w u=səḥr diḏi tle ʻmein Ring streifte sich ab, und mein Zauber wurde aufgehobenʼ; 193; 96/235;",
+            "segments": [
+              {
+                "turoyo": ") i=ʕisaqṯayḏi šmiṭo m-iḏi w u=səḥr diḏi tle",
+                "translations": [
+                  "ʻmein Ring streifte sich ab, und mein Zauber wurde aufgehobenʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["193"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["96/235"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "aṯi droʕo d-u=ḥolo aʕme šmīṭ m-i=laše u=droʕo prs",
+            "translations": [
+              "aber der Arm allein blieb in seiner Hand zurück, vom Körper abgerissen"
+            ],
+            "references": ["2", "194", "117/16"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aṯi droʕo d-u=ḥolo aʕme"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šmīṭ m-i=laše u=droʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻaber der Arm allein blieb in seiner Hand zurück, vom Körper abgerissenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "194"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "117/16"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) aṯi droʕo d-u=ḥolo aʕme, šmīṭ m-i=laše u=droʕo ʻaber der Arm allein blieb in seiner Hand zurück, vom Körper abgerissenʼ; 194; prs 117/16;",
+            "segments": [
+              {
+                "turoyo": ") aṯi droʕo d-u=ḥolo aʕme, šmīṭ m-i=laše u=droʕo",
+                "translations": [
+                  "ʻaber der Arm allein blieb in seiner Hand zurück, vom Körper abgerissenʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["194"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["117/16"]
+              }
+            ]
           }
         ]
       }

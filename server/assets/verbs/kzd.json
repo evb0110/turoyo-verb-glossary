@@ -5,24 +5,78 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "kzədle",
-        "kozəd"
-      ],
+      "forms": ["kzədle", "kozəd"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-kəzdi-le ko-maḥti-le b-as=salikat d-u=baṣro",
+            "translations": [
+              "man pöckelt es (das Fleisch m) ein und legt es in Fleischkörbe"
+            ],
+            "references": ["230", "94/229"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-kəzdi-le ko-maḥti-le b-as=salikat d-u=baṣro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻman pöckelt es (das Fleisch m) ein und legt es in Fleischkörbeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "230"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/229"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-kəzdi-le ko-maḥti-le b-as=salikat d-u=baṣro ʻman pöckelt es (das Fleisch m) ein und legt es in Fleischkörbeʼ; 230; 94/229;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-kəzdi-le ko-maḥti-le b-as=salikat d-u=baṣro",
+                "translations": [
+                  "ʻman pöckelt es (das Fleisch m) ein und legt es in Fleischkörbeʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["230"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["94/229"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "einsalzen, einpökeln;"
-  ],
+  "idioms": ["einsalzen, einpökeln;"],
   "uncertain": false
 }

@@ -14,24 +14,69 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ṣakər",
-        "ṣokər"
-      ],
+      "forms": ["ṣakər", "ṣokər"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "hənnək kulle kān damixe aḥ=ḥafritawat ḥəngi ṣakiri w štalle",
+            "translations": [
+              "jene Unholde schliefen alle, weil sie so viel getrunken hatten und besoffen waren"
+            ],
+            "references": ["57/100"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hənnək kulle kān damixe aḥ=ḥafritawat"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥəngi ṣakiri w štalle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻjene Unholde schliefen alle, weil sie so viel getrunken hatten und besoffen warenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "57/100"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "hənnək kulle kān damixe aḥ=ḥafritawat, ḥəngi ṣakiri w štalle ʻjene Unholde schliefen alle, weil sie so viel getrunken hatten und besoffen warenʼ; 57/100;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "hənnək kulle kān damixe aḥ=ḥafritawat, ḥəngi ṣakiri w štalle",
+                "translations": [
+                  "ʻjene Unholde schliefen alle, weil sie so viel getrunken hatten und besoffen warenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["57/100"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sich betrinken;"
-  ],
+  "idioms": ["sich betrinken;"],
   "uncertain": false
 }

@@ -14,48 +14,343 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ʕrule",
-        "ʕoru"
-      ],
+      "forms": ["ʕrule", "ʕoru"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "karixi ʕruwwe u=ṭuro l-ad=dewe lo=ḥzanne at=tarte=ṣawʕoṯo prs",
+            "translations": [
+              "da suchten die Wölfe und durchsiebten das ganze Gebirge, aber die beiden Finger fanden sie nicht"
+            ],
+            "references": ["272", "45/13"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "karixi ʕruwwe u=ṭuro l-ad=dewe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=ḥzanne at=tarte=ṣawʕoṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda suchten die Wölfe und durchsiebten das ganze Gebirge, aber die beiden Finger fanden sie nichtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "272"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "45/13"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "karixi ʕruwwe u=ṭuro l-ad=dewe, lo=ḥzanne at=tarte=ṣawʕoṯo ʻda suchten die Wölfe und durchsiebten das ganze Gebirge, aber die beiden Finger fanden sie nichtʼ; 272; prs 45/13;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "karixi ʕruwwe u=ṭuro l-ad=dewe, lo=ḥzanne at=tarte=ṣawʕoṯo",
+                "translations": [
+                  "ʻda suchten die Wölfe und durchsiebten das ganze Gebirge, aber die beiden Finger fanden sie nichtʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["272"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["45/13"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "ʕərwət i=arʕo ṭaw mena layt prs aḥ=ḥeṭe g-ʕərwína-nne w bəṯṯər m-u=ʕrow-awo gə-mnaqína-nne ləbbe=ləbbe ʕal i=ṣəfra ..",
+            "translations": [
+              "du magst die ganze Erde durch ein Sieb gehen lassen, du wirst keine schönere als sie finden",
+              "wir sieben den Weizen, und nach dem Sieben verlesen wir ihn Korn um Korn auf einem grossen Tablett"
+            ],
+            "references": ["276", "42/35", "JL 9"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕərwət i=arʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṭaw mena layt "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu magst die ganze Erde durch ein Sieb gehen lassen, du wirst keine schönere als sie findenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "276"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "42/35"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aḥ=ḥeṭe g-ʕərwína-nne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w bəṯṯər m-u=ʕrow-awo gə-mnaqína-nne ləbbe=ləbbe ʕal i=ṣəfra "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir sieben den Weizen, und nach dem Sieben verlesen wir ihn Korn um Korn auf einem grossen Tablettʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 9"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "10"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ʕərwət i=arʕo, ṭaw mena layt ʻdu magst die ganze Erde durch ein Sieb gehen lassen, du wirst keine schönere als sie findenʼ; 276; prs 42/35; aḥ=ḥeṭe g-ʕərwína-nne, w bəṯṯər m-u=ʕrow-awo gə-mnaqína-nne ləbbe=ləbbe ʕal i=ṣəfra ʻwir sieben den Weizen, und nach dem Sieben verlesen wir ihn Korn um Korn auf einem grossen Tablettʼ JL 9.10.2;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ʕərwət i=arʕo, ṭaw mena layt",
+                "translations": [
+                  "ʻdu magst die ganze Erde durch ein Sieb gehen lassen, du wirst keine schönere als sie findenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["276"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["42/35"]
+              },
+              {
+                "turoyo": "aḥ=ḥeṭe g-ʕərwína-nne, w bəṯṯər m-u=ʕrow-awo gə-mnaqína-nne ləbbe=ləbbe ʕal i=ṣəfra ..",
+                "translations": [
+                  "ʻwir sieben den Weizen, und nach dem Sieben verlesen wir ihn Korn um Korn auf einem grossen Tablettʼ"
+                ],
+                "references": ["JL 9", "10", "2"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "g-malimí-way-na aḥ=ḥet-anək d-simi-lan barġal g-ʕərwí-way-na-nne b-u=ʕarbolo ..",
+            "translations": [
+              "wir sammelten diesen Weizen, den wir zu Weizengrütze gemacht hatten, und siebten ihn mit einem ʕarbolo (feineren Sieb)"
+            ],
+            "references": ["JL 17", "5", "15"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "g-malimí-way-na aḥ=ḥet-anək d-simi-lan barġal"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-ʕərwí-way-na-nne b-u=ʕarbolo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir sammelten diesen Weizen, den wir zu Weizengrütze gemacht hatten, und siebten ihn mit einem ʕarbolo (feineren Sieb)ʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 17"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "5"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "g-malimí-way-na aḥ=ḥet-anək d-simi-lan barġal, g-ʕərwí-way-na-nne b-u=ʕarbolo ʻwir sammelten diesen Weizen, den wir zu Weizengrütze gemacht hatten, und siebten ihn mit einem ʕarbolo (feineren Sieb)ʼ JL 17.5.15;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "g-malimí-way-na aḥ=ḥet-anək d-simi-lan barġal, g-ʕərwí-way-na-nne b-u=ʕarbolo ..",
+                "translations": [
+                  "ʻwir sammelten diesen Weizen, den wir zu Weizengrütze gemacht hatten, und siebten ihn mit einem ʕarbolo (feineren Sieb)ʼ"
+                ],
+                "references": ["JL 17", "5", "15"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
+            "turoyo": "aḥ=ḥeṭe g-ʕərwína-nne w bəṯṯər m-u=ʕrow-awo gə-mnaqína-nne ləbbe=ləbbe ʕal i=ṣəfra ..",
+            "translations": [
+              "wir sieben den Weizen, und nach dem Sieben verlesen wir ihn Korn um Korn auf einem grossen Tablett"
+            ],
+            "references": ["JL 9", "10", "2"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aḥ=ḥeṭe g-ʕərwína-nne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w bəṯṯər m-u=ʕrow-awo gə-mnaqína-nne ləbbe=ləbbe ʕal i=ṣəfra "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir sieben den Weizen, und nach dem Sieben verlesen wir ihn Korn um Korn auf einem grossen Tablettʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 9"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "10"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "aḥ=ḥeṭe g-ʕərwína-nne, w bəṯṯər m-u=ʕrow-awo gə-mnaqína-nne ləbbe=ləbbe ʕal i=ṣəfra ʻwir sieben den Weizen, und nach dem Sieben verlesen wir ihn Korn um Korn auf einem grossen Tablettʼ JL 9.10.2;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "aḥ=ḥeṭe g-ʕərwína-nne, w bəṯṯər m-u=ʕrow-awo gə-mnaqína-nne ləbbe=ləbbe ʕal i=ṣəfra ..",
+                "translations": [
+                  "ʻwir sieben den Weizen, und nach dem Sieben verlesen wir ihn Korn um Korn auf einem grossen Tablettʼ"
+                ],
+                "references": ["JL 9", "10", "2"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sieben, durchsuchen;"
-  ],
+  "idioms": ["sieben, durchsuchen;"],
   "uncertain": false
 }

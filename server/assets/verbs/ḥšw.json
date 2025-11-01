@@ -14,57 +14,851 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ḥšule",
-        "ḥošu"
-      ],
+      "forms": ["ḥšule", "ḥošu"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ʕaṣriye ṣxəlla u=tarʕo səmla u=ḥəšw-ayḏa. k-uḏʕo ruḥa daqăna hiya ḥšula əmmo balki ono u=lalyo qamoyo lə=ṣxǝ́r-way-li me-lawġul nošo ʕabər hənnək ḥšuwe gd-oṯe g-šote maye ..",
+            "translations": [
+              "dabei hatte sie am Abend mit Überlegung die Türe abgeschlossen. Sie weiss, was sie getan hat, sie hat es mit Überlegung getan. Vielleicht, sagt sie, hatte ich sie in der ersten Nacht nicht abgeschlossen, und es ist jemand von drinnen hereingekommen",
+              "‘They thought that he would approach and drink water’"
+            ],
+            "references": ["1", "272", "115/138"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕaṣriye ṣxəlla u=tarʕo səmla u=ḥəšw-ayḏa. k-uḏʕo ruḥa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " daqăna hiya ḥšula"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " əmmo"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " balki ono u=lalyo qamoyo lə=ṣxǝ́r-way-li"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " me-lawġul nošo ʕabər "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdabei hatte sie am Abend mit Überlegung die Türe abgeschlossen. Sie weiss, was sie getan hat, sie hat es mit Überlegung getan. Vielleicht, sagt sie, hatte ich sie in der ersten Nacht nicht abgeschlossen, und es ist jemand von drinnen hereingekommenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "272"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "115/138"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hənnək ḥšuwe gd-oṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-šote maye "
+              },
+              {
+                "kind": "translation",
+                "value": "‘They thought that he would approach and drink water’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 12"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "13"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) ʕaṣriye ṣxəlla u=tarʕo səmla u=ḥəšw-ayḏa. k-uḏʕo ruḥa, daqăna hiya ḥšula, əmmo: balki ono u=lalyo qamoyo lə=ṣxǝ́r-way-li; me-lawġul nošo ʕabər ʻdabei hatte sie am Abend mit Überlegung die Türe abgeschlossen. Sie weiss, was sie getan hat, sie hat es mit Überlegung getan. Vielleicht, sagt sie, hatte ich sie in der ersten Nacht nicht abgeschlossen, und es ist jemand von drinnen hereingekommenʼ; 272; 115/138; hənnək ḥšuwe gd-oṯe, g-šote maye ‘They thought that he would approach and drink water’ JL 12.13.3;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") ʕaṣriye ṣxəlla u=tarʕo səmla u=ḥəšw-ayḏa. k-uḏʕo ruḥa, daqăna hiya ḥšula, əmmo: balki ono u=lalyo qamoyo lə=ṣxǝ́r-way-li",
+                "translations": [],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "me-lawġul nošo ʕabər",
+                "translations": [
+                  "ʻdabei hatte sie am Abend mit Überlegung die Türe abgeschlossen. Sie weiss, was sie getan hat, sie hat es mit Überlegung getan. Vielleicht, sagt sie, hatte ich sie in der ersten Nacht nicht abgeschlossen, und es ist jemand von drinnen hereingekommenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["272"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["115/138"]
+              },
+              {
+                "turoyo": "hənnək ḥšuwe gd-oṯe, g-šote maye ..",
+                "translations": [
+                  "‘They thought that he would approach and drink water’"
+                ],
+                "references": ["JL 12", "13", "3"]
+              }
+            ]
           },
           {
+            "turoyo": "ŭno-ste-ne m-i=šrolo ḥšuli ruḥi d-kət-no b-u=qayṭo. bale ṭaʕino d-kət-no bə-Ṣṭambul",
+            "translations": [
+              "ich fühlte mich wirklich in Sommer. Aber ich vergass, dass ich in Stambul bin"
+            ],
+            "references": ["2", "8/10"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ŭno-ste-ne m-i=šrolo ḥšuli ruḥi d-kət-no b-u=qayṭo. bale ṭaʕino d-kət-no bə-Ṣṭambul "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich fühlte mich wirklich in Sommer. Aber ich vergass, dass ich in Stambul binʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "8/10"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) ŭno-ste-ne m-i=šrolo ḥšuli ruḥi d-kət-no b-u=qayṭo. bale ṭaʕino d-kət-no bə-Ṣṭambul ʻich fühlte mich wirklich in Sommer. Aber ich vergass, dass ich in Stambul binʼ; 8/10;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") ŭno-ste-ne m-i=šrolo ḥšuli ruḥi d-kət-no b-u=qayṭo. bale ṭaʕino d-kət-no bə-Ṣṭambul",
+                "translations": [
+                  "ʻich fühlte mich wirklich in Sommer. Aber ich vergass, dass ich in Stambul binʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["8/10"]
+              }
+            ]
           },
           {
+            "turoyo": "səmlox u=namus-ano w-ḥšúlox-li lə=twəllox lebi-d-i-kačke maqbelox",
+            "translations": [
+              "‘Du hast dich so ehrenhaft verhalten und mich geachtet, und das Herz des Mädchens nicht betrübt, sondern hast Rücksieht darauf genommen’"
+            ],
+            "references": ["3", "26/248"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " səmlox u=namus-ano w-ḥšúlox-li"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=twəllox lebi-d-i-kačke"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maqbelox "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Du hast dich so ehrenhaft verhalten und mich geachtet, und das Herz des Mädchens nicht betrübt, sondern hast Rücksieht darauf genommen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/248"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "3) səmlox u=namus-ano w-ḥšúlox-li, lə=twəllox lebi-d-i-kačke, maqbelox ‘Du hast dich so ehrenhaft verhalten und mich geachtet, und das Herz des Mädchens nicht betrübt, sondern hast Rücksieht darauf genommen’; 26/248 [MT];",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") səmlox u=namus-ano w-ḥšúlox-li, lə=twəllox lebi-d-i-kačke, maqbelox",
+                "translations": [
+                  "‘Du hast dich so ehrenhaft verhalten und mich geachtet, und das Herz des Mädchens nicht betrübt, sondern hast Rücksieht darauf genommen’"
+                ],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["26/248"],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "Šamʕūn Faṭrus … ġəṭle bayn am=maye mqadše parrat d-ilono yaroqo – gabayna s-as=Səryoye k-ḥušwina d-kǝ́t-wayye parrat d-gawze yaroqe ṭolabno lə-Mšiḥo d-lə=ḥošáwxu-yo-ste ḥtiṯo k-ḥušwi-li qṭilo w-miṯo a=tr-alf-ani g-ḥušwína-lən maqqabāl d-qarʕox w-d-u=šaraf-ayḏox w-d-u=namus-ayḏox",
+            "translations": [
+              "Simon Petrus … tauchte in das geweihte Wasser Zweige eines grünes Baumes, - bei uns, den Syrern, glauben wir, dass es grüne Zweige von Wallnussbäumen waren",
+              "ich werde ihn (Chritus) bitten, euch dies nicht einmal als Sünde anzurechnen",
+              "‘Sie glauben, ich sei umgebracht worden oder gestorben’",
+              "‘Diese zweitausend rechnen wir als Opfergabe für dein Haupt, deine Würde und deine Ehre’"
+            ],
+            "references": ["1", "12/9", "LB 81"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Šamʕūn Faṭrus … ġəṭle bayn am=maye mqadše parrat d-ilono yaroqo – gabayna s-as=Səryoye k-ḥušwina d-kǝ́t-wayye parrat d-gawze yaroqe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻSimon Petrus … tauchte in das geweihte Wasser Zweige eines grünes Baumes, - bei uns, den Syrern, glauben wir, dass es grüne Zweige von Wallnussbäumen warenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "12/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṭolabno lə-Mšiḥo d-lə=ḥošáwxu-yo-ste ḥtiṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich werde ihn (Chritus) bitten, euch dies nicht einmal als Sünde anzurechnenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 81"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ḥušwi-li qṭilo w-miṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sie glauben, ich sei umgebracht worden oder gestorben’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "28/58"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " a=tr-alf-ani"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-ḥušwína-lən maqqabāl d-qarʕox w-d-u=šaraf-ayḏox w-d-u=namus-ayḏox "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Diese zweitausend rechnen wir als Opfergabe für dein Haupt, deine Würde und deine Ehre’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/193"
+              }
+            ],
             "text": "1) Šamʕūn Faṭrus … ġəṭle bayn am=maye mqadše parrat d-ilono yaroqo – gabayna s-as=Səryoye k-ḥušwina d-kǝ́t-wayye parrat d-gawze yaroqe ʻSimon Petrus … tauchte in das geweihte Wasser Zweige eines grünes Baumes, - bei uns, den Syrern, glauben wir, dass es grüne Zweige von Wallnussbäumen warenʼ; 12/9; ṭolabno lə-Mšiḥo d-lə=ḥošáwxu-yo-ste ḥtiṯo ʻich werde ihn (Chritus) bitten, euch dies nicht einmal als Sünde anzurechnenʼ; LB 81; k-ḥušwi-li qṭilo w-miṯo ‘Sie glauben, ich sei umgebracht worden oder gestorben’; 28/58; a=tr-alf-ani, g-ḥušwína-lən maqqabāl d-qarʕox w-d-u=šaraf-ayḏox w-d-u=namus-ayḏox ‘Diese zweitausend rechnen wir als Opfergabe für dein Haupt, deine Würde und deine Ehre’; 29/193",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") Šamʕūn Faṭrus … ġəṭle bayn am=maye mqadše parrat d-ilono yaroqo – gabayna s-as=Səryoye k-ḥušwina d-kǝ́t-wayye parrat d-gawze yaroqe",
+                "translations": [
+                  "ʻSimon Petrus … tauchte in das geweihte Wasser Zweige eines grünes Baumes, - bei uns, den Syrern, glauben wir, dass es grüne Zweige von Wallnussbäumen warenʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["12/9"]
+              },
+              {
+                "turoyo": "ṭolabno lə-Mšiḥo d-lə=ḥošáwxu-yo-ste ḥtiṯo",
+                "translations": [
+                  "ʻich werde ihn (Chritus) bitten, euch dies nicht einmal als Sünde anzurechnenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 81"]
+              },
+              {
+                "turoyo": "k-ḥušwi-li qṭilo w-miṯo",
+                "translations": [
+                  "‘Sie glauben, ich sei umgebracht worden oder gestorben’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["28/58"]
+              },
+              {
+                "turoyo": "a=tr-alf-ani, g-ḥušwína-lən maqqabāl d-qarʕox w-d-u=šaraf-ayḏox w-d-u=namus-ayḏox",
+                "translations": [
+                  "‘Diese zweitausend rechnen wir als Opfergabe für dein Haupt, deine Würde und deine Ehre’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/193"]
+              }
+            ]
           },
           {
-            "text": "3)  lo=k-ḥošu ʕul mene bə-brito ʻer achtet in der Welt niemanden höher als sich selbstʼ; 275; 29/111; kan uno d-ḥušawno Ḥasan w-Ḥusayn, w-Yawar ʕaǧīl babəx w-aʕ=ʕašair w-aq=qabail-ani lə=fatno-wo l-u=ʕafr-ano-wo ‘Wenn ich Ḥasan und Ḥusein und Yawar ‘Adschīl, deinen Vater, und all die Stammesleute gerechnet hätte, so wäre ich nicht auf diesen Boden herüberkommen’; 29/110",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "lo=k-ḥošu ʕul mene bə-brito kan uno d-ḥušawno Ḥasan w-Ḥusayn w-Yawar ʕaǧīl babəx w-aʕ=ʕašair w-aq=qabail-ani lə=fatno-wo l-u=ʕafr-ano-wo",
+            "translations": [
+              "er achtet in der Welt niemanden höher als sich selbst",
+              "‘Wenn ich Ḥasan und Ḥusein und Yawar ‘Adschīl, deinen Vater, und all die Stammesleute gerechnet hätte, so wäre ich nicht auf diesen Boden herüberkommen’"
+            ],
+            "references": ["3", "275", "29/111"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  lo=k-ḥošu ʕul mene bə-brito "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer achtet in der Welt niemanden höher als sich selbstʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "275"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/111"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kan uno d-ḥušawno Ḥasan w-Ḥusayn"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-Yawar ʕaǧīl babəx w-aʕ=ʕašair w-aq=qabail-ani lə=fatno-wo l-u=ʕafr-ano-wo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wenn ich Ḥasan und Ḥusein und Yawar ‘Adschīl, deinen Vater, und all die Stammesleute gerechnet hätte, so wäre ich nicht auf diesen Boden herüberkommen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/110"
+              }
+            ],
+            "text": "3) lo=k-ḥošu ʕul mene bə-brito ʻer achtet in der Welt niemanden höher als sich selbstʼ; 275; 29/111; kan uno d-ḥušawno Ḥasan w-Ḥusayn, w-Yawar ʕaǧīl babəx w-aʕ=ʕašair w-aq=qabail-ani lə=fatno-wo l-u=ʕafr-ano-wo ‘Wenn ich Ḥasan und Ḥusein und Yawar ‘Adschīl, deinen Vater, und all die Stammesleute gerechnet hätte, so wäre ich nicht auf diesen Boden herüberkommen’; 29/110",
+            "segments": [
+              {
+                "turoyo": ") lo=k-ḥošu ʕul mene bə-brito",
+                "translations": [
+                  "ʻer achtet in der Welt niemanden höher als sich selbstʼ"
+                ],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["275"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/111"]
+              },
+              {
+                "turoyo": "kan uno d-ḥušawno Ḥasan w-Ḥusayn, w-Yawar ʕaǧīl babəx w-aʕ=ʕašair w-aq=qabail-ani lə=fatno-wo l-u=ʕafr-ano-wo",
+                "translations": [
+                  "‘Wenn ich Ḥasan und Ḥusein und Yawar ‘Adschīl, deinen Vater, und all die Stammesleute gerechnet hätte, so wäre ich nicht auf diesen Boden herüberkommen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/110"]
+              }
+            ]
           },
           {
-            "text": "4) i=naqla d-ḥa zlām ḥošu ruḥe ... hno ... o oṯe-le ḏ̣ayfe dōst  ʻwenn zu einem Mann, der etwas auf sich hält, befreundete Gäste kommenʼ; RT 26; balki aḥna lan-na xtoṯe hiye rab minan-yo ko-ḥošu ruḥe əšmo hat aʕle ‘Perhaps we are not like him. (Perhaps) is more distinguished than we are. And he fancies himself, and you are not enough for him’ 78/155;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "i=naqla d-ḥa zlām ḥošu ruḥe ... hno ... o oṯe-le ḏ̣ayfe dōst balki aḥna lan-na xtoṯe hiye rab minan-yo ko-ḥošu ruḥe əšmo hat aʕle",
+            "translations": [
+              "wenn zu einem Mann, der etwas auf sich hält, befreundete Gäste kommen",
+              "‘Perhaps we are not like him. (Perhaps) is more distinguished than we are. And he fancies himself, and you are not enough for him’"
+            ],
+            "references": ["4", "RT 26", "78/155"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "4"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naqla d-ḥa zlām ḥošu ruḥe ... hno ... o oṯe-le ḏ̣ayfe dōst  "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn zu einem Mann, der etwas auf sich hält, befreundete Gäste kommenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "RT 26"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " balki aḥna lan-na xtoṯe hiye rab minan-yo ko-ḥošu ruḥe əšmo hat aʕle "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Perhaps we are not like him. (Perhaps) is more distinguished than we are. And he fancies himself, and you are not enough for him’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/155"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "4) i=naqla d-ḥa zlām ḥošu ruḥe ... hno ... o oṯe-le ḏ̣ayfe dōst ʻwenn zu einem Mann, der etwas auf sich hält, befreundete Gäste kommenʼ; RT 26; balki aḥna lan-na xtoṯe hiye rab minan-yo ko-ḥošu ruḥe əšmo hat aʕle ‘Perhaps we are not like him. (Perhaps) is more distinguished than we are. And he fancies himself, and you are not enough for him’ 78/155;",
+            "segments": [
+              {
+                "turoyo": ") i=naqla d-ḥa zlām ḥošu ruḥe ... hno ... o oṯe-le ḏ̣ayfe dōst",
+                "translations": [
+                  "ʻwenn zu einem Mann, der etwas auf sich hält, befreundete Gäste kommenʼ"
+                ],
+                "references": ["4"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["RT 26"]
+              },
+              {
+                "turoyo": "balki aḥna lan-na xtoṯe hiye rab minan-yo ko-ḥošu ruḥe əšmo hat aʕle",
+                "translations": [
+                  "‘Perhaps we are not like him. (Perhaps) is more distinguished than we are. And he fancies himself, and you are not enough for him’"
+                ],
+                "references": ["78/155"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "hiya ḥəšwo-wa innu g-əzzé gab i=barṯo gəd-uxlo-le w gd-əṯyo maxalṣo-la m-u=sabab d-šubhi-wo lə-ḥḏoḏe a=tre a=greʕe i=naqqa d-ḥuzán-wo-la <…> ḥəšwí-wo-la hiya hano u=rab-ayḏan-yo Šahrzamān-yo -",
+            "translations": [
+              "sie hatte nämlich geglaubt, wenn er zu ihrer Tochter ginge, würde sie ihn fressen und dann kommen und sie losmachen",
+              "‘Denn sie waren einander ähnlich. Wenn die Knechte sie <…> sahen, glaubten sie: dies ist unser Herr Schahrzamān’"
+            ],
+            "references": ["1", "276", "75/88"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hiya ḥəšwo-wa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " innu g-əzzé gab i=barṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəd-uxlo-le w gd-əṯyo maxalṣo-la "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie hatte nämlich geglaubt, wenn er zu ihrer Tochter ginge, würde sie ihn fressen und dann kommen und sie losmachenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "276"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/88"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-u=sabab d-šubhi-wo lə-ḥḏoḏe a=tre"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " a=greʕe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naqqa d-ḥuzán-wo-la <…>"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥəšwí-wo-la"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hiya hano u=rab-ayḏan-yo Šahrzamān-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Denn sie waren einander ähnlich. Wenn die Knechte sie <…> sahen, glaubten sie: dies ist unser Herr Schahrzamān’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/153"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "154"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "1) hiya ḥəšwo-wa, innu g-əzzé gab i=barṯo, gəd-uxlo-le w gd-əṯyo maxalṣo-la ʻsie hatte nämlich geglaubt, wenn er zu ihrer Tochter ginge, würde sie ihn fressen und dann kommen und sie losmachenʼ; 276; 75/88; m-u=sabab d-šubhi-wo lə-ḥḏoḏe a=tre, a=greʕe, i=naqqa d-ḥuzán-wo-la <…>, ḥəšwí-wo-la: hiya hano u=rab-ayḏan-yo Šahrzamān-yo ‘Denn sie waren einander ähnlich. Wenn die Knechte sie <…> sahen, glaubten sie: dies ist unser Herr Schahrzamān’; 24/153-154 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") hiya ḥəšwo-wa, innu g-əzzé gab i=barṯo, gəd-uxlo-le w gd-əṯyo maxalṣo-la",
+                "translations": [
+                  "ʻsie hatte nämlich geglaubt, wenn er zu ihrer Tochter ginge, würde sie ihn fressen und dann kommen und sie losmachenʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["276"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["75/88"]
+              },
+              {
+                "turoyo": "m-u=sabab d-šubhi-wo lə-ḥḏoḏe a=tre, a=greʕe, i=naqqa d-ḥuzán-wo-la <…>, ḥəšwí-wo-la: hiya hano u=rab-ayḏan-yo Šahrzamān-yo",
+                "translations": [
+                  "‘Denn sie waren einander ähnlich. Wenn die Knechte sie <…> sahen, glaubten sie: dies ist unser Herr Schahrzamān’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["24/153", "154"],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ]
       }
@@ -75,10 +869,166 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "hakka d-omal-le w d-l-uyo aʕme šxa ko-məḥšowo ṣayi l-a=ḥrene mə ko-məḥšu? oʕdo g-məḥšowina kəfla ḥḏo-na",
+            "translations": [
+              "háw-li-yo!",
+              "wenn er zu ihm sagt: “Gibt ihn her!” und (der Betreffende) hat ihn nicht, so wird das als ein Punkt für die anderen gerechnet",
+              "als was wird er angesehen?",
+              "wir können uns jetzt als eine Familie betrachten"
+            ],
+            "references": ["1", "278", "94/472"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hakka d-omal-le"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“háw-li-yo!”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w d-l-uyo aʕme"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šxa ko-məḥšowo ṣayi l-a=ḥrene "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn er zu ihm sagt: “Gibt ihn her!” und (der Betreffende) hat ihn nicht, so wird das als ein Punkt für die anderen gerechnetʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "278"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/472"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mə ko-məḥšu? "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals was wird er angesehen?ʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 363"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " oʕdo g-məḥšowina kəfla ḥḏo-na "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir können uns jetzt als eine Familie betrachtenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 150"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) hakka d-omal-le: “háw-li-yo!” w d-l-uyo aʕme, šxa ko-məḥšowo ṣayi l-a=ḥrene ʻwenn er zu ihm sagt: “Gibt ihn her!” und (der Betreffende) hat ihn nicht, so wird das als ein Punkt für die anderen gerechnetʼ; 278; 94/472; mə ko-məḥšu? ʻals was wird er angesehen?ʼ LB 363; oʕdo g-məḥšowina kəfla ḥḏo-na ʻwir können uns jetzt als eine Familie betrachtenʼ; MM 150;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") hakka d-omal-le: w d-l-uyo aʕme, šxa ko-məḥšowo ṣayi l-a=ḥrene",
+                "translations": [
+                  "“háw-li-yo!”",
+                  "ʻwenn er zu ihm sagt: “Gibt ihn her!” und (der Betreffende) hat ihn nicht, so wird das als ein Punkt für die anderen gerechnetʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["278"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["94/472"]
+              },
+              {
+                "turoyo": "mə ko-məḥšu?",
+                "translations": ["ʻals was wird er angesehen?ʼ"],
+                "references": ["LB 363"]
+              },
+              {
+                "turoyo": "oʕdo g-məḥšowina kəfla ḥḏo-na",
+                "translations": [
+                  "ʻwir können uns jetzt als eine Familie betrachtenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["MM 150"]
+              }
+            ]
           }
         ]
       }

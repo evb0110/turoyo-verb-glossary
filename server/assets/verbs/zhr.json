@@ -14,25 +14,127 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "mazhalle",
-        "mazhər"
-      ],
+      "forms": ["mazhalle", "mazhər"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "2) mazhalle ʕayne aʕle; 259-260;",
-            "turoyo": "",
+            "turoyo": "mazhalle ʕayne aʕle -",
             "translations": [],
-            "references": []
+            "references": ["2", "259", "260"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mazhalle ʕayne aʕle"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "259"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "260"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) mazhalle ʕayne aʕle; 259-260;",
+            "segments": [
+              {
+                "turoyo": ") mazhalle ʕayne aʕle",
+                "translations": [],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["259", "260"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "ko-mazəhri ʕayne d-u=qaṭuno + Pr",
+            "translations": [
+              "die Augen des Katers funkeln (etwa in der Nacht)"
+            ],
+            "references": ["259", "S 30/17"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mazəhri ʕayne d-u=qaṭuno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Augen des Katers funkeln (etwa in der Nacht)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "259"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " + Pr"
+              },
+              {
+                "kind": "ref",
+                "value": "S 30/17"
+              }
+            ],
             "text": "ko-mazəhri ʕayne d-u=qaṭuno ʻdie Augen des Katers funkeln (etwa in der Nacht)ʼ; 259; + PrS 30/17",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-mazəhri ʕayne d-u=qaṭuno",
+                "translations": [
+                  "ʻdie Augen des Katers funkeln (etwa in der Nacht)ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["259"]
+              },
+              {
+                "turoyo": "+ Pr",
+                "translations": [],
+                "references": ["S 30/17"]
+              }
+            ]
           }
         ]
       }

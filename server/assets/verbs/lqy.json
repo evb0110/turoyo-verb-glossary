@@ -14,56 +14,473 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "laqi",
-        "loqe"
-      ],
+      "forms": ["laqi", "loqe"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "laqi b-ak=kočar diḏe ummi mə səmlox prs prs",
+            "translations": [
+              "er stiess auf einige seiner Kurden, die fragten ihn: “Was hast du ausgerichtet?"
+            ],
+            "references": ["348", "7/11", "49/37"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "laqi b-ak=kočar diḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ummi"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mə səmlox "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer stiess auf einige seiner Kurden, die fragten ihn: “Was hast du ausgerichtet?”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "348"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "7/11"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "49/37"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "laqi b-ak=kočar diḏe, ummi: mə səmlox ʻer stiess auf einige seiner Kurden, die fragten ihn: “Was hast du ausgerichtet?”ʼ; 348; prs 7/11; prs 49/37;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "laqi b-ak=kočar diḏe, ummi: mə səmlox",
+                "translations": [
+                  "ʻer stiess auf einige seiner Kurden, die fragten ihn: “Was hast du ausgerichtet?”ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["348"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["7/11"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["49/37"]
+              }
+            ]
           },
           {
-            "text": "Azzé, azzé, azzé, azzé, laqi lruʕyo ʕal am+maye, ač+čaxani. ‘He went, went, went, went, he met a shepherd by the water, the appropriate times’.  NE_Bird/42",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "Azzé azzé azzé azzé laqi lruʕyo ʕal am+maye ač+čaxani. . NE_Bird/",
+            "translations": [
+              "‘He went, went, went, went, he met a shepherd by the water, the appropriate times’"
+            ],
+            "references": ["42"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Azzé"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " azzé"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " azzé"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " azzé"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " laqi lruʕyo ʕal am+maye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ač+čaxani. "
+              },
+              {
+                "kind": "translation",
+                "value": "‘He went, went, went, went, he met a shepherd by the water, the appropriate times’"
+              },
+              {
+                "kind": "turoyo",
+                "value": ".  NE_Bird/"
+              },
+              {
+                "kind": "ref",
+                "value": "42"
+              }
+            ],
+            "text": "Azzé, azzé, azzé, azzé, laqi lruʕyo ʕal am+maye, ač+čaxani. ‘He went, went, went, went, he met a shepherd by the water, the appropriate times’. NE_Bird/42",
+            "segments": [
+              {
+                "turoyo": "Azzé, azzé, azzé, azzé, laqi lruʕyo ʕal am+maye, ač+čaxani. . NE_Bird/",
+                "translations": [
+                  "‘He went, went, went, went, he met a shepherd by the water, the appropriate times’"
+                ],
+                "references": ["42"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "g-lŭqena bə-ḥḏoḏe taḥt i=arʕo k-saymína-le lăġam prs b-u=baxy-awo diḏa k-luqyo b-u=aḥuno k-omər ko-loqən b-fəlge d-u=darbo b-ḥḏoḏe w-ko-nəšqi ḥḏoḏe w-ko-mṣalḥi ayna d-ko-loqe eba w-ku-mšaye-la k-ummo",
+            "translations": [
+              "wir werden unter der Erde zusammentreffen und einen unterirdischen Gang herstellen",
+              "qay g-boxət?",
+              "‘während sie so weint, stösst sie auf den Bruder. Der spricht: “Warum weinst du den?”’",
+              "They met on the midway, kissed each other and made up",
+              "k-azzí mublal-le ʕrayto l-u=gawr-ayḏi",
+              "‘Whoever met her and asked [where she was going], she answered: “I have come to bring dinner to my husband”’"
+            ],
+            "references": ["359", "90/11", "6/38"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "g-lŭqena bə-ḥḏoḏe taḥt i=arʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-saymína-le lăġam "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir werden unter der Erde zusammentreffen und einen unterirdischen Gang herstellenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "359"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "90/11"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-u=baxy-awo diḏa k-luqyo b-u=aḥuno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-omər "
+              },
+              {
+                "kind": "translation",
+                "value": "“qay g-boxət?”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "‘während sie so weint, stösst sie auf den Bruder. Der spricht: “Warum weinst du den?”’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/38"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-loqən b-fəlge d-u=darbo b-ḥḏoḏe w-ko-nəšqi ḥḏoḏe w-ko-mṣalḥi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻThey met on the midway, kissed each other and made upʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "42/17"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ayna d-ko-loqe eba w-ku-mšaye-la"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ummo "
+              },
+              {
+                "kind": "translation",
+                "value": "“k-azzí mublal-le ʕrayto l-u=gawr-ayḏi”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Whoever met her and asked [where she was going], she answered: “I have come to bring dinner to my husband”’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/75"
+              }
+            ],
             "text": "g-lŭqena bə-ḥḏoḏe taḥt i=arʕo, k-saymína-le lăġam ʻwir werden unter der Erde zusammentreffen und einen unterirdischen Gang herstellenʼ; 359; prs 90/11; b-u=baxy-awo diḏa k-luqyo b-u=aḥuno, k-omər “qay g-boxət?” ‘während sie so weint, stösst sie auf den Bruder. Der spricht: “Warum weinst du den?”’; 6/38; ko-loqən b-fəlge d-u=darbo b-ḥḏoḏe w-ko-nəšqi ḥḏoḏe w-ko-mṣalḥi ʻThey met on the midway, kissed each other and made upʼ; 42/17 [MT]; ayna d-ko-loqe eba w-ku-mšaye-la, k-ummo “k-azzí mublal-le ʕrayto l-u=gawr-ayḏi” ‘Whoever met her and asked [where she was going], she answered: “I have come to bring dinner to my husband”’; 44/75",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "g-lŭqena bə-ḥḏoḏe taḥt i=arʕo, k-saymína-le lăġam",
+                "translations": [
+                  "ʻwir werden unter der Erde zusammentreffen und einen unterirdischen Gang herstellenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["359"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["90/11"]
+              },
+              {
+                "turoyo": "b-u=baxy-awo diḏa k-luqyo b-u=aḥuno, k-omər",
+                "translations": [
+                  "“qay g-boxət?”",
+                  "‘während sie so weint, stösst sie auf den Bruder. Der spricht: “Warum weinst du den?”’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["6/38"]
+              },
+              {
+                "turoyo": "ko-loqən b-fəlge d-u=darbo b-ḥḏoḏe w-ko-nəšqi ḥḏoḏe w-ko-mṣalḥi",
+                "translations": [
+                  "ʻThey met on the midway, kissed each other and made upʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["42/17"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "ayna d-ko-loqe eba w-ku-mšaye-la, k-ummo",
+                "translations": [
+                  "“k-azzí mublal-le ʕrayto l-u=gawr-ayḏi”",
+                  "‘Whoever met her and asked [where she was going], she answered: “I have come to bring dinner to my husband”’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["44/75"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "malqele",
-        "malqe"
-      ],
+      "forms": ["malqele", "malqe"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "W aṯi Farḥo ʕam i ʕaskar, aṯi lu bayto, malqele u abro u naʕimo; prs 9/35",
-            "turoyo": "",
+            "turoyo": "W aṯi Farḥo ʕam i ʕaskar aṯi lu bayto malqele u abro u naʕimo prs",
             "translations": [],
-            "references": []
+            "references": ["9/35"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "W aṯi Farḥo ʕam i ʕaskar"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aṯi lu bayto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " malqele u abro u naʕimo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "9/35"
+              }
+            ],
+            "text": "W aṯi Farḥo ʕam i ʕaskar, aṯi lu bayto, malqele u abro u naʕimo; prs 9/35",
+            "segments": [
+              {
+                "turoyo": "W aṯi Farḥo ʕam i ʕaskar, aṯi lu bayto, malqele u abro u naʕimo",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["9/35"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(auf)treffen, aufstossen (mit b-);",
-    "to meet"
-  ],
+  "idioms": ["(auf)treffen, aufstossen (mit b-);", "to meet"],
   "uncertain": false
 }

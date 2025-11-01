@@ -14,42 +14,146 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "yarəq",
-        "yorəq"
-      ],
+      "forms": ["yarəq", "yorəq"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "yarəq",
+            "translations": ["es wurde grün"],
+            "references": ["657"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "yarəq "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes wurde grünʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "657"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "yarəq ʻes wurde grünʼ; 657;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "yarəq",
+                "translations": ["ʻes wurde grünʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["657"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "mawraqle",
-        "mawrəq"
-      ],
+      "forms": ["mawraqle", "mawrəq"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "k-mədwori k-máwrəqi k-məḥṣodi",
+            "translations": [
+              "sie werden erst geackert, dann werden sie grün, dann werden sie geerntet"
+            ],
+            "references": ["661", "6/52"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-mədwori"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-máwrəqi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-məḥṣodi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie werden erst geackert, dann werden sie grün, dann werden sie geerntetʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "661"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/52"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "k-mədwori, k-máwrəqi, k-məḥṣodi ʻsie werden erst geackert, dann werden sie grün, dann werden sie geerntetʼ; 661; 6/52;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "k-mədwori, k-máwrəqi, k-məḥṣodi",
+                "translations": [
+                  "ʻsie werden erst geackert, dann werden sie grün, dann werden sie geerntetʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["661"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["6/52"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "grün werden;",
-    "grün werden;"
-  ],
+  "idioms": ["grün werden;", "grün werden;"],
   "uncertain": false
 }

@@ -14,77 +14,802 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ḥəṣle",
-        "ḥoyəṣ"
-      ],
+      "forms": ["ḥəṣle", "ḥoyəṣ"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "Koḥoṣno u ḥawlo ʕal u ṭaʕno du ḥmoro lašan dlo nofal.",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Koḥoṣno u ḥawlo ʕal u ṭaʕno du ḥmoro lašan dlo nofal."
+              }
+            ],
             "text": "Koḥoṣno u ḥawlo ʕal u ṭaʕno du ḥmoro lašan dlo nofal.",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "Koḥoṣno u ḥawlo ʕal u ṭaʕno du ḥmoro lašan dlo nofal.",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
+            "turoyo": "Koḥoṣno ḥasi bu Sargey. I rely upon Sergey",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Koḥoṣno ḥasi bu Sargey. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "I rely upon Sergey"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "Koḥoṣno ḥasi bu Sargey. (I rely upon Sergey)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "Koḥoṣno ḥasi bu Sargey. (I rely upon Sergey)",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
+            "turoyo": "Koḥoṣno ḥasi bi qariše. I support my back with a belt.",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Koḥoṣno ḥasi bi qariše. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": " I support my back with a belt."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "Koḥoṣno ḥasi bi qariše. ( I support my back with a belt.)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "Koḥoṣno ḥasi bi qariše. ( I support my back with a belt.)",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
+            "turoyo": "Koḥoṣno qḏola di gḏayto I am strangling her",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Koḥoṣno qḏola di gḏayto "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "I am strangling her"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "Koḥoṣno qḏola di gḏayto (I am strangling her)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "Koḥoṣno qḏola di gḏayto (I am strangling her)",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
+            "turoyo": "g-ḥaṣno ḥoli aʕlox awbel-e l-u=bayto prs ko-ḥoyaṣno ruḥi w g-miparqəʕ u=bayt-ano i=od-aṯe",
+            "translations": [
+              "wenn ich meinen Oheim auf deinen Rücken binde, so bringe ihn nach Hause",
+              "ich werde mir einen Ruck geben, und dann wird diese Haus, dieses Zimmer in Stücke gehen"
+            ],
+            "references": ["1", "558", "117/32"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-ḥaṣno ḥoli aʕlox"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " awbel-e l-u=bayto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn ich meinen Oheim auf deinen Rücken binde, so bringe ihn nach Hauseʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "558"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "117/32"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-ḥoyaṣno ruḥi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w g-miparqəʕ u=bayt-ano i=od-aṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich werde mir einen Ruck geben, und dann wird diese Haus, dieses Zimmer in Stücke gehenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "521"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "112/63"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) g-ḥaṣno ḥoli aʕlox, awbel-e l-u=bayto ʻwenn ich meinen Oheim auf deinen Rücken binde, so bringe ihn nach Hauseʼ; 558; prs 117/32; ko-ḥoyaṣno ruḥi, w g-miparqəʕ u=bayt-ano i=od-aṯe ʻich werde mir einen Ruck geben, und dann wird diese Haus, dieses Zimmer in Stücke gehenʼ; 521; 112/63;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") g-ḥaṣno ḥoli aʕlox, awbel-e l-u=bayto",
+                "translations": [
+                  "ʻwenn ich meinen Oheim auf deinen Rücken binde, so bringe ihn nach Hauseʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["558"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["117/32"]
+              },
+              {
+                "turoyo": "ko-ḥoyaṣno ruḥi, w g-miparqəʕ u=bayt-ano i=od-aṯe",
+                "translations": [
+                  "ʻich werde mir einen Ruck geben, und dann wird diese Haus, dieses Zimmer in Stücke gehenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["521"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["112/63"]
+              }
+            ]
           },
           {
+            "turoyo": "gorəš i=səst-aṯe hawxa me bəṯr ab=bote-va i=moḥarṯ-ayḏe g-maḥət aʕla ʕal ḥaṣa i=hno sargo w-k-ḥoyaṣ-la ṭowo",
+            "translations": [
+              "‘He brought out his she-horse, his filly, from behind the houses, put a saddle on her back and bridled her well’"
+            ],
+            "references": ["78/88"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gorəš i=səst-aṯe hawxa me bəṯr ab=bote-va i=moḥarṯ-ayḏe g-maḥət aʕla ʕal ḥaṣa i=hno sargo w-k-ḥoyaṣ-la ṭowo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘He brought out his she-horse, his filly, from behind the houses, put a saddle on her back and bridled her well’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/88"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "gorəš i=səst-aṯe hawxa me bəṯr ab=bote-va i=moḥarṯ-ayḏe g-maḥət aʕla ʕal ḥaṣa i=hno sargo w-k-ḥoyaṣ-la ṭowo ‘He brought out his she-horse, his filly, from behind the houses, put a saddle on her back and bridled her well’ 78/88;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "gorəš i=səst-aṯe hawxa me bəṯr ab=bote-va i=moḥarṯ-ayḏe g-maḥət aʕla ʕal ḥaṣa i=hno sargo w-k-ḥoyaṣ-la ṭowo",
+                "translations": [
+                  "‘He brought out his she-horse, his filly, from behind the houses, put a saddle on her back and bridled her well’"
+                ],
+                "references": ["78/88"]
+              }
+            ]
           }
         ],
         "Preterit": [
           {
+            "turoyo": "ḥǝ́ṣle-le dokumo ʕal qarʕe d-u=kurrŭko maləfole b-ag=gale ḥəṣola b-ḥaṣe b-u=ḥawlo prs ḥəṣle ruḥe b-ḥaṣe d-i=səsto s back’ Lu xrəzla ruḥa bəṯre ḥaṣe w-ḥəṣla qəm-ṣadra Lu am=mor-ayḏe ḥəṣṣe aʕle əmmi lazəm gurət ‘His relatives pressed him they said",
+            "translations": [
+              "er versetzte dem Jungen einen heftigen Faustschlag auf den Kopf",
+              "er wickelte er sie in die Bettdecken und band sie sich mit einem Seile auf den Rücken",
+              "‘He clung to the mare’",
+              "‘She squeezed in behind him and clasped him to her breast’",
+              "You should marry!"
+            ],
+            "references": ["1", "557", "69/484"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥǝ́ṣle-le dokumo ʕal qarʕe d-u=kurrŭko "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer versetzte dem Jungen einen heftigen Faustschlag auf den Kopfʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "557"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/484"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maləfole b-ag=gale ḥəṣola b-ḥaṣe b-u=ḥawlo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wickelte er sie in die Bettdecken und band sie sich mit einem Seile auf den Rückenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "509"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "40/3"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥəṣle ruḥe b-ḥaṣe d-i=səsto "
+              },
+              {
+                "kind": "translation",
+                "value": "‘He clung to the mare’"
+              },
+              {
+                "kind": "turoyo",
+                "value": "s back’ Lu"
+              },
+              {
+                "kind": "ref",
+                "value": "F 276/7"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " xrəzla ruḥa bəṯre ḥaṣe w-ḥəṣla qəm-ṣadra "
+              },
+              {
+                "kind": "translation",
+                "value": "‘She squeezed in behind him and clasped him to her breast’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Lu"
+              },
+              {
+                "kind": "ref",
+                "value": "F 276/11"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " am=mor-ayḏe ḥəṣṣe aʕle əmmi lazəm gurət "
+              },
+              {
+                "kind": "turoyo",
+                "value": "‘"
+              },
+              {
+                "kind": "turoyo",
+                "value": "His relatives pressed him"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " they said"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“You should marry!”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) ḥǝ́ṣle-le dokumo ʕal qarʕe d-u=kurrŭko ʻer versetzte dem Jungen einen heftigen Faustschlag auf den Kopfʼ; 557; 69/484; maləfole b-ag=gale ḥəṣola b-ḥaṣe b-u=ḥawlo ʻer wickelte er sie in die Bettdecken und band sie sich mit einem Seile auf den Rückenʼ; 509; prs 40/3; ḥəṣle ruḥe b-ḥaṣe d-i=səsto ‘He clung to the mare’s back’ LuF 276/7; xrəzla ruḥa bəṯre ḥaṣe w-ḥəṣla qəm-ṣadra ‘She squeezed in behind him and clasped him to her breast’ LuF 276/11; am=mor-ayḏe ḥəṣṣe aʕle əmmi lazəm gurət ‘His relatives pressed him, they said: “You should marry!” 75/5;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") ḥǝ́ṣle-le dokumo ʕal qarʕe d-u=kurrŭko",
+                "translations": [
+                  "ʻer versetzte dem Jungen einen heftigen Faustschlag auf den Kopfʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["557"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["69/484"]
+              },
+              {
+                "turoyo": "maləfole b-ag=gale ḥəṣola b-ḥaṣe b-u=ḥawlo",
+                "translations": [
+                  "ʻer wickelte er sie in die Bettdecken und band sie sich mit einem Seile auf den Rückenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["509"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["40/3"]
+              },
+              {
+                "turoyo": "ḥəṣle ruḥe b-ḥaṣe d-i=səsto s back’ Lu",
+                "translations": ["‘He clung to the mare’"],
+                "references": ["F 276/7"]
+              },
+              {
+                "turoyo": "xrəzla ruḥa bəṯre ḥaṣe w-ḥəṣla qəm-ṣadra Lu",
+                "translations": [
+                  "‘She squeezed in behind him and clasped him to her breast’"
+                ],
+                "references": ["F 276/11"]
+              },
+              {
+                "turoyo": "am=mor-ayḏe ḥəṣṣe aʕle əmmi lazəm gurət ‘His relatives pressed him, they said:",
+                "translations": ["“You should marry!”"],
+                "references": ["75/5"]
+              }
+            ]
           },
           {
-            "text": "2) marəšle l-u=maṭro, ḥəṣla l-i=hawa; ab=bahozat k-kurxi, k-saymi dawrənyoṯo b-i=hawa ʻda sprühte (schon) der Regen, der Wind wehte heftig; der aufgewirbelte Staub kreist und macht Wirbel in der Luftʼ; 8/16; 3) ḥəṣle aʕle w mǝ́lle-le ḥatta xabre ʻer schrie ihn an und beschimpfte ihn sogar (wörtl.: sagte ihm Worte)ʼ JL 14.8.18;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "marəšle l-u=maṭro ḥəṣla l-i=hawa ab=bahozat k-kurxi k-saymi dawrənyoṯo b-i=hawa",
+            "translations": [
+              "da sprühte (schon) der Regen, der Wind wehte heftig; der aufgewirbelte Staub kreist und macht Wirbel in der Luft"
+            ],
+            "references": ["2", "8/16"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " marəšle l-u=maṭro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥəṣla l-i=hawa"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ab=bahozat k-kurxi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-saymi dawrənyoṯo b-i=hawa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda sprühte (schon) der Regen, der Wind wehte heftig; der aufgewirbelte Staub kreist und macht Wirbel in der Luftʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "8/16"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "2) marəšle l-u=maṭro, ḥəṣla l-i=hawa; ab=bahozat k-kurxi, k-saymi dawrənyoṯo b-i=hawa ʻda sprühte (schon) der Regen, der Wind wehte heftig; der aufgewirbelte Staub kreist und macht Wirbel in der Luftʼ; 8/16;",
+            "segments": [
+              {
+                "turoyo": ") marəšle l-u=maṭro, ḥəṣla l-i=hawa",
+                "translations": [],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "ab=bahozat k-kurxi, k-saymi dawrənyoṯo b-i=hawa",
+                "translations": [
+                  "ʻda sprühte (schon) der Regen, der Wind wehte heftig; der aufgewirbelte Staub kreist und macht Wirbel in der Luftʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["8/16"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "ḥəṣle aʕle w mǝ́lle-le ḥatta xabre ..",
+            "translations": [
+              "er schrie ihn an und beschimpfte ihn sogar (wörtl.: sagte ihm Worte)"
+            ],
+            "references": ["3", "JL 14", "8"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥəṣle aʕle w mǝ́lle-le ḥatta xabre "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer schrie ihn an und beschimpfte ihn sogar (wörtl.: sagte ihm Worte)ʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 14"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "8"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "18"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "3) ḥəṣle aʕle w mǝ́lle-le ḥatta xabre ʻer schrie ihn an und beschimpfte ihn sogar (wörtl.: sagte ihm Worte)ʼ JL 14.8.18;",
+            "segments": [
+              {
+                "turoyo": ") ḥəṣle aʕle w mǝ́lle-le ḥatta xabre ..",
+                "translations": [
+                  "ʻer schrie ihn an und beschimpfte ihn sogar (wörtl.: sagte ihm Worte)ʼ"
+                ],
+                "references": ["3", "JL 14", "8", "18"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "ḥuṣ ḥəs diḏox",
+            "translations": ["sprich lauter"],
+            "references": ["1", "558"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥuṣ ḥəs diḏox "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsprich lauterʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "558"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) ḥuṣ ḥəs diḏox ʻsprich lauterʼ; 558;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") ḥuṣ ḥəs diḏox",
+                "translations": ["ʻsprich lauterʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["558"]
+              }
+            ]
           }
         ],
         "Part act.": [
           {
+            "turoyo": "ḥíṣo-hat",
+            "translations": ["du bist kräftig (sagt der Arzt zum Patienten)"],
+            "references": ["1", "558"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥíṣo-hat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu bist kräftig (sagt der Arzt zum Patienten)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "558"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) ḥíṣo-hat ʻdu bist kräftig (sagt der Arzt zum Patienten)ʼ; 558;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") ḥíṣo-hat",
+                "translations": [
+                  "ʻdu bist kräftig (sagt der Arzt zum Patienten)ʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["558"]
+              }
+            ]
           }
         ]
       }
@@ -95,25 +820,276 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ḥīṣ ḥəkəm b-i=Diyārbaker prs ḥiṣo i=ḥəmto aʕli!",
+            "translations": [
+              "unterdessen war die Regierung von Diārbekr streng geworden",
+              "‘My fever has intensified!’"
+            ],
+            "references": ["1", "558", "8/34"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥīṣ ḥəkəm b-i=Diyārbaker "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻunterdessen war die Regierung von Diārbekr streng gewordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "558"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "8/34"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥiṣo i=ḥəmto aʕli! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘My fever has intensified!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "46/21"
+              }
+            ],
             "text": "1) ḥīṣ ḥəkəm b-i=Diyārbaker ʻunterdessen war die Regierung von Diārbekr streng gewordenʼ; 558; prs 8/34; ḥiṣo i=ḥəmto aʕli! ‘My fever has intensified!’; 46/21",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") ḥīṣ ḥəkəm b-i=Diyārbaker",
+                "translations": [
+                  "ʻunterdessen war die Regierung von Diārbekr streng gewordenʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["558"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["8/34"]
+              },
+              {
+                "turoyo": "ḥiṣo i=ḥəmto aʕli!",
+                "translations": ["‘My fever has intensified!’"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["46/21"]
+              }
+            ]
           }
         ],
         "Part. Pass.": [
           {
-            "text": "1) i=dəsmal-ayo d-kət-wa ḥəṣto ʕal ʕayni ʻdas Tuch, mit dem meine Augen verbunden warenʼ; LB 200; 2) məd-li-k-ōṯe hāwa həṣṭo, šälqât rābe leit ʻda kein starker Wind weht, gibt es keine grossen Wellenʼ; 534; 4/17; 8/15;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "i=dəsmal-ayo d-kət-wa ḥəṣto ʕal ʕayni",
+            "translations": ["das Tuch, mit dem meine Augen verbunden waren"],
+            "references": ["1", "LB 200"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=dəsmal-ayo d-kət-wa ḥəṣto ʕal ʕayni "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Tuch, mit dem meine Augen verbunden warenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 200"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) i=dəsmal-ayo d-kət-wa ḥəṣto ʕal ʕayni ʻdas Tuch, mit dem meine Augen verbunden warenʼ; LB 200;",
+            "segments": [
+              {
+                "turoyo": ") i=dəsmal-ayo d-kət-wa ḥəṣto ʕal ʕayni",
+                "translations": [
+                  "ʻdas Tuch, mit dem meine Augen verbunden warenʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 200"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "məd-li-k-ōṯe hāwa həṣṭo šälqât rābe leit",
+            "translations": [
+              "da kein starker Wind weht, gibt es keine grossen Wellen"
+            ],
+            "references": ["2", "534", "4/17"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " məd-li-k-ōṯe hāwa həṣṭo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šälqât rābe leit "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda kein starker Wind weht, gibt es keine grossen Wellenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "534"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "4/17"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "8/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) məd-li-k-ōṯe hāwa həṣṭo, šälqât rābe leit ʻda kein starker Wind weht, gibt es keine grossen Wellenʼ; 534; 4/17; 8/15;",
+            "segments": [
+              {
+                "turoyo": ") məd-li-k-ōṯe hāwa həṣṭo, šälqât rābe leit",
+                "translations": [
+                  "ʻda kein starker Wind weht, gibt es keine grossen Wellenʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["534"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["4/17"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["8/15"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "1) become stronger, intensify (intr.)"
-  ],
+  "idioms": ["1) become stronger, intensify (intr.)"],
   "uncertain": false
 }

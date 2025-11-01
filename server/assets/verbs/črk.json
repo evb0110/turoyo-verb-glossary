@@ -14,17 +14,52 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mčarakle",
-        "mčarək"
-      ],
+      "forms": ["mčarakle", "mčarək"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "qəṣle u=qŭmāš b-ġalṭo w mčarakle",
+            "translations": ["er hat den Stoff verschnitten"],
+            "references": ["228"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qəṣle u=qŭmāš b-ġalṭo w mčarakle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hat den Stoff verschnittenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "228"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "qəṣle u=qŭmāš b-ġalṭo w mčarakle ʻer hat den Stoff verschnittenʼ; 228;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "qəṣle u=qŭmāš b-ġalṭo w mčarakle",
+                "translations": ["ʻer hat den Stoff verschnittenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["228"]
+              }
+            ]
           }
         ]
       }

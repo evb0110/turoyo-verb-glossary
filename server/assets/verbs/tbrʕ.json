@@ -14,24 +14,106 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mətbaraʕle",
-        "mətbarəʕ"
-      ],
+      "forms": ["mətbaraʕle", "mətbarəʕ"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "gəd-əmmono l-babux w ḥəšwina lat-wayt w gə-mətbarʕina menux",
+            "translations": [
+              "ich werde es deinem Vater sagen, und wir werden tun, als ob du nie dagewesen seiest, und werden uns von dir lossagen"
+            ],
+            "references": ["804", "87/23", "35"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gəd-əmmono l-babux"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ḥəšwina lat-wayt"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w gə-mətbarʕina menux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich werde es deinem Vater sagen, und wir werden tun, als ob du nie dagewesen seiest, und werden uns von dir lossagenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "804"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "87/23"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "35"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "gəd-əmmono l-babux, w ḥəšwina lat-wayt, w gə-mətbarʕina menux ʻich werde es deinem Vater sagen, und wir werden tun, als ob du nie dagewesen seiest, und werden uns von dir lossagenʼ; 804; 87/23, 35;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "gəd-əmmono l-babux, w ḥəšwina lat-wayt, w gə-mətbarʕina menux",
+                "translations": [
+                  "ʻich werde es deinem Vater sagen, und wir werden tun, als ob du nie dagewesen seiest, und werden uns von dir lossagenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["804"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["87/23", "35"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sich lossagen;"
-  ],
+  "idioms": ["sich lossagen;"],
   "uncertain": false
 }

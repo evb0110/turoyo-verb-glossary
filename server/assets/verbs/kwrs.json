@@ -5,25 +5,98 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mkawrasle",
-        "mkawrəs"
-      ],
+      "forms": ["mkawrasle", "mkawrəs"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mkawrasle ṣaʕri",
+            "translations": ["er hat mir die Haare schlecht geschnitten"],
+            "references": ["783"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mkawrasle ṣaʕri "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hat mir die Haare schlecht geschnittenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "783"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mkawrasle ṣaʕri ʻer hat mir die Haare schlecht geschnittenʼ; 783;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mkawrasle ṣaʕri",
+                "translations": ["ʻer hat mir die Haare schlecht geschnittenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["783"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "mkawrás ag=guliyat zowud-ani",
+            "translations": ["kau diese überflüssigen Zweige ab"],
+            "references": ["783"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mkawrás ag=guliyat zowud-ani "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻkau diese überflüssigen Zweige abʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "783"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mkawrás ag=guliyat zowud-ani ʻkau diese überflüssigen Zweige abʼ; 783;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mkawrás ag=guliyat zowud-ani",
+                "translations": ["ʻkau diese überflüssigen Zweige abʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["783"]
+              }
+            ]
           }
         ]
       }

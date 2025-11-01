@@ -5,42 +5,143 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "qaṭəṣ",
-        "qoṭəṣ"
-      ],
+      "forms": ["qaṭəṣ", "qoṭəṣ"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "qaṭiṣi aṭ=ṭelole",
+            "translations": ["die Schatten sind lang geworden"],
+            "references": ["230"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qaṭiṣi aṭ=ṭelole "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Schatten sind lang gewordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "230"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "qaṭiṣi aṭ=ṭelole ʻdie Schatten sind lang gewordenʼ; 230;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "qaṭiṣi aṭ=ṭelole",
+                "translations": ["ʻdie Schatten sind lang gewordenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["230"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": [
-        "mqaṭaṣle",
-        "mqaṭəṣ"
-      ],
+      "forms": ["mqaṭaṣle", "mqaṭəṣ"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "mqaṭaṣle; 230; 113/26; (пример отсутствует в указанном месте)",
-            "turoyo": "",
+            "turoyo": "mqaṭaṣle пример отсутствует в указанном месте",
             "translations": [],
-            "references": []
+            "references": ["230", "113/26"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mqaṭaṣle"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "230"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "113/26"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "пример отсутствует в указанном месте"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "mqaṭaṣle; 230; 113/26; (пример отсутствует в указанном месте)",
+            "segments": [
+              {
+                "turoyo": "mqaṭaṣle",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["230"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["113/26"]
+              },
+              {
+                "turoyo": "(пример отсутствует в указанном месте)",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "langwerden (Schatten);",
-    "(Brennholz) zerkleinern;"
-  ],
+  "idioms": ["langwerden (Schatten);", "(Brennholz) zerkleinern;"],
   "uncertain": false
 }

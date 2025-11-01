@@ -5,17 +5,52 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mqarmaǧle",
-        "mqarməǧ"
-      ],
+      "forms": ["mqarmaǧle", "mqarməǧ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mqarmaǧlux aǧ=ǧulayḏux",
+            "translations": ["du hast deine Kleider faltig gemacht"],
+            "references": ["786"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mqarmaǧlux aǧ=ǧulayḏux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu hast deine Kleider faltig gemachtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "786"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mqarmaǧlux aǧ=ǧulayḏux ʻdu hast deine Kleider faltig gemachtʼ; 786;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mqarmaǧlux aǧ=ǧulayḏux",
+                "translations": ["ʻdu hast deine Kleider faltig gemachtʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["786"]
+              }
+            ]
           }
         ]
       }
@@ -26,17 +61,53 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "fote d-as=sawwe mqarmáǧto-yo",
+            "translations": ["das Gesicht der alten Leute ist runzelig"],
+            "references": ["786"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "fote d-as=sawwe mqarmáǧto-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Gesicht der alten Leute ist runzeligʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "786"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "fote d-as=sawwe mqarmáǧto-yo ʻdas Gesicht der alten Leute ist runzeligʼ; 786;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "fote d-as=sawwe mqarmáǧto-yo",
+                "translations": ["ʻdas Gesicht der alten Leute ist runzeligʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["786"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "faltig, runzelig machen;"
-  ],
+  "idioms": ["faltig, runzelig machen;"],
   "uncertain": false
 }

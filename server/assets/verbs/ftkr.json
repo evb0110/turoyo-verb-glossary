@@ -14,47 +14,863 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "məftakalle",
-        "məftakər"
-      ],
+      "forms": ["məftakalle", "məftakər"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "1) u=məžləs-awo qayəṣ d-məftakarre lə-qadiri d-uḏʕi ayna minayye lat-le waraṯe ʻsoviel aber die Ratsversammlung auch nachdachte, sie brachten nicht heraus, welcher von ihnen kein Erbrecht hatteʼ; 808; 26/51; 87/61; lašan d-miṣafe u=dayno d-aʕla, am=more d-u=dayno mawfaqqe am=mədon-ani l-u=măzād, w mzabnənne l-aš=šaqole d-am=mədone ʕatiqe. m-u=săbab, d-məftakarre as=səfoq-ani d-i=žǝ́nəke-ne ʻzur Bereinigung ihrer Schulden hatten die Gläubiger diese Sachen versteigert und an die Aufkäufer von alten Sachen verkauft, weil sie glauben, das Geschirr gehöre der Frauʼ; 2/77; omanno: “pāk”,  məftakalli b-ruḥi, omanno: “mə nuro kīt harke, b-u=aṯr-ano?” ʻich überlegte und sagte: “Oh mein Gott, was für ein Feuer lodert hier, in dieser Gegend?”ʼ LB 273; bəṯṯər məftakalla mən masale-yo, azzayo l-u=čadər d-u=gawro-ste, ḥəlla: u=gauro-ste lat·yo mawǧūd ‘Da dachte sie über die Sache nach, ging zu dem Zelte ihres Mannes und sah: ihr Mann ist auch nicht da’; 24/149; u=abro d-u=ʕammo kali. kali kali məftakalle b-ruḥe ‘Der Vetter stutzte. Er stutzte und überlegte lange bei sich’; 26/205",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "u=məžləs-awo qayəṣ d-məftakarre lə-qadiri d-uḏʕi ayna minayye lat-le waraṯe lašan d-miṣafe u=dayno d-aʕla am=more d-u=dayno mawfaqqe am=mədon-ani l-u=măzād w mzabnənne l-aš=šaqole d-am=mədone ʕatiqe. m-u=săbab d-məftakarre as=səfoq-ani d-i=žǝ́nəke-ne omanno məftakalli b-ruḥi omanno bəṯṯər məftakalla mən masale-yo azzayo l-u=čadər d-u=gawro-ste ḥəlla u=gauro-ste lat·yo mawǧūd u=abro d-u=ʕammo kali. kali kali məftakalle b-ruḥe",
+            "translations": [
+              "soviel aber die Ratsversammlung auch nachdachte, sie brachten nicht heraus, welcher von ihnen kein Erbrecht hatte",
+              "zur Bereinigung ihrer Schulden hatten die Gläubiger diese Sachen versteigert und an die Aufkäufer von alten Sachen verkauft, weil sie glauben, das Geschirr gehöre der Frau",
+              "pāk",
+              "mə nuro kīt harke, b-u=aṯr-ano?",
+              "ich überlegte und sagte: “Oh mein Gott, was für ein Feuer lodert hier, in dieser Gegend?",
+              "‘Da dachte sie über die Sache nach, ging zu dem Zelte ihres Mannes und sah: ihr Mann ist auch nicht da’",
+              "‘Der Vetter stutzte. Er stutzte und überlegte lange bei sich’"
+            ],
+            "references": ["1", "808", "26/51"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=məžləs-awo qayəṣ d-məftakarre lə-qadiri d-uḏʕi ayna minayye lat-le waraṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsoviel aber die Ratsversammlung auch nachdachte, sie brachten nicht heraus, welcher von ihnen kein Erbrecht hatteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "808"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/51"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "87/61"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lašan d-miṣafe u=dayno d-aʕla"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " am=more d-u=dayno mawfaqqe am=mədon-ani l-u=măzād"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mzabnənne l-aš=šaqole d-am=mədone ʕatiqe. m-u=săbab"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-məftakarre as=səfoq-ani d-i=žǝ́nəke-ne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻzur Bereinigung ihrer Schulden hatten die Gläubiger diese Sachen versteigert und an die Aufkäufer von alten Sachen verkauft, weil sie glauben, das Geschirr gehöre der Frauʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/77"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " omanno"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“pāk”"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": "  məftakalli b-ruḥi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " omanno"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“mə nuro kīt harke, b-u=aṯr-ano?”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich überlegte und sagte: “Oh mein Gott, was für ein Feuer lodert hier, in dieser Gegend?”ʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 273"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər məftakalla mən masale-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " azzayo l-u=čadər d-u=gawro-ste"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥəlla"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=gauro-ste lat·yo mawǧūd "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Da dachte sie über die Sache nach, ging zu dem Zelte ihres Mannes und sah: ihr Mann ist auch nicht da’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/149"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=abro d-u=ʕammo kali. kali kali məftakalle b-ruḥe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Der Vetter stutzte. Er stutzte und überlegte lange bei sich’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/205"
+              }
+            ],
+            "text": "1) u=məžləs-awo qayəṣ d-məftakarre lə-qadiri d-uḏʕi ayna minayye lat-le waraṯe ʻsoviel aber die Ratsversammlung auch nachdachte, sie brachten nicht heraus, welcher von ihnen kein Erbrecht hatteʼ; 808; 26/51; 87/61; lašan d-miṣafe u=dayno d-aʕla, am=more d-u=dayno mawfaqqe am=mədon-ani l-u=măzād, w mzabnənne l-aš=šaqole d-am=mədone ʕatiqe. m-u=săbab, d-məftakarre as=səfoq-ani d-i=žǝ́nəke-ne ʻzur Bereinigung ihrer Schulden hatten die Gläubiger diese Sachen versteigert und an die Aufkäufer von alten Sachen verkauft, weil sie glauben, das Geschirr gehöre der Frauʼ; 2/77; omanno: “pāk”, məftakalli b-ruḥi, omanno: “mə nuro kīt harke, b-u=aṯr-ano?” ʻich überlegte und sagte: “Oh mein Gott, was für ein Feuer lodert hier, in dieser Gegend?”ʼ LB 273; bəṯṯər məftakalla mən masale-yo, azzayo l-u=čadər d-u=gawro-ste, ḥəlla: u=gauro-ste lat·yo mawǧūd ‘Da dachte sie über die Sache nach, ging zu dem Zelte ihres Mannes und sah: ihr Mann ist auch nicht da’; 24/149; u=abro d-u=ʕammo kali. kali kali məftakalle b-ruḥe ‘Der Vetter stutzte. Er stutzte und überlegte lange bei sich’; 26/205",
+            "segments": [
+              {
+                "turoyo": ") u=məžləs-awo qayəṣ d-məftakarre lə-qadiri d-uḏʕi ayna minayye lat-le waraṯe",
+                "translations": [
+                  "ʻsoviel aber die Ratsversammlung auch nachdachte, sie brachten nicht heraus, welcher von ihnen kein Erbrecht hatteʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["808"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["26/51"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["87/61"]
+              },
+              {
+                "turoyo": "lašan d-miṣafe u=dayno d-aʕla, am=more d-u=dayno mawfaqqe am=mədon-ani l-u=măzād, w mzabnənne l-aš=šaqole d-am=mədone ʕatiqe. m-u=săbab, d-məftakarre as=səfoq-ani d-i=žǝ́nəke-ne",
+                "translations": [
+                  "ʻzur Bereinigung ihrer Schulden hatten die Gläubiger diese Sachen versteigert und an die Aufkäufer von alten Sachen verkauft, weil sie glauben, das Geschirr gehöre der Frauʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["2/77"]
+              },
+              {
+                "turoyo": "omanno: , məftakalli b-ruḥi, omanno:",
+                "translations": [
+                  "“pāk”",
+                  "“mə nuro kīt harke, b-u=aṯr-ano?”",
+                  "ʻich überlegte und sagte: “Oh mein Gott, was für ein Feuer lodert hier, in dieser Gegend?”ʼ"
+                ],
+                "references": ["LB 273"]
+              },
+              {
+                "turoyo": "bəṯṯər məftakalla mən masale-yo, azzayo l-u=čadər d-u=gawro-ste, ḥəlla: u=gauro-ste lat·yo mawǧūd",
+                "translations": [
+                  "‘Da dachte sie über die Sache nach, ging zu dem Zelte ihres Mannes und sah: ihr Mann ist auch nicht da’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/149"]
+              },
+              {
+                "turoyo": "u=abro d-u=ʕammo kali. kali kali məftakalle b-ruḥe",
+                "translations": [
+                  "‘Der Vetter stutzte. Er stutzte und überlegte lange bei sich’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["26/205"]
+              }
+            ]
           },
           {
+            "turoyo": "omər ya ḥurma mə=g-saymina-le … əmmo … adyawma məftakaḷḷi mede omər mən-yo ‘He said … She said – He said -",
+            "translations": [
+              "So what shall we do with him, wife?",
+              "(…) Today I thought of something",
+              "What is it?"
+            ],
+            "references": ["2", "76/131", "132"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " omər ya ḥurma mə=g-saymina-le "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " əmmo "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " adyawma məftakaḷḷi mede omər mən-yo "
+              },
+              {
+                "kind": "turoyo",
+                "value": "‘"
+              },
+              {
+                "kind": "turoyo",
+                "value": "He said"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“So what shall we do with him, wife?”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " She said"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“ (…) Today I thought of something”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " – He said"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“What is it?”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "76/131"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "132"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) omər ya ḥurma mə=g-saymina-le (…) əmmo (…) adyawma məftakaḷḷi mede omər mən-yo ‘He said: “So what shall we do with him, wife?” (…) She said: “ (…) Today I thought of something” – He said: “What is it?” 76/131-132;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") omər ya ḥurma mə=g-saymina-le (…) əmmo (…) adyawma məftakaḷḷi mede omər mən-yo ‘He said: (…) She said: – He said: -",
+                "translations": [
+                  "“So what shall we do with him, wife?”",
+                  "“ (…) Today I thought of something”",
+                  "“What is it?”"
+                ],
+                "references": ["2", "76/131", "132"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "ʕal-aṯe ono k-məftakrono, w k-zayʕono ʻdarüber mache ich mir Gedanken, ich ängstige michʼ; 808; 62/100; aḥuno! qay məftakrət aw k-tolət ġamo? ‘Bruder, warum grübelst du und grämst dich so?’; 21/58 [MT]; k-məftakri: hal hano ḥulmo-yo, ani mə-šrolo-yo? ‘Sie dachten nach: Ist das ein Traum oder Wirklichkeit?’; 24/31; hawi-le fəkər ġálabe w-kadar rabo,  ḥəzniye ġálabe, k-məftakər yawmo b-yawmo ‘Da machte er sich viel Gedanken und hatte großen Kummer und viel Traurigkeit; er grübelte Tag für Tag vor sich hin’; 24/41; kət-le mede aḥuni ko-məftakər mede b-u=qaṭl-ayḏi ‘My brother has something (in mind). He is plotting to kill me’ 78/42; ono zoyaʕ-way-no əšmo w-haw kibi koleno m-u=kewo d-ko-koyaw-li b-lalyo lo=ko-domaxno omər ʕammo lo=məftakrət ono g-əzzino ramḥəl  ‘I was a bit afraid (to tell you), but I can no longer endure the pain and I cannot sleep at night. He (ʕAmar) said: “Uncle, do not worry! I shall go (and bring the remedy) tomorrow’ 78/166;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "ʕal-aṯe ono k-məftakrono w k-zayʕono aḥuno! qay məftakrət aw k-tolət ġamo? k-məftakri hal hano ḥulmo-yo ani mə-šrolo-yo? hawi-le fəkər ġálabe w-kadar rabo ḥəzniye ġálabe k-məftakər yawmo b-yawmo kət-le mede aḥuni ko-məftakər mede b-u=qaṭl-ayḏi ono zoyaʕ-way-no əšmo w-haw kibi koleno m-u=kewo d-ko-koyaw-li b-lalyo lo=ko-domaxno omər ʕammo lo=məftakrət ono g-əzzino ramḥəl",
+            "translations": [
+              "darüber mache ich mir Gedanken, ich ängstige mich",
+              "‘Bruder, warum grübelst du und grämst dich so?’",
+              "‘Sie dachten nach: Ist das ein Traum oder Wirklichkeit?’",
+              "‘Da machte er sich viel Gedanken und hatte großen Kummer und viel Traurigkeit; er grübelte Tag für Tag vor sich hin’",
+              "‘My brother has something (in mind). He is plotting to kill me’",
+              "‘I was a bit afraid (to tell you), but I can no longer endure the pain and I cannot sleep at night. He (ʕAmar) said: “Uncle, do not worry! I shall go (and bring the remedy) tomorrow’"
+            ],
+            "references": ["808", "62/100", "21/58"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕal-aṯe ono k-məftakrono"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w k-zayʕono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdarüber mache ich mir Gedanken, ich ängstige michʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "808"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/100"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aḥuno! qay məftakrət aw k-tolət ġamo? "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Bruder, warum grübelst du und grämst dich so?’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/58"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-məftakri"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hal hano ḥulmo-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ani mə-šrolo-yo? "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sie dachten nach: Ist das ein Traum oder Wirklichkeit?’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/31"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawi-le fəkər ġálabe w-kadar rabo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": "  ḥəzniye ġálabe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-məftakər yawmo b-yawmo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Da machte er sich viel Gedanken und hatte großen Kummer und viel Traurigkeit; er grübelte Tag für Tag vor sich hin’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/41"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kət-le mede aḥuni ko-məftakər mede b-u=qaṭl-ayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "‘My brother has something (in mind). He is plotting to kill me’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/42"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono zoyaʕ-way-no əšmo w-haw kibi koleno m-u=kewo d-ko-koyaw-li b-lalyo lo=ko-domaxno omər ʕammo lo=məftakrət ono g-əzzino ramḥəl  "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I was a bit afraid (to tell you), but I can no longer endure the pain and I cannot sleep at night. He (ʕAmar) said: “Uncle, do not worry! I shall go (and bring the remedy) tomorrow’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/166"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ʕal-aṯe ono k-məftakrono, w k-zayʕono ʻdarüber mache ich mir Gedanken, ich ängstige michʼ; 808; 62/100; aḥuno! qay məftakrət aw k-tolət ġamo? ‘Bruder, warum grübelst du und grämst dich so?’; 21/58 [MT]; k-məftakri: hal hano ḥulmo-yo, ani mə-šrolo-yo? ‘Sie dachten nach: Ist das ein Traum oder Wirklichkeit?’; 24/31; hawi-le fəkər ġálabe w-kadar rabo, ḥəzniye ġálabe, k-məftakər yawmo b-yawmo ‘Da machte er sich viel Gedanken und hatte großen Kummer und viel Traurigkeit; er grübelte Tag für Tag vor sich hin’; 24/41; kət-le mede aḥuni ko-məftakər mede b-u=qaṭl-ayḏi ‘My brother has something (in mind). He is plotting to kill me’ 78/42; ono zoyaʕ-way-no əšmo w-haw kibi koleno m-u=kewo d-ko-koyaw-li b-lalyo lo=ko-domaxno omər ʕammo lo=məftakrət ono g-əzzino ramḥəl ‘I was a bit afraid (to tell you), but I can no longer endure the pain and I cannot sleep at night. He (ʕAmar) said: “Uncle, do not worry! I shall go (and bring the remedy) tomorrow’ 78/166;",
+            "segments": [
+              {
+                "turoyo": "ʕal-aṯe ono k-məftakrono, w k-zayʕono",
+                "translations": [
+                  "ʻdarüber mache ich mir Gedanken, ich ängstige michʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["808"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["62/100"]
+              },
+              {
+                "turoyo": "aḥuno! qay məftakrət aw k-tolət ġamo?",
+                "translations": [
+                  "‘Bruder, warum grübelst du und grämst dich so?’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["21/58"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "k-məftakri: hal hano ḥulmo-yo, ani mə-šrolo-yo?",
+                "translations": [
+                  "‘Sie dachten nach: Ist das ein Traum oder Wirklichkeit?’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/31"]
+              },
+              {
+                "turoyo": "hawi-le fəkər ġálabe w-kadar rabo, ḥəzniye ġálabe, k-məftakər yawmo b-yawmo",
+                "translations": [
+                  "‘Da machte er sich viel Gedanken und hatte großen Kummer und viel Traurigkeit; er grübelte Tag für Tag vor sich hin’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/41"]
+              },
+              {
+                "turoyo": "kət-le mede aḥuni ko-məftakər mede b-u=qaṭl-ayḏi",
+                "translations": [
+                  "‘My brother has something (in mind). He is plotting to kill me’"
+                ],
+                "references": ["78/42"]
+              },
+              {
+                "turoyo": "ono zoyaʕ-way-no əšmo w-haw kibi koleno m-u=kewo d-ko-koyaw-li b-lalyo lo=ko-domaxno omər ʕammo lo=məftakrət ono g-əzzino ramḥəl",
+                "translations": [
+                  "‘I was a bit afraid (to tell you), but I can no longer endure the pain and I cannot sleep at night. He (ʕAmar) said: “Uncle, do not worry! I shall go (and bring the remedy) tomorrow’"
+                ],
+                "references": ["78/166"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "məftakánno-wa",
+            "translations": ["ich dachte"],
+            "references": ["808"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "məftakánno-wa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich dachteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "808"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "məftakánno-wa ʻich dachteʼ; 808;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "məftakánno-wa",
+                "translations": ["ʻich dachteʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["808"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "ḥuru w məftakeru w maṣiṯu l-u=ʕəǧb-ano d-səmme",
+            "translations": [
+              "schaut, überlegt euch und hört (über) diese Gewalt, die man angetan hat"
+            ],
+            "references": ["LB 74"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥuru w məftakeru w maṣiṯu l-u=ʕəǧb-ano d-səmme "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻschaut, überlegt euch und hört (über) diese Gewalt, die man angetan hatʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 74"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ḥuru w məftakeru w maṣiṯu l-u=ʕəǧb-ano d-səmme ʻschaut, überlegt euch und hört (über) diese Gewalt, die man angetan hatʼ; LB 74;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ḥuru w məftakeru w maṣiṯu l-u=ʕəǧb-ano d-səmme",
+                "translations": [
+                  "ʻschaut, überlegt euch und hört (über) diese Gewalt, die man angetan hatʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 74"]
+              }
+            ]
           }
         ]
       }

@@ -5,24 +5,86 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "madəxle",
-        "madəx"
-      ],
+      "forms": ["madəxle", "madəx"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ḥǝ́ṣle-le dokumo ʕal qarʕe d-u=kurrŭko madəxle tamo",
+            "translations": [
+              "er versetzte dem Jungen einen heftigen Faustschlag auf den Kopf und betäubte ihn"
+            ],
+            "references": ["537", "69/484"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥǝ́ṣle-le dokumo ʕal qarʕe d-u=kurrŭko"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " madəxle tamo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer versetzte dem Jungen einen heftigen Faustschlag auf den Kopf und betäubte ihnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "537"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/484"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ḥǝ́ṣle-le dokumo ʕal qarʕe d-u=kurrŭko, madəxle tamo ʻer versetzte dem Jungen einen heftigen Faustschlag auf den Kopf und betäubte ihnʼ; 537; 69/484;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ḥǝ́ṣle-le dokumo ʕal qarʕe d-u=kurrŭko, madəxle tamo",
+                "translations": [
+                  "ʻer versetzte dem Jungen einen heftigen Faustschlag auf den Kopf und betäubte ihnʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["537"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["69/484"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "betäuben;"
-  ],
+  "idioms": ["betäuben;"],
   "uncertain": false
 }

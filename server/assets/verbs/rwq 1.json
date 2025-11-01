@@ -14,24 +14,102 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mrawaqle",
-        "mrawəq"
-      ],
+      "forms": ["mrawaqle", "mrawəq"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "g-yətwina šotína-lan fənǧane d-qaḥwe w mrawqina rišan w ǧġara w bəṯṯər g-əzzán",
+            "translations": [
+              "jetzt wollen wir uns erst einmal hinsetzen, eine Tasse Kaffee trinken und uns stärken und eine Zigarette rauchen; und dann gehen wir los"
+            ],
+            "references": ["477", "73/355"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "g-yətwina šotína-lan fənǧane d-qaḥwe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mrawqina rišan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ǧġara"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w bəṯṯər g-əzzán "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻjetzt wollen wir uns erst einmal hinsetzen, eine Tasse Kaffee trinken und uns stärken und eine Zigarette rauchen; und dann gehen wir losʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "477"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/355"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "g-yətwina šotína-lan fənǧane d-qaḥwe, w mrawqina rišan, w ǧġara, w bəṯṯər g-əzzán ʻjetzt wollen wir uns erst einmal hinsetzen, eine Tasse Kaffee trinken und uns stärken und eine Zigarette rauchen; und dann gehen wir losʼ; 477; 73/355;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "g-yətwina šotína-lan fənǧane d-qaḥwe, w mrawqina rišan, w ǧġara, w bəṯṯər g-əzzán",
+                "translations": [
+                  "ʻjetzt wollen wir uns erst einmal hinsetzen, eine Tasse Kaffee trinken und uns stärken und eine Zigarette rauchen; und dann gehen wir losʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["477"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["73/355"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "erfrischen, stärken (durch Frühstück);"
-  ],
+  "idioms": ["erfrischen, stärken (durch Frühstück);"],
   "uncertain": false
 }

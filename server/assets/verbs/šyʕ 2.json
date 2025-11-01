@@ -14,64 +14,794 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mšayaʕle",
-        "mšayəʕ"
-      ],
+      "forms": ["mšayaʕle", "mšayəʕ"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "kṯule kaġad, mšayaʕle l-u=paša d-Šām ʻda schrieb er einen Brief an den Statthalter von Damascusʼ; 492; prs 118/19; prs 31/10; prs 56/20; i=baladiye mšayaʕla zlamat mǧahze b-am=makkinat d-u=gāz ʻdie Stadtverwaltung schickte Männer, die mit Petroleumgeräten ausgerüstet warenʼ; 1/35; šqili u=maktūb də-mšayáʕxul-li ‘ich habe den Brief, den Sie mir geschickt haben, erhalten’; 20/2; l-ayko gd-əzzúx? – l-u=taǧər diḏi, l-u=rab-ayḏi,  mšayáʕle-li s-i=aṯto ‘Wohin willst du gehen? - Zu meinem Kaufmann, meinem Herrn; er hat mich zu [seiner] Frau geschickt’; 23/43; məd-yatu Šahrzamān ʕal-u=kursi d-i=mamlaxṯo, mšayaʕle bəṯr-u=babo bəṯr-i=emo ‘Als nun Schahrzamān sich auf den Thron des Reiches gesetzt hatte, schickte er nach seinem Vater und seiner Mutter’; 24/244 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "kṯule kaġad mšayaʕle l-u=paša d-Šām prs prs prs i=baladiye mšayaʕla zlamat mǧahze b-am=makkinat d-u=gāz šqili u=maktūb də-mšayáʕxul-li l-ayko gd-əzzúx? – l-u=taǧər diḏi l-u=rab-ayḏi mšayáʕle-li s-i=aṯto məd-yatu Šahrzamān ʕal-u=kursi d-i=mamlaxṯo mšayaʕle bəṯr-u=babo bəṯr-i=emo",
+            "translations": [
+              "da schrieb er einen Brief an den Statthalter von Damascus",
+              "die Stadtverwaltung schickte Männer, die mit Petroleumgeräten ausgerüstet waren",
+              "‘ich habe den Brief, den Sie mir geschickt haben, erhalten’",
+              "‘Wohin willst du gehen? - Zu meinem Kaufmann, meinem Herrn; er hat mich zu [seiner] Frau geschickt’",
+              "‘Als nun Schahrzamān sich auf den Thron des Reiches gesetzt hatte, schickte er nach seinem Vater und seiner Mutter’"
+            ],
+            "references": ["492", "118/19", "31/10"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kṯule kaġad"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mšayaʕle l-u=paša d-Šām "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda schrieb er einen Brief an den Statthalter von Damascusʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "492"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "118/19"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "31/10"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "56/20"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=baladiye mšayaʕla zlamat mǧahze b-am=makkinat d-u=gāz "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Stadtverwaltung schickte Männer, die mit Petroleumgeräten ausgerüstet warenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "1/35"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " šqili u=maktūb də-mšayáʕxul-li "
+              },
+              {
+                "kind": "translation",
+                "value": "‘ich habe den Brief, den Sie mir geschickt haben, erhalten’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "20/2"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-ayko gd-əzzúx? – l-u=taǧər diḏi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-u=rab-ayḏi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": "  mšayáʕle-li s-i=aṯto "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wohin willst du gehen? - Zu meinem Kaufmann, meinem Herrn; er hat mich zu [seiner] Frau geschickt’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "23/43"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " məd-yatu Šahrzamān ʕal-u=kursi d-i=mamlaxṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mšayaʕle bəṯr-u=babo bəṯr-i=emo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Als nun Schahrzamān sich auf den Thron des Reiches gesetzt hatte, schickte er nach seinem Vater und seiner Mutter’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/244"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "kṯule kaġad, mšayaʕle l-u=paša d-Šām ʻda schrieb er einen Brief an den Statthalter von Damascusʼ; 492; prs 118/19; prs 31/10; prs 56/20; i=baladiye mšayaʕla zlamat mǧahze b-am=makkinat d-u=gāz ʻdie Stadtverwaltung schickte Männer, die mit Petroleumgeräten ausgerüstet warenʼ; 1/35; šqili u=maktūb də-mšayáʕxul-li ‘ich habe den Brief, den Sie mir geschickt haben, erhalten’; 20/2; l-ayko gd-əzzúx? – l-u=taǧər diḏi, l-u=rab-ayḏi, mšayáʕle-li s-i=aṯto ‘Wohin willst du gehen? - Zu meinem Kaufmann, meinem Herrn; er hat mich zu [seiner] Frau geschickt’; 23/43; məd-yatu Šahrzamān ʕal-u=kursi d-i=mamlaxṯo, mšayaʕle bəṯr-u=babo bəṯr-i=emo ‘Als nun Schahrzamān sich auf den Thron des Reiches gesetzt hatte, schickte er nach seinem Vater und seiner Mutter’; 24/244 [MT]",
+            "segments": [
+              {
+                "turoyo": "kṯule kaġad, mšayaʕle l-u=paša d-Šām",
+                "translations": [
+                  "ʻda schrieb er einen Brief an den Statthalter von Damascusʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["492"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["118/19"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["31/10"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["56/20"]
+              },
+              {
+                "turoyo": "i=baladiye mšayaʕla zlamat mǧahze b-am=makkinat d-u=gāz",
+                "translations": [
+                  "ʻdie Stadtverwaltung schickte Männer, die mit Petroleumgeräten ausgerüstet warenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["1/35"]
+              },
+              {
+                "turoyo": "šqili u=maktūb də-mšayáʕxul-li",
+                "translations": [
+                  "‘ich habe den Brief, den Sie mir geschickt haben, erhalten’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["20/2"]
+              },
+              {
+                "turoyo": "l-ayko gd-əzzúx? – l-u=taǧər diḏi, l-u=rab-ayḏi, mšayáʕle-li s-i=aṯto",
+                "translations": [
+                  "‘Wohin willst du gehen? - Zu meinem Kaufmann, meinem Herrn; er hat mich zu [seiner] Frau geschickt’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["23/43"]
+              },
+              {
+                "turoyo": "məd-yatu Šahrzamān ʕal-u=kursi d-i=mamlaxṯo, mšayaʕle bəṯr-u=babo bəṯr-i=emo",
+                "translations": [
+                  "‘Als nun Schahrzamān sich auf den Thron des Reiches gesetzt hatte, schickte er nach seinem Vater und seiner Mutter’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/244"],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "gə-mšayaʕn-ux muklo kul mšəḥoyo harke kə-mšayəʕ ann=abnayḏe l-i=madrase d-i=ʕito gə-mšayaʕno l-Tərkiya l-u=bayto d-ak=kallawayḏi maytən-ne d-qudrət mšayʕat-li tloṯo aw arbʕo=šăritat arbaʕmo aw azyad kallat ġắlabe gəd-owe kayso",
+            "translations": [
+              "ich werde dir Essen schicken",
+              "‘jeder Christ hier schickt seine Söhne in die Schule der Kirche’",
+              "dann schicke ich (Nachricht) in die Türkei, nach Hause, dass sie mir mein Geld bringen",
+              "‘wenn du mir drei oder vier Bänder und 400 Lire oder mehr schicken könntest, wäre es gut’"
+            ],
+            "references": ["493", "48/7", "11/77"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gə-mšayaʕn-ux muklo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich werde dir Essen schickenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "493"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "48/7"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kul mšəḥoyo harke kə-mšayəʕ ann=abnayḏe l-i=madrase d-i=ʕito "
+              },
+              {
+                "kind": "translation",
+                "value": "‘jeder Christ hier schickt seine Söhne in die Schule der Kirche’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/77"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " gə-mšayaʕno l-Tərkiya l-u=bayto d-ak=kallawayḏi maytən-ne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdann schicke ich (Nachricht) in die Türkei, nach Hause, dass sie mir mein Geld bringenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "EL 52"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-qudrət mšayʕat-li tloṯo aw arbʕo=šăritat"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " arbaʕmo aw azyad kallat ġắlabe gəd-owe kayso "
+              },
+              {
+                "kind": "translation",
+                "value": "‘wenn du mir drei oder vier Bänder und 400 Lire oder mehr schicken könntest, wäre es gut’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "14/12"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "gə-mšayaʕn-ux muklo ʻich werde dir Essen schickenʼ; 493; 48/7; kul mšəḥoyo harke kə-mšayəʕ ann=abnayḏe l-i=madrase d-i=ʕito ‘jeder Christ hier schickt seine Söhne in die Schule der Kirche’; 11/77; gə-mšayaʕno l-Tərkiya l-u=bayto d-ak=kallawayḏi maytən-ne ʻdann schicke ich (Nachricht) in die Türkei, nach Hause, dass sie mir mein Geld bringenʼ; EL 52; d-qudrət mšayʕat-li tloṯo aw arbʕo=šăritat, arbaʕmo aw azyad kallat ġắlabe gəd-owe kayso ‘wenn du mir drei oder vier Bänder und 400 Lire oder mehr schicken könntest, wäre es gut’; 14/12;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "gə-mšayaʕn-ux muklo",
+                "translations": ["ʻich werde dir Essen schickenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["493"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["48/7"]
+              },
+              {
+                "turoyo": "kul mšəḥoyo harke kə-mšayəʕ ann=abnayḏe l-i=madrase d-i=ʕito",
+                "translations": [
+                  "‘jeder Christ hier schickt seine Söhne in die Schule der Kirche’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/77"]
+              },
+              {
+                "turoyo": "gə-mšayaʕno l-Tərkiya l-u=bayto d-ak=kallawayḏi maytən-ne",
+                "translations": [
+                  "ʻdann schicke ich (Nachricht) in die Türkei, nach Hause, dass sie mir mein Geld bringenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["EL 52"]
+              },
+              {
+                "turoyo": "d-qudrət mšayʕat-li tloṯo aw arbʕo=šăritat, arbaʕmo aw azyad kallat ġắlabe gəd-owe kayso",
+                "translations": [
+                  "‘wenn du mir drei oder vier Bänder und 400 Lire oder mehr schicken könntest, wäre es gut’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["14/12"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "áydarbo mšayʕát-wa-lle l-u=qaṭlayḏi",
+            "translations": ["was musstest du sie schicken, mich zu töten"],
+            "references": ["493", "111/101", "77/23"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "áydarbo mšayʕát-wa-lle l-u=qaṭlayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwas musstest du sie schicken, mich zu tötenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "493"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "111/101"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "77/23"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "áydarbo mšayʕát-wa-lle l-u=qaṭlayḏi ʻwas musstest du sie schicken, mich zu tötenʼ; 493; 111/101; 77/23;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "áydarbo mšayʕát-wa-lle l-u=qaṭlayḏi",
+                "translations": [
+                  "ʻwas musstest du sie schicken, mich zu tötenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["493"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["111/101"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["77/23"]
+              }
+            ]
           }
         ],
         "Part act.": [
           {
+            "turoyo": "u=mšayʕono d-u=năṣīb-wa",
+            "translations": [
+              "Gott war der Sender dessen, was dem Menschen beschert wird"
+            ],
+            "references": ["493", "65/456", "463"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=mšayʕono d-u=năṣīb-wa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻGott war der Sender dessen, was dem Menschen beschert wirdʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "493"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/456"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "463"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=mšayʕono d-u=năṣīb-wa ʻGott war der Sender dessen, was dem Menschen beschert wirdʼ; 493; 65/456, 463;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=mšayʕono d-u=năṣīb-wa",
+                "translations": [
+                  "ʻGott war der Sender dessen, was dem Menschen beschert wirdʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["493"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["65/456", "463"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "izux mšayaʕ u=abr-ayḏux mšayʕ arbʕo=ʕafriṭat mamṭayy-e",
+            "translations": [
+              "geh und schicke deinen Sohn",
+              "‘Schicke vier dienstbare Geister, laß ihn holen’"
+            ],
+            "references": ["LB 265", "28/111"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "izux mšayaʕ u=abr-ayḏux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻgeh und schicke deinen Sohnʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 265"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mšayʕ arbʕo=ʕafriṭat"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mamṭayy-e "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Schicke vier dienstbare Geister, laß ihn holen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "28/111"
+              }
+            ],
             "text": "izux mšayaʕ u=abr-ayḏux ʻgeh und schicke deinen Sohnʼ LB 265; mšayʕ arbʕo=ʕafriṭat, mamṭayy-e ‘Schicke vier dienstbare Geister, laß ihn holen’; 28/111",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "izux mšayaʕ u=abr-ayḏux",
+                "translations": ["ʻgeh und schicke deinen Sohnʼ"],
+                "references": ["LB 265"]
+              },
+              {
+                "turoyo": "mšayʕ arbʕo=ʕafriṭat, mamṭayy-e",
+                "translations": [
+                  "‘Schicke vier dienstbare Geister, laß ihn holen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["28/111"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
-            "text": "šiyoʕo; 493; šeyoʕo; 493;",
-            "turoyo": "",
+            "turoyo": "šiyoʕo šeyoʕo",
             "translations": [],
-            "references": []
+            "references": ["493", "493"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "šiyoʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "493"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " šeyoʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "493"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "šiyoʕo; 493; šeyoʕo; 493;",
+            "segments": [
+              {
+                "turoyo": "šiyoʕo",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["493"]
+              },
+              {
+                "turoyo": "šeyoʕo",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["493"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "schicken, schicken nach (bəṯr);"
-  ],
+  "idioms": ["schicken, schicken nach (bəṯr);"],
   "uncertain": false
 }

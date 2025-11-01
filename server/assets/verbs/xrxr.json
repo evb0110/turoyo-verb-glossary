@@ -14,17 +14,81 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mxarxalle",
-        "mxarxər"
-      ],
+      "forms": ["mxarxalle", "mxarxər"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "kə-mxarxər b-gawe b-sapṯo d-u=baḥar ʕal ak=kefe ftəḥle feme prs",
+            "translations": [
+              "er rieb sich mit dem Bauche am Ufer an den Steinen und sperrte das Maul auf"
+            ],
+            "references": ["802", "57/36"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kə-mxarxər b-gawe b-sapṯo d-u=baḥar ʕal ak=kefe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ftəḥle feme "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer rieb sich mit dem Bauche am Ufer an den Steinen und sperrte das Maul aufʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "802"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "57/36"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kə-mxarxər b-gawe b-sapṯo d-u=baḥar ʕal ak=kefe, ftəḥle feme ʻer rieb sich mit dem Bauche am Ufer an den Steinen und sperrte das Maul aufʼ; 802; prs 57/36;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kə-mxarxər b-gawe b-sapṯo d-u=baḥar ʕal ak=kefe, ftəḥle feme",
+                "translations": [
+                  "ʻer rieb sich mit dem Bauche am Ufer an den Steinen und sperrte das Maul aufʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["802"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["57/36"]
+              }
+            ]
           }
         ]
       }

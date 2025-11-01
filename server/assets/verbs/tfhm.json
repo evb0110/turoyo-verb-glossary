@@ -14,32 +14,175 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mətfahamle",
-        "mətfahəm"
-      ],
+      "forms": ["mətfahamle", "mətfahəm"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mətfahamme azzé u=muxtar d-i=qriṯo w-azzeyo tre=noše ḥrene aʕme mətfahamme",
+            "translations": [
+              "sie verständigten sich",
+              "‘Da ging der Schuhheiß des Dorfes und zwei andere Männer mit ihm, und sie verständigten sich’"
+            ],
+            "references": ["807", "32/22"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mətfahamme "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie verständigten sichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "807"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " azzé u=muxtar d-i=qriṯo w-azzeyo tre=noše ḥrene aʕme"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mətfahamme "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Da ging der Schuhheiß des Dorfes und zwei andere Männer mit ihm, und sie verständigten sich’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "32/22"
+              }
+            ],
             "text": "mətfahamme ʻsie verständigten sichʼ; 807; azzé u=muxtar d-i=qriṯo w-azzeyo tre=noše ḥrene aʕme, mətfahamme ‘Da ging der Schuhheiß des Dorfes und zwei andere Männer mit ihm, und sie verständigten sich’; 32/22",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mətfahamme",
+                "translations": ["ʻsie verständigten sichʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["807"]
+              },
+              {
+                "turoyo": "azzé u=muxtar d-i=qriṯo w-azzeyo tre=noše ḥrene aʕme, mətfahamme",
+                "translations": [
+                  "‘Da ging der Schuhheiß des Dorfes und zwei andere Männer mit ihm, und sie verständigten sich’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["32/22"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "mšadérul-lan tre=zlamat l-gabayna d-aḥna w-hənnək mətfahmina ʕam ḥḏoḏe",
+            "translations": [
+              "schickt zwei Männer zu uns, damit wir und sie uns miteinander verständigen"
+            ],
+            "references": ["807", "32/21"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mšadérul-lan tre=zlamat l-gabayna"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-aḥna w-hənnək mətfahmina ʕam ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻschickt zwei Männer zu uns, damit wir und sie uns miteinander verständigenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "807"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "32/21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mšadérul-lan tre=zlamat l-gabayna, d-aḥna w-hənnək mətfahmina ʕam ḥḏoḏe ʻschickt zwei Männer zu uns, damit wir und sie uns miteinander verständigenʼ; 807; 32/21;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mšadérul-lan tre=zlamat l-gabayna, d-aḥna w-hənnək mətfahmina ʕam ḥḏoḏe",
+                "translations": [
+                  "ʻschickt zwei Männer zu uns, damit wir und sie uns miteinander verständigenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["807"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["32/21"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sich verständigen;"
-  ],
+  "idioms": ["sich verständigen;"],
   "uncertain": false
 }

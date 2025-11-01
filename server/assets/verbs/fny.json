@@ -14,24 +14,69 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "fnele",
-        "fone"
-      ],
+      "forms": ["fnele", "fone"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-fone-lux b-kul šafluṯo ono mən flān qriṯo",
+            "translations": [
+              "antwortet er dir voller Bescheidenheit: Ich bin aus dem und dem Dorf!"
+            ],
+            "references": ["DD 390/9"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-fone-lux b-kul šafluṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono mən flān qriṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻantwortet er dir voller Bescheidenheit: Ich bin aus dem und dem Dorf!ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "DD 390/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-fone-lux b-kul šafluṯo, ono mən flān qriṯo ʻantwortet er dir voller Bescheidenheit: Ich bin aus dem und dem Dorf!ʼ; DD 390/9;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-fone-lux b-kul šafluṯo, ono mən flān qriṯo",
+                "translations": [
+                  "ʻantwortet er dir voller Bescheidenheit: Ich bin aus dem und dem Dorf!ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["DD 390/9"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "antworten;"
-  ],
+  "idioms": ["antworten;"],
   "uncertain": false
 }

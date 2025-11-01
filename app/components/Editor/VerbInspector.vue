@@ -160,11 +160,20 @@ function downloadPatch() {
 }
 
 // Simple helpers to edit arrays
+const idiomModalOpen = ref(false)
+const idiomText = ref('')
+
 function addIdiom() {
-    const v = prompt('Add idiom text')
-    if (!v) return
+    idiomText.value = ''
+    idiomModalOpen.value = true
+}
+
+function confirmAddIdiom() {
+    const v = idiomText.value.trim()
+    if (!v) { idiomModalOpen.value = false; return }
     if (!draft.value.idioms) draft.value.idioms = []
     draft.value.idioms.push(v)
+    idiomModalOpen.value = false
 }
 
 function removeIdiom(idx: number) {
@@ -587,5 +596,20 @@ function removeExample(g: IEditableConjugationGroup, eIdx: number) {
         <div v-if="hasHardErrors" class="rounded border border-red-300 bg-red-50 p-3 text-sm text-red-700">
             Please resolve errors: non-empty stem labels and unique, non-empty group names per stem.
         </div>
+
+        <UModal v-model:open="idiomModalOpen" title="Add idiom" :ui="{ content: 'sm:max-w-md' }">
+            <template #body>
+                <div class="space-y-3">
+                    <p class="text-sm text-muted">Enter idiom text</p>
+                    <UTextarea v-model="idiomText" autofocus />
+                </div>
+            </template>
+            <template #footer>
+                <div class="flex justify-end gap-2">
+                    <UButton variant="ghost" @click="idiomModalOpen = false">Cancel</UButton>
+                    <UButton color="primary" @click="confirmAddIdiom">Add</UButton>
+                </div>
+            </template>
+        </UModal>
     </div>
 </template>

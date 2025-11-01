@@ -440,6 +440,14 @@ class FixedDocxParser:
         curly = re.findall(r'ʻ(.+?)ʼ', cell_text, re.DOTALL)
         translations.extend([self.normalize_whitespace(t) for t in curly if len(t.strip()) > 3])
 
+        # Pattern 1b: Typographic single quotes ‘ … ’ (U+2018/U+2019)
+        curly_single = re.findall(r'‘(.+?)’', cell_text, re.DOTALL)
+        translations.extend([self.normalize_whitespace(t) for t in curly_single if len(t.strip()) > 3])
+
+        # Pattern 1c: Typographic double quotes “ … ” (U+201C/U+201D)
+        curly_double = re.findall(r'“(.+?)”', cell_text, re.DOTALL)
+        translations.extend([self.normalize_whitespace(t) for t in curly_double if len(t.strip()) > 3])
+
         # Pattern 2: Straight single quotes '...' (U+0027)
         # Use non-greedy and require substantial length to avoid Turoyo contractions
         straight_single = re.findall(r'\'(.{15,}?)\'', cell_text, re.DOTALL)
@@ -465,6 +473,83 @@ class FixedDocxParser:
                 unique_translations.append(t_clean)
 
         return unique_translations
+
+    def _split_raw_to_tokens(self, raw: str):
+        """Split non-italic raw text into translation/ref/note/punct/text tokens
+        while preserving exact character content and order.
+        Returns list of dicts: { 'kind': str, 'value': str }
+        """
+        tokens = []
+        i = 0
+        n = len(raw)
+
+        def push(kind, value):
+            if not value:
+                return
+            tokens.append({'kind': kind, 'value': value})
+
+        # Quote pairs we recognize
+        quote_pairs = {
+            'ʻ': 'ʼ',
+            '‘': '’',
+            '“': '”',
+            "'": "'",
+            '"': '"',
+        }
+
+        ref_regex = re.compile(r'(?:[A-Z]{1,4}\s*\d+(?:/\d+)?|\d+(?:/\d+)?)(?=(?:[^\w]|$))')
+
+        while i < n:
+            c = raw[i]
+
+            # Translation in quotes
+            if c in quote_pairs:
+                close = quote_pairs[c]
+                j = raw.find(close, i + 1)
+                if j != -1:
+                    push('translation', raw[i:j+1])
+                    i = j + 1
+                    continue
+                # No closing - treat as text
+                push('text', c)
+                i += 1
+                continue
+
+            # Note [ ... ]
+            if c == '[':
+                j = raw.find(']', i + 1)
+                if j != -1:
+                    push('note', raw[i:j+1])
+                    i = j + 1
+                    continue
+                push('text', c)
+                i += 1
+                continue
+
+            # Reference
+            m = ref_regex.match(raw, i)
+            if m:
+                push('ref', m.group(0))
+                i = m.end()
+                continue
+
+            # Punctuation we want explicit
+            if c in ';,:()':
+                push('punct', c)
+                i += 1
+                continue
+
+            # Whitespace or other text - accumulate until next special
+            j = i + 1
+            while j < n:
+                cj = raw[j]
+                if (cj in quote_pairs) or cj == '[' or cj in ';,:()' or ref_regex.match(raw, j):
+                    break
+                j += 1
+            push('text', raw[i:j])
+            i = j
+
+        return tokens
 
     def is_valid_translation(self, text):
         """Filter out references, notes, and non-translation text"""
@@ -675,16 +760,18 @@ class FixedDocxParser:
 
     def parse_table_cell(self, cell):
         """
-        Extract table cell content verbatim to preserve all data.
-
-        SIMPLE APPROACH: Save entire paragraph text without parsing.
-        This prevents the catastrophic data loss from run-based splitting.
+        Extract examples from a DOCX table cell using robust heuristics:
+        - Prefer italic runs as Turoyo when present
+        - Otherwise, detect Turoyo via character heuristics
+        - Extract translations from quoted segments
+        - Extract simple numeric references
+        - Merge consecutive Turoyo/translation-only lines
         """
         examples = []
 
         for para in cell.paragraphs:
-            full_text = para.text.strip()
-
+            para_text = para.text
+            full_text = para_text.strip()
             if not full_text:
                 continue
 
@@ -692,14 +779,59 @@ class FixedDocxParser:
             if re.match(r'^[\d\s;/,]+$', full_text):
                 continue
 
-            # Save the entire paragraph verbatim
-            example = {
-                'text': full_text,
-                'turoyo': '',
-                'translations': [],
-                'references': []
-            }
-            examples.append(example)
+            # Split paragraph into numbered items when present (e.g., "1) ... 2) ...")
+            # Find all occurrences of "N) " and build segments
+            indices = []
+            for m in re.finditer(r'(?:^|\s)(\d+)\)\s', para_text):
+                # Start at the digit position (exclude leading whitespace)
+                indices.append(m.start(1))
+            if not indices:
+                indices = [0]
+            indices.append(len(para_text))
+
+            for i in range(len(indices) - 1):
+                start = indices[i]
+                end = indices[i + 1]
+                if start >= end:
+                    continue
+                item_plain = para_text[start:end]
+                item_plain_norm = self.normalize_whitespace(item_plain)
+
+                # Tokenize by content only (don’t rely on italics)
+                tokens = self._split_raw_to_tokens(item_plain)
+                # Convert plain text tokens to turoyo by default
+                for tkn in tokens:
+                    if tkn.get('kind') == 'text':
+                        tkn['kind'] = 'turoyo'
+
+                # Extract derived fields for search/filter
+                translations = [
+                    self.normalize_whitespace(tok['value'].strip('ʻʼ“”"\''))
+                    for tok in tokens if tok['kind'] == 'translation'
+                ]
+
+                # no italic-based fallback; turoyo will be formed from non-translation tokens
+
+                # References: capture numbered refs and code+number refs (e.g., LB 147, LuF 286/44)
+                ref_pattern = r'(?:[A-Z]{1,4}\s*\d+(?:/\d+)?|\d+(?:/\d+)?)(?=(?:[^\w]|$))'
+                references = re.findall(ref_pattern, item_plain)
+
+                # Join all turoyo tokens for a searchable turoyo_text snapshot
+                turoyo_text = self.normalize_whitespace(''.join(
+                    (tok['value'] for tok in tokens if tok['kind'] == 'turoyo')
+                )) if tokens else ''
+
+                if turoyo_text or translations or tokens:
+                    examples.append({
+                        'turoyo': turoyo_text,
+                        'translations': translations,
+                        'references': references[:3] if references else [],
+                        'tokens': tokens,
+                        'text': self.normalize_whitespace(item_plain),
+                    })
+
+        # Merge split Turoyo/translation pairs
+        examples = self.merge_split_examples(examples)
 
         return examples
 

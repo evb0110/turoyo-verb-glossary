@@ -12,10 +12,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mtaqalle",
-        "mtaqən"
-      ],
+      "forms": ["mtaqalle", "mtaqən"],
       "conjugations": {}
     },
     {
@@ -24,17 +21,53 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mtaqnina b-u=ṭino",
+            "translations": ["wir sind im Schmutz stecken geblieben"],
+            "references": ["264"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mtaqnina b-u=ṭino "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir sind im Schmutz stecken gebliebenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "264"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mtaqnina b-u=ṭino ʻwir sind im Schmutz stecken gebliebenʼ; 264;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mtaqnina b-u=ṭino",
+                "translations": ["ʻwir sind im Schmutz stecken gebliebenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["264"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "stecken;"
-  ],
+  "idioms": ["stecken;"],
   "uncertain": false
 }

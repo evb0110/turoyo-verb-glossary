@@ -14,24 +14,94 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mxažele",
-        "mxažəl"
-      ],
+      "forms": ["mxažele", "mxažəl"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "abri madām ki g-quṭlat-li w gə-mxažlát-li qm-u=ʕulm-ano kule šqu-lox u=tālano",
+            "translations": [
+              "mein Sohn, wenn du mich denn töten und mich vor all diesen Leuten beschämen willst, so nimm all dies geraubte Vieh"
+            ],
+            "references": ["309", "29/450"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "abri madām ki g-quṭlat-li"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w gə-mxažlát-li qm-u=ʕulm-ano kule"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šqu-lox u=tālano "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmein Sohn, wenn du mich denn töten und mich vor all diesen Leuten beschämen willst, so nimm all dies geraubte Viehʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "309"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/450"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "abri madām ki g-quṭlat-li, w gə-mxažlát-li qm-u=ʕulm-ano kule, šqu-lox u=tālano ʻmein Sohn, wenn du mich denn töten und mich vor all diesen Leuten beschämen willst, so nimm all dies geraubte Viehʼ; 309; 29/450;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "abri madām ki g-quṭlat-li, w gə-mxažlát-li qm-u=ʕulm-ano kule, šqu-lox u=tālano",
+                "translations": [
+                  "ʻmein Sohn, wenn du mich denn töten und mich vor all diesen Leuten beschämen willst, so nimm all dies geraubte Viehʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["309"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/450"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "beschämen;"
-  ],
+  "idioms": ["beschämen;"],
   "uncertain": false
 }

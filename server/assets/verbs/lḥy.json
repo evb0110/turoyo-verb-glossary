@@ -14,17 +14,52 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "lḥele",
-        "loḥe"
-      ],
+      "forms": ["lḥele", "loḥe"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "l-u=darmono lḥele i=boqo",
+            "translations": ["das Mittel hat die Wanzen vernichtet"],
+            "references": ["332"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-u=darmono lḥele i=boqo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Mittel hat die Wanzen vernichtetʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "332"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "l-u=darmono lḥele i=boqo ʻdas Mittel hat die Wanzen vernichtetʼ; 332;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "l-u=darmono lḥele i=boqo",
+                "translations": ["ʻdas Mittel hat die Wanzen vernichtetʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["332"]
+              }
+            ]
           }
         ]
       }
@@ -35,17 +70,53 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "mede d-məkṯu lə=k-məlḥe",
+            "translations": ["was geschrieben ist, wird nicht gelöscht"],
+            "references": ["DD 393/13"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mede d-məkṯu lə=k-məlḥe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwas geschrieben ist, wird nicht gelöschtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "DD 393/13"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mede d-məkṯu lə=k-məlḥe ʻwas geschrieben ist, wird nicht gelöschtʼ; DD 393/13;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mede d-məkṯu lə=k-məlḥe",
+                "translations": ["ʻwas geschrieben ist, wird nicht gelöschtʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["DD 393/13"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "vernichten;"
-  ],
+  "idioms": ["vernichten;"],
   "uncertain": false
 }

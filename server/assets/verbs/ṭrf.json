@@ -14,33 +14,62 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ṭrəfle",
-        "ṭorəf"
-      ],
+      "forms": ["ṭrəfle", "ṭorəf"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ṭrəfle ʕayni",
+            "translations": ["er hat mir etwas ins Auge gestossen"],
+            "references": ["71"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṭrəfle ʕayni "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hat mir etwas ins Auge gestossenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "71"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ṭrəfle ʕayni ʻer hat mir etwas ins Auge gestossenʼ; 71;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ṭrəfle ʕayni",
+                "translations": ["ʻer hat mir etwas ins Auge gestossenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["71"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": [
-        "mṭarafle",
-        "mṭarəf"
-      ],
+      "forms": ["mṭarafle", "mṭarəf"],
       "conjugations": {}
     }
   ],
-  "idioms": [
-    "stossen;",
-    "die Haare schneiden; НЕТ ПРИМЕРОВ"
-  ],
+  "idioms": ["stossen;", "die Haare schneiden; НЕТ ПРИМЕРОВ"],
   "uncertain": false
 }

@@ -11,25 +11,66 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "bčəqle",
-        "bočəq"
-      ],
+      "forms": ["bčəqle", "bočəq"],
       "conjugations": {}
     },
     {
       "stem": "II",
-      "forms": [
-        "mbačaqle",
-        "mbačəq"
-      ],
+      "forms": ["mbačaqle", "mbačəq"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mbačaqle Why tröpfeln?",
+            "translations": ["es fing an zu tröpfeln"],
+            "references": ["227"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mbačaqle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes fing an zu tröpfelnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "227"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Why tröpfeln?"
+              }
+            ],
             "text": "mbačaqle ʻes fing an zu tröpfelnʼ; 227; Why tröpfeln?",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mbačaqle",
+                "translations": ["ʻes fing an zu tröpfelnʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["227"]
+              },
+              {
+                "turoyo": "Why tröpfeln?",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }

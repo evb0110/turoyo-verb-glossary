@@ -14,17 +14,69 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "məstaqbele",
-        "məstaqbəl"
-      ],
+      "forms": ["məstaqbele", "məstaqbəl"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "l-u=šulṭono məstaqbele u=ʕmiro ġắlabe ṭowo",
+            "translations": ["the sultan received the emir very well"],
+            "references": ["810", "36/79"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-u=šulṭono məstaqbele u=ʕmiro ġắlabe ṭowo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻthe sultan received the emir very wellʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "810"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/79"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "l-u=šulṭono məstaqbele u=ʕmiro ġắlabe ṭowo ʻthe sultan received the emir very wellʼ; 810; 36/79;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "l-u=šulṭono məstaqbele u=ʕmiro ġắlabe ṭowo",
+                "translations": ["ʻthe sultan received the emir very wellʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["810"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["36/79"]
+              }
+            ]
           }
         ]
       }
@@ -35,17 +87,90 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "kuhno rabo i=naqqa də-k-zoyər ḥa bilxaṣṣa b-yawme d-am=marasəm k-mitəstaqbəl u=kuhno ḥasyo aw faṭəryarxo b-aq=qole",
+            "translations": [
+              "wenn ein hoher Priester jemanden besonders bei feierlichen Gelegenheiten besucht, man empfängt ihn, sei er Priester, Metropolit oder Patriarch, mit geistlichen Liedern"
+            ],
+            "references": ["810", "66/279"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kuhno rabo i=naqqa də-k-zoyər ḥa bilxaṣṣa b-yawme d-am=marasəm"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-mitəstaqbəl u=kuhno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥasyo aw faṭəryarxo b-aq=qole "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn ein hoher Priester jemanden besonders bei feierlichen Gelegenheiten besucht, man empfängt ihn, sei er Priester, Metropolit oder Patriarch, mit geistlichen Liedernʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "810"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "66/279"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kuhno rabo i=naqqa də-k-zoyər ḥa bilxaṣṣa b-yawme d-am=marasəm, k-mitəstaqbəl u=kuhno, ḥasyo aw faṭəryarxo b-aq=qole ʻwenn ein hoher Priester jemanden besonders bei feierlichen Gelegenheiten besucht, man empfängt ihn, sei er Priester, Metropolit oder Patriarch, mit geistlichen Liedernʼ; 810; 66/279;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kuhno rabo i=naqqa də-k-zoyər ḥa bilxaṣṣa b-yawme d-am=marasəm, k-mitəstaqbəl u=kuhno, ḥasyo aw faṭəryarxo b-aq=qole",
+                "translations": [
+                  "ʻwenn ein hoher Priester jemanden besonders bei feierlichen Gelegenheiten besucht, man empfängt ihn, sei er Priester, Metropolit oder Patriarch, mit geistlichen Liedernʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["810"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["66/279"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "empfangen;"
-  ],
+  "idioms": ["empfangen;"],
   "uncertain": false
 }

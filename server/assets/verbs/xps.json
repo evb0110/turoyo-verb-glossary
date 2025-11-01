@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "xapəs",
-        "xopəs"
-      ],
+      "forms": ["xapəs", "xopəs"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "xapiso raġli",
+            "translations": ["ich brach mit dem Fuss durch (den Boden)"],
+            "references": ["88"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "xapiso raġli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich brach mit dem Fuss durch (den Boden)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "88"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "xapiso raġli ʻich brach mit dem Fuss durch (den Boden)ʼ; 88;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "xapiso raġli",
+                "translations": ["ʻich brach mit dem Fuss durch (den Boden)ʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["88"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(durch)brechen;"
-  ],
+  "idioms": ["(durch)brechen;"],
   "uncertain": false
 }

@@ -14,25 +14,110 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mvayaʕle",
-        "mvayəʕ"
-      ],
+      "forms": ["mvayaʕle", "mvayəʕ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "i=kačke lat-wa yaləfto d-nufqo l-larwal <…> mvayaʕla u=darbo",
+            "translations": [
+              "‘Das Mädchen ist nicht gewohnt, auszugehen; <…> sie verlor den Weg’"
+            ],
+            "references": ["26/143"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=kačke lat-wa yaləfto d-nufqo l-larwal <…> mvayaʕla u=darbo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Das Mädchen ist nicht gewohnt, auszugehen; <…> sie verlor den Weg’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/143"
+              }
+            ],
             "text": "i=kačke lat-wa yaləfto d-nufqo l-larwal <…> mvayaʕla u=darbo ‘Das Mädchen ist nicht gewohnt, auszugehen; <…> sie verlor den Weg’; 26/143",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=kačke lat-wa yaləfto d-nufqo l-larwal <…> mvayaʕla u=darbo",
+                "translations": [
+                  "‘Das Mädchen ist nicht gewohnt, auszugehen; <…> sie verlor den Weg’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["26/143"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "bas aġlab d-am=məsken-ani lo=k-mitaniḥi w kə-mvayʕi ʕaynoṯayye",
+            "translations": [
+              "aber die meisten dieser armen Menschen sind unheilbar und verlieren ihr Augen(licht) (für immer)"
+            ],
+            "references": ["3/27"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bas aġlab d-am=məsken-ani lo=k-mitaniḥi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w kə-mvayʕi ʕaynoṯayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻaber die meisten dieser armen Menschen sind unheilbar und verlieren ihr Augen(licht) (für immer)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "3/27"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "bas aġlab d-am=məsken-ani lo=k-mitaniḥi, w kə-mvayʕi ʕaynoṯayye ʻaber die meisten dieser armen Menschen sind unheilbar und verlieren ihr Augen(licht) (für immer)ʼ; 3/27;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "bas aġlab d-am=məsken-ani lo=k-mitaniḥi, w kə-mvayʕi ʕaynoṯayye",
+                "translations": [
+                  "ʻaber die meisten dieser armen Menschen sind unheilbar und verlieren ihr Augen(licht) (für immer)ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["3/27"]
+              }
+            ]
           }
         ]
       }
@@ -43,18 +128,353 @@
       "conjugations": {
         "Preterit": [
           {
-            "text": "1) tmonaḥṣar=əšne mvayəʕ b-i=ġərbe ʻvor achtzehn Jahren ist er in der Fremde verloren gegangenʼ; 489; 29/346; ko-mwalwəl,  k-moḥe ʕal ṣadre, k-omər: «aḥuni, mvayəʕ!» ‘Er jammerte, schlug sich an die Brust und sprach: “Mein Bruder ist verloren gegangen” ’; 24/281 [MT]; uno, kət-wo-li ṭaṣe, mvayʕo ‘Ich hatte eine Schale, die ist verloren gegangen’; 25/17; ʕal  baxti mvayʕono ‘Bei meiner Ehre, ich habe mich verirrt’; 26/148",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "tmonaḥṣar=əšne mvayəʕ b-i=ġərbe ko-mwalwəl k-moḥe ʕal ṣadre k-omər «aḥuni mvayəʕ!» uno kət-wo-li ṭaṣe mvayʕo ʕal baxti mvayʕono",
+            "translations": [
+              "vor achtzehn Jahren ist er in der Fremde verloren gegangen",
+              "‘Er jammerte, schlug sich an die Brust und sprach: “Mein Bruder ist verloren gegangen” ’",
+              "‘Ich hatte eine Schale, die ist verloren gegangen’",
+              "‘Bei meiner Ehre, ich habe mich verirrt’"
+            ],
+            "references": ["1", "489", "29/346"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " tmonaḥṣar=əšne mvayəʕ b-i=ġərbe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻvor achtzehn Jahren ist er in der Fremde verloren gegangenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "489"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/346"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-mwalwəl"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": "  k-moḥe ʕal ṣadre"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-omər"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " «aḥuni"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mvayəʕ!» "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er jammerte, schlug sich an die Brust und sprach: “Mein Bruder ist verloren gegangen” ’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/281"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " uno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kət-wo-li ṭaṣe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mvayʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Ich hatte eine Schale, die ist verloren gegangen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/17"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕal  baxti mvayʕono "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Bei meiner Ehre, ich habe mich verirrt’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/148"
+              }
+            ],
+            "text": "1) tmonaḥṣar=əšne mvayəʕ b-i=ġərbe ʻvor achtzehn Jahren ist er in der Fremde verloren gegangenʼ; 489; 29/346; ko-mwalwəl, k-moḥe ʕal ṣadre, k-omər: «aḥuni, mvayəʕ!» ‘Er jammerte, schlug sich an die Brust und sprach: “Mein Bruder ist verloren gegangen” ’; 24/281 [MT]; uno, kət-wo-li ṭaṣe, mvayʕo ‘Ich hatte eine Schale, die ist verloren gegangen’; 25/17; ʕal baxti mvayʕono ‘Bei meiner Ehre, ich habe mich verirrt’; 26/148",
+            "segments": [
+              {
+                "turoyo": ") tmonaḥṣar=əšne mvayəʕ b-i=ġərbe",
+                "translations": [
+                  "ʻvor achtzehn Jahren ist er in der Fremde verloren gegangenʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["489"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/346"]
+              },
+              {
+                "turoyo": "ko-mwalwəl, k-moḥe ʕal ṣadre, k-omər: «aḥuni, mvayəʕ!»",
+                "translations": [
+                  "‘Er jammerte, schlug sich an die Brust und sprach: “Mein Bruder ist verloren gegangen” ’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/281"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "uno, kət-wo-li ṭaṣe, mvayʕo",
+                "translations": [
+                  "‘Ich hatte eine Schale, die ist verloren gegangen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["25/17"]
+              },
+              {
+                "turoyo": "ʕal baxti mvayʕono",
+                "translations": ["‘Bei meiner Ehre, ich habe mich verirrt’"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["26/148"]
+              }
+            ]
           }
         ],
         "Part. Pass.": [
           {
+            "turoyo": "mede-ste lo=k-foyəš mvayʕo zlam hov d-lo qarʕo lo ʕayno lo dukṯo mene kule mvayʕo b-u=sawk-ayḏe",
+            "translations": [
+              "nichts bleibt verborgen",
+              "‘ein wilder Mann, bei dem weder Kopf, noch Augen, noch sonst etwas zu sehen war; er war ganz und gar in seinem Haar verschwunden’"
+            ],
+            "references": ["2", "489", "27/36"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mede-ste lo=k-foyəš mvayʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnichts bleibt verborgenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "489"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "27/36"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " zlam hov d-lo qarʕo lo ʕayno lo dukṯo mene"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kule mvayʕo b-u=sawk-ayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘ein wilder Mann, bei dem weder Kopf, noch Augen, noch sonst etwas zu sehen war; er war ganz und gar in seinem Haar verschwunden’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "27/38"
+              }
+            ],
             "text": "2) mede-ste lo=k-foyəš mvayʕo ʻnichts bleibt verborgenʼ; 489; 27/36; zlam hov d-lo qarʕo lo ʕayno lo dukṯo mene, kule mvayʕo b-u=sawk-ayḏe ‘ein wilder Mann, bei dem weder Kopf, noch Augen, noch sonst etwas zu sehen war; er war ganz und gar in seinem Haar verschwunden’; 27/38",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mede-ste lo=k-foyəš mvayʕo",
+                "translations": ["ʻnichts bleibt verborgenʼ"],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["489"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["27/36"]
+              },
+              {
+                "turoyo": "zlam hov d-lo qarʕo lo ʕayno lo dukṯo mene, kule mvayʕo b-u=sawk-ayḏe",
+                "translations": [
+                  "‘ein wilder Mann, bei dem weder Kopf, noch Augen, noch sonst etwas zu sehen war; er war ganz und gar in seinem Haar verschwunden’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["27/38"]
+              }
+            ]
           }
         ]
       }

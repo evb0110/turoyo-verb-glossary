@@ -14,41 +14,486 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mǧarable",
-        "mǧarəb"
-      ],
+      "forms": ["mǧarable", "mǧarəb"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "k-oḏəʕ aḏ̣=ḏ̣arb-ayḏe aq=qamoye m-šǝ́kəl-ne mǧarable meqəm",
+            "translations": [
+              "er wusste aus Erfahrung, welcher Art die früheren Streiche (des Scheichs) gewesen waren"
+            ],
+            "references": ["159", "30/127"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-oḏəʕ aḏ̣=ḏ̣arb-ayḏe aq=qamoye m-šǝ́kəl-ne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mǧarable meqəm "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wusste aus Erfahrung, welcher Art die früheren Streiche (des Scheichs) gewesen warenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "159"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/127"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "k-oḏəʕ aḏ̣=ḏ̣arb-ayḏe aq=qamoye m-šǝ́kəl-ne, mǧarable meqəm ʻer wusste aus Erfahrung, welcher Art die früheren Streiche (des Scheichs) gewesen warenʼ; 159; 30/127;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "k-oḏəʕ aḏ̣=ḏ̣arb-ayḏe aq=qamoye m-šǝ́kəl-ne, mǧarable meqəm",
+                "translations": [
+                  "ʻer wusste aus Erfahrung, welcher Art die früheren Streiche (des Scheichs) gewesen warenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["159"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["30/127"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "mən karwan d-ḥozən-ne lazəm u=karwan-ano d-oṯe w də-mǧarəb ruḥe b-i=xanǧar-ayo w bəṯṯər fōt ʕal u=darb ayḏe gə-mǧarabno disa ʕal u=naqw-ano d-manḥattal-li ele k-ubʕeno <…> d-əzzóx side w-mǧarbat-le w-maxəṣrat-le",
+            "translations": [
+              "wenn sie eine Karawane sahen, so mussten diese kommen und sich an dem Dolche versuchen, und dann durften sie ihres Weges weiterziehen",
+              "ich will mich an dieser Öffnung versuchen, durch die sie mich hinuntergebracht haben",
+              "‘ich will, dass du <…> zu ihm gehst, dich an ihm versuchst und ihn schädigst’"
+            ],
+            "references": ["164", "61/148", "LB 185"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mən karwan d-ḥozən-ne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lazəm u=karwan-ano d-oṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w də-mǧarəb ruḥe b-i=xanǧar-ayo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w bəṯṯər fōt ʕal u=darb ayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn sie eine Karawane sahen, so mussten diese kommen und sich an dem Dolche versuchen, und dann durften sie ihres Weges weiterziehenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "164"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "61/148"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " gə-mǧarabno disa ʕal u=naqw-ano d-manḥattal-li ele "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich will mich an dieser Öffnung versuchen, durch die sie mich hinuntergebracht habenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 185"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ubʕeno <…> d-əzzóx side w-mǧarbat-le w-maxəṣrat-le "
+              },
+              {
+                "kind": "translation",
+                "value": "‘ich will, dass du <…> zu ihm gehst, dich an ihm versuchst und ihn schädigst’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/32"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mən karwan d-ḥozən-ne, lazəm u=karwan-ano d-oṯe, w də-mǧarəb ruḥe b-i=xanǧar-ayo, w bəṯṯər fōt ʕal u=darb ayḏe ʻwenn sie eine Karawane sahen, so mussten diese kommen und sich an dem Dolche versuchen, und dann durften sie ihres Weges weiterziehenʼ; 164; 61/148; gə-mǧarabno disa ʕal u=naqw-ano d-manḥattal-li ele ʻich will mich an dieser Öffnung versuchen, durch die sie mich hinuntergebracht habenʼ; LB 185; k-ubʕeno <…> d-əzzóx side w-mǧarbat-le w-maxəṣrat-le ‘ich will, dass du <…> zu ihm gehst, dich an ihm versuchst und ihn schädigst’; 25/32;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mən karwan d-ḥozən-ne, lazəm u=karwan-ano d-oṯe, w də-mǧarəb ruḥe b-i=xanǧar-ayo, w bəṯṯər fōt ʕal u=darb ayḏe",
+                "translations": [
+                  "ʻwenn sie eine Karawane sahen, so mussten diese kommen und sich an dem Dolche versuchen, und dann durften sie ihres Weges weiterziehenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["164"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["61/148"]
+              },
+              {
+                "turoyo": "gə-mǧarabno disa ʕal u=naqw-ano d-manḥattal-li ele",
+                "translations": [
+                  "ʻich will mich an dieser Öffnung versuchen, durch die sie mich hinuntergebracht habenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 185"]
+              },
+              {
+                "turoyo": "k-ubʕeno <…> d-əzzóx side w-mǧarbat-le w-maxəṣrat-le",
+                "translations": [
+                  "‘ich will, dass du <…> zu ihm gehst, dich an ihm versuchst und ihn schädigst’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["25/32"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
-            "text": "ʕal aṭ=ṭuron-anək məblí-way-na-la, w eba, i=naqla d-mǧarbí-way-na u=mḥoyo, b-riše d-aṭ=ṭurone waxt d-u=talgo, moḥí-way-na ab=buġre, l-u=ilofo ʻwir transportierten sie (die Kanone) auf die Berge, und wenn wir das Schiessen übten, auf dem Gipfel der Berge, zur Zeit des Schnees, dann schossen wir mit ihr die Kugeln ab, zur Ausbildung’ JL 19.6.22;",
-            "turoyo": "",
+            "turoyo": "ʕal aṭ=ṭuron-anək məblí-way-na-la w eba i=naqla d-mǧarbí-way-na u=mḥoyo b-riše d-aṭ=ṭurone waxt d-u=talgo moḥí-way-na ab=buġre l-u=ilofo ʻwir transportierten sie die Kanone auf die Berge und wenn wir das Schiessen übten auf dem Gipfel der Berge zur Zeit des Schnees dann schossen wir mit ihr die Kugeln ab zur Ausbildung’ ..",
             "translations": [],
-            "references": []
+            "references": ["JL 19", "6", "22"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕal aṭ=ṭuron-anək məblí-way-na-la"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w eba"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naqla d-mǧarbí-way-na u=mḥoyo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-riše d-aṭ=ṭurone waxt d-u=talgo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " moḥí-way-na ab=buġre"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-u=ilofo "
+              },
+              {
+                "kind": "turoyo",
+                "value": "ʻ"
+              },
+              {
+                "kind": "turoyo",
+                "value": "wir transportierten sie "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "die Kanone"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " auf die Berge"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " und wenn wir das Schiessen übten"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " auf dem Gipfel der Berge"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " zur Zeit des Schnees"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " dann schossen wir mit ihr die Kugeln ab"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " zur Ausbildung’ "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 19"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "6"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "22"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ʕal aṭ=ṭuron-anək məblí-way-na-la, w eba, i=naqla d-mǧarbí-way-na u=mḥoyo, b-riše d-aṭ=ṭurone waxt d-u=talgo, moḥí-way-na ab=buġre, l-u=ilofo ʻwir transportierten sie (die Kanone) auf die Berge, und wenn wir das Schiessen übten, auf dem Gipfel der Berge, zur Zeit des Schnees, dann schossen wir mit ihr die Kugeln ab, zur Ausbildung’ JL 19.6.22;",
+            "segments": [
+              {
+                "turoyo": "ʕal aṭ=ṭuron-anək məblí-way-na-la, w eba, i=naqla d-mǧarbí-way-na u=mḥoyo, b-riše d-aṭ=ṭurone waxt d-u=talgo, moḥí-way-na ab=buġre, l-u=ilofo ʻwir transportierten sie (die Kanone) auf die Berge, und wenn wir das Schiessen übten, auf dem Gipfel der Berge, zur Zeit des Schnees, dann schossen wir mit ihr die Kugeln ab, zur Ausbildung’ ..",
+                "translations": [],
+                "references": ["JL 19", "6", "22"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "l-aḥunonux mǧarabbe ruḥaye w lə=qadiri d-gərši i=xanǧar hat-ste qum mǧaráb ruḥux w graš-a",
+            "translations": [
+              "deine Brüder haben sich daran versucht und haben den Dolch nicht herausziehen können; nun versuche du es auch und zieh ihn heraus!"
+            ],
+            "references": ["170", "61/167"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-aḥunonux mǧarabbe ruḥaye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w lə=qadiri d-gərši i=xanǧar"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hat-ste qum mǧaráb ruḥux"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w graš-a "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdeine Brüder haben sich daran versucht und haben den Dolch nicht herausziehen können; nun versuche du es auch und zieh ihn heraus!ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "170"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "61/167"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "l-aḥunonux mǧarabbe ruḥaye, w lə=qadiri d-gərši i=xanǧar, hat-ste qum mǧaráb ruḥux, w graš-a ʻdeine Brüder haben sich daran versucht und haben den Dolch nicht herausziehen können; nun versuche du es auch und zieh ihn heraus!ʼ; 170; 61/167;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "l-aḥunonux mǧarabbe ruḥaye, w lə=qadiri d-gərši i=xanǧar, hat-ste qum mǧaráb ruḥux, w graš-a",
+                "translations": [
+                  "ʻdeine Brüder haben sich daran versucht und haben den Dolch nicht herausziehen können; nun versuche du es auch und zieh ihn heraus!ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["170"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["61/167"]
+              }
+            ]
           }
         ]
       }
@@ -59,25 +504,143 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "ha ono rab mínux-no w mǧárbo-no ġắlabe",
+            "translations": ["ich bin älter als du und habe viel erfahren"],
+            "references": ["175", "83/39"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ha ono rab mínux-no"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mǧárbo-no ġắlabe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich bin älter als du und habe viel erfahrenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "175"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "83/39"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ha ono rab mínux-no, w mǧárbo-no ġắlabe ʻich bin älter als du und habe viel erfahrenʼ; 175; 83/39;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ha ono rab mínux-no, w mǧárbo-no ġắlabe",
+                "translations": [
+                  "ʻich bin älter als du und habe viel erfahrenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["175"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["83/39"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
+            "turoyo": "u=ǧerob-ano ko-mǧarbat-li?",
+            "translations": ["Do you want to try me?"],
+            "references": ["171", "36/137"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=ǧerob-ano ko-mǧarbat-li? "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻDo you want to try me?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "171"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/137"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=ǧerob-ano ko-mǧarbat-li? ʻDo you want to try me?ʼ; 171; 36/137;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=ǧerob-ano ko-mǧarbat-li?",
+                "translations": ["ʻDo you want to try me?ʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["171"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["36/137"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "versuchen, erfahren;"
-  ],
+  "idioms": ["versuchen, erfahren;"],
   "uncertain": false
 }

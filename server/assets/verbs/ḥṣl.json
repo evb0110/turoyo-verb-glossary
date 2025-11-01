@@ -14,25 +14,162 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ḥaṣəl",
-        "ḥoṣəl"
-      ],
+      "forms": ["ḥaṣəl", "ḥoṣəl"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "ʕaṣriye ko-məǧġoli aydarbo amṭalxu aydarbo u=ḥalw-awo ḥaṣilutu aʕle ‘In the evening people were talking",
+            "translations": [
+              "How did you bring it (the milk, m.) and how did you get it?"
+            ],
+            "references": ["75/348"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕaṣriye ko-məǧġoli aydarbo amṭalxu aydarbo u=ḥalw-awo ḥaṣilutu aʕle "
+              },
+              {
+                "kind": "turoyo",
+                "value": "‘"
+              },
+              {
+                "kind": "turoyo",
+                "value": "In the evening "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "people"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " were talking"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“How did you bring it (the milk, m.) and how did you get it?”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/348"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ʕaṣriye ko-məǧġoli aydarbo amṭalxu aydarbo u=ḥalw-awo ḥaṣilutu aʕle ‘In the evening (people) were talking: “How did you bring it (the milk, m.) and how did you get it?” 75/348;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ʕaṣriye ko-məǧġoli aydarbo amṭalxu aydarbo u=ḥalw-awo ḥaṣilutu aʕle ‘In the evening (people) were talking:",
+                "translations": [
+                  "“How did you bring it (the milk, m.) and how did you get it?”"
+                ],
+                "references": ["75/348"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "haṯe i=čaqan-aṯe d-kət-yo gaba lo malke w lo šulṭone lappe ḥəṣli aʕle -",
+            "translations": [
+              "diese Schale, die sie hat: weder Könige noch Sultane können in ihren Besitz gelangen"
+            ],
+            "references": ["296", "297", "78/170"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "haṯe i=čaqan-aṯe d-kət-yo gaba"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo malke w lo šulṭone lappe ḥəṣli aʕle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdiese Schale, die sie hat: weder Könige noch Sultane können in ihren Besitz gelangenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "296"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "297"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/170"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "haṯe i=čaqan-aṯe d-kət-yo gaba, lo malke w lo šulṭone lappe ḥəṣli aʕle ʻdiese Schale, die sie hat: weder Könige noch Sultane können in ihren Besitz gelangenʼ; 296-297; 78/170;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "haṯe i=čaqan-aṯe d-kət-yo gaba, lo malke w lo šulṭone lappe ḥəṣli aʕle",
+                "translations": [
+                  "ʻdiese Schale, die sie hat: weder Könige noch Sultane können in ihren Besitz gelangenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["296", "297"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["78/170"]
+              }
+            ]
           }
         ]
       }

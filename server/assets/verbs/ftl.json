@@ -14,50 +14,521 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "fatəl",
-        "fotəl"
-      ],
+      "forms": ["fatəl", "fotəl"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "u=ṭayro barəm w fatəl w daʕər w maḥatle ʕal qarʕe d-Ḥasan i=səsto fatilo barimo m-u=gab-ano w-m-ano səmla hawa maqəmla i=qyamto",
+            "translations": [
+              "der Vogel kreiste und flog herum, kam zurück und liess sich auf Ḥasan’s Kopfe nieder",
+              "‘The horse began running in circles, from one side (of the house) to another and (thus) created wind and raised tumult’"
+            ],
+            "references": ["87", "70/186", "78/181"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=ṭayro barəm w fatəl w daʕər"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w maḥatle ʕal qarʕe d-Ḥasan "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Vogel kreiste und flog herum, kam zurück und liess sich auf Ḥasan’s Kopfe niederʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "87"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70/186"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=səsto fatilo barimo m-u=gab-ano w-m-ano səmla hawa maqəmla i=qyamto "
+              },
+              {
+                "kind": "translation",
+                "value": "‘The horse began running in circles, from one side (of the house) to another and (thus) created wind and raised tumult’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/181"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=ṭayro barəm w fatəl w daʕər, w maḥatle ʕal qarʕe d-Ḥasan ʻder Vogel kreiste und flog herum, kam zurück und liess sich auf Ḥasan’s Kopfe niederʼ; 87; 70/186; i=səsto fatilo barimo m-u=gab-ano w-m-ano səmla hawa maqəmla i=qyamto ‘The horse began running in circles, from one side (of the house) to another and (thus) created wind and raised tumult’ 78/181;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=ṭayro barəm w fatəl w daʕər, w maḥatle ʕal qarʕe d-Ḥasan",
+                "translations": [
+                  "ʻder Vogel kreiste und flog herum, kam zurück und liess sich auf Ḥasan’s Kopfe niederʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["87"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["70/186"]
+              },
+              {
+                "turoyo": "i=səsto fatilo barimo m-u=gab-ano w-m-ano səmla hawa maqəmla i=qyamto",
+                "translations": [
+                  "‘The horse began running in circles, from one side (of the house) to another and (thus) created wind and raised tumult’"
+                ],
+                "references": ["78/181"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "ḥa g-folət bəṯr aq=qanyone, w u=tawr-awo b-u=fəlgo g-kole, yalifo d-kole b-dŭkṯe-yo, w hənnək fətli aʕle w hiye hedika g-mabrəm raġle, l-i=ḏ̣arbaṯṯe g-fotəl ʻeiner läuft hinter den Rindern her, und dieser Ochse steht in der Mitte, er ist es gewöhnt, stehenzubleiben; die andern gehen im Kreis um ihn herum und er dreht sich nur auf den Füssen  (wörtl.: dreht seine Füsse), er dreht sich nach ihrem Tempoʼ JL 13.12.7; i=kurke g-məḥyo ruḥa bayne qarʕe d-i=kurfo. w-hiya g-maltmo ruḥa i=kurfo, ko-zayʕo m-i=kurke, w-g-fətlo w-kəzzá g-ruhṭo l-čičə́k mənne ‘The hen threw herself on the head of the snake. And she, the snake, coiled up (she was afraid of the hen) then turned around and moved quicql towards one of the chicken’ JL 13.11.8-9; fayəš ko-fotəl ḥeḏər u=margo b-u=səsy-ayḏe ‘He began circling the pasture on his horse’ 73/39;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "ḥa g-folət bəṯr aq=qanyone w u=tawr-awo b-u=fəlgo g-kole yalifo d-kole b-dŭkṯe-yo w hənnək fətli aʕle w hiye hedika g-mabrəm raġle l-i=ḏ̣arbaṯṯe g-fotəl .. i=kurke g-məḥyo ruḥa bayne qarʕe d-i=kurfo. w-hiya g-maltmo ruḥa i=kurfo ko-zayʕo m-i=kurke w-g-fətlo w-kəzzá g-ruhṭo l-čičə́k mənne ..- fayəš ko-fotəl ḥeḏər u=margo b-u=səsy-ayḏe",
+            "translations": [
+              "einer läuft hinter den Rindern her, und dieser Ochse steht in der Mitte, er ist es gewöhnt, stehenzubleiben; die andern gehen im Kreis um ihn herum und er dreht sich nur auf den Füssen (wörtl.: dreht seine Füsse), er dreht sich nach ihrem Tempo",
+              "‘The hen threw herself on the head of the snake. And she, the snake, coiled up (she was afraid of the hen) then turned around and moved quicql towards one of the chicken’",
+              "‘He began circling the pasture on his horse’"
+            ],
+            "references": ["JL 13", "12", "7"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥa g-folət bəṯr aq=qanyone"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w u=tawr-awo b-u=fəlgo g-kole"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " yalifo d-kole b-dŭkṯe-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w hənnək fətli aʕle w hiye hedika g-mabrəm raġle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-i=ḏ̣arbaṯṯe g-fotəl "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻeiner läuft hinter den Rindern her, und dieser Ochse steht in der Mitte, er ist es gewöhnt, stehenzubleiben; die andern gehen im Kreis um ihn herum und er dreht sich nur auf den Füssen  (wörtl.: dreht seine Füsse), er dreht sich nach ihrem Tempoʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 13"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "12"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "7"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=kurke g-məḥyo ruḥa bayne qarʕe d-i=kurfo. w-hiya g-maltmo ruḥa i=kurfo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-zayʕo m-i=kurke"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-g-fətlo w-kəzzá g-ruhṭo l-čičə́k mənne "
+              },
+              {
+                "kind": "translation",
+                "value": "‘The hen threw herself on the head of the snake. And she, the snake, coiled up (she was afraid of the hen) then turned around and moved quicql towards one of the chicken’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 13"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "11"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "8"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " fayəš ko-fotəl ḥeḏər u=margo b-u=səsy-ayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘He began circling the pasture on his horse’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/39"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥa g-folət bəṯr aq=qanyone, w u=tawr-awo b-u=fəlgo g-kole, yalifo d-kole b-dŭkṯe-yo, w hənnək fətli aʕle w hiye hedika g-mabrəm raġle, l-i=ḏ̣arbaṯṯe g-fotəl ʻeiner läuft hinter den Rindern her, und dieser Ochse steht in der Mitte, er ist es gewöhnt, stehenzubleiben; die andern gehen im Kreis um ihn herum und er dreht sich nur auf den Füssen (wörtl.: dreht seine Füsse), er dreht sich nach ihrem Tempoʼ JL 13.12.7; i=kurke g-məḥyo ruḥa bayne qarʕe d-i=kurfo. w-hiya g-maltmo ruḥa i=kurfo, ko-zayʕo m-i=kurke, w-g-fətlo w-kəzzá g-ruhṭo l-čičə́k mənne ‘The hen threw herself on the head of the snake. And she, the snake, coiled up (she was afraid of the hen) then turned around and moved quicql towards one of the chicken’ JL 13.11.8-9; fayəš ko-fotəl ḥeḏər u=margo b-u=səsy-ayḏe ‘He began circling the pasture on his horse’ 73/39;",
+            "segments": [
+              {
+                "turoyo": "ḥa g-folət bəṯr aq=qanyone, w u=tawr-awo b-u=fəlgo g-kole, yalifo d-kole b-dŭkṯe-yo, w hənnək fətli aʕle w hiye hedika g-mabrəm raġle, l-i=ḏ̣arbaṯṯe g-fotəl ..",
+                "translations": [
+                  "ʻeiner läuft hinter den Rindern her, und dieser Ochse steht in der Mitte, er ist es gewöhnt, stehenzubleiben; die andern gehen im Kreis um ihn herum und er dreht sich nur auf den Füssen (wörtl.: dreht seine Füsse), er dreht sich nach ihrem Tempoʼ"
+                ],
+                "references": ["JL 13", "12", "7"]
+              },
+              {
+                "turoyo": "i=kurke g-məḥyo ruḥa bayne qarʕe d-i=kurfo. w-hiya g-maltmo ruḥa i=kurfo, ko-zayʕo m-i=kurke, w-g-fətlo w-kəzzá g-ruhṭo l-čičə́k mənne ..-",
+                "translations": [
+                  "‘The hen threw herself on the head of the snake. And she, the snake, coiled up (she was afraid of the hen) then turned around and moved quicql towards one of the chicken’"
+                ],
+                "references": ["JL 13", "11", "8", "9"]
+              },
+              {
+                "turoyo": "fayəš ko-fotəl ḥeḏər u=margo b-u=səsy-ayḏe",
+                "translations": [
+                  "‘He began circling the pasture on his horse’"
+                ],
+                "references": ["73/39"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "maftele",
-        "maftəl"
-      ],
+      "forms": ["maftele", "maftəl"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mḥele ʕal u=darbo maftele foṯe l-u=Yaman maftele foṯe laf Ḥassé Balak w azzeyo",
+            "translations": [
+              "er machte sich auf den Weg und wandte sich dem Jemen zu",
+              "er wandte sich Ḥassê Bäläk zu und ritt auf ihn zu"
+            ],
+            "references": ["303", "60/174", "64/249"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mḥele ʕal u=darbo maftele foṯe l-u=Yaman "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer machte sich auf den Weg und wandte sich dem Jemen zuʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "303"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "60/174"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "64/249"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maftele foṯe laf Ḥassé Balak w azzeyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wandte sich Ḥassê Bäläk zu und ritt auf ihn zuʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "303"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/482"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mḥele ʕal u=darbo maftele foṯe l-u=Yaman ʻer machte sich auf den Weg und wandte sich dem Jemen zuʼ; 303; 60/174; 64/249; maftele foṯe laf Ḥassé Balak w azzeyo ʻer wandte sich Ḥassê Bäläk zu und ritt auf ihn zuʼ; 303; 65/482;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mḥele ʕal u=darbo maftele foṯe l-u=Yaman",
+                "translations": [
+                  "ʻer machte sich auf den Weg und wandte sich dem Jemen zuʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["303"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["60/174"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["64/249"]
+              },
+              {
+                "turoyo": "maftele foṯe laf Ḥassé Balak w azzeyo",
+                "translations": [
+                  "ʻer wandte sich Ḥassê Bäläk zu und ritt auf ihn zuʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["303"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["65/482"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "kali hol də-ftəḥle u=qawro w abəʕ d-morəx iḏe d-maftal-le obe foṯaye lə-ḥḏoḏe",
+            "translations": [
+              "er blieb, bis er das Grab geöffnet hatte und gerade die Hand ausstrecken wollte, um sie umzudrehen und ihre Gesichter einander zuzukehren"
+            ],
+            "references": ["305", "74/158"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kali hol də-ftəḥle u=qawro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w abəʕ d-morəx iḏe d-maftal-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " obe foṯaye lə-ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer blieb, bis er das Grab geöffnet hatte und gerade die Hand ausstrecken wollte, um sie umzudrehen und ihre Gesichter einander zuzukehrenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "305"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "74/158"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kali hol də-ftəḥle u=qawro, w abəʕ d-morəx iḏe d-maftal-le, obe foṯaye lə-ḥḏoḏe ʻer blieb, bis er das Grab geöffnet hatte und gerade die Hand ausstrecken wollte, um sie umzudrehen und ihre Gesichter einander zuzukehrenʼ; 305; 74/158;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kali hol də-ftəḥle u=qawro, w abəʕ d-morəx iḏe d-maftal-le, obe foṯaye lə-ḥḏoḏe",
+                "translations": [
+                  "ʻer blieb, bis er das Grab geöffnet hatte und gerade die Hand ausstrecken wollte, um sie umzudrehen und ihre Gesichter einander zuzukehrenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["305"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["74/158"]
+              }
+            ]
           }
         ]
       }

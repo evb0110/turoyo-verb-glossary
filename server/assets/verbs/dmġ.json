@@ -14,24 +14,94 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "dməġle",
-        "doməġ"
-      ],
+      "forms": ["dməġle", "doməġ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mədla l-i=xuṣayḏa maḥtola ʕal u=qallənayḏa masamqola məḥyola b-u=fard-awo d-ṭize u=ḥreno dməġla",
+            "translations": [
+              "sie nahm ihren Ring, legte ihn auf ihre Pfeife, machte ihn rotglühend, drückte ihn auf seine andere Hinterbacke, brannte ihm das Brandzeichen ein"
+            ],
+            "references": ["228", "62/329"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mədla l-i=xuṣayḏa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥtola ʕal u=qallənayḏa masamqola məḥyola b-u=fard-awo d-ṭize u=ḥreno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " dməġla "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie nahm ihren Ring, legte ihn auf ihre Pfeife, machte ihn rotglühend, drückte ihn auf seine andere Hinterbacke, brannte ihm das Brandzeichen einʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "228"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/329"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mədla l-i=xuṣayḏa, maḥtola ʕal u=qallənayḏa masamqola məḥyola b-u=fard-awo d-ṭize u=ḥreno, dməġla ʻsie nahm ihren Ring, legte ihn auf ihre Pfeife, machte ihn rotglühend, drückte ihn auf seine andere Hinterbacke, brannte ihm das Brandzeichen einʼ; 228; 62/329;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mədla l-i=xuṣayḏa, maḥtola ʕal u=qallənayḏa masamqola məḥyola b-u=fard-awo d-ṭize u=ḥreno, dməġla",
+                "translations": [
+                  "ʻsie nahm ihren Ring, legte ihn auf ihre Pfeife, machte ihn rotglühend, drückte ihn auf seine andere Hinterbacke, brannte ihm das Brandzeichen einʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["228"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["62/329"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "stempeln;"
-  ],
+  "idioms": ["stempeln;"],
   "uncertain": false
 }

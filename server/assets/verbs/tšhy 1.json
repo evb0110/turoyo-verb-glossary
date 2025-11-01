@@ -5,10 +5,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mšahele",
-        "mšahe"
-      ],
+      "forms": ["mšahele", "mšahe"],
       "conjugations": {}
     },
     {
@@ -17,23 +14,133 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "m-i=naqqa d-l-i=pir-ayo d-mahzamla u=tanuro d-u=laḥmo w d-l-úla-le ḥatta ṭlamṯo d-laḥmo d-kət-wa mšahyo d-oxəl fako d-laḥmo w lə=qayəṯ",
+            "translations": [
+              "wegen der Frau, die damals mit dem Backofenbrot davongelaufen war und ihm nicht einmal ein Kringelbrot gegeben hatte, wo er doch so begehrte, einen Bissen Brot zu essen, und es ihm nicht zuteil wurde"
+            ],
+            "references": ["424", "113/52"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "m-i=naqqa d-l-i=pir-ayo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-mahzamla u=tanuro d-u=laḥmo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w d-l-úla-le ḥatta ṭlamṯo d-laḥmo d-kət-wa mšahyo d-oxəl fako d-laḥmo w lə=qayəṯ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwegen der Frau, die damals mit dem Backofenbrot davongelaufen war und ihm nicht einmal ein Kringelbrot gegeben hatte, wo er doch so begehrte, einen Bissen Brot zu essen, und es ihm nicht zuteil wurdeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "424"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "113/52"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "m-i=naqqa d-l-i=pir-ayo, d-mahzamla u=tanuro d-u=laḥmo, w d-l-úla-le ḥatta ṭlamṯo d-laḥmo d-kət-wa mšahyo d-oxəl fako d-laḥmo w lə=qayəṯ ʻwegen der Frau, die damals mit dem Backofenbrot davongelaufen war und ihm nicht einmal ein Kringelbrot gegeben hatte, wo er doch so begehrte, einen Bissen Brot zu essen, und es ihm nicht zuteil wurdeʼ; 424; 113/52;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "m-i=naqqa d-l-i=pir-ayo, d-mahzamla u=tanuro d-u=laḥmo, w d-l-úla-le ḥatta ṭlamṯo d-laḥmo d-kət-wa mšahyo d-oxəl fako d-laḥmo w lə=qayəṯ",
+                "translations": [
+                  "ʻwegen der Frau, die damals mit dem Backofenbrot davongelaufen war und ihm nicht einmal ein Kringelbrot gegeben hatte, wo er doch so begehrte, einen Bissen Brot zu essen, und es ihm nicht zuteil wurdeʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["424"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["113/52"]
+              }
+            ]
           },
           {
+            "turoyo": "Uʕdo kuḏʕútuste kīt noše lo+kowalle naʕime ġắlăbe kowǝn‿mšahye l Aloho. . Farručk̇e ln.",
+            "translations": [
+              "‘Now you know there are people who have no children, they are greatly longing for God’"
+            ],
+            "references": ["2"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Uʕdo kuḏʕútuste kīt noše lo+kowalle naʕime"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ġắlăbe kowǝn‿mšahye l Aloho. "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Now you know there are people who have no children, they are greatly longing for God’"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". Farručk̇e ln. "
+              },
+              {
+                "kind": "ref",
+                "value": "2"
+              }
+            ],
             "text": "Uʕdo kuḏʕútuste kīt noše lo+kowalle naʕime, ġắlăbe kowǝn‿mšahye l Aloho. ‘Now you know there are people who have no children, they are greatly longing for God’. Farručk̇e ln. 2",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "Uʕdo kuḏʕútuste kīt noše lo+kowalle naʕime, ġắlăbe kowǝn‿mšahye l Aloho. . Farručk̇e ln.",
+                "translations": [
+                  "‘Now you know there are people who have no children, they are greatly longing for God’"
+                ],
+                "references": ["2"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "begehren, verlangen;"
-  ],
+  "idioms": ["begehren, verlangen;"],
   "uncertain": false
 }

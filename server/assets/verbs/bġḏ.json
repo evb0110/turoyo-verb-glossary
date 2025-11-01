@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "bġīḏ",
-        "məbġəḏ"
-      ],
+      "forms": ["bġīḏ", "məbġəḏ"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,53 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-məbġəḏ",
+            "translations": ["er wird böse, wütend"],
+            "references": ["130"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-məbġəḏ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wird böse, wütendʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "130"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-məbġəḏ ʻer wird böse, wütendʼ; 130;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-məbġəḏ",
+                "translations": ["ʻer wird böse, wütendʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["130"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) böse, wütend werden;"
-  ],
+  "idioms": ["(Detrans.) böse, wütend werden;"],
   "uncertain": false
 }

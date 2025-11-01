@@ -5,17 +5,60 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mǧalǧaʕle",
-        "mǧalǧəʕ"
-      ],
+      "forms": ["mǧalǧaʕle", "mǧalǧəʕ"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-mǧalǧʕi bə-ḥḏoḏe",
+            "translations": ["sie kämpfen, zerren einander herum"],
+            "references": ["1", "771"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-mǧalǧʕi bə-ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie kämpfen, zerren einander herumʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "771"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) ko-mǧalǧʕi bə-ḥḏoḏe ʻsie kämpfen, zerren einander herumʼ; 771;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") ko-mǧalǧʕi bə-ḥḏoḏe",
+                "translations": ["ʻsie kämpfen, zerren einander herumʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["771"]
+              }
+            ]
           }
         ]
       }

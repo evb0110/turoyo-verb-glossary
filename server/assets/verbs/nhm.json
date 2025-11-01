@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "nhəmle",
-        "nohəm"
-      ],
+      "forms": ["nhəmle", "nohəm"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "l-u=šēr nhəmle aʕli",
+            "translations": ["der Löwe brüllte mich an"],
+            "references": ["207"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-u=šēr nhəmle aʕli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Löwe brüllte mich anʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "207"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "l-u=šēr nhəmle aʕli ʻder Löwe brüllte mich anʼ; 207;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "l-u=šēr nhəmle aʕli",
+                "translations": ["ʻder Löwe brüllte mich anʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["207"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "anbrüllen;"
-  ],
+  "idioms": ["anbrüllen;"],
   "uncertain": false
 }

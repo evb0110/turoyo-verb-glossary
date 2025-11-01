@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "rʕīm",
-        "mərʕəm"
-      ],
+      "forms": ["rʕīm", "mərʕəm"],
       "conjugations": {}
     },
     {
@@ -26,25 +23,129 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "rʕīm harke šəšwone briṯo b-u=aṯr-ano rʕimo aʕlux",
+            "translations": [
+              "hier wimmelt es von Ameisen",
+              "‘die ganze Welt hat sich in dieser Region deinetwegen versammelt’"
+            ],
+            "references": ["125", "LB 255"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "rʕīm harke šəšwone "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻhier wimmelt es von Ameisenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "125"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " briṯo b-u=aṯr-ano rʕimo aʕlux "
+              },
+              {
+                "kind": "translation",
+                "value": "‘die ganze Welt hat sich in dieser Region deinetwegen versammelt’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 255"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "rʕīm harke šəšwone ʻhier wimmelt es von Ameisenʼ; 125; briṯo b-u=aṯr-ano rʕimo aʕlux ‘die ganze Welt hat sich in dieser Region deinetwegen versammelt’ LB 255;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "rʕīm harke šəšwone",
+                "translations": ["ʻhier wimmelt es von Ameisenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["125"]
+              },
+              {
+                "turoyo": "briṯo b-u=aṯr-ano rʕimo aʕlux",
+                "translations": [
+                  "‘die ganze Welt hat sich in dieser Region deinetwegen versammelt’"
+                ],
+                "references": ["LB 255"]
+              }
+            ]
           }
         ],
         "Part. Pass.": [
           {
+            "turoyo": "kalən ak=karme rʕime ʕunwe",
+            "translations": ["die Weinberge sind voller Trauben"],
+            "references": ["134"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kalən ak=karme rʕime ʕunwe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Weinberge sind voller Traubenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "134"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kalən ak=karme rʕime ʕunwe ʻdie Weinberge sind voller Traubenʼ; 134;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kalən ak=karme rʕime ʕunwe",
+                "translations": ["ʻdie Weinberge sind voller Traubenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["134"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) wimmeln, voll sein;"
-  ],
+  "idioms": ["(Detrans.) wimmeln, voll sein;"],
   "uncertain": false
 }

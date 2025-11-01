@@ -14,25 +14,121 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mšanele",
-        "mšane"
-      ],
+      "forms": ["mšanele", "mšane"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "u=qašo ... mšanele yaʕni mayəṯ b-təšrən u=ḥaroyo mšanele l-babi Qašišo Gewargīs b-Karborān",
+            "translations": [
+              "da verschied der Pfarrer, d.h. er starb",
+              "‘My father, the priest Gewargīs, died in November in Karborān’"
+            ],
+            "references": ["414", "33/47", "92"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=qašo ... mšanele yaʕni mayəṯ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda verschied der Pfarrer, d.h. er starbʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "414"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "33/47"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "92"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-təšrən u=ḥaroyo mšanele l-babi Qašišo Gewargīs b-Karborān "
+              },
+              {
+                "kind": "translation",
+                "value": "‘My father, the priest Gewargīs, died in November in Karborān’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "37/12"
+              }
+            ],
             "text": "u=qašo ... mšanele yaʕni mayəṯ ʻda verschied der Pfarrer, d.h. er starbʼ; 414; 33/47, 92; b-təšrən u=ḥaroyo mšanele l-babi Qašišo Gewargīs b-Karborān ‘My father, the priest Gewargīs, died in November in Karborān’; 37/12",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=qašo ... mšanele yaʕni mayəṯ",
+                "translations": ["ʻda verschied der Pfarrer, d.h. er starbʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["414"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["33/47", "92"]
+              },
+              {
+                "turoyo": "b-təšrən u=ḥaroyo mšanele l-babi Qašišo Gewargīs b-Karborān",
+                "translations": [
+                  "‘My father, the priest Gewargīs, died in November in Karborān’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["37/12"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "verscheiden;",
-    "špʕ → šfʕ"
-  ],
+  "idioms": ["verscheiden;", "špʕ → šfʕ"],
   "uncertain": false
 }

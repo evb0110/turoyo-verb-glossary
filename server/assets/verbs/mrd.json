@@ -19,24 +19,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mrədle",
-        "morəd"
-      ],
+      "forms": ["mrədle", "morəd"],
       "conjugations": {
         "Imperativ": [
           {
+            "turoyo": "mrad-e ṭawwo",
+            "translations": ["presse es ordentlich aus"],
+            "references": ["207"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mrad-e ṭawwo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻpresse es ordentlich ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "207"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mrad-e ṭawwo ʻpresse es ordentlich ausʼ; 207;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mrad-e ṭawwo",
+                "translations": ["ʻpresse es ordentlich ausʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["207"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "mit der Hand Wasser herauspressen"
-  ],
+  "idioms": ["mit der Hand Wasser herauspressen"],
   "uncertain": false
 }

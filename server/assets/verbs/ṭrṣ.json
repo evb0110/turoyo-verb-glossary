@@ -14,42 +14,129 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ṭrəṣle",
-        "ṭorəṣ"
-      ],
+      "forms": ["ṭrəṣle", "ṭorəṣ"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ʕabər ʕAli gab i=aṯto ko-ḥoze mə=ḥoze ho i=aṯto kala daməxto ay ay diḏa ko-qulbo l-u=gab-ano tərṣo l-u=gabo=ḥreno",
+            "translations": [
+              "‘ʕAli came to his wife and saw: oh my, his wife was lying and moaning, rolling from one side to another’"
+            ],
+            "references": ["78/28"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕabər ʕAli gab i=aṯto ko-ḥoze mə=ḥoze ho i=aṯto kala daməxto ay ay diḏa ko-qulbo l-u=gab-ano tərṣo l-u=gabo=ḥreno "
+              },
+              {
+                "kind": "translation",
+                "value": "‘ʕAli came to his wife and saw: oh my, his wife was lying and moaning, rolling from one side to another’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/28"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ʕabər ʕAli gab i=aṯto ko-ḥoze mə=ḥoze ho i=aṯto kala daməxto ay ay diḏa ko-qulbo l-u=gab-ano tərṣo l-u=gabo=ḥreno ‘ʕAli came to his wife and saw: oh my, his wife was lying and moaning, rolling from one side to another’ 78/28;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ʕabər ʕAli gab i=aṯto ko-ḥoze mə=ḥoze ho i=aṯto kala daməxto ay ay diḏa ko-qulbo l-u=gab-ano tərṣo l-u=gabo=ḥreno",
+                "translations": [
+                  "‘ʕAli came to his wife and saw: oh my, his wife was lying and moaning, rolling from one side to another’"
+                ],
+                "references": ["78/28"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "maṭraṣle",
-        "maṭrəṣ"
-      ],
+      "forms": ["maṭraṣle", "maṭrəṣ"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "b-u=fəkr-ano k-mqaləq k-maqləb w-k-maṭrəṣ b-u=fəkər diḏe w-žġaliye lə=g-məžġəl ʕam u=zʕuro",
+            "translations": [
+              "‘Bei diesem Gedanken wird er unruhig, wälzt die Gedanken hin und her und spricht kein Wort mit dem Jüngling’"
+            ],
+            "references": ["29/318"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "b-u=fəkr-ano k-mqaləq"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-maqləb w-k-maṭrəṣ b-u=fəkər diḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-žġaliye lə=g-məžġəl ʕam u=zʕuro "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Bei diesem Gedanken wird er unruhig, wälzt die Gedanken hin und her und spricht kein Wort mit dem Jüngling’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/318"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "b-u=fəkr-ano k-mqaləq, k-maqləb w-k-maṭrəṣ b-u=fəkər diḏe, w-žġaliye lə=g-məžġəl ʕam u=zʕuro ‘Bei diesem Gedanken wird er unruhig, wälzt die Gedanken hin und her und spricht kein Wort mit dem Jüngling’; 29/318 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "b-u=fəkr-ano k-mqaləq, k-maqləb w-k-maṭrəṣ b-u=fəkər diḏe, w-žġaliye lə=g-məžġəl ʕam u=zʕuro",
+                "translations": [
+                  "‘Bei diesem Gedanken wird er unruhig, wälzt die Gedanken hin und her und spricht kein Wort mit dem Jüngling’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/318"],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sich wälzen;",
-    "wälzen ???"
-  ],
+  "idioms": ["sich wälzen;", "wälzen ???"],
   "uncertain": false
 }

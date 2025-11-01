@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "šṭəḥle",
-        "šoṭəḥ"
-      ],
+      "forms": ["šṭəḥle", "šoṭəḥ"],
       "conjugations": {}
     },
     {
@@ -26,36 +23,96 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "šṭīḥ b-i=šəmšo -",
+            "translations": ["er streckte sich in der Sonne aus"],
+            "references": ["125", "126"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "šṭīḥ b-i=šəmšo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer streckte sich in der Sonne ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "125"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "126"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "šṭīḥ b-i=šəmšo ʻer streckte sich in der Sonne ausʼ; 125-126;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "šṭīḥ b-i=šəmšo",
+                "translations": ["ʻer streckte sich in der Sonne ausʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["125", "126"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "I",
-      "forms": [
-        "šәmle",
-        "šoyam"
-      ],
+      "forms": ["šәmle", "šoyam"],
       "conjugations": {
         "Infectum": [
           {
-            "text": "Ilyas p.c.: adyawma kulle mi+zakme košomno",
-            "turoyo": "",
+            "turoyo": "Ilyas p.c. adyawma kulle mi+zakme košomno",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c."
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " adyawma kulle mi+zakme košomno"
+              }
+            ],
+            "text": "Ilyas p.c.: adyawma kulle mi+zakme košomno",
+            "segments": [
+              {
+                "turoyo": "Ilyas p.c.: adyawma kulle mi+zakme košomno",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "ausstrecken;",
-    "šym",
-    "blow one’s nose"
-  ],
+  "idioms": ["ausstrecken;", "šym", "blow one’s nose"],
   "uncertain": false
 }

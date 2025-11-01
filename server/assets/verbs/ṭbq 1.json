@@ -5,24 +5,78 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ṭbəqle",
-        "ṭobəq"
-      ],
+      "forms": ["ṭbəqle", "ṭobəq"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "gəd-ṭobaqno u=bayto aʕle",
+            "translations": [
+              "ich werde das Haus über ihm zusammenstürzen lassen"
+            ],
+            "references": ["101", "95/47"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gəd-ṭobaqno u=bayto aʕle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich werde das Haus über ihm zusammenstürzen lassenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "101"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "95/47"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "gəd-ṭobaqno u=bayto aʕle ʻich werde das Haus über ihm zusammenstürzen lassenʼ; 101; 95/47;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "gəd-ṭobaqno u=bayto aʕle",
+                "translations": [
+                  "ʻich werde das Haus über ihm zusammenstürzen lassenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["101"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["95/47"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "zusammenstürzen lassen;"
-  ],
+  "idioms": ["zusammenstürzen lassen;"],
   "uncertain": false
 }

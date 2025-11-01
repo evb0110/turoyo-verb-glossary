@@ -14,40 +14,416 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "maškele",
-        "maške"
-      ],
+      "forms": ["maškele", "maške"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "azzé maškele prs maškalle ʕal ḥḏoḏe prs azzino maškeli gab u=rabo u=rabo omər sūmne!",
+            "translations": [
+              "er ging und erhob Klage",
+              "sie verklagten sich gegenseitig",
+              "‘I went to complain to the head (of the customs), and he said: “Make (the papers) ready!” EL 33; ono ṭləbli mine u=šuġl-awo w-hiye lo=maqbele w-aṯyono maškeli aʕle ‘I demanded “the thing” from him, but he did not agree. Than I went and complained about him’"
+            ],
+            "references": ["385", "137/20", "386"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "azzé maškele "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer ging und erhob Klageʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "385"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "137/20"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maškalle ʕal ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie verklagten sich gegenseitigʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "386"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "164/11"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " azzino maškeli gab u=rabo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=rabo omər sūmne! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I went to complain to the head (of the customs), and he said: “Make (the papers) ready!” EL 33; ono ṭləbli mine u=šuġl-awo w-hiye lo=maqbele w-aṯyono maškeli aʕle ‘I demanded “the thing” from him, but he did not agree. Than I went and complained about him’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/234"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "azzé maškele ʻer ging und erhob Klageʼ; 385; prs 137/20; maškalle ʕal ḥḏoḏe ʻsie verklagten sich gegenseitigʼ; 386; prs 164/11; azzino maškeli gab u=rabo, u=rabo omər sūmne! ‘I went to complain to the head (of the customs), and he said: “Make (the papers) ready!” EL 33; ono ṭləbli mine u=šuġl-awo w-hiye lo=maqbele w-aṯyono maškeli aʕle ‘I demanded “the thing” from him, but he did not agree. Than I went and complained about him’ 78/234;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "azzé maškele",
+                "translations": ["ʻer ging und erhob Klageʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["385"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["137/20"]
+              },
+              {
+                "turoyo": "maškalle ʕal ḥḏoḏe",
+                "translations": ["ʻsie verklagten sich gegenseitigʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["386"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["164/11"]
+              },
+              {
+                "turoyo": "azzino maškeli gab u=rabo, u=rabo omər sūmne!",
+                "translations": [
+                  "‘I went to complain to the head (of the customs), and he said: “Make (the papers) ready!” EL 33; ono ṭləbli mine u=šuġl-awo w-hiye lo=maqbele w-aṯyono maškeli aʕle ‘I demanded “the thing” from him, but he did not agree. Than I went and complained about him’"
+                ],
+                "references": ["78/234"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "duš maškena ʕal ḥḏoḏe prs prs g-əzzehən l-Miḏyaḏ w-g-əzzehən l-Diyārbắkər g-maškən aʕlan gd-əṯyo i=ḥkuma w-latlan taqa d-i=ḥkuma",
+            "translations": [
+              "los, wir wollen einander verklagen",
+              "‘They are going to go to Midyat and to Diyarbakir and they are going to inform against us, and (then) the government will come, and we have no strength against the government’"
+            ],
+            "references": ["395", "121/4", "225/16"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "duš maškena ʕal ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻlos, wir wollen einander verklagenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "395"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "121/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "225/16"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-əzzehən l-Miḏyaḏ w-g-əzzehən l-Diyārbắkər"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-maškən aʕlan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gd-əṯyo i=ḥkuma"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-latlan taqa d-i=ḥkuma "
+              },
+              {
+                "kind": "translation",
+                "value": "‘They are going to go to Midyat and to Diyarbakir and they are going to inform against us, and (then) the government will come, and we have no strength against the government’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "71/18"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "duš maškena ʕal ḥḏoḏe ʻlos, wir wollen einander verklagenʼ; 395; prs 121/4; prs 225/16; g-əzzehən l-Miḏyaḏ w-g-əzzehən l-Diyārbắkər, g-maškən aʕlan, gd-əṯyo i=ḥkuma, w-latlan taqa d-i=ḥkuma ‘They are going to go to Midyat and to Diyarbakir and they are going to inform against us, and (then) the government will come, and we have no strength against the government’ 71/18;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "duš maškena ʕal ḥḏoḏe",
+                "translations": ["ʻlos, wir wollen einander verklagenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["395"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["121/4"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["225/16"]
+              },
+              {
+                "turoyo": "g-əzzehən l-Miḏyaḏ w-g-əzzehən l-Diyārbắkər, g-maškən aʕlan, gd-əṯyo i=ḥkuma, w-latlan taqa d-i=ḥkuma",
+                "translations": [
+                  "‘They are going to go to Midyat and to Diyarbakir and they are going to inform against us, and (then) the government will come, and we have no strength against the government’"
+                ],
+                "references": ["71/18"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "zəx aškáy s-u=rabo d-at=taʕle prs aḥna u=māl-ano šqilan b-ak=kallat-ayḏan. d-ubʕət maškay!",
+            "translations": [
+              "geh klage beim Häuptling der Füchse",
+              "‘wir haben diese Ware mit unserem Gelde gekauft. Wenn du willst, so reich eine Klage ein!’"
+            ],
+            "references": ["407", "195/6", "2/79"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "zəx aškáy s-u=rabo d-at=taʕle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻgeh klage beim Häuptling der Füchseʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "407"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "195/6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aḥna"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=māl-ano"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šqilan b-ak=kallat-ayḏan. d-ubʕət maškay! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘wir haben diese Ware mit unserem Gelde gekauft. Wenn du willst, so reich eine Klage ein!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/79"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "zəx aškáy s-u=rabo d-at=taʕle ʻgeh klage beim Häuptling der Füchseʼ; 407; prs 195/6; aḥna, u=māl-ano, šqilan b-ak=kallat-ayḏan. d-ubʕət maškay! ‘wir haben diese Ware mit unserem Gelde gekauft. Wenn du willst, so reich eine Klage ein!’; 2/79;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "zəx aškáy s-u=rabo d-at=taʕle",
+                "translations": ["ʻgeh klage beim Häuptling der Füchseʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["407"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["195/6"]
+              },
+              {
+                "turoyo": "aḥna, u=māl-ano, šqilan b-ak=kallat-ayḏan. d-ubʕət maškay!",
+                "translations": [
+                  "‘wir haben diese Ware mit unserem Gelde gekauft. Wenn du willst, so reich eine Klage ein!’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["2/79"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "verklagen, beschweren;"
-  ],
+  "idioms": ["verklagen, beschweren;"],
   "uncertain": false
 }

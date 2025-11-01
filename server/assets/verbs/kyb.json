@@ -14,40 +14,407 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "kəble",
-        "koyəb"
-      ],
+      "forms": ["kəble", "koyəb"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "i=naqla d-kəble l-u=šulṭono katfe ḥaṣe u=waziro dəšle ʕal katfe d-u=šulṭono šqila u=zoġo maḥatla b-u=kuxo kəbla qarʕa prs",
+            "translations": [
+              "als der Sultan seine Schulter, seinen Rücken gebeugt hatte, trat der Wesir auf die Schulter des Sultans",
+              "sie nahm den Hahn und setzte ihn wieder in’s Hühnerhaus; dabei bückte sie sich mit ihrem Kopf"
+            ],
+            "references": ["505", "27/10", "506"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqla d-kəble l-u=šulṭono katfe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥaṣe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=waziro dəšle ʕal katfe d-u=šulṭono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals der Sultan seine Schulter, seinen Rücken gebeugt hatte, trat der Wesir auf die Schulter des Sultansʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "505"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "27/10"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " šqila u=zoġo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥatla b-u=kuxo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kəbla qarʕa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie nahm den Hahn und setzte ihn wieder in’s Hühnerhaus; dabei bückte sie sich mit ihrem Kopfʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "506"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "29/17"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=naqla d-kəble l-u=šulṭono katfe, ḥaṣe, u=waziro dəšle ʕal katfe d-u=šulṭono ʻals der Sultan seine Schulter, seinen Rücken gebeugt hatte, trat der Wesir auf die Schulter des Sultansʼ; 505; 27/10; šqila u=zoġo, maḥatla b-u=kuxo, kəbla qarʕa ʻsie nahm den Hahn und setzte ihn wieder in’s Hühnerhaus; dabei bückte sie sich mit ihrem Kopfʼ; 506; prs 29/17;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=naqla d-kəble l-u=šulṭono katfe, ḥaṣe, u=waziro dəšle ʕal katfe d-u=šulṭono",
+                "translations": [
+                  "ʻals der Sultan seine Schulter, seinen Rücken gebeugt hatte, trat der Wesir auf die Schulter des Sultansʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["505"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["27/10"]
+              },
+              {
+                "turoyo": "šqila u=zoġo, maḥatla b-u=kuxo, kəbla qarʕa",
+                "translations": [
+                  "ʻsie nahm den Hahn und setzte ihn wieder in’s Hühnerhaus; dabei bückte sie sich mit ihrem Kopfʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["506"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["29/17"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "k-koyəb i=dgušto ʕal katfe ya u=šulṭon-ayḏi iḏa d-saymət musaʕada d-kaybət ḥaṣox g-isaqno w-g-madn-e amṭen-ox u=ḥabušo huwe mə-darbə-d-huwe d-omər uno g-kuyabno <…> huwe mə́lle-lox luxāt kub! g-isaqno ʕal ḥasox -",
+            "translations": [
+              "er kippt den Krug auf der Schulter um",
+              "‘Mein Sultan, wenn du erlaubst und deinen Rücken beugst, werde ich darauf steigen, den Apfel fassen und dir herunterholen’",
+              "‘Und er, statt zu sagen: Ich will mich bücken <…> sprach zu dir: Bücke dich! Ich werde auf deinen Rücken steigen!’"
+            ],
+            "references": ["517", "6/67", "27/8"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-koyəb i=dgušto ʕal katfe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer kippt den Krug auf der Schulter umʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "517"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/67"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ya u=šulṭon-ayḏi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " iḏa d-saymət musaʕada d-kaybət ḥaṣox"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-isaqno w-g-madn-e amṭen-ox u=ḥabušo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Mein Sultan, wenn du erlaubst und deinen Rücken beugst, werde ich darauf steigen, den Apfel fassen und dir herunterholen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "27/8"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " huwe mə-darbə-d-huwe d-omər uno g-kuyabno <…> huwe mə́lle-lox luxāt"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kub! g-isaqno ʕal ḥasox "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Und er, statt zu sagen: Ich will mich bücken <…> sprach zu dir: Bücke dich! Ich werde auf deinen Rücken steigen!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "27/66"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "67"
+              }
+            ],
             "text": "k-koyəb i=dgušto ʕal katfe ʻer kippt den Krug auf der Schulter umʼ; 517; 6/67; ya u=šulṭon-ayḏi, iḏa d-saymət musaʕada d-kaybət ḥaṣox, g-isaqno w-g-madn-e amṭen-ox u=ḥabušo ‘Mein Sultan, wenn du erlaubst und deinen Rücken beugst, werde ich darauf steigen, den Apfel fassen und dir herunterholen’; 27/8 [MT]; huwe mə-darbə-d-huwe d-omər uno g-kuyabno <…> huwe mə́lle-lox luxāt: kub! g-isaqno ʕal ḥasox ‘Und er, statt zu sagen: Ich will mich bücken <…> sprach zu dir: Bücke dich! Ich werde auf deinen Rücken steigen!’; 27/66-67",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "k-koyəb i=dgušto ʕal katfe",
+                "translations": ["ʻer kippt den Krug auf der Schulter umʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["517"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["6/67"]
+              },
+              {
+                "turoyo": "ya u=šulṭon-ayḏi, iḏa d-saymət musaʕada d-kaybət ḥaṣox, g-isaqno w-g-madn-e amṭen-ox u=ḥabušo",
+                "translations": [
+                  "‘Mein Sultan, wenn du erlaubst und deinen Rücken beugst, werde ich darauf steigen, den Apfel fassen und dir herunterholen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["27/8"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "huwe mə-darbə-d-huwe d-omər uno g-kuyabno <…> huwe mə́lle-lox luxāt: kub! g-isaqno ʕal ḥasox",
+                "translations": [
+                  "‘Und er, statt zu sagen: Ich will mich bücken <…> sprach zu dir: Bücke dich! Ich werde auf deinen Rücken steigen!’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["27/66", "67"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "kub! g-isaqno ʕal ḥaṣox",
+            "translations": [
+              "bücke dich! Ich werde auf deinen Rücken steigen!"
+            ],
+            "references": ["526", "27/67"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kub! g-isaqno ʕal ḥaṣox "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻbücke dich! Ich werde auf deinen Rücken steigen!ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "526"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "27/67"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kub! g-isaqno ʕal ḥaṣox ʻbücke dich! Ich werde auf deinen Rücken steigen!ʼ; 526; 27/67;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kub! g-isaqno ʕal ḥaṣox",
+                "translations": [
+                  "ʻbücke dich! Ich werde auf deinen Rücken steigen!ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["526"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["27/67"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sich bücken, kippen, neigen;"
-  ],
+  "idioms": ["sich bücken, kippen, neigen;"],
   "uncertain": false
 }

@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+import { useContainerWide } from '~/composables/useContainerWide'
+import { deepClone } from '~/utils/deepClone'
+import type { IVerb } from '#shared/types/IVerb'
+
 const route = useRoute()
 
 const toBack = computed(() => {
@@ -15,6 +19,7 @@ const {
 
 const editMode = ref(false)
 const editableVerb = ref<IVerb | null>(null)
+const containerWide = useContainerWide()
 
 const displayVerb = computed(() => {
     return editMode.value && editableVerb.value ? editableVerb.value : verb.value
@@ -22,6 +27,14 @@ const displayVerb = computed(() => {
 
 const stems = computed(() => {
     return (displayVerb.value?.stems || []).filter(Boolean)
+})
+
+watch(editMode, (v) => {
+    containerWide.value = v
+})
+
+onBeforeUnmount(() => {
+    containerWide.value = false
 })
 
 if (error.value) {
@@ -54,48 +67,86 @@ useHead({
                 :color="editMode ? 'warning' : 'primary'"
                 @click="() => {
                     if (editMode) { editMode = false; editableVerb = null }
-                    else { editMode = true; editableVerb = structuredClone(verb) }
+                    else { editMode = true; editableVerb = deepClone(verb as any) as any }
                 }"
             >
                 {{ editMode ? 'Exit edit mode' : 'Edit' }}
             </UButton>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <div class="space-y-6">
-                <UCard>
-                    <template #header>
-                        <VerbHeader :verb="displayVerb!"/>
-                    </template>
+        <div class="space-y-6">
+            <UCard>
+                <template #header>
+                    <VerbHeader :verb="displayVerb!"/>
+                </template>
 
+                <div v-if="editMode" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                        <div class="md:col-span-1 flex items-center gap-3">
+                            <label class="text-sm font-medium">Uncertain</label>
+                            <USwitch v-model="(editableVerb as any).uncertain"/>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium mb-1">Cross reference</label>
+                            <UInput v-model="(editableVerb as any).cross_reference" placeholder="Type a root"/>
+                        </div>
+                    </div>
+                </div>
+
+                <template v-if="!editMode">
                     <VerbEtymology v-if="displayVerb?.etymology" :etymology="displayVerb?.etymology"/>
-                </UCard>
+                </template>
+                <template v-else>
+                    <EtymologyEditor v-model:etymology="(editableVerb as any).etymology"/>
+                </template>
+            </UCard>
+
+            <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                    <h2 class="text-xl font-semibold">
+                        Stems
+                    </h2>
+                    <UButton
+                        v-if="editMode"
+                        size="xs"
+                        icon="i-heroicons-plus"
+                        @click="() => (editableVerb as any).stems.push({ stem: 'I', forms: [], conjugations: {} })"
+                    >
+                        Add stem
+                    </UButton>
+                </div>
 
                 <div class="space-y-4">
-                    <div class="flex items-center justify-between">
-                        <h2 class="text-xl font-semibold">
-                            Stems
-                        </h2>
-                    </div>
-
-                    <div class="space-y-4">
+                    <template v-if="!editMode">
                         <VerbStemCard
                             v-for="stem in stems"
                             :key="stem.stem"
                             :stem="stem"
                         />
-                    </div>
+                    </template>
+                    <template v-else>
+                        <StemEditor
+                            v-for="(s, sIdx) in (editableVerb as any).stems"
+                            :key="sIdx + '-' + s.stem"
+                            v-model:stem="(editableVerb as any).stems[sIdx]"
+                            @remove="() => (editableVerb as any).stems.splice(sIdx, 1)"
+                            @move-up="() => {
+                                if (sIdx > 0) {
+                                    const arr = (editableVerb as any).stems
+                                    const it = arr.splice(sIdx, 1)[0]
+                                    arr.splice(sIdx - 1, 0, it)
+                                }
+                            }"
+                            @move-down="() => {
+                                const arr = (editableVerb as any).stems
+                                if (sIdx < arr.length - 1) {
+                                    const it = arr.splice(sIdx, 1)[0]
+                                    arr.splice(sIdx + 1, 0, it)
+                                }
+                            }"
+                        />
+                    </template>
                 </div>
-            </div>
-
-            <div v-if="editMode" class="lg:sticky lg:top-16 self-start">
-                <UCard :ui="{ body: 'space-y-4' }">
-                    <VerbInspector
-                        :verb="verb!"
-                        @applied="v => { editableVerb = v }"
-                        @reset="() => { editableVerb = null }"
-                    />
-                </UCard>
             </div>
         </div>
     </div>

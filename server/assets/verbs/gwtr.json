@@ -14,17 +14,60 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mgawtalle",
-        "mgawtər"
-      ],
+      "forms": ["mgawtalle", "mgawtər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mgawtalli ḥəs diḏi",
+            "translations": ["ich habe mit lauter Stimme gesungen"],
+            "references": ["1", "778"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mgawtalli ḥəs diḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe mit lauter Stimme gesungenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "778"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) mgawtalli ḥəs diḏi ʻich habe mit lauter Stimme gesungenʼ; 778;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mgawtalli ḥəs diḏi",
+                "translations": ["ʻich habe mit lauter Stimme gesungenʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["778"]
+              }
+            ]
           }
         ]
       }
@@ -35,10 +78,52 @@
       "conjugations": {
         "Preterit": [
           {
-            "text": "2) ḥəs diḏi mgawtər; 778;",
-            "turoyo": "",
+            "turoyo": "ḥəs diḏi mgawtər",
             "translations": [],
-            "references": []
+            "references": ["2", "778"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥəs diḏi mgawtər"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "778"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) ḥəs diḏi mgawtər; 778;",
+            "segments": [
+              {
+                "turoyo": ") ḥəs diḏi mgawtər",
+                "translations": [],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["778"]
+              }
+            ]
           }
         ]
       }

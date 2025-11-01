@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "xəṭle",
-        "xoyəṭ"
-      ],
+      "forms": ["xəṭle", "xoyəṭ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "xəṭli xayṭo",
+            "translations": ["ich nähte mit engen Stichen"],
+            "references": ["508"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "xəṭli xayṭo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich nähte mit engen Stichenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "508"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "xəṭli xayṭo ʻich nähte mit engen Stichenʼ; 508;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "xəṭli xayṭo",
+                "translations": ["ʻich nähte mit engen Stichenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["508"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "nähen;"
-  ],
+  "idioms": ["nähen;"],
   "uncertain": false
 }

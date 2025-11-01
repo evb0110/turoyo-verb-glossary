@@ -12,71 +12,294 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mfaraʕle",
-        "mfarəʕ"
-      ],
+      "forms": ["mfaraʕle", "mfarəʕ"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "mfaraʕle ak=karme; 199;",
-            "turoyo": "",
+            "turoyo": "mfaraʕle ak=karme",
             "translations": [],
-            "references": []
+            "references": ["199"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mfaraʕle ak=karme"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "199"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mfaraʕle ak=karme; 199;",
+            "segments": [
+              {
+                "turoyo": "mfaraʕle ak=karme",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["199"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "I",
-      "forms": [
-        "forad",
-        "farǝd"
-      ],
+      "forms": ["forad", "farǝd"],
       "conjugations": {
         "Infectum": [
           {
-            "text": "Maḥtənne, maḥti maye aʕlayye, maḥtənne bayn am maye. Kfayxi, kfǝrdi (2018_07_01_01.2_Arkah_Ishaq_old_houses_ED: 017) (The burnt limestone crumbles in the water); Kfǝrḏi, kowən čimənto, d əmmina, uʕdo kəmmina čimənto (018)",
-            "turoyo": "",
+            "turoyo": "The burnt limestone crumbles in the water Kfǝrḏi kowən čimənto d əmmina uʕdo kəmmina čimənto",
             "translations": [],
-            "references": []
+            "references": ["017", "018"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "017"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "The burnt limestone crumbles in the water"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Kfǝrḏi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kowən čimənto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d əmmina"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " uʕdo kəmmina čimənto "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "ref",
+                "value": "018"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "017) (The burnt limestone crumbles in the water); Kfǝrḏi, kowən čimənto, d əmmina, uʕdo kəmmina čimənto (018)",
+            "segments": [
+              {
+                "turoyo": ") (The burnt limestone crumbles in the water)",
+                "translations": [],
+                "references": ["017"]
+              },
+              {
+                "turoyo": "Kfǝrḏi, kowən čimənto, d əmmina, uʕdo kəmmina čimənto ()",
+                "translations": [],
+                "references": ["018"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": [
-        "mfaradle",
-        "mfarad:"
-      ],
+      "forms": ["mfaradle", "mfarad:"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "gǝmfaradno u laḥmo bayn a tlawḥe. I will crumble the bread in the lentil soup. Ilyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "  gǝmfaradno u laḥmo bayn a tlawḥe. I will crumble the bread in the lentil "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "soup"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "gǝmfaradno u laḥmo bayn a tlawḥe. I will crumble the bread in the lentil (soup). (Ilyas p.c)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "gǝmfaradno u laḥmo bayn a tlawḥe. I will crumble the bread in the lentil (soup). (Ilyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
+            "turoyo": "gǝmfaradno ak kallawatayḏi kulle. I will change all my money. Ilyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gǝmfaradno ak kallawatayḏi kulle. I will change all my money. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "gǝmfaradno ak kallawatayḏi kulle. I will change all my money. (Ilyas p.c)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "gǝmfaradno ak kallawatayḏi kulle. I will change all my money. (Ilyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
-            "text": "gǝmfaradno u šakar bi čaye. I will crumble the sugar in the tea.(Ilyas p.c)",
-            "turoyo": "",
+            "turoyo": "gǝmfaradno u šakar bi čaye. I will crumble the sugar in the tea.Ilyas p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gǝmfaradno u šakar bi čaye. I will crumble the sugar in the tea."
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "gǝmfaradno u šakar bi čaye. I will crumble the sugar in the tea.(Ilyas p.c)",
+            "segments": [
+              {
+                "turoyo": "gǝmfaradno u šakar bi čaye. I will crumble the sugar in the tea.(Ilyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ],
         "Preterit": [
           {
-            "text": "mfaradli mo waroqe b ʕaṣro ʕaṣrowat. I changed hundred liras for ten tens. (Ilyas p.c)",
-            "turoyo": "",
+            "turoyo": "mfaradli mo waroqe b ʕaṣro ʕaṣrowat. I changed hundred liras for ten tens. Ilyas p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "  mfaradli mo waroqe b ʕaṣro ʕaṣrowat. I changed hundred liras for ten tens. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "mfaradli mo waroqe b ʕaṣro ʕaṣrowat. I changed hundred liras for ten tens. (Ilyas p.c)",
+            "segments": [
+              {
+                "turoyo": "mfaradli mo waroqe b ʕaṣro ʕaṣrowat. I changed hundred liras for ten tens. (Ilyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
@@ -87,36 +310,234 @@
       "conjugations": {
         "Infectum": [
           {
-            "text": "ko maḥti maye aʕlayye w ko maḥtənne bayn am maye,  ko mifardi (Ilyas p.c.)  They put/pour water on them and they put them in water, they crumble.(Ilyas p.c)",
-            "turoyo": "",
+            "turoyo": "ko maḥti maye aʕlayye w ko maḥtənne bayn am maye ko mifardi Ilyas p.c. They put/pour water on them and they put them in water they crumble.Ilyas p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": " ko maḥti maye aʕlayye w ko maḥtənne bayn am maye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": "  ko mifardi "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  They put/pour water on them and they put them in water"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " they crumble."
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "ko maḥti maye aʕlayye w ko maḥtənne bayn am maye, ko mifardi (Ilyas p.c.) They put/pour water on them and they put them in water, they crumble.(Ilyas p.c)",
+            "segments": [
+              {
+                "turoyo": "ko maḥti maye aʕlayye w ko maḥtənne bayn am maye, ko mifardi (Ilyas p.c.) They put/pour water on them and they put them in water, they crumble.(Ilyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
-            "text": "u laḥmo ko mifarad  bayn a tlawḥe (Ilyas p.c). The bread is crumbled in the lentil (soup). (Ilyas p.c)",
-            "turoyo": "",
+            "turoyo": "u laḥmo ko mifarad bayn a tlawḥe Ilyas p.c. The bread is crumbled in the lentil soup. Ilyas p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u laḥmo ko mifarad  bayn a tlawḥe "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". The bread is crumbled in the lentil "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "soup"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "u laḥmo ko mifarad bayn a tlawḥe (Ilyas p.c). The bread is crumbled in the lentil (soup). (Ilyas p.c)",
+            "segments": [
+              {
+                "turoyo": "u laḥmo ko mifarad bayn a tlawḥe (Ilyas p.c). The bread is crumbled in the lentil (soup). (Ilyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ],
         "Preterit": [
           {
+            "turoyo": "mfardi aḥ ḥeṭe maš šǝble. The wheats were taken out of ears.Ilyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": " mfardi aḥ ḥeṭe maš šǝble. The wheats were taken out of ears."
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "mfardi aḥ ḥeṭe maš šǝble. The wheats were taken out of ears.(Ilyas p.c)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mfardi aḥ ḥeṭe maš šǝble. The wheats were taken out of ears.(Ilyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
-            "text": "mfardi ak kefe du šuro.  The stones were taken out of the wall.(Ilyas p.c)",
-            "turoyo": "",
+            "turoyo": "mfardi ak kefe du šuro. The stones were taken out of the wall.Ilyas p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mfardi ak kefe du šuro.  The stones were taken out of the wall."
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "mfardi ak kefe du šuro. The stones were taken out of the wall.(Ilyas p.c)",
+            "segments": [
+              {
+                "turoyo": "mfardi ak kefe du šuro. The stones were taken out of the wall.(Ilyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
+            "turoyo": "mfardi aʕ ʕǝnwe maṣ suġle . Grapes were taken out from bunch. Ilyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mfardi aʕ ʕǝnwe maṣ suġle "
+              },
+              {
+                "kind": "note",
+                "value": "[meqǝm ruḥayye]"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". Grapes were taken out from bunch. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "mfardi aʕ ʕǝnwe maṣ suġle [meqǝm ruḥayye]. Grapes were taken out from bunch. (Ilyas p.c)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mfardi aʕ ʕǝnwe maṣ suġle . Grapes were taken out from bunch. (Ilyas p.c)",
+                "translations": [],
+                "references": [],
+                "notes": ["[meqǝm ruḥayye]"]
+              }
+            ]
           }
         ]
       }

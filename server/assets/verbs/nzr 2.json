@@ -5,25 +5,190 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "manzalle",
-        "manzər"
-      ],
+      "forms": ["manzalle", "manzər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "manzalle u=ṭaʕnayḏe",
+            "translations": ["er knebelte seine Last fest"],
+            "references": ["1", "260"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " manzalle u=ṭaʕnayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer knebelte seine Last festʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "260"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) manzalle u=ṭaʕnayḏe ʻer knebelte seine Last festʼ; 260;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") manzalle u=ṭaʕnayḏe",
+                "translations": ["ʻer knebelte seine Last festʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["260"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "1) ko-manzri-le ṭawwo b-am=manzrone ʻman knebelt (die Stricke) gut mit Knebeln festʼ; 260; 94/90; 2) ko-manzanno ruḥi; translation? 260;",
-            "turoyo": "",
+            "turoyo": "ko-manzri-le ṭawwo b-am=manzrone",
+            "translations": ["man knebelt (die Stricke) gut mit Knebeln fest"],
+            "references": ["1", "260", "94/90"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-manzri-le ṭawwo b-am=manzrone "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻman knebelt (die Stricke) gut mit Knebeln festʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "260"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/90"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) ko-manzri-le ṭawwo b-am=manzrone ʻman knebelt (die Stricke) gut mit Knebeln festʼ; 260; 94/90;",
+            "segments": [
+              {
+                "turoyo": ") ko-manzri-le ṭawwo b-am=manzrone",
+                "translations": [
+                  "ʻman knebelt (die Stricke) gut mit Knebeln festʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["260"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["94/90"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "ko-manzanno ruḥi translation?",
             "translations": [],
-            "references": []
+            "references": ["2", "260"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-manzanno ruḥi"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " translation? "
+              },
+              {
+                "kind": "ref",
+                "value": "260"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) ko-manzanno ruḥi; translation? 260;",
+            "segments": [
+              {
+                "turoyo": ") ko-manzanno ruḥi",
+                "translations": [],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "translation?",
+                "translations": [],
+                "references": ["260"]
+              }
+            ]
           }
         ]
       }

@@ -5,17 +5,56 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "šqəṣle",
-        "šoqəṣ"
-      ],
+      "forms": ["šqəṣle", "šoqəṣ"],
       "conjugations": {
         "Imperativ": [
           {
+            "turoyo": "šqaṣ qarʕux čike tamo-da",
+            "translations": [
+              "sagt der Barbier, wenn er die andere Seite des Kopfes bearbeiten will"
+            ],
+            "references": ["231"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "šqaṣ qarʕux čike tamo-da "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsagt der Barbier, wenn er die andere Seite des Kopfes bearbeiten willʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "231"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "šqaṣ qarʕux čike tamo-da ʻsagt der Barbier, wenn er die andere Seite des Kopfes bearbeiten willʼ; 231;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "šqaṣ qarʕux čike tamo-da",
+                "translations": [
+                  "ʻsagt der Barbier, wenn er die andere Seite des Kopfes bearbeiten willʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["231"]
+              }
+            ]
           }
         ]
       }
@@ -26,17 +65,57 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-məšqəṣ",
+            "translations": [
+              "er schlenkert beim Gehen von einer Seite auf die andere"
+            ],
+            "references": ["231"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-məšqəṣ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer schlenkert beim Gehen von einer Seite auf die andereʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "231"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-məšqəṣ ʻer schlenkert beim Gehen von einer Seite auf die andereʼ; 231;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-məšqəṣ",
+                "translations": [
+                  "ʻer schlenkert beim Gehen von einer Seite auf die andereʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["231"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "zur Seite neigen;"
-  ],
+  "idioms": ["zur Seite neigen;"],
   "uncertain": false
 }

@@ -12,24 +12,91 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "mawfele",
-        "mawfe"
-      ],
+      "forms": ["mawfele", "mawfe"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "mən hadiye ŭbína-le l-u=zlām-ano ḥatta də-mʕawḏ̣ina d-mawfena i=ṭowuṯ-ayḏe?",
+            "translations": [
+              "welches Geschenk sollen wir diesem Manne geben, um ihn seine Wohltat zu entgelten und gebührend zu belohnen"
+            ],
+            "references": ["24/100"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mən hadiye ŭbína-le l-u=zlām-ano"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥatta də-mʕawḏ̣ina"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-mawfena i=ṭowuṯ-ayḏe? "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwelches Geschenk sollen wir diesem Manne geben, um ihn seine Wohltat zu entgelten und gebührend zu belohnenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/100"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "mən hadiye ŭbína-le l-u=zlām-ano, ḥatta də-mʕawḏ̣ina, d-mawfena i=ṭowuṯ-ayḏe? ʻwelches Geschenk sollen wir diesem Manne geben, um ihn seine Wohltat zu entgelten und gebührend zu belohnenʼ; 24/100; [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mən hadiye ŭbína-le l-u=zlām-ano, ḥatta də-mʕawḏ̣ina, d-mawfena i=ṭowuṯ-ayḏe?",
+                "translations": [
+                  "ʻwelches Geschenk sollen wir diesem Manne geben, um ihn seine Wohltat zu entgelten und gebührend zu belohnenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/100"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": [],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "auszahlen, erfüllen;"
-  ],
+  "idioms": ["auszahlen, erfüllen;"],
   "uncertain": false
 }

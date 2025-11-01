@@ -14,32 +14,269 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "maṭəʕle",
-        "maṭəʕ"
-      ],
+      "forms": ["maṭəʕle", "maṭəʕ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "u=ʕamo <...> mʕaḏbənne ġắlabe hul d-u=ʕamo kule maṭəʕle l-u=ʕmiro bəṯṯər məd-yatu ʕal u=kursi d-i=mamlaxṯo u=ʕulmo maṭǝ́ʕle-le w rḥəmle",
+            "translations": [
+              "the <...> people were disturbed a lot till all the people obeyed the emir",
+              "nachdem er sich auf den Thron des Reiches gesetzt hatte, gehorchten ihm die Leute und liebten ihn sehr"
+            ],
+            "references": ["538", "36/106", "538"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=ʕamo <...> mʕaḏbənne ġắlabe"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hul d-u=ʕamo kule maṭəʕle l-u=ʕmiro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻthe <...> people were disturbed a lot till all the people obeyed the emirʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "538"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/106"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər məd-yatu ʕal u=kursi d-i=mamlaxṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=ʕulmo maṭǝ́ʕle-le w rḥəmle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnachdem er sich auf den Thron des Reiches gesetzt hatte, gehorchten ihm die Leute und liebten ihn sehrʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "538"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/255"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=ʕamo <...> mʕaḏbənne ġắlabe; hul d-u=ʕamo kule maṭəʕle l-u=ʕmiro ʻthe <...> people were disturbed a lot till all the people obeyed the emirʼ; 538; 36/106; bəṯṯər məd-yatu ʕal u=kursi d-i=mamlaxṯo, u=ʕulmo maṭǝ́ʕle-le w rḥəmle ʻnachdem er sich auf den Thron des Reiches gesetzt hatte, gehorchten ihm die Leute und liebten ihn sehrʼ; 538; 24/255 [MT];",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=ʕamo <...> mʕaḏbənne ġắlabe",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "hul d-u=ʕamo kule maṭəʕle l-u=ʕmiro",
+                "translations": [
+                  "ʻthe <...> people were disturbed a lot till all the people obeyed the emirʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["538"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["36/106"]
+              },
+              {
+                "turoyo": "bəṯṯər məd-yatu ʕal u=kursi d-i=mamlaxṯo, u=ʕulmo maṭǝ́ʕle-le w rḥəmle",
+                "translations": [
+                  "ʻnachdem er sich auf den Thron des Reiches gesetzt hatte, gehorchten ihm die Leute und liebten ihn sehrʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["538"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/255"],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "ʕobarno ono w hiye b-i=od-aṯe obət-li dastūr u=mede d-samno b-u=mall-ano yaʕni lazəm maṭəʕ-li",
+            "translations": [
+              "ich möchte dann mit ihm in jenes Zimmer gehen, und du sollst mir erlauben, etwas mit dem Molla zu tun … d.h. er soll sich mir fügen"
+            ],
+            "references": ["545", "84/47"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕobarno ono w hiye b-i=od-aṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " obət-li dastūr"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=mede"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-samno b-u=mall-ano"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " yaʕni"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lazəm maṭəʕ-li "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich möchte dann mit ihm in jenes Zimmer gehen, und du sollst mir erlauben, etwas mit dem Molla zu tun … d.h. er soll sich mir fügenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "545"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "84/47"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ʕobarno ono w hiye b-i=od-aṯe, obət-li dastūr, u=mede, d-samno b-u=mall-ano, yaʕni, lazəm maṭəʕ-li ʻich möchte dann mit ihm in jenes Zimmer gehen, und du sollst mir erlauben, etwas mit dem Molla zu tun … d.h. er soll sich mir fügenʼ; 545; 84/47;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ʕobarno ono w hiye b-i=od-aṯe, obət-li dastūr, u=mede, d-samno b-u=mall-ano, yaʕni, lazəm maṭəʕ-li",
+                "translations": [
+                  "ʻich möchte dann mit ihm in jenes Zimmer gehen, und du sollst mir erlauben, etwas mit dem Molla zu tun … d.h. er soll sich mir fügenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["545"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["84/47"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "gehorchen;"
-  ],
+  "idioms": ["gehorchen;"],
   "uncertain": false
 }

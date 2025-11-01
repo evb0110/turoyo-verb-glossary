@@ -14,24 +14,53 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "magwaǧle",
-        "magwəǧ"
-      ],
+      "forms": ["magwaǧle", "magwəǧ"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "u=kewayḏux magwaǧle; 468;",
-            "turoyo": "",
+            "turoyo": "u=kewayḏux magwaǧle",
             "translations": [],
-            "references": []
+            "references": ["468"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=kewayḏux magwaǧle"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "468"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=kewayḏux magwaǧle; 468;",
+            "segments": [
+              {
+                "turoyo": "u=kewayḏux magwaǧle",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["468"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "schlimmer werden (Krankheit);"
-  ],
+  "idioms": ["schlimmer werden (Krankheit);"],
   "uncertain": false
 }

@@ -14,24 +14,86 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "maḥəšle",
-        "maḥəš"
-      ],
+      "forms": ["maḥəšle", "maḥəš"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "hedi klay ya i=xatunayḏi ono g-maḥǝ́šno-lax",
+            "translations": [
+              "halt ein, Herrin, ich werde dir (Früchte) pflücken"
+            ],
+            "references": ["546", "105/102"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hedi klay ya i=xatunayḏi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono g-maḥǝ́šno-lax "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻhalt ein, Herrin, ich werde dir (Früchte) pflückenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "546"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "105/102"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "hedi klay ya i=xatunayḏi, ono g-maḥǝ́šno-lax ʻhalt ein, Herrin, ich werde dir (Früchte) pflückenʼ; 546; 105/102;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "hedi klay ya i=xatunayḏi, ono g-maḥǝ́šno-lax",
+                "translations": [
+                  "ʻhalt ein, Herrin, ich werde dir (Früchte) pflückenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["546"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["105/102"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "pflücken, abreissen;"
-  ],
+  "idioms": ["pflücken, abreissen;"],
   "uncertain": false
 }

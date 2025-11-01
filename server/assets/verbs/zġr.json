@@ -14,24 +14,59 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mzaġalle",
-        "mzaġər"
-      ],
+      "forms": ["mzaġalle", "mzaġər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mzaġarre an=naqwe b-ab=buġre",
+            "translations": ["sie verstopften die Löcher mit kleinen Steinen"],
+            "references": ["244"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mzaġarre an=naqwe b-ab=buġre "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie verstopften die Löcher mit kleinen Steinenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "244"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mzaġarre an=naqwe b-ab=buġre ʻsie verstopften die Löcher mit kleinen Steinenʼ; 244;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mzaġarre an=naqwe b-ab=buġre",
+                "translations": [
+                  "ʻsie verstopften die Löcher mit kleinen Steinenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["244"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "verstopfen;"
-  ],
+  "idioms": ["verstopfen;"],
   "uncertain": false
 }

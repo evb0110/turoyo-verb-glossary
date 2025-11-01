@@ -5,10 +5,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mǧagǧəg",
-        "miǧagǧəg"
-      ],
+      "forms": ["mǧagǧəg", "miǧagǧəg"],
       "conjugations": {}
     },
     {
@@ -17,165 +14,1751 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "i=ḥoṯo həngi d-ko-miǧágəǧgo qume k-əmmo-le ya aḥuno! walaw! -",
+            "translations": [
+              "die Schwester fleht ihn so sehr an und spricht zu ihm: “Bruder, wieso denn?"
+            ],
+            "references": ["797", "88/99", "100"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=ḥoṯo həngi d-ko-miǧágəǧgo qume"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-əmmo-le"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ya aḥuno! walaw! "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Schwester fleht ihn so sehr an und spricht zu ihm: “Bruder, wieso denn?”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "797"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "88/99"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "100"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=ḥoṯo həngi d-ko-miǧágəǧgo qume; k-əmmo-le: ya aḥuno! walaw! ʻdie Schwester fleht ihn so sehr an und spricht zu ihm: “Bruder, wieso denn?”ʼ; 797; 88/99-100;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=ḥoṯo həngi d-ko-miǧágəǧgo qume",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "k-əmmo-le: ya aḥuno! walaw!",
+                "translations": [
+                  "ʻdie Schwester fleht ihn so sehr an und spricht zu ihm: “Bruder, wieso denn?”ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["797"]
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["88/99", "100"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "I",
-      "forms": [
-        "ǧġīl(məǧġele)",
-        "məǧġəl"
-      ],
+      "forms": ["ǧġīl(məǧġele)", "məǧġəl"],
       "conjugations": {
         "Preterit 1": [
           {
+            "turoyo": "lə=ǧġili lo ʕam more d-u=dōlmīš w-lə=mzaraṭṭe lə=mərral-le ya klay ya l=əmmət w-mede lə=mərral-le b-u=šəbḥo d-aloho hawi-la lišono l-i=səsto šġəlo ummo Mammo… lə=mtanela edi l-i=səsto. šġīl aʕma Mammo lǝ́=k-məšġolo prs - prs prs mə-bəṯṯər də-žġili ġálabe žġaliye yarəxto hawi u=lalyo fayət aʕlayye",
+            "translations": [
+              "dem Fahrer des Dolmuş sagten sie überhaupt nichts, sie haben ihm nicht gedroht, sie sagten ihm nicht, er solle warten oder (niemand von der Entführung) berichten",
+              "plötzlich bekam die Stute durch Gottes wunderbare Fügung Sprache und rief: ‘Mammo!’... die Stute sprach nicht mehr, so viel Mammo auch versuchte die Unterhaltung fortzusetzen",
+              "‘Nachdem sie viel miteinander gesprochen, sich lange unterhalten hatte, war die Nacht schon fast vergangen’"
+            ],
+            "references": ["1", "LB 32", "326"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=ǧġili lo ʕam more d-u=dōlmīš w-lə=mzaraṭṭe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=mərral-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ya klay"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ya l=əmmət w-mede lə=mərral-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdem Fahrer des Dolmuş sagten sie überhaupt nichts, sie haben ihm nicht gedroht, sie sagten ihm nicht, er solle warten oder (niemand von der Entführung) berichtenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 32"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-u=šəbḥo d-aloho hawi-la lišono l-i=səsto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šġəlo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ummo Mammo… lə=mtanela edi l-i=səsto. šġīl aʕma Mammo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lǝ́=k-məšġolo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻplötzlich bekam die Stute durch Gottes wunderbare Fügung Sprache und rief: ‘Mammo!’... die Stute sprach nicht mehr, so viel Mammo auch versuchte die Unterhaltung fortzusetzenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "326"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "3/17"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "18"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "20"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "237/18"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "25/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mə-bəṯṯər də-žġili ġálabe žġaliye yarəxto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawi u=lalyo fayət aʕlayye "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Nachdem sie viel miteinander gesprochen, sich lange unterhalten hatte, war die Nacht schon fast vergangen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/32"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "1) lə=ǧġili lo ʕam more d-u=dōlmīš w-lə=mzaraṭṭe, lə=mərral-le, ya klay, ya l=əmmət w-mede lə=mərral-le ʻdem Fahrer des Dolmuş sagten sie überhaupt nichts, sie haben ihm nicht gedroht, sie sagten ihm nicht, er solle warten oder (niemand von der Entführung) berichtenʼ; LB 32; b-u=šəbḥo d-aloho hawi-la lišono l-i=səsto, šġəlo, ummo Mammo… lə=mtanela edi l-i=səsto. šġīl aʕma Mammo, lǝ́=k-məšġolo ʻplötzlich bekam die Stute durch Gottes wunderbare Fügung Sprache und rief: ‘Mammo!’... die Stute sprach nicht mehr, so viel Mammo auch versuchte die Unterhaltung fortzusetzenʼ; 326; prs 3/17-18, 20; prs 237/18; prs 25/4; mə-bəṯṯər də-žġili ġálabe žġaliye yarəxto, hawi u=lalyo fayət aʕlayye ‘Nachdem sie viel miteinander gesprochen, sich lange unterhalten hatte, war die Nacht schon fast vergangen’; 24/32 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") lə=ǧġili lo ʕam more d-u=dōlmīš w-lə=mzaraṭṭe, lə=mərral-le, ya klay, ya l=əmmət w-mede lə=mərral-le",
+                "translations": [
+                  "ʻdem Fahrer des Dolmuş sagten sie überhaupt nichts, sie haben ihm nicht gedroht, sie sagten ihm nicht, er solle warten oder (niemand von der Entführung) berichtenʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 32"]
+              },
+              {
+                "turoyo": "b-u=šəbḥo d-aloho hawi-la lišono l-i=səsto, šġəlo, ummo Mammo… lə=mtanela edi l-i=səsto. šġīl aʕma Mammo, lǝ́=k-məšġolo",
+                "translations": [
+                  "ʻplötzlich bekam die Stute durch Gottes wunderbare Fügung Sprache und rief: ‘Mammo!’... die Stute sprach nicht mehr, so viel Mammo auch versuchte die Unterhaltung fortzusetzenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["326"]
+              },
+              {
+                "turoyo": "prs -,",
+                "translations": [],
+                "references": ["3/17", "18", "20"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["237/18"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["25/4"]
+              },
+              {
+                "turoyo": "mə-bəṯṯər də-žġili ġálabe žġaliye yarəxto, hawi u=lalyo fayət aʕlayye",
+                "translations": [
+                  "‘Nachdem sie viel miteinander gesprochen, sich lange unterhalten hatte, war die Nacht schon fast vergangen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/32"],
+                "notes": ["[MT]"]
+              }
+            ]
           },
           {
+            "turoyo": "mǝ́lla-le ǧġila-le kul i=qəṣṣa hani b-karyuṯo ǧġə́nnan-ne ʕal i=masale d-u=ḥarb d-ʕiwardo b-i=šato d-ann=arbaḥsar w-d-aḥ=ḥamšaḥsar",
+            "translations": [
+              "da erzählte sie ihm die ganze Geschichte",
+              "‘Diese Dinge habe ich in Kürze über den Kampf von ‘iwardo in den Jahren 14 und 15 erzählt’"
+            ],
+            "references": ["2", "MM 119", "14"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mǝ́lla-le ǧġila-le kul i=qəṣṣa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda erzählte sie ihm die ganze Geschichteʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 119"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hani b-karyuṯo ǧġə́nnan-ne ʕal i=masale d-u=ḥarb d-ʕiwardo b-i=šato d-ann=arbaḥsar w-d-aḥ=ḥamšaḥsar "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Diese Dinge habe ich in Kürze über den Kampf von ‘iwardo in den Jahren 14 und 15 erzählt’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "33/1"
+              }
+            ],
             "text": "2) mǝ́lla-le ǧġila-le kul i=qəṣṣa ʻda erzählte sie ihm die ganze Geschichteʼ MM 119; hani b-karyuṯo ǧġə́nnan-ne ʕal i=masale d-u=ḥarb d-ʕiwardo b-i=šato d-ann=arbaḥsar w-d-aḥ=ḥamšaḥsar ‘Diese Dinge habe ich in Kürze über den Kampf von ‘iwardo in den Jahren 14 und 15 erzählt’; 33/1",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mǝ́lla-le ǧġila-le kul i=qəṣṣa",
+                "translations": ["ʻda erzählte sie ihm die ganze Geschichteʼ"],
+                "references": ["2", "MM 119"]
+              },
+              {
+                "turoyo": "hani b-karyuṯo ǧġə́nnan-ne ʕal i=masale d-u=ḥarb d-ʕiwardo b-i=šato d-ann=arbaḥsar w-d-aḥ=ḥamšaḥsar",
+                "translations": [
+                  "‘Diese Dinge habe ich in Kürze über den Kampf von ‘iwardo in den Jahren 14 und 15 erzählt’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["33/1"]
+              }
+            ]
           }
         ],
         "Preterit 2": [
           {
+            "turoyo": "məžġelan əšmo fransawi ʕam ḥḏoḏe",
+            "translations": [
+              "‘wir haben ein wenig französisch miteinander gesprochen’"
+            ],
+            "references": ["1", "2/297"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " məžġelan əšmo fransawi ʕam ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘wir haben ein wenig französisch miteinander gesprochen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/297"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) məžġelan əšmo fransawi ʕam ḥḏoḏe ‘wir haben ein wenig französisch miteinander gesprochen’; 2/297;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") məžġelan əšmo fransawi ʕam ḥḏoḏe",
+                "translations": [
+                  "‘wir haben ein wenig französisch miteinander gesprochen’"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["2/297"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "k-uḏʕi u=lišon-ano bə-briṯo žġayni mənayye w-m-ann=abn-aṯṯe nošo lo=k-ŭḏaʕ-le w-lo=k-məžġe-le u=ʕulmo d-arke b-am=mo tmoni k-məžġəl ʕărabi šġīl aʕma Mammo lo k-məšġolo prs kila daməxto nafas kiba w-ʕayna sxire lu=k-qudro d-məžġolo -",
+            "translations": [
+              "sie wissen, dass ausser ihnen und ihren Kindern niemand in der Welt diese Sprache kennt und spricht",
+              "die Leute sprechen hier zu achtzig Prozent arabisch",
+              "‘Mammo sprach zu ihm (das Pferd, f), es antwortete aber nicht’",
+              "‘Sie schläft, sie hat noch Lebensodem in sich, aber ihre Augen sind geschlossen und sie kann nicht sprechen’"
+            ],
+            "references": ["1", "326", "11/329"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-uḏʕi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=lišon-ano bə-briṯo žġayni mənayye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-m-ann=abn-aṯṯe nošo lo=k-ŭḏaʕ-le w-lo=k-məžġe-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie wissen, dass ausser ihnen und ihren Kindern niemand in der Welt diese Sprache kennt und sprichtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "326"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/329"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=ʕulmo d-arke b-am=mo tmoni k-məžġəl ʕărabi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Leute sprechen hier zu achtzig Prozent arabischʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/20"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " šġīl aʕma Mammo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo k-məšġolo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Mammo sprach zu ihm (das Pferd, f), es antwortete aber nicht’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "3/20"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kila daməxto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " nafas kiba w-ʕayna sxire"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lu=k-qudro d-məžġolo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sie schläft, sie hat noch Lebensodem in sich, aber ihre Augen sind geschlossen und sie kann nicht sprechen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/71"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "72"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "1) k-uḏʕi, u=lišon-ano bə-briṯo žġayni mənayye, w-m-ann=abn-aṯṯe nošo lo=k-ŭḏaʕ-le w-lo=k-məžġe-le ʻsie wissen, dass ausser ihnen und ihren Kindern niemand in der Welt diese Sprache kennt und sprichtʼ; 326; 11/329; u=ʕulmo d-arke b-am=mo tmoni k-məžġəl ʕărabi ʻdie Leute sprechen hier zu achtzig Prozent arabischʼ; 11/20; šġīl aʕma Mammo, lo k-məšġolo ‘Mammo sprach zu ihm (das Pferd, f), es antwortete aber nicht’; prs 3/20; kila daməxto, nafas kiba w-ʕayna sxire, lu=k-qudro d-məžġolo ‘Sie schläft, sie hat noch Lebensodem in sich, aber ihre Augen sind geschlossen und sie kann nicht sprechen’; 24/71-72 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") k-uḏʕi, u=lišon-ano bə-briṯo žġayni mənayye, w-m-ann=abn-aṯṯe nošo lo=k-ŭḏaʕ-le w-lo=k-məžġe-le",
+                "translations": [
+                  "ʻsie wissen, dass ausser ihnen und ihren Kindern niemand in der Welt diese Sprache kennt und sprichtʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["326"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/329"]
+              },
+              {
+                "turoyo": "u=ʕulmo d-arke b-am=mo tmoni k-məžġəl ʕărabi",
+                "translations": [
+                  "ʻdie Leute sprechen hier zu achtzig Prozent arabischʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/20"]
+              },
+              {
+                "turoyo": "šġīl aʕma Mammo, lo k-məšġolo",
+                "translations": [
+                  "‘Mammo sprach zu ihm (das Pferd, f), es antwortete aber nicht’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["3/20"]
+              },
+              {
+                "turoyo": "kila daməxto, nafas kiba w-ʕayna sxire, lu=k-qudro d-məžġolo",
+                "translations": [
+                  "‘Sie schläft, sie hat noch Lebensodem in sich, aber ihre Augen sind geschlossen und sie kann nicht sprechen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["24/71", "72"],
+                "notes": ["[MT]"]
+              }
+            ]
           },
           {
+            "turoyo": "hani ad=darwēš-ani ko-məǧġoli štaġaliye basəmto u=muxtar uʕdo gə-məǧġolina xuṣuṣi aʕle",
+            "translations": [
+              "die Derwische können ja interessant erzählen",
+              "‘Wir werden jetzt besonders über den Schuhheiß reden’"
+            ],
+            "references": ["2", "MM 77", "33/40"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hani ad=darwēš-ani ko-məǧġoli štaġaliye basəmto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Derwische können ja interessant erzählenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 77"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=muxtar uʕdo gə-məǧġolina xuṣuṣi aʕle "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wir werden jetzt besonders über den Schuhheiß reden’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "33/40"
+              }
+            ],
             "text": "2) hani ad=darwēš-ani ko-məǧġoli štaġaliye basəmto ʻdie Derwische können ja interessant erzählenʼ; MM 77; u=muxtar uʕdo gə-məǧġolina xuṣuṣi aʕle ‘Wir werden jetzt besonders über den Schuhheiß reden’; 33/40",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") hani ad=darwēš-ani ko-məǧġoli štaġaliye basəmto",
+                "translations": [
+                  "ʻdie Derwische können ja interessant erzählenʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["MM 77"]
+              },
+              {
+                "turoyo": "u=muxtar uʕdo gə-məǧġolina xuṣuṣi aʕle",
+                "translations": [
+                  "‘Wir werden jetzt besonders über den Schuhheiß reden’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["33/40"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "u=laly-awo u=zʕur-awo d-lə=mǝ́ǧġəl-wa lə=ko-moṭí-way-na l-mede lə=k-uḏʕí-way-na áydarbo əzzano áydarbo oṯina kul yawmo ġēr m-u=mazlo w m-u=maṯyo w m-u=kroxo d-gawə-d-i=baxča lo=dŭyaq-wo iḏe b-tu šuġlo w ġắlabe əšmo məžġal-wo",
+            "translations": [
+              "hätte der Junge nicht in jener Nacht geredet, so würden wir gar nichts erreicht und nicht ein noch aus gewusst haben",
+              "ausser, dass er täglich in dem Garten auf und ab und herumging, tat er gar nichts. Er sprach auch sehr wenig"
+            ],
+            "references": ["1", "327", "115/272"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=laly-awo u=zʕur-awo d-lə=mǝ́ǧġəl-wa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=ko-moṭí-way-na l-mede"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=k-uḏʕí-way-na áydarbo əzzano áydarbo oṯina "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻhätte der Junge nicht in jener Nacht geredet, so würden wir gar nichts erreicht und nicht ein noch aus gewusst habenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "327"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "115/272"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kul yawmo ġēr m-u=mazlo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w m-u=maṯyo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w m-u=kroxo d-gawə-d-i=baxča"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=dŭyaq-wo iḏe b-tu šuġlo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ġắlabe əšmo məžġal-wo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻausser, dass er täglich in dem Garten auf und ab und herumging, tat er gar nichts. Er sprach auch sehr wenigʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "327"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/119"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) u=laly-awo u=zʕur-awo d-lə=mǝ́ǧġəl-wa, lə=ko-moṭí-way-na l-mede; lə=k-uḏʕí-way-na áydarbo əzzano áydarbo oṯina ʻhätte der Junge nicht in jener Nacht geredet, so würden wir gar nichts erreicht und nicht ein noch aus gewusst habenʼ; 327; 115/272; kul yawmo ġēr m-u=mazlo, w m-u=maṯyo, w m-u=kroxo d-gawə-d-i=baxča, lo=dŭyaq-wo iḏe b-tu šuġlo, w ġắlabe əšmo məžġal-wo ʻausser, dass er täglich in dem Garten auf und ab und herumging, tat er gar nichts. Er sprach auch sehr wenigʼ; 327; 2/119;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") u=laly-awo u=zʕur-awo d-lə=mǝ́ǧġəl-wa, lə=ko-moṭí-way-na l-mede",
+                "translations": [],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "lə=k-uḏʕí-way-na áydarbo əzzano áydarbo oṯina",
+                "translations": [
+                  "ʻhätte der Junge nicht in jener Nacht geredet, so würden wir gar nichts erreicht und nicht ein noch aus gewusst habenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["327"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["115/272"]
+              },
+              {
+                "turoyo": "kul yawmo ġēr m-u=mazlo, w m-u=maṯyo, w m-u=kroxo d-gawə-d-i=baxča, lo=dŭyaq-wo iḏe b-tu šuġlo, w ġắlabe əšmo məžġal-wo",
+                "translations": [
+                  "ʻausser, dass er täglich in dem Garten auf und ab und herumging, tat er gar nichts. Er sprach auch sehr wenigʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["327"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["2/119"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "məžġə́l ʕam babi b-lišono basimo b-makixuṯo",
+            "translations": [
+              "‘Sprich du mit meinem Vater freundlich und höflich’"
+            ],
+            "references": ["1", "29/200"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " məžġə́l ʕam babi b-lišono basimo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-makixuṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sprich du mit meinem Vater freundlich und höflich’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/200"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) məžġə́l ʕam babi b-lišono basimo, b-makixuṯo ‘Sprich du mit meinem Vater freundlich und höflich’; 29/200;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") məžġə́l ʕam babi b-lišono basimo, b-makixuṯo",
+                "translations": [
+                  "‘Sprich du mit meinem Vater freundlich und höflich’"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/200"]
+              }
+            ]
           },
           {
+            "turoyo": "babi məḷḷe-le ha-darwēš məǧġay-lan mə=ḥzelux bə-briṯo",
+            "translations": [
+              "‘My father said to him: “Now, dervish, tell us what you have seen in the world’"
+            ],
+            "references": ["2", "MM 79"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " babi məḷḷe-le ha-darwēš məǧġay-lan mə=ḥzelux bə-briṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘My father said to him: “Now, dervish, tell us what you have seen in the world’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 79"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) babi məḷḷe-le ha-darwēš məǧġay-lan mə=ḥzelux bə-briṯo ‘My father said to him: “Now, dervish, tell us what you have seen in the world’ MM 79;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") babi məḷḷe-le ha-darwēš məǧġay-lan mə=ḥzelux bə-briṯo",
+                "translations": [
+                  "‘My father said to him: “Now, dervish, tell us what you have seen in the world’"
+                ],
+                "references": ["2", "MM 79"]
+              }
+            ]
           },
           {
+            "turoyo": "məšġǝ́l prs prs prs",
+            "translations": ["rede!"],
+            "references": ["327", "11/6", "61/12"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "məšġǝ́l "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻrede!ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "327"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "11/6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "61/12"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "13"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "64/20"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "məšġǝ́l ʻrede!ʼ; 327; prs 11/6; prs 61/12, 13; prs 64/20;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "məšġǝ́l",
+                "translations": ["ʻrede!ʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["327"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["11/6"]
+              },
+              {
+                "turoyo": "prs ,",
+                "translations": [],
+                "references": ["61/12", "13"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["64/20"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
+            "turoyo": "le i=naqla d-ko-ṭoyámna-nne ko-ḥozeno u=med-ano d-ko-rowəḥ w k-owe ǧġaliye",
+            "translations": [
+              "wenn ich sie (die Auge) verschliess, sah ich dieses Szene, dass sich das Grab weitete und gesprochen wurde"
+            ],
+            "references": ["LB 152"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "le i=naqla d-ko-ṭoyámna-nne ko-ḥozeno u=med-ano"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-ko-rowəḥ w k-owe ǧġaliye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn ich sie (die Auge) verschliess, sah ich dieses Szene, dass sich das Grab weitete und gesprochen wurdeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 152"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "le i=naqla d-ko-ṭoyámna-nne ko-ḥozeno u=med-ano, d-ko-rowəḥ w k-owe ǧġaliye ʻwenn ich sie (die Auge) verschliess, sah ich dieses Szene, dass sich das Grab weitete und gesprochen wurdeʼ; LB 152;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "le i=naqla d-ko-ṭoyámna-nne ko-ḥozeno u=med-ano, d-ko-rowəḥ w k-owe ǧġaliye",
+                "translations": [
+                  "ʻwenn ich sie (die Auge) verschliess, sah ich dieses Szene, dass sich das Grab weitete und gesprochen wurdeʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 152"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "mtaǧġəl",
-        "mitaǧġəl"
-      ],
+      "forms": ["mtaǧġəl", "mitaǧġəl"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "k-obaʕ-le šabe hul d-mitaǧġəl",
+            "translations": ["es braucht Wochen, bis man es erzählen kann"],
+            "references": ["4", "328", "115/267"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "4"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-obaʕ-le šabe hul d-mitaǧġəl "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes braucht Wochen, bis man es erzählen kannʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "328"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "115/267"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "4) k-obaʕ-le šabe hul d-mitaǧġəl ʻes braucht Wochen, bis man es erzählen kannʼ; 328; 115/267;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") k-obaʕ-le šabe hul d-mitaǧġəl",
+                "translations": [
+                  "ʻes braucht Wochen, bis man es erzählen kannʼ"
+                ],
+                "references": ["4"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["328"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["115/267"]
+              }
+            ]
           },
           {
+            "turoyo": "yaʕni kito uʕdo harke b Mәḏyaḏ kmitəǧġәl arbʕo+lišone arbʕo+lišone kmitəǧġəl b Mәḏyaḏ. YT",
+            "translations": [
+              "‘Like, there is now here in Midyat, it is spoken in four languages, in four languages it is spoken in Midyat.’"
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "yaʕni kito uʕdo harke b Mәḏyaḏ kmitəǧġәl arbʕo+lišone"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " arbʕo+lišone kmitəǧġəl b Mәḏyaḏ. "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Like, there is now here in Midyat, it is spoken in four languages, in four languages it is spoken in Midyat.’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "YT"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "yaʕni kito uʕdo harke b Mәḏyaḏ kmitəǧġәl arbʕo+lišone, arbʕo+lišone kmitəǧġəl b Mәḏyaḏ. ‘Like, there is now here in Midyat, it is spoken in four languages, in four languages it is spoken in Midyat.’ (YT)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "yaʕni kito uʕdo harke b Mәḏyaḏ kmitəǧġәl arbʕo+lišone, arbʕo+lišone kmitəǧġəl b Mәḏyaḏ. (YT)",
+                "translations": [
+                  "‘Like, there is now here in Midyat, it is spoken in four languages, in four languages it is spoken in Midyat.’"
+                ],
+                "references": []
+              }
+            ]
           },
           {
+            "turoyo": "arbʕo+lišone komitaǧәġli b Mәḏyaḏ = komitaǧġal arbʕo lišone Ilyas p.c. /",
+            "translations": ["‘In Midyat, they speak in four languages’"],
+            "references": ["24/04", "24"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "arbʕo+lišone komitaǧәġli b Mәḏyaḏ = komitaǧġal arbʕo lišone "
+              },
+              {
+                "kind": "translation",
+                "value": "‘In Midyat, they speak in four languages’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c. "
+              },
+              {
+                "kind": "ref",
+                "value": "24/04"
+              },
+              {
+                "kind": "turoyo",
+                "value": "/"
+              },
+              {
+                "kind": "ref",
+                "value": "24"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "arbʕo+lišone komitaǧәġli b Mәḏyaḏ = komitaǧġal arbʕo lišone ‘In Midyat, they speak in four languages’ (Ilyas p.c. 24/04/24)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "arbʕo+lišone komitaǧәġli b Mәḏyaḏ = komitaǧġal arbʕo lišone (Ilyas p.c. /)",
+                "translations": ["‘In Midyat, they speak in four languages’"],
+                "references": ["24/04", "24"]
+              }
+            ]
           },
           {
-            "text": "komitaǧәġli al+lišone ʕarabi ġalabe  ~ ‘Arabic languages are spoken a lot’ (Ilyas p.c. 24/04/24)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "komitaǧәġli al+lišone ʕarabi ġalabe ~ Ilyas p.c. /",
+            "translations": ["‘Arabic languages are spoken a lot’"],
+            "references": ["24/04", "24"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "komitaǧәġli al+lišone ʕarabi ġalabe  ~ "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Arabic languages are spoken a lot’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c. "
+              },
+              {
+                "kind": "ref",
+                "value": "24/04"
+              },
+              {
+                "kind": "turoyo",
+                "value": "/"
+              },
+              {
+                "kind": "ref",
+                "value": "24"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "komitaǧәġli al+lišone ʕarabi ġalabe ~ ‘Arabic languages are spoken a lot’ (Ilyas p.c. 24/04/24)",
+            "segments": [
+              {
+                "turoyo": "komitaǧәġli al+lišone ʕarabi ġalabe ~ (Ilyas p.c. /)",
+                "translations": ["‘Arabic languages are spoken a lot’"],
+                "references": ["24/04", "24"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "maǧġele",
-        "maǧġəl"
-      ],
+      "forms": ["maǧġele", "maǧġəl"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "lə=maṭina l-u=belūk hul ḥamšaḥṣar=yawme, hawxa b-a=dkoṯone, b-u=gab-ano w b-hano, maǧġállal-lan ʻdoch erst nach fünfzehn Tagen kamen wir bei der Kompanie an, (denn) so(lange) hielten sie uns an verschiedenen Ortenʼ JL 18.7.2; mašġele u=qaṭuno, a=tloṯo=ḥrene nafili bayn ab=baḏənžān d-lo m-u=qaṭuno ʻso beschäftigte er den Kater, und die drei andern konnten sich über die Auberginen hermachen, ohne dass der Kater etwas davon merkteʼ; 326; prs 165/26; prs 246/26; 2) maǧġele ruḥe hiye ʻer selbst beschäftigte sich noch etwasʼ; MM 121;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "maǧġele ruḥe hiye",
+            "translations": ["er selbst beschäftigte sich noch etwas"],
+            "references": ["2", "MM 121"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maǧġele ruḥe hiye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer selbst beschäftigte sich noch etwasʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 121"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) maǧġele ruḥe hiye ʻer selbst beschäftigte sich noch etwasʼ; MM 121;",
+            "segments": [
+              {
+                "turoyo": ") maǧġele ruḥe hiye",
+                "translations": ["ʻer selbst beschäftigte sich noch etwasʼ"],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["MM 121"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "1) k-maǧġəl u=naʕimo ʻer beschäftigt das Kindʼ; 326; Ono komaǧġalno ruḥi  (hənnək komaǧə́ġli ruḥayye) = komafətno zabno, komašfaʕno zabno (Ilyas p.c. 07-05-2022)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "k-maǧġəl u=naʕimo Ono komaǧġalno ruḥi hənnək komaǧə́ġli ruḥayye = komafətno zabno komašfaʕno zabno Ilyas p.c. --",
+            "translations": ["er beschäftigt das Kind"],
+            "references": ["1", "326", "07"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-maǧġəl u=naʕimo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer beschäftigt das Kindʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "326"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Ono komaǧġalno ruḥi  "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "hənnək komaǧə́ġli ruḥayye"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " = komafətno zabno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " komašfaʕno zabno "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c. "
+              },
+              {
+                "kind": "ref",
+                "value": "07"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "05"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "2022"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "1) k-maǧġəl u=naʕimo ʻer beschäftigt das Kindʼ; 326; Ono komaǧġalno ruḥi (hənnək komaǧə́ġli ruḥayye) = komafətno zabno, komašfaʕno zabno (Ilyas p.c. 07-05-2022)",
+            "segments": [
+              {
+                "turoyo": ") k-maǧġəl u=naʕimo",
+                "translations": ["ʻer beschäftigt das Kindʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["326"]
+              },
+              {
+                "turoyo": "Ono komaǧġalno ruḥi (hənnək komaǧə́ġli ruḥayye) = komafətno zabno, komašfaʕno zabno (Ilyas p.c. --)",
+                "translations": [],
+                "references": ["07", "05", "2022"]
+              }
+            ]
           },
           {
-            "text": "mitaǧġəl;",
-            "turoyo": "",
+            "turoyo": "mitaǧġəl",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mitaǧġəl"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mitaǧġəl;",
+            "segments": [
+              {
+                "turoyo": "mitaǧġəl",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ],
         "Preterite": [
           {
-            "text": "mtaǧġəl;",
-            "turoyo": "",
+            "turoyo": "mtaǧġəl",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mtaǧġəl"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mtaǧġəl;",
+            "segments": [
+              {
+                "turoyo": "mtaǧġəl",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }

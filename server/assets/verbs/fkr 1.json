@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mfakər",
-        "mifakər"
-      ],
+      "forms": ["mfakər", "mifakər"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,57 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "lə-k-mifakanno b-u=tarʕo",
+            "translations": [
+              "ich gehe nicht in die Tür hinein, (weil ich zu dick bin)"
+            ],
+            "references": ["249"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lə-k-mifakanno b-u=tarʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich gehe nicht in die Tür hinein, (weil ich zu dick bin)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "249"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "lə-k-mifakanno b-u=tarʕo ʻich gehe nicht in die Tür hinein, (weil ich zu dick bin)ʼ; 249;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "lə-k-mifakanno b-u=tarʕo",
+                "translations": [
+                  "ʻich gehe nicht in die Tür hinein, (weil ich zu dick bin)ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["249"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) stecken, eingeklemmt bleiben;"
-  ],
+  "idioms": ["(Detrans.) stecken, eingeklemmt bleiben;"],
   "uncertain": false
 }

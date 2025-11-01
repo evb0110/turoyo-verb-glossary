@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "gḏile",
-        "goḏəl"
-      ],
+      "forms": ["gḏile", "goḏəl"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "gḏile ḥawlo",
+            "translations": ["er flocht einen Haarstrick"],
+            "references": ["287"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gḏile ḥawlo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer flocht einen Haarstrickʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "287"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "gḏile ḥawlo ʻer flocht einen Haarstrickʼ; 287;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "gḏile ḥawlo",
+                "translations": ["ʻer flocht einen Haarstrickʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["287"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "flechten;"
-  ],
+  "idioms": ["flechten;"],
   "uncertain": false
 }

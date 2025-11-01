@@ -14,24 +14,140 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "zbele",
-        "zobe"
-      ],
+      "forms": ["zbele", "zobe"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "l-aloho hawxa zbele kamili a=tšʕo=yarḥaṯṯe l-Aḥmad Aġa hawi-le abro w l-Ḥasán Aġa hawi-le barṯo",
+            "translations": [
+              "Gott wollte es so: als ihre neun Monate um waren, bekam Aḥmäd Agha einen Sohn und Ḥasan Agha eine Tochter"
+            ],
+            "references": ["333", "62/7", "8"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-aloho hawxa zbele"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kamili a=tšʕo=yarḥaṯṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-Aḥmad Aġa hawi-le abro w l-Ḥasán Aġa hawi-le barṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻGott wollte es so: als ihre neun Monate um waren, bekam Aḥmäd Agha einen Sohn und Ḥasan Agha eine Tochterʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "333"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/7"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "64/38"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "234"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "l-aloho hawxa zbele; kamili a=tšʕo=yarḥaṯṯe, l-Aḥmad Aġa hawi-le abro w l-Ḥasán Aġa hawi-le barṯo ʻGott wollte es so: als ihre neun Monate um waren, bekam Aḥmäd Agha einen Sohn und Ḥasan Agha eine Tochterʼ; 333; 62/7, 8; 64/38, 234;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "l-aloho hawxa zbele",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "kamili a=tšʕo=yarḥaṯṯe, l-Aḥmad Aġa hawi-le abro w l-Ḥasán Aġa hawi-le barṯo",
+                "translations": [
+                  "ʻGott wollte es so: als ihre neun Monate um waren, bekam Aḥmäd Agha einen Sohn und Ḥasan Agha eine Tochterʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["333"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["62/7", "8"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["64/38", "234"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "wollen;"
-  ],
+  "idioms": ["wollen;"],
   "uncertain": false
 }

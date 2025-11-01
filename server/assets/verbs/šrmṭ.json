@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mšarmaṭle",
-        "mšarməṭ"
-      ],
+      "forms": ["mšarmaṭle", "mšarməṭ"],
       "conjugations": {}
     },
     {
@@ -26,10 +23,65 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-mišarməṭ u=galdo",
+            "translations": ["die Haut schürft sich ab"],
+            "references": ["790", "63/281"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mišarməṭ u=galdo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Haut schürft sich abʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "790"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "63/281"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-mišarməṭ u=galdo ʻdie Haut schürft sich abʼ; 790; 63/281;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-mišarməṭ u=galdo",
+                "translations": ["ʻdie Haut schürft sich abʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["790"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["63/281"]
+              }
+            ]
           }
         ]
       }

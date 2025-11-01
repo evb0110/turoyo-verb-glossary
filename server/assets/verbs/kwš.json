@@ -14,25 +14,214 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "kwəšle",
-        "kowəš"
-      ],
+      "forms": ["kwəšle", "kowəš"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "kwəšše u=tarʕo prs",
+            "translations": ["sie verrammelten das Tor"],
+            "references": ["449", "66/17"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kwəšše u=tarʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie verrammelten das Torʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "449"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "66/17"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kwəšše u=tarʕo ʻsie verrammelten das Torʼ; 449; prs 66/17;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kwəšše u=tarʕo",
+                "translations": ["ʻsie verrammelten das Torʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["449"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["66/17"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "zayiʕi d-i=walaye mene kawši at=tarʕe w yawmo d-lo gnoyo m-i=zuḥto prs ba kawšat baytə=d-baba d-i=Lilaye!",
+            "translations": [
+              "die Einwohner der Stadt fürchteten sich vor ihm und aus Angst die Stadttore schlössen, bevor die Sonne unterging",
+              "schlag das Haus des Vaters der Laila zusammen"
+            ],
+            "references": ["454", "56/9", "454"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "zayiʕi d-i=walaye mene"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kawši at=tarʕe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w yawmo d-lo gnoyo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-i=zuḥto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Einwohner der Stadt fürchteten sich vor ihm und aus Angst die Stadttore schlössen, bevor die Sonne untergingʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "454"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "56/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ba kawšat baytə=d-baba d-i=Lilaye! "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻschlag das Haus des Vaters der Laila zusammenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "454"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/85"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "zayiʕi d-i=walaye mene, kawši at=tarʕe, w yawmo d-lo gnoyo, m-i=zuḥto ʻdie Einwohner der Stadt fürchteten sich vor ihm und aus Angst die Stadttore schlössen, bevor die Sonne untergingʼ; 454; prs 56/9; ba kawšat baytə=d-baba d-i=Lilaye! ʻschlag das Haus des Vaters der Laila zusammenʼ; 454; 65/85;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "zayiʕi d-i=walaye mene, kawši at=tarʕe, w yawmo d-lo gnoyo, m-i=zuḥto",
+                "translations": [
+                  "ʻdie Einwohner der Stadt fürchteten sich vor ihm und aus Angst die Stadttore schlössen, bevor die Sonne untergingʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["454"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["56/9"]
+              },
+              {
+                "turoyo": "ba kawšat baytə=d-baba d-i=Lilaye!",
+                "translations": [
+                  "ʻschlag das Haus des Vaters der Laila zusammenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["454"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["65/85"]
+              }
+            ]
           }
         ]
       }
@@ -43,35 +232,200 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "kwīš bayto",
+            "translations": ["dem das Haus zerstört werden möge"],
+            "references": ["458", "60/281", "61/8"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kwīš bayto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdem das Haus zerstört werden mögeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "458"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "60/281"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "61/8"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "274"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kwīš bayto ʻdem das Haus zerstört werden mögeʼ; 458; 60/281; 61/8, 274;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kwīš bayto",
+                "translations": ["ʻdem das Haus zerstört werden mögeʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["458"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["60/281"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["61/8", "274"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "makwašle",
-        "makwəš"
-      ],
+      "forms": ["makwašle", "makwəš"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "makwašle -",
+            "translations": ["er drückte (auf den Kopf)"],
+            "references": ["459", "460"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "makwašle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer drückte (auf den Kopf)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "459"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "460"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "makwašle ʻer drückte (auf den Kopf)ʼ; 459-460;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "makwašle",
+                "translations": ["ʻer drückte (auf den Kopf)ʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["459", "460"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "makwáš",
+            "translations": ["drücke (auf den Kopf)"],
+            "references": ["462"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "makwáš "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdrücke (auf den Kopf)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "462"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "makwáš ʻdrücke (auf den Kopf)ʼ; 462;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "makwáš",
+                "translations": ["ʻdrücke (auf den Kopf)ʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["462"]
+              }
+            ]
           }
         ]
       }

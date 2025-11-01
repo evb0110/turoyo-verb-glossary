@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "maḥele",
-        "maḥe"
-      ],
+      "forms": ["maḥele", "maḥe"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,89 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "hani rayši-wo gaz w darmono ʕal foṯə-d-i=bərke w b-u=šəkəl-ano i=boqo d-i=ḥəmto mməḥyo",
+            "translations": [
+              "‘diese spritzten immer Petroleum und eine Droge auf die Oberfläche des Wasserbassins, und auf diese Weise wurden die Moskitos vernichtet’"
+            ],
+            "references": ["1", "1/36"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hani rayši-wo gaz w darmono"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕal foṯə-d-i=bərke"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w b-u=šəkəl-ano"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=boqo d-i=ḥəmto mməḥyo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘diese spritzten immer Petroleum und eine Droge auf die Oberfläche des Wasserbassins, und auf diese Weise wurden die Moskitos vernichtet’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "1/36"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) hani rayši-wo gaz w darmono, ʕal foṯə-d-i=bərke, w b-u=šəkəl-ano, i=boqo d-i=ḥəmto mməḥyo ‘diese spritzten immer Petroleum und eine Droge auf die Oberfläche des Wasserbassins, und auf diese Weise wurden die Moskitos vernichtet’; 1/36;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") hani rayši-wo gaz w darmono, ʕal foṯə-d-i=bərke, w b-u=šəkəl-ano, i=boqo d-i=ḥəmto mməḥyo",
+                "translations": [
+                  "‘diese spritzten immer Petroleum und eine Droge auf die Oberfläche des Wasserbassins, und auf diese Weise wurden die Moskitos vernichtet’"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["1/36"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "vernichten;"
-  ],
+  "idioms": ["vernichten;"],
   "uncertain": false
 }

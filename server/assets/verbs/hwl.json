@@ -14,32 +14,153 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mhawele",
-        "mhawəl"
-      ],
+      "forms": ["mhawele", "mhawəl"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ḥa zlām mhawele ʕal ḥa omər qay mhawelox aʕli prs",
+            "translations": [
+              "ein Mann holte zum Schlag gegen einen aus, der sprach: Warum erhebst du die Hand gegen mich"
+            ],
+            "references": ["474", "255/34"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥa zlām mhawele ʕal ḥa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " omər qay mhawelox aʕli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻein Mann holte zum Schlag gegen einen aus, der sprach: Warum erhebst du die Hand gegen michʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "474"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "255/34"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ḥa zlām mhawele ʕal ḥa, omər qay mhawelox aʕli ʻein Mann holte zum Schlag gegen einen aus, der sprach: Warum erhebst du die Hand gegen michʼ; 474; prs 255/34;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ḥa zlām mhawele ʕal ḥa, omər qay mhawelox aʕli",
+                "translations": [
+                  "ʻein Mann holte zum Schlag gegen einen aus, der sprach: Warum erhebst du die Hand gegen michʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["474"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["255/34"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
+            "turoyo": "b-i=həwulto mawbelox qantoro meni prs",
+            "translations": [
+              "durch das Ausholen hast du mir einen Centner weggenommen"
+            ],
+            "references": ["474", "255/35"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "b-i=həwulto mawbelox qantoro meni "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdurch das Ausholen hast du mir einen Centner weggenommenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "474"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "255/35"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "b-i=həwulto mawbelox qantoro meni ʻdurch das Ausholen hast du mir einen Centner weggenommenʼ; 474; prs 255/35;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "b-i=həwulto mawbelox qantoro meni",
+                "translations": [
+                  "ʻdurch das Ausholen hast du mir einen Centner weggenommenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["474"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["255/35"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "zum Schlagen ausholen, drohend die Hand erheben;"
-  ],
+  "idioms": ["zum Schlagen ausholen, drohend die Hand erheben;"],
   "uncertain": false
 }

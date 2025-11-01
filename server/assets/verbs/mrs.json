@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mrəsle",
-        "morəs"
-      ],
+      "forms": ["mrəsle", "morəs"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-morəs",
+            "translations": ["er lutscht"],
+            "references": ["99"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-morəs "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer lutschtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "99"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-morəs ʻer lutschtʼ; 99;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-morəs",
+                "translations": ["ʻer lutschtʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["99"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "lutschen;"
-  ],
+  "idioms": ["lutschen;"],
   "uncertain": false
 }

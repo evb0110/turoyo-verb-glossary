@@ -14,24 +14,145 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ḥšəlle",
-        "ḥošər"
-      ],
+      "forms": ["ḥšəlle", "ḥošər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "kale harke ḥšəlli ono b-i=od-aṯe ḥšərre ṭaw m-u=qaṭlo d-mǝ́qṭəl-yo",
+            "translations": [
+              "er ist hier; ich habe ihn in diesem Zimmer eingesperrt",
+              "man hatte ihn in eine Zwangslage versetzt. Es war besser als umgebracht zu werden"
+            ],
+            "references": ["233", "71/73", "233"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kale harke ḥšəlli ono b-i=od-aṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer ist hier; ich habe ihn in diesem Zimmer eingesperrtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "233"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "71/73"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥšərre"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṭaw m-u=qaṭlo d-mǝ́qṭəl-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻman hatte ihn in eine Zwangslage versetzt. Es war besser als umgebracht zu werdenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "233"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "57/71"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kale harke ḥšəlli ono b-i=od-aṯe ʻer ist hier; ich habe ihn in diesem Zimmer eingesperrtʼ; 233; 71/73; ḥšərre; ṭaw m-u=qaṭlo d-mǝ́qṭəl-yo ʻman hatte ihn in eine Zwangslage versetzt. Es war besser als umgebracht zu werdenʼ; 233; 57/71;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kale harke ḥšəlli ono b-i=od-aṯe",
+                "translations": [
+                  "ʻer ist hier; ich habe ihn in diesem Zimmer eingesperrtʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["233"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["71/73"]
+              },
+              {
+                "turoyo": "ḥšərre",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "ṭaw m-u=qaṭlo d-mǝ́qṭəl-yo",
+                "translations": [
+                  "ʻman hatte ihn in eine Zwangslage versetzt. Es war besser als umgebracht zu werdenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["233"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["57/71"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "in eine Zwangslage versetzen, einsperren;"
-  ],
+  "idioms": ["in eine Zwangslage versetzen, einsperren;"],
   "uncertain": false
 }

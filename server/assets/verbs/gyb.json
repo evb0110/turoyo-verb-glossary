@@ -5,24 +5,74 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "magəble",
-        "magəb"
-      ],
+      "forms": ["magəble", "magəb"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "zayəʕ mene ġắlabe magəble mene",
+            "translations": ["da bekam er Angst und erschrak vor ihm"],
+            "references": ["581", "29/219"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "zayəʕ mene ġắlabe magəble mene "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda bekam er Angst und erschrak vor ihmʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "581"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/219"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "zayəʕ mene ġắlabe magəble mene ʻda bekam er Angst und erschrak vor ihmʼ; 581; 29/219;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "zayəʕ mene ġắlabe magəble mene",
+                "translations": ["ʻda bekam er Angst und erschrak vor ihmʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["581"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/219"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sich fürchten, Angst bekommen;"
-  ],
+  "idioms": ["sich fürchten, Angst bekommen;"],
   "uncertain": false
 }

@@ -5,24 +5,53 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mbarzaqle",
-        "mbarzəq"
-      ],
+      "forms": ["mbarzaqle", "mbarzəq"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "mbarzaqqe l-am=maye; 770;",
-            "turoyo": "",
+            "turoyo": "mbarzaqqe l-am=maye",
             "translations": [],
-            "references": []
+            "references": ["770"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mbarzaqqe l-am=maye"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "770"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mbarzaqqe l-am=maye; 770;",
+            "segments": [
+              {
+                "turoyo": "mbarzaqqe l-am=maye",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["770"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "herausspritzen;"
-  ],
+  "idioms": ["herausspritzen;"],
   "uncertain": false
 }

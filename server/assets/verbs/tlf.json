@@ -14,42 +14,251 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "taləf",
-        "toləf"
-      ],
+      "forms": ["taləf", "toləf"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "kə-qṭīl ġắlabe m-aʕ=ʕasekir d-u=babo. talifi ġắlabe",
+            "translations": [
+              "von den Soldaten seines Vaters sind viele getötet, viele umgekommen"
+            ],
+            "references": ["89", "29/419"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kə-qṭīl ġắlabe m-aʕ=ʕasekir d-u=babo. talifi ġắlabe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻvon den Soldaten seines Vaters sind viele getötet, viele umgekommenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "89"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/419"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "kə-qṭīl ġắlabe m-aʕ=ʕasekir d-u=babo. talifi ġắlabe ʻvon den Soldaten seines Vaters sind viele getötet, viele umgekommenʼ; 89; 29/419; [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kə-qṭīl ġắlabe m-aʕ=ʕasekir d-u=babo. talifi ġắlabe",
+                "translations": [
+                  "ʻvon den Soldaten seines Vaters sind viele getötet, viele umgekommenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["89"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/419"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": [],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "ya gə-tulafno aḥ=ḥay-ayḏi. ya g-mamṭeno i=ġəzal-aṯe uno hawxa u=qaṣ-ano k-tulafno w-i=ġəzale k-dumxo b-u=kurk diḏi w-lu=ḥuzéno-la",
+            "translations": [
+              "‘Entweder werde ich mein Leben verlieren oder ich werde diese Gazelle zur Stelle schaffen’",
+              "‘Ich bringe mich halb um, und die Gazelle schläft in meinem Pelz und ich sehe sie nicht!’"
+            ],
+            "references": ["28/101", "28/107"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ya gə-tulafno aḥ=ḥay-ayḏi. ya g-mamṭeno i=ġəzal-aṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Entweder werde ich mein Leben verlieren oder ich werde diese Gazelle zur Stelle schaffen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "28/101"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " uno hawxa u=qaṣ-ano k-tulafno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-i=ġəzale k-dumxo b-u=kurk diḏi w-lu=ḥuzéno-la "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Ich bringe mich halb um, und die Gazelle schläft in meinem Pelz und ich sehe sie nicht!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "28/107"
+              }
+            ],
             "text": "ya gə-tulafno aḥ=ḥay-ayḏi. ya g-mamṭeno i=ġəzal-aṯe ‘Entweder werde ich mein Leben verlieren oder ich werde diese Gazelle zur Stelle schaffen’; 28/101; uno hawxa u=qaṣ-ano k-tulafno, w-i=ġəzale k-dumxo b-u=kurk diḏi w-lu=ḥuzéno-la ‘Ich bringe mich halb um, und die Gazelle schläft in meinem Pelz und ich sehe sie nicht!’; 28/107",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ya gə-tulafno aḥ=ḥay-ayḏi. ya g-mamṭeno i=ġəzal-aṯe",
+                "translations": [
+                  "‘Entweder werde ich mein Leben verlieren oder ich werde diese Gazelle zur Stelle schaffen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["28/101"]
+              },
+              {
+                "turoyo": "uno hawxa u=qaṣ-ano k-tulafno, w-i=ġəzale k-dumxo b-u=kurk diḏi w-lu=ḥuzéno-la",
+                "translations": [
+                  "‘Ich bringe mich halb um, und die Gazelle schläft in meinem Pelz und ich sehe sie nicht!’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["28/107"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": [
-        "mtalafle",
-        "mtaləf"
-      ],
+      "forms": ["mtalafle", "mtaləf"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "gə-mtaləf aʕ=ʕasekir-ayḏe",
+            "translations": [
+              "er wird seine Soldaten bis zum letzte Mann vernichten"
+            ],
+            "references": ["164", "29/219"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gə-mtaləf aʕ=ʕasekir-ayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wird seine Soldaten bis zum letzte Mann vernichtenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "164"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/219"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "gə-mtaləf aʕ=ʕasekir-ayḏe ʻer wird seine Soldaten bis zum letzte Mann vernichtenʼ; 164; 29/219;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "gə-mtaləf aʕ=ʕasekir-ayḏe",
+                "translations": [
+                  "ʻer wird seine Soldaten bis zum letzte Mann vernichtenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["164"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/219"]
+              }
+            ]
           }
         ]
       }
@@ -60,27 +269,150 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "u=săwāl ġắlabe mtaləf w mayəṯ m-i=səbba d-i=hawa w d-i=haffe w d-u=quro d-oṯe-wa",
+            "translations": [
+              "viel Vieh kam um und krepierte wegen des Windes, des Schneesturms und der Kälte"
+            ],
+            "references": ["172", "91/4"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=săwāl ġắlabe mtaləf w mayəṯ m-i=səbba d-i=hawa w d-i=haffe w d-u=quro d-oṯe-wa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻviel Vieh kam um und krepierte wegen des Windes, des Schneesturms und der Kälteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "172"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "91/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=săwāl ġắlabe mtaləf w mayəṯ m-i=səbba d-i=hawa w d-i=haffe w d-u=quro d-oṯe-wa ʻviel Vieh kam um und krepierte wegen des Windes, des Schneesturms und der Kälteʼ; 172; 91/4;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=săwāl ġắlabe mtaləf w mayəṯ m-i=səbba d-i=hawa w d-i=haffe w d-u=quro d-oṯe-wa",
+                "translations": [
+                  "ʻviel Vieh kam um und krepierte wegen des Windes, des Schneesturms und der Kälteʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["172"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["91/4"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "matlafle",
-        "matləf"
-      ],
+      "forms": ["matlafle", "matləf"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "k-mŭḥalle k-owe duxono matlafle i=ʕaskar prs",
+            "translations": [
+              "wenn sie auf ihn schossen, wurde er zu Rauch; er hingegen tat dem Heere vielen Schaden an"
+            ],
+            "references": ["137", "31/15"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-mŭḥalle k-owe duxono"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " matlafle i=ʕaskar "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn sie auf ihn schossen, wurde er zu Rauch; er hingegen tat dem Heere vielen Schaden anʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "137"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "31/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "k-mŭḥalle k-owe duxono, matlafle i=ʕaskar ʻwenn sie auf ihn schossen, wurde er zu Rauch; er hingegen tat dem Heere vielen Schaden anʼ; 137; prs 31/15;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "k-mŭḥalle k-owe duxono, matlafle i=ʕaskar",
+                "translations": [
+                  "ʻwenn sie auf ihn schossen, wurde er zu Rauch; er hingegen tat dem Heere vielen Schaden anʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["137"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["31/15"]
+              }
+            ]
           }
         ]
       }

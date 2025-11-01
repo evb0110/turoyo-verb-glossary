@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mbašbəš",
-        "mibašbəš"
-      ],
+      "forms": ["mbašbəš", "mibašbəš"],
       "conjugations": {}
     },
     {
@@ -26,23 +23,121 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "hul də-mbašbəš əšmo",
+            "translations": [
+              "(so redete sie), bis er ein wenig aufgeheitert war"
+            ],
+            "references": ["797", "97/96"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hul də-mbašbəš əšmo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ(so redete sie), bis er ein wenig aufgeheitert warʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "797"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "97/96"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "hul də-mbašbəš əšmo ʻ(so redete sie), bis er ein wenig aufgeheitert warʼ; 797; 97/96;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "hul də-mbašbəš əšmo",
+                "translations": [
+                  "ʻ(so redete sie), bis er ein wenig aufgeheitert warʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["797"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["97/96"]
+              }
+            ]
           },
           {
+            "turoyo": "maḥkele masala lu+Laḥdo mbašbaš Ilyas p.c.",
+            "translations": ["‘he smiled’"],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maḥkele masala lu+Laḥdo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mbašbaš "
+              },
+              {
+                "kind": "translation",
+                "value": "‘he smiled’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "maḥkele masala lu+Laḥdo, mbašbaš ‘he smiled’ (Ilyas p.c.)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "maḥkele masala lu+Laḥdo, mbašbaš (Ilyas p.c.)",
+                "translations": ["‘he smiled’"],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sich aufheitern, ein freundliches Gesicht machen;"
-  ],
+  "idioms": ["sich aufheitern, ein freundliches Gesicht machen;"],
   "uncertain": false
 }

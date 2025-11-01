@@ -5,24 +5,85 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mṭaqṭaqle",
-        "mṭaqṭəq"
-      ],
+      "forms": ["mṭaqṭaqle", "mṭaqṭəq"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "aṯi u=dawlatli mṭaqṭaqle b-u=tarʕo omər ftaḥ u=tarʕo prs",
+            "translations": [
+              "nun klopfte der Reiche an der Türe und rief: “Mach auf"
+            ],
+            "references": ["26/11"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aṯi u=dawlatli"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mṭaqṭaqle b-u=tarʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " omər"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ftaḥ u=tarʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnun klopfte der Reiche an der Türe und rief: “Mach auf”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "26/11"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "aṯi u=dawlatli, mṭaqṭaqle b-u=tarʕo, omər: ftaḥ u=tarʕo ʻnun klopfte der Reiche an der Türe und rief: “Mach auf”ʼ; prs 26/11;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "aṯi u=dawlatli, mṭaqṭaqle b-u=tarʕo, omər: ftaḥ u=tarʕo",
+                "translations": [
+                  "ʻnun klopfte der Reiche an der Türe und rief: “Mach auf”ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["26/11"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "klopfen, pochen;"
-  ],
+  "idioms": ["klopfen, pochen;"],
   "uncertain": false
 }

@@ -5,24 +5,57 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mqayaqle",
-        "mqayəq"
-      ],
+      "forms": ["mqayaqle", "mqayəq"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mqayaqle an=naʕime",
+            "translations": ["er verprügelte die Dorfjungen"],
+            "references": ["492"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mqayaqle an=naʕime "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer verprügelte die Dorfjungenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "492"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mqayaqle an=naʕime ʻer verprügelte die Dorfjungenʼ; 492;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mqayaqle an=naʕime",
+                "translations": ["ʻer verprügelte die Dorfjungenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["492"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sich als starker Held erweisen, verprügeln;"
-  ],
+  "idioms": ["sich als starker Held erweisen, verprügeln;"],
   "uncertain": false
 }

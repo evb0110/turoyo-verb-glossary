@@ -14,40 +14,197 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mgargašle",
-        "mgargəš"
-      ],
+      "forms": ["mgargašle", "mgargəš"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mgargašle",
+            "translations": ["er zerrte ihn"],
+            "references": ["777"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mgargašle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer zerrte ihnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "777"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mgargašle ʻer zerrte ihnʼ; 777;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mgargašle",
+                "translations": ["ʻer zerrte ihnʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["777"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "i=pire g-maydo u=hafṣorayḏe w kə-mgargšo-le bəṯre ruḥa",
+            "translations": [
+              "die Alte fasste ihn am Halfter und zog ihn hinter sich her"
+            ],
+            "references": ["777", "61/326"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=pire g-maydo u=hafṣorayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w kə-mgargšo-le bəṯre ruḥa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Alte fasste ihn am Halfter und zog ihn hinter sich herʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "777"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "61/326"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=pire g-maydo u=hafṣorayḏe, w kə-mgargšo-le bəṯre ruḥa ʻdie Alte fasste ihn am Halfter und zog ihn hinter sich herʼ; 777; 61/326;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=pire g-maydo u=hafṣorayḏe, w kə-mgargšo-le bəṯre ruḥa",
+                "translations": [
+                  "ʻdie Alte fasste ihn am Halfter und zog ihn hinter sich herʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["777"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["61/326"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "ya ənsán hat-stine mgargáš ruḥux ʕal u=qayso laf harke",
+            "translations": ["Mensch! Paddele du dich auf der Planke hierher"],
+            "references": ["777", "63/85"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ya ənsán hat-stine mgargáš ruḥux ʕal u=qayso laf harke "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻMensch! Paddele du dich auf der Planke hierherʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "777"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "63/85"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ya ənsán hat-stine mgargáš ruḥux ʕal u=qayso laf harke ʻMensch! Paddele du dich auf der Planke hierherʼ; 777; 63/85;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ya ənsán hat-stine mgargáš ruḥux ʕal u=qayso laf harke",
+                "translations": [
+                  "ʻMensch! Paddele du dich auf der Planke hierherʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["777"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["63/85"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "schleppen, hinter sich herziehen;"
-  ],
+  "idioms": ["schleppen, hinter sich herziehen;"],
   "uncertain": false
 }

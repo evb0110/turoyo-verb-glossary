@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "msabable",
-        "msabəb"
-      ],
+      "forms": ["msabable", "msabəb"],
       "conjugations": {
         "Imperativ": [
           {
+            "turoyo": "msabab-lux ʕal šuġle",
+            "translations": ["suche dir Arbeit"],
+            "references": ["498"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "msabab-lux ʕal šuġle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsuche dir Arbeitʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "498"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "msabab-lux ʕal šuġle ʻsuche dir Arbeitʼ; 498;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "msabab-lux ʕal šuġle",
+                "translations": ["ʻsuche dir Arbeitʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["498"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "Arbeit vermitteln auch durch Fragen (ʕal);"
-  ],
+  "idioms": ["Arbeit vermitteln auch durch Fragen (ʕal);"],
   "uncertain": false
 }

@@ -14,17 +14,89 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mqawasle",
-        "mqawəs"
-      ],
+      "forms": ["mqawasle", "mqawəs"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-mqawsən-ne ko-saymən-ne qose ko-mnašfən-ne k-owən edi šərtān",
+            "translations": [
+              "man schlägt sie zwischen den Händen und macht kleine, dreieckige Klösse daraus (schirtân)"
+            ],
+            "references": ["471", "94/200"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mqawsən-ne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-saymən-ne qose"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-mnašfən-ne k-owən edi šərtān "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻman schlägt sie zwischen den Händen und macht kleine, dreieckige Klösse daraus (schirtân)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "471"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/200"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-mqawsən-ne, ko-saymən-ne qose, ko-mnašfən-ne k-owən edi šərtān ʻman schlägt sie zwischen den Händen und macht kleine, dreieckige Klösse daraus (schirtân)ʼ; 471; 94/200;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-mqawsən-ne, ko-saymən-ne qose, ko-mnašfən-ne k-owən edi šərtān",
+                "translations": [
+                  "ʻman schlägt sie zwischen den Händen und macht kleine, dreieckige Klösse daraus (schirtân)ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["471"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["94/200"]
+              }
+            ]
           }
         ]
       }

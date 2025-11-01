@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "fṣīḥ",
-        "məfṣəḥ"
-      ],
+      "forms": ["fṣīḥ", "məfṣəḥ"],
       "conjugations": {}
     },
     {
@@ -26,67 +23,712 @@
       "conjugations": {
         "Preterit": [
           {
-            "text": "ġắlabe fṣəḥno d-kətno bwār d-u=bayt-awo ʻich freute mich sehr, wie ich so gegenüber diesem Haus standʼ; LB 240; fṣəḥno l-i=mṯayt-aṯxu d-aṯutu b-xēr w-salame ʻich habe mich über euer kommen gefreut, dass ihr gut und wohlbehalten heimgekommen seidʼ; 19/1; u=mṣaydono lát-wo-le abne heš. fṣiḥ buwe huwe w-i=aṯto ġálabe ‘Denn der fiseher hatte noch keine Söhne, er und seine frau hatten an ihm große Freude’; 23/28; bəṯṯər d-məlle, d-šamiʕi hawxa u=ahl d-i=walaye, d-kit-yo ḥakimo hano, fṣiḥi  ġálabe ‘Als er so sprach und die Leute der Stadt hörten, daß er Arzt war, freuten sie sich sehr’; 24/57; fṣəḥina ġálabe aʕmox ‘Wir haben uns so sehr über dich gefreut’; 29/278",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "ġắlabe fṣəḥno d-kətno bwār d-u=bayt-awo fṣəḥno l-i=mṯayt-aṯxu d-aṯutu b-xēr w-salame u=mṣaydono lát-wo-le abne heš. fṣiḥ buwe huwe w-i=aṯto ġálabe bəṯṯər d-məlle d-šamiʕi hawxa u=ahl d-i=walaye d-kit-yo ḥakimo hano fṣiḥi ġálabe fṣəḥina ġálabe aʕmox",
+            "translations": [
+              "ich freute mich sehr, wie ich so gegenüber diesem Haus stand",
+              "ich habe mich über euer kommen gefreut, dass ihr gut und wohlbehalten heimgekommen seid",
+              "‘Denn der fiseher hatte noch keine Söhne, er und seine frau hatten an ihm große Freude’",
+              "‘Als er so sprach und die Leute der Stadt hörten, daß er Arzt war, freuten sie sich sehr’",
+              "‘Wir haben uns so sehr über dich gefreut’"
+            ],
+            "references": ["LB 240", "19/1", "23/28"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ġắlabe fṣəḥno d-kətno bwār d-u=bayt-awo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich freute mich sehr, wie ich so gegenüber diesem Haus standʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 240"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " fṣəḥno l-i=mṯayt-aṯxu d-aṯutu b-xēr w-salame "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe mich über euer kommen gefreut, dass ihr gut und wohlbehalten heimgekommen seidʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "19/1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=mṣaydono lát-wo-le abne heš. fṣiḥ buwe huwe w-i=aṯto ġálabe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Denn der fiseher hatte noch keine Söhne, er und seine frau hatten an ihm große Freude’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "23/28"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər d-məlle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-šamiʕi hawxa u=ahl d-i=walaye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-kit-yo ḥakimo hano"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " fṣiḥi  ġálabe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Als er so sprach und die Leute der Stadt hörten, daß er Arzt war, freuten sie sich sehr’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/57"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " fṣəḥina ġálabe aʕmox "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wir haben uns so sehr über dich gefreut’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/278"
+              }
+            ],
+            "text": "ġắlabe fṣəḥno d-kətno bwār d-u=bayt-awo ʻich freute mich sehr, wie ich so gegenüber diesem Haus standʼ; LB 240; fṣəḥno l-i=mṯayt-aṯxu d-aṯutu b-xēr w-salame ʻich habe mich über euer kommen gefreut, dass ihr gut und wohlbehalten heimgekommen seidʼ; 19/1; u=mṣaydono lát-wo-le abne heš. fṣiḥ buwe huwe w-i=aṯto ġálabe ‘Denn der fiseher hatte noch keine Söhne, er und seine frau hatten an ihm große Freude’; 23/28; bəṯṯər d-məlle, d-šamiʕi hawxa u=ahl d-i=walaye, d-kit-yo ḥakimo hano, fṣiḥi ġálabe ‘Als er so sprach und die Leute der Stadt hörten, daß er Arzt war, freuten sie sich sehr’; 24/57; fṣəḥina ġálabe aʕmox ‘Wir haben uns so sehr über dich gefreut’; 29/278",
+            "segments": [
+              {
+                "turoyo": "ġắlabe fṣəḥno d-kətno bwār d-u=bayt-awo",
+                "translations": [
+                  "ʻich freute mich sehr, wie ich so gegenüber diesem Haus standʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 240"]
+              },
+              {
+                "turoyo": "fṣəḥno l-i=mṯayt-aṯxu d-aṯutu b-xēr w-salame",
+                "translations": [
+                  "ʻich habe mich über euer kommen gefreut, dass ihr gut und wohlbehalten heimgekommen seidʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["19/1"]
+              },
+              {
+                "turoyo": "u=mṣaydono lát-wo-le abne heš. fṣiḥ buwe huwe w-i=aṯto ġálabe",
+                "translations": [
+                  "‘Denn der fiseher hatte noch keine Söhne, er und seine frau hatten an ihm große Freude’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["23/28"]
+              },
+              {
+                "turoyo": "bəṯṯər d-məlle, d-šamiʕi hawxa u=ahl d-i=walaye, d-kit-yo ḥakimo hano, fṣiḥi ġálabe",
+                "translations": [
+                  "‘Als er so sprach und die Leute der Stadt hörten, daß er Arzt war, freuten sie sich sehr’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/57"]
+              },
+              {
+                "turoyo": "fṣəḥina ġálabe aʕmox",
+                "translations": ["‘Wir haben uns so sehr über dich gefreut’"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/278"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "ṭləble mṣalele ġắlabe m-aloho ḥatta d-aloho d-obe-le abro d-məfṣəḥ buwe aṯyo ḥeḏore ʕamar mə=kibux taw qum yətwina gəḥkina məfṣoḥina uxlina šotina s wrong? Come sit with me. Let’s laugh and have fun eat and drink!”",
+            "translations": [
+              "er bat und betete viel zu Gott, dass Gott ihm einen Sohn schenken möchte, an dem er seine Freude haben könnte",
+              "‘She came close to him (and said): “ʕAmar, what’"
+            ],
+            "references": ["129", "24/2", "78/15"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṭləble"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mṣalele ġắlabe m-aloho"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥatta d-aloho d-obe-le abro d-məfṣəḥ buwe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer bat und betete viel zu Gott, dass Gott ihm einen Sohn schenken möchte, an dem er seine Freude haben könnteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "129"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/2"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aṯyo ḥeḏore ʕamar mə=kibux taw qum yətwina gəḥkina məfṣoḥina uxlina šotina "
+              },
+              {
+                "kind": "translation",
+                "value": "‘She came close to him (and said): “ʕAmar, what’"
+              },
+              {
+                "kind": "turoyo",
+                "value": "s wrong? Come"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " sit "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "with me"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". Let’s laugh and have fun"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " eat and drink!” "
+              },
+              {
+                "kind": "ref",
+                "value": "78/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ṭləble, mṣalele ġắlabe m-aloho, ḥatta d-aloho d-obe-le abro d-məfṣəḥ buwe ʻer bat und betete viel zu Gott, dass Gott ihm einen Sohn schenken möchte, an dem er seine Freude haben könnteʼ; 129; 24/2;[MT] aṯyo ḥeḏore ʕamar mə=kibux taw qum yətwina gəḥkina məfṣoḥina uxlina šotina ‘She came close to him (and said): “ʕAmar, what’s wrong? Come, sit (with me). Let’s laugh and have fun, eat and drink!” 78/15;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ṭləble, mṣalele ġắlabe m-aloho, ḥatta d-aloho d-obe-le abro d-məfṣəḥ buwe",
+                "translations": [
+                  "ʻer bat und betete viel zu Gott, dass Gott ihm einen Sohn schenken möchte, an dem er seine Freude haben könnteʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["129"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/2"]
+              },
+              {
+                "turoyo": "aṯyo ḥeḏore ʕamar mə=kibux taw qum yətwina gəḥkina məfṣoḥina uxlina šotina s wrong? Come, sit (with me). Let’s laugh and have fun, eat and drink!”",
+                "translations": [
+                  "‘She came close to him (and said): “ʕAmar, what’"
+                ],
+                "references": ["78/15"],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "kul d-šumʕi-wo məfṣəḥi-wo w zaydi-wo",
+            "translations": [
+              "so oft sie sie hörten, freuten sie sich, und es wurden ihrer immer mehr"
+            ],
+            "references": ["132", "11/188"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kul d-šumʕi-wo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " məfṣəḥi-wo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w zaydi-wo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻso oft sie sie hörten, freuten sie sich, und es wurden ihrer immer mehrʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "132"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/188"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kul d-šumʕi-wo, məfṣəḥi-wo, w zaydi-wo ʻso oft sie sie hörten, freuten sie sich, und es wurden ihrer immer mehrʼ; 132; 11/188;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kul d-šumʕi-wo, məfṣəḥi-wo, w zaydi-wo",
+                "translations": [
+                  "ʻso oft sie sie hörten, freuten sie sich, und es wurden ihrer immer mehrʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["132"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/188"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
-            "text": "ya u=babayḏi, məfṣǝ́ḥ ʻVater! Freue dichʼ; 133; 24/122; axúl, məfṣəḥ, štay həč lə-mikadrət! ‘Iß, sei vergnügt, trinke, und sei durchaus  nicht betrübt!’; 24/121 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "ya u=babayḏi məfṣǝ́ḥ axúl məfṣəḥ štay həč lə-mikadrət!",
+            "translations": [
+              "Vater! Freue dich",
+              "‘Iß, sei vergnügt, trinke, und sei durchaus nicht betrübt!’"
+            ],
+            "references": ["133", "24/122", "24/121"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ya u=babayḏi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " məfṣǝ́ḥ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻVater! Freue dichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "133"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/122"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " axúl"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " məfṣəḥ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " štay həč lə-mikadrət! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Iß, sei vergnügt, trinke, und sei durchaus  nicht betrübt!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/121"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "ya u=babayḏi, məfṣǝ́ḥ ʻVater! Freue dichʼ; 133; 24/122; axúl, məfṣəḥ, štay həč lə-mikadrət! ‘Iß, sei vergnügt, trinke, und sei durchaus nicht betrübt!’; 24/121 [MT]",
+            "segments": [
+              {
+                "turoyo": "ya u=babayḏi, məfṣǝ́ḥ",
+                "translations": ["ʻVater! Freue dichʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["133"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/122"]
+              },
+              {
+                "turoyo": "axúl, məfṣəḥ, štay həč lə-mikadrət!",
+                "translations": [
+                  "‘Iß, sei vergnügt, trinke, und sei durchaus nicht betrübt!’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/121"],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ],
         "Nomen Patiens": [
           {
+            "turoyo": "fṣiḥoyo",
+            "translations": ["fröhlich"],
+            "references": ["134"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "fṣiḥoyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻfröhlichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "134"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "fṣiḥoyo ʻfröhlichʼ; 134;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "fṣiḥoyo",
+                "translations": ["ʻfröhlichʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["134"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "mafṣaḥle",
-        "mafṣəḥ"
-      ],
+      "forms": ["mafṣaḥle", "mafṣəḥ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "aṯi-wo u=braziyayḏi u=rabo l-sidi w fayəš-wo kmo=yarḥe gabi. u=maṯyayḏe ġắlabe mafṣáḥle-li!",
+            "translations": [
+              "(auch) mein ältester Neffe war zu mir gekommen und blieb mehrere Monate bei mir. Sein Kommen war mir eine grosse Freude"
+            ],
+            "references": ["137", "2/110"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aṯi-wo u=braziyayḏi u=rabo l-sidi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w fayəš-wo kmo=yarḥe gabi. u=maṯyayḏe ġắlabe mafṣáḥle-li! "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ(auch) mein ältester Neffe war zu mir gekommen und blieb mehrere Monate bei mir. Sein Kommen war mir eine grosse Freudeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "137"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/110"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "aṯi-wo u=braziyayḏi u=rabo l-sidi, w fayəš-wo kmo=yarḥe gabi. u=maṯyayḏe ġắlabe mafṣáḥle-li! ʻ(auch) mein ältester Neffe war zu mir gekommen und blieb mehrere Monate bei mir. Sein Kommen war mir eine grosse Freudeʼ; 137; 2/110;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "aṯi-wo u=braziyayḏi u=rabo l-sidi, w fayəš-wo kmo=yarḥe gabi. u=maṯyayḏe ġắlabe mafṣáḥle-li!",
+                "translations": [
+                  "ʻ(auch) mein ältester Neffe war zu mir gekommen und blieb mehrere Monate bei mir. Sein Kommen war mir eine grosse Freudeʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["137"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["2/110"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) sich freuen, Freude haben;",
-    "erfreuen;"
-  ],
+  "idioms": ["(Detrans.) sich freuen, Freude haben;", "erfreuen;"],
   "uncertain": false
 }

@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "lsəʕle",
-        "losəʕ"
-      ],
+      "forms": ["lsəʕle", "losəʕ"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-losəʕ",
+            "translations": ["er kaut"],
+            "references": ["99"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-losəʕ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer kautʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "99"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-losəʕ ʻer kautʼ; 99;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-losəʕ",
+                "translations": ["ʻer kautʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["99"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "kauen;"
-  ],
+  "idioms": ["kauen;"],
   "uncertain": false
 }

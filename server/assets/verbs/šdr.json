@@ -14,33 +14,488 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mšadalle",
-        "mšadər"
-      ],
+      "forms": ["mšadalle", "mšadər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "bəṯṯər mədde mšadalle l-u=ʕmiro i=ʕaskariye lə-Ṣṭambul w maškalle u=šulṭono mšadalle ax=xodume mšadarre mamṭalle me Suriya kmo=bənxătiye ..",
+            "translations": [
+              "nach einiger Zeit schickte der Emîr das Militär nach Stambul zurück und bedankte beim Sultan",
+              "er schickte die Diener aus",
+              "sie schickten und holten aus Syrien ein paar Leute (von jenseits der Grenze)"
+            ],
+            "references": ["243", "36/107", "69/405"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bəṯṯər mədde"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mšadalle l-u=ʕmiro i=ʕaskariye lə-Ṣṭambul"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w maškalle u=šulṭono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnach einiger Zeit schickte der Emîr das Militär nach Stambul zurück und bedankte beim Sultanʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "243"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/107"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/405"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mšadalle ax=xodume "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer schickte die Diener ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 140"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mšadarre"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mamṭalle me Suriya kmo=bənxătiye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie schickten und holten aus Syrien ein paar Leute (von jenseits der Grenze)ʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 15"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "6"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "12"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "bəṯṯər mədde, mšadalle l-u=ʕmiro i=ʕaskariye lə-Ṣṭambul, w maškalle u=šulṭono ʻnach einiger Zeit schickte der Emîr das Militär nach Stambul zurück und bedankte beim Sultanʼ; 243; 36/107; 69/405; mšadalle ax=xodume ʻer schickte die Diener ausʼ; MM 140; mšadarre, mamṭalle me Suriya kmo=bənxătiye ʻsie schickten und holten aus Syrien ein paar Leute (von jenseits der Grenze)ʼ JL 15.6.12;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "bəṯṯər mədde, mšadalle l-u=ʕmiro i=ʕaskariye lə-Ṣṭambul, w maškalle u=šulṭono",
+                "translations": [
+                  "ʻnach einiger Zeit schickte der Emîr das Militär nach Stambul zurück und bedankte beim Sultanʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["243"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["36/107"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["69/405"]
+              },
+              {
+                "turoyo": "mšadalle ax=xodume",
+                "translations": ["ʻer schickte die Diener ausʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["MM 140"]
+              },
+              {
+                "turoyo": "mšadarre, mamṭalle me Suriya kmo=bənxătiye ..",
+                "translations": [
+                  "ʻsie schickten und holten aus Syrien ein paar Leute (von jenseits der Grenze)ʼ"
+                ],
+                "references": ["JL 15", "6", "12"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "gə-mšadal-lux b-u=darb-ayḏux ramḥəl gə-mšadann-ux l-dukṯo .. omanno ko-ṭolabno m-alo šxwa də-mšadrət-li .. k-ubʕina də-mšadrútəl-lan qašo me-gabayxu",
+            "translations": [
+              "ich werde dich deiner Wege ziehen lassen",
+              "‘morgen werde ich dich woanders hinschicken’",
+              "‘ich antwortete: “Ich bitte Gott sogar darum, dass Sie mich wegschicken”’",
+              "‘Wir möchten, daß ihr uns von euch aus einen Pfarrer schickt’"
+            ],
+            "references": ["246", "69/439", "JL 19"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gə-mšadal-lux b-u=darb-ayḏux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich werde dich deiner Wege ziehen lassenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "246"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/439"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ramḥəl gə-mšadann-ux l-dukṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘morgen werde ich dich woanders hinschicken’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 19"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "6"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "18"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " omanno ko-ṭolabno m-alo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šxwa də-mšadrət-li "
+              },
+              {
+                "kind": "translation",
+                "value": "‘ich antwortete: “Ich bitte Gott sogar darum, dass Sie mich wegschicken”’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 19"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "6"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "19"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ubʕina də-mšadrútəl-lan qašo me-gabayxu "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wir möchten, daß ihr uns von euch aus einen Pfarrer schickt’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "33/66"
+              }
+            ],
             "text": "gə-mšadal-lux b-u=darb-ayḏux ʻich werde dich deiner Wege ziehen lassenʼ; 246; 69/439; ramḥəl gə-mšadann-ux l-dukṯo ‘morgen werde ich dich woanders hinschicken’ JL 19.6.18; omanno ko-ṭolabno m-alo, šxwa də-mšadrət-li ‘ich antwortete: “Ich bitte Gott sogar darum, dass Sie mich wegschicken”’ JL 19.6.19; k-ubʕina də-mšadrútəl-lan qašo me-gabayxu ‘Wir möchten, daß ihr uns von euch aus einen Pfarrer schickt’; 33/66",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "gə-mšadal-lux b-u=darb-ayḏux",
+                "translations": ["ʻich werde dich deiner Wege ziehen lassenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["246"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["69/439"]
+              },
+              {
+                "turoyo": "ramḥəl gə-mšadann-ux l-dukṯo ..",
+                "translations": [
+                  "‘morgen werde ich dich woanders hinschicken’"
+                ],
+                "references": ["JL 19", "6", "18"]
+              },
+              {
+                "turoyo": "omanno ko-ṭolabno m-alo, šxwa də-mšadrət-li ..",
+                "translations": [
+                  "‘ich antwortete: “Ich bitte Gott sogar darum, dass Sie mich wegschicken”’"
+                ],
+                "references": ["JL 19", "6", "19"]
+              },
+              {
+                "turoyo": "k-ubʕina də-mšadrútəl-lan qašo me-gabayxu",
+                "translations": [
+                  "‘Wir möchten, daß ihr uns von euch aus einen Pfarrer schickt’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["33/66"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "mšader-e mšadérul-lan tre=zlamat l-gabayna ʻschickt zwei Männer zu uns’",
+            "translations": ["schicke ihn"],
+            "references": ["248", "78/162", "32/21"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mšader-e "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻschicke ihnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "248"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/162"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mšadérul-lan tre=zlamat l-gabayna "
+              },
+              {
+                "kind": "turoyo",
+                "value": "ʻ"
+              },
+              {
+                "kind": "turoyo",
+                "value": "schickt zwei Männer zu uns’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "32/21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mšader-e ʻschicke ihnʼ; 248; 78/162; mšadérul-lan tre=zlamat l-gabayna ʻschickt zwei Männer zu uns’; 32/21;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mšader-e",
+                "translations": ["ʻschicke ihnʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["248"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["78/162"]
+              },
+              {
+                "turoyo": "mšadérul-lan tre=zlamat l-gabayna ʻschickt zwei Männer zu uns’",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["32/21"]
+              }
+            ]
           }
         ]
       }
@@ -51,25 +506,149 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "misalmo-wa l-u=moro ḥreno d-kət-yo mšadarto ele",
+            "translations": [
+              "es wurde dem anderen Eigentümer, an den es adressiert war, abgeliefert"
+            ],
+            "references": ["249", "77/156"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "misalmo-wa l-u=moro ḥreno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-kət-yo mšadarto ele "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes wurde dem anderen Eigentümer, an den es adressiert war, abgeliefertʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "249"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "77/156"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "misalmo-wa l-u=moro ḥreno, d-kət-yo mšadarto ele ʻes wurde dem anderen Eigentümer, an den es adressiert war, abgeliefertʼ; 249; 77/156;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "misalmo-wa l-u=moro ḥreno, d-kət-yo mšadarto ele",
+                "translations": [
+                  "ʻes wurde dem anderen Eigentümer, an den es adressiert war, abgeliefertʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["249"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["77/156"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
+            "turoyo": "aloho sam-la d-u=xēr i=šedartayḏux də-mšadallax bəṯri mə xēr-yo",
+            "translations": [
+              "Gott lasse es etwas gutes sein, dass du nach mir geschickt hast"
+            ],
+            "references": ["248", "107/23"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aloho sam-la d-u=xēr i=šedartayḏux də-mšadallax bəṯri mə xēr-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻGott lasse es etwas gutes sein, dass du nach mir geschickt hastʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "248"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "107/23"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "aloho sam-la d-u=xēr i=šedartayḏux də-mšadallax bəṯri mə xēr-yo ʻGott lasse es etwas gutes sein, dass du nach mir geschickt hastʼ; 248; 107/23;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "aloho sam-la d-u=xēr i=šedartayḏux də-mšadallax bəṯri mə xēr-yo",
+                "translations": [
+                  "ʻGott lasse es etwas gutes sein, dass du nach mir geschickt hastʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["248"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["107/23"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "schicken;"
-  ],
+  "idioms": ["schicken;"],
   "uncertain": false
 }

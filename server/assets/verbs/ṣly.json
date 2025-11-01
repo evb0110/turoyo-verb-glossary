@@ -14,41 +14,564 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mṣalele",
-        "mṣale"
-      ],
+      "forms": ["mṣalele", "mṣale"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "qayəm huwe l-ruḥe mədle i=məssine w azzé mṣalele ṭləble mṣalele ġálabe m-aloho ḥatta d-aloho d-obe-le abro d-məfṣəḥ buwe bəṯṯər d-azzí l-i=ʕito ono deri yawmo mṣalele ʕal riši",
+            "translations": [
+              "da stand er allein auf, nahm die Wasserkanne und ging und betete",
+              "‘Er bat und betete viel zu Gott, daß Gott ihm einen Sohn schenken möchte, an dem er seine Freude haben könnte’",
+              "‘As soon as I came to the church on the next day, he uttered a prayed over me’"
+            ],
+            "references": ["414", "36/16", "24/2"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qayəm huwe l-ruḥe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mədle i=məssine"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w azzé mṣalele "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda stand er allein auf, nahm die Wasserkanne und ging und beteteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "414"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/16"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṭləble mṣalele ġálabe m-aloho ḥatta d-aloho d-obe-le abro d-məfṣəḥ buwe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er bat und betete viel zu Gott, daß Gott ihm einen Sohn schenken möchte, an dem er seine Freude haben könnte’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/2"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər d-azzí l-i=ʕito ono deri yawmo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mṣalele ʕal riši "
+              },
+              {
+                "kind": "translation",
+                "value": "‘As soon as I came to the church on the next day, he uttered a prayed over me’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "40/30"
+              }
+            ],
             "text": "qayəm huwe l-ruḥe, mədle i=məssine, w azzé mṣalele ʻda stand er allein auf, nahm die Wasserkanne und ging und beteteʼ; 414; 36/16; ṭləble mṣalele ġálabe m-aloho ḥatta d-aloho d-obe-le abro d-məfṣəḥ buwe ‘Er bat und betete viel zu Gott, daß Gott ihm einen Sohn schenken möchte, an dem er seine Freude haben könnte’; 24/2 [MT]; bəṯṯər d-azzí l-i=ʕito ono deri yawmo, mṣalele ʕal riši ‘As soon as I came to the church on the next day, he uttered a prayed over me’; 40/30",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "qayəm huwe l-ruḥe, mədle i=məssine, w azzé mṣalele",
+                "translations": [
+                  "ʻda stand er allein auf, nahm die Wasserkanne und ging und beteteʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["414"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["36/16"]
+              },
+              {
+                "turoyo": "ṭləble mṣalele ġálabe m-aloho ḥatta d-aloho d-obe-le abro d-məfṣəḥ buwe",
+                "translations": [
+                  "‘Er bat und betete viel zu Gott, daß Gott ihm einen Sohn schenken möchte, an dem er seine Freude haben könnte’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/2"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "bəṯṯər d-azzí l-i=ʕito ono deri yawmo, mṣalele ʕal riši",
+                "translations": [
+                  "‘As soon as I came to the church on the next day, he uttered a prayed over me’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["40/30"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "i=ʕito d-kə-mṣale biya k-mitamal-la Mōr Barṣawmo noše kito hawxa b-u=šəkl-ano ko-mṣalən .. hawo azzeyo l-i=ṣluṯo də-mṣale falgi-d-lalyo i=ṣluṯo d-lalye d-u=ʕeḏo",
+            "translations": [
+              "die Kirche, in der er Gottesdienst abhält, heisst Mor Barṣaumo",
+              "‘es gibt da solche Leute, die auf diese Weise beten’",
+              "‘Der (der Pfarrer) ging zum Gottesdienst, um Mitternacht, um den Nachtgottesdienst des Festes abzuhalten’"
+            ],
+            "references": ["419", "11/176", "36/47"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=ʕito d-kə-mṣale biya k-mitamal-la Mōr Barṣawmo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Kirche, in der er Gottesdienst abhält, heisst Mor Barṣaumoʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "419"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/176"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/47"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " noše kito hawxa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-u=šəkl-ano ko-mṣalən "
+              },
+              {
+                "kind": "translation",
+                "value": "‘es gibt da solche Leute, die auf diese Weise beten’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 19"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "6"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "17"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawo azzeyo l-i=ṣluṯo də-mṣale falgi-d-lalyo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=ṣluṯo d-lalye d-u=ʕeḏo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Der (der Pfarrer) ging zum Gottesdienst, um Mitternacht, um den Nachtgottesdienst des Festes abzuhalten’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "33/46"
+              }
+            ],
             "text": "i=ʕito d-kə-mṣale biya k-mitamal-la Mōr Barṣawmo ʻdie Kirche, in der er Gottesdienst abhält, heisst Mor Barṣaumoʼ; 419; 11/176; 36/47; noše kito hawxa, b-u=šəkl-ano ko-mṣalən ‘es gibt da solche Leute, die auf diese Weise beten’ JL 19.6.17; hawo azzeyo l-i=ṣluṯo də-mṣale falgi-d-lalyo, i=ṣluṯo d-lalye d-u=ʕeḏo ‘Der (der Pfarrer) ging zum Gottesdienst, um Mitternacht, um den Nachtgottesdienst des Festes abzuhalten’; 33/46",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=ʕito d-kə-mṣale biya k-mitamal-la Mōr Barṣawmo",
+                "translations": [
+                  "ʻdie Kirche, in der er Gottesdienst abhält, heisst Mor Barṣaumoʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["419"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/176"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["36/47"]
+              },
+              {
+                "turoyo": "noše kito hawxa, b-u=šəkl-ano ko-mṣalən ..",
+                "translations": [
+                  "‘es gibt da solche Leute, die auf diese Weise beten’"
+                ],
+                "references": ["JL 19", "6", "17"]
+              },
+              {
+                "turoyo": "hawo azzeyo l-i=ṣluṯo də-mṣale falgi-d-lalyo, i=ṣluṯo d-lalye d-u=ʕeḏo",
+                "translations": [
+                  "‘Der (der Pfarrer) ging zum Gottesdienst, um Mitternacht, um den Nachtgottesdienst des Festes abzuhalten’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["33/46"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "lo=ṣam-wo w lo=mṣale-wo ʕŭbəd-wo l-u=arwono Pr bəṯṯər me fəlge=d-yawmo gə-mṣalí-way-na i=ṣluṯo d-fəlge=d-yawmo w žnu gd-uxlí-way-na ..",
+            "translations": [
+              "er fastete nicht und betete nicht, sondern diente dem Kalbe",
+              "nach dem Mittag beteten wir das Mittagsgebet, und dann erst assen wir"
+            ],
+            "references": ["422", "S 151/37", "JL 5"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lo=ṣam-wo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w lo=mṣale-wo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕŭbəd-wo l-u=arwono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer fastete nicht und betete nicht, sondern diente dem Kalbeʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "422"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Pr"
+              },
+              {
+                "kind": "ref",
+                "value": "S 151/37"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər me fəlge=d-yawmo gə-mṣalí-way-na i=ṣluṯo d-fəlge=d-yawmo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w žnu gd-uxlí-way-na "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnach dem Mittag beteten wir das Mittagsgebet, und dann erst assen wirʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 5"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "10"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "lo=ṣam-wo, w lo=mṣale-wo, ʕŭbəd-wo l-u=arwono ʻer fastete nicht und betete nicht, sondern diente dem Kalbeʼ 422; PrS 151/37; bəṯṯər me fəlge=d-yawmo gə-mṣalí-way-na i=ṣluṯo d-fəlge=d-yawmo, w žnu gd-uxlí-way-na ʻnach dem Mittag beteten wir das Mittagsgebet, und dann erst assen wirʼ JL 5.10.2;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "lo=ṣam-wo, w lo=mṣale-wo, ʕŭbəd-wo l-u=arwono",
+                "translations": [
+                  "ʻer fastete nicht und betete nicht, sondern diente dem Kalbeʼ"
+                ],
+                "references": ["422"]
+              },
+              {
+                "turoyo": "Pr",
+                "translations": [],
+                "references": ["S 151/37"]
+              },
+              {
+                "turoyo": "bəṯṯər me fəlge=d-yawmo gə-mṣalí-way-na i=ṣluṯo d-fəlge=d-yawmo, w žnu gd-uxlí-way-na ..",
+                "translations": [
+                  "ʻnach dem Mittag beteten wir das Mittagsgebet, und dann erst assen wirʼ"
+                ],
+                "references": ["JL 5", "10", "2"]
+              }
+            ]
           }
         ],
         "Part act.": [
           {
+            "turoyo": "me-ṣafro hul ʕaṣriye mṣalyóno-yo u=ʕulmayḏa ġắlabe mhayəmno w mṣalyóno-yo",
+            "translations": [
+              "er betet vom Morgen bis zum Abend",
+              "‘die Leute dort sind sehr fromm und eifrige Kirchgänger’"
+            ],
+            "references": ["422", "11/75"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "me-ṣafro hul ʕaṣriye mṣalyóno-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer betet vom Morgen bis zum Abendʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "422"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=ʕulmayḏa ġắlabe mhayəmno w mṣalyóno-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘die Leute dort sind sehr fromm und eifrige Kirchgänger’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/75"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "me-ṣafro hul ʕaṣriye mṣalyóno-yo ʻer betet vom Morgen bis zum Abendʼ; 422; u=ʕulmayḏa ġắlabe mhayəmno w mṣalyóno-yo ‘die Leute dort sind sehr fromm und eifrige Kirchgänger’; 11/75;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "me-ṣafro hul ʕaṣriye mṣalyóno-yo",
+                "translations": ["ʻer betet vom Morgen bis zum Abendʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["422"]
+              },
+              {
+                "turoyo": "u=ʕulmayḏa ġắlabe mhayəmno w mṣalyóno-yo",
+                "translations": [
+                  "‘die Leute dort sind sehr fromm und eifrige Kirchgänger’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/75"]
+              }
+            ]
           }
         ]
       }
@@ -59,56 +582,265 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "b-i=qăḏ̣a bŭxa kito šeṯ=ʕitawoṯo d-kul ṣafro w ʕaṣriye də-k-miṣale bənne",
+            "translations": [
+              "in der Kreisstadt selbst gibt es sechs Kirchen, in denen jeden Morgen und Abend Gottesdienst abgehalten wird"
+            ],
+            "references": ["11/75"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "b-i=qăḏ̣a bŭxa kito šeṯ=ʕitawoṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-kul ṣafro w ʕaṣriye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " də-k-miṣale bənne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻin der Kreisstadt selbst gibt es sechs Kirchen, in denen jeden Morgen und Abend Gottesdienst abgehalten wirdʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/75"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "b-i=qăḏ̣a bŭxa kito šeṯ=ʕitawoṯo, d-kul ṣafro w ʕaṣriye, də-k-miṣale bənne ʻin der Kreisstadt selbst gibt es sechs Kirchen, in denen jeden Morgen und Abend Gottesdienst abgehalten wirdʼ; 11/75;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "b-i=qăḏ̣a bŭxa kito šeṯ=ʕitawoṯo, d-kul ṣafro w ʕaṣriye, də-k-miṣale bənne",
+                "translations": [
+                  "ʻin der Kreisstadt selbst gibt es sechs Kirchen, in denen jeden Morgen und Abend Gottesdienst abgehalten wirdʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/75"]
+              }
+            ]
           },
           {
+            "turoyo": "uʕdo kǝmṣamamno i maṣa",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "uʕdo kǝmṣamamno i maṣa"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "uʕdo kǝmṣamamno i maṣa;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "uʕdo kǝmṣamamno i maṣa",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
-            "text": "ramḥǝl gǝmṣamamno aǧ ǧulayḏi;",
-            "turoyo": "",
+            "turoyo": "ramḥǝl gǝmṣamamno aǧ ǧulayḏi",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ramḥǝl gǝmṣamamno aǧ ǧulayḏi"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ramḥǝl gǝmṣamamno aǧ ǧulayḏi;",
+            "segments": [
+              {
+                "turoyo": "ramḥǝl gǝmṣamamno aǧ ǧulayḏi",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ],
         "Preterit": [
           {
+            "turoyo": "aṯmǝl mṣamamli u bayto.",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aṯmǝl mṣamamli u bayto."
+              }
+            ],
             "text": "aṯmǝl mṣamamli u bayto.",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "aṯmǝl mṣamamli u bayto.",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
+            "turoyo": "Mṣamamli aǧ ǧulayḏi. İlyas p.c",
+            "translations": ["‘I made my clothes dirty.’"],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Mṣamamli aǧ ǧulayḏi. "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I made my clothes dirty.’"
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "Mṣamamli aǧ ǧulayḏi. ‘I made my clothes dirty.’(İlyas p.c)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "Mṣamamli aǧ ǧulayḏi. (İlyas p.c)",
+                "translations": ["‘I made my clothes dirty.’"],
+                "references": []
+              }
+            ]
           },
           {
-            "text": "Mṣamamli ruḥi.’I made myself dirty.’ (İlyas p.c)",
-            "turoyo": "",
+            "turoyo": "Mṣamamli ruḥi.’I made myself dirty.’ İlyas p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Mṣamamli ruḥi.’I made myself dirty.’ "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Mṣamamli ruḥi.’I made myself dirty.’ (İlyas p.c)",
+            "segments": [
+              {
+                "turoyo": "Mṣamamli ruḥi.’I made myself dirty.’ (İlyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ],
         "Preterite\nTransitive": [
           {
-            "text": "Lišoni bere ġalabe mṣammowa. (İlyas p.c)",
-            "turoyo": "",
+            "turoyo": "Lišoni bere ġalabe mṣammowa. İlyas p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": " Lišoni bere ġalabe mṣammowa. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Lišoni bere ġalabe mṣammowa. (İlyas p.c)",
+            "segments": [
+              {
+                "turoyo": "Lišoni bere ġalabe mṣammowa. (İlyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
-            "text": "Aṯmǝl i ḥolo mṣamamtowa ġalabe. (İlyas p.c)",
-            "turoyo": "",
+            "turoyo": "Aṯmǝl i ḥolo mṣamamtowa ġalabe. İlyas p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Aṯmǝl i ḥolo mṣamamtowa ġalabe. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Aṯmǝl i ḥolo mṣamamtowa ġalabe. (İlyas p.c)",
+            "segments": [
+              {
+                "turoyo": "Aṯmǝl i ḥolo mṣamamtowa ġalabe. (İlyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }

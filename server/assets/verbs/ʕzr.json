@@ -14,24 +14,86 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mʕazalle",
-        "mʕazər"
-      ],
+      "forms": ["mʕazalle", "mʕazər"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "i=naqqa d-ko-mġalṭo u=zabəṭ k-oṯe ko-mʕazal-la Lu",
+            "translations": [
+              "wenn sie Fehler macht, kommt der Offizier und weist sie zurecht"
+            ],
+            "references": ["246", "F 272/33"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqqa d-ko-mġalṭo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=zabəṭ k-oṯe ko-mʕazal-la "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn sie Fehler macht, kommt der Offizier und weist sie zurechtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "246"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Lu"
+              },
+              {
+                "kind": "ref",
+                "value": "F 272/33"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=naqqa d-ko-mġalṭo, u=zabəṭ k-oṯe ko-mʕazal-la ʻwenn sie Fehler macht, kommt der Offizier und weist sie zurechtʼ; 246; LuF 272/33;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=naqqa d-ko-mġalṭo, u=zabəṭ k-oṯe ko-mʕazal-la",
+                "translations": [
+                  "ʻwenn sie Fehler macht, kommt der Offizier und weist sie zurechtʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["246"]
+              },
+              {
+                "turoyo": "Lu",
+                "translations": [],
+                "references": ["F 272/33"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "zurechtweisen;"
-  ],
+  "idioms": ["zurechtweisen;"],
   "uncertain": false
 }

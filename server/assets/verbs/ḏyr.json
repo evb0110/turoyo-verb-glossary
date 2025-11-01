@@ -12,25 +12,60 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "maḏǝrle",
-        "maḏǝr"
-      ],
+      "forms": ["maḏǝrle", "maḏǝr"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "Li+ǧǝġara ġalabe maḏə́rlali. (İlyas p.c)",
-            "turoyo": "",
+            "turoyo": "Li+ǧǝġara ġalabe maḏə́rlali. İlyas p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Li+ǧǝġara ġalabe maḏə́rlali. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Li+ǧǝġara ġalabe maḏə́rlali. (İlyas p.c)",
+            "segments": [
+              {
+                "turoyo": "Li+ǧǝġara ġalabe maḏə́rlali. (İlyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "Lǝ kṭoreno noše d maḏǝr u Sargey I do not allow anybody do harm to S.",
-            "turoyo": "",
+            "turoyo": "Lǝ kṭoreno noše d maḏǝr u Sargey I do not allow anybody do harm to S.",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Lǝ kṭoreno noše d maḏǝr u Sargey I do not allow anybody do harm to S."
+              }
+            ],
+            "text": "Lǝ kṭoreno noše d maḏǝr u Sargey I do not allow anybody do harm to S.",
+            "segments": [
+              {
+                "turoyo": "Lǝ kṭoreno noše d maḏǝr u Sargey I do not allow anybody do harm to S.",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
@@ -41,10 +76,27 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "U+ʕamo komitaḏǝr mu+aġa",
+            "translations": ["‘suffers damage’"],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "U+ʕamo komitaḏǝr mu+aġa "
+              },
+              {
+                "kind": "translation",
+                "value": "‘suffers damage’"
+              }
+            ],
             "text": "U+ʕamo komitaḏǝr mu+aġa ‘suffers damage’",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "U+ʕamo komitaḏǝr mu+aġa",
+                "translations": ["‘suffers damage’"],
+                "references": []
+              }
+            ]
           }
         ]
       }

@@ -14,32 +14,393 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "madəmle",
-        "madəm"
-      ],
+      "forms": ["madəmle", "madəm"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "lə=madəmlux arbaʕ=saʕayat d-zəbṭat nawba ʕal u=qawro d-babayna w ġắlabe waxtat madəmli u=med-ano ʕal d-kət-wa i=aṯto mhaymanto w-ruḥmo-wa aloho <…> madəmla ʕal u=xayər w-ʕal i=ṭowuṯo w-madəmle u=šuġl-ano ..",
+            "translations": [
+              "keine vier Stunden hast du durchgehalten mit der Wache am Grabe unseres Vaters",
+              "ich habe diese Sache ja sehr lange getrieben",
+              "Since the wife was devout and loved God, she kept doing good deeds",
+              "‘So the things went on’"
+            ],
+            "references": ["539", "61/56", "RT 31"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lə=madəmlux arbaʕ=saʕayat d-zəbṭat nawba ʕal u=qawro d-babayna "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻkeine vier Stunden hast du durchgehalten mit der Wache am Grabe unseres Vatersʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "539"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "61/56"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ġắlabe waxtat madəmli u=med-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe diese Sache ja sehr lange getriebenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "RT 31"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕal d-kət-wa i=aṯto mhaymanto w-ruḥmo-wa aloho <…> madəmla ʕal u=xayər w-ʕal i=ṭowuṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "“Since the wife was devout and loved God, she kept doing good deeds”"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "43/5"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-madəmle u=šuġl-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "‘So the things went on’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 20"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "7"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "35"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "lə=madəmlux arbaʕ=saʕayat d-zəbṭat nawba ʕal u=qawro d-babayna ʻkeine vier Stunden hast du durchgehalten mit der Wache am Grabe unseres Vatersʼ; 539; 61/56; w ġắlabe waxtat madəmli u=med-ano ʻich habe diese Sache ja sehr lange getriebenʼ; RT 31; ʕal d-kət-wa i=aṯto mhaymanto w-ruḥmo-wa aloho <…> madəmla ʕal u=xayər w-ʕal i=ṭowuṯo “Since the wife was devout and loved God, she kept doing good deeds”; 43/5 [MT]; w-madəmle u=šuġl-ano ‘So the things went on’ JL 20.7.35;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "lə=madəmlux arbaʕ=saʕayat d-zəbṭat nawba ʕal u=qawro d-babayna",
+                "translations": [
+                  "ʻkeine vier Stunden hast du durchgehalten mit der Wache am Grabe unseres Vatersʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["539"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["61/56"]
+              },
+              {
+                "turoyo": "w ġắlabe waxtat madəmli u=med-ano",
+                "translations": [
+                  "ʻich habe diese Sache ja sehr lange getriebenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["RT 31"]
+              },
+              {
+                "turoyo": "ʕal d-kət-wa i=aṯto mhaymanto w-ruḥmo-wa aloho <…> madəmla ʕal u=xayər w-ʕal i=ṭowuṯo",
+                "translations": [
+                  "“Since the wife was devout and loved God, she kept doing good deeds”"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["43/5"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "w-madəmle u=šuġl-ano ..",
+                "translations": ["‘So the things went on’"],
+                "references": ["JL 20", "7", "35"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "alo madəm-lox prs prs aloho madəm-xu ŭbal-xu ḥaye yarixe w basime",
+            "translations": [
+              "Gott schenke dir langes Leben",
+              "‘Gott möge Sie erhalten und Ihnen ein langes, angenehmes Leben schencken!’"
+            ],
+            "references": ["545", "27/2", "33/17"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "alo madəm-lox "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻGott schenke dir langes Lebenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "545"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "27/2"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "33/17"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "64/98"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "66/110"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70/193"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aloho madəm-xu"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ŭbal-xu ḥaye yarixe w basime "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Gott möge Sie erhalten und Ihnen ein langes, angenehmes Leben schencken!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "20/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "alo madəm-lox ʻGott schenke dir langes Lebenʼ; 545; prs 27/2; prs 33/17, 25; 64/98; 66/110; 70/193; aloho madəm-xu, ŭbal-xu ḥaye yarixe w basime ‘Gott möge Sie erhalten und Ihnen ein langes, angenehmes Leben schencken!’; 20/4;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "alo madəm-lox",
+                "translations": ["ʻGott schenke dir langes Lebenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["545"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["27/2"]
+              },
+              {
+                "turoyo": "prs ,",
+                "translations": [],
+                "references": ["33/17", "25"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["64/98"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["66/110"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["70/193"]
+              },
+              {
+                "turoyo": "aloho madəm-xu, ŭbal-xu ḥaye yarixe w basime",
+                "translations": [
+                  "‘Gott möge Sie erhalten und Ihnen ein langes, angenehmes Leben schencken!’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["20/4"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "dauern lassen, durchhalten; dauern, andauern jl 20.5;"
-  ],
+  "idioms": ["dauern lassen, durchhalten; dauern, andauern jl 20.5;"],
   "uncertain": false
 }

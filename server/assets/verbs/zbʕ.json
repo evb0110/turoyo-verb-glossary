@@ -5,25 +5,124 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "zbəʕle",
-        "zobəʕ"
-      ],
+      "forms": ["zbəʕle", "zobəʕ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "i=barṯaṯxu zʕǝ́bla-li w xəd k-obəʕ leba ko-saymo НУЖНО РАЗОБРАТЬСЯ КАКОЙ ТУТ КОРЕНЬ НА САМОМ ДЕЛЕ. В ГРАММАТИКЕ РИТТЕРА ПОСЛЕДОВАТЕЛЬНОСТЬ БУКВ ОДНА А В ПРИВЕДННОМ ПРИМЕРЕ - СОВСЕМ ДРУГАЯ",
+            "translations": [
+              "eure Tochter hat mich fortgejagt und tut, was ihr Herz begehrt"
+            ],
+            "references": ["80", "88/41"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=barṯaṯxu"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " zʕǝ́bla-li"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w xəd k-obəʕ leba ko-saymo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻeure Tochter hat mich fortgejagt und tut, was ihr Herz begehrtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "80"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "88/41"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " НУЖНО РАЗОБРАТЬСЯ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " КАКОЙ ТУТ КОРЕНЬ НА САМОМ ДЕЛЕ. В ГРАММАТИКЕ РИТТЕРА ПОСЛЕДОВАТЕЛЬНОСТЬ БУКВ ОДНА"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " А В ПРИВЕДННОМ ПРИМЕРЕ - СОВСЕМ ДРУГАЯ"
+              }
+            ],
             "text": "i=barṯaṯxu, zʕǝ́bla-li; w xəd k-obəʕ leba ko-saymo ʻeure Tochter hat mich fortgejagt und tut, was ihr Herz begehrtʼ; 80; 88/41; НУЖНО РАЗОБРАТЬСЯ, КАКОЙ ТУТ КОРЕНЬ НА САМОМ ДЕЛЕ. В ГРАММАТИКЕ РИТТЕРА ПОСЛЕДОВАТЕЛЬНОСТЬ БУКВ ОДНА, А В ПРИВЕДННОМ ПРИМЕРЕ - СОВСЕМ ДРУГАЯ",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=barṯaṯxu, zʕǝ́bla-li",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "w xəd k-obəʕ leba ko-saymo",
+                "translations": [
+                  "ʻeure Tochter hat mich fortgejagt und tut, was ihr Herz begehrtʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["80"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["88/41"]
+              },
+              {
+                "turoyo": "НУЖНО РАЗОБРАТЬСЯ, КАКОЙ ТУТ КОРЕНЬ НА САМОМ ДЕЛЕ. В ГРАММАТИКЕ РИТТЕРА ПОСЛЕДОВАТЕЛЬНОСТЬ БУКВ ОДНА, А В ПРИВЕДННОМ ПРИМЕРЕ - СОВСЕМ ДРУГАЯ",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "wegjagen;",
-    "zbn → zwn"
-  ],
+  "idioms": ["wegjagen;", "zbn → zwn"],
   "uncertain": false
 }

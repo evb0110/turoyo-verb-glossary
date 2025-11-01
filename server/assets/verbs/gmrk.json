@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mgamrakle",
-        "mgamrək"
-      ],
+      "forms": ["mgamrakle", "mgamrək"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "gə-mgamrak-la",
+            "translations": ["er verzollt sie (f)"],
+            "references": ["776"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gə-mgamrak-la "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer verzollt sie (f)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "776"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "gə-mgamrak-la ʻer verzollt sie (f)ʼ; 776;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "gə-mgamrak-la",
+                "translations": ["ʻer verzollt sie (f)ʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["776"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "verzollen;"
-  ],
+  "idioms": ["verzollen;"],
   "uncertain": false
 }

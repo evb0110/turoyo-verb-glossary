@@ -5,24 +5,86 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mfaqaṣle",
-        "mfaqəṣ"
-      ],
+      "forms": ["mfaqaṣle", "mfaqəṣ"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "hənne maḥatte iḏayye ʕal femayye də-mhalhili w hənne ftəḥḥe iḏotayye də-mfaqṣi",
+            "translations": [
+              "etliche legten ihre Hand auf den Mund, um den Freudentriller anzustimmen, und etliche öffneten die Hände, um zu klatschen"
+            ],
+            "references": ["165", "59/71"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hənne maḥatte iḏayye ʕal femayye də-mhalhili"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w hənne ftəḥḥe iḏotayye də-mfaqṣi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻetliche legten ihre Hand auf den Mund, um den Freudentriller anzustimmen, und etliche öffneten die Hände, um zu klatschenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "165"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "59/71"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "hənne maḥatte iḏayye ʕal femayye də-mhalhili, w hənne ftəḥḥe iḏotayye də-mfaqṣi ʻetliche legten ihre Hand auf den Mund, um den Freudentriller anzustimmen, und etliche öffneten die Hände, um zu klatschenʼ; 165; 59/71;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "hənne maḥatte iḏayye ʕal femayye də-mhalhili, w hənne ftəḥḥe iḏotayye də-mfaqṣi",
+                "translations": [
+                  "ʻetliche legten ihre Hand auf den Mund, um den Freudentriller anzustimmen, und etliche öffneten die Hände, um zu klatschenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["165"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["59/71"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "klatschen, schnippen;"
-  ],
+  "idioms": ["klatschen, schnippen;"],
   "uncertain": false
 }

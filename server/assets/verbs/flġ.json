@@ -14,25 +14,350 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "fləġle",
-        "foləġ"
-      ],
+      "forms": ["fləġle", "foləġ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "azzǝ́n l-u=bayto fləġġe ak=kallat d-gnuwwe prs ay=yiruṯe d-ʕArəf Paša fləġġe u=qunāġ-ano ʕal ḥḏoḏe w sǝ́m-wo-lle kmo=aparṭəmānat yabo uno fləġli ak=kallāt-ani kulle ʕal-am=miṯe. kul miṯo qayəṯ-le ʕasro=kallāt",
+            "translations": [
+              "sie gingen nach Hause und teilten dort das gestohlene Geld",
+              "die Erben des Arifi Pascha hatten diese Villa unter sich aufgeteilt und einige Mietswohnungen daraus gemacht",
+              "‘Mensch! Ich habe doch das ganze Geld unter die Toten verteilt. Auf jeden Toten kommen zehn Para’"
+            ],
+            "references": ["69", "112/36", "2/57"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "azzǝ́n l-u=bayto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " fləġġe ak=kallat d-gnuwwe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie gingen nach Hause und teilten dort das gestohlene Geldʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "112/36"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ay=yiruṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-ʕArəf Paša fləġġe u=qunāġ-ano ʕal ḥḏoḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w sǝ́m-wo-lle kmo=aparṭəmānat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Erben des Arifi Pascha hatten diese Villa unter sich aufgeteilt und einige Mietswohnungen daraus gemachtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/57"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " yabo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " uno fləġli ak=kallāt-ani kulle ʕal-am=miṯe. kul miṯo qayəṯ-le ʕasro=kallāt "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Mensch! Ich habe doch das ganze Geld unter die Toten verteilt. Auf jeden Toten kommen zehn Para’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/65"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "azzǝ́n l-u=bayto, fləġġe ak=kallat d-gnuwwe ʻsie gingen nach Hause und teilten dort das gestohlene Geldʼ; 69; prs 112/36; ay=yiruṯe, d-ʕArəf Paša fləġġe u=qunāġ-ano ʕal ḥḏoḏe, w sǝ́m-wo-lle kmo=aparṭəmānat ʻdie Erben des Arifi Pascha hatten diese Villa unter sich aufgeteilt und einige Mietswohnungen daraus gemachtʼ; 2/57; yabo, uno fləġli ak=kallāt-ani kulle ʕal-am=miṯe. kul miṯo qayəṯ-le ʕasro=kallāt ‘Mensch! Ich habe doch das ganze Geld unter die Toten verteilt. Auf jeden Toten kommen zehn Para’; 25/65;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "azzǝ́n l-u=bayto, fləġġe ak=kallat d-gnuwwe",
+                "translations": [
+                  "ʻsie gingen nach Hause und teilten dort das gestohlene Geldʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["69"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["112/36"]
+              },
+              {
+                "turoyo": "ay=yiruṯe, d-ʕArəf Paša fləġġe u=qunāġ-ano ʕal ḥḏoḏe, w sǝ́m-wo-lle kmo=aparṭəmānat",
+                "translations": [
+                  "ʻdie Erben des Arifi Pascha hatten diese Villa unter sich aufgeteilt und einige Mietswohnungen daraus gemachtʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["2/57"]
+              },
+              {
+                "turoyo": "yabo, uno fləġli ak=kallāt-ani kulle ʕal-am=miṯe. kul miṯo qayəṯ-le ʕasro=kallāt",
+                "translations": [
+                  "‘Mensch! Ich habe doch das ganze Geld unter die Toten verteilt. Auf jeden Toten kommen zehn Para’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["25/65"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "tamo k-fulġina ak=kallat-ani də-gnulan m-i=xazne d-u=šulṭono aṯən l-i=maqbara ḥatta d-fulġən-ne ʕal ḥḏoḏe ann=abne abiʕi d-fulġi nafili bə-ḥḏoḏe",
+            "translations": [
+              "dort teilen wir das Geld, das wir aus dem Schatzhaus des Sultans gestohlen haben",
+              "‘Sie waren zum Friedhof gekommen, um [diese Beute] unter sich zu teilen’",
+              "‘Dann wollten die Söhne (das Erbe) teilen und gerieten sich darüber in die Haare’"
+            ],
+            "references": ["97", "25/57", "25/56"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "tamo k-fulġina ak=kallat-ani"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " də-gnulan m-i=xazne d-u=šulṭono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdort teilen wir das Geld, das wir aus dem Schatzhaus des Sultans gestohlen habenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "97"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/57"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aṯən l-i=maqbara ḥatta d-fulġən-ne ʕal ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sie waren zum Friedhof gekommen, um [diese Beute] unter sich zu teilen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/56"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ann=abne abiʕi d-fulġi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " nafili bə-ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Dann wollten die Söhne (das Erbe) teilen und gerieten sich darüber in die Haare’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/12"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "tamo k-fulġina ak=kallat-ani, də-gnulan m-i=xazne d-u=šulṭono ʻdort teilen wir das Geld, das wir aus dem Schatzhaus des Sultans gestohlen habenʼ; 97; 25/57 [MT]; aṯən l-i=maqbara ḥatta d-fulġən-ne ʕal ḥḏoḏe ‘Sie waren zum Friedhof gekommen, um [diese Beute] unter sich zu teilen’; 25/56; ann=abne abiʕi d-fulġi, nafili bə-ḥḏoḏe ‘Dann wollten die Söhne (das Erbe) teilen und gerieten sich darüber in die Haare’; 26/12 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "tamo k-fulġina ak=kallat-ani, də-gnulan m-i=xazne d-u=šulṭono",
+                "translations": [
+                  "ʻdort teilen wir das Geld, das wir aus dem Schatzhaus des Sultans gestohlen habenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["97"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["25/57"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "aṯən l-i=maqbara ḥatta d-fulġən-ne ʕal ḥḏoḏe",
+                "translations": [
+                  "‘Sie waren zum Friedhof gekommen, um [diese Beute] unter sich zu teilen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["25/56"]
+              },
+              {
+                "turoyo": "ann=abne abiʕi d-fulġi, nafili bə-ḥḏoḏe",
+                "translations": [
+                  "‘Dann wollten die Söhne (das Erbe) teilen und gerieten sich darüber in die Haare’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["26/12"],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ]
       }
@@ -43,43 +368,289 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "u=kallat d-kīt ənkān ḥalāl w kān ḥărām k-məfləġ m-fəlgo prs dawmo lə-k-məfloġo ḥḏo-yo",
+            "translations": [
+              "das Geld, welches da ist, mag es nun gerecht oder ungerecht erworben sein, soll in zwei gleiche Hälften geteilt werden",
+              "er ist nur ein Baum und nicht trennbar"
+            ],
+            "references": ["129", "225/37", "DD 391/6"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=kallat d-kīt ənkān ḥalāl w kān ḥărām k-məfləġ m-fəlgo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Geld, welches da ist, mag es nun gerecht oder ungerecht erworben sein, soll in zwei gleiche Hälften geteilt werdenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "129"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "225/37"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " dawmo lə-k-məfloġo ḥḏo-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer ist nur ein Baum und nicht trennbarʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "DD 391/6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=kallat d-kīt ənkān ḥalāl w kān ḥărām k-məfləġ m-fəlgo ʻdas Geld, welches da ist, mag es nun gerecht oder ungerecht erworben sein, soll in zwei gleiche Hälften geteilt werdenʼ; 129; prs 225/37; dawmo lə-k-məfloġo ḥḏo-yo ʻer ist nur ein Baum und nicht trennbarʼ; DD 391/6;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=kallat d-kīt ənkān ḥalāl w kān ḥărām k-məfləġ m-fəlgo",
+                "translations": [
+                  "ʻdas Geld, welches da ist, mag es nun gerecht oder ungerecht erworben sein, soll in zwei gleiche Hälften geteilt werdenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["129"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["225/37"]
+              },
+              {
+                "turoyo": "dawmo lə-k-məfloġo ḥḏo-yo",
+                "translations": ["ʻer ist nur ein Baum und nicht trennbarʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["DD 391/6"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
+            "turoyo": "m-ayko yalifət u=floġ-ano? prs",
+            "translations": ["woher hast du diese Art des Teilens gelernt?"],
+            "references": ["123", "208/34"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "m-ayko yalifət u=floġ-ano? "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwoher hast du diese Art des Teilens gelernt?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "123"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "208/34"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "m-ayko yalifət u=floġ-ano? ʻwoher hast du diese Art des Teilens gelernt?ʼ; 123; prs 208/34;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "m-ayko yalifət u=floġ-ano?",
+                "translations": [
+                  "ʻwoher hast du diese Art des Teilens gelernt?ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["123"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["208/34"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": [
-        "mfalaġle",
-        "mfaləġ"
-      ],
+      "forms": ["mfalaġle", "mfaləġ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mbarbazze bayne ruḥayye w mfalaġġe ʕal ruḥayye ayna d-nḥərre nḥərre w ayna d-hawi tarqi hawi tarqi .. ak=kallaw-aṯṯe mfalġənne ʕal ḥḏoḏe",
+            "translations": [
+              "sie zerstreuten es und teilten es unter sich auf; einiges davon schlachteten sie und einiges ging verloren",
+              "‘They divided their money between themselves’"
+            ],
+            "references": ["JL 10", "12", "3"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mbarbazze bayne ruḥayye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mfalaġġe ʕal ruḥayye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ayna d-nḥərre nḥərre"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ayna d-hawi tarqi hawi tarqi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie zerstreuten es und teilten es unter sich auf; einiges davon schlachteten sie und einiges ging verlorenʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 10"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "12"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ak=kallaw-aṯṯe mfalġənne ʕal ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘They divided their money between themselves’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/123"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mbarbazze bayne ruḥayye, w mfalaġġe ʕal ruḥayye, ayna d-nḥərre nḥərre, w ayna d-hawi tarqi hawi tarqi ʻsie zerstreuten es und teilten es unter sich auf; einiges davon schlachteten sie und einiges ging verlorenʼ JL 10.12.3; ak=kallaw-aṯṯe mfalġənne ʕal ḥḏoḏe ‘They divided their money between themselves’ 73/123;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mbarbazze bayne ruḥayye, w mfalaġġe ʕal ruḥayye, ayna d-nḥərre nḥərre, w ayna d-hawi tarqi hawi tarqi ..",
+                "translations": [
+                  "ʻsie zerstreuten es und teilten es unter sich auf; einiges davon schlachteten sie und einiges ging verlorenʼ"
+                ],
+                "references": ["JL 10", "12", "3"]
+              },
+              {
+                "turoyo": "ak=kallaw-aṯṯe mfalġənne ʕal ḥḏoḏe",
+                "translations": [
+                  "‘They divided their money between themselves’"
+                ],
+                "references": ["73/123"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "teilen;",
-    "teilen, aufteilen (unter);"
-  ],
+  "idioms": ["teilen;", "teilen, aufteilen (unter);"],
   "uncertain": false
 }

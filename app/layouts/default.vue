@@ -1,5 +1,11 @@
 <script setup lang="ts">
 const { isPending } = useAuth()
+const containerWide = useContainerWide()
+const containerClass = computed(() => (
+    containerWide.value
+        ? 'max-w-[1400px] mx-auto transition-all duration-300'
+        : 'max-w-5xl mx-auto transition-all duration-300'
+))
 </script>
 
 <template>
@@ -8,7 +14,7 @@ const { isPending } = useAuth()
         <PendingUserBanner/>
 
         <main v-if="!isPending" class="pb-6">
-            <UContainer class="max-w-5xl mx-auto">
+            <UContainer :class="containerClass">
                 <slot></slot>
             </UContainer>
         </main>

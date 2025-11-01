@@ -5,10 +5,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mzanzəl",
-        "mizanzəl"
-      ],
+      "forms": ["mzanzəl", "mizanzəl"],
       "conjugations": {}
     },
     {
@@ -17,17 +14,80 @@
       "conjugations": {
         "Infectum-wa": [
           {
+            "turoyo": "am=may-anək me d-raṯiḥi-wa g-manaḥtí-way-na-nne l-i=arʕo g-mizanzli-wa ..-",
+            "translations": [
+              "wenn das Wasser gekocht hatte, stellten wir es herunter auf die Erde. (Die Flüssigkeit) klärte sich"
+            ],
+            "references": ["JL 14", "9", "3"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "am=may-anək me d-raṯiḥi-wa g-manaḥtí-way-na-nne l-i=arʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-mizanzli-wa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn das Wasser gekocht hatte, stellten wir es herunter auf die Erde. (Die Flüssigkeit) klärte sichʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 14"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "9"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "am=may-anək me d-raṯiḥi-wa g-manaḥtí-way-na-nne l-i=arʕo, g-mizanzli-wa ʻwenn das Wasser gekocht hatte, stellten wir es herunter auf die Erde. (Die Flüssigkeit) klärte sichʼ JL 14.9.3-4;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "am=may-anək me d-raṯiḥi-wa g-manaḥtí-way-na-nne l-i=arʕo, g-mizanzli-wa ..-",
+                "translations": [
+                  "ʻwenn das Wasser gekocht hatte, stellten wir es herunter auf die Erde. (Die Flüssigkeit) klärte sichʼ"
+                ],
+                "references": ["JL 14", "9", "3", "4"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) abgiessen, umgiessen;"
-  ],
+  "idioms": ["(Detrans.) abgiessen, umgiessen;"],
   "uncertain": false
 }

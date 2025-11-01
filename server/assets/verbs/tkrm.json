@@ -14,31 +14,195 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mətkaramle",
-        "mətkarəm"
-      ],
+      "forms": ["mətkaramle", "mətkarəm"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "qayəm me qume w mətkaramle ġắlabe w mḥaláqle-le kursi",
+            "translations": [
+              "(der Goldschmied) stand vor ihm auf, erwies ihm alle Ehre und setzte ihm einen Stuhl hin"
+            ],
+            "references": ["805", "105/4"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qayəm me qume"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mətkaramle ġắlabe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mḥaláqle-le kursi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ(der Goldschmied) stand vor ihm auf, erwies ihm alle Ehre und setzte ihm einen Stuhl hinʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "805"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "105/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "qayəm me qume, w mətkaramle ġắlabe, w mḥaláqle-le kursi ʻ(der Goldschmied) stand vor ihm auf, erwies ihm alle Ehre und setzte ihm einen Stuhl hinʼ; 805; 105/4;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "qayəm me qume, w mətkaramle ġắlabe, w mḥaláqle-le kursi",
+                "translations": [
+                  "ʻ(der Goldschmied) stand vor ihm auf, erwies ihm alle Ehre und setzte ihm einen Stuhl hinʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["805"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["105/4"]
+              }
+            ]
           },
           {
+            "turoyo": "Mtakasli u+kṯowo du+qerowo šan i+ṣluṯo dyawme dḥušabo Ilyas p.c.",
+            "translations": ["‘I prepared the book for the Sunday service’"],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": " Mtakasli u+kṯowo du+qerowo šan i+ṣluṯo dyawme dḥušabo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I prepared the book for the Sunday service’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "Mtakasli u+kṯowo du+qerowo šan i+ṣluṯo dyawme dḥušabo ‘I prepared the book for the Sunday service’ (Ilyas p.c.)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "Mtakasli u+kṯowo du+qerowo šan i+ṣluṯo dyawme dḥušabo (Ilyas p.c.)",
+                "translations": [
+                  "‘I prepared the book for the Sunday service’"
+                ],
+                "references": []
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "Hiye ínaqqa du+Sayfo d̥šamәʕ u+ʕamo kané quṭli a+mšiḥoye, bdalle dәmtaksi harke ruḥayye. It, at the time of the Genocide, when the people heard that they were killing Christians, they began to prepare themselves (Dayroyo Aziz)",
-            "turoyo": "",
+            "turoyo": "Hiye ínaqqa du+Sayfo d̥šamәʕ u+ʕamo kané quṭli a+mšiḥoye bdalle dәmtaksi harke ruḥayye. It at the time of the Genocide when the people heard that they were killing Christians they began to prepare themselves Dayroyo Aziz",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": " Hiye ínaqqa du+Sayfo d̥šamәʕ u+ʕamo kané quṭli a+mšiḥoye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " bdalle dәmtaksi harke ruḥayye. It"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " at the time of the Genocide"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " when the people heard that they were killing Christians"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " they began to prepare themselves "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Dayroyo Aziz"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Hiye ínaqqa du+Sayfo d̥šamәʕ u+ʕamo kané quṭli a+mšiḥoye, bdalle dәmtaksi harke ruḥayye. It, at the time of the Genocide, when the people heard that they were killing Christians, they began to prepare themselves (Dayroyo Aziz)",
+            "segments": [
+              {
+                "turoyo": "Hiye ínaqqa du+Sayfo d̥šamәʕ u+ʕamo kané quṭli a+mšiḥoye, bdalle dәmtaksi harke ruḥayye. It, at the time of the Genocide, when the people heard that they were killing Christians, they began to prepare themselves (Dayroyo Aziz)",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }

@@ -14,88 +14,1099 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "zwəlle",
-        "zowən"
-      ],
+      "forms": ["zwəlle", "zowən"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "húle-le tremo w-zwəlle i=dukan-ayḏe u=taǧər aḏəʕ d-u=abro d-u=faqir-awo d-zwəlle-yo aḥuno k-aṯino d-hozeno zwə́llux-li turto?",
+            "translations": [
+              "er gab ihm zweihundert und kaufte ihm den Laden ab",
+              "‘Der Kaufmann erkannte, daß es der Sohn des armen war, den er gekauft hatte’",
+              "‘Brother, I have come [here] to see if you bought a cow for me’"
+            ],
+            "references": ["1", "MM 36", "23/35"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " húle-le tremo w-zwəlle i=dukan-ayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer gab ihm zweihundert und kaufte ihm den Laden abʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 36"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=taǧər aḏəʕ"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-u=abro d-u=faqir-awo d-zwəlle-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Der Kaufmann erkannte, daß es der Sohn des armen war, den er gekauft hatte’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "23/35"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aḥuno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-aṯino d-hozeno zwə́llux-li turto? "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Brother, I have come [here] to see if you bought a cow for me’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "39/10"
+              }
+            ],
             "text": "1) húle-le tremo w-zwəlle i=dukan-ayḏe ʻer gab ihm zweihundert und kaufte ihm den Laden abʼ MM 36; u=taǧər aḏəʕ: d-u=abro d-u=faqir-awo d-zwəlle-yo ‘Der Kaufmann erkannte, daß es der Sohn des armen war, den er gekauft hatte’; 23/35 [MT]; aḥuno, k-aṯino d-hozeno zwə́llux-li turto? ‘Brother, I have come [here] to see if you bought a cow for me’; 39/10",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") húle-le tremo w-zwəlle i=dukan-ayḏe",
+                "translations": [
+                  "ʻer gab ihm zweihundert und kaufte ihm den Laden abʼ"
+                ],
+                "references": ["1", "MM 36"]
+              },
+              {
+                "turoyo": "u=taǧər aḏəʕ: d-u=abro d-u=faqir-awo d-zwəlle-yo",
+                "translations": [
+                  "‘Der Kaufmann erkannte, daß es der Sohn des armen war, den er gekauft hatte’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["23/35"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "aḥuno, k-aṯino d-hozeno zwə́llux-li turto?",
+                "translations": [
+                  "‘Brother, I have come [here] to see if you bought a cow for me’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["39/10"]
+              }
+            ]
           },
           {
+            "turoyo": "b-i=mxabara d-səmxu w d-gə-saymutu m-darbi l-Almanya zwənxu lebi d-saymət hawxa mede zwə́lləx-li",
+            "translations": [
+              "mit der Korrespondenz, die Sie an meiner Statt mit Deutschlanf geführt haben und noch führen werden, haben Sie mein Herz gewonnen",
+              "‘Wenn du so etwas tust, kaufst du mich (gewinnst du mein Herz)’"
+            ],
+            "references": ["2", "451", "20/3"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-i=mxabara d-səmxu w d-gə-saymutu m-darbi l-Almanya zwənxu lebi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmit der Korrespondenz, die Sie an meiner Statt mit Deutschlanf geführt haben und noch führen werden, haben Sie mein Herz gewonnenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "451"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "20/3"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-saymət hawxa mede"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " zwə́lləx-li "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wenn du so etwas tust, kaufst du mich (gewinnst du mein Herz)’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "28/78"
+              }
+            ],
             "text": "2) b-i=mxabara d-səmxu w d-gə-saymutu m-darbi l-Almanya zwənxu lebi ʻmit der Korrespondenz, die Sie an meiner Statt mit Deutschlanf geführt haben und noch führen werden, haben Sie mein Herz gewonnenʼ; 451; 20/3; d-saymət hawxa mede, zwə́lləx-li ‘Wenn du so etwas tust, kaufst du mich (gewinnst du mein Herz)’; 28/78",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") b-i=mxabara d-səmxu w d-gə-saymutu m-darbi l-Almanya zwənxu lebi",
+                "translations": [
+                  "ʻmit der Korrespondenz, die Sie an meiner Statt mit Deutschlanf geführt haben und noch führen werden, haben Sie mein Herz gewonnenʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["451"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["20/3"]
+              },
+              {
+                "turoyo": "d-saymət hawxa mede, zwə́lləx-li",
+                "translations": [
+                  "‘Wenn du so etwas tust, kaufst du mich (gewinnst du mein Herz)’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["28/78"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "kul tloṯ arbʕo=yarḥe ko-lotam-le kmo=maǧidiye g-zowən appe ǧule aḥuno k-obaʕno d-zawnat-li turto ono huli kallāt l-u=qašo d-zowal-li turto",
+            "translations": [
+              "alle drei, vier Monate hat er ein paar Taler zusammen und kauft sich damit Kleider",
+              "‘Brother! I want you to buy me a cow’",
+              "‘I gave money to the priest that he might buy a cow for me’"
+            ],
+            "references": ["1", "453", "116/15"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kul tloṯ arbʕo=yarḥe ko-lotam-le kmo=maǧidiye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-zowən appe ǧule "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻalle drei, vier Monate hat er ein paar Taler zusammen und kauft sich damit Kleiderʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "453"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "116/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aḥuno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-obaʕno d-zawnat-li turto "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Brother! I want you to buy me a cow’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "39/1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono huli kallāt l-u=qašo d-zowal-li turto "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I gave money to the priest that he might buy a cow for me’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "39/6"
+              }
+            ],
             "text": "1) kul tloṯ arbʕo=yarḥe ko-lotam-le kmo=maǧidiye, g-zowən appe ǧule ʻalle drei, vier Monate hat er ein paar Taler zusammen und kauft sich damit Kleiderʼ; 453; 116/15; aḥuno, k-obaʕno d-zawnat-li turto ‘Brother! I want you to buy me a cow’; 39/1; ono huli kallāt l-u=qašo d-zowal-li turto ‘I gave money to the priest that he might buy a cow for me’; 39/6",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") kul tloṯ arbʕo=yarḥe ko-lotam-le kmo=maǧidiye, g-zowən appe ǧule",
+                "translations": [
+                  "ʻalle drei, vier Monate hat er ein paar Taler zusammen und kauft sich damit Kleiderʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["453"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["116/15"]
+              },
+              {
+                "turoyo": "aḥuno, k-obaʕno d-zawnat-li turto",
+                "translations": ["‘Brother! I want you to buy me a cow’"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["39/1"]
+              },
+              {
+                "turoyo": "ono huli kallāt l-u=qašo d-zowal-li turto",
+                "translations": [
+                  "‘I gave money to the priest that he might buy a cow for me’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["39/6"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "mə́š šəkəl t-uyo i=turto zwan-a!",
+            "translations": ["Whatever colour the cow is, do buy it!"],
+            "references": ["1", "39/26"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mə́š šəkəl t-uyo i=turto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " zwan-a! "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻWhatever colour the cow is, do buy it!ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "39/26"
+              }
+            ],
             "text": "1) mə́š šəkəl t-uyo i=turto, zwan-a! ʻWhatever colour the cow is, do buy it!ʼ; 39/26",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mə́š šəkəl t-uyo i=turto, zwan-a!",
+                "translations": ["ʻWhatever colour the cow is, do buy it!ʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["39/26"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
+            "turoyo": "mʕaǧəb u=merəko m-u=zwono w m-u=zbonaṯṯe prs",
+            "translations": [
+              "der Mann geriet in Verwunderung über ihr Kaufen und Verkaufen"
+            ],
+            "references": ["1", "458", "125/23"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mʕaǧəb u=merəko m-u=zwono w m-u=zbonaṯṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Mann geriet in Verwunderung über ihr Kaufen und Verkaufenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "458"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "125/23"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) mʕaǧəb u=merəko m-u=zwono w m-u=zbonaṯṯe ʻder Mann geriet in Verwunderung über ihr Kaufen und Verkaufenʼ; 458; prs 125/23;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mʕaǧəb u=merəko m-u=zwono w m-u=zbonaṯṯe",
+                "translations": [
+                  "ʻder Mann geriet in Verwunderung über ihr Kaufen und Verkaufenʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["458"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["125/23"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": [
-        "mzawalle",
-        "mzawən"
-      ],
+      "forms": ["mzawalle", "mzawən"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mzaballe l-u=Kosa ad=dərrayat kul ḥḏo b-alfo prs lăšan d-miṣafe u=dayno d-aʕla am=more d-u=dayno mawfaqqe am=mədon-ani l-u=măzād w-mzabnənne l-aš=šaqole d-am=mədone ʕatiqe məd-tayimi mzabanne as=səsy-aṯṯe w-xəlle u=ḥaq d-anək-sti",
+            "translations": [
+              "Kosa verkaufte die Perlen, jede für tausend (Piaster)",
+              "zur Bereinigung ihrer Schulden hatten die Gläubiger diese Sachen versteigert und an die Aufkäufer von alten Sachen verkauft",
+              "‘Und als das (das Geld, pl) zu Ende war, verkauften sie ihre Pferde und aßen den Erlös davon auf’"
+            ],
+            "references": ["464", "113/9", "23/14"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mzaballe l-u=Kosa ad=dərrayat"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kul ḥḏo b-alfo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻKosa verkaufte die Perlen, jede für tausend (Piaster)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "464"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "113/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "23/14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/117"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lăšan d-miṣafe u=dayno d-aʕla"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " am=more d-u=dayno mawfaqqe am=mədon-ani l-u=măzād"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-mzabnənne l-aš=šaqole d-am=mədone ʕatiqe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻzur Bereinigung ihrer Schulden hatten die Gläubiger diese Sachen versteigert und an die Aufkäufer von alten Sachen verkauftʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "424"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/77"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " məd-tayimi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mzabanne as=səsy-aṯṯe w-xəlle u=ḥaq d-anək-sti "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Und als das (das Geld, pl) zu Ende war, verkauften sie ihre Pferde und aßen den Erlös davon auf’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/32"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "mzaballe l-u=Kosa ad=dərrayat, kul ḥḏo b-alfo ʻKosa verkaufte die Perlen, jede für tausend (Piaster)ʼ; 464; prs 113/9; 23/14; 56/117; lăšan d-miṣafe u=dayno d-aʕla, am=more d-u=dayno mawfaqqe am=mədon-ani l-u=măzād, w-mzabnənne l-aš=šaqole d-am=mədone ʕatiqe ʻzur Bereinigung ihrer Schulden hatten die Gläubiger diese Sachen versteigert und an die Aufkäufer von alten Sachen verkauftʼ; 424; 2/77; məd-tayimi, mzabanne as=səsy-aṯṯe w-xəlle u=ḥaq d-anək-sti ‘Und als das (das Geld, pl) zu Ende war, verkauften sie ihre Pferde und aßen den Erlös davon auf’; 36/32 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mzaballe l-u=Kosa ad=dərrayat, kul ḥḏo b-alfo",
+                "translations": [
+                  "ʻKosa verkaufte die Perlen, jede für tausend (Piaster)ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["464"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["113/9"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["23/14"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["56/117"]
+              },
+              {
+                "turoyo": "lăšan d-miṣafe u=dayno d-aʕla, am=more d-u=dayno mawfaqqe am=mədon-ani l-u=măzād, w-mzabnənne l-aš=šaqole d-am=mədone ʕatiqe",
+                "translations": [
+                  "ʻzur Bereinigung ihrer Schulden hatten die Gläubiger diese Sachen versteigert und an die Aufkäufer von alten Sachen verkauftʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["424"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["2/77"]
+              },
+              {
+                "turoyo": "məd-tayimi, mzabanne as=səsy-aṯṯe w-xəlle u=ḥaq d-anək-sti",
+                "translations": [
+                  "‘Und als das (das Geld, pl) zu Ende war, verkauften sie ihre Pferde und aßen den Erlös davon auf’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["36/32"],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "kə-mzaban-ne ḥeṭe l-ann=aḥunone prs k-ubʕeno də-mzabnat-li u=abr-ano diḏux d-hawi gud əbʕat amane maḥtat-te gabi ono g-mobánna-nne l-i=walaye d-Bəġdəd kīt tagore rabe tamo gə-mzabánna-nne tamo",
+            "translations": [
+              "er verkauft den Brüdern Weizen",
+              "‘Ich möchte, daß du mir den Sohn verkaufst, der dir geboren ist’",
+              "‘If you will, you can entrust me with them (pearls, pl.). I shall bring them to the city of Baghdad. There are big merchants (in Baghdad), and I shall sell them there’"
+            ],
+            "references": ["464", "19/19", "116/15"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kə-mzaban-ne ḥeṭe l-ann=aḥunone "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer verkauft den Brüdern Weizenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "464"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "19/19"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "116/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ubʕeno də-mzabnat-li u=abr-ano diḏux d-hawi "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Ich möchte, daß du mir den Sohn verkaufst, der dir geboren ist’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "23/13"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " gud əbʕat amane maḥtat-te gabi ono g-mobánna-nne l-i=walaye d-Bəġdəd kīt tagore rabe tamo gə-mzabánna-nne tamo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘If you will, you can entrust me with them (pearls, pl.). I shall bring them to the city of Baghdad. There are big merchants (in Baghdad), and I shall sell them there’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "77/180"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kə-mzaban-ne ḥeṭe l-ann=aḥunone ʻer verkauft den Brüdern Weizenʼ; 464; prs 19/19; 116/15; k-ubʕeno də-mzabnat-li u=abr-ano diḏux d-hawi ‘Ich möchte, daß du mir den Sohn verkaufst, der dir geboren ist’; 23/13 [MT]; gud əbʕat amane maḥtat-te gabi ono g-mobánna-nne l-i=walaye d-Bəġdəd kīt tagore rabe tamo gə-mzabánna-nne tamo ‘If you will, you can entrust me with them (pearls, pl.). I shall bring them to the city of Baghdad. There are big merchants (in Baghdad), and I shall sell them there’ 77/180;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kə-mzaban-ne ḥeṭe l-ann=aḥunone",
+                "translations": ["ʻer verkauft den Brüdern Weizenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["464"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["19/19"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["116/15"]
+              },
+              {
+                "turoyo": "k-ubʕeno də-mzabnat-li u=abr-ano diḏux d-hawi",
+                "translations": [
+                  "‘Ich möchte, daß du mir den Sohn verkaufst, der dir geboren ist’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["23/13"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "gud əbʕat amane maḥtat-te gabi ono g-mobánna-nne l-i=walaye d-Bəġdəd kīt tagore rabe tamo gə-mzabánna-nne tamo",
+                "translations": [
+                  "‘If you will, you can entrust me with them (pearls, pl.). I shall bring them to the city of Baghdad. There are big merchants (in Baghdad), and I shall sell them there’"
+                ],
+                "references": ["77/180"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "an=nabišoṯe-ze uxlí-way-na mənne w az=zawude mzabní-way-na-nne ..",
+            "translations": [
+              "von den Rosinen assen wir, und die überschüssigen verkauften wir"
+            ],
+            "references": ["JL 14", "9", "7"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "an=nabišoṯe-ze uxlí-way-na mənne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w az=zawude mzabní-way-na-nne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻvon den Rosinen assen wir, und die überschüssigen verkauften wirʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 14"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "9"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "7"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "an=nabišoṯe-ze uxlí-way-na mənne, w az=zawude mzabní-way-na-nne ʻvon den Rosinen assen wir, und die überschüssigen verkauften wirʼ JL 14.9.7;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "an=nabišoṯe-ze uxlí-way-na mənne, w az=zawude mzabní-way-na-nne ..",
+                "translations": [
+                  "ʻvon den Rosinen assen wir, und die überschüssigen verkauften wirʼ"
+                ],
+                "references": ["JL 14", "9", "7"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "zex l-u=šuqo zabal-li bele lo=mzabnət i=rašme prs",
+            "translations": [
+              "geh auf den Markt und verkaufe mich, aber die Halfter verkaufe nicht"
+            ],
+            "references": ["465", "158/14", "20"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "zex l-u=šuqo zabal-li"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " bele lo=mzabnət i=rašme "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻgeh auf den Markt und verkaufe mich, aber die Halfter verkaufe nichtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "465"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "158/14"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "20"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "zex l-u=šuqo zabal-li, bele lo=mzabnət i=rašme ʻgeh auf den Markt und verkaufe mich, aber die Halfter verkaufe nichtʼ; 465; prs 158/14, 20;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "zex l-u=šuqo zabal-li, bele lo=mzabnət i=rašme",
+                "translations": [
+                  "ʻgeh auf den Markt und verkaufe mich, aber die Halfter verkaufe nichtʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["465"]
+              },
+              {
+                "turoyo": "prs ,",
+                "translations": [],
+                "references": ["158/14", "20"]
+              }
+            ]
           }
         ]
       }
@@ -106,25 +1117,231 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "u=qaṭirayḏax lə=mzabən qay-yo?",
+            "translations": ["hat sich dein Joghurt nicht verkauft?"],
+            "references": ["465", "102/49", "50"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=qaṭirayḏax lə=mzabən qay-yo? "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻhat sich dein Joghurt nicht verkauft?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "465"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "102/49"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "50"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=qaṭirayḏax lə=mzabən qay-yo? ʻhat sich dein Joghurt nicht verkauft?ʼ; 465; 102/49, 50;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=qaṭirayḏax lə=mzabən qay-yo?",
+                "translations": ["ʻhat sich dein Joghurt nicht verkauft?ʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["465"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["102/49", "50"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
+            "turoyo": "mʕaǧəb m-u=zwono w m-u=zəbonaṯṯe prs mə=kīt aʕmux k-omər ašər kīt aʕmi ḥalwo d-aryo m-ayko-yo omər ko l-u=zebono kəbʕutu – He said – – He said -",
+            "translations": [
+              "er wunderte sich über ihr Kaufen und Verkaufen",
+              "What do you have?",
+              "Indeed I have lion’s milk",
+              "From where?",
+              "Now it is for sale. Do you want (it)?"
+            ],
+            "references": ["465", "125/22", "75/316"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mʕaǧəb m-u=zwono w m-u=zəbonaṯṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wunderte sich über ihr Kaufen und Verkaufenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "465"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "125/22"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mə=kīt aʕmux k-omər ašər kīt aʕmi ḥalwo d-aryo m-ayko-yo omər ko l-u=zebono kəbʕutu "
+              },
+              {
+                "kind": "translation",
+                "value": "“What do you have?”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " – He said"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“Indeed I have lion’s milk”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " – "
+              },
+              {
+                "kind": "translation",
+                "value": "“From where?”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " – He said"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“Now it is for sale. Do you want (it)?”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/316"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "317"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mʕaǧəb m-u=zwono w m-u=zəbonaṯṯe ʻer wunderte sich über ihr Kaufen und Verkaufenʼ; 465; prs 125/22; mə=kīt aʕmux k-omər ašər kīt aʕmi ḥalwo d-aryo m-ayko-yo omər ko l-u=zebono kəbʕutu “What do you have?” – He said: “Indeed I have lion’s milk” – “From where?” – He said: “Now it is for sale. Do you want (it)?” 75/316-317;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mʕaǧəb m-u=zwono w m-u=zəbonaṯṯe",
+                "translations": [
+                  "ʻer wunderte sich über ihr Kaufen und Verkaufenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["465"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["125/22"]
+              },
+              {
+                "turoyo": "mə=kīt aʕmux k-omər ašər kīt aʕmi ḥalwo d-aryo m-ayko-yo omər ko l-u=zebono kəbʕutu – He said: – – He said: -",
+                "translations": [
+                  "“What do you have?”",
+                  "“Indeed I have lion’s milk”",
+                  "“From where?”",
+                  "“Now it is for sale. Do you want (it)?”"
+                ],
+                "references": ["75/316", "317"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "verkaufen;"
-  ],
+  "idioms": ["verkaufen;"],
   "uncertain": false
 }

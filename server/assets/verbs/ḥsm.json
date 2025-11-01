@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ḥsəmle",
-        "ḥosəm"
-      ],
+      "forms": ["ḥsəmle", "ḥosəm"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-ḥəsmi",
+            "translations": ["sie beneiden"],
+            "references": ["100"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-ḥəsmi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie beneidenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "100"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-ḥəsmi ʻsie beneidenʼ; 100;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-ḥəsmi",
+                "translations": ["ʻsie beneidenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["100"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "beneiden, neidisch werden;"
-  ],
+  "idioms": ["beneiden, neidisch werden;"],
   "uncertain": false
 }

@@ -14,48 +14,580 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "maṣəṯle",
-        "maṣəṯ"
-      ],
+      "forms": ["maṣəṯle", "maṣəṯ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "lə=maṣəṯle aʕle dʕəfle w nafəl b-am=maye w ḥnīq maṣəṯle b-ruḥe ... ánnaqqa tayimo i=xarǧiyayḏi lə=maṣəṯla ʕal i=xatunayḏa",
+            "translations": [
+              "er hörte nicht auf ihn, gab ihm einene Stoss, er fiel ins Wasser und ertrank",
+              "er überlegte: «Jetzt ist meine Reisegeld zu Ende»",
+              "sie hörte nicht auf ihre Herrin"
+            ],
+            "references": ["537", "48/77", "537"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lə=maṣəṯle aʕle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " dʕəfle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w nafəl b-am=maye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ḥnīq "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hörte nicht auf ihn, gab ihm einene Stoss, er fiel ins Wasser und ertrankʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "537"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "48/77"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maṣəṯle b-ruḥe ... ánnaqqa tayimo i=xarǧiyayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer überlegte: «Jetzt ist meine Reisegeld zu Ende»ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "537"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "66/106"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=maṣəṯla ʕal i=xatunayḏa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie hörte nicht auf ihre Herrinʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "538"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "66/131"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "lə=maṣəṯle aʕle, dʕəfle, w nafəl b-am=maye, w ḥnīq ʻer hörte nicht auf ihn, gab ihm einene Stoss, er fiel ins Wasser und ertrankʼ; 537; 48/77; maṣəṯle b-ruḥe ... ánnaqqa tayimo i=xarǧiyayḏi ʻer überlegte: «Jetzt ist meine Reisegeld zu Ende»ʼ; 537; 66/106; lə=maṣəṯla ʕal i=xatunayḏa ʻsie hörte nicht auf ihre Herrinʼ; 538; 66/131;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "lə=maṣəṯle aʕle, dʕəfle, w nafəl b-am=maye, w ḥnīq",
+                "translations": [
+                  "ʻer hörte nicht auf ihn, gab ihm einene Stoss, er fiel ins Wasser und ertrankʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["537"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["48/77"]
+              },
+              {
+                "turoyo": "maṣəṯle b-ruḥe ... ánnaqqa tayimo i=xarǧiyayḏi",
+                "translations": [
+                  "ʻer überlegte: «Jetzt ist meine Reisegeld zu Ende»ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["537"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["66/106"]
+              },
+              {
+                "turoyo": "lə=maṣəṯla ʕal i=xatunayḏa",
+                "translations": ["ʻsie hörte nicht auf ihre Herrinʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["538"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["66/131"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "ko-maṣəṯ ʕal aṭ=ṭayre d-ko-fayri m-i=barriye ko-yəsqi l-u=zozān g-maṣiṯat ʕal u=yatumo omər “lebayxu-yo! ono lə=g-maṣiṯutu aʕli kt=owat-lxu kewo d-rišo!",
+            "translations": [
+              "er hörte den Vögeln zu, die aus der Steppe ins Hochland hinaufflogen",
+              "wirst du auf den Wechselbalg hören?",
+              "‘He said: “As you will! If you do not want to listen to me, you will get a headache!’"
+            ],
+            "references": ["544", "62/135", "546"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-maṣəṯ ʕal aṭ=ṭayre"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-ko-fayri m-i=barriye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-yəsqi l-u=zozān "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hörte den Vögeln zu, die aus der Steppe ins Hochland hinaufflogenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "544"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/135"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-maṣiṯat ʕal u=yatumo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwirst du auf den Wechselbalg hören?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "546"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/296"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " omər"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "turoyo",
+                "value": "“"
+              },
+              {
+                "kind": "turoyo",
+                "value": "lebayxu-yo! ono lə=g-maṣiṯutu aʕli"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kt=owat-lxu kewo d-rišo! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘He said: “As you will! If you do not want to listen to me, you will get a headache!’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/36"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-maṣəṯ ʕal aṭ=ṭayre, d-ko-fayri m-i=barriye, ko-yəsqi l-u=zozān ʻer hörte den Vögeln zu, die aus der Steppe ins Hochland hinaufflogenʼ; 544; 62/135; g-maṣiṯat ʕal u=yatumo ʻwirst du auf den Wechselbalg hören?ʼ; 546; 69/296; omər: “lebayxu-yo! ono lə=g-maṣiṯutu aʕli, kt=owat-lxu kewo d-rišo! ‘He said: “As you will! If you do not want to listen to me, you will get a headache!’ 73/36;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-maṣəṯ ʕal aṭ=ṭayre, d-ko-fayri m-i=barriye, ko-yəsqi l-u=zozān",
+                "translations": [
+                  "ʻer hörte den Vögeln zu, die aus der Steppe ins Hochland hinaufflogenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["544"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["62/135"]
+              },
+              {
+                "turoyo": "g-maṣiṯat ʕal u=yatumo",
+                "translations": ["ʻwirst du auf den Wechselbalg hören?ʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["546"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["69/296"]
+              },
+              {
+                "turoyo": "omər: “lebayxu-yo! ono lə=g-maṣiṯutu aʕli, kt=owat-lxu kewo d-rišo!",
+                "translations": [
+                  "‘He said: “As you will! If you do not want to listen to me, you will get a headache!’"
+                ],
+                "references": ["73/36"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "ya ḥəmmāl! aṣǝ́ṯ! ḥuru w məftakeru w maṣiṯu l-u=ʕəǧb-ano d-səmme",
+            "translations": [
+              "nun höre o Lastträger",
+              "‘schaut, überlegt euch und hört (über) diese Gewalt, die man angetan hat’"
+            ],
+            "references": ["549", "63/42", "LB 74"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ya ḥəmmāl! aṣǝ́ṯ! "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnun höre o Lastträgerʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "549"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "63/42"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥuru w məftakeru w maṣiṯu l-u=ʕəǧb-ano d-səmme "
+              },
+              {
+                "kind": "translation",
+                "value": "‘schaut, überlegt euch und hört (über) diese Gewalt, die man angetan hat’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 74"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ya ḥəmmāl! aṣǝ́ṯ! ʻnun höre o Lastträgerʼ; 549; 63/42; ḥuru w məftakeru w maṣiṯu l-u=ʕəǧb-ano d-səmme ‘schaut, überlegt euch und hört (über) diese Gewalt, die man angetan hat’; LB 74;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ya ḥəmmāl! aṣǝ́ṯ!",
+                "translations": ["ʻnun höre o Lastträgerʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["549"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["63/42"]
+              },
+              {
+                "turoyo": "ḥuru w məftakeru w maṣiṯu l-u=ʕəǧb-ano d-səmme",
+                "translations": [
+                  "‘schaut, überlegt euch und hört (über) diese Gewalt, die man angetan hat’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 74"]
+              }
+            ]
           }
         ],
         "Part act.": [
           {
+            "turoyo": "g-maṣəṯ daʔəm maṣiṯóno-yo aʕlayye w ʕīš w ʕămal diḏe m-u=teṣiṯo w ze mede layt",
+            "translations": [
+              "er belauscht sie die ganze Zeit; er tut nichts als Lauschen"
+            ],
+            "references": ["550", "96/51"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "g-maṣəṯ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " daʔəm maṣiṯóno-yo aʕlayye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ʕīš w ʕămal diḏe m-u=teṣiṯo w ze mede layt "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer belauscht sie die ganze Zeit; er tut nichts als Lauschenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "550"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "96/51"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "g-maṣəṯ, daʔəm maṣiṯóno-yo aʕlayye, w ʕīš w ʕămal diḏe m-u=teṣiṯo w ze mede layt ʻer belauscht sie die ganze Zeit; er tut nichts als Lauschenʼ; 550; 96/51;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "g-maṣəṯ, daʔəm maṣiṯóno-yo aʕlayye, w ʕīš w ʕămal diḏe m-u=teṣiṯo w ze mede layt",
+                "translations": [
+                  "ʻer belauscht sie die ganze Zeit; er tut nichts als Lauschenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["550"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["96/51"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "hören, lauschen, (b-ruḥe) überlegen;"
-  ],
+  "idioms": ["hören, lauschen, (b-ruḥe) überlegen;"],
   "uncertain": false
 }

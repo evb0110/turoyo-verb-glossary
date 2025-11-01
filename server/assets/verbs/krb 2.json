@@ -5,24 +5,40 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "karəb",
-        "korəb"
-      ],
+      "forms": ["karəb", "korəb"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "Karəblax? RBP",
+            "translations": ["Do you feel hot?"],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Karəblax? "
+              },
+              {
+                "kind": "translation",
+                "value": "'Do you feel hot?'"
+              },
+              {
+                "kind": "turoyo",
+                "value": " RBP"
+              }
+            ],
             "text": "Karəblax? 'Do you feel hot?' RBP",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "Karəblax? RBP",
+                "translations": ["'Do you feel hot?'"],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "become hot (l-) (?)"
-  ],
+  "idioms": ["become hot (l-) (?)"],
   "uncertain": false
 }

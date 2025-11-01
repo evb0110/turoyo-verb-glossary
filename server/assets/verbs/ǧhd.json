@@ -14,24 +14,106 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mǧahadle",
-        "mǧahəd"
-      ],
+      "forms": ["mǧahadle", "mǧahəd"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "lăǧan u=laḥmo w malḥ-ano mǧahadli qumayxu ko-mšayaʕno tawədyoṯo w šukriyat l-kule u=ʕamayḏan d-as=səryoyo d-kət-yo b-Awrŭpa də-mǧahadde",
+            "translations": [
+              "um dieses Brotes und Salzes willen habe ich für euch gekämpft",
+              "ich danke herzlich unserem Volk der Suryoye in Europa, das sich für mich eingesetzt hat"
+            ],
+            "references": ["162", "29/498", "LB 368"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lăǧan u=laḥmo w malḥ-ano mǧahadli qumayxu "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻum dieses Brotes und Salzes willen habe ich für euch gekämpftʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "162"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/498"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-mšayaʕno tawədyoṯo w šukriyat l-kule u=ʕamayḏan d-as=səryoyo d-kət-yo b-Awrŭpa də-mǧahadde "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich danke herzlich unserem Volk der Suryoye in Europa, das sich für mich eingesetzt hatʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 368"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "lăǧan u=laḥmo w malḥ-ano mǧahadli qumayxu ʻum dieses Brotes und Salzes willen habe ich für euch gekämpftʼ; 162; 29/498; ko-mšayaʕno tawədyoṯo w šukriyat l-kule u=ʕamayḏan d-as=səryoyo d-kət-yo b-Awrŭpa də-mǧahadde ʻich danke herzlich unserem Volk der Suryoye in Europa, das sich für mich eingesetzt hatʼ LB 368;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "lăǧan u=laḥmo w malḥ-ano mǧahadli qumayxu",
+                "translations": [
+                  "ʻum dieses Brotes und Salzes willen habe ich für euch gekämpftʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["162"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/498"]
+              },
+              {
+                "turoyo": "ko-mšayaʕno tawədyoṯo w šukriyat l-kule u=ʕamayḏan d-as=səryoyo d-kət-yo b-Awrŭpa də-mǧahadde",
+                "translations": [
+                  "ʻich danke herzlich unserem Volk der Suryoye in Europa, das sich für mich eingesetzt hatʼ"
+                ],
+                "references": ["LB 368"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "um. jm. bemühen, für jm. kämpfen;"
-  ],
+  "idioms": ["um. jm. bemühen, für jm. kämpfen;"],
   "uncertain": false
 }

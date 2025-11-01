@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ḥlədle",
-        "ḥoləd"
-      ],
+      "forms": ["ḥlədle", "ḥoləd"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,90 @@
       "conjugations": {
         "Preterit-wa": [
           {
+            "turoyo": "ḥəngi i=dawmo ʕatəqto w-rabṯo-wa ḥləd-wa gawa hawi xd-i=koro",
+            "translations": [
+              "weil der Baum alt und gross war, war es ihnen hohle geworden, wie ein Getreidezuber"
+            ],
+            "references": ["128", "44/128"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥəngi i=dawmo ʕatəqto w-rabṯo-wa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥləd-wa gawa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawi xd-i=koro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻweil der Baum alt und gross war, war es ihnen hohle geworden, wie ein Getreidezuberʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "128"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/128"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ḥəngi i=dawmo ʕatəqto w-rabṯo-wa, ḥləd-wa gawa, hawi xd-i=koro ʻweil der Baum alt und gross war, war es ihnen hohle geworden, wie ein Getreidezuberʼ; 128; 44/128;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ḥəngi i=dawmo ʕatəqto w-rabṯo-wa, ḥləd-wa gawa, hawi xd-i=koro",
+                "translations": [
+                  "ʻweil der Baum alt und gross war, war es ihnen hohle geworden, wie ein Getreidezuberʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["128"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["44/128"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "aushöhlen;"
-  ],
+  "idioms": ["aushöhlen;"],
   "uncertain": false
 }

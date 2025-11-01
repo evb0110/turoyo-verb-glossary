@@ -5,10 +5,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mlawlaḥle",
-        "mlawləḥ"
-      ],
+      "forms": ["mlawlaḥle", "mlawləḥ"],
       "conjugations": {}
     },
     {
@@ -17,10 +14,44 @@
       "conjugations": {
         "Preterit": [
           {
-            "text": "mlawləḥ; 784;",
-            "turoyo": "",
+            "turoyo": "mlawləḥ",
             "translations": [],
-            "references": []
+            "references": ["784"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mlawləḥ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "784"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mlawləḥ; 784;",
+            "segments": [
+              {
+                "turoyo": "mlawləḥ",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["784"]
+              }
+            ]
           }
         ]
       }

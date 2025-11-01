@@ -14,24 +14,110 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mətnazele",
-        "mətnazəl"
-      ],
+      "forms": ["mətnazele", "mətnazəl"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "hiye zlām sobo-yo w-ko-mətnazəl k-manḥət nafše w-gəd-oṯe l-gabi me-darbe d-ono əzzí l-gabe",
+            "translations": [
+              "He is an old man and he deigns [to come], abases himself and come to me instead of me coming to him"
+            ],
+            "references": ["805", "42/14"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hiye zlām sobo-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-ko-mətnazəl"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-manḥət nafše"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-gəd-oṯe l-gabi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " me-darbe d-ono əzzí l-gabe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻHe is an old man and he deigns [to come], abases himself and come to me instead of me coming to himʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "805"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "42/14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "hiye zlām sobo-yo, w-ko-mətnazəl, k-manḥət nafše, w-gəd-oṯe l-gabi, me-darbe d-ono əzzí l-gabe ʻHe is an old man and he deigns [to come], abases himself and come to me instead of me coming to himʼ; 805; 42/14;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "hiye zlām sobo-yo, w-ko-mətnazəl, k-manḥət nafše, w-gəd-oṯe l-gabi, me-darbe d-ono əzzí l-gabe",
+                "translations": [
+                  "ʻHe is an old man and he deigns [to come], abases himself and come to me instead of me coming to himʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["805"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["42/14"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sich herablassen;"
-  ],
+  "idioms": ["sich herablassen;"],
   "uncertain": false
 }

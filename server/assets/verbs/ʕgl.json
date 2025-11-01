@@ -5,17 +5,82 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mʕagele",
-        "mʕagəl"
-      ],
+      "forms": ["mʕagele", "mʕagəl"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mʕage-le Пример отсутствует в указанном месте",
+            "translations": [
+              "er machte ihn kampfunfähig; er brachte ihm einen Schaden bei"
+            ],
+            "references": ["307", "53/120"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mʕage-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer machte ihn kampfunfähig; er brachte ihm einen Schaden beiʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "307"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "53/120"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Пример отсутствует в указанном месте"
+              }
+            ],
             "text": "mʕage-le ʻer machte ihn kampfunfähig; er brachte ihm einen Schaden beiʼ; 307; 53/120; Пример отсутствует в указанном месте",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mʕage-le",
+                "translations": [
+                  "ʻer machte ihn kampfunfähig; er brachte ihm einen Schaden beiʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["307"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["53/120"]
+              },
+              {
+                "turoyo": "Пример отсутствует в указанном месте",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
@@ -26,17 +91,53 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "mʕaglo",
+            "translations": ["lahm, mit Körperschaden"],
+            "references": ["311"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mʕaglo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻlahm, mit Körperschadenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "311"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mʕaglo ʻlahm, mit Körperschadenʼ; 311;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mʕaglo",
+                "translations": ["ʻlahm, mit Körperschadenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["311"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "lahm, schwach machen;"
-  ],
+  "idioms": ["lahm, schwach machen;"],
   "uncertain": false
 }

@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "msabaqle",
-        "msabəq"
-      ],
+      "forms": ["msabaqle", "msabəq"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "l-aʕ=ʕeze msabaqqe",
+            "translations": ["die Ziegen haben zu früh geworfen"],
+            "references": ["215"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-aʕ=ʕeze msabaqqe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Ziegen haben zu früh geworfenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "215"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "l-aʕ=ʕeze msabaqqe ʻdie Ziegen haben zu früh geworfenʼ; 215;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "l-aʕ=ʕeze msabaqqe",
+                "translations": ["ʻdie Ziegen haben zu früh geworfenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["215"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "zu früh werfen;"
-  ],
+  "idioms": ["zu früh werfen;"],
   "uncertain": false
 }

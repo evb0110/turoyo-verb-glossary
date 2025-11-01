@@ -12,32 +12,141 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "maʕəzle",
-        "maʕəz"
-      ],
+      "forms": ["maʕəzle", "maʕəz"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "maʕəzlox Rustam ŭno-ste gə-maʕzalle l-i=awdayḏi prs Здесь очень необычная форма от ʕzm",
+            "translations": [
+              "du hast Rustem bewirtet, jetzt will ich ihn auch zu mir in mein Zimmer einladen"
+            ],
+            "references": ["539", "35/27"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maʕəzlox Rustam"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ŭno-ste gə-maʕzalle l-i=awdayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu hast Rustem bewirtet, jetzt will ich ihn auch zu mir in mein Zimmer einladenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "539"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "35/27"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Здесь очень необычная форма от ʕzm"
+              }
+            ],
             "text": "maʕəzlox Rustam, ŭno-ste gə-maʕzalle l-i=awdayḏi ʻdu hast Rustem bewirtet, jetzt will ich ihn auch zu mir in mein Zimmer einladenʼ; 539; prs 35/27; Здесь очень необычная форма от ʕzm",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "maʕəzlox Rustam, ŭno-ste gə-maʕzalle l-i=awdayḏi",
+                "translations": [
+                  "ʻdu hast Rustem bewirtet, jetzt will ich ihn auch zu mir in mein Zimmer einladenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["539"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["35/27"]
+              },
+              {
+                "turoyo": "Здесь очень необычная форма от ʕzm",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "g-maʕəzína-le",
+            "translations": ["wir werden ihn ehren"],
+            "references": ["548"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "g-maʕəzína-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir werden ihn ehrenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "548"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "g-maʕəzína-le ʻwir werden ihn ehrenʼ; 548;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "g-maʕəzína-le",
+                "translations": ["ʻwir werden ihn ehrenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["548"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "ehren;"
-  ],
+  "idioms": ["ehren;"],
   "uncertain": false
 }

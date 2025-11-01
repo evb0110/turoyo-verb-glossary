@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ptəḥle",
-        "potəḥ"
-      ],
+      "forms": ["ptəḥle", "potəḥ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ptəḥle ab=bŭwerəq",
+            "translations": ["er entrollte die Fahnen"],
+            "references": ["177"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ptəḥle ab=bŭwerəq "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer entrollte die Fahnenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "177"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ptəḥle ab=bŭwerəq ʻer entrollte die Fahnenʼ; 177;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ptəḥle ab=bŭwerəq",
+                "translations": ["ʻer entrollte die Fahnenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["177"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "öffnen, aufmachen;"
-  ],
+  "idioms": ["öffnen, aufmachen;"],
   "uncertain": false
 }

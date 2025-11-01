@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mšakakle",
-        "mšakək"
-      ],
+      "forms": ["mšakakle", "mšakək"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,55 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mšakək lebi aʕle",
+            "translations": ["ich bekam Zweifel, schöpfte Verdacht gegen ihn"],
+            "references": ["499"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mšakək lebi aʕle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich bekam Zweifel, schöpfte Verdacht gegen ihnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "499"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mšakək lebi aʕle ʻich bekam Zweifel, schöpfte Verdacht gegen ihnʼ; 499;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mšakək lebi aʕle",
+                "translations": [
+                  "ʻich bekam Zweifel, schöpfte Verdacht gegen ihnʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["499"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "zweifeln;"
-  ],
+  "idioms": ["zweifeln;"],
   "uncertain": false
 }

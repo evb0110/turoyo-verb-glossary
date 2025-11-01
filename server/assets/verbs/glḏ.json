@@ -14,32 +14,136 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "galəḏ",
-        "goləḏ"
-      ],
+      "forms": ["galəḏ", "goləḏ"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "u=Boġāz galəḏ u=gliḏo bdele k-soḥe ʕal foṯə-d-am=maye",
+            "translations": [
+              "der Bosporus fror ein, und das Eis fing an, auf dem Wasser zu treiben"
+            ],
+            "references": ["2/50"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=Boġāz galəḏ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=gliḏo bdele k-soḥe ʕal foṯə-d-am=maye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Bosporus fror ein, und das Eis fing an, auf dem Wasser zu treibenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/50"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=Boġāz galəḏ, u=gliḏo bdele k-soḥe ʕal foṯə-d-am=maye ʻder Bosporus fror ein, und das Eis fing an, auf dem Wasser zu treibenʼ; 2/50;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=Boġāz galəḏ, u=gliḏo bdele k-soḥe ʕal foṯə-d-am=maye",
+                "translations": [
+                  "ʻder Bosporus fror ein, und das Eis fing an, auf dem Wasser zu treibenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["2/50"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "bəṯər məd-ʕatəm aḥna g-gəlḏina",
+            "translations": [
+              "wenn es dunkel wird, werden wir vor Kälte erstarren"
+            ],
+            "references": ["101", "91/23"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bəṯər məd-ʕatəm aḥna g-gəlḏina "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn es dunkel wird, werden wir vor Kälte erstarrenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "101"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "91/23"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "bəṯər məd-ʕatəm aḥna g-gəlḏina ʻwenn es dunkel wird, werden wir vor Kälte erstarrenʼ; 101; 91/23;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "bəṯər məd-ʕatəm aḥna g-gəlḏina",
+                "translations": [
+                  "ʻwenn es dunkel wird, werden wir vor Kälte erstarrenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["101"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["91/23"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "einfriern, erfrieren;"
-  ],
+  "idioms": ["einfriern, erfrieren;"],
   "uncertain": false
 }

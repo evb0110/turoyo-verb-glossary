@@ -14,32 +14,141 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mšarakle",
-        "mšarək"
-      ],
+      "forms": ["mšarakle", "mšarək"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "u=maqṣadayḏan kule i=taǧára-yo də-mšarkat aʕmayna",
+            "translations": [
+              "unser ganzes Anliegen war der Handel, dass du unser Partner wirst"
+            ],
+            "references": ["166", "63/39"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=maqṣadayḏan kule i=taǧára-yo də-mšarkat aʕmayna "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻunser ganzes Anliegen war der Handel, dass du unser Partner wirstʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "166"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "63/39"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=maqṣadayḏan kule i=taǧára-yo də-mšarkat aʕmayna ʻunser ganzes Anliegen war der Handel, dass du unser Partner wirstʼ; 166; 63/39;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=maqṣadayḏan kule i=taǧára-yo də-mšarkat aʕmayna",
+                "translations": [
+                  "ʻunser ganzes Anliegen war der Handel, dass du unser Partner wirstʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["166"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["63/39"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "šarékul-li prs",
+            "translations": ["So macht mich zum Compagnon"],
+            "references": ["170", "206/32"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "šarékul-li "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻSo macht mich zum Compagnonʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "170"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "206/32"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "šarékul-li ʻSo macht mich zum Compagnonʼ; 170; prs 206/32;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "šarékul-li",
+                "translations": ["ʻSo macht mich zum Compagnonʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["170"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["206/32"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "beteiligen;"
-  ],
+  "idioms": ["beteiligen;"],
   "uncertain": false
 }

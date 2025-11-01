@@ -14,17 +14,81 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mkawzalle",
-        "mkawzər"
-      ],
+      "forms": ["mkawzalle", "mkawzər"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "aq=qarʕe w raġle-ste ko-mkawzrən-ne w ko-kəzdən-ne. w hanək kul yawmo tre ko-maḥti hən mənne l-i=nuro w k-uxlən-ne dayəm ʕam u=bərġəl",
+            "translations": [
+              "die Köpfe und Füsse sengt man ab, salzt auch sie ein, setzt jeden oder jeden zweiten Tag einige davon aufs Feuer und isst sie, stets mit Weizengrütze"
+            ],
+            "references": ["783", "94/234"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aq=qarʕe w raġle-ste ko-mkawzrən-ne w ko-kəzdən-ne. w hanək kul yawmo tre ko-maḥti hən mənne l-i=nuro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w k-uxlən-ne dayəm ʕam u=bərġəl "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Köpfe und Füsse sengt man ab, salzt auch sie ein, setzt jeden oder jeden zweiten Tag einige davon aufs Feuer und isst sie, stets mit Weizengrützeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "783"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/234"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "aq=qarʕe w raġle-ste ko-mkawzrən-ne w ko-kəzdən-ne. w hanək kul yawmo tre ko-maḥti hən mənne l-i=nuro, w k-uxlən-ne dayəm ʕam u=bərġəl ʻdie Köpfe und Füsse sengt man ab, salzt auch sie ein, setzt jeden oder jeden zweiten Tag einige davon aufs Feuer und isst sie, stets mit Weizengrützeʼ; 783; 94/234;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "aq=qarʕe w raġle-ste ko-mkawzrən-ne w ko-kəzdən-ne. w hanək kul yawmo tre ko-maḥti hən mənne l-i=nuro, w k-uxlən-ne dayəm ʕam u=bərġəl",
+                "translations": [
+                  "ʻdie Köpfe und Füsse sengt man ab, salzt auch sie ein, setzt jeden oder jeden zweiten Tag einige davon aufs Feuer und isst sie, stets mit Weizengrützeʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["783"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["94/234"]
+              }
+            ]
           }
         ]
       }
@@ -35,10 +99,52 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "i=bəḥto k-mikurzo",
+            "translations": [
+              "das Ei wird in heisse Asche gelegt (und platzt dann)"
+            ],
+            "references": ["783"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=bəḥto k-mikurzo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Ei wird in heisse Asche gelegt (und platzt dann)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "783"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=bəḥto k-mikurzo ʻdas Ei wird in heisse Asche gelegt (und platzt dann)ʼ; 783;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=bəḥto k-mikurzo",
+                "translations": [
+                  "ʻdas Ei wird in heisse Asche gelegt (und platzt dann)ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["783"]
+              }
+            ]
           }
         ]
       }

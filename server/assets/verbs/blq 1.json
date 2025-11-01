@@ -14,36 +14,162 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "baləq",
-        "boləq"
-      ],
+      "forms": ["baləq", "boləq"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "aṯi baləq ʕal u=malk-ano",
+            "translations": ["er kam und tauchte plötzlich bei dem König auf"],
+            "references": ["1", "176", "57/19"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": "aṯi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " baləq ʕal u=malk-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer kam und tauchte plötzlich bei dem König aufʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "176"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "57/19"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1)aṯi, baləq ʕal u=malk-ano ʻer kam und tauchte plötzlich bei dem König aufʼ; 176; 57/19;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ")aṯi, baləq ʕal u=malk-ano",
+                "translations": [
+                  "ʻer kam und tauchte plötzlich bei dem König aufʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["176"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["57/19"]
+              }
+            ]
           },
           {
+            "turoyo": "Aṯmǝl balǝqno bu karmayḏi. Yesterday I visited my vineyard. İlyas p.c",
+            "translations": [],
+            "references": ["2"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": "Aṯmǝl balǝqno bu karmayḏi. Yesterday I visited my vineyard. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "2)Aṯmǝl balǝqno bu karmayḏi. Yesterday I visited my vineyard. (İlyas p.c)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ")Aṯmǝl balǝqno bu karmayḏi. Yesterday I visited my vineyard. (İlyas p.c)",
+                "translations": [],
+                "references": ["2"]
+              }
+            ]
           },
           {
-            "text": "U yawmawo balǝqno bu kayiwo d kǝtwa bi qǝstaxana. That day I visited a sick person who was in the hospital. (İlyas p.c)",
-            "turoyo": "",
+            "turoyo": "U yawmawo balǝqno bu kayiwo d kǝtwa bi qǝstaxana. That day I visited a sick person who was in the hospital. İlyas p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "U yawmawo balǝqno bu kayiwo d kǝtwa bi qǝstaxana. That day I visited a sick person who was in the hospital. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "U yawmawo balǝqno bu kayiwo d kǝtwa bi qǝstaxana. That day I visited a sick person who was in the hospital. (İlyas p.c)",
+            "segments": [
+              {
+                "turoyo": "U yawmawo balǝqno bu kayiwo d kǝtwa bi qǝstaxana. That day I visited a sick person who was in the hospital. (İlyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "1)auftauchen; appear once in a while, 2)Kfarze: to visit"
-  ],
+  "idioms": ["1)auftauchen; appear once in a while, 2)Kfarze: to visit"],
   "uncertain": false
 }

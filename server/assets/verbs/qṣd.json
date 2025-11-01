@@ -14,17 +14,94 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "qṣədle",
-        "qoṣəd"
-      ],
+      "forms": ["qṣədle", "qoṣəd"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "qayəm me-tamo azzé l-i=walaye w qṣədle i=dukano d-u=ḥayoṭo",
+            "translations": [
+              "da machte er sich von dort auf und ging nach der Stadt und begab sich zu dem Laden des Schneiders"
+            ],
+            "references": ["72", "52/179", "115/304"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qayəm me-tamo azzé l-i=walaye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w qṣədle i=dukano d-u=ḥayoṭo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda machte er sich von dort auf und ging nach der Stadt und begab sich zu dem Laden des Schneidersʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "72"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "52/179"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "115/304"
+              }
+            ],
             "text": "qayəm me-tamo azzé l-i=walaye, w qṣədle i=dukano d-u=ḥayoṭo ʻda machte er sich von dort auf und ging nach der Stadt und begab sich zu dem Laden des Schneidersʼ; 72; 52/179; 115/304",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "qayəm me-tamo azzé l-i=walaye, w qṣədle i=dukano d-u=ḥayoṭo",
+                "translations": [
+                  "ʻda machte er sich von dort auf und ging nach der Stadt und begab sich zu dem Laden des Schneidersʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["72"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["52/179"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["115/304"]
+              }
+            ]
           }
         ]
       }
@@ -35,41 +112,163 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "’ I need something/help from you. İlyas p.c",
+            "translations": ["‘‘qṣәdno aʕlux’"],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "translation",
+                "value": "‘‘qṣәdno aʕlux’"
+              },
+              {
+                "kind": "turoyo",
+                "value": "’"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " I need something/help from you. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "‘‘qṣәdno aʕlux’’, I need something/help from you. (İlyas p.c)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "’, I need something/help from you. (İlyas p.c)",
+                "translations": ["‘‘qṣәdno aʕlux’"],
+                "references": []
+              }
+            ]
           },
           {
-            "text": "Qṣǝdno ʕal u baytayḏux (ono lazǝmnolux), kobaʕno d obatli i barṯayḏux. I need you, I want you to give me your daughter for wife. (İlyas p.c)",
-            "turoyo": "",
+            "turoyo": "Qṣǝdno ʕal u baytayḏux ono lazǝmnolux kobaʕno d obatli i barṯayḏux. I need you I want you to give me your daughter for wife. İlyas p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Qṣǝdno ʕal u baytayḏux "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "ono lazǝmnolux"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kobaʕno d obatli i barṯayḏux. I need you"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " I want you to give me your daughter for wife. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Qṣǝdno ʕal u baytayḏux (ono lazǝmnolux), kobaʕno d obatli i barṯayḏux. I need you, I want you to give me your daughter for wife. (İlyas p.c)",
+            "segments": [
+              {
+                "turoyo": "Qṣǝdno ʕal u baytayḏux (ono lazǝmnolux), kobaʕno d obatli i barṯayḏux. I need you, I want you to give me your daughter for wife. (İlyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": [
-        "mqaṣəd",
-        "miqaṣəd"
-      ],
+      "forms": ["mqaṣəd", "miqaṣəd"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mqaṣadno ʕal u=ganarā́l",
+            "translations": ["ich suchte den General auf"],
+            "references": ["213"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mqaṣadno ʕal u=ganarā́l "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich suchte den General aufʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "213"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mqaṣadno ʕal u=ganarā́l ʻich suchte den General aufʼ; 213;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mqaṣadno ʕal u=ganarā́l",
+                "translations": ["ʻich suchte den General aufʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["213"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "to mean, intend; aufsuchen",
-    "(Detrans.) (ʕal) aufsuchen;"
-  ],
+  "idioms": ["to mean, intend; aufsuchen", "(Detrans.) (ʕal) aufsuchen;"],
   "uncertain": false
 }

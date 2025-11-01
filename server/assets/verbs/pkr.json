@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mpakalle",
-        "mpakər"
-      ],
+      "forms": ["mpakalle", "mpakər"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,72 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "i=tfəngayḏe fayišo mpakarto b-i=bxeriye",
+            "translations": ["seine Flinte blieb im Rauchfang eingeklemmt"],
+            "references": ["249", "71/89"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=tfəngayḏe fayišo mpakarto b-i=bxeriye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻseine Flinte blieb im Rauchfang eingeklemmtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "249"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "71/89"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=tfəngayḏe fayišo mpakarto b-i=bxeriye ʻseine Flinte blieb im Rauchfang eingeklemmtʼ; 249; 71/89;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=tfəngayḏe fayišo mpakarto b-i=bxeriye",
+                "translations": [
+                  "ʻseine Flinte blieb im Rauchfang eingeklemmtʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["249"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["71/89"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "einklemmen;"
-  ],
+  "idioms": ["einklemmen;"],
   "uncertain": false
 }

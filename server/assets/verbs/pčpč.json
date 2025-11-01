@@ -5,10 +5,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mpačpəč",
-        "mipačpəč"
-      ],
+      "forms": ["mpačpəč", "mipačpəč"],
       "conjugations": {}
     },
     {
@@ -17,17 +14,53 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "u=layš-ano mpačpəč",
+            "translations": ["dieser Teig ist sauer geworden"],
+            "references": ["800"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=layš-ano mpačpəč "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdieser Teig ist sauer gewordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "800"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=layš-ano mpačpəč ʻdieser Teig ist sauer gewordenʼ; 800;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=layš-ano mpačpəč",
+                "translations": ["ʻdieser Teig ist sauer gewordenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["800"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) sauer, ungeniessbar werden (Teig);"
-  ],
+  "idioms": ["(Detrans.) sauer, ungeniessbar werden (Teig);"],
   "uncertain": false
 }

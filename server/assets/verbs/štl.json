@@ -14,17 +14,109 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "štile",
-        "šotəl"
-      ],
+      "forms": ["štile", "šotəl"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "štili kmo=sate b-i=baxča fig. štili u=čakēt-ano m-awo",
+            "translations": [
+              "ich habe im Garten von ein Paar Weinstöcken Ableger gemacht (durch Eingraben in die Erde, ohne den Ableger vom Weinstock zu trennen)",
+              "ich habe aus dieser (alten) Jacke eine (kleinere) neue geschneidert"
+            ],
+            "references": ["288", "288"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "štili kmo=sate b-i=baxča "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe im Garten von ein Paar Weinstöcken Ableger gemacht (durch Eingraben in die Erde, ohne den Ableger vom Weinstock zu trennen)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "288"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "fig."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " štili u=čakēt-ano m-awo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe aus dieser (alten) Jacke eine (kleinere) neue geschneidertʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "288"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "štili kmo=sate b-i=baxča ʻich habe im Garten von ein Paar Weinstöcken Ableger gemacht (durch Eingraben in die Erde, ohne den Ableger vom Weinstock zu trennen)ʼ; 288; (fig.) štili u=čakēt-ano m-awo ʻich habe aus dieser (alten) Jacke eine (kleinere) neue geschneidertʼ; 288;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "štili kmo=sate b-i=baxča",
+                "translations": [
+                  "ʻich habe im Garten von ein Paar Weinstöcken Ableger gemacht (durch Eingraben in die Erde, ohne den Ableger vom Weinstock zu trennen)ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["288"]
+              },
+              {
+                "turoyo": "(fig.) štili u=čakēt-ano m-awo",
+                "translations": [
+                  "ʻich habe aus dieser (alten) Jacke eine (kleinere) neue geschneidertʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["288"]
+              }
+            ]
           }
         ]
       }
@@ -35,17 +127,82 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "u=maḏəbḥo disa mede hawxa šafiro ṣpahi štilo m-i=šeno ʕayni",
+            "translations": [
+              "der Altarraum ist wieder sehr schön aus dem lebendigen Felsen gehauen"
+            ],
+            "references": ["302", "93/15"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=maḏəbḥo disa mede hawxa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šafiro ṣpahi štilo m-i=šeno ʕayni "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Altarraum ist wieder sehr schön aus dem lebendigen Felsen gehauenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "302"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "93/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=maḏəbḥo disa mede hawxa, šafiro ṣpahi štilo m-i=šeno ʕayni ʻder Altarraum ist wieder sehr schön aus dem lebendigen Felsen gehauenʼ; 302; 93/15;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=maḏəbḥo disa mede hawxa, šafiro ṣpahi štilo m-i=šeno ʕayni",
+                "translations": [
+                  "ʻder Altarraum ist wieder sehr schön aus dem lebendigen Felsen gehauenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["302"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["93/15"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "aus einem alten Dingen ein neues machen;"
-  ],
+  "idioms": ["aus einem alten Dingen ein neues machen;"],
   "uncertain": false
 }

@@ -12,24 +12,73 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mratable",
-        "mratəb"
-      ],
+      "forms": ["mratable", "mratəb"],
       "conjugations": {
         "Imperativ": [
           {
+            "turoyo": "balki faqire-hatu ṭro maṣraf-fe aʕləx w-súmun-xu ṭaxəm d=u=bayto mratebu ruḥayxu!",
+            "translations": [
+              "‘Vielleicht seid ihr arm; laß ihn das für dich verwenden und schafft euch Möbel für das Haus an, richtet euch ein!’"
+            ],
+            "references": ["26/202"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "balki faqire-hatu"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṭro maṣraf-fe aʕləx w-súmun-xu ṭaxəm d=u=bayto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mratebu ruḥayxu! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Vielleicht seid ihr arm; laß ihn das für dich verwenden und schafft euch Möbel für das Haus an, richtet euch ein!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/202"
+              }
+            ],
             "text": "balki faqire-hatu, ṭro maṣraf-fe aʕləx w-súmun-xu ṭaxəm d=u=bayto, mratebu ruḥayxu! ‘Vielleicht seid ihr arm; laß ihn das für dich verwenden und schafft euch Möbel für das Haus an, richtet euch ein!’; 26/202",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "balki faqire-hatu, ṭro maṣraf-fe aʕləx w-súmun-xu ṭaxəm d=u=bayto, mratebu ruḥayxu!",
+                "translations": [
+                  "‘Vielleicht seid ihr arm; laß ihn das für dich verwenden und schafft euch Möbel für das Haus an, richtet euch ein!’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["26/202"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "einrichten; sich einrichten (mit ruḥo)"
-  ],
+  "idioms": ["einrichten; sich einrichten (mit ruḥo)"],
   "uncertain": false
 }

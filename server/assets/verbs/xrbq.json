@@ -14,17 +14,60 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mxarbaqle",
-        "mxarbəq"
-      ],
+      "forms": ["mxarbaqle", "mxarbəq"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mxarbaqle u=ḥuṭo",
+            "translations": ["er brachte den Faden durcheinander"],
+            "references": ["1", "794"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mxarbaqle u=ḥuṭo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer brachte den Faden durcheinanderʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "794"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) mxarbaqle u=ḥuṭo ʻer brachte den Faden durcheinanderʼ; 794;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mxarbaqle u=ḥuṭo",
+                "translations": ["ʻer brachte den Faden durcheinanderʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["794"]
+              }
+            ]
           }
         ]
       }
@@ -35,17 +78,57 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-mixarbaqno ʕal hano w nofanno bayn hano",
+            "translations": [
+              "ich stolperte über das eine und sprang über das andere"
+            ],
+            "references": ["LB 206"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mixarbaqno ʕal hano w nofanno bayn hano "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich stolperte über das eine und sprang über das andereʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 206"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-mixarbaqno ʕal hano w nofanno bayn hano ʻich stolperte über das eine und sprang über das andereʼ; LB 206;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-mixarbaqno ʕal hano w nofanno bayn hano",
+                "translations": [
+                  "ʻich stolperte über das eine und sprang über das andereʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 206"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "xrbš → xrmš"
-  ],
+  "idioms": ["xrbš → xrmš"],
   "uncertain": false
 }

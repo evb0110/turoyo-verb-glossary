@@ -14,24 +14,86 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mṭawele",
-        "mṭawe"
-      ],
+      "forms": ["mṭawele", "mṭawe"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "fayəš ko-mamteno u=ṣaydo w ko-mṭaweno u=baṣr-ano w ko-mqaleno",
+            "translations": [
+              "von da an brachte ich immer Wildbret, röstete und briet das Fleisch"
+            ],
+            "references": ["616", "52/62"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "fayəš ko-mamteno u=ṣaydo w ko-mṭaweno u=baṣr-ano"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ko-mqaleno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻvon da an brachte ich immer Wildbret, röstete und briet das Fleischʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "616"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "52/62"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "fayəš ko-mamteno u=ṣaydo w ko-mṭaweno u=baṣr-ano, w ko-mqaleno ʻvon da an brachte ich immer Wildbret, röstete und briet das Fleischʼ; 616; 52/62;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "fayəš ko-mamteno u=ṣaydo w ko-mṭaweno u=baṣr-ano, w ko-mqaleno",
+                "translations": [
+                  "ʻvon da an brachte ich immer Wildbret, röstete und briet das Fleischʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["616"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["52/62"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "rösten, braten;"
-  ],
+  "idioms": ["rösten, braten;"],
   "uncertain": false
 }

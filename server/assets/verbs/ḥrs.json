@@ -14,32 +14,105 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ḥrəsle",
-        "ḥorəs"
-      ],
+      "forms": ["ḥrəsle", "ḥorəs"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "l-i=pire ḥrəsla u=ḥawlo",
+            "translations": ["die Frau drehte den Strick sehr fest zusammen"],
+            "references": ["182"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-i=pire ḥrəsla u=ḥawlo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Frau drehte den Strick sehr fest zusammenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "182"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "l-i=pire ḥrəsla u=ḥawlo ʻdie Frau drehte den Strick sehr fest zusammenʼ; 182;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "l-i=pire ḥrəsla u=ḥawlo",
+                "translations": [
+                  "ʻdie Frau drehte den Strick sehr fest zusammenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["182"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "ḥras-e",
+            "translations": ["dreh ihn fest zusammen"],
+            "references": ["120"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥras-e "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdreh ihn fest zusammenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "120"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ḥras-e ʻdreh ihn fest zusammenʼ; 120;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ḥras-e",
+                "translations": ["ʻdreh ihn fest zusammenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["120"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sehr fest zusammendrehen, fest weben;"
-  ],
+  "idioms": ["sehr fest zusammendrehen, fest weben;"],
   "uncertain": false
 }

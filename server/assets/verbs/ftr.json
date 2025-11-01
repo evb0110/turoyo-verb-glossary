@@ -14,24 +14,53 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "fatər",
-        "fotər"
-      ],
+      "forms": ["fatər", "fotər"],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "text": "fatiri am=maye; 257;",
-            "turoyo": "",
+            "turoyo": "fatiri am=maye",
             "translations": [],
-            "references": []
+            "references": ["257"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "fatiri am=maye"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "257"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "fatiri am=maye; 257;",
+            "segments": [
+              {
+                "turoyo": "fatiri am=maye",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["257"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "lauwarm werden;"
-  ],
+  "idioms": ["lauwarm werden;"],
   "uncertain": false
 }

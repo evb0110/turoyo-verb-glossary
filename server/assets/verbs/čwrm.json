@@ -14,24 +14,78 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mčawramle",
-        "mčawrəm"
-      ],
+      "forms": ["mčawramle", "mčawrəm"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "de di di di mčawramle čəkle b-i=walaye",
+            "translations": [
+              "da, da, da, er hat ihn gezwungen, Kehrt zu machen, und in die Stadt hineingetrieben"
+            ],
+            "references": ["772", "56/57"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "de di di di mčawramle čəkle b-i=walaye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda, da, da, er hat ihn gezwungen, Kehrt zu machen, und in die Stadt hineingetriebenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "772"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/57"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "de di di di mčawramle čəkle b-i=walaye ʻda, da, da, er hat ihn gezwungen, Kehrt zu machen, und in die Stadt hineingetriebenʼ; 772; 56/57;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "de di di di mčawramle čəkle b-i=walaye",
+                "translations": [
+                  "ʻda, da, da, er hat ihn gezwungen, Kehrt zu machen, und in die Stadt hineingetriebenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["772"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["56/57"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "umdrehen, Kehrt machen;"
-  ],
+  "idioms": ["umdrehen, Kehrt machen;"],
   "uncertain": false
 }

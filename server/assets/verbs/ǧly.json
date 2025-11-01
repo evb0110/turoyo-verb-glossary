@@ -14,58 +14,220 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ǧlele",
-        "ǧole"
-      ],
+      "forms": ["ǧlele", "ǧole"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ǧlele as=səfoqe",
+            "translations": ["er putzte das Geschirr"],
+            "references": ["334"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ǧlele as=səfoqe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer putzte das Geschirrʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "334"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ǧlele as=səfoqe ʻer putzte das Geschirrʼ; 334;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ǧlele as=səfoqe",
+                "translations": ["ʻer putzte das Geschirrʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["334"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "u=taʕlo kə-mbayəḏ̣ w u=šiḏo k-nofəḥ w u=qaṭuno g-ǧole prs",
+            "translations": [
+              "der Fuchs verzinnte, der Teufel führte den Blasebalg und die Katze scheuerte"
+            ],
+            "references": ["356", "234/26"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=taʕlo kə-mbayəḏ̣ w u=šiḏo k-nofəḥ w u=qaṭuno g-ǧole "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Fuchs verzinnte, der Teufel führte den Blasebalg und die Katze scheuerteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "356"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "234/26"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=taʕlo kə-mbayəḏ̣ w u=šiḏo k-nofəḥ w u=qaṭuno g-ǧole ʻder Fuchs verzinnte, der Teufel führte den Blasebalg und die Katze scheuerteʼ; 356; prs 234/26;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=taʕlo kə-mbayəḏ̣ w u=šiḏo k-nofəḥ w u=qaṭuno g-ǧole",
+                "translations": [
+                  "ʻder Fuchs verzinnte, der Teufel führte den Blasebalg und die Katze scheuerteʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["356"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["234/26"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": [
-        "mǧalele",
-        "mǧale"
-      ],
+      "forms": ["mǧalele", "mǧale"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "mǧalela; 446;",
-            "turoyo": "",
+            "turoyo": "mǧalela",
             "translations": [],
-            "references": []
+            "references": ["446"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mǧalela"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "446"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mǧalela; 446;",
+            "segments": [
+              {
+                "turoyo": "mǧalela",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["446"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "kə-mǧalən",
+            "translations": ["sie stossen Freuden- oder Trauertriller aus"],
+            "references": ["420"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kə-mǧalən "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie stossen Freuden- oder Trauertriller ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "420"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kə-mǧalən ʻsie stossen Freuden- oder Trauertriller ausʼ; 420;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kə-mǧalən",
+                "translations": [
+                  "ʻsie stossen Freuden- oder Trauertriller ausʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["420"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "putzen, polieren;",
-    "den Freudentriller anstimmen;"
-  ],
+  "idioms": ["putzen, polieren;", "den Freudentriller anstimmen;"],
   "uncertain": false
 }

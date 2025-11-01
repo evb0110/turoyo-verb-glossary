@@ -14,24 +14,94 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "məstaʔǧalle",
-        "məstaʔǧər"
-      ],
+      "forms": ["məstaʔǧalle", "məstaʔǧər"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "g-əzzoxu gəd-məstaʔǧrítəl-le qunāġ larwal d-u=bălad w g-magwərítəl-le",
+            "translations": [
+              "ihr werdet gehen und für ihn ein Wohnhaus ausserhalb der Stadt mieten und ihn verheiraten"
+            ],
+            "references": ["809", "87/39"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "g-əzzoxu"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəd-məstaʔǧrítəl-le qunāġ larwal d-u=bălad"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w g-magwərítəl-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻihr werdet gehen und für ihn ein Wohnhaus ausserhalb der Stadt mieten und ihn verheiratenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "809"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "87/39"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "g-əzzoxu, gəd-məstaʔǧrítəl-le qunāġ larwal d-u=bălad, w g-magwərítəl-le ʻihr werdet gehen und für ihn ein Wohnhaus ausserhalb der Stadt mieten und ihn verheiratenʼ; 809; 87/39;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "g-əzzoxu, gəd-məstaʔǧrítəl-le qunāġ larwal d-u=bălad, w g-magwərítəl-le",
+                "translations": [
+                  "ʻihr werdet gehen und für ihn ein Wohnhaus ausserhalb der Stadt mieten und ihn verheiratenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["809"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["87/39"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "mieten;"
-  ],
+  "idioms": ["mieten;"],
   "uncertain": false
 }

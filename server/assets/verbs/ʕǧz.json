@@ -14,78 +14,1105 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ʕaǧəz",
-        "ʕoǧəz"
-      ],
+      "forms": ["ʕaǧəz", "ʕoǧəz"],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "text": "1) həngi d-ʕaǧəz mine, mədle l-u=sayfo grəšle mḥele bə-qḏole, qṭəʕle qarʕe ʻda er nun davon genug hatte, fasste er sein Schwert, zog es, schlug ihm damit auf den Hals und schnitt ihm den Kopf abʼ; 194; 61/51; 67/153; 2) l-u=ʕmiro ḥəlle appe, hul d-ʕaǧəz mənne ʻder Fürst betrachtete sie, er ihrer müde warʼ; 194; 66/17; если müde, то почему в значении №2, а не №3)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "həngi d-ʕaǧəz mine mədle l-u=sayfo grəšle mḥele bə-qḏole qṭəʕle qarʕe",
+            "translations": [
+              "da er nun davon genug hatte, fasste er sein Schwert, zog es, schlug ihm damit auf den Hals und schnitt ihm den Kopf ab"
+            ],
+            "references": ["1", "194", "61/51"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " həngi d-ʕaǧəz mine"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mədle l-u=sayfo grəšle mḥele bə-qḏole"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qṭəʕle qarʕe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda er nun davon genug hatte, fasste er sein Schwert, zog es, schlug ihm damit auf den Hals und schnitt ihm den Kopf abʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "194"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "61/51"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "67/153"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) həngi d-ʕaǧəz mine, mədle l-u=sayfo grəšle mḥele bə-qḏole, qṭəʕle qarʕe ʻda er nun davon genug hatte, fasste er sein Schwert, zog es, schlug ihm damit auf den Hals und schnitt ihm den Kopf abʼ; 194; 61/51; 67/153;",
+            "segments": [
+              {
+                "turoyo": ") həngi d-ʕaǧəz mine, mədle l-u=sayfo grəšle mḥele bə-qḏole, qṭəʕle qarʕe",
+                "translations": [
+                  "ʻda er nun davon genug hatte, fasste er sein Schwert, zog es, schlug ihm damit auf den Hals und schnitt ihm den Kopf abʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["194"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["61/51"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["67/153"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
+            "turoyo": "l-u=ʕmiro ḥəlle appe hul d-ʕaǧəz mənne если müde то почему в значении № а не №",
+            "translations": ["der Fürst betrachtete sie, er ihrer müde war"],
+            "references": ["2", "194", "66/17"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-u=ʕmiro ḥəlle appe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hul d-ʕaǧəz mənne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Fürst betrachtete sie, er ihrer müde warʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "194"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "66/17"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " если müde"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " то почему в значении №"
+              },
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " а не №"
+              },
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "2) l-u=ʕmiro ḥəlle appe, hul d-ʕaǧəz mənne ʻder Fürst betrachtete sie, er ihrer müde warʼ; 194; 66/17; если müde, то почему в значении №2, а не №3)",
+            "segments": [
+              {
+                "turoyo": ") l-u=ʕmiro ḥəlle appe, hul d-ʕaǧəz mənne",
+                "translations": [
+                  "ʻder Fürst betrachtete sie, er ihrer müde warʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["194"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["66/17"]
+              },
+              {
+                "turoyo": "если müde, то почему в значении №, а не №)",
+                "translations": [],
+                "references": ["2", "3"]
+              }
+            ]
+          },
+          {
+            "turoyo": "ḥəngi d-ʕaǧəz mini ʕal d-lo=ko-mšahadno lo=k-oweno ṭayo xtoṯe mədle l-i=mḥaṭo w-xrizole l-ṣawʕe ..",
+            "translations": [
+              "‘Because he was angry with me, that I did not testify and become a Muslim like them, he took the needle and stuck it into his finger’"
+            ],
+            "references": ["JL 20", "7", "44"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥəngi d-ʕaǧəz mini ʕal d-lo=ko-mšahadno lo=k-oweno ṭayo xtoṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mədle l-i=mḥaṭo w-xrizole l-ṣawʕe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Because he was angry with me, that I did not testify and become a Muslim like them, he took the needle and stuck it into his finger’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 20"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "7"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "44"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ḥəngi d-ʕaǧəz mini ʕal d-lo=ko-mšahadno lo=k-oweno ṭayo xtoṯe, mədle l-i=mḥaṭo w-xrizole l-ṣawʕe ‘Because he was angry with me, that I did not testify and become a Muslim like them, he took the needle and stuck it into his finger’ JL 20.7.44;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ḥəngi d-ʕaǧəz mini ʕal d-lo=ko-mšahadno lo=k-oweno ṭayo xtoṯe, mədle l-i=mḥaṭo w-xrizole l-ṣawʕe ..",
+                "translations": [
+                  "‘Because he was angry with me, that I did not testify and become a Muslim like them, he took the needle and stuck it into his finger’"
+                ],
+                "references": ["JL 20", "7", "44"]
+              }
+            ]
           },
           {
+            "turoyo": "ummo omər lə=naḥət. ḥaṣlo m-arke l-arke hul d-manḥat-la ʕaǧizo - ono-ste ġắlabe ʕaǧəzno w aṯi səmli…w ay w uy w ay uno hani šwaʕ=əšne k-xudamno b-i=baxč-ayḏox <…> oʕdo ʕaǧəzno ġálabe w-ʕayəfno ʕam kul mamnuniye g-maqbli-le m-u=sabab d-ʕaǧizi m-u=ḥəkəm d-u=malk-ano",
+            "translations": [
+              "ḥaru bayto nḥat lə=zayʕət",
+              "ắbadan!",
+              "sie sprach: “Zum Teufel! Komm doch herunter und hab keine Angst!” “Nie im Leben” sprach er und stieg nicht herunter. Schliesslich, nach langem hin und her und nachdem sie sich müde geredet hatte, brachte sie ihn dazu, herunterzusteigen",
+              "es hat mir sehr wehgetan, so dass ich unentwegt schreien musste",
+              "‘Ich diene seit sieben Jahren in deinem Garten <…> Jetzt bin ich sehr müde und der Arbeit überdrüssig geworden’",
+              "‘Sehr gern werden sie ihn annehmen, denn sie sind der Herrschaft dieses Königs müde’"
+            ],
+            "references": ["3", "195", "56/15"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ummo "
+              },
+              {
+                "kind": "translation",
+                "value": "“ḥaru bayto nḥat lə=zayʕət”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " omər "
+              },
+              {
+                "kind": "translation",
+                "value": "“ắbadan!”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=naḥət. ḥaṣlo m-arke l-arke hul d-manḥat-la ʕaǧizo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie sprach: “Zum Teufel! Komm doch herunter und hab keine Angst!” “Nie im Leben” sprach er und stieg nicht herunter. Schliesslich, nach langem hin und her und nachdem sie sich müde geredet hatte, brachte sie ihn dazu, herunterzusteigenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "195"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/15"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "16"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "32/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono-ste ġắlabe ʕaǧəzno w aṯi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " səmli…w ay w uy w ay "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes hat mir sehr wehgetan, so dass ich unentwegt schreien mussteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 56"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " uno hani šwaʕ=əšne k-xudamno b-i=baxč-ayḏox <…> oʕdo ʕaǧəzno ġálabe w-ʕayəfno "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Ich diene seit sieben Jahren in deinem Garten <…> Jetzt bin ich sehr müde und der Arbeit überdrüssig geworden’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/196"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕam kul mamnuniye g-maqbli-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-u=sabab d-ʕaǧizi m-u=ḥəkəm d-u=malk-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sehr gern werden sie ihn annehmen, denn sie sind der Herrschaft dieses Königs müde’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/237"
+              }
+            ],
             "text": "3) ummo “ḥaru bayto nḥat lə=zayʕət” omər “ắbadan!” lə=naḥət. ḥaṣlo m-arke l-arke hul d-manḥat-la ʕaǧizo ʻsie sprach: “Zum Teufel! Komm doch herunter und hab keine Angst!” “Nie im Leben” sprach er und stieg nicht herunter. Schliesslich, nach langem hin und her und nachdem sie sich müde geredet hatte, brachte sie ihn dazu, herunterzusteigenʼ; 195; 56/15-16; 32/15; ono-ste ġắlabe ʕaǧəzno w aṯi, səmli…w ay w uy w ay ʻes hat mir sehr wehgetan, so dass ich unentwegt schreien mussteʼ; LB 56; uno hani šwaʕ=əšne k-xudamno b-i=baxč-ayḏox <…> oʕdo ʕaǧəzno ġálabe w-ʕayəfno ‘Ich diene seit sieben Jahren in deinem Garten <…> Jetzt bin ich sehr müde und der Arbeit überdrüssig geworden’; 24/196 [MT]; ʕam kul mamnuniye g-maqbli-le, m-u=sabab d-ʕaǧizi m-u=ḥəkəm d-u=malk-ano ‘Sehr gern werden sie ihn annehmen, denn sie sind der Herrschaft dieses Königs müde’; 24/237",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") ummo omər lə=naḥət. ḥaṣlo m-arke l-arke hul d-manḥat-la ʕaǧizo",
+                "translations": [
+                  "“ḥaru bayto nḥat lə=zayʕət”",
+                  "“ắbadan!”",
+                  "ʻsie sprach: “Zum Teufel! Komm doch herunter und hab keine Angst!” “Nie im Leben” sprach er und stieg nicht herunter. Schliesslich, nach langem hin und her und nachdem sie sich müde geredet hatte, brachte sie ihn dazu, herunterzusteigenʼ"
+                ],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["195"]
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["56/15", "16"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["32/15"]
+              },
+              {
+                "turoyo": "ono-ste ġắlabe ʕaǧəzno w aṯi, səmli…w ay w uy w ay",
+                "translations": [
+                  "ʻes hat mir sehr wehgetan, so dass ich unentwegt schreien mussteʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 56"]
+              },
+              {
+                "turoyo": "uno hani šwaʕ=əšne k-xudamno b-i=baxč-ayḏox <…> oʕdo ʕaǧəzno ġálabe w-ʕayəfno",
+                "translations": [
+                  "‘Ich diene seit sieben Jahren in deinem Garten <…> Jetzt bin ich sehr müde und der Arbeit überdrüssig geworden’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/196"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "ʕam kul mamnuniye g-maqbli-le, m-u=sabab d-ʕaǧizi m-u=ḥəkəm d-u=malk-ano",
+                "translations": [
+                  "‘Sehr gern werden sie ihn annehmen, denn sie sind der Herrschaft dieses Königs müde’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/237"]
+              }
+            ]
           }
         ],
         "Preterit-wa": [
           {
+            "turoyo": "ašər omər aṯí-way-no ʕaǧǝ́z-way-no ġắlabe sǝ́m-way-li i=beriyayḏux omər aṯino d-ḥozéno-lux w doʕanno",
+            "translations": [
+              "oh, ich war gekommen, ich war so niedergeschlagen, ich hatte solche Sehnsucht nach dir; da bin ich gekommen, um dich noch einmal zu sehen und dann zurückzukehren"
+            ],
+            "references": ["2", "195", "95/181"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ašər omər aṯí-way-no ʕaǧǝ́z-way-no ġắlabe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " sǝ́m-way-li i=beriyayḏux omər aṯino d-ḥozéno-lux w doʕanno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻoh, ich war gekommen, ich war so niedergeschlagen, ich hatte solche Sehnsucht nach dir; da bin ich gekommen, um dich noch einmal zu sehen und dann zurückzukehrenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "195"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "95/181"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) ašər omər aṯí-way-no ʕaǧǝ́z-way-no ġắlabe, sǝ́m-way-li i=beriyayḏux omər aṯino d-ḥozéno-lux w doʕanno ʻoh, ich war gekommen, ich war so niedergeschlagen, ich hatte solche Sehnsucht nach dir; da bin ich gekommen, um dich noch einmal zu sehen und dann zurückzukehrenʼ; 195; 95/181;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") ašər omər aṯí-way-no ʕaǧǝ́z-way-no ġắlabe, sǝ́m-way-li i=beriyayḏux omər aṯino d-ḥozéno-lux w doʕanno",
+                "translations": [
+                  "ʻoh, ich war gekommen, ich war so niedergeschlagen, ich hatte solche Sehnsucht nach dir; da bin ich gekommen, um dich noch einmal zu sehen und dann zurückzukehrenʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["195"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["95/181"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "1) ko-ʕəǧzo ko-saymo lə=k-saymo d-qədro yəsqo l-qarʕe d-u=quṣr-ano lə=k-qədro, w ko-dəʕro ʻsie wird dann müde; was sie auch anstellt, um oben auf dieses Schloss heraufzukriechen, sie kann es nicht und kehrt umʼ; 194; 63/131; 3) hawxa ko-məštaʕən-ne kmo=kore, hul d-ʕəǧzi ʻso spielen sie mehrere Male, bis sie müde werdenʼ; 195; 94/368;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "ko-ʕəǧzo ko-saymo lə=k-saymo d-qədro yəsqo l-qarʕe d-u=quṣr-ano lə=k-qədro w ko-dəʕro",
+            "translations": [
+              "sie wird dann müde; was sie auch anstellt, um oben auf dieses Schloss heraufzukriechen, sie kann es nicht und kehrt um"
+            ],
+            "references": ["1", "194", "63/131"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-ʕəǧzo ko-saymo lə=k-saymo d-qədro yəsqo l-qarʕe d-u=quṣr-ano lə=k-qədro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ko-dəʕro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie wird dann müde; was sie auch anstellt, um oben auf dieses Schloss heraufzukriechen, sie kann es nicht und kehrt umʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "194"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "63/131"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) ko-ʕəǧzo ko-saymo lə=k-saymo d-qədro yəsqo l-qarʕe d-u=quṣr-ano lə=k-qədro, w ko-dəʕro ʻsie wird dann müde; was sie auch anstellt, um oben auf dieses Schloss heraufzukriechen, sie kann es nicht und kehrt umʼ; 194; 63/131;",
+            "segments": [
+              {
+                "turoyo": ") ko-ʕəǧzo ko-saymo lə=k-saymo d-qədro yəsqo l-qarʕe d-u=quṣr-ano lə=k-qədro, w ko-dəʕro",
+                "translations": [
+                  "ʻsie wird dann müde; was sie auch anstellt, um oben auf dieses Schloss heraufzukriechen, sie kann es nicht und kehrt umʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["194"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["63/131"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "hawxa ko-məštaʕən-ne kmo=kore hul d-ʕəǧzi",
+            "translations": [
+              "so spielen sie mehrere Male, bis sie müde werden"
+            ],
+            "references": ["3", "195", "94/368"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawxa ko-məštaʕən-ne kmo=kore"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hul d-ʕəǧzi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻso spielen sie mehrere Male, bis sie müde werdenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "195"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/368"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "3) hawxa ko-məštaʕən-ne kmo=kore, hul d-ʕəǧzi ʻso spielen sie mehrere Male, bis sie müde werdenʼ; 195; 94/368;",
+            "segments": [
+              {
+                "turoyo": ") hawxa ko-məštaʕən-ne kmo=kore, hul d-ʕəǧzi",
+                "translations": [
+                  "ʻso spielen sie mehrere Male, bis sie müde werdenʼ"
+                ],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["195"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["94/368"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "i=naqqa d-ʕŭǧázno-wo mqaféno-wo u=Šibe",
+            "translations": ["wenn ich müde war, suchte ich immer Schibe auf"],
+            "references": ["3", "195", "11/245"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naqqa d-ʕŭǧázno-wo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mqaféno-wo u=Šibe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn ich müde war, suchte ich immer Schibe aufʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "195"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/245"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "3) i=naqqa d-ʕŭǧázno-wo, mqaféno-wo u=Šibe ʻwenn ich müde war, suchte ich immer Schibe aufʼ; 195; 11/245;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") i=naqqa d-ʕŭǧázno-wo, mqaféno-wo u=Šibe",
+                "translations": [
+                  "ʻwenn ich müde war, suchte ich immer Schibe aufʼ"
+                ],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["195"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/245"]
+              }
+            ]
           }
         ],
         "Part act.": [
           {
+            "turoyo": "ḥəngi d-ʔu=zʕuro d-kət-we ʕaǧizo d-aṯi m-i=dukṯo raḥəqto ʕal ḥaṣə-d-i=ḥaywān-aṯe w ʕaǧízo-we w daʕíṯo-we",
+            "translations": [
+              "da nun der Jüngling sehr müde war, und von weit hergekommen auf dem Rücken dieses Tieres, da er müde war und verschwitzt"
+            ],
+            "references": ["3", "195", "29/78"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥəngi d-ʔu=zʕuro d-kət-we ʕaǧizo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-aṯi m-i=dukṯo raḥəqto ʕal ḥaṣə-d-i=ḥaywān-aṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ʕaǧízo-we w daʕíṯo-we "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda nun der Jüngling sehr müde war, und von weit hergekommen auf dem Rücken dieses Tieres, da er müde war und verschwitztʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "195"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/78"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "3) ḥəngi d-ʔu=zʕuro d-kət-we ʕaǧizo, d-aṯi m-i=dukṯo raḥəqto ʕal ḥaṣə-d-i=ḥaywān-aṯe, w ʕaǧízo-we w daʕíṯo-we ʻda nun der Jüngling sehr müde war, und von weit hergekommen auf dem Rücken dieses Tieres, da er müde war und verschwitztʼ; 195; 29/78;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") ḥəngi d-ʔu=zʕuro d-kət-we ʕaǧizo, d-aṯi m-i=dukṯo raḥəqto ʕal ḥaṣə-d-i=ḥaywān-aṯe, w ʕaǧízo-we w daʕíṯo-we",
+                "translations": [
+                  "ʻda nun der Jüngling sehr müde war, und von weit hergekommen auf dem Rücken dieses Tieres, da er müde war und verschwitztʼ"
+                ],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["195"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/78"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "maʕǧazle",
-        "maʕǧəz"
-      ],
+      "forms": ["maʕǧazle", "maʕǧəz"],
       "conjugations": {
         "Infectum": [
           {
-            "text": "1) u=kṯow-ano k-maʕǧəz ʻdieses Buch ist langweiligʼ; 195; 2) qay an=noše g-maʕaǧzi ruḥayye w kərxi aʕli ʻwarum sollte aber die Leute sich abmühen und nach mir suchen?ʼ; LB 113;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "u=kṯow-ano k-maʕǧəz",
+            "translations": ["dieses Buch ist langweilig"],
+            "references": ["1", "195"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=kṯow-ano k-maʕǧəz "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdieses Buch ist langweiligʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "195"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) u=kṯow-ano k-maʕǧəz ʻdieses Buch ist langweiligʼ; 195;",
+            "segments": [
+              {
+                "turoyo": ") u=kṯow-ano k-maʕǧəz",
+                "translations": ["ʻdieses Buch ist langweiligʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["195"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "qay an=noše g-maʕaǧzi ruḥayye w kərxi aʕli",
+            "translations": [
+              "warum sollte aber die Leute sich abmühen und nach mir suchen?"
+            ],
+            "references": ["2", "LB 113"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qay an=noše g-maʕaǧzi ruḥayye w kərxi aʕli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwarum sollte aber die Leute sich abmühen und nach mir suchen?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 113"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) qay an=noše g-maʕaǧzi ruḥayye w kərxi aʕli ʻwarum sollte aber die Leute sich abmühen und nach mir suchen?ʼ; LB 113;",
+            "segments": [
+              {
+                "turoyo": ") qay an=noše g-maʕaǧzi ruḥayye w kərxi aʕli",
+                "translations": [
+                  "ʻwarum sollte aber die Leute sich abmühen und nach mir suchen?ʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 113"]
+              }
+            ]
           }
         ]
       }

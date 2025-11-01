@@ -14,42 +14,130 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "fsədle",
-        "fosəd"
-      ],
+      "forms": ["fsədle", "fosəd"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "fsədle aʕle",
+            "translations": ["er verleumdete ihn"],
+            "references": ["68"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "fsədle aʕle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer verleumdete ihnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "68"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "fsədle aʕle ʻer verleumdete ihnʼ; 68;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "fsədle aʕle",
+                "translations": ["ʻer verleumdete ihnʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["68"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": [
-        "mfasadle",
-        "mfasəd"
-      ],
+      "forms": ["mfasadle", "mfasəd"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "u=šēx-ano lalyo imomo gə-mpatpət b-qarʕe d-u=malko w ko-mfasəd ʕal u=qaš-ano laḥatta mahlak-le",
+            "translations": [
+              "der Scheich lag Tag und Nacht dem König in den Ohren und verleumdete den Pfarrer, um ihn ins Verderben zu stürzen"
+            ],
+            "references": ["84/5"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=šēx-ano lalyo imomo gə-mpatpət b-qarʕe d-u=malko"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ko-mfasəd ʕal u=qaš-ano laḥatta mahlak-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Scheich lag Tag und Nacht dem König in den Ohren und verleumdete den Pfarrer, um ihn ins Verderben zu stürzenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "84/5"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=šēx-ano lalyo imomo gə-mpatpət b-qarʕe d-u=malko, w ko-mfasəd ʕal u=qaš-ano laḥatta mahlak-le ʻder Scheich lag Tag und Nacht dem König in den Ohren und verleumdete den Pfarrer, um ihn ins Verderben zu stürzenʼ; 84/5 [MT];",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=šēx-ano lalyo imomo gə-mpatpət b-qarʕe d-u=malko, w ko-mfasəd ʕal u=qaš-ano laḥatta mahlak-le",
+                "translations": [
+                  "ʻder Scheich lag Tag und Nacht dem König in den Ohren und verleumdete den Pfarrer, um ihn ins Verderben zu stürzenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["84/5"],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "verleumden;",
-    "to calumniate;"
-  ],
+  "idioms": ["verleumden;", "to calumniate;"],
   "uncertain": false
 }

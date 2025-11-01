@@ -14,24 +14,179 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "nʕəlle",
-        "noʕər"
-      ],
+      "forms": ["nʕəlle", "noʕər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "nʕar xd-u=ḥmoro. nʕəlle prs prs prs nʕəlla i=mʕarṯo prs prs",
+            "translations": [
+              "wiehere wie ein Esel”, da wieherte er",
+              "die Höhle dröhnte"
+            ],
+            "references": ["232", "119/10", "187/1"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "nʕar xd-u=ḥmoro. nʕəlle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ”wiehere wie ein Esel”, da wieherte erʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "232"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "119/10"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "187/1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "216/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " nʕəlla i=mʕarṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Höhle dröhnteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "233"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "114/28"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "130/28"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "nʕar xd-u=ḥmoro. nʕəlle ʻ”wiehere wie ein Esel”, da wieherte erʼ; 232; prs 119/10; prs 187/1; prs 216/9; nʕəlla i=mʕarṯo ʻdie Höhle dröhnteʼ; 233; prs 114/28; prs 130/28;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "nʕar xd-u=ḥmoro. nʕəlle",
+                "translations": ["ʻ”wiehere wie ein Esel”, da wieherte erʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["232"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["119/10"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["187/1"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["216/9"]
+              },
+              {
+                "turoyo": "nʕəlla i=mʕarṯo",
+                "translations": ["ʻdie Höhle dröhnteʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["233"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["114/28"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["130/28"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "dröhnen;"
-  ],
+  "idioms": ["dröhnen;"],
   "uncertain": false
 }

@@ -14,33 +14,277 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "gaḥəx",
-        "goḥəx"
-      ],
+      "forms": ["gaḥəx", "goḥəx"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "b-aṯe u=abraṯṯe gaḥəx u=ṭalyo gaḥəx. i=naqqa d-gaḥəx u=babo qhir mille «hano aʕli w-ʕal-i=emo g-goḥəx! hat abiʕət d-quṭlat-li ʕal-ayo d-gaḥəxno məllox aʕli gaḥəx",
+            "translations": [
+              "darüber hatte ihr Sohn gelacht",
+              "‘Da lachte der Knabe. Als er lachte, ward der vater zornig und sprach: \"Dieser lacht über mich und seine Mutter!\"’",
+              "‘Du wolltest mich töten. Denn als ich so lachte, sagtest du: Er lacht über mich!’"
+            ],
+            "references": ["14", "24/11", "24/8"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "b-aṯe u=abraṯṯe gaḥəx "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdarüber hatte ihr Sohn gelachtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/11"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=ṭalyo gaḥəx. i=naqqa d-gaḥəx u=babo qhir"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mille"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " «hano aʕli w-ʕal-i=emo g-goḥəx! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Da lachte der Knabe. Als er lachte, ward der vater zornig und sprach: \"Dieser lacht über mich und seine Mutter!\"’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/8"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hat abiʕət d-quṭlat-li ʕal-ayo d-gaḥəxno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " məllox aʕli gaḥəx "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Du wolltest mich töten. Denn als ich so lachte, sagtest du: Er lacht über mich!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/251"
+              }
+            ],
             "text": "b-aṯe u=abraṯṯe gaḥəx ʻdarüber hatte ihr Sohn gelachtʼ; 14; 24/11; u=ṭalyo gaḥəx. i=naqqa d-gaḥəx u=babo qhir, mille: «hano aʕli w-ʕal-i=emo g-goḥəx! ‘Da lachte der Knabe. Als er lachte, ward der vater zornig und sprach: \"Dieser lacht über mich und seine Mutter!\"’; 24/8 [MT]; hat abiʕət d-quṭlat-li ʕal-ayo d-gaḥəxno, məllox aʕli gaḥəx ‘Du wolltest mich töten. Denn als ich so lachte, sagtest du: Er lacht über mich!’; 24/251",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "b-aṯe u=abraṯṯe gaḥəx",
+                "translations": ["ʻdarüber hatte ihr Sohn gelachtʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["14"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/11"]
+              },
+              {
+                "turoyo": "u=ṭalyo gaḥəx. i=naqqa d-gaḥəx u=babo qhir, mille: «hano aʕli w-ʕal-i=emo g-goḥəx!",
+                "translations": [
+                  "‘Da lachte der Knabe. Als er lachte, ward der vater zornig und sprach: \"Dieser lacht über mich und seine Mutter!\"’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/8"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "hat abiʕət d-quṭlat-li ʕal-ayo d-gaḥəxno, məllox aʕli gaḥəx",
+                "translations": [
+                  "‘Du wolltest mich töten. Denn als ich so lachte, sagtest du: Er lacht über mich!’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/251"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "hano lu=k-fohəm m-ayko k-fohəm d-goḥəx aʕlux? qay go-guḥxət ya u=abr-ayḏi ?",
+            "translations": [
+              "‘Der versteht doch noch nichts, woher soll er etwas verstehen, daß er über dich lachen soll?’",
+              "‘Warum lachst du, mein Sohn?’"
+            ],
+            "references": ["24/9", "24/248"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hano lu=k-fohəm"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-ayko k-fohəm d-goḥəx aʕlux? "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Der versteht doch noch nichts, woher soll er etwas verstehen, daß er über dich lachen soll?’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/9"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qay go-guḥxət ya u=abr-ayḏi ? "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Warum lachst du, mein Sohn?’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/248"
+              }
+            ],
             "text": "hano lu=k-fohəm, m-ayko k-fohəm d-goḥəx aʕlux? ‘Der versteht doch noch nichts, woher soll er etwas verstehen, daß er über dich lachen soll?’; 24/9 [MT]; qay go-guḥxət ya u=abr-ayḏi ? ‘Warum lachst du, mein Sohn?’; 24/248",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "hano lu=k-fohəm, m-ayko k-fohəm d-goḥəx aʕlux?",
+                "translations": [
+                  "‘Der versteht doch noch nichts, woher soll er etwas verstehen, daß er über dich lachen soll?’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/9"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "qay go-guḥxət ya u=abr-ayḏi ?",
+                "translations": ["‘Warum lachst du, mein Sohn?’"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/248"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "lachen;",
-    "Nominal forms"
-  ],
+  "idioms": ["lachen;", "Nominal forms"],
   "uncertain": false
 }

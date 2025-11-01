@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "rġīz",
-        "mərġəz"
-      ],
+      "forms": ["rġīz", "mərġəz"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,65 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mšiḥo ʕal u=ʕamlo šxir-ano sagi rġīz mene",
+            "translations": [
+              "Christus wurde wegen dieser gemeinen Tat sehr wütend"
+            ],
+            "references": ["DD 392/10"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mšiḥo ʕal u=ʕamlo šxir-ano"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " sagi rġīz mene "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻChristus wurde wegen dieser gemeinen Tat sehr wütendʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "DD 392/10"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mšiḥo ʕal u=ʕamlo šxir-ano, sagi rġīz mene ʻChristus wurde wegen dieser gemeinen Tat sehr wütendʼ; DD 392/10;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mšiḥo ʕal u=ʕamlo šxir-ano, sagi rġīz mene",
+                "translations": [
+                  "ʻChristus wurde wegen dieser gemeinen Tat sehr wütendʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["DD 392/10"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) wütend sein;"
-  ],
+  "idioms": ["(Detrans.) wütend sein;"],
   "uncertain": false
 }

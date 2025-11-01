@@ -14,40 +14,170 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "sile",
-        "soyəl"
-      ],
+      "forms": ["sile", "soyəl"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "sile",
+            "translations": ["er radierte aus, tilgte"],
+            "references": ["506"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "sile "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer radierte aus, tilgteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "506"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "sile ʻer radierte aus, tilgteʼ; 506;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "sile",
+                "translations": ["ʻer radierte aus, tilgteʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["506"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "deri yawmo hawino maǧbūr d-sŭyanno aq=qole d-u=šamošo m-u=šărīt d-i=makina",
+            "translations": [
+              "ich musste am nächsten Tage die Lieder des Diakonen vom Tonband tilgen"
+            ],
+            "references": ["522", "11/302"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "deri yawmo hawino maǧbūr d-sŭyanno aq=qole d-u=šamošo m-u=šărīt d-i=makina "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich musste am nächsten Tage die Lieder des Diakonen vom Tonband tilgenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "522"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/302"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "deri yawmo hawino maǧbūr d-sŭyanno aq=qole d-u=šamošo m-u=šărīt d-i=makina ʻich musste am nächsten Tage die Lieder des Diakonen vom Tonband tilgenʼ; 522; 11/302;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "deri yawmo hawino maǧbūr d-sŭyanno aq=qole d-u=šamošo m-u=šărīt d-i=makina",
+                "translations": [
+                  "ʻich musste am nächsten Tage die Lieder des Diakonen vom Tonband tilgenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["522"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/302"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "sul-a",
+            "translations": ["radiere sie aus"],
+            "references": ["526"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "sul-a "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻradiere sie ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "526"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "sul-a ʻradiere sie ausʼ; 526;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "sul-a",
+                "translations": ["ʻradiere sie ausʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["526"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "tilgen, ausradieren;"
-  ],
+  "idioms": ["tilgen, ausradieren;"],
   "uncertain": false
 }

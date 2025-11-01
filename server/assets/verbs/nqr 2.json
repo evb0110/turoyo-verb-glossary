@@ -14,66 +14,459 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "naqər",
-        "noqər"
-      ],
+      "forms": ["naqər", "noqər"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "naqər ʕarše d-u=ʕmiro",
+            "translations": ["der Emir hatte heftige Zähnschmerzen"],
+            "references": ["254", "66/1"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "naqər ʕarše d-u=ʕmiro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Emir hatte heftige Zähnschmerzenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "254"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "66/1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "naqər ʕarše d-u=ʕmiro ʻder Emir hatte heftige Zähnschmerzenʼ; 254; 66/1;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "naqər ʕarše d-u=ʕmiro",
+                "translations": ["ʻder Emir hatte heftige Zähnschmerzenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["254"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["66/1"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "ko-nəqro raġli ʻmein Bein tut mir Wehʼ; 254; ko-boxeno, w-u=admo k-oṯe ġắlabe, w-raġli ko-nuqri, w-laybi koleno ‘I wept, the blood was streaming heavily (from me), my legs hurt, and I could not bear (it)’ EL 47;\n ʕarši konoqar ‘my tooth is throbbing (with pain)’ (Ilyas p.c.) turkish: zonklayan ağrı",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "ko-nəqro raġli ko-boxeno w-u=admo k-oṯe ġắlabe w-raġli ko-nuqri w-laybi koleno ʕarši konoqar Ilyas p.c. turkish zonklayan ağrı",
+            "translations": [
+              "mein Bein tut mir Weh",
+              "‘I wept, the blood was streaming heavily (from me), my legs hurt, and I could not bear (it)’",
+              "‘my tooth is throbbing (with pain)’"
+            ],
+            "references": ["254", "EL 47"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-nəqro raġli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmein Bein tut mir Wehʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "254"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-boxeno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-u=admo k-oṯe ġắlabe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-raġli ko-nuqri"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-laybi koleno "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I wept, the blood was streaming heavily (from me), my legs hurt, and I could not bear (it)’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "EL 47"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "\n ʕarši konoqar "
+              },
+              {
+                "kind": "translation",
+                "value": "‘my tooth is throbbing (with pain)’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " turkish"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " zonklayan ağrı"
+              }
+            ],
+            "text": "ko-nəqro raġli ʻmein Bein tut mir Wehʼ; 254; ko-boxeno, w-u=admo k-oṯe ġắlabe, w-raġli ko-nuqri, w-laybi koleno ‘I wept, the blood was streaming heavily (from me), my legs hurt, and I could not bear (it)’ EL 47; ʕarši konoqar ‘my tooth is throbbing (with pain)’ (Ilyas p.c.) turkish: zonklayan ağrı",
+            "segments": [
+              {
+                "turoyo": "ko-nəqro raġli",
+                "translations": ["ʻmein Bein tut mir Wehʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["254"]
+              },
+              {
+                "turoyo": "ko-boxeno, w-u=admo k-oṯe ġắlabe, w-raġli ko-nuqri, w-laybi koleno",
+                "translations": [
+                  "‘I wept, the blood was streaming heavily (from me), my legs hurt, and I could not bear (it)’"
+                ],
+                "references": ["EL 47"]
+              },
+              {
+                "turoyo": "ʕarši konoqar (Ilyas p.c.) turkish: zonklayan ağrı",
+                "translations": ["‘my tooth is throbbing (with pain)’"],
+                "references": []
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "ḥāl w masale d-babi ʕayne nəqri-wa",
+            "translations": ["mein Vater hatte ja Augenschmerzen"],
+            "references": ["254", "70/200"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥāl w masale d-babi ʕayne nəqri-wa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmein Vater hatte ja Augenschmerzenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "254"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70/200"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ḥāl w masale d-babi ʕayne nəqri-wa ʻmein Vater hatte ja Augenschmerzenʼ; 254; 70/200;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ḥāl w masale d-babi ʕayne nəqri-wa",
+                "translations": ["ʻmein Vater hatte ja Augenschmerzenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["254"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["70/200"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
+            "turoyo": "mḥallal-li mḥaṭe hul d-maklal-le u=nqor-awo d-raġli",
+            "translations": [
+              "sie gaben mir Spritzen, bis sie den Schmerz in meinen Beinen zum Stillstand brachten"
+            ],
+            "references": ["EL 48"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mḥallal-li mḥaṭe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hul d-maklal-le u=nqor-awo d-raġli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie gaben mir Spritzen, bis sie den Schmerz in meinen Beinen zum Stillstand brachtenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "EL 48"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mḥallal-li mḥaṭe, hul d-maklal-le u=nqor-awo d-raġli ʻsie gaben mir Spritzen, bis sie den Schmerz in meinen Beinen zum Stillstand brachtenʼ; EL 48;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mḥallal-li mḥaṭe, hul d-maklal-le u=nqor-awo d-raġli",
+                "translations": [
+                  "ʻsie gaben mir Spritzen, bis sie den Schmerz in meinen Beinen zum Stillstand brachtenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["EL 48"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "manqalle",
-        "manqər"
-      ],
+      "forms": ["manqalle", "manqər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mədla l-i=xuṣayḏa məfqola maḥtola ʕal u=qallənayḏa w grišola hul d-samiqo w məḥyola b-u=fard-ano d-ṭize i=kafčke d-lebe manqrola i=kafčke d-lebe manqrola - topicalization!",
+            "translations": [
+              "da fasste sie ihren Ring, zog ihn ab, legte ihn auf ihre Pfeife, rauchte, bis er rotglühend war, drückte ihn auf eine seiner Hinterbacken, und tat ihm dabei weh bis ins Herz (wörtl.: den Löffel (f) des Herzens) hinein"
+            ],
+            "references": ["254", "62/325"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mədla l-i=xuṣayḏa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " məfqola"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥtola ʕal u=qallənayḏa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w grišola hul d-samiqo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w məḥyola b-u=fard-ano d-ṭize"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=kafčke d-lebe manqrola "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda fasste sie ihren Ring, zog ihn ab, legte ihn auf ihre Pfeife, rauchte, bis er rotglühend war, drückte ihn auf eine seiner Hinterbacken, und tat ihm dabei weh bis ins Herz (wörtl.: den Löffel (f) des Herzens) hineinʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "254"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/325"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=kafčke d-lebe manqrola - topicalization!"
+              }
+            ],
             "text": "mədla l-i=xuṣayḏa, məfqola, maḥtola ʕal u=qallənayḏa, w grišola hul d-samiqo, w məḥyola b-u=fard-ano d-ṭize, i=kafčke d-lebe manqrola ʻda fasste sie ihren Ring, zog ihn ab, legte ihn auf ihre Pfeife, rauchte, bis er rotglühend war, drückte ihn auf eine seiner Hinterbacken, und tat ihm dabei weh bis ins Herz (wörtl.: den Löffel (f) des Herzens) hineinʼ; 254; 62/325; i=kafčke d-lebe manqrola - topicalization!",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mədla l-i=xuṣayḏa, məfqola, maḥtola ʕal u=qallənayḏa, w grišola hul d-samiqo, w məḥyola b-u=fard-ano d-ṭize, i=kafčke d-lebe manqrola",
+                "translations": [
+                  "ʻda fasste sie ihren Ring, zog ihn ab, legte ihn auf ihre Pfeife, rauchte, bis er rotglühend war, drückte ihn auf eine seiner Hinterbacken, und tat ihm dabei weh bis ins Herz (wörtl.: den Löffel (f) des Herzens) hineinʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["254"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["62/325"]
+              },
+              {
+                "turoyo": "i=kafčke d-lebe manqrola - topicalization!",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "heftig schmerzen, weh tun;",
-    "heftige Schmerzen bereiten;"
-  ],
+  "idioms": ["heftig schmerzen, weh tun;", "heftige Schmerzen bereiten;"],
   "uncertain": false
 }

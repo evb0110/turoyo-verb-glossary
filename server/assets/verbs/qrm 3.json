@@ -12,32 +12,99 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "qrəmle",
-        "qorəm"
-      ],
+      "forms": ["qrəmle", "qorəm"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "Syrianska qrəmla u=mačayḏa u=qamoyo ST",
+            "translations": ["‘Syrianska hat sein erstes Spiel gewonnen’"],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Syrianska qrəmla u=mačayḏa u=qamoyo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Syrianska hat sein erstes Spiel gewonnen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ST"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "Syrianska qrəmla u=mačayḏa u=qamoyo ‘Syrianska hat sein erstes Spiel gewonnen’; ST;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "Syrianska qrəmla u=mačayḏa u=qamoyo",
+                "translations": ["‘Syrianska hat sein erstes Spiel gewonnen’"],
+                "references": []
+              },
+              {
+                "turoyo": "ST",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "gud Assyriska qərmo u=šteʕinyayḏa u=ḥaroyo g-səlqo l-u=līg qamoyo d-u=Swēd ST",
+            "translations": [
+              "‘wenn Assyriska sein letztes Spiel gewinnt, steigt es in die erste schwedische Liga’"
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gud Assyriska qərmo u=šteʕinyayḏa u=ḥaroyo g-səlqo l-u=līg qamoyo d-u=Swēd "
+              },
+              {
+                "kind": "translation",
+                "value": "‘wenn Assyriska sein letztes Spiel gewinnt, steigt es in die erste schwedische Liga’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ST"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "gud Assyriska qərmo u=šteʕinyayḏa u=ḥaroyo g-səlqo l-u=līg qamoyo d-u=Swēd ‘wenn Assyriska sein letztes Spiel gewinnt, steigt es in die erste schwedische Liga’; ST;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "gud Assyriska qərmo u=šteʕinyayḏa u=ḥaroyo g-səlqo l-u=līg qamoyo d-u=Swēd",
+                "translations": [
+                  "‘wenn Assyriska sein letztes Spiel gewinnt, steigt es in die erste schwedische Liga’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "ST",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "gewinnen, siegen; (mit ʕal) besiegen, schlagen (im Spiel);"
-  ],
+  "idioms": ["gewinnen, siegen; (mit ʕal) besiegen, schlagen (im Spiel);"],
   "uncertain": false
 }

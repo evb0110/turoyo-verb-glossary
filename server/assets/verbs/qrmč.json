@@ -10,24 +10,44 @@
     },
     {
       "stem": "II",
-      "forms": [
-        "mqarmačle",
-        "mqarmač"
-      ],
+      "forms": ["mqarmačle", "mqarmač"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "Aǧ ǧulayḏi mqarmči. (İlyas p.c)",
-            "turoyo": "",
+            "turoyo": "Aǧ ǧulayḏi mqarmči. İlyas p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Aǧ ǧulayḏi mqarmči. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Aǧ ǧulayḏi mqarmči. (İlyas p.c)",
+            "segments": [
+              {
+                "turoyo": "Aǧ ǧulayḏi mqarmči. (İlyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "To be wrinkled;"
-  ],
+  "idioms": ["To be wrinkled;"],
   "uncertain": false
 }

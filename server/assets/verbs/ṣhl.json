@@ -14,24 +14,61 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ṣhile",
-        "ṣohəl"
-      ],
+      "forms": ["ṣhile", "ṣohəl"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ṣhile ʕal u=zʕuro",
+            "translations": [
+              "er wieherte, schrie den Jungen an, jagte ihn weg"
+            ],
+            "references": ["287"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṣhile ʕal u=zʕuro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wieherte, schrie den Jungen an, jagte ihn wegʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "287"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ṣhile ʕal u=zʕuro ʻer wieherte, schrie den Jungen an, jagte ihn wegʼ; 287;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ṣhile ʕal u=zʕuro",
+                "translations": [
+                  "ʻer wieherte, schrie den Jungen an, jagte ihn wegʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["287"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "wiehern, anschreien, wegjagen;"
-  ],
+  "idioms": ["wiehern, anschreien, wegjagen;"],
   "uncertain": false
 }

@@ -14,49 +14,668 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "maḥkele",
-        "maḥke"
-      ],
+      "forms": ["maḥkele", "maḥke"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "maḥkíle-le l-Yusəf i=ḥkeyayḏe w d-ʕal u=abro ʻdarauf erzälte ihm Jusif seine Geschichte und die seines Sohnesʼ; 388; prs 60/3;azzə́n maḥkílal-le  l-u=maymūn i=ḥəkkoyaṯṯe ‘sie gingen und erzählten dem Affen ihre Geschichte’; 22/5; ḥa m-ay=yawme aǧ=ǧinn yatiwi sə-ḥḏoḏe; kul ḥa maḥkele u=mede də-ḥzele ‘eines Tages sassen die Geister zusammen. Jeder erzählte, was er gesehen hatte’; 24/14 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "maḥkíle-le l-Yusəf i=ḥkeyayḏe w d-ʕal u=abro prs azzə́n maḥkílal-le l-u=maymūn i=ḥəkkoyaṯṯe ḥa m-ay=yawme aǧ=ǧinn yatiwi sə-ḥḏoḏe kul ḥa maḥkele u=mede də-ḥzele",
+            "translations": [
+              "darauf erzälte ihm Jusif seine Geschichte und die seines Sohnes",
+              "‘sie gingen und erzählten dem Affen ihre Geschichte’",
+              "‘eines Tages sassen die Geister zusammen. Jeder erzählte, was er gesehen hatte’"
+            ],
+            "references": ["388", "60/3", "22/5"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maḥkíle-le l-Yusəf i=ḥkeyayḏe w d-ʕal u=abro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdarauf erzälte ihm Jusif seine Geschichte und die seines Sohnesʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "388"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "60/3"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "azzə́n maḥkílal-le  l-u=maymūn i=ḥəkkoyaṯṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘sie gingen und erzählten dem Affen ihre Geschichte’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "22/5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥa m-ay=yawme aǧ=ǧinn yatiwi sə-ḥḏoḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kul ḥa maḥkele u=mede də-ḥzele "
+              },
+              {
+                "kind": "translation",
+                "value": "‘eines Tages sassen die Geister zusammen. Jeder erzählte, was er gesehen hatte’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/14"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "maḥkíle-le l-Yusəf i=ḥkeyayḏe w d-ʕal u=abro ʻdarauf erzälte ihm Jusif seine Geschichte und die seines Sohnesʼ; 388; prs 60/3;azzə́n maḥkílal-le l-u=maymūn i=ḥəkkoyaṯṯe ‘sie gingen und erzählten dem Affen ihre Geschichte’; 22/5; ḥa m-ay=yawme aǧ=ǧinn yatiwi sə-ḥḏoḏe; kul ḥa maḥkele u=mede də-ḥzele ‘eines Tages sassen die Geister zusammen. Jeder erzählte, was er gesehen hatte’; 24/14 [MT]",
+            "segments": [
+              {
+                "turoyo": "maḥkíle-le l-Yusəf i=ḥkeyayḏe w d-ʕal u=abro",
+                "translations": [
+                  "ʻdarauf erzälte ihm Jusif seine Geschichte und die seines Sohnesʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["388"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["60/3"]
+              },
+              {
+                "turoyo": "azzə́n maḥkílal-le l-u=maymūn i=ḥəkkoyaṯṯe",
+                "translations": [
+                  "‘sie gingen und erzählten dem Affen ihre Geschichte’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["22/5"]
+              },
+              {
+                "turoyo": "ḥa m-ay=yawme aǧ=ǧinn yatiwi sə-ḥḏoḏe",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "kul ḥa maḥkele u=mede də-ḥzele",
+                "translations": [
+                  "‘eines Tages sassen die Geister zusammen. Jeder erzählte, was er gesehen hatte’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/14"],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "símman-ne hawxa ṣufro d-kul tre yətwi w maḥkən mina uʕdo g-maḥkina ḥəkkayat ʕal aq=qəryawoṯo w ʕal i=fəqriy-aṯṯe i=naqqa d-ŭṯeno lə-Ṣṭambul gəm-maḥken-ox maḥkan-xu maṯlo me naqqa d-ʔazzino mbeli i=ʕrayto lugab m-u=šalwo ..",
+            "translations": [
+              "sie deckten einen solchen Tisch, dass, wo immer zwei zusammensassen, sie sich davon erzählten",
+              "jetzt werde ich (ein paar) Geschichten erzählen",
+              "von den Dörfern und ihrer Armut werde ich dir erzählen, wenn ich nach Stambul zurückkomme",
+              "ich will euch eine Geschichte erzählen, wie ich einmal ging und das Mittagessen auf die andere Seite (wörtl.: nach jenseits) der Schlucht brachte"
+            ],
+            "references": ["394", "65/79", "EL 2"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "símman-ne hawxa ṣufro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-kul tre yətwi w maḥkən mina "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie deckten einen solchen Tisch, dass, wo immer zwei zusammensassen, sie sich davon erzähltenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "394"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/79"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " uʕdo g-maḥkina ḥəkkayat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻjetzt werde ich (ein paar) Geschichten erzählenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "EL 2"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕal aq=qəryawoṯo w ʕal i=fəqriy-aṯṯe i=naqqa d-ŭṯeno lə-Ṣṭambul gəm-maḥken-ox "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻvon den Dörfern und ihrer Armut werde ich dir erzählen, wenn ich nach Stambul zurückkommeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "14/14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥkan-xu maṯlo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " me naqqa d-ʔazzino mbeli i=ʕrayto lugab m-u=šalwo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich will euch eine Geschichte erzählen, wie ich einmal ging und das Mittagessen auf die andere Seite (wörtl.: nach jenseits) der Schlucht brachteʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 6"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "10"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "símman-ne hawxa ṣufro, d-kul tre yətwi w maḥkən mina ʻsie deckten einen solchen Tisch, dass, wo immer zwei zusammensassen, sie sich davon erzähltenʼ; 394; 65/79; uʕdo g-maḥkina ḥəkkayat ʻjetzt werde ich (ein paar) Geschichten erzählenʼ; EL 2; ʕal aq=qəryawoṯo w ʕal i=fəqriy-aṯṯe i=naqqa d-ŭṯeno lə-Ṣṭambul gəm-maḥken-ox ʻvon den Dörfern und ihrer Armut werde ich dir erzählen, wenn ich nach Stambul zurückkommeʼ; 14/14; maḥkan-xu maṯlo, me naqqa d-ʔazzino mbeli i=ʕrayto lugab m-u=šalwo ʻich will euch eine Geschichte erzählen, wie ich einmal ging und das Mittagessen auf die andere Seite (wörtl.: nach jenseits) der Schlucht brachteʼ JL 6.10.1;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "símman-ne hawxa ṣufro, d-kul tre yətwi w maḥkən mina",
+                "translations": [
+                  "ʻsie deckten einen solchen Tisch, dass, wo immer zwei zusammensassen, sie sich davon erzähltenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["394"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["65/79"]
+              },
+              {
+                "turoyo": "uʕdo g-maḥkina ḥəkkayat",
+                "translations": [
+                  "ʻjetzt werde ich (ein paar) Geschichten erzählenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["EL 2"]
+              },
+              {
+                "turoyo": "ʕal aq=qəryawoṯo w ʕal i=fəqriy-aṯṯe i=naqqa d-ŭṯeno lə-Ṣṭambul gəm-maḥken-ox",
+                "translations": [
+                  "ʻvon den Dörfern und ihrer Armut werde ich dir erzählen, wenn ich nach Stambul zurückkommeʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["14/14"]
+              },
+              {
+                "turoyo": "maḥkan-xu maṯlo, me naqqa d-ʔazzino mbeli i=ʕrayto lugab m-u=šalwo ..",
+                "translations": [
+                  "ʻich will euch eine Geschichte erzählen, wie ich einmal ging und das Mittagessen auf die andere Seite (wörtl.: nach jenseits) der Schlucht brachteʼ"
+                ],
+                "references": ["JL 6", "10", "1"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "i=naqqa d-maḥke-wo ġắlabe ǧəddi w yaqúro-we m-u=kurmānǧi kə-mtarǧam-me l-u=suryoyo w k-maḥké-wo-lan-ne",
+            "translations": [
+              "wenn er erzählte, war er immer sehr ernst und würdevoll",
+              "er übersetzte sie aus dem kurdischen ins syrische und erzählte sie uns dann"
+            ],
+            "references": ["405", "11/229", "11/307"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqqa d-maḥke-wo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ġắlabe ǧəddi w yaqúro-we "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn er erzählte, war er immer sehr ernst und würdevollʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "405"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/229"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-u=kurmānǧi kə-mtarǧam-me l-u=suryoyo w k-maḥké-wo-lan-ne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer übersetzte sie aus dem kurdischen ins syrische und erzählte sie uns dannʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/307"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=naqqa d-maḥke-wo, ġắlabe ǧəddi w yaqúro-we ʻwenn er erzählte, war er immer sehr ernst und würdevollʼ; 405; 11/229; m-u=kurmānǧi kə-mtarǧam-me l-u=suryoyo w k-maḥké-wo-lan-ne ʻer übersetzte sie aus dem kurdischen ins syrische und erzählte sie uns dannʼ; 11/307;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=naqqa d-maḥke-wo, ġắlabe ǧəddi w yaqúro-we",
+                "translations": [
+                  "ʻwenn er erzählte, war er immer sehr ernst und würdevollʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["405"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/229"]
+              },
+              {
+                "turoyo": "m-u=kurmānǧi kə-mtarǧam-me l-u=suryoyo w k-maḥké-wo-lan-ne",
+                "translations": [
+                  "ʻer übersetzte sie aus dem kurdischen ins syrische und erzählte sie uns dannʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/307"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "maḥkawu ʕal i=žənəke msəkto qay msikole l-u=Săʕīd prs maḥkáy-li i=qəṣṣ-ayḏux mə́n ǧari b-qarʕox",
+            "translations": [
+              "berichtet über die gefangene Frau! Warum hat Saʕid sie festnehmen lassen?",
+              "‘Erzähle mir deine Geschichte, was du erlebt hast’"
+            ],
+            "references": ["408", "242/12", "30/49"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maḥkawu ʕal i=žənəke msəkto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qay msikole l-u=Săʕīd "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻberichtet über die gefangene Frau! Warum hat Saʕid sie festnehmen lassen?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "408"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "242/12"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥkáy-li i=qəṣṣ-ayḏux"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mə́n ǧari b-qarʕox "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Erzähle mir deine Geschichte, was du erlebt hast’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/49"
+              }
+            ],
             "text": "maḥkawu ʕal i=žənəke msəkto, qay msikole l-u=Săʕīd ʻberichtet über die gefangene Frau! Warum hat Saʕid sie festnehmen lassen?ʼ; 408; prs 242/12; maḥkáy-li i=qəṣṣ-ayḏux, mə́n ǧari b-qarʕox ‘Erzähle mir deine Geschichte, was du erlebt hast’; 30/49",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "maḥkawu ʕal i=žənəke msəkto, qay msikole l-u=Săʕīd",
+                "translations": [
+                  "ʻberichtet über die gefangene Frau! Warum hat Saʕid sie festnehmen lassen?ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["408"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["242/12"]
+              },
+              {
+                "turoyo": "maḥkáy-li i=qəṣṣ-ayḏux, mə́n ǧari b-qarʕox",
+                "translations": [
+                  "‘Erzähle mir deine Geschichte, was du erlebt hast’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["30/49"]
+              }
+            ]
           }
         ],
         "Part. act.": [
           {
+            "turoyo": "i=naqqa d-daʕənno l-i=mamlake u=Ṭūrʕabdīn abəʕ meni d-mqafeno kmo=maḥkəyone zōr d-ḥəkkoyat m-Məḏyāḏ aw m-aq=qəryawoṯo ḥatta də-msaǧanno ḥəs dəṯṯe b-i=makina d-u=šqolo d-u=ḥəs",
+            "translations": [
+              "er bat mich, als ich in die Heimat, nach dem Ṭurʕabdin zurückkehrte, einige starke Geschichtenerzähler aus Miḏyaḏ oder den Dörfern ausfindig zu machen, deren Stimme ich mit dem Tonbandgerät aufnehmen sollte"
+            ],
+            "references": ["11/1"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqqa d-daʕənno l-i=mamlake u=Ṭūrʕabdīn"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " abəʕ meni"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-mqafeno kmo=maḥkəyone zōr d-ḥəkkoyat m-Məḏyāḏ aw m-aq=qəryawoṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥatta də-msaǧanno ḥəs dəṯṯe b-i=makina d-u=šqolo d-u=ḥəs "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer bat mich, als ich in die Heimat, nach dem Ṭurʕabdin zurückkehrte, einige starke Geschichtenerzähler aus Miḏyaḏ oder den Dörfern ausfindig zu machen, deren Stimme ich mit dem Tonbandgerät aufnehmen sollteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=naqqa d-daʕənno l-i=mamlake u=Ṭūrʕabdīn, abəʕ meni, d-mqafeno kmo=maḥkəyone zōr d-ḥəkkoyat m-Məḏyāḏ aw m-aq=qəryawoṯo, ḥatta də-msaǧanno ḥəs dəṯṯe b-i=makina d-u=šqolo d-u=ḥəs ʻer bat mich, als ich in die Heimat, nach dem Ṭurʕabdin zurückkehrte, einige starke Geschichtenerzähler aus Miḏyaḏ oder den Dörfern ausfindig zu machen, deren Stimme ich mit dem Tonbandgerät aufnehmen sollteʼ; 11/1;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=naqqa d-daʕənno l-i=mamlake u=Ṭūrʕabdīn, abəʕ meni, d-mqafeno kmo=maḥkəyone zōr d-ḥəkkoyat m-Məḏyāḏ aw m-aq=qəryawoṯo, ḥatta də-msaǧanno ḥəs dəṯṯe b-i=makina d-u=šqolo d-u=ḥəs",
+                "translations": [
+                  "ʻer bat mich, als ich in die Heimat, nach dem Ṭurʕabdin zurückkehrte, einige starke Geschichtenerzähler aus Miḏyaḏ oder den Dörfern ausfindig zu machen, deren Stimme ich mit dem Tonbandgerät aufnehmen sollteʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/1"]
+              }
+            ]
           }
         ]
       }
@@ -67,17 +686,132 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "omər gəd-omat-li u=tafsīr d-i=zmurt-aṯi mən-yo šqul u=baxbīš diḏux. omər ya afandəm lo=k-mitaḥke prs hēš kīt ġắlabe d-mitaḥkən b-ḥaq d-a=dkoṯ-ani bale ŭno b-haqqayṣ k-məktafeno",
+            "translations": [
+              "er sprach zu ihm: “Möchtest du mir doch die Erklärung zu deinem Lied geben, du sollst dafür ein Geschenk erhalten!” Jener aber antwortete: “O Herr, das lässt sich gar nicht erzälen",
+              "es gibt noch viele Dinge, die sich über diese Orte erzählen liessen, aber mit soviel will ich begnügen"
+            ],
+            "references": ["410", "25/8", "11/322"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "omər gəd-omat-li u=tafsīr d-i=zmurt-aṯi mən-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šqul u=baxbīš diḏux. omər ya afandəm lo=k-mitaḥke "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer sprach zu ihm: “Möchtest du mir doch die Erklärung zu deinem Lied geben, du sollst dafür ein Geschenk erhalten!” Jener aber antwortete: “O Herr, das lässt sich gar nicht erzälen”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "410"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "25/8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hēš kīt ġắlabe d-mitaḥkən b-ḥaq d-a=dkoṯ-ani"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bale ŭno b-haqqayṣ k-məktafeno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes gibt noch viele Dinge, die sich über diese Orte erzählen liessen, aber mit soviel will ich begnügenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/322"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "omər gəd-omat-li u=tafsīr d-i=zmurt-aṯi mən-yo, šqul u=baxbīš diḏux. omər ya afandəm lo=k-mitaḥke ʻer sprach zu ihm: “Möchtest du mir doch die Erklärung zu deinem Lied geben, du sollst dafür ein Geschenk erhalten!” Jener aber antwortete: “O Herr, das lässt sich gar nicht erzälen”ʼ; 410; prs 25/8; hēš kīt ġắlabe d-mitaḥkən b-ḥaq d-a=dkoṯ-ani; bale ŭno b-haqqayṣ k-məktafeno ʻes gibt noch viele Dinge, die sich über diese Orte erzählen liessen, aber mit soviel will ich begnügenʼ; 11/322;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "omər gəd-omat-li u=tafsīr d-i=zmurt-aṯi mən-yo, šqul u=baxbīš diḏux. omər ya afandəm lo=k-mitaḥke",
+                "translations": [
+                  "ʻer sprach zu ihm: “Möchtest du mir doch die Erklärung zu deinem Lied geben, du sollst dafür ein Geschenk erhalten!” Jener aber antwortete: “O Herr, das lässt sich gar nicht erzälen”ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["410"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["25/8"]
+              },
+              {
+                "turoyo": "hēš kīt ġắlabe d-mitaḥkən b-ḥaq d-a=dkoṯ-ani",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "bale ŭno b-haqqayṣ k-məktafeno",
+                "translations": [
+                  "ʻes gibt noch viele Dinge, die sich über diese Orte erzählen liessen, aber mit soviel will ich begnügenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/322"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "erzählen;"
-  ],
+  "idioms": ["erzählen;"],
   "uncertain": false
 }

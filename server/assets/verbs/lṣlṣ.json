@@ -5,24 +5,53 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mlaṣlaṣle",
-        "mlaṣləṣ"
-      ],
+      "forms": ["mlaṣlaṣle", "mlaṣləṣ"],
       "conjugations": {
         "Infinitiv": [
           {
-            "text": "ləṣloṣo d-aʕ=ʕayne; 799;",
-            "turoyo": "",
+            "turoyo": "ləṣloṣo d-aʕ=ʕayne",
             "translations": [],
-            "references": []
+            "references": ["799"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ləṣloṣo d-aʕ=ʕayne"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "799"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ləṣloṣo d-aʕ=ʕayne; 799;",
+            "segments": [
+              {
+                "turoyo": "ləṣloṣo d-aʕ=ʕayne",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["799"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "begierig blicken;"
-  ],
+  "idioms": ["begierig blicken;"],
   "uncertain": false
 }

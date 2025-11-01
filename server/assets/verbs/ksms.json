@@ -5,17 +5,48 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mkasmasle",
-        "mkasməs"
-      ],
+      "forms": ["mkasmasle", "mkasməs"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "mkasmsi ʕayne; 783;",
-            "turoyo": "",
+            "turoyo": "mkasmsi ʕayne",
             "translations": [],
-            "references": []
+            "references": ["783"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mkasmsi ʕayne"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "783"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mkasmsi ʕayne; 783;",
+            "segments": [
+              {
+                "turoyo": "mkasmsi ʕayne",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["783"]
+              }
+            ]
           }
         ]
       }
@@ -26,17 +57,49 @@
       "conjugations": {
         "Part. Pass.": [
           {
-            "text": "ʕayne mkásmse-ne; 783;",
-            "turoyo": "",
+            "turoyo": "ʕayne mkásmse-ne",
             "translations": [],
-            "references": []
+            "references": ["783"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕayne mkásmse-ne"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "783"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ʕayne mkásmse-ne; 783;",
+            "segments": [
+              {
+                "turoyo": "ʕayne mkásmse-ne",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["783"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "augen-, lidkrank werden;"
-  ],
+  "idioms": ["augen-, lidkrank werden;"],
   "uncertain": false
 }

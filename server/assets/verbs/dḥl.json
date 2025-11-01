@@ -12,35 +12,117 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "dḥile",
-        "doḥəl"
-      ],
+      "forms": ["dḥile", "doḥəl"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ṭro dəḥli šmaṭṭo d-qanyo",
+            "translations": ["doch sollen sie das Schreiben fürchten"],
+            "references": ["DD 393/12"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṭro dəḥli šmaṭṭo d-qanyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdoch sollen sie das Schreiben fürchtenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "DD 393/12"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ṭro dəḥli šmaṭṭo d-qanyo ʻdoch sollen sie das Schreiben fürchtenʼ; DD 393/12;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ṭro dəḥli šmaṭṭo d-qanyo",
+                "translations": ["ʻdoch sollen sie das Schreiben fürchtenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["DD 393/12"]
+              }
+            ]
           },
           {
+            "turoyo": "Kodohnina as sefoqe du dammәr lašan d lo zәbṭi zәngoro.",
+            "translations": [],
+            "references": ["1"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": "Kodohnina as sefoqe du dammәr lašan d lo zәbṭi zәngoro."
+              }
+            ],
             "text": "1)Kodohnina as sefoqe du dammәr lašan d lo zәbṭi zәngoro.",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ")Kodohnina as sefoqe du dammәr lašan d lo zәbṭi zәngoro.",
+                "translations": [],
+                "references": ["1"]
+              }
+            ]
           },
           {
+            "turoyo": "Kul yawmo ono kodohanno Iḏoṯi lašan d lo nәšfi",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Kul yawmo ono kodohanno Iḏoṯi lašan d lo nәšfi"
+              }
+            ],
             "text": "Kul yawmo ono kodohanno Iḏoṯi lašan d lo nәšfi",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "Kul yawmo ono kodohanno Iḏoṯi lašan d lo nәšfi",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
-            "text": "Ono kul yawmo d konofaqno kodohanno riši.",
-            "turoyo": "",
+            "turoyo": "Ono kul yawmo d konofaqno kodohanno riši.",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Ono kul yawmo d konofaqno kodohanno riši."
+              }
+            ],
+            "text": "Ono kul yawmo d konofaqno kodohanno riši.",
+            "segments": [
+              {
+                "turoyo": "Ono kul yawmo d konofaqno kodohanno riši.",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }

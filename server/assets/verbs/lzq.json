@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "lzəqle",
-        "lozəq"
-      ],
+      "forms": ["lzəqle", "lozəq"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,70 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "lziqo i=ḥayye b-iḏe prs",
+            "translations": ["die Schlange heftete sich an seine Hand"],
+            "references": ["127", "83/28"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lziqo i=ḥayye b-iḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Schlange heftete sich an seine Handʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "127"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "83/28"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "lziqo i=ḥayye b-iḏe ʻdie Schlange heftete sich an seine Handʼ; 127; prs 83/28;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "lziqo i=ḥayye b-iḏe",
+                "translations": ["ʻdie Schlange heftete sich an seine Handʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["127"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["83/28"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "anheften;"
-  ],
+  "idioms": ["anheften;"],
   "uncertain": false
 }

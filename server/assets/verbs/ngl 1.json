@@ -14,31 +14,154 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mnagele",
-        "mnagəl"
-      ],
+      "forms": ["mnagele", "mnagəl"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mnageli i=arʕo m-ab=buġre",
+            "translations": ["ich säuberte das Feld von den kleinen Steinen"],
+            "references": ["308"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mnageli i=arʕo m-ab=buġre "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich säuberte das Feld von den kleinen Steinenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "308"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mnageli i=arʕo m-ab=buġre ʻich säuberte das Feld von den kleinen Steinenʼ; 308;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mnageli i=arʕo m-ab=buġre",
+                "translations": [
+                  "ʻich säuberte das Feld von den kleinen Steinenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["308"]
+              }
+            ]
           },
           {
+            "turoyo": "mnagele u+bayto Ilyas p.c.",
+            "translations": ["‘He cleaned the house’"],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mnagele u+bayto "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "‘He cleaned the house’"
+              }
+            ],
             "text": "mnagele u+bayto (Ilyas p.c.) ‘He cleaned the house’",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mnagele u+bayto (Ilyas p.c.)",
+                "translations": ["‘He cleaned the house’"],
+                "references": []
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "Mnagliwa i+arʕo mǝqmi+kapča Nisane --",
+            "translations": ["‘They cleared the field with the excavator’"],
+            "references": ["2018", "07", "08"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Mnagliwa i+arʕo mǝqmi+kapča "
+              },
+              {
+                "kind": "translation",
+                "value": "‘They cleared the field with the excavator’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Nisane "
+              },
+              {
+                "kind": "ref",
+                "value": "2018"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "07"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "08"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "Mnagliwa i+arʕo mǝqmi+kapča ‘They cleared the field with the excavator’ (Nisane 2018-07-08)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "Mnagliwa i+arʕo mǝqmi+kapča (Nisane --)",
+                "translations": ["‘They cleared the field with the excavator’"],
+                "references": ["2018", "07", "08"]
+              }
+            ]
           }
         ]
       }
@@ -49,17 +172,82 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "klay hama tarte=daqaʔəq d-ono minaganno m-i=ḥolo",
+            "translations": [
+              "warte doch eben zwei Minuten, damit ich vom Schauplatz wegmache"
+            ],
+            "references": ["311", "53/178"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "klay hama tarte=daqaʔəq"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-ono minaganno m-i=ḥolo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwarte doch eben zwei Minuten, damit ich vom Schauplatz wegmacheʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "311"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "53/178"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "klay hama tarte=daqaʔəq, d-ono minaganno m-i=ḥolo ʻwarte doch eben zwei Minuten, damit ich vom Schauplatz wegmacheʼ; 311; 53/178;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "klay hama tarte=daqaʔəq, d-ono minaganno m-i=ḥolo",
+                "translations": [
+                  "ʻwarte doch eben zwei Minuten, damit ich vom Schauplatz wegmacheʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["311"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["53/178"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "säubern, fortschaffen;"
-  ],
+  "idioms": ["säubern, fortschaffen;"],
   "uncertain": false
 }

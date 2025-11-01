@@ -14,32 +14,124 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "xrəṭle",
-        "xorəṭ"
-      ],
+      "forms": ["xrəṭle", "xorəṭ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ʕŭmūm u=baṣrayḏe xrəṭle me-ʕal ag=garme",
+            "translations": [
+              "er schabte sein ganzes Fleisch von den Knochen ab"
+            ],
+            "references": ["72", "60/252"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕŭmūm u=baṣrayḏe xrəṭle me-ʕal ag=garme "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer schabte sein ganzes Fleisch von den Knochen abʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "72"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "60/252"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ʕŭmūm u=baṣrayḏe xrəṭle me-ʕal ag=garme ʻer schabte sein ganzes Fleisch von den Knochen abʼ; 72; 60/252;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ʕŭmūm u=baṣrayḏe xrəṭle me-ʕal ag=garme",
+                "translations": [
+                  "ʻer schabte sein ganzes Fleisch von den Knochen abʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["72"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["60/252"]
+              }
+            ]
           }
         ],
         "Part act.": [
           {
+            "turoyo": "xaroṭo",
+            "translations": ["Drechsler, Schreiner"],
+            "references": ["121"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "xaroṭo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻDrechsler, Schreinerʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "121"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "xaroṭo ʻDrechsler, Schreinerʼ; 121;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "xaroṭo",
+                "translations": ["ʻDrechsler, Schreinerʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["121"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "abschaben;"
-  ],
+  "idioms": ["abschaben;"],
   "uncertain": false
 }

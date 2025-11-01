@@ -5,10 +5,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mtanəq",
-        "mitanəq"
-      ],
+      "forms": ["mtanəq", "mitanəq"],
       "conjugations": {}
     },
     {
@@ -17,17 +14,57 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mtanaqno b-u=baxyo",
+            "translations": [
+              "ich erstickte in Tränen, konnte vor Weinen nicht sprechen"
+            ],
+            "references": ["231"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mtanaqno b-u=baxyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich erstickte in Tränen, konnte vor Weinen nicht sprechenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "231"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mtanaqno b-u=baxyo ʻich erstickte in Tränen, konnte vor Weinen nicht sprechenʼ; 231;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mtanaqno b-u=baxyo",
+                "translations": [
+                  "ʻich erstickte in Tränen, konnte vor Weinen nicht sprechenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["231"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) nicht gut sprechen, singen können;"
-  ],
+  "idioms": ["(Detrans.) nicht gut sprechen, singen können;"],
   "uncertain": false
 }

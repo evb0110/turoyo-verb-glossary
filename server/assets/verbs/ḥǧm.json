@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mḥaǧəm",
-        "miḥaǧəm"
-      ],
+      "forms": ["mḥaǧəm", "miḥaǧəm"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,57 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "naw k-miḥaǧmi b-i=oda",
+            "translations": [
+              "sie gehen nicht mehr in das Zimmer hinein, finden keinen platz mehr darin"
+            ],
+            "references": ["200"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "naw k-miḥaǧmi b-i=oda "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie gehen nicht mehr in das Zimmer hinein, finden keinen platz mehr darinʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "200"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "naw k-miḥaǧmi b-i=oda ʻsie gehen nicht mehr in das Zimmer hinein, finden keinen platz mehr darinʼ; 200;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "naw k-miḥaǧmi b-i=oda",
+                "translations": [
+                  "ʻsie gehen nicht mehr in das Zimmer hinein, finden keinen platz mehr darinʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["200"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) hineingehen, Platz finden;"
-  ],
+  "idioms": ["(Detrans.) hineingehen, Platz finden;"],
   "uncertain": false
 }

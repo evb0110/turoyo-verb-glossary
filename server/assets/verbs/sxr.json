@@ -14,33 +14,313 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "sxəlle",
-        "soxər"
-      ],
+      "forms": ["sxəlle", "soxər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "u=zʕur-ano azzé ʕabər l-i=odaye d-i=kačke sxəlle u=tarʕo qum ruḥe u=huḏoyo maytele ṭəbbe d-zafto w-qiro mḥele b-aḏnoṯe sxəlle aḏnoṯe i=naqqa də-mšayaʕʕe bəṯre huwe sxəlle u=tarʕo d-i=baxča",
+            "translations": [
+              "‘Der Jüngling ging hin und trat in das Zimmer des Mädchens, schloß die Tür hinter sich zu’",
+              "‘Der Jude brachte Kugeln aus Teer und Pech herbei, steckte sie ihm in die Ehren, verschloß ihm die Ehren’",
+              "‘Als man nach ihm schickte, verrammelte er das Tor des Gartens’"
+            ],
+            "references": ["24/80", "24/277", "27/56"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=zʕur-ano azzé ʕabər l-i=odaye d-i=kačke"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " sxəlle u=tarʕo qum ruḥe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Der Jüngling ging hin und trat in das Zimmer des Mädchens, schloß die Tür hinter sich zu’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/80"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=huḏoyo maytele ṭəbbe d-zafto w-qiro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥele b-aḏnoṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " sxəlle aḏnoṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Der Jude brachte Kugeln aus Teer und Pech herbei, steckte sie ihm in die Ehren, verschloß ihm die Ehren’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/277"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naqqa də-mšayaʕʕe bəṯre"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " huwe sxəlle u=tarʕo d-i=baxča "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Als man nach ihm schickte, verrammelte er das Tor des Gartens’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "27/56"
+              }
+            ],
             "text": "u=zʕur-ano azzé ʕabər l-i=odaye d-i=kačke, sxəlle u=tarʕo qum ruḥe ‘Der Jüngling ging hin und trat in das Zimmer des Mädchens, schloß die Tür hinter sich zu’; 24/80; u=huḏoyo maytele ṭəbbe d-zafto w-qiro, mḥele b-aḏnoṯe, sxəlle aḏnoṯe ‘Der Jude brachte Kugeln aus Teer und Pech herbei, steckte sie ihm in die Ehren, verschloß ihm die Ehren’; 24/277 [MT]; i=naqqa də-mšayaʕʕe bəṯre, huwe sxəlle u=tarʕo d-i=baxča ‘Als man nach ihm schickte, verrammelte er das Tor des Gartens’; 27/56",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=zʕur-ano azzé ʕabər l-i=odaye d-i=kačke, sxəlle u=tarʕo qum ruḥe",
+                "translations": [
+                  "‘Der Jüngling ging hin und trat in das Zimmer des Mädchens, schloß die Tür hinter sich zu’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/80"]
+              },
+              {
+                "turoyo": "u=huḏoyo maytele ṭəbbe d-zafto w-qiro, mḥele b-aḏnoṯe, sxəlle aḏnoṯe",
+                "translations": [
+                  "‘Der Jude brachte Kugeln aus Teer und Pech herbei, steckte sie ihm in die Ehren, verschloß ihm die Ehren’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/277"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "i=naqqa də-mšayaʕʕe bəṯre, huwe sxəlle u=tarʕo d-i=baxča",
+                "translations": [
+                  "‘Als man nach ihm schickte, verrammelte er das Tor des Gartens’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["27/56"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "qay g-suxrət u=tarʕo prs",
+            "translations": ["warum schliessest du die Türe"],
+            "references": ["235", "159/34"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qay g-suxrət u=tarʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwarum schliessest du die Türeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "235"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "159/34"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "qay g-suxrət u=tarʕo ʻwarum schliessest du die Türeʼ; 235; prs 159/34;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "qay g-suxrət u=tarʕo",
+                "translations": ["ʻwarum schliessest du die Türeʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["235"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["159/34"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "sxar i=dukano sxaru at=tarʕe w-zano l-u=bayto! s go home!’",
+            "translations": [
+              "mach deinen Laden zu",
+              "‘Close the gates and let’"
+            ],
+            "references": ["MM 141", "43/11"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "sxar i=dukano "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmach deinen Laden zuʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 141"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " sxaru at=tarʕe w-zano l-u=bayto! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Close the gates and let’"
+              },
+              {
+                "kind": "turoyo",
+                "value": "s go home!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "43/11"
+              }
+            ],
             "text": "sxar i=dukano ʻmach deinen Laden zuʼ; MM 141; sxaru at=tarʕe w-zano l-u=bayto! ‘Close the gates and let’s go home!’; 43/11",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "sxar i=dukano",
+                "translations": ["ʻmach deinen Laden zuʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["MM 141"]
+              },
+              {
+                "turoyo": "sxaru at=tarʕe w-zano l-u=bayto! s go home!’",
+                "translations": ["‘Close the gates and let’"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["43/11"]
+              }
+            ]
           }
         ]
       }
@@ -51,26 +331,218 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "sxir feme lə=qadər d-obe ǧuwāb aṯina u=laly-awo l-u=ḥdūd. u=ḥdūd ṣxir",
+            "translations": [
+              "‘Dem [Wesir] blieb der Mund verschlossen; er konnte keine Antwort geben’",
+              "‘That night we came to the border. And the border was closed’"
+            ],
+            "references": ["27/4", "EL 81"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "sxir feme"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=qadər d-obe ǧuwāb "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Dem [Wesir] blieb der Mund verschlossen; er konnte keine Antwort geben’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "27/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aṯina u=laly-awo l-u=ḥdūd. u=ḥdūd ṣxir "
+              },
+              {
+                "kind": "translation",
+                "value": "‘That night we came to the border. And the border was closed’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "EL 81"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "sxir feme, lə=qadər d-obe ǧuwāb ‘Dem [Wesir] blieb der Mund verschlossen; er konnte keine Antwort geben’; 27/4; aṯina u=laly-awo l-u=ḥdūd. u=ḥdūd ṣxir ‘That night we came to the border. And the border was closed’ EL 81;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "sxir feme, lə=qadər d-obe ǧuwāb",
+                "translations": [
+                  "‘Dem [Wesir] blieb der Mund verschlossen; er konnte keine Antwort geben’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["27/4"]
+              },
+              {
+                "turoyo": "aṯina u=laly-awo l-u=ḥdūd. u=ḥdūd ṣxir",
+                "translations": [
+                  "‘That night we came to the border. And the border was closed’"
+                ],
+                "references": ["EL 81"]
+              }
+            ]
           }
         ],
         "Part. Pass.": [
           {
+            "turoyo": "kila daməxto nafas kiba w-ʕayna sxire lu=k-qudro d-məžġolo - kit-la tarʕo l-i=baxča sxiro maḥiḏo",
+            "translations": [
+              "‘Sie schläft, sie hat noch Lebensodem in sich, aber ihre Augen sind geschlossen und sie kann nicht sprechen’",
+              "‘Der Garten hatte ein verschlossenes, verriegeltes Tor’"
+            ],
+            "references": ["24/71", "72", "24/158"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kila daməxto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " nafas kiba w-ʕayna sxire"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lu=k-qudro d-məžġolo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sie schläft, sie hat noch Lebensodem in sich, aber ihre Augen sind geschlossen und sie kann nicht sprechen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/71"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "72"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kit-la tarʕo l-i=baxča sxiro maḥiḏo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Der Garten hatte ein verschlossenes, verriegeltes Tor’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/158"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "kila daməxto, nafas kiba w-ʕayna sxire, lu=k-qudro d-məžġolo ‘Sie schläft, sie hat noch Lebensodem in sich, aber ihre Augen sind geschlossen und sie kann nicht sprechen’; 24/71-72 [MT]; kit-la tarʕo l-i=baxča sxiro maḥiḏo ‘Der Garten hatte ein verschlossenes, verriegeltes Tor’; 24/158 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kila daməxto, nafas kiba w-ʕayna sxire, lu=k-qudro d-məžġolo",
+                "translations": [
+                  "‘Sie schläft, sie hat noch Lebensodem in sich, aber ihre Augen sind geschlossen und sie kann nicht sprechen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["24/71", "72"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "kit-la tarʕo l-i=baxča sxiro maḥiḏo",
+                "translations": [
+                  "‘Der Garten hatte ein verschlossenes, verriegeltes Tor’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/158"],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "schliessen",
-    "verschlossen werden"
-  ],
+  "idioms": ["schliessen", "verschlossen werden"],
   "uncertain": false
 }

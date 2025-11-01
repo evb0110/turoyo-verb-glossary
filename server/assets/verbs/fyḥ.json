@@ -14,78 +14,412 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "fayəḥ",
-        "foyəḥ"
-      ],
+      "forms": ["fayəḥ", "foyəḥ"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "harke i=hawa fayiḥo",
+            "translations": ["hier ist das Wetter frisch geworden"],
+            "references": ["512", "13/6"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "harke i=hawa fayiḥo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻhier ist das Wetter frisch gewordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "512"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "13/6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "harke i=hawa fayiḥo ʻhier ist das Wetter frisch gewordenʼ; 512; 13/6;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "harke i=hawa fayiḥo",
+                "translations": ["ʻhier ist das Wetter frisch gewordenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["512"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["13/6"]
+              }
+            ]
           },
           {
-            "text": "aṯi u+payəz, briṯo fayiḥo p.c. Ilyas",
-            "turoyo": "",
+            "turoyo": "aṯi u+payəz briṯo fayiḥo p.c. Ilyas",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aṯi u+payəz"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " briṯo fayiḥo p.c. Ilyas "
+              }
+            ],
+            "text": "aṯi u+payəz, briṯo fayiḥo p.c. Ilyas",
+            "segments": [
+              {
+                "turoyo": "aṯi u+payəz, briṯo fayiḥo p.c. Ilyas",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "məsqí-way-na-le b-aṣ-ṣəṭle lalʕal maḥtí-way-na-le b-baroše rabṯo w hul d-foyaḥ-wa ..",
+            "translations": [
+              "wir schafften sie (die Milch m) in Eimern nach oben und gaben sie in einen grossen Kochtopf (und liessen sie stehen), bis sie sich abkühlte"
+            ],
+            "references": ["JL 11", "12", "1"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "məsqí-way-na-le b-aṣ-ṣəṭle lalʕal"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥtí-way-na-le b-baroše rabṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w hul d-foyaḥ-wa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir schafften sie (die Milch m) in Eimern nach oben und gaben sie in einen grossen Kochtopf (und liessen sie stehen), bis sie sich abkühlteʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 11"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "12"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "məsqí-way-na-le b-aṣ-ṣəṭle lalʕal, maḥtí-way-na-le b-baroše rabṯo, w hul d-foyaḥ-wa ʻwir schafften sie (die Milch m) in Eimern nach oben und gaben sie in einen grossen Kochtopf (und liessen sie stehen), bis sie sich abkühlteʼ JL 11.12.1;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "məsqí-way-na-le b-aṣ-ṣəṭle lalʕal, maḥtí-way-na-le b-baroše rabṯo, w hul d-foyaḥ-wa ..",
+                "translations": [
+                  "ʻwir schafften sie (die Milch m) in Eimern nach oben und gaben sie in einen grossen Kochtopf (und liessen sie stehen), bis sie sich abkühlteʼ"
+                ],
+                "references": ["JL 11", "12", "1"]
+              }
+            ]
           }
         ],
         "Part act.": [
           {
+            "turoyo": "ad=dəkoṯ-ani xəd mbaḥasli meqəm dəkoṯo basíme-ne kulle dawme w hawa fayəḥto w maye qayire kīt bənne",
+            "translations": [
+              "diese Orte sind, wie ich schon angedeutet habe, sehr liebliche Orte, lauter Bäume und frische Luft und kühles Wasser gibt es dort"
+            ],
+            "references": ["528", "4/51"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ad=dəkoṯ-ani"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " xəd mbaḥasli meqəm"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " dəkoṯo basíme-ne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kulle dawme w hawa fayəḥto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w maye qayire kīt bənne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdiese Orte sind, wie ich schon angedeutet habe, sehr liebliche Orte, lauter Bäume und frische Luft und kühles Wasser gibt es dortʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "528"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "4/51"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ad=dəkoṯ-ani, xəd mbaḥasli meqəm, dəkoṯo basíme-ne, kulle dawme w hawa fayəḥto, w maye qayire kīt bənne ʻdiese Orte sind, wie ich schon angedeutet habe, sehr liebliche Orte, lauter Bäume und frische Luft und kühles Wasser gibt es dortʼ; 528; 4/51;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ad=dəkoṯ-ani, xəd mbaḥasli meqəm, dəkoṯo basíme-ne, kulle dawme w hawa fayəḥto, w maye qayire kīt bənne",
+                "translations": [
+                  "ʻdiese Orte sind, wie ich schon angedeutet habe, sehr liebliche Orte, lauter Bäume und frische Luft und kühles Wasser gibt es dortʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["528"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["4/51"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "mafəḥle",
-        "mafəḥ"
-      ],
+      "forms": ["mafəḥle", "mafəḥ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mafəḥle u=muklo",
+            "translations": ["er kühlte das Essen"],
+            "references": ["537"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mafəḥle u=muklo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer kühlte das Essenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "537"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mafəḥle u=muklo ʻer kühlte das Essenʼ; 537;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mafəḥle u=muklo",
+                "translations": ["ʻer kühlte das Essenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["537"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "ko-mafəḥ u=reḥayḏe",
+            "translations": ["er (der Rosenstrauch) verbreitet seinen Duft"],
+            "references": ["544"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mafəḥ u=reḥayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer (der Rosenstrauch) verbreitet seinen Duftʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "544"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-mafəḥ u=reḥayḏe ʻer (der Rosenstrauch) verbreitet seinen Duftʼ; 544;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-mafəḥ u=reḥayḏe",
+                "translations": [
+                  "ʻer (der Rosenstrauch) verbreitet seinen Duftʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["544"]
+              }
+            ]
           },
           {
+            "turoyo": "lu+maṭro mafəḥle briṯo Ilyas p.c.",
+            "translations": ["‘the rain refreshed the world’"],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lu+maṭro mafəḥle briṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘the rain refreshed the world’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "lu+maṭro mafəḥle briṯo ‘the rain refreshed the world’ (Ilyas p.c.)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "lu+maṭro mafəḥle briṯo (Ilyas p.c.)",
+                "translations": ["‘the rain refreshed the world’"],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "erkühlen, erfrischen;",
-    "kühlen, verbreiten;"
-  ],
+  "idioms": ["erkühlen, erfrischen;", "kühlen, verbreiten;"],
   "uncertain": false
 }

@@ -12,24 +12,112 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "msayballe",
-        "msaybər"
-      ],
+      "forms": ["msayballe", "msaybər"],
       "conjugations": {
         "Imperativ": [
           {
+            "turoyo": "ya ǧăsad lə=zayʕət w msaybár msaybár ya raġloṯe",
+            "translations": [
+              "oh, Körper, habe keine Angst, und habe Geduld",
+              "‘haltet aus, oh Füsse’"
+            ],
+            "references": ["LB 146", "LB 222"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ya ǧăsad lə=zayʕət"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w msaybár "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻoh, Körper, habe keine Angst, und habe Geduldʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 146"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " msaybár"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ya raġloṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘haltet aus, oh Füsse’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 222"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ya ǧăsad lə=zayʕət, w msaybár ʻoh, Körper, habe keine Angst, und habe Geduldʼ; LB 146; msaybár, ya raġloṯe ‘haltet aus, oh Füsse’; LB 222;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ya ǧăsad lə=zayʕət, w msaybár",
+                "translations": [
+                  "ʻoh, Körper, habe keine Angst, und habe Geduldʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 146"]
+              },
+              {
+                "turoyo": "msaybár, ya raġloṯe",
+                "translations": ["‘haltet aus, oh Füsse’"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 222"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sich gedulden, aushalten;"
-  ],
+  "idioms": ["sich gedulden, aushalten;"],
   "uncertain": false
 }

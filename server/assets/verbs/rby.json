@@ -14,66 +14,629 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "rabi",
-        "robe"
-      ],
+      "forms": ["rabi", "robe"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "rabi Пример отсутствует в указанном месте ko-boxeno ʕal i=dukṯo d-matarko-lan i=walaye d-baban d-rabina eba i=naʕam-aṯe ḥəzyoli bəḥto w-amṭoli maḥtoli taḥte gḏayto i=gḏayto məfqola w-rabyo ʕam az=zoġune -",
+            "translations": [
+              "er wurde gross, wuchs heran",
+              "‘I am crying about the place we left, the town of our father, where we grew up’",
+              "‘This ostrich… I found an egg, brought it and put it under a hen. And the hen hatched it (the ostrich, f.). And it grew among chicken’"
+            ],
+            "references": ["348", "115/150", "73/202"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "rabi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wurde gross, wuchs heranʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "348"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "115/150"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Пример отсутствует в указанном месте"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-boxeno ʕal i=dukṯo d-matarko-lan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=walaye d-baban"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-rabina eba "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I am crying about the place we left, the town of our father, where we grew up’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/202"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naʕam-aṯe ḥəzyoli bəḥto w-amṭoli maḥtoli taḥte gḏayto i=gḏayto məfqola w-rabyo ʕam az=zoġune "
+              },
+              {
+                "kind": "translation",
+                "value": "‘This ostrich… I found an egg, brought it and put it under a hen. And the hen hatched it (the ostrich, f.). And it grew among chicken’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "81/74"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "75"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "rabi ʻer wurde gross, wuchs heranʼ; 348; 115/150; Пример отсутствует в указанном месте; ko-boxeno ʕal i=dukṯo d-matarko-lan, i=walaye d-baban, d-rabina eba ‘I am crying about the place we left, the town of our father, where we grew up’ 73/202; i=naʕam-aṯe ḥəzyoli bəḥto w-amṭoli maḥtoli taḥte gḏayto i=gḏayto məfqola w-rabyo ʕam az=zoġune ‘This ostrich… I found an egg, brought it and put it under a hen. And the hen hatched it (the ostrich, f.). And it grew among chicken’ 81/74-75;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "rabi",
+                "translations": ["ʻer wurde gross, wuchs heranʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["348"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["115/150"]
+              },
+              {
+                "turoyo": "Пример отсутствует в указанном месте",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "ko-boxeno ʕal i=dukṯo d-matarko-lan, i=walaye d-baban, d-rabina eba",
+                "translations": [
+                  "‘I am crying about the place we left, the town of our father, where we grew up’"
+                ],
+                "references": ["73/202"]
+              },
+              {
+                "turoyo": "i=naʕam-aṯe ḥəzyoli bəḥto w-amṭoli maḥtoli taḥte gḏayto i=gḏayto məfqola w-rabyo ʕam az=zoġune -",
+                "translations": [
+                  "‘This ostrich… I found an egg, brought it and put it under a hen. And the hen hatched it (the ostrich, f.). And it grew among chicken’"
+                ],
+                "references": ["81/74", "75"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "ko-robe",
+            "translations": ["er wächst"],
+            "references": ["356"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-robe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wächstʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "356"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-robe ʻer wächstʼ; 356;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-robe",
+                "translations": ["ʻer wächstʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["356"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": [
-        "mrabele",
-        "mrabe"
-      ],
+      "forms": ["mrabele", "mrabe"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "fayəš tamo w mrabele ač=čelikatayḏe ono mrabéli-lax xd-i=barṯáyḏi-hat ǧbiri u=ahl d-i=qriṯo zwənne ʕeze ġayr m-anək ḥatta d-monaq-qe aṣ=ṣafure d-aʕ=ʕez-anək mraballe aṣ=ṣafur-aṯṯe -",
+            "translations": [
+              "er blieb da und zog seine Vöglein gross",
+              "ich habe dich doch grossgezogen und du bist wie meine Tochter",
+              "‘The villagers had to buy new goats so that they could suckle the kids of the previous (stolen) ones. So they (these new goats) nurtured the kids’"
+            ],
+            "references": ["414", "60/18", "415"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "fayəš tamo w mrabele ač=čelikatayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer blieb da und zog seine Vöglein grossʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "414"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "60/18"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono mrabéli-lax xd-i=barṯáyḏi-hat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe dich doch grossgezogen und du bist wie meine Tochterʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "415"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "88/38"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ǧbiri u=ahl d-i=qriṯo zwənne ʕeze ġayr m-anək ḥatta d-monaq-qe aṣ=ṣafure d-aʕ=ʕez-anək mraballe aṣ=ṣafur-aṯṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘The villagers had to buy new goats so that they could suckle the kids of the previous (stolen) ones. So they (these new goats) nurtured the kids’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "85/17"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "19"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "fayəš tamo w mrabele ač=čelikatayḏe ʻer blieb da und zog seine Vöglein grossʼ; 414; 60/18; ono mrabéli-lax xd-i=barṯáyḏi-hat ʻich habe dich doch grossgezogen und du bist wie meine Tochterʼ; 415; 88/38; ǧbiri u=ahl d-i=qriṯo zwənne ʕeze ġayr m-anək ḥatta d-monaq-qe aṣ=ṣafure d-aʕ=ʕez-anək mraballe aṣ=ṣafur-aṯṯe ‘The villagers had to buy new goats so that they could suckle the kids of the previous (stolen) ones. So they (these new goats) nurtured the kids’ 85/17-19;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "fayəš tamo w mrabele ač=čelikatayḏe",
+                "translations": ["ʻer blieb da und zog seine Vöglein grossʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["414"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["60/18"]
+              },
+              {
+                "turoyo": "ono mrabéli-lax xd-i=barṯáyḏi-hat",
+                "translations": [
+                  "ʻich habe dich doch grossgezogen und du bist wie meine Tochterʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["415"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["88/38"]
+              },
+              {
+                "turoyo": "ǧbiri u=ahl d-i=qriṯo zwənne ʕeze ġayr m-anək ḥatta d-monaq-qe aṣ=ṣafure d-aʕ=ʕez-anək mraballe aṣ=ṣafur-aṯṯe -",
+                "translations": [
+                  "‘The villagers had to buy new goats so that they could suckle the kids of the previous (stolen) ones. So they (these new goats) nurtured the kids’"
+                ],
+                "references": ["85/17", "19"]
+              }
+            ]
           }
         ],
         "Preterit-wa": [
           {
-            "text": "kīt zlām  (…) kət-wa gabe zʕuro u=abro d-i=ḥoṯ-ayḏe yatumo fayəš-wa mrabe-way-le hiye ‘There was a man (…). There was (also) a boy (at his place), son of his sister. He had become an orphan, and he (the man) had raised him’ 76/2;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "kīt zlām … kət-wa gabe zʕuro u=abro d-i=ḥoṯ-ayḏe yatumo fayəš-wa mrabe-way-le hiye",
+            "translations": [
+              "‘There was a man (…). There was (also) a boy (at his place), son of his sister. He had become an orphan, and he (the man) had raised him’"
+            ],
+            "references": ["76/2"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kīt zlām  "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kət-wa gabe zʕuro u=abro d-i=ḥoṯ-ayḏe yatumo fayəš-wa mrabe-way-le hiye "
+              },
+              {
+                "kind": "translation",
+                "value": "‘There was a man (…). There was (also) a boy (at his place), son of his sister. He had become an orphan, and he (the man) had raised him’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "76/2"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kīt zlām (…) kət-wa gabe zʕuro u=abro d-i=ḥoṯ-ayḏe yatumo fayəš-wa mrabe-way-le hiye ‘There was a man (…). There was (also) a boy (at his place), son of his sister. He had become an orphan, and he (the man) had raised him’ 76/2;",
+            "segments": [
+              {
+                "turoyo": "kīt zlām (…) kət-wa gabe zʕuro u=abro d-i=ḥoṯ-ayḏe yatumo fayəš-wa mrabe-way-le hiye",
+                "translations": [
+                  "‘There was a man (…). There was (also) a boy (at his place), son of his sister. He had become an orphan, and he (the man) had raised him’"
+                ],
+                "references": ["76/2"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "marfele u=səsyayḏe w ko-mrabe i=moharṯ-ayo b-mə gə-mrabyal-le",
+            "translations": [
+              "da liess er sein Pferd laufen und zog dieses Füllen gross",
+              "womit soll ich es nähren?"
+            ],
+            "references": ["419", "70/74", "421"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "marfele u=səsyayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ko-mrabe i=moharṯ-ayo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda liess er sein Pferd laufen und zog dieses Füllen grossʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "419"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70/74"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-mə gə-mrabyal-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwomit soll ich es nähren?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "421"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/252"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "254"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "marfele u=səsyayḏe, w ko-mrabe i=moharṯ-ayo ʻda liess er sein Pferd laufen und zog dieses Füllen grossʼ; 419; 70/74; b-mə gə-mrabyal-le ʻwomit soll ich es nähren?ʼ; 421; 69/252, 254;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "marfele u=səsyayḏe, w ko-mrabe i=moharṯ-ayo",
+                "translations": [
+                  "ʻda liess er sein Pferd laufen und zog dieses Füllen grossʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["419"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["70/74"]
+              },
+              {
+                "turoyo": "b-mə gə-mrabyal-le",
+                "translations": ["ʻwomit soll ich es nähren?ʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["421"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["69/252", "254"]
+              }
+            ]
           }
         ],
         "Part. act.": [
           {
+            "turoyo": "Məḏyaḏ…i=mrabyoniṯo d-i=xōrte w d-u=xōrt suryoyo mnawro!",
+            "translations": [
+              "‘Miḏyaḏ…Erziehrin der gebildeten Jungfrau und des gebildeten syrischen Jünglings!’"
+            ],
+            "references": ["11/70"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Məḏyaḏ…i=mrabyoniṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-i=xōrte"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w d-u=xōrt suryoyo mnawro! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Miḏyaḏ…Erziehrin der gebildeten Jungfrau und des gebildeten syrischen Jünglings!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/70"
+              }
+            ],
             "text": "Məḏyaḏ…i=mrabyoniṯo, d-i=xōrte, w d-u=xōrt suryoyo mnawro! ‘Miḏyaḏ…Erziehrin der gebildeten Jungfrau und des gebildeten syrischen Jünglings!’; 11/70",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "Məḏyaḏ…i=mrabyoniṯo, d-i=xōrte, w d-u=xōrt suryoyo mnawro!",
+                "translations": [
+                  "‘Miḏyaḏ…Erziehrin der gebildeten Jungfrau und des gebildeten syrischen Jünglings!’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/70"]
+              }
+            ]
           }
         ]
       }
@@ -84,18 +647,82 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "u=ṭayr-ano mrabyo u=ṭayr-ano kádi-yo ʕal i=iḏo ko-mrabəl-le",
+            "translations": [
+              "dieser Vogel ist von jemandem grossgezogen, er ist zahm, man zieht ihn auf der Hand gross"
+            ],
+            "references": ["424", "70/107"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=ṭayr-ano mrabyo u=ṭayr-ano kádi-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕal i=iḏo ko-mrabəl-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdieser Vogel ist von jemandem grossgezogen, er ist zahm, man zieht ihn auf der Hand grossʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "424"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70/107"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=ṭayr-ano mrabyo u=ṭayr-ano kádi-yo, ʕal i=iḏo ko-mrabəl-le ʻdieser Vogel ist von jemandem grossgezogen, er ist zahm, man zieht ihn auf der Hand grossʼ; 424; 70/107;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=ṭayr-ano mrabyo u=ṭayr-ano kádi-yo, ʕal i=iḏo ko-mrabəl-le",
+                "translations": [
+                  "ʻdieser Vogel ist von jemandem grossgezogen, er ist zahm, man zieht ihn auf der Hand grossʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["424"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["70/107"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(heran)wachsen, gross werden;",
-    "grossziehen, nähren;"
-  ],
+  "idioms": ["(heran)wachsen, gross werden;", "grossziehen, nähren;"],
   "uncertain": false
 }

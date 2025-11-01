@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mšafəl",
-        "mišafəl"
-      ],
+      "forms": ["mšafəl", "mišafəl"],
       "conjugations": {}
     },
     {
@@ -26,25 +23,99 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mšaflo i=alayḏi",
+            "translations": ["mein Pflug wurde flachgehend"],
+            "references": ["311"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mšaflo i=alayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmein Pflug wurde flachgehendʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "311"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mšaflo i=alayḏi ʻmein Pflug wurde flachgehendʼ; 311;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mšaflo i=alayḏi",
+                "translations": ["ʻmein Pflug wurde flachgehendʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["311"]
+              }
+            ]
           }
         ],
         "Part. Pass.": [
           {
+            "turoyo": "i=alayḏi mšafálto-yo",
+            "translations": ["mein Pflug pflügt zu flach"],
+            "references": ["312"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=alayḏi mšafálto-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmein Pflug pflügt zu flachʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "312"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=alayḏi mšafálto-yo ʻmein Pflug pflügt zu flachʼ; 312;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=alayḏi mšafálto-yo",
+                "translations": ["ʻmein Pflug pflügt zu flachʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["312"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) flach werden;"
-  ],
+  "idioms": ["(Detrans.) flach werden;"],
   "uncertain": false
 }

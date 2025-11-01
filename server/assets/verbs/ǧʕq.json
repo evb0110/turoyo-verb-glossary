@@ -5,10 +5,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ǧʕīq",
-        "məǧʕəq"
-      ],
+      "forms": ["ǧʕīq", "məǧʕəq"],
       "conjugations": {}
     },
     {
@@ -17,25 +14,99 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "aǧ=ǧule ǧʕiqi",
+            "translations": ["die Wäsche ist schmutzig geworden"],
+            "references": ["127"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aǧ=ǧule ǧʕiqi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Wäsche ist schmutzig gewordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "127"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "aǧ=ǧule ǧʕiqi ʻdie Wäsche ist schmutzig gewordenʼ; 127;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "aǧ=ǧule ǧʕiqi",
+                "translations": ["ʻdie Wäsche ist schmutzig gewordenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["127"]
+              }
+            ]
           }
         ],
         "Part. Pass.": [
           {
+            "turoyo": "yatumo ǧʕiqo",
+            "translations": ["schmutziger Bengel"],
+            "references": ["133"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "yatumo ǧʕiqo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻschmutziger Bengelʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "133"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "yatumo ǧʕiqo ʻschmutziger Bengelʼ; 133;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "yatumo ǧʕiqo",
+                "translations": ["ʻschmutziger Bengelʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["133"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) schmutzig werden;"
-  ],
+  "idioms": ["(Detrans.) schmutzig werden;"],
   "uncertain": false
 }

@@ -14,24 +14,86 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "kfile",
-        "kofəl"
-      ],
+      "forms": ["kfile", "kofəl"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "lo=g-faš-lux ḥṭiṯo k-kofanno i-ḥṭiṯayḏux prs",
+            "translations": [
+              "du hast keine Sünde mehr, sondern ich bin Bürge für deine Sünde"
+            ],
+            "references": ["297", "226/25"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lo=g-faš-lux ḥṭiṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-kofanno i-ḥṭiṯayḏux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu hast keine Sünde mehr, sondern ich bin Bürge für deine Sündeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "297"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "226/25"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "lo=g-faš-lux ḥṭiṯo, k-kofanno i-ḥṭiṯayḏux ʻdu hast keine Sünde mehr, sondern ich bin Bürge für deine Sündeʼ; 297; prs 226/25;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "lo=g-faš-lux ḥṭiṯo, k-kofanno i-ḥṭiṯayḏux",
+                "translations": [
+                  "ʻdu hast keine Sünde mehr, sondern ich bin Bürge für deine Sündeʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["297"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["226/25"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "bürgen;"
-  ],
+  "idioms": ["bürgen;"],
   "uncertain": false
 }

@@ -14,38 +14,180 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mḥaykamle",
-        "mḥaykəm"
-      ],
+      "forms": ["mḥaykamle", "mḥaykəm"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "l-u=zlām mḥaykamle ruḥe m-i=pire",
+            "translations": [
+              "der Mann schimpfte die Frau, nörgelte an ihr herum"
+            ],
+            "references": ["2", "781"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-u=zlām mḥaykamle ruḥe m-i=pire "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Mann schimpfte die Frau, nörgelte an ihr herumʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "781"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) l-u=zlām mḥaykamle ruḥe m-i=pire ʻder Mann schimpfte die Frau, nörgelte an ihr herumʼ; 781;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") l-u=zlām mḥaykamle ruḥe m-i=pire",
+                "translations": [
+                  "ʻder Mann schimpfte die Frau, nörgelte an ihr herumʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["781"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "lə=k-mḥaykimi ḥḏoḏe",
+            "translations": ["sie können einander keinen Streich beibringen"],
+            "references": ["1", "781"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=k-mḥaykimi ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie können einander keinen Streich beibringenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "781"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) lə=k-mḥaykimi ḥḏoḏe ʻsie können einander keinen Streich beibringenʼ; 781;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") lə=k-mḥaykimi ḥḏoḏe",
+                "translations": [
+                  "ʻsie können einander keinen Streich beibringenʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["781"]
+              }
+            ]
           },
           {
-            "text": "I+tərto lo gmaḥilo ʕal u+čalikayḏa  the cow does not accept her new-born  one (p.c. of ʕanter and Ilyas, 05-01-2021",
-            "turoyo": "",
+            "turoyo": "I+tərto lo gmaḥilo ʕal u+čalikayḏa the cow does not accept her new-born one p.c. of ʕanter and Ilyas --",
             "translations": [],
-            "references": []
+            "references": ["05", "01", "2021"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": " I+tərto lo gmaḥilo ʕal u+čalikayḏa  the cow does not accept her new-born  one "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "p.c. of ʕanter and Ilyas"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "05"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "01"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "2021"
+              }
+            ],
+            "text": "I+tərto lo gmaḥilo ʕal u+čalikayḏa the cow does not accept her new-born one (p.c. of ʕanter and Ilyas, 05-01-2021",
+            "segments": [
+              {
+                "turoyo": "I+tərto lo gmaḥilo ʕal u+čalikayḏa the cow does not accept her new-born one (p.c. of ʕanter and Ilyas, --",
+                "translations": [],
+                "references": ["05", "01", "2021"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "ḥyl III maḥəlla/maḥilo (f.) = mqaḥamla/mqaḥmo"
-  ],
+  "idioms": ["ḥyl III maḥəlla/maḥilo (f.) = mqaḥamla/mqaḥmo"],
   "uncertain": false
 }

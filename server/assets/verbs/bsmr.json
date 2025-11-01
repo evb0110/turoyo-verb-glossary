@@ -14,32 +14,169 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mbasmalle",
-        "mbasmər"
-      ],
+      "forms": ["mbasmalle", "mbasmər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "dəqli arbaʕ=seke b-u=ʕafro d-taḥt i=dawmo w mbasmalli kmo=taxtayat b-rišayye w b-u=šəkəl-ano səmli maṣa",
+            "translations": [
+              "ich schlug auch vier Pfähle in die Erde unter dem Baume, nagelte Bretter darauf und machte mir so einen Tisch"
+            ],
+            "references": ["770", "2/83"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "dəqli arbaʕ=seke b-u=ʕafro d-taḥt i=dawmo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mbasmalli kmo=taxtayat b-rišayye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w b-u=šəkəl-ano səmli maṣa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich schlug auch vier Pfähle in die Erde unter dem Baume, nagelte Bretter darauf und machte mir so einen Tischʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "770"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/83"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "dəqli arbaʕ=seke b-u=ʕafro d-taḥt i=dawmo, w mbasmalli kmo=taxtayat b-rišayye, w b-u=šəkəl-ano səmli maṣa ʻich schlug auch vier Pfähle in die Erde unter dem Baume, nagelte Bretter darauf und machte mir so einen Tischʼ; 770; 2/83;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "dəqli arbaʕ=seke b-u=ʕafro d-taḥt i=dawmo, w mbasmalli kmo=taxtayat b-rišayye, w b-u=šəkəl-ano səmli maṣa",
+                "translations": [
+                  "ʻich schlug auch vier Pfähle in die Erde unter dem Baume, nagelte Bretter darauf und machte mir so einen Tischʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["770"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["2/83"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "bəṯṯər ko-mbasmrən-ne butel w b-ač=čavʕkat. w bəṯṯər ko-čərxən-ne",
+            "translations": [
+              "dann schlagen sie mit dem Rondellhammer einen Drahtstift hinein, schleifen sie auf dem Schleifrad"
+            ],
+            "references": ["770", "94/14"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bəṯṯər ko-mbasmrən-ne butel"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w b-ač=čavʕkat. w bəṯṯər ko-čərxən-ne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdann schlagen sie mit dem Rondellhammer einen Drahtstift hinein, schleifen sie auf dem Schleifradʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "770"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "bəṯṯər ko-mbasmrən-ne butel, w b-ač=čavʕkat. w bəṯṯər ko-čərxən-ne ʻdann schlagen sie mit dem Rondellhammer einen Drahtstift hinein, schleifen sie auf dem Schleifradʼ; 770; 94/14;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "bəṯṯər ko-mbasmrən-ne butel, w b-ač=čavʕkat. w bəṯṯər ko-čərxən-ne",
+                "translations": [
+                  "ʻdann schlagen sie mit dem Rondellhammer einen Drahtstift hinein, schleifen sie auf dem Schleifradʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["770"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["94/14"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "nageln;"
-  ],
+  "idioms": ["nageln;"],
   "uncertain": false
 }

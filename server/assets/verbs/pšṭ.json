@@ -5,17 +5,52 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "pšəṭle",
-        "pošəṭ"
-      ],
+      "forms": ["pšəṭle", "pošəṭ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "pšəṭli ruḥi",
+            "translations": ["ich streckte mich aus"],
+            "references": ["73"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "pšəṭli ruḥi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich streckte mich ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "pšəṭli ruḥi ʻich streckte mich ausʼ; 73;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "pšəṭli ruḥi",
+                "translations": ["ʻich streckte mich ausʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["73"]
+              }
+            ]
           }
         ]
       }
@@ -26,17 +61,53 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "pšəṭno ʕal i=qaryola",
+            "translations": ["ich streckte mich auf dem Bette aus"],
+            "references": ["127"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "pšəṭno ʕal i=qaryola "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich streckte mich auf dem Bette ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "127"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "pšəṭno ʕal i=qaryola ʻich streckte mich auf dem Bette ausʼ; 127;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "pšəṭno ʕal i=qaryola",
+                "translations": ["ʻich streckte mich auf dem Bette ausʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["127"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "ausstrecken;"
-  ],
+  "idioms": ["ausstrecken;"],
   "uncertain": false
 }

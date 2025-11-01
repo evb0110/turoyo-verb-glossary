@@ -12,30 +12,97 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mhaškalle",
-        "mhaškər"
-      ],
+      "forms": ["mhaškalle", "mhaškər"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "k-ubʕono də-mhaškrat ruḥux aʕli",
+            "translations": ["du musst dich mir offenbaren"],
+            "references": ["778", "61/308"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-ubʕono də-mhaškrat ruḥux aʕli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu musst dich mir offenbarenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "778"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "61/308"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "k-ubʕono də-mhaškrat ruḥux aʕli ʻdu musst dich mir offenbarenʼ; 778; 61/308;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "k-ubʕono də-mhaškrat ruḥux aʕli",
+                "translations": ["ʻdu musst dich mir offenbarenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["778"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["61/308"]
+              }
+            ]
           },
           {
-            "text": "HD 205. Ilyas. Maǧrútuwa mhaškrútuwa ruḥayxu sǝryóyehatu mšiḥoye? IL. Did you dare to reveal yourselfs that you were Christians?",
-            "turoyo": "",
+            "turoyo": ". Ilyas. Maǧrútuwa mhaškrútuwa ruḥayxu sǝryóyehatu mšiḥoye? IL. Did you dare to reveal yourselfs that you were Christians?",
             "translations": [],
-            "references": []
+            "references": ["HD 205"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "HD 205"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". Ilyas. Maǧrútuwa mhaškrútuwa ruḥayxu sǝryóyehatu mšiḥoye? IL. Did you dare to reveal yourselfs that you were Christians?"
+              }
+            ],
+            "text": "HD 205. Ilyas. Maǧrútuwa mhaškrútuwa ruḥayxu sǝryóyehatu mšiḥoye? IL. Did you dare to reveal yourselfs that you were Christians?",
+            "segments": [
+              {
+                "turoyo": ". Ilyas. Maǧrútuwa mhaškrútuwa ruḥayxu sǝryóyehatu mšiḥoye? IL. Did you dare to reveal yourselfs that you were Christians?",
+                "translations": [],
+                "references": ["HD 205"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "offenbaren, bekannt machen; (is it reflexive only?)"
-  ],
+  "idioms": ["offenbaren, bekannt machen; (is it reflexive only?)"],
   "uncertain": false
 }

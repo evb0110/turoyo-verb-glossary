@@ -14,32 +14,126 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mṭaʕamle",
-        "mṭaʕəm"
-      ],
+      "forms": ["mṭaʕamle", "mṭaʕəm"],
       "conjugations": {
         "Infectum": [
           {
-            "text": "Dinnaqa d-ʔa+noše dkəmṭaʕmi u+ilono, dkəmḥalfile lfiro ḥreno, yaʕni dkəmḥalfi u+ilono l‿ʔilono ḥreno, komṭaʕmi u+ilono maʕ+ʕaynoṯe d-ʔilone ḥrene … hano kəmmile i+ʕayno du+ilono (p.c. Ilyas Iran, July 2024)",
-            "turoyo": "",
+            "turoyo": "Dinnaqa d-ʔa+noše dkəmṭaʕmi u+ilono dkəmḥalfile lfiro ḥreno yaʕni dkəmḥalfi u+ilono l‿ʔilono ḥreno komṭaʕmi u+ilono maʕ+ʕaynoṯe d-ʔilone ḥrene … hano kəmmile i+ʕayno du+ilono p.c. Ilyas Iran July",
             "translations": [],
-            "references": []
+            "references": ["2024"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Dinnaqa d-ʔa+noše dkəmṭaʕmi u+ilono"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " dkəmḥalfile lfiro ḥreno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " yaʕni dkəmḥalfi u+ilono l‿ʔilono ḥreno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " komṭaʕmi u+ilono maʕ+ʕaynoṯe d-ʔilone ḥrene … hano kəmmile i+ʕayno du+ilono "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "p.c. Ilyas Iran"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " July "
+              },
+              {
+                "kind": "ref",
+                "value": "2024"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Dinnaqa d-ʔa+noše dkəmṭaʕmi u+ilono, dkəmḥalfile lfiro ḥreno, yaʕni dkəmḥalfi u+ilono l‿ʔilono ḥreno, komṭaʕmi u+ilono maʕ+ʕaynoṯe d-ʔilone ḥrene … hano kəmmile i+ʕayno du+ilono (p.c. Ilyas Iran, July 2024)",
+            "segments": [
+              {
+                "turoyo": "Dinnaqa d-ʔa+noše dkəmṭaʕmi u+ilono, dkəmḥalfile lfiro ḥreno, yaʕni dkəmḥalfi u+ilono l‿ʔilono ḥreno, komṭaʕmi u+ilono maʕ+ʕaynoṯe d-ʔilone ḥrene … hano kəmmile i+ʕayno du+ilono (p.c. Ilyas Iran, July )",
+                "translations": [],
+                "references": ["2024"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
+            "turoyo": "ṭeʕomo",
+            "translations": ["pfropfen, okulieren"],
+            "references": ["171"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṭeʕomo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻpfropfen, okulierenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "171"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ṭeʕomo ʻpfropfen, okulierenʼ; 171;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ṭeʕomo",
+                "translations": ["ʻpfropfen, okulierenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["171"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "pfropfen, okulieren;"
-  ],
+  "idioms": ["pfropfen, okulieren;"],
   "uncertain": false
 }

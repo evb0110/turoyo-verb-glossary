@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mxanzalle",
-        "mxanzər"
-      ],
+      "forms": ["mxanzalle", "mxanzər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mxanzro iḏi",
+            "translations": ["meine Hand ist geschwollen"],
+            "references": ["794"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mxanzro iḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmeine Hand ist geschwollenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "794"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mxanzro iḏi ʻmeine Hand ist geschwollenʼ; 794;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mxanzro iḏi",
+                "translations": ["ʻmeine Hand ist geschwollenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["794"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "schwellen;"
-  ],
+  "idioms": ["schwellen;"],
   "uncertain": false
 }

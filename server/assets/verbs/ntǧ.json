@@ -14,24 +14,78 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "mantaǧle",
-        "mantəǧ"
-      ],
+      "forms": ["mantaǧle", "mantəǧ"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "iḏa b-u=yarḥo d-lə=mantáǧnan-xu alfo=waroqe i=naql-ayo dīs kali qumayxu",
+            "translations": [
+              "nun, wenn ich euch nicht im Monat Tausend Pfundnoten herausarbeite, so habt ihr mich ja noch immer zur Verfügung"
+            ],
+            "references": ["148", "87/102"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "iḏa b-u=yarḥo d-lə=mantáǧnan-xu alfo=waroqe i=naql-ayo dīs kali qumayxu "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnun, wenn ich euch nicht im Monat Tausend Pfundnoten herausarbeite, so habt ihr mich ja noch immer zur Verfügungʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "148"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "87/102"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "iḏa b-u=yarḥo d-lə=mantáǧnan-xu alfo=waroqe i=naql-ayo dīs kali qumayxu ʻnun, wenn ich euch nicht im Monat Tausend Pfundnoten herausarbeite, so habt ihr mich ja noch immer zur Verfügungʼ; 148; 87/102;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "iḏa b-u=yarḥo d-lə=mantáǧnan-xu alfo=waroqe i=naql-ayo dīs kali qumayxu",
+                "translations": [
+                  "ʻnun, wenn ich euch nicht im Monat Tausend Pfundnoten herausarbeite, so habt ihr mich ja noch immer zur Verfügungʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["148"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["87/102"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "herausarbeiten;"
-  ],
+  "idioms": ["herausarbeiten;"],
   "uncertain": false
 }

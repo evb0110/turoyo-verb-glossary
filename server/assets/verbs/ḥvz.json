@@ -14,24 +14,69 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mḥavazle",
-        "mḥavəz"
-      ],
+      "forms": ["mḥavazle", "mḥavəz"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-mḥavzi ġắlabe ʕal u=ǧənsaṯṯe ʕal i=kḥeliye d-as=səsye d-ruḥayye",
+            "translations": [
+              "sie achten sehr darauf, Ihrerasse, die Rassereinheit ihrer Pferde zu erhalten"
+            ],
+            "references": ["82/10"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mḥavzi ġắlabe ʕal u=ǧənsaṯṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕal i=kḥeliye d-as=səsye d-ruḥayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie achten sehr darauf, Ihrerasse, die Rassereinheit ihrer Pferde zu erhaltenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "82/10"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-mḥavzi ġắlabe ʕal u=ǧənsaṯṯe, ʕal i=kḥeliye d-as=səsye d-ruḥayye ʻsie achten sehr darauf, Ihrerasse, die Rassereinheit ihrer Pferde zu erhaltenʼ; 82/10;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-mḥavzi ġắlabe ʕal u=ǧənsaṯṯe, ʕal i=kḥeliye d-as=səsye d-ruḥayye",
+                "translations": [
+                  "ʻsie achten sehr darauf, Ihrerasse, die Rassereinheit ihrer Pferde zu erhaltenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["82/10"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "erhalten?;"
-  ],
+  "idioms": ["erhalten?;"],
   "uncertain": false
 }

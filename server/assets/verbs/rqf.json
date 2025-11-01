@@ -14,24 +14,53 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "rqəfle",
-        "roqəf"
-      ],
+      "forms": ["rqəfle", "roqəf"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "rqəffe u=muklo ʕal i=ṣəfro; 191;",
-            "turoyo": "",
+            "turoyo": "rqəffe u=muklo ʕal i=ṣəfro",
             "translations": [],
-            "references": []
+            "references": ["191"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "rqəffe u=muklo ʕal i=ṣəfro"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "191"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "rqəffe u=muklo ʕal i=ṣəfro; 191;",
+            "segments": [
+              {
+                "turoyo": "rqəffe u=muklo ʕal i=ṣəfro",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["191"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "reichlich Essen auftragen;"
-  ],
+  "idioms": ["reichlich Essen auftragen;"],
   "uncertain": false
 }

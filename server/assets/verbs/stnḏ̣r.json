@@ -14,24 +14,86 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "məstanḏ̣alle",
-        "məstanḏ̣ər"
-      ],
+      "forms": ["məstanḏ̣alle", "məstanḏ̣ər"],
       "conjugations": {
         "Part act.": [
           {
+            "turoyo": "hani arbʕi=əšne ono məstanḏ̣árto-way-no d-u=maṯyayḏux d-oṯət l-arke",
+            "translations": [
+              "seit vierzig Jahren habe ich auf dein Kommen gewartet, dass du hierherkommen möchtest"
+            ],
+            "references": ["810", "62/126"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hani arbʕi=əšne ono məstanḏ̣árto-way-no d-u=maṯyayḏux"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-oṯət l-arke "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻseit vierzig Jahren habe ich auf dein Kommen gewartet, dass du hierherkommen möchtestʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "810"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/126"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "hani arbʕi=əšne ono məstanḏ̣árto-way-no d-u=maṯyayḏux, d-oṯət l-arke ʻseit vierzig Jahren habe ich auf dein Kommen gewartet, dass du hierherkommen möchtestʼ; 810; 62/126;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "hani arbʕi=əšne ono məstanḏ̣árto-way-no d-u=maṯyayḏux, d-oṯət l-arke",
+                "translations": [
+                  "ʻseit vierzig Jahren habe ich auf dein Kommen gewartet, dass du hierherkommen möchtestʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["810"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["62/126"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "warten;"
-  ],
+  "idioms": ["warten;"],
   "uncertain": false
 }

@@ -5,10 +5,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "msalpaxle",
-        "msalpəx"
-      ],
+      "forms": ["msalpaxle", "msalpəx"],
       "conjugations": {}
     },
     {
@@ -17,17 +14,53 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "msalpaxno b-u=šur-ano",
+            "translations": ["ich bin diese Mauer hinaufgeklettert"],
+            "references": ["788"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "msalpaxno b-u=šur-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich bin diese Mauer hinaufgeklettertʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "788"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "msalpaxno b-u=šur-ano ʻich bin diese Mauer hinaufgeklettertʼ; 788;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "msalpaxno b-u=šur-ano",
+                "translations": ["ʻich bin diese Mauer hinaufgeklettertʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["788"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "hinaufklettern;"
-  ],
+  "idioms": ["hinaufklettern;"],
   "uncertain": false
 }

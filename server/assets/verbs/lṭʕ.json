@@ -14,32 +14,137 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "lṭəʕle",
-        "loṭəʕ"
-      ],
+      "forms": ["lṭəʕle", "loṭəʕ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "lṭəʕle l-u=taʕlo foṯo d-u=roʕyo prs prs",
+            "translations": ["der Fuchs leckte das Gesicht eines Hirten"],
+            "references": ["68", "208/25", "217/35"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lṭəʕle l-u=taʕlo foṯo d-u=roʕyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Fuchs leckte das Gesicht eines Hirtenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "68"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "208/25"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "217/35"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "lṭəʕle l-u=taʕlo foṯo d-u=roʕyo ʻder Fuchs leckte das Gesicht eines Hirtenʼ; 68; prs 208/25; prs 217/35;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "lṭəʕle l-u=taʕlo foṯo d-u=roʕyo",
+                "translations": ["ʻder Fuchs leckte das Gesicht eines Hirtenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["68"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["208/25"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["217/35"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "aʕ=ʕeze ko-ləṭʕi i=malḥo",
+            "translations": ["die Ziegen lecken das Salz"],
+            "references": ["100"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aʕ=ʕeze ko-ləṭʕi i=malḥo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Ziegen lecken das Salzʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "100"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "aʕ=ʕeze ko-ləṭʕi i=malḥo ʻdie Ziegen lecken das Salzʼ; 100;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "aʕ=ʕeze ko-ləṭʕi i=malḥo",
+                "translations": ["ʻdie Ziegen lecken das Salzʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["100"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "lecken;"
-  ],
+  "idioms": ["lecken;"],
   "uncertain": false
 }

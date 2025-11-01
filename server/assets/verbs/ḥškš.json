@@ -14,24 +14,76 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mḥaškašle",
-        "mḥaškəš"
-      ],
+      "forms": ["mḥaškašle", "mḥaškəš"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "hawi mḥaškašla ʕatəm maṭi l-i=walaye d-Xarpēt",
+            "translations": ["als er nach Charput kam, war es dunkel geworden"],
+            "references": ["780", "95/133"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hawi mḥaškašla ʕatəm maṭi l-i=walaye d-Xarpēt "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals er nach Charput kam, war es dunkel gewordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "780"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "95/133"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "hawi mḥaškašla ʕatəm maṭi l-i=walaye d-Xarpēt ʻals er nach Charput kam, war es dunkel gewordenʼ; 780; 95/133;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "hawi mḥaškašla ʕatəm maṭi l-i=walaye d-Xarpēt",
+                "translations": [
+                  "ʻals er nach Charput kam, war es dunkel gewordenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["780"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["95/133"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "dunkel werden;"
-  ],
+  "idioms": ["dunkel werden;"],
   "uncertain": false
 }

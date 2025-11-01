@@ -14,17 +14,71 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "məxtalafle",
-        "məxtaləf"
-      ],
+      "forms": ["məxtalafle", "məxtaləf"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "məxtalaffe ʕal u=med-ano",
+            "translations": ["sie konnten sich in dieser Sache nicht einigen"],
+            "references": ["809", "35/67"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "məxtalaffe ʕal u=med-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie konnten sich in dieser Sache nicht einigenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "809"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "35/67"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "məxtalaffe ʕal u=med-ano ʻsie konnten sich in dieser Sache nicht einigenʼ; 809; 35/67;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "məxtalaffe ʕal u=med-ano",
+                "translations": [
+                  "ʻsie konnten sich in dieser Sache nicht einigenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["809"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["35/67"]
+              }
+            ]
           }
         ]
       }

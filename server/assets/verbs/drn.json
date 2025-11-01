@@ -5,34 +5,104 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "drəlle",
-        "dorən"
-      ],
+      "forms": ["drəlle", "dorən"],
       "conjugations": {
         "Imperativ": [
           {
-            "text": "dran-e b-u=doruno; 267;",
-            "turoyo": "",
+            "turoyo": "dran-e b-u=doruno",
             "translations": [],
-            "references": []
+            "references": ["267"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "dran-e b-u=doruno"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "267"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "dran-e b-u=doruno; 267;",
+            "segments": [
+              {
+                "turoyo": "dran-e b-u=doruno",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["267"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "I",
-      "forms": [
-        "drəxle",
-        "dorəx"
-      ],
+      "forms": ["drəxle", "dorəx"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "an=noše gabayna ko-dərxi ar=rawṭe d-as=sate b-ad=dəkoṯe xalye",
+            "translations": [
+              "die Leute bei uns pflanzen die Weinranken an leere Stelle über"
+            ],
+            "references": ["177"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "an=noše gabayna ko-dərxi ar=rawṭe d-as=sate b-ad=dəkoṯe xalye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Leute bei uns pflanzen die Weinranken an leere Stelle überʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "177"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "an=noše gabayna ko-dərxi ar=rawṭe d-as=sate b-ad=dəkoṯe xalye ʻdie Leute bei uns pflanzen die Weinranken an leere Stelle überʼ; 177;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "an=noše gabayna ko-dərxi ar=rawṭe d-as=sate b-ad=dəkoṯe xalye",
+                "translations": [
+                  "ʻdie Leute bei uns pflanzen die Weinranken an leere Stelle überʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["177"]
+              }
+            ]
           }
         ]
       }

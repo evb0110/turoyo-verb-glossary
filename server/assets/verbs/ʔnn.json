@@ -14,24 +14,76 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mʔanalle",
-        "manən"
-      ],
+      "forms": ["mʔanalle", "manən"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "u=məskeno d-u=kayiw-awo hēš ko-manən",
+            "translations": ["der arme Kerl von Krankem stöhnt noch immer"],
+            "references": ["496", "49/30"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=məskeno d-u=kayiw-awo hēš ko-manən "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder arme Kerl von Krankem stöhnt noch immerʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "496"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "49/30"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=məskeno d-u=kayiw-awo hēš ko-manən ʻder arme Kerl von Krankem stöhnt noch immerʼ; 496; 49/30;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=məskeno d-u=kayiw-awo hēš ko-manən",
+                "translations": [
+                  "ʻder arme Kerl von Krankem stöhnt noch immerʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["496"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["49/30"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "stöhnen;"
-  ],
+  "idioms": ["stöhnen;"],
   "uncertain": false
 }

@@ -18,24 +18,78 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mrawaqle",
-        "mrawəq"
-      ],
+      "forms": ["mrawaqle", "mrawəq"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mabərmole w naqqa mrawqole ebi",
+            "translations": [
+              "er drohte herum (den auf den Finger gesteckten Mühlstein), und auf einmal schleuderte er ihn auf mich"
+            ],
+            "references": ["471", "52/114"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mabərmole w naqqa mrawqole ebi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer drohte herum (den auf den Finger gesteckten Mühlstein), und auf einmal schleuderte er ihn auf michʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "471"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "52/114"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mabərmole w naqqa mrawqole ebi ʻer drohte herum (den auf den Finger gesteckten Mühlstein), und auf einmal schleuderte er ihn auf michʼ; 471; 52/114;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mabərmole w naqqa mrawqole ebi",
+                "translations": [
+                  "ʻer drohte herum (den auf den Finger gesteckten Mühlstein), und auf einmal schleuderte er ihn auf michʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["471"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["52/114"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "schleudern (mit grosser Kraft);"
-  ],
+  "idioms": ["schleudern (mit grosser Kraft);"],
   "uncertain": false
 }

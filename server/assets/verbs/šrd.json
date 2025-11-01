@@ -9,22 +9,122 @@
       "conjugations": {
         "Preterit": [
           {
-            "text": "Aʕ ʕwone  šridi bǝṯr u ḥmoro. Our sheep followed the donkey. (İlyas p.c)",
-            "turoyo": "",
+            "turoyo": "Aʕ ʕwone šridi bǝṯr u ḥmoro. Our sheep followed the donkey. İlyas p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Aʕ ʕwone  šridi bǝṯr u ḥmoro. Our sheep followed the donkey. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Aʕ ʕwone šridi bǝṯr u ḥmoro. Our sheep followed the donkey. (İlyas p.c)",
+            "segments": [
+              {
+                "turoyo": "Aʕ ʕwone šridi bǝṯr u ḥmoro. Our sheep followed the donkey. (İlyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
+            "turoyo": "Di naqla d Čalabiyo ǝzzewa lu ḥarb mǝšrodiwa maṯe zlamat bǝṯre. Each time Čalabiyo went to war two hundred men followed him. İlyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Di naqla d Čalabiyo ǝzzewa lu ḥarb"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mǝšrodiwa maṯe zlamat bǝṯre. Each time Čalabiyo went to war two hundred men followed him. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "Di naqla d Čalabiyo ǝzzewa lu ḥarb, mǝšrodiwa maṯe zlamat bǝṯre. Each time Čalabiyo went to war two hundred men followed him. (İlyas p.c)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "Di naqla d Čalabiyo ǝzzewa lu ḥarb, mǝšrodiwa maṯe zlamat bǝṯre. Each time Čalabiyo went to war two hundred men followed him. (İlyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
-            "text": "Hedi šridi lu=mal di=arʕo. Then they went after the riches of the land. 2018_07_08_au_003_NE_1F;259 (about the pillage of a village in Sayfo)",
-            "turoyo": "",
+            "turoyo": "Hedi šridi lu=mal di=arʕo. Then they went after the riches of the land. 2018_07_08_au_003_NE_1F about the pillage of a village in Sayfo",
             "translations": [],
-            "references": []
+            "references": ["259"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Hedi šridi lu=mal di=arʕo. Then they went after the riches of the land. 2018_07_08_au_003_NE_1F"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "ref",
+                "value": "259"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "about the pillage of a village in Sayfo"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Hedi šridi lu=mal di=arʕo. Then they went after the riches of the land. 2018_07_08_au_003_NE_1F;259 (about the pillage of a village in Sayfo)",
+            "segments": [
+              {
+                "turoyo": "Hedi šridi lu=mal di=arʕo. Then they went after the riches of the land. 2018_07_08_au_003_NE_1F",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "(about the pillage of a village in Sayfo)",
+                "translations": [],
+                "references": ["259"]
+              }
+            ]
           }
         ]
       }

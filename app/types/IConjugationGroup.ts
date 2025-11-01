@@ -1,8 +1,6 @@
+import type { IExample } from '~/types/IExample'
+
 export interface IConjugationGroup {
     name: string
-    examples: Array<{
-        turoyo: string
-        translations: string[]
-        references: string[]
-    }>
+    examples: IExample[]
 }

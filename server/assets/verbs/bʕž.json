@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "bʕəžle",
-        "boʕəž"
-      ],
+      "forms": ["bʕəžle", "boʕəž"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,70 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "wayla bʕəšto",
+            "translations": ["ha, du verruchter Stein!"],
+            "references": ["133", "96/151"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "wayla bʕəšto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻha, du verruchter Stein!ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "133"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "96/151"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "wayla bʕəšto ʻha, du verruchter Stein!ʼ; 133; 96/151;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "wayla bʕəšto",
+                "translations": ["ʻha, du verruchter Stein!ʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["133"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["96/151"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "verrecken;"
-  ],
+  "idioms": ["verrecken;"],
   "uncertain": false
 }

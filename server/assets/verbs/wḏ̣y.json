@@ -14,30 +14,55 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mwaḏ̣ele",
-        "mwaḏ̣e"
-      ],
+      "forms": ["mwaḏ̣ele", "mwaḏ̣e"],
       "conjugations": {
         "Infectum (???)": [
           {
-            "text": "mwaḏ̣e mətwaḏ̣e ???????",
-            "turoyo": "",
+            "turoyo": "mwaḏ̣e mətwaḏ̣e ???????",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mwaḏ̣e mətwaḏ̣e ???????"
+              }
+            ],
+            "text": "mwaḏ̣e mətwaḏ̣e ???????",
+            "segments": [
+              {
+                "turoyo": "mwaḏ̣e mətwaḏ̣e ???????",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
-            "text": "PrS 36/9",
-            "turoyo": "",
+            "turoyo": "Pr",
             "translations": [],
-            "references": []
+            "references": ["S 36/9"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Pr"
+              },
+              {
+                "kind": "ref",
+                "value": "S 36/9"
+              }
+            ],
+            "text": "PrS 36/9",
+            "segments": [
+              {
+                "turoyo": "Pr",
+                "translations": [],
+                "references": ["S 36/9"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "die Gebetswaschung vollziehen;"
-  ],
+  "idioms": ["die Gebetswaschung vollziehen;"],
   "uncertain": false
 }

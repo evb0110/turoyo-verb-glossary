@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ḥšəkle",
-        "ḥošək"
-      ],
+      "forms": ["ḥšəkle", "ḥošək"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-ḥošakno u=tətən b-gawe d-u=qallən",
+            "translations": ["ich stopfe den Tabak in die Pfeife"],
+            "references": ["100"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-ḥošakno u=tətən b-gawe d-u=qallən "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich stopfe den Tabak in die Pfeifeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "100"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-ḥošakno u=tətən b-gawe d-u=qallən ʻich stopfe den Tabak in die Pfeifeʼ; 100;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-ḥošakno u=tətən b-gawe d-u=qallən",
+                "translations": ["ʻich stopfe den Tabak in die Pfeifeʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["100"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "stopfen;"
-  ],
+  "idioms": ["stopfen;"],
   "uncertain": false
 }

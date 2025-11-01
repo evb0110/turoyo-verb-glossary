@@ -14,25 +14,86 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mnaǧele",
-        "mnaǧe"
-      ],
+      "forms": ["mnaǧele", "mnaǧe"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "moryo mnaǧe k-omər maye šaʕuṯe ko-noḥət mənne u=yawmo kule",
+            "translations": [
+              "der Herr bewahre uns! Gelbes Wasser (Eiter) fliesst aus ihnen herab, den ganzen Tag"
+            ],
+            "references": ["419", "78/209"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "moryo mnaǧe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-omər maye šaʕuṯe ko-noḥət mənne u=yawmo kule "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Herr bewahre uns! Gelbes Wasser (Eiter) fliesst aus ihnen herab, den ganzen Tagʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "419"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/209"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "moryo mnaǧe, k-omər maye šaʕuṯe ko-noḥət mənne u=yawmo kule ʻder Herr bewahre uns! Gelbes Wasser (Eiter) fliesst aus ihnen herab, den ganzen Tagʼ; 419; 78/209;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "moryo mnaǧe, k-omər maye šaʕuṯe ko-noḥət mənne u=yawmo kule",
+                "translations": [
+                  "ʻder Herr bewahre uns! Gelbes Wasser (Eiter) fliesst aus ihnen herab, den ganzen Tagʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["419"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["78/209"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "retten;",
-    "More examples"
-  ],
+  "idioms": ["retten;", "More examples"],
   "uncertain": false
 }

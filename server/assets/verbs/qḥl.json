@@ -5,25 +5,105 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "qaḥəl",
-        "qoḥəl"
-      ],
+      "forms": ["qaḥəl", "qoḥəl"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "ab=bote qaḥili",
+            "translations": ["die (alten) Häuser brachen zusammen"],
+            "references": ["325"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ab=bote qaḥili "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie (alten) Häuser brachen zusammenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "325"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ab=bote qaḥili ʻdie (alten) Häuser brachen zusammenʼ; 325;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ab=bote qaḥili",
+                "translations": ["ʻdie (alten) Häuser brachen zusammenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["325"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "I+tərto lo kəmqaḥmo ʕal u+čelikayḏa (Ilyas p.c. 5-01-2021)",
-            "turoyo": "",
+            "turoyo": "I+tərto lo kəmqaḥmo ʕal u+čelikayḏa Ilyas p.c. --",
             "translations": [],
-            "references": []
+            "references": ["5", "01", "2021"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "I+tərto lo kəmqaḥmo ʕal u+čelikayḏa "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c. "
+              },
+              {
+                "kind": "ref",
+                "value": "5"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "01"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "2021"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "I+tərto lo kəmqaḥmo ʕal u+čelikayḏa (Ilyas p.c. 5-01-2021)",
+            "segments": [
+              {
+                "turoyo": "I+tərto lo kəmqaḥmo ʕal u+čelikayḏa (Ilyas p.c. --)",
+                "translations": [],
+                "references": ["5", "01", "2021"]
+              }
+            ]
           }
         ]
       }

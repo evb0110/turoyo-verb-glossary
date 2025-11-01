@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mdalele",
-        "mdaləl"
-      ],
+      "forms": ["mdalele", "mdaləl"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,53 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "mdallo",
+            "translations": ["verwöhnt (Kind)"],
+            "references": ["497"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mdallo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻverwöhnt (Kind)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "497"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mdallo ʻverwöhnt (Kind)ʼ; 497;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mdallo",
+                "translations": ["ʻverwöhnt (Kind)ʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["497"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "verwöhnen;"
-  ],
+  "idioms": ["verwöhnen;"],
   "uncertain": false
 }

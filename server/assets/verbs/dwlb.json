@@ -5,24 +5,61 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mdawlable",
-        "mdawləb"
-      ],
+      "forms": ["mdawlable", "mdawləb"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "u=babo ko-mdawləb ʕal i=kəfla",
+            "translations": [
+              "der Vater verwaltet die Familie, steht ihr vor, gibt jedem Anweisung, was er zu tun hat"
+            ],
+            "references": ["774"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=babo ko-mdawləb ʕal i=kəfla "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Vater verwaltet die Familie, steht ihr vor, gibt jedem Anweisung, was er zu tun hatʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "774"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=babo ko-mdawləb ʕal i=kəfla ʻder Vater verwaltet die Familie, steht ihr vor, gibt jedem Anweisung, was er zu tun hatʼ; 774;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=babo ko-mdawləb ʕal i=kəfla",
+                "translations": [
+                  "ʻder Vater verwaltet die Familie, steht ihr vor, gibt jedem Anweisung, was er zu tun hatʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["774"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "vorstehen, verwalten, die Arbeit verteilen;"
-  ],
+  "idioms": ["vorstehen, verwalten, die Arbeit verteilen;"],
   "uncertain": false
 }

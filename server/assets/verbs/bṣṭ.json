@@ -14,33 +14,355 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mbaṣaṭle",
-        "mbaṣəṭ"
-      ],
+      "forms": ["mbaṣaṭle", "mbaṣəṭ"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "1) (fig.) alo mbaṣaṭla u=zʕuro ʻbei Gott, sie hat den Jungen aber verdroschenʼ; 196; 2) səmla mṭela bărān ḥšela b-i=rezo, w mbaṣaṭla lawġəl, w səmla xəd aṯi mena ʻda holte sie einen Hammel, füllte ihn mit Reis, räumte drinnen auf und tat, was sie konnteʼ; 196; 113/132;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "fig. alo mbaṣaṭla u=zʕuro",
+            "translations": ["bei Gott, sie hat den Jungen aber verdroschen"],
+            "references": ["1", "196"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "fig."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " alo mbaṣaṭla u=zʕuro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻbei Gott, sie hat den Jungen aber verdroschenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "196"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) (fig.) alo mbaṣaṭla u=zʕuro ʻbei Gott, sie hat den Jungen aber verdroschenʼ; 196;",
+            "segments": [
+              {
+                "turoyo": ") (fig.) alo mbaṣaṭla u=zʕuro",
+                "translations": [
+                  "ʻbei Gott, sie hat den Jungen aber verdroschenʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["196"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "səmla mṭela bărān ḥšela b-i=rezo w mbaṣaṭla lawġəl w səmla xəd aṯi mena",
+            "translations": [
+              "da holte sie einen Hammel, füllte ihn mit Reis, räumte drinnen auf und tat, was sie konnte"
+            ],
+            "references": ["2", "196", "113/132"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " səmla mṭela bărān ḥšela b-i=rezo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mbaṣaṭla lawġəl"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w səmla xəd aṯi mena "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda holte sie einen Hammel, füllte ihn mit Reis, räumte drinnen auf und tat, was sie konnteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "196"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "113/132"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) səmla mṭela bărān ḥšela b-i=rezo, w mbaṣaṭla lawġəl, w səmla xəd aṯi mena ʻda holte sie einen Hammel, füllte ihn mit Reis, räumte drinnen auf und tat, was sie konnteʼ; 196; 113/132;",
+            "segments": [
+              {
+                "turoyo": ") səmla mṭela bărān ḥšela b-i=rezo, w mbaṣaṭla lawġəl, w səmla xəd aṯi mena",
+                "translations": [
+                  "ʻda holte sie einen Hammel, füllte ihn mit Reis, räumte drinnen auf und tat, was sie konnteʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["196"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["113/132"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "kəlla kə-mbaṣṭo u=layšo bəṯṯər me d-ḥaməʕ gə-mbaṣṭína-le ..",
+            "translations": [
+              "sie machten den Brotteig zurecht",
+              "wenn er (der Teig) aufgegangen ist, klopfen wir ihn (d.h. die portionierten Teigklumpen) flach"
+            ],
+            "references": ["1", "196", "JL 9"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kəlla kə-mbaṣṭo u=layšo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie machten den Brotteig zurechtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "196"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər me d-ḥaməʕ gə-mbaṣṭína-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn er (der Teig) aufgegangen ist, klopfen wir ihn (d.h. die portionierten Teigklumpen) flachʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 9"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "10"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) kəlla kə-mbaṣṭo u=layšo ʻsie machten den Brotteig zurechtʼ; 196; bəṯṯər me d-ḥaməʕ gə-mbaṣṭína-le ʻwenn er (der Teig) aufgegangen ist, klopfen wir ihn (d.h. die portionierten Teigklumpen) flachʼ JL 9.10.6;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") kəlla kə-mbaṣṭo u=layšo",
+                "translations": ["ʻsie machten den Brotteig zurechtʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["196"]
+              },
+              {
+                "turoyo": "bəṯṯər me d-ḥaməʕ gə-mbaṣṭína-le ..",
+                "translations": [
+                  "ʻwenn er (der Teig) aufgegangen ist, klopfen wir ihn (d.h. die portionierten Teigklumpen) flachʼ"
+                ],
+                "references": ["JL 9", "10", "6"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "mbaṣə́ṭ lawġəl mʕadel-e w sum-e",
+            "translations": ["räume drinnen auf und mache alles zurecht"],
+            "references": ["2", "196", "113/131"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mbaṣə́ṭ lawġəl mʕadel-e"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w sum-e "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻräume drinnen auf und mache alles zurechtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "196"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "113/131"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) mbaṣə́ṭ lawġəl mʕadel-e, w sum-e ʻräume drinnen auf und mache alles zurechtʼ; 196; 113/131;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mbaṣə́ṭ lawġəl mʕadel-e, w sum-e",
+                "translations": ["ʻräume drinnen auf und mache alles zurechtʼ"],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["196"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["113/131"]
+              }
+            ]
           }
         ]
       }

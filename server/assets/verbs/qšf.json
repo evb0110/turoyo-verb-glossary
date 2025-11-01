@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mqašəf",
-        "miqašəf"
-      ],
+      "forms": ["mqašəf", "miqašəf"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,74 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mqašfi iḏoṯa",
+            "translations": [
+              "ihre Hände sind ganz hart von Schwielen geworden"
+            ],
+            "references": ["172", "113/146"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mqašfi iḏoṯa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻihre Hände sind ganz hart von Schwielen gewordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "172"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "113/146"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mqašfi iḏoṯa ʻihre Hände sind ganz hart von Schwielen gewordenʼ; 172; 113/146;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mqašfi iḏoṯa",
+                "translations": [
+                  "ʻihre Hände sind ganz hart von Schwielen gewordenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["172"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["113/146"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) schwielig werden, aufplatzen, verschmutzen;"
-  ],
+  "idioms": ["(Detrans.) schwielig werden, aufplatzen, verschmutzen;"],
   "uncertain": false
 }

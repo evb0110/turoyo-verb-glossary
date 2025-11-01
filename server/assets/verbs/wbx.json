@@ -14,24 +14,61 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mwabaxle",
-        "mwabəx"
-      ],
+      "forms": ["mwabaxle", "mwabəx"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "u=qašo ko-mwabəx i=ǧamaʕa",
+            "translations": [
+              "der Pfarrer macht der Gemeinde ernste Vorhaltungen"
+            ],
+            "references": ["164"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=qašo ko-mwabəx i=ǧamaʕa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Pfarrer macht der Gemeinde ernste Vorhaltungenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "164"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=qašo ko-mwabəx i=ǧamaʕa ʻder Pfarrer macht der Gemeinde ernste Vorhaltungenʼ; 164;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=qašo ko-mwabəx i=ǧamaʕa",
+                "translations": [
+                  "ʻder Pfarrer macht der Gemeinde ernste Vorhaltungenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["164"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "Vorhaltungen machen;"
-  ],
+  "idioms": ["Vorhaltungen machen;"],
   "uncertain": false
 }

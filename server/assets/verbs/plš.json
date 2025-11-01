@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mpaləš",
-        "mipaləš"
-      ],
+      "forms": ["mpaləš", "mipaləš"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,87 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mpalšo не тот глагол в тексте а в тексте mpärpso we need more examples - oder tilgen!",
+            "translations": ["das Schiff (f) zerschellte"],
+            "references": ["172", "97/37"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mpalšo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Schiff (f) zerschellteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "172"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "97/37"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " не тот глагол в тексте"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " а в тексте mpärpso we need more examples - oder tilgen!"
+              }
+            ],
             "text": "mpalšo ʻdas Schiff (f) zerschellteʼ; 172; 97/37; не тот глагол в тексте, а в тексте mpärpso we need more examples - oder tilgen!",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mpalšo",
+                "translations": ["ʻdas Schiff (f) zerschellteʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["172"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["97/37"]
+              },
+              {
+                "turoyo": "не тот глагол в тексте, а в тексте mpärpso we need more examples - oder tilgen!",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) zerschellen;"
-  ],
+  "idioms": ["(Detrans.) zerschellen;"],
   "uncertain": false
 }

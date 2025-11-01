@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "nawəṣ",
-        "nowəṣ"
-      ],
+      "forms": ["nawəṣ", "nowəṣ"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "nawiṣi a=sʕore",
+            "translations": ["die Gerste hat zu spriessen begonnen"],
+            "references": ["466"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "nawiṣi a=sʕore "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Gerste hat zu spriessen begonnenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "466"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "nawiṣi a=sʕore ʻdie Gerste hat zu spriessen begonnenʼ; 466;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "nawiṣi a=sʕore",
+                "translations": ["ʻdie Gerste hat zu spriessen begonnenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["466"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "eben zu spriessen anfangen;"
-  ],
+  "idioms": ["eben zu spriessen anfangen;"],
   "uncertain": false
 }

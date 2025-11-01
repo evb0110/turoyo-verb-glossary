@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mṣaḥṣaḥle",
-        "mṣaḥṣəḥ"
-      ],
+      "forms": ["mṣaḥṣaḥle", "mṣaḥṣəḥ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mṣaḥṣaḥli u-darzayḏi",
+            "translations": ["ich habe meine Lektion kapiert, gelernt"],
+            "references": ["801"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mṣaḥṣaḥli u-darzayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe meine Lektion kapiert, gelerntʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "801"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mṣaḥṣaḥli u-darzayḏi ʻich habe meine Lektion kapiert, gelerntʼ; 801;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mṣaḥṣaḥli u-darzayḏi",
+                "translations": ["ʻich habe meine Lektion kapiert, gelerntʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["801"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "genau kapieren, genau feststellen, korrigieren;"
-  ],
+  "idioms": ["genau kapieren, genau feststellen, korrigieren;"],
   "uncertain": false
 }

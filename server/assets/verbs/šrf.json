@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "mašrafle",
-        "mašrəf"
-      ],
+      "forms": ["mašrafle", "mašrəf"],
       "conjugations": {
         "Infinitiv": [
           {
+            "turoyo": "tēšrifo",
+            "translations": ["Dung abwerfen von Vögeln"],
+            "references": ["153"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "tēšrifo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻDung abwerfen von Vögelnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "153"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "tēšrifo ʻDung abwerfen von Vögelnʼ; 153;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "tēšrifo",
+                "translations": ["ʻDung abwerfen von Vögelnʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["153"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "Dung abwerfen (Vögel);"
-  ],
+  "idioms": ["Dung abwerfen (Vögel);"],
   "uncertain": false
 }

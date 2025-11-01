@@ -14,24 +14,78 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mətmanele",
-        "mətmane"
-      ],
+      "forms": ["mətmanele", "mətmane"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ummo qum. omər l-ayko? ummo sum aʕmi. k-mətmane u=armənoyo prs",
+            "translations": [
+              "komm!” sagte sie. “Wohin?” “Mich zu umarmen”. Das war, was der Armenier wünschte"
+            ],
+            "references": ["805", "87/1"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ummo qum. omər l-ayko? ummo sum aʕmi. k-mətmane u=armənoyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ“komm!” sagte sie. “Wohin?” “Mich zu umarmen”. Das war, was der Armenier wünschteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "805"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "87/1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ummo qum. omər l-ayko? ummo sum aʕmi. k-mətmane u=armənoyo ʻ“komm!” sagte sie. “Wohin?” “Mich zu umarmen”. Das war, was der Armenier wünschteʼ; 805; prs 87/1;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ummo qum. omər l-ayko? ummo sum aʕmi. k-mətmane u=armənoyo",
+                "translations": [
+                  "ʻ“komm!” sagte sie. “Wohin?” “Mich zu umarmen”. Das war, was der Armenier wünschteʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["805"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["87/1"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sehnlichst wünschen;"
-  ],
+  "idioms": ["sehnlichst wünschen;"],
   "uncertain": false
 }

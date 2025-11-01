@@ -14,34 +14,128 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "lḥəmle",
-        "loḥəm"
-      ],
+      "forms": ["lḥəmle", "loḥəm"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "azzayo me-láxaf-va čiko b-i=qarno w-i=qarno lḥəmla aʕla Lu",
+            "translations": [
+              "‘It (snake, f.) crawled backwards and got into the horn, and the horn enclosed it’"
+            ],
+            "references": ["F 306/73"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "azzayo me-láxaf-va čiko b-i=qarno w-i=qarno lḥəmla aʕla "
+              },
+              {
+                "kind": "translation",
+                "value": "‘It (snake, f.) crawled backwards and got into the horn, and the horn enclosed it’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Lu"
+              },
+              {
+                "kind": "ref",
+                "value": "F 306/73"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "azzayo me-láxaf-va čiko b-i=qarno w-i=qarno lḥəmla aʕla ‘It (snake, f.) crawled backwards and got into the horn, and the horn enclosed it’ LuF 306/73;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "azzayo me-láxaf-va čiko b-i=qarno w-i=qarno lḥəmla aʕla Lu",
+                "translations": [
+                  "‘It (snake, f.) crawled backwards and got into the horn, and the horn enclosed it’"
+                ],
+                "references": ["F 306/73"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "malḥamle",
-        "malḥəm"
-      ],
+      "forms": ["malḥamle", "malḥəm"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "hiye malḥamle raġle k-omər ḥamšaḥṣar=yawme d-yawmoṯe raġle hawən xəd-meqəm",
+            "translations": [
+              "er lötete sich die Beine wieder an, und nach fünfzehn Tagen waren sie, wie sie früher gewesen waren"
+            ],
+            "references": ["140", "69/213"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hiye malḥamle raġle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-omər ḥamšaḥṣar=yawme d-yawmoṯe raġle hawən xəd-meqəm "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer lötete sich die Beine wieder an, und nach fünfzehn Tagen waren sie, wie sie früher gewesen warenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "140"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/213"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "hiye malḥamle raġle, k-omər ḥamšaḥṣar=yawme d-yawmoṯe raġle hawən xəd-meqəm ʻer lötete sich die Beine wieder an, und nach fünfzehn Tagen waren sie, wie sie früher gewesen warenʼ; 140; 69/213;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "hiye malḥamle raġle, k-omər ḥamšaḥṣar=yawme d-yawmoṯe raġle hawən xəd-meqəm",
+                "translations": [
+                  "ʻer lötete sich die Beine wieder an, und nach fünfzehn Tagen waren sie, wie sie früher gewesen warenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["140"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["69/213"]
+              }
+            ]
           }
         ]
       }

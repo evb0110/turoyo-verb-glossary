@@ -14,32 +14,190 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "šʕile",
-        "šoʕəl"
-      ],
+      "forms": ["šʕile", "šoʕəl"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "šʕile l-u=kurrəko prs prs",
+            "translations": ["da hustete der Jüngling"],
+            "references": ["287", "43/21", "22"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "šʕile l-u=kurrəko "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda hustete der Jünglingʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "287"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "43/21"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "22"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "117/37"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "šʕile l-u=kurrəko ʻda hustete der Jünglingʼ; 287; prs 43/21, 22; prs 117/37;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "šʕile l-u=kurrəko",
+                "translations": ["ʻda hustete der Jünglingʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["287"]
+              },
+              {
+                "turoyo": "prs ,",
+                "translations": [],
+                "references": ["43/21", "22"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["117/37"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "hakka i=naqla d-aṯi ko-šoʕəl w mʕaṭəš",
+            "translations": [
+              "wenn er aber kommt, so wird er husten und niesen"
+            ],
+            "references": ["296", "75/33", "38"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hakka i=naqla d-aṯi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-šoʕəl w mʕaṭəš "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn er aber kommt, so wird er husten und niesenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "296"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/33"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "38"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "hakka i=naqla d-aṯi, ko-šoʕəl w mʕaṭəš ʻwenn er aber kommt, so wird er husten und niesenʼ; 296; 75/33, 38;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "hakka i=naqla d-aṯi, ko-šoʕəl w mʕaṭəš",
+                "translations": [
+                  "ʻwenn er aber kommt, so wird er husten und niesenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["296"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["75/33", "38"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "husten;"
-  ],
+  "idioms": ["husten;"],
   "uncertain": false
 }

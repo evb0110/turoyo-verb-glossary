@@ -18,24 +18,65 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mʕayamle",
-        "mʕayəm"
-      ],
+      "forms": ["mʕayamle", "mʕayəm"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "i=šmayo mʕayamla -",
+            "translations": ["der Himmel hat sich bewölkt"],
+            "references": ["482", "483"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=šmayo mʕayamla "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Himmel hat sich bewölktʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "482"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "483"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=šmayo mʕayamla ʻder Himmel hat sich bewölktʼ; 482-483;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=šmayo mʕayamla",
+                "translations": ["ʻder Himmel hat sich bewölktʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["482", "483"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sich bewölken;"
-  ],
+  "idioms": ["sich bewölken;"],
   "uncertain": false
 }

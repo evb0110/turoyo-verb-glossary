@@ -12,24 +12,57 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mparaḏle",
-        "mparəḏ"
-      ],
+      "forms": ["mparaḏle", "mparəḏ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mparaḏle kallawat",
+            "translations": ["er wechselte Kleingeld ein"],
+            "references": ["159"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mparaḏle kallawat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wechselte Kleingeld einʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "159"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mparaḏle kallawat ʻer wechselte Kleingeld einʼ; 159;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mparaḏle kallawat",
+                "translations": ["ʻer wechselte Kleingeld einʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["159"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "einwechseln;"
-  ],
+  "idioms": ["einwechseln;"],
   "uncertain": false
 }

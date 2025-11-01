@@ -14,113 +14,2367 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "maḥatle",
-        "maḥət"
-      ],
+      "forms": ["maḥatle", "maḥət"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "1) u=abr-ayḏe, maḥətle b-i=madrase, w maḥətle i=odayḏe bášqa-yo ʻer tat seinen Sohn in die Schule und richtete ein besonderes Zimmer für ihn einʼ; 647; 69/46; u=bīnbaši maḥátle-li bayne ele w l-u=aṣṣubay ḥreno ʻder Major setzte mich zwischen sich und den anderen Unteroffizierʼ; LB 332; maḥatte a=tre-abn-ayḏe ʕal-aq=qayse marfele nuro b-aq=qayse muqḏile ‘Man legte die beiden Söhne darauf und er (der Vater) zündete das Holz an und verbrannte sie’; 21/91 [MT] u=maymūn šqile i=gweto, simole  tarte=parčayat, maḥatle ḥḏo  b-i=mizən m-af=falq-anək w-i=ḥreto-ste maḥtole b-ʕaršone b-feme ‘Der Affe nahm den Käse, machte zwei Stücke daraus, legte eins von diesen Stücken auf die Wage, und das andere legte  er zwischen seine Zähne, in sein Maul’; 22/7",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "u=abr-ayḏe maḥətle b-i=madrase w maḥətle i=odayḏe bášqa-yo u=bīnbaši maḥátle-li bayne ele w l-u=aṣṣubay ḥreno maḥatte a=tre-abn-ayḏe ʕal-aq=qayse marfele nuro b-aq=qayse muqḏile u=maymūn šqile i=gweto simole tarte=parčayat maḥatle ḥḏo b-i=mizən m-af=falq-anək w-i=ḥreto-ste maḥtole b-ʕaršone b-feme",
+            "translations": [
+              "er tat seinen Sohn in die Schule und richtete ein besonderes Zimmer für ihn ein",
+              "der Major setzte mich zwischen sich und den anderen Unteroffizier",
+              "‘Man legte die beiden Söhne darauf und er (der Vater) zündete das Holz an und verbrannte sie’",
+              "‘Der Affe nahm den Käse, machte zwei Stücke daraus, legte eins von diesen Stücken auf die Wage, und das andere legte er zwischen seine Zähne, in sein Maul’"
+            ],
+            "references": ["1", "647", "69/46"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=abr-ayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥətle b-i=madrase"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w maḥətle i=odayḏe bášqa-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer tat seinen Sohn in die Schule und richtete ein besonderes Zimmer für ihn einʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "647"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/46"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=bīnbaši maḥátle-li bayne ele w l-u=aṣṣubay ḥreno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Major setzte mich zwischen sich und den anderen Unteroffizierʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 332"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥatte a=tre-abn-ayḏe ʕal-aq=qayse marfele nuro b-aq=qayse muqḏile "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Man legte die beiden Söhne darauf und er (der Vater) zündete das Holz an und verbrannte sie’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/91"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=maymūn šqile i=gweto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " simole  tarte=parčayat"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥatle ḥḏo  b-i=mizən m-af=falq-anək w-i=ḥreto-ste maḥtole b-ʕaršone b-feme "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Der Affe nahm den Käse, machte zwei Stücke daraus, legte eins von diesen Stücken auf die Wage, und das andere legte  er zwischen seine Zähne, in sein Maul’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "22/7"
+              }
+            ],
+            "text": "1) u=abr-ayḏe, maḥətle b-i=madrase, w maḥətle i=odayḏe bášqa-yo ʻer tat seinen Sohn in die Schule und richtete ein besonderes Zimmer für ihn einʼ; 647; 69/46; u=bīnbaši maḥátle-li bayne ele w l-u=aṣṣubay ḥreno ʻder Major setzte mich zwischen sich und den anderen Unteroffizierʼ; LB 332; maḥatte a=tre-abn-ayḏe ʕal-aq=qayse marfele nuro b-aq=qayse muqḏile ‘Man legte die beiden Söhne darauf und er (der Vater) zündete das Holz an und verbrannte sie’; 21/91 [MT] u=maymūn šqile i=gweto, simole tarte=parčayat, maḥatle ḥḏo b-i=mizən m-af=falq-anək w-i=ḥreto-ste maḥtole b-ʕaršone b-feme ‘Der Affe nahm den Käse, machte zwei Stücke daraus, legte eins von diesen Stücken auf die Wage, und das andere legte er zwischen seine Zähne, in sein Maul’; 22/7",
+            "segments": [
+              {
+                "turoyo": ") u=abr-ayḏe, maḥətle b-i=madrase, w maḥətle i=odayḏe bášqa-yo",
+                "translations": [
+                  "ʻer tat seinen Sohn in die Schule und richtete ein besonderes Zimmer für ihn einʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["647"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["69/46"]
+              },
+              {
+                "turoyo": "u=bīnbaši maḥátle-li bayne ele w l-u=aṣṣubay ḥreno",
+                "translations": [
+                  "ʻder Major setzte mich zwischen sich und den anderen Unteroffizierʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 332"]
+              },
+              {
+                "turoyo": "maḥatte a=tre-abn-ayḏe ʕal-aq=qayse marfele nuro b-aq=qayse muqḏile",
+                "translations": [
+                  "‘Man legte die beiden Söhne darauf und er (der Vater) zündete das Holz an und verbrannte sie’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "u=maymūn šqile i=gweto, simole tarte=parčayat, maḥatle ḥḏo b-i=mizən m-af=falq-anək w-i=ḥreto-ste maḥtole b-ʕaršone b-feme",
+                "translations": [
+                  "‘Der Affe nahm den Käse, machte zwei Stücke daraus, legte eins von diesen Stücken auf die Wage, und das andere legte er zwischen seine Zähne, in sein Maul’"
+                ],
+                "references": ["21/91"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["22/7"]
+              }
+            ]
           },
           {
+            "turoyo": "l-u=ṭayro maḥatle ʕal i=kawmo d-aḥ=ḥeṭe u=ṭayr-awo fayər maḥatle bayn-i=baxča maḥatte b-i=baxč-ayo l-aḥ=ḥəyewən dəṯṯe rʕalle u=gelo w-ad=dawme d-i=baxča kula",
+            "translations": [
+              "der Vogel liess sich auf dem Weizenhauen nieder",
+              "‘Jener Vogel flog und ließ sich in einem Garten nieder’",
+              "‘In diesem Garten hatten sie sich lagern lassen, und ihre Tiere hatten das Gras und die Bäume des ganzen Gartens abgeweidet’"
+            ],
+            "references": ["2", "652", "70/94"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-u=ṭayro maḥatle ʕal i=kawmo d-aḥ=ḥeṭe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Vogel liess sich auf dem Weizenhauen niederʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "652"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70/94"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "95"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=ṭayr-awo fayər"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥatle bayn-i=baxča "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Jener Vogel flog und ließ sich in einem Garten nieder’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/157"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥatte b-i=baxč-ayo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-aḥ=ḥəyewən dəṯṯe rʕalle u=gelo w-ad=dawme d-i=baxča kula "
+              },
+              {
+                "kind": "translation",
+                "value": "‘In diesem Garten hatten sie sich lagern lassen, und ihre Tiere hatten das Gras und die Bäume des ganzen Gartens abgeweidet’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/166"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "2) l-u=ṭayro maḥatle ʕal i=kawmo d-aḥ=ḥeṭe ʻder Vogel liess sich auf dem Weizenhauen niederʼ; 652; 70/94, 95; u=ṭayr-awo fayər, maḥatle bayn-i=baxča ‘Jener Vogel flog und ließ sich in einem Garten nieder’; 24/157; maḥatte b-i=baxč-ayo, l-aḥ=ḥəyewən dəṯṯe rʕalle u=gelo w-ad=dawme d-i=baxča kula ‘In diesem Garten hatten sie sich lagern lassen, und ihre Tiere hatten das Gras und die Bäume des ganzen Gartens abgeweidet’; 24/166 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") l-u=ṭayro maḥatle ʕal i=kawmo d-aḥ=ḥeṭe",
+                "translations": [
+                  "ʻder Vogel liess sich auf dem Weizenhauen niederʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["652"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["70/94", "95"]
+              },
+              {
+                "turoyo": "u=ṭayr-awo fayər, maḥatle bayn-i=baxča",
+                "translations": [
+                  "‘Jener Vogel flog und ließ sich in einem Garten nieder’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/157"]
+              },
+              {
+                "turoyo": "maḥatte b-i=baxč-ayo, l-aḥ=ḥəyewən dəṯṯe rʕalle u=gelo w-ad=dawme d-i=baxča kula",
+                "translations": [
+                  "‘In diesem Garten hatten sie sich lagern lassen, und ihre Tiere hatten das Gras und die Bäume des ganzen Gartens abgeweidet’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/166"],
+                "notes": ["[MT]"]
+              }
+            ]
           },
           {
+            "turoyo": "l-ma maḥátla-lxu harke harke maḥatlan u=sawal diḏan aḥ=ḥəyewən diḏan k-roʕən harke",
+            "translations": [
+              "wer hat euch hier lagern lassen",
+              "‘Wir haben unsere Herde, unsere Tiere hier lagern lassen, sie weiden hier’"
+            ],
+            "references": ["3", "653", "69/425"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-ma maḥátla-lxu harke "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwer hat euch hier lagern lassenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "653"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/425"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " harke maḥatlan u=sawal diḏan aḥ=ḥəyewən diḏan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-roʕən harke "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wir haben unsere Herde, unsere Tiere hier lagern lassen, sie weiden hier’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/169"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "3) l-ma maḥátla-lxu harke ʻwer hat euch hier lagern lassenʼ; 653; 69/425; harke maḥatlan u=sawal diḏan aḥ=ḥəyewən diḏan, k-roʕən harke ‘Wir haben unsere Herde, unsere Tiere hier lagern lassen, sie weiden hier’; 24/169 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") l-ma maḥátla-lxu harke",
+                "translations": ["ʻwer hat euch hier lagern lassenʼ"],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["653"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["69/425"]
+              },
+              {
+                "turoyo": "harke maḥatlan u=sawal diḏan aḥ=ḥəyewən diḏan, k-roʕən harke",
+                "translations": [
+                  "‘Wir haben unsere Herde, unsere Tiere hier lagern lassen, sie weiden hier’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/169"],
+                "notes": ["[MT]"]
+              }
+            ]
           },
           {
+            "turoyo": "hani u=zlām w-u=kačalōk maḥatte ʕal u=muklo",
+            "translations": [
+              "‘These, the man and the bald-headed, fell upon the food’"
+            ],
+            "references": ["4", "44/61"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "4"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hani"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=zlām w-u=kačalōk maḥatte ʕal u=muklo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘These, the man and the bald-headed, fell upon the food’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/61"
+              }
+            ],
             "text": "4) hani, u=zlām w-u=kačalōk maḥatte ʕal u=muklo ‘These, the man and the bald-headed, fell upon the food’; 44/61",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") hani, u=zlām w-u=kačalōk maḥatte ʕal u=muklo",
+                "translations": [
+                  "‘These, the man and the bald-headed, fell upon the food’"
+                ],
+                "references": ["4"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["44/61"]
+              }
+            ]
           },
           {
+            "turoyo": "uno babi málko-yo maḥatle-li noṭuro d-u=ḥawušo maḥatle roʕyo l-u=sawal diḏe maḥátle-le ǧinanči l-u=bəston-ano diḏe xudám-wo-le ġálabe",
+            "translations": [
+              "‘Mein Vater ist König. Er hatte mich als Wächter eingesetzt für den Apfel’",
+              "‘Er machte ihn zum Hirten für seine Herden’",
+              "‘In diesen seinen Obstgarten setzte er (der Sultan) einen Gärtner, und dieser pflegte ihn sehr gut’"
+            ],
+            "references": ["5", "21/47", "26/70"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "5"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " uno babi málko-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥatle-li noṭuro d-u=ḥawušo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Mein Vater ist König. Er hatte mich als Wächter eingesetzt für den Apfel’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/47"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥatle roʕyo l-u=sawal diḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er machte ihn zum Hirten für seine Herden’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/70"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥátle-le ǧinanči l-u=bəston-ano diḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " xudám-wo-le ġálabe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘In diesen seinen Obstgarten setzte er (der Sultan) einen Gärtner, und dieser pflegte ihn sehr gut’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "27/1"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "5) uno babi málko-yo, maḥatle-li noṭuro d-u=ḥawušo ‘Mein Vater ist König. Er hatte mich als Wächter eingesetzt für den Apfel’; 21/47; maḥatle roʕyo l-u=sawal diḏe ‘Er machte ihn zum Hirten für seine Herden’; 26/70; maḥátle-le ǧinanči l-u=bəston-ano diḏe, xudám-wo-le ġálabe ‘In diesen seinen Obstgarten setzte er (der Sultan) einen Gärtner, und dieser pflegte ihn sehr gut’; 27/1 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") uno babi málko-yo, maḥatle-li noṭuro d-u=ḥawušo",
+                "translations": [
+                  "‘Mein Vater ist König. Er hatte mich als Wächter eingesetzt für den Apfel’"
+                ],
+                "references": ["5"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["21/47"]
+              },
+              {
+                "turoyo": "maḥatle roʕyo l-u=sawal diḏe",
+                "translations": ["‘Er machte ihn zum Hirten für seine Herden’"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["26/70"]
+              },
+              {
+                "turoyo": "maḥátle-le ǧinanči l-u=bəston-ano diḏe, xudám-wo-le ġálabe",
+                "translations": [
+                  "‘In diesen seinen Obstgarten setzte er (der Sultan) einen Gärtner, und dieser pflegte ihn sehr gut’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["27/1"],
+                "notes": ["[MT]"]
+              }
+            ]
           },
           {
+            "turoyo": "mə-bəṯṯər də-mwaʕadle haṯe maḥatte i=məštuṯaṯṯe b-u=zmoro b-u=muklo b-u=kef b-u=ṣafa šawʕo=yawme u=babo mayəṯ <…> maḥatte u=ʕaz-ayḏe fayəš tloṯo=yarḥe",
+            "translations": [
+              "‘Nachdem er das versprochen hatte, veranstaltete man das Hochzeitsfest mit Musik, mit Essen, mit Vergnügen, mit frohem Sinn, sieben Tage lang’",
+              "‘Der Vater starb <…> man veranstaltete die Totentrauer für ihn; die dauerte drei Monate’"
+            ],
+            "references": ["6", "24/109", "28/9"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "6"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mə-bəṯṯər də-mwaʕadle haṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥatte i=məštuṯaṯṯe b-u=zmoro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-u=muklo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-u=kef"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-u=ṣafa šawʕo=yawme "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Nachdem er das versprochen hatte, veranstaltete man das Hochzeitsfest mit Musik, mit Essen, mit Vergnügen, mit frohem Sinn, sieben Tage lang’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/109"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=babo mayəṯ <…> maḥatte u=ʕaz-ayḏe fayəš tloṯo=yarḥe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Der Vater starb <…> man veranstaltete die Totentrauer für ihn; die dauerte drei Monate’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "28/9"
+              }
+            ],
             "text": "6) mə-bəṯṯər də-mwaʕadle haṯe, maḥatte i=məštuṯaṯṯe b-u=zmoro, b-u=muklo, b-u=kef, b-u=ṣafa šawʕo=yawme ‘Nachdem er das versprochen hatte, veranstaltete man das Hochzeitsfest mit Musik, mit Essen, mit Vergnügen, mit frohem Sinn, sieben Tage lang’; 24/109; u=babo mayəṯ <…> maḥatte u=ʕaz-ayḏe fayəš tloṯo=yarḥe ‘Der Vater starb <…> man veranstaltete die Totentrauer für ihn; die dauerte drei Monate’; 28/9",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mə-bəṯṯər də-mwaʕadle haṯe, maḥatte i=məštuṯaṯṯe b-u=zmoro, b-u=muklo, b-u=kef, b-u=ṣafa šawʕo=yawme",
+                "translations": [
+                  "‘Nachdem er das versprochen hatte, veranstaltete man das Hochzeitsfest mit Musik, mit Essen, mit Vergnügen, mit frohem Sinn, sieben Tage lang’"
+                ],
+                "references": ["6"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/109"]
+              },
+              {
+                "turoyo": "u=babo mayəṯ <…> maḥatte u=ʕaz-ayḏe fayəš tloṯo=yarḥe",
+                "translations": [
+                  "‘Der Vater starb <…> man veranstaltete die Totentrauer für ihn; die dauerte drei Monate’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["28/9"]
+              }
+            ]
           },
           {
-            "text": "7) bəṯṯər məd-hawi  u=abro w-yaru hawi abrə-də-šwaʕ=əšne, maḥatle b-i=madrase d-yoləf ‘Als der Sohn geboren war und heranwuchs und sieben Jahre alt geworden war, tat er ihn in die Schule zum Lernen’;24/4 [MT]; bəṯṯər məd-yariwi maḥtənne b-am=makatib b-am=madaris ‘Als sie heranwuchsen, tat man sie in die Schulen’; 24/257 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "bəṯṯər məd-hawi u=abro w-yaru hawi abrə-də-šwaʕ=əšne maḥatle b-i=madrase d-yoləf bəṯṯər məd-yariwi maḥtənne b-am=makatib b-am=madaris",
+            "translations": [
+              "‘Als der Sohn geboren war und heranwuchs und sieben Jahre alt geworden war, tat er ihn in die Schule zum Lernen’",
+              "‘Als sie heranwuchsen, tat man sie in die Schulen’"
+            ],
+            "references": ["7", "24/4", "24/257"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "7"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər məd-hawi  u=abro w-yaru hawi abrə-də-šwaʕ=əšne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥatle b-i=madrase d-yoləf "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Als der Sohn geboren war und heranwuchs und sieben Jahre alt geworden war, tat er ihn in die Schule zum Lernen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "ref",
+                "value": "24/4"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər məd-yariwi maḥtənne b-am=makatib b-am=madaris "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Als sie heranwuchsen, tat man sie in die Schulen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/257"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "7) bəṯṯər məd-hawi u=abro w-yaru hawi abrə-də-šwaʕ=əšne, maḥatle b-i=madrase d-yoləf ‘Als der Sohn geboren war und heranwuchs und sieben Jahre alt geworden war, tat er ihn in die Schule zum Lernen’;24/4 [MT]; bəṯṯər məd-yariwi maḥtənne b-am=makatib b-am=madaris ‘Als sie heranwuchsen, tat man sie in die Schulen’; 24/257 [MT]",
+            "segments": [
+              {
+                "turoyo": ") bəṯṯər məd-hawi u=abro w-yaru hawi abrə-də-šwaʕ=əšne, maḥatle b-i=madrase d-yoləf",
+                "translations": [
+                  "‘Als der Sohn geboren war und heranwuchs und sieben Jahre alt geworden war, tat er ihn in die Schule zum Lernen’"
+                ],
+                "references": ["7"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/4"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "bəṯṯər məd-yariwi maḥtənne b-am=makatib b-am=madaris",
+                "translations": [
+                  "‘Als sie heranwuchsen, tat man sie in die Schulen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/257"],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ],
         "ko-Preterit": [
           {
-            "text": "1) ḥzele ga kale ḥawyo komo lifo ʕal qḏole d-u=qašo w-ko-maḥatle feme b-aḏne ‘He saw: there was a black male snake twined around\nthe priest’s neck, and it had put its mouth into his earsʼ; 47/68; k-ḥoze ḥa ga kal ko-maḥatle aḏne ʕal škere d-kefe ‘He saw: a certain man has put his ear on a heap of stones’ 73/242;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "ḥzele ga kale ḥawyo komo lifo ʕal qḏole d-u=qašo w-ko-maḥatle feme b-aḏne s neck and it had put its mouth into his earsʼ k-ḥoze ḥa ga kal ko-maḥatle aḏne ʕal škere d-kefe",
+            "translations": [
+              "‘He saw: there was a black male snake twined around the priest’",
+              "‘He saw: a certain man has put his ear on a heap of stones’"
+            ],
+            "references": ["1", "47/68", "73/242"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥzele ga kale ḥawyo komo lifo ʕal qḏole d-u=qašo w-ko-maḥatle feme b-aḏne "
+              },
+              {
+                "kind": "translation",
+                "value": "‘He saw: there was a black male snake twined around\nthe priest’"
+              },
+              {
+                "kind": "turoyo",
+                "value": "s neck"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " and it had put its mouth into his earsʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "47/68"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ḥoze ḥa ga kal ko-maḥatle aḏne ʕal škere d-kefe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘He saw: a certain man has put his ear on a heap of stones’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/242"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) ḥzele ga kale ḥawyo komo lifo ʕal qḏole d-u=qašo w-ko-maḥatle feme b-aḏne ‘He saw: there was a black male snake twined around the priest’s neck, and it had put its mouth into his earsʼ; 47/68; k-ḥoze ḥa ga kal ko-maḥatle aḏne ʕal škere d-kefe ‘He saw: a certain man has put his ear on a heap of stones’ 73/242;",
+            "segments": [
+              {
+                "turoyo": ") ḥzele ga kale ḥawyo komo lifo ʕal qḏole d-u=qašo w-ko-maḥatle feme b-aḏne s neck, and it had put its mouth into his earsʼ",
+                "translations": [
+                  "‘He saw: there was a black male snake twined around the priest’"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["47/68"]
+              },
+              {
+                "turoyo": "k-ḥoze ḥa ga kal ko-maḥatle aḏne ʕal škere d-kefe",
+                "translations": [
+                  "‘He saw: a certain man has put his ear on a heap of stones’"
+                ],
+                "references": ["73/242"]
+              }
+            ]
           }
         ],
         "Preterit-wa": [
           {
-            "text": "1) maḥát-way-le gawze b-i=barikayḏe ʻer hatte Nüsse in seine Tasche getanʼ; 648; 76/97; amṭé-wa-llal-li hēžnu dawšak karyo w mxadde, maḥát-wa-llal-li ʕul m-i=mšammaʕ-ayo ʻerst da hatten sie mir eine kurze Matratze und ein Kissen gebracht, die sie auf die Plastikdecke ausbreitetenʼ; LB 131; 2) i=aṯto fayišo hiya-ste tamo b-u=marg-awo d-maḥát-wo-lle buwe tamo ʻ[seine] Frau war inzwischen auf der Wiese geblieben, auf der sie sich niedergelassen hattenʼ; 652; 24/164;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "maḥát-way-le gawze b-i=barikayḏe amṭé-wa-llal-li hēžnu dawšak karyo w mxadde maḥát-wa-llal-li ʕul m-i=mšammaʕ-ayo",
+            "translations": [
+              "er hatte Nüsse in seine Tasche getan",
+              "erst da hatten sie mir eine kurze Matratze und ein Kissen gebracht, die sie auf die Plastikdecke ausbreiteten"
+            ],
+            "references": ["1", "648", "76/97"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥát-way-le gawze b-i=barikayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hatte Nüsse in seine Tasche getanʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "648"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "76/97"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " amṭé-wa-llal-li hēžnu dawšak karyo w mxadde"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥát-wa-llal-li ʕul m-i=mšammaʕ-ayo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻerst da hatten sie mir eine kurze Matratze und ein Kissen gebracht, die sie auf die Plastikdecke ausbreitetenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 131"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) maḥát-way-le gawze b-i=barikayḏe ʻer hatte Nüsse in seine Tasche getanʼ; 648; 76/97; amṭé-wa-llal-li hēžnu dawšak karyo w mxadde, maḥát-wa-llal-li ʕul m-i=mšammaʕ-ayo ʻerst da hatten sie mir eine kurze Matratze und ein Kissen gebracht, die sie auf die Plastikdecke ausbreitetenʼ; LB 131;",
+            "segments": [
+              {
+                "turoyo": ") maḥát-way-le gawze b-i=barikayḏe",
+                "translations": ["ʻer hatte Nüsse in seine Tasche getanʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["648"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["76/97"]
+              },
+              {
+                "turoyo": "amṭé-wa-llal-li hēžnu dawšak karyo w mxadde, maḥát-wa-llal-li ʕul m-i=mšammaʕ-ayo",
+                "translations": [
+                  "ʻerst da hatten sie mir eine kurze Matratze und ein Kissen gebracht, die sie auf die Plastikdecke ausbreitetenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 131"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "i=aṯto fayišo hiya-ste tamo b-u=marg-awo d-maḥát-wo-lle buwe tamo",
+            "translations": [
+              "[seine] Frau war inzwischen auf der Wiese geblieben, auf der sie sich niedergelassen hatten"
+            ],
+            "references": ["2", "652", "24/164"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=aṯto fayišo hiya-ste tamo b-u=marg-awo d-maḥát-wo-lle buwe tamo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ[seine] Frau war inzwischen auf der Wiese geblieben, auf der sie sich niedergelassen hattenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "652"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/164"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) i=aṯto fayišo hiya-ste tamo b-u=marg-awo d-maḥát-wo-lle buwe tamo ʻ[seine] Frau war inzwischen auf der Wiese geblieben, auf der sie sich niedergelassen hattenʼ; 652; 24/164;",
+            "segments": [
+              {
+                "turoyo": ") i=aṯto fayišo hiya-ste tamo b-u=marg-awo d-maḥát-wo-lle buwe tamo",
+                "translations": [
+                  "ʻ[seine] Frau war inzwischen auf der Wiese geblieben, auf der sie sich niedergelassen hattenʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["652"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/164"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "lazəm maḥatno-le kafan w-d-əzzino aʕme l-i=maqbara d-maḥatn-e b-u=qawro k-ubʕeno d-maḥtət samo ʕal u=mus diḏox hat g-maḥtət tloṯo=mo=dinore",
+            "translations": [
+              "‘Ich muß ihm das Leichentuch anlegen, ihn zum Friedhof begleiten, ihn ins Grab legen’",
+              "‘Ich möchte, daß du Gift auf dein Rasiermesser tust’",
+              "du musst dreihundert Dinar bezahlen"
+            ],
+            "references": ["1", "25/45", "27/29"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lazəm maḥatno-le kafan w-d-əzzino aʕme l-i=maqbara d-maḥatn-e b-u=qawro "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Ich muß ihm das Leichentuch anlegen, ihn zum Friedhof begleiten, ihn ins Grab legen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/45"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ubʕeno d-maḥtət samo ʕal u=mus diḏox "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Ich möchte, daß du Gift auf dein Rasiermesser tust’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "27/29"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "hat g-maḥtət tloṯo=mo=dinore "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu musst dreihundert Dinar bezahlenʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "EL 51"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) lazəm maḥatno-le kafan w-d-əzzino aʕme l-i=maqbara d-maḥatn-e b-u=qawro ‘Ich muß ihm das Leichentuch anlegen, ihn zum Friedhof begleiten, ihn ins Grab legen’; 25/45; k-ubʕeno d-maḥtət samo ʕal u=mus diḏox ‘Ich möchte, daß du Gift auf dein Rasiermesser tust’; 27/29;hat g-maḥtət tloṯo=mo=dinore ʻdu musst dreihundert Dinar bezahlenʼ EL 51;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") lazəm maḥatno-le kafan w-d-əzzino aʕme l-i=maqbara d-maḥatn-e b-u=qawro",
+                "translations": [
+                  "‘Ich muß ihm das Leichentuch anlegen, ihn zum Friedhof begleiten, ihn ins Grab legen’"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["25/45"]
+              },
+              {
+                "turoyo": "k-ubʕeno d-maḥtət samo ʕal u=mus diḏox",
+                "translations": [
+                  "‘Ich möchte, daß du Gift auf dein Rasiermesser tust’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["27/29"]
+              },
+              {
+                "turoyo": "hat g-maḥtət tloṯo=mo=dinore",
+                "translations": ["ʻdu musst dreihundert Dinar bezahlenʼ"],
+                "references": ["EL 51"]
+              }
+            ]
           },
           {
-            "text": "2) gəm-maḥət ʕal maye ʻer wird sich auf einem Wasser niederlassenʼ; 652; prs 52/31; aṯi u=malko d-ad=dədwone l-gabi, g-soyəm ʕamro ʕal ad=dədwone d-lə=maḥti aʕlayxu ad=dədwone ʻder König der Fliegen ist zu mir gekommen, er wird dann den Fliegen Befehl geben, dass sie nicht auf euch setzenʼ; 653; prs 171/4; u=ṭayro masafa d-sedo tre k-maḥət, k-uzzé moṭe-le d-moḥe u=sayfo qoṭe-le, k-foyər u=ṭayro ‘Der Vogel ließ sich in einer Entfernung von ein zwei Ackerfurchen nieder. Er ging, um ihn zu erreichen, mit dem Schwerte nach ihm zu schlagen und ihn zu töten. Der Vogel flog fort’; 24/145 6) b-u=yawm-awo mʔamalla l-az=zamore d-oṯən w-d-maḥti i=məštut-ayḏe ‘Und noch am selben Tage befahl sie den Musikern, zu kommen und das Hochzeitsfest für ihn zu veranstalten’; 23/48",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "gəm-maḥət ʕal maye prs aṯi u=malko d-ad=dədwone l-gabi g-soyəm ʕamro ʕal ad=dədwone d-lə=maḥti aʕlayxu ad=dədwone prs u=ṭayro masafa d-sedo tre k-maḥət k-uzzé moṭe-le d-moḥe u=sayfo qoṭe-le k-foyər u=ṭayro",
+            "translations": [
+              "er wird sich auf einem Wasser niederlassen",
+              "der König der Fliegen ist zu mir gekommen, er wird dann den Fliegen Befehl geben, dass sie nicht auf euch setzen",
+              "‘Der Vogel ließ sich in einer Entfernung von ein zwei Ackerfurchen nieder. Er ging, um ihn zu erreichen, mit dem Schwerte nach ihm zu schlagen und ihn zu töten. Der Vogel flog fort’"
+            ],
+            "references": ["2", "652", "52/31"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəm-maḥət ʕal maye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wird sich auf einem Wasser niederlassenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "652"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "52/31"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aṯi u=malko d-ad=dədwone l-gabi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-soyəm ʕamro ʕal ad=dədwone d-lə=maḥti aʕlayxu ad=dədwone "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder König der Fliegen ist zu mir gekommen, er wird dann den Fliegen Befehl geben, dass sie nicht auf euch setzenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "653"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "171/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=ṭayro masafa d-sedo tre k-maḥət"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-uzzé moṭe-le d-moḥe u=sayfo qoṭe-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-foyər u=ṭayro "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Der Vogel ließ sich in einer Entfernung von ein zwei Ackerfurchen nieder. Er ging, um ihn zu erreichen, mit dem Schwerte nach ihm zu schlagen und ihn zu töten. Der Vogel flog fort’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/145"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "2) gəm-maḥət ʕal maye ʻer wird sich auf einem Wasser niederlassenʼ; 652; prs 52/31; aṯi u=malko d-ad=dədwone l-gabi, g-soyəm ʕamro ʕal ad=dədwone d-lə=maḥti aʕlayxu ad=dədwone ʻder König der Fliegen ist zu mir gekommen, er wird dann den Fliegen Befehl geben, dass sie nicht auf euch setzenʼ; 653; prs 171/4; u=ṭayro masafa d-sedo tre k-maḥət, k-uzzé moṭe-le d-moḥe u=sayfo qoṭe-le, k-foyər u=ṭayro ‘Der Vogel ließ sich in einer Entfernung von ein zwei Ackerfurchen nieder. Er ging, um ihn zu erreichen, mit dem Schwerte nach ihm zu schlagen und ihn zu töten. Der Vogel flog fort’; 24/145",
+            "segments": [
+              {
+                "turoyo": ") gəm-maḥət ʕal maye",
+                "translations": [
+                  "ʻer wird sich auf einem Wasser niederlassenʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["652"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["52/31"]
+              },
+              {
+                "turoyo": "aṯi u=malko d-ad=dədwone l-gabi, g-soyəm ʕamro ʕal ad=dədwone d-lə=maḥti aʕlayxu ad=dədwone",
+                "translations": [
+                  "ʻder König der Fliegen ist zu mir gekommen, er wird dann den Fliegen Befehl geben, dass sie nicht auf euch setzenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["653"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["171/4"]
+              },
+              {
+                "turoyo": "u=ṭayro masafa d-sedo tre k-maḥət, k-uzzé moṭe-le d-moḥe u=sayfo qoṭe-le, k-foyər u=ṭayro",
+                "translations": [
+                  "‘Der Vogel ließ sich in einer Entfernung von ein zwei Ackerfurchen nieder. Er ging, um ihn zu erreichen, mit dem Schwerte nach ihm zu schlagen und ihn zu töten. Der Vogel flog fort’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/145"]
+              }
+            ]
+          },
+          {
+            "turoyo": "b-u=yawm-awo mʔamalla l-az=zamore d-oṯən w-d-maḥti i=məštut-ayḏe",
+            "translations": [
+              "‘Und noch am selben Tage befahl sie den Musikern, zu kommen und das Hochzeitsfest für ihn zu veranstalten’"
+            ],
+            "references": ["6", "23/48"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "6"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-u=yawm-awo mʔamalla l-az=zamore d-oṯən w-d-maḥti i=məštut-ayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Und noch am selben Tage befahl sie den Musikern, zu kommen und das Hochzeitsfest für ihn zu veranstalten’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "23/48"
+              }
+            ],
+            "text": "6) b-u=yawm-awo mʔamalla l-az=zamore d-oṯən w-d-maḥti i=məštut-ayḏe ‘Und noch am selben Tage befahl sie den Musikern, zu kommen und das Hochzeitsfest für ihn zu veranstalten’; 23/48",
+            "segments": [
+              {
+                "turoyo": ") b-u=yawm-awo mʔamalla l-az=zamore d-oṯən w-d-maḥti i=məštut-ayḏe",
+                "translations": [
+                  "‘Und noch am selben Tage befahl sie den Musikern, zu kommen und das Hochzeitsfest für ihn zu veranstalten’"
+                ],
+                "references": ["6"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["23/48"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "u=səsyo maḥát-way-n-e u=muklayḏe ḥeṭe diqe d-doyaq-wa arbaʕ=pallat m-i=tuṯ-aṯe doyáq-wa-lle w ṭoré-wa-lle me-ṣafrayto hul ʕaṣriye b-i=šəmš-aṯe w moyad-wa l-ʕayne maḥát-wa-lle b-i=dukṯo w maḥat-wa m-ap=pallat diq-anək aʕlayye … ʕayne g-nayḥi-wa kət-la i=ṭaṣayḏa maḥtó-wa-la ʕal i=koro maḥwəyo-wa bahro aġ d-i=lampa bahərto ŭbo-wa nuhro l-u=bayto kule",
+            "translations": [
+              "ich habe dem Pferde immer gestossenen Weizen vorgelegt",
+              "wenn er vier Blätter von diesem Maulbeerbaum zerstampfte und sie vom Morgen bis zum Abend in dieser Sonne legen liesse und seine Augen nähme und an ihre Stelle legte, und von der zerstampften Blättern darauf legen würde, so würden seine Augen heil werden",
+              "‘Sie hatte ihre Schale. Sie stellte sie immer auf den Getreidezuber, dann strahlte sie Helligkeit aus so hell wie eine Lampe, und spendete dem ganzen Hause Lichtʼ; 25/11 [MT]; haṯe hedi maḥatla u=dahwo w-u=sem-awo b-u=naqwo d-maḥti-wa an=noše naqqawoṯe hadiyat ‘She cautiously placed the gold and the silver in that hole where people often used to place [their] gifts’"
+            ],
+            "references": ["1", "650", "81/112"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=səsyo maḥát-way-n-e u=muklayḏe ḥeṭe diqe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe dem Pferde immer gestossenen Weizen vorgelegtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "650"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "81/112"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-doyaq-wa arbaʕ=pallat m-i=tuṯ-aṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " doyáq-wa-lle w ṭoré-wa-lle me-ṣafrayto hul ʕaṣriye b-i=šəmš-aṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w moyad-wa l-ʕayne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥát-wa-lle b-i=dukṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w maḥat-wa m-ap=pallat diq-anək aʕlayye … ʕayne g-nayḥi-wa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn er vier Blätter von diesem Maulbeerbaum zerstampfte und sie vom Morgen bis zum Abend in dieser Sonne legen liesse und seine Augen nähme und an ihre Stelle legte, und von der zerstampften Blättern darauf legen würde, so würden seine Augen heil werdenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "650"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70/271"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kət-la i=ṭaṣayḏa maḥtó-wa-la ʕal i=koro"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥwəyo-wa bahro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aġ d-i=lampa bahərto ŭbo-wa nuhro l-u=bayto kule "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sie hatte ihre Schale. Sie stellte sie immer auf den Getreidezuber, dann strahlte sie Helligkeit aus so hell wie eine Lampe, und spendete dem ganzen Hause Lichtʼ; 25/11 [MT]; haṯe hedi maḥatla u=dahwo w-u=sem-awo b-u=naqwo d-maḥti-wa an=noše naqqawoṯe hadiyat ‘She cautiously placed the gold and the silver in that hole where people often used to place [their] gifts’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/134"
+              }
+            ],
             "text": "1) u=səsyo maḥát-way-n-e u=muklayḏe ḥeṭe diqe ʻich habe dem Pferde immer gestossenen Weizen vorgelegtʼ; 650; 81/112; d-doyaq-wa arbaʕ=pallat m-i=tuṯ-aṯe, doyáq-wa-lle w ṭoré-wa-lle me-ṣafrayto hul ʕaṣriye b-i=šəmš-aṯe, w moyad-wa l-ʕayne, maḥát-wa-lle b-i=dukṯo, w maḥat-wa m-ap=pallat diq-anək aʕlayye … ʕayne g-nayḥi-wa ʻwenn er vier Blätter von diesem Maulbeerbaum zerstampfte und sie vom Morgen bis zum Abend in dieser Sonne legen liesse und seine Augen nähme und an ihre Stelle legte, und von der zerstampften Blättern darauf legen würde, so würden seine Augen heil werdenʼ; 650; 70/271; kət-la i=ṭaṣayḏa maḥtó-wa-la ʕal i=koro; maḥwəyo-wa bahro, aġ d-i=lampa bahərto ŭbo-wa nuhro l-u=bayto kule ‘Sie hatte ihre Schale. Sie stellte sie immer auf den Getreidezuber, dann strahlte sie Helligkeit aus so hell wie eine Lampe, und spendete dem ganzen Hause Lichtʼ; 25/11 [MT]; haṯe hedi maḥatla u=dahwo w-u=sem-awo b-u=naqwo d-maḥti-wa an=noše naqqawoṯe hadiyat ‘She cautiously placed the gold and the silver in that hole where people often used to place [their] gifts’; 44/134",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") u=səsyo maḥát-way-n-e u=muklayḏe ḥeṭe diqe",
+                "translations": [
+                  "ʻich habe dem Pferde immer gestossenen Weizen vorgelegtʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["650"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["81/112"]
+              },
+              {
+                "turoyo": "d-doyaq-wa arbaʕ=pallat m-i=tuṯ-aṯe, doyáq-wa-lle w ṭoré-wa-lle me-ṣafrayto hul ʕaṣriye b-i=šəmš-aṯe, w moyad-wa l-ʕayne, maḥát-wa-lle b-i=dukṯo, w maḥat-wa m-ap=pallat diq-anək aʕlayye … ʕayne g-nayḥi-wa",
+                "translations": [
+                  "ʻwenn er vier Blätter von diesem Maulbeerbaum zerstampfte und sie vom Morgen bis zum Abend in dieser Sonne legen liesse und seine Augen nähme und an ihre Stelle legte, und von der zerstampften Blättern darauf legen würde, so würden seine Augen heil werdenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["650"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["70/271"]
+              },
+              {
+                "turoyo": "kət-la i=ṭaṣayḏa maḥtó-wa-la ʕal i=koro",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "maḥwəyo-wa bahro, aġ d-i=lampa bahərto ŭbo-wa nuhro l-u=bayto kule",
+                "translations": [
+                  "‘Sie hatte ihre Schale. Sie stellte sie immer auf den Getreidezuber, dann strahlte sie Helligkeit aus so hell wie eine Lampe, und spendete dem ganzen Hause Lichtʼ; 25/11 [MT]; haṯe hedi maḥatla u=dahwo w-u=sem-awo b-u=naqwo d-maḥti-wa an=noše naqqawoṯe hadiyat ‘She cautiously placed the gold and the silver in that hole where people often used to place [their] gifts’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["44/134"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
-            "text": "1) ḥēt; maḥát; ḥat; maḥet; ḥət; 651; ʕamme! dmax! ŭno, bəṯṯər məd-dumxat ḥət qarʕəx ʕal barki w dmax! ‘Tante, leg dich schlafen! Wenn du dich hinlegst, so lege deinen Kopf auf meine Kniee und schlafe!’; 6/28; maḥtutu tfənge aʕli ʻschiesst auf mich mit dem Gewehrʼ; LB 114; 4) u=ḥa mənne, d-qosəm, u=madilono gəd-omal-le ḥat aʕlayye ʻwenn einer richtig rät, so sagt der Beschreiber des Vogels zu ihm: “Hau sie!”ʼ; 653; 94/442;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "ḥēt maḥát ḥat maḥet ḥət ʕamme! dmax! ŭno bəṯṯər məd-dumxat ḥət qarʕəx ʕal barki w dmax! maḥtutu tfənge aʕli",
+            "translations": [
+              "‘Tante, leg dich schlafen! Wenn du dich hinlegst, so lege deinen Kopf auf meine Kniee und schlafe!’",
+              "schiesst auf mich mit dem Gewehr"
+            ],
+            "references": ["1", "651", "6/28"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥēt"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥát"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥat"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥet"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥət"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "651"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕamme! dmax! ŭno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər məd-dumxat ḥət qarʕəx ʕal barki w dmax! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Tante, leg dich schlafen! Wenn du dich hinlegst, so lege deinen Kopf auf meine Kniee und schlafe!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/28"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥtutu tfənge aʕli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻschiesst auf mich mit dem Gewehrʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 114"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) ḥēt; maḥát; ḥat; maḥet; ḥət; 651; ʕamme! dmax! ŭno, bəṯṯər məd-dumxat ḥət qarʕəx ʕal barki w dmax! ‘Tante, leg dich schlafen! Wenn du dich hinlegst, so lege deinen Kopf auf meine Kniee und schlafe!’; 6/28; maḥtutu tfənge aʕli ʻschiesst auf mich mit dem Gewehrʼ; LB 114;",
+            "segments": [
+              {
+                "turoyo": ") ḥēt",
+                "translations": [],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "maḥát",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "ḥat",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "maḥet",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "ḥət",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["651"]
+              },
+              {
+                "turoyo": "ʕamme! dmax! ŭno, bəṯṯər məd-dumxat ḥət qarʕəx ʕal barki w dmax!",
+                "translations": [
+                  "‘Tante, leg dich schlafen! Wenn du dich hinlegst, so lege deinen Kopf auf meine Kniee und schlafe!’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["6/28"]
+              },
+              {
+                "turoyo": "maḥtutu tfənge aʕli",
+                "translations": ["ʻschiesst auf mich mit dem Gewehrʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 114"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
-            "text": "6) maḥetu i=fṣiḥuṯo b-i=walaye ‘Arrange the festival in the city!” 73/170;",
-            "turoyo": "",
+            "turoyo": "u=ḥa mənne d-qosəm u=madilono gəd-omal-le ḥat aʕlayye",
+            "translations": [
+              "wenn einer richtig rät, so sagt der Beschreiber des Vogels zu ihm: “Hau sie!"
+            ],
+            "references": ["4", "653", "94/442"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "4"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=ḥa mənne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-qosəm"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=madilono gəd-omal-le ḥat aʕlayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn einer richtig rät, so sagt der Beschreiber des Vogels zu ihm: “Hau sie!”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "653"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/442"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "4) u=ḥa mənne, d-qosəm, u=madilono gəd-omal-le ḥat aʕlayye ʻwenn einer richtig rät, so sagt der Beschreiber des Vogels zu ihm: “Hau sie!”ʼ; 653; 94/442;",
+            "segments": [
+              {
+                "turoyo": ") u=ḥa mənne, d-qosəm, u=madilono gəd-omal-le ḥat aʕlayye",
+                "translations": [
+                  "ʻwenn einer richtig rät, so sagt der Beschreiber des Vogels zu ihm: “Hau sie!”ʼ"
+                ],
+                "references": ["4"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["653"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["94/442"]
+              }
+            ]
+          },
+          {
+            "turoyo": "maḥetu i=fṣiḥuṯo b-i=walaye ‘Arrange the festival in the city!”",
             "translations": [],
-            "references": []
+            "references": ["6", "73/170"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "6"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥetu i=fṣiḥuṯo b-i=walaye "
+              },
+              {
+                "kind": "turoyo",
+                "value": "‘"
+              },
+              {
+                "kind": "turoyo",
+                "value": "Arrange the festival in the city!” "
+              },
+              {
+                "kind": "ref",
+                "value": "73/170"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "6) maḥetu i=fṣiḥuṯo b-i=walaye ‘Arrange the festival in the city!” 73/170;",
+            "segments": [
+              {
+                "turoyo": ") maḥetu i=fṣiḥuṯo b-i=walaye ‘Arrange the festival in the city!”",
+                "translations": [],
+                "references": ["6", "73/170"]
+              }
+            ]
           }
         ],
         "Infinitive": [
           {
+            "turoyo": "hən m-an=niše kə-mʕadli ruḥayye b-u=proṭo w b-u=tuḥito d-i=bodara w d-i=ḥəmra. u=šufr-ano lo=k-mibaḥəs mene lqul d-u=šufro l-aloho d-hule - qayimi rawixi ʕal səsye maḥtalle teḥoto b-xurgo layba lə=ruxo w lə=yətwo",
+            "translations": [
+              "‘manche Frauen verbessern sich durch Enthaarung, Auflegen von Puder und Rot. Diese Schönheit kommt aber gegenüber der Schönheit, die Gott gegeben hat, gar nicht in Betracht’",
+              "‘da machten sie sich auf, setzten sich auf Pferde und verstauten die Frau in einem Tragsack. Sie konnte ja weder reiten noch sitzen’"
+            ],
+            "references": ["1", "3/71", "72"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hən"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-an=niše"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kə-mʕadli ruḥayye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-u=proṭo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w b-u=tuḥito"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-i=bodara"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w d-i=ḥəmra. u=šufr-ano"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=k-mibaḥəs mene"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lqul"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-u=šufro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-aloho d-hule "
+              },
+              {
+                "kind": "translation",
+                "value": "‘manche Frauen verbessern sich durch Enthaarung, Auflegen von Puder und Rot. Diese Schönheit kommt aber gegenüber der Schönheit, die Gott gegeben hat, gar nicht in Betracht’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "3/71"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "72"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qayimi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " rawixi ʕal səsye maḥtalle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " teḥoto b-xurgo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " layba lə=ruxo w lə=yətwo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘da machten sie sich auf, setzten sich auf Pferde und verstauten die Frau in einem Tragsack. Sie konnte ja weder reiten noch sitzen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/216"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) hən, m-an=niše, kə-mʕadli ruḥayye, b-u=proṭo, w b-u=tuḥito, d-i=bodara, w d-i=ḥəmra. u=šufr-ano, lo=k-mibaḥəs mene, lqul, d-u=šufro, l-aloho d-hule ‘manche Frauen verbessern sich durch Enthaarung, Auflegen von Puder und Rot. Diese Schönheit kommt aber gegenüber der Schönheit, die Gott gegeben hat, gar nicht in Betracht’; 3/71-72; qayimi, rawixi ʕal səsye maḥtalle, teḥoto b-xurgo, layba lə=ruxo w lə=yətwo ‘da machten sie sich auf, setzten sich auf Pferde und verstauten die Frau in einem Tragsack. Sie konnte ja weder reiten noch sitzen’; 78/216;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") hən, m-an=niše, kə-mʕadli ruḥayye, b-u=proṭo, w b-u=tuḥito, d-i=bodara, w d-i=ḥəmra. u=šufr-ano, lo=k-mibaḥəs mene, lqul, d-u=šufro, l-aloho d-hule",
+                "translations": [
+                  "‘manche Frauen verbessern sich durch Enthaarung, Auflegen von Puder und Rot. Diese Schönheit kommt aber gegenüber der Schönheit, die Gott gegeben hat, gar nicht in Betracht’"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["3/71", "72"]
+              },
+              {
+                "turoyo": "qayimi, rawixi ʕal səsye maḥtalle, teḥoto b-xurgo, layba lə=ruxo w lə=yətwo",
+                "translations": [
+                  "‘da machten sie sich auf, setzten sich auf Pferde und verstauten die Frau in einem Tragsack. Sie konnte ja weder reiten noch sitzen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["78/216"]
+              }
+            ]
           }
         ]
       }
@@ -131,42 +2385,798 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "as=səsyaṯṯe b-u=gabo ḥreno mtaḥat-te muklo ṣeniye d-qahwe mtaḥto qumayye",
+            "translations": [
+              "ihren Pferden auf der anderen Seite wurde Futter hingesetzt",
+              "eine Servierplatte mit Kaffee wurde vor sie hingestellt"
+            ],
+            "references": ["1", "654", "115/67"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " as=səsyaṯṯe b-u=gabo ḥreno mtaḥat-te muklo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻihren Pferden auf der anderen Seite wurde Futter hingesetztʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "654"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "115/67"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṣeniye d-qahwe mtaḥto qumayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻeine Servierplatte mit Kaffee wurde vor sie hingestelltʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "654"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "115/59"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) as=səsyaṯṯe b-u=gabo ḥreno mtaḥat-te muklo ʻihren Pferden auf der anderen Seite wurde Futter hingesetztʼ; 654; 115/67; ṣeniye d-qahwe mtaḥto qumayye ʻeine Servierplatte mit Kaffee wurde vor sie hingestelltʼ; 654; 115/59;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") as=səsyaṯṯe b-u=gabo ḥreno mtaḥat-te muklo",
+                "translations": [
+                  "ʻihren Pferden auf der anderen Seite wurde Futter hingesetztʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["654"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["115/67"]
+              },
+              {
+                "turoyo": "ṣeniye d-qahwe mtaḥto qumayye",
+                "translations": [
+                  "ʻeine Servierplatte mit Kaffee wurde vor sie hingestelltʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["654"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["115/59"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "kīt hayām d-məmsək u=fīl mitaḥət qm-i=fadono prs ṭláwḥe-ne. k-mədwori k-máwrəqi k-məḥṣodi k-mitákrəxi w bəṯṯər g-məgrosi b-i=gurusto k-mitaḥti ʕal i=nuro k-owən ṭlawḥe ḥa k-ŭxe-lən k-mitaḥto b-femə-d-i=aḏno",
+            "translations": [
+              "es wird eine Zeit kommen, wo sich der Elefant fangen und vor den Pflug spannen lässt",
+              "‘Linsen sind Linsen. Sie werden erst geackert, dann werden sie grün, dann werden sie geerntet, gedroschen und dann mit der Handmühle gemahlen und aufs Feuer gesetzt. Dann gibt es ein Linsengericht und das kann man essen’",
+              "‘man setzt es (das elektrischen Gerät f) in den Eingang des Ohres’"
+            ],
+            "references": ["1", "654", "256/28"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kīt hayām d-məmsək u=fīl"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mitaḥət qm-i=fadono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes wird eine Zeit kommen, wo sich der Elefant fangen und vor den Pflug spannen lässtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "654"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "256/28"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/386"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/287"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṭláwḥe-ne. k-mədwori"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-máwrəqi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-məḥṣodi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-mitákrəxi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w bəṯṯər g-məgrosi b-i=gurusto k-mitaḥti ʕal i=nuro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-owən ṭlawḥe ḥa k-ŭxe-lən "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Linsen sind Linsen. Sie werden erst geackert, dann werden sie grün, dann werden sie geerntet, gedroschen und dann mit der Handmühle gemahlen und aufs Feuer gesetzt. Dann gibt es ein Linsengericht und das kann man essen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/52"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-mitaḥto b-femə-d-i=aḏno "
+              },
+              {
+                "kind": "translation",
+                "value": "‘man setzt es (das elektrischen Gerät f) in den Eingang des Ohres’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "3/46"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) kīt hayām d-məmsək u=fīl, mitaḥət qm-i=fadono ʻes wird eine Zeit kommen, wo sich der Elefant fangen und vor den Pflug spannen lässtʼ; 654; prs 256/28; 29/386; 62/287; ṭláwḥe-ne. k-mədwori, k-máwrəqi, k-məḥṣodi, k-mitákrəxi, w bəṯṯər g-məgrosi b-i=gurusto k-mitaḥti ʕal i=nuro, k-owən ṭlawḥe ḥa k-ŭxe-lən ‘Linsen sind Linsen. Sie werden erst geackert, dann werden sie grün, dann werden sie geerntet, gedroschen und dann mit der Handmühle gemahlen und aufs Feuer gesetzt. Dann gibt es ein Linsengericht und das kann man essen’; 6/52; k-mitaḥto b-femə-d-i=aḏno ‘man setzt es (das elektrischen Gerät f) in den Eingang des Ohres’; 3/46;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") kīt hayām d-məmsək u=fīl, mitaḥət qm-i=fadono",
+                "translations": [
+                  "ʻes wird eine Zeit kommen, wo sich der Elefant fangen und vor den Pflug spannen lässtʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["654"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["256/28"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/386"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["62/287"]
+              },
+              {
+                "turoyo": "ṭláwḥe-ne. k-mədwori, k-máwrəqi, k-məḥṣodi, k-mitákrəxi, w bəṯṯər g-məgrosi b-i=gurusto k-mitaḥti ʕal i=nuro, k-owən ṭlawḥe ḥa k-ŭxe-lən",
+                "translations": [
+                  "‘Linsen sind Linsen. Sie werden erst geackert, dann werden sie grün, dann werden sie geerntet, gedroschen und dann mit der Handmühle gemahlen und aufs Feuer gesetzt. Dann gibt es ein Linsengericht und das kann man essen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["6/52"]
+              },
+              {
+                "turoyo": "k-mitaḥto b-femə-d-i=aḏno",
+                "translations": [
+                  "‘man setzt es (das elektrischen Gerät f) in den Eingang des Ohres’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["3/46"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "mhalxi-wo ʕal at=taxtayat rafiʕe d-mitaḥti-wo m-feme d-u=papūr l-i=arʕo",
+            "translations": [
+              "sie gingen auf den dünnen Brettern, die von der Luke des Dampfers nach dem Festland gelegt wurden"
+            ],
+            "references": ["1", "654", "2/29"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mhalxi-wo ʕal at=taxtayat rafiʕe d-mitaḥti-wo m-feme d-u=papūr l-i=arʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie gingen auf den dünnen Brettern, die von der Luke des Dampfers nach dem Festland gelegt wurdenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "654"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/29"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) mhalxi-wo ʕal at=taxtayat rafiʕe d-mitaḥti-wo m-feme d-u=papūr l-i=arʕo ʻsie gingen auf den dünnen Brettern, die von der Luke des Dampfers nach dem Festland gelegt wurdenʼ; 654; 2/29;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mhalxi-wo ʕal at=taxtayat rafiʕe d-mitaḥti-wo m-feme d-u=papūr l-i=arʕo",
+                "translations": [
+                  "ʻsie gingen auf den dünnen Brettern, die von der Luke des Dampfers nach dem Festland gelegt wurdenʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["654"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["2/29"]
+              }
+            ]
           }
         ],
         "Part. Pass.": [
           {
+            "turoyo": "u=kṯowo mmáḥto-yo ʕal i=maṣa hēš bole máḥto-yo b-i=anəške ad=dape máḥte-ne ʕal feme d-u=naqw-ano k-ḥozət klen a=tloṯo ḥawuše d-l-u=ṭayro mublile maḥte b-u=qafaṣ ʕal i=maṣa tamo hano u=muxtar d-i=qriṯo i=ṣufr-ayḏe maḥatto-wa ʕal-i=arʕo l-af=faqire l-am=miskene",
+            "translations": [
+              "das Buch liegt auf dem Tische",
+              "nach seiner Erinnerung steht es (das Bett) noch in der Ecke",
+              "die Holzbretter lagen auf der Öffnung",
+              "‘Da wirst du die drei Äpfel, die der Vogel weggeholt hat, auf den Tisch gelegt und im Kägif (eingeserrt) finden’",
+              "‘Der Tisch dieses Dorfschulzen war gedeckt für die Bedürftigen und Armen’"
+            ],
+            "references": ["1", "655", "655"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=kṯowo mmáḥto-yo ʕal i=maṣa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Buch liegt auf dem Tischeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "655"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hēš bole máḥto-yo b-i=anəške "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnach seiner Erinnerung steht es (das Bett) noch in der Eckeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "655"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "71/89"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ad=dape máḥte-ne ʕal feme d-u=naqw-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Holzbretter lagen auf der Öffnungʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 186"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ḥozət klen a=tloṯo ḥawuše d-l-u=ṭayro mublile maḥte b-u=qafaṣ ʕal i=maṣa tamo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Da wirst du die drei Äpfel, die der Vogel weggeholt hat, auf den Tisch gelegt und im Kägif (eingeserrt) finden’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/34"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hano u=muxtar d-i=qriṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=ṣufr-ayḏe maḥatto-wa ʕal-i=arʕo l-af=faqire"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-am=miskene "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Der Tisch dieses Dorfschulzen war gedeckt für die Bedürftigen und Armen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/6"
+              }
+            ],
             "text": "1) u=kṯowo mmáḥto-yo ʕal i=maṣa ʻdas Buch liegt auf dem Tischeʼ; 655; hēš bole máḥto-yo b-i=anəške ʻnach seiner Erinnerung steht es (das Bett) noch in der Eckeʼ; 655; 71/89; ad=dape máḥte-ne ʕal feme d-u=naqw-ano ʻdie Holzbretter lagen auf der Öffnungʼ; LB 186; k-ḥozət klen a=tloṯo ḥawuše d-l-u=ṭayro mublile maḥte b-u=qafaṣ ʕal i=maṣa tamo ‘Da wirst du die drei Äpfel, die der Vogel weggeholt hat, auf den Tisch gelegt und im Kägif (eingeserrt) finden’; 21/34 [MT]; hano u=muxtar d-i=qriṯo, i=ṣufr-ayḏe maḥatto-wa ʕal-i=arʕo l-af=faqire, l-am=miskene ‘Der Tisch dieses Dorfschulzen war gedeckt für die Bedürftigen und Armen’; 25/6",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") u=kṯowo mmáḥto-yo ʕal i=maṣa",
+                "translations": ["ʻdas Buch liegt auf dem Tischeʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["655"]
+              },
+              {
+                "turoyo": "hēš bole máḥto-yo b-i=anəške",
+                "translations": [
+                  "ʻnach seiner Erinnerung steht es (das Bett) noch in der Eckeʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["655"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["71/89"]
+              },
+              {
+                "turoyo": "ad=dape máḥte-ne ʕal feme d-u=naqw-ano",
+                "translations": ["ʻdie Holzbretter lagen auf der Öffnungʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 186"]
+              },
+              {
+                "turoyo": "k-ḥozət klen a=tloṯo ḥawuše d-l-u=ṭayro mublile maḥte b-u=qafaṣ ʕal i=maṣa tamo",
+                "translations": [
+                  "‘Da wirst du die drei Äpfel, die der Vogel weggeholt hat, auf den Tisch gelegt und im Kägif (eingeserrt) finden’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["21/34"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "hano u=muxtar d-i=qriṯo, i=ṣufr-ayḏe maḥatto-wa ʕal-i=arʕo l-af=faqire, l-am=miskene",
+                "translations": [
+                  "‘Der Tisch dieses Dorfschulzen war gedeckt für die Bedürftigen und Armen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["25/6"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
+            "turoyo": "tuḥito teḥito teḥoto qayimi rawixi ʕal səsye maḥtalle teḥoto b-xurgo layba lə=ruxo w lə=yətwo",
+            "translations": [
+              "‘da machten sie sich auf, setzten sich auf Pferde und verstauten die Frau in einem Tragsack. Sie konnte ja weder reiten noch sitzen’"
+            ],
+            "references": ["1", "78/216"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " tuḥito"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " teḥito"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " teḥoto"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qayimi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " rawixi ʕal səsye maḥtalle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " teḥoto b-xurgo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " layba lə=ruxo w lə=yətwo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘da machten sie sich auf, setzten sich auf Pferde und verstauten die Frau in einem Tragsack. Sie konnte ja weder reiten noch sitzen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/216"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) tuḥito; teḥito; teḥoto; qayimi, rawixi ʕal səsye maḥtalle, teḥoto b-xurgo, layba lə=ruxo w lə=yətwo ‘da machten sie sich auf, setzten sich auf Pferde und verstauten die Frau in einem Tragsack. Sie konnte ja weder reiten noch sitzen’; 78/216;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") tuḥito",
+                "translations": [],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "teḥito",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "teḥoto",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "qayimi, rawixi ʕal səsye maḥtalle, teḥoto b-xurgo, layba lə=ruxo w lə=yətwo",
+                "translations": [
+                  "‘da machten sie sich auf, setzten sich auf Pferde und verstauten die Frau in einem Tragsack. Sie konnte ja weder reiten noch sitzen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["78/216"]
+              }
+            ]
           }
         ]
       }

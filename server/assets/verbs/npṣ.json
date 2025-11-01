@@ -14,17 +14,89 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "npəṣle",
-        "nopəṣ"
-      ],
+      "forms": ["npəṣle", "nopəṣ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "me tamo qayəm npəṣle ruḥe w aṯi hedi hedi daʕər disane aṯi se ʕAyinəlḥayāt",
+            "translations": [
+              "er stand auf, schüttelte sich und kam langsam wieder zu ʕAinilḥayat zurück"
+            ],
+            "references": ["186", "107/129"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "me tamo qayəm"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " npəṣle ruḥe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w aṯi hedi hedi daʕər disane aṯi se ʕAyinəlḥayāt "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer stand auf, schüttelte sich und kam langsam wieder zu ʕAinilḥayat zurückʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "186"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "107/129"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "me tamo qayəm, npəṣle ruḥe, w aṯi hedi hedi daʕər disane aṯi se ʕAyinəlḥayāt ʻer stand auf, schüttelte sich und kam langsam wieder zu ʕAinilḥayat zurückʼ; 186; 107/129;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "me tamo qayəm, npəṣle ruḥe, w aṯi hedi hedi daʕər disane aṯi se ʕAyinəlḥayāt",
+                "translations": [
+                  "ʻer stand auf, schüttelte sich und kam langsam wieder zu ʕAinilḥayat zurückʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["186"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["107/129"]
+              }
+            ]
           }
         ]
       }

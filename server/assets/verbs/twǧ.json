@@ -14,24 +14,76 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mtawaǧle",
-        "mtawəǧ"
-      ],
+      "forms": ["mtawaǧle", "mtawəǧ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mtawaǧǧe u=abrayḏe d-dukṯe d-u=babo",
+            "translations": ["sie krönten seinen Sohn an Stelle des Vaters"],
+            "references": ["477", "87/75"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mtawaǧǧe u=abrayḏe d-dukṯe d-u=babo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie krönten seinen Sohn an Stelle des Vatersʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "477"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "87/75"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mtawaǧǧe u=abrayḏe d-dukṯe d-u=babo ʻsie krönten seinen Sohn an Stelle des Vatersʼ; 477; 87/75;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mtawaǧǧe u=abrayḏe d-dukṯe d-u=babo",
+                "translations": [
+                  "ʻsie krönten seinen Sohn an Stelle des Vatersʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["477"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["87/75"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "krönen;"
-  ],
+  "idioms": ["krönen;"],
   "uncertain": false
 }

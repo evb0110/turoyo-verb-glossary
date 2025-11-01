@@ -14,25 +14,175 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mwaladle",
-        "mwaləd"
-      ],
+      "forms": ["mwaladle", "mwaləd"],
       "conjugations": {
         "Preterit-wa": [
           {
+            "turoyo": "u=săwāl mbele maxlaṣle … i=naql-ayo aʕ=ʕeze kulle mwalad-wa-lle aṣ=ṣafur-aṯṯe naʕime-way-ne -",
+            "translations": [
+              "‘And he took away the cattle and secured it (for himself)… by that time all goats (which were stolen) had already given birth. And their kids were little’"
+            ],
+            "references": ["85/13", "15"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=săwāl mbele maxlaṣle "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naql-ayo aʕ=ʕeze kulle mwalad-wa-lle aṣ=ṣafur-aṯṯe naʕime-way-ne "
+              },
+              {
+                "kind": "translation",
+                "value": "‘And he took away the cattle and secured it (for himself)… by that time all goats (which were stolen) had already given birth. And their kids were little’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "85/13"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=săwāl mbele maxlaṣle (…) i=naql-ayo aʕ=ʕeze kulle mwalad-wa-lle aṣ=ṣafur-aṯṯe naʕime-way-ne ‘And he took away the cattle and secured it (for himself)… by that time all goats (which were stolen) had already given birth. And their kids were little’ 85/13-15;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=săwāl mbele maxlaṣle (…) i=naql-ayo aʕ=ʕeze kulle mwalad-wa-lle aṣ=ṣafur-aṯṯe naʕime-way-ne -",
+                "translations": [
+                  "‘And he took away the cattle and secured it (for himself)… by that time all goats (which were stolen) had already given birth. And their kids were little’"
+                ],
+                "references": ["85/13", "15"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "fəʕlan mraqabli ʕal at=tarte=niš-ani be ayna gə-mwaldo",
+            "translations": [
+              "wirklich passte ich auf, welche von den beiden Frauen zuerst gebären würde"
+            ],
+            "references": ["165", "52/54", "112/105"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "fəʕlan mraqabli ʕal at=tarte=niš-ani"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " be ayna gə-mwaldo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwirklich passte ich auf, welche von den beiden Frauen zuerst gebären würdeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "165"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "52/54"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "112/105"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "108"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "fəʕlan mraqabli ʕal at=tarte=niš-ani, be ayna gə-mwaldo ʻwirklich passte ich auf, welche von den beiden Frauen zuerst gebären würdeʼ; 165; 52/54; 112/105, 108;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "fəʕlan mraqabli ʕal at=tarte=niš-ani, be ayna gə-mwaldo",
+                "translations": [
+                  "ʻwirklich passte ich auf, welche von den beiden Frauen zuerst gebären würdeʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["165"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["52/54"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["112/105", "108"]
+              }
+            ]
           }
         ]
       }
@@ -43,35 +193,189 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "Gawriye … alfo čaʕmo w tloṯ w tleṯi u=doġum diḏe də-mwaləd b-Xarabé Məšká",
+            "translations": [
+              "(ich bin) Gäuriye. Geboren 1933 in Charabe Mischka"
+            ],
+            "references": ["1933", "172", "111/1"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Gawriye … alfo čaʕmo w tloṯ w tleṯi u=doġum diḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " də-mwaləd b-Xarabé Məšká "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ(ich bin) Gäuriye. Geboren 1933 in Charabe Mischkaʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "172"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "111/1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "Gawriye … alfo čaʕmo w tloṯ w tleṯi u=doġum diḏe, də-mwaləd b-Xarabé Məšká ʻ(ich bin) Gäuriye. Geboren 1933 in Charabe Mischkaʼ; 172; 111/1;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "Gawriye … alfo čaʕmo w tloṯ w tleṯi u=doġum diḏe, də-mwaləd b-Xarabé Məšká",
+                "translations": [
+                  "ʻ(ich bin) Gäuriye. Geboren 1933 in Charabe Mischkaʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["172"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["111/1"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "mawladle",
-        "mawləd"
-      ],
+      "forms": ["mawladle", "mawləd"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mawladle aloho hawxa k-omal-le hat u=abráyḏi-hət ono ádyawma mawláḏli-lux",
+            "translations": [
+              "er erzeugte",
+              "‘Gott hat gesagt: Du bist mein Sohn, ich habe Dich heute gezeugt!’"
+            ],
+            "references": ["137", "LB 99"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mawladle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer erzeugteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "137"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aloho hawxa k-omal-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hat u=abráyḏi-hət"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono ádyawma mawláḏli-lux "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Gott hat gesagt: Du bist mein Sohn, ich habe Dich heute gezeugt!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 99"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mawladle ʻer erzeugteʼ; 137; aloho hawxa k-omal-le, hat u=abráyḏi-hət, ono ádyawma mawláḏli-lux ‘Gott hat gesagt: Du bist mein Sohn, ich habe Dich heute gezeugt!’; LB 99;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mawladle",
+                "translations": ["ʻer erzeugteʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["137"]
+              },
+              {
+                "turoyo": "aloho hawxa k-omal-le, hat u=abráyḏi-hət, ono ádyawma mawláḏli-lux",
+                "translations": [
+                  "‘Gott hat gesagt: Du bist mein Sohn, ich habe Dich heute gezeugt!’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 99"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "gebären;",
-    "erzeugen, gebären;"
-  ],
+  "idioms": ["gebären;", "erzeugen, gebären;"],
   "uncertain": false
 }

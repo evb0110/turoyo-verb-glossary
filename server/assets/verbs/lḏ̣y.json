@@ -14,24 +14,70 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "malḏ̣ele",
-        "malḏ̣e"
-      ],
+      "forms": ["malḏ̣ele", "malḏ̣e"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-malḏ̣yo Pr",
+            "translations": ["sie leuchtet"],
+            "references": ["392", "S 23/7"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-malḏ̣yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie leuchtetʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "392"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Pr"
+              },
+              {
+                "kind": "ref",
+                "value": "S 23/7"
+              }
+            ],
             "text": "ko-malḏ̣yo ʻsie leuchtetʼ; 392; PrS 23/7",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-malḏ̣yo",
+                "translations": ["ʻsie leuchtetʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["392"]
+              },
+              {
+                "turoyo": "Pr",
+                "translations": [],
+                "references": ["S 23/7"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "leuchten;"
-  ],
+  "idioms": ["leuchten;"],
   "uncertain": false
 }

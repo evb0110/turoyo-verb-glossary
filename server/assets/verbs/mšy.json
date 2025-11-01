@@ -5,17 +5,54 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mšele",
-        "moše"
-      ],
+      "forms": ["mšele", "moše"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mšeli i=ʕulbe",
+            "translations": ["ich habe den Kasten gestriechen voll gemacht"],
+            "references": ["337"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mšeli i=ʕulbe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe den Kasten gestriechen voll gemachtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "337"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mšeli i=ʕulbe ʻich habe den Kasten gestriechen voll gemachtʼ; 337;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mšeli i=ʕulbe",
+                "translations": [
+                  "ʻich habe den Kasten gestriechen voll gemachtʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["337"]
+              }
+            ]
           }
         ]
       }
@@ -26,17 +63,53 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "mašyo",
+            "translations": ["gestrichen voll"],
+            "references": ["381"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mašyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻgestrichen vollʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "381"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mašyo ʻgestrichen vollʼ; 381;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mašyo",
+                "translations": ["ʻgestrichen vollʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["381"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "geschtrichen voll machen;"
-  ],
+  "idioms": ["geschtrichen voll machen;"],
   "uncertain": false
 }

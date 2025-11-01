@@ -14,32 +14,103 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "dʕəfle",
-        "doʕəf"
-      ],
+      "forms": ["dʕəfle", "doʕəf"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "dʕəfli i=makina tamo-da",
+            "translations": [
+              "ich habe den Apparat dorthin geschoben, gestossen"
+            ],
+            "references": ["225"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "dʕəfli i=makina tamo-da "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe den Apparat dorthin geschoben, gestossenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "225"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "dʕəfli i=makina tamo-da ʻich habe den Apparat dorthin geschoben, gestossenʼ; 225;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "dʕəfli i=makina tamo-da",
+                "translations": [
+                  "ʻich habe den Apparat dorthin geschoben, gestossenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["225"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "ko-doʕaffe; 225;",
-            "turoyo": "",
+            "turoyo": "ko-doʕaffe",
             "translations": [],
-            "references": []
+            "references": ["225"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-doʕaffe"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "225"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-doʕaffe; 225;",
+            "segments": [
+              {
+                "turoyo": "ko-doʕaffe",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["225"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "stossen, schieben;"
-  ],
+  "idioms": ["stossen, schieben;"],
   "uncertain": false
 }

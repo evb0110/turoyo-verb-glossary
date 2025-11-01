@@ -5,10 +5,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mkalpət",
-        "mikalpət"
-      ],
+      "forms": ["mkalpət", "mikalpət"],
       "conjugations": {}
     },
     {
@@ -17,17 +14,82 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "bəṯṯər b-tarte=saʕayat ko-mikalpət yaʕni i=qlaftayḏe ko-məqlofo",
+            "translations": [
+              "nach zwei Stunden schält sich (der Weizen) aus, d.h. die Schale trennt sich von ihm ab"
+            ],
+            "references": ["782", "94/251"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bəṯṯər b-tarte=saʕayat ko-mikalpət"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " yaʕni i=qlaftayḏe ko-məqlofo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnach zwei Stunden schält sich (der Weizen) aus, d.h. die Schale trennt sich von ihm abʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "782"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/251"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "bəṯṯər b-tarte=saʕayat ko-mikalpət, yaʕni i=qlaftayḏe ko-məqlofo ʻnach zwei Stunden schält sich (der Weizen) aus, d.h. die Schale trennt sich von ihm abʼ; 782; 94/251;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "bəṯṯər b-tarte=saʕayat ko-mikalpət, yaʕni i=qlaftayḏe ko-məqlofo",
+                "translations": [
+                  "ʻnach zwei Stunden schält sich (der Weizen) aus, d.h. die Schale trennt sich von ihm abʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["782"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["94/251"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) halb entschälen;"
-  ],
+  "idioms": ["(Detrans.) halb entschälen;"],
   "uncertain": false
 }

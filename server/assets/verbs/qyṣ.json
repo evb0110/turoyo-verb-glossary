@@ -14,47 +14,491 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "qəṣle",
-        "qoyəṣ"
-      ],
+      "forms": ["qəṣle", "qoyəṣ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mamṭalle barbar qəṣle sawke mofaqle",
+            "translations": [
+              "sie holten einen Barbier; der schmitt ihm die Haare und putzte ihn heraus"
+            ],
+            "references": ["2", "566", "28/42"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mamṭalle barbar"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qəṣle sawke mofaqle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie holten einen Barbier; der schmitt ihm die Haare und putzte ihn herausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "566"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "28/42"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) mamṭalle barbar, qəṣle sawke mofaqle ʻsie holten einen Barbier; der schmitt ihm die Haare und putzte ihn herausʼ; 566; 28/42;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mamṭalle barbar, qəṣle sawke mofaqle",
+                "translations": [
+                  "ʻsie holten einen Barbier; der schmitt ihm die Haare und putzte ihn herausʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["566"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["28/42"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "1) ko-qoyəṣ qarʕe d-u=ənsān ʻer scheidet dem Menschen den Kopf abʼ; 565; 56/96; 2) hawo k-šəpʕi aṭ=ṭayre fayore ʕal u=margayḏe ko-qoyəṣ ač=čangataṯṯe, ko-doralle ʻwenn die Vögel über die Wiese jenes Mannes fliegen, so stutzt er ihnen die Flügel und lässt sie zur Erde fallenʼ; 566; 95/99; u=kaǧ w-u=ḥīt-ano me ʕal ḥaṣe d-aʕ=ʕeze ko-qayṣina-le w-ʕamro-ste me ʕal ḥaṣe d-aʕ-ʕwone ko-qayṣina-le ‘We shore long and curly goat’s hair off of the backs of the goats and we shore wool off of the backs of the sheep’ 94/11;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "ko-qoyəṣ qarʕe d-u=ənsān",
+            "translations": ["er scheidet dem Menschen den Kopf ab"],
+            "references": ["1", "565", "56/96"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-qoyəṣ qarʕe d-u=ənsān "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer scheidet dem Menschen den Kopf abʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "565"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/96"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) ko-qoyəṣ qarʕe d-u=ənsān ʻer scheidet dem Menschen den Kopf abʼ; 565; 56/96;",
+            "segments": [
+              {
+                "turoyo": ") ko-qoyəṣ qarʕe d-u=ənsān",
+                "translations": ["ʻer scheidet dem Menschen den Kopf abʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["565"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["56/96"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "hawo k-šəpʕi aṭ=ṭayre fayore ʕal u=margayḏe ko-qoyəṣ ač=čangataṯṯe ko-doralle u=kaǧ w-u=ḥīt-ano me ʕal ḥaṣe d-aʕ=ʕeze ko-qayṣina-le w-ʕamro-ste me ʕal ḥaṣe d-aʕ-ʕwone ko-qayṣina-le s hair off of the backs of the goats and we shore wool off of the backs of the sheep’",
+            "translations": [
+              "wenn die Vögel über die Wiese jenes Mannes fliegen, so stutzt er ihnen die Flügel und lässt sie zur Erde fallen",
+              "‘We shore long and curly goat’"
+            ],
+            "references": ["2", "566", "95/99"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawo k-šəpʕi aṭ=ṭayre fayore ʕal u=margayḏe ko-qoyəṣ ač=čangataṯṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-doralle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn die Vögel über die Wiese jenes Mannes fliegen, so stutzt er ihnen die Flügel und lässt sie zur Erde fallenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "566"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "95/99"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=kaǧ w-u=ḥīt-ano me ʕal ḥaṣe d-aʕ=ʕeze ko-qayṣina-le w-ʕamro-ste me ʕal ḥaṣe d-aʕ-ʕwone ko-qayṣina-le "
+              },
+              {
+                "kind": "translation",
+                "value": "‘We shore long and curly goat’"
+              },
+              {
+                "kind": "turoyo",
+                "value": "s hair off of the backs of the goats and we shore wool off of the backs of the sheep’ "
+              },
+              {
+                "kind": "ref",
+                "value": "94/11"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) hawo k-šəpʕi aṭ=ṭayre fayore ʕal u=margayḏe ko-qoyəṣ ač=čangataṯṯe, ko-doralle ʻwenn die Vögel über die Wiese jenes Mannes fliegen, so stutzt er ihnen die Flügel und lässt sie zur Erde fallenʼ; 566; 95/99; u=kaǧ w-u=ḥīt-ano me ʕal ḥaṣe d-aʕ=ʕeze ko-qayṣina-le w-ʕamro-ste me ʕal ḥaṣe d-aʕ-ʕwone ko-qayṣina-le ‘We shore long and curly goat’s hair off of the backs of the goats and we shore wool off of the backs of the sheep’ 94/11;",
+            "segments": [
+              {
+                "turoyo": ") hawo k-šəpʕi aṭ=ṭayre fayore ʕal u=margayḏe ko-qoyəṣ ač=čangataṯṯe, ko-doralle",
+                "translations": [
+                  "ʻwenn die Vögel über die Wiese jenes Mannes fliegen, so stutzt er ihnen die Flügel und lässt sie zur Erde fallenʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["566"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["95/99"]
+              },
+              {
+                "turoyo": "u=kaǧ w-u=ḥīt-ano me ʕal ḥaṣe d-aʕ=ʕeze ko-qayṣina-le w-ʕamro-ste me ʕal ḥaṣe d-aʕ-ʕwone ko-qayṣina-le s hair off of the backs of the goats and we shore wool off of the backs of the sheep’",
+                "translations": ["‘We shore long and curly goat’"],
+                "references": ["94/11"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "kul=deburo d-nofaq-wa qāṣ-wa qarʕe",
+            "translations": ["‘Every bee that came out – he cut its head’"],
+            "references": ["72/6"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kul=deburo d-nofaq-wa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qāṣ-wa qarʕe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Every bee that came out – he cut its head’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "72/6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kul=deburo d-nofaq-wa, qāṣ-wa qarʕe ‘Every bee that came out – he cut its head’ 72/6;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kul=deburo d-nofaq-wa, qāṣ-wa qarʕe",
+                "translations": ["‘Every bee that came out – he cut its head’"],
+                "references": ["72/6"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "quṣ u=qarʕ-ano-ste k-owe kavze ʕal foṯe d-am=maye i=kavz-ayo quṣ-a",
+            "translations": [
+              "schneide auch diesen kopf ab",
+              "‘There are algae on the surface of water. Cut these algae’"
+            ],
+            "references": ["1", "565", "52/118"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " quṣ u=qarʕ-ano-ste "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻschneide auch diesen kopf abʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "565"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "52/118"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-owe kavze ʕal foṯe d-am=maye i=kavz-ayo quṣ-a "
+              },
+              {
+                "kind": "translation",
+                "value": "‘There are algae on the surface of water. Cut these algae’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/92"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) quṣ u=qarʕ-ano-ste ʻschneide auch diesen kopf abʼ; 565; 52/118; k-owe kavze ʕal foṯe d-am=maye i=kavz-ayo quṣ-a ‘There are algae on the surface of water. Cut these algae’ 75/92;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") quṣ u=qarʕ-ano-ste",
+                "translations": ["ʻschneide auch diesen kopf abʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["565"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["52/118"]
+              },
+              {
+                "turoyo": "k-owe kavze ʕal foṯe d-am=maye i=kavz-ayo quṣ-a",
+                "translations": [
+                  "‘There are algae on the surface of water. Cut these algae’"
+                ],
+                "references": ["75/92"]
+              }
+            ]
           },
           {
+            "turoyo": "quṣ bəske mi-d-sawkəx prs",
+            "translations": ["schneide eine Zotte von deinem Haare ab"],
+            "references": ["2", "566", "72/16"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " quṣ bəske mi-d-sawkəx "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻschneide eine Zotte von deinem Haare abʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "566"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "72/16"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) quṣ bəske mi-d-sawkəx ʻschneide eine Zotte von deinem Haare abʼ; 566; prs 72/16;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") quṣ bəske mi-d-sawkəx",
+                "translations": ["ʻschneide eine Zotte von deinem Haare abʼ"],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["566"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["72/16"]
+              }
+            ]
           }
         ]
       }
@@ -65,26 +509,419 @@
       "conjugations": {
         "Preterit": [
           {
-            "text": "1) kət-la bəšto lo=qīṣ bə-mqaṣ w lo=ḥīṭ b-i=mḥaṭo ʻes (das Mädchen f) hatte ein Kleid, das war mit keiner Schere geschnitten und mit keiner Nadel genähtʼ; 565-566; prs 106/19; prs 107/36; 3) qiṣo raġle ʻsein Fuss bekam Hühneraugenʼ; 566; 4) hano qīṣ lebe. omər: kīt w layt a=tre=aḥunonayḏi ele axilile. w hano ele qṭilile, w hano ʕăbəd-yo ʻda schöpfte er Verdacht. er sagte sich: Mag sein was will, dieser hat meine Brüder getötet und aufgefressen, und dies ist ein böser Unholdʼ; 566; 96/21;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "kət-la bəšto lo=qīṣ bə-mqaṣ w lo=ḥīṭ b-i=mḥaṭo - prs prs",
+            "translations": [
+              "es (das Mädchen f) hatte ein Kleid, das war mit keiner Schere geschnitten und mit keiner Nadel genäht"
+            ],
+            "references": ["1", "565", "566"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kət-la bəšto lo=qīṣ bə-mqaṣ w lo=ḥīṭ b-i=mḥaṭo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes (das Mädchen f) hatte ein Kleid, das war mit keiner Schere geschnitten und mit keiner Nadel genähtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "565"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "566"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "106/19"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "107/36"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) kət-la bəšto lo=qīṣ bə-mqaṣ w lo=ḥīṭ b-i=mḥaṭo ʻes (das Mädchen f) hatte ein Kleid, das war mit keiner Schere geschnitten und mit keiner Nadel genähtʼ; 565-566; prs 106/19; prs 107/36;",
+            "segments": [
+              {
+                "turoyo": ") kət-la bəšto lo=qīṣ bə-mqaṣ w lo=ḥīṭ b-i=mḥaṭo",
+                "translations": [
+                  "ʻes (das Mädchen f) hatte ein Kleid, das war mit keiner Schere geschnitten und mit keiner Nadel genähtʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["565", "566"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["106/19"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["107/36"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "qiṣo raġle",
+            "translations": ["sein Fuss bekam Hühneraugen"],
+            "references": ["3", "566"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qiṣo raġle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsein Fuss bekam Hühneraugenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "566"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "3) qiṣo raġle ʻsein Fuss bekam Hühneraugenʼ; 566;",
+            "segments": [
+              {
+                "turoyo": ") qiṣo raġle",
+                "translations": ["ʻsein Fuss bekam Hühneraugenʼ"],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["566"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "hano qīṣ lebe. omər kīt w layt a=tre=aḥunonayḏi ele axilile. w hano ele qṭilile w hano ʕăbəd-yo",
+            "translations": [
+              "da schöpfte er Verdacht. er sagte sich: Mag sein was will, dieser hat meine Brüder getötet und aufgefressen, und dies ist ein böser Unhold"
+            ],
+            "references": ["4", "566", "96/21"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "4"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hano qīṣ lebe. omər"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kīt w layt a=tre=aḥunonayḏi ele axilile. w hano ele qṭilile"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w hano ʕăbəd-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda schöpfte er Verdacht. er sagte sich: Mag sein was will, dieser hat meine Brüder getötet und aufgefressen, und dies ist ein böser Unholdʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "566"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "96/21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "4) hano qīṣ lebe. omər: kīt w layt a=tre=aḥunonayḏi ele axilile. w hano ele qṭilile, w hano ʕăbəd-yo ʻda schöpfte er Verdacht. er sagte sich: Mag sein was will, dieser hat meine Brüder getötet und aufgefressen, und dies ist ein böser Unholdʼ; 566; 96/21;",
+            "segments": [
+              {
+                "turoyo": ") hano qīṣ lebe. omər: kīt w layt a=tre=aḥunonayḏi ele axilile. w hano ele qṭilile, w hano ʕăbəd-yo",
+                "translations": [
+                  "ʻda schöpfte er Verdacht. er sagte sich: Mag sein was will, dieser hat meine Brüder getötet und aufgefressen, und dies ist ein böser Unholdʼ"
+                ],
+                "references": ["4"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["566"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["96/21"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "lə=k-miqəṣ lebi aʕla - ʕal d-k-omanno lə=xi-la ḥalwo d-noše",
+            "translations": [
+              "ich schöpfte keinen Verdacht gegen sie. Wie ich sagte, hatte sie keine Menschenmilch getrunken"
+            ],
+            "references": ["4", "566", "52/76"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "4"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=k-miqəṣ lebi aʕla - ʕal d-k-omanno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=xi-la ḥalwo d-noše "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich schöpfte keinen Verdacht gegen sie. Wie ich sagte, hatte sie keine Menschenmilch getrunkenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "566"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "52/76"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "4) lə=k-miqəṣ lebi aʕla - ʕal d-k-omanno, lə=xi-la ḥalwo d-noše ʻich schöpfte keinen Verdacht gegen sie. Wie ich sagte, hatte sie keine Menschenmilch getrunkenʼ; 566; 52/76;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") lə=k-miqəṣ lebi aʕla - ʕal d-k-omanno, lə=xi-la ḥalwo d-noše",
+                "translations": [
+                  "ʻich schöpfte keinen Verdacht gegen sie. Wie ich sagte, hatte sie keine Menschenmilch getrunkenʼ"
+                ],
+                "references": ["4"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["566"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["52/76"]
+              }
+            ]
           }
         ],
         "Part. Pass.": [
           {
+            "turoyo": "kla raġla qəṣto kla mliṯo admo w zawqo prs",
+            "translations": [
+              "an ihrem Fuss war ein Geschwür voll Blut und Eiter"
+            ],
+            "references": ["3", "566", "63/12"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kla raġla qəṣto kla mliṯo admo w zawqo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻan ihrem Fuss war ein Geschwür voll Blut und Eiterʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "566"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "63/12"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "3) kla raġla qəṣto kla mliṯo admo w zawqo ʻan ihrem Fuss war ein Geschwür voll Blut und Eiterʼ; 566; prs 63/12;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") kla raġla qəṣto kla mliṯo admo w zawqo",
+                "translations": [
+                  "ʻan ihrem Fuss war ein Geschwür voll Blut und Eiterʼ"
+                ],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["566"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["63/12"]
+              }
+            ]
           }
         ]
       }

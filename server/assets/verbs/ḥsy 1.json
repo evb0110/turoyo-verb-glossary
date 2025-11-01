@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ḥsele",
-        "ḥose"
-      ],
+      "forms": ["ḥsele", "ḥose"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,53 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "wazo ḥsiṯo",
+            "translations": ["eine gefüllte Gans"],
+            "references": ["381"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "wazo ḥsiṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻeine gefüllte Gansʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "381"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "wazo ḥsiṯo ʻeine gefüllte Gansʼ; 381;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "wazo ḥsiṯo",
+                "translations": ["ʻeine gefüllte Gansʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["381"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "füllen;"
-  ],
+  "idioms": ["füllen;"],
   "uncertain": false
 }

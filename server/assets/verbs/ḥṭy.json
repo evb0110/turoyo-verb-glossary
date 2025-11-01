@@ -14,66 +14,344 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ḥaṭi",
-        "ḥoṭe"
-      ],
+      "forms": ["ḥaṭi", "ḥoṭe"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "madām b-u=ḥṭoyo d-ḥaṭat ono-ste-ne haw k-uṯyono aʕmux",
+            "translations": [
+              "nachdem du die Sünde begangen hast, komme ich nicht mit dir"
+            ],
+            "references": ["350", "113/21"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "madām b-u=ḥṭoyo d-ḥaṭat"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono-ste-ne haw k-uṯyono aʕmux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnachdem du die Sünde begangen hast, komme ich nicht mit dirʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "350"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "113/21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "madām b-u=ḥṭoyo d-ḥaṭat, ono-ste-ne haw k-uṯyono aʕmux ʻnachdem du die Sünde begangen hast, komme ich nicht mit dirʼ; 350; 113/21;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "madām b-u=ḥṭoyo d-ḥaṭat, ono-ste-ne haw k-uṯyono aʕmux",
+                "translations": [
+                  "ʻnachdem du die Sünde begangen hast, komme ich nicht mit dirʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["350"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["113/21"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "aloho obe-la i=dukṯ-ayo də-mḥaḏ̣role l-u=ənsān qamoyo meqəm me d-ḥoṭe d-quṭlína-le aḥna gəd-əzzán l-i=gihano w-gəḥ-ḥoṭina ḥṭiṯo rabṯo",
+            "translations": [
+              "Gott möge ihr den Ort zuweisen, den er dem ersten Menschen vorbereitet hat, bevor er sündigte",
+              "‘Wenn wir den töten, so kommen wir in die Hölle, und wir begehen eine große Sünde’"
+            ],
+            "references": ["LB 5", "35/48"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aloho obe-la i=dukṯ-ayo də-mḥaḏ̣role l-u=ənsān qamoyo meqəm me d-ḥoṭe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻGott möge ihr den Ort zuweisen, den er dem ersten Menschen vorbereitet hat, bevor er sündigteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-quṭlína-le aḥna"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəd-əzzán l-i=gihano w-gəḥ-ḥoṭina ḥṭiṯo rabṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wenn wir den töten, so kommen wir in die Hölle, und wir begehen eine große Sünde’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "35/48"
+              }
+            ],
             "text": "aloho obe-la i=dukṯ-ayo də-mḥaḏ̣role l-u=ənsān qamoyo meqəm me d-ḥoṭe ʻGott möge ihr den Ort zuweisen, den er dem ersten Menschen vorbereitet hat, bevor er sündigteʼ; LB 5; d-quṭlína-le aḥna, gəd-əzzán l-i=gihano w-gəḥ-ḥoṭina ḥṭiṯo rabṯo ‘Wenn wir den töten, so kommen wir in die Hölle, und wir begehen eine große Sünde’; 35/48",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "aloho obe-la i=dukṯ-ayo də-mḥaḏ̣role l-u=ənsān qamoyo meqəm me d-ḥoṭe",
+                "translations": [
+                  "ʻGott möge ihr den Ort zuweisen, den er dem ersten Menschen vorbereitet hat, bevor er sündigteʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 5"]
+              },
+              {
+                "turoyo": "d-quṭlína-le aḥna, gəd-əzzán l-i=gihano w-gəḥ-ḥoṭina ḥṭiṯo rabṯo",
+                "translations": [
+                  "‘Wenn wir den töten, so kommen wir in die Hölle, und wir begehen eine große Sünde’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["35/48"]
+              }
+            ]
           }
         ],
         "Part. act.": [
           {
+            "turoyo": "u=gayoso be məqqa ḥaṭóyo-wa",
+            "translations": ["der Räuber hatte auch viele Sünden begangen"],
+            "references": ["LB 139"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=gayoso be məqqa ḥaṭóyo-wa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Räuber hatte auch viele Sünden begangenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 139"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=gayoso be məqqa ḥaṭóyo-wa ʻder Räuber hatte auch viele Sünden begangenʼ; LB 139;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=gayoso be məqqa ḥaṭóyo-wa",
+                "translations": [
+                  "ʻder Räuber hatte auch viele Sünden begangenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 139"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "maḥṭele",
-        "maḥṭe"
-      ],
+      "forms": ["maḥṭele", "maḥṭe"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "maḥṭǝ́le-li",
+            "translations": ["er hat mich zur Sünde verführt"],
+            "references": ["388"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maḥṭǝ́le-li "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hat mich zur Sünde verführtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "388"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "maḥṭǝ́le-li ʻer hat mich zur Sünde verführtʼ; 388;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "maḥṭǝ́le-li",
+                "translations": ["ʻer hat mich zur Sünde verführtʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["388"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "ánnaqla ṭabʕan u=šido k-obəʕ daʔiman d-maḥṭe ad=dayroye",
+            "translations": [
+              "The devil always wanted to solicit the monks to sin"
+            ],
+            "references": ["392", "42/1"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ánnaqla ṭabʕan u=šido k-obəʕ daʔiman d-maḥṭe ad=dayroye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻThe devil always wanted to solicit the monks to sinʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "392"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "42/1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ánnaqla ṭabʕan u=šido k-obəʕ daʔiman d-maḥṭe ad=dayroye ʻThe devil always wanted to solicit the monks to sinʼ; 392; 42/1;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ánnaqla ṭabʕan u=šido k-obəʕ daʔiman d-maḥṭe ad=dayroye",
+                "translations": [
+                  "ʻThe devil always wanted to solicit the monks to sinʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["392"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["42/1"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "Sünde begehen;",
-    "zur Sünde verführen;"
-  ],
+  "idioms": ["Sünde begehen;", "zur Sünde verführen;"],
   "uncertain": false
 }

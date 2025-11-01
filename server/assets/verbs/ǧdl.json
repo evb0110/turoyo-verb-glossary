@@ -14,40 +14,185 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mǧadele",
-        "mǧadəl"
-      ],
+      "forms": ["mǧadele", "mǧadəl"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "a=tre mǧadalle mqatalle ʕam ḥḏoḏe",
+            "translations": [
+              "die beiden (Täuberiche) stritten und kämpften miteinander"
+            ],
+            "references": ["307", "60/23"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "a=tre mǧadalle mqatalle ʕam ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie beiden (Täuberiche) stritten und kämpften miteinanderʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "307"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "60/23"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "a=tre mǧadalle mqatalle ʕam ḥḏoḏe ʻdie beiden (Täuberiche) stritten und kämpften miteinanderʼ; 307; 60/23;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "a=tre mǧadalle mqatalle ʕam ḥḏoḏe",
+                "translations": [
+                  "ʻdie beiden (Täuberiche) stritten und kämpften miteinanderʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["307"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["60/23"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "b-u=ḥal-ano gə-mǧadlina ʕam ḥḏoḏe",
+            "translations": ["‘So werden wir miteinander streiten’"],
+            "references": ["25/62"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "b-u=ḥal-ano gə-mǧadlina ʕam ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘So werden wir miteinander streiten’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/62"
+              }
+            ],
             "text": "b-u=ḥal-ano gə-mǧadlina ʕam ḥḏoḏe ‘So werden wir miteinander streiten’; 25/62",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "b-u=ḥal-ano gə-mǧadlina ʕam ḥḏoḏe",
+                "translations": ["‘So werden wir miteinander streiten’"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["25/62"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "tre mənxu mǧadelu ʕam tre mənne",
+            "translations": ["kämpft immer zwei von euch mit zwei von ihnen"],
+            "references": ["310", "91/31"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "tre mənxu mǧadelu ʕam tre mənne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻkämpft immer zwei von euch mit zwei von ihnenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "310"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "91/31"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "tre mənxu mǧadelu ʕam tre mənne ʻkämpft immer zwei von euch mit zwei von ihnenʼ; 310; 91/31;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "tre mənxu mǧadelu ʕam tre mənne",
+                "translations": [
+                  "ʻkämpft immer zwei von euch mit zwei von ihnenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["310"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["91/31"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "streiten;"
-  ],
+  "idioms": ["streiten;"],
   "uncertain": false
 }

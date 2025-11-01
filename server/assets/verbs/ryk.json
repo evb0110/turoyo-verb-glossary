@@ -14,17 +14,48 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "rəkle",
-        "royək"
-      ],
+      "forms": ["rəkle", "royək"],
       "conjugations": {
         "Infectum": [
           {
-            "text": "gabayna ko-raykina aš=šurone d-ab=bote; 579;",
-            "turoyo": "",
+            "turoyo": "gabayna ko-raykina aš=šurone d-ab=bote",
             "translations": [],
-            "references": []
+            "references": ["579"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gabayna ko-raykina aš=šurone d-ab=bote"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "579"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "gabayna ko-raykina aš=šurone d-ab=bote; 579;",
+            "segments": [
+              {
+                "turoyo": "gabayna ko-raykina aš=šurone d-ab=bote",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["579"]
+              }
+            ]
           }
         ]
       }

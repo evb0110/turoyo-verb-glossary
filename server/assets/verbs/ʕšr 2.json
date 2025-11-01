@@ -12,24 +12,94 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mʕašalle",
-        "mʕašər"
-      ],
+      "forms": ["mʕašalle", "mʕašər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "u=zʕuro rawəx ʕal i=səst-ayḏe w barəm b-i=dukṯo də-mʕašálle-le l-u=babo",
+            "translations": [
+              "der Jüngling bestieg seine Stute und tummelte sich an der Stelle, die ihm sein Vater angegeben hatte"
+            ],
+            "references": ["2", "243", "29/355"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=zʕuro rawəx ʕal i=səst-ayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w barəm b-i=dukṯo də-mʕašálle-le l-u=babo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Jüngling bestieg seine Stute und tummelte sich an der Stelle, die ihm sein Vater angegeben hatteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "243"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/355"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) u=zʕuro rawəx ʕal i=səst-ayḏe, w barəm b-i=dukṯo də-mʕašálle-le l-u=babo ʻder Jüngling bestieg seine Stute und tummelte sich an der Stelle, die ihm sein Vater angegeben hatteʼ; 243; 29/355;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") u=zʕuro rawəx ʕal i=səst-ayḏe, w barəm b-i=dukṯo də-mʕašálle-le l-u=babo",
+                "translations": [
+                  "ʻder Jüngling bestieg seine Stute und tummelte sich an der Stelle, die ihm sein Vater angegeben hatteʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["243"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/355"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "angeben;"
-  ],
+  "idioms": ["angeben;"],
   "uncertain": false
 }

@@ -14,24 +14,76 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "dəfle",
-        "doyəf"
-      ],
+      "forms": ["dəfle", "doyəf"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "dəfle maye w malḥo l-i=lašayḏe prs",
+            "translations": ["er bestrich seinen Körper mit Wasser und Salz"],
+            "references": ["506", "80/4"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "dəfle maye w malḥo l-i=lašayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer bestrich seinen Körper mit Wasser und Salzʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "506"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "80/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "dəfle maye w malḥo l-i=lašayḏe ʻer bestrich seinen Körper mit Wasser und Salzʼ; 506; prs 80/4;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "dəfle maye w malḥo l-i=lašayḏe",
+                "translations": [
+                  "ʻer bestrich seinen Körper mit Wasser und Salzʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["506"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["80/4"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "bestreichen;"
-  ],
+  "idioms": ["bestreichen;"],
   "uncertain": false
 }

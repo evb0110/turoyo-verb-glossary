@@ -14,24 +14,53 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mxapele",
-        "mxape"
-      ],
+      "forms": ["mxapele", "mxape"],
       "conjugations": {
         "Infectum": [
           {
-            "text": "kə-mxape-li; 447;",
-            "turoyo": "",
+            "turoyo": "kə-mxape-li",
             "translations": [],
-            "references": []
+            "references": ["447"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kə-mxape-li"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "447"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kə-mxape-li; 447;",
+            "segments": [
+              {
+                "turoyo": "kə-mxape-li",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["447"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "betrügen;"
-  ],
+  "idioms": ["betrügen;"],
   "uncertain": false
 }

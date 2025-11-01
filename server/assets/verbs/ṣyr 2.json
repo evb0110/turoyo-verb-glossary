@@ -5,24 +5,59 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ṣayər",
-        "ṣoyər"
-      ],
+      "forms": ["ṣayər", "ṣoyər"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "ṣayiro i=ṣopa",
+            "translations": ["der Ofen ist durch Überheizung rot geworden"],
+            "references": ["581"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṣayiro i=ṣopa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Ofen ist durch Überheizung rot gewordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "581"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ṣayiro i=ṣopa ʻder Ofen ist durch Überheizung rot gewordenʼ; 581;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ṣayiro i=ṣopa",
+                "translations": [
+                  "ʻder Ofen ist durch Überheizung rot gewordenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["581"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "überheizen;"
-  ],
+  "idioms": ["überheizen;"],
   "uncertain": false
 }

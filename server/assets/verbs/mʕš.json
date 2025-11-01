@@ -5,10 +5,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mʕīš",
-        "məʕəš"
-      ],
+      "forms": ["mʕīš", "məʕəš"],
       "conjugations": {}
     },
     {
@@ -17,18 +14,57 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mʕīš lebi",
+            "translations": [
+              "ich habe keine Lust mehr (zu arbeiten, zu essen)"
+            ],
+            "references": ["230"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mʕīš lebi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe keine Lust mehr (zu arbeiten, zu essen)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "230"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mʕīš lebi ʻich habe keine Lust mehr (zu arbeiten, zu essen)ʼ; 230;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mʕīš lebi",
+                "translations": [
+                  "ʻich habe keine Lust mehr (zu arbeiten, zu essen)ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["230"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) keine Lust haben;",
-    "mbl → ybl"
-  ],
+  "idioms": ["(Detrans.) keine Lust haben;", "mbl → ybl"],
   "uncertain": false
 }

@@ -14,24 +14,161 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "tayəb",
-        "toyəb"
-      ],
+      "forms": ["tayəb", "toyəb"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "qṭəʕlan lišone bas-yo annaqla tayəb prs məd ḥzele l-u=malaxo <…> d-tayəb w-məʕtarafle b-aloho šləḥle aǧ=ǧul-ayḏe w-hiwile l-u=moro",
+            "translations": [
+              "wir haben ihm die Zunge abgeschnitten, es ist genug, er hat jetzt gebüsst",
+              "‘As the angel saw that he had [truly] repented and had professed God he took off his clothes and gave them back to [their] owner’"
+            ],
+            "references": ["511", "181/11", "43/43"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qṭəʕlan lišone"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " bas-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " annaqla tayəb "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir haben ihm die Zunge abgeschnitten, es ist genug, er hat jetzt gebüsstʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "511"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "181/11"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " məd ḥzele l-u=malaxo <…> d-tayəb w-məʕtarafle b-aloho"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šləḥle aǧ=ǧul-ayḏe w-hiwile l-u=moro "
+              },
+              {
+                "kind": "translation",
+                "value": "‘As the angel saw that he had [truly] repented and had professed God he took off his clothes and gave them back to [their] owner’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "43/43"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "43/55"
+              }
+            ],
             "text": "qṭəʕlan lišone, bas-yo, annaqla tayəb ʻwir haben ihm die Zunge abgeschnitten, es ist genug, er hat jetzt gebüsstʼ; 511; prs 181/11; məd ḥzele l-u=malaxo <…> d-tayəb w-məʕtarafle b-aloho, šləḥle aǧ=ǧul-ayḏe w-hiwile l-u=moro ‘As the angel saw that he had [truly] repented and had professed God he took off his clothes and gave them back to [their] owner’; 43/43 [MT]; 43/55",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "qṭəʕlan lišone, bas-yo, annaqla tayəb",
+                "translations": [
+                  "ʻwir haben ihm die Zunge abgeschnitten, es ist genug, er hat jetzt gebüsstʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["511"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["181/11"]
+              },
+              {
+                "turoyo": "məd ḥzele l-u=malaxo <…> d-tayəb w-məʕtarafle b-aloho, šləḥle aǧ=ǧul-ayḏe w-hiwile l-u=moro",
+                "translations": [
+                  "‘As the angel saw that he had [truly] repented and had professed God he took off his clothes and gave them back to [their] owner’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["43/43"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["43/55"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "reuen, büssen;"
-  ],
+  "idioms": ["reuen, büssen;"],
   "uncertain": false
 }

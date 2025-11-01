@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ftəqle",
-        "fotəq"
-      ],
+      "forms": ["ftəqle", "fotəq"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,53 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ftīq u=šarwolo",
+            "translations": ["die Hose ist aufgeplatzt"],
+            "references": ["226"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ftīq u=šarwolo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Hose ist aufgeplatztʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "226"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ftīq u=šarwolo ʻdie Hose ist aufgeplatztʼ; 226;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ftīq u=šarwolo",
+                "translations": ["ʻdie Hose ist aufgeplatztʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["226"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "zum Aufplatzen bringen; aufplatzen;"
-  ],
+  "idioms": ["zum Aufplatzen bringen; aufplatzen;"],
   "uncertain": false
 }

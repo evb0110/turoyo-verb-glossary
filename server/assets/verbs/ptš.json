@@ -14,24 +14,66 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mpatašle",
-        "mpatəš"
-      ],
+      "forms": ["mpatašle", "mpatəš"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mpatašle More examples",
+            "translations": ["er suchte ihn"],
+            "references": ["160"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mpatašle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer suchte ihnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "160"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " More examples"
+              }
+            ],
             "text": "mpatašle ʻer suchte ihnʼ; 160; More examples",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mpatašle",
+                "translations": ["ʻer suchte ihnʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["160"]
+              },
+              {
+                "turoyo": "More examples",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "suchen;"
-  ],
+  "idioms": ["suchen;"],
   "uncertain": false
 }

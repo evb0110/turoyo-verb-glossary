@@ -14,17 +14,89 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ṣləfle",
-        "ṣoləf"
-      ],
+      "forms": ["ṣləfle", "ṣoləf"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mḥele kefo b-u=ṭayro qayiṯo i=kefo b-qarʕe də-ḥḏo=aṯto ṣləfole prs",
+            "translations": [
+              "einst traf ein Stein, den er nach einem Vogel schleuderte, eine Frau an den Kopf und verwundete sie"
+            ],
+            "references": ["70", "240/24"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mḥele kefo b-u=ṭayro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qayiṯo i=kefo b-qarʕe də-ḥḏo=aṯto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṣləfole "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻeinst traf ein Stein, den er nach einem Vogel schleuderte, eine Frau an den Kopf und verwundete sieʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "240/24"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mḥele kefo b-u=ṭayro, qayiṯo i=kefo b-qarʕe də-ḥḏo=aṯto, ṣləfole ʻeinst traf ein Stein, den er nach einem Vogel schleuderte, eine Frau an den Kopf und verwundete sieʼ; 70; prs 240/24;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mḥele kefo b-u=ṭayro, qayiṯo i=kefo b-qarʕe də-ḥḏo=aṯto, ṣləfole",
+                "translations": [
+                  "ʻeinst traf ein Stein, den er nach einem Vogel schleuderte, eine Frau an den Kopf und verwundete sieʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["70"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["240/24"]
+              }
+            ]
           }
         ]
       }
@@ -35,17 +107,70 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ṣlīf qarʕe",
+            "translations": ["er bekam ein Loch in den Kopf"],
+            "references": ["125", "115/166"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṣlīf qarʕe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer bekam ein Loch in den Kopfʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "125"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "115/166"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ṣlīf qarʕe ʻer bekam ein Loch in den Kopfʼ; 125; 115/166;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ṣlīf qarʕe",
+                "translations": ["ʻer bekam ein Loch in den Kopfʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["125"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["115/166"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "verwunden;"
-  ],
+  "idioms": ["verwunden;"],
   "uncertain": false
 }

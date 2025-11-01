@@ -14,24 +14,86 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mbamxalle",
-        "mbamxər"
-      ],
+      "forms": ["mbamxalle", "mbamxər"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "gədə-mbamxrat ruḥux lə=k-owe d-ʔi=šlomo dorat ʕal ənsān manne",
+            "translations": [
+              "du musst dein Gesicht bedecken und niemandem von ihnen den Gruss entbieten"
+            ],
+            "references": ["770", "107/35"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gədə-mbamxrat ruḥux"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=k-owe d-ʔi=šlomo dorat ʕal ənsān manne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu musst dein Gesicht bedecken und niemandem von ihnen den Gruss entbietenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "770"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "107/35"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "gədə-mbamxrat ruḥux, lə=k-owe d-ʔi=šlomo dorat ʕal ənsān manne ʻdu musst dein Gesicht bedecken und niemandem von ihnen den Gruss entbietenʼ; 770; 107/35;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "gədə-mbamxrat ruḥux, lə=k-owe d-ʔi=šlomo dorat ʕal ənsān manne",
+                "translations": [
+                  "ʻdu musst dein Gesicht bedecken und niemandem von ihnen den Gruss entbietenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["770"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["107/35"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "bedecken, bedeicken;"
-  ],
+  "idioms": ["bedecken, bedeicken;"],
   "uncertain": false
 }

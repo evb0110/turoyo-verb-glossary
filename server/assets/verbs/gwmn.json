@@ -14,32 +14,130 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mgawmalle",
-        "mgawmən"
-      ],
+      "forms": ["mgawmalle", "mgawmən"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mgawmalle b-ʕaqəl diḏe. azzé l-s-i=arnuwo - prs",
+            "translations": ["er überlegte sich die Sache und ging zum Hasen"],
+            "references": ["777", "778", "194/29"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mgawmalle b-ʕaqəl diḏe. azzé l-s-i=arnuwo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer überlegte sich die Sache und ging zum Hasenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "777"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "778"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "194/29"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mgawmalle b-ʕaqəl diḏe. azzé l-s-i=arnuwo ʻer überlegte sich die Sache und ging zum Hasenʼ; 777-778; prs 194/29;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mgawmalle b-ʕaqəl diḏe. azzé l-s-i=arnuwo",
+                "translations": [
+                  "ʻer überlegte sich die Sache und ging zum Hasenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["777", "778"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["194/29"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "k-mgawmanno",
+            "translations": ["ich vermute"],
+            "references": ["778"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-mgawmanno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich vermuteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "778"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "k-mgawmanno ʻich vermuteʼ; 778;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "k-mgawmanno",
+                "translations": ["ʻich vermuteʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["778"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "denken, glauben, vermuten;"
-  ],
+  "idioms": ["denken, glauben, vermuten;"],
   "uncertain": false
 }

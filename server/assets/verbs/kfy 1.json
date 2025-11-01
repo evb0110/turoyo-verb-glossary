@@ -5,24 +5,59 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "kfele",
-        "kofe"
-      ],
+      "forms": ["kfele", "kofe"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "l-i=pire kfela u=qalpaġ ʕal i=bardəš",
+            "translations": ["die Frau stülpte den Deckel auf den Kochtopf"],
+            "references": ["334"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-i=pire kfela u=qalpaġ ʕal i=bardəš "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Frau stülpte den Deckel auf den Kochtopfʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "334"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "l-i=pire kfela u=qalpaġ ʕal i=bardəš ʻdie Frau stülpte den Deckel auf den Kochtopfʼ; 334;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "l-i=pire kfela u=qalpaġ ʕal i=bardəš",
+                "translations": [
+                  "ʻdie Frau stülpte den Deckel auf den Kochtopfʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["334"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "stülpen;"
-  ],
+  "idioms": ["stülpen;"],
   "uncertain": false
 }

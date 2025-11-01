@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "fṭīm",
-        "məfṭəm"
-      ],
+      "forms": ["fṭīm", "məfṭəm"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,82 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ʕal u=mʕaddal-ano fayəš ko-mənqo-la i=ġăzale w yariwo hul də-fṭimo",
+            "translations": [
+              "die Gazelle säugte es (das Mädchen f) nun regelmässig, und es wuchs heran, bis zur Entwöhnung"
+            ],
+            "references": ["127", "52/61"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕal u=mʕaddal-ano fayəš ko-mənqo-la i=ġăzale"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w yariwo hul də-fṭimo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Gazelle säugte es (das Mädchen f) nun regelmässig, und es wuchs heran, bis zur Entwöhnungʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "127"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "52/61"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ʕal u=mʕaddal-ano fayəš ko-mənqo-la i=ġăzale, w yariwo hul də-fṭimo ʻdie Gazelle säugte es (das Mädchen f) nun regelmässig, und es wuchs heran, bis zur Entwöhnungʼ; 127; 52/61;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ʕal u=mʕaddal-ano fayəš ko-mənqo-la i=ġăzale, w yariwo hul də-fṭimo",
+                "translations": [
+                  "ʻdie Gazelle säugte es (das Mädchen f) nun regelmässig, und es wuchs heran, bis zur Entwöhnungʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["127"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["52/61"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) entwöhnen;"
-  ],
+  "idioms": ["(Detrans.) entwöhnen;"],
   "uncertain": false
 }

@@ -11,40 +11,344 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "maqraṭle",
-        "maqrəṭ"
-      ],
+      "forms": ["maqraṭle", "maqrəṭ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "qayəm m-u=ṣafro maqraṭle l-u=darwəš w ṭləble i=žənəke me-Ḥḗttim-Attay prs səmle-lalle qaḥwe l=ann=aḥunone. štalle maqraṭṭe -",
+            "translations": [
+              "in der Frühe stand der Derwisch auf und nach dem Frühstück verlangte er von Ḥetim-Attai, er möge ihm nun die Frau geben",
+              "‘He made coffee for the brothers. They drank it and had breakfast’"
+            ],
+            "references": ["137", "17/11", "73/112"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qayəm m-u=ṣafro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maqraṭle l-u=darwəš w ṭləble i=žənəke me-Ḥḗttim-Attay "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻin der Frühe stand der Derwisch auf und nach dem Frühstück verlangte er von Ḥetim-Attai, er möge ihm nun die Frau gebenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "137"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "17/11"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " səmle-lalle qaḥwe l=ann=aḥunone. štalle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maqraṭṭe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘He made coffee for the brothers. They drank it and had breakfast’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/112"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "113"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "qayəm m-u=ṣafro, maqraṭle l-u=darwəš w ṭləble i=žənəke me-Ḥḗttim-Attay ʻin der Frühe stand der Derwisch auf und nach dem Frühstück verlangte er von Ḥetim-Attai, er möge ihm nun die Frau gebenʼ; 137; prs 17/11; səmle-lalle qaḥwe l=ann=aḥunone. štalle, maqraṭṭe ‘He made coffee for the brothers. They drank it and had breakfast’ 73/112-113;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "qayəm m-u=ṣafro, maqraṭle l-u=darwəš w ṭləble i=žənəke me-Ḥḗttim-Attay",
+                "translations": [
+                  "ʻin der Frühe stand der Derwisch auf und nach dem Frühstück verlangte er von Ḥetim-Attai, er möge ihm nun die Frau gebenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["137"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["17/11"]
+              },
+              {
+                "turoyo": "səmle-lalle qaḥwe l=ann=aḥunone. štalle, maqraṭṭe -",
+                "translations": [
+                  "‘He made coffee for the brothers. They drank it and had breakfast’"
+                ],
+                "references": ["73/112", "113"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "hēš me-fəlgə=d-lalyo ko-qōm mʕaləf i=səsyaṯṯe sōm i=qroṭnaṯṯe ko-maqarṭi w ko-maqəm-me qəm səm-lan qaḥwa w-səm-lan čaye səm-lan hno d-maqarṭina",
+            "translations": [
+              "schon um Mitternacht steht er auf, füttert ihre Pferd, macht ihnen Frühstück, weckt sie, und sie verzehren ihr Frühstück",
+              "‘Get up and make us coffee, make us tea, make us this and that, so we can have breakfast’"
+            ],
+            "references": ["144", "67/79", "107"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hēš me-fəlgə=d-lalyo ko-qōm mʕaləf i=səsyaṯṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " sōm i=qroṭnaṯṯe ko-maqarṭi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ko-maqəm-me "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻschon um Mitternacht steht er auf, füttert ihre Pferd, macht ihnen Frühstück, weckt sie, und sie verzehren ihr Frühstückʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "144"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "67/79"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "107"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qəm səm-lan qaḥwa w-səm-lan čaye səm-lan hno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-maqarṭina "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Get up and make us coffee, make us tea, make us this and that, so we can have breakfast’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/78"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "hēš me-fəlgə=d-lalyo ko-qōm mʕaləf i=səsyaṯṯe, sōm i=qroṭnaṯṯe ko-maqarṭi, w ko-maqəm-me ʻschon um Mitternacht steht er auf, füttert ihre Pferd, macht ihnen Frühstück, weckt sie, und sie verzehren ihr Frühstückʼ; 144; 67/79, 107; qəm səm-lan qaḥwa w-səm-lan čaye səm-lan hno, d-maqarṭina ‘Get up and make us coffee, make us tea, make us this and that, so we can have breakfast’ 73/78;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "hēš me-fəlgə=d-lalyo ko-qōm mʕaləf i=səsyaṯṯe, sōm i=qroṭnaṯṯe ko-maqarṭi, w ko-maqəm-me",
+                "translations": [
+                  "ʻschon um Mitternacht steht er auf, füttert ihre Pferd, macht ihnen Frühstück, weckt sie, und sie verzehren ihr Frühstückʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["144"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["67/79", "107"]
+              },
+              {
+                "turoyo": "qəm səm-lan qaḥwa w-səm-lan čaye səm-lan hno, d-maqarṭina",
+                "translations": [
+                  "‘Get up and make us coffee, make us tea, make us this and that, so we can have breakfast’"
+                ],
+                "references": ["73/78"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "m-u=šubbak d-i=awdaye d-maqráṭno-wo biya maḥwe-wo u=Boġāz ġắlabe šafiro",
+            "translations": [
+              "von dem Fenster des Zimmers, in dem ich zu frühstücken pflegte, konnte man den Bosporus sehr schön sehen"
+            ],
+            "references": ["149", "2/58"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "m-u=šubbak d-i=awdaye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-maqráṭno-wo biya"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥwe-wo u=Boġāz ġắlabe šafiro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻvon dem Fenster des Zimmers, in dem ich zu frühstücken pflegte, konnte man den Bosporus sehr schön sehenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "149"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/58"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "m-u=šubbak d-i=awdaye, d-maqráṭno-wo biya, maḥwe-wo u=Boġāz ġắlabe šafiro ʻvon dem Fenster des Zimmers, in dem ich zu frühstücken pflegte, konnte man den Bosporus sehr schön sehenʼ; 149; 2/58;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "m-u=šubbak d-i=awdaye, d-maqráṭno-wo biya, maḥwe-wo u=Boġāz ġắlabe šafiro",
+                "translations": [
+                  "ʻvon dem Fenster des Zimmers, in dem ich zu frühstücken pflegte, konnte man den Bosporus sehr schön sehenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["149"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["2/58"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "früstücken;"
-  ],
+  "idioms": ["früstücken;"],
   "uncertain": false
 }

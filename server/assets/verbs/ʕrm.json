@@ -14,17 +14,105 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mʕaramle",
-        "mʕarəm"
-      ],
+      "forms": ["mʕaramle", "mʕarəm"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "azzeyo maxlele i=xurǧäzinayḏe mlele i=ʕulbe mʕarmole lirat w hiwole l-u=šēx",
+            "translations": [
+              "er ging und leerte seine Satteltasche, füllte den Scheffel, schüttete ihn gehäuft voll mit Goldpfunden und gab sie dem Scheich"
+            ],
+            "references": ["162", "64/234"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "azzeyo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maxlele i=xurǧäzinayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mlele i=ʕulbe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mʕarmole lirat"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w hiwole l-u=šēx "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer ging und leerte seine Satteltasche, füllte den Scheffel, schüttete ihn gehäuft voll mit Goldpfunden und gab sie dem Scheichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "162"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "64/234"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "azzeyo, maxlele i=xurǧäzinayḏe, mlele i=ʕulbe, mʕarmole lirat, w hiwole l-u=šēx ʻer ging und leerte seine Satteltasche, füllte den Scheffel, schüttete ihn gehäuft voll mit Goldpfunden und gab sie dem Scheichʼ; 162; 64/234;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "azzeyo, maxlele i=xurǧäzinayḏe, mlele i=ʕulbe, mʕarmole lirat, w hiwole l-u=šēx",
+                "translations": [
+                  "ʻer ging und leerte seine Satteltasche, füllte den Scheffel, schüttete ihn gehäuft voll mit Goldpfunden und gab sie dem Scheichʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["162"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["64/234"]
+              }
+            ]
           }
         ]
       }
@@ -35,17 +123,53 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "mʕarmo",
+            "translations": ["übervoll gefüllt"],
+            "references": ["175"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mʕarmo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻübervoll gefülltʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "175"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mʕarmo ʻübervoll gefülltʼ; 175;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mʕarmo",
+                "translations": ["ʻübervoll gefülltʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["175"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "füllen;"
-  ],
+  "idioms": ["füllen;"],
   "uncertain": false
 }

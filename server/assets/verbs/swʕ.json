@@ -14,80 +14,805 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "sawəʕ",
-        "sowəʕ"
-      ],
+      "forms": ["sawəʕ", "sowəʕ"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "lə=sawiʕət m-ak=kallawat-ani kulle w k-ubʕət aḥ=ḥamšo=qŭrūš? yatiwi fayiši haka yarḥo haka tre hol d-sawiʕi me-ḥḏoḏe maḥatle-le muklo qume axile sawəʕ mḥallal-le disa hol d-sawəʕ kale sawiʕət šamṯo?",
+            "translations": [
+              "bist du von all diesem Geld noch nicht satt geworden, dass du noch die fünf Groschen haben willst?",
+              "sie blieben noch ein, zwei Monate, um sich die Trennung leichter zu machen (wörtl. bis sie sich aneinander gesättigt hatten",
+              "‘Er setzte der ihm Essen vor, und er aß sich satt’",
+              "‘They were beating him again till it was enough for him’",
+              "‘So did you have plenty of sleep?’"
+            ],
+            "references": ["452", "86/26", "MM 154"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lə=sawiʕət m-ak=kallawat-ani kulle"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w k-ubʕət aḥ=ḥamšo=qŭrūš? "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻbist du von all diesem Geld noch nicht satt geworden, dass du noch die fünf Groschen haben willst?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "452"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "86/26"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " yatiwi fayiši haka yarḥo haka tre hol d-sawiʕi me-ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie blieben noch ein, zwei Monate, um sich die Trennung leichter zu machen (wörtl. bis sie sich aneinander gesättigt hattenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 154"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥatle-le muklo qume axile sawəʕ "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er setzte der ihm Essen vor, und er aß sich satt’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/276"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥallal-le disa hol d-sawəʕ "
+              },
+              {
+                "kind": "translation",
+                "value": "‘They were beating him again till it was enough for him’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "41/34"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kale sawiʕət šamṯo? "
+              },
+              {
+                "kind": "translation",
+                "value": "‘So did you have plenty of sleep?’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/77"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "lə=sawiʕət m-ak=kallawat-ani kulle; w k-ubʕət aḥ=ḥamšo=qŭrūš? ʻbist du von all diesem Geld noch nicht satt geworden, dass du noch die fünf Groschen haben willst?ʼ; 452; 86/26; yatiwi fayiši haka yarḥo haka tre hol d-sawiʕi me-ḥḏoḏe ʻsie blieben noch ein, zwei Monate, um sich die Trennung leichter zu machen (wörtl. bis sie sich aneinander gesättigt hattenʼ; MM 154; maḥatle-le muklo qume axile sawəʕ ‘Er setzte der ihm Essen vor, und er aß sich satt’; 24/276; mḥallal-le disa hol d-sawəʕ ‘They were beating him again till it was enough for him’; 41/34; kale sawiʕət šamṯo? ‘So did you have plenty of sleep?’ 73/77;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "lə=sawiʕət m-ak=kallawat-ani kulle",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "w k-ubʕət aḥ=ḥamšo=qŭrūš?",
+                "translations": [
+                  "ʻbist du von all diesem Geld noch nicht satt geworden, dass du noch die fünf Groschen haben willst?ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["452"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["86/26"]
+              },
+              {
+                "turoyo": "yatiwi fayiši haka yarḥo haka tre hol d-sawiʕi me-ḥḏoḏe",
+                "translations": [
+                  "ʻsie blieben noch ein, zwei Monate, um sich die Trennung leichter zu machen (wörtl. bis sie sich aneinander gesättigt hattenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["MM 154"]
+              },
+              {
+                "turoyo": "maḥatle-le muklo qume axile sawəʕ",
+                "translations": [
+                  "‘Er setzte der ihm Essen vor, und er aß sich satt’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/276"]
+              },
+              {
+                "turoyo": "mḥallal-le disa hol d-sawəʕ",
+                "translations": [
+                  "‘They were beating him again till it was enough for him’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["41/34"]
+              },
+              {
+                "turoyo": "kale sawiʕət šamṯo?",
+                "translations": ["‘So did you have plenty of sleep?’"],
+                "references": ["73/77"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "g-dumxono lo=mətwitul-li hol tloṯo=yawme d-sawʕono šanṯo prs",
+            "translations": [
+              "ich will mich schlafen legen, weckt mich nicht vor drei Tagen, damit ich genug schlafe"
+            ],
+            "references": ["455", "243/24"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "g-dumxono"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=mətwitul-li hol tloṯo=yawme"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-sawʕono šanṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich will mich schlafen legen, weckt mich nicht vor drei Tagen, damit ich genug schlafeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "455"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "243/24"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "g-dumxono, lo=mətwitul-li hol tloṯo=yawme, d-sawʕono šanṯo ʻich will mich schlafen legen, weckt mich nicht vor drei Tagen, damit ich genug schlafeʼ; 455; prs 243/24;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "g-dumxono, lo=mətwitul-li hol tloṯo=yawme, d-sawʕono šanṯo",
+                "translations": [
+                  "ʻich will mich schlafen legen, weckt mich nicht vor drei Tagen, damit ich genug schlafeʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["455"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["243/24"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "w aḏ̣=ḏ̣ayfe d-ŭṯé-wo-lan lo=suʕi-wo m-i=fərǧayḏe",
+            "translations": [
+              "und die Gäste, die zu uns kamen, konnten sich nicht satt an ihm (Bosporus) sehen"
+            ],
+            "references": ["456", "2/59"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "w aḏ̣=ḏ̣ayfe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-ŭṯé-wo-lan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=suʕi-wo m-i=fərǧayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻund die Gäste, die zu uns kamen, konnten sich nicht satt an ihm (Bosporus) sehenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "456"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/59"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "w aḏ̣=ḏ̣ayfe, d-ŭṯé-wo-lan, lo=suʕi-wo m-i=fərǧayḏe ʻund die Gäste, die zu uns kamen, konnten sich nicht satt an ihm (Bosporus) sehenʼ; 456; 2/59;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "w aḏ̣=ḏ̣ayfe, d-ŭṯé-wo-lan, lo=suʕi-wo m-i=fərǧayḏe",
+                "translations": [
+                  "ʻund die Gäste, die zu uns kamen, konnten sich nicht satt an ihm (Bosporus) sehenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["456"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["2/59"]
+              }
+            ]
           }
         ],
         "Part act.": [
           {
+            "turoyo": "mamṭeli b-kallat l-u=bayto k-nofəq m-u=bayto sawiʕo prs",
+            "translations": [
+              "für Geld habe ich's in's Haus gebracht, gesättigt geht es aus dem Hause"
+            ],
+            "references": ["457", "254/36"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mamṭeli b-kallat l-u=bayto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-nofəq m-u=bayto sawiʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻfür Geld habe ich's in's Haus gebracht, gesättigt geht es aus dem Hauseʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "457"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "254/36"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mamṭeli b-kallat l-u=bayto, k-nofəq m-u=bayto sawiʕo ʻfür Geld habe ich's in's Haus gebracht, gesättigt geht es aus dem Hauseʼ; 457; prs 254/36;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mamṭeli b-kallat l-u=bayto, k-nofəq m-u=bayto sawiʕo",
+                "translations": [
+                  "ʻfür Geld habe ich's in's Haus gebracht, gesättigt geht es aus dem Hauseʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["457"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["254/36"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "maswaʕle",
-        "maswəʕ"
-      ],
+      "forms": ["maswaʕle", "maswəʕ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "alo maḥru bayte d-u=malko lə=maswáʕle-li",
+            "translations": [
+              "zum Teufel mit dem König! Er hat mich nicht satt gemacht"
+            ],
+            "references": ["460", "73/340"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "alo maḥru bayte d-u=malko"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=maswáʕle-li "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻzum Teufel mit dem König! Er hat mich nicht satt gemachtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "460"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/340"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "alo maḥru bayte d-u=malko, lə=maswáʕle-li ʻzum Teufel mit dem König! Er hat mich nicht satt gemachtʼ; 460; 73/340;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "alo maḥru bayte d-u=malko, lə=maswáʕle-li",
+                "translations": [
+                  "ʻzum Teufel mit dem König! Er hat mich nicht satt gemachtʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["460"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["73/340"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "ṣadəfno l-ḥeḏər u=Raha i=marʕa bərzayno d-kīt anǧax hawo maswəʕ u=ṭaršayḏan hal lu=k-oṯət aʕmi l-u=bayto d-maswáʕno-lox muklo?",
+            "translations": [
+              "ich bin in der Umgebung von Urfa auf eine Grasweide gestossen, die allein im Stande ist, unser Vieh satt zu machen",
+              "‘Willst du nicht mit mir nach Hause kommen, damit ich dir satt zu essen gebe?’"
+            ],
+            "references": ["462", "53/7", "24/272"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṣadəfno l-ḥeḏər u=Raha"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=marʕa bərzayno d-kīt"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " anǧax hawo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maswəʕ u=ṭaršayḏan "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich bin in der Umgebung von Urfa auf eine Grasweide gestossen, die allein im Stande ist, unser Vieh satt zu machenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "462"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "53/7"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hal lu=k-oṯət aʕmi l-u=bayto d-maswáʕno-lox muklo? "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Willst du nicht mit mir nach Hause kommen, damit ich dir satt zu essen gebe?’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/272"
+              }
+            ],
             "text": "ṣadəfno l-ḥeḏər u=Raha, i=marʕa bərzayno d-kīt, anǧax hawo, maswəʕ u=ṭaršayḏan ʻich bin in der Umgebung von Urfa auf eine Grasweide gestossen, die allein im Stande ist, unser Vieh satt zu machenʼ; 462; 53/7; hal lu=k-oṯət aʕmi l-u=bayto d-maswáʕno-lox muklo? ‘Willst du nicht mit mir nach Hause kommen, damit ich dir satt zu essen gebe?’; 24/272",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ṣadəfno l-ḥeḏər u=Raha, i=marʕa bərzayno d-kīt, anǧax hawo, maswəʕ u=ṭaršayḏan",
+                "translations": [
+                  "ʻich bin in der Umgebung von Urfa auf eine Grasweide gestossen, die allein im Stande ist, unser Vieh satt zu machenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["462"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["53/7"]
+              },
+              {
+                "turoyo": "hal lu=k-oṯət aʕmi l-u=bayto d-maswáʕno-lox muklo?",
+                "translations": [
+                  "‘Willst du nicht mit mir nach Hause kommen, damit ich dir satt zu essen gebe?’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/272"]
+              }
+            ]
           },
           {
-            "text": "İ čiroke d Šafiq lkmasuʕo. The story (interview) of Šafiq does not satisfy (us). (İlyas p.c)",
-            "turoyo": "",
+            "turoyo": "İ čiroke d Šafiq lkmasuʕo. The story interview of Šafiq does not satisfy us. İlyas p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "İ čiroke d Šafiq lkmasuʕo. The story "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "interview"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " of Šafiq does not satisfy "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "us"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "İ čiroke d Šafiq lkmasuʕo. The story (interview) of Šafiq does not satisfy (us). (İlyas p.c)",
+            "segments": [
+              {
+                "turoyo": "İ čiroke d Šafiq lkmasuʕo. The story (interview) of Šafiq does not satisfy (us). (İlyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "sōm-wa lə=sōm-wa aloho lə=maswaʕwa",
+            "translations": ["was er auch tat, Gott machte ihn nicht satt"],
+            "references": ["462", "63/4"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "sōm-wa lə=sōm-wa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aloho lə=maswaʕwa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwas er auch tat, Gott machte ihn nicht sattʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "462"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "63/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "sōm-wa lə=sōm-wa, aloho lə=maswaʕwa ʻwas er auch tat, Gott machte ihn nicht sattʼ; 462; 63/4;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "sōm-wa lə=sōm-wa, aloho lə=maswaʕwa",
+                "translations": [
+                  "ʻwas er auch tat, Gott machte ihn nicht sattʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["462"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["63/4"]
+              }
+            ]
           }
         ]
       }
@@ -98,18 +823,153 @@
       "conjugations": {
         "Infectum": [
           {
-            "text": "W i=naqqa d-mitaswaʕ ṭowo, d-howe yani u=məšḥayḏe ṭowo, yani d-mitaḥat eba zoyudo bi=nqurto, kowe xd i=kef. And when it (xarǧ) becomes fully satiated, like, its strenghth/essence becomes great like, an excess (of kalšo) is put it, into the mortar, it (xarǧ) like a stone.  2019_13_01_Malfono_İshaq;66",
-            "turoyo": "",
+            "turoyo": "W i=naqqa d-mitaswaʕ ṭowo d-howe yani u=məšḥayḏe ṭowo yani d-mitaḥat eba zoyudo bi=nqurto kowe xd i=kef. And when it xarǧ becomes fully satiated like its strenghth/essence becomes great like an excess of kalšo is put it into the mortar it xarǧ like a stone. 2019_13_01_Malfono_İshaq",
             "translations": [],
-            "references": []
+            "references": ["66"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "W i=naqqa d-mitaswaʕ ṭowo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-howe yani u=məšḥayḏe ṭowo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " yani d-mitaḥat eba zoyudo bi=nqurto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kowe xd i=kef. And when it "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "xarǧ"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " becomes fully satiated"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " like"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " its strenghth/essence becomes great like"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " an excess "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "of kalšo"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " is put it"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " into the mortar"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " it "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "xarǧ"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " like a stone.  2019_13_01_Malfono_İshaq"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "ref",
+                "value": "66"
+              }
+            ],
+            "text": "W i=naqqa d-mitaswaʕ ṭowo, d-howe yani u=məšḥayḏe ṭowo, yani d-mitaḥat eba zoyudo bi=nqurto, kowe xd i=kef. And when it (xarǧ) becomes fully satiated, like, its strenghth/essence becomes great like, an excess (of kalšo) is put it, into the mortar, it (xarǧ) like a stone. 2019_13_01_Malfono_İshaq;66",
+            "segments": [
+              {
+                "turoyo": "W i=naqqa d-mitaswaʕ ṭowo, d-howe yani u=məšḥayḏe ṭowo, yani d-mitaḥat eba zoyudo bi=nqurto, kowe xd i=kef. And when it (xarǧ) becomes fully satiated, like, its strenghth/essence becomes great like, an excess (of kalšo) is put it, into the mortar, it (xarǧ) like a stone. 2019_13_01_Malfono_İshaq",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["66"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "satt werden, auch fig.",
-    "satt machen, satisfy;"
-  ],
+  "idioms": ["satt werden, auch fig.", "satt machen, satisfy;"],
   "uncertain": false
 }

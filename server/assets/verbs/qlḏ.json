@@ -14,33 +14,243 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "maqlaḏle",
-        "maqləḏ"
-      ],
+      "forms": ["maqlaḏle", "maqləḏ"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "maḥatle u=abro d-u=məskeno l-gawə-d-u=sanduqo, maqlaḏle aʕle mḥalaqle b-u=baḥar  ʻer legte den Sohn des Armen in die Kiste hinein, verschloss sie und warf sie ins Meerʼ; 137; 23/19; [MT] u=zənǧər-awo maḥatte quflo w qliḏo aʕle maqlaḏḏe ‘sie legten ein Schloss an diese Kette und schlossen sie zu’; LB 68;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "maḥatle u=abro d-u=məskeno l-gawə-d-u=sanduqo maqlaḏle aʕle mḥalaqle b-u=baḥar u=zənǧər-awo maḥatte quflo w qliḏo aʕle maqlaḏḏe",
+            "translations": [
+              "er legte den Sohn des Armen in die Kiste hinein, verschloss sie und warf sie ins Meer",
+              "‘sie legten ein Schloss an diese Kette und schlossen sie zu’"
+            ],
+            "references": ["137", "23/19", "LB 68"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maḥatle u=abro d-u=məskeno l-gawə-d-u=sanduqo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maqlaḏle aʕle mḥalaqle b-u=baḥar  "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer legte den Sohn des Armen in die Kiste hinein, verschloss sie und warf sie ins Meerʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "137"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "23/19"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=zənǧər-awo maḥatte quflo w qliḏo aʕle maqlaḏḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘sie legten ein Schloss an diese Kette und schlossen sie zu’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 68"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "maḥatle u=abro d-u=məskeno l-gawə-d-u=sanduqo, maqlaḏle aʕle mḥalaqle b-u=baḥar ʻer legte den Sohn des Armen in die Kiste hinein, verschloss sie und warf sie ins Meerʼ; 137; 23/19; [MT] u=zənǧər-awo maḥatte quflo w qliḏo aʕle maqlaḏḏe ‘sie legten ein Schloss an diese Kette und schlossen sie zu’; LB 68;",
+            "segments": [
+              {
+                "turoyo": "maḥatle u=abro d-u=məskeno l-gawə-d-u=sanduqo, maqlaḏle aʕle mḥalaqle b-u=baḥar",
+                "translations": [
+                  "ʻer legte den Sohn des Armen in die Kiste hinein, verschloss sie und warf sie ins Meerʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["137"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["23/19"]
+              },
+              {
+                "turoyo": "u=zənǧər-awo maḥatte quflo w qliḏo aʕle maqlaḏḏe",
+                "translations": [
+                  "‘sie legten ein Schloss an diese Kette und schlossen sie zu’"
+                ],
+                "references": [],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 68"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "ko-doʕər ko-maqləḏ u=tarʕayḏe w k-əzzé s-i=emayḏe",
+            "translations": [
+              "er kehrt zurück, verschliesst seine Türe und geht zu seinem Mütterchen"
+            ],
+            "references": ["143", "67/65", "92"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-doʕər"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-maqləḏ u=tarʕayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w k-əzzé s-i=emayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer kehrt zurück, verschliesst seine Türe und geht zu seinem Mütterchenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "143"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "67/65"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "92"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-doʕər, ko-maqləḏ u=tarʕayḏe, w k-əzzé s-i=emayḏe ʻer kehrt zurück, verschliesst seine Türe und geht zu seinem Mütterchenʼ; 143; 67/65, 92;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-doʕər, ko-maqləḏ u=tarʕayḏe, w k-əzzé s-i=emayḏe",
+                "translations": [
+                  "ʻer kehrt zurück, verschliesst seine Türe und geht zu seinem Mütterchenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["143"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["67/65", "92"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
-            "text": "Imperativ",
-            "turoyo": "",
+            "turoyo": "Imperativ",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Imperativ"
+              }
+            ],
+            "text": "Imperativ",
+            "segments": [
+              {
+                "turoyo": "Imperativ",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
@@ -51,17 +261,49 @@
       "conjugations": {
         "Part. Pass.": [
           {
-            "text": "maqəlḏo; 157;",
-            "turoyo": "",
+            "turoyo": "maqəlḏo",
             "translations": [],
-            "references": []
+            "references": ["157"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maqəlḏo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "157"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "maqəlḏo; 157;",
+            "segments": [
+              {
+                "turoyo": "maqəlḏo",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["157"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "verschliessen;"
-  ],
+  "idioms": ["verschliessen;"],
   "uncertain": false
 }

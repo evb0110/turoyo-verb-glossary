@@ -21,31 +21,261 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "nqəlle",
-        "noqər"
-      ],
+      "forms": ["nqəlle", "noqər"],
       "conjugations": {
         "Infectum": [
           {
-            "text": "u+Laḥdo konoqar i+šeno ‘Lahdo is carving  the rock’ (the rock is being crushed slowly, piece by piece) (Ilyas p.c.) turkish: oyma",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "u+Laḥdo konoqar i+šeno the rock is being crushed slowly piece by piece Ilyas p.c. turkish oyma",
+            "translations": ["‘Lahdo is carving the rock’"],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": " u+Laḥdo konoqar i+šeno "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Lahdo is carving  the rock’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "the rock is being crushed slowly"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " piece by piece"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " turkish"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " oyma \n"
+              }
+            ],
+            "text": "u+Laḥdo konoqar i+šeno ‘Lahdo is carving the rock’ (the rock is being crushed slowly, piece by piece) (Ilyas p.c.) turkish: oyma",
+            "segments": [
+              {
+                "turoyo": "u+Laḥdo konoqar i+šeno (the rock is being crushed slowly, piece by piece) (Ilyas p.c.) turkish: oyma",
+                "translations": ["‘Lahdo is carving the rock’"],
+                "references": []
+              }
+            ]
           }
         ],
         "Preterit": [
           {
+            "turoyo": "mədla tre=ḥabuše nqəlla kul ḥḏo mənne ḥa b-qarʕa nqərre ruḥaye b-an=nawqat də-ḥḏoḏe",
+            "translations": [
+              "damit nahm sie zwei Äpfel und knallte jeder der beiden einen an den Kopf",
+              "sie platzten mit den Leibern aufeinander"
+            ],
+            "references": ["3", "95/155", "95/119"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mədla tre=ḥabuše"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " nqəlla kul ḥḏo mənne ḥa b-qarʕa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdamit nahm sie zwei Äpfel und knallte jeder der beiden einen an den Kopfʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "95/155"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " nqərre ruḥaye b-an=nawqat də-ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie platzten mit den Leibern aufeinanderʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "95/119"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "3) mədla tre=ḥabuše, nqəlla kul ḥḏo mənne ḥa b-qarʕa ʻdamit nahm sie zwei Äpfel und knallte jeder der beiden einen an den Kopfʼ; 95/155; nqərre ruḥaye b-an=nawqat də-ḥḏoḏe ʻsie platzten mit den Leibern aufeinanderʼ; 95/119;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mədla tre=ḥabuše, nqəlla kul ḥḏo mənne ḥa b-qarʕa",
+                "translations": [
+                  "ʻdamit nahm sie zwei Äpfel und knallte jeder der beiden einen an den Kopfʼ"
+                ],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["95/155"]
+              },
+              {
+                "turoyo": "nqərre ruḥaye b-an=nawqat də-ḥḏoḏe",
+                "translations": ["ʻsie platzten mit den Leibern aufeinanderʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["95/119"]
+              }
+            ]
           },
           {
+            "turoyo": "nqəlle ruḥe where?",
+            "translations": ["er stürzte sich auf"],
+            "references": ["254", "95/155"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "nqəlle ruḥe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer stürzte sich aufʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "254"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "95/155"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "where?"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "nqəlle ruḥe ʻer stürzte sich aufʼ; 254; 95/155 (where?);",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "nqəlle ruḥe",
+                "translations": ["ʻer stürzte sich aufʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["254"]
+              },
+              {
+                "turoyo": "(where?)",
+                "translations": [],
+                "references": ["95/155"]
+              }
+            ]
           }
         ]
       }
@@ -56,22 +286,201 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": ". As+sobahkàr koṯən kəmḥalqi ruḥayye lu+baḥar koduʕri. Mḥalqi ruḥayye lu+baḥar. Ga u+zʕuro ínaqqa domar i+Ndaṯalo nqīr‿ebe. Nqīr‿ebe mədla ŭ ṭʕəḷḷa.",
+            "translations": ["‘ay’"],
+            "references": ["25"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "25"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". As+sobahkàr koṯən"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kəmḥalqi ruḥayye lu+baḥar"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " koduʕri. Mḥalqi ruḥayye lu+baḥar. Ga"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u+zʕuro ínaqqa domar "
+              },
+              {
+                "kind": "translation",
+                "value": "‘ay’"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i+Ndaṯalo nqīr‿ebe. Nqīr‿ebe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mədla ŭ ṭʕəḷḷa."
+              }
+            ],
             "text": "25. As+sobahkàr koṯən, kəmḥalqi ruḥayye lu+baḥar, koduʕri. Mḥalqi ruḥayye lu+baḥar. Ga, u+zʕuro ínaqqa domar ‘ay’, i+Ndaṯalo nqīr‿ebe. Nqīr‿ebe, mədla ŭ ṭʕəḷḷa.",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ". As+sobahkàr koṯən, kəmḥalqi ruḥayye lu+baḥar, koduʕri. Mḥalqi ruḥayye lu+baḥar. Ga, u+zʕuro ínaqqa domar , i+Ndaṯalo nqīr‿ebe. Nqīr‿ebe, mədla ŭ ṭʕəḷḷa.",
+                "translations": ["‘ay’"],
+                "references": ["25"]
+              }
+            ]
           },
           {
-            "text": "The swimmers come, they toss themselves into the sea, they return. They toss themselves into the sea. Look,  the boy, when he says ‘oh!’, the Theotokos swooped down onto him, she swooped down onto him, she grabbed him and carried him off. (Mother Mary Saves the Sultan’s Son)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "The swimmers come they toss themselves into the sea they return. They toss themselves into the sea. Look the boy when he says the Theotokos swooped down onto him she swooped down onto him she grabbed him and carried him off. Mother Mary Saves the Sultan’s Son",
+            "translations": ["‘oh!’"],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "The swimmers come"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " they toss themselves into the sea"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " they return. They toss themselves into the sea. Look"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": "  the boy"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " when he says "
+              },
+              {
+                "kind": "translation",
+                "value": "‘oh!’"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " the Theotokos swooped down onto him"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " she swooped down onto him"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " she grabbed him and carried him off. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Mother Mary Saves the Sultan’s Son"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "The swimmers come, they toss themselves into the sea, they return. They toss themselves into the sea. Look, the boy, when he says ‘oh!’, the Theotokos swooped down onto him, she swooped down onto him, she grabbed him and carried him off. (Mother Mary Saves the Sultan’s Son)",
+            "segments": [
+              {
+                "turoyo": "The swimmers come, they toss themselves into the sea, they return. They toss themselves into the sea. Look, the boy, when he says , the Theotokos swooped down onto him, she swooped down onto him, she grabbed him and carried him off. (Mother Mary Saves the Sultan’s Son)",
+                "translations": ["‘oh!’"],
+                "references": []
+              }
+            ]
           },
           {
+            "turoyo": "Ono kalyo – u+safruno nqīr ebi Abdu+Lmasīḥ",
+            "translations": ["‘I am standing – the bird crashed into me’"],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Ono kalyo – u+safruno nqīr ebi "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I am standing – the bird crashed into me’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Abdu+Lmasīḥ"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "Ono kalyo – u+safruno nqīr ebi ‘I am standing – the bird crashed into me’ (Abdu+Lmasīḥ)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "Ono kalyo – u+safruno nqīr ebi (Abdu+Lmasīḥ)",
+                "translations": ["‘I am standing – the bird crashed into me’"],
+                "references": []
+              }
+            ]
           }
         ]
       }

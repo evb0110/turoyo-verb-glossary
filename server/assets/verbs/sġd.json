@@ -14,38 +14,198 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "sġədle",
-        "soġəd"
-      ],
+      "forms": ["sġədle", "soġəd"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "malke d-ʕulmo sġədde elan",
+            "translations": ["die Konige der Welt knieten vor uns nieder"],
+            "references": ["DD 390/10"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "malke d-ʕulmo sġədde elan "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Konige der Welt knieten vor uns niederʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "DD 390/10"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "malke d-ʕulmo sġədde elan ʻdie Konige der Welt knieten vor uns niederʼ; DD 390/10;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "malke d-ʕulmo sġədde elan",
+                "translations": [
+                  "ʻdie Konige der Welt knieten vor uns niederʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["DD 390/10"]
+              }
+            ]
           },
           {
+            "turoyo": "Komər tamo qayəm sġəḏle li aṯto d ruḥe məlle . sic!",
+            "translations": ["Ya ḥurma! Ḥaṭino qumax, kobaʕno d ʕofatli"],
+            "references": ["62/349"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Komər tamo qayəm sġəḏle li aṯto d ruḥe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " məlle"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“Ya ḥurma! Ḥaṭino qumax, kobaʕno d ʕofatli”"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/349"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "sic!"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "Komər tamo qayəm sġəḏle li aṯto d ruḥe, məlle: “Ya ḥurma! Ḥaṭino qumax, kobaʕno d ʕofatli”; 62/349. (sic!)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "Komər tamo qayəm sġəḏle li aṯto d ruḥe, məlle:",
+                "translations": ["“Ya ḥurma! Ḥaṭino qumax, kobaʕno d ʕofatli”"],
+                "references": []
+              },
+              {
+                "turoyo": ". (sic!)",
+                "translations": [],
+                "references": ["62/349"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "kulle k-suġdi l-u=Šay səmme šulṭono prs",
+            "translations": [
+              "alle bewiesen dem Schai Verehrung und riefen ihn zum Kaiser aus"
+            ],
+            "references": ["97", "95/15"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kulle k-suġdi l-u=Šay səmme šulṭono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻalle bewiesen dem Schai Verehrung und riefen ihn zum Kaiser ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "97"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "95/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kulle k-suġdi l-u=Šay səmme šulṭono ʻalle bewiesen dem Schai Verehrung und riefen ihn zum Kaiser ausʼ; 97; prs 95/15;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kulle k-suġdi l-u=Šay səmme šulṭono",
+                "translations": [
+                  "ʻalle bewiesen dem Schai Verehrung und riefen ihn zum Kaiser ausʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["97"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["95/15"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(ver)ehren;"
-  ],
+  "idioms": ["(ver)ehren;"],
   "uncertain": false
 }

@@ -14,17 +14,52 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "maxrafle",
-        "maxrəf"
-      ],
+      "forms": ["maxrafle", "maxrəf"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "maxrafle",
+            "translations": ["er ist kindisch"],
+            "references": ["222"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maxrafle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer ist kindischʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "222"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "maxrafle ʻer ist kindischʼ; 222;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "maxrafle",
+                "translations": ["ʻer ist kindischʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["222"]
+              }
+            ]
           }
         ]
       }
@@ -35,17 +70,53 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "maxərfo",
+            "translations": ["kindisch"],
+            "references": ["222"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maxərfo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻkindischʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "222"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "maxərfo ʻkindischʼ; 222;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "maxərfo",
+                "translations": ["ʻkindischʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["222"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "kindisch werden;"
-  ],
+  "idioms": ["kindisch werden;"],
   "uncertain": false
 }

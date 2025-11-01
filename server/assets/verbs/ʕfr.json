@@ -14,24 +14,107 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ʕfəlle",
-        "ʕofər"
-      ],
+      "forms": ["ʕfəlle", "ʕofər"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "b-i=šawke ko-ʕəfri hawīr d-u=šifo ko-saymile ǧokat ǝšme du medawo d ʕǝfriwayna mi šeno ǝšma nqurto yo. The name of that thing that we soiled out from the rock its name is nqurto. Ilyas p.c.",
+            "translations": [
+              "mit der Steinhacke graben sie um die (auszuhebende) Steinplatte herum Kanäle"
+            ],
+            "references": ["235", "94/17"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "b-i=šawke ko-ʕəfri hawīr d-u=šifo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-saymile ǧokat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmit der Steinhacke graben sie um die (auszuhebende) Steinplatte herum Kanäleʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "235"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/17"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ǝšme du medawo d ʕǝfriwayna mi šeno ǝšma nqurto yo. The name of that thing that we soiled out from the rock its name is nqurto. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "b-i=šawke ko-ʕəfri hawīr d-u=šifo, ko-saymile ǧokat ʻmit der Steinhacke graben sie um die (auszuhebende) Steinplatte herum Kanäleʼ; 235; 94/17; ǝšme du medawo d ʕǝfriwayna mi šeno ǝšma nqurto yo. The name of that thing that we soiled out from the rock its name is nqurto. (Ilyas p.c.)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "b-i=šawke ko-ʕəfri hawīr d-u=šifo, ko-saymile ǧokat",
+                "translations": [
+                  "ʻmit der Steinhacke graben sie um die (auszuhebende) Steinplatte herum Kanäleʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["235"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["94/17"]
+              },
+              {
+                "turoyo": "ǝšme du medawo d ʕǝfriwayna mi šeno ǝšma nqurto yo. The name of that thing that we soiled out from the rock its name is nqurto. (Ilyas p.c.)",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "graben;"
-  ],
+  "idioms": ["graben;"],
   "uncertain": false
 }

@@ -12,40 +12,367 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ʕšəfle",
-        "ʕošəf"
-      ],
+      "forms": ["ʕšəfle", "ʕošəf"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ʕǧəfle",
+            "translations": ["er jätete"],
+            "references": ["71"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕǧəfle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer jäteteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "71"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ʕǧəfle ʻer jäteteʼ; 71;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ʕǧəfle",
+                "translations": ["ʻer jäteteʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["71"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "ánnaqla məd-ko-yoʕe bayn u=zad heš hiye arbaʕ=ṣawʕoṯe k-uzzín am=more d-u=zad ko-ʕuǧfi-le bəṯṯər b-ʕaṣro=yawme ḥrene disa k-uzzín ko-ʕuǧfənne w-u=gel-aṯṯe ko-saymi-le ftile",
+            "translations": [
+              "‘Wenn [das Unkraut, m] zwischen dem Getreide vier Ginger hoch gewachsen ist, gehen die Besitzer des Getreides hin und jäten es’",
+              "‘Nach weiteren zehn Tagen geht man wieder hin und jätet; aus den Unkräutern macht man Wickel’"
+            ],
+            "references": ["94/82", "94/114"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ánnaqla məd-ko-yoʕe bayn u=zad heš hiye arbaʕ=ṣawʕoṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-uzzín am=more d-u=zad ko-ʕuǧfi-le "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wenn [das Unkraut, m] zwischen dem Getreide vier Ginger hoch gewachsen ist, gehen die Besitzer des Getreides hin und jäten es’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/82"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər b-ʕaṣro=yawme ḥrene"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " disa k-uzzín ko-ʕuǧfənne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-u=gel-aṯṯe ko-saymi-le ftile "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Nach weiteren zehn Tagen geht man wieder hin und jätet; aus den Unkräutern macht man Wickel’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/114"
+              }
+            ],
             "text": "ánnaqla məd-ko-yoʕe bayn u=zad heš hiye arbaʕ=ṣawʕoṯe, k-uzzín am=more d-u=zad ko-ʕuǧfi-le ‘Wenn [das Unkraut, m] zwischen dem Getreide vier Ginger hoch gewachsen ist, gehen die Besitzer des Getreides hin und jäten es’; 94/82; bəṯṯər b-ʕaṣro=yawme ḥrene, disa k-uzzín ko-ʕuǧfənne, w-u=gel-aṯṯe ko-saymi-le ftile ‘Nach weiteren zehn Tagen geht man wieder hin und jätet; aus den Unkräutern macht man Wickel’; 94/114",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ánnaqla məd-ko-yoʕe bayn u=zad heš hiye arbaʕ=ṣawʕoṯe, k-uzzín am=more d-u=zad ko-ʕuǧfi-le",
+                "translations": [
+                  "‘Wenn [das Unkraut, m] zwischen dem Getreide vier Ginger hoch gewachsen ist, gehen die Besitzer des Getreides hin und jäten es’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["94/82"]
+              },
+              {
+                "turoyo": "bəṯṯər b-ʕaṣro=yawme ḥrene, disa k-uzzín ko-ʕuǧfənne, w-u=gel-aṯṯe ko-saymi-le ftile",
+                "translations": [
+                  "‘Nach weiteren zehn Tagen geht man wieder hin und jätet; aus den Unkräutern macht man Wickel’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["94/114"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
+            "turoyo": "bale məd-fŭyaš-wo d-lo təštiyo d-lo ḥšofo d-lo dworo mede ġắlabe kayso l-awi me-ṣafro hul ʕaṣriye k-uzzayo ko-mašiġo aǧ=ǧule d-an=noše w k-uzzá l-u=ʕǧofo",
+            "translations": [
+              "da er aber doch nicht regelmässig begossen, gejätet und umgegraben wurde, kam nichts rechtes dabei heraus",
+              "sie geht vom Morgen bis zum Abend, wäscht den Leuten die Wäsche, geht zum Jäten"
+            ],
+            "references": ["123", "1/42", "123"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bale məd-fŭyaš-wo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-lo təštiyo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-lo ḥšofo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-lo dworo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mede ġắlabe kayso l-awi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda er aber doch nicht regelmässig begossen, gejätet und umgegraben wurde, kam nichts rechtes dabei herausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "123"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "1/42"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " me-ṣafro hul ʕaṣriye k-uzzayo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-mašiġo aǧ=ǧule d-an=noše"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w k-uzzá l-u=ʕǧofo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie geht vom Morgen bis zum Abend, wäscht den Leuten die Wäsche, geht zum Jätenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "123"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "77/40"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "85"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "115/5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "bale məd-fŭyaš-wo, d-lo təštiyo, d-lo ḥšofo, d-lo dworo, mede ġắlabe kayso l-awi ʻda er aber doch nicht regelmässig begossen, gejätet und umgegraben wurde, kam nichts rechtes dabei herausʼ; 123; 1/42; me-ṣafro hul ʕaṣriye k-uzzayo, ko-mašiġo aǧ=ǧule d-an=noše; w k-uzzá l-u=ʕǧofo ʻsie geht vom Morgen bis zum Abend, wäscht den Leuten die Wäsche, geht zum Jätenʼ; 123; 77/40, 85; 115/5;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "bale məd-fŭyaš-wo, d-lo təštiyo, d-lo ḥšofo, d-lo dworo, mede ġắlabe kayso l-awi",
+                "translations": [
+                  "ʻda er aber doch nicht regelmässig begossen, gejätet und umgegraben wurde, kam nichts rechtes dabei herausʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["123"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["1/42"]
+              },
+              {
+                "turoyo": "me-ṣafro hul ʕaṣriye k-uzzayo, ko-mašiġo aǧ=ǧule d-an=noše",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "w k-uzzá l-u=ʕǧofo",
+                "translations": [
+                  "ʻsie geht vom Morgen bis zum Abend, wäscht den Leuten die Wäsche, geht zum Jätenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["123"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["77/40", "85"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["115/5"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "jäten;"
-  ],
+  "idioms": ["jäten;"],
   "uncertain": false
 }

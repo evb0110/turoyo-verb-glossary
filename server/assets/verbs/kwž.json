@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "kwəžle",
-        "kowəž"
-      ],
+      "forms": ["kwəžle", "kowəž"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,99 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "kwīž bayto",
+            "translations": ["dem das Haus zerstört werden möge"],
+            "references": ["458", "60/281", "61/8"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kwīž bayto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdem das Haus zerstört werden mögeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "458"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "60/281"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "61/8"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "274"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kwīž bayto ʻdem das Haus zerstört werden mögeʼ; 458; 60/281; 61/8, 274;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kwīž bayto",
+                "translations": ["ʻdem das Haus zerstört werden mögeʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["458"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["60/281"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["61/8", "274"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "zerdrücken, zudrücken, (ein Haus) zusammenbrechen lassen;"
-  ],
+  "idioms": ["zerdrücken, zudrücken, (ein Haus) zusammenbrechen lassen;"],
   "uncertain": false
 }

@@ -14,90 +14,1115 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "qaru",
-        "qoru"
-      ],
+      "forms": ["qaru", "qoru"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "iḏi lə=qariwo-le",
+            "translations": ["meine Hand ist ihm nicht nahe gekommen"],
+            "references": ["1", "284", "80/15"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " iḏi lə=qariwo-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmeine Hand ist ihm nicht nahe gekommenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "284"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "80/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) iḏi lə=qariwo-le ʻmeine Hand ist ihm nicht nahe gekommenʼ; 284; 80/15;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") iḏi lə=qariwo-le",
+                "translations": ["ʻmeine Hand ist ihm nicht nahe gekommenʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["284"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["80/15"]
+              }
+            ]
           },
           {
+            "turoyo": "qariwo l-i=dukṯ-ayḏe",
+            "translations": ["‘(der Stamm, f) war nahe seinem Wohnort’"],
+            "references": ["2", "26/102"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qariwo l-i=dukṯ-ayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘(der Stamm, f) war nahe seinem Wohnort’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/102"
+              }
+            ],
             "text": "2) qariwo l-i=dukṯ-ayḏe ‘(der Stamm, f) war nahe seinem Wohnort’; 26/102",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") qariwo l-i=dukṯ-ayḏe",
+                "translations": ["‘(der Stamm, f) war nahe seinem Wohnort’"],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["26/102"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "1) Gōrgīs k-ḥoze me-taḥt u=taxt: k-aṯyo ʕiqarwo kiba ṣito, m-aš=šaʕuṯ-ani  d-qərwo l-ḥa, g-ṭəryole b-i=dukṯo ʻda sieht Gōrgīs von unter dem Bette her, wie ein etwa spannenlanger Skorpion kommt, einer von jenen gelben, die, wenn sie an einen herankommen, einen auf der Stelle tot liegen lassenʼ; 284; 115/294; ʕammo makli iḏux u=zʕur-ano lo=qurwət-le ‘Uncle! Hold off your hand. Do not approach this young man’ 75/191;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "Gōrgīs k-ḥoze me-taḥt u=taxt k-aṯyo ʕiqarwo kiba ṣito m-aš=šaʕuṯ-ani d-qərwo l-ḥa g-ṭəryole b-i=dukṯo ʕammo makli iḏux u=zʕur-ano lo=qurwət-le",
+            "translations": [
+              "da sieht Gōrgīs von unter dem Bette her, wie ein etwa spannenlanger Skorpion kommt, einer von jenen gelben, die, wenn sie an einen herankommen, einen auf der Stelle tot liegen lassen",
+              "‘Uncle! Hold off your hand. Do not approach this young man’"
+            ],
+            "references": ["1", "284", "115/294"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Gōrgīs k-ḥoze me-taḥt u=taxt"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-aṯyo ʕiqarwo kiba ṣito"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-aš=šaʕuṯ-ani  d-qərwo l-ḥa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-ṭəryole b-i=dukṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda sieht Gōrgīs von unter dem Bette her, wie ein etwa spannenlanger Skorpion kommt, einer von jenen gelben, die, wenn sie an einen herankommen, einen auf der Stelle tot liegen lassenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "284"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "115/294"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕammo makli iḏux u=zʕur-ano lo=qurwət-le "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Uncle! Hold off your hand. Do not approach this young man’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/191"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) Gōrgīs k-ḥoze me-taḥt u=taxt: k-aṯyo ʕiqarwo kiba ṣito, m-aš=šaʕuṯ-ani d-qərwo l-ḥa, g-ṭəryole b-i=dukṯo ʻda sieht Gōrgīs von unter dem Bette her, wie ein etwa spannenlanger Skorpion kommt, einer von jenen gelben, die, wenn sie an einen herankommen, einen auf der Stelle tot liegen lassenʼ; 284; 115/294; ʕammo makli iḏux u=zʕur-ano lo=qurwət-le ‘Uncle! Hold off your hand. Do not approach this young man’ 75/191;",
+            "segments": [
+              {
+                "turoyo": ") Gōrgīs k-ḥoze me-taḥt u=taxt: k-aṯyo ʕiqarwo kiba ṣito, m-aš=šaʕuṯ-ani d-qərwo l-ḥa, g-ṭəryole b-i=dukṯo",
+                "translations": [
+                  "ʻda sieht Gōrgīs von unter dem Bette her, wie ein etwa spannenlanger Skorpion kommt, einer von jenen gelben, die, wenn sie an einen herankommen, einen auf der Stelle tot liegen lassenʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["284"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["115/294"]
+              },
+              {
+                "turoyo": "ʕammo makli iḏux u=zʕur-ano lo=qurwət-le",
+                "translations": [
+                  "‘Uncle! Hold off your hand. Do not approach this young man’"
+                ],
+                "references": ["75/191"]
+              }
+            ]
           },
           {
+            "turoyo": "u=zʕur-ano k-qŭráw-lox-yo",
+            "translations": ["ist dieser Junge mit dir verwandt"],
+            "references": ["2", "284"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=zʕur-ano k-qŭráw-lox-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻist dieser Junge mit dir verwandtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "284"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) u=zʕur-ano k-qŭráw-lox-yo ʻist dieser Junge mit dir verwandtʼ; 284;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") u=zʕur-ano k-qŭráw-lox-yo",
+                "translations": ["ʻist dieser Junge mit dir verwandtʼ"],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["284"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": [
-        "mqarawle",
-        "mqaru"
-      ],
+      "forms": ["mqarawle", "mqaru"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "u=saṯwo-ste mqarawle u=ḥal-ayḏan gəd-owe ġắlabe šapərza me-d-mqarawla ḥzela kal kit tawro=ḥreno čike əšmo balako mqarawwe ʕal-u=ṭuro d-u=kəkwo Lu",
+            "translations": [
+              "‘der Winter ist nahe gerückt, und so wird es uns schlimm ergehen’",
+              "‘As soon as she came nearer she saw that there was another ox, a little bit speckled’",
+              "‘They approached the Kəkwo mountain’"
+            ],
+            "references": ["1", "284", "10/4"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=saṯwo-ste mqarawle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=ḥal-ayḏan gəd-owe ġắlabe šapərza "
+              },
+              {
+                "kind": "translation",
+                "value": "‘der Winter ist nahe gerückt, und so wird es uns schlimm ergehen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "284"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "10/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " me-d-mqarawla ḥzela"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kal kit tawro=ḥreno čike"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " əšmo balako "
+              },
+              {
+                "kind": "translation",
+                "value": "‘As soon as she came nearer she saw that there was another ox, a little bit speckled’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/102"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mqarawwe ʕal-u=ṭuro d-u=kəkwo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘They approached the Kəkwo mountain’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Lu"
+              },
+              {
+                "kind": "ref",
+                "value": "F 270/22"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) u=saṯwo-ste mqarawle, u=ḥal-ayḏan gəd-owe ġắlabe šapərza ‘der Winter ist nahe gerückt, und so wird es uns schlimm ergehen’; 284; 10/4; me-d-mqarawla ḥzela: kal kit tawro=ḥreno čike, əšmo balako ‘As soon as she came nearer she saw that there was another ox, a little bit speckled’; 44/102; mqarawwe ʕal-u=ṭuro d-u=kəkwo ‘They approached the Kəkwo mountain’ LuF 270/22;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") u=saṯwo-ste mqarawle, u=ḥal-ayḏan gəd-owe ġắlabe šapərza",
+                "translations": [
+                  "‘der Winter ist nahe gerückt, und so wird es uns schlimm ergehen’"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["284"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["10/4"]
+              },
+              {
+                "turoyo": "me-d-mqarawla ḥzela: kal kit tawro=ḥreno čike, əšmo balako",
+                "translations": [
+                  "‘As soon as she came nearer she saw that there was another ox, a little bit speckled’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["44/102"]
+              },
+              {
+                "turoyo": "mqarawwe ʕal-u=ṭuro d-u=kəkwo Lu",
+                "translations": ["‘They approached the Kəkwo mountain’"],
+                "references": ["F 270/22"]
+              }
+            ]
           },
           {
+            "turoyo": "mqarawle bəṯṯər m-u=qerowo maʕmaḏle naʕime",
+            "translations": [
+              "er zelebrierte die Messe; nach der Messe taufte er Kinder"
+            ],
+            "references": ["3", "285", "33/91"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mqarawle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər m-u=qerowo maʕmaḏle naʕime "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer zelebrierte die Messe; nach der Messe taufte er Kinderʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "285"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "33/91"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "47/72"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "3) mqarawle, bəṯṯər m-u=qerowo maʕmaḏle naʕime ʻer zelebrierte die Messe; nach der Messe taufte er Kinderʼ; 285; 33/91 [MT]; 47/72;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mqarawle, bəṯṯər m-u=qerowo maʕmaḏle naʕime",
+                "translations": [
+                  "ʻer zelebrierte die Messe; nach der Messe taufte er Kinderʼ"
+                ],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["285"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["33/91"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["47/72"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "1) elo, Silo maḥatle išara ʕal ab=bote d-ap=pəsmam-ayḏe, moṣele i=ʕaskar d-nošo lə=mqaru laf-elayye ʻBut Silo marked his cousins’ houses and commanded the army not to near themʼ; 285; 36/105 [MT]; 2) mqarawno u=darbayḏi; 285; 116/90; 111/64, 72, 75; (ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "elo Silo maḥatle išara ʕal ab=bote d-ap=pəsmam-ayḏe moṣele i=ʕaskar d-nošo lə=mqaru laf-elayye",
+            "translations": [
+              "But Silo marked his cousins’ houses and commanded the army not to near them"
+            ],
+            "references": ["1", "285", "36/105"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " elo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " Silo maḥatle išara ʕal ab=bote d-ap=pəsmam-ayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " moṣele i=ʕaskar d-nošo lə=mqaru laf-elayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻBut Silo marked his cousins’ houses and commanded the army not to near themʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "285"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/105"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) elo, Silo maḥatle išara ʕal ab=bote d-ap=pəsmam-ayḏe, moṣele i=ʕaskar d-nošo lə=mqaru laf-elayye ʻBut Silo marked his cousins’ houses and commanded the army not to near themʼ; 285; 36/105 [MT];",
+            "segments": [
+              {
+                "turoyo": ") elo, Silo maḥatle išara ʕal ab=bote d-ap=pəsmam-ayḏe, moṣele i=ʕaskar d-nošo lə=mqaru laf-elayye",
+                "translations": [
+                  "ʻBut Silo marked his cousins’ houses and commanded the army not to near themʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["285"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["36/105"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
-            "text": "3) mətyaqalle d-məqqa d-howe u=kuhno ḥaṭoyo, i=naqqa də-mqaru, gəd-nəḥto i=Ruḥo Qadišo ʕal u=qurbon-ayḏe ʻHe understood: what a sinner should be the priest if the Holy Spirit descends upon his host when he celebrates massʼ; 285; 47/80; kul šato, b-yawmo mbayno ak=kuhne d-ar=Rum k-oṯən, k-maqiṯi qandelo, aw šamʕo; kə-mṣalən w kə-mqarwi ‘jedes Jahr an einem bestimmten Tage kommen die griechischen Priester, zünden Leuchter oder Kerzen an, beten und zelebrieren das Messopfer’; 1/6;",
-            "turoyo": "",
+            "turoyo": "mqarawno u=darbayḏi ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ",
             "translations": [],
-            "references": []
+            "references": ["2", "285", "116/90"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mqarawno u=darbayḏi"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "285"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "116/90"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "111/64"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "72"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "2) mqarawno u=darbayḏi; 285; 116/90; 111/64, 72, 75; (ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ)",
+            "segments": [
+              {
+                "turoyo": ") mqarawno u=darbayḏi",
+                "translations": [],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["285"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["116/90"]
+              },
+              {
+                "turoyo": ", ,",
+                "translations": [],
+                "references": ["111/64", "72", "75"]
+              },
+              {
+                "turoyo": "(ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ)",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "mətyaqalle d-məqqa d-howe u=kuhno ḥaṭoyo i=naqqa də-mqaru gəd-nəḥto i=Ruḥo Qadišo ʕal u=qurbon-ayḏe kul šato b-yawmo mbayno ak=kuhne d-ar=Rum k-oṯən k-maqiṯi qandelo aw šamʕo kə-mṣalən w kə-mqarwi",
+            "translations": [
+              "He understood: what a sinner should be the priest if the Holy Spirit descends upon his host when he celebrates mass",
+              "‘jedes Jahr an einem bestimmten Tage kommen die griechischen Priester, zünden Leuchter oder Kerzen an, beten und zelebrieren das Messopfer’"
+            ],
+            "references": ["3", "285", "47/80"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mətyaqalle d-məqqa d-howe u=kuhno ḥaṭoyo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naqqa də-mqaru"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəd-nəḥto i=Ruḥo Qadišo ʕal u=qurbon-ayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻHe understood: what a sinner should be the priest if the Holy Spirit descends upon his host when he celebrates massʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "285"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "47/80"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kul šato"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-yawmo mbayno ak=kuhne d-ar=Rum k-oṯən"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-maqiṯi qandelo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aw šamʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kə-mṣalən w kə-mqarwi "
+              },
+              {
+                "kind": "translation",
+                "value": "‘jedes Jahr an einem bestimmten Tage kommen die griechischen Priester, zünden Leuchter oder Kerzen an, beten und zelebrieren das Messopfer’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "1/6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "3) mətyaqalle d-məqqa d-howe u=kuhno ḥaṭoyo, i=naqqa də-mqaru, gəd-nəḥto i=Ruḥo Qadišo ʕal u=qurbon-ayḏe ʻHe understood: what a sinner should be the priest if the Holy Spirit descends upon his host when he celebrates massʼ; 285; 47/80; kul šato, b-yawmo mbayno ak=kuhne d-ar=Rum k-oṯən, k-maqiṯi qandelo, aw šamʕo; kə-mṣalən w kə-mqarwi ‘jedes Jahr an einem bestimmten Tage kommen die griechischen Priester, zünden Leuchter oder Kerzen an, beten und zelebrieren das Messopfer’; 1/6;",
+            "segments": [
+              {
+                "turoyo": ") mətyaqalle d-məqqa d-howe u=kuhno ḥaṭoyo, i=naqqa də-mqaru, gəd-nəḥto i=Ruḥo Qadišo ʕal u=qurbon-ayḏe",
+                "translations": [
+                  "ʻHe understood: what a sinner should be the priest if the Holy Spirit descends upon his host when he celebrates massʼ"
+                ],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["285"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["47/80"]
+              },
+              {
+                "turoyo": "kul šato, b-yawmo mbayno ak=kuhne d-ar=Rum k-oṯən, k-maqiṯi qandelo, aw šamʕo",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "kə-mṣalən w kə-mqarwi",
+                "translations": [
+                  "‘jedes Jahr an einem bestimmten Tage kommen die griechischen Priester, zünden Leuchter oder Kerzen an, beten und zelebrieren das Messopfer’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["1/6"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "abuna qaráw qurbono ʕal i=ruḥo d-u=gabrayḏi",
+            "translations": [
+              "‘Hochwürden! Lies eine Messe für die Seele meines Mannes!’"
+            ],
+            "references": ["116/5"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "abuna"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qaráw qurbono ʕal i=ruḥo d-u=gabrayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Hochwürden! Lies eine Messe für die Seele meines Mannes!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "116/5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "abuna, qaráw qurbono ʕal i=ruḥo d-u=gabrayḏi ‘Hochwürden! Lies eine Messe für die Seele meines Mannes!’; 116/5;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "abuna, qaráw qurbono ʕal i=ruḥo d-u=gabrayḏi",
+                "translations": [
+                  "‘Hochwürden! Lies eine Messe für die Seele meines Mannes!’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["116/5"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
+            "turoyo": "ha! qariwo l-fəlgə=d-yawmo qrele...",
+            "translations": ["da, kurz vor Mittag, rief er..."],
+            "references": ["3", "285", "44/91"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ha! qariwo l-fəlgə=d-yawmo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qrele... "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda, kurz vor Mittag, rief er...ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "285"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/91"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "3) ha! qariwo l-fəlgə=d-yawmo, qrele... ʻda, kurz vor Mittag, rief er...ʼ; 285; 44/91;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") ha! qariwo l-fəlgə=d-yawmo, qrele...",
+                "translations": ["ʻda, kurz vor Mittag, rief er...ʼ"],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["285"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["44/91"]
+              }
+            ]
           }
         ]
       }

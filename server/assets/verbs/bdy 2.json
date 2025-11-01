@@ -5,24 +5,102 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mbadele",
-        "mbade"
-      ],
+      "forms": ["mbadele", "mbade"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "aw=warzon-ani bəṯṯər mədə-mḥánnan-ne as=sek-ani w məd yaʕən kə-mbadən-ne w hən b-hən ko-yərwi ap=pənnat w ko-dorən kalkat",
+            "translations": [
+              "wenn man die Melonenfelder auf diese Weise durchackert hat, und (die Melonen) zu spriessen beginnen, so lichtet man sie aus, und nun wachsen die Pflänzchen eines nach dem anderen und setzen kleine runde Melönchen an"
+            ],
+            "references": ["420", "94/60"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aw=warzon-ani bəṯṯər mədə-mḥánnan-ne as=sek-ani"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w məd yaʕən"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kə-mbadən-ne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w hən b-hən ko-yərwi ap=pənnat w ko-dorən kalkat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn man die Melonenfelder auf diese Weise durchackert hat, und (die Melonen) zu spriessen beginnen, so lichtet man sie aus, und nun wachsen die Pflänzchen eines nach dem anderen und setzen kleine runde Melönchen anʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "420"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/60"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "aw=warzon-ani bəṯṯər mədə-mḥánnan-ne as=sek-ani, w məd yaʕən, kə-mbadən-ne, w hən b-hən ko-yərwi ap=pənnat w ko-dorən kalkat ʻwenn man die Melonenfelder auf diese Weise durchackert hat, und (die Melonen) zu spriessen beginnen, so lichtet man sie aus, und nun wachsen die Pflänzchen eines nach dem anderen und setzen kleine runde Melönchen anʼ; 420; 94/60;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "aw=warzon-ani bəṯṯər mədə-mḥánnan-ne as=sek-ani, w məd yaʕən, kə-mbadən-ne, w hən b-hən ko-yərwi ap=pənnat w ko-dorən kalkat",
+                "translations": [
+                  "ʻwenn man die Melonenfelder auf diese Weise durchackert hat, und (die Melonen) zu spriessen beginnen, so lichtet man sie aus, und nun wachsen die Pflänzchen eines nach dem anderen und setzen kleine runde Melönchen anʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["420"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["94/60"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "auslichte auslichten auslichten"
-  ],
+  "idioms": ["auslichte auslichten auslichten"],
   "uncertain": false
 }

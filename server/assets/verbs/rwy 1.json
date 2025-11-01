@@ -14,24 +14,53 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "rawi",
-        "rowe"
-      ],
+      "forms": ["rawi", "rowe"],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "text": "rawən; 612;",
-            "turoyo": "",
+            "turoyo": "rawən",
             "translations": [],
-            "references": []
+            "references": ["612"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "rawən"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "612"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "rawən; 612;",
+            "segments": [
+              {
+                "turoyo": "rawən",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["612"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "wachsen, gross werden;"
-  ],
+  "idioms": ["wachsen, gross werden;"],
   "uncertain": false
 }

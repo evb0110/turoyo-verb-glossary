@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mšayrəz",
-        "mišayrəz"
-      ],
+      "forms": ["mšayrəz", "mišayrəz"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,90 @@
       "conjugations": {
         "Infectum": [
           {
-            "text": "i=dukṯo də-friṭo aw d-čiro, lo=k-miḥoṭo, w lo=k-mišayrizo ʻdie Stelle, die aufgeplatzt oder gerissen ist, kann man weder nähen noch klebenʼ;  790; 9/22;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "i=dukṯo də-friṭo aw d-čiro lo=k-miḥoṭo w lo=k-mišayrizo",
+            "translations": [
+              "die Stelle, die aufgeplatzt oder gerissen ist, kann man weder nähen noch kleben"
+            ],
+            "references": ["790", "9/22"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=dukṯo də-friṭo aw d-čiro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=k-miḥoṭo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w lo=k-mišayrizo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Stelle, die aufgeplatzt oder gerissen ist, kann man weder nähen noch klebenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  "
+              },
+              {
+                "kind": "ref",
+                "value": "790"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "9/22"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=dukṯo də-friṭo aw d-čiro, lo=k-miḥoṭo, w lo=k-mišayrizo ʻdie Stelle, die aufgeplatzt oder gerissen ist, kann man weder nähen noch klebenʼ; 790; 9/22;",
+            "segments": [
+              {
+                "turoyo": "i=dukṯo də-friṭo aw d-čiro, lo=k-miḥoṭo, w lo=k-mišayrizo",
+                "translations": [
+                  "ʻdie Stelle, die aufgeplatzt oder gerissen ist, kann man weder nähen noch klebenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["790"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["9/22"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) kleben, kleistern;"
-  ],
+  "idioms": ["(Detrans.) kleben, kleistern;"],
   "uncertain": false
 }

@@ -5,24 +5,53 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mʕangažle",
-        "mʕangəž"
-      ],
+      "forms": ["mʕangažle", "mʕangəž"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "mʕangužli ṭayo tamho; 768;",
-            "turoyo": "",
+            "turoyo": "mʕangužli ṭayo tamho",
             "translations": [],
-            "references": []
+            "references": ["768"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mʕangužli ṭayo tamho"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "768"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mʕangužli ṭayo tamho; 768;",
+            "segments": [
+              {
+                "turoyo": "mʕangužli ṭayo tamho",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["768"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "Streit anfangen mit, verprügeln;"
-  ],
+  "idioms": ["Streit anfangen mit, verprügeln;"],
   "uncertain": false
 }

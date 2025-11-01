@@ -14,91 +14,942 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ʕwədle(ʕawəd)",
-        "ʕowəd"
-      ],
+      "forms": ["ʕwədle(ʕawəd)", "ʕowəd"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "fayəš ʕwədle aʕme ḥamšo što=yawme ʕwədli b-i=maṣlaḥa b-i=ziraʕa ʕam babi Yaʕni kibux d-ǝmmǝt tleṯi ḥḏo=tleṯi=ǝšne ʕwǝdli bi=ḥleqa",
+            "translations": [
+              "so arbeitete er fünf, sechs Tage bei ihm",
+              "‘Ich arbeitete in dem landwirtschaftlichen Betrieb bei meinem Vater’",
+              "‘Thus one can say I worked as a barber thirty, thirty-one years’"
+            ],
+            "references": ["448", "75/174", "31/5"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "fayəš ʕwədle aʕme ḥamšo što=yawme "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻso arbeitete er fünf, sechs Tage bei ihmʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "448"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/174"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕwədli b-i=maṣlaḥa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-i=ziraʕa ʕam babi "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Ich arbeitete in dem landwirtschaftlichen Betrieb bei meinem Vater’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "31/5"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Yaʕni kibux d-ǝmmǝt tleṯi ḥḏo=tleṯi=ǝšne ʕwǝdli bi=ḥleqa "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Thus one can say I worked as a barber thirty, thirty-one years’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "ref",
+                "value": "YT 156"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "04"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "ref",
+                "value": "20"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "fayəš ʕwədle aʕme ḥamšo što=yawme ʻso arbeitete er fünf, sechs Tage bei ihmʼ; 448; 75/174; ʕwədli b-i=maṣlaḥa, b-i=ziraʕa ʕam babi ‘Ich arbeitete in dem landwirtschaftlichen Betrieb bei meinem Vater’; 31/5 Yaʕni kibux d-ǝmmǝt tleṯi ḥḏo=tleṯi=ǝšne ʕwǝdli bi=ḥleqa ‘Thus one can say I worked as a barber thirty, thirty-one years’ (YT 156; 04:20)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "fayəš ʕwədle aʕme ḥamšo što=yawme",
+                "translations": ["ʻso arbeitete er fünf, sechs Tage bei ihmʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["448"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["75/174"]
+              },
+              {
+                "turoyo": "ʕwədli b-i=maṣlaḥa, b-i=ziraʕa ʕam babi",
+                "translations": [
+                  "‘Ich arbeitete in dem landwirtschaftlichen Betrieb bei meinem Vater’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "Yaʕni kibux d-ǝmmǝt tleṯi ḥḏo=tleṯi=ǝšne ʕwǝdli bi=ḥleqa (",
+                "translations": [
+                  "‘Thus one can say I worked as a barber thirty, thirty-one years’"
+                ],
+                "references": ["31/5", "YT 156"]
+              },
+              {
+                "turoyo": ":)",
+                "translations": [],
+                "references": ["04", "20"]
+              }
+            ]
           }
         ],
         "Preterit Intransitive": [
           {
+            "turoyo": "i=makina ʕawido",
+            "translations": ["die Maschine funktionierte"],
+            "references": ["451"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=makina ʕawido "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Maschine funktionierteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "451"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=makina ʕawido ʻdie Maschine funktionierteʼ; 451;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=makina ʕawido",
+                "translations": ["ʻdie Maschine funktionierteʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["451"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "k-ʕowəd w-lo=k-ʕowəd lo=k-sawʕi prs i=mus-aṯe lə=k-ʕawdo uʕdo k-ʕŭwadno ʕam u=taxtūr amerikani i=makina d-u=šqolo d-u=ḥəs ko-ʕudo ġắlabe šafiro k-šuqlo u=ḥəs ṣafyo iḏi lə=k-ʕuḏo ʕal u=sayfo d-muḥéno-le k-maḥwe d-a=trayxu b-ḥila ko-ʕawdutu ʕam ḥḏoḏe",
+            "translations": [
+              "soviel er aber auch arbeitete, so wurden sie doch nicht satt",
+              "dieses Rasiermesser schneidet nicht",
+              "jetzt arbeite ich mit dem amerikanischen Doktor",
+              "‘das tonaufnahmegerät funktioniert sehr gut und nimmt die Stimme klar auf’",
+              "‘meine Hand versagt dem Schwerte den Dienst, ihn zu schlagen’",
+              "‘It seems you both conduct a business cheating each other’"
+            ],
+            "references": ["453", "77/21", "453"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-ʕowəd w-lo=k-ʕowəd lo=k-sawʕi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsoviel er aber auch arbeitete, so wurden sie doch nicht sattʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "453"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "77/21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=mus-aṯe lə=k-ʕawdo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdieses Rasiermesser schneidet nichtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "453"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "103/39"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " uʕdo k-ʕŭwadno ʕam u=taxtūr amerikani "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻjetzt arbeite ich mit dem amerikanischen Doktorʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "5/5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=makina d-u=šqolo d-u=ḥəs ko-ʕudo ġắlabe šafiro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-šuqlo u=ḥəs ṣafyo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘das tonaufnahmegerät funktioniert sehr gut und nimmt die Stimme klar auf’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "13/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " iḏi lə=k-ʕuḏo ʕal u=sayfo d-muḥéno-le "
+              },
+              {
+                "kind": "translation",
+                "value": "‘meine Hand versagt dem Schwerte den Dienst, ihn zu schlagen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/369"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-maḥwe d-a=trayxu b-ḥila ko-ʕawdutu ʕam ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘It seems you both conduct a business cheating each other’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "39/24"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "k-ʕowəd w-lo=k-ʕowəd lo=k-sawʕi ʻsoviel er aber auch arbeitete, so wurden sie doch nicht sattʼ; 453; prs 77/21; i=mus-aṯe lə=k-ʕawdo ʻdieses Rasiermesser schneidet nichtʼ; 453; 103/39; uʕdo k-ʕŭwadno ʕam u=taxtūr amerikani ʻjetzt arbeite ich mit dem amerikanischen Doktorʼ; 5/5; i=makina d-u=šqolo d-u=ḥəs ko-ʕudo ġắlabe šafiro, k-šuqlo u=ḥəs ṣafyo ‘das tonaufnahmegerät funktioniert sehr gut und nimmt die Stimme klar auf’; 13/4; iḏi lə=k-ʕuḏo ʕal u=sayfo d-muḥéno-le ‘meine Hand versagt dem Schwerte den Dienst, ihn zu schlagen’; 29/369; k-maḥwe d-a=trayxu b-ḥila ko-ʕawdutu ʕam ḥḏoḏe ‘It seems you both conduct a business cheating each other’; 39/24 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "k-ʕowəd w-lo=k-ʕowəd lo=k-sawʕi",
+                "translations": [
+                  "ʻsoviel er aber auch arbeitete, so wurden sie doch nicht sattʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["453"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["77/21"]
+              },
+              {
+                "turoyo": "i=mus-aṯe lə=k-ʕawdo",
+                "translations": ["ʻdieses Rasiermesser schneidet nichtʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["453"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["103/39"]
+              },
+              {
+                "turoyo": "uʕdo k-ʕŭwadno ʕam u=taxtūr amerikani",
+                "translations": [
+                  "ʻjetzt arbeite ich mit dem amerikanischen Doktorʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["5/5"]
+              },
+              {
+                "turoyo": "i=makina d-u=šqolo d-u=ḥəs ko-ʕudo ġắlabe šafiro, k-šuqlo u=ḥəs ṣafyo",
+                "translations": [
+                  "‘das tonaufnahmegerät funktioniert sehr gut und nimmt die Stimme klar auf’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["13/4"]
+              },
+              {
+                "turoyo": "iḏi lə=k-ʕuḏo ʕal u=sayfo d-muḥéno-le",
+                "translations": [
+                  "‘meine Hand versagt dem Schwerte den Dienst, ihn zu schlagen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/369"]
+              },
+              {
+                "turoyo": "k-maḥwe d-a=trayxu b-ḥila ko-ʕawdutu ʕam ḥḏoḏe",
+                "translations": [
+                  "‘It seems you both conduct a business cheating each other’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["39/24"],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "i=saʕa hul l-a=traḥṣar b-u=lalyo anǧax ʕudína-wo",
+            "translations": ["wir konnten nur bis zwölf Uhr nachts arbeiten"],
+            "references": ["456", "11/184"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=saʕa hul l-a=traḥṣar b-u=lalyo anǧax ʕudína-wo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir konnten nur bis zwölf Uhr nachts arbeitenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "456"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/184"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=saʕa hul l-a=traḥṣar b-u=lalyo anǧax ʕudína-wo ʻwir konnten nur bis zwölf Uhr nachts arbeitenʼ; 456; 11/184;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=saʕa hul l-a=traḥṣar b-u=lalyo anǧax ʕudína-wo",
+                "translations": [
+                  "ʻwir konnten nur bis zwölf Uhr nachts arbeitenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["456"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/184"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "hama taw ʕwad aʕmi",
+            "translations": ["nun, dann bleib hier und arbeite bei mir"],
+            "references": ["456", "75/170"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hama taw"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕwad aʕmi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnun, dann bleib hier und arbeite bei mirʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "456"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/170"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "hama taw, ʕwad aʕmi ʻnun, dann bleib hier und arbeite bei mirʼ; 456; 75/170;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "hama taw, ʕwad aʕmi",
+                "translations": ["ʻnun, dann bleib hier und arbeite bei mirʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["456"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["75/170"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
+            "turoyo": "ummi kīt ʕwodo ġắlabe w ṭówo-yo u=ʕwodo d-k-ummanno lat-we šuġlo d-i=katfo yaquro",
+            "translations": [
+              "man sagte, es gäbe dort viele und gute Arbeit",
+              "die Arbeit, von der ich spreche, war keine schwere Arbeit, die die Schulter belastet"
+            ],
+            "references": ["457", "31/9", "11/200"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ummi kīt ʕwodo ġắlabe w ṭówo-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻman sagte, es gäbe dort viele und gute Arbeitʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "457"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "31/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=ʕwodo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-k-ummanno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lat-we šuġlo d-i=katfo yaquro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Arbeit, von der ich spreche, war keine schwere Arbeit, die die Schulter belastetʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/200"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ummi kīt ʕwodo ġắlabe w ṭówo-yo ʻman sagte, es gäbe dort viele und gute Arbeitʼ; 457; 31/9; u=ʕwodo, d-k-ummanno, lat-we šuġlo d-i=katfo yaquro ʻdie Arbeit, von der ich spreche, war keine schwere Arbeit, die die Schulter belastetʼ; 11/200;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ummi kīt ʕwodo ġắlabe w ṭówo-yo",
+                "translations": [
+                  "ʻman sagte, es gäbe dort viele und gute Arbeitʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["457"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["31/9"]
+              },
+              {
+                "turoyo": "u=ʕwodo, d-k-ummanno, lat-we šuġlo d-i=katfo yaquro",
+                "translations": [
+                  "ʻdie Arbeit, von der ich spreche, war keine schwere Arbeit, die die Schulter belastetʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/200"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": [
-        "mʕawadle",
-        "mʕawəd"
-      ],
+      "forms": ["mʕawadle", "mʕawəd"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mʕawadle",
+            "translations": ["er schärfte"],
+            "references": ["464"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mʕawadle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer schärfteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "464"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mʕawadle ʻer schärfteʼ; 464;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mʕawadle",
+                "translations": ["ʻer schärfteʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["464"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "maʕwadle",
-        "maʕwəd"
-      ],
+      "forms": ["maʕwadle", "maʕwəd"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "i=naqla d-ko-məḥyo qarʕa hawxa yaʕni ko-maʕawdo riša Lu azza l-riše d-u=karwan məḷḷa-le əmmo əmmo ʕammo omər mən-yo barṯi əmmo k-əbʕono maʕawdət u=gawr-ayḏi aʕmux ‘She went to the head of the caravan and said – He said – She said",
+            "translations": [
+              "wenn sie ihren Kopf so (an dem Baumstamm) schlägt, spitzt sie ihn zu",
+              "Uncle!",
+              "What is it, daughter?",
+              "I would like you to let my husband work with you"
+            ],
+            "references": ["462", "F 290/10", "77/91"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqla d-ko-məḥyo qarʕa hawxa yaʕni ko-maʕawdo riša "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn sie ihren Kopf so (an dem Baumstamm) schlägt, spitzt sie ihn zuʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "462"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Lu"
+              },
+              {
+                "kind": "ref",
+                "value": "F 290/10"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " azza l-riše d-u=karwan məḷḷa-le əmmo əmmo ʕammo omər mən-yo barṯi əmmo k-əbʕono maʕawdət u=gawr-ayḏi aʕmux "
+              },
+              {
+                "kind": "turoyo",
+                "value": "‘"
+              },
+              {
+                "kind": "turoyo",
+                "value": "She went to the head of the caravan and said"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“Uncle!”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " – He said"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“What is it, daughter?”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " – She said"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“I would like you to let my husband work with you”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "77/91"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=naqla d-ko-məḥyo qarʕa hawxa yaʕni ko-maʕawdo riša ʻwenn sie ihren Kopf so (an dem Baumstamm) schlägt, spitzt sie ihn zuʼ 462; LuF 290/10; azza l-riše d-u=karwan məḷḷa-le əmmo əmmo ʕammo omər mən-yo barṯi əmmo k-əbʕono maʕawdət u=gawr-ayḏi aʕmux ‘She went to the head of the caravan and said: “Uncle!” – He said: “What is it, daughter?” – She said: “I would like you to let my husband work with you” 77/91;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=naqla d-ko-məḥyo qarʕa hawxa yaʕni ko-maʕawdo riša",
+                "translations": [
+                  "ʻwenn sie ihren Kopf so (an dem Baumstamm) schlägt, spitzt sie ihn zuʼ"
+                ],
+                "references": ["462"]
+              },
+              {
+                "turoyo": "Lu",
+                "translations": [],
+                "references": ["F 290/10"]
+              },
+              {
+                "turoyo": "azza l-riše d-u=karwan məḷḷa-le əmmo əmmo ʕammo omər mən-yo barṯi əmmo k-əbʕono maʕawdət u=gawr-ayḏi aʕmux ‘She went to the head of the caravan and said: – He said: – She said:",
+                "translations": [
+                  "“Uncle!”",
+                  "“What is it, daughter?”",
+                  "“I would like you to let my husband work with you”"
+                ],
+                "references": ["77/91"]
+              }
+            ]
           }
         ]
       }

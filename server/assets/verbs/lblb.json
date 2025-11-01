@@ -5,10 +5,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mlablable",
-        "mlabləb"
-      ],
+      "forms": ["mlablable", "mlabləb"],
       "conjugations": {}
     },
     {
@@ -17,17 +14,53 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mlabləb ebi",
+            "translations": ["er flehte mich an"],
+            "references": ["799"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mlabləb ebi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer flehte mich anʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "799"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mlabləb ebi ʻer flehte mich anʼ; 799;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mlabləb ebi",
+                "translations": ["ʻer flehte mich anʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["799"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) bitten, flehen;"
-  ],
+  "idioms": ["(Detrans.) bitten, flehen;"],
   "uncertain": false
 }

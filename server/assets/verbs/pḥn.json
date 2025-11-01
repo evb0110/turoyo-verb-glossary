@@ -5,24 +5,53 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mpaḥalle",
-        "mpaḥən"
-      ],
+      "forms": ["mpaḥalle", "mpaḥən"],
       "conjugations": {
         "Infectum": [
           {
-            "text": "u=zlām-ano ko-mpaḥən; 267;",
-            "turoyo": "",
+            "turoyo": "u=zlām-ano ko-mpaḥən",
             "translations": [],
-            "references": []
+            "references": ["267"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=zlām-ano ko-mpaḥən"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "267"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=zlām-ano ko-mpaḥən; 267;",
+            "segments": [
+              {
+                "turoyo": "u=zlām-ano ko-mpaḥən",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["267"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "Faul dasitzen und vor sich hinstieren;"
-  ],
+  "idioms": ["Faul dasitzen und vor sich hinstieren;"],
   "uncertain": false
 }

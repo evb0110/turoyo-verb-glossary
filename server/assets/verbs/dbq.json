@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mdabaqle",
-        "mdabəq"
-      ],
+      "forms": ["mdabaqle", "mdabəq"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mdabaqli aǧ=ǧulayḏi",
+            "translations": ["ich habe meine Kleider klebrig gemacht"],
+            "references": ["177"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mdabaqli aǧ=ǧulayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe meine Kleider klebrig gemachtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "177"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mdabaqli aǧ=ǧulayḏi ʻich habe meine Kleider klebrig gemachtʼ; 177;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mdabaqli aǧ=ǧulayḏi",
+                "translations": ["ʻich habe meine Kleider klebrig gemachtʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["177"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "klebrig machen;"
-  ],
+  "idioms": ["klebrig machen;"],
   "uncertain": false
 }

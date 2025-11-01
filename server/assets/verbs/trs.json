@@ -5,40 +5,247 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mtarasle",
-        "mtarəs"
-      ],
+      "forms": ["mtarasle", "mtarəs"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mtarásle-li ádyawma b-dukṯe d-ruḥe qayəm hano Mḥammaye Elo məḷḷe l-am=Mədwoye baxti alxu ṭr=oṯən u=săwāl-aṯxu sīdan w-diḏan oṯən sīdayxu mede bayn elan w-alxu layt mətyaqanne qayimi mṭaraṣṣe u=săwāl-aṯṯe l-u=ḥdud d-bayn alle w-l- Mḥammaye Elo -",
+            "translations": [
+              "er hat mich heute an seiner Stelle hergeschickt",
+              "‘Mḥammaye Elo said to the inhabitants of Midin: “You have my word. Let your cattle come to us, and let ours come to you. There is nothing (bad) between you and us”. – And they believed him and sent their cattle to the border between them and Mḥammaye Elo’"
+            ],
+            "references": ["159", "60/163", "85/7"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mtarásle-li ádyawma b-dukṯe d-ruḥe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hat mich heute an seiner Stelle hergeschicktʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "159"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "60/163"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qayəm hano Mḥammaye Elo məḷḷe l-am=Mədwoye baxti alxu ṭr=oṯən u=săwāl-aṯxu sīdan w-diḏan oṯən sīdayxu mede bayn elan w-alxu layt mətyaqanne qayimi mṭaraṣṣe u=săwāl-aṯṯe l-u=ḥdud d-bayn alle w-l- Mḥammaye Elo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Mḥammaye Elo said to the inhabitants of Midin: “You have my word. Let your cattle come to us, and let ours come to you. There is nothing (bad) between you and us”. – And they believed him and sent their cattle to the border between them and Mḥammaye Elo’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "85/7"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mtarásle-li ádyawma b-dukṯe d-ruḥe ʻer hat mich heute an seiner Stelle hergeschicktʼ; 159; 60/163; qayəm hano Mḥammaye Elo məḷḷe l-am=Mədwoye baxti alxu ṭr=oṯən u=săwāl-aṯxu sīdan w-diḏan oṯən sīdayxu mede bayn elan w-alxu layt mətyaqanne qayimi mṭaraṣṣe u=săwāl-aṯṯe l-u=ḥdud d-bayn alle w-l- Mḥammaye Elo ‘Mḥammaye Elo said to the inhabitants of Midin: “You have my word. Let your cattle come to us, and let ours come to you. There is nothing (bad) between you and us”. – And they believed him and sent their cattle to the border between them and Mḥammaye Elo’ 85/7-8;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mtarásle-li ádyawma b-dukṯe d-ruḥe",
+                "translations": [
+                  "ʻer hat mich heute an seiner Stelle hergeschicktʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["159"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["60/163"]
+              },
+              {
+                "turoyo": "qayəm hano Mḥammaye Elo məḷḷe l-am=Mədwoye baxti alxu ṭr=oṯən u=săwāl-aṯxu sīdan w-diḏan oṯən sīdayxu mede bayn elan w-alxu layt mətyaqanne qayimi mṭaraṣṣe u=săwāl-aṯṯe l-u=ḥdud d-bayn alle w-l- Mḥammaye Elo -",
+                "translations": [
+                  "‘Mḥammaye Elo said to the inhabitants of Midin: “You have my word. Let your cattle come to us, and let ours come to you. There is nothing (bad) between you and us”. – And they believed him and sent their cattle to the border between them and Mḥammaye Elo’"
+                ],
+                "references": ["85/7", "8"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "mtarasn-a aʕmux; 167; 62/301; Пример отсутствует в указанном месте",
-            "turoyo": "",
+            "turoyo": "mtarasn-a aʕmux Пример отсутствует в указанном месте",
             "translations": [],
-            "references": []
+            "references": ["167", "62/301"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mtarasn-a aʕmux"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "167"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/301"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Пример отсутствует в указанном месте"
+              }
+            ],
+            "text": "mtarasn-a aʕmux; 167; 62/301; Пример отсутствует в указанном месте",
+            "segments": [
+              {
+                "turoyo": "mtarasn-a aʕmux",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["167"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["62/301"]
+              },
+              {
+                "turoyo": "Пример отсутствует в указанном месте",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "aloho lə=mtarás-way-li năṣīb ġắlabe",
+            "translations": ["Gott hat mir nie viel Glücksgüter geschickt"],
+            "references": ["168", "60/43"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aloho lə=mtarás-way-li năṣīb ġắlabe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻGott hat mir nie viel Glücksgüter geschicktʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "168"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "60/43"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "aloho lə=mtarás-way-li năṣīb ġắlabe ʻGott hat mir nie viel Glücksgüter geschicktʼ; 168; 60/43;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "aloho lə=mtarás-way-li năṣīb ġắlabe",
+                "translations": [
+                  "ʻGott hat mir nie viel Glücksgüter geschicktʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["168"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["60/43"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "schicken;"
-  ],
+  "idioms": ["schicken;"],
   "uncertain": false
 }

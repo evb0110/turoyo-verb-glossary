@@ -14,32 +14,340 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "mazʕaqle",
-        "mazʕəq"
-      ],
+      "forms": ["mazʕaqle", "mazʕəq"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "hama mazʕaqla zaḥqa kali qola b-i=šmayo mḥalle ṣadr-ayye b-u=šuro d-i=kozk-ayo w-mazʕaqqe ʕal aṭ=Ṭaye haṯe mazʕaqla w-baxyo w-mahzamla me-qume yasiqo ʕal i=goro mqabə́l d-u=šubbak d-u=ʕmiro s window’",
+            "translations": [
+              "da stiess sie einen Schrei aus, dass sich ihr Geschrei zum Himmel erhob",
+              "‘Sie stemmten sich mit der Brust gegen die Mauer der Schanze und schrien den Muhammedanern zu’",
+              "‘She gave a shout, cried, ran away from him and climed up the roof right opposite the emir’"
+            ],
+            "references": ["140", "52/126", "33/30"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hama"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mazʕaqla zaḥqa"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kali qola b-i=šmayo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda stiess sie einen Schrei aus, dass sich ihr Geschrei zum Himmel erhobʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "140"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "52/126"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥalle ṣadr-ayye b-u=šuro d-i=kozk-ayo w-mazʕaqqe ʕal aṭ=Ṭaye "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sie stemmten sich mit der Brust gegen die Mauer der Schanze und schrien den Muhammedanern zu’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "33/30"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " haṯe mazʕaqla w-baxyo w-mahzamla me-qume"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " yasiqo ʕal i=goro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mqabə́l d-u=šubbak d-u=ʕmiro "
+              },
+              {
+                "kind": "translation",
+                "value": "‘She gave a shout, cried, ran away from him and climed up the roof right opposite the emir’"
+              },
+              {
+                "kind": "turoyo",
+                "value": "s window’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/121"
+              }
+            ],
             "text": "hama, mazʕaqla zaḥqa; kali qola b-i=šmayo ʻda stiess sie einen Schrei aus, dass sich ihr Geschrei zum Himmel erhobʼ; 140; 52/126; mḥalle ṣadr-ayye b-u=šuro d-i=kozk-ayo w-mazʕaqqe ʕal aṭ=Ṭaye ‘Sie stemmten sich mit der Brust gegen die Mauer der Schanze und schrien den Muhammedanern zu’; 33/30 [MT]; haṯe mazʕaqla w-baxyo w-mahzamla me-qume, yasiqo ʕal i=goro, mqabə́l d-u=šubbak d-u=ʕmiro ‘She gave a shout, cried, ran away from him and climed up the roof right opposite the emir’s window’; 36/121",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "hama, mazʕaqla zaḥqa",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "kali qola b-i=šmayo",
+                "translations": [
+                  "ʻda stiess sie einen Schrei aus, dass sich ihr Geschrei zum Himmel erhobʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["140"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["52/126"]
+              },
+              {
+                "turoyo": "mḥalle ṣadr-ayye b-u=šuro d-i=kozk-ayo w-mazʕaqqe ʕal aṭ=Ṭaye",
+                "translations": [
+                  "‘Sie stemmten sich mit der Brust gegen die Mauer der Schanze und schrien den Muhammedanern zu’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["33/30"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "haṯe mazʕaqla w-baxyo w-mahzamla me-qume, yasiqo ʕal i=goro, mqabə́l d-u=šubbak d-u=ʕmiro s window’",
+                "translations": [
+                  "‘She gave a shout, cried, ran away from him and climed up the roof right opposite the emir’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["36/121"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "iḏa l-aṯi gə-mzaʕbro aʕlayye w gəm-mazəḥqo aʕlayye hano abəʕ d-qore d-mazʕəq bəṯṯər məlle ”",
+            "translations": [
+              "wenn er nicht kommt, so wird sie sie (die Vögel) ausschelten und anschreien",
+              "klay d-ḥozeno mə kt-owe!",
+              "‘He wanted to call [him], to cry, but then he said: “Stop! I want to see what will happen!’"
+            ],
+            "references": ["143", "70/122", "130"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "iḏa l-aṯi gə-mzaʕbro aʕlayye w gəm-mazəḥqo aʕlayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn er nicht kommt, so wird sie sie (die Vögel) ausschelten und anschreienʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "143"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70/122"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "130"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hano abəʕ d-qore d-mazʕəq"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər məlle"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“klay d-ḥozeno mə kt-owe!”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "‘He wanted to call [him], to cry, but then he said: “Stop! I want to see what will happen!’"
+              },
+              {
+                "kind": "turoyo",
+                "value": "”"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "47/69"
+              }
+            ],
             "text": "iḏa l-aṯi gə-mzaʕbro aʕlayye w gəm-mazəḥqo aʕlayye ʻwenn er nicht kommt, so wird sie sie (die Vögel) ausschelten und anschreienʼ; 143; 70/122, 130; hano abəʕ d-qore d-mazʕəq, bəṯṯər məlle: “klay d-ḥozeno mə kt-owe!” ‘He wanted to call [him], to cry, but then he said: “Stop! I want to see what will happen!’”; 47/69",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "iḏa l-aṯi gə-mzaʕbro aʕlayye w gəm-mazəḥqo aʕlayye",
+                "translations": [
+                  "ʻwenn er nicht kommt, so wird sie sie (die Vögel) ausschelten und anschreienʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["143"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["70/122", "130"]
+              },
+              {
+                "turoyo": "hano abəʕ d-qore d-mazʕəq, bəṯṯər məlle: ”",
+                "translations": [
+                  "“klay d-ḥozeno mə kt-owe!”",
+                  "‘He wanted to call [him], to cry, but then he said: “Stop! I want to see what will happen!’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["47/69"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "schreien;"
-  ],
+  "idioms": ["schreien;"],
   "uncertain": false
 }

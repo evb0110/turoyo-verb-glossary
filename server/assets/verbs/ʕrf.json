@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mʕarafle",
-        "mʕarəf"
-      ],
+      "forms": ["mʕarafle", "mʕarəf"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,74 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "aġlab d-ax=xōrtīn w d-ak=kačkat k-ḥozən ḥḏoḏe b-awxa dəkoṯo w k-miʕarfi ʕam ḥḏoḏe w k-kurxi ʕam ḥḏoḏe kmo=yarḥe",
+            "translations": [
+              "die meisten Burschen und Mädchen sehen sich an solchen Orten und lernen sich dort kennen; dann gehen sie ein paar Monate miteinander"
+            ],
+            "references": ["174", "4/56"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aġlab d-ax=xōrtīn w d-ak=kačkat k-ḥozən ḥḏoḏe b-awxa dəkoṯo w k-miʕarfi ʕam ḥḏoḏe w k-kurxi ʕam ḥḏoḏe kmo=yarḥe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie meisten Burschen und Mädchen sehen sich an solchen Orten und lernen sich dort kennen; dann gehen sie ein paar Monate miteinanderʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "174"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "4/56"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "aġlab d-ax=xōrtīn w d-ak=kačkat k-ḥozən ḥḏoḏe b-awxa dəkoṯo w k-miʕarfi ʕam ḥḏoḏe w k-kurxi ʕam ḥḏoḏe kmo=yarḥe ʻdie meisten Burschen und Mädchen sehen sich an solchen Orten und lernen sich dort kennen; dann gehen sie ein paar Monate miteinanderʼ; 174; 4/56;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "aġlab d-ax=xōrtīn w d-ak=kačkat k-ḥozən ḥḏoḏe b-awxa dəkoṯo w k-miʕarfi ʕam ḥḏoḏe w k-kurxi ʕam ḥḏoḏe kmo=yarḥe",
+                "translations": [
+                  "ʻdie meisten Burschen und Mädchen sehen sich an solchen Orten und lernen sich dort kennen; dann gehen sie ein paar Monate miteinanderʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["174"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["4/56"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) kennenlernen;"
-  ],
+  "idioms": ["(Detrans.) kennenlernen;"],
   "uncertain": false
 }

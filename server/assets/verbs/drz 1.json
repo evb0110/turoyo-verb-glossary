@@ -14,24 +14,53 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "drəzle",
-        "dorəz"
-      ],
+      "forms": ["drəzle", "dorəz"],
       "conjugations": {
         "Infectum": [
           {
-            "text": "hat ko-dərzat kul yawmo; 197;",
-            "turoyo": "",
+            "turoyo": "hat ko-dərzat kul yawmo",
             "translations": [],
-            "references": []
+            "references": ["197"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hat ko-dərzat kul yawmo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "197"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hat ko-dərzat kul yawmo; 197;",
+            "segments": [
+              {
+                "turoyo": "hat ko-dərzat kul yawmo",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["197"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "für die Schule arbeiten, studieren;"
-  ],
+  "idioms": ["für die Schule arbeiten, studieren;"],
   "uncertain": false
 }

@@ -14,24 +14,59 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mgargaḥle",
-        "mgargəḥ"
-      ],
+      "forms": ["mgargaḥle", "mgargəḥ"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-mgargəḥ ruḥe ʕal i=arʕo",
+            "translations": ["er kriecht auf der Erde (wie die Schlange)"],
+            "references": ["776"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mgargəḥ ruḥe ʕal i=arʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer kriecht auf der Erde (wie die Schlange)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "776"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-mgargəḥ ruḥe ʕal i=arʕo ʻer kriecht auf der Erde (wie die Schlange)ʼ; 776;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-mgargəḥ ruḥe ʕal i=arʕo",
+                "translations": [
+                  "ʻer kriecht auf der Erde (wie die Schlange)ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["776"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "auf der Erde schleifen;"
-  ],
+  "idioms": ["auf der Erde schleifen;"],
   "uncertain": false
 }

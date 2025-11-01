@@ -14,17 +14,77 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mdamdamle",
-        "mdamdəm"
-      ],
+      "forms": ["mdamdamle", "mdamdəm"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "qaṭʕiyan lə=k-we d-mdamdat ʕal-aloho",
+            "translations": ["du darfst nie gegen Gott murren"],
+            "references": ["1", "798", "63/347"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qaṭʕiyan lə=k-we d-mdamdat ʕal-aloho "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu darfst nie gegen Gott murrenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "798"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "63/347"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) qaṭʕiyan lə=k-we d-mdamdat ʕal-aloho ʻdu darfst nie gegen Gott murrenʼ; 798; 63/347;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") qaṭʕiyan lə=k-we d-mdamdat ʕal-aloho",
+                "translations": ["ʻdu darfst nie gegen Gott murrenʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["798"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["63/347"]
+              }
+            ]
           }
         ]
       }
@@ -35,10 +95,69 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mdamdno i=ṣopa Выпала вторая",
+            "translations": ["ich habe den Ofen glühend heiss", "m"],
+            "references": ["2", "798"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mdamdno i=ṣopa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe den Ofen glühend heissʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "798"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Выпала вторая "
+              },
+              {
+                "kind": "translation",
+                "value": "“m”"
+              }
+            ],
             "text": "2) mdamdno i=ṣopa ʻich habe den Ofen glühend heissʼ; 798; Выпала вторая “m”",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mdamdno i=ṣopa",
+                "translations": ["ʻich habe den Ofen glühend heissʼ"],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["798"]
+              },
+              {
+                "turoyo": "Выпала вторая",
+                "translations": ["“m”"],
+                "references": []
+              }
+            ]
           }
         ]
       }

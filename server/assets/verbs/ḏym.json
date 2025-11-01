@@ -14,24 +14,94 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ḏəmle",
-        "ḏoyəm"
-      ],
+      "forms": ["ḏəmle", "ḏoyəm"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "áydarbo ono maġraqli ruḥi b-i=ḥṭiṯo w mbeli ruḥi l-u=hălāk w ḏəmli u=ḥadod-ano",
+            "translations": [
+              "wie konnte ich mich in der Sünde untergehen lassen, mich ins Verderben stürzen und geringschätzig von diesem Schmiede reden"
+            ],
+            "references": ["508", "90/111"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "áydarbo ono maġraqli ruḥi b-i=ḥṭiṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mbeli ruḥi l-u=hălāk"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ḏəmli u=ḥadod-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwie konnte ich mich in der Sünde untergehen lassen, mich ins Verderben stürzen und geringschätzig von diesem Schmiede redenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "508"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "90/111"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "áydarbo ono maġraqli ruḥi b-i=ḥṭiṯo, w mbeli ruḥi l-u=hălāk, w ḏəmli u=ḥadod-ano ʻwie konnte ich mich in der Sünde untergehen lassen, mich ins Verderben stürzen und geringschätzig von diesem Schmiede redenʼ; 508; 90/111;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "áydarbo ono maġraqli ruḥi b-i=ḥṭiṯo, w mbeli ruḥi l-u=hălāk, w ḏəmli u=ḥadod-ano",
+                "translations": [
+                  "ʻwie konnte ich mich in der Sünde untergehen lassen, mich ins Verderben stürzen und geringschätzig von diesem Schmiede redenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["508"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["90/111"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "kritisieren;"
-  ],
+  "idioms": ["kritisieren;"],
   "uncertain": false
 }

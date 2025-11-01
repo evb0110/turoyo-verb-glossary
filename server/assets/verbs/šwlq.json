@@ -12,10 +12,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mšawləq",
-        "mišawləq"
-      ],
+      "forms": ["mšawləq", "mišawləq"],
       "conjugations": {}
     },
     {
@@ -24,10 +21,50 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "u=zlām-ano mšawləq",
+            "translations": ["dieser Mann hat eine entzündete Haut bekommen"],
+            "references": ["790"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=zlām-ano mšawləq "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdieser Mann hat eine entzündete Haut bekommenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "790"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=zlām-ano mšawləq ʻdieser Mann hat eine entzündete Haut bekommenʼ; 790;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=zlām-ano mšawləq",
+                "translations": [
+                  "ʻdieser Mann hat eine entzündete Haut bekommenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["790"]
+              }
+            ]
           }
         ]
       }

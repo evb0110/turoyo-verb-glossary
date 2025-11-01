@@ -14,24 +14,53 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "gləǧle",
-        "goləǧ"
-      ],
+      "forms": ["gləǧle", "goləǧ"],
       "conjugations": {
         "Infectum": [
           {
-            "text": "ko-goləǧ; 226;",
-            "turoyo": "",
+            "turoyo": "ko-goləǧ",
             "translations": [],
-            "references": []
+            "references": ["226"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-goləǧ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "226"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-goləǧ; 226;",
+            "segments": [
+              {
+                "turoyo": "ko-goləǧ",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["226"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "etwas kaufen, aber nicht leicht bezahlen;"
-  ],
+  "idioms": ["etwas kaufen, aber nicht leicht bezahlen;"],
   "uncertain": false
 }

@@ -5,24 +5,44 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mṣaybarle",
-        "mṣaybar"
-      ],
+      "forms": ["mṣaybarle", "mṣaybar"],
       "conjugations": {
         "Infectum": [
           {
-            "text": "hani dǝ mṣaybri hul i ḥarayto gxulṣi. Those who endure till the end will be saved. (İlyas p.c)",
-            "turoyo": "",
+            "turoyo": "hani dǝ mṣaybri hul i ḥarayto gxulṣi. Those who endure till the end will be saved. İlyas p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hani dǝ mṣaybri hul i ḥarayto gxulṣi. Those who endure till the end will be saved. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "hani dǝ mṣaybri hul i ḥarayto gxulṣi. Those who endure till the end will be saved. (İlyas p.c)",
+            "segments": [
+              {
+                "turoyo": "hani dǝ mṣaybri hul i ḥarayto gxulṣi. Those who endure till the end will be saved. (İlyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "be patient;"
-  ],
+  "idioms": ["be patient;"],
   "uncertain": false
 }

@@ -14,42 +14,154 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "paṯi",
-        "poṯe"
-      ],
+      "forms": ["paṯi", "poṯe"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "paṯi",
+            "translations": ["wurde breit"],
+            "references": ["347"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "paṯi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwurde breitʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "347"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "paṯi ʻwurde breitʼ; 347;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "paṯi",
+                "translations": ["ʻwurde breitʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["347"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "mapṯele",
-        "mapṯe"
-      ],
+      "forms": ["mapṯele", "mapṯe"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "haṯe daʔiman ar=ruʕye ko-ṭəʕni qayso ko-mafṯi qarʕe w ko-šəlḥi ebe ʕarkuwe w laṭme w ʕaqšune gelone b-u=ṭuro ko-nəfqi",
+            "translations": [
+              "die Hirten tragen immer ein solches Holz bei sich. Sie flachen das eine Ende ab und stemmen damit Kräuter, Disteln, Bibirnelle und Feldmannstreu, Pflanzen, die auf dem Berge wachsen, heraus"
+            ],
+            "references": ["393", "116/30"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "haṯe daʔiman ar=ruʕye ko-ṭəʕni qayso"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-mafṯi qarʕe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ko-šəlḥi ebe ʕarkuwe w laṭme w ʕaqšune"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gelone b-u=ṭuro ko-nəfqi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Hirten tragen immer ein solches Holz bei sich. Sie flachen das eine Ende ab und stemmen damit Kräuter, Disteln, Bibirnelle und Feldmannstreu, Pflanzen, die auf dem Berge wachsen, herausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "393"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "116/30"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "haṯe daʔiman ar=ruʕye ko-ṭəʕni qayso, ko-mafṯi qarʕe, w ko-šəlḥi ebe ʕarkuwe w laṭme w ʕaqšune, gelone b-u=ṭuro ko-nəfqi ʻdie Hirten tragen immer ein solches Holz bei sich. Sie flachen das eine Ende ab und stemmen damit Kräuter, Disteln, Bibirnelle und Feldmannstreu, Pflanzen, die auf dem Berge wachsen, herausʼ; 393; 116/30;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "haṯe daʔiman ar=ruʕye ko-ṭəʕni qayso, ko-mafṯi qarʕe, w ko-šəlḥi ebe ʕarkuwe w laṭme w ʕaqšune, gelone b-u=ṭuro ko-nəfqi",
+                "translations": [
+                  "ʻdie Hirten tragen immer ein solches Holz bei sich. Sie flachen das eine Ende ab und stemmen damit Kräuter, Disteln, Bibirnelle und Feldmannstreu, Pflanzen, die auf dem Berge wachsen, herausʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["393"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["116/30"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "breit werden;",
-    "abflachen;"
-  ],
+  "idioms": ["breit werden;", "abflachen;"],
   "uncertain": false
 }

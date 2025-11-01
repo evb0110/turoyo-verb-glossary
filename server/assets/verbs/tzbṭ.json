@@ -11,24 +11,60 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mtazbaṭle",
-        "mtazbəṭ"
-      ],
+      "forms": ["mtazbaṭle", "mtazbəṭ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "kul mede mtazbəṭən-ne ḥzanne xud kət-yo",
+            "translations": [
+              "sie stellten alles sicher, sie fanden alles unberührt"
+            ],
+            "references": ["LB 331"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kul mede mtazbəṭən-ne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥzanne xud kət-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie stellten alles sicher, sie fanden alles unberührtʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 331"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kul mede mtazbəṭən-ne, ḥzanne xud kət-yo ʻsie stellten alles sicher, sie fanden alles unberührtʼ LB 331;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kul mede mtazbəṭən-ne, ḥzanne xud kət-yo",
+                "translations": [
+                  "ʻsie stellten alles sicher, sie fanden alles unberührtʼ"
+                ],
+                "references": ["LB 331"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "fangen lassen; sicher stellen;"
-  ],
+  "idioms": ["fangen lassen; sicher stellen;"],
   "uncertain": false
 }

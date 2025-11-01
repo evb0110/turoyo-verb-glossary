@@ -5,24 +5,77 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mṭaġmaġle",
-        "mṭaġməġ"
-      ],
+      "forms": ["mṭaġmaġle", "mṭaġməġ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "omanno g-šəqlát-li radyo m-Almanya. omər e. hawxa mṭaġmaġle faqat lə=k-qotəʕ ʕaqəl diḏi d-šoqəl",
+            "translations": [
+              "ich sprach: du sollst mir ein Radio kaufen. Er sagte: ja. Diese ausweichende Antwort gab er, aber ich glaube nicht, dass er es kaufen wird"
+            ],
+            "references": ["792"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "omanno g-šəqlát-li radyo m-Almanya. omər"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " e. hawxa mṭaġmaġle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " faqat lə=k-qotəʕ ʕaqəl diḏi d-šoqəl "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich sprach: du sollst mir ein Radio kaufen. Er sagte: ja. Diese ausweichende Antwort gab er, aber ich glaube nicht, dass er es kaufen wirdʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "792"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "omanno g-šəqlát-li radyo m-Almanya. omər: e. hawxa mṭaġmaġle, faqat lə=k-qotəʕ ʕaqəl diḏi d-šoqəl ʻich sprach: du sollst mir ein Radio kaufen. Er sagte: ja. Diese ausweichende Antwort gab er, aber ich glaube nicht, dass er es kaufen wirdʼ; 792;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "omanno g-šəqlát-li radyo m-Almanya. omər: e. hawxa mṭaġmaġle, faqat lə=k-qotəʕ ʕaqəl diḏi d-šoqəl",
+                "translations": [
+                  "ʻich sprach: du sollst mir ein Radio kaufen. Er sagte: ja. Diese ausweichende Antwort gab er, aber ich glaube nicht, dass er es kaufen wirdʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["792"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "ausweichende Antwort geben;"
-  ],
+  "idioms": ["ausweichende Antwort geben;"],
   "uncertain": false
 }

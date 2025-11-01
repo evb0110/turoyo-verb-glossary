@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "sfəqle",
-        "sofəq"
-      ],
+      "forms": ["sfəqle", "sofəq"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "sfə́qle-li",
+            "translations": ["er hat mich geohrfeigt"],
+            "references": ["80"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "sfə́qle-li "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hat mich geohrfeigtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "80"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "sfə́qle-li ʻer hat mich geohrfeigtʼ; 80;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "sfə́qle-li",
+                "translations": ["ʻer hat mich geohrfeigtʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["80"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "ohrfeigen;"
-  ],
+  "idioms": ["ohrfeigen;"],
   "uncertain": false
 }

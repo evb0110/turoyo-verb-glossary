@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ṣṭəmle",
-        "ṣoṭəm"
-      ],
+      "forms": ["ṣṭəmle", "ṣoṭəm"],
       "conjugations": {}
     },
     {
@@ -26,18 +23,74 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ṣṭīm bayto! tolux! kito lagge gəd-əṯyo məḥyolux maquro b-i=pātke d-qarʕux g-qəṭlolux",
+            "translations": [
+              "Unglücklicher (wörtl. dessen Haus verstopft sein möge)! Komm her! Es wird eine Störchin kommen, die wird dich mit dem Schnabel auf die Schädeldecke hacken und töten"
+            ],
+            "references": ["125", "96/212"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṣṭīm bayto! tolux! kito lagge gəd-əṯyo məḥyolux maquro b-i=pātke d-qarʕux g-qəṭlolux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻUnglücklicher (wörtl. dessen Haus verstopft sein möge)! Komm her! Es wird eine Störchin kommen, die wird dich mit dem Schnabel auf die Schädeldecke hacken und tötenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "125"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "96/212"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ṣṭīm bayto! tolux! kito lagge gəd-əṯyo məḥyolux maquro b-i=pātke d-qarʕux g-qəṭlolux ʻUnglücklicher (wörtl. dessen Haus verstopft sein möge)! Komm her! Es wird eine Störchin kommen, die wird dich mit dem Schnabel auf die Schädeldecke hacken und tötenʼ; 125; 96/212;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ṣṭīm bayto! tolux! kito lagge gəd-əṯyo məḥyolux maquro b-i=pātke d-qarʕux g-qəṭlolux",
+                "translations": [
+                  "ʻUnglücklicher (wörtl. dessen Haus verstopft sein möge)! Komm her! Es wird eine Störchin kommen, die wird dich mit dem Schnabel auf die Schädeldecke hacken und tötenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["125"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["96/212"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "verstopfen;",
-    "ṣṭr see str"
-  ],
+  "idioms": ["verstopfen;", "ṣṭr see str"],
   "uncertain": false
 }

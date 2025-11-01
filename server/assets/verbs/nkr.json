@@ -14,32 +14,316 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "mankalle",
-        "mankər"
-      ],
+      "forms": ["mankalle", "mankər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "səmme lo=səmme l-aṯi qum mede mankalle prs l-i=qaqwoniṯo mankalla m-u=qenayḏa omər lə-k-oḏaʕn-a mankalle lann+armnoye bu Sayfo mankarre ġălăbe mənne bə‿Mšiḥo Ilyas p.c.",
+            "translations": [
+              "wie sie es auch angriffen, er gestand nichts ein, sondern leugnete",
+              "das Steinhuhn verleugnete sein Nest, gab es auf",
+              "der Mann stritt ab, sie zu kennen"
+            ],
+            "references": ["239", "195/15", "239"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "səmme lo=səmme"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-aṯi qum mede"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mankalle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwie sie es auch angriffen, er gestand nichts ein, sondern leugneteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "239"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "195/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-i=qaqwoniṯo mankalla m-u=qenayḏa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Steinhuhn verleugnete sein Nest, gab es aufʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "239"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " omər lə-k-oḏaʕn-a mankalle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Mann stritt ab, sie zu kennenʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 13"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lann+armnoye bu Sayfo mankarre ġălăbe mənne bə‿Mšiḥo "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "səmme lo=səmme, l-aṯi qum mede, mankalle ʻwie sie es auch angriffen, er gestand nichts ein, sondern leugneteʼ; 239; prs 195/15; l-i=qaqwoniṯo mankalla m-u=qenayḏa ʻdas Steinhuhn verleugnete sein Nest, gab es aufʼ; 239; omər lə-k-oḏaʕn-a mankalle ʻder Mann stritt ab, sie zu kennenʼ MM 13; lann+armnoye bu Sayfo mankarre ġălăbe mənne bə‿Mšiḥo (Ilyas p.c.)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "səmme lo=səmme, l-aṯi qum mede, mankalle",
+                "translations": [
+                  "ʻwie sie es auch angriffen, er gestand nichts ein, sondern leugneteʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["239"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["195/15"]
+              },
+              {
+                "turoyo": "l-i=qaqwoniṯo mankalla m-u=qenayḏa",
+                "translations": [
+                  "ʻdas Steinhuhn verleugnete sein Nest, gab es aufʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["239"]
+              },
+              {
+                "turoyo": "omər lə-k-oḏaʕn-a mankalle",
+                "translations": ["ʻder Mann stritt ab, sie zu kennenʼ"],
+                "references": ["MM 13"]
+              },
+              {
+                "turoyo": "lann+armnoye bu Sayfo mankarre ġălăbe mənne bə‿Mšiḥo (Ilyas p.c.)",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "hano ġắlabe qawi b-lebe ḏ̣əd d-aloho hul dáraǧe d-ko-mankər u=wuǧūd d-aloho hawo d-l-omər u=xabr-ano ko-mankər u=mgalyūn m-u=arʕo l-u=qarʕo",
+            "translations": [
+              "‘He was strongly disaffected against God to such an extent that he denied the very existence of God’",
+              "‘und wer dieses Wort nicht bekennt, der verleugnet das ganze Evangelium, vom Anfang bis zum Ende’"
+            ],
+            "references": ["241", "43/6", "LB 94"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hano ġắlabe qawi b-lebe ḏ̣əd d-aloho hul dáraǧe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-ko-mankər u=wuǧūd d-aloho "
+              },
+              {
+                "kind": "translation",
+                "value": "‘He was strongly disaffected against God to such an extent that he denied the very existence of God’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "241"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "43/6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawo d-l-omər u=xabr-ano"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-mankər u=mgalyūn m-u=arʕo l-u=qarʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘und wer dieses Wort nicht bekennt, der verleugnet das ganze Evangelium, vom Anfang bis zum Ende’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 94"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "hano ġắlabe qawi b-lebe ḏ̣əd d-aloho hul dáraǧe, d-ko-mankər u=wuǧūd d-aloho ‘He was strongly disaffected against God to such an extent that he denied the very existence of God’; [MT]; 241; 43/6; hawo d-l-omər u=xabr-ano, ko-mankər u=mgalyūn m-u=arʕo l-u=qarʕo ‘und wer dieses Wort nicht bekennt, der verleugnet das ganze Evangelium, vom Anfang bis zum Ende’; LB 94;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "hano ġắlabe qawi b-lebe ḏ̣əd d-aloho hul dáraǧe, d-ko-mankər u=wuǧūd d-aloho",
+                "translations": [
+                  "‘He was strongly disaffected against God to such an extent that he denied the very existence of God’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": [],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["241"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["43/6"]
+              },
+              {
+                "turoyo": "hawo d-l-omər u=xabr-ano, ko-mankər u=mgalyūn m-u=arʕo l-u=qarʕo",
+                "translations": [
+                  "‘und wer dieses Wort nicht bekennt, der verleugnet das ganze Evangelium, vom Anfang bis zum Ende’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 94"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(ver)leugnen;"
-  ],
+  "idioms": ["(ver)leugnen;"],
   "uncertain": false
 }

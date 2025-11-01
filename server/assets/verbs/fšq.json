@@ -14,42 +14,138 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "fšəqle",
-        "fošəq"
-      ],
+      "forms": ["fšəqle", "fošəq"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "fšəqle",
+            "translations": ["er deutet (Traum)"],
+            "references": ["71"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "fšəqle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer deutet (Traum)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "71"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "fšəqle ʻer deutet (Traum)ʼ; 71;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "fšəqle",
+                "translations": ["ʻer deutet (Traum)ʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["71"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": [
-        "mfašaqle",
-        "mfašəq"
-      ],
+      "forms": ["mfašaqle", "mfašəq"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "u=malko omər ḥzeli ḥalmo. nošo lo=mfašaqle prs",
+            "translations": [
+              "darauf sagte der König: “Ich habe einen Traum gehabt”; aber niemand konnte ihn ihm erklären"
+            ],
+            "references": ["159", "19/10"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=malko omər"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥzeli ḥalmo. nošo lo=mfašaqle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdarauf sagte der König: “Ich habe einen Traum gehabt”; aber niemand konnte ihn ihm erklärenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "159"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "19/10"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=malko omər: ḥzeli ḥalmo. nošo lo=mfašaqle ʻdarauf sagte der König: “Ich habe einen Traum gehabt”; aber niemand konnte ihn ihm erklärenʼ; 159; prs 19/10;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=malko omər: ḥzeli ḥalmo. nošo lo=mfašaqle",
+                "translations": [
+                  "ʻdarauf sagte der König: “Ich habe einen Traum gehabt”; aber niemand konnte ihn ihm erklärenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["159"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["19/10"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "deuten (Traum);",
-    "deuten;"
-  ],
+  "idioms": ["deuten (Traum);", "deuten;"],
   "uncertain": false
 }

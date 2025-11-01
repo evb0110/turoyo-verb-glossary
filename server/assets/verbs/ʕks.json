@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mʕakəs",
-        "miʕakəs"
-      ],
+      "forms": ["mʕakəs", "miʕakəs"],
       "conjugations": {}
     },
     {
@@ -26,10 +23,102 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "u=zʕuro mʕakəs mini me d-hawxa məlli mʕakəs mini ..",
+            "translations": [
+              "der Junge sträubte sich eigensinnig gegen mich (das, was ich sagte)",
+              "‘als ich das sagte, nahm er es mir übel’"
+            ],
+            "references": ["172", "JL 19", "6"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=zʕuro mʕakəs mini "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Junge sträubte sich eigensinnig gegen mich (das, was ich sagte)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "172"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " me d-hawxa məlli"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mʕakəs mini "
+              },
+              {
+                "kind": "translation",
+                "value": "‘als ich das sagte, nahm er es mir übel’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 19"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "6"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "17"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=zʕuro mʕakəs mini ʻder Junge sträubte sich eigensinnig gegen mich (das, was ich sagte)ʼ; 172; me d-hawxa məlli, mʕakəs mini ‘als ich das sagte, nahm er es mir übel’ JL 19.6.17;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=zʕuro mʕakəs mini",
+                "translations": [
+                  "ʻder Junge sträubte sich eigensinnig gegen mich (das, was ich sagte)ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["172"]
+              },
+              {
+                "turoyo": "me d-hawxa məlli, mʕakəs mini ..",
+                "translations": ["‘als ich das sagte, nahm er es mir übel’"],
+                "references": ["JL 19", "6", "17"]
+              }
+            ]
           }
         ]
       }

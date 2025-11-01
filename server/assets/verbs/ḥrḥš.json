@@ -5,23 +5,70 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mḥarḥašle",
-        "mḥarḥaš"
-      ],
+      "forms": ["mḥarḥašle", "mḥarḥaš"],
       "conjugations": {
         "Infectum": [
           {
-            "text": "u=malko kəmḥarḥaš bu=šulṭono ~  u=malko lə kṭore bu=šulṭono (терепеть не может)",
-            "turoyo": "",
+            "turoyo": "u=malko kəmḥarḥaš bu=šulṭono ~ u=malko lə kṭore bu=šulṭono терепеть не может",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=malko kəmḥarḥaš bu=šulṭono ~  u=malko lə kṭore bu=šulṭono "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "терепеть не может"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "u=malko kəmḥarḥaš bu=šulṭono ~ u=malko lə kṭore bu=šulṭono (терепеть не может)",
+            "segments": [
+              {
+                "turoyo": "u=malko kəmḥarḥaš bu=šulṭono ~ u=malko lə kṭore bu=šulṭono (терепеть не может)",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
-            "text": "Ilyas p.c. August 16 2020",
-            "turoyo": "",
+            "turoyo": "Ilyas p.c. August",
             "translations": [],
-            "references": []
+            "references": ["16", "2020"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c. August "
+              },
+              {
+                "kind": "ref",
+                "value": "16"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2020"
+              }
+            ],
+            "text": "Ilyas p.c. August 16 2020",
+            "segments": [
+              {
+                "turoyo": "Ilyas p.c. August",
+                "translations": [],
+                "references": ["16", "2020"]
+              }
+            ]
           }
         ]
       }

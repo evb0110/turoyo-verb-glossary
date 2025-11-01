@@ -14,17 +14,60 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mrapaṣle",
-        "mrapəṣ"
-      ],
+      "forms": ["mrapaṣle", "mrapəṣ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mrapaṣṣe u=ʕafro",
+            "translations": ["sie traten das Erdreich fest"],
+            "references": ["1", "191"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mrapaṣṣe u=ʕafro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie traten das Erdreich festʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "191"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) mrapaṣṣe u=ʕafro ʻsie traten das Erdreich festʼ; 191;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mrapaṣṣe u=ʕafro",
+                "translations": ["ʻsie traten das Erdreich festʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["191"]
+              }
+            ]
           }
         ]
       }

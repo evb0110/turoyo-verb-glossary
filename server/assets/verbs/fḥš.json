@@ -5,24 +5,57 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mfaḥašle",
-        "mfaḥəš"
-      ],
+      "forms": ["mfaḥašle", "mfaḥəš"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-mfaḥəš",
+            "translations": ["er führt ein lockeres Leben"],
+            "references": ["164"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mfaḥəš "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer führt ein lockeres Lebenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "164"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-mfaḥəš ʻer führt ein lockeres Lebenʼ; 164;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-mfaḥəš",
+                "translations": ["ʻer führt ein lockeres Lebenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["164"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "lockeres Leben führen;"
-  ],
+  "idioms": ["lockeres Leben führen;"],
   "uncertain": false
 }

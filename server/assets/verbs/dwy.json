@@ -5,24 +5,53 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mdawele",
-        "mdawe"
-      ],
+      "forms": ["mdawele", "mdawe"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "mdawéle-li; 618;",
-            "turoyo": "",
+            "turoyo": "mdawéle-li",
             "translations": [],
-            "references": []
+            "references": ["618"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mdawéle-li"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "618"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mdawéle-li; 618;",
+            "segments": [
+              {
+                "turoyo": "mdawéle-li",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["618"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "betrügen, bevorteilen;"
-  ],
+  "idioms": ["betrügen, bevorteilen;"],
   "uncertain": false
 }

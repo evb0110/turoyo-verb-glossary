@@ -5,24 +5,83 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mʕarǧaqle",
-        "mʕarǧəq"
-      ],
+      "forms": ["mʕarǧaqle", "mʕarǧəq"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "gə-mʕarǧaq-lux Пример отсутствует в указанном месте",
+            "translations": ["ich werde dir zermalmen"],
+            "references": ["768", "95/535"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gə-mʕarǧaq-lux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich werde dir zermalmenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "768"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "95/535"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Пример отсутствует в указанном месте"
+              }
+            ],
             "text": "gə-mʕarǧaq-lux ʻich werde dir zermalmenʼ; 768; 95/535; Пример отсутствует в указанном месте",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "gə-mʕarǧaq-lux",
+                "translations": ["ʻich werde dir zermalmenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["768"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["95/535"]
+              },
+              {
+                "turoyo": "Пример отсутствует в указанном месте",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "zermalmen;"
-  ],
+  "idioms": ["zermalmen;"],
   "uncertain": false
 }

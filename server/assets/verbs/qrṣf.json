@@ -5,17 +5,56 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mqarṣəf",
-        "miqarṣəf"
-      ],
+      "forms": ["mqarṣəf", "miqarṣəf"],
       "conjugations": {
         "Part act.": [
           {
-            "text": "Kind, das vor der Zeit Gesсhleсhtsbeziehungen hat; 787;",
-            "turoyo": "",
+            "turoyo": "Kind das vor der Zeit Gesсhleсhtsbeziehungen hat",
             "translations": [],
-            "references": []
+            "references": ["787"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Kind"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " das vor der Zeit Gesсhleсhtsbeziehungen hat"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "787"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "Kind, das vor der Zeit Gesсhleсhtsbeziehungen hat; 787;",
+            "segments": [
+              {
+                "turoyo": "Kind, das vor der Zeit Gesсhleсhtsbeziehungen hat",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["787"]
+              }
+            ]
           }
         ]
       }
@@ -26,17 +65,55 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "u=naʕəmk-ano mqarṣəf",
+            "translations": ["der Kleine da ist im Wachstum zurückgeblieben"],
+            "references": ["787"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=naʕəmk-ano mqarṣəf "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Kleine da ist im Wachstum zurückgebliebenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "787"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=naʕəmk-ano mqarṣəf ʻder Kleine da ist im Wachstum zurückgebliebenʼ; 787;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=naʕəmk-ano mqarṣəf",
+                "translations": [
+                  "ʻder Kleine da ist im Wachstum zurückgebliebenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["787"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) im Wuchs zurückbleiben;"
-  ],
+  "idioms": ["(Detrans.) im Wuchs zurückbleiben;"],
   "uncertain": false
 }

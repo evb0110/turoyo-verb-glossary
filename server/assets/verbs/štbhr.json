@@ -12,24 +12,61 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "məštabhalle",
-        "məštabhər"
-      ],
+      "forms": ["məštabhalle", "məštabhər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "kul ḥa mənne məštabhalle w basəmme i=yətawto",
+            "translations": [
+              "jeder von ihnen stolzierte, ihnen gefiel das Sitzen"
+            ],
+            "references": ["DD 392/1"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kul ḥa mənne məštabhalle w basəmme i=yətawto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻjeder von ihnen stolzierte, ihnen gefiel das Sitzenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "DD 392/1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kul ḥa mənne məštabhalle w basəmme i=yətawto ʻjeder von ihnen stolzierte, ihnen gefiel das Sitzenʼ; DD 392/1;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kul ḥa mənne məštabhalle w basəmme i=yətawto",
+                "translations": [
+                  "ʻjeder von ihnen stolzierte, ihnen gefiel das Sitzenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["DD 392/1"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "stolzieren;"
-  ],
+  "idioms": ["stolzieren;"],
   "uncertain": false
 }

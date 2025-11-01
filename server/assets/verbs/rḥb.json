@@ -12,33 +12,74 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mraḥable",
-        "mraḥəb"
-      ],
+      "forms": ["mraḥable", "mraḥəb"],
       "conjugations": {}
     },
     {
       "stem": "III",
-      "forms": [
-        "marḥable",
-        "marḥəb"
-      ],
+      "forms": ["marḥable", "marḥəb"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "u=laly-awo k-ḥŭzal-le k-márḥəbi bə-ḥḏoḏe ġắlabe",
+            "translations": [
+              "‘am Abend finden sie ihn, und sie begrüssen einander herzlich’"
+            ],
+            "references": ["6/76"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=laly-awo k-ḥŭzal-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-márḥəbi bə-ḥḏoḏe ġắlabe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘am Abend finden sie ihn, und sie begrüssen einander herzlich’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/76"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=laly-awo k-ḥŭzal-le, k-márḥəbi bə-ḥḏoḏe ġắlabe ‘am Abend finden sie ihn, und sie begrüssen einander herzlich’; 6/76;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=laly-awo k-ḥŭzal-le, k-márḥəbi bə-ḥḏoḏe ġắlabe",
+                "translations": [
+                  "‘am Abend finden sie ihn, und sie begrüssen einander herzlich’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["6/76"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "begrüssen (mraḥəb - mraḥable);",
-    "begrüssen;"
-  ],
+  "idioms": ["begrüssen (mraḥəb - mraḥable);", "begrüssen;"],
   "uncertain": false
 }

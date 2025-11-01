@@ -14,165 +14,3083 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "hwele(hawi)",
-        "howe"
-      ],
+      "forms": ["hwele(hawi)", "howe"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "b-i=šato d-ann=arbʕi w-d-a=ḥḏo w-arbʕi hwele kafno b-a=dkoṯ-anək",
+            "translations": [
+              "In the years 40-41 famine broke out in these places"
+            ],
+            "references": ["2", "40", "41"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-i=šato d-ann=arbʕi w-d-a=ḥḏo w-arbʕi hwele kafno b-a=dkoṯ-anək "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻIn the years 40-41 famine broke out in these placesʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "619"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "37/17"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) b-i=šato d-ann=arbʕi w-d-a=ḥḏo w-arbʕi hwele kafno b-a=dkoṯ-anək ʻIn the years 40-41 famine broke out in these placesʼ; 619; 37/17;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") b-i=šato d-ann=arbʕi w-d-a=ḥḏo w-arbʕi hwele kafno b-a=dkoṯ-anək",
+                "translations": [
+                  "ʻIn the years 40-41 famine broke out in these placesʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["619"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["37/17"]
+              }
+            ]
           }
         ],
         "Preterit\nIntransitive": [
           {
+            "turoyo": "ko-ḥozeno u=qawro ʕatim-awo hawi odaye ʕelayto u=ʕulmo i=naqqa də-ḥzele i=ʕuǧube d-i=ruḥo qadišo mhaymanne w-hawən Mšəḥoye aḏni kayiwo hawino karr hawino hul yarḥo karr jl ..",
+            "translations": [
+              "plötzlich sah ich, wie das finstere Grab zu einem Zimmer mit hoher Decke wurde",
+              "als die Leute das Wunder des Heiligen Geistes sahen, wurden sie gläubig und wurden Christen",
+              "mein Ohr tat weh, und ich wurde taub. Ich war einen Monat lang taub"
+            ],
+            "references": ["1", "LB 148", "12/5"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-ḥozeno u=qawro ʕatim-awo hawi odaye ʕelayto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻplötzlich sah ich, wie das finstere Grab zu einem Zimmer mit hoher Decke wurdeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 148"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=ʕulmo i=naqqa də-ḥzele i=ʕuǧube d-i=ruḥo qadišo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mhaymanne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-hawən Mšəḥoye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals die Leute das Wunder des Heiligen Geistes sahen, wurden sie gläubig und wurden Christenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "12/5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aḏni kayiwo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawino karr"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawino hul yarḥo karr "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmein Ohr tat weh, und ich wurde taub. Ich war einen Monat lang taubʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " jl "
+              },
+              {
+                "kind": "ref",
+                "value": "18"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "7"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "11"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) ko-ḥozeno u=qawro ʕatim-awo hawi odaye ʕelayto ʻplötzlich sah ich, wie das finstere Grab zu einem Zimmer mit hoher Decke wurdeʼ; LB 148; u=ʕulmo i=naqqa də-ḥzele i=ʕuǧube d-i=ruḥo qadišo, mhaymanne, w-hawən Mšəḥoye ʻals die Leute das Wunder des Heiligen Geistes sahen, wurden sie gläubig und wurden Christenʼ; 12/5; aḏni kayiwo, hawino karr, hawino hul yarḥo karr ʻmein Ohr tat weh, und ich wurde taub. Ich war einen Monat lang taubʼ; jl 18.7.11;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") ko-ḥozeno u=qawro ʕatim-awo hawi odaye ʕelayto",
+                "translations": [
+                  "ʻplötzlich sah ich, wie das finstere Grab zu einem Zimmer mit hoher Decke wurdeʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 148"]
+              },
+              {
+                "turoyo": "u=ʕulmo i=naqqa də-ḥzele i=ʕuǧube d-i=ruḥo qadišo, mhaymanne, w-hawən Mšəḥoye",
+                "translations": [
+                  "ʻals die Leute das Wunder des Heiligen Geistes sahen, wurden sie gläubig und wurden Christenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["12/5"]
+              },
+              {
+                "turoyo": "aḏni kayiwo, hawino karr, hawino hul yarḥo karr",
+                "translations": [
+                  "ʻmein Ohr tat weh, und ich wurde taub. Ich war einen Monat lang taubʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "jl ..",
+                "translations": [],
+                "references": ["18", "7", "11"]
+              }
+            ]
           },
           {
+            "turoyo": "mən-yo hawxa? mən hawi? l-ayko gəd-mublitu as=səfoq-ani? hawi ṣafro abrə-d-u=malko d-kit-we msiko d-šaməʕ i=masale d-hawyo u=taʕlo d-mílle-le-yo məd-hawi ṣafro u=malko aṯi l-i=baxča d-oxəl u=ḥawušo hawi baynoṯayye ḥsomo bəġḏ̣a",
+            "translations": [
+              "was soll denn das bedeuten? Was ist denn passiert? Wo wollt ihr das Geschirr hinbringen?",
+              "‘Es wurde Morgen’",
+              "‘Als der gefangene Königssehn hörte, daß die Sache so gevvorden war, wie es der Fuchs gesagt hatte’",
+              "‘als es morgen wurde, kam der König in den Garten, um den Apfel zu essen’",
+              "‘Es entstand zwischen ihnen Mißgunst, Haß’"
+            ],
+            "references": ["2", "620", "2/74"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mən-yo hawxa? mən hawi? l-ayko gəd-mublitu as=səfoq-ani? "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwas soll denn das bedeuten? Was ist denn passiert? Wo wollt ihr das Geschirr hinbringen?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "620"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/74"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/79"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawi ṣafro "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Es wurde Morgen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/64"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " abrə-d-u=malko d-kit-we msiko d-šaməʕ i=masale d-hawyo u=taʕlo d-mílle-le-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Als der gefangene Königssehn hörte, daß die Sache so gevvorden war, wie es der Fuchs gesagt hatte’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/64"
+              },
+              {
+                "kind": "turoyo",
+                "value": " məd-hawi ṣafro u=malko aṯi l-i=baxča d-oxəl u=ḥawušo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘als es morgen wurde, kam der König in den Garten, um den Apfel zu essen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawi baynoṯayye ḥsomo bəġḏ̣a "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Es entstand zwischen ihnen Mißgunst, Haß’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "22/2"
+              }
+            ],
             "text": "2) mən-yo hawxa? mən hawi? l-ayko gəd-mublitu as=səfoq-ani? ʻwas soll denn das bedeuten? Was ist denn passiert? Wo wollt ihr das Geschirr hinbringen?ʼ; 620; 2/74; 36/79; hawi ṣafro ‘Es wurde Morgen’; 21/64; abrə-d-u=malko d-kit-we msiko d-šaməʕ i=masale d-hawyo u=taʕlo d-mílle-le-yo ‘Als der gefangene Königssehn hörte, daß die Sache so gevvorden war, wie es der Fuchs gesagt hatte’; 21/64 məd-hawi ṣafro u=malko aṯi l-i=baxča d-oxəl u=ḥawušo ‘als es morgen wurde, kam der König in den Garten, um den Apfel zu essen’; 21/5; hawi baynoṯayye ḥsomo bəġḏ̣a ‘Es entstand zwischen ihnen Mißgunst, Haß’; 22/2",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mən-yo hawxa? mən hawi? l-ayko gəd-mublitu as=səfoq-ani?",
+                "translations": [
+                  "ʻwas soll denn das bedeuten? Was ist denn passiert? Wo wollt ihr das Geschirr hinbringen?ʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["620"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["2/74"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["36/79"]
+              },
+              {
+                "turoyo": "hawi ṣafro",
+                "translations": ["‘Es wurde Morgen’"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["21/64"]
+              },
+              {
+                "turoyo": "abrə-d-u=malko d-kit-we msiko d-šaməʕ i=masale d-hawyo u=taʕlo d-mílle-le-yo",
+                "translations": [
+                  "‘Als der gefangene Königssehn hörte, daß die Sache so gevvorden war, wie es der Fuchs gesagt hatte’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "məd-hawi ṣafro u=malko aṯi l-i=baxča d-oxəl u=ḥawušo",
+                "translations": [
+                  "‘als es morgen wurde, kam der König in den Garten, um den Apfel zu essen’"
+                ],
+                "references": ["21/64"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["21/5"]
+              },
+              {
+                "turoyo": "hawi baynoṯayye ḥsomo bəġḏ̣a",
+                "translations": ["‘Es entstand zwischen ihnen Mißgunst, Haß’"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["22/2"]
+              }
+            ]
           },
           {
+            "turoyo": "hawi-le ḥamši šti=əšne ḥbiso",
+            "translations": ["er war seit 50, 60 Jahren eingesperrt"],
+            "references": ["4", "50", "60"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "4"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawi-le ḥamši šti=əšne ḥbiso "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer war seit 50, 60 Jahren eingesperrtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "621"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "57/75"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "4) hawi-le ḥamši šti=əšne ḥbiso ʻer war seit 50, 60 Jahren eingesperrtʼ; 621; 57/75;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") hawi-le ḥamši šti=əšne ḥbiso",
+                "translations": ["ʻer war seit 50, 60 Jahren eingesperrtʼ"],
+                "references": ["4"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["621"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["57/75"]
+              }
+            ]
           },
           {
+            "turoyo": "hawi-le abro w mḏ̣ayəʕ prs hawino b-i=šato d-ann=alfo čaʕmo tloṯ w-tleṯi b-Məḏyaḏ k-ubʕeno də-mzabnat-li u=abr-ano diḏux d-hawi",
+            "translations": [
+              "er bekam einen Sohn, aber derselbe verschwand",
+              "ich bin geboren im Jahre 1933, in Miḏyaḏ",
+              "‘Ich möchte, daß du mir den Sohn verkaufst, der dir geboren ist’"
+            ],
+            "references": ["5", "621", "53/20"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "5"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawi-le abro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mḏ̣ayəʕ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer bekam einen Sohn, aber derselbe verschwandʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "621"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "53/20"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawino b-i=šato d-ann=alfo čaʕmo tloṯ w-tleṯi b-Məḏyaḏ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich bin geboren im Jahre 1933, in Miḏyaḏʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "4/2"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ubʕeno də-mzabnat-li u=abr-ano diḏux d-hawi "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Ich möchte, daß du mir den Sohn verkaufst, der dir geboren ist’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "23/13"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "5) hawi-le abro, w mḏ̣ayəʕ ʻer bekam einen Sohn, aber derselbe verschwandʼ; 621; prs 53/20; hawino b-i=šato d-ann=alfo čaʕmo tloṯ w-tleṯi b-Məḏyaḏ ʻich bin geboren im Jahre 1933, in Miḏyaḏʼ; 4/2; k-ubʕeno də-mzabnat-li u=abr-ano diḏux d-hawi ‘Ich möchte, daß du mir den Sohn verkaufst, der dir geboren ist’; 23/13 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") hawi-le abro, w mḏ̣ayəʕ",
+                "translations": [
+                  "ʻer bekam einen Sohn, aber derselbe verschwandʼ"
+                ],
+                "references": ["5"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["621"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["53/20"]
+              },
+              {
+                "turoyo": "hawino b-i=šato d-ann=alfo čaʕmo tloṯ w-tleṯi b-Məḏyaḏ",
+                "translations": ["ʻich bin geboren im Jahre 1933, in Miḏyaḏʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["4/2"]
+              },
+              {
+                "turoyo": "k-ubʕeno də-mzabnat-li u=abr-ano diḏux d-hawi",
+                "translations": [
+                  "‘Ich möchte, daß du mir den Sohn verkaufst, der dir geboren ist’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["23/13"],
+                "notes": ["[MT]"]
+              }
+            ]
           },
           {
+            "turoyo": "d-hat d-lə=mamṭat-li u=zlām-ano ono l-áwyal-lox barṯo w hat l-awət-li babo",
+            "translations": [
+              "wenn du mir den Mann nicht holst, so bin ich nicht deine Tochter und du bist nicht mein Vater"
+            ],
+            "references": ["7", "625", "66/209"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "7"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-hat d-lə=mamṭat-li u=zlām-ano ono l-áwyal-lox barṯo w hat l-awət-li babo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn du mir den Mann nicht holst, so bin ich nicht deine Tochter und du bist nicht mein Vaterʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "625"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "66/209"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "7) d-hat d-lə=mamṭat-li u=zlām-ano ono l-áwyal-lox barṯo w hat l-awət-li babo ʻwenn du mir den Mann nicht holst, so bin ich nicht deine Tochter und du bist nicht mein Vaterʼ; 625; 66/209;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") d-hat d-lə=mamṭat-li u=zlām-ano ono l-áwyal-lox barṯo w hat l-awət-li babo",
+                "translations": [
+                  "ʻwenn du mir den Mann nicht holst, so bin ich nicht deine Tochter und du bist nicht mein Vaterʼ"
+                ],
+                "references": ["7"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["625"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["66/209"]
+              }
+            ]
           }
         ],
         "ko-Preterit": [
           {
+            "turoyo": "uʕdo … k-awi ʕišči b-Almānya ko-ġoyaṭ-la bəṯṯər bayn u=dahwo ko-ḥoyər ko-mofaq-la ga kal k-awyo dahwo",
+            "translations": [
+              "‘Now (…) he has become a working man in Germany’",
+              "‘After that he dipped it (his finger, f.) into gold. He took it out and looked: it has become gold’"
+            ],
+            "references": ["1", "EL 19", "75/130"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " uʕdo "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-awi ʕišči b-Almānya "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Now (…) he has become a working man in Germany’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "EL 19"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-ġoyaṭ-la bəṯṯər bayn u=dahwo ko-ḥoyər ko-mofaq-la ga kal k-awyo dahwo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘After that he dipped it (his finger, f.) into gold. He took it out and looked: it has become gold’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/130"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) uʕdo (…) k-awi ʕišči b-Almānya ‘Now (…) he has become a working man in Germany’ EL 19; ko-ġoyaṭ-la bəṯṯər bayn u=dahwo ko-ḥoyər ko-mofaq-la ga kal k-awyo dahwo ‘After that he dipped it (his finger, f.) into gold. He took it out and looked: it has become gold’ 75/130;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") uʕdo (…) k-awi ʕišči b-Almānya",
+                "translations": [
+                  "‘Now (…) he has become a working man in Germany’"
+                ],
+                "references": ["1", "EL 19"]
+              },
+              {
+                "turoyo": "ko-ġoyaṭ-la bəṯṯər bayn u=dahwo ko-ḥoyər ko-mofaq-la ga kal k-awyo dahwo",
+                "translations": [
+                  "‘After that he dipped it (his finger, f.) into gold. He took it out and looked: it has become gold’"
+                ],
+                "references": ["75/130"]
+              }
+            ]
           },
           {
+            "turoyo": "maʕyi-way-na saʕaye mede ḥayri-way-na b-u=gawdo k-awi mede xd-aḥ=ḥəmre ..",
+            "translations": [
+              "‘We would shake (the milk) approximately for an hour, then we would look into the skin: something similar to pearls has appeared (there)’"
+            ],
+            "references": ["2", "JL 12", "14"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maʕyi-way-na saʕaye mede"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥayri-way-na b-u=gawdo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-awi mede xd-aḥ=ḥəmre "
+              },
+              {
+                "kind": "translation",
+                "value": "‘We would shake (the milk) approximately for an hour, then we would look into the skin: something similar to pearls has appeared (there)’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 12"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "14"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) maʕyi-way-na saʕaye mede, ḥayri-way-na b-u=gawdo, k-awi mede xd-aḥ=ḥəmre ‘We would shake (the milk) approximately for an hour, then we would look into the skin: something similar to pearls has appeared (there)’ JL 12.14.6;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") maʕyi-way-na saʕaye mede, ḥayri-way-na b-u=gawdo, k-awi mede xd-aḥ=ḥəmre ..",
+                "translations": [
+                  "‘We would shake (the milk) approximately for an hour, then we would look into the skin: something similar to pearls has appeared (there)’"
+                ],
+                "references": ["2", "JL 12", "14", "6"]
+              }
+            ]
           }
         ],
         "Preterit-wa": [
           {
+            "turoyo": "hawo d-aqdam d-aṯi-wo l-u=ṭlobayḏax u=gawrayḏi-wa hwé-way-le tamo kanošo b-i=dərtaṯxu hawi-wo kmo=banniyat w dukkane ḥaṯe hēš l-awyo-wa čāx d-i=ḥšəmto",
+            "translations": [
+              "der, der vorher kam, um um dich zu werben, war mein Mann, der dann dort Ausfeger auf eurem Hofe geworden war",
+              "es waren ein paar neue Gebäude und Läden entstanden",
+              "es war noch nicht Zeit zum Abendessen"
+            ],
+            "references": ["1", "619", "62/350"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawo d-aqdam d-aṯi-wo l-u=ṭlobayḏax u=gawrayḏi-wa hwé-way-le tamo kanošo b-i=dərtaṯxu "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder, der vorher kam, um um dich zu werben, war mein Mann, der dann dort Ausfeger auf eurem Hofe geworden warʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "619"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/350"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawi-wo kmo=banniyat w dukkane ḥaṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes waren ein paar neue Gebäude und Läden entstandenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "621"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hēš l-awyo-wa čāx d-i=ḥšəmto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes war noch nicht Zeit zum Abendessenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "116/2"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) hawo d-aqdam d-aṯi-wo l-u=ṭlobayḏax u=gawrayḏi-wa hwé-way-le tamo kanošo b-i=dərtaṯxu ʻder, der vorher kam, um um dich zu werben, war mein Mann, der dann dort Ausfeger auf eurem Hofe geworden warʼ; 619; 62/350; hawi-wo kmo=banniyat w dukkane ḥaṯe ʻes waren ein paar neue Gebäude und Läden entstandenʼ; 621; 11/8; hēš l-awyo-wa čāx d-i=ḥšəmto ʻes war noch nicht Zeit zum Abendessenʼ; 116/2;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") hawo d-aqdam d-aṯi-wo l-u=ṭlobayḏax u=gawrayḏi-wa hwé-way-le tamo kanošo b-i=dərtaṯxu",
+                "translations": [
+                  "ʻder, der vorher kam, um um dich zu werben, war mein Mann, der dann dort Ausfeger auf eurem Hofe geworden warʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["619"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["62/350"]
+              },
+              {
+                "turoyo": "hawi-wo kmo=banniyat w dukkane ḥaṯe",
+                "translations": [
+                  "ʻes waren ein paar neue Gebäude und Läden entstandenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["621"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/8"]
+              },
+              {
+                "turoyo": "hēš l-awyo-wa čāx d-i=ḥšəmto",
+                "translations": ["ʻes war noch nicht Zeit zum Abendessenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["116/2"]
+              }
+            ]
           },
           {
+            "turoyo": "arʕo ono k-oḏaʕn-a qorə́n-way-la maḥat-wa-lle əšme d-i=arʕo d-i=qarno əmmiwa i=arʕo d-i=qarno haṯe mən=hawi-wa eba Lu",
+            "translations": [
+              "‘One piece of land that I know – people had named it the Hornfield. They called (it) the Hornfield. So what had happened there?’"
+            ],
+            "references": ["2", "F 304/64"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " arʕo ono k-oḏaʕn-a qorə́n-way-la maḥat-wa-lle əšme d-i=arʕo d-i=qarno əmmiwa i=arʕo d-i=qarno haṯe mən=hawi-wa eba "
+              },
+              {
+                "kind": "translation",
+                "value": "‘One piece of land that I know – people had named it the Hornfield. They called (it) the Hornfield. So what had happened there?’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Lu"
+              },
+              {
+                "kind": "ref",
+                "value": "F 304/64"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) arʕo ono k-oḏaʕn-a qorə́n-way-la maḥat-wa-lle əšme d-i=arʕo d-i=qarno əmmiwa i=arʕo d-i=qarno haṯe mən=hawi-wa eba ‘One piece of land that I know – people had named it the Hornfield. They called (it) the Hornfield. So what had happened there?’ LuF 304/64;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") arʕo ono k-oḏaʕn-a qorə́n-way-la maḥat-wa-lle əšme d-i=arʕo d-i=qarno əmmiwa i=arʕo d-i=qarno haṯe mən=hawi-wa eba Lu",
+                "translations": [
+                  "‘One piece of land that I know – people had named it the Hornfield. They called (it) the Hornfield. So what had happened there?’"
+                ],
+                "references": ["2", "F 304/64"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "ono dayəm maširóno-no ʕal u=ʕamo d-hōn <howən mšayne w rəḥmi ḥḏoḏe w maraḥqi ruḥayye m-aḥ=ḥəṭyawoṯo hat lazəm d-fayšət harke b-i=mamlaxṯo w-bəṯṯər mini gd-owət malko ánnaqqa gəd-uwyal-lox tamām aṯto",
+            "translations": [
+              "Ich gebe (meinem) Volk dauernd gute Ratschläge, damit es friedlich ist, einander liebt und sich von der Sünde fernhält",
+              "‘du musst hier im Reiche bleiben und sollst nach mir König werden’",
+              "‘Jetzt werde ich ganz deine Frau werden’"
+            ],
+            "references": ["1", "LB 105", "24/48"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono dayəm maširóno-no ʕal u=ʕamo d-hōn "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "<howən"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mšayne w rəḥmi ḥḏoḏe w maraḥqi ruḥayye m-aḥ=ḥəṭyawoṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻIch gebe (meinem) Volk dauernd gute Ratschläge, damit es friedlich ist, einander liebt und sich von der Sünde fernhältʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 105"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hat lazəm d-fayšət harke b-i=mamlaxṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-bəṯṯər mini gd-owət malko "
+              },
+              {
+                "kind": "translation",
+                "value": "‘du musst hier im Reiche bleiben und sollst nach mir König werden’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/48"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ánnaqqa gəd-uwyal-lox tamām aṯto "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Jetzt werde ich ganz deine Frau werden’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/174"
+              }
+            ],
             "text": "1) ono dayəm maširóno-no ʕal u=ʕamo d-hōn (<howən) mšayne w rəḥmi ḥḏoḏe w maraḥqi ruḥayye m-aḥ=ḥəṭyawoṯo ʻIch gebe (meinem) Volk dauernd gute Ratschläge, damit es friedlich ist, einander liebt und sich von der Sünde fernhältʼ; LB 105; hat lazəm d-fayšət harke b-i=mamlaxṯo, w-bəṯṯər mini gd-owət malko ‘du musst hier im Reiche bleiben und sollst nach mir König werden’; 24/48; ánnaqqa gəd-uwyal-lox tamām aṯto ‘Jetzt werde ich ganz deine Frau werden’; 29/174",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") ono dayəm maširóno-no ʕal u=ʕamo d-hōn (<howən) mšayne w rəḥmi ḥḏoḏe w maraḥqi ruḥayye m-aḥ=ḥəṭyawoṯo",
+                "translations": [
+                  "ʻIch gebe (meinem) Volk dauernd gute Ratschläge, damit es friedlich ist, einander liebt und sich von der Sünde fernhältʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 105"]
+              },
+              {
+                "turoyo": "hat lazəm d-fayšət harke b-i=mamlaxṯo, w-bəṯṯər mini gd-owət malko",
+                "translations": [
+                  "‘du musst hier im Reiche bleiben und sollst nach mir König werden’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/48"]
+              },
+              {
+                "turoyo": "ánnaqqa gəd-uwyal-lox tamām aṯto",
+                "translations": ["‘Jetzt werde ich ganz deine Frau werden’"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/174"]
+              }
+            ]
           },
           {
-            "text": "2) ono obáʕ-way-no howe-li fərsa…hăma d-məǧġənno b-i=masale d-i=diyane ʻich aber wünschte und suchte nach einer Gelegenheit (wörtl.: ), mit ihnen über den Glauben zu sprechenʼ; LB 107; lə=k-oḏəʕ faqiro mə kt-owe ebe ʻder Arme wusste ja nicht, was ihm bevorstandʼ; 622; 77/107; hat,  u=mede d-ubʕət, hawxa gd-owe ‘das, was du willst, soll geschehen’; 24/78",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "ono obáʕ-way-no howe-li fərsa…hăma d-məǧġənno b-i=masale d-i=diyane lə=k-oḏəʕ faqiro mə kt-owe ebe hat u=mede d-ubʕət hawxa gd-owe",
+            "translations": [
+              "ich aber wünschte und suchte nach einer Gelegenheit (wörtl.: ), mit ihnen über den Glauben zu sprechen",
+              "der Arme wusste ja nicht, was ihm bevorstand",
+              "‘das, was du willst, soll geschehen’"
+            ],
+            "references": ["2", "LB 107", "622"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono obáʕ-way-no howe-li fərsa…hăma d-məǧġənno b-i=masale d-i=diyane "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich aber wünschte und suchte nach einer Gelegenheit (wörtl.: ), mit ihnen über den Glauben zu sprechenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 107"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=k-oḏəʕ faqiro mə kt-owe ebe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Arme wusste ja nicht, was ihm bevorstandʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "622"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "77/107"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hat"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": "  u=mede d-ubʕət"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawxa gd-owe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘das, was du willst, soll geschehen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/78"
+              }
+            ],
+            "text": "2) ono obáʕ-way-no howe-li fərsa…hăma d-məǧġənno b-i=masale d-i=diyane ʻich aber wünschte und suchte nach einer Gelegenheit (wörtl.: ), mit ihnen über den Glauben zu sprechenʼ; LB 107; lə=k-oḏəʕ faqiro mə kt-owe ebe ʻder Arme wusste ja nicht, was ihm bevorstandʼ; 622; 77/107; hat, u=mede d-ubʕət, hawxa gd-owe ‘das, was du willst, soll geschehen’; 24/78",
+            "segments": [
+              {
+                "turoyo": ") ono obáʕ-way-no howe-li fərsa…hăma d-məǧġənno b-i=masale d-i=diyane",
+                "translations": [
+                  "ʻich aber wünschte und suchte nach einer Gelegenheit (wörtl.: ), mit ihnen über den Glauben zu sprechenʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 107"]
+              },
+              {
+                "turoyo": "lə=k-oḏəʕ faqiro mə kt-owe ebe",
+                "translations": [
+                  "ʻder Arme wusste ja nicht, was ihm bevorstandʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["622"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["77/107"]
+              },
+              {
+                "turoyo": "hat, u=mede d-ubʕət, hawxa gd-owe",
+                "translations": ["‘das, was du willst, soll geschehen’"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/78"]
+              }
+            ]
           },
           {
+            "turoyo": "Mḥammad bări me d-howe … b-karse d-i=emo aloho kṯule i=šahad-aṯe … ʕal əšme s womb God had written this testimony … about his name’ ..",
+            "translations": [
+              "‘Muhammad, before he was born, (while he was) in his mother’"
+            ],
+            "references": ["5", "JL 20", "7"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "5"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Mḥammad bări me d-howe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-karse d-i=emo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aloho kṯule i=šahad-aṯe "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕal əšme "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Muhammad, before he was born, (while he was) in his mother’"
+              },
+              {
+                "kind": "turoyo",
+                "value": "s womb"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " God had written this testimony "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " about his name’ "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 20"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "7"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "42"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "5) Mḥammad bări me d-howe, (…) b-karse d-i=emo, aloho kṯule i=šahad-aṯe (…) ʕal əšme ‘Muhammad, before he was born, (while he was) in his mother’s womb, God had written this testimony (…) about his name’ JL 20.7.42;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") Mḥammad bări me d-howe, (…) b-karse d-i=emo, aloho kṯule i=šahad-aṯe (…) ʕal əšme s womb, God had written this testimony (…) about his name’ ..",
+                "translations": [
+                  "‘Muhammad, before he was born, (while he was) in his mother’"
+                ],
+                "references": ["5", "JL 20", "7", "42"]
+              }
+            ]
           },
           {
-            "text": "6) u=gawro k-owe u=gawro d-i=ḥurma ʻder Mann war der Ehemann der Frauʼ; 625; 83/30; 8) mwaʕadle ʕal ruḥe hul d-lo=ḥoze u=šayro lo=k-owe d-doʕər ʻer gelobte sich, nicht zurückzukehren, ehe er nicht das Armband gefunden hätteʼ; 24/147;+ Leb Beg s.66/100; 5) i=naqqa d-k-owa-lle l-ap=pirat, b-a=tmanyo=yawme ko-məblən-ne l-i=ʕito ʻwenn die Frauen gebären, bringt man die Kinder am achten Tage in die Kircheʼ; 626; 94/48; 6) omár-way-no năfar ṭawwo-hət w kt-owət gabi ʻich dachte, du bist ein guter Soldat und sollst bei mir bleibenʼ; jl 19.6.18; [MLT];",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "u=gawro k-owe u=gawro d-i=ḥurma",
+            "translations": ["der Mann war der Ehemann der Frau"],
+            "references": ["6", "625", "83/30"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "6"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=gawro k-owe u=gawro d-i=ḥurma "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Mann war der Ehemann der Frauʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "625"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "83/30"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "6) u=gawro k-owe u=gawro d-i=ḥurma ʻder Mann war der Ehemann der Frauʼ; 625; 83/30;",
+            "segments": [
+              {
+                "turoyo": ") u=gawro k-owe u=gawro d-i=ḥurma",
+                "translations": ["ʻder Mann war der Ehemann der Frauʼ"],
+                "references": ["6"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["625"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["83/30"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
+            "turoyo": "mwaʕadle ʕal ruḥe hul d-lo=ḥoze u=šayro lo=k-owe d-doʕər + Leb Beg s.",
+            "translations": [
+              "er gelobte sich, nicht zurückzukehren, ehe er nicht das Armband gefunden hätte"
+            ],
+            "references": ["8", "24/147", "66/100"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "8"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mwaʕadle ʕal ruḥe hul d-lo=ḥoze u=šayro lo=k-owe d-doʕər "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer gelobte sich, nicht zurückzukehren, ehe er nicht das Armband gefunden hätteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/147"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "+ Leb Beg s."
+              },
+              {
+                "kind": "ref",
+                "value": "66/100"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "8) mwaʕadle ʕal ruḥe hul d-lo=ḥoze u=šayro lo=k-owe d-doʕər ʻer gelobte sich, nicht zurückzukehren, ehe er nicht das Armband gefunden hätteʼ; 24/147;+ Leb Beg s.66/100;",
+            "segments": [
+              {
+                "turoyo": ") mwaʕadle ʕal ruḥe hul d-lo=ḥoze u=šayro lo=k-owe d-doʕər",
+                "translations": [
+                  "ʻer gelobte sich, nicht zurückzukehren, ehe er nicht das Armband gefunden hätteʼ"
+                ],
+                "references": ["8"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/147"]
+              },
+              {
+                "turoyo": "+ Leb Beg s.",
+                "translations": [],
+                "references": ["66/100"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "i=naqqa d-k-owa-lle l-ap=pirat b-a=tmanyo=yawme ko-məblən-ne l-i=ʕito",
+            "translations": [
+              "wenn die Frauen gebären, bringt man die Kinder am achten Tage in die Kirche"
+            ],
+            "references": ["5", "626", "94/48"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "5"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naqqa d-k-owa-lle l-ap=pirat"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-a=tmanyo=yawme ko-məblən-ne l-i=ʕito "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn die Frauen gebären, bringt man die Kinder am achten Tage in die Kircheʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "626"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/48"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "5) i=naqqa d-k-owa-lle l-ap=pirat, b-a=tmanyo=yawme ko-məblən-ne l-i=ʕito ʻwenn die Frauen gebären, bringt man die Kinder am achten Tage in die Kircheʼ; 626; 94/48;",
+            "segments": [
+              {
+                "turoyo": ") i=naqqa d-k-owa-lle l-ap=pirat, b-a=tmanyo=yawme ko-məblən-ne l-i=ʕito",
+                "translations": [
+                  "ʻwenn die Frauen gebären, bringt man die Kinder am achten Tage in die Kircheʼ"
+                ],
+                "references": ["5"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["626"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["94/48"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "omár-way-no năfar ṭawwo-hət w kt-owət gabi jl ..",
+            "translations": [
+              "ich dachte, du bist ein guter Soldat und sollst bei mir bleiben"
+            ],
+            "references": ["6", "19", "6"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "6"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " omár-way-no năfar ṭawwo-hət w kt-owət gabi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich dachte, du bist ein guter Soldat und sollst bei mir bleibenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " jl "
+              },
+              {
+                "kind": "ref",
+                "value": "19"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "6"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "18"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MLT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "6) omár-way-no năfar ṭawwo-hət w kt-owət gabi ʻich dachte, du bist ein guter Soldat und sollst bei mir bleibenʼ; jl 19.6.18; [MLT];",
+            "segments": [
+              {
+                "turoyo": ") omár-way-no năfar ṭawwo-hət w kt-owət gabi",
+                "translations": [
+                  "ʻich dachte, du bist ein guter Soldat und sollst bei mir bleibenʼ"
+                ],
+                "references": ["6"]
+              },
+              {
+                "turoyo": "jl ..",
+                "translations": [],
+                "references": ["19", "6", "18"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": [],
+                "notes": ["[MLT]"]
+              }
+            ]
+          },
+          {
+            "turoyo": "mədli l-u=fir-ayḏi w-šəfq-ayḏi məṛṛe adyawma lo=k-owe illa g-əzzino qm-aʕ=ʕeze",
+            "translations": [
+              "lo=k-owe d-maydət-te, g-məblina-nne l-i=maḥkăma",
+              "‘I picked up my skullcap and my hat, but they said: “You may not take them, we will take them to the court” LB 330; hat g-maḥtət tloṯo=mo=dinare, hul d-lo=maḥtət-te, lo=k-owe d-nəfqət ‘You must pay three hundred dinars. Until you pay (that sum), you cannot go out’",
+              "‘Today I am certainly going with the goats!’"
+            ],
+            "references": ["8", "LB 330", "EL 51"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "8"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mədli l-u=fir-ayḏi w-šəfq-ayḏi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " məṛṛe"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“lo=k-owe d-maydət-te, g-məblina-nne l-i=maḥkăma”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I picked up my skullcap and my hat, but they said: “You may not take them, we will take them to the court” LB 330; hat g-maḥtət tloṯo=mo=dinare, hul d-lo=maḥtət-te, lo=k-owe d-nəfqət ‘You must pay three hundred dinars. Until you pay (that sum), you cannot go out’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "EL 51"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " adyawma lo=k-owe illa g-əzzino qm-aʕ=ʕeze "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Today I am certainly going with the goats!’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/52"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "8) mədli l-u=fir-ayḏi w-šəfq-ayḏi, məṛṛe: “lo=k-owe d-maydət-te, g-məblina-nne l-i=maḥkăma” ‘I picked up my skullcap and my hat, but they said: “You may not take them, we will take them to the court” LB 330; hat g-maḥtət tloṯo=mo=dinare, hul d-lo=maḥtət-te, lo=k-owe d-nəfqət ‘You must pay three hundred dinars. Until you pay (that sum), you cannot go out’ EL 51; adyawma lo=k-owe illa g-əzzino qm-aʕ=ʕeze ‘Today I am certainly going with the goats!’ 75/52;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mədli l-u=fir-ayḏi w-šəfq-ayḏi, məṛṛe:",
+                "translations": [
+                  "“lo=k-owe d-maydət-te, g-məblina-nne l-i=maḥkăma”",
+                  "‘I picked up my skullcap and my hat, but they said: “You may not take them, we will take them to the court” LB 330; hat g-maḥtət tloṯo=mo=dinare, hul d-lo=maḥtət-te, lo=k-owe d-nəfqət ‘You must pay three hundred dinars. Until you pay (that sum), you cannot go out’"
+                ],
+                "references": ["8", "EL 51"]
+              },
+              {
+                "turoyo": "adyawma lo=k-owe illa g-əzzino qm-aʕ=ʕeze",
+                "translations": [
+                  "‘Today I am certainly going with the goats!’"
+                ],
+                "references": ["75/52"]
+              }
+            ]
           },
           {
-            "text": "9)  ṭr-owe u=maktūb ʕam-u=ʕmiro ʻden Brief soll der Emir bei sich habenʼ; 626; 36/48;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "ṭr-owe u=maktūb ʕam-u=ʕmiro",
+            "translations": ["den Brief soll der Emir bei sich haben"],
+            "references": ["9", "626", "36/48"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "9"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  ṭr-owe u=maktūb ʕam-u=ʕmiro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻden Brief soll der Emir bei sich habenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "626"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/48"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "9) ṭr-owe u=maktūb ʕam-u=ʕmiro ʻden Brief soll der Emir bei sich habenʼ; 626; 36/48;",
+            "segments": [
+              {
+                "turoyo": ") ṭr-owe u=maktūb ʕam-u=ʕmiro",
+                "translations": ["ʻden Brief soll der Emir bei sich habenʼ"],
+                "references": ["9"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["626"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["36/48"]
+              }
+            ]
           },
           {
+            "turoyo": "",
+            "translations": [],
+            "references": ["10"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "10"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "10)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ")",
+                "translations": [],
+                "references": ["10"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "d-l-ówe-wo qarʕi b-u=kuxo kət-wo be d-nak-wo-li? prs xuzi am=maye d-lo=k-rŭḏ̣etu bənne hŭwan-wo b-Mərde tamo kət-yo ṭayro marfan-wo u=ḥa d-uṯe-wo u=ṭayr-awo d-kule-wo ʕal riše huwe huwe-wo ḥakəm d-i=walay-ayo hat d-ŭwat-wo b-dukṯə-d-u=taǧər-ano gəd-ŭbat-wo dasṭūr d-i=kačk-ayo -",
+            "translations": [
+              "wenn ich nicht meinen Kopf im Hühnerstall gehabt hätte, hätte er mir dann beikommen können?",
+              "(wollte Gott,) dass Wasser, das ihnen nicht gefällt, wäre hier in Mardin!",
+              "‘Es war dort ein Vogel, den pflegte man loszulassen, und derjenige, auf dessen Haupt jener Vogel sich niederließ, der wurde Herrscher jener Stadt’",
+              "wenn du an der Stelle des Kaufmanns gewesen wärest, würdest du dem Mädchen auch die Erlaubnis gegeben haben?"
+            ],
+            "references": ["1", "627", "29/23"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-l-ówe-wo qarʕi b-u=kuxo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kət-wo be d-nak-wo-li? "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn ich nicht meinen Kopf im Hühnerstall gehabt hätte, hätte er mir dann beikommen können?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "627"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "29/23"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " xuzi am=maye d-lo=k-rŭḏ̣etu bənne hŭwan-wo b-Mərde "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ(wollte Gott,) dass Wasser, das ihnen nicht gefällt, wäre hier in Mardin!ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "20/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " tamo kət-yo ṭayro"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " marfan-wo u=ḥa d-uṯe-wo u=ṭayr-awo d-kule-wo ʕal riše"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " huwe huwe-wo ḥakəm d-i=walay-ayo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Es war dort ein Vogel, den pflegte man loszulassen, und derjenige, auf dessen Haupt jener Vogel sich niederließ, der wurde Herrscher jener Stadt’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/310"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hat d-ŭwat-wo b-dukṯə-d-u=taǧər-ano"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəd-ŭbat-wo dasṭūr d-i=kačk-ayo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn du an der Stelle des Kaufmanns gewesen wärest, würdest du dem Mädchen auch die Erlaubnis gegeben haben?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/124"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "125"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) d-l-ówe-wo qarʕi b-u=kuxo, kət-wo be d-nak-wo-li? ʻwenn ich nicht meinen Kopf im Hühnerstall gehabt hätte, hätte er mir dann beikommen können?ʼ; 627; prs 29/23; xuzi am=maye d-lo=k-rŭḏ̣etu bənne hŭwan-wo b-Mərde ʻ(wollte Gott,) dass Wasser, das ihnen nicht gefällt, wäre hier in Mardin!ʼ; [MT] 20/9; tamo kət-yo ṭayro; marfan-wo u=ḥa d-uṯe-wo u=ṭayr-awo d-kule-wo ʕal riše, huwe huwe-wo ḥakəm d-i=walay-ayo ‘Es war dort ein Vogel, den pflegte man loszulassen, und derjenige, auf dessen Haupt jener Vogel sich niederließ, der wurde Herrscher jener Stadt’; 24/310 [MT]; hat d-ŭwat-wo b-dukṯə-d-u=taǧər-ano, gəd-ŭbat-wo dasṭūr d-i=kačk-ayo ʻwenn du an der Stelle des Kaufmanns gewesen wärest, würdest du dem Mädchen auch die Erlaubnis gegeben haben?ʼ; 26/124-125 [MT];",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") d-l-ówe-wo qarʕi b-u=kuxo, kət-wo be d-nak-wo-li?",
+                "translations": [
+                  "ʻwenn ich nicht meinen Kopf im Hühnerstall gehabt hätte, hätte er mir dann beikommen können?ʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["627"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["29/23"]
+              },
+              {
+                "turoyo": "xuzi am=maye d-lo=k-rŭḏ̣etu bənne hŭwan-wo b-Mərde",
+                "translations": [
+                  "ʻ(wollte Gott,) dass Wasser, das ihnen nicht gefällt, wäre hier in Mardin!ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["20/9"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "tamo kət-yo ṭayro",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "marfan-wo u=ḥa d-uṯe-wo u=ṭayr-awo d-kule-wo ʕal riše, huwe huwe-wo ḥakəm d-i=walay-ayo",
+                "translations": [
+                  "‘Es war dort ein Vogel, den pflegte man loszulassen, und derjenige, auf dessen Haupt jener Vogel sich niederließ, der wurde Herrscher jener Stadt’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/310"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "hat d-ŭwat-wo b-dukṯə-d-u=taǧər-ano, gəd-ŭbat-wo dasṭūr d-i=kačk-ayo",
+                "translations": [
+                  "ʻwenn du an der Stelle des Kaufmanns gewesen wärest, würdest du dem Mädchen auch die Erlaubnis gegeben haben?ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["26/124", "125"],
+                "notes": ["[MT]"]
+              }
+            ]
           },
           {
+            "turoyo": "kul šato huwé-wo-wa =ba ḥa ḥawušo b-u=ilon-awo",
+            "translations": ["‘jedes Jahr wuchs darauf ein Apfel’"],
+            "references": ["2", "21/2"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": "kul šato huwé-wo-wa "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "=ba"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥa ḥawušo b-u=ilon-awo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘jedes Jahr wuchs darauf ein Apfel’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/2"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2)kul šato huwé-wo-wa (=ba) ḥa ḥawušo b-u=ilon-awo ‘jedes Jahr wuchs darauf ein Apfel’; 21/2;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ")kul šato huwé-wo-wa (=ba) ḥa ḥawušo b-u=ilon-awo",
+                "translations": ["‘jedes Jahr wuchs darauf ein Apfel’"],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["21/2"]
+              }
+            ]
           },
           {
-            "text": "5) kət-wo-le tloṯ=niše, l-owé-wo-le abne mənayye ʻer hatte drei Frauen, aber er hatte keine Kinder von ihnenʼ; 627; prs 240/1; 6) babi u=maḥṣulayḏe howe-wa u=qərš qərš; mḥayṣal-wo kallat ġắlabe ʻmein Vater verdiente einen Groschen auf einen Groschen, er verdiente sehr viel Geldʼ; 627; 63/28; 8) ʕal u=sozayḏe d-hule soz qawyo l-ówe-wa d-omər ʻwegen des starken Wortes, das er gegeben hatte, konnte er nicht sagenʼ; 627; 64/306;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "kət-wo-le tloṯ=niše l-owé-wo-le abne mənayye prs",
+            "translations": [
+              "er hatte drei Frauen, aber er hatte keine Kinder von ihnen"
+            ],
+            "references": ["5", "627", "240/1"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "5"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kət-wo-le tloṯ=niše"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-owé-wo-le abne mənayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hatte drei Frauen, aber er hatte keine Kinder von ihnenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "627"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "240/1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "5) kət-wo-le tloṯ=niše, l-owé-wo-le abne mənayye ʻer hatte drei Frauen, aber er hatte keine Kinder von ihnenʼ; 627; prs 240/1;",
+            "segments": [
+              {
+                "turoyo": ") kət-wo-le tloṯ=niše, l-owé-wo-le abne mənayye",
+                "translations": [
+                  "ʻer hatte drei Frauen, aber er hatte keine Kinder von ihnenʼ"
+                ],
+                "references": ["5"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["627"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["240/1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "babi u=maḥṣulayḏe howe-wa u=qərš qərš mḥayṣal-wo kallat ġắlabe",
+            "translations": [
+              "mein Vater verdiente einen Groschen auf einen Groschen, er verdiente sehr viel Geld"
+            ],
+            "references": ["6", "627", "63/28"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "6"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " babi u=maḥṣulayḏe howe-wa u=qərš qərš"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥayṣal-wo kallat ġắlabe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmein Vater verdiente einen Groschen auf einen Groschen, er verdiente sehr viel Geldʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "627"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "63/28"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "6) babi u=maḥṣulayḏe howe-wa u=qərš qərš; mḥayṣal-wo kallat ġắlabe ʻmein Vater verdiente einen Groschen auf einen Groschen, er verdiente sehr viel Geldʼ; 627; 63/28;",
+            "segments": [
+              {
+                "turoyo": ") babi u=maḥṣulayḏe howe-wa u=qərš qərš",
+                "translations": [],
+                "references": ["6"]
+              },
+              {
+                "turoyo": "mḥayṣal-wo kallat ġắlabe",
+                "translations": [
+                  "ʻmein Vater verdiente einen Groschen auf einen Groschen, er verdiente sehr viel Geldʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["627"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["63/28"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "ʕal u=sozayḏe d-hule soz qawyo l-ówe-wa d-omər",
+            "translations": [
+              "wegen des starken Wortes, das er gegeben hatte, konnte er nicht sagen"
+            ],
+            "references": ["8", "627", "64/306"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "8"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕal u=sozayḏe d-hule soz qawyo l-ówe-wa d-omər "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwegen des starken Wortes, das er gegeben hatte, konnte er nicht sagenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "627"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "64/306"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "8) ʕal u=sozayḏe d-hule soz qawyo l-ówe-wa d-omər ʻwegen des starken Wortes, das er gegeben hatte, konnte er nicht sagenʼ; 627; 64/306;",
+            "segments": [
+              {
+                "turoyo": ") ʕal u=sozayḏe d-hule soz qawyo l-ówe-wa d-omər",
+                "translations": [
+                  "ʻwegen des starken Wortes, das er gegeben hatte, konnte er nicht sagenʼ"
+                ],
+                "references": ["8"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["627"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["64/306"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "hway gawro w itox hzam-li prs prs hwawu amīn u=yawmo d-əzzoxu l-Məḏyaḏ ʕal ak=katfoṯo gəm-məṭʕonutu!",
+            "translations": [
+              "werde mein Mann und komm mich entführen",
+              "ihr könnt sicher sein, dass ihr an dem Tage, an dem ihr nach Miḏyaḏ reist, auf den Schultern werdet getragen werden"
+            ],
+            "references": ["1", "628", "20/36"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hway gawro w itox hzam-li "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwerde mein Mann und komm mich entführenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "628"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "20/36"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "68/5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "57/109"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "61/315"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70/82"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "86"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hwawu amīn"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=yawmo d-əzzoxu l-Məḏyaḏ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕal ak=katfoṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəm-məṭʕonutu! "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻihr könnt sicher sein, dass ihr an dem Tage, an dem ihr nach Miḏyaḏ reist, auf den Schultern werdet getragen werdenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/326"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) hway gawro w itox hzam-li ʻwerde mein Mann und komm mich entführenʼ; 628; prs 20/36; prs 68/5; 57/109; 61/315; 70/82, 86; hwawu amīn, u=yawmo d-əzzoxu l-Məḏyaḏ, ʕal ak=katfoṯo, gəm-məṭʕonutu! ʻihr könnt sicher sein, dass ihr an dem Tage, an dem ihr nach Miḏyaḏ reist, auf den Schultern werdet getragen werdenʼ; 11/326;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") hway gawro w itox hzam-li",
+                "translations": ["ʻwerde mein Mann und komm mich entführenʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["628"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["20/36"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["68/5"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["57/109"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["61/315"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["70/82", "86"]
+              },
+              {
+                "turoyo": "hwawu amīn, u=yawmo d-əzzoxu l-Məḏyaḏ, ʕal ak=katfoṯo, gəm-məṭʕonutu!",
+                "translations": [
+                  "ʻihr könnt sicher sein, dass ihr an dem Tage, an dem ihr nach Miḏyaḏ reist, auf den Schultern werdet getragen werdenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/326"]
+              }
+            ]
           }
         ],
         "Part act.": [
           {
+            "turoyo": "hawíṯo-yo",
+            "translations": ["sie ist Wöchnerin"],
+            "references": ["5", "628"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "5"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawíṯo-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie ist Wöchnerinʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "628"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "5) hawíṯo-yo ʻsie ist Wöchnerinʼ; 628;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") hawíṯo-yo",
+                "translations": ["ʻsie ist Wöchnerinʼ"],
+                "references": ["5"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["628"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
-            "text": "hwoyo; 628; 5) b-u=mahwo d-hawi u=abro, kət-wa farše ʕal fema d-i=ʕayno, qum i=škaftaṯṯe ʻals der Sohn geboren war..., es war da eine Steinplatte am Rand des Brunnes, vor ihrer Höhleʼ; 628; 69/234;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "b-u=mahwo d-hawi u=abro kət-wa farše ʕal fema d-i=ʕayno qum i=škaftaṯṯe",
+            "translations": [
+              "als der Sohn geboren war..., es war da eine Steinplatte am Rand des Brunnes, vor ihrer Höhle"
+            ],
+            "references": ["5", "628", "69/234"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "5"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-u=mahwo d-hawi u=abro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kət-wa farše ʕal fema d-i=ʕayno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qum i=škaftaṯṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals der Sohn geboren war..., es war da eine Steinplatte am Rand des Brunnes, vor ihrer Höhleʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "628"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/234"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "5) b-u=mahwo d-hawi u=abro, kət-wa farše ʕal fema d-i=ʕayno, qum i=škaftaṯṯe ʻals der Sohn geboren war..., es war da eine Steinplatte am Rand des Brunnes, vor ihrer Höhleʼ; 628; 69/234;",
+            "segments": [
+              {
+                "turoyo": ") b-u=mahwo d-hawi u=abro, kət-wa farše ʕal fema d-i=ʕayno, qum i=škaftaṯṯe",
+                "translations": [
+                  "ʻals der Sohn geboren war..., es war da eine Steinplatte am Rand des Brunnes, vor ihrer Höhleʼ"
+                ],
+                "references": ["5"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["628"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["69/234"]
+              }
+            ]
           }
         ]
       }

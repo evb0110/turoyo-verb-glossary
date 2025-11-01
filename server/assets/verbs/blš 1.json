@@ -5,32 +5,136 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "bləšle",
-        "boləš"
-      ],
+      "forms": ["bləšle", "boləš"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "yatiwo gawe blə́šla-be prs",
+            "translations": [
+              "das Mädchen setzte sich zu ihm hin und betastete ihn"
+            ],
+            "references": ["176", "56/27"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "yatiwo gawe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " blə́šla-be "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Mädchen setzte sich zu ihm hin und betastete ihnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "176"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "56/27"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "yatiwo gawe, blə́šla-be ʻdas Mädchen setzte sich zu ihm hin und betastete ihnʼ; 176; prs 56/27;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "yatiwo gawe, blə́šla-be",
+                "translations": [
+                  "ʻdas Mädchen setzte sich zu ihm hin und betastete ihnʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["176"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["56/27"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "lo=bulšət b-u=kṯowo",
+            "translations": [
+              "mach nicht an dem Buch herum, rühre das Buch nicht an"
+            ],
+            "references": ["176"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lo=bulšət b-u=kṯowo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmach nicht an dem Buch herum, rühre das Buch nicht anʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "176"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "lo=bulšət b-u=kṯowo ʻmach nicht an dem Buch herum, rühre das Buch nicht anʼ; 176;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "lo=bulšət b-u=kṯowo",
+                "translations": [
+                  "ʻmach nicht an dem Buch herum, rühre das Buch nicht anʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["176"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "abtasten, (zärtlich) berühren, anrühren;"
-  ],
+  "idioms": ["abtasten, (zärtlich) berühren, anrühren;"],
   "uncertain": false
 }

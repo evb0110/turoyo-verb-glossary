@@ -14,17 +14,105 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mnadele",
-        "mnade"
-      ],
+      "forms": ["mnadele", "mnade"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "u=ʕŭmūm d-i=walaye qralle w mnadalle m-ar=ruʕye l-ab=baqore l-ar=renǧbar l-u=ʕamo d-kət-wo eba d-ḥa qodər gorəš i=xanǧar-ayo",
+            "translations": [
+              "man rief die ganze Stadt durch Ausrufer herbei: Hirten, Rinderhirten, Landarbeiter, alles Volk, das darin war, ob einer den Dolch herausziehen könnte"
+            ],
+            "references": ["415", "96/106"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=ʕŭmūm d-i=walaye qralle w mnadalle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-ar=ruʕye l-ab=baqore"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-ar=renǧbar"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-u=ʕamo d-kət-wo eba"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-ḥa qodər gorəš i=xanǧar-ayo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻman rief die ganze Stadt durch Ausrufer herbei: Hirten, Rinderhirten, Landarbeiter, alles Volk, das darin war, ob einer den Dolch herausziehen könnteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "415"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "96/106"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=ʕŭmūm d-i=walaye qralle w mnadalle, m-ar=ruʕye l-ab=baqore, l-ar=renǧbar, l-u=ʕamo d-kət-wo eba, d-ḥa qodər gorəš i=xanǧar-ayo ʻman rief die ganze Stadt durch Ausrufer herbei: Hirten, Rinderhirten, Landarbeiter, alles Volk, das darin war, ob einer den Dolch herausziehen könnteʼ; 415; 96/106;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=ʕŭmūm d-i=walaye qralle w mnadalle, m-ar=ruʕye l-ab=baqore, l-ar=renǧbar, l-u=ʕamo d-kət-wo eba, d-ḥa qodər gorəš i=xanǧar-ayo",
+                "translations": [
+                  "ʻman rief die ganze Stadt durch Ausrufer herbei: Hirten, Rinderhirten, Landarbeiter, alles Volk, das darin war, ob einer den Dolch herausziehen könnteʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["415"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["96/106"]
+              }
+            ]
           }
         ]
       }

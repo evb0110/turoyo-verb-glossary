@@ -14,32 +14,169 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "nšəlle",
-        "nošər"
-      ],
+      "forms": ["nšəlle", "nošər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "nšəlle bayn a=tre mufqile mə-ḥḏoḏe prs",
+            "translations": [
+              "er sägte zwischen den beiden durch, und so brachte er sie auseinander"
+            ],
+            "references": ["233", "68/19"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "nšəlle bayn a=tre"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mufqile mə-ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer sägte zwischen den beiden durch, und so brachte er sie auseinanderʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "233"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "68/19"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "nšəlle bayn a=tre, mufqile mə-ḥḏoḏe ʻer sägte zwischen den beiden durch, und so brachte er sie auseinanderʼ; 233; prs 68/19;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "nšəlle bayn a=tre, mufqile mə-ḥḏoḏe",
+                "translations": [
+                  "ʻer sägte zwischen den beiden durch, und so brachte er sie auseinanderʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["233"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["68/19"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "bəṯṯər ko-motənne qarno w ko-nəšri a=tre=rišayḏa ko-ṭorəl-la qădar ḥamšaḥṣar=ṣanṭimat",
+            "translations": [
+              "dann holen sie ein Horn und sägen dessen beide Enden ab, so dass ein 15 cm langes Stück übrig bleibt"
+            ],
+            "references": ["15", "235", "94/493"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bəṯṯər ko-motənne qarno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ko-nəšri a=tre=rišayḏa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-ṭorəl-la qădar ḥamšaḥṣar=ṣanṭimat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdann holen sie ein Horn und sägen dessen beide Enden ab, so dass ein 15 cm langes Stück übrig bleibtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "235"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/493"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "bəṯṯər ko-motənne qarno, w ko-nəšri a=tre=rišayḏa, ko-ṭorəl-la qădar ḥamšaḥṣar=ṣanṭimat ʻdann holen sie ein Horn und sägen dessen beide Enden ab, so dass ein 15 cm langes Stück übrig bleibtʼ; 235; 94/493;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "bəṯṯər ko-motənne qarno, w ko-nəšri a=tre=rišayḏa, ko-ṭorəl-la qădar ḥamšaḥṣar=ṣanṭimat",
+                "translations": [
+                  "ʻdann holen sie ein Horn und sägen dessen beide Enden ab, so dass ein 15 cm langes Stück übrig bleibtʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["235"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["94/493"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(auseinander)sägen;"
-  ],
+  "idioms": ["(auseinander)sägen;"],
   "uncertain": false
 }

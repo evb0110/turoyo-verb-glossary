@@ -5,17 +5,52 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "šqəṭle",
-        "šoqəṭ"
-      ],
+      "forms": ["šqəṭle", "šoqəṭ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "šqəṭli druʕi",
+            "translations": ["ich habe mir den Arm ausgerenkt"],
+            "references": ["231"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "šqəṭli druʕi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe mir den Arm ausgerenktʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "231"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "šqəṭli druʕi ʻich habe mir den Arm ausgerenktʼ; 231;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "šqəṭli druʕi",
+                "translations": ["ʻich habe mir den Arm ausgerenktʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["231"]
+              }
+            ]
           }
         ]
       }
@@ -26,43 +61,185 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "šqīṭ",
+            "translations": ["er brach auseinander"],
+            "references": ["231"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "šqīṭ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer brach auseinanderʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "231"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "šqīṭ ʻer brach auseinanderʼ; 231;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "šqīṭ",
+                "translations": ["ʻer brach auseinanderʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["231"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "gə-mḥalaqno iḏi l-u=sayfo gə-mḥalaqn-e lə-qḏolux g-ṭoren-e hul ʕarquwux məšqəṭ me-qume -",
+            "translations": [
+              "ich werde mein Schwert packen und es dir auf den Hals fallen lassen bis zur Ferse, dass sie davon gespalten wird"
+            ],
+            "references": ["231", "65/191", "192"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gə-mḥalaqno iḏi l-u=sayfo gə-mḥalaqn-e lə-qḏolux"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-ṭoren-e hul ʕarquwux məšqəṭ me-qume "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich werde mein Schwert packen und es dir auf den Hals fallen lassen bis zur Ferse, dass sie davon gespalten wirdʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "231"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/191"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "192"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "gə-mḥalaqno iḏi l-u=sayfo gə-mḥalaqn-e lə-qḏolux; g-ṭoren-e hul ʕarquwux məšqəṭ me-qume ʻich werde mein Schwert packen und es dir auf den Hals fallen lassen bis zur Ferse, dass sie davon gespalten wirdʼ; 231; 65/191-192;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "gə-mḥalaqno iḏi l-u=sayfo gə-mḥalaqn-e lə-qḏolux",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "g-ṭoren-e hul ʕarquwux məšqəṭ me-qume",
+                "translations": [
+                  "ʻich werde mein Schwert packen und es dir auf den Hals fallen lassen bis zur Ferse, dass sie davon gespalten wirdʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["231"]
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["65/191", "192"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": [
-        "mšaqaṭle",
-        "mšaqəṭ"
-      ],
+      "forms": ["mšaqaṭle", "mšaqəṭ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mšaqaṭle u=qurmo Shabo",
+            "translations": ["er befreite den Stamm (von den Zweigen)"],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mšaqaṭle u=qurmo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer befreite den Stamm (von den Zweigen)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Shabo"
+              }
+            ],
             "text": "mšaqaṭle u=qurmo ʻer befreite den Stamm (von den Zweigen)ʼ; Shabo",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mšaqaṭle u=qurmo",
+                "translations": ["ʻer befreite den Stamm (von den Zweigen)ʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "Shabo",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "ausrenken, auseinanderreissen;",
-    "befreien;"
-  ],
+  "idioms": ["ausrenken, auseinanderreissen;", "befreien;"],
   "uncertain": false
 }

@@ -14,41 +14,117 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "tayəz",
-        "toyəz"
-      ],
+      "forms": ["tayəz", "toyəz"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "naqqa ʕal ḥəs d-u=baxyayḏa u=aḥuno tayəz m-i=šamṯo",
+            "translations": [
+              "auf einmal fuhr der Bruder von dem Geräusch ihres Weinens aus dem Schlafe auf"
+            ],
+            "references": ["512", "65/277"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "naqqa ʕal ḥəs d-u=baxyayḏa u=aḥuno tayəz m-i=šamṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻauf einmal fuhr der Bruder von dem Geräusch ihres Weinens aus dem Schlafe aufʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "512"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/277"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "naqqa ʕal ḥəs d-u=baxyayḏa u=aḥuno tayəz m-i=šamṯo ʻauf einmal fuhr der Bruder von dem Geräusch ihres Weinens aus dem Schlafe aufʼ; 512; 65/277;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "naqqa ʕal ḥəs d-u=baxyayḏa u=aḥuno tayəz m-i=šamṯo",
+                "translations": [
+                  "ʻauf einmal fuhr der Bruder von dem Geräusch ihres Weinens aus dem Schlafe aufʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["512"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["65/277"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "matəzle",
-        "matəz"
-      ],
+      "forms": ["matəzle", "matəz"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "lu+dədwono matəzle i+šanṯayḏi (awakened me from sleeping)",
-            "turoyo": "",
+            "turoyo": "lu+dədwono matəzle i+šanṯayḏi awakened me from sleeping",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lu+dədwono matəzle i+šanṯayḏi "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "awakened me from sleeping"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "lu+dədwono matəzle i+šanṯayḏi (awakened me from sleeping)",
+            "segments": [
+              {
+                "turoyo": "lu+dədwono matəzle i+šanṯayḏi (awakened me from sleeping)",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "erschreckt auffahren (to wake up with a start)"
-  ],
+  "idioms": ["erschreckt auffahren (to wake up with a start)"],
   "uncertain": false
 }

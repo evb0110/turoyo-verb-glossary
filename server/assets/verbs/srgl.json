@@ -5,10 +5,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "msargəl",
-        "misargəl"
-      ],
+      "forms": ["msargəl", "misargəl"],
       "conjugations": {}
     },
     {
@@ -17,25 +14,99 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "msargəl u=šuġlayḏan",
+            "translations": [
+              "unsere Arbeit geht jetzt wieder gut vorwärts, (nachdem eine fehlende Maschine angeschafft ist)"
+            ],
+            "references": ["788"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "msargəl u=šuġlayḏan "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻunsere Arbeit geht jetzt wieder gut vorwärts, (nachdem eine fehlende Maschine angeschafft ist)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "788"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "msargəl u=šuġlayḏan ʻunsere Arbeit geht jetzt wieder gut vorwärts, (nachdem eine fehlende Maschine angeschafft ist)ʼ; 788;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "msargəl u=šuġlayḏan",
+                "translations": [
+                  "ʻunsere Arbeit geht jetzt wieder gut vorwärts, (nachdem eine fehlende Maschine angeschafft ist)ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["788"]
+              }
+            ]
           }
         ],
         "Part. Pass.": [
           {
-            "text": "u=ʕišayḏi msárglo-yo; 788;",
-            "turoyo": "",
+            "turoyo": "u=ʕišayḏi msárglo-yo",
             "translations": [],
-            "references": []
+            "references": ["788"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=ʕišayḏi msárglo-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "788"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=ʕišayḏi msárglo-yo; 788;",
+            "segments": [
+              {
+                "turoyo": "u=ʕišayḏi msárglo-yo",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["788"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) gut vorwärts gehen;"
-  ],
+  "idioms": ["(Detrans.) gut vorwärts gehen;"],
   "uncertain": false
 }

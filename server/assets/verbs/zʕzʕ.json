@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mzaʕzaʕle",
-        "mzaʕzəʕ"
-      ],
+      "forms": ["mzaʕzaʕle", "mzaʕzəʕ"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,53 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mzaʕzʕo",
+            "translations": ["sie erbebte (Erde)"],
+            "references": ["802"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mzaʕzʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie erbebte (Erde)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "802"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mzaʕzʕo ʻsie erbebte (Erde)ʼ; 802;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mzaʕzʕo",
+                "translations": ["ʻsie erbebte (Erde)ʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["802"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) erschüttern, erbeben lassen;"
-  ],
+  "idioms": ["(Detrans.) erschüttern, erbeben lassen;"],
   "uncertain": false
 }

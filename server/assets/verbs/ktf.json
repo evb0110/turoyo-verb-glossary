@@ -14,24 +14,61 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ktəfle",
-        "kotəf"
-      ],
+      "forms": ["ktəfle", "kotəf"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "azzé l-iḏe w ktəfle droʕone prs",
+            "translations": [
+              "er trat vor ihn, indem er seine Arme über der Brust kreuzte"
+            ],
+            "references": ["21/3"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "azzé l-iḏe w ktəfle droʕone "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer trat vor ihn, indem er seine Arme über der Brust kreuzteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "21/3"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "azzé l-iḏe w ktəfle droʕone ʻer trat vor ihn, indem er seine Arme über der Brust kreuzteʼ; prs 21/3;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "azzé l-iḏe w ktəfle droʕone",
+                "translations": [
+                  "ʻer trat vor ihn, indem er seine Arme über der Brust kreuzteʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["21/3"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "kreuzen;"
-  ],
+  "idioms": ["kreuzen;"],
   "uncertain": false
 }

@@ -12,10 +12,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mnawhər",
-        "minawhər"
-      ],
+      "forms": ["mnawhər", "minawhər"],
       "conjugations": {}
     },
     {
@@ -24,17 +21,53 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "an=naʕime d-aw=walayat ko-minawhri",
+            "translations": ["die Stadtkinder werden helle, klug"],
+            "references": ["784"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "an=naʕime d-aw=walayat ko-minawhri "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Stadtkinder werden helle, klugʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "784"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "an=naʕime d-aw=walayat ko-minawhri ʻdie Stadtkinder werden helle, klugʼ; 784;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "an=naʕime d-aw=walayat ko-minawhri",
+                "translations": ["ʻdie Stadtkinder werden helle, klugʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["784"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) helle, klug werden;"
-  ],
+  "idioms": ["(Detrans.) helle, klug werden;"],
   "uncertain": false
 }

@@ -14,32 +14,99 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mʕawʕawle",
-        "mʕawʕu"
-      ],
+      "forms": ["mʕawʕawle", "mʕawʕu"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "mʕawʕawle; 796;",
-            "turoyo": "",
+            "turoyo": "mʕawʕawle",
             "translations": [],
-            "references": []
+            "references": ["796"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mʕawʕawle"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "796"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mʕawʕawle; 796;",
+            "segments": [
+              {
+                "turoyo": "mʕawʕawle",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["796"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "u=kalbo kə-mʕawʕu",
+            "translations": ["der Hund bellt"],
+            "references": ["796"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=kalbo kə-mʕawʕu "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Hund belltʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "796"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=kalbo kə-mʕawʕu ʻder Hund belltʼ; 796;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=kalbo kə-mʕawʕu",
+                "translations": ["ʻder Hund belltʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["796"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "bellen, heulen;"
-  ],
+  "idioms": ["bellen, heulen;"],
   "uncertain": false
 }

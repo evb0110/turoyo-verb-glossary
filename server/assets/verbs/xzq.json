@@ -14,24 +14,102 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mxazaqle",
-        "mxazəq"
-      ],
+      "forms": ["mxazaqle", "mxazəq"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "msəkle u=fərṭaʕno maḥatle b-u=ḥăbəs w maḥatle i=aṯto ʕal u=xazōq mxazqole prs",
+            "translations": [
+              "den Floh liess er verhaften und in's Gefängnis werfen, die Frau aber liess er pfählen"
+            ],
+            "references": ["162", "174/37"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "msəkle u=fərṭaʕno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥatle b-u=ḥăbəs"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w maḥatle i=aṯto ʕal u=xazōq"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mxazqole "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻden Floh liess er verhaften und in's Gefängnis werfen, die Frau aber liess er pfählenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "162"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "174/37"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "msəkle u=fərṭaʕno, maḥatle b-u=ḥăbəs, w maḥatle i=aṯto ʕal u=xazōq, mxazqole ʻden Floh liess er verhaften und in's Gefängnis werfen, die Frau aber liess er pfählenʼ; 162; prs 174/37;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "msəkle u=fərṭaʕno, maḥatle b-u=ḥăbəs, w maḥatle i=aṯto ʕal u=xazōq, mxazqole",
+                "translations": [
+                  "ʻden Floh liess er verhaften und in's Gefängnis werfen, die Frau aber liess er pfählenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["162"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["174/37"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "pfählen lassen;"
-  ],
+  "idioms": ["pfählen lassen;"],
   "uncertain": false
 }

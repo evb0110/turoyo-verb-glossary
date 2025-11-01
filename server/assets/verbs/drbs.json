@@ -5,24 +5,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mdarbasle",
-        "mdarbəs"
-      ],
+      "forms": ["mdarbasle", "mdarbəs"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-mdarbəs šuġle",
+            "translations": ["er macht seine Arbeit ordentlich"],
+            "references": ["772"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mdarbəs šuġle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer macht seine Arbeit ordentlichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "772"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-mdarbəs šuġle ʻer macht seine Arbeit ordentlichʼ; 772;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-mdarbəs šuġle",
+                "translations": ["ʻer macht seine Arbeit ordentlichʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["772"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "ordentlich, gründlich machen (Arbeit);"
-  ],
+  "idioms": ["ordentlich, gründlich machen (Arbeit);"],
   "uncertain": false
 }

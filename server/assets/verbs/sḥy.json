@@ -14,57 +14,660 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "sḥele",
-        "soḥe"
-      ],
+      "forms": ["sḥele", "soḥe"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "trele i=tfəngayḏe ʕal feme d-u=baḥar w naḥət sḥele qaṭəʕ l-i=xaṣr-ayo prs prs prs mədla l-aǧ=ǧulayḏi məblila qum feme d-am=maye masḥela an=naʕimayḏa ela-ste sḥela",
+            "translations": [
+              "er liess nun seine Flinte am Ufer, stieg in den See und schwamm auf die andere Seite hinüber",
+              "sie nahm meine Wäsche, brachte sie zu dem Wasser, badete ihre Kinder und badete auch selbst"
+            ],
+            "references": ["333", "85/24", "92/30"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "trele i=tfəngayḏe ʕal feme d-u=baḥar w naḥət"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " sḥele"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qaṭəʕ l-i=xaṣr-ayo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer liess nun seine Flinte am Ufer, stieg in den See und schwamm auf die andere Seite hinüberʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "333"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "85/24"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "92/30"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "93/1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mədla l-aǧ=ǧulayḏi məblila qum feme d-am=maye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " masḥela an=naʕimayḏa ela-ste sḥela "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie nahm meine Wäsche, brachte sie zu dem Wasser, badete ihre Kinder und badete auch selbstʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "335"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "63/193"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "trele i=tfəngayḏe ʕal feme d-u=baḥar w naḥət, sḥele, qaṭəʕ l-i=xaṣr-ayo ʻer liess nun seine Flinte am Ufer, stieg in den See und schwamm auf die andere Seite hinüberʼ; 333; prs 85/24; prs 92/30; prs 93/1; mədla l-aǧ=ǧulayḏi məblila qum feme d-am=maye, masḥela an=naʕimayḏa ela-ste sḥela ʻsie nahm meine Wäsche, brachte sie zu dem Wasser, badete ihre Kinder und badete auch selbstʼ; 335; 63/193;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "trele i=tfəngayḏe ʕal feme d-u=baḥar w naḥət, sḥele, qaṭəʕ l-i=xaṣr-ayo",
+                "translations": [
+                  "ʻer liess nun seine Flinte am Ufer, stieg in den See und schwamm auf die andere Seite hinüberʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["333"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["85/24"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["92/30"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["93/1"]
+              },
+              {
+                "turoyo": "mədla l-aǧ=ǧulayḏi məblila qum feme d-am=maye, masḥela an=naʕimayḏa ela-ste sḥela",
+                "translations": [
+                  "ʻsie nahm meine Wäsche, brachte sie zu dem Wasser, badete ihre Kinder und badete auch selbstʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["335"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["63/193"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "ma lo hēš kale u=xawaǧa lawġul ko-soḥe? u=Boġāz galəḏ u=gliḏo bdele k-soḥe ʕal foṯə-d-am=maye",
+            "translations": [
+              "Is not the master still [there] inside, is he not washing?",
+              "‘der Bosporus fror ein, und das Eis fing an, auf dem Wasser zu treiben’"
+            ],
+            "references": ["356", "43/12", "14"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ma lo hēš kale u=xawaǧa lawġul"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-soḥe? "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻIs not the master still [there] inside, is he not washing?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "356"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "43/12"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=Boġāz galəḏ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=gliḏo bdele k-soḥe ʕal foṯə-d-am=maye "
+              },
+              {
+                "kind": "translation",
+                "value": "‘der Bosporus fror ein, und das Eis fing an, auf dem Wasser zu treiben’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/50"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ma lo hēš kale u=xawaǧa lawġul, ko-soḥe? ʻIs not the master still [there] inside, is he not washing?ʼ; 356; 43/12, 14; u=Boġāz galəḏ, u=gliḏo bdele k-soḥe ʕal foṯə-d-am=maye ‘der Bosporus fror ein, und das Eis fing an, auf dem Wasser zu treiben’; 2/50;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ma lo hēš kale u=xawaǧa lawġul, ko-soḥe?",
+                "translations": [
+                  "ʻIs not the master still [there] inside, is he not washing?ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["356"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["43/12", "14"]
+              },
+              {
+                "turoyo": "u=Boġāz galəḏ, u=gliḏo bdele k-soḥe ʕal foṯə-d-am=maye",
+                "translations": [
+                  "‘der Bosporus fror ein, und das Eis fing an, auf dem Wasser zu treiben’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["2/50"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "i=naqla d-ubʕína-wo d-sŭḥêna-wo b-u=baḥar šulḥína-wo ǧulayna b-u=bayto w lušína-wo aǧ=ǧule d-u=baḥar",
+            "translations": [
+              "wenn wir im Meere baden wollten, zogen wir uns immer im Hause aus, zogen Badezeug"
+            ],
+            "references": ["370", "2/93"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqla d-ubʕína-wo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-sŭḥêna-wo b-u=baḥar"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šulḥína-wo ǧulayna b-u=bayto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w lušína-wo aǧ=ǧule d-u=baḥar "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn wir im Meere baden wollten, zogen wir uns immer im Hause aus, zogen Badezeugʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "370"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/93"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=naqla d-ubʕína-wo, d-sŭḥêna-wo b-u=baḥar, šulḥína-wo ǧulayna b-u=bayto, w lušína-wo aǧ=ǧule d-u=baḥar ʻwenn wir im Meere baden wollten, zogen wir uns immer im Hause aus, zogen Badezeugʼ; 370; 2/93;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=naqla d-ubʕína-wo, d-sŭḥêna-wo b-u=baḥar, šulḥína-wo ǧulayna b-u=bayto, w lušína-wo aǧ=ǧule d-u=baḥar",
+                "translations": [
+                  "ʻwenn wir im Meere baden wollten, zogen wir uns immer im Hause aus, zogen Badezeugʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["370"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["2/93"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "sḥay b-u=šaṭ g-quṭʕət l-s-aḥ=ḥabuše tay arbʕo=ḥabuše prs",
+            "translations": [
+              "so schwimm über den Fluss; hast du ihn durchschwommen, so pflücke vier Äpfel"
+            ],
+            "references": ["372", "92/21", "24"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "sḥay b-u=šaṭ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-quṭʕət l-s-aḥ=ḥabuše"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " tay arbʕo=ḥabuše "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻso schwimm über den Fluss; hast du ihn durchschwommen, so pflücke vier Äpfelʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "372"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "92/21"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "sḥay b-u=šaṭ, g-quṭʕət l-s-aḥ=ḥabuše, tay arbʕo=ḥabuše ʻso schwimm über den Fluss; hast du ihn durchschwommen, so pflücke vier Äpfelʼ; 372; prs 92/21, 24;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "sḥay b-u=šaṭ, g-quṭʕət l-s-aḥ=ḥabuše, tay arbʕo=ḥabuše",
+                "translations": [
+                  "ʻso schwimm über den Fluss; hast du ihn durchschwommen, so pflücke vier Äpfelʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["372"]
+              },
+              {
+                "turoyo": "prs ,",
+                "translations": [],
+                "references": ["92/21", "24"]
+              }
+            ]
           }
         ],
         "Part act.": [
           {
+            "turoyo": "ga kelayo i=aṯtayḏi w a=tloṯo=abnayḏi hanək d-kǝ́t-way-ne bayn am=maye saḥoye",
+            "translations": [
+              "da ist meine Frau und meine drei Söhne, jene, die im Wasser lebten"
+            ],
+            "references": ["375", "63/311"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ga kelayo i=aṯtayḏi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w a=tloṯo=abnayḏi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hanək"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-kǝ́t-way-ne bayn am=maye saḥoye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda ist meine Frau und meine drei Söhne, jene, die im Wasser lebtenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "375"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "63/311"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ga kelayo i=aṯtayḏi, w a=tloṯo=abnayḏi, hanək, d-kǝ́t-way-ne bayn am=maye saḥoye ʻda ist meine Frau und meine drei Söhne, jene, die im Wasser lebtenʼ; 375; 63/311;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ga kelayo i=aṯtayḏi, w a=tloṯo=abnayḏi, hanək, d-kǝ́t-way-ne bayn am=maye saḥoye",
+                "translations": [
+                  "ʻda ist meine Frau und meine drei Söhne, jene, die im Wasser lebtenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["375"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["63/311"]
+              }
+            ]
           }
         ],
         "Infinitive": [
           {
+            "turoyo": "aġlab dəṯṯe k-mafiti ay=yawmaṯṯe b-u=sḥoyo w b-u=kroxo d-aq=qayikat w d-am=moṭorat b-u=baḥar",
+            "translations": [
+              "‘die meisten von ihnen verbringen ihre Tage mit Baden und Spazierenfahren auf Kähnen und Motorbooten, auf dem Meer’"
+            ],
+            "references": ["4/43"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aġlab dəṯṯe k-mafiti ay=yawmaṯṯe b-u=sḥoyo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w b-u=kroxo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-aq=qayikat w d-am=moṭorat b-u=baḥar "
+              },
+              {
+                "kind": "translation",
+                "value": "‘die meisten von ihnen verbringen ihre Tage mit Baden und Spazierenfahren auf Kähnen und Motorbooten, auf dem Meer’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "4/43"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "aġlab dəṯṯe k-mafiti ay=yawmaṯṯe b-u=sḥoyo, w b-u=kroxo, d-aq=qayikat w d-am=moṭorat b-u=baḥar ‘die meisten von ihnen verbringen ihre Tage mit Baden und Spazierenfahren auf Kähnen und Motorbooten, auf dem Meer’; 4/43;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "aġlab dəṯṯe k-mafiti ay=yawmaṯṯe b-u=sḥoyo, w b-u=kroxo, d-aq=qayikat w d-am=moṭorat b-u=baḥar",
+                "translations": [
+                  "‘die meisten von ihnen verbringen ihre Tage mit Baden und Spazierenfahren auf Kähnen und Motorbooten, auf dem Meer’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["4/43"]
+              }
+            ]
           }
         ]
       }
@@ -75,73 +678,660 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "am=maye d-Kučuk Su lo=k-məsḥe bənne m-u=ʕăǧaq",
+            "translations": [
+              "in dem Wasser von Küçüksu kann man wegen des Schmutzes nicht baden"
+            ],
+            "references": ["380", "20/8"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "am=maye d-Kučuk Su lo=k-məsḥe bənne m-u=ʕăǧaq "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻin dem Wasser von Küçüksu kann man wegen des Schmutzes nicht badenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "380"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "20/8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "am=maye d-Kučuk Su lo=k-məsḥe bənne m-u=ʕăǧaq ʻin dem Wasser von Küçüksu kann man wegen des Schmutzes nicht badenʼ; 380; 20/8;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "am=maye d-Kučuk Su lo=k-məsḥe bənne m-u=ʕăǧaq",
+                "translations": [
+                  "ʻin dem Wasser von Küçüksu kann man wegen des Schmutzes nicht badenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["380"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["20/8"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "masḥele",
-        "masḥe"
-      ],
+      "forms": ["masḥele", "masḥe"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mədla l-aǧ=ǧul-ayḏi məblila qum feme d-am=maye masḥela an=naʕim-ayḏa ela-ste sḥela mublənne l-u=ḥəmmam masḥənne malwišle-lin ǧule naḏ̣ife maytalle mətwile ʕal-i-ṣufr-ayḏe l-u=muklo",
+            "translations": [
+              "sie nahm meine Wäsche, brachte sie zu dem Wasser, badete ihre Kinder und badete auch selbst",
+              "‘Man führte sie ins Bad, man wusch sie, er ließ ihnen saubere Kleider anziehen, und holte sie, ließ sie an seiner Tafel sitzen’"
+            ],
+            "references": ["385", "63/193", "24/246"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mədla l-aǧ=ǧul-ayḏi məblila qum feme d-am=maye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " masḥela an=naʕim-ayḏa ela-ste sḥela "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie nahm meine Wäsche, brachte sie zu dem Wasser, badete ihre Kinder und badete auch selbstʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "385"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "63/193"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mublənne l-u=ḥəmmam"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " masḥənne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " malwišle-lin ǧule naḏ̣ife"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maytalle mətwile ʕal-i-ṣufr-ayḏe l-u=muklo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Man führte sie ins Bad, man wusch sie, er ließ ihnen saubere Kleider anziehen, und holte sie, ließ sie an seiner Tafel sitzen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/246"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mədla l-aǧ=ǧul-ayḏi məblila qum feme d-am=maye, masḥela an=naʕim-ayḏa ela-ste sḥela ʻsie nahm meine Wäsche, brachte sie zu dem Wasser, badete ihre Kinder und badete auch selbstʼ; 385; 63/193; mublənne l-u=ḥəmmam, masḥənne, malwišle-lin ǧule naḏ̣ife, maytalle mətwile ʕal-i-ṣufr-ayḏe l-u=muklo ‘Man führte sie ins Bad, man wusch sie, er ließ ihnen saubere Kleider anziehen, und holte sie, ließ sie an seiner Tafel sitzen’; 24/246 [MT];",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mədla l-aǧ=ǧul-ayḏi məblila qum feme d-am=maye, masḥela an=naʕim-ayḏa ela-ste sḥela",
+                "translations": [
+                  "ʻsie nahm meine Wäsche, brachte sie zu dem Wasser, badete ihre Kinder und badete auch selbstʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["385"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["63/193"]
+              },
+              {
+                "turoyo": "mublənne l-u=ḥəmmam, masḥənne, malwišle-lin ǧule naḏ̣ife, maytalle mətwile ʕal-i-ṣufr-ayḏe l-u=muklo",
+                "translations": [
+                  "‘Man führte sie ins Bad, man wusch sie, er ließ ihnen saubere Kleider anziehen, und holte sie, ließ sie an seiner Tafel sitzen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/246"],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "k-masḥe i=ḥoṯo prs bəṯṯər maḥáttal-le maye d-masḥal-le",
+            "translations": [
+              "er badet die Schwester",
+              "‘Dann setzten sie für ihn Wasser hin, um ihn zu waschen’"
+            ],
+            "references": ["393", "241/10", "25/47"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-masḥe i=ḥoṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer badet die Schwesterʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "393"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "241/10"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər maḥáttal-le maye d-masḥal-le "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Dann setzten sie für ihn Wasser hin, um ihn zu waschen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/47"
+              }
+            ],
             "text": "k-masḥe i=ḥoṯo ʻer badet die Schwesterʼ; 393; prs 241/10; bəṯṯər maḥáttal-le maye d-masḥal-le ‘Dann setzten sie für ihn Wasser hin, um ihn zu waschen’; 25/47",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "k-masḥe i=ḥoṯo",
+                "translations": ["ʻer badet die Schwesterʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["393"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["241/10"]
+              },
+              {
+                "turoyo": "bəṯṯər maḥáttal-le maye d-masḥal-le",
+                "translations": [
+                  "‘Dann setzten sie für ihn Wasser hin, um ihn zu waschen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["25/47"]
+              }
+            ]
           },
           {
+            "turoyo": "lə=mətfakrat! ono g-ṭəryono d-u=malko sokət",
+            "translations": [
+              "mach dir keine Gedanken! Ich werde den König schon zum Schweigen bringen"
+            ],
+            "references": ["804", "51/58", "70/65"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lə=mətfakrat! ono g-ṭəryono d-u=malko sokət "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmach dir keine Gedanken! Ich werde den König schon zum Schweigen bringenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "804"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "51/58"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70/65"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "lə=mətfakrat! ono g-ṭəryono d-u=malko sokət ʻmach dir keine Gedanken! Ich werde den König schon zum Schweigen bringenʼ; 804; 51/58; 70/65, 78;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "lə=mətfakrat! ono g-ṭəryono d-u=malko sokət",
+                "translations": [
+                  "ʻmach dir keine Gedanken! Ich werde den König schon zum Schweigen bringenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["804"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["51/58"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["70/65", "78"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "qaymo aṯyo i=ḥurm-ayo d-masḥyó-way-la aṯyo l-gaba",
+            "translations": [
+              "da kam jene Frau, welche sie zu baden pflegte, zu ihr"
+            ],
+            "references": ["405", "62/98"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qaymo aṯyo i=ḥurm-ayo d-masḥyó-way-la"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aṯyo l-gaba "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda kam jene Frau, welche sie zu baden pflegte, zu ihrʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "405"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/98"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "qaymo aṯyo i=ḥurm-ayo d-masḥyó-way-la, aṯyo l-gaba ʻda kam jene Frau, welche sie zu baden pflegte, zu ihrʼ; 405; 62/98;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "qaymo aṯyo i=ḥurm-ayo d-masḥyó-way-la, aṯyo l-gaba",
+                "translations": [
+                  "ʻda kam jene Frau, welche sie zu baden pflegte, zu ihrʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["405"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["62/98"]
+              }
+            ]
           }
         ],
         "Infinitive": [
           {
+            "turoyo": "bəṯṯər mədə-mkamele u=tusḥiy-ayḏe maytele u=kafan mkafalle",
+            "translations": [
+              "‘Als er mit der Waschung fertig war, holte er das Leichentuch, wickelte ihn hinein’"
+            ],
+            "references": ["25/53"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bəṯṯər mədə-mkamele u=tusḥiy-ayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maytele u=kafan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mkafalle "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Als er mit der Waschung fertig war, holte er das Leichentuch, wickelte ihn hinein’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/53"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "bəṯṯər mədə-mkamele u=tusḥiy-ayḏe, maytele u=kafan, mkafalle ‘Als er mit der Waschung fertig war, holte er das Leichentuch, wickelte ihn hinein’; 25/53 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "bəṯṯər mədə-mkamele u=tusḥiy-ayḏe, maytele u=kafan, mkafalle",
+                "translations": [
+                  "‘Als er mit der Waschung fertig war, holte er das Leichentuch, wickelte ihn hinein’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["25/53"],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ],
         "Imperative": [
           {
-            "text": "Skat! (FA_58)",
-            "turoyo": "",
+            "turoyo": "Skat! FA_",
             "translations": [],
-            "references": []
+            "references": ["58"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Skat! "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "FA_"
+              },
+              {
+                "kind": "ref",
+                "value": "58"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Skat! (FA_58)",
+            "segments": [
+              {
+                "turoyo": "Skat! (FA_)",
+                "translations": [],
+                "references": ["58"]
+              }
+            ]
           }
         ],
         "Preterite": [
           {
+            "turoyo": "Lu Sargey mʕaṭle ʕal u Laḥdo skīt Ilyas p.c. / – used as imperative ????????????????",
+            "translations": ["‘Sergey yelled at Lahdo: shut up’"],
+            "references": ["6/11", "23"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Lu Sargey mʕaṭle ʕal u Laḥdo"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " skīt "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sergey yelled at Lahdo: shut up’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c. "
+              },
+              {
+                "kind": "ref",
+                "value": "6/11"
+              },
+              {
+                "kind": "turoyo",
+                "value": "/"
+              },
+              {
+                "kind": "ref",
+                "value": "23"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " – used as imperative ????????????????"
+              }
+            ],
             "text": "Lu Sargey mʕaṭle ʕal u Laḥdo: skīt ‘Sergey yelled at Lahdo: shut up’ (Ilyas p.c. 6/11/23) – used as imperative ????????????????",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "Lu Sargey mʕaṭle ʕal u Laḥdo: skīt (Ilyas p.c. /) – used as imperative ????????????????",
+                "translations": ["‘Sergey yelled at Lahdo: shut up’"],
+                "references": ["6/11", "23"]
+              }
+            ]
           }
         ]
       }

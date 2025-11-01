@@ -12,17 +12,61 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "gməṭle",
-        "ġoməṭ"
-      ],
+      "forms": ["gməṭle", "ġoməṭ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ġməṭṭe Lu Sargey ġməṭle i-Patrisiya bam- maye",
+            "translations": ["sie versenkten"],
+            "references": ["73"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ġməṭṭe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie versenktenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Lu Sargey ġməṭle i-Patrisiya bam- maye"
+              }
+            ],
             "text": "ġməṭṭe ʻsie versenktenʼ; 73; Lu Sargey ġməṭle i-Patrisiya bam- maye",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ġməṭṭe",
+                "translations": ["ʻsie versenktenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["73"]
+              },
+              {
+                "turoyo": "Lu Sargey ġməṭle i-Patrisiya bam- maye",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
@@ -33,25 +77,113 @@
       "conjugations": {
         "Preterite": [
           {
-            "text": "Ferʕun w aʕ-ʕasekərayḏe ġmiṭi bu baḥar (the Pharaoh, etc…)",
-            "turoyo": "",
+            "turoyo": "Ferʕun w aʕ-ʕasekərayḏe ġmiṭi bu baḥar the Pharaoh etc…",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Ferʕun w aʕ-ʕasekərayḏe ġmiṭi bu baḥar "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "the Pharaoh"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " etc…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Ferʕun w aʕ-ʕasekərayḏe ġmiṭi bu baḥar (the Pharaoh, etc…)",
+            "segments": [
+              {
+                "turoyo": "Ferʕun w aʕ-ʕasekərayḏe ġmiṭi bu baḥar (the Pharaoh, etc…)",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "Hanna Dewo 84: Dəšli, koməġmǝṭ I trampled, (the earth) sank",
-            "turoyo": "",
+            "turoyo": "Hanna Dewo Dəšli koməġmǝṭ I trampled the earth sank",
             "translations": [],
-            "references": []
+            "references": ["84"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Hanna Dewo "
+              },
+              {
+                "kind": "ref",
+                "value": "84"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Dəšli"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " koməġmǝṭ I trampled"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "the earth"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " sank"
+              }
+            ],
+            "text": "Hanna Dewo 84: Dəšli, koməġmǝṭ I trampled, (the earth) sank",
+            "segments": [
+              {
+                "turoyo": "Hanna Dewo : Dəšli, koməġmǝṭ I trampled, (the earth) sank",
+                "translations": [],
+                "references": ["84"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "versenken;"
-  ],
+  "idioms": ["versenken;"],
   "uncertain": false
 }

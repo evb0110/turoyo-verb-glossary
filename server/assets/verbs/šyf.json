@@ -14,25 +14,229 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "šəfle",
-        "šoyəf"
-      ],
+      "forms": ["šəfle", "šoyəf"],
       "conjugations": {
         "Infectum": [
           {
-            "text": "1) me-ʕarquwe w hul d-moṭe l-ṣaʕre; u=qaṣ-ano ko-šayfo ḥaṣe d-u=aḥuno ʻsie massiert den Rücken des Bruders von den Fersen bis zu den Haarenʼ; 572; 65/304; 2) i=kurrəke ko-šayfo ʕəsri=yawme aʕlayye ʻdie Glucke brütet sie 20 Tage langʼ; 573; 94/210;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "me-ʕarquwe w hul d-moṭe l-ṣaʕre u=qaṣ-ano ko-šayfo ḥaṣe d-u=aḥuno",
+            "translations": [
+              "sie massiert den Rücken des Bruders von den Fersen bis zu den Haaren"
+            ],
+            "references": ["1", "572", "65/304"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " me-ʕarquwe w hul d-moṭe l-ṣaʕre"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=qaṣ-ano ko-šayfo ḥaṣe d-u=aḥuno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie massiert den Rücken des Bruders von den Fersen bis zu den Haarenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "572"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/304"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) me-ʕarquwe w hul d-moṭe l-ṣaʕre; u=qaṣ-ano ko-šayfo ḥaṣe d-u=aḥuno ʻsie massiert den Rücken des Bruders von den Fersen bis zu den Haarenʼ; 572; 65/304;",
+            "segments": [
+              {
+                "turoyo": ") me-ʕarquwe w hul d-moṭe l-ṣaʕre",
+                "translations": [],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "u=qaṣ-ano ko-šayfo ḥaṣe d-u=aḥuno",
+                "translations": [
+                  "ʻsie massiert den Rücken des Bruders von den Fersen bis zu den Haarenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["572"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["65/304"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "i=kurrəke ko-šayfo ʕəsri=yawme aʕlayye",
+            "translations": ["die Glucke brütet sie 20 Tage lang"],
+            "references": ["2", "20", "573"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=kurrəke ko-šayfo ʕəsri=yawme aʕlayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Glucke brütet sie 20 Tage langʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "573"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/210"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) i=kurrəke ko-šayfo ʕəsri=yawme aʕlayye ʻdie Glucke brütet sie 20 Tage langʼ; 573; 94/210;",
+            "segments": [
+              {
+                "turoyo": ") i=kurrəke ko-šayfo ʕəsri=yawme aʕlayye",
+                "translations": ["ʻdie Glucke brütet sie 20 Tage langʼ"],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["573"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["94/210"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "b-u=saṯwo i=šərṭān-ayo g-šayfí-way-na-la ..",
+            "translations": [
+              "im Winter lösten wir die Quarksteine (in Wasser) auf"
+            ],
+            "references": ["JL 12", "14", "10"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "b-u=saṯwo i=šərṭān-ayo g-šayfí-way-na-la "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻim Winter lösten wir die Quarksteine (in Wasser) aufʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 12"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "14"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "10"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "b-u=saṯwo i=šərṭān-ayo g-šayfí-way-na-la ʻim Winter lösten wir die Quarksteine (in Wasser) aufʼ JL 12.14.10;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "b-u=saṯwo i=šərṭān-ayo g-šayfí-way-na-la ..",
+                "translations": [
+                  "ʻim Winter lösten wir die Quarksteine (in Wasser) aufʼ"
+                ],
+                "references": ["JL 12", "14", "10"]
+              }
+            ]
           }
         ]
       }

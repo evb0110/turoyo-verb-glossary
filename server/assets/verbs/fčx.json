@@ -14,34 +14,125 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "fčəxle",
-        "fočəx"
-      ],
+      "forms": ["fčəxle", "fočəx"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "fčəxle",
+            "translations": ["er spreizte die Beine auseinander"],
+            "references": ["197"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "fčəxle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer spreizte die Beine auseinanderʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "197"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "fčəxle ʻer spreizte die Beine auseinanderʼ; 197;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "fčəxle",
+                "translations": ["ʻer spreizte die Beine auseinanderʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["197"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": [
-        "mfačaxle",
-        "mfačəx"
-      ],
+      "forms": ["mfačaxle", "mfačəx"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mfačaxle b-u=tarʕo d-i=mʕarṯo prs",
+            "translations": [
+              "(der Riese) stellte sich mit gespreizten Beinen in die Öffnung der Höhle"
+            ],
+            "references": ["197", "79/33"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mfačaxle b-u=tarʕo d-i=mʕarṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ(der Riese) stellte sich mit gespreizten Beinen in die Öffnung der Höhleʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "197"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "79/33"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mfačaxle b-u=tarʕo d-i=mʕarṯo ʻ(der Riese) stellte sich mit gespreizten Beinen in die Öffnung der Höhleʼ; 197; prs 79/33;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mfačaxle b-u=tarʕo d-i=mʕarṯo",
+                "translations": [
+                  "ʻ(der Riese) stellte sich mit gespreizten Beinen in die Öffnung der Höhleʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["197"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["79/33"]
+              }
+            ]
           }
         ]
       }

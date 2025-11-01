@@ -14,17 +14,73 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mčanqele",
-        "mčanqəl"
-      ],
+      "forms": ["mčanqele", "mčanqəl"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mčanqe-le u=tarʕo baroyo w daməx",
+            "translations": [
+              "die Aussentür hakt er ein und legt sich schlafen"
+            ],
+            "references": ["772", "56/138"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mčanqe-le u=tarʕo baroyo w daməx "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Aussentür hakt er ein und legt sich schlafenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "772"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/138"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mčanqe-le u=tarʕo baroyo w daməx ʻdie Aussentür hakt er ein und legt sich schlafenʼ; 772; 56/138;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mčanqe-le u=tarʕo baroyo w daməx",
+                "translations": [
+                  "ʻdie Aussentür hakt er ein und legt sich schlafenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["772"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["56/138"]
+              }
+            ]
           }
         ]
       }
@@ -35,17 +91,82 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "ʕaṣriye aṯyo i=aṯto k-məḥyo ʕal u=tarʕo u=tarʕo mčánqlo-yo",
+            "translations": [
+              "am Abend kommt die Frau und klopft an die Türe. Sie ist eingehackt"
+            ],
+            "references": ["772", "56/139"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕaṣriye aṯyo i=aṯto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-məḥyo ʕal u=tarʕo u=tarʕo mčánqlo-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻam Abend kommt die Frau und klopft an die Türe. Sie ist eingehacktʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "772"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/139"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ʕaṣriye aṯyo i=aṯto, k-məḥyo ʕal u=tarʕo u=tarʕo mčánqlo-yo ʻam Abend kommt die Frau und klopft an die Türe. Sie ist eingehacktʼ; 772; 56/139;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ʕaṣriye aṯyo i=aṯto, k-məḥyo ʕal u=tarʕo u=tarʕo mčánqlo-yo",
+                "translations": [
+                  "ʻam Abend kommt die Frau und klopft an die Türe. Sie ist eingehacktʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["772"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["56/139"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "einhaken, mit dem Haken schliessen;"
-  ],
+  "idioms": ["einhaken, mit dem Haken schliessen;"],
   "uncertain": false
 }

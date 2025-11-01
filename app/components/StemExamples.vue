@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import type { ITransformedStem } from '~/types/ITransformedStem'
+import { segmentsToStructured } from '~/utils/segmentsToStructured'
 
 defineProps<{
     stem: ITransformedStem
@@ -24,7 +25,7 @@ defineProps<{
                 <VerbExample
                     v-for="(example, index) in group.examples"
                     :key="`${group.name}-${index}`"
-                    :example="example"
+                    :structured="segmentsToStructured(example)"
                 />
             </div>
         </div>

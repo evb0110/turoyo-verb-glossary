@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mčaqlable",
-        "mčaqləb"
-      ],
+      "forms": ["mčaqlable", "mčaqləb"],
       "conjugations": {}
     },
     {
@@ -26,10 +23,56 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "am=maye mčaqləbi ʕal i=walaye",
+            "translations": ["das Wasser ergoss sich über die Stadt"],
+            "references": ["2", "772"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " am=maye mčaqləbi ʕal i=walaye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Wasser ergoss sich über die Stadtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "772"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) am=maye mčaqləbi ʕal i=walaye ʻdas Wasser ergoss sich über die Stadtʼ; 772;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") am=maye mčaqləbi ʕal i=walaye",
+                "translations": ["ʻdas Wasser ergoss sich über die Stadtʼ"],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["772"]
+              }
+            ]
           }
         ]
       }

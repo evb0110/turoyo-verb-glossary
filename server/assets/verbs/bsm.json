@@ -14,78 +14,771 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "basəm",
-        "bosəm"
-      ],
+      "forms": ["basəm", "bosəm"],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "text": "1) i=šəmšo naqla ḥreto nafiqo; u=yawmo basəm, ḥšuli ruḥi d-kət-no b-u=qayṭo ʻdie Sonne brach wieder hervor. Der Tag wurde schön und wieder fühlte ich mich im Sommerʼ;  86; 8/25;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "i=šəmšo naqla ḥreto nafiqo u=yawmo basəm ḥšuli ruḥi d-kət-no b-u=qayṭo",
+            "translations": [
+              "die Sonne brach wieder hervor. Der Tag wurde schön und wieder fühlte ich mich im Sommer"
+            ],
+            "references": ["1", "86", "8/25"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=šəmšo naqla ḥreto nafiqo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=yawmo basəm"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥšuli ruḥi d-kət-no b-u=qayṭo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Sonne brach wieder hervor. Der Tag wurde schön und wieder fühlte ich mich im Sommerʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  "
+              },
+              {
+                "kind": "ref",
+                "value": "86"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "8/25"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) i=šəmšo naqla ḥreto nafiqo; u=yawmo basəm, ḥšuli ruḥi d-kət-no b-u=qayṭo ʻdie Sonne brach wieder hervor. Der Tag wurde schön und wieder fühlte ich mich im Sommerʼ; 86; 8/25;",
+            "segments": [
+              {
+                "turoyo": ") i=šəmšo naqla ḥreto nafiqo",
+                "translations": [],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "u=yawmo basəm, ḥšuli ruḥi d-kət-no b-u=qayṭo",
+                "translations": [
+                  "ʻdie Sonne brach wieder hervor. Der Tag wurde schön und wieder fühlte ich mich im Sommerʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["86"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["8/25"]
+              }
+            ]
           },
           {
+            "turoyo": "basəm-li a=tre-ste basəm-me u=bayto u=Boġāz Ṣṭambul i=walaye šafərto Kayalo-ze mžədle ruḥe qm-i=nuro basəm-le ṭawəʕ",
+            "translations": [
+              "es ging mir besser",
+              "beiden gefiel das Haus, der Bosporus, Stambul, die schöne Stadt",
+              "‘Kayalo stretched himself beside the fire. It was comfortable, and he feel asleep’"
+            ],
+            "references": ["2", "LB 167", "1/62"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " basəm-li "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes ging mir besserʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 167"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " a=tre-ste basəm-me u=bayto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=Boġāz"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " Ṣṭambul"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=walaye šafərto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻbeiden gefiel das Haus, der Bosporus, Stambul, die schöne Stadtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "1/62"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Kayalo-ze mžədle ruḥe qm-i=nuro basəm-le ṭawəʕ "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Kayalo stretched himself beside the fire. It was comfortable, and he feel asleep’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "76/151"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) basəm-li ʻes ging mir besserʼ; LB 167; a=tre-ste basəm-me u=bayto, u=Boġāz, Ṣṭambul, i=walaye šafərto ʻbeiden gefiel das Haus, der Bosporus, Stambul, die schöne Stadtʼ; 1/62; Kayalo-ze mžədle ruḥe qm-i=nuro basəm-le ṭawəʕ ‘Kayalo stretched himself beside the fire. It was comfortable, and he feel asleep’ 76/151;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") basəm-li",
+                "translations": ["ʻes ging mir besserʼ"],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 167"]
+              },
+              {
+                "turoyo": "a=tre-ste basəm-me u=bayto, u=Boġāz, Ṣṭambul, i=walaye šafərto",
+                "translations": [
+                  "ʻbeiden gefiel das Haus, der Bosporus, Stambul, die schöne Stadtʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["1/62"]
+              },
+              {
+                "turoyo": "Kayalo-ze mžədle ruḥe qm-i=nuro basəm-le ṭawəʕ",
+                "translations": [
+                  "‘Kayalo stretched himself beside the fire. It was comfortable, and he feel asleep’"
+                ],
+                "references": ["76/151"]
+              }
+            ]
           },
           {
+            "turoyo": "i=naqqa d-məlla hawxa l-i=žinik-aṯe basim lebe ġắlabe",
+            "translations": ["als diese Frau so sprach, freute er sich sehr"],
+            "references": ["3", "30/80"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naqqa d-məlla hawxa l-i=žinik-aṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " basim lebe ġắlabe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals diese Frau so sprach, freute er sich sehrʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/80"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "3) i=naqqa d-məlla hawxa l-i=žinik-aṯe, basim lebe ġắlabe ʻals diese Frau so sprach, freute er sich sehrʼ; 30/80; [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") i=naqqa d-məlla hawxa l-i=žinik-aṯe, basim lebe ġắlabe",
+                "translations": [
+                  "ʻals diese Frau so sprach, freute er sich sehrʼ"
+                ],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["30/80"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": [],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "ko-bəsmo i=ruḥayḏi",
+            "translations": ["meine Seele erfreute sich"],
+            "references": ["3", "LB 152"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-bəsmo i=ruḥayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmeine Seele erfreute sichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 152"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "3) ko-bəsmo i=ruḥayḏi ʻmeine Seele erfreute sichʼ; LB 152;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") ko-bəsmo i=ruḥayḏi",
+                "translations": ["ʻmeine Seele erfreute sichʼ"],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 152"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
-            "text": "1) hēz me žinuva gə-bosam-wa i=dukṯayḏox, w i=fərǧayḏox i=walayaḏox gə-bəsmo-wa ʻdann würde dein Herrensitz und der Anblick und deine Stadt noch viel hübscher werdenʼ; 114; 58/76; 2) i=naqqa d-mašmáʕno-wo-le ḥəs diḏe, ġắlabe bŭsám-wo-le ʻwenn ich ihn dann seine Stimme hören liess, gefiel sie (m) ihm immer sehr gutʼ; 116; 11/236;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "hēz me žinuva gə-bosam-wa i=dukṯayḏox w i=fərǧayḏox i=walayaḏox gə-bəsmo-wa",
+            "translations": [
+              "dann würde dein Herrensitz und der Anblick und deine Stadt noch viel hübscher werden"
+            ],
+            "references": ["1", "114", "58/76"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hēz me žinuva gə-bosam-wa i=dukṯayḏox"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w i=fərǧayḏox i=walayaḏox gə-bəsmo-wa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdann würde dein Herrensitz und der Anblick und deine Stadt noch viel hübscher werdenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "114"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "58/76"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) hēz me žinuva gə-bosam-wa i=dukṯayḏox, w i=fərǧayḏox i=walayaḏox gə-bəsmo-wa ʻdann würde dein Herrensitz und der Anblick und deine Stadt noch viel hübscher werdenʼ; 114; 58/76;",
+            "segments": [
+              {
+                "turoyo": ") hēz me žinuva gə-bosam-wa i=dukṯayḏox, w i=fərǧayḏox i=walayaḏox gə-bəsmo-wa",
+                "translations": [
+                  "ʻdann würde dein Herrensitz und der Anblick und deine Stadt noch viel hübscher werdenʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["114"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["58/76"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "i=naqqa d-mašmáʕno-wo-le ḥəs diḏe ġắlabe bŭsám-wo-le",
+            "translations": [
+              "wenn ich ihn dann seine Stimme hören liess, gefiel sie (m) ihm immer sehr gut"
+            ],
+            "references": ["2", "116", "11/236"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naqqa d-mašmáʕno-wo-le ḥəs diḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ġắlabe bŭsám-wo-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn ich ihn dann seine Stimme hören liess, gefiel sie (m) ihm immer sehr gutʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "116"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/236"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) i=naqqa d-mašmáʕno-wo-le ḥəs diḏe, ġắlabe bŭsám-wo-le ʻwenn ich ihn dann seine Stimme hören liess, gefiel sie (m) ihm immer sehr gutʼ; 116; 11/236;",
+            "segments": [
+              {
+                "turoyo": ") i=naqqa d-mašmáʕno-wo-le ḥəs diḏe, ġắlabe bŭsám-wo-le",
+                "translations": [
+                  "ʻwenn ich ihn dann seine Stimme hören liess, gefiel sie (m) ihm immer sehr gutʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["116"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/236"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": [
-        "mbasamle",
-        "mbasəm"
-      ],
+      "forms": ["mbasamle", "mbasəm"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mbasamle lebe d-u=mṣaydono u=gayoso be məqqa ḥaṭóyo-wa b-i=saʕaye ḥarayto mʕaḏəb aʕmux mbasamlux b-i=malkuṯayḏux",
+            "translations": [
+              "er machte das Herz des Jägers vergnügt (durch ein Geschenk)",
+              "du hast den Räuber, wie viele Sünden er auch begangen hatte, als er in der letzten Stunde mit dir gelitten hat, in deinem Himmelreich erfreut"
+            ],
+            "references": ["159", "30/32", "LB 139"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mbasamle lebe d-u=mṣaydono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer machte das Herz des Jägers vergnügt (durch ein Geschenk)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "159"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/32"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=gayoso be məqqa ḥaṭóyo-wa b-i=saʕaye ḥarayto mʕaḏəb aʕmux mbasamlux b-i=malkuṯayḏux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu hast den Räuber, wie viele Sünden er auch begangen hatte, als er in der letzten Stunde mit dir gelitten hat, in deinem Himmelreich erfreutʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 139"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mbasamle lebe d-u=mṣaydono ʻer machte das Herz des Jägers vergnügt (durch ein Geschenk)ʼ; 159; 30/32; u=gayoso be məqqa ḥaṭóyo-wa b-i=saʕaye ḥarayto mʕaḏəb aʕmux mbasamlux b-i=malkuṯayḏux ʻdu hast den Räuber, wie viele Sünden er auch begangen hatte, als er in der letzten Stunde mit dir gelitten hat, in deinem Himmelreich erfreutʼ; LB 139;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mbasamle lebe d-u=mṣaydono",
+                "translations": [
+                  "ʻer machte das Herz des Jägers vergnügt (durch ein Geschenk)ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["159"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["30/32"]
+              },
+              {
+                "turoyo": "u=gayoso be məqqa ḥaṭóyo-wa b-i=saʕaye ḥarayto mʕaḏəb aʕmux mbasamlux b-i=malkuṯayḏux",
+                "translations": [
+                  "ʻdu hast den Räuber, wie viele Sünden er auch begangen hatte, als er in der letzten Stunde mit dir gelitten hat, in deinem Himmelreich erfreutʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 139"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "k-samno bərġəl l-i=ḥurmayḏi hama čike mbasamno leba",
+            "translations": [
+              "ich will Bulgur für meine Frau machen und sie ein wenig erfreuen"
+            ],
+            "references": ["166", "56/128"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-samno bərġəl l-i=ḥurmayḏi hama čike mbasamno leba "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich will Bulgur für meine Frau machen und sie ein wenig erfreuenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "166"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/128"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "k-samno bərġəl l-i=ḥurmayḏi hama čike mbasamno leba ʻich will Bulgur für meine Frau machen und sie ein wenig erfreuenʼ; 166; 56/128;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "k-samno bərġəl l-i=ḥurmayḏi hama čike mbasamno leba",
+                "translations": [
+                  "ʻich will Bulgur für meine Frau machen und sie ein wenig erfreuenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["166"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["56/128"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "mbasam-li b-i=malkuṯayḏux",
+            "translations": ["erfreue mich in deinem Paradies"],
+            "references": ["LB 140"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mbasam-li b-i=malkuṯayḏux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻerfreue mich in deinem Paradiesʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 140"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mbasam-li b-i=malkuṯayḏux ʻerfreue mich in deinem Paradiesʼ; LB 140;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mbasam-li b-i=malkuṯayḏux",
+                "translations": ["ʻerfreue mich in deinem Paradiesʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 140"]
+              }
+            ]
           }
         ]
       }
@@ -96,10 +789,68 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "oʕdo g-məšqolat w hīč g-mibasmat ʕam ʕam u=morayḏax b-i=malkuṯo šmayoniṯo",
+            "translations": [
+              "du wirst jetzt sterben und wirst überhaupt…du wirst dich mit deinem Herrn im himmlischen Paradies freuen"
+            ],
+            "references": ["LB 162"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "oʕdo g-məšqolat w hīč"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-mibasmat ʕam"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕam u=morayḏax b-i=malkuṯo šmayoniṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu wirst jetzt sterben und wirst überhaupt…du wirst dich mit deinem Herrn im himmlischen Paradies freuenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 162"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "oʕdo g-məšqolat w hīč, g-mibasmat ʕam, ʕam u=morayḏax b-i=malkuṯo šmayoniṯo ʻdu wirst jetzt sterben und wirst überhaupt…du wirst dich mit deinem Herrn im himmlischen Paradies freuenʼ; LB 162;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "oʕdo g-məšqolat w hīč, g-mibasmat ʕam, ʕam u=morayḏax b-i=malkuṯo šmayoniṯo",
+                "translations": [
+                  "ʻdu wirst jetzt sterben und wirst überhaupt…du wirst dich mit deinem Herrn im himmlischen Paradies freuenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 162"]
+              }
+            ]
           }
         ]
       }

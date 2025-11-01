@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mdawdəl",
-        "midawdəl"
-      ],
+      "forms": ["mdawdəl", "midawdəl"],
       "conjugations": {}
     },
     {
@@ -26,25 +23,166 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "naqla ko-midawdlo naqla ḥniqo w-ftiḥ fema",
+            "translations": [
+              "‘That moment she was swinging [on the rope] and then she was strangled [to death]; her mouth opened’"
+            ],
+            "references": ["773", "45/23"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "naqla ko-midawdlo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " naqla ḥniqo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-ftiḥ fema "
+              },
+              {
+                "kind": "translation",
+                "value": "‘That moment she was swinging [on the rope] and then she was strangled [to death]; her mouth opened’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "773"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "45/23"
+              }
+            ],
             "text": "naqla ko-midawdlo, naqla ḥniqo; w-ftiḥ fema ‘That moment she was swinging [on the rope] and then she was strangled [to death]; her mouth opened’; 773; 45/23",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "naqla ko-midawdlo, naqla ḥniqo",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "w-ftiḥ fema",
+                "translations": [
+                  "‘That moment she was swinging [on the rope] and then she was strangled [to death]; her mouth opened’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["773"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["45/23"]
+              }
+            ]
           }
         ],
         "Part. Pass.": [
           {
+            "turoyo": "ga kal ko kito xanǧar b-u=šuro i=ḥayye mdawdálto-yo eba",
+            "translations": [
+              "da ist ein Dolch in der Wand, daran baumelt eine Schlange"
+            ],
+            "references": ["773", "61/134"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ga kal ko kito xanǧar b-u=šuro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=ḥayye mdawdálto-yo eba "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda ist ein Dolch in der Wand, daran baumelt eine Schlangeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "773"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "61/134"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ga kal ko kito xanǧar b-u=šuro, i=ḥayye mdawdálto-yo eba ʻda ist ein Dolch in der Wand, daran baumelt eine Schlangeʼ; 773; 61/134;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ga kal ko kito xanǧar b-u=šuro, i=ḥayye mdawdálto-yo eba",
+                "translations": [
+                  "ʻda ist ein Dolch in der Wand, daran baumelt eine Schlangeʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["773"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["61/134"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) baumeln, pendeln;"
-  ],
+  "idioms": ["(Detrans.) baumeln, pendeln;"],
   "uncertain": false
 }

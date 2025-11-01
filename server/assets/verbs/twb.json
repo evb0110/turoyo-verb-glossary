@@ -12,32 +12,153 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mtawable",
-        "mtawəb"
-      ],
+      "forms": ["mtawable", "mtawəb"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "aṯi nšəqle iḏe w-mtawable qm-iḏe",
+            "translations": [
+              "er kam und ihm die Hand küsste und reuige Umkehr gelobte"
+            ],
+            "references": ["472", "30/173"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aṯi nšəqle iḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-mtawable qm-iḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer kam und ihm die Hand küsste und reuige Umkehr gelobteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "472"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/173"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "aṯi nšəqle iḏe, w-mtawable qm-iḏe ʻer kam und ihm die Hand küsste und reuige Umkehr gelobteʼ; 472; 30/173;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "aṯi nšəqle iḏe, w-mtawable qm-iḏe",
+                "translations": [
+                  "ʻer kam und ihm die Hand küsste und reuige Umkehr gelobteʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["472"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["30/173"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "gə-mtawbət ʕărāq d-lo=šotət prs",
+            "translations": [
+              "willst du umkehren und keinen Brantwein mehr trinken?"
+            ],
+            "references": ["472", "98/10"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gə-mtawbət ʕărāq d-lo=šotət "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwillst du umkehren und keinen Brantwein mehr trinken?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "472"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "98/10"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "gə-mtawbət ʕărāq d-lo=šotət ʻwillst du umkehren und keinen Brantwein mehr trinken?ʼ; 472; prs 98/10;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "gə-mtawbət ʕărāq d-lo=šotət",
+                "translations": [
+                  "ʻwillst du umkehren und keinen Brantwein mehr trinken?ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["472"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["98/10"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "das Reugelübde ablegen;"
-  ],
+  "idioms": ["das Reugelübde ablegen;"],
   "uncertain": false
 }

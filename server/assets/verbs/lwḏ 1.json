@@ -14,32 +14,95 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "lwəḏle",
-        "lowəḏ"
-      ],
+      "forms": ["lwəḏle", "lowəḏ"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "lwəḏle u=ḥawlo; 449;",
-            "turoyo": "",
+            "turoyo": "lwəḏle u=ḥawlo",
             "translations": [],
-            "references": []
+            "references": ["449"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lwəḏle u=ḥawlo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "449"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lwəḏle u=ḥawlo; 449;",
+            "segments": [
+              {
+                "turoyo": "lwəḏle u=ḥawlo",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["449"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "lawḏi-la; 449;",
-            "turoyo": "",
+            "turoyo": "lawḏi-la",
             "translations": [],
-            "references": []
+            "references": ["449"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lawḏi-la"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "449"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lawḏi-la; 449;",
+            "segments": [
+              {
+                "turoyo": "lawḏi-la",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["449"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "fest zudrehen;"
-  ],
+  "idioms": ["fest zudrehen;"],
   "uncertain": false
 }

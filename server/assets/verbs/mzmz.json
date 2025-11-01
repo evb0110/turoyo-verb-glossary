@@ -5,24 +5,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mazmazle",
-        "mazməz"
-      ],
+      "forms": ["mazmazle", "mazməz"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ko-mazməz lebi l-u=mukl-ano",
+            "translations": ["ich habe grossen Appetit auf diese Essen"],
+            "references": ["800"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mazməz lebi l-u=mukl-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe grossen Appetit auf diese Essenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "800"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-mazməz lebi l-u=mukl-ano ʻich habe grossen Appetit auf diese Essenʼ; 800;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-mazməz lebi l-u=mukl-ano",
+                "translations": ["ʻich habe grossen Appetit auf diese Essenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["800"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "grossen Appetit haben (mit lebo);"
-  ],
+  "idioms": ["grossen Appetit haben (mit lebo);"],
   "uncertain": false
 }

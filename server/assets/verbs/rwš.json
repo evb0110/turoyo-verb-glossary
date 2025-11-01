@@ -14,32 +14,127 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mrawašle",
-        "mrawəš"
-      ],
+      "forms": ["mrawašle", "mrawəš"],
       "conjugations": {
         "Infectum": [
           {
-            "text": "kə-mrawəš; 471;",
-            "turoyo": "",
+            "turoyo": "kə-mrawəš",
             "translations": [],
-            "references": []
+            "references": ["471"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kə-mrawəš"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "471"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kə-mrawəš; 471;",
+            "segments": [
+              {
+                "turoyo": "kə-mrawəš",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["471"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "maltmí-way-na w b-ar=rawše mrawší-way-na u=ʕafro ..",
+            "translations": [
+              "wir holten (sie) zusammen, und mit Schippen schaufelten wir die Erde"
+            ],
+            "references": ["JL 11", "11", "12"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maltmí-way-na"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w b-ar=rawše mrawší-way-na u=ʕafro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir holten (sie) zusammen, und mit Schippen schaufelten wir die Erdeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 11"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "11"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "12"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "maltmí-way-na, w b-ar=rawše mrawší-way-na u=ʕafro ʻwir holten (sie) zusammen, und mit Schippen schaufelten wir die Erdeʼ; JL 11.11.12;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "maltmí-way-na, w b-ar=rawše mrawší-way-na u=ʕafro",
+                "translations": [
+                  "ʻwir holten (sie) zusammen, und mit Schippen schaufelten wir die Erdeʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "..",
+                "translations": [],
+                "references": ["JL 11", "11", "12"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "schaufeln;"
-  ],
+  "idioms": ["schaufeln;"],
   "uncertain": false
 }

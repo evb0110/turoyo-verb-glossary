@@ -14,74 +14,943 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ʕaṣi",
-        "ʕoṣe"
-      ],
+      "forms": ["ʕaṣi", "ʕoṣe"],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "text": "1) ʕaṣən qm-i=dawle, mqatalle lunne w l-i=dawle ʻsie empörten sich gegen die Regierung, und so begannen die Regierungstruppen den Kampf mit ihnenʼ; 424; prs 135/36; 2) u=ṭuro d-Ninwa mʕáre-yo w xərab-yo; ʕaṣyo i=ʕaskar d-ab=boḥta bayna xərab ʻdas Gebirge von Ninive ist voller Höhlen und Ruinen, und durch diese Ruinen war das Kurdenheer gut verschanztʼ; 425; prs 89/35; 3) g-maʕalyo iḏa ʕaṣyo iḏa eba ʻals sie die Hand erhob, blieb ihre Hand daran hängenʼ; 425; 58/239;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "ʕaṣən qm-i=dawle mqatalle lunne w l-i=dawle prs",
+            "translations": [
+              "sie empörten sich gegen die Regierung, und so begannen die Regierungstruppen den Kampf mit ihnen"
+            ],
+            "references": ["1", "424", "135/36"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕaṣən qm-i=dawle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mqatalle lunne w l-i=dawle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie empörten sich gegen die Regierung, und so begannen die Regierungstruppen den Kampf mit ihnenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "424"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "135/36"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) ʕaṣən qm-i=dawle, mqatalle lunne w l-i=dawle ʻsie empörten sich gegen die Regierung, und so begannen die Regierungstruppen den Kampf mit ihnenʼ; 424; prs 135/36;",
+            "segments": [
+              {
+                "turoyo": ") ʕaṣən qm-i=dawle, mqatalle lunne w l-i=dawle",
+                "translations": [
+                  "ʻsie empörten sich gegen die Regierung, und so begannen die Regierungstruppen den Kampf mit ihnenʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["424"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["135/36"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "u=ṭuro d-Ninwa mʕáre-yo w xərab-yo ʕaṣyo i=ʕaskar d-ab=boḥta bayna xərab prs",
+            "translations": [
+              "das Gebirge von Ninive ist voller Höhlen und Ruinen, und durch diese Ruinen war das Kurdenheer gut verschanzt"
+            ],
+            "references": ["2", "425", "89/35"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=ṭuro d-Ninwa mʕáre-yo w xərab-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕaṣyo i=ʕaskar d-ab=boḥta bayna xərab "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Gebirge von Ninive ist voller Höhlen und Ruinen, und durch diese Ruinen war das Kurdenheer gut verschanztʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "425"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "89/35"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "2) u=ṭuro d-Ninwa mʕáre-yo w xərab-yo; ʕaṣyo i=ʕaskar d-ab=boḥta bayna xərab ʻdas Gebirge von Ninive ist voller Höhlen und Ruinen, und durch diese Ruinen war das Kurdenheer gut verschanztʼ; 425; prs 89/35;",
+            "segments": [
+              {
+                "turoyo": ") u=ṭuro d-Ninwa mʕáre-yo w xərab-yo",
+                "translations": [],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "ʕaṣyo i=ʕaskar d-ab=boḥta bayna xərab",
+                "translations": [
+                  "ʻdas Gebirge von Ninive ist voller Höhlen und Ruinen, und durch diese Ruinen war das Kurdenheer gut verschanztʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["425"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["89/35"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "g-maʕalyo iḏa ʕaṣyo iḏa eba",
+            "translations": [
+              "als sie die Hand erhob, blieb ihre Hand daran hängen"
+            ],
+            "references": ["3", "425", "58/239"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-maʕalyo iḏa ʕaṣyo iḏa eba "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals sie die Hand erhob, blieb ihre Hand daran hängenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "425"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "58/239"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "3) g-maʕalyo iḏa ʕaṣyo iḏa eba ʻals sie die Hand erhob, blieb ihre Hand daran hängenʼ; 425; 58/239;",
+            "segments": [
+              {
+                "turoyo": ") g-maʕalyo iḏa ʕaṣyo iḏa eba",
+                "translations": [
+                  "ʻals sie die Hand erhob, blieb ihre Hand daran hängenʼ"
+                ],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["425"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["58/239"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "u=fako ko-ʕoṣe bə-qḏolayḏe",
+            "translations": ["der Bissen blieb ihm im Halse stecken"],
+            "references": ["3", "425", "113/207"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=fako ko-ʕoṣe bə-qḏolayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Bissen blieb ihm im Halse steckenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "425"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "113/207"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "3) u=fako ko-ʕoṣe bə-qḏolayḏe ʻder Bissen blieb ihm im Halse steckenʼ; 425; 113/207;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") u=fako ko-ʕoṣe bə-qḏolayḏe",
+                "translations": ["ʻder Bissen blieb ihm im Halse steckenʼ"],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["425"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["113/207"]
+              }
+            ]
           }
         ],
         "Part act.": [
           {
-            "text": "2) u=med-ano-ze, mede, ġắlabe ʕáṣyo-yo aʕlayye, d-šəmʕi hawxa mede ʕal i=ġiraṯṯe ʻes wird bei ihnen sehr schwer genommen, wenn sie so etwas von ihrer Frau hörenʼ; 425; 78/35; kət-lan aḥna tlaṯ=qəryawoṯe ḥrene ʕaṣye ‘Wir haben noch drei andere belagerte Dörfer’; 32/29; i=quwe d-kətxu b-ʕiwardo kula ḥṣiṯo-yo b-i=kozk-aṯi ‘die ganze Streitkraft, die ihr in ‘iwardo habt, ist in dieser Schanze eingeschlossen’; 33/18 3) hano məqqa d-ko-gorəš, u=šoriṭo ʕáṣyo-yo ʻso sehr (der Neger) auch zog, der Strick hing festʼ; 425; 88/299;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "u=med-ano-ze mede ġắlabe ʕáṣyo-yo aʕlayye d-šəmʕi hawxa mede ʕal i=ġiraṯṯe kət-lan aḥna tlaṯ=qəryawoṯe ḥrene ʕaṣye i=quwe d-kətxu b-ʕiwardo kula ḥṣiṯo-yo b-i=kozk-aṯi",
+            "translations": [
+              "es wird bei ihnen sehr schwer genommen, wenn sie so etwas von ihrer Frau hören",
+              "‘Wir haben noch drei andere belagerte Dörfer’",
+              "‘die ganze Streitkraft, die ihr in ‘iwardo habt, ist in dieser Schanze eingeschlossen’"
+            ],
+            "references": ["2", "425", "78/35"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=med-ano-ze"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mede"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ġắlabe ʕáṣyo-yo aʕlayye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-šəmʕi hawxa mede ʕal i=ġiraṯṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes wird bei ihnen sehr schwer genommen, wenn sie so etwas von ihrer Frau hörenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "425"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/35"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kət-lan aḥna tlaṯ=qəryawoṯe ḥrene ʕaṣye "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wir haben noch drei andere belagerte Dörfer’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "32/29"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=quwe d-kətxu b-ʕiwardo kula ḥṣiṯo-yo b-i=kozk-aṯi "
+              },
+              {
+                "kind": "translation",
+                "value": "‘die ganze Streitkraft, die ihr in ‘iwardo habt, ist in dieser Schanze eingeschlossen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "33/18"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "2) u=med-ano-ze, mede, ġắlabe ʕáṣyo-yo aʕlayye, d-šəmʕi hawxa mede ʕal i=ġiraṯṯe ʻes wird bei ihnen sehr schwer genommen, wenn sie so etwas von ihrer Frau hörenʼ; 425; 78/35; kət-lan aḥna tlaṯ=qəryawoṯe ḥrene ʕaṣye ‘Wir haben noch drei andere belagerte Dörfer’; 32/29; i=quwe d-kətxu b-ʕiwardo kula ḥṣiṯo-yo b-i=kozk-aṯi ‘die ganze Streitkraft, die ihr in ‘iwardo habt, ist in dieser Schanze eingeschlossen’; 33/18",
+            "segments": [
+              {
+                "turoyo": ") u=med-ano-ze, mede, ġắlabe ʕáṣyo-yo aʕlayye, d-šəmʕi hawxa mede ʕal i=ġiraṯṯe",
+                "translations": [
+                  "ʻes wird bei ihnen sehr schwer genommen, wenn sie so etwas von ihrer Frau hörenʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["425"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["78/35"]
+              },
+              {
+                "turoyo": "kət-lan aḥna tlaṯ=qəryawoṯe ḥrene ʕaṣye",
+                "translations": [
+                  "‘Wir haben noch drei andere belagerte Dörfer’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["32/29"]
+              },
+              {
+                "turoyo": "i=quwe d-kətxu b-ʕiwardo kula ḥṣiṯo-yo b-i=kozk-aṯi",
+                "translations": [
+                  "‘die ganze Streitkraft, die ihr in ‘iwardo habt, ist in dieser Schanze eingeschlossen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["33/18"]
+              }
+            ]
+          },
+          {
+            "turoyo": "hano məqqa d-ko-gorəš u=šoriṭo ʕáṣyo-yo",
+            "translations": [
+              "so sehr (der Neger) auch zog, der Strick hing fest"
+            ],
+            "references": ["3", "425", "88/299"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hano məqqa d-ko-gorəš"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=šoriṭo ʕáṣyo-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻso sehr (der Neger) auch zog, der Strick hing festʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "425"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "88/299"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "3) hano məqqa d-ko-gorəš, u=šoriṭo ʕáṣyo-yo ʻso sehr (der Neger) auch zog, der Strick hing festʼ; 425; 88/299;",
+            "segments": [
+              {
+                "turoyo": ") hano məqqa d-ko-gorəš, u=šoriṭo ʕáṣyo-yo",
+                "translations": [
+                  "ʻso sehr (der Neger) auch zog, der Strick hing festʼ"
+                ],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["425"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["88/299"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "maḥṣele",
-        "maḥṣe"
-      ],
+      "forms": ["maḥṣele", "maḥṣe"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "maḥṣele u=lăġam-awo b-u=zəft maḥṣalle u=naqw-awo bəṯṯər məd-mḥalle l-aṭ=Ṭaye b-aṣ=Ṣuroye w-qṭəlle aṣ=Ṣuroye u=ʕamo d-ʕiwardo maḥṣalle ruḥayye b-i=qriṯo",
+            "translations": [
+              "er verstopfte den Gang fest mit Teer und Pech",
+              "sie verschlossen jene Öffnung",
+              "‘Als die Muhammedaner die Christen überfallen und getötet hatten, verschanzte sich das Volk von ‘Iwardo in dem Dorfe’"
+            ],
+            "references": ["425", "66/342", "LB 174"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maḥṣele u=lăġam-awo b-u=zəft "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer verstopfte den Gang fest mit Teer und Pechʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "425"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "66/342"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥṣalle u=naqw-awo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie verschlossen jene Öffnungʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 174"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər məd-mḥalle l-aṭ=Ṭaye b-aṣ=Ṣuroye w-qṭəlle aṣ=Ṣuroye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=ʕamo d-ʕiwardo maḥṣalle ruḥayye b-i=qriṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Als die Muhammedaner die Christen überfallen und getötet hatten, verschanzte sich das Volk von ‘Iwardo in dem Dorfe’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "32/5"
+              }
+            ],
             "text": "maḥṣele u=lăġam-awo b-u=zəft ʻer verstopfte den Gang fest mit Teer und Pechʼ; 425; 66/342; maḥṣalle u=naqw-awo ʻsie verschlossen jene Öffnungʼ; LB 174; bəṯṯər məd-mḥalle l-aṭ=Ṭaye b-aṣ=Ṣuroye w-qṭəlle aṣ=Ṣuroye, u=ʕamo d-ʕiwardo maḥṣalle ruḥayye b-i=qriṯo ‘Als die Muhammedaner die Christen überfallen und getötet hatten, verschanzte sich das Volk von ‘Iwardo in dem Dorfe’; 32/5",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "maḥṣele u=lăġam-awo b-u=zəft",
+                "translations": [
+                  "ʻer verstopfte den Gang fest mit Teer und Pechʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["425"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["66/342"]
+              },
+              {
+                "turoyo": "maḥṣalle u=naqw-awo",
+                "translations": ["ʻsie verschlossen jene Öffnungʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 174"]
+              },
+              {
+                "turoyo": "bəṯṯər məd-mḥalle l-aṭ=Ṭaye b-aṣ=Ṣuroye w-qṭəlle aṣ=Ṣuroye, u=ʕamo d-ʕiwardo maḥṣalle ruḥayye b-i=qriṯo",
+                "translations": [
+                  "‘Als die Muhammedaner die Christen überfallen und getötet hatten, verschanzte sich das Volk von ‘Iwardo in dem Dorfe’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["32/5"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "u=rabo d-i=qriṯo moṣele u=ahl d-u=baytayḏe ḥatta d-maḥṣən at=tarʕe k-omər",
+            "translations": [
+              "der Dorfvorsteher wies seine Familie an, die Türen fest zu verrammeln",
+              "de tay! maḥṣeno ruḥi b-u=huryo? gəd-ŭweno ŭno i=səsto?",
+              "er spricht: “Nun, so bring sie doch! Soll ich mich etwa in der Krippe einsperren? Soll ich etwa selber das Pferd sein?"
+            ],
+            "references": ["393", "25/24", "6/62"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=rabo d-i=qriṯo moṣele u=ahl d-u=baytayḏe ḥatta d-maḥṣən at=tarʕe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Dorfvorsteher wies seine Familie an, die Türen fest zu verrammelnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "393"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/24"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-omər "
+              },
+              {
+                "kind": "translation",
+                "value": "“de tay! maḥṣeno ruḥi b-u=huryo? gəd-ŭweno ŭno i=səsto?”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer spricht: “Nun, so bring sie doch! Soll ich mich etwa in der Krippe einsperren? Soll ich etwa selber das Pferd sein?”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/62"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=rabo d-i=qriṯo moṣele u=ahl d-u=baytayḏe ḥatta d-maḥṣən at=tarʕe ʻder Dorfvorsteher wies seine Familie an, die Türen fest zu verrammelnʼ; 393; 25/24; [MT] k-omər “de tay! maḥṣeno ruḥi b-u=huryo? gəd-ŭweno ŭno i=səsto?” ʻer spricht: “Nun, so bring sie doch! Soll ich mich etwa in der Krippe einsperren? Soll ich etwa selber das Pferd sein?”ʼ; 6/62;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=rabo d-i=qriṯo moṣele u=ahl d-u=baytayḏe ḥatta d-maḥṣən at=tarʕe",
+                "translations": [
+                  "ʻder Dorfvorsteher wies seine Familie an, die Türen fest zu verrammelnʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["393"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["25/24"]
+              },
+              {
+                "turoyo": "k-omər",
+                "translations": [
+                  "“de tay! maḥṣeno ruḥi b-u=huryo? gəd-ŭweno ŭno i=səsto?”",
+                  "ʻer spricht: “Nun, so bring sie doch! Soll ich mich etwa in der Krippe einsperren? Soll ich etwa selber das Pferd sein?”ʼ"
+                ],
+                "references": [],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["6/62"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "izúx aḥṣáy u=lăġam-awo b-u=qiro w b-u=zəft aḥṣay-e",
+            "translations": [
+              "geh hin und verstopfe den Schacht, verstopfe ihn mit Pech und Teer"
+            ],
+            "references": ["425", "66/340"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "izúx aḥṣáy u=lăġam-awo b-u=qiro w b-u=zəft"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aḥṣay-e "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻgeh hin und verstopfe den Schacht, verstopfe ihn mit Pech und Teerʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "425"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "66/340"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "izúx aḥṣáy u=lăġam-awo b-u=qiro w b-u=zəft, aḥṣay-e ʻgeh hin und verstopfe den Schacht, verstopfe ihn mit Pech und Teerʼ; 425; 66/340;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "izúx aḥṣáy u=lăġam-awo b-u=qiro w b-u=zəft, aḥṣay-e",
+                "translations": [
+                  "ʻgeh hin und verstopfe den Schacht, verstopfe ihn mit Pech und Teerʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["425"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["66/340"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(ʕ > ḥ)",
-    "schliessen, verrammeln, verstopfen; einsperren;"
-  ],
+  "idioms": ["(ʕ > ḥ)", "schliessen, verrammeln, verstopfen; einsperren;"],
   "uncertain": false
 }

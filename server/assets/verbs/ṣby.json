@@ -14,24 +14,86 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ṣbele",
-        "ṣobe"
-      ],
+      "forms": ["ṣbele", "ṣobe"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ramḥəl d-aloho ṣobe g-mətfakanno b-u=šuġl-ano",
+            "translations": [
+              "morgen, so Gott will, werde ich die Sache überlegen"
+            ],
+            "references": ["356", "68/7"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ramḥəl d-aloho ṣobe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-mətfakanno b-u=šuġl-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmorgen, so Gott will, werde ich die Sache überlegenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "356"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "68/7"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ramḥəl d-aloho ṣobe, g-mətfakanno b-u=šuġl-ano ʻmorgen, so Gott will, werde ich die Sache überlegenʼ; 356; 68/7;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ramḥəl d-aloho ṣobe, g-mətfakanno b-u=šuġl-ano",
+                "translations": [
+                  "ʻmorgen, so Gott will, werde ich die Sache überlegenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["356"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["68/7"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "wollen;"
-  ],
+  "idioms": ["wollen;"],
   "uncertain": false
 }

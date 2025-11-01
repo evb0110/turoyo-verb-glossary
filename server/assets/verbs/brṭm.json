@@ -14,24 +14,86 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mbarṭamle",
-        "mbarṭəm"
-      ],
+      "forms": ["mbarṭamle", "mbarṭəm"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "qamayto ko-mbarṭmi w ko-fəqḥi bəṯṯər k-owe suġlikat naʕime",
+            "translations": [
+              "zuerst setzen (die Weinstöcke) Knospen an; dann brechen die auf, und entstehen kleine Träubchen"
+            ],
+            "references": ["770", "94/116"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qamayto ko-mbarṭmi w ko-fəqḥi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər k-owe suġlikat naʕime "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻzuerst setzen (die Weinstöcke) Knospen an; dann brechen die auf, und entstehen kleine Träubchenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "770"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/116"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "qamayto ko-mbarṭmi w ko-fəqḥi, bəṯṯər k-owe suġlikat naʕime ʻzuerst setzen (die Weinstöcke) Knospen an; dann brechen die auf, und entstehen kleine Träubchenʼ; 770; 94/116;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "qamayto ko-mbarṭmi w ko-fəqḥi, bəṯṯər k-owe suġlikat naʕime",
+                "translations": [
+                  "ʻzuerst setzen (die Weinstöcke) Knospen an; dann brechen die auf, und entstehen kleine Träubchenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["770"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["94/116"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "Knospen ansetzen;"
-  ],
+  "idioms": ["Knospen ansetzen;"],
   "uncertain": false
 }

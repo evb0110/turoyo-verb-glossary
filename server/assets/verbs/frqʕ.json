@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mfarqaʕle",
-        "mfarqəʕ"
-      ],
+      "forms": ["mfarqaʕle", "mfarqəʕ"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,48 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "šqilax i=ruhayḏi w ono-ste waxta d-mifarqʕono",
+            "translations": [
+              "du hast mir den Nerv getötet und auch ich selbst platze schon bald"
+            ],
+            "references": ["MM 71"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "šqilax i=ruhayḏi w ono-ste waxta d-mifarqʕono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu hast mir den Nerv getötet und auch ich selbst platze schon baldʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 71"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "šqilax i=ruhayḏi w ono-ste waxta d-mifarqʕono ʻdu hast mir den Nerv getötet und auch ich selbst platze schon baldʼ MM 71;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "šqilax i=ruhayḏi w ono-ste waxta d-mifarqʕono",
+                "translations": [
+                  "ʻdu hast mir den Nerv getötet und auch ich selbst platze schon baldʼ"
+                ],
+                "references": ["MM 71"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "in Stücke zerplatzen;"
-  ],
+  "idioms": ["in Stücke zerplatzen;"],
   "uncertain": false
 }

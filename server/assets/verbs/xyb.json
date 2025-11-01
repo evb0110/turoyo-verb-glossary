@@ -14,24 +14,100 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "xayəb",
-        "xoyəb"
-      ],
+      "forms": ["xayəb", "xoyəb"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "l-ḥamdəlla də-msəklox ya abri dukṯi w lo=xayibo i=dawmo d-i=šuxət-ayḏi",
+            "translations": [
+              "Gott sei dank, dass du, mein Sohn, meinen Platz eingenommen hast und der Baum meiner Scheichwürde nicht leer von Früchten geblieben ist"
+            ],
+            "references": ["512", "29/347"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-ḥamdəlla də-msəklox ya abri dukṯi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w lo=xayibo i=dawmo d-i=šuxət-ayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻGott sei dank, dass du, mein Sohn, meinen Platz eingenommen hast und der Baum meiner Scheichwürde nicht leer von Früchten geblieben istʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "512"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/347"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "l-ḥamdəlla də-msəklox ya abri dukṯi, w lo=xayibo i=dawmo d-i=šuxət-ayḏi ʻGott sei dank, dass du, mein Sohn, meinen Platz eingenommen hast und der Baum meiner Scheichwürde nicht leer von Früchten geblieben istʼ; 512; 29/347; [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "l-ḥamdəlla də-msəklox ya abri dukṯi, w lo=xayibo i=dawmo d-i=šuxət-ayḏi",
+                "translations": [
+                  "ʻGott sei dank, dass du, mein Sohn, meinen Platz eingenommen hast und der Baum meiner Scheichwürde nicht leer von Früchten geblieben istʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["512"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/347"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": [],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "ohne Frucht sein;"
-  ],
+  "idioms": ["ohne Frucht sein;"],
   "uncertain": false
 }

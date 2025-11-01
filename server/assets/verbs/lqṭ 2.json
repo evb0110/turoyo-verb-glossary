@@ -14,25 +14,165 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mlaqaṭle",
-        "mlaqəṭ"
-      ],
+      "forms": ["mlaqaṭle", "mlaqəṭ"],
       "conjugations": {}
     },
     {
       "stem": "III",
-      "forms": [
-        "malqaṭle",
-        "malqəṭ"
-      ],
+      "forms": ["malqaṭle", "malqəṭ"],
       "conjugations": {
         "Infectum": [
           {
-            "text": "1) (fig.) yawmo ʕal yawmo ko-malqəṭ xabre l-i=kačke ʻTag für Tag wirft er dem Mädchen (anzügliche) Worte zuʼ; 185; 88/18; 2) ko-malqəṭ ab=buzarʕe b-u=warzo ʻer setzt die Kerne einzeln ins Melonenfeldʼ; 185;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "fig. yawmo ʕal yawmo ko-malqəṭ xabre l-i=kačke",
+            "translations": [
+              "Tag für Tag wirft er dem Mädchen (anzügliche) Worte zu"
+            ],
+            "references": ["1", "185", "88/18"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "fig."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " yawmo ʕal yawmo ko-malqəṭ xabre l-i=kačke "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻTag für Tag wirft er dem Mädchen (anzügliche) Worte zuʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "185"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "88/18"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) (fig.) yawmo ʕal yawmo ko-malqəṭ xabre l-i=kačke ʻTag für Tag wirft er dem Mädchen (anzügliche) Worte zuʼ; 185; 88/18;",
+            "segments": [
+              {
+                "turoyo": ") (fig.) yawmo ʕal yawmo ko-malqəṭ xabre l-i=kačke",
+                "translations": [
+                  "ʻTag für Tag wirft er dem Mädchen (anzügliche) Worte zuʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["185"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["88/18"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "ko-malqəṭ ab=buzarʕe b-u=warzo",
+            "translations": ["er setzt die Kerne einzeln ins Melonenfeld"],
+            "references": ["2", "185"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-malqəṭ ab=buzarʕe b-u=warzo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer setzt die Kerne einzeln ins Melonenfeldʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "185"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) ko-malqəṭ ab=buzarʕe b-u=warzo ʻer setzt die Kerne einzeln ins Melonenfeldʼ; 185;",
+            "segments": [
+              {
+                "turoyo": ") ko-malqəṭ ab=buzarʕe b-u=warzo",
+                "translations": [
+                  "ʻer setzt die Kerne einzeln ins Melonenfeldʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["185"]
+              }
+            ]
           }
         ]
       }

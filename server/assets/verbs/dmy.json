@@ -14,42 +14,159 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "dmele",
-        "dome"
-      ],
+      "forms": ["dmele", "dome"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "m-larwal g-domən la-emre Реализация слова непонятна - не могу нормализовать",
+            "translations": ["von aussen ähneln sie den Lammern", "бараны"],
+            "references": ["DD 393/6"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "m-larwal g-domən la-emre "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻvon aussen ähneln sie den Lammernʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "DD 393/6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Реализация слова "
+              },
+              {
+                "kind": "translation",
+                "value": "“бараны”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " непонятна - не могу нормализовать"
+              }
+            ],
             "text": "m-larwal g-domən la-emre ʻvon aussen ähneln sie den Lammernʼ; DD 393/6; Реализация слова “бараны” непонятна - не могу нормализовать",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "m-larwal g-domən la-emre",
+                "translations": ["ʻvon aussen ähneln sie den Lammernʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["DD 393/6"]
+              },
+              {
+                "turoyo": "Реализация слова непонятна - не могу нормализовать",
+                "translations": ["“бараны”"],
+                "references": []
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": [
-        "mdamele",
-        "mdame"
-      ],
+      "forms": ["mdamele", "mdame"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "i=naqla d-šləḥle l-u=zangīn aǧ=ǧul-ayḏe ko-ʕobər u=malaxo w-ko-lowəš aǧ=ǧule d-u=zangīn w-ko-mdame ruḥe b-u=zangin-ano s clothes and made himself similar to him’",
+            "translations": [
+              "‘When the rich man took off his clothes, the angel entered [the bathhouse], put on the rich man’"
+            ],
+            "references": ["419", "43/9"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqla d-šləḥle l-u=zangīn aǧ=ǧul-ayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-ʕobər u=malaxo w-ko-lowəš aǧ=ǧule d-u=zangīn w-ko-mdame ruḥe b-u=zangin-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "‘When the rich man took off his clothes, the angel entered [the bathhouse], put on the rich man’"
+              },
+              {
+                "kind": "turoyo",
+                "value": "s clothes and made himself similar to him’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "419"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "43/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=naqla d-šləḥle l-u=zangīn aǧ=ǧul-ayḏe, ko-ʕobər u=malaxo w-ko-lowəš aǧ=ǧule d-u=zangīn w-ko-mdame ruḥe b-u=zangin-ano ‘When the rich man took off his clothes, the angel entered [the bathhouse], put on the rich man’s clothes and made himself similar to him’; 419; 43/9;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=naqla d-šləḥle l-u=zangīn aǧ=ǧul-ayḏe, ko-ʕobər u=malaxo w-ko-lowəš aǧ=ǧule d-u=zangīn w-ko-mdame ruḥe b-u=zangin-ano s clothes and made himself similar to him’",
+                "translations": [
+                  "‘When the rich man took off his clothes, the angel entered [the bathhouse], put on the rich man’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["419"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["43/9"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "ähneln;",
-    "(ruḥe) nachahmen, nachbilden, die Gestalt annehmen;"
-  ],
+  "idioms": ["ähneln;", "(ruḥe) nachahmen, nachbilden, die Gestalt annehmen;"],
   "uncertain": false
 }

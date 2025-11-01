@@ -14,32 +14,161 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "naʕəs",
-        "noʕəs"
-      ],
+      "forms": ["naʕəs", "noʕəs"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "hawyo traḥṣar w ruʕo traḥṣar w fəlge ḥḏo nŭquṣ ruʕo l-aṯyo i=kačke g-naʕəs daməx",
+            "translations": [
+              "es wird viertel nach zwölf, halb eins, dreiviertel eins, das Mädchen kommt nicht. Da wird er schläfrig und schläft ein"
+            ],
+            "references": ["88", "83/60"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hawyo traḥṣar w ruʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " traḥṣar w fəlge"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥḏo nŭquṣ ruʕo l-aṯyo i=kačke"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-naʕəs"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " daməx "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes wird viertel nach zwölf, halb eins, dreiviertel eins, das Mädchen kommt nicht. Da wird er schläfrig und schläft einʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "88"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "83/60"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "hawyo traḥṣar w ruʕo, traḥṣar w fəlge, ḥḏo nŭquṣ ruʕo l-aṯyo i=kačke; g-naʕəs, daməx ʻes wird viertel nach zwölf, halb eins, dreiviertel eins, das Mädchen kommt nicht. Da wird er schläfrig und schläft einʼ; 88; 83/60;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "hawyo traḥṣar w ruʕo, traḥṣar w fəlge, ḥḏo nŭquṣ ruʕo l-aṯyo i=kačke",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "g-naʕəs, daməx",
+                "translations": [
+                  "ʻes wird viertel nach zwölf, halb eins, dreiviertel eins, das Mädchen kommt nicht. Da wird er schläfrig und schläft einʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["88"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["83/60"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "k-nuḥsi",
+            "translations": ["sie werden schläfrig"],
+            "references": ["97"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-nuḥsi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie werden schläfrigʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "97"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "k-nuḥsi ʻsie werden schläfrigʼ; 97;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "k-nuḥsi",
+                "translations": ["ʻsie werden schläfrigʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["97"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "schläfrig werden;"
-  ],
+  "idioms": ["schläfrig werden;"],
   "uncertain": false
 }

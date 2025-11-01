@@ -11,40 +11,319 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "maʕlamle",
-        "maʕləm"
-      ],
+      "forms": ["maʕlamle", "maʕləm"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "qayəm u=aġa maʕlamle d-i=qriṯo w aṯən l-u=bayto d-i=pire prs prs",
+            "translations": [
+              "der Dorfschulze machte sich auf, benachrichtigte die Einwohner des Dorfes, und sie kamen zum Hause der Alten"
+            ],
+            "references": ["137", "210/26", "247/8"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qayəm u=aġa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maʕlamle d-i=qriṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w aṯən l-u=bayto d-i=pire "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Dorfschulze machte sich auf, benachrichtigte die Einwohner des Dorfes, und sie kamen zum Hause der Altenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "137"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "210/26"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "247/8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "qayəm u=aġa, maʕlamle d-i=qriṯo, w aṯən l-u=bayto d-i=pire ʻder Dorfschulze machte sich auf, benachrichtigte die Einwohner des Dorfes, und sie kamen zum Hause der Altenʼ; 137; prs 210/26; prs 247/8;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "qayəm u=aġa, maʕlamle d-i=qriṯo, w aṯən l-u=bayto d-i=pire",
+                "translations": [
+                  "ʻder Dorfschulze machte sich auf, benachrichtigte die Einwohner des Dorfes, und sie kamen zum Hause der Altenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["137"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["210/26"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["247/8"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "yalənəz i=ǧeriye i=naqqa d-əzzala d-maʕəlmo l-ann=abnoṯe də-Ṣṭambəl ṭro d-əṯyo l-gabi tux ánnaqqa d-uxlina w-mkayfina hul ṣafro d-maʕəlmina u=ʕamo!",
+            "translations": [
+              "wenn jedoch die Magd geht, um den Töchtern von Stambul Bescheid zu sagen, so lass sie vorher zu mir kommen",
+              "‘Now let us eat and enjoy ourselves till morning. Then we will inform the people [that my husband and the bald-headed are dead]’"
+            ],
+            "references": ["143", "105/28", "44/160"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "yalənəz i=ǧeriye i=naqqa d-əzzala d-maʕəlmo l-ann=abnoṯe də-Ṣṭambəl"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṭro d-əṯyo l-gabi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn jedoch die Magd geht, um den Töchtern von Stambul Bescheid zu sagen, so lass sie vorher zu mir kommenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "143"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "105/28"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " tux ánnaqqa d-uxlina w-mkayfina hul ṣafro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-maʕəlmina u=ʕamo! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Now let us eat and enjoy ourselves till morning. Then we will inform the people [that my husband and the bald-headed are dead]’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/160"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "yalənəz i=ǧeriye i=naqqa d-əzzala d-maʕəlmo l-ann=abnoṯe də-Ṣṭambəl, ṭro d-əṯyo l-gabi ʻwenn jedoch die Magd geht, um den Töchtern von Stambul Bescheid zu sagen, so lass sie vorher zu mir kommenʼ; 143; 105/28; tux ánnaqqa d-uxlina w-mkayfina hul ṣafro, d-maʕəlmina u=ʕamo! ‘Now let us eat and enjoy ourselves till morning. Then we will inform the people [that my husband and the bald-headed are dead]’; 44/160 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "yalənəz i=ǧeriye i=naqqa d-əzzala d-maʕəlmo l-ann=abnoṯe də-Ṣṭambəl, ṭro d-əṯyo l-gabi",
+                "translations": [
+                  "ʻwenn jedoch die Magd geht, um den Töchtern von Stambul Bescheid zu sagen, so lass sie vorher zu mir kommenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["143"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["105/28"]
+              },
+              {
+                "turoyo": "tux ánnaqqa d-uxlina w-mkayfina hul ṣafro, d-maʕəlmina u=ʕamo!",
+                "translations": [
+                  "‘Now let us eat and enjoy ourselves till morning. Then we will inform the people [that my husband and the bald-headed are dead]’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["44/160"],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "i=naqla d-doməx tex aʕlam-li prs",
+            "translations": [
+              "sobald er schläft, so komm und benachrichtige mich"
+            ],
+            "references": ["151", "47/15"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqla d-doməx"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " tex"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aʕlam-li "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsobald er schläft, so komm und benachrichtige michʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "151"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "47/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=naqla d-doməx, tex, aʕlam-li ʻsobald er schläft, so komm und benachrichtige michʼ; 151; prs 47/15;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=naqla d-doməx, tex, aʕlam-li",
+                "translations": [
+                  "ʻsobald er schläft, so komm und benachrichtige michʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["151"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["47/15"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "bescheiden, benachrichtigen;"
-  ],
+  "idioms": ["bescheiden, benachrichtigen;"],
   "uncertain": false
 }

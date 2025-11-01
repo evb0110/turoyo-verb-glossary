@@ -14,24 +14,78 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mətkaballe",
-        "mətkabər"
-      ],
+      "forms": ["mətkaballe", "mətkabər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ġắlabe mətkabər b-lebe qm-u=alohayḏe. walakən hēš i=ruḥo qadəšto áʕme-yo",
+            "translations": [
+              "er war sehr hochmütig in seinem Herzen vor seinem Gott, aber der Heilige Geist war noch bei ihm"
+            ],
+            "references": ["805", "90/92"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ġắlabe mətkabər b-lebe qm-u=alohayḏe. walakən hēš i=ruḥo qadəšto áʕme-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer war sehr hochmütig in seinem Herzen vor seinem Gott, aber der Heilige Geist war noch bei ihmʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "805"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "90/92"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ġắlabe mətkabər b-lebe qm-u=alohayḏe. walakən hēš i=ruḥo qadəšto áʕme-yo ʻer war sehr hochmütig in seinem Herzen vor seinem Gott, aber der Heilige Geist war noch bei ihmʼ; 805; 90/92;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ġắlabe mətkabər b-lebe qm-u=alohayḏe. walakən hēš i=ruḥo qadəšto áʕme-yo",
+                "translations": [
+                  "ʻer war sehr hochmütig in seinem Herzen vor seinem Gott, aber der Heilige Geist war noch bei ihmʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["805"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["90/92"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "hochmütig werden;"
-  ],
+  "idioms": ["hochmütig werden;"],
   "uncertain": false
 }

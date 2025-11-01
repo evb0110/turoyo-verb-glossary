@@ -14,25 +14,152 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "mahtakle",
-        "mahtək"
-      ],
+      "forms": ["mahtakle", "mahtək"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mahtaklan ḥḏoḏe prs",
+            "translations": ["(darauf) haben wir einander ausgeschimpft"],
+            "references": ["138", "219/20"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mahtaklan ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ(darauf) haben wir einander ausgeschimpftʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "138"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "219/20"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mahtaklan ḥḏoḏe ʻ(darauf) haben wir einander ausgeschimpftʼ; 138; prs 219/20;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mahtaklan ḥḏoḏe",
+                "translations": ["ʻ(darauf) haben wir einander ausgeschimpftʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["138"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["219/20"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "latyo ḥawǧa lo də-mšadralle l-dəkoṯe w lo d-tawrono ruḥi-ste w də-mbahdlono ruḥi mahətkono ruḥi",
+            "translations": [
+              "es ist nicht nötig, dass ich ihn irgendwo hinschicke, und nicht, dass ich mich selbst erniedrige und in eine schimpfliche Lage bringe"
+            ],
+            "references": ["144", "107/30"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "latyo ḥawǧa lo də-mšadralle l-dəkoṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w lo d-tawrono ruḥi-ste"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w də-mbahdlono ruḥi mahətkono ruḥi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes ist nicht nötig, dass ich ihn irgendwo hinschicke, und nicht, dass ich mich selbst erniedrige und in eine schimpfliche Lage bringeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "144"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "107/30"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "latyo ḥawǧa lo də-mšadralle l-dəkoṯe, w lo d-tawrono ruḥi-ste, w də-mbahdlono ruḥi mahətkono ruḥi ʻes ist nicht nötig, dass ich ihn irgendwo hinschicke, und nicht, dass ich mich selbst erniedrige und in eine schimpfliche Lage bringeʼ; 144; 107/30;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "latyo ḥawǧa lo də-mšadralle l-dəkoṯe, w lo d-tawrono ruḥi-ste, w də-mbahdlono ruḥi mahətkono ruḥi",
+                "translations": [
+                  "ʻes ist nicht nötig, dass ich ihn irgendwo hinschicke, und nicht, dass ich mich selbst erniedrige und in eine schimpfliche Lage bringeʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["144"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["107/30"]
+              }
+            ]
           }
         ]
       }
@@ -43,17 +170,52 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "Omər Rusṭam prs",
+            "translations": ["Qṭalu u kalbo, elo mahatkina."],
+            "references": ["68/30"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Omər Rusṭam"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“Qṭalu u kalbo, elo mahatkina.”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "68/30"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "Omər Rusṭam: “Qṭalu u kalbo, elo mahatkina.” prs 68/30;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "Omər Rusṭam: prs",
+                "translations": ["“Qṭalu u kalbo, elo mahatkina.”"],
+                "references": ["68/30"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "entehren, blosstellen;"
-  ],
+  "idioms": ["entehren, blosstellen;"],
   "uncertain": false
 }

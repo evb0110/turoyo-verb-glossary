@@ -5,24 +5,78 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "margaʕle",
-        "margəʕ"
-      ],
+      "forms": ["margaʕle", "margəʕ"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "kale g-margəʕ b-i=oda m-i=xaṣr-ayo g-əzzé l-ayo",
+            "translations": [
+              "da wälzt er sich in dem Zimmer von einer Seite auf die andere"
+            ],
+            "references": ["143", "112/161"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kale g-margəʕ b-i=oda m-i=xaṣr-ayo g-əzzé l-ayo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda wälzt er sich in dem Zimmer von einer Seite auf die andereʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "143"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "112/161"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kale g-margəʕ b-i=oda m-i=xaṣr-ayo g-əzzé l-ayo ʻda wälzt er sich in dem Zimmer von einer Seite auf die andereʼ; 143; 112/161;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kale g-margəʕ b-i=oda m-i=xaṣr-ayo g-əzzé l-ayo",
+                "translations": [
+                  "ʻda wälzt er sich in dem Zimmer von einer Seite auf die andereʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["143"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["112/161"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sich wälzen;"
-  ],
+  "idioms": ["sich wälzen;"],
   "uncertain": false
 }

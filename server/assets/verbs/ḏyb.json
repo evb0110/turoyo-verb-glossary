@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "maḏəble",
-        "maḏəb"
-      ],
+      "forms": ["maḏəble", "maḏəb"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "maḏəble",
+            "translations": ["er brachte ihn zum Schmelzen"],
+            "references": ["537"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maḏəble "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer brachte ihn zum Schmelzenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "537"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "maḏəble ʻer brachte ihn zum Schmelzenʼ; 537;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "maḏəble",
+                "translations": ["ʻer brachte ihn zum Schmelzenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["537"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "schmelzen lassen, zum Schmelzen bringen;"
-  ],
+  "idioms": ["schmelzen lassen, zum Schmelzen bringen;"],
   "uncertain": false
 }

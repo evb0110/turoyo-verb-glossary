@@ -14,17 +14,79 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mxalxele",
-        "mxalxəl"
-      ],
+      "forms": ["mxalxele", "mxalxəl"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ko-mxalxe-la l-i=xaṣr-aṯe w l-aṯe",
+            "translations": ["sie wiegte sich nach dieser und jener Seite"],
+            "references": ["1", "802", "65/531"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-mxalxe-la l-i=xaṣr-aṯe w l-aṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie wiegte sich nach dieser und jener Seiteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "802"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/531"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) ko-mxalxe-la l-i=xaṣr-aṯe w l-aṯe ʻsie wiegte sich nach dieser und jener Seiteʼ; 802; 65/531;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") ko-mxalxe-la l-i=xaṣr-aṯe w l-aṯe",
+                "translations": [
+                  "ʻsie wiegte sich nach dieser und jener Seiteʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["802"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["65/531"]
+              }
+            ]
           }
         ]
       }

@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mxarmašle",
-        "mxarməš"
-      ],
+      "forms": ["mxarmašle", "mxarməš"],
       "conjugations": {}
     },
     {
@@ -26,25 +23,136 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mxarmšo iḏi",
+            "translations": ["meine Hand ist zerkratzt (etwa von einer Katze)"],
+            "references": ["794"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mxarmšo iḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmeine Hand ist zerkratzt (etwa von einer Katze)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "794"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mxarmšo iḏi ʻmeine Hand ist zerkratzt (etwa von einer Katze)ʼ; 794;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mxarmšo iḏi",
+                "translations": [
+                  "ʻmeine Hand ist zerkratzt (etwa von einer Katze)ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["794"]
+              }
+            ]
           }
         ],
         "Part. Pass.": [
           {
+            "turoyo": "mxarmšo ḥzalle foṯe kula mxarbašto",
+            "translations": [
+              "rauh (Oberfläche)",
+              "‘Sie sahen, daß sein ganzes Gesicht wie verkratzt war’"
+            ],
+            "references": ["794", "30/155"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mxarmšo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻrauh (Oberfläche)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "794"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥzalle foṯe kula mxarbašto "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sie sahen, daß sein ganzes Gesicht wie verkratzt war’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/155"
+              }
+            ],
             "text": "mxarmšo ʻrauh (Oberfläche)ʼ; 794; ḥzalle foṯe kula mxarbašto ‘Sie sahen, daß sein ganzes Gesicht wie verkratzt war’; 30/155",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mxarmšo",
+                "translations": ["ʻrauh (Oberfläche)ʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["794"]
+              },
+              {
+                "turoyo": "ḥzalle foṯe kula mxarbašto",
+                "translations": [
+                  "‘Sie sahen, daß sein ganzes Gesicht wie verkratzt war’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["30/155"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "zerkratzen;"
-  ],
+  "idioms": ["zerkratzen;"],
   "uncertain": false
 }

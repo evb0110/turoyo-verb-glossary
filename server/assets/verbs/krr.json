@@ -14,32 +14,157 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mkaralle",
-        "mkarər"
-      ],
+      "forms": ["mkaralle", "mkarər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mkararre i=ǧġaliye ʕam ḥḏoḏe ġắlabe naqlat",
+            "translations": ["jene wiederholten ihr Gespräch noch viele Male"],
+            "references": ["498", "25/70"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mkararre i=ǧġaliye ʕam ḥḏoḏe ġắlabe naqlat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻjene wiederholten ihr Gespräch noch viele Maleʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "498"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/70"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mkararre i=ǧġaliye ʕam ḥḏoḏe ġắlabe naqlat ʻjene wiederholten ihr Gespräch noch viele Maleʼ; 498; 25/70;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mkararre i=ǧġaliye ʕam ḥḏoḏe ġắlabe naqlat",
+                "translations": [
+                  "ʻjene wiederholten ihr Gespräch noch viele Maleʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["498"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["25/70"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "u=mʕalləm kə-mkarər i=ǧumle k-obaʕno naqqá ḥreto d-mkarrat-li abrə d-man-hat",
+            "translations": [
+              "der Lehrer wiederholt den Satz",
+              "‘Ich verlange noch einmal, daß du mir wiederholst, wessen Sohn du bist’"
+            ],
+            "references": ["498", "29/205"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=mʕalləm kə-mkarər i=ǧumle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Lehrer wiederholt den Satzʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "498"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-obaʕno naqqá ḥreto d-mkarrat-li abrə d-man-hat "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Ich verlange noch einmal, daß du mir wiederholst, wessen Sohn du bist’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/205"
+              }
+            ],
             "text": "u=mʕalləm kə-mkarər i=ǧumle ʻder Lehrer wiederholt den Satzʼ; 498; k-obaʕno naqqá ḥreto d-mkarrat-li abrə d-man-hat ‘Ich verlange noch einmal, daß du mir wiederholst, wessen Sohn du bist’; 29/205",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=mʕalləm kə-mkarər i=ǧumle",
+                "translations": ["ʻder Lehrer wiederholt den Satzʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["498"]
+              },
+              {
+                "turoyo": "k-obaʕno naqqá ḥreto d-mkarrat-li abrə d-man-hat",
+                "translations": [
+                  "‘Ich verlange noch einmal, daß du mir wiederholst, wessen Sohn du bist’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/205"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "wiederholen, noch einmal sagen;"
-  ],
+  "idioms": ["wiederholen, noch einmal sagen;"],
   "uncertain": false
 }

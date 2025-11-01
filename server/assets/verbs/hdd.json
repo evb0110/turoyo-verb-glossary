@@ -14,25 +14,250 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mhadadle",
-        "mhadəd"
-      ],
+      "forms": ["mhadadle", "mhadəd"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "1) qayəm u=abuna xuri, mzaraṭle, mhadadle u=Ǧəǧǧe ʻThe father chor bishop menaced and threatened Ǧəǧǧeʼ; 497; 40/15 [MT]; 2) mhadadli u=mamrayḏe ʻich bestätige, nehme an, was er sagtʼ; 497;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "qayəm u=abuna xuri mzaraṭle mhadadle u=Ǧəǧǧe",
+            "translations": [
+              "The father chor bishop menaced and threatened Ǧəǧǧe"
+            ],
+            "references": ["1", "497", "40/15"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qayəm u=abuna xuri"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mzaraṭle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mhadadle u=Ǧəǧǧe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻThe father chor bishop menaced and threatened Ǧəǧǧeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "497"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "40/15"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) qayəm u=abuna xuri, mzaraṭle, mhadadle u=Ǧəǧǧe ʻThe father chor bishop menaced and threatened Ǧəǧǧeʼ; 497; 40/15 [MT];",
+            "segments": [
+              {
+                "turoyo": ") qayəm u=abuna xuri, mzaraṭle, mhadadle u=Ǧəǧǧe",
+                "translations": [
+                  "ʻThe father chor bishop menaced and threatened Ǧəǧǧeʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["497"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["40/15"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "mhadadli u=mamrayḏe",
+            "translations": ["ich bestätige, nehme an, was er sagt"],
+            "references": ["2", "497"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mhadadli u=mamrayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich bestätige, nehme an, was er sagtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "497"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) mhadadli u=mamrayḏe ʻich bestätige, nehme an, was er sagtʼ; 497;",
+            "segments": [
+              {
+                "turoyo": ") mhadadli u=mamrayḏe",
+                "translations": ["ʻich bestätige, nehme an, was er sagtʼ"],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["497"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "g-maḥənno sozat qumux d-u=mamrayḏi də-mhaddat-le",
+            "translations": [
+              "ich verlange von dir das Versprechen, dass du alles, was ich sage, bestätigst"
+            ],
+            "references": ["2", "497", "112/76"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-maḥənno sozat qumux"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-u=mamrayḏi də-mhaddat-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich verlange von dir das Versprechen, dass du alles, was ich sage, bestätigstʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "497"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "112/76"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) g-maḥənno sozat qumux, d-u=mamrayḏi də-mhaddat-le ʻich verlange von dir das Versprechen, dass du alles, was ich sage, bestätigstʼ; 497; 112/76;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") g-maḥənno sozat qumux, d-u=mamrayḏi də-mhaddat-le",
+                "translations": [
+                  "ʻich verlange von dir das Versprechen, dass du alles, was ich sage, bestätigstʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["497"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["112/76"]
+              }
+            ]
           }
         ]
       }

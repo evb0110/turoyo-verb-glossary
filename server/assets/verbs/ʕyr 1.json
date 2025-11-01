@@ -12,32 +12,122 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mʕayalle",
-        "mʕayər"
-      ],
+      "forms": ["mʕayalle", "mʕayər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "u=wolt d-arke maṯe w ʕǝ́sri-yo. mʕayalli i=makina l-goran d-u=wolt-ano",
+            "translations": [
+              "‘die Voltspannung ist hier 220. Ich habe das Gerät nach dieser Voltstärke eingestellt’"
+            ],
+            "references": ["220", "220", "13/5"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=wolt d-arke "
+              },
+              {
+                "kind": "ref",
+                "value": "220"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maṯe w ʕǝ́sri-yo. mʕayalli i=makina l-goran d-u=wolt-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "‘die Voltspannung ist hier 220. Ich habe das Gerät nach dieser Voltstärke eingestellt’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "13/5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=wolt d-arke 220, maṯe w ʕǝ́sri-yo. mʕayalli i=makina l-goran d-u=wolt-ano ‘die Voltspannung ist hier 220. Ich habe das Gerät nach dieser Voltstärke eingestellt’; 13/5;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=wolt d-arke , maṯe w ʕǝ́sri-yo. mʕayalli i=makina l-goran d-u=wolt-ano",
+                "translations": [
+                  "‘die Voltspannung ist hier 220. Ich habe das Gerät nach dieser Voltstärke eingestellt’"
+                ],
+                "references": ["220"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["13/5"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "Bu qayṭo ema gdoṯat? – Lu+goranawo gəmʕarno ruḥi (Ilyas p.c. May 6, 2025)",
-            "turoyo": "",
+            "turoyo": "Bu qayṭo ema gdoṯat? – Lu+goranawo gəmʕarno ruḥi Ilyas p.c. May",
             "translations": [],
-            "references": []
+            "references": ["6", "2025"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Bu qayṭo ema gdoṯat? – Lu+goranawo gəmʕarno ruḥi "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c. May "
+              },
+              {
+                "kind": "ref",
+                "value": "6"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2025"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Bu qayṭo ema gdoṯat? – Lu+goranawo gəmʕarno ruḥi (Ilyas p.c. May 6, 2025)",
+            "segments": [
+              {
+                "turoyo": "Bu qayṭo ema gdoṯat? – Lu+goranawo gəmʕarno ruḥi (Ilyas p.c. May , )",
+                "translations": [],
+                "references": ["6", "2025"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(richtig) einstellen (Maschine, Uhr);"
-  ],
+  "idioms": ["(richtig) einstellen (Maschine, Uhr);"],
   "uncertain": false
 }

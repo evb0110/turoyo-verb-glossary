@@ -14,24 +14,53 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mgalatle",
-        "mgalət"
-      ],
+      "forms": ["mgalatle", "mgalət"],
       "conjugations": {
         "Infectum": [
           {
-            "text": "killin tre kə-mgalti ʕam ḥḏoḏe; 226;",
-            "turoyo": "",
+            "turoyo": "killin tre kə-mgalti ʕam ḥḏoḏe",
             "translations": [],
-            "references": []
+            "references": ["226"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "killin tre kə-mgalti ʕam ḥḏoḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "226"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "killin tre kə-mgalti ʕam ḥḏoḏe; 226;",
+            "segments": [
+              {
+                "turoyo": "killin tre kə-mgalti ʕam ḥḏoḏe",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["226"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sich balgen"
-  ],
+  "idioms": ["sich balgen"],
   "uncertain": false
 }

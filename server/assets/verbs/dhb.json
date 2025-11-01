@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mdahəb",
-        "midahəb"
-      ],
+      "forms": ["mdahəb", "midahəb"],
       "conjugations": {}
     },
     {
@@ -26,25 +23,95 @@
       "conjugations": {
         "Preterit": [
           {
-            "text": "mdahbi; 225;",
-            "turoyo": "",
+            "turoyo": "mdahbi",
             "translations": [],
-            "references": []
+            "references": ["225"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mdahbi"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "225"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mdahbi; 225;",
+            "segments": [
+              {
+                "turoyo": "mdahbi",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["225"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "g-midahəb u=abrayḏi",
+            "translations": ["dann ist mein Sohn verloren"],
+            "references": ["225"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "g-midahəb u=abrayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdann ist mein Sohn verlorenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "225"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "g-midahəb u=abrayḏi ʻdann ist mein Sohn verlorenʼ; 225;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "g-midahəb u=abrayḏi",
+                "translations": ["ʻdann ist mein Sohn verlorenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["225"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) zerstreuen, verloren gehen lassen;"
-  ],
+  "idioms": ["(Detrans.) zerstreuen, verloren gehen lassen;"],
   "uncertain": false
 }

@@ -14,32 +14,178 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mətkayafle",
-        "mətkayəf"
-      ],
+      "forms": ["mətkayafle", "mətkayəf"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "me tamo he-žnuka u=abro d-u=šulṭono w i=barṯo d-u=zəfkar hawən aṯto w gawro w he-žnuka mətkyaffe w yatiwi ʕal u=xēr xwašiyaṯṯe bə-Ṣṭambəl",
+            "translations": [
+              "dann wurden der Sohn des Sultans und die Tochter des Goldschmiedes aufs neue Frau und Mann, vergnügten sich und wohnten glücklich und zufrieden in Stambul"
+            ],
+            "references": ["805", "105/142"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "me tamo he-žnuka u=abro d-u=šulṭono"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w i=barṯo d-u=zəfkar"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawən aṯto w gawro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w he-žnuka mətkyaffe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w yatiwi ʕal u=xēr xwašiyaṯṯe bə-Ṣṭambəl "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdann wurden der Sohn des Sultans und die Tochter des Goldschmiedes aufs neue Frau und Mann, vergnügten sich und wohnten glücklich und zufrieden in Stambulʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "805"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "105/142"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "me tamo he-žnuka u=abro d-u=šulṭono, w i=barṯo d-u=zəfkar, hawən aṯto w gawro, w he-žnuka mətkyaffe, w yatiwi ʕal u=xēr xwašiyaṯṯe bə-Ṣṭambəl ʻdann wurden der Sohn des Sultans und die Tochter des Goldschmiedes aufs neue Frau und Mann, vergnügten sich und wohnten glücklich und zufrieden in Stambulʼ; 805; 105/142;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "me tamo he-žnuka u=abro d-u=šulṭono, w i=barṯo d-u=zəfkar, hawən aṯto w gawro, w he-žnuka mətkyaffe, w yatiwi ʕal u=xēr xwašiyaṯṯe bə-Ṣṭambəl",
+                "translations": [
+                  "ʻdann wurden der Sohn des Sultans und die Tochter des Goldschmiedes aufs neue Frau und Mann, vergnügten sich und wohnten glücklich und zufrieden in Stambulʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["805"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["105/142"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
-            "text": "mətkayǝ́f; 805; 79/50; Пример отсутствует в указанном месте",
-            "turoyo": "",
+            "turoyo": "mətkayǝ́f Пример отсутствует в указанном месте",
             "translations": [],
-            "references": []
+            "references": ["805", "79/50"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mətkayǝ́f"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "805"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "79/50"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Пример отсутствует в указанном месте"
+              }
+            ],
+            "text": "mətkayǝ́f; 805; 79/50; Пример отсутствует в указанном месте",
+            "segments": [
+              {
+                "turoyo": "mətkayǝ́f",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["805"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["79/50"]
+              },
+              {
+                "turoyo": "Пример отсутствует в указанном месте",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "Vergnügen haben;"
-  ],
+  "idioms": ["Vergnügen haben;"],
   "uncertain": false
 }

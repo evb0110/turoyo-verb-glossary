@@ -5,24 +5,59 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mʕawzalle",
-        "mʕawzər"
-      ],
+      "forms": ["mʕawzalle", "mʕawzər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "l-ap=polīs mʕawzarre aḥ=ḥaramiye",
+            "translations": ["die Polizei pferchte, trieb die Räuber zusammen"],
+            "references": ["769"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-ap=polīs mʕawzarre aḥ=ḥaramiye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Polizei pferchte, trieb die Räuber zusammenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "769"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "l-ap=polīs mʕawzarre aḥ=ḥaramiye ʻdie Polizei pferchte, trieb die Räuber zusammenʼ; 769;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "l-ap=polīs mʕawzarre aḥ=ḥaramiye",
+                "translations": [
+                  "ʻdie Polizei pferchte, trieb die Räuber zusammenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["769"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "zusammenpferchen, drücken;"
-  ],
+  "idioms": ["zusammenpferchen, drücken;"],
   "uncertain": false
 }

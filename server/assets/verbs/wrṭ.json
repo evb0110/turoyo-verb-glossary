@@ -14,17 +14,52 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mwaraṭle",
-        "mwarəṭ"
-      ],
+      "forms": ["mwaraṭle", "mwarəṭ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mwaráṭle-li",
+            "translations": ["er hat mich hereingelegt, betrogen"],
+            "references": ["219"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mwaráṭle-li "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hat mich hereingelegt, betrogenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "219"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mwaráṭle-li ʻer hat mich hereingelegt, betrogenʼ; 219;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mwaráṭle-li",
+                "translations": ["ʻer hat mich hereingelegt, betrogenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["219"]
+              }
+            ]
           }
         ]
       }
@@ -35,17 +70,57 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mwaraṭno",
+            "translations": [
+              "(ich habe etwas gekauft), bin (aber) dabei hereingefallen, habe Schade davon gehabt"
+            ],
+            "references": ["219"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mwaraṭno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ(ich habe etwas gekauft), bin (aber) dabei hereingefallen, habe Schade davon gehabtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "219"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mwaraṭno ʻ(ich habe etwas gekauft), bin (aber) dabei hereingefallen, habe Schade davon gehabtʼ; 219;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mwaraṭno",
+                "translations": [
+                  "ʻ(ich habe etwas gekauft), bin (aber) dabei hereingefallen, habe Schade davon gehabtʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["219"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "hereinlegen, betrügen;"
-  ],
+  "idioms": ["hereinlegen, betrügen;"],
   "uncertain": false
 }

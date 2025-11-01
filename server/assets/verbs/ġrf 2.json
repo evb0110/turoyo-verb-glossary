@@ -5,10 +5,7 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "maġrafle",
-        "maġrəf"
-      ],
+      "forms": ["maġrafle", "maġrəf"],
       "conjugations": {}
     },
     {
@@ -17,17 +14,53 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "maġərfo",
+            "translations": ["kindisch geworden"],
+            "references": ["157"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maġərfo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻkindisch gewordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "157"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "maġərfo ʻkindisch gewordenʼ; 157;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "maġərfo",
+                "translations": ["ʻkindisch gewordenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["157"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "kindisch werden;"
-  ],
+  "idioms": ["kindisch werden;"],
   "uncertain": false
 }

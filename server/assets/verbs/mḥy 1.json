@@ -14,181 +14,5043 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mḥele",
-        "moḥe"
-      ],
+      "forms": ["mḥele", "moḥe"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "i=ḏ̣arbayḏe də-mḥele buxat mḥéle-la ḥa prs mḥéla-le ṣaṭra mḥéle-le maquzo prs l=abəʕno d-noḥanno grəššal-li b-u=zōr mḥállal-li b-ad=daḥfat mḥela ebi i=hawa w daʕiro i=ruḥ-ayḏi eli НУЖЕН БУКВАЛЬНЫЙ ПЕРЕВОД - м.б. wörtl sie schlug mich mit dem Luft und meine Atem kehrte zu mir zurück mḥele b-u=tarʕo nafəq side u=moro d-i=baxča ab=bahozat w-l-u=talgo w-l-u=pəzruk mḥalle b-foṯa mḥalle ʕam ḥḏoḏe b-u=darbo d-u=sayfo qayəm l-u=greʕo mḥéle-le lakmo ʕal foṯe w-msaktalle w-qayimo grəšla l-u=šuro w-mḥéli-la ..",
+            "translations": [
+              "der Schlag, den er gegen dich führte",
+              "er versetzte ihr eins",
+              "sie gab ihm eine Ohrfeige",
+              "er hackte mit dem Schnabel nach ihm",
+              "ich wollte nicht aussteigen. Sie zogen mich (aber) mit Gewalt heraus. Sie schlugen auf mich ein",
+              "ich bekam Luft und konnte wieder atmen",
+              "‘Er klopfte an das Tor, da kam der Herr des Gartens zu ihm heraus’",
+              "‘Die Wirbeiwinde und der Schnee, die Schloßen schlugen ihr ins Gesicht’",
+              "‘Sie kämpften mit den Schwertern gegeneinander’",
+              "‘The servant gave him a slap in the face and drove away’",
+              "‘And she (snake, f.) began coiling up at the wall, and then I hit her’"
+            ],
+            "references": ["1", "333", "29/168"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=ḏ̣arbayḏe də-mḥele buxat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Schlag, den er gegen dich führteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "333"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/168"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥéle-la ḥa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer versetzte ihr einsʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "341"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "222/14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥéla-le ṣaṭra "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie gab ihm eine Ohrfeigeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "344"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥéle-le maquzo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hackte mit dem Schnabel nach ihmʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "341"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "158/30"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " l=abəʕno d-noḥanno grəššal-li b-u=zōr mḥállal-li b-ad=daḥfat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich wollte nicht aussteigen. Sie zogen mich (aber) mit Gewalt heraus. Sie schlugen auf mich einʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 30"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥela ebi i=hawa w daʕiro i=ruḥ-ayḏi eli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich bekam Luft und konnte wieder atmenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 85"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "НУЖЕН БУКВАЛЬНЫЙ ПЕРЕВОД - м.б. wörtl"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " sie schlug mich mit dem Luft und meine Atem kehrte zu mir zurück"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥele b-u=tarʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " nafəq side u=moro d-i=baxča "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er klopfte an das Tor, da kam der Herr des Gartens zu ihm heraus’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/159"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ab=bahozat w-l-u=talgo w-l-u=pəzruk mḥalle b-foṯa "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Die Wirbeiwinde und der Schnee, die Schloßen schlugen ihr ins Gesicht’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/143"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥalle ʕam ḥḏoḏe b-u=darbo d-u=sayfo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sie kämpften mit den Schwertern gegeneinander’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/149"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qayəm l-u=greʕo mḥéle-le lakmo ʕal foṯe w-msaktalle "
+              },
+              {
+                "kind": "translation",
+                "value": "‘The servant gave him a slap in the face and drove away’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "43/26"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-qayimo grəšla l-u=šuro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-mḥéli-la "
+              },
+              {
+                "kind": "translation",
+                "value": "‘And she (snake, f.) began coiling up at the wall, and then I hit her’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 13"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "11"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "17"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) i=ḏ̣arbayḏe də-mḥele buxat ʻder Schlag, den er gegen dich führteʼ; 333; 29/168; mḥéle-la ḥa ʻer versetzte ihr einsʼ; 341; prs 222/14; mḥéla-le ṣaṭra ʻsie gab ihm eine Ohrfeigeʼ; 344; 62/21; mḥéle-le maquzo ʻer hackte mit dem Schnabel nach ihmʼ; 341; prs 158/30; l=abəʕno d-noḥanno grəššal-li b-u=zōr mḥállal-li b-ad=daḥfat ʻich wollte nicht aussteigen. Sie zogen mich (aber) mit Gewalt heraus. Sie schlugen auf mich einʼ; LB 30; mḥela ebi i=hawa w daʕiro i=ruḥ-ayḏi eli ʻich bekam Luft und konnte wieder atmenʼ; LB 85; (НУЖЕН БУКВАЛЬНЫЙ ПЕРЕВОД - м.б. wörtl: sie schlug mich mit dem Luft und meine Atem kehrte zu mir zurück) mḥele b-u=tarʕo, nafəq side u=moro d-i=baxča ‘Er klopfte an das Tor, da kam der Herr des Gartens zu ihm heraus’; 24/159; ab=bahozat w-l-u=talgo w-l-u=pəzruk mḥalle b-foṯa ‘Die Wirbeiwinde und der Schnee, die Schloßen schlugen ihr ins Gesicht’; 26/143; mḥalle ʕam ḥḏoḏe b-u=darbo d-u=sayfo ‘Sie kämpften mit den Schwertern gegeneinander’; 29/149; qayəm l-u=greʕo mḥéle-le lakmo ʕal foṯe w-msaktalle ‘The servant gave him a slap in the face and drove away’; 43/26 [MT]; w-qayimo grəšla l-u=šuro, w-mḥéli-la ‘And she (snake, f.) began coiling up at the wall, and then I hit her’ JL 13.11.17;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") i=ḏ̣arbayḏe də-mḥele buxat",
+                "translations": ["ʻder Schlag, den er gegen dich führteʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["333"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/168"]
+              },
+              {
+                "turoyo": "mḥéle-la ḥa",
+                "translations": ["ʻer versetzte ihr einsʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["341"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["222/14"]
+              },
+              {
+                "turoyo": "mḥéla-le ṣaṭra",
+                "translations": ["ʻsie gab ihm eine Ohrfeigeʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["344"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["62/21"]
+              },
+              {
+                "turoyo": "mḥéle-le maquzo",
+                "translations": ["ʻer hackte mit dem Schnabel nach ihmʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["341"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["158/30"]
+              },
+              {
+                "turoyo": "l=abəʕno d-noḥanno grəššal-li b-u=zōr mḥállal-li b-ad=daḥfat",
+                "translations": [
+                  "ʻich wollte nicht aussteigen. Sie zogen mich (aber) mit Gewalt heraus. Sie schlugen auf mich einʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 30"]
+              },
+              {
+                "turoyo": "mḥela ebi i=hawa w daʕiro i=ruḥ-ayḏi eli",
+                "translations": ["ʻich bekam Luft und konnte wieder atmenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 85"]
+              },
+              {
+                "turoyo": "(НУЖЕН БУКВАЛЬНЫЙ ПЕРЕВОД - м.б. wörtl: sie schlug mich mit dem Luft und meine Atem kehrte zu mir zurück) mḥele b-u=tarʕo, nafəq side u=moro d-i=baxča",
+                "translations": [
+                  "‘Er klopfte an das Tor, da kam der Herr des Gartens zu ihm heraus’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/159"]
+              },
+              {
+                "turoyo": "ab=bahozat w-l-u=talgo w-l-u=pəzruk mḥalle b-foṯa",
+                "translations": [
+                  "‘Die Wirbeiwinde und der Schnee, die Schloßen schlugen ihr ins Gesicht’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["26/143"]
+              },
+              {
+                "turoyo": "mḥalle ʕam ḥḏoḏe b-u=darbo d-u=sayfo",
+                "translations": [
+                  "‘Sie kämpften mit den Schwertern gegeneinander’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/149"]
+              },
+              {
+                "turoyo": "qayəm l-u=greʕo mḥéle-le lakmo ʕal foṯe w-msaktalle",
+                "translations": [
+                  "‘The servant gave him a slap in the face and drove away’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["43/26"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "w-qayimo grəšla l-u=šuro, w-mḥéli-la ..",
+                "translations": [
+                  "‘And she (snake, f.) began coiling up at the wall, and then I hit her’"
+                ],
+                "references": ["JL 13", "11", "17"]
+              }
+            ]
           },
           {
+            "turoyo": "mḥele ʕal i=dudŭke d-u=ḥarb mḥelan karyo aʕla mḥele l-Mīr M. qum Ramazān",
+            "translations": [
+              "er liess die Kriegspfeife ertönen",
+              "wir haben sie (Geschichte) gekürzt",
+              "Mir M. redete auf Ramasan ein"
+            ],
+            "references": ["333", "65/256", "337"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mḥele ʕal i=dudŭke d-u=ḥarb "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer liess die Kriegspfeife ertönenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "333"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/256"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥelan karyo aʕla "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir haben sie (Geschichte) gekürztʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "337"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥele l-Mīr M. qum Ramazān "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻMir M. redete auf Ramasan einʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "333"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/205"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mḥele ʕal i=dudŭke d-u=ḥarb ʻer liess die Kriegspfeife ertönenʼ; 333; 65/256; mḥelan karyo aʕla ʻwir haben sie (Geschichte) gekürztʼ; 337; mḥele l-Mīr M. qum Ramazān ʻMir M. redete auf Ramasan einʼ; 333; 65/205;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mḥele ʕal i=dudŭke d-u=ḥarb",
+                "translations": ["ʻer liess die Kriegspfeife ertönenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["333"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["65/256"]
+              },
+              {
+                "turoyo": "mḥelan karyo aʕla",
+                "translations": ["ʻwir haben sie (Geschichte) gekürztʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["337"]
+              },
+              {
+                "turoyo": "mḥele l-Mīr M. qum Ramazān",
+                "translations": ["ʻMir M. redete auf Ramasan einʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["333"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["65/205"]
+              }
+            ]
           },
           {
-            "text": "2) mḥela u=ḥabuš-ayḏa b-ḥa=kăčal ʻsie warf ihren Apfel auf einen Grindkopfʼ; 334; prs 62/29;  mḥele kefo mine ‘er warf einen Stein nach ihn’ Lehrbuch 12.13.5; nošo lə=mḥele ḥaṣayye b-i=arʕo ‘Niemand hatte noch seinen Rücken auf die Erde gezwungen’; 29/122; hani i=naqqa d-məlle u=xabr-ano l-u=zʕuro, hanək, az=zŭgurd-anək kulle mḥalle kefe ʻals der Jüngling das sagte, warfen alle jene Habenichtse mit Steinen nach ihmʼ; 29/473; w-hano u=zlam-ano u=ṭayo mədle l-i=kefo mḥele-le 'That Muslim grabbed a stone and threw it at him'  JL 12.13.7;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "mḥela u=ḥabuš-ayḏa b-ḥa=kăčal prs mḥele kefo mine Lehrbuch .. nošo lə=mḥele ḥaṣayye b-i=arʕo hani i=naqqa d-məlle u=xabr-ano l-u=zʕuro hanək az=zŭgurd-anək kulle mḥalle kefe w-hano u=zlam-ano u=ṭayo mədle l-i=kefo mḥele-le ..",
+            "translations": [
+              "sie warf ihren Apfel auf einen Grindkopf",
+              "‘er warf einen Stein nach ihn’",
+              "‘Niemand hatte noch seinen Rücken auf die Erde gezwungen’",
+              "als der Jüngling das sagte, warfen alle jene Habenichtse mit Steinen nach ihm",
+              "That Muslim grabbed a stone and threw it at him"
+            ],
+            "references": ["2", "334", "62/29"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥela u=ḥabuš-ayḏa b-ḥa=kăčal "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie warf ihren Apfel auf einen Grindkopfʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "334"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "62/29"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  mḥele kefo mine "
+              },
+              {
+                "kind": "translation",
+                "value": "‘er warf einen Stein nach ihn’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Lehrbuch "
+              },
+              {
+                "kind": "ref",
+                "value": "12"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "13"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " nošo lə=mḥele ḥaṣayye b-i=arʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Niemand hatte noch seinen Rücken auf die Erde gezwungen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/122"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hani i=naqqa d-məlle u=xabr-ano l-u=zʕuro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hanək"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " az=zŭgurd-anək kulle mḥalle kefe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals der Jüngling das sagte, warfen alle jene Habenichtse mit Steinen nach ihmʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/473"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-hano u=zlam-ano u=ṭayo mədle l-i=kefo mḥele-le "
+              },
+              {
+                "kind": "translation",
+                "value": "'That Muslim grabbed a stone and threw it at him'"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 12"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "13"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "7"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) mḥela u=ḥabuš-ayḏa b-ḥa=kăčal ʻsie warf ihren Apfel auf einen Grindkopfʼ; 334; prs 62/29; mḥele kefo mine ‘er warf einen Stein nach ihn’ Lehrbuch 12.13.5; nošo lə=mḥele ḥaṣayye b-i=arʕo ‘Niemand hatte noch seinen Rücken auf die Erde gezwungen’; 29/122; hani i=naqqa d-məlle u=xabr-ano l-u=zʕuro, hanək, az=zŭgurd-anək kulle mḥalle kefe ʻals der Jüngling das sagte, warfen alle jene Habenichtse mit Steinen nach ihmʼ; 29/473; w-hano u=zlam-ano u=ṭayo mədle l-i=kefo mḥele-le 'That Muslim grabbed a stone and threw it at him' JL 12.13.7;",
+            "segments": [
+              {
+                "turoyo": ") mḥela u=ḥabuš-ayḏa b-ḥa=kăčal",
+                "translations": ["ʻsie warf ihren Apfel auf einen Grindkopfʼ"],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["334"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["62/29"]
+              },
+              {
+                "turoyo": "mḥele kefo mine Lehrbuch ..",
+                "translations": ["‘er warf einen Stein nach ihn’"],
+                "references": ["12", "13", "5"]
+              },
+              {
+                "turoyo": "nošo lə=mḥele ḥaṣayye b-i=arʕo",
+                "translations": [
+                  "‘Niemand hatte noch seinen Rücken auf die Erde gezwungen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/122"]
+              },
+              {
+                "turoyo": "hani i=naqqa d-məlle u=xabr-ano l-u=zʕuro, hanək, az=zŭgurd-anək kulle mḥalle kefe",
+                "translations": [
+                  "ʻals der Jüngling das sagte, warfen alle jene Habenichtse mit Steinen nach ihmʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/473"]
+              },
+              {
+                "turoyo": "w-hano u=zlam-ano u=ṭayo mədle l-i=kefo mḥele-le ..",
+                "translations": [
+                  "'That Muslim grabbed a stone and threw it at him'"
+                ],
+                "references": ["JL 12", "13", "7"]
+              }
+            ]
           },
           {
+            "turoyo": "mḥela iḏa taḥt i=ṭaṣe mḥálal-lox b-i=stun-ayo mḥele a=greʕ-ayḏe bətre ruḥe zbəṭle raġle d-u=ṭayro mḥele b-ruḥe mḥele b-ruḥe npəṣle ruḥe m-aq=qayde w m-az=zineǧər-anək mḥele ḥaṣe l-u=stūn mḥele ʕal u=darbo",
+            "translations": [
+              "sie nahm die Schale auf die Hand",
+              "sie machten dir (dat. eth.) an die Säule",
+              "er nahm seine Knechte hinter sich",
+              "er packte den Vogel am Bein, riss ihn an sich",
+              "er riss sich los aus jenen Fesseln und Ketten",
+              "er lehnte sich mit dem Rücken an die Zeltstange",
+              "er machte sich auf den Weg"
+            ],
+            "references": ["334", "66/144", "342"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mḥela iḏa taḥt i=ṭaṣe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie nahm die Schale auf die Handʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "334"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "66/144"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[LTN]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥálal-lox b-i=stun-ayo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie machten dir (dat. eth.) an die Säuleʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "342"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "28/36"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥele a=greʕ-ayḏe bətre ruḥe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer nahm seine Knechte hinter sichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "333"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "66/98"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " zbəṭle raġle d-u=ṭayro mḥele b-ruḥe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer packte den Vogel am Bein, riss ihn an sichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "333"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70/95"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥele b-ruḥe npəṣle ruḥe m-aq=qayde w m-az=zineǧər-anək "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer riss sich los aus jenen Fesseln und Kettenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "333"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "96/258"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "259"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥele ḥaṣe l-u=stūn "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer lehnte sich mit dem Rücken an die Zeltstangeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "333"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥele ʕal u=darbo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer machte sich auf den Wegʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "333"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/60"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mḥela iḏa taḥt i=ṭaṣe ʻsie nahm die Schale auf die Handʼ; 334; 66/144 [LTN]; mḥálal-lox b-i=stun-ayo ʻsie machten dir (dat. eth.) an die Säuleʼ; 342; 28/36; mḥele a=greʕ-ayḏe bətre ruḥe ʻer nahm seine Knechte hinter sichʼ; 333; 66/98; zbəṭle raġle d-u=ṭayro mḥele b-ruḥe ʻer packte den Vogel am Bein, riss ihn an sichʼ; 333; 70/95; mḥele b-ruḥe npəṣle ruḥe m-aq=qayde w m-az=zineǧər-anək ʻer riss sich los aus jenen Fesseln und Kettenʼ; 333; 96/258, 259; mḥele ḥaṣe l-u=stūn ʻer lehnte sich mit dem Rücken an die Zeltstangeʼ; 333; mḥele ʕal u=darbo ʻer machte sich auf den Wegʼ; 333; 65/60;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mḥela iḏa taḥt i=ṭaṣe",
+                "translations": ["ʻsie nahm die Schale auf die Handʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["334"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["66/144"],
+                "notes": ["[LTN]"]
+              },
+              {
+                "turoyo": "mḥálal-lox b-i=stun-ayo",
+                "translations": ["ʻsie machten dir (dat. eth.) an die Säuleʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["342"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["28/36"]
+              },
+              {
+                "turoyo": "mḥele a=greʕ-ayḏe bətre ruḥe",
+                "translations": ["ʻer nahm seine Knechte hinter sichʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["333"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["66/98"]
+              },
+              {
+                "turoyo": "zbəṭle raġle d-u=ṭayro mḥele b-ruḥe",
+                "translations": [
+                  "ʻer packte den Vogel am Bein, riss ihn an sichʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["333"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["70/95"]
+              },
+              {
+                "turoyo": "mḥele b-ruḥe npəṣle ruḥe m-aq=qayde w m-az=zineǧər-anək",
+                "translations": [
+                  "ʻer riss sich los aus jenen Fesseln und Kettenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["333"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["96/258", "259"]
+              },
+              {
+                "turoyo": "mḥele ḥaṣe l-u=stūn",
+                "translations": [
+                  "ʻer lehnte sich mit dem Rücken an die Zeltstangeʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["333"]
+              },
+              {
+                "turoyo": "mḥele ʕal u=darbo",
+                "translations": ["ʻer machte sich auf den Wegʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["333"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["65/60"]
+              }
+            ]
           },
           {
+            "turoyo": "səmle qliḏo mamṭele mḥele ʕal i=ʕulbo prs ʕabər grəšle u=qliḏo w-mḥele ʕal-i=dukano ftəḥole mḥele u=sayf-ayḏe b-i=arʕo mḥele raġle b-u=šakkal-ayḏe u=huḏoyo maytele ṭəbbe d-zafto w-qiro mḥele b-aḏnoṯe sxəlle aḏnoṯe",
+            "translations": [
+              "er liess einen Schlüssel machen. Er brachte ihn steckte ihn in die Schachtel",
+              "‘Er ging hinein, zog den Schlüssel hervor, steckte ihn in (das Türschloß des) Ladens und öffnete ihn’",
+              "er stiess sein Schwert in die Erde",
+              "er steckte die Füsse in die Pantoffeln",
+              "‘Der Jude brachte Kugeln aus Teer und Pech herbei, steckte sie ihm in die Ehren, verschloß ihm die Ehren’"
+            ],
+            "references": ["3", "332", "14/4"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " səmle qliḏo mamṭele mḥele ʕal i=ʕulbo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer liess einen Schlüssel machen. Er brachte ihn steckte ihn in die Schachtelʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "332"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "14/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕabər grəšle u=qliḏo w-mḥele ʕal-i=dukano ftəḥole "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er ging hinein, zog den Schlüssel hervor, steckte ihn in (das Türschloß des) Ladens und öffnete ihn’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "28/22"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥele u=sayf-ayḏe b-i=arʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer stiess sein Schwert in die Erdeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "333"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/120"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥele raġle b-u=šakkal-ayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer steckte die Füsse in die Pantoffelnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "333"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/44"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=huḏoyo maytele ṭəbbe d-zafto w-qiro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥele b-aḏnoṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " sxəlle aḏnoṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Der Jude brachte Kugeln aus Teer und Pech herbei, steckte sie ihm in die Ehren, verschloß ihm die Ehren’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/277"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "3) səmle qliḏo mamṭele mḥele ʕal i=ʕulbo ʻer liess einen Schlüssel machen. Er brachte ihn steckte ihn in die Schachtelʼ; 332; prs 14/4; ʕabər grəšle u=qliḏo w-mḥele ʕal-i=dukano ftəḥole ‘Er ging hinein, zog den Schlüssel hervor, steckte ihn in (das Türschloß des) Ladens und öffnete ihn’; 28/22 [MT]; mḥele u=sayf-ayḏe b-i=arʕo ʻer stiess sein Schwert in die Erdeʼ; 333; 29/120; mḥele raġle b-u=šakkal-ayḏe ʻer steckte die Füsse in die Pantoffelnʼ; 333; 65/44; u=huḏoyo maytele ṭəbbe d-zafto w-qiro, mḥele b-aḏnoṯe, sxəlle aḏnoṯe ‘Der Jude brachte Kugeln aus Teer und Pech herbei, steckte sie ihm in die Ehren, verschloß ihm die Ehren’; 24/277 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") səmle qliḏo mamṭele mḥele ʕal i=ʕulbo",
+                "translations": [
+                  "ʻer liess einen Schlüssel machen. Er brachte ihn steckte ihn in die Schachtelʼ"
+                ],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["332"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["14/4"]
+              },
+              {
+                "turoyo": "ʕabər grəšle u=qliḏo w-mḥele ʕal-i=dukano ftəḥole",
+                "translations": [
+                  "‘Er ging hinein, zog den Schlüssel hervor, steckte ihn in (das Türschloß des) Ladens und öffnete ihn’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["28/22"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "mḥele u=sayf-ayḏe b-i=arʕo",
+                "translations": ["ʻer stiess sein Schwert in die Erdeʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["333"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/120"]
+              },
+              {
+                "turoyo": "mḥele raġle b-u=šakkal-ayḏe",
+                "translations": ["ʻer steckte die Füsse in die Pantoffelnʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["333"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["65/44"]
+              },
+              {
+                "turoyo": "u=huḏoyo maytele ṭəbbe d-zafto w-qiro, mḥele b-aḏnoṯe, sxəlle aḏnoṯe",
+                "translations": [
+                  "‘Der Jude brachte Kugeln aus Teer und Pech herbei, steckte sie ihm in die Ehren, verschloß ihm die Ehren’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/277"],
+                "notes": ["[MT]"]
+              }
+            ]
           },
           {
-            "text": "4) mədle pərtke m-u=ṭayro məḥyole b-ʕayne d-u=babo ʻda nahm er ein Federchen von dem Vogel und berührte damit die Augen des Vatersʼ; 337; 70/247; 5) mḥele qume ʻer ging immer geradeausʼ; 333; 30/60; mḥele b-u=čol ʻer ritt durch die Steppeʼ; 333; 58/217; mḥele bəṯr i=ġăzale ʻer setzte der Gazelle nachʼ; 333; 28/103; hano bəṯṯər məd-fayət mədde d-šabṯo b-i=walaye, šqíle-le darmone, maḥtile b-i=čant-ayḏe aʕme w-mḥele b-aš=šuqone d-i=walaye ‘Nachdem er eine Woche in der Stadt verbracht hatte, kaufte er Heilmittel, tat sie zu sich in seine Handtasche und ging auf den Straßen der Stadt umher’; 24/58; [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "mədle pərtke m-u=ṭayro məḥyole b-ʕayne d-u=babo",
+            "translations": [
+              "da nahm er ein Federchen von dem Vogel und berührte damit die Augen des Vaters"
+            ],
+            "references": ["4", "337", "70/247"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "4"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mədle pərtke m-u=ṭayro məḥyole b-ʕayne d-u=babo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda nahm er ein Federchen von dem Vogel und berührte damit die Augen des Vatersʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "337"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70/247"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "4) mədle pərtke m-u=ṭayro məḥyole b-ʕayne d-u=babo ʻda nahm er ein Federchen von dem Vogel und berührte damit die Augen des Vatersʼ; 337; 70/247;",
+            "segments": [
+              {
+                "turoyo": ") mədle pərtke m-u=ṭayro məḥyole b-ʕayne d-u=babo",
+                "translations": [
+                  "ʻda nahm er ein Federchen von dem Vogel und berührte damit die Augen des Vatersʼ"
+                ],
+                "references": ["4"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["337"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["70/247"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
           },
           {
+            "turoyo": "mḥele qume mḥele b-u=čol mḥele bəṯr i=ġăzale hano bəṯṯər məd-fayət mədde d-šabṯo b-i=walaye šqíle-le darmone maḥtile b-i=čant-ayḏe aʕme w-mḥele b-aš=šuqone d-i=walaye",
+            "translations": [
+              "er ging immer geradeaus",
+              "er ritt durch die Steppe",
+              "er setzte der Gazelle nach",
+              "‘Nachdem er eine Woche in der Stadt verbracht hatte, kaufte er Heilmittel, tat sie zu sich in seine Handtasche und ging auf den Straßen der Stadt umher’"
+            ],
+            "references": ["5", "333", "30/60"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "5"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥele qume "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer ging immer geradeausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "333"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/60"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥele b-u=čol "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer ritt durch die Steppeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "333"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "58/217"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥele bəṯr i=ġăzale "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer setzte der Gazelle nachʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "333"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "28/103"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hano bəṯṯər məd-fayət mədde d-šabṯo b-i=walaye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šqíle-le darmone"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥtile b-i=čant-ayḏe aʕme w-mḥele b-aš=šuqone d-i=walaye "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Nachdem er eine Woche in der Stadt verbracht hatte, kaufte er Heilmittel, tat sie zu sich in seine Handtasche und ging auf den Straßen der Stadt umher’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/58"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "5) mḥele qume ʻer ging immer geradeausʼ; 333; 30/60; mḥele b-u=čol ʻer ritt durch die Steppeʼ; 333; 58/217; mḥele bəṯr i=ġăzale ʻer setzte der Gazelle nachʼ; 333; 28/103; hano bəṯṯər məd-fayət mədde d-šabṯo b-i=walaye, šqíle-le darmone, maḥtile b-i=čant-ayḏe aʕme w-mḥele b-aš=šuqone d-i=walaye ‘Nachdem er eine Woche in der Stadt verbracht hatte, kaufte er Heilmittel, tat sie zu sich in seine Handtasche und ging auf den Straßen der Stadt umher’; 24/58; [MT]",
+            "segments": [
+              {
+                "turoyo": ") mḥele qume",
+                "translations": ["ʻer ging immer geradeausʼ"],
+                "references": ["5"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["333"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["30/60"]
+              },
+              {
+                "turoyo": "mḥele b-u=čol",
+                "translations": ["ʻer ritt durch die Steppeʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["333"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["58/217"]
+              },
+              {
+                "turoyo": "mḥele bəṯr i=ġăzale",
+                "translations": ["ʻer setzte der Gazelle nachʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["333"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["28/103"]
+              },
+              {
+                "turoyo": "hano bəṯṯər məd-fayət mədde d-šabṯo b-i=walaye, šqíle-le darmone, maḥtile b-i=čant-ayḏe aʕme w-mḥele b-aš=šuqone d-i=walaye",
+                "translations": [
+                  "‘Nachdem er eine Woche in der Stadt verbracht hatte, kaufte er Heilmittel, tat sie zu sich in seine Handtasche und ging auf den Straßen der Stadt umher’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/58"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": [],
+                "notes": ["[MT]"]
+              }
+            ]
+          },
+          {
+            "turoyo": "mə́dle-le bahro b-qamuṯa mḥele b-qamuṯə-d-i=kačke mḥele bəṯra kibe qunáġ d-tloṯ=saʕat lə=k-soyəm toprax aʕla qayimo i=ġəzale barimo tloṯo=dawre mə-xaṣr-aṯe w-m-aṯe naqla tarte d-a=tloṯo mḥela ruḥa bayn l-u=sayfo w-l-i=rumḥ-ayḏe w-naqla fayito mḥele bənne w-ho d-maṭi l-u=babo k-mḥeli b-i=barriy-aṯe hani šawʕo=yawme",
+            "translations": [
+              "‘Er nahm ein Licht in die Hand [und] trat vor das Mädchen’",
+              "‘Er setzte ihr nach, etwa drei Stundenwege lang, gewann aber keinen Boden gegen sie’",
+              "‘So lief denn die Gazelle dreimal im Kreise herum, von dieser und von jener seite; einmal, zweimal, beim dritten male sprang sie zwischen seinem Schwert und seiner Lanze hindurch, und mit einem Male war sie hindurchgeschlüpft’",
+              "‘Er bahnte sich den Weg durch sie, bis er zum Vater kam’",
+              "‘Ich bin sieben Tage durch die Steppe gezogen’"
+            ],
+            "references": ["5", "26/231", "28/83"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "5"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mə́dle-le bahro b-qamuṯa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥele b-qamuṯə-d-i=kačke "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er nahm ein Licht in die Hand [und] trat vor das Mädchen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/231"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥele bəṯra"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kibe qunáġ d-tloṯ=saʕat"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=k-soyəm toprax aʕla "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er setzte ihr nach, etwa drei Stundenwege lang, gewann aber keinen Boden gegen sie’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "28/83"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qayimo i=ġəzale"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " barimo tloṯo=dawre"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mə-xaṣr-aṯe w-m-aṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " naqla"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " tarte d-a=tloṯo mḥela ruḥa bayn l-u=sayfo w-l-i=rumḥ-ayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-naqla fayito "
+              },
+              {
+                "kind": "translation",
+                "value": "‘So lief denn die Gazelle dreimal im Kreise herum, von dieser und von jener seite; einmal, zweimal, beim dritten male sprang sie zwischen seinem Schwert und seiner Lanze hindurch, und mit einem Male war sie hindurchgeschlüpft’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "28/96"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥele bənne w-ho d-maṭi l-u=babo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er bahnte sich den Weg durch sie, bis er zum Vater kam’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/440"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-mḥeli b-i=barriy-aṯe hani šawʕo=yawme "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Ich bin sieben Tage durch die Steppe gezogen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/447"
+              }
+            ],
             "text": "5) mə́dle-le bahro b-qamuṯa, mḥele b-qamuṯə-d-i=kačke ‘Er nahm ein Licht in die Hand [und] trat vor das Mädchen’; 26/231; mḥele bəṯra, kibe qunáġ d-tloṯ=saʕat, lə=k-soyəm toprax aʕla ‘Er setzte ihr nach, etwa drei Stundenwege lang, gewann aber keinen Boden gegen sie’; 28/83 [MT]; qayimo i=ġəzale, barimo tloṯo=dawre, mə-xaṣr-aṯe w-m-aṯe; naqla, tarte d-a=tloṯo mḥela ruḥa bayn l-u=sayfo w-l-i=rumḥ-ayḏe, w-naqla fayito ‘So lief denn die Gazelle dreimal im Kreise herum, von dieser und von jener seite; einmal, zweimal, beim dritten male sprang sie zwischen seinem Schwert und seiner Lanze hindurch, und mit einem Male war sie hindurchgeschlüpft’; 28/96; mḥele bənne w-ho d-maṭi l-u=babo ‘Er bahnte sich den Weg durch sie, bis er zum Vater kam’; 29/440; k-mḥeli b-i=barriy-aṯe hani šawʕo=yawme ‘Ich bin sieben Tage durch die Steppe gezogen’; 29/447",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mə́dle-le bahro b-qamuṯa, mḥele b-qamuṯə-d-i=kačke",
+                "translations": [
+                  "‘Er nahm ein Licht in die Hand [und] trat vor das Mädchen’"
+                ],
+                "references": ["5"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["26/231"]
+              },
+              {
+                "turoyo": "mḥele bəṯra, kibe qunáġ d-tloṯ=saʕat, lə=k-soyəm toprax aʕla",
+                "translations": [
+                  "‘Er setzte ihr nach, etwa drei Stundenwege lang, gewann aber keinen Boden gegen sie’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["28/83"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "qayimo i=ġəzale, barimo tloṯo=dawre, mə-xaṣr-aṯe w-m-aṯe",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "naqla, tarte d-a=tloṯo mḥela ruḥa bayn l-u=sayfo w-l-i=rumḥ-ayḏe, w-naqla fayito",
+                "translations": [
+                  "‘So lief denn die Gazelle dreimal im Kreise herum, von dieser und von jener seite; einmal, zweimal, beim dritten male sprang sie zwischen seinem Schwert und seiner Lanze hindurch, und mit einem Male war sie hindurchgeschlüpft’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["28/96"]
+              },
+              {
+                "turoyo": "mḥele bənne w-ho d-maṭi l-u=babo",
+                "translations": [
+                  "‘Er bahnte sich den Weg durch sie, bis er zum Vater kam’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/440"]
+              },
+              {
+                "turoyo": "k-mḥeli b-i=barriy-aṯe hani šawʕo=yawme",
+                "translations": [
+                  "‘Ich bin sieben Tage durch die Steppe gezogen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/447"]
+              }
+            ]
           },
           {
-            "text": "mḥalle foṯi-d-qudumto ʕal u=ṭarš d-aḥ=ḥəlone d-u=zʕuro ‘am frühen Morgen überfielen sie das Vieh der Onkel des Jünglings’; 29/414; qayəm m-arke, mḥele u=talān l-qume ‘Er ging fort von dort und trieb das Vieh vor sich her’; 29/452; ad=dəžmən-ne k-aṯən w-mḥalle ʕal u=talan d-u=šex-ano ‘Die Feinde waren gekommen, das Vieh des Scheichs  überfallen’; 30/90; hano aṯi madʕalle u=talan-ayḏe mḥele hol l-femi d-u=čadər-ayḏe ‘Er kam und führte das Vieh zurück und trieb es bis zum Eingang seines Zeltes’; 30/131 - УВОДИТЬ, ВЕСТИ СКОТ",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "mḥalle foṯi-d-qudumto ʕal u=ṭarš d-aḥ=ḥəlone d-u=zʕuro qayəm m-arke mḥele u=talān l-qume ad=dəžmən-ne k-aṯən w-mḥalle ʕal u=talan d-u=šex-ano hano aṯi madʕalle u=talan-ayḏe mḥele hol l-femi d-u=čadər-ayḏe - УВОДИТЬ ВЕСТИ СКОТ",
+            "translations": [
+              "‘am frühen Morgen überfielen sie das Vieh der Onkel des Jünglings’",
+              "‘Er ging fort von dort und trieb das Vieh vor sich her’",
+              "‘Die Feinde waren gekommen, das Vieh des Scheichs überfallen’",
+              "‘Er kam und führte das Vieh zurück und trieb es bis zum Eingang seines Zeltes’"
+            ],
+            "references": ["29/414", "29/452", "30/90"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mḥalle foṯi-d-qudumto ʕal u=ṭarš d-aḥ=ḥəlone d-u=zʕuro "
+              },
+              {
+                "kind": "translation",
+                "value": "‘am frühen Morgen überfielen sie das Vieh der Onkel des Jünglings’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/414"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qayəm m-arke"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥele u=talān l-qume "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er ging fort von dort und trieb das Vieh vor sich her’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/452"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ad=dəžmən-ne k-aṯən w-mḥalle ʕal u=talan d-u=šex-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Die Feinde waren gekommen, das Vieh des Scheichs  überfallen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/90"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hano aṯi madʕalle u=talan-ayḏe mḥele hol l-femi d-u=čadər-ayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er kam und führte das Vieh zurück und trieb es bis zum Eingang seines Zeltes’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/131"
+              },
+              {
+                "kind": "turoyo",
+                "value": " - УВОДИТЬ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ВЕСТИ СКОТ"
+              }
+            ],
+            "text": "mḥalle foṯi-d-qudumto ʕal u=ṭarš d-aḥ=ḥəlone d-u=zʕuro ‘am frühen Morgen überfielen sie das Vieh der Onkel des Jünglings’; 29/414; qayəm m-arke, mḥele u=talān l-qume ‘Er ging fort von dort und trieb das Vieh vor sich her’; 29/452; ad=dəžmən-ne k-aṯən w-mḥalle ʕal u=talan d-u=šex-ano ‘Die Feinde waren gekommen, das Vieh des Scheichs überfallen’; 30/90; hano aṯi madʕalle u=talan-ayḏe mḥele hol l-femi d-u=čadər-ayḏe ‘Er kam und führte das Vieh zurück und trieb es bis zum Eingang seines Zeltes’; 30/131 - УВОДИТЬ, ВЕСТИ СКОТ",
+            "segments": [
+              {
+                "turoyo": "mḥalle foṯi-d-qudumto ʕal u=ṭarš d-aḥ=ḥəlone d-u=zʕuro",
+                "translations": [
+                  "‘am frühen Morgen überfielen sie das Vieh der Onkel des Jünglings’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/414"]
+              },
+              {
+                "turoyo": "qayəm m-arke, mḥele u=talān l-qume",
+                "translations": [
+                  "‘Er ging fort von dort und trieb das Vieh vor sich her’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/452"]
+              },
+              {
+                "turoyo": "ad=dəžmən-ne k-aṯən w-mḥalle ʕal u=talan d-u=šex-ano",
+                "translations": [
+                  "‘Die Feinde waren gekommen, das Vieh des Scheichs überfallen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["30/90"]
+              },
+              {
+                "turoyo": "hano aṯi madʕalle u=talan-ayḏe mḥele hol l-femi d-u=čadər-ayḏe",
+                "translations": [
+                  "‘Er kam und führte das Vieh zurück und trieb es bis zum Eingang seines Zeltes’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "- УВОДИТЬ, ВЕСТИ СКОТ",
+                "translations": [],
+                "references": ["30/131"]
+              }
+            ]
           },
           {
+            "turoyo": "mḥela u=ṣʕun-ayḏa b-raġla + - preterit in the future-time domain",
+            "translations": ["sie zog ihre Schuhe an"],
+            "references": ["6", "334", "26/141"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "6"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥela u=ṣʕun-ayḏa b-raġla "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie zog ihre Schuhe anʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "334"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/141"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " + "
+              },
+              {
+                "kind": "ref",
+                "value": "6/48"
+              },
+              {
+                "kind": "turoyo",
+                "value": " - preterit in the future-time domain"
+              }
+            ],
             "text": "6) mḥela u=ṣʕun-ayḏa b-raġla ʻsie zog ihre Schuhe anʼ; 334; 26/141; + 6/48 - preterit in the future-time domain",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mḥela u=ṣʕun-ayḏa b-raġla",
+                "translations": ["ʻsie zog ihre Schuhe anʼ"],
+                "references": ["6"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["334"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["26/141"]
+              },
+              {
+                "turoyo": "+ - preterit in the future-time domain",
+                "translations": [],
+                "references": ["6/48"]
+              }
+            ]
           },
           {
+            "turoyo": "lo=zayʕat! u=kalbo išqaḏ mḥəlal-le mḥaṭo d-u=quduz mḥéle-li tre=mḥaṭe",
+            "translations": [
+              "‘du brauchst keine Angst zu haben. Den Hund haben wir voriges Jahr gegen Tollwut geimpft’",
+              "er gab mir zwei Spritzen"
+            ],
+            "references": ["7", "7/14", "EL 43"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "7"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=zayʕat! u=kalbo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " išqaḏ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥəlal-le mḥaṭo d-u=quduz "
+              },
+              {
+                "kind": "translation",
+                "value": "‘du brauchst keine Angst zu haben. Den Hund haben wir voriges Jahr gegen Tollwut geimpft’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "7/14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥéle-li tre=mḥaṭe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer gab mir zwei Spritzenʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "EL 43"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "7) lo=zayʕat! u=kalbo, išqaḏ, mḥəlal-le mḥaṭo d-u=quduz ‘du brauchst keine Angst zu haben. Den Hund haben wir voriges Jahr gegen Tollwut geimpft’; 7/14; mḥéle-li tre=mḥaṭe ʻer gab mir zwei Spritzenʼ EL 43;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") lo=zayʕat! u=kalbo, išqaḏ, mḥəlal-le mḥaṭo d-u=quduz",
+                "translations": [
+                  "‘du brauchst keine Angst zu haben. Den Hund haben wir voriges Jahr gegen Tollwut geimpft’"
+                ],
+                "references": ["7"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["7/14"]
+              },
+              {
+                "turoyo": "mḥéle-li tre=mḥaṭe",
+                "translations": ["ʻer gab mir zwei Spritzenʼ"],
+                "references": ["EL 43"]
+              }
+            ]
           },
           {
+            "turoyo": "mḥele mena fako rabo hayo i-ḥreto hawyo xayəfto",
+            "translations": [
+              "‘Biß ein großes Stück davon ab, und das Stück wurde leicht’"
+            ],
+            "references": ["9", "22/8"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "9"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥele mena fako rabo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hayo i-ḥreto hawyo xayəfto "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Biß ein großes Stück davon ab, und das Stück wurde leicht’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "22/8"
+              }
+            ],
             "text": "9) mḥele mena fako rabo, hayo i-ḥreto hawyo xayəfto ‘Biß ein großes Stück davon ab, und das Stück wurde leicht’; 22/8",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mḥele mena fako rabo, hayo i-ḥreto hawyo xayəfto",
+                "translations": [
+                  "‘Biß ein großes Stück davon ab, und das Stück wurde leicht’"
+                ],
+                "references": ["9"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["22/8"]
+              }
+            ]
           },
           {
-            "text": "11)  mḥalle b-ann=alfaye tfənag ʻsie feuerten tausende Schüsseʼ; LB 304; i=ʕaskar m-i=ʕito mḥela b-aṣ=Ṣuroye. ḥa mənne lo=qadər nofəq m-u=bayto ‘The military was firing (shots) at the Syrians from the church. No one could go out from his house’ 71/94;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "mḥalle b-ann=alfaye tfənag i=ʕaskar m-i=ʕito mḥela b-aṣ=Ṣuroye. ḥa mənne lo=qadər nofəq m-u=bayto",
+            "translations": [
+              "sie feuerten tausende Schüsse",
+              "‘The military was firing (shots) at the Syrians from the church. No one could go out from his house’"
+            ],
+            "references": ["11", "LB 304", "71/94"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "11"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  mḥalle b-ann=alfaye tfənag "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie feuerten tausende Schüsseʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 304"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=ʕaskar m-i=ʕito mḥela b-aṣ=Ṣuroye. ḥa mənne lo=qadər nofəq m-u=bayto "
+              },
+              {
+                "kind": "translation",
+                "value": "‘The military was firing (shots) at the Syrians from the church. No one could go out from his house’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "71/94"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "11) mḥalle b-ann=alfaye tfənag ʻsie feuerten tausende Schüsseʼ; LB 304; i=ʕaskar m-i=ʕito mḥela b-aṣ=Ṣuroye. ḥa mənne lo=qadər nofəq m-u=bayto ‘The military was firing (shots) at the Syrians from the church. No one could go out from his house’ 71/94;",
+            "segments": [
+              {
+                "turoyo": ") mḥalle b-ann=alfaye tfənag",
+                "translations": ["ʻsie feuerten tausende Schüsseʼ"],
+                "references": ["11"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 304"]
+              },
+              {
+                "turoyo": "i=ʕaskar m-i=ʕito mḥela b-aṣ=Ṣuroye. ḥa mənne lo=qadər nofəq m-u=bayto",
+                "translations": [
+                  "‘The military was firing (shots) at the Syrians from the church. No one could go out from his house’"
+                ],
+                "references": ["71/94"]
+              }
+            ]
           },
           {
+            "turoyo": "mḥalle ṣadr-ayye b-u=šuro d-i=kozk-ayo w-mazʕaqqe ʕal aṭ=Ṭaye",
+            "translations": [
+              "‘Sie stemmten sich mit der Brust gegen die Mauer der Schanze und schrien den Muhammedanern zu’"
+            ],
+            "references": ["12", "33/30"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "12"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥalle ṣadr-ayye b-u=šuro d-i=kozk-ayo w-mazʕaqqe ʕal aṭ=Ṭaye "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sie stemmten sich mit der Brust gegen die Mauer der Schanze und schrien den Muhammedanern zu’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "33/30"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "12) mḥalle ṣadr-ayye b-u=šuro d-i=kozk-ayo w-mazʕaqqe ʕal aṭ=Ṭaye ‘Sie stemmten sich mit der Brust gegen die Mauer der Schanze und schrien den Muhammedanern zu’; 33/30 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mḥalle ṣadr-ayye b-u=šuro d-i=kozk-ayo w-mazʕaqqe ʕal aṭ=Ṭaye",
+                "translations": [
+                  "‘Sie stemmten sich mit der Brust gegen die Mauer der Schanze und schrien den Muhammedanern zu’"
+                ],
+                "references": ["12"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["33/30"],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "ʕal-ayo u=babo kə-mḥayəf w g-moḥe ʕal qarʕə-d-ruḥe falito m-iḏe k-moḥe u=sayfo b-qarʕe ko-moḥe b-darmone qum nḥire bəṯṯər mədə-mnaḏ̣affe ag=gelon-ani edi u=zād ko-moḥe b-ruḥe w gəd-ḥŭzena təx laxalf mŭḥen-əx rafso ʕắǧaba i=səsto-ste gd-uḏʕo muḥyo hawxa rafsat? grəšle u=sayf-ayḏe l-u=abro d-məḥe-le l-u=babo i=aṯto mə d-saymo ko-moḥe-la НЕ ОЧЕНЬ ЯСНО ЧТО ЯВЛЯЕТСЯ ПРЯМЫМ ОБЪЕКТОМ ДЛЯ ЭТОГО ГЛАГОЛА В ПРИНЦИПЕ ТО ЧЕМ БЬЮТ ИЛИ ТО КОГО БЬЮТ",
+            "translations": [
+              "‘da jammert der Vater und schlägt sich an den Kopf, aber es ist nichts mehr zu machen’",
+              "dem schlägt er mit dem Schwert den Kopf ab",
+              "er hält, stösst ihm Arznei unter die Nase",
+              "wenn sie diese Kräuter weggeputzt haben, macht sich das Getreide heraus",
+              "‘wir wollen doch sehen! Komm du mal nach hinten (hinter mich), dann will ich dir einen Tritt mit den Hufen geben! Ob wohl das Pferd solche Huftritte zu geben versteht?’",
+              "‘Er zog sein Schwert, um es gegen den Vater zu schwingen’",
+              "‘Whatever the wife does, he beats her’"
+            ],
+            "references": ["1", "355", "6/22"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕal-ayo u=babo kə-mḥayəf w g-moḥe ʕal qarʕə-d-ruḥe falito m-iḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘da jammert der Vater und schlägt sich an den Kopf, aber es ist nichts mehr zu machen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "355"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/22"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-moḥe u=sayfo b-qarʕe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdem schlägt er mit dem Schwert den Kopf abʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "355"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "57/138"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-moḥe b-darmone qum nḥire "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hält, stösst ihm Arznei unter die Naseʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "355"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "67/207"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər mədə-mnaḏ̣affe ag=gelon-ani"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " edi u=zād ko-moḥe b-ruḥe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn sie diese Kräuter weggeputzt haben, macht sich das Getreide herausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "355"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/84"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w gəd-ḥŭzena təx laxalf mŭḥen-əx rafso ʕắǧaba i=səsto-ste gd-uḏʕo muḥyo hawxa rafsat? "
+              },
+              {
+                "kind": "translation",
+                "value": "‘wir wollen doch sehen! Komm du mal nach hinten (hinter mich), dann will ich dir einen Tritt mit den Hufen geben! Ob wohl das Pferd solche Huftritte zu geben versteht?’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/63"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " grəšle u=sayf-ayḏe l-u=abro d-məḥe-le l-u=babo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er zog sein Schwert, um es gegen den Vater zu schwingen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/449"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=aṯto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mə d-saymo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-moḥe-la "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Whatever the wife does, he beats her’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "41/3"
+              },
+              {
+                "kind": "turoyo",
+                "value": " НЕ ОЧЕНЬ ЯСНО"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ЧТО ЯВЛЯЕТСЯ ПРЯМЫМ ОБЪЕКТОМ ДЛЯ ЭТОГО ГЛАГОЛА В ПРИНЦИПЕ"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ТО"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ЧЕМ БЬЮТ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ИЛИ ТО"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " КОГО БЬЮТ"
+              }
+            ],
             "text": "1) ʕal-ayo u=babo kə-mḥayəf w g-moḥe ʕal qarʕə-d-ruḥe falito m-iḏe ‘da jammert der Vater und schlägt sich an den Kopf, aber es ist nichts mehr zu machen’; 355; 6/22; k-moḥe u=sayfo b-qarʕe ʻdem schlägt er mit dem Schwert den Kopf abʼ; 355; 57/138; ko-moḥe b-darmone qum nḥire ʻer hält, stösst ihm Arznei unter die Naseʼ; 355; 67/207; bəṯṯər mədə-mnaḏ̣affe ag=gelon-ani, edi u=zād ko-moḥe b-ruḥe ʻwenn sie diese Kräuter weggeputzt haben, macht sich das Getreide herausʼ; 355; 94/84; w gəd-ḥŭzena təx laxalf mŭḥen-əx rafso ʕắǧaba i=səsto-ste gd-uḏʕo muḥyo hawxa rafsat? ‘wir wollen doch sehen! Komm du mal nach hinten (hinter mich), dann will ich dir einen Tritt mit den Hufen geben! Ob wohl das Pferd solche Huftritte zu geben versteht?’; 6/63; grəšle u=sayf-ayḏe l-u=abro d-məḥe-le l-u=babo ‘Er zog sein Schwert, um es gegen den Vater zu schwingen’; 29/449; i=aṯto, mə d-saymo, ko-moḥe-la ‘Whatever the wife does, he beats her’; 41/3 НЕ ОЧЕНЬ ЯСНО, ЧТО ЯВЛЯЕТСЯ ПРЯМЫМ ОБЪЕКТОМ ДЛЯ ЭТОГО ГЛАГОЛА В ПРИНЦИПЕ: ТО, ЧЕМ БЬЮТ, ИЛИ ТО, КОГО БЬЮТ",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") ʕal-ayo u=babo kə-mḥayəf w g-moḥe ʕal qarʕə-d-ruḥe falito m-iḏe",
+                "translations": [
+                  "‘da jammert der Vater und schlägt sich an den Kopf, aber es ist nichts mehr zu machen’"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["355"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["6/22"]
+              },
+              {
+                "turoyo": "k-moḥe u=sayfo b-qarʕe",
+                "translations": [
+                  "ʻdem schlägt er mit dem Schwert den Kopf abʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["355"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["57/138"]
+              },
+              {
+                "turoyo": "ko-moḥe b-darmone qum nḥire",
+                "translations": ["ʻer hält, stösst ihm Arznei unter die Naseʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["355"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["67/207"]
+              },
+              {
+                "turoyo": "bəṯṯər mədə-mnaḏ̣affe ag=gelon-ani, edi u=zād ko-moḥe b-ruḥe",
+                "translations": [
+                  "ʻwenn sie diese Kräuter weggeputzt haben, macht sich das Getreide herausʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["355"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["94/84"]
+              },
+              {
+                "turoyo": "w gəd-ḥŭzena təx laxalf mŭḥen-əx rafso ʕắǧaba i=səsto-ste gd-uḏʕo muḥyo hawxa rafsat?",
+                "translations": [
+                  "‘wir wollen doch sehen! Komm du mal nach hinten (hinter mich), dann will ich dir einen Tritt mit den Hufen geben! Ob wohl das Pferd solche Huftritte zu geben versteht?’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["6/63"]
+              },
+              {
+                "turoyo": "grəšle u=sayf-ayḏe l-u=abro d-məḥe-le l-u=babo",
+                "translations": [
+                  "‘Er zog sein Schwert, um es gegen den Vater zu schwingen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/449"]
+              },
+              {
+                "turoyo": "i=aṯto, mə d-saymo, ko-moḥe-la",
+                "translations": ["‘Whatever the wife does, he beats her’"],
+                "references": []
+              },
+              {
+                "turoyo": "НЕ ОЧЕНЬ ЯСНО, ЧТО ЯВЛЯЕТСЯ ПРЯМЫМ ОБЪЕКТОМ ДЛЯ ЭТОГО ГЛАГОЛА В ПРИНЦИПЕ: ТО, ЧЕМ БЬЮТ, ИЛИ ТО, КОГО БЬЮТ",
+                "translations": [],
+                "references": ["41/3"]
+              }
+            ]
           },
           {
+            "turoyo": "lə=kolutu hul d-moḥutu kulle d-aʕmayxu d-məḥyono ruḥi bayn az=zangīn-ani g-šoqəl u=māl dəṯṯe kulle g-kuṯwal-lox kaġad məḥyono u=məhər diḏi buwe prs gəd-moḥe ʕal qarʕe d-u=səsyayḏe moḥəl-le šlomo во всех примерах значения явно не нужно подумать куда перенести",
+            "translations": [
+              "hört nicht auf bis ihr alle, die mit euch sind, verschossen habt",
+              "wenn ich zwischen diesen Reichen hindurchschlüpfe, so nimmt er ihnen allen ihren Besitz ab",
+              "ich will dir ein Briefchen schreiben und mein Siegel darunter setzen",
+              "er wird sein Pferd wenden",
+              "sie salutieren vor ihm",
+              "‘werfen’"
+            ],
+            "references": ["2", "358", "83/82"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=kolutu hul d-moḥutu kulle d-aʕmayxu "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻhört nicht auf bis ihr alle, die mit euch sind, verschossen habtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "358"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "83/82"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-məḥyono ruḥi bayn az=zangīn-ani g-šoqəl u=māl dəṯṯe kulle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn ich zwischen diesen Reichen hindurchschlüpfe, so nimmt er ihnen allen ihren Besitz abʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "359"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "28/94"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-kuṯwal-lox kaġad məḥyono u=məhər diḏi buwe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich will dir ein Briefchen schreiben und mein Siegel darunter setzenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "359"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "70/14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəd-moḥe ʕal qarʕe d-u=səsyayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wird sein Pferd wendenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "356"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/299"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " moḥəl-le šlomo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie salutieren vor ihmʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "366"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/65"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "во всех примерах значения явно не "
+              },
+              {
+                "kind": "translation",
+                "value": "‘werfen’"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " нужно подумать"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " куда перенести"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "2) lə=kolutu hul d-moḥutu kulle d-aʕmayxu ʻhört nicht auf bis ihr alle, die mit euch sind, verschossen habtʼ; 358; 83/82; d-məḥyono ruḥi bayn az=zangīn-ani g-šoqəl u=māl dəṯṯe kulle ʻwenn ich zwischen diesen Reichen hindurchschlüpfe, so nimmt er ihnen allen ihren Besitz abʼ; 359; 28/94; g-kuṯwal-lox kaġad məḥyono u=məhər diḏi buwe ʻich will dir ein Briefchen schreiben und mein Siegel darunter setzenʼ; 359; prs 70/14; gəd-moḥe ʕal qarʕe d-u=səsyayḏe ʻer wird sein Pferd wendenʼ; 356; 65/299; moḥəl-le šlomo ʻsie salutieren vor ihmʼ; 366; 56/65; (во всех примерах значения явно не ‘werfen’, нужно подумать, куда перенести)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") lə=kolutu hul d-moḥutu kulle d-aʕmayxu",
+                "translations": [
+                  "ʻhört nicht auf bis ihr alle, die mit euch sind, verschossen habtʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["358"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["83/82"]
+              },
+              {
+                "turoyo": "d-məḥyono ruḥi bayn az=zangīn-ani g-šoqəl u=māl dəṯṯe kulle",
+                "translations": [
+                  "ʻwenn ich zwischen diesen Reichen hindurchschlüpfe, so nimmt er ihnen allen ihren Besitz abʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["359"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["28/94"]
+              },
+              {
+                "turoyo": "g-kuṯwal-lox kaġad məḥyono u=məhər diḏi buwe",
+                "translations": [
+                  "ʻich will dir ein Briefchen schreiben und mein Siegel darunter setzenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["359"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["70/14"]
+              },
+              {
+                "turoyo": "gəd-moḥe ʕal qarʕe d-u=səsyayḏe",
+                "translations": ["ʻer wird sein Pferd wendenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["356"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["65/299"]
+              },
+              {
+                "turoyo": "moḥəl-le šlomo",
+                "translations": ["ʻsie salutieren vor ihmʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["366"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["56/65"]
+              },
+              {
+                "turoyo": "(во всех примерах значения явно не , нужно подумать, куда перенести)",
+                "translations": ["‘werfen’"],
+                "references": []
+              }
+            ]
           },
           {
+            "turoyo": "u=ṭayr-ano diḏi maydət pərtke mene moḥat-la b-i=ʕayno smiṯo",
+            "translations": [
+              "du nimmst ein Federchen von meinem Vogel und legst es auf das blinde Auge"
+            ],
+            "references": ["4", "366", "70/203"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "4"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=ṭayr-ano diḏi maydət pərtke mene moḥat-la b-i=ʕayno smiṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu nimmst ein Federchen von meinem Vogel und legst es auf das blinde Augeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "366"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70/203"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "4) u=ṭayr-ano diḏi maydət pərtke mene moḥat-la b-i=ʕayno smiṯo ʻdu nimmst ein Federchen von meinem Vogel und legst es auf das blinde Augeʼ; 366; 70/203;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") u=ṭayr-ano diḏi maydət pərtke mene moḥat-la b-i=ʕayno smiṯo",
+                "translations": [
+                  "ʻdu nimmst ein Federchen von meinem Vogel und legst es auf das blinde Augeʼ"
+                ],
+                "references": ["4"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["366"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["70/203"]
+              }
+            ]
           },
           {
-            "text": "5)gəm-mŭḥeno talān aʕlayye ʻich will ihnen Vieh wegtreibenʼ; 358; 29/138; ašər k-ḥuzeno hano ǧasūs-yo, k-aṯi d-moḥe u=talan-ayḏan ‘ich sehe, das ist bestimmt ein Spion, der gekommen ist, um unser Vieh zu rauben’; 29/358; lat-na Kurmanǧ <...> d-muḥena u=tarž də-ḥḏoḏe laǧan u=tuhzimo ‘Wir sind keine Kurden, daß wir <...> wegen der Entführung  einander das Vieh wegtreiben’; 29/91; ṭro d-moḥən ʕal u=ṭarš w-talān d-bə ḥəloni ‘Sie sollen die Herden und das Vieh der Sippe meiner Onkel wegtreiben’; 29/408, 411  - УВОДИТЬ СКОТ",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "gəm-mŭḥeno talān aʕlayye ašər k-ḥuzeno hano ǧasūs-yo k-aṯi d-moḥe u=talan-ayḏan lat-na Kurmanǧ <...> d-muḥena u=tarž də-ḥḏoḏe laǧan u=tuhzimo ṭro d-moḥən ʕal u=ṭarš w-talān d-bə ḥəloni - УВОДИТЬ СКОТ",
+            "translations": [
+              "ich will ihnen Vieh wegtreiben",
+              "‘ich sehe, das ist bestimmt ein Spion, der gekommen ist, um unser Vieh zu rauben’",
+              "‘Wir sind keine Kurden, daß wir <...> wegen der Entführung einander das Vieh wegtreiben’",
+              "‘Sie sollen die Herden und das Vieh der Sippe meiner Onkel wegtreiben’"
+            ],
+            "references": ["5", "358", "29/138"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "5"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": "gəm-mŭḥeno talān aʕlayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich will ihnen Vieh wegtreibenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "358"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/138"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ašər k-ḥuzeno hano ǧasūs-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-aṯi d-moḥe u=talan-ayḏan "
+              },
+              {
+                "kind": "translation",
+                "value": "‘ich sehe, das ist bestimmt ein Spion, der gekommen ist, um unser Vieh zu rauben’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/358"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lat-na Kurmanǧ <...> d-muḥena u=tarž də-ḥḏoḏe laǧan u=tuhzimo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wir sind keine Kurden, daß wir <...> wegen der Entführung  einander das Vieh wegtreiben’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/91"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṭro d-moḥən ʕal u=ṭarš w-talān d-bə ḥəloni "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sie sollen die Herden und das Vieh der Sippe meiner Onkel wegtreiben’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/408"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "411"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  - УВОДИТЬ СКОТ"
+              }
+            ],
+            "text": "5)gəm-mŭḥeno talān aʕlayye ʻich will ihnen Vieh wegtreibenʼ; 358; 29/138; ašər k-ḥuzeno hano ǧasūs-yo, k-aṯi d-moḥe u=talan-ayḏan ‘ich sehe, das ist bestimmt ein Spion, der gekommen ist, um unser Vieh zu rauben’; 29/358; lat-na Kurmanǧ <...> d-muḥena u=tarž də-ḥḏoḏe laǧan u=tuhzimo ‘Wir sind keine Kurden, daß wir <...> wegen der Entführung einander das Vieh wegtreiben’; 29/91; ṭro d-moḥən ʕal u=ṭarš w-talān d-bə ḥəloni ‘Sie sollen die Herden und das Vieh der Sippe meiner Onkel wegtreiben’; 29/408, 411 - УВОДИТЬ СКОТ",
+            "segments": [
+              {
+                "turoyo": ")gəm-mŭḥeno talān aʕlayye",
+                "translations": ["ʻich will ihnen Vieh wegtreibenʼ"],
+                "references": ["5"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["358"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/138"]
+              },
+              {
+                "turoyo": "ašər k-ḥuzeno hano ǧasūs-yo, k-aṯi d-moḥe u=talan-ayḏan",
+                "translations": [
+                  "‘ich sehe, das ist bestimmt ein Spion, der gekommen ist, um unser Vieh zu rauben’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/358"]
+              },
+              {
+                "turoyo": "lat-na Kurmanǧ <...> d-muḥena u=tarž də-ḥḏoḏe laǧan u=tuhzimo",
+                "translations": [
+                  "‘Wir sind keine Kurden, daß wir <...> wegen der Entführung einander das Vieh wegtreiben’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/91"]
+              },
+              {
+                "turoyo": "ṭro d-moḥən ʕal u=ṭarš w-talān d-bə ḥəloni",
+                "translations": [
+                  "‘Sie sollen die Herden und das Vieh der Sippe meiner Onkel wegtreiben’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": ", - УВОДИТЬ СКОТ",
+                "translations": [],
+                "references": ["29/408", "411"]
+              }
+            ]
           },
           {
+            "turoyo": "d-məḥyono ruḥi bayn az=zangin-ani w-maxləṣono g-šoqəl u=mal dəṯṯe kulle ḥa k-moḥe s-u=ḥreno",
+            "translations": [
+              "‘Wenn ich zwischen diesen Reichen hindurchschlüpfe und mich rette, so nimmt er ihnen allen ihren Besitz ab’",
+              "einer rennt, geht schnell zum andern"
+            ],
+            "references": ["28/94", "356"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "d-məḥyono ruḥi bayn az=zangin-ani w-maxləṣono"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-šoqəl u=mal dəṯṯe kulle "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wenn ich zwischen diesen Reichen hindurchschlüpfe und mich rette, so nimmt er ihnen allen ihren Besitz ab’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "28/94"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥa k-moḥe s-u=ḥreno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻeiner rennt, geht schnell zum andernʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "356"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "d-məḥyono ruḥi bayn az=zangin-ani w-maxləṣono, g-šoqəl u=mal dəṯṯe kulle ‘Wenn ich zwischen diesen Reichen hindurchschlüpfe und mich rette, so nimmt er ihnen allen ihren Besitz ab’; 28/94 [MT]; ḥa k-moḥe s-u=ḥreno ʻeiner rennt, geht schnell zum andernʼ; 356;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "d-məḥyono ruḥi bayn az=zangin-ani w-maxləṣono, g-šoqəl u=mal dəṯṯe kulle",
+                "translations": [
+                  "‘Wenn ich zwischen diesen Reichen hindurchschlüpfe und mich rette, so nimmt er ihnen allen ihren Besitz ab’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["28/94"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "ḥa k-moḥe s-u=ḥreno",
+                "translations": ["ʻeiner rennt, geht schnell zum andernʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["356"]
+              }
+            ]
           },
           {
+            "turoyo": "ko-moḥən i=ʕălatrike hawxa b-daqni w ko…ʕayni ko-maḥti d-lo b-i=ʕălatrik-ayo ḥozeno",
+            "translations": [
+              "‘sie zielten mit der Taschenlampe auf meinen Bart und auf meine Augen, damit ich sie nicht sehen konnte durch die Taschenlampe’"
+            ],
+            "references": ["8", "LB 168"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "8"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-moḥən i=ʕălatrike hawxa b-daqni w ko…ʕayni ko-maḥti d-lo b-i=ʕălatrik-ayo ḥozeno "
+              },
+              {
+                "kind": "translation",
+                "value": "‘sie zielten mit der Taschenlampe auf meinen Bart und auf meine Augen, damit ich sie nicht sehen konnte durch die Taschenlampe’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 168"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "8) ko-moḥən i=ʕălatrike hawxa b-daqni w ko…ʕayni ko-maḥti d-lo b-i=ʕălatrik-ayo ḥozeno ‘sie zielten mit der Taschenlampe auf meinen Bart und auf meine Augen, damit ich sie nicht sehen konnte durch die Taschenlampe’; LB 168;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") ko-moḥən i=ʕălatrike hawxa b-daqni w ko…ʕayni ko-maḥti d-lo b-i=ʕălatrik-ayo ḥozeno",
+                "translations": [
+                  "‘sie zielten mit der Taschenlampe auf meinen Bart und auf meine Augen, damit ich sie nicht sehen konnte durch die Taschenlampe’"
+                ],
+                "references": ["8"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 168"]
+              }
+            ]
           },
           {
+            "turoyo": "bdele k-moḥe taḥt-ad=dawm-anək d-i=baxča k-ḥofər u=ʕafro w-k-maḥru as=siġone",
+            "translations": [
+              "‘Er fing unter jenen Bäumen des Gartens zu graben an. Er grub das Erdreich auf, riß die Mauern ab’"
+            ],
+            "references": ["10", "24/162"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "10"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bdele k-moḥe taḥt-ad=dawm-anək d-i=baxča"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ḥofər u=ʕafro w-k-maḥru as=siġone "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er fing unter jenen Bäumen des Gartens zu graben an. Er grub das Erdreich auf, riß die Mauern ab’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/162"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "10) bdele k-moḥe taḥt-ad=dawm-anək d-i=baxča, k-ḥofər u=ʕafro w-k-maḥru as=siġone ‘Er fing unter jenen Bäumen des Gartens zu graben an. Er grub das Erdreich auf, riß die Mauern ab’; 24/162 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") bdele k-moḥe taḥt-ad=dawm-anək d-i=baxča, k-ḥofər u=ʕafro w-k-maḥru as=siġone",
+                "translations": [
+                  "‘Er fing unter jenen Bäumen des Gartens zu graben an. Er grub das Erdreich auf, riß die Mauern ab’"
+                ],
+                "references": ["10"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/162"],
+                "notes": ["[MT]"]
+              }
+            ]
           },
           {
+            "turoyo": "muḥeno oʕdo top b-u=bayto g-doʕər b-u=kalaškōf g-maḥət aʕlan g-moḥe minan šaržūr ..",
+            "translations": [
+              "‘Da will ich doch mit der Kanone ins Haus schießen’",
+              "‘er drehte sich um und schoss mit der Kalashnikoff auf uns, ganze Salven’"
+            ],
+            "references": ["11", "28/53", "JL 12"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "11"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " muḥeno oʕdo top b-u=bayto "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Da will ich doch mit der Kanone ins Haus schießen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "28/53"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-doʕər b-u=kalaškōf g-maḥət aʕlan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-moḥe minan šaržūr "
+              },
+              {
+                "kind": "translation",
+                "value": "‘er drehte sich um und schoss mit der Kalashnikoff auf uns, ganze Salven’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 12"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "13"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "11) muḥeno oʕdo top b-u=bayto ‘Da will ich doch mit der Kanone ins Haus schießen’; 28/53; g-doʕər b-u=kalaškōf g-maḥət aʕlan, g-moḥe minan šaržūr ‘er drehte sich um und schoss mit der Kalashnikoff auf uns, ganze Salven’ JL 12.13.9;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") muḥeno oʕdo top b-u=bayto",
+                "translations": [
+                  "‘Da will ich doch mit der Kanone ins Haus schießen’"
+                ],
+                "references": ["11"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["28/53"]
+              },
+              {
+                "turoyo": "g-doʕər b-u=kalaškōf g-maḥət aʕlan, g-moḥe minan šaržūr ..",
+                "translations": [
+                  "‘er drehte sich um und schoss mit der Kalashnikoff auf uns, ganze Salven’"
+                ],
+                "references": ["JL 12", "13", "9"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "lə=kole-wa ʕal-ayo moḥé-way-le-ste gəd-moḥe-wa w qoṭaʕ-wa u=qarʕo d-aš=šawʕo g-qoyəm naqla ḥreto u=ʕavd d-howé-way-no tamo gəm-moḥé-way-no u=garmo l-qarʕa ono hayo d-məḥyó-way-no ad=dagmat ʕal ṭízux-no kət-wa zlām məskeno kul=yawmo kul=yawmo kul=yawmo moḥe-wa l-i=aṯto",
+            "translations": [
+              "er liess es nicht dabei bewenden, er schlug ihn auch noch jeden Tag",
+              "hätte er zugeschlagen und den siebten Kopf auch abgeschlagen, so wäre der Unhold wieder aufgestanden",
+              "wenn ich dort gewesen wäre, hätte ich ihr den Knochen auf den Schädel gehauen",
+              "ich bin diejenige, welche dir die Brandstempel auf den Hintern drückte",
+              "‘There was a poor man who used to beat [his] wife every single day’"
+            ],
+            "references": ["1", "369", "64/305"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=kole-wa ʕal-ayo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " moḥé-way-le-ste "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer liess es nicht dabei bewenden, er schlug ihn auch noch jeden Tagʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "369"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "64/305"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəd-moḥe-wa w qoṭaʕ-wa u=qarʕo d-aš=šawʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-qoyəm naqla ḥreto u=ʕavd "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻhätte er zugeschlagen und den siebten Kopf auch abgeschlagen, so wäre der Unhold wieder aufgestandenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "370"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/107"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-howé-way-no tamo gəm-moḥé-way-no u=garmo l-qarʕa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn ich dort gewesen wäre, hätte ich ihr den Knochen auf den Schädel gehauenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "370"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "48/57"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono hayo d-məḥyó-way-no ad=dagmat ʕal ṭízux-no "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich bin diejenige, welche dir die Brandstempel auf den Hintern drückteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "369"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/347"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kət-wa zlām məskeno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kul=yawmo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kul=yawmo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kul=yawmo moḥe-wa l-i=aṯto "
+              },
+              {
+                "kind": "translation",
+                "value": "‘There was a poor man who used to beat [his] wife every single day’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "41/1"
+              }
+            ],
             "text": "1) lə=kole-wa ʕal-ayo, moḥé-way-le-ste ʻer liess es nicht dabei bewenden, er schlug ihn auch noch jeden Tagʼ; 369; 64/305; gəd-moḥe-wa w qoṭaʕ-wa u=qarʕo d-aš=šawʕo, g-qoyəm naqla ḥreto u=ʕavd ʻhätte er zugeschlagen und den siebten Kopf auch abgeschlagen, so wäre der Unhold wieder aufgestandenʼ; 370; 73/107; d-howé-way-no tamo gəm-moḥé-way-no u=garmo l-qarʕa ʻwenn ich dort gewesen wäre, hätte ich ihr den Knochen auf den Schädel gehauenʼ; 370; 48/57; ono hayo d-məḥyó-way-no ad=dagmat ʕal ṭízux-no ʻich bin diejenige, welche dir die Brandstempel auf den Hintern drückteʼ; 369; 62/347; kət-wa zlām məskeno, kul=yawmo, kul=yawmo, kul=yawmo moḥe-wa l-i=aṯto ‘There was a poor man who used to beat [his] wife every single day’; 41/1",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") lə=kole-wa ʕal-ayo, moḥé-way-le-ste",
+                "translations": [
+                  "ʻer liess es nicht dabei bewenden, er schlug ihn auch noch jeden Tagʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["369"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["64/305"]
+              },
+              {
+                "turoyo": "gəd-moḥe-wa w qoṭaʕ-wa u=qarʕo d-aš=šawʕo, g-qoyəm naqla ḥreto u=ʕavd",
+                "translations": [
+                  "ʻhätte er zugeschlagen und den siebten Kopf auch abgeschlagen, so wäre der Unhold wieder aufgestandenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["370"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["73/107"]
+              },
+              {
+                "turoyo": "d-howé-way-no tamo gəm-moḥé-way-no u=garmo l-qarʕa",
+                "translations": [
+                  "ʻwenn ich dort gewesen wäre, hätte ich ihr den Knochen auf den Schädel gehauenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["370"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["48/57"]
+              },
+              {
+                "turoyo": "ono hayo d-məḥyó-way-no ad=dagmat ʕal ṭízux-no",
+                "translations": [
+                  "ʻich bin diejenige, welche dir die Brandstempel auf den Hintern drückteʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["369"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["62/347"]
+              },
+              {
+                "turoyo": "kət-wa zlām məskeno, kul=yawmo, kul=yawmo, kul=yawmo moḥe-wa l-i=aṯto",
+                "translations": [
+                  "‘There was a poor man who used to beat [his] wife every single day’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["41/1"]
+              }
+            ]
           },
           {
+            "turoyo": "d-howé-way-no tamo gəm-moḥé-way-no-la b-u=šur-awo maḥti-wa kefo hawxa b-u=fəlgo əmmí-way-na-la i=sekābke. kefo w-moḥən-wa a=tloṯo kaʕbe aʕla ..",
+            "translations": [
+              "wenn ich dort gewesen wäre, hätte ich sie gegen die Mauer dort geschmettert",
+              "‘Sie legten einen Stein in die Mitte, den wir die sekābke nannten, und warfen mit den drei Knöcheln danach’"
+            ],
+            "references": ["2", "370", "48/46"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-howé-way-no tamo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəm-moḥé-way-no-la b-u=šur-awo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn ich dort gewesen wäre, hätte ich sie gegen die Mauer dort geschmettertʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "370"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "48/46"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥti-wa kefo hawxa b-u=fəlgo əmmí-way-na-la i=sekābke. kefo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-moḥən-wa a=tloṯo kaʕbe aʕla "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sie legten einen Stein in die Mitte, den wir die sekābke nannten, und warfen mit den drei Knöcheln danach’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 5"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "10"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "12"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) d-howé-way-no tamo, gəm-moḥé-way-no-la b-u=šur-awo ʻwenn ich dort gewesen wäre, hätte ich sie gegen die Mauer dort geschmettertʼ; 370; 48/46; maḥti-wa kefo hawxa b-u=fəlgo əmmí-way-na-la i=sekābke. kefo, w-moḥən-wa a=tloṯo kaʕbe aʕla ‘Sie legten einen Stein in die Mitte, den wir die sekābke nannten, und warfen mit den drei Knöcheln danach’ JL 5.10.12;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") d-howé-way-no tamo, gəm-moḥé-way-no-la b-u=šur-awo",
+                "translations": [
+                  "ʻwenn ich dort gewesen wäre, hätte ich sie gegen die Mauer dort geschmettertʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["370"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["48/46"]
+              },
+              {
+                "turoyo": "maḥti-wa kefo hawxa b-u=fəlgo əmmí-way-na-la i=sekābke. kefo, w-moḥən-wa a=tloṯo kaʕbe aʕla ..",
+                "translations": [
+                  "‘Sie legten einen Stein in die Mitte, den wir die sekābke nannten, und warfen mit den drei Knöcheln danach’"
+                ],
+                "references": ["JL 5", "10", "12"]
+              }
+            ]
           },
           {
+            "turoyo": "lazəm d-marwáx-wo-la ʕal-i=sisto w-huwe d-mŭḥe-wo b-qamuṯa nošo lo=maǧre-wo mŭḥe-wo ʕal u=talān diḏe",
+            "translations": [
+              "Er hätte sie auf dem Pferde reiten lassen und hätte selber vor ihr hergehen müssen",
+              "niemand wagte, ihm das Vieh wegzutreiben"
+            ],
+            "references": ["5", "370", "26/192"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "5"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lazəm d-marwáx-wo-la ʕal-i=sisto w-huwe d-mŭḥe-wo b-qamuṯa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻEr hätte sie auf dem Pferde reiten lassen und hätte selber vor ihr hergehen müssenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "370"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/192"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " nošo lo=maǧre-wo mŭḥe-wo ʕal u=talān diḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻniemand wagte, ihm das Vieh wegzutreibenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "369"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/283"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "5) lazəm d-marwáx-wo-la ʕal-i=sisto w-huwe d-mŭḥe-wo b-qamuṯa ʻEr hätte sie auf dem Pferde reiten lassen und hätte selber vor ihr hergehen müssenʼ; 370; 26/192; nošo lo=maǧre-wo mŭḥe-wo ʕal u=talān diḏe ʻniemand wagte, ihm das Vieh wegzutreibenʼ; 369; 29/283 [MT];",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") lazəm d-marwáx-wo-la ʕal-i=sisto w-huwe d-mŭḥe-wo b-qamuṯa",
+                "translations": [
+                  "ʻEr hätte sie auf dem Pferde reiten lassen und hätte selber vor ihr hergehen müssenʼ"
+                ],
+                "references": ["5"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["370"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["26/192"]
+              },
+              {
+                "turoyo": "nošo lo=maǧre-wo mŭḥe-wo ʕal u=talān diḏe",
+                "translations": ["ʻniemand wagte, ihm das Vieh wegzutreibenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["369"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/283"],
+                "notes": ["[MT]"]
+              }
+            ]
           },
           {
+            "turoyo": "w-ʕal aṭ=ṭuron-anək məblí-way-na-la w-eba … moḥi-way-na ab=buġre l-u=ilofo ..",
+            "translations": [
+              "‘We brought it (cannon, f.) to the mountains and we fired cannon balls with it for practice’"
+            ],
+            "references": ["11", "JL 19", "6"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "11"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-ʕal aṭ=ṭuron-anək məblí-way-na-la"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-eba "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " moḥi-way-na ab=buġre"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-u=ilofo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘We brought it (cannon, f.) to the mountains and we fired cannon balls with it for practice’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 19"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "6"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "22"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "11) w-ʕal aṭ=ṭuron-anək məblí-way-na-la, w-eba (…) moḥi-way-na ab=buġre, l-u=ilofo ‘We brought it (cannon, f.) to the mountains and we fired cannon balls with it for practice’ JL 19.6.22;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") w-ʕal aṭ=ṭuron-anək məblí-way-na-la, w-eba (…) moḥi-way-na ab=buġre, l-u=ilofo ..",
+                "translations": [
+                  "‘We brought it (cannon, f.) to the mountains and we fired cannon balls with it for practice’"
+                ],
+                "references": ["11", "JL 19", "6", "22"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
-            "text": "1) mḥi-la ʕal ḥaṣa ʻschlage sie auf den Rückenʼ; 374; 52/139; mḥay i=ḏ̣arbayḏux ʻführe deinen Streichʼ; 372; 73/57; 2) mḥay naqla ḥreto ʻwirf noch einmalʼ; 372; prs 62/30;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "mḥi-la ʕal ḥaṣa mḥay i=ḏ̣arbayḏux",
+            "translations": [
+              "schlage sie auf den Rücken",
+              "führe deinen Streich"
+            ],
+            "references": ["1", "374", "52/139"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥi-la ʕal ḥaṣa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻschlage sie auf den Rückenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "374"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "52/139"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥay i=ḏ̣arbayḏux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻführe deinen Streichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "372"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/57"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) mḥi-la ʕal ḥaṣa ʻschlage sie auf den Rückenʼ; 374; 52/139; mḥay i=ḏ̣arbayḏux ʻführe deinen Streichʼ; 372; 73/57;",
+            "segments": [
+              {
+                "turoyo": ") mḥi-la ʕal ḥaṣa",
+                "translations": ["ʻschlage sie auf den Rückenʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["374"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["52/139"]
+              },
+              {
+                "turoyo": "mḥay i=ḏ̣arbayḏux",
+                "translations": ["ʻführe deinen Streichʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["372"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["73/57"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "mḥay naqla ḥreto prs",
+            "translations": ["wirf noch einmal"],
+            "references": ["2", "372", "62/30"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥay naqla ḥreto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwirf noch einmalʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "372"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "62/30"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) mḥay naqla ḥreto ʻwirf noch einmalʼ; 372; prs 62/30;",
+            "segments": [
+              {
+                "turoyo": ") mḥay naqla ḥreto",
+                "translations": ["ʻwirf noch einmalʼ"],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["372"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["62/30"]
+              }
+            ]
           }
         ],
         "Part. act.": [
           {
+            "turoyo": "maḥoyo d-sayfo-we",
+            "translations": ["‘Er war ein Schwertkämpfer’"],
+            "references": ["1", "30/101"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥoyo d-sayfo-we "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er war ein Schwertkämpfer’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/101"
+              }
+            ],
             "text": "1) maḥoyo d-sayfo-we ‘Er war ein Schwertkämpfer’; 30/101",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") maḥoyo d-sayfo-we",
+                "translations": ["‘Er war ein Schwertkämpfer’"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["30/101"]
+              }
+            ]
           }
         ]
       }
@@ -199,35 +5061,287 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "i=boqo lozəm d-məmḥoyo See also mḥy awwal naqqa k-lozəm hani d-mitanḏ̣əfi d-mibayġi w d-məmḥən ǧila i=dahole ko-məmḥoyo",
+            "translations": [
+              "die Wanze muss vernichtet werden",
+              "‘zuerst müssen diese aber gereinigt, mit Farbcreme bestrichen und blankgeputzt werden’",
+              "es wurde auf der Trommel gespielt"
+            ],
+            "references": ["1", "380", "2"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=boqo lozəm d-məmḥoyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Wanze muss vernichtet werdenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "380"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " See also mḥy"
+              },
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " awwal naqqa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-lozəm hani"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-mitanḏ̣əfi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-mibayġi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w d-məmḥən ǧila "
+              },
+              {
+                "kind": "translation",
+                "value": "‘zuerst müssen diese aber gereinigt, mit Farbcreme bestrichen und blankgeputzt werden’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "9/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=dahole ko-məmḥoyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes wurde auf der Trommel gespieltʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 346"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) i=boqo lozəm d-məmḥoyo ʻdie Wanze muss vernichtet werdenʼ; 380, See also mḥy2; awwal naqqa, k-lozəm hani, d-mitanḏ̣əfi, d-mibayġi, w d-məmḥən ǧila ‘zuerst müssen diese aber gereinigt, mit Farbcreme bestrichen und blankgeputzt werden’; 9/9; i=dahole ko-məmḥoyo ʻes wurde auf der Trommel gespieltʼ LB 346;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") i=boqo lozəm d-məmḥoyo",
+                "translations": ["ʻdie Wanze muss vernichtet werdenʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": ", See also mḥy",
+                "translations": [],
+                "references": ["380", "2"]
+              },
+              {
+                "turoyo": "awwal naqqa, k-lozəm hani, d-mitanḏ̣əfi, d-mibayġi, w d-məmḥən ǧila",
+                "translations": [
+                  "‘zuerst müssen diese aber gereinigt, mit Farbcreme bestrichen und blankgeputzt werden’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["9/9"]
+              },
+              {
+                "turoyo": "i=dahole ko-məmḥoyo",
+                "translations": ["ʻes wurde auf der Trommel gespieltʼ"],
+                "references": ["LB 346"]
+              }
+            ]
           }
         ],
         "Part. pass.": [
           {
+            "turoyo": "u=qays-awo d-u=avi d-kət-wa taḥt u=ʕafr-awo diqo me laltaḥ diqo w lalʕal maḥyo taḥt u=ʕafro",
+            "translations": [
+              "‘der Pflock aus Pappelholz, der in die Erde eingedrückt war, in den Boden eingedrückt und von oben als Stütze für die Decke fungierte (wörtl.: von oben unter die Erde gelegt war)’"
+            ],
+            "references": ["3", "LB 161"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=qays-awo d-u=avi d-kət-wa taḥt u=ʕafr-awo diqo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " me laltaḥ diqo w lalʕal maḥyo taḥt u=ʕafro "
+              },
+              {
+                "kind": "translation",
+                "value": "‘der Pflock aus Pappelholz, der in die Erde eingedrückt war, in den Boden eingedrückt und von oben als Stütze für die Decke fungierte (wörtl.: von oben unter die Erde gelegt war)’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 161"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "3) u=qays-awo d-u=avi d-kət-wa taḥt u=ʕafr-awo diqo, me laltaḥ diqo w lalʕal maḥyo taḥt u=ʕafro ‘der Pflock aus Pappelholz, der in die Erde eingedrückt war, in den Boden eingedrückt und von oben als Stütze für die Decke fungierte (wörtl.: von oben unter die Erde gelegt war)’; LB 161;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") u=qays-awo d-u=avi d-kət-wa taḥt u=ʕafr-awo diqo, me laltaḥ diqo w lalʕal maḥyo taḥt u=ʕafro",
+                "translations": [
+                  "‘der Pflock aus Pappelholz, der in die Erde eingedrückt war, in den Boden eingedrückt und von oben als Stütze für die Decke fungierte (wörtl.: von oben unter die Erde gelegt war)’"
+                ],
+                "references": ["3"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 161"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "mamḥele",
-        "mamḥe"
-      ],
+      "forms": ["mamḥele", "mamḥe"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mamḥeli u=ganowo",
+            "translations": [
+              "ich habe den Dieb (durch die Polizisten) durchprügeln lassen"
+            ],
+            "references": ["386"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mamḥeli u=ganowo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe den Dieb (durch die Polizisten) durchprügeln lassenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "386"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mamḥeli u=ganowo ʻich habe den Dieb (durch die Polizisten) durchprügeln lassenʼ; 386;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mamḥeli u=ganowo",
+                "translations": [
+                  "ʻich habe den Dieb (durch die Polizisten) durchprügeln lassenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["386"]
+              }
+            ]
           }
         ]
       }

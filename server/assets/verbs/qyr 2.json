@@ -14,47 +14,795 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "maqəlle",
-        "maqər"
-      ],
+      "forms": ["maqəlle", "maqər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "maqəlle d-i=duġriye lo=quṭʕət qarʕe prs",
+            "translations": [
+              "er hat die Wahrheit gestanden, schlage ihm den Kopf nicht ab"
+            ],
+            "references": ["1", "538", "242/21"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maqəlle d-i=duġriye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=quṭʕət qarʕe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hat die Wahrheit gestanden, schlage ihm den Kopf nicht abʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "538"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "242/21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) maqəlle d-i=duġriye, lo=quṭʕət qarʕe ʻer hat die Wahrheit gestanden, schlage ihm den Kopf nicht abʼ; 538; prs 242/21;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") maqəlle d-i=duġriye, lo=quṭʕət qarʕe",
+                "translations": [
+                  "ʻer hat die Wahrheit gestanden, schlage ihm den Kopf nicht abʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["538"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["242/21"]
+              }
+            ]
           },
           {
+            "turoyo": "maqəlle l-u=naʕimo omər l-u=Kosa gnuwile prs maru l-ma gnuwile? lo=maqərre ʕal ḥḏoḏe prs qay u=qaṣ-awo hawxa səmme b-qarʕax lə=maqǝ́llax-li?",
+            "translations": [
+              "der Jüngste bekannte, dass Kosa der Dieb gewesen sei",
+              "sprecht, wer hat es gestolen?” Aber sie verrieten einander nicht",
+              "warum hast du mir nichts von alle dem, was sie dir angetan haben, verraten?"
+            ],
+            "references": ["2", "538", "112/37"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maqəlle l-u=naʕimo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " omər l-u=Kosa gnuwile "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Jüngste bekannte, dass Kosa der Dieb gewesen seiʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "538"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "112/37"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maru l-ma gnuwile? lo=maqərre ʕal ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ“sprecht, wer hat es gestolen?” Aber sie verrieten einander nichtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "539"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "112/34"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/81"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qay u=qaṣ-awo hawxa səmme b-qarʕax lə=maqǝ́llax-li? "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwarum hast du mir nichts von alle dem, was sie dir angetan haben, verraten?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "540"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "58/276"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) maqəlle l-u=naʕimo, omər l-u=Kosa gnuwile ʻder Jüngste bekannte, dass Kosa der Dieb gewesen seiʼ; 538; prs 112/37; maru l-ma gnuwile? lo=maqərre ʕal ḥḏoḏe ʻ“sprecht, wer hat es gestolen?” Aber sie verrieten einander nichtʼ; 539; prs 112/34; 69/81; qay u=qaṣ-awo hawxa səmme b-qarʕax lə=maqǝ́llax-li? ʻwarum hast du mir nichts von alle dem, was sie dir angetan haben, verraten?ʼ; 540; 58/276;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") maqəlle l-u=naʕimo, omər l-u=Kosa gnuwile",
+                "translations": [
+                  "ʻder Jüngste bekannte, dass Kosa der Dieb gewesen seiʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["538"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["112/37"]
+              },
+              {
+                "turoyo": "maru l-ma gnuwile? lo=maqərre ʕal ḥḏoḏe",
+                "translations": [
+                  "ʻ“sprecht, wer hat es gestolen?” Aber sie verrieten einander nichtʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["539"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["112/34"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["69/81"]
+              },
+              {
+                "turoyo": "qay u=qaṣ-awo hawxa səmme b-qarʕax lə=maqǝ́llax-li?",
+                "translations": [
+                  "ʻwarum hast du mir nichts von alle dem, was sie dir angetan haben, verraten?ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["540"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["58/276"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "u=zʕur-ano ǧbīr d-howe-le moro l-u=səsyayḏe m-u=săbab d-hule waʕd rabo d-lə=maqər l-ənsanat ʕal foṯa d-i=arʕo d-kət-no ono u=abro d-u=šulṭono əmmo . əmmo k-azzé l-bayn ak=kačkat k-soyəm aʕmayye k-omər lo=maqəritu l-emayxu w l-babayxu prs lə=ko-maqənno l-maxlūq d-aloho",
+            "translations": [
+              "da musste der Junge ihm das Pferd besorgen, weil er ein grosses Versprechen gegeben hatte, dass er keinem Menschen auf dem Angesicht der Erde verraten würde, dass er der Sohn des Sultans war",
+              "gəd-owət tamo",
+              "halbat u=săbabayḏi?",
+              "la u=săbab: d-kət-lux abro hani šato w lə=k-maqirat-li",
+              "sie sprach: “Du wirst dort (draussen) bleiben!” “Und was für einen Grund habe ich dir gegeben?” “Der Grund? Dass du einen Sohn hast und mir schon ein Jahr lang nichts davon verrätst",
+              "er geht zu den Mädchen und verführt sie, schärft ihnen aber ein, ihren Eltern nur ja nichts davon zu verraten",
+              "I would not betray God’s creature"
+            ],
+            "references": ["2", "545", "64/100"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=zʕur-ano ǧbīr"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-howe-le moro l-u=səsyayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-u=săbab d-hule waʕd rabo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-lə=maqər l-ənsanat ʕal foṯa d-i=arʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-kət-no ono u=abro d-u=šulṭono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda musste der Junge ihm das Pferd besorgen, weil er ein grosses Versprechen gegeben hatte, dass er keinem Menschen auf dem Angesicht der Erde verraten würde, dass er der Sohn des Sultans warʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "545"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "64/100"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/182"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " əmmo"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“gəd-owət tamo”"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". "
+              },
+              {
+                "kind": "translation",
+                "value": "“halbat u=săbabayḏi?”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " əmmo"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“la u=săbab: d-kət-lux abro hani šato w lə=k-maqirat-li”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie sprach: “Du wirst dort (draussen) bleiben!” “Und was für einen Grund habe ich dir gegeben?” “Der Grund? Dass du einen Sohn hast und mir schon ein Jahr lang nichts davon verrätst”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "547"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/66"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-azzé l-bayn ak=kačkat"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-soyəm aʕmayye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-omər lo=maqəritu l-emayxu w l-babayxu "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer geht zu den Mädchen und verführt sie, schärft ihnen aber ein, ihren Eltern nur ja nichts davon zu verratenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "547"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "167/13"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=ko-maqənno l-maxlūq d-aloho "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻI would not betray God’s creatureʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "547"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "47/44"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) u=zʕur-ano ǧbīr, d-howe-le moro l-u=səsyayḏe, m-u=săbab d-hule waʕd rabo, d-lə=maqər l-ənsanat ʕal foṯa d-i=arʕo, d-kət-no ono u=abro d-u=šulṭono ʻda musste der Junge ihm das Pferd besorgen, weil er ein grosses Versprechen gegeben hatte, dass er keinem Menschen auf dem Angesicht der Erde verraten würde, dass er der Sohn des Sultans warʼ; 545; 64/100; 69/182; əmmo: “gəd-owət tamo”. “halbat u=săbabayḏi?” əmmo: “la u=săbab: d-kət-lux abro hani šato w lə=k-maqirat-li” ʻsie sprach: “Du wirst dort (draussen) bleiben!” “Und was für einen Grund habe ich dir gegeben?” “Der Grund? Dass du einen Sohn hast und mir schon ein Jahr lang nichts davon verrätst”ʼ; 547; 69/66; k-azzé l-bayn ak=kačkat, k-soyəm aʕmayye, k-omər lo=maqəritu l-emayxu w l-babayxu ʻer geht zu den Mädchen und verführt sie, schärft ihnen aber ein, ihren Eltern nur ja nichts davon zu verratenʼ; 547; prs 167/13; lə=ko-maqənno l-maxlūq d-aloho ʻI would not betray God’s creatureʼ; 547; 47/44;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") u=zʕur-ano ǧbīr, d-howe-le moro l-u=səsyayḏe, m-u=săbab d-hule waʕd rabo, d-lə=maqər l-ənsanat ʕal foṯa d-i=arʕo, d-kət-no ono u=abro d-u=šulṭono",
+                "translations": [
+                  "ʻda musste der Junge ihm das Pferd besorgen, weil er ein grosses Versprechen gegeben hatte, dass er keinem Menschen auf dem Angesicht der Erde verraten würde, dass er der Sohn des Sultans warʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["545"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["64/100"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["69/182"]
+              },
+              {
+                "turoyo": "əmmo: . əmmo:",
+                "translations": [
+                  "“gəd-owət tamo”",
+                  "“halbat u=săbabayḏi?”",
+                  "“la u=săbab: d-kət-lux abro hani šato w lə=k-maqirat-li”",
+                  "ʻsie sprach: “Du wirst dort (draussen) bleiben!” “Und was für einen Grund habe ich dir gegeben?” “Der Grund? Dass du einen Sohn hast und mir schon ein Jahr lang nichts davon verrätst”ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["547"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["69/66"]
+              },
+              {
+                "turoyo": "k-azzé l-bayn ak=kačkat, k-soyəm aʕmayye, k-omər lo=maqəritu l-emayxu w l-babayxu",
+                "translations": [
+                  "ʻer geht zu den Mädchen und verführt sie, schärft ihnen aber ein, ihren Eltern nur ja nichts davon zu verratenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["547"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["167/13"]
+              },
+              {
+                "turoyo": "lə=ko-maqənno l-maxlūq d-aloho",
+                "translations": ["ʻI would not betray God’s creatureʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["547"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["47/44"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "ono d-maqǝ́r-way-no l-ómar-way-n-ux",
+            "translations": [
+              "if I had betrayed you, I would not have told [this] to you"
+            ],
+            "references": ["2", "548", "47/40"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono d-maqǝ́r-way-no"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-ómar-way-n-ux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻif I had betrayed you, I would not have told [this] to youʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "548"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "47/40"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) ono d-maqǝ́r-way-no, l-ómar-way-n-ux ʻif I had betrayed you, I would not have told [this] to youʼ; 548; 47/40;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") ono d-maqǝ́r-way-no, l-ómar-way-n-ux",
+                "translations": [
+                  "ʻif I had betrayed you, I would not have told [this] to youʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["548"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["47/40"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "hama aqər prs",
+            "translations": ["meinetwegen verrate nur alles"],
+            "references": ["2", "550", "202/20"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hama aqər "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmeinetwegen verrate nur allesʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "550"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "202/20"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "2) hama aqər ʻmeinetwegen verrate nur allesʼ; 550; prs 202/20;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") hama aqər",
+                "translations": ["ʻmeinetwegen verrate nur allesʼ"],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["550"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["202/20"]
+              }
+            ]
           }
         ]
       }

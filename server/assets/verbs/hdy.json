@@ -14,32 +14,220 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mhadele",
-        "mhade"
-      ],
+      "forms": ["mhadele", "mhade"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "hani tarte=əšne d-yawmoṯe ono w hiye tav-da-na w mhadéle-li i=ḥoṯo",
+            "translations": [
+              "ich und er waren zwei Jahre lang zusammen, und er hat mir seine Schwester geschenkt"
+            ],
+            "references": ["415", "89/59"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hani tarte=əšne d-yawmoṯe ono w hiye tav-da-na"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mhadéle-li i=ḥoṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich und er waren zwei Jahre lang zusammen, und er hat mir seine Schwester geschenktʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "415"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "89/59"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "hani tarte=əšne d-yawmoṯe ono w hiye tav-da-na; w mhadéle-li i=ḥoṯo ʻich und er waren zwei Jahre lang zusammen, und er hat mir seine Schwester geschenktʼ; 415; 89/59;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "hani tarte=əšne d-yawmoṯe ono w hiye tav-da-na",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "w mhadéle-li i=ḥoṯo",
+                "translations": [
+                  "ʻich und er waren zwei Jahre lang zusammen, und er hat mir seine Schwester geschenktʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["415"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["89/59"]
+              }
+            ]
           }
         ],
         "Preterit-wa": [
           {
+            "turoyo": "hano mhadíle-wo-li-yo lə-zʕuro ingəlizi ḥa m-aḥ=hawronayḏi mhadíle-wo-lan kalbo",
+            "translations": [
+              "den (Hund) hatte mir ein englischer Junge geschenkt",
+              "einer meiner Freunde hatte uns einen Hund geschenkt"
+            ],
+            "references": ["416", "2/87", "416"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hano"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mhadíle-wo-li-yo lə-zʕuro ingəlizi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻden (Hund) hatte mir ein englischer Junge geschenktʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "416"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/87"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥa m-aḥ=hawronayḏi mhadíle-wo-lan kalbo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻeiner meiner Freunde hatte uns einen Hund geschenktʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "416"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "1/47"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "hano, mhadíle-wo-li-yo lə-zʕuro ingəlizi ʻden (Hund) hatte mir ein englischer Junge geschenktʼ; 416; 2/87; ḥa m-aḥ=hawronayḏi mhadíle-wo-lan kalbo ʻeiner meiner Freunde hatte uns einen Hund geschenktʼ; 416; 1/47;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "hano, mhadíle-wo-li-yo lə-zʕuro ingəlizi",
+                "translations": [
+                  "ʻden (Hund) hatte mir ein englischer Junge geschenktʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["416"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["2/87"]
+              },
+              {
+                "turoyo": "ḥa m-aḥ=hawronayḏi mhadíle-wo-lan kalbo",
+                "translations": [
+                  "ʻeiner meiner Freunde hatte uns einen Hund geschenktʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["416"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["1/47"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "schenken;"
-  ],
+  "idioms": ["schenken;"],
   "uncertain": false
 }

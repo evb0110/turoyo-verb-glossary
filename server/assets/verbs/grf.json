@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "grəfle",
-        "gorəf"
-      ],
+      "forms": ["grəfle", "gorəf"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "grəfle",
+            "translations": ["er schob (den Schnee) weg"],
+            "references": ["67"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "grəfle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer schob (den Schnee) wegʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "67"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "grəfle ʻer schob (den Schnee) wegʼ; 67;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "grəfle",
+                "translations": ["ʻer schob (den Schnee) wegʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["67"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(weg)schieben;"
-  ],
+  "idioms": ["(weg)schieben;"],
   "uncertain": false
 }

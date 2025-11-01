@@ -14,24 +14,78 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mašəqle",
-        "mašəq"
-      ],
+      "forms": ["mašəqle", "mašəq"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ʕabiro i=gurza b-i=arʕo šəqla i=arʕo xd-u=barqo prs",
+            "translations": [
+              "die Keule fuhr in den Boden hinein und spaltete denselben wie der Blitz"
+            ],
+            "references": ["506", "33/19"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕabiro i=gurza b-i=arʕo šəqla i=arʕo xd-u=barqo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Keule fuhr in den Boden hinein und spaltete denselben wie der Blitzʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "506"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "33/19"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ʕabiro i=gurza b-i=arʕo šəqla i=arʕo xd-u=barqo ʻdie Keule fuhr in den Boden hinein und spaltete denselben wie der Blitzʼ; 506; prs 33/19;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ʕabiro i=gurza b-i=arʕo šəqla i=arʕo xd-u=barqo",
+                "translations": [
+                  "ʻdie Keule fuhr in den Boden hinein und spaltete denselben wie der Blitzʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["506"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["33/19"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "spalten;"
-  ],
+  "idioms": ["spalten;"],
   "uncertain": false
 }

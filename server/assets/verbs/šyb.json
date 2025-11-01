@@ -14,17 +14,56 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "šayəb",
-        "šoyəb"
-      ],
+      "forms": ["šayəb", "šoyəb"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "adšato aṯi hawa ʕal aḥ=ḥeṭe zriʕe šayibi",
+            "translations": [
+              "in diesem Jahre ist wegen Wind und schlechtem Wetter der gesäte Weizen nicht reif geworden"
+            ],
+            "references": ["572"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "adšato aṯi hawa ʕal aḥ=ḥeṭe zriʕe šayibi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻin diesem Jahre ist wegen Wind und schlechtem Wetter der gesäte Weizen nicht reif gewordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "572"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "adšato aṯi hawa ʕal aḥ=ḥeṭe zriʕe šayibi ʻin diesem Jahre ist wegen Wind und schlechtem Wetter der gesäte Weizen nicht reif gewordenʼ; 572;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "adšato aṯi hawa ʕal aḥ=ḥeṭe zriʕe šayibi",
+                "translations": [
+                  "ʻin diesem Jahre ist wegen Wind und schlechtem Wetter der gesäte Weizen nicht reif gewordenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["572"]
+              }
+            ]
           }
         ]
       }

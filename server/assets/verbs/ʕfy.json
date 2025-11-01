@@ -14,58 +14,534 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ʕfele",
-        "ʕofe"
-      ],
+      "forms": ["ʕfele", "ʕofe"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "u=ʕmiro lə=ʕfele. azzehən mṭalle a=qliḏe d-ab=botaṯṯe kulle w-maḥtənne qm-u=ʕmiro ʕfele aḥ=ḥaramiye daʕər u=šērkuž l-u=bayto ḥfele tamo húle-le ʕafu w-húle-le i=waḏ̣ifa d-u=waziro",
+            "translations": [
+              "The Emir did not pardon [Silo]. [Then]they went and brought keys from all their houses and placed them before the emir",
+              "er vergab den Räubern, und der Löwentöter kehrte nach Hause zurück",
+              "‘Da verzieh er ihm, gewährte ihm Amnestie und gab ihm das Amt des Wesirs’"
+            ],
+            "references": ["36/130", "338", "56/103"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=ʕmiro lə=ʕfele. azzehən mṭalle a=qliḏe d-ab=botaṯṯe kulle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-maḥtənne qm-u=ʕmiro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻThe Emir did not pardon [Silo]. [Then]they went and brought keys from all their houses and placed them before the emirʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/130"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕfele aḥ=ḥaramiye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " daʕər u=šērkuž l-u=bayto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer vergab den Räubern, und der Löwentöter kehrte nach Hause zurückʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "338"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/103"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥfele tamo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " húle-le ʕafu"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-húle-le i=waḏ̣ifa d-u=waziro "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Da verzieh er ihm, gewährte ihm Amnestie und gab ihm das Amt des Wesirs’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "27/71"
+              }
+            ],
             "text": "u=ʕmiro lə=ʕfele. azzehən mṭalle a=qliḏe d-ab=botaṯṯe kulle, w-maḥtənne qm-u=ʕmiro ʻThe Emir did not pardon [Silo]. [Then]they went and brought keys from all their houses and placed them before the emirʼ; 36/130; ʕfele aḥ=ḥaramiye, daʕər u=šērkuž l-u=bayto ʻer vergab den Räubern, und der Löwentöter kehrte nach Hause zurückʼ; 338; 56/103; ḥfele tamo, húle-le ʕafu, w-húle-le i=waḏ̣ifa d-u=waziro ‘Da verzieh er ihm, gewährte ihm Amnestie und gab ihm das Amt des Wesirs’; 27/71",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=ʕmiro lə=ʕfele. azzehən mṭalle a=qliḏe d-ab=botaṯṯe kulle, w-maḥtənne qm-u=ʕmiro",
+                "translations": [
+                  "ʻThe Emir did not pardon [Silo]. [Then]they went and brought keys from all their houses and placed them before the emirʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["36/130"]
+              },
+              {
+                "turoyo": "ʕfele aḥ=ḥaramiye, daʕər u=šērkuž l-u=bayto",
+                "translations": [
+                  "ʻer vergab den Räubern, und der Löwentöter kehrte nach Hause zurückʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["338"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["56/103"]
+              },
+              {
+                "turoyo": "ḥfele tamo, húle-le ʕafu, w-húle-le i=waḏ̣ifa d-u=waziro",
+                "translations": [
+                  "‘Da verzieh er ihm, gewährte ihm Amnestie und gab ihm das Amt des Wesirs’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["27/71"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "izúx ḥaláq bəṯr u=abro d-u=šulṭono w mətraǧí mine balki ʕofe-lux ašər madām k-omal-li ax=xabr-ani gəd-ʕofen-e k-ubʕina d-ʕofat Silo w-u=mede d-ṭulbat gəd-obína-lux m-u=mal w-me-kul mede",
+            "translations": [
+              "mach dich auf, laufe dem Sohne des Sultans nach und bitte ihn! Vielleicht wird er dir verzeihen",
+              "Indeed, since he has told me these words, I will pardon him (i.e. leave him alive)",
+              "‘We want you to pardon Silo. Whatever you want from you property we will give you’"
+            ],
+            "references": ["365", "64/59", "367"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "izúx ḥaláq bəṯr u=abro d-u=šulṭono"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mətraǧí mine"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " balki ʕofe-lux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmach dich auf, laufe dem Sohne des Sultans nach und bitte ihn! Vielleicht wird er dir verzeihenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "365"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "64/59"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ašər"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " madām k-omal-li ax=xabr-ani"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəd-ʕofen-e "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻIndeed, since he has told me these words, I will pardon him (i.e. leave him alive)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "367"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "47/47"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ubʕina d-ʕofat Silo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-u=mede d-ṭulbat gəd-obína-lux m-u=mal w-me-kul mede "
+              },
+              {
+                "kind": "translation",
+                "value": "‘We want you to pardon Silo. Whatever you want from you property we will give you’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/129"
+              }
+            ],
             "text": "izúx ḥaláq bəṯr u=abro d-u=šulṭono, w mətraǧí mine, balki ʕofe-lux ʻmach dich auf, laufe dem Sohne des Sultans nach und bitte ihn! Vielleicht wird er dir verzeihenʼ; 365; 64/59; ašər, madām k-omal-li ax=xabr-ani, gəd-ʕofen-e ʻIndeed, since he has told me these words, I will pardon him (i.e. leave him alive)ʼ; 367; 47/47; k-ubʕina d-ʕofat Silo, w-u=mede d-ṭulbat gəd-obína-lux m-u=mal w-me-kul mede ‘We want you to pardon Silo. Whatever you want from you property we will give you’; 36/129",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "izúx ḥaláq bəṯr u=abro d-u=šulṭono, w mətraǧí mine, balki ʕofe-lux",
+                "translations": [
+                  "ʻmach dich auf, laufe dem Sohne des Sultans nach und bitte ihn! Vielleicht wird er dir verzeihenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["365"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["64/59"]
+              },
+              {
+                "turoyo": "ašər, madām k-omal-li ax=xabr-ani, gəd-ʕofen-e",
+                "translations": [
+                  "ʻIndeed, since he has told me these words, I will pardon him (i.e. leave him alive)ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["367"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["47/47"]
+              },
+              {
+                "turoyo": "k-ubʕina d-ʕofat Silo, w-u=mede d-ṭulbat gəd-obína-lux m-u=mal w-me-kul mede",
+                "translations": [
+                  "‘We want you to pardon Silo. Whatever you want from you property we will give you’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["36/129"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "ya u=malkayḏi ʕfáy-ene hul oʕdo",
+            "translations": [
+              "mein König! Was sie bis jetzt getan haben, das verzeihe ihnen"
+            ],
+            "references": ["373", "56/103"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ya u=malkayḏi ʕfáy-ene hul oʕdo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmein König! Was sie bis jetzt getan haben, das verzeihe ihnenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "373"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/103"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ya u=malkayḏi ʕfáy-ene hul oʕdo ʻmein König! Was sie bis jetzt getan haben, das verzeihe ihnenʼ; 373; 56/103;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ya u=malkayḏi ʕfáy-ene hul oʕdo",
+                "translations": [
+                  "ʻmein König! Was sie bis jetzt getan haben, das verzeihe ihnenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["373"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["56/103"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "maʕfele",
-        "maʕfe"
-      ],
+      "forms": ["maʕfele", "maʕfe"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "səmlan qṣūr k-ubʕina d-maʕfat-lan u=qṣur-ayḏan",
+            "translations": [
+              "wir haben uns etwas zuschulden kommen lassen und wir bitten, dass du uns unsere Schuld vergibst"
+            ],
+            "references": ["401", "30/158", "160"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "səmlan qṣūr"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ubʕina d-maʕfat-lan u=qṣur-ayḏan "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir haben uns etwas zuschulden kommen lassen und wir bitten, dass du uns unsere Schuld vergibstʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "401"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/158"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "160"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "səmlan qṣūr, k-ubʕina d-maʕfat-lan u=qṣur-ayḏan ʻwir haben uns etwas zuschulden kommen lassen und wir bitten, dass du uns unsere Schuld vergibstʼ; 401; 30/158, 160;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "səmlan qṣūr, k-ubʕina d-maʕfat-lan u=qṣur-ayḏan",
+                "translations": [
+                  "ʻwir haben uns etwas zuschulden kommen lassen und wir bitten, dass du uns unsere Schuld vergibstʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["401"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["30/158", "160"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "verzeihen, begnaden;",
-    "verzeihen;"
-  ],
+  "idioms": ["verzeihen, begnaden;", "verzeihen;"],
   "uncertain": false
 }

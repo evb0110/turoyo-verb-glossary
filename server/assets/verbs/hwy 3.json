@@ -14,17 +14,52 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mhawele",
-        "mhawe"
-      ],
+      "forms": ["mhawele", "mhawe"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mhawele",
+            "translations": ["er feuchtete an"],
+            "references": ["616"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mhawele "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer feuchtete anʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "616"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mhawele ʻer feuchtete anʼ; 616;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mhawele",
+                "translations": ["ʻer feuchtete anʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["616"]
+              }
+            ]
           }
         ]
       }
@@ -35,26 +70,110 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "Aǧ+ǧule komihawәn bi škafte Ilyas p.c. / cf. Kurm. Ǧәl hewi dәbәn",
+            "translations": ["‘Clothes get wet in the cave/basement’"],
+            "references": ["5/11", "23"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Aǧ+ǧule komihawәn bi škafte "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Clothes get wet in the cave/basement’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c. "
+              },
+              {
+                "kind": "ref",
+                "value": "5/11"
+              },
+              {
+                "kind": "turoyo",
+                "value": "/"
+              },
+              {
+                "kind": "ref",
+                "value": "23"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " cf. Kurm. Ǧәl hewi dәbәn"
+              }
+            ],
             "text": "Aǧ+ǧule komihawәn bi škafte ‘Clothes get wet in the cave/basement’ (Ilyas p.c. 5/11/23) cf. Kurm. Ǧәl hewi dәbәn",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "Aǧ+ǧule komihawәn bi škafte (Ilyas p.c. /) cf. Kurm. Ǧәl hewi dәbәn",
+                "translations": ["‘Clothes get wet in the cave/basement’"],
+                "references": ["5/11", "23"]
+              }
+            ]
           }
         ],
         "Part. Pass.": [
           {
+            "turoyo": "briṯo mhawayto-yo",
+            "translations": ["es ist feuchte Luft"],
+            "references": ["616"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "briṯo mhawayto-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes ist feuchte Luftʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "616"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "briṯo mhawayto-yo ʻes ist feuchte Luftʼ; 616;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "briṯo mhawayto-yo",
+                "translations": ["ʻes ist feuchte Luftʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["616"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "anfeuchten, Feucht machen; moisten",
-    "to get soaked in moisture"
-  ],
+  "idioms": ["anfeuchten, Feucht machen; moisten", "to get soaked in moisture"],
   "uncertain": false
 }

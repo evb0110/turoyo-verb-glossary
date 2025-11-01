@@ -14,24 +14,78 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mḥaṣalle",
-        "mḥaṣər"
-      ],
+      "forms": ["mḥaṣalle", "mḥaṣər"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-mḥaṣro aʕle Pr",
+            "translations": ["sie sehnt sich nach ihm"],
+            "references": ["1", "246", "S 70/16"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-mḥaṣro aʕle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie sehnt sich nach ihmʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "246"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Pr"
+              },
+              {
+                "kind": "ref",
+                "value": "S 70/16"
+              }
+            ],
             "text": "1) ko-mḥaṣro aʕle ʻsie sehnt sich nach ihmʼ; 246; PrS 70/16",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") ko-mḥaṣro aʕle",
+                "translations": ["ʻsie sehnt sich nach ihmʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["246"]
+              },
+              {
+                "turoyo": "Pr",
+                "translations": [],
+                "references": ["S 70/16"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "1) sehnen;"
-  ],
+  "idioms": ["1) sehnen;"],
   "uncertain": false
 }

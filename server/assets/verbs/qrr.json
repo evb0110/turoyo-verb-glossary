@@ -14,24 +14,74 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mqaralle",
-        "mqarər"
-      ],
+      "forms": ["mqaralle", "mqarər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mqararre ʕal u=qyoṣo də-druʕe",
+            "translations": ["They decided to cut off his arm"],
+            "references": ["498", "45/13"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mqararre ʕal u=qyoṣo də-druʕe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻThey decided to cut off his armʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "498"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "45/13"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mqararre ʕal u=qyoṣo də-druʕe ʻThey decided to cut off his armʼ; 498; 45/13;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mqararre ʕal u=qyoṣo də-druʕe",
+                "translations": ["ʻThey decided to cut off his armʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["498"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["45/13"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "beschliessen (etw. ʕal);"
-  ],
+  "idioms": ["beschliessen (etw. ʕal);"],
   "uncertain": false
 }

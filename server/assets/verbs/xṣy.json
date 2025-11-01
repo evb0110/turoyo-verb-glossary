@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "maxṣele",
-        "maxṣe"
-      ],
+      "forms": ["maxṣele", "maxṣe"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,49 @@
       "conjugations": {
         "Part. Pass.": [
           {
-            "text": "tawro maxəṣyo; 446;",
-            "turoyo": "",
+            "turoyo": "tawro maxəṣyo",
             "translations": [],
-            "references": []
+            "references": ["446"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "tawro maxəṣyo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "446"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "tawro maxəṣyo; 446;",
+            "segments": [
+              {
+                "turoyo": "tawro maxəṣyo",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["446"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "kastrieren;"
-  ],
+  "idioms": ["kastrieren;"],
   "uncertain": false
 }

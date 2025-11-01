@@ -12,38 +12,168 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "kšele",
-        "koše"
-      ],
+      "forms": ["kšele", "koše"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "bi=šato du=Sayfo laḥ-ḥanfe kšalle kəšyawoṯo d-qṭile Mšiḥoye b-ṭurʕabdin. In the year of S., the godless heaped up heaps of murdered Christians in Turabdin.",
-            "turoyo": "",
+            "turoyo": "bi=šato du=Sayfo laḥ-ḥanfe kšalle kəšyawoṯo d-qṭile Mšiḥoye b-ṭurʕabdin. In the year of S. the godless heaped up heaps of murdered Christians in Turabdin.",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bi=šato du=Sayfo laḥ-ḥanfe kšalle kəšyawoṯo d-qṭile Mšiḥoye b-ṭurʕabdin. In the year of S."
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " the godless heaped up heaps of murdered Christians in Turabdin."
+              }
+            ],
+            "text": "bi=šato du=Sayfo laḥ-ḥanfe kšalle kəšyawoṯo d-qṭile Mšiḥoye b-ṭurʕabdin. In the year of S., the godless heaped up heaps of murdered Christians in Turabdin.",
+            "segments": [
+              {
+                "turoyo": "bi=šato du=Sayfo laḥ-ḥanfe kšalle kəšyawoṯo d-qṭile Mšiḥoye b-ṭurʕabdin. In the year of S., the godless heaped up heaps of murdered Christians in Turabdin.",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ],
         "Infectum + Infectum-wa": [
           {
-            "text": "bu=payəz an-noše kokošən aq-qayse ʕal ḥḏoḏe (Ilyas July 2020)",
-            "turoyo": "",
+            "turoyo": "bu=payəz an-noše kokošən aq-qayse ʕal ḥḏoḏe Ilyas July",
             "translations": [],
-            "references": []
+            "references": ["2020"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bu=payəz an-noše kokošən aq-qayse ʕal ḥḏoḏe "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas July "
+              },
+              {
+                "kind": "ref",
+                "value": "2020"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "bu=payəz an-noše kokošən aq-qayse ʕal ḥḏoḏe (Ilyas July 2020)",
+            "segments": [
+              {
+                "turoyo": "bu=payəz an-noše kokošən aq-qayse ʕal ḥḏoḏe (Ilyas July )",
+                "translations": [],
+                "references": ["2020"]
+              }
+            ]
           },
           {
-            "text": "W i=naqqa d-xayifo d-lo mənqoliwa, saymiwayna hawxa d-əmmat tamo bi=arʕo, čike-ste hawxa d-nəšfi, d-miḥoṣi bə-ḥḏoḏe. ṣira, tarte, tlōṯ w bu=šəklawo, košənwanne bə-ḥḏoḏe (2019_13_01 Malf_Ishaq No 83)",
-            "turoyo": "",
+            "turoyo": "W i=naqqa d-xayifo d-lo mənqoliwa saymiwayna hawxa d-əmmat tamo bi=arʕo čike-ste hawxa d-nəšfi d-miḥoṣi bə-ḥḏoḏe. ṣira tarte tlōṯ w bu=šəklawo košənwanne bə-ḥḏoḏe 2019_13_ Malf_Ishaq No",
             "translations": [],
-            "references": []
+            "references": ["01", "83"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "W i=naqqa d-xayifo d-lo mənqoliwa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " saymiwayna hawxa d-əmmat tamo bi=arʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " čike-ste hawxa d-nəšfi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-miḥoṣi bə-ḥḏoḏe. ṣira"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " tarte"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " tlōṯ w bu=šəklawo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " košənwanne bə-ḥḏoḏe "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "2019_13_"
+              },
+              {
+                "kind": "ref",
+                "value": "01"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Malf_Ishaq No "
+              },
+              {
+                "kind": "ref",
+                "value": "83"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "W i=naqqa d-xayifo d-lo mənqoliwa, saymiwayna hawxa d-əmmat tamo bi=arʕo, čike-ste hawxa d-nəšfi, d-miḥoṣi bə-ḥḏoḏe. ṣira, tarte, tlōṯ w bu=šəklawo, košənwanne bə-ḥḏoḏe (2019_13_01 Malf_Ishaq No 83)",
+            "segments": [
+              {
+                "turoyo": "W i=naqqa d-xayifo d-lo mənqoliwa, saymiwayna hawxa d-əmmat tamo bi=arʕo, čike-ste hawxa d-nəšfi, d-miḥoṣi bə-ḥḏoḏe. ṣira, tarte, tlōṯ w bu=šəklawo, košənwanne bə-ḥḏoḏe (2019_13_ Malf_Ishaq No )",
+                "translations": [],
+                "references": ["01", "83"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "pile together, heap"
-  ],
+  "idioms": ["pile together, heap"],
   "uncertain": false
 }

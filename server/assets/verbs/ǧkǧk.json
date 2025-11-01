@@ -5,24 +5,79 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mǧakǧakle",
-        "mǧakǧək"
-      ],
+      "forms": ["mǧakǧakle", "mǧakǧək"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "mǧakǧakle ʕal i=arʕo; 797; 95/270; Пример отсутствует в указанном месте",
-            "turoyo": "",
+            "turoyo": "mǧakǧakle ʕal i=arʕo Пример отсутствует в указанном месте",
             "translations": [],
-            "references": []
+            "references": ["797", "95/270"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mǧakǧakle ʕal i=arʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "797"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "95/270"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Пример отсутствует в указанном месте"
+              }
+            ],
+            "text": "mǧakǧakle ʕal i=arʕo; 797; 95/270; Пример отсутствует в указанном месте",
+            "segments": [
+              {
+                "turoyo": "mǧakǧakle ʕal i=arʕo",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["797"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["95/270"]
+              },
+              {
+                "turoyo": "Пример отсутствует в указанном месте",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "kriechen;"
-  ],
+  "idioms": ["kriechen;"],
   "uncertain": false
 }

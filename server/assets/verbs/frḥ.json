@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "frīḥ",
-        "məfrəḥ"
-      ],
+      "forms": ["frīḥ", "məfrəḥ"],
       "conjugations": {}
     },
     {
@@ -26,25 +23,101 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "frīḥ",
+            "translations": ["er freute sich"],
+            "references": ["126"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "frīḥ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer freute sichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "126"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "frīḥ ʻer freute sichʼ; 126;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "frīḥ",
+                "translations": ["ʻer freute sichʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["126"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "ko-məfraḥno",
+            "translations": ["ich freue mich (an der frische Luft zu kommen)"],
+            "references": ["131"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-məfraḥno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich freue mich (an der frische Luft zu kommen)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "131"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-məfraḥno ʻich freue mich (an der frische Luft zu kommen)ʼ; 131;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-məfraḥno",
+                "translations": [
+                  "ʻich freue mich (an der frische Luft zu kommen)ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["131"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) sich freuen;"
-  ],
+  "idioms": ["(Detrans.) sich freuen;"],
   "uncertain": false
 }

@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mṭaʕən",
-        "miṭaʕən"
-      ],
+      "forms": ["mṭaʕən", "miṭaʕən"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,57 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "lo=k-miṭaʕnət",
+            "translations": [
+              "du nimmst es dir gar nicht zu Herzen, es ist dir ganz gleichgültig"
+            ],
+            "references": ["267"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lo=k-miṭaʕnət "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu nimmst es dir gar nicht zu Herzen, es ist dir ganz gleichgültigʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "267"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "lo=k-miṭaʕnət ʻdu nimmst es dir gar nicht zu Herzen, es ist dir ganz gleichgültigʼ; 267;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "lo=k-miṭaʕnət",
+                "translations": [
+                  "ʻdu nimmst es dir gar nicht zu Herzen, es ist dir ganz gleichgültigʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["267"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) sich zu Herzen nehmen, im Ehrgefühl getroffen sein;"
-  ],
+  "idioms": ["(Detrans.) sich zu Herzen nehmen, im Ehrgefühl getroffen sein;"],
   "uncertain": false
 }

@@ -5,17 +5,60 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mḥawdele",
-        "mḥawdəl"
-      ],
+      "forms": ["mḥawdele", "mḥawdəl"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mḥawdele am=maye",
+            "translations": ["er trübte das Wasser"],
+            "references": ["1", "780"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥawdele am=maye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer trübte das Wasserʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "780"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) mḥawdele am=maye ʻer trübte das Wasserʼ; 780;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") mḥawdele am=maye",
+                "translations": ["ʻer trübte das Wasserʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["780"]
+              }
+            ]
           }
         ]
       }
@@ -26,10 +69,77 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "ko-ḥoyər am=may-ani hawxa lanne ġắlabe naḏ̣ife mḥáwdle-ne",
+            "translations": [
+              "er schaut das Wasser so an: es ist nicht sehr sauber, es ist trübe"
+            ],
+            "references": ["780", "115/206"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-ḥoyər am=may-ani hawxa lanne ġắlabe naḏ̣ife"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥáwdle-ne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer schaut das Wasser so an: es ist nicht sehr sauber, es ist trübeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "780"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "115/206"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-ḥoyər am=may-ani hawxa lanne ġắlabe naḏ̣ife, mḥáwdle-ne ʻer schaut das Wasser so an: es ist nicht sehr sauber, es ist trübeʼ; 780; 115/206;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-ḥoyər am=may-ani hawxa lanne ġắlabe naḏ̣ife, mḥáwdle-ne",
+                "translations": [
+                  "ʻer schaut das Wasser so an: es ist nicht sehr sauber, es ist trübeʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["780"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["115/206"]
+              }
+            ]
           }
         ]
       }

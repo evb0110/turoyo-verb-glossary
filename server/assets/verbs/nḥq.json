@@ -11,24 +11,74 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mnaḥaqle",
-        "mnaḥəq"
-      ],
+      "forms": ["mnaḥaqle", "mnaḥəq"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "tən nošo lə=ko-mnaḥaq-lux",
+            "translations": ["niemand gibt dir unrecht"],
+            "references": ["227", "35/25"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "tən nošo lə=ko-mnaḥaq-lux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻniemand gibt dir unrechtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "227"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "35/25"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "tən nošo lə=ko-mnaḥaq-lux ʻniemand gibt dir unrechtʼ; 227; 35/25;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "tən nošo lə=ko-mnaḥaq-lux",
+                "translations": ["ʻniemand gibt dir unrechtʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["227"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["35/25"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "unrecht geben;"
-  ],
+  "idioms": ["unrecht geben;"],
   "uncertain": false
 }

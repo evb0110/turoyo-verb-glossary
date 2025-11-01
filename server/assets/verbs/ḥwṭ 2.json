@@ -14,25 +14,229 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mḥawaṭle",
-        "mḥawəṭ"
-      ],
+      "forms": ["mḥawaṭle", "mḥawəṭ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "čiki b-u=maṭʕam l-ani mḥawaṭṭe u=maṭʕam",
+            "translations": [
+              "sie gingen hinein und die (Soldaten) umstellten das Speisehaus"
+            ],
+            "references": ["1", "475", "87/129"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " čiki b-u=maṭʕam l-ani mḥawaṭṭe u=maṭʕam "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie gingen hinein und die (Soldaten) umstellten das Speisehausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "475"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "87/129"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "140"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "1) čiki b-u=maṭʕam l-ani mḥawaṭṭe u=maṭʕam ʻsie gingen hinein und die (Soldaten) umstellten das Speisehausʼ; 475; 87/129, 140;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": ") čiki b-u=maṭʕam l-ani mḥawaṭṭe u=maṭʕam",
+                "translations": [
+                  "ʻsie gingen hinein und die (Soldaten) umstellten das Speisehausʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["475"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["87/129", "140"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "1) at=taḥarriye ḥamšo əšto mḥawṭən-ne ʻda umzingelt sie das Ermittlungskommando, fünf, sechs Mannʼ; 475; 89/110; 2) ko-mḥawṭi ʕal i=səǧǧad-aṯi ʻsie wollen diesen Teppich gern kaufenʼ; 475;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "at=taḥarriye ḥamšo əšto mḥawṭən-ne",
+            "translations": [
+              "da umzingelt sie das Ermittlungskommando, fünf, sechs Mann"
+            ],
+            "references": ["1", "475", "89/110"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " at=taḥarriye ḥamšo əšto mḥawṭən-ne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda umzingelt sie das Ermittlungskommando, fünf, sechs Mannʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "475"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "89/110"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) at=taḥarriye ḥamšo əšto mḥawṭən-ne ʻda umzingelt sie das Ermittlungskommando, fünf, sechs Mannʼ; 475; 89/110;",
+            "segments": [
+              {
+                "turoyo": ") at=taḥarriye ḥamšo əšto mḥawṭən-ne",
+                "translations": [
+                  "ʻda umzingelt sie das Ermittlungskommando, fünf, sechs Mannʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["475"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["89/110"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "ko-mḥawṭi ʕal i=səǧǧad-aṯi",
+            "translations": ["sie wollen diesen Teppich gern kaufen"],
+            "references": ["2", "475"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-mḥawṭi ʕal i=səǧǧad-aṯi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie wollen diesen Teppich gern kaufenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "475"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) ko-mḥawṭi ʕal i=səǧǧad-aṯi ʻsie wollen diesen Teppich gern kaufenʼ; 475;",
+            "segments": [
+              {
+                "turoyo": ") ko-mḥawṭi ʕal i=səǧǧad-aṯi",
+                "translations": ["ʻsie wollen diesen Teppich gern kaufenʼ"],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["475"]
+              }
+            ]
           }
         ]
       }

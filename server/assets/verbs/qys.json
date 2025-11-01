@@ -14,32 +14,124 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mqayasle",
-        "mqayəs"
-      ],
+      "forms": ["mqayasle", "mqayəs"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "də-mqayasno u=xušno",
+            "translations": ["dass ich die Dicke vergleiche"],
+            "references": ["492"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "də-mqayasno u=xušno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdass ich die Dicke vergleicheʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "492"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "də-mqayasno u=xušno ʻdass ich die Dicke vergleicheʼ; 492;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "də-mqayasno u=xušno",
+                "translations": ["ʻdass ich die Dicke vergleicheʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["492"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "nošo lát-way-le də-mqayas-wa u=māl diḏe",
+            "translations": [
+              "es gab niemand, der seinen Besitz hätte ermessen können"
+            ],
+            "references": ["492", "113/2"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "nošo lát-way-le də-mqayas-wa u=māl diḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes gab niemand, der seinen Besitz hätte ermessen könnenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "492"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "113/2"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "nošo lát-way-le də-mqayas-wa u=māl diḏe ʻes gab niemand, der seinen Besitz hätte ermessen könnenʼ; 492; 113/2;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "nošo lát-way-le də-mqayas-wa u=māl diḏe",
+                "translations": [
+                  "ʻes gab niemand, der seinen Besitz hätte ermessen könnenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["492"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["113/2"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "vergleichen, ermessen;"
-  ],
+  "idioms": ["vergleichen, ermessen;"],
   "uncertain": false
 }

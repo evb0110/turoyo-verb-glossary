@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mqawləǧ",
-        "miqawləǧ"
-      ],
+      "forms": ["mqawləǧ", "miqawləǧ"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,103 @@
       "conjugations": {
         "ko-Preterit": [
           {
+            "turoyo": "ḥəlli ga ko-mqawləǧ u=tawr-ano ku-mqawləǧ",
+            "translations": [
+              "I saw that the ox had caught colic",
+              "‘This ox has caught colic’"
+            ],
+            "references": ["787", "44/112", "44/91"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥəlli ga ko-mqawləǧ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻI saw that the ox had caught colicʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "787"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/112"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=tawr-ano ku-mqawləǧ "
+              },
+              {
+                "kind": "translation",
+                "value": "‘This ox has caught colic’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/91"
+              }
+            ],
             "text": "ḥəlli ga ko-mqawləǧ ʻI saw that the ox had caught colicʼ; 787; 44/112; u=tawr-ano ku-mqawləǧ ‘This ox has caught colic’; 44/91",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ḥəlli ga ko-mqawləǧ",
+                "translations": ["ʻI saw that the ox had caught colicʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["787"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["44/112"]
+              },
+              {
+                "turoyo": "u=tawr-ano ku-mqawləǧ",
+                "translations": ["‘This ox has caught colic’"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["44/91"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) Kolik bekommen;"
-  ],
+  "idioms": ["(Detrans.) Kolik bekommen;"],
   "uncertain": false
 }

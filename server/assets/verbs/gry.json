@@ -5,24 +5,61 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mgarele",
-        "mgare"
-      ],
+      "forms": ["mgarele", "mgare"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "u=zlām t-owe mzaqfo laybux mgarat-le",
+            "translations": [
+              "mit einem hochmütigen oder abwesenden Manne kannst du nicht sprechen"
+            ],
+            "references": ["447"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=zlām t-owe mzaqfo laybux mgarat-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmit einem hochmütigen oder abwesenden Manne kannst du nicht sprechenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "447"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=zlām t-owe mzaqfo laybux mgarat-le ʻmit einem hochmütigen oder abwesenden Manne kannst du nicht sprechenʼ; 447;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=zlām t-owe mzaqfo laybux mgarat-le",
+                "translations": [
+                  "ʻmit einem hochmütigen oder abwesenden Manne kannst du nicht sprechenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["447"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sprechen mit, sich wenden an;"
-  ],
+  "idioms": ["sprechen mit, sich wenden an;"],
   "uncertain": false
 }

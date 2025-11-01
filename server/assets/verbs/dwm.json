@@ -14,32 +14,257 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mdawamle",
-        "mdawəm"
-      ],
+      "forms": ["mdawamle", "mdawəm"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "m-bəṯər mdawamle mədde d-šwaʕ=əšne b-u=ḥāl-ano bəṯṯər d-šqilan i=ḥəmmit-ayḏan mdawamlan ʕal u=darb-ayḏan mḥarabbe ʕam ḥḏoḏe saʕa w-mdawamme saʕa w-falge zəd m-u=qamoyo",
+            "translations": [
+              "und so tat er sieben Jahre lang",
+              "nachdem wir unsere Energie widergefunden hatten, setzten wir unsere Reise fort",
+              "‘Sie kämpften eine Stunde, anderthalb Stunden, länger als das erste Mal’"
+            ],
+            "references": ["473", "24/163", "11/50"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "m-bəṯər mdawamle mədde d-šwaʕ=əšne b-u=ḥāl-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻund so tat er sieben Jahre langʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "473"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/163"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[LTN]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər d-šqilan i=ḥəmmit-ayḏan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mdawamlan ʕal u=darb-ayḏan "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnachdem wir unsere Energie widergefunden hatten, setzten wir unsere Reise fortʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/50"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥarabbe ʕam ḥḏoḏe saʕa w-mdawamme saʕa w-falge zəd m-u=qamoyo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sie kämpften eine Stunde, anderthalb Stunden, länger als das erste Mal’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/157"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "m-bəṯər mdawamle mədde d-šwaʕ=əšne b-u=ḥāl-ano ʻund so tat er sieben Jahre langʼ; 473; 24/163 [LTN]; bəṯṯər d-šqilan i=ḥəmmit-ayḏan, mdawamlan ʕal u=darb-ayḏan ʻnachdem wir unsere Energie widergefunden hatten, setzten wir unsere Reise fortʼ; 11/50; mḥarabbe ʕam ḥḏoḏe saʕa w-mdawamme saʕa w-falge zəd m-u=qamoyo ‘Sie kämpften eine Stunde, anderthalb Stunden, länger als das erste Mal’; 29/157 [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "m-bəṯər mdawamle mədde d-šwaʕ=əšne b-u=ḥāl-ano",
+                "translations": ["ʻund so tat er sieben Jahre langʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["473"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/163"],
+                "notes": ["[LTN]"]
+              },
+              {
+                "turoyo": "bəṯṯər d-šqilan i=ḥəmmit-ayḏan, mdawamlan ʕal u=darb-ayḏan",
+                "translations": [
+                  "ʻnachdem wir unsere Energie widergefunden hatten, setzten wir unsere Reise fortʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/50"]
+              },
+              {
+                "turoyo": "mḥarabbe ʕam ḥḏoḏe saʕa w-mdawamme saʕa w-falge zəd m-u=qamoyo",
+                "translations": [
+                  "‘Sie kämpften eine Stunde, anderthalb Stunden, länger als das erste Mal’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/157"],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "u=tulifo k-mdawəm u=darb-ano k-mdawəm hōl l-u=Baḥar Komo",
+            "translations": [
+              "der Unterricht geht weiter",
+              "diese Strasse setzt sich fort bis zum Schwarzen Meere"
+            ],
+            "references": ["473", "4/74"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=tulifo k-mdawəm "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Unterricht geht weiterʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "473"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=darb-ano k-mdawəm hōl l-u=Baḥar Komo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdiese Strasse setzt sich fort bis zum Schwarzen Meereʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "4/74"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=tulifo k-mdawəm ʻder Unterricht geht weiterʼ; 473; u=darb-ano k-mdawəm hōl l-u=Baḥar Komo ʻdiese Strasse setzt sich fort bis zum Schwarzen Meereʼ; 4/74;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=tulifo k-mdawəm",
+                "translations": ["ʻder Unterricht geht weiterʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["473"]
+              },
+              {
+                "turoyo": "u=darb-ano k-mdawəm hōl l-u=Baḥar Komo",
+                "translations": [
+                  "ʻdiese Strasse setzt sich fort bis zum Schwarzen Meereʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["4/74"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "fortfahren, fortsetzen, weitergehen, andauern;"
-  ],
+  "idioms": ["fortfahren, fortsetzen, weitergehen, andauern;"],
   "uncertain": false
 }

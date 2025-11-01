@@ -14,32 +14,145 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mpayadle",
-        "mpayəd"
-      ],
+      "forms": ["mpayadle", "mpayəd"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "k-azzino mpayadn-a a=ḥrene prs",
+            "translations": [
+              "ich will gehen und ihr die anderen herbeischaffen"
+            ],
+            "references": ["494", "103/140"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-azzino mpayadn-a a=ḥrene "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich will gehen und ihr die anderen herbeischaffenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "494"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "103/140"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "k-azzino mpayadn-a a=ḥrene ʻich will gehen und ihr die anderen herbeischaffenʼ; 494; prs 103/140;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "k-azzino mpayadn-a a=ḥrene",
+                "translations": [
+                  "ʻich will gehen und ihr die anderen herbeischaffenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["494"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["103/140"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "payad-la aʕ=ʕəsri=ḥrene prs",
+            "translations": [
+              "schaffe ihr die übrigen zwanzig (Piaster) zur Stelle"
+            ],
+            "references": ["494", "194/27"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "payad-la aʕ=ʕəsri=ḥrene "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻschaffe ihr die übrigen zwanzig (Piaster) zur Stelleʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "494"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "194/27"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "payad-la aʕ=ʕəsri=ḥrene ʻschaffe ihr die übrigen zwanzig (Piaster) zur Stelleʼ; 494; prs 194/27;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "payad-la aʕ=ʕəsri=ḥrene",
+                "translations": [
+                  "ʻschaffe ihr die übrigen zwanzig (Piaster) zur Stelleʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["494"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["194/27"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "herbeischaffen, Zur Stelle schaffen, auftreiben, finden;"
-  ],
+  "idioms": ["herbeischaffen, Zur Stelle schaffen, auftreiben, finden;"],
   "uncertain": false
 }

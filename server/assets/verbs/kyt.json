@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "kayət",
-        "koyət"
-      ],
+      "forms": ["kayət", "koyət"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "ḥawri kayət b-i=arʕo",
+            "translations": ["mein Kamerad blieb ganz klein"],
+            "references": ["579"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥawri kayət b-i=arʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmein Kamerad blieb ganz kleinʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "579"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ḥawri kayət b-i=arʕo ʻmein Kamerad blieb ganz kleinʼ; 579;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ḥawri kayət b-i=arʕo",
+                "translations": ["ʻmein Kamerad blieb ganz kleinʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["579"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "im Wuchs zurückbleiben (to become less) ;"
-  ],
+  "idioms": ["im Wuchs zurückbleiben (to become less) ;"],
   "uncertain": false
 }

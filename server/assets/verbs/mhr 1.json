@@ -14,33 +14,463 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mhəḷḷe",
-        "mohər"
-      ],
+      "forms": ["mhəḷḷe", "mohər"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "šqile i=walaye l-u=Abu-Darwəš, mhəlle at=tarte aʕle ʻAbu Derwisch nahm die Stadt ein und heiratete die beiden Frauenʼ; 253; prs 163/22; 99/114; w-i=barṯo d-u=malko w-u=taʕlo-ste d-kit-we barṯo at=tarte mhərile ʕal-u=abr-ayḏe u=naʕimo ‘Und die Tochter des Königs und auch den Fuchs, der ein Mädchen war,  gab er seinem jüngsten Sohne zur Frau’; 21/92; mə-bəṯṯər aš=šawʕo yawme də-mkamalle u=kef dəṯṯe, qralle l-u=malla w-mbarxənne ʕal ḥḏoḏe mhərənne ʕal ḥḏoḏe ‘Als sie nach sieben Tagen das Vergnügen beendet hatten, riefen sie den Molla und trauten sie einander an, verheirateten sie’; 24/110; nšəqla iḏe d-u=malko; hule-la i=barṯo mhərole aʕla ‘Sie küßte dem König die Hand. Er gab ihr seine Tochter und verheiratete sie mit ihr’; 24/184",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "šqile i=walaye l-u=Abu-Darwəš mhəlle at=tarte aʕle prs w-i=barṯo d-u=malko w-u=taʕlo-ste d-kit-we barṯo at=tarte mhərile ʕal-u=abr-ayḏe u=naʕimo mə-bəṯṯər aš=šawʕo yawme də-mkamalle u=kef dəṯṯe qralle l-u=malla w-mbarxənne ʕal ḥḏoḏe mhərənne ʕal ḥḏoḏe nšəqla iḏe d-u=malko hule-la i=barṯo mhərole aʕla",
+            "translations": [
+              "Abu Derwisch nahm die Stadt ein und heiratete die beiden Frauen",
+              "‘Und die Tochter des Königs und auch den Fuchs, der ein Mädchen war, gab er seinem jüngsten Sohne zur Frau’",
+              "‘Als sie nach sieben Tagen das Vergnügen beendet hatten, riefen sie den Molla und trauten sie einander an, verheirateten sie’",
+              "‘Sie küßte dem König die Hand. Er gab ihr seine Tochter und verheiratete sie mit ihr’"
+            ],
+            "references": ["253", "163/22", "99/114"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "šqile i=walaye l-u=Abu-Darwəš"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mhəlle at=tarte aʕle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻAbu Derwisch nahm die Stadt ein und heiratete die beiden Frauenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "253"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "163/22"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "99/114"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-i=barṯo d-u=malko w-u=taʕlo-ste d-kit-we barṯo at=tarte mhərile ʕal-u=abr-ayḏe u=naʕimo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Und die Tochter des Königs und auch den Fuchs, der ein Mädchen war,  gab er seinem jüngsten Sohne zur Frau’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/92"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mə-bəṯṯər aš=šawʕo yawme də-mkamalle u=kef dəṯṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qralle l-u=malla w-mbarxənne ʕal ḥḏoḏe mhərənne ʕal ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Als sie nach sieben Tagen das Vergnügen beendet hatten, riefen sie den Molla und trauten sie einander an, verheirateten sie’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/110"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " nšəqla iḏe d-u=malko"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hule-la i=barṯo mhərole aʕla "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sie küßte dem König die Hand. Er gab ihr seine Tochter und verheiratete sie mit ihr’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/184"
+              }
+            ],
+            "text": "šqile i=walaye l-u=Abu-Darwəš, mhəlle at=tarte aʕle ʻAbu Derwisch nahm die Stadt ein und heiratete die beiden Frauenʼ; 253; prs 163/22; 99/114; w-i=barṯo d-u=malko w-u=taʕlo-ste d-kit-we barṯo at=tarte mhərile ʕal-u=abr-ayḏe u=naʕimo ‘Und die Tochter des Königs und auch den Fuchs, der ein Mädchen war, gab er seinem jüngsten Sohne zur Frau’; 21/92; mə-bəṯṯər aš=šawʕo yawme də-mkamalle u=kef dəṯṯe, qralle l-u=malla w-mbarxənne ʕal ḥḏoḏe mhərənne ʕal ḥḏoḏe ‘Als sie nach sieben Tagen das Vergnügen beendet hatten, riefen sie den Molla und trauten sie einander an, verheirateten sie’; 24/110; nšəqla iḏe d-u=malko; hule-la i=barṯo mhərole aʕla ‘Sie küßte dem König die Hand. Er gab ihr seine Tochter und verheiratete sie mit ihr’; 24/184",
+            "segments": [
+              {
+                "turoyo": "šqile i=walaye l-u=Abu-Darwəš, mhəlle at=tarte aʕle",
+                "translations": [
+                  "ʻAbu Derwisch nahm die Stadt ein und heiratete die beiden Frauenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["253"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["163/22"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["99/114"]
+              },
+              {
+                "turoyo": "w-i=barṯo d-u=malko w-u=taʕlo-ste d-kit-we barṯo at=tarte mhərile ʕal-u=abr-ayḏe u=naʕimo",
+                "translations": [
+                  "‘Und die Tochter des Königs und auch den Fuchs, der ein Mädchen war, gab er seinem jüngsten Sohne zur Frau’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["21/92"]
+              },
+              {
+                "turoyo": "mə-bəṯṯər aš=šawʕo yawme də-mkamalle u=kef dəṯṯe, qralle l-u=malla w-mbarxənne ʕal ḥḏoḏe mhərənne ʕal ḥḏoḏe",
+                "translations": [
+                  "‘Als sie nach sieben Tagen das Vergnügen beendet hatten, riefen sie den Molla und trauten sie einander an, verheirateten sie’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/110"]
+              },
+              {
+                "turoyo": "nšəqla iḏe d-u=malko",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "hule-la i=barṯo mhərole aʕla",
+                "translations": [
+                  "‘Sie küßte dem König die Hand. Er gab ihr seine Tochter und verheiratete sie mit ihr’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/184"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "u=maqṣadayḏan d-noše d-lə=mohal-la bəṯre - abəʕ d-soyəm məštuṯo l-u=abr-ayḏe u=rabo də-mbarəx mohər i=barṯo d-u=malko aʕle mwaʕadle ḥatta d-muhrən-ne aw mbarxən-ne ʕal ḥḏoḏe",
+            "translations": [
+              "wir bezwecken, dass nach ihm sie niemand mehr heiratet",
+              "‘Er wollte das Hochzeitsfest für seinen ältesten Sohn feiern lassen, ihm die Tochter des Königs antrauen und mit ihm verheiraten’",
+              "Der König versprach, dass man sie verheiraten, sie einander antrauen lassen würde"
+            ],
+            "references": ["253", "254", "63/236"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=maqṣadayḏan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-noše d-lə=mohal-la bəṯre "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir bezwecken, dass nach ihm sie niemand mehr heiratetʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "253"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "254"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "63/236"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " abəʕ d-soyəm məštuṯo l-u=abr-ayḏe u=rabo də-mbarəx mohər i=barṯo d-u=malko aʕle "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er wollte das Hochzeitsfest für seinen ältesten Sohn feiern lassen, ihm die Tochter des Königs antrauen und mit ihm verheiraten’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/78"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mwaʕadle ḥatta d-muhrən-ne aw mbarxən-ne ʕal ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻDer König versprach, dass man sie verheiraten, sie einander antrauen lassen würdeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/108"
+              }
+            ],
             "text": "u=maqṣadayḏan, d-noše d-lə=mohal-la bəṯre ʻwir bezwecken, dass nach ihm sie niemand mehr heiratetʼ; 253-254; 63/236; abəʕ d-soyəm məštuṯo l-u=abr-ayḏe u=rabo də-mbarəx mohər i=barṯo d-u=malko aʕle ‘Er wollte das Hochzeitsfest für seinen ältesten Sohn feiern lassen, ihm die Tochter des Königs antrauen und mit ihm verheiraten’; 21/78 [MT]; mwaʕadle ḥatta d-muhrən-ne aw mbarxən-ne ʕal ḥḏoḏe ʻDer König versprach, dass man sie verheiraten, sie einander antrauen lassen würdeʼ; 24/108",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=maqṣadayḏan, d-noše d-lə=mohal-la bəṯre",
+                "translations": [
+                  "ʻwir bezwecken, dass nach ihm sie niemand mehr heiratetʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["253", "254"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["63/236"]
+              },
+              {
+                "turoyo": "abəʕ d-soyəm məštuṯo l-u=abr-ayḏe u=rabo də-mbarəx mohər i=barṯo d-u=malko aʕle",
+                "translations": [
+                  "‘Er wollte das Hochzeitsfest für seinen ältesten Sohn feiern lassen, ihm die Tochter des Königs antrauen und mit ihm verheiraten’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["21/78"],
+                "notes": ["[MT]"]
+              },
+              {
+                "turoyo": "mwaʕadle ḥatta d-muhrən-ne aw mbarxən-ne ʕal ḥḏoḏe",
+                "translations": [
+                  "ʻDer König versprach, dass man sie verheiraten, sie einander antrauen lassen würdeʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/108"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "kət-li tloṯ=abnoṯo ayna d-k-ubʕət mhar-a aʕlox prs",
+            "translations": [
+              "ich habe drei Töchter, heirate welche von ihnen (die?) du wünschest"
+            ],
+            "references": ["254", "16/8"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kət-li tloṯ=abnoṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ayna d-k-ubʕət mhar-a aʕlox "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe drei Töchter, heirate welche von ihnen (die?) du wünschestʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "254"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "16/8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kət-li tloṯ=abnoṯo, ayna d-k-ubʕət mhar-a aʕlox ʻich habe drei Töchter, heirate welche von ihnen (die?) du wünschestʼ; 254; prs 16/8;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kət-li tloṯ=abnoṯo, ayna d-k-ubʕət mhar-a aʕlox",
+                "translations": [
+                  "ʻich habe drei Töchter, heirate welche von ihnen (die?) du wünschestʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["254"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["16/8"]
+              }
+            ]
           }
         ]
       }
@@ -51,10 +481,69 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "lazəm i=barṯayḏi-ste məmhoro ʕal abrayḏux",
+            "translations": [
+              "meine Tochter soll mit deinem Sohn verheiratet werden"
+            ],
+            "references": ["254", "95/21"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lazəm i=barṯayḏi-ste məmhoro ʕal abrayḏux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmeine Tochter soll mit deinem Sohn verheiratet werdenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "254"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "95/21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "lazəm i=barṯayḏi-ste məmhoro ʕal abrayḏux ʻmeine Tochter soll mit deinem Sohn verheiratet werdenʼ; 254; 95/21;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "lazəm i=barṯayḏi-ste məmhoro ʕal abrayḏux",
+                "translations": [
+                  "ʻmeine Tochter soll mit deinem Sohn verheiratet werdenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["254"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["95/21"]
+              }
+            ]
           }
         ]
       }

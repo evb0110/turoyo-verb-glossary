@@ -14,74 +14,553 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "raʕəl",
-        "roʕəl"
-      ],
+      "forms": ["raʕəl", "roʕəl"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "u=ḥa lalyo ḥzele l-u=ʕmiro ḥulmo w-raʕəl mene",
+            "translations": [
+              "eines Tages hatte der Emir einen Traum, über den er sehr erschrank"
+            ],
+            "references": ["294", "36/9"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=ḥa lalyo ḥzele l-u=ʕmiro ḥulmo w-raʕəl mene "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻeines Tages hatte der Emir einen Traum, über den er sehr erschrankʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "294"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=ḥa lalyo ḥzele l-u=ʕmiro ḥulmo w-raʕəl mene ʻeines Tages hatte der Emir einen Traum, über den er sehr erschrankʼ; 294; 36/9;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=ḥa lalyo ḥzele l-u=ʕmiro ḥulmo w-raʕəl mene",
+                "translations": [
+                  "ʻeines Tages hatte der Emir einen Traum, über den er sehr erschrankʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["294"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["36/9"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "k-ruʕli as=sabʕe w k-ruʕlo i=arʕo prs",
+            "translations": ["die Löwen zitterten, und der Erdboden zitterte"],
+            "references": ["296", "72/30"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-ruʕli as=sabʕe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w k-ruʕlo i=arʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Löwen zitterten, und der Erdboden zitterteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "296"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "72/30"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "k-ruʕli as=sabʕe, w k-ruʕlo i=arʕo ʻdie Löwen zitterten, und der Erdboden zitterteʼ; 296; prs 72/30;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "k-ruʕli as=sabʕe, w k-ruʕlo i=arʕo",
+                "translations": [
+                  "ʻdie Löwen zitterten, und der Erdboden zitterteʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["296"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["72/30"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "ʕal d-kət-wa mkanfalto b-kurk w yatuto b-u=qoltuġ ruʕlo-wa tarte tarte",
+            "translations": [
+              "obwohl sie in einen Pelz eingehüllt war und im Sessel (am Kamin) sass, zitterte sie wie Espenlaub"
+            ],
+            "references": ["299", "2/19"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕal d-kət-wa mkanfalto b-kurk"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w yatuto b-u=qoltuġ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ruʕlo-wa tarte tarte "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻobwohl sie in einen Pelz eingehüllt war und im Sessel (am Kamin) sass, zitterte sie wie Espenlaubʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "299"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/19"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ʕal d-kət-wa mkanfalto b-kurk, w yatuto b-u=qoltuġ, ruʕlo-wa tarte tarte ʻobwohl sie in einen Pelz eingehüllt war und im Sessel (am Kamin) sass, zitterte sie wie Espenlaubʼ; 299; 2/19;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ʕal d-kət-wa mkanfalto b-kurk, w yatuto b-u=qoltuġ, ruʕlo-wa tarte tarte",
+                "translations": [
+                  "ʻobwohl sie in einen Pelz eingehüllt war und im Sessel (am Kamin) sass, zitterte sie wie Espenlaubʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["299"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["2/19"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "marʕele",
-        "marʕəl"
-      ],
+      "forms": ["marʕele", "marʕəl"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "hano i=naqla d-mamṭele baḥəs d-aloho, u=dayrozo ġắlabe marʕele l-ǧisəm diḏe  ʻals er den Namen Gottes nannte, fing der Mönch an, am ganzen Leibe zu zitternʼ; 303; 90/48; 112/237;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "hano i=naqla d-mamṭele baḥəs d-aloho u=dayrozo ġắlabe marʕele l-ǧisəm diḏe",
+            "translations": [
+              "als er den Namen Gottes nannte, fing der Mönch an, am ganzen Leibe zu zittern"
+            ],
+            "references": ["303", "90/48", "112/237"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hano i=naqla d-mamṭele baḥəs d-aloho"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=dayrozo ġắlabe marʕele l-ǧisəm diḏe  "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals er den Namen Gottes nannte, fing der Mönch an, am ganzen Leibe zu zitternʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "303"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "90/48"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "112/237"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hano i=naqla d-mamṭele baḥəs d-aloho, u=dayrozo ġắlabe marʕele l-ǧisəm diḏe ʻals er den Namen Gottes nannte, fing der Mönch an, am ganzen Leibe zu zitternʼ; 303; 90/48; 112/237;",
+            "segments": [
+              {
+                "turoyo": "hano i=naqla d-mamṭele baḥəs d-aloho, u=dayrozo ġắlabe marʕele l-ǧisəm diḏe",
+                "translations": [
+                  "ʻals er den Namen Gottes nannte, fing der Mönch an, am ganzen Leibe zu zitternʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["303"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["90/48"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["112/237"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "haṯe i=aṯto-ste kət-la skino hawxa ʕal u=ḥmorayḏa k-qaymo g-məḥyo ʕal qarʕe d-u=šēr ko-qayṣo qarʕe d-u=šēr w hiye kale k-marʕəl tamo iḏoṯi ko-maraʕ-li w i=laše ko… rǧǝ́fto-yo aʕli",
+            "translations": [
+              "die Frau hatte so ein Messer auf ihrem Esel. Sie hieb damit auf den Kopf des Löwen und schnitt ihm den Kopf ab. Der Mann sass oben und zitterte",
+              "‘meine Hände zitterten und mein Körper bebte’"
+            ],
+            "references": ["305", "56/13", "92/17"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "haṯe i=aṯto-ste"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kət-la skino hawxa ʕal u=ḥmorayḏa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-qaymo g-məḥyo ʕal qarʕe d-u=šēr"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-qayṣo qarʕe d-u=šēr"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w hiye kale k-marʕəl tamo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Frau hatte so ein Messer auf ihrem Esel. Sie hieb damit auf den Kopf des Löwen und schnitt ihm den Kopf ab. Der Mann sass oben und zitterteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "305"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/13"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "92/17"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "76/88"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " iḏoṯi ko-maraʕ-li w i=laše ko… rǧǝ́fto-yo aʕli "
+              },
+              {
+                "kind": "translation",
+                "value": "‘meine Hände zitterten und mein Körper bebte’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 187"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "haṯe i=aṯto-ste, kət-la skino hawxa ʕal u=ḥmorayḏa, k-qaymo g-məḥyo ʕal qarʕe d-u=šēr, ko-qayṣo qarʕe d-u=šēr; w hiye kale k-marʕəl tamo ʻdie Frau hatte so ein Messer auf ihrem Esel. Sie hieb damit auf den Kopf des Löwen und schnitt ihm den Kopf ab. Der Mann sass oben und zitterteʼ; 305; 56/13; 92/17; 76/88; iḏoṯi ko-maraʕ-li w i=laše ko… rǧǝ́fto-yo aʕli ‘meine Hände zitterten und mein Körper bebte’; LB 187;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "haṯe i=aṯto-ste, kət-la skino hawxa ʕal u=ḥmorayḏa, k-qaymo g-məḥyo ʕal qarʕe d-u=šēr, ko-qayṣo qarʕe d-u=šēr",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "w hiye kale k-marʕəl tamo",
+                "translations": [
+                  "ʻdie Frau hatte so ein Messer auf ihrem Esel. Sie hieb damit auf den Kopf des Löwen und schnitt ihm den Kopf ab. Der Mann sass oben und zitterteʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["305"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["56/13"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["92/17"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["76/88"]
+              },
+              {
+                "turoyo": "iḏoṯi ko-maraʕ-li w i=laše ko… rǧǝ́fto-yo aʕli",
+                "translations": [
+                  "‘meine Hände zitterten und mein Körper bebte’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 187"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "marʕlo-wa tarte tarte",
+            "translations": ["sie zitterten wie Espenlaub"],
+            "references": ["299"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "marʕlo-wa tarte tarte "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie zitterten wie Espenlaubʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "299"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "marʕlo-wa tarte tarte ʻsie zitterten wie Espenlaubʼ; 299;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "marʕlo-wa tarte tarte",
+                "translations": ["ʻsie zitterten wie Espenlaubʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["299"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "zittern, beben;",
-    "zittern, beben;"
-  ],
+  "idioms": ["zittern, beben;", "zittern, beben;"],
   "uncertain": false
 }

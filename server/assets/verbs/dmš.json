@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mdaməš",
-        "midaməš"
-      ],
+      "forms": ["mdaməš", "midaməš"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,72 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "ḥzele iḏe mdamšo admo",
+            "translations": ["er merkte, dass an seiner Hand Blut klebte"],
+            "references": ["226", "115/36"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥzele iḏe mdamšo admo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer merkte, dass an seiner Hand Blut klebteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "226"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "115/36"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ḥzele iḏe mdamšo admo ʻer merkte, dass an seiner Hand Blut klebteʼ; 226; 115/36;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ḥzele iḏe mdamšo admo",
+                "translations": [
+                  "ʻer merkte, dass an seiner Hand Blut klebteʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["226"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["115/36"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) klebrig werden;"
-  ],
+  "idioms": ["(Detrans.) klebrig werden;"],
   "uncertain": false
 }

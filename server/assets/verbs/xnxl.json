@@ -5,17 +5,52 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mxanxele",
-        "mxanxəl"
-      ],
+      "forms": ["mxanxele", "mxanxəl"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "l-u=zlām mxanxe-le u=kurrŭko",
+            "translations": ["der Mann schlug des Jungen zu Schaden"],
+            "references": ["793"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-u=zlām mxanxe-le u=kurrŭko "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Mann schlug des Jungen zu Schadenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "793"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "l-u=zlām mxanxe-le u=kurrŭko ʻder Mann schlug des Jungen zu Schadenʼ; 793;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "l-u=zlām mxanxe-le u=kurrŭko",
+                "translations": ["ʻder Mann schlug des Jungen zu Schadenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["793"]
+              }
+            ]
           }
         ]
       }
@@ -26,17 +61,65 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "kət-le ṭrəmbēl mxanxlo -",
+            "translations": [
+              "er hat ein ganz kaputtes, nicht mehr brauchbares Auto"
+            ],
+            "references": ["793", "794"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kət-le ṭrəmbēl mxanxlo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hat ein ganz kaputtes, nicht mehr brauchbares Autoʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "793"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "794"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kət-le ṭrəmbēl mxanxlo ʻer hat ein ganz kaputtes, nicht mehr brauchbares Autoʼ; 793-794;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kət-le ṭrəmbēl mxanxlo",
+                "translations": [
+                  "ʻer hat ein ganz kaputtes, nicht mehr brauchbares Autoʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["793", "794"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "kaputt machen, zu Schanden halbtot schlagen;"
-  ],
+  "idioms": ["kaputt machen, zu Schanden halbtot schlagen;"],
   "uncertain": false
 }

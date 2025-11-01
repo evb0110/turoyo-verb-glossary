@@ -5,10 +5,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mpalək",
-        "mipalək"
-      ],
+      "forms": ["mpalək", "mipalək"],
       "conjugations": {}
     },
     {
@@ -17,17 +14,53 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-mipalakno mine",
+            "translations": ["ich habe Angst vor ihm"],
+            "references": ["174"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mipalakno mine "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe Angst vor ihmʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "174"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-mipalakno mine ʻich habe Angst vor ihmʼ; 174;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-mipalakno mine",
+                "translations": ["ʻich habe Angst vor ihmʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["174"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) Angst haben;"
-  ],
+  "idioms": ["(Detrans.) Angst haben;"],
   "uncertain": false
 }

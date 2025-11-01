@@ -14,38 +14,156 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mzaʕwaqle",
-        "mzaʕwəq"
-      ],
+      "forms": ["mzaʕwaqle", "mzaʕwəq"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mahzamle. mzaʕwaqla prs",
+            "translations": ["als er fliehen wollte, schrie sie laut"],
+            "references": ["795", "18/32"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mahzamle. mzaʕwaqla "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals er fliehen wollte, schrie sie lautʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "795"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "18/32"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mahzamle. mzaʕwaqla ʻals er fliehen wollte, schrie sie lautʼ; 795; prs 18/32;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mahzamle. mzaʕwaqla",
+                "translations": ["ʻals er fliehen wollte, schrie sie lautʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["795"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["18/32"]
+              }
+            ]
           },
           {
-            "text": "mžaʕwaqla; prs 37/3;",
-            "turoyo": "",
+            "turoyo": "mžaʕwaqla prs",
             "translations": [],
-            "references": []
+            "references": ["37/3"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mžaʕwaqla"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "37/3"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mžaʕwaqla; prs 37/3;",
+            "segments": [
+              {
+                "turoyo": "mžaʕwaqla",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["37/3"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
-            "text": "zəʕwoqo; 795;",
-            "turoyo": "",
+            "turoyo": "zəʕwoqo",
             "translations": [],
-            "references": []
+            "references": ["795"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "zəʕwoqo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "795"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "zəʕwoqo; 795;",
+            "segments": [
+              {
+                "turoyo": "zəʕwoqo",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["795"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "schreien;"
-  ],
+  "idioms": ["schreien;"],
   "uncertain": false
 }

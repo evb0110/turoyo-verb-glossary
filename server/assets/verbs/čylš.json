@@ -14,32 +14,120 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mčaylašle",
-        "mčayləš"
-      ],
+      "forms": ["mčaylašle", "mčayləš"],
       "conjugations": {
         "Infectum": [
           {
-            "text": "ŭno w u=mʕalləm yasəqina l-lalʕal. l-i=odayḏan lăšan d-mčaylišina ʻich und der Professor stiegen hinauf auf unser Zimmer, um zu arbeitenʼ;  772; 10/23;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "ŭno w u=mʕalləm yasəqina l-lalʕal. l-i=odayḏan lăšan d-mčaylišina",
+            "translations": [
+              "ich und der Professor stiegen hinauf auf unser Zimmer, um zu arbeiten"
+            ],
+            "references": ["772", "10/23"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ŭno w u=mʕalləm yasəqina l-lalʕal. l-i=odayḏan lăšan d-mčaylišina "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich und der Professor stiegen hinauf auf unser Zimmer, um zu arbeitenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  "
+              },
+              {
+                "kind": "ref",
+                "value": "772"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "10/23"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ŭno w u=mʕalləm yasəqina l-lalʕal. l-i=odayḏan lăšan d-mčaylišina ʻich und der Professor stiegen hinauf auf unser Zimmer, um zu arbeitenʼ; 772; 10/23;",
+            "segments": [
+              {
+                "turoyo": "ŭno w u=mʕalləm yasəqina l-lalʕal. l-i=odayḏan lăšan d-mčaylišina",
+                "translations": [
+                  "ʻich und der Professor stiegen hinauf auf unser Zimmer, um zu arbeitenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["772"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["10/23"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
-            "text": "čilošo; 772;",
-            "turoyo": "",
+            "turoyo": "čilošo",
             "translations": [],
-            "references": []
+            "references": ["772"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "čilošo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "772"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "čilošo; 772;",
+            "segments": [
+              {
+                "turoyo": "čilošo",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["772"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "studieren, arbeiten;"
-  ],
+  "idioms": ["studieren, arbeiten;"],
   "uncertain": false
 }

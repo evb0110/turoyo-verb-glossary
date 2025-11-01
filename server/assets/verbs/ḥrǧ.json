@@ -14,32 +14,99 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mḥaraǧle",
-        "mḥarəǧ"
-      ],
+      "forms": ["mḥaraǧle", "mḥarəǧ"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "mḥaráǧle-le; 205;",
-            "turoyo": "",
+            "turoyo": "mḥaráǧle-le",
             "translations": [],
-            "references": []
+            "references": ["205"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mḥaráǧle-le"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "205"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mḥaráǧle-le; 205;",
+            "segments": [
+              {
+                "turoyo": "mḥaráǧle-le",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["205"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "kə-mḥarǧina lad=dəžmənayḏan",
+            "translations": ["wir fordern unsere Feinde heraus"],
+            "references": ["205"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kə-mḥarǧina lad=dəžmənayḏan "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir fordern unsere Feinde herausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "205"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kə-mḥarǧina lad=dəžmənayḏan ʻwir fordern unsere Feinde herausʼ; 205;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kə-mḥarǧina lad=dəžmənayḏan",
+                "translations": ["ʻwir fordern unsere Feinde herausʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["205"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "herausfordern;"
-  ],
+  "idioms": ["herausfordern;"],
   "uncertain": false
 }

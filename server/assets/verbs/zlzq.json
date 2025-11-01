@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mzalzəq",
-        "mizalzəq"
-      ],
+      "forms": ["mzalzəq", "mizalzəq"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,82 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "saliqo l-i=dawmo. qṭəlle i=gəḏḏale diḏa qṭərile b-u=qayṣo d-i=dawmo w tfəqole. fayišo mzalzaqto prs",
+            "translations": [
+              "als sie (die Bärin) auf den Baum gestiegen war, band er ihre Zotte an einen Ast desselben und dann stiess sie er sie hinab, so dass sie an dem Aste hängen blieb"
+            ],
+            "references": ["795", "80/8"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "saliqo l-i=dawmo. qṭəlle i=gəḏḏale diḏa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qṭərile b-u=qayṣo d-i=dawmo w tfəqole. fayišo mzalzaqto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals sie (die Bärin) auf den Baum gestiegen war, band er ihre Zotte an einen Ast desselben und dann stiess sie er sie hinab, so dass sie an dem Aste hängen bliebʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "795"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "80/8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "saliqo l-i=dawmo. qṭəlle i=gəḏḏale diḏa, qṭərile b-u=qayṣo d-i=dawmo w tfəqole. fayišo mzalzaqto ʻals sie (die Bärin) auf den Baum gestiegen war, band er ihre Zotte an einen Ast desselben und dann stiess sie er sie hinab, so dass sie an dem Aste hängen bliebʼ; 795; prs 80/8;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "saliqo l-i=dawmo. qṭəlle i=gəḏḏale diḏa, qṭərile b-u=qayṣo d-i=dawmo w tfəqole. fayišo mzalzaqto",
+                "translations": [
+                  "ʻals sie (die Bärin) auf den Baum gestiegen war, band er ihre Zotte an einen Ast desselben und dann stiess sie er sie hinab, so dass sie an dem Aste hängen bliebʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["795"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["80/8"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) baumeln, pendeln, schaukeln;"
-  ],
+  "idioms": ["(Detrans.) baumeln, pendeln, schaukeln;"],
   "uncertain": false
 }

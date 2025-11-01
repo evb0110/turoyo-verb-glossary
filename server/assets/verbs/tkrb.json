@@ -14,24 +14,110 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mətkarable",
-        "mətkarəb"
-      ],
+      "forms": ["mətkarable", "mətkarəb"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-zoyaʕno bəṯṯər mini d-lə=oṯa-lle məṭala aʕli w mayṯi w mətkarbi",
+            "translations": [
+              "ich fürchte, dass sie sich nach meinem Fortgehen Sorgen um mich machen und sterben und sich grämen"
+            ],
+            "references": ["805", "60/153"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-zoyaʕno bəṯṯər mini"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-lə=oṯa-lle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " məṭala aʕli"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mayṯi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mətkarbi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich fürchte, dass sie sich nach meinem Fortgehen Sorgen um mich machen und sterben und sich grämenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "805"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "60/153"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-zoyaʕno bəṯṯər mini, d-lə=oṯa-lle, məṭala aʕli, w mayṯi, w mətkarbi ʻich fürchte, dass sie sich nach meinem Fortgehen Sorgen um mich machen und sterben und sich grämenʼ; 805; 60/153;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-zoyaʕno bəṯṯər mini, d-lə=oṯa-lle, məṭala aʕli, w mayṯi, w mətkarbi",
+                "translations": [
+                  "ʻich fürchte, dass sie sich nach meinem Fortgehen Sorgen um mich machen und sterben und sich grämenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["805"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["60/153"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sich grämen;"
-  ],
+  "idioms": ["sich grämen;"],
   "uncertain": false
 }

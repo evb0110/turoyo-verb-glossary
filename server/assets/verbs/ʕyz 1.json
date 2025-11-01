@@ -14,40 +14,220 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ʕayəz",
-        "ʕoyəz"
-      ],
+      "forms": ["ʕayəz", "ʕoyəz"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "ʕayizat mo=lirat lə=ʕayǝ́zno-le qərš",
+            "translations": [
+              "du brauchst 100 Pfund",
+              "ich brauchte keinen Groschen von ihm"
+            ],
+            "references": ["100", "513", "513"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕayizat mo=lirat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu brauchst 100 Pfundʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "513"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=ʕayǝ́zno-le qərš "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich brauchte keinen Groschen von ihmʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "513"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ʕayizat mo=lirat ʻdu brauchst 100 Pfundʼ; 513; lə=ʕayǝ́zno-le qərš ʻich brauchte keinen Groschen von ihmʼ; 513;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ʕayizat mo=lirat",
+                "translations": ["ʻdu brauchst 100 Pfundʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["513"]
+              },
+              {
+                "turoyo": "lə=ʕayǝ́zno-le qərš",
+                "translations": ["ʻich brauchte keinen Groschen von ihmʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["513"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "k-ʕŭyaz-li kallat lo=k-ʕaz-li mede",
+            "translations": ["ich brauche Geld", "ich brauche nichts"],
+            "references": ["516", "516"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-ʕŭyaz-li kallat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich brauche Geldʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "516"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=k-ʕaz-li mede "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich brauche nichtsʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "516"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "k-ʕŭyaz-li kallat ʻich brauche Geldʼ; 516; lo=k-ʕaz-li mede ʻich brauche nichtsʼ; 516;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "k-ʕŭyaz-li kallat",
+                "translations": ["ʻich brauche Geldʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["516"]
+              },
+              {
+                "turoyo": "lo=k-ʕaz-li mede",
+                "translations": ["ʻich brauche nichtsʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["516"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "ʕəyáz-wo-li",
+            "translations": ["ich benötigte (Geld)"],
+            "references": ["524"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕəyáz-wo-li "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich benötigte (Geld)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "524"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ʕəyáz-wo-li ʻich benötigte (Geld)ʼ; 524;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ʕəyáz-wo-li",
+                "translations": ["ʻich benötigte (Geld)ʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["524"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "brauchen, benötigen;"
-  ],
+  "idioms": ["brauchen, benötigen;"],
   "uncertain": false
 }

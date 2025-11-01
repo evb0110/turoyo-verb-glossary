@@ -14,24 +14,94 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "msawaḥle",
-        "msawəḥ"
-      ],
+      "forms": ["msawaḥle", "msawəḥ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "msawaḥle l-u=ǧənnawi fayiši šawṭe bīṭ u=ǧənnawi prs",
+            "translations": [
+              "darauf wurde der Dschennawi ruhiger; es dauerte eine Weile, da platzte er auseinander"
+            ],
+            "references": ["464", "70/8"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "msawaḥle l-u=ǧənnawi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " fayiši šawṭe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " bīṭ u=ǧənnawi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdarauf wurde der Dschennawi ruhiger; es dauerte eine Weile, da platzte er auseinanderʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "464"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "70/8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "msawaḥle l-u=ǧənnawi, fayiši šawṭe, bīṭ u=ǧənnawi ʻdarauf wurde der Dschennawi ruhiger; es dauerte eine Weile, da platzte er auseinanderʼ; 464; prs 70/8;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "msawaḥle l-u=ǧənnawi, fayiši šawṭe, bīṭ u=ǧənnawi",
+                "translations": [
+                  "ʻdarauf wurde der Dschennawi ruhiger; es dauerte eine Weile, da platzte er auseinanderʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["464"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["70/8"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "still bleiben;"
-  ],
+  "idioms": ["still bleiben;"],
   "uncertain": false
 }

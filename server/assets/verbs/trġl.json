@@ -5,10 +5,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mtarġəl",
-        "mitarġəl"
-      ],
+      "forms": ["mtarġəl", "mitarġəl"],
       "conjugations": {}
     },
     {
@@ -17,17 +14,53 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-mitarġəl",
+            "translations": ["er stottert"],
+            "references": ["791"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mitarġəl "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer stottertʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "791"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-mitarġəl ʻer stottertʼ; 791;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-mitarġəl",
+                "translations": ["ʻer stottertʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["791"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) stottern;"
-  ],
+  "idioms": ["(Detrans.) stottern;"],
   "uncertain": false
 }

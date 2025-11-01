@@ -14,24 +14,59 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mətḥawele",
-        "mətḥawe"
-      ],
+      "forms": ["mətḥawele", "mətḥawe"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mətḥawela l-i=ʕayla",
+            "translations": ["die Familie ist wieder nach Hause gekommen"],
+            "references": ["805"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mətḥawela l-i=ʕayla "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Familie ist wieder nach Hause gekommenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "805"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mətḥawela l-i=ʕayla ʻdie Familie ist wieder nach Hause gekommenʼ; 805;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mətḥawela l-i=ʕayla",
+                "translations": [
+                  "ʻdie Familie ist wieder nach Hause gekommenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["805"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(wieder) nach Hause kommen (z.B. Sommerfrischler);"
-  ],
+  "idioms": ["(wieder) nach Hause kommen (z.B. Sommerfrischler);"],
   "uncertain": false
 }

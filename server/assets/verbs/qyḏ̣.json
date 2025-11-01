@@ -14,25 +14,136 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mqayaḏ̣le",
-        "mqayəḏ̣"
-      ],
+      "forms": ["mqayaḏ̣le", "mqayəḏ̣"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mqayaḏ̣le u=səsyo prs",
+            "translations": ["er tauschte das Pferd"],
+            "references": ["491", "107/18"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mqayaḏ̣le u=səsyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer tauschte das Pferdʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "491"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "107/18"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mqayaḏ̣le u=səsyo ʻer tauschte das Pferdʼ; 491; prs 107/18;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mqayaḏ̣le u=səsyo",
+                "translations": ["ʻer tauschte das Pferdʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["491"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["107/18"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "qay u=səsyayḏox k-ŭbe-li laḥmo gḏayto d-ŭbéno-lox-yo? lo=kə-mqayaḏ̣no aʕmox",
+            "translations": [
+              "wozu? gibt mir dein Pferd etwa Brot und Hünchen, dass ich dir sie (die Schippe) geben solle? Ich tausche nicht mit dir"
+            ],
+            "references": ["491", "6/45"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qay u=səsyayḏox k-ŭbe-li laḥmo gḏayto d-ŭbéno-lox-yo? lo=kə-mqayaḏ̣no aʕmox "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwozu? gibt mir dein Pferd etwa Brot und Hünchen, dass ich dir sie (die Schippe) geben solle? Ich tausche nicht mit dirʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "491"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/45"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "qay u=səsyayḏox k-ŭbe-li laḥmo gḏayto d-ŭbéno-lox-yo? lo=kə-mqayaḏ̣no aʕmox ʻwozu? gibt mir dein Pferd etwa Brot und Hünchen, dass ich dir sie (die Schippe) geben solle? Ich tausche nicht mit dirʼ; 491; 6/45;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "qay u=səsyayḏox k-ŭbe-li laḥmo gḏayto d-ŭbéno-lox-yo? lo=kə-mqayaḏ̣no aʕmox",
+                "translations": [
+                  "ʻwozu? gibt mir dein Pferd etwa Brot und Hünchen, dass ich dir sie (die Schippe) geben solle? Ich tausche nicht mit dirʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["491"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["6/45"]
+              }
+            ]
           }
         ]
       }

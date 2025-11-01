@@ -14,24 +14,57 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mwaḏ̣aḥle",
-        "mwaḏ̣əḥ"
-      ],
+      "forms": ["mwaḏ̣aḥle", "mwaḏ̣əḥ"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "u=mʕalləm kə-mwaḏ̣əḥ i=ǧumle",
+            "translations": ["der Lehrer erklärt den Satz"],
+            "references": ["164"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=mʕalləm kə-mwaḏ̣əḥ i=ǧumle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Lehrer erklärt den Satzʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "164"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=mʕalləm kə-mwaḏ̣əḥ i=ǧumle ʻder Lehrer erklärt den Satzʼ; 164;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=mʕalləm kə-mwaḏ̣əḥ i=ǧumle",
+                "translations": ["ʻder Lehrer erklärt den Satzʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["164"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "erklären;"
-  ],
+  "idioms": ["erklären;"],
   "uncertain": false
 }

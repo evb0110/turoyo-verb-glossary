@@ -5,24 +5,74 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "lahəṭ",
-        "lohəṭ"
-      ],
+      "forms": ["lahəṭ", "lohəṭ"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "lə=lahiṭo",
+            "translations": ["sie rührte sich nicht"],
+            "references": ["88", "62/67"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lə=lahiṭo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie rührte sich nichtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "88"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/67"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "lə=lahiṭo ʻsie rührte sich nichtʼ; 88; 62/67;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "lə=lahiṭo",
+                "translations": ["ʻsie rührte sich nichtʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["88"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["62/67"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "rühren;"
-  ],
+  "idioms": ["rühren;"],
   "uncertain": false
 }

@@ -14,33 +14,241 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "msawele",
-        "msawe"
-      ],
+      "forms": ["msawele", "msawe"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "msawalle u=qawr-awo aʕli",
+            "translations": ["‘sie deckten das Grab über mir zu’"],
+            "references": ["LB 79"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "msawalle u=qawr-awo aʕli "
+              },
+              {
+                "kind": "translation",
+                "value": "‘sie deckten das Grab über mir zu’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 79"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "msawalle u=qawr-awo aʕli ‘sie deckten das Grab über mir zu’; LB 79;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "msawalle u=qawr-awo aʕli",
+                "translations": ["‘sie deckten das Grab über mir zu’"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 79"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "ḥzalle ḥa kale rawšo b-iḏe, ko-maḥət taḥt aṭ=ṭurone (…). omər :”ha! hat mək=ko-saymət?” omər: “ko-msaweno i=arʕo ‘They saw one man with a shovel in his hand, he was shoving it under the mountains (…). (Xangir) said: “Oh! What are you doing?” – He said: “I am making the ground even” 73/273;  617;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "ḥzalle ḥa kale rawšo b-iḏe ko-maḥət taḥt aṭ=ṭurone …. omər ”ha! hat mək=ko-saymət?” omər – He said",
+            "translations": [
+              "ko-msaweno i=arʕo ‘They saw one man with a shovel in his hand, he was shoving it under the mountains (…). (Xangir) said: “Oh! What are you doing?",
+              "I am making the ground even"
+            ],
+            "references": ["73/273", "617"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥzalle ḥa kale rawšo b-iḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-maḥət taḥt aṭ=ṭurone "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". omər "
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": "”ha! hat mək=ko-saymət?” omər"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“ko-msaweno i=arʕo ‘They saw one man with a shovel in his hand, he was shoving it under the mountains (…). (Xangir) said: “Oh! What are you doing?”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " – He said"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“I am making the ground even”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/273"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  "
+              },
+              {
+                "kind": "ref",
+                "value": "617"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥzalle ḥa kale rawšo b-iḏe, ko-maḥət taḥt aṭ=ṭurone (…). omər :”ha! hat mək=ko-saymət?” omər: “ko-msaweno i=arʕo ‘They saw one man with a shovel in his hand, he was shoving it under the mountains (…). (Xangir) said: “Oh! What are you doing?” – He said: “I am making the ground even” 73/273; 617;",
+            "segments": [
+              {
+                "turoyo": "ḥzalle ḥa kale rawšo b-iḏe, ko-maḥət taḥt aṭ=ṭurone (…). omər :”ha! hat mək=ko-saymət?” omər: – He said:",
+                "translations": [
+                  "“ko-msaweno i=arʕo ‘They saw one man with a shovel in his hand, he was shoving it under the mountains (…). (Xangir) said: “Oh! What are you doing?”",
+                  "“I am making the ground even”"
+                ],
+                "references": ["73/273"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["617"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "u=ʕafro lo=mbarbzí-way-na-le hafqa ḥlimo maḥtí-way-na ʕal aṭ=ṭarf-anək w mdawsí-way-na-nne d-barra dəṯṯe msawí-way-na-le ..",
+            "translations": [
+              "wir verteilten die Erde nicht, sondern schütteten sie so dick auf die Zweige und stampften sie währenddessen fest und machten sie eben"
+            ],
+            "references": ["JL 11", "11", "13"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=ʕafro lo=mbarbzí-way-na-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hafqa ḥlimo maḥtí-way-na ʕal aṭ=ṭarf-anək"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mdawsí-way-na-nne d-barra dəṯṯe msawí-way-na-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir verteilten die Erde nicht, sondern schütteten sie so dick auf die Zweige und stampften sie währenddessen fest und machten sie ebenʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 11"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "11"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "13"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=ʕafro lo=mbarbzí-way-na-le, hafqa ḥlimo maḥtí-way-na ʕal aṭ=ṭarf-anək, w mdawsí-way-na-nne d-barra dəṯṯe msawí-way-na-le ʻwir verteilten die Erde nicht, sondern schütteten sie so dick auf die Zweige und stampften sie währenddessen fest und machten sie ebenʼ JL 11.11.13;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=ʕafro lo=mbarbzí-way-na-le, hafqa ḥlimo maḥtí-way-na ʕal aṭ=ṭarf-anək, w mdawsí-way-na-nne d-barra dəṯṯe msawí-way-na-le ..",
+                "translations": [
+                  "ʻwir verteilten die Erde nicht, sondern schütteten sie so dick auf die Zweige und stampften sie währenddessen fest und machten sie ebenʼ"
+                ],
+                "references": ["JL 11", "11", "13"]
+              }
+            ]
           }
         ]
       }
@@ -51,25 +259,176 @@
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "i=naqla d-ko-molən b-ha d-fəlge=d-mətro hul feme d-i=dərto yaʕni ʕam i=arʕo ko-misawyo",
+            "translations": [
+              "‘nun, wenn man die Öffnung bis zur Erdoberfläche, etwa einen halben Meter, füllt, dann ist die Öffnung nicht mehr erkennbar (wörtl. sie wurde eben mit dem Boden des Hofes)’"
+            ],
+            "references": ["LB 175"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqla d-ko-molən b-ha d-fəlge=d-mətro hul feme d-i=dərto yaʕni ʕam i=arʕo ko-misawyo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘nun, wenn man die Öffnung bis zur Erdoberfläche, etwa einen halben Meter, füllt, dann ist die Öffnung nicht mehr erkennbar (wörtl. sie wurde eben mit dem Boden des Hofes)’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 175"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=naqla d-ko-molən b-ha d-fəlge=d-mətro hul feme d-i=dərto yaʕni ʕam i=arʕo ko-misawyo ‘nun, wenn man die Öffnung bis zur Erdoberfläche, etwa einen halben Meter, füllt, dann ist die Öffnung nicht mehr erkennbar (wörtl. sie wurde eben mit dem Boden des Hofes)’; LB 175;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=naqla d-ko-molən b-ha d-fəlge=d-mətro hul feme d-i=dərto yaʕni ʕam i=arʕo ko-misawyo",
+                "translations": [
+                  "‘nun, wenn man die Öffnung bis zur Erdoberfläche, etwa einen halben Meter, füllt, dann ist die Öffnung nicht mehr erkennbar (wörtl. sie wurde eben mit dem Boden des Hofes)’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 175"]
+              }
+            ]
           }
         ],
         "Part. Pass.": [
           {
+            "turoyo": "msawyo kala i=arʕo msawayto aʕle k-amṭe-le l-u=bayto d-u=babo w k-oṯe msawyo. k-mamṭe u=bazərgān-awo",
+            "translations": [
+              "eben, gerade, waagerecht",
+              "der Boden ist eingeebnet über ihm",
+              "‘er bringt es in das Haus des Vaters, geht geradenwegs (nach Hause), bringt das Karawanengut mit’"
+            ],
+            "references": ["617", "LB 317", "6/82"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "msawyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻeben, gerade, waagerechtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "617"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kala i=arʕo msawayto aʕle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Boden ist eingeebnet über ihmʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 317"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-amṭe-le l-u=bayto d-u=babo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w k-oṯe msawyo. k-mamṭe u=bazərgān-awo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘er bringt es in das Haus des Vaters, geht geradenwegs (nach Hause), bringt das Karawanengut mit’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/82"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "msawyo ʻeben, gerade, waagerechtʼ; 617; kala i=arʕo msawayto aʕle ʻder Boden ist eingeebnet über ihmʼ LB 317; k-amṭe-le l-u=bayto d-u=babo, w k-oṯe msawyo. k-mamṭe u=bazərgān-awo ‘er bringt es in das Haus des Vaters, geht geradenwegs (nach Hause), bringt das Karawanengut mit’; 6/82;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "msawyo",
+                "translations": ["ʻeben, gerade, waagerechtʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["617"]
+              },
+              {
+                "turoyo": "kala i=arʕo msawayto aʕle",
+                "translations": ["ʻder Boden ist eingeebnet über ihmʼ"],
+                "references": ["LB 317"]
+              },
+              {
+                "turoyo": "k-amṭe-le l-u=bayto d-u=babo, w k-oṯe msawyo. k-mamṭe u=bazərgān-awo",
+                "translations": [
+                  "‘er bringt es in das Haus des Vaters, geht geradenwegs (nach Hause), bringt das Karawanengut mit’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["6/82"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "einebnen, begradigen;"
-  ],
+  "idioms": ["einebnen, begradigen;"],
   "uncertain": false
 }

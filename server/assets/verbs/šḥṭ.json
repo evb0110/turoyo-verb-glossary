@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "šḥīṭ",
-        "məšḥəṭ"
-      ],
+      "forms": ["šḥīṭ", "məšḥəṭ"],
       "conjugations": {}
     },
     {
@@ -26,10 +23,119 @@
       "conjugations": {
         "Preterit": [
           {
-            "text": "1) šḥīṭ u=ṣafuro ʻdas Ziegenlamm blieb kleinʼ; 230; 2) šḥəṭno ʻich leide Durst, habe keine Kraft von Durstʼ; 231;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "šḥīṭ u=ṣafuro",
+            "translations": ["das Ziegenlamm blieb klein"],
+            "references": ["1", "230"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " šḥīṭ u=ṣafuro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Ziegenlamm blieb kleinʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "230"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) šḥīṭ u=ṣafuro ʻdas Ziegenlamm blieb kleinʼ; 230;",
+            "segments": [
+              {
+                "turoyo": ") šḥīṭ u=ṣafuro",
+                "translations": ["ʻdas Ziegenlamm blieb kleinʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["230"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "šḥəṭno",
+            "translations": ["ich leide Durst, habe keine Kraft von Durst"],
+            "references": ["2", "231"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " šḥəṭno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich leide Durst, habe keine Kraft von Durstʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "231"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) šḥəṭno ʻich leide Durst, habe keine Kraft von Durstʼ; 231;",
+            "segments": [
+              {
+                "turoyo": ") šḥəṭno",
+                "translations": [
+                  "ʻich leide Durst, habe keine Kraft von Durstʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["231"]
+              }
+            ]
           }
         ]
       }

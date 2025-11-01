@@ -14,41 +14,519 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "manbahle",
-        "manbəh"
-      ],
+      "forms": ["manbahle", "manbəh"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "1) manbahle kal k-aṯi ḥa năfar ʻer bemerkte, dass ein Soldat kamʼ; 655; 65/75; ánnaqqa manbahlan kelike mfaraǧlan aʕla, fayišina ʕaǧēbmayi m-i=kurk-aṯe, w áydarbo lo=ṭrela i=kurf-aṯe mḥayṣlo čičǝ́k me diḏa ʻwir schauten ihr einen Augenblick aufmerksam zu, und wir staunten über diese Henne, wie sie nicht zuliess, dass die Schlange eines von ihren Küken erbeuteteʼ JL 13.11.10; 2) məqqaṣ də-qrele noše lə=ḥzele, w mabəhle ʻsoviel er auch rief, er sah niemand. Er schaute sich nach allen Seiten umʼ; 655; 112/17, 270;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "manbahle kal k-aṯi ḥa năfar ánnaqqa manbahlan kelike mfaraǧlan aʕla fayišina ʕaǧēbmayi m-i=kurk-aṯe w áydarbo lo=ṭrela i=kurf-aṯe mḥayṣlo čičǝ́k me diḏa ..",
+            "translations": [
+              "er bemerkte, dass ein Soldat kam",
+              "wir schauten ihr einen Augenblick aufmerksam zu, und wir staunten über diese Henne, wie sie nicht zuliess, dass die Schlange eines von ihren Küken erbeutete"
+            ],
+            "references": ["1", "655", "65/75"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " manbahle kal k-aṯi ḥa năfar "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer bemerkte, dass ein Soldat kamʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "655"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/75"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ánnaqqa manbahlan kelike mfaraǧlan aʕla"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " fayišina ʕaǧēbmayi m-i=kurk-aṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w áydarbo lo=ṭrela i=kurf-aṯe mḥayṣlo čičǝ́k me diḏa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir schauten ihr einen Augenblick aufmerksam zu, und wir staunten über diese Henne, wie sie nicht zuliess, dass die Schlange eines von ihren Küken erbeuteteʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 13"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "11"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "10"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) manbahle kal k-aṯi ḥa năfar ʻer bemerkte, dass ein Soldat kamʼ; 655; 65/75; ánnaqqa manbahlan kelike mfaraǧlan aʕla, fayišina ʕaǧēbmayi m-i=kurk-aṯe, w áydarbo lo=ṭrela i=kurf-aṯe mḥayṣlo čičǝ́k me diḏa ʻwir schauten ihr einen Augenblick aufmerksam zu, und wir staunten über diese Henne, wie sie nicht zuliess, dass die Schlange eines von ihren Küken erbeuteteʼ JL 13.11.10;",
+            "segments": [
+              {
+                "turoyo": ") manbahle kal k-aṯi ḥa năfar",
+                "translations": ["ʻer bemerkte, dass ein Soldat kamʼ"],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["655"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["65/75"]
+              },
+              {
+                "turoyo": "ánnaqqa manbahlan kelike mfaraǧlan aʕla, fayišina ʕaǧēbmayi m-i=kurk-aṯe, w áydarbo lo=ṭrela i=kurf-aṯe mḥayṣlo čičǝ́k me diḏa ..",
+                "translations": [
+                  "ʻwir schauten ihr einen Augenblick aufmerksam zu, und wir staunten über diese Henne, wie sie nicht zuliess, dass die Schlange eines von ihren Küken erbeuteteʼ"
+                ],
+                "references": ["JL 13", "11", "10"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "məqqaṣ də-qrele noše lə=ḥzele w mabəhle",
+            "translations": [
+              "soviel er auch rief, er sah niemand. Er schaute sich nach allen Seiten um"
+            ],
+            "references": ["2", "655", "112/17"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " məqqaṣ də-qrele noše lə=ḥzele"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mabəhle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsoviel er auch rief, er sah niemand. Er schaute sich nach allen Seiten umʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "655"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "112/17"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "270"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) məqqaṣ də-qrele noše lə=ḥzele, w mabəhle ʻsoviel er auch rief, er sah niemand. Er schaute sich nach allen Seiten umʼ; 655; 112/17, 270;",
+            "segments": [
+              {
+                "turoyo": ") məqqaṣ də-qrele noše lə=ḥzele, w mabəhle",
+                "translations": [
+                  "ʻsoviel er auch rief, er sah niemand. Er schaute sich nach allen Seiten umʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["655"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["112/17", "270"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
-            "text": "1) ko-manbəh afandəm ġắlabe hawi ṭama m-u=māl d-i=arʕo ʻer merkte, dass jener dieses irdische Gut sehr begehrteʼ; 655; 65/131; 2) məqqaṣ d-mabəh, w g-makrəx ʕayne lə=ko-ḥoze-la ʻsoviel er sich umschaut und die Augen herumwandern lässt, er sieht sie nichtʼ; 655; 105/110;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "ko-manbəh afandəm ġắlabe hawi ṭama m-u=māl d-i=arʕo",
+            "translations": [
+              "er merkte, dass jener dieses irdische Gut sehr begehrte"
+            ],
+            "references": ["1", "655", "65/131"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-manbəh afandəm ġắlabe hawi ṭama m-u=māl d-i=arʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer merkte, dass jener dieses irdische Gut sehr begehrteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "655"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/131"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) ko-manbəh afandəm ġắlabe hawi ṭama m-u=māl d-i=arʕo ʻer merkte, dass jener dieses irdische Gut sehr begehrteʼ; 655; 65/131;",
+            "segments": [
+              {
+                "turoyo": ") ko-manbəh afandəm ġắlabe hawi ṭama m-u=māl d-i=arʕo",
+                "translations": [
+                  "ʻer merkte, dass jener dieses irdische Gut sehr begehrteʼ"
+                ],
+                "references": ["1"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["655"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["65/131"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": []
+              }
+            ]
+          },
+          {
+            "turoyo": "məqqaṣ d-mabəh w g-makrəx ʕayne lə=ko-ḥoze-la",
+            "translations": [
+              "soviel er sich umschaut und die Augen herumwandern lässt, er sieht sie nicht"
+            ],
+            "references": ["2", "655", "105/110"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " məqqaṣ d-mabəh"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w g-makrəx ʕayne lə=ko-ḥoze-la "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsoviel er sich umschaut und die Augen herumwandern lässt, er sieht sie nichtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "655"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "105/110"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) məqqaṣ d-mabəh, w g-makrəx ʕayne lə=ko-ḥoze-la ʻsoviel er sich umschaut und die Augen herumwandern lässt, er sieht sie nichtʼ; 655; 105/110;",
+            "segments": [
+              {
+                "turoyo": ") məqqaṣ d-mabəh, w g-makrəx ʕayne lə=ko-ḥoze-la",
+                "translations": [
+                  "ʻsoviel er sich umschaut und die Augen herumwandern lässt, er sieht sie nichtʼ"
+                ],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["655"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["105/110"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "anbáh l-aʕ=ʕišat d-aloho",
+            "translations": ["gib Acht auf die Werke Gottes"],
+            "references": ["152", "65/512"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "anbáh l-aʕ=ʕišat d-aloho "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻgib Acht auf die Werke Gottesʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "152"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/512"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "anbáh l-aʕ=ʕišat d-aloho ʻgib Acht auf die Werke Gottesʼ; 152; 65/512;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "anbáh l-aʕ=ʕišat d-aloho",
+                "translations": ["ʻgib Acht auf die Werke Gottesʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["152"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["65/512"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
-            "text": "2) tebiho; 655;",
-            "turoyo": "",
+            "turoyo": "tebiho",
             "translations": [],
-            "references": []
+            "references": ["2", "655"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " tebiho"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "655"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) tebiho; 655;",
+            "segments": [
+              {
+                "turoyo": ") tebiho",
+                "translations": [],
+                "references": ["2"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["655"]
+              }
+            ]
           }
         ]
       }

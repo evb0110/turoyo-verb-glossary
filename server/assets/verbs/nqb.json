@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mnaqable",
-        "mnaqəb"
-      ],
+      "forms": ["mnaqable", "mnaqəb"],
       "conjugations": {}
     },
     {
@@ -26,10 +23,81 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "meqəm ṣərte lat-wa mnaqabto b-nuqre",
+            "translations": [
+              "früher war sein Gesicht nicht von Pockennarben durchfurcht gewesen"
+            ],
+            "references": ["175", "30/25", "36"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "meqəm ṣərte lat-wa mnaqabto b-nuqre "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻfrüher war sein Gesicht nicht von Pockennarben durchfurcht gewesenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "175"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/25"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "meqəm ṣərte lat-wa mnaqabto b-nuqre ʻfrüher war sein Gesicht nicht von Pockennarben durchfurcht gewesenʼ; 175; 30/25, 36;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "meqəm ṣərte lat-wa mnaqabto b-nuqre",
+                "translations": [
+                  "ʻfrüher war sein Gesicht nicht von Pockennarben durchfurcht gewesenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["175"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["30/25", "36"]
+              }
+            ]
           }
         ]
       }

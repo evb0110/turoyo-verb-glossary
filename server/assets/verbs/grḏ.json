@@ -5,24 +5,57 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "grəḏle",
-        "gorəḏ"
-      ],
+      "forms": ["grəḏle", "gorəḏ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "grəḏḏe ḥḏoḏe",
+            "translations": ["sie beschimpften sich gegenseitig"],
+            "references": ["73"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "grəḏḏe ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie beschimpften sich gegenseitigʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "grəḏḏe ḥḏoḏe ʻsie beschimpften sich gegenseitigʼ; 73;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "grəḏḏe ḥḏoḏe",
+                "translations": ["ʻsie beschimpften sich gegenseitigʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["73"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "beschimpfen;"
-  ],
+  "idioms": ["beschimpfen;"],
   "uncertain": false
 }

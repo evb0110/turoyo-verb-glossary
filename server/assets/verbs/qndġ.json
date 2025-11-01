@@ -14,24 +14,78 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mqandaġle",
-        "mqandəġ"
-      ],
+      "forms": ["mqandaġle", "mqandəġ"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "k-mqandġo-le ṭawwo ʕal u=səsyo … w k-mafəlto qarʕe d-u=səsyo",
+            "translations": [
+              "sie wickelt ihn gehörig ein wie in eine Kinderwickel, oben auf dem Pferde … und lässt das Pferd los"
+            ],
+            "references": ["786", "56/46"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-mqandġo-le ṭawwo ʕal u=səsyo … w k-mafəlto qarʕe d-u=səsyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie wickelt ihn gehörig ein wie in eine Kinderwickel, oben auf dem Pferde … und lässt das Pferd losʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "786"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/46"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "k-mqandġo-le ṭawwo ʕal u=səsyo … w k-mafəlto qarʕe d-u=səsyo ʻsie wickelt ihn gehörig ein wie in eine Kinderwickel, oben auf dem Pferde … und lässt das Pferd losʼ; 786; 56/46;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "k-mqandġo-le ṭawwo ʕal u=səsyo … w k-mafəlto qarʕe d-u=səsyo",
+                "translations": [
+                  "ʻsie wickelt ihn gehörig ein wie in eine Kinderwickel, oben auf dem Pferde … und lässt das Pferd losʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["786"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["56/46"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "wickeln (Kind);"
-  ],
+  "idioms": ["wickeln (Kind);"],
   "uncertain": false
 }

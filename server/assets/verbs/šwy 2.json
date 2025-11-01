@@ -14,50 +14,198 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "šwele",
-        "šowe"
-      ],
+      "forms": ["šwele", "šowe"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "lo=k-šŭweno wōy mozalto wōy mozalto ko-šowe l-foṯax ryaqto",
+            "translations": [
+              "ich bin nicht würdig",
+              "wehe dir, oh Zeit, du hast Spucke ins Gesicht verdient"
+            ],
+            "references": ["616", "DD 390/1"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lo=k-šŭweno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich bin nicht würdigʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "616"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " wōy mozalto wōy mozalto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-šowe l-foṯax ryaqto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwehe dir, oh Zeit, du hast Spucke ins Gesicht verdientʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "DD 390/1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "lo=k-šŭweno ʻich bin nicht würdigʼ; 616; wōy mozalto wōy mozalto, ko-šowe l-foṯax ryaqto ʻwehe dir, oh Zeit, du hast Spucke ins Gesicht verdientʼ; DD 390/1;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "lo=k-šŭweno",
+                "translations": ["ʻich bin nicht würdigʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["616"]
+              },
+              {
+                "turoyo": "wōy mozalto wōy mozalto, ko-šowe l-foṯax ryaqto",
+                "translations": [
+                  "ʻwehe dir, oh Zeit, du hast Spucke ins Gesicht verdientʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["DD 390/1"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "mašwele",
-        "mašwe"
-      ],
+      "forms": ["mašwele", "mašwe"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "aloho mašwe-le i=malkuṯo",
+            "translations": ["Gott würdige ihn des Himmelreiches"],
+            "references": ["616"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aloho mašwe-le i=malkuṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻGott würdige ihn des Himmelreichesʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "616"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "aloho mašwe-le i=malkuṯo ʻGott würdige ihn des Himmelreichesʼ; 616;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "aloho mašwe-le i=malkuṯo",
+                "translations": ["ʻGott würdige ihn des Himmelreichesʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["616"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
-            "text": "ašwi-lan; 616;",
-            "turoyo": "",
+            "turoyo": "ašwi-lan",
             "translations": [],
-            "references": []
+            "references": ["616"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ašwi-lan"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "616"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ašwi-lan; 616;",
+            "segments": [
+              {
+                "turoyo": "ašwi-lan",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["616"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "würdig sein; verdienen;",
-    "würdigen;"
-  ],
+  "idioms": ["würdig sein; verdienen;", "würdigen;"],
   "uncertain": false
 }

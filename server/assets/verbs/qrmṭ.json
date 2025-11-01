@@ -14,17 +14,52 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mqarmaṭle",
-        "mqarməṭ"
-      ],
+      "forms": ["mqarmaṭle", "mqarməṭ"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "lat-lox ḥaq mqármiṭət aḥ=ḥăyaṯṯe",
+            "translations": ["du hast kein Recht ihr Leben zu ruinieren"],
+            "references": ["786"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lat-lox ḥaq mqármiṭət aḥ=ḥăyaṯṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu hast kein Recht ihr Leben zu ruinierenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "786"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "lat-lox ḥaq mqármiṭət aḥ=ḥăyaṯṯe ʻdu hast kein Recht ihr Leben zu ruinierenʼ; 786;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "lat-lox ḥaq mqármiṭət aḥ=ḥăyaṯṯe",
+                "translations": ["ʻdu hast kein Recht ihr Leben zu ruinierenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["786"]
+              }
+            ]
           }
         ]
       }

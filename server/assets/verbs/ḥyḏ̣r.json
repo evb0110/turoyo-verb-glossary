@@ -14,40 +14,559 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mḥayḏ̣alle",
-        "mḥayḏ̣ər"
-      ],
+      "forms": ["mḥayḏ̣alle", "mḥayḏ̣ər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mḥayḏ̣alle i=barṯo d-ruḥe mḥaḏ̣alle-le l-u=babo l-u=ḥəmyon-ayḏe mḥaḏ̣alle-le arbʕi=gamle maṭʕəne məd-hawi teni yawmo mḥayḏ̣arre ruḥayye l-i=qale ḥatta d-nufqi-le",
+            "translations": [
+              "(der König) machte seine Tochter bereit",
+              "‘der Vater, sein Schwiegervater, hatte alles bereitgemacht. Er stellte vierzig beladene Kamele bereit’",
+              "‘als der nächste Tag anbrach, machten sie sich bereit zum Kampf, um gegen ihn auszuziehen’"
+            ],
+            "references": ["780", "61/353", "24/133"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mḥayḏ̣alle i=barṯo d-ruḥe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ(der König) machte seine Tochter bereitʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "780"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "61/353"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥaḏ̣alle-le l-u=babo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-u=ḥəmyon-ayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥaḏ̣alle-le arbʕi=gamle maṭʕəne "
+              },
+              {
+                "kind": "translation",
+                "value": "‘der Vater, sein Schwiegervater, hatte alles bereitgemacht. Er stellte vierzig beladene Kamele bereit’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/133"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " məd-hawi teni yawmo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥayḏ̣arre ruḥayye l-i=qale ḥatta d-nufqi-le "
+              },
+              {
+                "kind": "translation",
+                "value": "‘als der nächste Tag anbrach, machten sie sich bereit zum Kampf, um gegen ihn auszuziehen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/209"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mḥayḏ̣alle i=barṯo d-ruḥe ʻ(der König) machte seine Tochter bereitʼ; 780; 61/353; mḥaḏ̣alle-le l-u=babo, l-u=ḥəmyon-ayḏe, mḥaḏ̣alle-le arbʕi=gamle maṭʕəne ‘der Vater, sein Schwiegervater, hatte alles bereitgemacht. Er stellte vierzig beladene Kamele bereit’; 24/133; məd-hawi teni yawmo, mḥayḏ̣arre ruḥayye l-i=qale ḥatta d-nufqi-le ‘als der nächste Tag anbrach, machten sie sich bereit zum Kampf, um gegen ihn auszuziehen’; 24/209;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mḥayḏ̣alle i=barṯo d-ruḥe",
+                "translations": ["ʻ(der König) machte seine Tochter bereitʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["780"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["61/353"]
+              },
+              {
+                "turoyo": "mḥaḏ̣alle-le l-u=babo, l-u=ḥəmyon-ayḏe, mḥaḏ̣alle-le arbʕi=gamle maṭʕəne",
+                "translations": [
+                  "‘der Vater, sein Schwiegervater, hatte alles bereitgemacht. Er stellte vierzig beladene Kamele bereit’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/133"]
+              },
+              {
+                "turoyo": "məd-hawi teni yawmo, mḥayḏ̣arre ruḥayye l-i=qale ḥatta d-nufqi-le",
+                "translations": [
+                  "‘als der nächste Tag anbrach, machten sie sich bereit zum Kampf, um gegen ihn auszuziehen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/209"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "g-korəx ʕal az=zəfkar ánnaqqa d-sōm mḥayḏ̣ar u=dahwayḏa w mḥayḏ̣ar u=flān bēhvanayḏa ya i=barṯ-ayḏi mahelul-li yarḥo d-yawmoṯo ḥatta də-mḥayḏ̣anno u=mede d-kit lazəm aʕmayxu m-oʕdo hul l-yarḥo gə-mḥaḏ̣al-lan gd-əzzano",
+            "translations": [
+              "er wird bei Goldschmieden herumgehen, um den Goldschmuck und die Siebensachen für sie bereitzumachen",
+              "‘meine Tochter! Gebt mir einen Monat Frist, damit ich das, was ihr mitnehmen müsst, bereit mache!’",
+              "‘von heute bis zum Ende eines Monats will er für uns vorbereitungen treffen; dann werden wir gehen’"
+            ],
+            "references": ["781", "65/139", "141"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "g-korəx ʕal az=zəfkar"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ánnaqqa d-sōm mḥayḏ̣ar u=dahwayḏa w mḥayḏ̣ar u=flān bēhvanayḏa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wird bei Goldschmieden herumgehen, um den Goldschmuck und die Siebensachen für sie bereitzumachenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "781"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/139"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "141"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ya i=barṯ-ayḏi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mahelul-li yarḥo d-yawmoṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥatta də-mḥayḏ̣anno u=mede d-kit lazəm aʕmayxu "
+              },
+              {
+                "kind": "translation",
+                "value": "‘meine Tochter! Gebt mir einen Monat Frist, damit ich das, was ihr mitnehmen müsst, bereit mache!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/129"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-oʕdo hul l-yarḥo gə-mḥaḏ̣al-lan gd-əzzano "
+              },
+              {
+                "kind": "translation",
+                "value": "‘von heute bis zum Ende eines Monats will er für uns vorbereitungen treffen; dann werden wir gehen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/131"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "g-korəx ʕal az=zəfkar, ánnaqqa d-sōm mḥayḏ̣ar u=dahwayḏa w mḥayḏ̣ar u=flān bēhvanayḏa ʻer wird bei Goldschmieden herumgehen, um den Goldschmuck und die Siebensachen für sie bereitzumachenʼ; 781; 65/139, 141; ya i=barṯ-ayḏi, mahelul-li yarḥo d-yawmoṯo, ḥatta də-mḥayḏ̣anno u=mede d-kit lazəm aʕmayxu ‘meine Tochter! Gebt mir einen Monat Frist, damit ich das, was ihr mitnehmen müsst, bereit mache!’; 24/129; m-oʕdo hul l-yarḥo gə-mḥaḏ̣al-lan gd-əzzano ‘von heute bis zum Ende eines Monats will er für uns vorbereitungen treffen; dann werden wir gehen’; 24/131;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "g-korəx ʕal az=zəfkar, ánnaqqa d-sōm mḥayḏ̣ar u=dahwayḏa w mḥayḏ̣ar u=flān bēhvanayḏa",
+                "translations": [
+                  "ʻer wird bei Goldschmieden herumgehen, um den Goldschmuck und die Siebensachen für sie bereitzumachenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["781"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["65/139", "141"]
+              },
+              {
+                "turoyo": "ya i=barṯ-ayḏi, mahelul-li yarḥo d-yawmoṯo, ḥatta də-mḥayḏ̣anno u=mede d-kit lazəm aʕmayxu",
+                "translations": [
+                  "‘meine Tochter! Gebt mir einen Monat Frist, damit ich das, was ihr mitnehmen müsst, bereit mache!’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/129"]
+              },
+              {
+                "turoyo": "m-oʕdo hul l-yarḥo gə-mḥaḏ̣al-lan gd-əzzano",
+                "translations": [
+                  "‘von heute bis zum Ende eines Monats will er für uns vorbereitungen treffen; dann werden wir gehen’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/131"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "ənkān lə=k-bat-li i=nuxrayt-ayḏi ḥayḏ̣ár ruḥux bayn-eli w elux mʕayanlan yawmo ummina ḥayḏ̣eru ruḥayxu l-i=qale! mḥaḏ̣ə́r u=taḥḏ̣ir diḏux",
+            "translations": [
+              "wenn du meine Verlobte nicht gibst, so bereite dich (zum Kampf) zwischen mir und dir vor",
+              "flān yawmo, mḥayḏ̣ēr-e!",
+              "wir setzten einen Tag fest und sagten: “An dem und dem Tage mach ihn zurecht!",
+              "‘macht euch zum Kampfe bereit!’",
+              "‘bereite alles vor, (Papa)!’"
+            ],
+            "references": ["781", "62/16", "11/256"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ənkān lə=k-bat-li i=nuxrayt-ayḏi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥayḏ̣ár ruḥux bayn-eli w elux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn du meine Verlobte nicht gibst, so bereite dich (zum Kampf) zwischen mir und dir vorʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "781"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/16"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mʕayanlan yawmo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ummina"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“flān yawmo, mḥayḏ̣ēr-e!”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir setzten einen Tag fest und sagten: “An dem und dem Tage mach ihn zurecht!”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/256"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥayḏ̣eru ruḥayxu l-i=qale! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘macht euch zum Kampfe bereit!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/206"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥaḏ̣ə́r u=taḥḏ̣ir diḏux "
+              },
+              {
+                "kind": "translation",
+                "value": "‘bereite alles vor, (Papa)!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "28/77"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ənkān lə=k-bat-li i=nuxrayt-ayḏi, ḥayḏ̣ár ruḥux bayn-eli w elux ʻwenn du meine Verlobte nicht gibst, so bereite dich (zum Kampf) zwischen mir und dir vorʼ; 781; 62/16; mʕayanlan yawmo, ummina: “flān yawmo, mḥayḏ̣ēr-e!” ʻwir setzten einen Tag fest und sagten: “An dem und dem Tage mach ihn zurecht!”ʼ; 11/256; ḥayḏ̣eru ruḥayxu l-i=qale! ‘macht euch zum Kampfe bereit!’; 24/206; mḥaḏ̣ə́r u=taḥḏ̣ir diḏux ‘bereite alles vor, (Papa)!’; 28/77;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ənkān lə=k-bat-li i=nuxrayt-ayḏi, ḥayḏ̣ár ruḥux bayn-eli w elux",
+                "translations": [
+                  "ʻwenn du meine Verlobte nicht gibst, so bereite dich (zum Kampf) zwischen mir und dir vorʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["781"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["62/16"]
+              },
+              {
+                "turoyo": "mʕayanlan yawmo, ummina:",
+                "translations": [
+                  "“flān yawmo, mḥayḏ̣ēr-e!”",
+                  "ʻwir setzten einen Tag fest und sagten: “An dem und dem Tage mach ihn zurecht!”ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/256"]
+              },
+              {
+                "turoyo": "ḥayḏ̣eru ruḥayxu l-i=qale!",
+                "translations": ["‘macht euch zum Kampfe bereit!’"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["24/206"]
+              },
+              {
+                "turoyo": "mḥaḏ̣ə́r u=taḥḏ̣ir diḏux",
+                "translations": ["‘bereite alles vor, (Papa)!’"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["28/77"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "bereitmachen, bereitstellen, zurechtmachen;"
-  ],
+  "idioms": ["bereitmachen, bereitstellen, zurechtmachen;"],
   "uncertain": false
 }

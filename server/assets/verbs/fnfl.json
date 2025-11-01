@@ -14,17 +14,48 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mfanfele",
-        "mfanfəl"
-      ],
+      "forms": ["mfanfele", "mfanfəl"],
       "conjugations": {
         "Preterit": [
           {
-            "text": "mfanfele; 775;",
-            "turoyo": "",
+            "turoyo": "mfanfele",
             "translations": [],
-            "references": []
+            "references": ["775"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mfanfele"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "775"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mfanfele; 775;",
+            "segments": [
+              {
+                "turoyo": "mfanfele",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["775"]
+              }
+            ]
           }
         ]
       }
@@ -35,17 +66,57 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "u=bərgəl-ano mfánflo-yo",
+            "translations": [
+              "diese Weizengrütze ist nicht richtig zusammengekocht, die Teilchen sind einzeln geblieben"
+            ],
+            "references": ["775"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=bərgəl-ano mfánflo-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdiese Weizengrütze ist nicht richtig zusammengekocht, die Teilchen sind einzeln gebliebenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "775"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=bərgəl-ano mfánflo-yo ʻdiese Weizengrütze ist nicht richtig zusammengekocht, die Teilchen sind einzeln gebliebenʼ; 775;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=bərgəl-ano mfánflo-yo",
+                "translations": [
+                  "ʻdiese Weizengrütze ist nicht richtig zusammengekocht, die Teilchen sind einzeln gebliebenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["775"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "in einzelnen Flocken fallen;"
-  ],
+  "idioms": ["in einzelnen Flocken fallen;"],
   "uncertain": false
 }

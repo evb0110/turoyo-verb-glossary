@@ -5,31 +5,127 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mdardamle"
-      ],
+      "forms": ["mdardamle"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "u=Š ko-mdardəm b-qarʕi k-omər əšmo ko-mšayʕat-li kallawat",
+            "translations": [
+              "Š quält mich: schicke mir doch ein bisschen Geld"
+            ],
+            "references": ["772"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=Š ko-mdardəm b-qarʕi k-omər"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " əšmo ko-mšayʕat-li kallawat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻŠ quält mich: schicke mir doch ein bisschen Geldʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "772"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "u=Š ko-mdardəm b-qarʕi k-omər: əšmo ko-mšayʕat-li kallawat ʻŠ quält mich: schicke mir doch ein bisschen Geldʼ; 772;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=Š ko-mdardəm b-qarʕi k-omər: əšmo ko-mšayʕat-li kallawat",
+                "translations": [
+                  "ʻŠ quält mich: schicke mir doch ein bisschen Geldʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["772"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
+            "turoyo": "ko-saymat-lan dērdmono -",
+            "translations": [
+              "du quälst uns immerfort mit Bitten, (dass wir dir das Radio geben sollen)"
+            ],
+            "references": ["772", "773"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-saymat-lan dērdmono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu quälst uns immerfort mit Bitten, (dass wir dir das Radio geben sollen)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "772"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "773"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-saymat-lan dērdmono ʻdu quälst uns immerfort mit Bitten, (dass wir dir das Radio geben sollen)ʼ; 772-773;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-saymat-lan dērdmono",
+                "translations": [
+                  "ʻdu quälst uns immerfort mit Bitten, (dass wir dir das Radio geben sollen)ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["772", "773"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "mit Bitten quälen;"
-  ],
+  "idioms": ["mit Bitten quälen;"],
   "uncertain": false
 }

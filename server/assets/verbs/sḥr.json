@@ -14,10 +14,7 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "msaḥalle",
-        "msaḥər"
-      ],
+      "forms": ["msaḥalle", "msaḥər"],
       "conjugations": {}
     },
     {
@@ -26,17 +23,82 @@
       "conjugations": {
         "Part. Pass.": [
           {
+            "turoyo": "msaḥárto-yo i=barṯo d-u=malko d-aǧ=ǧən-yo",
+            "translations": [
+              "sie war verzaubert, die Tochter des Königs der Geister"
+            ],
+            "references": ["249", "57/6"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "msaḥárto-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=barṯo d-u=malko d-aǧ=ǧən-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie war verzaubert, die Tochter des Königs der Geisterʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "249"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "57/6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "msaḥárto-yo, i=barṯo d-u=malko d-aǧ=ǧən-yo ʻsie war verzaubert, die Tochter des Königs der Geisterʼ; 249; 57/6;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "msaḥárto-yo, i=barṯo d-u=malko d-aǧ=ǧən-yo",
+                "translations": [
+                  "ʻsie war verzaubert, die Tochter des Königs der Geisterʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["249"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["57/6"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "verzaubern;"
-  ],
+  "idioms": ["verzaubern;"],
   "uncertain": false
 }

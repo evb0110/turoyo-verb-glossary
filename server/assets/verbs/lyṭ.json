@@ -14,24 +14,112 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "ləṭle",
-        "loyəṭ"
-      ],
+      "forms": ["ləṭle", "loyəṭ"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "i=naqla d-šaməʕ-la hawxa ko-layṭo al=lawṭoṯ-ani omər",
+            "translations": [
+              "zax!",
+              "als er sie solche Flüche ausstossen hörte, sprach er: “Geh!"
+            ],
+            "references": ["518", "82/59"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqla d-šaməʕ-la hawxa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-layṭo al=lawṭoṯ-ani"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " omər"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“zax!”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals er sie solche Flüche ausstossen hörte, sprach er: “Geh!”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "518"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "82/59"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=naqla d-šaməʕ-la hawxa, ko-layṭo al=lawṭoṯ-ani, omər: “zax!” ʻals er sie solche Flüche ausstossen hörte, sprach er: “Geh!”ʼ; 518; 82/59;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=naqla d-šaməʕ-la hawxa, ko-layṭo al=lawṭoṯ-ani, omər:",
+                "translations": [
+                  "“zax!”",
+                  "ʻals er sie solche Flüche ausstossen hörte, sprach er: “Geh!”ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["518"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["82/59"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "verwünschen;"
-  ],
+  "idioms": ["verwünschen;"],
   "uncertain": false
 }

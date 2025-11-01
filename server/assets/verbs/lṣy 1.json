@@ -5,30 +5,139 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "lṣele",
-        "loṣe"
-      ],
+      "forms": ["lṣele", "loṣe"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "məftakalle məlle",
+            "translations": [
+              "gəd-loṣeno k-ḥozeno u=šuġl-ano áydarbo-yo",
+              "er dachte nach und sprach: “Ich will mich auf die Lauer legen und sehen, was da los ist"
+            ],
+            "references": ["359", "58/18"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "məftakalle məlle "
+              },
+              {
+                "kind": "translation",
+                "value": "“gəd-loṣeno k-ḥozeno u=šuġl-ano áydarbo-yo”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer dachte nach und sprach: “Ich will mich auf die Lauer legen und sehen, was da los ist”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "359"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "58/18"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "məftakalle məlle “gəd-loṣeno k-ḥozeno u=šuġl-ano áydarbo-yo” ʻer dachte nach und sprach: “Ich will mich auf die Lauer legen und sehen, was da los ist”ʼ; 359; 58/18;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "məftakalle məlle",
+                "translations": [
+                  "“gəd-loṣeno k-ḥozeno u=šuġl-ano áydarbo-yo”",
+                  "ʻer dachte nach und sprach: “Ich will mich auf die Lauer legen und sehen, was da los ist”ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["359"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["58/18"]
+              }
+            ]
           },
           {
-            "text": "u+taʕlo koloṣe ʕal a+gyoṯe (Ilyas p.c. 10-05-2022)",
-            "turoyo": "",
+            "turoyo": "u+taʕlo koloṣe ʕal a+gyoṯe Ilyas p.c. --",
             "translations": [],
-            "references": []
+            "references": ["10", "05", "2022"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u+taʕlo koloṣe ʕal a+gyoṯe "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c. "
+              },
+              {
+                "kind": "ref",
+                "value": "10"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "05"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "2022"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "u+taʕlo koloṣe ʕal a+gyoṯe (Ilyas p.c. 10-05-2022)",
+            "segments": [
+              {
+                "turoyo": "u+taʕlo koloṣe ʕal a+gyoṯe (Ilyas p.c. --)",
+                "translations": [],
+                "references": ["10", "05", "2022"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "lauern, aufpassen; to watch (with a hostile intention)"
-  ],
+  "idioms": ["lauern, aufpassen; to watch (with a hostile intention)"],
   "uncertain": false
 }

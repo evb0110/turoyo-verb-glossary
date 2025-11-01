@@ -14,32 +14,111 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mbayzalle",
-        "mbayzər"
-      ],
+      "forms": ["mbayzalle", "mbayzər"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "kə-mbayzal-le ʕam u=farmači b-laḥmo prs",
+            "translations": [
+              "er sucht ihn (den Fuchs) dem Bäcker gegen ein Brot zu verhandeln"
+            ],
+            "references": ["771", "218/2"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kə-mbayzal-le ʕam u=farmači b-laḥmo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer sucht ihn (den Fuchs) dem Bäcker gegen ein Brot zu verhandelnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "771"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "218/2"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kə-mbayzal-le ʕam u=farmači b-laḥmo ʻer sucht ihn (den Fuchs) dem Bäcker gegen ein Brot zu verhandelnʼ; 771; prs 218/2;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kə-mbayzal-le ʕam u=farmači b-laḥmo",
+                "translations": [
+                  "ʻer sucht ihn (den Fuchs) dem Bäcker gegen ein Brot zu verhandelnʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["771"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["218/2"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
-            "text": "162. ḤD. Lo yaho! Mbayzríwayna i+fiye dobə́nwaylan. HD. No, for goodness’ sake! We would negotiate the price that we would give.",
-            "turoyo": "",
+            "turoyo": ". ḤD. Lo yaho! Mbayzríwayna i+fiye dobə́nwaylan. HD. No for goodness’ sake! We would negotiate the price that we would give.",
             "translations": [],
-            "references": []
+            "references": ["162"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "162"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". ḤD. Lo yaho! Mbayzríwayna i+fiye dobə́nwaylan. HD. No"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " for goodness’ sake! We would negotiate the price that we would give."
+              }
+            ],
+            "text": "162. ḤD. Lo yaho! Mbayzríwayna i+fiye dobə́nwaylan. HD. No, for goodness’ sake! We would negotiate the price that we would give.",
+            "segments": [
+              {
+                "turoyo": ". ḤD. Lo yaho! Mbayzríwayna i+fiye dobə́nwaylan. HD. No, for goodness’ sake! We would negotiate the price that we would give.",
+                "translations": [],
+                "references": ["162"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(b-) um etwas feilschen, verhandeln;"
-  ],
+  "idioms": ["(b-) um etwas feilschen, verhandeln;"],
   "uncertain": false
 }

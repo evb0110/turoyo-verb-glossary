@@ -14,17 +14,52 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mxawxaḏle",
-        "mxawxəḏ"
-      ],
+      "forms": ["mxawxaḏle", "mxawxəḏ"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "i=gammiye kə-mxawxḏo am=maye",
+            "translations": ["das Schiff rührt das Wasser auf"],
+            "references": ["794"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=gammiye kə-mxawxḏo am=maye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Schiff rührt das Wasser aufʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "794"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=gammiye kə-mxawxḏo am=maye ʻdas Schiff rührt das Wasser aufʼ; 794;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=gammiye kə-mxawxḏo am=maye",
+                "translations": ["ʻdas Schiff rührt das Wasser aufʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["794"]
+              }
+            ]
           }
         ]
       }

@@ -12,17 +12,48 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "čləqle",
-        "čoləq"
-      ],
+      "forms": ["čləqle", "čoləq"],
       "conjugations": {
         "Infectum": [
           {
-            "text": "ko-čoləq ʕayne; 229;",
-            "turoyo": "",
+            "turoyo": "ko-čoləq ʕayne",
             "translations": [],
-            "references": []
+            "references": ["229"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-čoləq ʕayne"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "229"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-čoləq ʕayne; 229;",
+            "segments": [
+              {
+                "turoyo": "ko-čoləq ʕayne",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["229"]
+              }
+            ]
           }
         ]
       }
@@ -33,10 +64,44 @@
       "conjugations": {
         "Part. Pass.": [
           {
-            "text": "ʕayne d-u=zʕuro člíqe-ne; 229;",
-            "turoyo": "",
+            "turoyo": "ʕayne d-u=zʕuro člíqe-ne",
             "translations": [],
-            "references": []
+            "references": ["229"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕayne d-u=zʕuro člíqe-ne"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "229"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ʕayne d-u=zʕuro člíqe-ne; 229;",
+            "segments": [
+              {
+                "turoyo": "ʕayne d-u=zʕuro člíqe-ne",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["229"]
+              }
+            ]
           }
         ]
       }

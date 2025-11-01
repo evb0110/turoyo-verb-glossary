@@ -12,42 +12,161 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mšabaḥle",
-        "mšabaḥ"
-      ],
+      "forms": ["mšabaḥle", "mšabaḥ"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "mšabaḥḥe l Aloho NE_",
+            "translations": ["‘They praised God’"],
+            "references": ["254", "14"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mšabaḥḥe l Aloho "
+              },
+              {
+                "kind": "translation",
+                "value": "‘They praised God’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " NE_"
+              },
+              {
+                "kind": "ref",
+                "value": "254"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "ref",
+                "value": "14"
+              }
+            ],
             "text": "mšabaḥḥe l Aloho ‘They praised God’; NE_254;14",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mšabaḥḥe l Aloho",
+                "translations": ["‘They praised God’"],
+                "references": []
+              },
+              {
+                "turoyo": "NE_",
+                "translations": [],
+                "references": ["254"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["14"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "mašbaḥle",
-        "mašbəḥ"
-      ],
+      "forms": ["mašbaḥle", "mašbəḥ"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "gd-amṭən i=kačk-ayo … w-gd-amṭən u=greʕuno … k-ḥayri aʕlayye aǧ=ǧənnat g-mašabḥi u=mor-aṯṯe -",
+            "translations": [
+              "‘They brought the girl (…) and they brought the young man (…). The jinns looked at them and praised their Lord’"
+            ],
+            "references": ["74/9", "11"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gd-amṭən i=kačk-ayo "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-gd-amṭən u=greʕuno "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ḥayri aʕlayye aǧ=ǧənnat"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-mašabḥi u=mor-aṯṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘They brought the girl (…) and they brought the young man (…). The jinns looked at them and praised their Lord’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "74/9"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "11"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "gd-amṭən i=kačk-ayo (…) w-gd-amṭən u=greʕuno (…) k-ḥayri aʕlayye aǧ=ǧənnat, g-mašabḥi u=mor-aṯṯe ‘They brought the girl (…) and they brought the young man (…). The jinns looked at them and praised their Lord’ 74/9-11;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "gd-amṭən i=kačk-ayo (…) w-gd-amṭən u=greʕuno (…) k-ḥayri aʕlayye aǧ=ǧənnat, g-mašabḥi u=mor-aṯṯe -",
+                "translations": [
+                  "‘They brought the girl (…) and they brought the young man (…). The jinns looked at them and praised their Lord’"
+                ],
+                "references": ["74/9", "11"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "‘to praise, to glorify’",
-    "‘to praise, to glorify’"
-  ],
+  "idioms": ["‘to praise, to glorify’", "‘to praise, to glorify’"],
   "uncertain": false
 }

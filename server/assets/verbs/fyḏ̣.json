@@ -14,42 +14,154 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "fayəḏ̣",
-        "foyəḏ̣"
-      ],
+      "forms": ["fayəḏ̣", "foyəḏ̣"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "l-u=ḥasyo d-Miḏyaḏ Ḥasyó Iyawannīs Afrám w l-i=ǧamaʕa ḥzalle nuhro d-fayəḏ̣ ʕul m-u=hayklo d-i=ʕito",
+            "translations": [
+              "der Metropolit von Miḏyaḏ, Ḥasyo Johannes Afram, und die Gemeinde sahen ein Licht, das über dem Schiff der Kirche einströmte"
+            ],
+            "references": ["576", "11/118"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-u=ḥasyo d-Miḏyaḏ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " Ḥasyó Iyawannīs Afrám"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w l-i=ǧamaʕa ḥzalle nuhro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-fayəḏ̣ ʕul m-u=hayklo d-i=ʕito "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Metropolit von Miḏyaḏ, Ḥasyo Johannes Afram, und die Gemeinde sahen ein Licht, das über dem Schiff der Kirche einströmteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "576"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/118"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "l-u=ḥasyo d-Miḏyaḏ, Ḥasyó Iyawannīs Afrám, w l-i=ǧamaʕa ḥzalle nuhro, d-fayəḏ̣ ʕul m-u=hayklo d-i=ʕito ʻder Metropolit von Miḏyaḏ, Ḥasyo Johannes Afram, und die Gemeinde sahen ein Licht, das über dem Schiff der Kirche einströmteʼ; 576; 11/118;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "l-u=ḥasyo d-Miḏyaḏ, Ḥasyó Iyawannīs Afrám, w l-i=ǧamaʕa ḥzalle nuhro, d-fayəḏ̣ ʕul m-u=hayklo d-i=ʕito",
+                "translations": [
+                  "ʻder Metropolit von Miḏyaḏ, Ḥasyo Johannes Afram, und die Gemeinde sahen ein Licht, das über dem Schiff der Kirche einströmteʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["576"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["11/118"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "mafəḏ̣le",
-        "mafəḏ̣"
-      ],
+      "forms": ["mafəḏ̣le", "mafəḏ̣"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "ko-mafəḏ̣no",
+            "translations": ["ich habe Nasenbluten"],
+            "references": ["576"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mafəḏ̣no "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe Nasenblutenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "576"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-mafəḏ̣no ʻich habe Nasenblutenʼ; 576;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-mafəḏ̣no",
+                "translations": ["ʻich habe Nasenblutenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["576"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "strömen (Licht);",
-    "Nasenbluten haben;"
-  ],
+  "idioms": ["strömen (Licht);", "Nasenbluten haben;"],
   "uncertain": false
 }

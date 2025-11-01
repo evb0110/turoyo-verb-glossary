@@ -12,48 +12,564 @@
   "stems": [
     {
       "stem": "III",
-      "forms": [
-        "mašəḷḷe",
-        "mašər"
-      ],
+      "forms": ["mašəḷḷe", "mašər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "kət-li arbaʕ=abne qŭwanno ann=arbʕo ikál lo=k-mawkan-nux mena mašəllox? prs L Tuma lo mašərle də‿Mšiḥo qām mu+qawro p.c. Ilyas Oct",
+            "translations": [
+              "ich habe vier Söhne. Die will ich alle vier begraben, wenn ich dich nicht davon mitfressen lasse; bist du nun sicher?"
+            ],
+            "references": ["539", "215/20", "30"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kət-li arbaʕ=abne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qŭwanno ann=arbʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ikál lo=k-mawkan-nux mena"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mašəllox? "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe vier Söhne. Die will ich alle vier begraben, wenn ich dich nicht davon mitfressen lasse; bist du nun sicher?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "539"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "215/20"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " L Tuma lo mašərle də‿Mšiḥo qām mu+qawro "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "p.c. Ilyas Oct "
+              },
+              {
+                "kind": "ref",
+                "value": "30"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2024"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "kət-li arbaʕ=abne, qŭwanno ann=arbʕo, ikál lo=k-mawkan-nux mena, mašəllox? ʻich habe vier Söhne. Die will ich alle vier begraben, wenn ich dich nicht davon mitfressen lasse; bist du nun sicher?ʼ; 539; prs 215/20; L Tuma lo mašərle də‿Mšiḥo qām mu+qawro (p.c. Ilyas Oct 30 2024)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kət-li arbaʕ=abne, qŭwanno ann=arbʕo, ikál lo=k-mawkan-nux mena, mašəllox?",
+                "translations": [
+                  "ʻich habe vier Söhne. Die will ich alle vier begraben, wenn ich dich nicht davon mitfressen lasse; bist du nun sicher?ʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["539"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["215/20"]
+              },
+              {
+                "turoyo": "L Tuma lo mašərle də‿Mšiḥo qām mu+qawro (p.c. Ilyas Oct )",
+                "translations": [],
+                "references": ["30", "2024"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "zoxu šayelu emi lo=k-mašərítul-li prs",
+            "translations": [
+              "so geht und fragt meine Mutter, wenn ihr mir nicht glaubt"
+            ],
+            "references": ["547", "256/9"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "zoxu šayelu emi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=k-mašərítul-li "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻso geht und fragt meine Mutter, wenn ihr mir nicht glaubtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "547"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "256/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "zoxu šayelu emi, lo=k-mašərítul-li ʻso geht und fragt meine Mutter, wenn ihr mir nicht glaubtʼ; 547; prs 256/9;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "zoxu šayelu emi, lo=k-mašərítul-li",
+                "translations": [
+                  "ʻso geht und fragt meine Mutter, wenn ihr mir nicht glaubtʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["547"]
+              },
+              {
+                "turoyo": "prs",
+                "translations": [],
+                "references": ["256/9"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
-            "text": "Ašǝ́r maḥǝšmíwayna, lo+mašríwayna dmaqǝrṭina, maqǝrṭíwayna lo+mašríwayna dmaḥǝšmina (Ni 2018_07_08: 219)",
-            "turoyo": "",
+            "turoyo": "Ašǝ́r maḥǝšmíwayna lo+mašríwayna dmaqǝrṭina maqǝrṭíwayna lo+mašríwayna dmaḥǝšmina Ni 2018_07_",
             "translations": [],
-            "references": []
+            "references": ["08", "219"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Ašǝ́r maḥǝšmíwayna"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo+mašríwayna dmaqǝrṭina"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maqǝrṭíwayna lo+mašríwayna dmaḥǝšmina "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ni 2018_07_"
+              },
+              {
+                "kind": "ref",
+                "value": "08"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "219"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Ašǝ́r maḥǝšmíwayna, lo+mašríwayna dmaqǝrṭina, maqǝrṭíwayna lo+mašríwayna dmaḥǝšmina (Ni 2018_07_08: 219)",
+            "segments": [
+              {
+                "turoyo": "Ašǝ́r maḥǝšmíwayna, lo+mašríwayna dmaqǝrṭina, maqǝrṭíwayna lo+mašríwayna dmaḥǝšmina (Ni 2018_07_: )",
+                "translations": [],
+                "references": ["08", "219"]
+              }
+            ]
           }
         ],
         "Imperativ": [
           {
+            "turoyo": "ašǝ́r k-ŭbaʕno menox b-ḥubo d-əzzóx me-gabi m-qul ʕayni háno-yo u=abrə-d-ʕamməx? ummo e ašǝ́r háno-yo lo=ḥzalxu fayote b-u=darb-ano? ... ašǝ́r ḥzelan mar abrə-d-ʕammi! omər ašǝ́r g-mdaʕánno-ləx l-u=gawrayḏəx -",
+            "translations": [
+              "wahrlich, ich möchte, dass du in Liebe von mir weggehst",
+              "dies ist also dein Vetter? Ja, dieser ist es",
+              "habt ihr keine Leute auf diesem Wege vorbeikommen sehen? ... Ja, wir haben schon welche gesehen",
+              "sprich, Vetter! Er sprach: Wahrlich, ich werde dich deinem Gatten zurückgeben"
+            ],
+            "references": ["549", "29/241", "549"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ašǝ́r"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ŭbaʕno menox b-ḥubo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-əzzóx me-gabi m-qul ʕayni "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwahrlich, ich möchte, dass du in Liebe von mir weggehstʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "549"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/241"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " háno-yo u=abrə-d-ʕamməx? ummo"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " e ašǝ́r háno-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdies ist also dein Vetter? Ja, dieser ist esʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "549"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/242"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=ḥzalxu fayote b-u=darb-ano? ... ašǝ́r ḥzelan "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻhabt ihr keine Leute auf diesem Wege vorbeikommen sehen? ... Ja, wir haben schon welche gesehenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "549"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/22"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "23"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mar"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " abrə-d-ʕammi! omər"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ašǝ́r g-mdaʕánno-ləx l-u=gawrayḏəx "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsprich, Vetter! Er sprach: Wahrlich, ich werde dich deinem Gatten zurückgebenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "549"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "550"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/214"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ašǝ́r, k-ŭbaʕno menox b-ḥubo, d-əzzóx me-gabi m-qul ʕayni ʻwahrlich, ich möchte, dass du in Liebe von mir weggehstʼ; 549; 29/241; háno-yo u=abrə-d-ʕamməx? ummo: e ašǝ́r háno-yo ʻdies ist also dein Vetter? Ja, dieser ist esʼ; 549; 26/242; lo=ḥzalxu fayote b-u=darb-ano? ... ašǝ́r ḥzelan ʻhabt ihr keine Leute auf diesem Wege vorbeikommen sehen? ... Ja, wir haben schon welche gesehenʼ; 549; 26/22, 23; mar, abrə-d-ʕammi! omər: ašǝ́r g-mdaʕánno-ləx l-u=gawrayḏəx ʻsprich, Vetter! Er sprach: Wahrlich, ich werde dich deinem Gatten zurückgebenʼ; 549-550; 26/214;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ašǝ́r, k-ŭbaʕno menox b-ḥubo, d-əzzóx me-gabi m-qul ʕayni",
+                "translations": [
+                  "ʻwahrlich, ich möchte, dass du in Liebe von mir weggehstʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["549"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/241"]
+              },
+              {
+                "turoyo": "háno-yo u=abrə-d-ʕamməx? ummo: e ašǝ́r háno-yo",
+                "translations": [
+                  "ʻdies ist also dein Vetter? Ja, dieser ist esʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["549"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["26/242"]
+              },
+              {
+                "turoyo": "lo=ḥzalxu fayote b-u=darb-ano? ... ašǝ́r ḥzelan",
+                "translations": [
+                  "ʻhabt ihr keine Leute auf diesem Wege vorbeikommen sehen? ... Ja, wir haben schon welche gesehenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["549"]
+              },
+              {
+                "turoyo": ",",
+                "translations": [],
+                "references": ["26/22", "23"]
+              },
+              {
+                "turoyo": "mar, abrə-d-ʕammi! omər: ašǝ́r g-mdaʕánno-ləx l-u=gawrayḏəx",
+                "translations": [
+                  "ʻsprich, Vetter! Er sprach: Wahrlich, ich werde dich deinem Gatten zurückgebenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["549", "550"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["26/214"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "glauben;"
-  ],
+  "idioms": ["glauben;"],
   "uncertain": false
 }

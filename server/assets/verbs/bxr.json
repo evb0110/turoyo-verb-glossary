@@ -14,17 +14,56 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mbaxalle",
-        "mbaxər"
-      ],
+      "forms": ["mbaxalle", "mbaxər"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mbaxalle ruḥe",
+            "translations": [
+              "er quälte sich (etwa beim Feuermachen) mit dem Rauch"
+            ],
+            "references": ["244"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mbaxalle ruḥe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer quälte sich (etwa beim Feuermachen) mit dem Rauchʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "244"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mbaxalle ruḥe ʻer quälte sich (etwa beim Feuermachen) mit dem Rauchʼ; 244;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mbaxalle ruḥe",
+                "translations": [
+                  "ʻer quälte sich (etwa beim Feuermachen) mit dem Rauchʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["244"]
+              }
+            ]
           }
         ]
       }
@@ -35,17 +74,53 @@
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mbaxro i=oda",
+            "translations": ["das Zimmer wurde voll Rauch"],
+            "references": ["248"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mbaxro i=oda "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Zimmer wurde voll Rauchʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "248"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mbaxro i=oda ʻdas Zimmer wurde voll Rauchʼ; 248;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mbaxro i=oda",
+                "translations": ["ʻdas Zimmer wurde voll Rauchʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["248"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "voll Rauch werden;"
-  ],
+  "idioms": ["voll Rauch werden;"],
   "uncertain": false
 }

@@ -14,17 +14,95 @@
   "stems": [
     {
       "stem": "II",
-      "forms": [
-        "mfaḥamle",
-        "mfaḥəm"
-      ],
+      "forms": ["mfaḥamle", "mfaḥəm"],
       "conjugations": {
         "Preterit-wa": [
           {
+            "turoyo": "mfaḥam-wo lo=maǧre-wo mqadam-wo m-az=zŭgurd-anək",
+            "translations": [
+              "er ärgerte sich, aber er wagte wegen jener Habenichtse nicht hervorzutreten"
+            ],
+            "references": ["163", "29/464"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mfaḥam-wo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=maǧre-wo mqadam-wo m-az=zŭgurd-anək "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer ärgerte sich, aber er wagte wegen jener Habenichtse nicht hervorzutretenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "163"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/464"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
             "text": "mfaḥam-wo, lo=maǧre-wo mqadam-wo m-az=zŭgurd-anək ʻer ärgerte sich, aber er wagte wegen jener Habenichtse nicht hervorzutretenʼ; 163; 29/464; [MT]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mfaḥam-wo, lo=maǧre-wo mqadam-wo m-az=zŭgurd-anək",
+                "translations": [
+                  "ʻer ärgerte sich, aber er wagte wegen jener Habenichtse nicht hervorzutretenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["163"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/464"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": [],
+                "notes": ["[MT]"]
+              }
+            ]
           }
         ]
       }
@@ -35,17 +113,53 @@
       "conjugations": {
         "Infectum-wa": [
           {
+            "turoyo": "mifaḥam-wa",
+            "translations": ["er ärgerte sich"],
+            "references": ["174"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mifaḥam-wa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer ärgerte sichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "174"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mifaḥam-wa ʻer ärgerte sichʼ; 174;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mifaḥam-wa",
+                "translations": ["ʻer ärgerte sichʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["174"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sich ärgern;"
-  ],
+  "idioms": ["sich ärgern;"],
   "uncertain": false
 }

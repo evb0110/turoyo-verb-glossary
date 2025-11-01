@@ -14,58 +14,428 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "taʕəb",
-        "toʕəb"
-      ],
+      "forms": ["taʕəb", "toʕəb"],
       "conjugations": {
         "Preterit Intransitive": [
           {
+            "turoyo": "ʕam u=taʕb d-taʕəb u=zʕur-awo aʕma səmla kaysuṯo aʕme marfela darmone b-a=brinatayḏe w manəḥla w hawi sāx",
+            "translations": [
+              "wegen der Mühe, die der Jüngling mit ihr gehabt hatte, tat sie ihm Gutes, tat Heilmittel in seine Wunden, heilte ihn, und er wurde wieder lebendig"
+            ],
+            "references": ["88", "64/309"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕam u=taʕb d-taʕəb u=zʕur-awo aʕma"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " səmla kaysuṯo aʕme"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " marfela darmone b-a=brinatayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w manəḥla"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w hawi sāx "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwegen der Mühe, die der Jüngling mit ihr gehabt hatte, tat sie ihm Gutes, tat Heilmittel in seine Wunden, heilte ihn, und er wurde wieder lebendigʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "88"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "64/309"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ʕam u=taʕb d-taʕəb u=zʕur-awo aʕma, səmla kaysuṯo aʕme, marfela darmone b-a=brinatayḏe, w manəḥla, w hawi sāx ʻwegen der Mühe, die der Jüngling mit ihr gehabt hatte, tat sie ihm Gutes, tat Heilmittel in seine Wunden, heilte ihn, und er wurde wieder lebendigʼ; 88; 64/309;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ʕam u=taʕb d-taʕəb u=zʕur-awo aʕma, səmla kaysuṯo aʕme, marfela darmone b-a=brinatayḏe, w manəḥla, w hawi sāx",
+                "translations": [
+                  "ʻwegen der Mühe, die der Jüngling mit ihr gehabt hatte, tat sie ihm Gutes, tat Heilmittel in seine Wunden, heilte ihn, und er wurde wieder lebendigʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["88"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["64/309"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "u=ǧinančiy-ayḏan-yo k-toʕəb qumayna ṭray i=səst-ayḏox d-lo=toʕbo w-ṭray i=səst-ayḏe d-toʕbo g-šuqlət i=fərsa mene w-lo g-quṭe-lox bəṯṯər mena fayəš k-tuʕbina ġálabe. laʔənno ʕudina m-i=saʕa šet ṣafrayto hol l-i=saʕa šet ʕašiye -",
+            "translations": [
+              "‘Es ist unser Gärtner, der sich für uns abmüht’",
+              "‘Sieh zu, daß du deine Stute nicht ermüdest und laß seine Stute müde werden! Dann nimmst du eine Blöße bei ihm wahr; wenn nicht, so wird er dich töten’",
+              "‘Dann hatten wir sehr ermüdende Arbeit. Denn wir arbeiteten von 6 Uhr morgens bis 6 Uhr abends’"
+            ],
+            "references": ["27/26", "29/167", "6"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=ǧinančiy-ayḏan-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-toʕəb qumayna "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Es ist unser Gärtner, der sich für uns abmüht’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "27/26"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṭray i=səst-ayḏox d-lo=toʕbo w-ṭray i=səst-ayḏe d-toʕbo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-šuqlət i=fərsa mene"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-lo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-quṭe-lox "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sieh zu, daß du deine Stute nicht ermüdest und laß seine Stute müde werden! Dann nimmst du eine Blöße bei ihm wahr; wenn nicht, so wird er dich töten’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/167"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər mena fayəš k-tuʕbina ġálabe. laʔənno ʕudina m-i=saʕa šet ṣafrayto hol l-i=saʕa šet ʕašiye "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Dann hatten wir sehr ermüdende Arbeit. Denn wir arbeiteten von 6 Uhr morgens bis 6 Uhr abends’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "31/26"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "27"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[LTN]"
+              }
+            ],
             "text": "u=ǧinančiy-ayḏan-yo, k-toʕəb qumayna ‘Es ist unser Gärtner, der sich für uns abmüht’; 27/26; ṭray i=səst-ayḏox d-lo=toʕbo w-ṭray i=səst-ayḏe d-toʕbo, g-šuqlət i=fərsa mene; w-lo, g-quṭe-lox ‘Sieh zu, daß du deine Stute nicht ermüdest und laß seine Stute müde werden! Dann nimmst du eine Blöße bei ihm wahr; wenn nicht, so wird er dich töten’; 29/167; bəṯṯər mena fayəš k-tuʕbina ġálabe. laʔənno ʕudina m-i=saʕa šet ṣafrayto hol l-i=saʕa šet ʕašiye ‘Dann hatten wir sehr ermüdende Arbeit. Denn wir arbeiteten von 6 Uhr morgens bis 6 Uhr abends’; 31/26-27 [LTN]",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "u=ǧinančiy-ayḏan-yo, k-toʕəb qumayna",
+                "translations": [
+                  "‘Es ist unser Gärtner, der sich für uns abmüht’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["27/26"]
+              },
+              {
+                "turoyo": "ṭray i=səst-ayḏox d-lo=toʕbo w-ṭray i=səst-ayḏe d-toʕbo, g-šuqlət i=fərsa mene",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "w-lo, g-quṭe-lox",
+                "translations": [
+                  "‘Sieh zu, daß du deine Stute nicht ermüdest und laß seine Stute müde werden! Dann nimmst du eine Blöße bei ihm wahr; wenn nicht, so wird er dich töten’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/167"]
+              },
+              {
+                "turoyo": "bəṯṯər mena fayəš k-tuʕbina ġálabe. laʔənno ʕudina m-i=saʕa šet ṣafrayto hol l-i=saʕa šet ʕašiye",
+                "translations": [
+                  "‘Dann hatten wir sehr ermüdende Arbeit. Denn wir arbeiteten von 6 Uhr morgens bis 6 Uhr abends’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "-",
+                "translations": [],
+                "references": ["31/26", "27"],
+                "notes": ["[LTN]"]
+              }
+            ]
           }
         ],
         "Part act.": [
           {
+            "turoyo": "daməx u=abro d-u=málko-yo taʕóbo-yo",
+            "translations": ["er schlief, er ist ja Prinz, er ist müde"],
+            "references": ["121", "115/69"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "daməx"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=abro d-u=málko-yo taʕóbo-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer schlief, er ist ja Prinz, er ist müdeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "121"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "115/69"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "daməx, u=abro d-u=málko-yo taʕóbo-yo ʻer schlief, er ist ja Prinz, er ist müdeʼ; 121; 115/69;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "daməx, u=abro d-u=málko-yo taʕóbo-yo",
+                "translations": ["ʻer schlief, er ist ja Prinz, er ist müdeʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["121"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["115/69"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "matʕable",
-        "matʕəb"
-      ],
+      "forms": ["matʕable", "matʕəb"],
       "conjugations": {
         "Infectum": [
           {
+            "turoyo": "lə=matəʕbət ruḥux Ono lә gmatʕabno u ḥmorayḏi. İlyas p.c",
+            "translations": ["bemühe dich nicht"],
+            "references": ["144"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lə=matəʕbət ruḥux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻbemühe dich nichtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "144"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Ono lә gmatʕabno u ḥmorayḏi. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
             "text": "lə=matəʕbət ruḥux ʻbemühe dich nichtʼ; 144; Ono lә gmatʕabno u ḥmorayḏi. (İlyas p.c)",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "lə=matəʕbət ruḥux",
+                "translations": ["ʻbemühe dich nichtʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["144"]
+              },
+              {
+                "turoyo": "Ono lә gmatʕabno u ḥmorayḏi. (İlyas p.c)",
+                "translations": [],
+                "references": []
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "müde werden, sich bemühen;",
-    "bemühen;"
-  ],
+  "idioms": ["müde werden, sich bemühen;", "bemühen;"],
   "uncertain": false
 }

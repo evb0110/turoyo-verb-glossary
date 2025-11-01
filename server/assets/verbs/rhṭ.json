@@ -14,82 +14,780 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "rahəṭ",
-        "rohəṭ"
-      ],
+      "forms": ["rahəṭ", "rohəṭ"],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "text": "grəšle u=sayf-ayḏe, w-marhaṭle u=səsy-ayḏe rahəṭ, mədde rabṯo, w-daʕər-le ʻer zog sein Schwert, setzte sein Pferd in Galopp, galoppierte eine grosse Strecke und kam dann zu ihm zurückʼ; 87; 73/69; səmle hawar w-rahiṭina ʻals er Alarm schlug, liefen wir losʼ; JL 12.13.8; kulle feris w-ʕagīd-wayye. w-rahiṭi b-rahṭo ġálabe w-mqadamme  b-u=šop d-Ḥasan w-Ḥusayn ‘Sie waren alle Ritter und hervorragende Krieger, und sie eilten gar schnell und kamen auf der Spur von Ḥasan und Ḥusayn heran’; 29/183",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "turoyo": "grəšle u=sayf-ayḏe w-marhaṭle u=səsy-ayḏe rahəṭ mədde rabṯo w-daʕər-le səmle hawar w-rahiṭina .. kulle feris w-ʕagīd-wayye. w-rahiṭi b-rahṭo ġálabe w-mqadamme b-u=šop d-Ḥasan w-Ḥusayn",
+            "translations": [
+              "er zog sein Schwert, setzte sein Pferd in Galopp, galoppierte eine grosse Strecke und kam dann zu ihm zurück",
+              "als er Alarm schlug, liefen wir los",
+              "‘Sie waren alle Ritter und hervorragende Krieger, und sie eilten gar schnell und kamen auf der Spur von Ḥasan und Ḥusayn heran’"
+            ],
+            "references": ["87", "73/69", "JL 12"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "grəšle u=sayf-ayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-marhaṭle u=səsy-ayḏe rahəṭ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mədde rabṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-daʕər-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer zog sein Schwert, setzte sein Pferd in Galopp, galoppierte eine grosse Strecke und kam dann zu ihm zurückʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "87"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/69"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " səmle hawar w-rahiṭina "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals er Alarm schlug, liefen wir losʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 12"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "13"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              },
+              {
+                "kind": "ref",
+                "value": "8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kulle feris w-ʕagīd-wayye. w-rahiṭi b-rahṭo ġálabe w-mqadamme  b-u=šop d-Ḥasan w-Ḥusayn "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sie waren alle Ritter und hervorragende Krieger, und sie eilten gar schnell und kamen auf der Spur von Ḥasan und Ḥusayn heran’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/183"
+              }
+            ],
+            "text": "grəšle u=sayf-ayḏe, w-marhaṭle u=səsy-ayḏe rahəṭ, mədde rabṯo, w-daʕər-le ʻer zog sein Schwert, setzte sein Pferd in Galopp, galoppierte eine grosse Strecke und kam dann zu ihm zurückʼ; 87; 73/69; səmle hawar w-rahiṭina ʻals er Alarm schlug, liefen wir losʼ; JL 12.13.8; kulle feris w-ʕagīd-wayye. w-rahiṭi b-rahṭo ġálabe w-mqadamme b-u=šop d-Ḥasan w-Ḥusayn ‘Sie waren alle Ritter und hervorragende Krieger, und sie eilten gar schnell und kamen auf der Spur von Ḥasan und Ḥusayn heran’; 29/183",
+            "segments": [
+              {
+                "turoyo": "grəšle u=sayf-ayḏe, w-marhaṭle u=səsy-ayḏe rahəṭ, mədde rabṯo, w-daʕər-le",
+                "translations": [
+                  "ʻer zog sein Schwert, setzte sein Pferd in Galopp, galoppierte eine grosse Strecke und kam dann zu ihm zurückʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["87"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["73/69"]
+              },
+              {
+                "turoyo": "səmle hawar w-rahiṭina",
+                "translations": ["ʻals er Alarm schlug, liefen wir losʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "..",
+                "translations": [],
+                "references": ["JL 12", "13", "8"]
+              },
+              {
+                "turoyo": "kulle feris w-ʕagīd-wayye. w-rahiṭi b-rahṭo ġálabe w-mqadamme b-u=šop d-Ḥasan w-Ḥusayn",
+                "translations": [
+                  "‘Sie waren alle Ritter und hervorragende Krieger, und sie eilten gar schnell und kamen auf der Spur von Ḥasan und Ḥusayn heran’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/183"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "ko-qoyəm borəm ʕal šarəʕ me-tamo w yalla ko-rohəṭ ko-rohaṭno k-obaʕno hăman ḥəlli ko-mičəkno b-u=ṣalonaṯṯe d-ko-ʕobər l-u=baytaṯṯe",
+            "translations": [
+              "er macht sich auf, biegt in eine der Strassen dort in und los! fängt er an zu laufen",
+              "‘ich rannte in eine Richtung, plötzlich merkte ich, dass ich beinahe in ihrem Flur, der in das Hausinnere führte, wäre’"
+            ],
+            "references": ["99", "55/50", "LB 203"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-qoyəm borəm ʕal šarəʕ me-tamo w yalla ko-rohəṭ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer macht sich auf, biegt in eine der Strassen dort in und los! fängt er an zu laufenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "99"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "55/50"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-rohaṭno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-obaʕno hăman"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥəlli ko-mičəkno b-u=ṣalonaṯṯe d-ko-ʕobər l-u=baytaṯṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘ich rannte in eine Richtung, plötzlich merkte ich, dass ich beinahe in ihrem Flur, der in das Hausinnere führte, wäre’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 203"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "ko-qoyəm borəm ʕal šarəʕ me-tamo w yalla ko-rohəṭ ʻer macht sich auf, biegt in eine der Strassen dort in und los! fängt er an zu laufenʼ; 99; 55/50; ko-rohaṭno, k-obaʕno hăman, ḥəlli ko-mičəkno b-u=ṣalonaṯṯe d-ko-ʕobər l-u=baytaṯṯe ‘ich rannte in eine Richtung, plötzlich merkte ich, dass ich beinahe in ihrem Flur, der in das Hausinnere führte, wäre’; LB 203;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "ko-qoyəm borəm ʕal šarəʕ me-tamo w yalla ko-rohəṭ",
+                "translations": [
+                  "ʻer macht sich auf, biegt in eine der Strassen dort in und los! fängt er an zu laufenʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["99"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["55/50"]
+              },
+              {
+                "turoyo": "ko-rohaṭno, k-obaʕno hăman, ḥəlli ko-mičəkno b-u=ṣalonaṯṯe d-ko-ʕobər l-u=baytaṯṯe",
+                "translations": [
+                  "‘ich rannte in eine Richtung, plötzlich merkte ich, dass ich beinahe in ihrem Flur, der in das Hausinnere führte, wäre’"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["LB 203"]
+              }
+            ]
           }
         ],
         "Infectum-wa": [
           {
+            "turoyo": "i=naqqa d-kŭráxno-wo laf Babak ŭbéno-wo-le b-feme ġazeta ṭwiṯo w rŭhaṭ-wo b-qamuṯi",
+            "translations": [
+              "wenn ich nach Bebek spazieren ging, gab ich ihm immer eine zusammegefaltete Zeitung ins Maul, und er lief dann vor mir her"
+            ],
+            "references": ["113", "1/55"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqqa d-kŭráxno-wo laf Babak"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ŭbéno-wo-le b-feme ġazeta ṭwiṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w rŭhaṭ-wo b-qamuṯi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn ich nach Bebek spazieren ging, gab ich ihm immer eine zusammegefaltete Zeitung ins Maul, und er lief dann vor mir herʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "113"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "1/55"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "i=naqqa d-kŭráxno-wo laf Babak, ŭbéno-wo-le b-feme ġazeta ṭwiṯo; w rŭhaṭ-wo b-qamuṯi ʻwenn ich nach Bebek spazieren ging, gab ich ihm immer eine zusammegefaltete Zeitung ins Maul, und er lief dann vor mir herʼ; 113; 1/55;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "i=naqqa d-kŭráxno-wo laf Babak, ŭbéno-wo-le b-feme ġazeta ṭwiṯo",
+                "translations": [],
+                "references": []
+              },
+              {
+                "turoyo": "w rŭhaṭ-wo b-qamuṯi",
+                "translations": [
+                  "ʻwenn ich nach Bebek spazieren ging, gab ich ihm immer eine zusammegefaltete Zeitung ins Maul, und er lief dann vor mir herʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["113"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["1/55"]
+              }
+            ]
           }
         ],
         "Part act.": [
           {
+            "turoyo": "rahuṭṭo zayəʕ ġắlabe w-rahoṭo aṯi l-u=bayto məḷḷe l-i=qašto omər i=kurfo dwəṣla-li ‘He took fright came back home running and told his granny Lu",
+            "translations": ["laufend", "The snake has bitten me"],
+            "references": ["121", "F 294/27"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "rahuṭṭo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻlaufendʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "121"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " zayəʕ ġắlabe w-rahoṭo aṯi l-u=bayto məḷḷe l-i=qašto omər i=kurfo dwəṣla-li "
+              },
+              {
+                "kind": "turoyo",
+                "value": "‘"
+              },
+              {
+                "kind": "turoyo",
+                "value": "He took fright"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " came back home running and told his granny"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“The snake has bitten me”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Lu"
+              },
+              {
+                "kind": "ref",
+                "value": "F 294/27"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "rahuṭṭo ʻlaufendʼ; 121; zayəʕ ġắlabe w-rahoṭo aṯi l-u=bayto məḷḷe l-i=qašto omər i=kurfo dwəṣla-li ‘He took fright, came back home running and told his granny: “The snake has bitten me” LuF 294/27;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "rahuṭṭo",
+                "translations": ["ʻlaufendʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["121"]
+              },
+              {
+                "turoyo": "zayəʕ ġắlabe w-rahoṭo aṯi l-u=bayto məḷḷe l-i=qašto omər i=kurfo dwəṣla-li ‘He took fright, came back home running and told his granny: Lu",
+                "translations": ["“The snake has bitten me”"],
+                "references": ["F 294/27"]
+              }
+            ]
           }
         ],
         "Infinitiv": [
           {
+            "turoyo": "kulle ferəs w ʕăgī́d-way-ye. w rahiṭi b-rahṭo ġắlabe karrakóre yaʕni smiṯo w-lə=k-šəmʕo. haṯe k-uyo kriṯo ḥləmto w-latyo xayəfto ġắlabe b-u=rahṭo Lu",
+            "translations": [
+              "sie waren alle Ritter und hervorragende Krieger, und sie eilten gar schnell",
+              "‘Karrakore means “blind and deaf”. This is a short and squat snake, not very swift in its movement’"
+            ],
+            "references": ["124", "29/183", "F 288/3"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kulle ferəs w ʕăgī́d-way-ye. w rahiṭi b-rahṭo ġắlabe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie waren alle Ritter und hervorragende Krieger, und sie eilten gar schnellʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "124"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/183"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " karrakóre yaʕni smiṯo w-lə=k-šəmʕo. haṯe k-uyo kriṯo ḥləmto w-latyo xayəfto ġắlabe b-u=rahṭo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Karrakore means “blind and deaf”. This is a short and squat snake, not very swift in its movement’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Lu"
+              },
+              {
+                "kind": "ref",
+                "value": "F 288/3"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "kulle ferəs w ʕăgī́d-way-ye. w rahiṭi b-rahṭo ġắlabe ʻsie waren alle Ritter und hervorragende Krieger, und sie eilten gar schnellʼ; 124; 29/183; karrakóre yaʕni smiṯo w-lə=k-šəmʕo. haṯe k-uyo kriṯo ḥləmto w-latyo xayəfto ġắlabe b-u=rahṭo ‘Karrakore means “blind and deaf”. This is a short and squat snake, not very swift in its movement’ LuF 288/3;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "kulle ferəs w ʕăgī́d-way-ye. w rahiṭi b-rahṭo ġắlabe",
+                "translations": [
+                  "ʻsie waren alle Ritter und hervorragende Krieger, und sie eilten gar schnellʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["124"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["29/183"]
+              },
+              {
+                "turoyo": "karrakóre yaʕni smiṯo w-lə=k-šəmʕo. haṯe k-uyo kriṯo ḥləmto w-latyo xayəfto ġắlabe b-u=rahṭo Lu",
+                "translations": [
+                  "‘Karrakore means “blind and deaf”. This is a short and squat snake, not very swift in its movement’"
+                ],
+                "references": ["F 288/3"]
+              }
+            ]
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": [
-        "marhaṭle",
-        "marhəṭ"
-      ],
+      "forms": ["marhaṭle", "marhəṭ"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "grəšle u=sayfayḏe w marhaṭle u=səsyayḏe rahəṭ mədde rabṯo w daʕər-le",
+            "translations": [
+              "er zog sein Schwert, setzte sein Pferd in Galopp, galoppierte eine grosse Strecke und kam dann zu ihm zurück"
+            ],
+            "references": ["140", "73/69"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "grəšle u=sayfayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w marhaṭle u=səsyayḏe rahəṭ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mədde rabṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w daʕər-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer zog sein Schwert, setzte sein Pferd in Galopp, galoppierte eine grosse Strecke und kam dann zu ihm zurückʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "140"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/69"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "grəšle u=sayfayḏe, w marhaṭle u=səsyayḏe rahəṭ, mədde rabṯo, w daʕər-le ʻer zog sein Schwert, setzte sein Pferd in Galopp, galoppierte eine grosse Strecke und kam dann zu ihm zurückʼ; 140; 73/69;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "grəšle u=sayfayḏe, w marhaṭle u=səsyayḏe rahəṭ, mədde rabṯo, w daʕər-le",
+                "translations": [
+                  "ʻer zog sein Schwert, setzte sein Pferd in Galopp, galoppierte eine grosse Strecke und kam dann zu ihm zurückʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["140"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["73/69"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "gəd-l-owən as=səsyaṯṯe ṭowe ġắlabe w marahṭi me arʕe d-u=šalwo hul l-riše d-u=ṭuro marahṭən-ne b-naqla=ḥḏo a=tre=səsye lə=k-xəlṣi mina m-i=kurf-aṯe",
+            "translations": [
+              "wenn ihre Pferde nicht sehr gut sind, und sie die beiden Pferde nicht vom Talgrund bis auf den Gipfel des Berges mit einem Galopp hinauflaufen lassen, finden sie keinen Rettung vor ihr, vor dieser Schlange"
+            ],
+            "references": ["148", "115/80"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gəd-l-owən as=səsyaṯṯe ṭowe ġắlabe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w marahṭi me arʕe d-u=šalwo hul l-riše d-u=ṭuro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " marahṭən-ne b-naqla=ḥḏo a=tre=səsye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=k-xəlṣi mina"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-i=kurf-aṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn ihre Pferde nicht sehr gut sind, und sie die beiden Pferde nicht vom Talgrund bis auf den Gipfel des Berges mit einem Galopp hinauflaufen lassen, finden sie keinen Rettung vor ihr, vor dieser Schlangeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "148"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "115/80"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "gəd-l-owən as=səsyaṯṯe ṭowe ġắlabe, w marahṭi me arʕe d-u=šalwo hul l-riše d-u=ṭuro, marahṭən-ne b-naqla=ḥḏo a=tre=səsye, lə=k-xəlṣi mina, m-i=kurf-aṯe ʻwenn ihre Pferde nicht sehr gut sind, und sie die beiden Pferde nicht vom Talgrund bis auf den Gipfel des Berges mit einem Galopp hinauflaufen lassen, finden sie keinen Rettung vor ihr, vor dieser Schlangeʼ; 148; 115/80;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "gəd-l-owən as=səsyaṯṯe ṭowe ġắlabe, w marahṭi me arʕe d-u=šalwo hul l-riše d-u=ṭuro, marahṭən-ne b-naqla=ḥḏo a=tre=səsye, lə=k-xəlṣi mina, m-i=kurf-aṯe",
+                "translations": [
+                  "ʻwenn ihre Pferde nicht sehr gut sind, und sie die beiden Pferde nicht vom Talgrund bis auf den Gipfel des Berges mit einem Galopp hinauflaufen lassen, finden sie keinen Rettung vor ihr, vor dieser Schlangeʼ"
+                ],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["148"]
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["115/80"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "laufen;",
-    "laufen lassen;"
-  ],
+  "idioms": ["laufen;", "laufen lassen;"],
   "uncertain": false
 }

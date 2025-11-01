@@ -14,32 +14,103 @@
   "stems": [
     {
       "stem": "I",
-      "forms": [
-        "mətʕadele",
-        "mətʕade"
-      ],
+      "forms": ["mətʕadele", "mətʕade"],
       "conjugations": {
         "Preterit": [
           {
+            "turoyo": "mətʕadele aʕlayye",
+            "translations": ["er hatte sich an ihnen vergangen"],
+            "references": ["803"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mətʕadele aʕlayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hatte sich an ihnen vergangenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "803"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "mətʕadele aʕlayye ʻer hatte sich an ihnen vergangenʼ; 803;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "mətʕadele aʕlayye",
+                "translations": ["ʻer hatte sich an ihnen vergangenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["803"]
+              }
+            ]
           }
         ],
         "Infectum": [
           {
+            "turoyo": "d-mətʕade ʕal u=nămūs",
+            "translations": ["der Ehre zu nahe zu treten"],
+            "references": ["803"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "d-mətʕade ʕal u=nămūs "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Ehre zu nahe zu tretenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "803"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
             "text": "d-mətʕade ʕal u=nămūs ʻder Ehre zu nahe zu tretenʼ; 803;",
-            "turoyo": "",
-            "translations": [],
-            "references": []
+            "segments": [
+              {
+                "turoyo": "d-mətʕade ʕal u=nămūs",
+                "translations": ["ʻder Ehre zu nahe zu tretenʼ"],
+                "references": []
+              },
+              {
+                "turoyo": "",
+                "translations": [],
+                "references": ["803"]
+              }
+            ]
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "sich vergreifen an, sich vergehen an, zu nahe treten, schaden;"
-  ],
+  "idioms": ["sich vergreifen an, sich vergehen an, zu nahe treten, schaden;"],
   "uncertain": false
 }
