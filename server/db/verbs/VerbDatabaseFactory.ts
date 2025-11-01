@@ -1,6 +1,6 @@
-import type { IVerbDatabase } from './IVerbDatabase'
-import { SqliteVerbDatabase } from './adapters/SqliteVerbDatabase'
 import { PostgresVerbDatabase } from './adapters/PostgresVerbDatabase'
+import { SqliteVerbDatabase } from './adapters/SqliteVerbDatabase'
+import type { IVerbDatabase } from './IVerbDatabase'
 
 export type VerbDatabaseType = 'sqlite' | 'postgres'
 

@@ -16,7 +16,7 @@ export async function searchRoots(
     const allFiles = await storage.getKeys('verbs')
     const verbFiles = allFiles.filter(f => f.endsWith('.json'))
 
-    const allRoots = verbFiles.map(f => {
+    const allRoots = verbFiles.map((f) => {
         const match = f.match(/verbs[:/](.+)\.json$/)
         return match ? match[1] : null
     }).filter((r): r is string => r !== null)

@@ -1,6 +1,6 @@
 import Database from 'better-sqlite3'
-import type { IVerbDatabase } from '../IVerbDatabase'
 import type { IVerb } from '#shared/types/IVerb'
+import type { IVerbDatabase } from '../IVerbDatabase'
 
 export class SqliteVerbDatabase implements IVerbDatabase {
     private db: Database.Database
@@ -61,7 +61,7 @@ export class SqliteVerbDatabase implements IVerbDatabase {
     async getRoots(): Promise<string[]> {
         const rows = this.db
             .prepare('SELECT root FROM verbs ORDER BY root')
-            .all() as { root: string }[]
+            .all() as Array<{ root: string }>
 
         return rows.map(r => r.root)
     }
@@ -85,7 +85,7 @@ export class SqliteVerbDatabase implements IVerbDatabase {
                 verb.etymology ? JSON.stringify(verb.etymology) : null,
                 verb.cross_reference,
                 JSON.stringify(verb.stems),
-                verb.uncertain ? 1 : 0,
+                verb.uncertain ? 1 : 0
             )
     }
 
@@ -102,7 +102,7 @@ export class SqliteVerbDatabase implements IVerbDatabase {
                     verb.etymology ? JSON.stringify(verb.etymology) : null,
                     verb.cross_reference,
                     JSON.stringify(verb.stems),
-                    verb.uncertain ? 1 : 0,
+                    verb.uncertain ? 1 : 0
                 )
             }
         })

@@ -5,6 +5,9 @@ import preferGenericTypeAnnotation from './eslint-rules/prefer-generic-type-anno
 
 export default withNuxt(
     {
+        ignores: ['app/components/Editor/**', 'server/db/verbs/**'],
+    },
+    {
         plugins: {
             'custom-rules': {
                 rules: {
@@ -14,6 +17,7 @@ export default withNuxt(
             },
         },
         rules: {
+            '@typescript-eslint/unified-signatures': 'off',
             'custom-rules/prefer-generic-type-annotation': 'error',
             'custom-rules/enforce-destructuring-newline': 'error',
             'vue/html-indent': ['error', 4],

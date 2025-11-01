@@ -1,6 +1,6 @@
 import { neon } from '@neondatabase/serverless'
-import type { IVerbDatabase } from '../IVerbDatabase'
 import type { IVerb } from '#shared/types/IVerb'
+import type { IVerbDatabase } from '../IVerbDatabase'
 
 export class PostgresVerbDatabase implements IVerbDatabase {
     private sql: ReturnType<typeof neon>
