@@ -14,24 +14,37 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mšafəl", "mišafəl"],
+      "forms": [
+        "mšafəl",
+        "mišafəl"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mšaflo i=alayḏi 311;",
-            "translations": ["flachgehend"],
-            "references": ["311"]
+            "text": "mšaflo i=alayḏi ʻmein Pflug wurde flachgehendʼ; 311;",
+            "turoyo": "",
+            "translations": [],
+            "references": []
           }
         ],
         "Part. Pass.": [
           {
-            "turoyo": "i=alayḏimšafálto-yo 312;",
+            "text": "i=alayḏi mšafálto-yo ʻmein Pflug pflügt zu flachʼ; 312;",
+            "turoyo": "",
             "translations": [],
-            "references": ["312"]
+            "references": []
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(Detrans.) flach werden;"
   ],
   "uncertain": false
 }

@@ -44,6 +44,7 @@ class FixedDocxParser:
         self.verbs = []
         self.stats = defaultdict(int)
         self.contextual_roots = []
+        self.pending_idiom_paras = []
 
     def is_letter_header(self, para):
         return para.style and para.style.name == 'Heading 1'
@@ -673,93 +674,179 @@ class FixedDocxParser:
         return merged
 
     def parse_table_cell(self, cell):
-        """Parse examples from table cell using run formatting to separate Turoyo from translations
+        """
+        Extract table cell content verbatim to preserve all data.
 
-        ENHANCED VERSION (2025-10-31): Handle 5 categories of empty Turoyo cases:
-        1. Form-only entries (single form + reference)
-        2. Numbered list items with italic Turoyo
-        3. Reference-only lines
-        4. Story excerpts
-        5. Variant form lists
+        SIMPLE APPROACH: Save entire paragraph text without parsing.
+        This prevents the catastrophic data loss from run-based splitting.
         """
         examples = []
 
         for para in cell.paragraphs:
-            full_para_text = para.text.strip()
+            full_text = para.text.strip()
 
-            if not full_para_text:
+            if not full_text:
                 continue
 
-            if self.is_reference_only(full_para_text):
+            # Skip reference-only lines like "611;" or "LB 89;"
+            if re.match(r'^[\d\s;/,]+$', full_text):
                 continue
 
-            turoyo_parts = []
-            translation_parts = []
-
-            for run in para.runs:
-                text = run.text.strip()
-                if not text:
-                    continue
-
-                if run.italic is True:
-                    turoyo_parts.append(run.text)
-                elif run.italic is False:
-                    if len(text) > 2:
-                        translation_parts.append(text)
-                else:
-                    if self.is_likely_turoyo(text):
-                        turoyo_parts.append(run.text)
-                    elif len(text) > 2:
-                        translation_parts.append(text)
-
-            turoyo_text = ''.join(turoyo_parts)
-
-            if self.is_form_only_entry(full_para_text):
-                forms, refs = self.extract_variant_forms(full_para_text)
-                if forms:
-                    turoyo_text = '; '.join(forms)
-                    example = {
-                        'turoyo': turoyo_text,
-                        'translations': [],
-                        'references': refs
-                    }
-                    examples.append(example)
-                    continue
-
-            translations = []
-            for t in translation_parts:
-                normalized = self.normalize_whitespace(t)
-
-                if self.is_form_only_entry(normalized):
-                    forms, refs = self.extract_variant_forms(normalized)
-                    if forms:
-                        if not turoyo_text:
-                            turoyo_text = '; '.join(forms)
-                        continue
-
-                if self.is_likely_turoyo(normalized) and not turoyo_text:
-                    turoyo_text = normalized
-                    continue
-
-                if self.is_valid_translation(normalized):
-                    translations.append(normalized)
-
-            if turoyo_text or translations:
-                references = re.findall(r'\d+(?:;\s*\d+)?(?:/\d+)?', turoyo_text)
-
-                example = {
-                    'turoyo': self.normalize_whitespace(turoyo_text),
-                    'translations': translations,
-                    'references': references[:2] if references else []
-                }
-
-                if example['turoyo'] or example['translations']:
-                    examples.append(example)
-
-        # AGENT 1 FIX: Merge split Turoyo+translation pairs (recovers 12 cases)
-        examples = self.merge_split_examples(examples)
+            # Save the entire paragraph verbatim
+            example = {
+                'text': full_text,
+                'turoyo': '',
+                'translations': [],
+                'references': []
+            }
+            examples.append(example)
 
         return examples
+
+    def is_in_table(self, para):
+        """Check if paragraph is inside a table"""
+        return para._element.getparent().tag.endswith('tbl')
+
+    def is_idiom_paragraph(self, text, verb_forms):
+        """
+        Detect if a paragraph is an idiomatic expression.
+
+        Args:
+            text: Paragraph text
+            verb_forms: List of verb forms for this root (e.g., ['obe', 'hule', 'mahwele'])
+
+        Returns:
+            bool: True if this looks like an idiomatic expression
+        """
+        if not text or len(text) < 10:
+            return False
+
+        has_verb_form = any(form in text for form in verb_forms if form)
+        has_quotation = bool(re.search(r'[ʻʼ\'''"""\"]', text))
+
+        if has_verb_form and has_quotation:
+            return True
+
+        turoyo_chars = r'ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūə'
+        starts_with_turoyo = bool(re.match(rf'^[{turoyo_chars}]', text, re.UNICODE))
+
+        if starts_with_turoyo and has_quotation and len(text) > 30:
+            return True
+
+        turoyo_sequences = re.findall(rf'[{turoyo_chars}]+', text, re.UNICODE)
+        if len(turoyo_sequences) >= 3 and has_quotation:
+            return True
+
+        return False
+
+    def parse_idiom_paragraph(self, text):
+        """
+        Parse an idiomatic expression paragraph into structured data.
+
+        Returns:
+            dict or None: Idiom data with phrase, meaning, and examples
+        """
+        text = text.strip()
+
+        quotes = re.findall(r'[ʻʼ\'''"""\"]([^ʻʼ\'''""\"]+)[ʻʼ\'''""\"]', text)
+
+        if not quotes:
+            return {
+                'phrase': '',
+                'meaning': '',
+                'examples': [{
+                    'turoyo': text[:200],
+                    'translation': '',
+                    'reference': None
+                }]
+            }
+
+        meaning = quotes[0] if quotes else ''
+
+        first_quote_pos = text.find(f"'{meaning}'") if meaning else 0
+        if first_quote_pos < 0:
+            first_quote_pos = text.find(f"ʻ{meaning}ʼ")
+        if first_quote_pos < 0:
+            first_quote_pos = text.find(f'"{meaning}"')
+
+        phrase = text[:first_quote_pos].strip() if first_quote_pos > 0 else ''
+        phrase = re.sub(r':+$', '', phrase).strip()
+
+        example_start = first_quote_pos + len(meaning) + 2 if first_quote_pos >= 0 else 0
+        example_text = text[example_start:].strip()
+        example_text = re.sub(r'^:\s*', '', example_text)
+
+        turoyo_part = ''
+        translation_part = ''
+
+        if len(quotes) > 1:
+            translation_part = quotes[1]
+
+            second_quote_pos = example_text.find(f"'{translation_part}'")
+            if second_quote_pos < 0:
+                second_quote_pos = example_text.find(f"ʻ{translation_part}ʼ")
+            if second_quote_pos < 0:
+                second_quote_pos = example_text.find(f'"{translation_part}"')
+
+            if second_quote_pos > 0:
+                turoyo_part = example_text[:second_quote_pos].strip()
+            else:
+                turoyo_part = example_text
+        else:
+            turoyo_part = example_text
+
+        reference = None
+        ref_match = re.search(r'\b(\d+/\d+|\d+:\d+)\b', text)
+        if ref_match:
+            reference = ref_match.group(1)
+
+        return {
+            'phrase': phrase,
+            'meaning': meaning,
+            'examples': [{
+                'turoyo': turoyo_part[:300] if turoyo_part else '',
+                'translation': translation_part[:300] if translation_part else '',
+                'reference': reference
+            }] if turoyo_part or translation_part else []
+        }
+
+    def extract_idioms(self, paragraphs, verb_forms):
+        """
+        Extract ALL non-table text after stems as raw idiom paragraphs.
+
+        Simple approach: preserve everything verbatim without parsing.
+
+        Args:
+            paragraphs: List of paragraph objects
+            verb_forms: List of verb forms for this root (unused in simple mode)
+
+        Returns:
+            list or None: List of raw text strings, or None if no content found
+        """
+        idiom_texts = []
+
+        for para in paragraphs:
+            if self.is_in_table(para):
+                continue
+
+            text = para.text.strip()
+
+            if not text or len(text) < 3:
+                continue
+
+            # Skip headers
+            if text in ['Detransitive', 'Idiomatic phrases', 'Idioms:', 'Examples:']:
+                continue
+
+            # Skip numbered general meaning lists (but keep if it has specific idioms)
+            # Pattern: "1) meaning; 2) meaning; 3) meaning" with semicolons between
+            if re.match(r'^\d+\)\s+.+;\s*\d+\)\s+.+;', text):
+                continue
+
+            # Keep everything else
+            idiom_texts.append(text)
+
+        return idiom_texts if idiom_texts else None
 
     def parse_document_with_tables(self, docx_path):
         """Parse document using element tree to get table positions"""
@@ -810,6 +897,15 @@ class FixedDocxParser:
 
                 if is_root:
                     if current_verb:
+                        if self.pending_idiom_paras:
+                            all_verb_forms = []
+                            for stem in current_verb.get('stems', []):
+                                all_verb_forms.extend(stem.get('forms', []))
+                            idioms = self.extract_idioms(self.pending_idiom_paras, all_verb_forms)
+                            if idioms:
+                                current_verb['idioms'] = idioms
+                                self.stats['idioms_extracted'] = self.stats.get('idioms_extracted', 0) + len(idioms)
+
                         self.verbs.append(current_verb)
                         self.stats['verbs_parsed'] += 1
 
@@ -822,13 +918,25 @@ class FixedDocxParser:
                             'etymology': etymology,
                             'cross_reference': None,
                             'stems': [],
+                            'idioms': None,
                             'uncertain': '???' in para.text
                         }
                         current_stem = None
+                        self.pending_idiom_paras = []
 
                         if not is_root_strict:
                             self.contextual_roots.append(root)
                             self.stats['contextual_roots'] += 1
+
+                elif 'Detransitive' in para.text and current_verb:
+                    if not any(s['stem'] == 'Detransitive' for s in current_verb['stems']):
+                        current_stem = {
+                            'stem': 'Detransitive',
+                            'forms': [],
+                            'conjugations': {}
+                        }
+                        current_verb['stems'].append(current_stem)
+                        self.stats['detransitive_entries'] += 1
 
                 elif self.is_stem_header(para):
                     stem_num, forms = self.extract_stem_info(para.text)
@@ -841,15 +949,8 @@ class FixedDocxParser:
                         current_verb['stems'].append(current_stem)
                         self.stats['stems_parsed'] += 1
 
-                elif 'Detransitive' in para.text and current_verb:
-                    if not any(s['stem'] == 'Detransitive' for s in current_verb['stems']):
-                        current_stem = {
-                            'stem': 'Detransitive',
-                            'forms': [],
-                            'conjugations': {}
-                        }
-                        current_verb['stems'].append(current_stem)
-                        self.stats['detransitive_entries'] += 1
+                elif current_verb is not None and current_verb.get('stems'):
+                    self.pending_idiom_paras.append(para)
 
             elif elem_type == 'table':
                 table = elem
@@ -863,14 +964,28 @@ class FixedDocxParser:
                         examples = self.parse_table_cell(examples_cell)
 
                         if conj_type and examples:
-                            current_stem['conjugations'][conj_type] = examples
+                            if conj_type in current_stem['conjugations']:
+                                current_stem['conjugations'][conj_type].extend(examples)
+                            else:
+                                current_stem['conjugations'][conj_type] = examples
                             self.stats['examples_parsed'] += len(examples)
 
         if current_verb:
+            if self.pending_idiom_paras:
+                all_verb_forms = []
+                for stem in current_verb.get('stems', []):
+                    all_verb_forms.extend(stem.get('forms', []))
+                idioms = self.extract_idioms(self.pending_idiom_paras, all_verb_forms)
+                if idioms:
+                    current_verb['idioms'] = idioms
+                    self.stats['idioms_extracted'] = self.stats.get('idioms_extracted', 0) + len(idioms)
+
             self.verbs.append(current_verb)
             self.stats['verbs_parsed'] += 1
 
         print(f"   ✓ {self.stats['verbs_parsed']} verbs, {self.stats['stems_parsed']} stems, {self.stats['examples_parsed']} examples")
+        if self.stats.get('idioms_extracted'):
+            print(f"   💬 {self.stats['idioms_extracted']} idiomatic expressions extracted")
         if self.stats.get('contextual_roots'):
             print(f"   🔍 {self.stats['contextual_roots']} roots found via contextual validation")
 

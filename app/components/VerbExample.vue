@@ -13,7 +13,7 @@ defineProps<{
         variant="soft"
     >
         <div class="text-lg font-medium turoyo-text">
-            {{ example.turoyo || '—' }}
+            {{ example.text || example.turoyo || '—' }}
         </div>
 
         <VerbTranslationList :translations="example.translations"/>

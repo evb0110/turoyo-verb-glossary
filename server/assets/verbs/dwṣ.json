@@ -14,36 +14,73 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["dwəṣle", "dowəṣ"],
+      "forms": [
+        "dwəṣle",
+        "dowəṣ"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "dwiṣ b-i=kurfo",
-            "translations": ["‘He was bitten by a snake’ LuF 298/42;"],
+            "text": "layt nošo d-dwuṣle abnux ʻniemand ist da, der deine Söhne gebissen hatʼ; 448; prs 102/34, 36; zbəṭla iḏe bayn-l-a=tre ṣawʕoṯe (…) w-lo=marfela hul d-lo=hiye grəšle iḏe w-grišole, qalibo, dwəṣla ‘It (snake, f.) gripped his hand between his two fingers and did not let go until he pulled his hand out and (with it) pulled it (snake, f.). Then, it (snake, f.) turned over and bit (him)’ LuF 296-298/40;",
+            "turoyo": "",
+            "translations": [],
             "references": []
           }
         ],
         "Infectum": [
           {
-            "turoyo": "g-dawṣlo-le, lo=k-mədwəṣ 458; prs 103/17; prs 251/20; arbʕo ḥamšo=yawme kul=lalyo m-al=lalye d-alo ʕezo w-ko-mədwoṣo",
-            "translations": [
-              "sie wollte ihn beissen, aber er konnte nicht gebissen werden",
-              "‘For four or five days, every night a goat was bitten’ LuF 304/69;"
-            ],
-            "references": ["458", "103/17"]
+            "text": "g-dawṣo b-qarʕa bayn ʕayne ʻsie biss ihn mit dem Kopfe zwischen den Augenʼ; 453; prs 213/25; haṯe i=naqla d-ko-duṣo isān lo=ko-xoləṣ mina ‘Whenever this (snake, f.) bites a man, he can not save himself’ LuF 288/4;",
+            "turoyo": "",
+            "translations": [],
+            "references": []
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "aloho maṣṭar-wa, b-am=mo təšʕi w tašʕo-ze har lo=mədwoṣi-wa",
-            "translations": [
-              "Gott beschützte (uns), denn in neunundneunzig von hundert Fällen wurde niemand gebissen"
-            ],
+            "text": "u=ḥa d-duṣó-way-le b-naqqa moyaṯ-wa ʻwenn der (Skorpion f) einen Menschen stach, dann starb er sofortʼ JL 7.7.6; kul=ḥa mičək-wa b-u=bayto, w-fulti-wa bəṯran hul l-gawe=d-ab=bote w-hənne g-duṣi-way-lan ‘Every one (of us) got into the house, but they (bees, pl.) chased us even inside the houses, and some of them bit us’ 72/9-10;",
+            "turoyo": "",
+            "translations": [],
+            "references": []
+          }
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Preterit": [
+          {
+            "text": "dwiṣ b-i=kurfo ‘He was bitten by a snake’ LuF 298/42;",
+            "turoyo": "",
+            "translations": [],
+            "references": []
+          }
+        ],
+        "Infectum": [
+          {
+            "text": "g-dawṣlo-le, lo=k-mədwəṣ ʻsie wollte ihn beissen, aber er konnte nicht gebissen werdenʼ; 458; prs 103/17; prs 251/20; arbʕo ḥamšo=yawme kul=lalyo m-al=lalye d-alo ʕezo w-ko-mədwoṣo ‘For four or five days, every night a goat was bitten’ LuF 304/69;",
+            "turoyo": "",
+            "translations": [],
+            "references": []
+          }
+        ],
+        "Infectum-wa": [
+          {
+            "text": "aloho maṣṭar-wa, b-am=mo təšʕi w tašʕo-ze har lo=mədwoṣi-wa ʻGott beschützte (uns), denn in neunundneunzig von hundert Fällen wurde niemand gebissenʼ JL 7.7.11;",
+            "turoyo": "",
+            "translations": [],
             "references": []
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "stechen, beissen (Schlange, Skorpion, Insekt);",
+    "dwiṣ/mədwəṣ",
+    "Action Noun",
+    "biting;"
   ],
   "uncertain": false
 }

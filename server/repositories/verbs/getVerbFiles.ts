@@ -1,5 +1,7 @@
+import { getVerbDatabase } from '~~/server/db/verbs'
+
 export async function getVerbFiles() {
-    const storage = useStorage('assets:server')
-    const allFiles = await storage.getKeys('verbs')
-    return allFiles.filter(f => f.endsWith('.json'))
+    const db = getVerbDatabase()
+    const roots = await db.getRoots()
+    return roots.map(root => `verbs/${root}.json`)
 }

@@ -14,24 +14,37 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["frīḥ", "məfrəḥ"],
+      "forms": [
+        "frīḥ",
+        "məfrəḥ"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "frīḥ 126;",
-            "translations": ["er freute sich"],
-            "references": ["126"]
+            "text": "frīḥ ʻer freute sichʼ; 126;",
+            "turoyo": "",
+            "translations": [],
+            "references": []
           }
         ],
         "Infectum": [
           {
-            "turoyo": "ko-məfraḥno 131;",
+            "text": "ko-məfraḥno ʻich freue mich (an der frische Luft zu kommen)ʼ; 131;",
+            "turoyo": "",
             "translations": [],
-            "references": ["131"]
+            "references": []
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(Detrans.) sich freuen;"
   ],
   "uncertain": false
 }

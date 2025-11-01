@@ -14,46 +14,63 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ṭrəḥle", "ṭorəḥ"],
+      "forms": [
+        "ṭrəḥle",
+        "ṭorəḥ"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "tloṯo=ṣlibeṭrəḥliʕalfoṯiLB 184;",
-            "translations": ["bekreuzigte"],
-            "references": ["184"]
+            "text": "tloṯo=ṣlibe ṭrəḥli ʕal foṯi ʻich bekreuzigte mich dreimalʼ; LB 184;",
+            "turoyo": "",
+            "translations": [],
+            "references": []
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "u=ṭroḥo d-u=ṣlibo 123;",
-            "translations": ["Bekreuzigen"],
-            "references": ["123"]
+            "text": "u=ṭroḥo d-u=ṣlibo ʻdas Bekreuzigen mit dem Handkreuzʼ; 123;",
+            "turoyo": "",
+            "translations": [],
+            "references": []
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": ["mṭaraḥle", "mṭarəḥ"],
+      "forms": [
+        "mṭaraḥle",
+        "mṭarəḥ"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "as=sate mṭaraḥḥe 228;",
-            "translations": ["Weinstöcke"],
-            "references": ["228"]
-          }
-        ],
-        "Infectum": [
-          {
-            "turoyo": "u=qansērnaqlawoṯekə-mṭarəḥ BS;",
+            "text": "as=sate mṭaraḥḥe ʻdie Weinstöcke haben Triebe angesetztʼ; 228;",
+            "turoyo": "",
             "translations": [],
             "references": []
           }
         ],
+        "Infectum": [
+          {
+            "text": "u=qansēr naqlawoṯe kə-mṭarəḥ ‘manchmal flammt der Tumor wieder auf’; BS;",
+            "turoyo": "",
+            "translations": [],
+            "references": []
+          }
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
         "Part. Pass.": [
           {
-            "turoyo": "hanoqansērmṭárḥo-yo BS;",
-            "translations": ["bösartiger"],
+            "text": "hano qansēr mṭárḥo-yo ‘dieser ist ein bösartiger Tumor’; BS;",
+            "turoyo": "",
+            "translations": [],
             "references": []
           }
         ]
@@ -61,9 +78,17 @@
     },
     {
       "stem": "III",
-      "forms": ["maṭraḥle", "maṭrəḥ"],
+      "forms": [
+        "maṭraḥle",
+        "maṭrəḥ"
+      ],
       "conjugations": {}
     }
+  ],
+  "idioms": [
+    "sich bekreuzigen (mit ṣlibo);",
+    "spriessen; Triebe ansetzen;",
+    "eine Fehlgeburt erleiden - always unintentionally (according to BS)"
   ],
   "uncertain": false
 }

@@ -1,10 +1,6 @@
-export async function getVerbRoots() {
-    const storage = useStorage('assets:server')
-    const allFiles = await storage.getKeys('verbs')
-    const verbFiles = allFiles.filter(f => f.endsWith('.json'))
+import { getVerbDatabase } from '~~/server/db/verbs'
 
-    return verbFiles.map((f) => {
-        const filename = f.split(':').pop() || f
-        return filename.replace(/\.json$/, '')
-    })
+export async function getVerbRoots() {
+    const db = getVerbDatabase()
+    return db.getRoots()
 }

@@ -2,6 +2,20 @@ import type { IVerb } from '#shared/types/IVerb'
 
 export async function getAllVerbs() {
     const storage = useStorage('assets:server')
-    const keys = await storage.getKeys('verbs')
-    return Promise.all(keys.map(key => storage.getItem<IVerb>(key)))
+    const allFiles = await storage.getKeys('verbs')
+    const verbFiles = allFiles.filter(f => f.endsWith('.json'))
+
+    const verbs = await Promise.all(
+        verbFiles.map(async (filePath) => {
+            try {
+                return await storage.getItem<IVerb>(filePath)
+            }
+            catch (e) {
+                console.warn(`Failed to load ${filePath}:`, e)
+                return null
+            }
+        })
+    )
+
+    return verbs.filter((v): v is IVerb => v !== null)
 }

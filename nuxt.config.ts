@@ -74,10 +74,25 @@ export default defineNuxtConfig({
         plugins: [
             mkcert({ hosts: ['*.lvh.me', 'lvh.me', 'localhost'] }),
         ],
-        server: { strictPort: true },
+        server: {
+            strictPort: true,
+            watch: {
+                ignored: [
+                    '**/.output/**',
+                    '**/dist/**',
+                    '**/.vercel/**',
+                    '**/.nuxt/**',
+                    '**/build/**',
+                    '**/.data/**',
+                    '**/.devkit/analysis/**',
+                    '**/.devkit/tmp/**',
+                    '**/.devkit/debug/**',
+                    '**/.backup/**',
+                ],
+            },
+        },
         build: { sourcemap: false },
     },
-    typescript: { typeCheck: true },
 
     hooks: {
         listen() {

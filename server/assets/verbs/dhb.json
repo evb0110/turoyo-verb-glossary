@@ -14,24 +14,37 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mdahəb", "midahəb"],
+      "forms": [
+        "mdahəb",
+        "midahəb"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mdahbi",
+            "text": "mdahbi; 225;",
+            "turoyo": "",
             "translations": [],
-            "references": ["225"]
+            "references": []
           }
         ],
         "Infectum": [
           {
-            "turoyo": "g-midahəb u=abrayḏi 225;",
-            "translations": ["dann ist mein Sohn verloren"],
-            "references": ["225"]
+            "text": "g-midahəb u=abrayḏi ʻdann ist mein Sohn verlorenʼ; 225;",
+            "turoyo": "",
+            "translations": [],
+            "references": []
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(Detrans.) zerstreuen, verloren gehen lassen;"
   ],
   "uncertain": false
 }

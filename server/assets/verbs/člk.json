@@ -14,24 +14,46 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mčalakle", "mčalək"],
+      "forms": [
+        "mčalakle",
+        "mčalək"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "u=gubo mčalək 225;",
-            "translations": ["ʻdie Zisterne ist erschöpftʼ;"],
-            "references": ["225"]
+            "text": "mčalakle maye m-u=gubo ʻer schöpfte mit kleinen Gefässen Wasser aus der fast leeren Zisterneʼ; 225;",
+            "turoyo": "",
+            "translations": [],
+            "references": []
           }
-        ],
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
         "Infectum": [
           {
-            "turoyo": "Behn diḏi komičalak",
-            "translations": ["‘I'm out of breath’ (p.c. Ilyas 7/11/23)"],
+            "text": "Behn diḏi komičalak ‘I'm out of breath’ (p.c. Ilyas 7/11/23)",
+            "turoyo": "",
+            "translations": [],
+            "references": []
+          }
+        ],
+        "Preterit": [
+          {
+            "text": "u=gubo mčalək ʻdie Zisterne ist erschöpftʼ; 225;",
+            "turoyo": "",
+            "translations": [],
             "references": []
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "erschöpfen, ganz ausschöpfen (Zisterne);"
   ],
   "uncertain": false
 }

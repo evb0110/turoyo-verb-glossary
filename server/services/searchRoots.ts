@@ -14,12 +14,12 @@ export async function searchRoots(
     const verbMetadata: Record<string, IVerbMetadataWithPreview> = {}
 
     const allFiles = await storage.getKeys('verbs')
-    const allRoots = allFiles
-        .filter(f => f.endsWith('.json'))
-        .map((f) => {
-            const filename = f.split(':').pop() || f
-            return filename.replace(/\.json$/, '')
-        })
+    const verbFiles = allFiles.filter(f => f.endsWith('.json'))
+
+    const allRoots = verbFiles.map(f => {
+        const match = f.match(/verbs[:/](.+)\.json$/)
+        return match ? match[1] : null
+    }).filter((r): r is string => r !== null)
 
     const filteredRoots = allRoots.filter(root =>
         matchesPattern(root, query, opts)

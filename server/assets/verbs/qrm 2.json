@@ -14,28 +14,37 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mqarəm", "miqarəm"],
+      "forms": [
+        "mqarəm",
+        "miqarəm"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "i=gḏayto ko-miqarmo ʕal ab=beʕe ḥeḏər ʕəsri=yawmeIT;",
-            "translations": [
-              "‘die Henne brütet die Eier etwa zwanzig Tage (lang)’;"
-            ],
+            "text": "i=gḏayto ko-miqarmo ʕal ab=beʕe ḥeḏər ʕəsri=yawme ‘die Henne brütet die Eier etwa zwanzig Tage (lang)’; IT;",
+            "turoyo": "",
+            "translations": [],
             "references": []
           }
         ],
         "Part. Pass.": [
           {
-            "turoyo": "i=qaqwoniṯo mqarámto-wa ʕal ač=čičəkayḏa i=naqla d-ḥəzyoli taḥt i=satoIT;",
-            "translations": [
-              "‘das Steinhuhn brütete gerade seine Küken als ich es unter dem Weinstock entdeckte’;"
-            ],
+            "text": "i=qaqwoniṯo mqarámto-wa ʕal ač=čičəkayḏa i=naqla d-ḥəzyoli taḥt i=sato ‘das Steinhuhn brütete gerade seine Küken als ich es unter dem Weinstock entdeckte’; IT;",
+            "turoyo": "",
+            "translations": [],
             "references": []
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(Detrans.) brüten;"
   ],
   "uncertain": false
 }
