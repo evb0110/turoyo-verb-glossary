@@ -758,13 +758,57 @@ class FixedDocxParser:
 
         return merged
 
+    def _extract_reference_groups(self, tokens):
+        """
+        Construct reference strings from token sequences, preserving labels and punctuation:
+        - Supports labels of 1–4 ASCII letters (e.g., LB, LuF, jl) preceding numbers
+        - Supports dotted or slashed numeric series (e.g., 18.7.11, 286/44)
+        - Avoids picking up random digits from prose by requiring a number token to start a group
+        """
+        refs = []
+
+        def is_label_token(t):
+            if t.get('kind') != 'turoyo':
+                return False
+            val = t.get('value', '').strip()
+            return bool(re.fullmatch(r'[A-Za-z]{1,4}', val))
+
+        i = 0
+        n = len(tokens)
+        while i < n:
+            label = None
+            t = tokens[i]
+            if is_label_token(t) and i + 1 < n and tokens[i + 1].get('kind') == 'ref':
+                label = t.get('value', '').strip()
+                i += 1
+                t = tokens[i]
+
+            if t.get('kind') == 'ref':
+                parts = [t.get('value', '').strip()]
+                j = i + 1
+                while j + 1 < n and tokens[j].get('kind') == 'punct' and tokens[j].get('value') in {'.', '/'} and tokens[j + 1].get('kind') == 'ref':
+                    parts.append(tokens[j].get('value'))
+                    parts.append(tokens[j + 1].get('value', '').strip())
+                    j += 2
+
+                ref_text = ''.join(parts)
+                if label:
+                    ref_text = f"{label} {ref_text}"
+                refs.append(ref_text)
+                i = j
+                continue
+
+            i += 1
+
+        return refs
+
     def parse_table_cell(self, cell):
         """
         Extract examples from a DOCX table cell using robust heuristics:
         - Prefer italic runs as Turoyo when present
         - Otherwise, detect Turoyo via character heuristics
         - Extract translations from quoted segments
-        - Extract simple numeric references
+        - Extract references (supports labels like LB/LuF/jl and dotted/slashed numbers)
         - Merge consecutive Turoyo/translation-only lines
         """
         examples = []
@@ -812,9 +856,8 @@ class FixedDocxParser:
 
                 # no italic-based fallback; turoyo will be formed from non-translation tokens
 
-                # References: capture numbered refs and code+number refs (e.g., LB 147, LuF 286/44)
-                ref_pattern = r'(?:[A-Z]{1,4}\s*\d+(?:/\d+)?|\d+(?:/\d+)?)(?=(?:[^\w]|$))'
-                references = re.findall(ref_pattern, item_plain)
+                # References: build from tokens to preserve labels and punctuation (e.g., LB 147, LuF 286/44, jl 18.7.11)
+                references = self._extract_reference_groups(tokens)
 
                 # Join all turoyo tokens for a searchable turoyo_text snapshot
                 turoyo_text = self.normalize_whitespace(''.join(

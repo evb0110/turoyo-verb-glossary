@@ -9,17 +9,14 @@ defineProps<{
 <template>
     <UCard :ui="{ body: 'space-y-3' }" class="border-l-4 border-primary/40" variant="soft">
         <div class="text-lg leading-relaxed">
-            <div
-                v-if="structured && structured.items && structured.items.length"
-                class="flex flex-col gap-36"
-            >
+            <div v-if="structured && structured.items && structured.items.length">
                 <div v-if="structured.number" class="text-xl text-bold">
                     {{ structured.number }}
                 </div>
                 <div
                     v-for="(item, idx) in structured.items"
                     :key="idx"
-                    class="space-y-1"
+                    class="[:not(:last-child)]:mb-4"
                 >
                     <div class="turoyo-text">
                         {{ item.turoyo }}
@@ -38,3 +35,9 @@ defineProps<{
         </div>
     </UCard>
 </template>
+
+<style scoped lang="scss">
+.structured-item:not(:first-child):not(:last-child) {
+    //margin-bottom: 16px;
+}
+</style>
