@@ -67,13 +67,25 @@ function tokensToSegments(tokens: IExampleToken[]): { segments: IExampleSegment[
                     references: [],
                 }
             }
+
+            let refValue = token.value
+            const prevToken = tokens[i - 1]
+            if (prevToken?.kind === 'turoyo' && currentSegment.turoyo) {
+                const turoyoTrimmed = currentSegment.turoyo.trim()
+                const lastWord = turoyoTrimmed.split(/\s+/).pop()
+                if (lastWord && /^[a-zA-Z]{1,4}$/.test(lastWord)) {
+                    currentSegment.turoyo = turoyoTrimmed.slice(0, -lastWord.length).trim()
+                    refValue = `${lastWord} ${refValue}`
+                }
+            }
+
             const nextToken = tokens[i + 1]
             if (nextToken?.kind === 'note') {
-                currentSegment.references.push(`${token.value} ${nextToken.value}`)
+                currentSegment.references.push(`${refValue} ${nextToken.value}`)
                 i++
             }
             else {
-                currentSegment.references.push(token.value)
+                currentSegment.references.push(refValue)
             }
         }
     }
