@@ -2,13 +2,19 @@ import type { IExample, IExampleSegment } from '~/types/IExample'
 import type { IExampleToken } from '~/types/IExampleToken'
 import type { IStructuredExample } from '~/types/IStructuredExample'
 
-function stripLeadingParen(text: string) {
-    return text.startsWith(')') ? text.slice(1).trimStart() : text
-}
-
-function tokensToSegments(tokens: IExampleToken[]): IExampleSegment[] {
+function tokensToSegments(tokens: IExampleToken[]): { segments: IExampleSegment[]
+    number?: string } {
     const segments: IExampleSegment[] = []
     let currentSegment: IExampleSegment | null = null
+    let number: string | undefined
+    let startIdx = 0
+
+    const firstToken = tokens[0]
+    const secondToken = tokens[1]
+    if (tokens.length >= 2 && firstToken?.kind === 'ref' && secondToken?.kind === 'punct' && secondToken.value === ')') {
+        number = firstToken.value
+        startIdx = 2
+    }
 
     const pushCurrent = () => {
         if (currentSegment && (currentSegment.turoyo?.trim() || currentSegment.translations.length)) {
@@ -17,7 +23,7 @@ function tokensToSegments(tokens: IExampleToken[]): IExampleSegment[] {
         }
     }
 
-    for (let i = 0; i < tokens.length; i++) {
+    for (let i = startIdx; i < tokens.length; i++) {
         const token = tokens[i]
 
         if (token.kind === 'turoyo') {
@@ -73,38 +79,36 @@ function tokensToSegments(tokens: IExampleToken[]): IExampleSegment[] {
     }
 
     pushCurrent()
-    return segments
+    return {
+        segments,
+        number: number ? `${number})` : undefined,
+    }
 }
 
 export function segmentsToStructured(example: IExample): IStructuredExample {
-    const segments = example.segments
-        || (example.tokens ? tokensToSegments(example.tokens) : null)
-        || (
-            (example.turoyo || example.translations?.length || example.references?.length)
-                ? [{
-                        turoyo: example.turoyo || '',
-                        translations: example.translations || [],
-                        references: example.references || [],
-                        notes: example.notes,
-                    }]
-                : []
-        )
-    const items: IStructuredExample['items'] = []
-
+    let segments: IExampleSegment[]
     let number: string | undefined
-    let first = segments[0]
 
-    if (first) {
-        const digitRefIndex = first.references?.findIndex(r => /^\d+$/.test(r)) ?? -1
-        if (digitRefIndex >= 0) {
-            number = `${first.references![digitRefIndex]})`
-            first = {
-                ...first,
-                turoyo: stripLeadingParen(first.turoyo || ''),
-                references: first.references!.filter((_, i) => i !== digitRefIndex),
-            }
-        }
+    if (example.segments) {
+        segments = example.segments
     }
+    else if (example.tokens) {
+        const result = tokensToSegments(example.tokens)
+        segments = result.segments
+        number = result.number
+    }
+    else if (example.turoyo || example.translations?.length || example.references?.length) {
+        segments = [{
+            turoyo: example.turoyo || '',
+            translations: example.translations || [],
+            references: example.references || [],
+        }]
+    }
+    else {
+        segments = []
+    }
+
+    const items: IStructuredExample['items'] = []
 
     let current: { turoyo: string
         translation: string
@@ -127,20 +131,18 @@ export function segmentsToStructured(example: IExample): IStructuredExample {
 
     const attachRefs = (refs: string[], notes?: string[]) => {
         if (!current) return
-        if (notes && notes.length) {
-            // Append notes to the last ref (e.g., "21/65 [MT]") to avoid losing information
-            const withNotes = notes.length ? `${notes.join(' ')}` : ''
-            if (refs.length) {
-                const last = refs[refs.length - 1]
-                refs[refs.length - 1] = withNotes ? `${last} ${withNotes}` : last
+        if (notes && notes.length && refs.length) {
+            const withNotes = `${notes.join(' ')}`
+            const lastIdx = refs.length - 1
+            const last = refs[lastIdx]
+            if (last) {
+                refs[lastIdx] = `${last} ${withNotes}`
             }
         }
         current.references.push(...refs)
     }
 
-    const allSegments: IExampleSegment[] = first ? [first, ...segments.slice(1)] : segments
-
-    for (const seg of allSegments) {
+    for (const seg of segments) {
         const hasTuroyo = !!(seg.turoyo && seg.turoyo.trim())
         const hasTranslations = !!(seg.translations && seg.translations.length)
         const hasRefs = !!(seg.references && seg.references.length)
