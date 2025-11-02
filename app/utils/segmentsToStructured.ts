@@ -1,21 +1,94 @@
 import type { IExample, IExampleSegment } from '~/types/IExample'
+import type { IExampleToken } from '~/types/IExampleToken'
 import type { IStructuredExample } from '~/types/IStructuredExample'
 
 function stripLeadingParen(text: string) {
     return text.startsWith(')') ? text.slice(1).trimStart() : text
 }
 
+function tokensToSegments(tokens: IExampleToken[]): IExampleSegment[] {
+    const segments: IExampleSegment[] = []
+    let currentSegment: IExampleSegment | null = null
+
+    const pushCurrent = () => {
+        if (currentSegment && (currentSegment.turoyo?.trim() || currentSegment.translations.length)) {
+            segments.push(currentSegment)
+            currentSegment = null
+        }
+    }
+
+    for (let i = 0; i < tokens.length; i++) {
+        const token = tokens[i]
+
+        if (token.kind === 'turoyo') {
+            const trimmedValue = token.value.trim()
+            if (trimmedValue) {
+                if (!currentSegment) {
+                    currentSegment = {
+                        turoyo: token.value,
+                        translations: [],
+                        references: [],
+                    }
+                }
+                else if (currentSegment.translations.length > 0) {
+                    pushCurrent()
+                    currentSegment = {
+                        turoyo: token.value,
+                        translations: [],
+                        references: [],
+                    }
+                }
+                else {
+                    currentSegment.turoyo += token.value
+                }
+            }
+        }
+        else if (token.kind === 'translation') {
+            if (!currentSegment) {
+                currentSegment = {
+                    turoyo: '',
+                    translations: [],
+                    references: [],
+                }
+            }
+            currentSegment.translations.push(token.value)
+        }
+        else if (token.kind === 'ref') {
+            if (!currentSegment) {
+                currentSegment = {
+                    turoyo: '',
+                    translations: [],
+                    references: [],
+                }
+            }
+            const nextToken = tokens[i + 1]
+            if (nextToken?.kind === 'note') {
+                currentSegment.references.push(`${token.value} ${nextToken.value}`)
+                i++
+            }
+            else {
+                currentSegment.references.push(token.value)
+            }
+        }
+    }
+
+    pushCurrent()
+    return segments
+}
+
 export function segmentsToStructured(example: IExample): IStructuredExample {
-    const segments = example.segments || (
-        (example.turoyo || example.translations?.length || example.references?.length)
-            ? [{
-                    turoyo: example.turoyo || '',
-                    translations: example.translations || [],
-                    references: example.references || [],
-                    notes: example.notes,
-                }]
-            : []
-    )
+    const segments = example.segments
+        || (example.tokens ? tokensToSegments(example.tokens) : null)
+        || (
+            (example.turoyo || example.translations?.length || example.references?.length)
+                ? [{
+                        turoyo: example.turoyo || '',
+                        translations: example.translations || [],
+                        references: example.references || [],
+                        notes: example.notes,
+                    }]
+                : []
+        )
     const items: IStructuredExample['items'] = []
 
     let number: string | undefined
