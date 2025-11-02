@@ -37,11 +37,23 @@ function tokensToSegments(tokens: IExampleToken[]): { segments: IExampleSegment[
                     }
                 }
                 else if (currentSegment.translations.length > 0) {
-                    pushCurrent()
-                    currentSegment = {
-                        turoyo: token.value,
-                        translations: [],
-                        references: [],
+                    const lastTranslation = currentSegment.translations[currentSegment.translations.length - 1]
+                    const hasUnclosedQuote = lastTranslation && (
+                        (lastTranslation.includes('\'') && !lastTranslation.endsWith('\''))
+                        || (lastTranslation.includes('\'') && !lastTranslation.endsWith('\''))
+                        || (lastTranslation.includes('"') && !lastTranslation.endsWith('"'))
+                    )
+
+                    if (hasUnclosedQuote) {
+                        currentSegment.translations[currentSegment.translations.length - 1] += token.value
+                    }
+                    else {
+                        pushCurrent()
+                        currentSegment = {
+                            turoyo: token.value,
+                            translations: [],
+                            references: [],
+                        }
                     }
                 }
                 else {
