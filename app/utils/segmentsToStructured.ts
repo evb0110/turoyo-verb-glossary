@@ -38,11 +38,31 @@ function tokensToSegments(tokens: IExampleToken[]): { segments: IExampleSegment[
                 }
                 else if (currentSegment.translations.length > 0) {
                     const lastTranslation = currentSegment.translations[currentSegment.translations.length - 1]
-                    const hasUnclosedQuote = lastTranslation && (
-                        (lastTranslation.includes('\'') && !lastTranslation.endsWith('\''))
-                        || (lastTranslation.includes('\'') && !lastTranslation.endsWith('\''))
-                        || (lastTranslation.includes('"') && !lastTranslation.endsWith('"'))
-                    )
+
+                    const quotePairs = [
+                        {
+                            open: '\u2018',
+                            close: '\u2019',
+                        },
+                        {
+                            open: '"',
+                            close: '"',
+                        },
+                        {
+                            open: '\'',
+                            close: '\'',
+                        },
+                    ]
+
+                    let hasUnclosedQuote = false
+                    if (lastTranslation) {
+                        for (const pair of quotePairs) {
+                            if (lastTranslation.includes(pair.open) && !lastTranslation.includes(pair.close)) {
+                                hasUnclosedQuote = true
+                                break
+                            }
+                        }
+                    }
 
                     if (hasUnclosedQuote) {
                         currentSegment.translations[currentSegment.translations.length - 1] += token.value
@@ -70,6 +90,16 @@ function tokensToSegments(tokens: IExampleToken[]): { segments: IExampleSegment[
                 }
             }
             currentSegment.translations.push(token.value)
+        }
+        else if (token.kind === 'punct' && token.value !== ';') {
+            if (currentSegment) {
+                if (currentSegment.translations.length > 0) {
+                    currentSegment.translations[currentSegment.translations.length - 1] += token.value
+                }
+                else if (currentSegment.turoyo) {
+                    currentSegment.turoyo += token.value
+                }
+            }
         }
         else if (token.kind === 'ref') {
             if (!currentSegment) {
