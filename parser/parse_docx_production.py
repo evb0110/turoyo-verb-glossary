@@ -490,14 +490,34 @@ class FixedDocxParser:
 
         # Quote pairs we recognize
         quote_pairs = {
-            'ʻ': 'ʼ',
-            '‘': '’',
-            '“': '”',
-            "'": "'",
-            '"': '"',
+            'ʻ': 'ʼ',  # Modifier letter quotes (U+02BB/U+02BC)
+            '\u2018': '\u2019',  # Curly single quotes ' '
+            '\u201C': '\u201D',  # Curly double quotes " "
+            "'": "'",  # Straight single quote
+            '"': '"',  # Straight double quote
         }
 
-        ref_regex = re.compile(r'(?:(?<![A-Za-z])[A-Z][A-Za-z]{0,3}\s+\d+(?:[./]\d+)*|\d+(?:[./]\d+)*)(?=(?:[^\w]|$))')
+        # Reference patterns (in order of specificity):
+        # 1. + Leb Beg s.66/100 (cross-ref with lowercase abbrev)
+        # 2. s.66/100 or s. 66/100 (lowercase abbreviation + numbers)
+        # 3. LB 147, Leb 24/147 (uppercase start + 0-3 letters + numbers)
+        # 4. 24/147, 66/100 (just numbers)
+        ref_regex = re.compile(
+            r'(?:'
+            r'\+\s*[A-Z][a-zA-Z\s]+[a-z]+\.\s*\d+(?:[./]\d+)*'  # + Leb Beg s.66/100
+            r'|(?<![A-Za-z])[a-z]+\.\s*\d+(?:[./]\d+)*'  # s.66/100 or s. 66/100
+            r'|(?<![A-Za-z])[A-Z][A-Za-z]{0,3}\s+\d+(?:[./]\d+)*'  # LB 147
+            r'|\d+(?:[./]\d+)*'  # 24/147
+            r')(?=(?:[^\w]|$))'
+        )
+
+        def is_apostrophe_not_quote(pos):
+            """Check if character at pos is an apostrophe in a word (not a closing quote)"""
+            if pos <= 0 or pos >= n - 1:
+                return False
+            # Apostrophe if: preceded AND followed by letter
+            # Examples: "mother's", "Aren't", "it's"
+            return raw[pos - 1].isalpha() and raw[pos + 1].isalpha()
 
         while i < n:
             c = raw[i]
@@ -505,8 +525,20 @@ class FixedDocxParser:
             # Translation in quotes
             if c in quote_pairs:
                 close = quote_pairs[c]
-                j = raw.find(close, i + 1)
-                if j != -1:
+
+                # Find closing quote, but skip apostrophes within words
+                j = i + 1
+                while j < n:
+                    if raw[j] == close:
+                        # Check if this is an apostrophe (not a closing quote)
+                        if is_apostrophe_not_quote(j):
+                            j += 1  # Skip this apostrophe, keep looking
+                            continue
+                        # Found real closing quote
+                        break
+                    j += 1
+
+                if j < n:  # Found closing quote
                     push('translation', raw[i:j+1])
                     i = j + 1
                     continue
@@ -808,7 +840,7 @@ class FixedDocxParser:
                 item_plain = para_text[start:end]
                 item_plain_norm = self.normalize_whitespace(item_plain)
 
-                # Tokenize by content only (don’t rely on italics)
+                # Tokenize by content only (don't rely on italics)
                 tokens = self._split_raw_to_tokens(item_plain)
                 # Convert plain text tokens to turoyo by default
                 for tkn in tokens:

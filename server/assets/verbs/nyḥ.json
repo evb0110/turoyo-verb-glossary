@@ -18,12 +18,12 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "iḏe lo=msaqṭo w-nayiḥo u=ʕădāb-ano ko-noḥət me-raġla hul d-azze saʕaye ṯniḥo nayiḥo u=Sargey qarʕe nāḥ Ilyas p.c.",
+            "turoyo": "iḏe lo=msaqṭo w-nayiḥo u=ʕădāb-ano ko-noḥət me-raġla hul d-azze saʕaye ṯniḥo nayiḥo u=Sargey qarʕe nāḥ Ilyas p.",
             "translations": [
               "‘His hand was not disabled, it was fine’",
               "‘Pus ran down her leg until some time passed and she calmed down and got better’"
             ],
-            "references": ["1", "LuF 300/53", "75/300", "26", "Dec 2020"],
+            "references": ["1", "LuF 300/53", "75/300", "c. 26", "Dec 2020"],
             "tokens": [
               {
                 "kind": "ref",
@@ -91,11 +91,11 @@
               },
               {
                 "kind": "turoyo",
-                "value": "Ilyas p.c. "
+                "value": "Ilyas p."
               },
               {
                 "kind": "ref",
-                "value": "26"
+                "value": "c. 26"
               },
               {
                 "kind": "turoyo",
@@ -981,10 +981,9 @@
         ],
         "Imperativ": [
           {
-            "turoyo": "qrele l-ʕAmar omər und sprach zu ihm ʼ",
+            "turoyo": "qrele l-ʕAmar omər und sprach zu ihm “Omar sieh diese Frau! Mach sie gesund”ʼ",
             "translations": [
-              "ʕAmar, ḥzay, ḥzay i=ḥurm-aṯe, maniḥ-a ʻer rief “Omar",
-              "Omar, sieh diese Frau! Mach sie gesund"
+              "ʕAmar, ḥzay, ḥzay i=ḥurm-aṯe, maniḥ-a ʻer rief “Omar"
             ],
             "references": ["560", "78/225"],
             "tokens": [
@@ -1025,12 +1024,20 @@
                 "value": " "
               },
               {
-                "kind": "translation",
-                "value": "“Omar, sieh diese Frau! Mach sie gesund”"
+                "kind": "turoyo",
+                "value": "“"
               },
               {
                 "kind": "turoyo",
-                "value": "ʼ"
+                "value": "Omar"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " sieh diese Frau! Mach sie gesund”ʼ"
               },
               {
                 "kind": "punct",

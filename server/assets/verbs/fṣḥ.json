@@ -179,10 +179,10 @@
         ],
         "Infectum": [
           {
-            "turoyo": "ṭləble mṣalele ġắlabe m-aloho ḥatta d-aloho d-obe-le abro d-məfṣəḥ buwe aṯyo ḥeḏore ʕamar mə=kibux taw qum yətwina gəḥkina məfṣoḥina uxlina šotina s wrong? Come sit with me. Let’s laugh and have fun eat and drink!”",
+            "turoyo": "ṭləble mṣalele ġắlabe m-aloho ḥatta d-aloho d-obe-le abro d-məfṣəḥ buwe aṯyo ḥeḏore ʕamar mə=kibux taw qum yətwina gəḥkina məfṣoḥina uxlina šotina ‘She came close to him and said",
             "translations": [
               "er bat und betete viel zu Gott, dass Gott ihm einen Sohn schenken möchte, an dem er seine Freude haben könnte",
-              "‘She came close to him (and said): “ʕAmar, what’"
+              "ʕAmar, what’s wrong? Come, sit (with me). Let’s laugh and have fun, eat and drink!"
             ],
             "references": ["129", "24/2", "78/15"],
             "tokens": [
@@ -247,20 +247,12 @@
                 "value": " aṯyo ḥeḏore ʕamar mə=kibux taw qum yətwina gəḥkina məfṣoḥina uxlina šotina "
               },
               {
-                "kind": "translation",
-                "value": "‘She came close to him (and said): “ʕAmar, what’"
+                "kind": "turoyo",
+                "value": "‘"
               },
               {
                 "kind": "turoyo",
-                "value": "s wrong? Come"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " sit "
+                "value": "She came close to him "
               },
               {
                 "kind": "punct",
@@ -268,23 +260,27 @@
               },
               {
                 "kind": "turoyo",
-                "value": "with me"
+                "value": "and said"
               },
               {
                 "kind": "punct",
                 "value": ")"
               },
               {
-                "kind": "turoyo",
-                "value": ". Let’s laugh and have fun"
-              },
-              {
                 "kind": "punct",
-                "value": ","
+                "value": ":"
               },
               {
                 "kind": "turoyo",
-                "value": " eat and drink!” "
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“ʕAmar, what’s wrong? Come, sit (with me). Let’s laugh and have fun, eat and drink!”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
               },
               {
                 "kind": "ref",

@@ -962,8 +962,11 @@
       "conjugations": {
         "Part pass.": [
           {
-            "turoyo": "ġắlabe míṯe-ne qm-i=hawa i=em-ayḏe d-u=zʕur-ano məṯto-wa w-u=bab-ayḏe miṯo yatumo-wa s father and mother were dead he was an orphan’",
-            "translations": ["sie sind halbtot von dem Wind", "‘Young man’"],
+            "turoyo": "ġắlabe míṯe-ne qm-i=hawa i=em-ayḏe d-u=zʕur-ano məṯto-wa w-u=bab-ayḏe miṯo yatumo-wa",
+            "translations": [
+              "sie sind halbtot von dem Wind",
+              "‘Young man’s father and mother were dead, he was an orphan’"
+            ],
             "references": ["528", "91/44", "LuF 292/20"],
             "tokens": [
               {
@@ -1016,19 +1019,11 @@
               },
               {
                 "kind": "translation",
-                "value": "‘Young man’"
+                "value": "‘Young man’s father and mother were dead, he was an orphan’"
               },
               {
                 "kind": "turoyo",
-                "value": "s father and mother were dead"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " he was an orphan’ "
+                "value": " "
               },
               {
                 "kind": "ref",
@@ -1248,12 +1243,11 @@
         ],
         "Infectum": [
           {
-            "turoyo": "g-əzzeyo w hiya qəṭlo-le g-mamiṯo-la g-məqḏo-le saymo-le mede ko-moḥi-le mamiṯi-le b-u=mḥoyo k-əmmo way ḥaru baytux lo=məḷḷi-lux lo=mamiṯət ruḥux m-arke-va mayiṯət w-azzux twəḷḷux qḏole d-ruḥux t I told you ? And now you are dead and gone and have broken your own neck”",
+            "turoyo": "g-əzzeyo w hiya qəṭlo-le g-mamiṯo-la g-məqḏo-le saymo-le mede ko-moḥi-le mamiṯi-le b-u=mḥoyo k-əmmo way ḥaru baytux lo=məḷḷi-lux lo=mamiṯət ruḥux m-arke-va mayiṯət w-azzux twəḷḷux qḏole d-ruḥux ‘She mother f. said ? And now you are dead and gone and have broken your own neck”",
             "translations": [
               "er wird gehen, und sie wird ihn töten, umbringen, verbrennen, oder ihm sonst etwas antun",
               "sie schlagen ihn halb tot",
-              "‘She (mother, f.) said: “Woe, damn you! Haven’",
-              "Do not kill yourself (by jumping) from here"
+              "Woe, damn you! Haven’t I told you: “Do not kill yourself (by jumping) from here"
             ],
             "references": ["545", "78/162", "546", "67/81", "76/172"],
             "tokens": [
@@ -1358,12 +1352,36 @@
                 "value": " k-əmmo way ḥaru baytux lo=məḷḷi-lux lo=mamiṯət ruḥux m-arke-va mayiṯət w-azzux twəḷḷux qḏole d-ruḥux "
               },
               {
-                "kind": "translation",
-                "value": "‘She (mother, f.) said: “Woe, damn you! Haven’"
+                "kind": "turoyo",
+                "value": "‘"
               },
               {
                 "kind": "turoyo",
-                "value": "t I told you"
+                "value": "She "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "mother"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " f."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " said"
               },
               {
                 "kind": "punct",
@@ -1375,7 +1393,7 @@
               },
               {
                 "kind": "translation",
-                "value": "“Do not kill yourself (by jumping) from here”"
+                "value": "“Woe, damn you! Haven’t I told you: “Do not kill yourself (by jumping) from here”"
               },
               {
                 "kind": "turoyo",
