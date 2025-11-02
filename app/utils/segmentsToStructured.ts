@@ -6,7 +6,16 @@ function stripLeadingParen(text: string) {
 }
 
 export function segmentsToStructured(example: IExample): IStructuredExample {
-    const segments = example.segments || []
+    const segments = example.segments || (
+        (example.turoyo || example.translations?.length || example.references?.length)
+            ? [{
+                    turoyo: example.turoyo || '',
+                    translations: example.translations || [],
+                    references: example.references || [],
+                    notes: example.notes,
+                }]
+            : []
+    )
     const items: IStructuredExample['items'] = []
 
     let number: string | undefined
