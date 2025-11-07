@@ -21,23 +21,25 @@ const emit = defineEmits<{
 }>()
 
 const isCharPickerOpen = ref(false)
-const searchInput = ref<{ $el?: { querySelector: (selector: string) => HTMLInputElement | null } } | null>(null)
+const searchInput = ref<{ input?: { $el: HTMLInputElement } } | null>(null)
 
 function insertChar(char: string) {
-    const input = searchInput.value?.$el?.querySelector('input')
-    if (!input) {
+    if (!searchInput.value?.input?.$el) {
         internalQuery.value += char
         return
     }
 
+    const input = searchInput.value.input.$el
     const start = input.selectionStart ?? internalQuery.value.length
     const end = input.selectionEnd ?? internalQuery.value.length
     const text = internalQuery.value
 
     internalQuery.value = text.slice(0, start) + char + text.slice(end)
 
+    // Use nextTick to ensure the DOM is updated before setting selection
     nextTick(() => {
         const newPosition = start + char.length
+        input.focus()
         input.setSelectionRange(newPosition, newPosition)
     })
 }
@@ -138,11 +140,13 @@ function handleSearch() {
                 <UInput
                     ref="searchInput"
                     v-model="internalQuery"
-                    :placeholder="placeholder"
-                    class="flex-1 text-base"
+                    placeholder="Search..."
                     size="lg"
-                    icon="i-heroicons-magnifying-glass"
-                    @keydown.enter="handleSearch"
+                    autocomplete="off"
+                    class="flex-1"
+                    name="search"
+                    aria-label="Search"
+                    @keyup.enter="handleSearch"
                 >
                     <template v-if="internalQuery" #trailing>
                         <UButton

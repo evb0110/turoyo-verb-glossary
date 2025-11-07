@@ -5,8 +5,9 @@ const emit = defineEmits<{
     select: [char: string]
 }>()
 
-const turoyoChars = ['ʔ', 'ʕ', 'č', 'ḏ', 'ə', 'ġ', 'ǧ', 'ḥ', 'ṣ', 'š', 'ṭ', 'ṯ', 'ž']
+const turoyoChars = ['ʔ', 'ʕ', 'č', 'ḏ', 'ḏ̣', 'ə', 'ġ', 'ǧ', 'ḥ', 'ṣ', 'š', 'ṭ', 'ṯ', 'ž']
 const germanChars = ['ä', 'ö', 'ü', 'ß']
+const englishChars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 function handleCharClick(char: string) {
     emit('select', char)
@@ -65,6 +66,24 @@ function handleCharClick(char: string) {
                     <div class="flex flex-wrap gap-1">
                         <UButton
                             v-for="char in germanChars"
+                            :key="char"
+                            size="sm"
+                            variant="outline"
+                            color="neutral"
+                            @click.stop="handleCharClick(char)"
+                        >
+                            {{ char }}
+                        </UButton>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-xs text-gray-600 dark:text-gray-400 mb-2">
+                        English
+                    </p>
+                    <div class="flex flex-wrap gap-1">
+                        <UButton
+                            v-for="char in englishChars"
                             :key="char"
                             size="sm"
                             variant="outline"
