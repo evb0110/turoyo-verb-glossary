@@ -41,26 +41,22 @@ const regexShortcuts = [
         label: '0 or 1',
         value: '?',
     },
-    {
-        label: 'OR (|)',
-        value: '|',
-    },
-    {
-        label: 'Group ()',
-        value: '()',
-    },
-    {
-        label: 'Charset []',
-        value: '[]',
-    },
-    {
-        label: 'Escape \\',
-        value: '\\',
-    },
 ]
 
 function handleCharClick(char: string) {
     emit('select', char)
+}
+
+function handleBackspace() {
+    emit('select', 'BACKSPACE')
+}
+
+function handleSpace() {
+    emit('select', ' ')
+}
+
+function handleClear() {
+    emit('select', 'CLEAR')
 }
 </script>
 
@@ -165,6 +161,44 @@ function handleCharClick(char: string) {
                                 @click.stop="handleCharClick(item.value)"
                             >
                                 {{ item.value }}
+                            </UButton>
+                        </UTooltip>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-xs text-gray-600 dark:text-gray-400 mb-2">
+                        Editing
+                    </p>
+                    <div class="flex flex-wrap gap-1">
+                        <UTooltip text="Backspace" :ui="{ base: 'text-xs' }" :popper="{ placement: 'top' }">
+                            <UButton
+                                size="sm"
+                                variant="outline"
+                                color="neutral"
+                                icon="i-heroicons-backspace"
+                                @click.stop="handleBackspace"
+                            />
+                        </UTooltip>
+                        <UTooltip text="Space" :ui="{ base: 'text-xs' }" :popper="{ placement: 'top' }">
+                            <UButton
+                                size="sm"
+                                variant="outline"
+                                color="neutral"
+                                @click.stop="handleSpace"
+                            >
+                                Space
+                            </UButton>
+                        </UTooltip>
+                        <UTooltip text="Clear all" :ui="{ base: 'text-xs' }" :popper="{ placement: 'top' }">
+                            <UButton
+                                size="sm"
+                                variant="outline"
+                                color="neutral"
+                                icon="i-heroicons-trash"
+                                @click.stop="handleClear"
+                            >
+                                Clear
                             </UButton>
                         </UTooltip>
                     </div>

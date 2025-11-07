@@ -4,9 +4,7 @@ import enforceDestructuringNewline from './eslint-rules/enforce-destructuring-ne
 import preferGenericTypeAnnotation from './eslint-rules/prefer-generic-type-annotation.mjs'
 
 export default withNuxt(
-    {
-        ignores: ['app/components/Editor/**', 'server/db/verbs/**'],
-    },
+    { ignores: ['app/components/Editor/**', 'server/db/verbs/**'] },
     {
         plugins: {
             'custom-rules': {

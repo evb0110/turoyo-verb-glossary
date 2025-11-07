@@ -24,6 +24,16 @@ const isCharPickerOpen = ref(false)
 const searchInput = ref<{ input?: { $el: HTMLInputElement } } | null>(null)
 
 function insertChar(char: string) {
+    // Handle special editing commands
+    if (char === 'BACKSPACE') {
+        handleBackspace()
+        return
+    }
+    if (char === 'CLEAR') {
+        internalQuery.value = ''
+        return
+    }
+
     if (!searchInput.value?.input?.$el) {
         internalQuery.value += char
         return
@@ -42,6 +52,36 @@ function insertChar(char: string) {
         input.focus()
         input.setSelectionRange(newPosition, newPosition)
     })
+}
+
+function handleBackspace() {
+    if (!searchInput.value?.input?.$el) {
+        internalQuery.value = internalQuery.value.slice(0, -1)
+        return
+    }
+
+    const input = searchInput.value.input.$el
+    const start = input.selectionStart ?? internalQuery.value.length
+    const end = input.selectionEnd ?? internalQuery.value.length
+    const text = internalQuery.value
+
+    if (start !== end) {
+        // Delete selected text
+        internalQuery.value = text.slice(0, start) + text.slice(end)
+        nextTick(() => {
+            input.focus()
+            input.setSelectionRange(start, start)
+        })
+    }
+    else if (start > 0) {
+        // Delete character before cursor
+        const newText = text.slice(0, start - 1) + text.slice(start)
+        internalQuery.value = newText
+        nextTick(() => {
+            input.focus()
+            input.setSelectionRange(start - 1, start - 1)
+        })
+    }
 }
 
 function handleSearch() {
