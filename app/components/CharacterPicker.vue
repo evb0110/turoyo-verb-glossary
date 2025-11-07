@@ -8,6 +8,56 @@ const emit = defineEmits<{
 const turoyoChars = ['ʔ', 'ʕ', 'č', 'ḏ', 'ḏ̣', 'ə', 'ġ', 'ǧ', 'ḥ', 'ṣ', 'š', 'ṭ', 'ṯ', 'ž']
 const germanChars = ['ä', 'ö', 'ü', 'ß']
 const englishChars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+const regexShortcuts = [
+    {
+        label: 'Any consonant',
+        value: '\\c',
+    },
+    {
+        label: 'Any vowel',
+        value: '\\v',
+    },
+    {
+        label: 'Start (^)',
+        value: '^',
+    },
+    {
+        label: 'End ($)',
+        value: '$',
+    },
+    {
+        label: 'Any char (.)',
+        value: '.',
+    },
+    {
+        label: '0 or more',
+        value: '*',
+    },
+    {
+        label: '1 or more',
+        value: '+',
+    },
+    {
+        label: '0 or 1',
+        value: '?',
+    },
+    {
+        label: 'OR (|)',
+        value: '|',
+    },
+    {
+        label: 'Group ()',
+        value: '()',
+    },
+    {
+        label: 'Charset []',
+        value: '[]',
+    },
+    {
+        label: 'Escape \\',
+        value: '\\',
+    },
+]
 
 function handleCharClick(char: string) {
     emit('select', char)
@@ -92,6 +142,31 @@ function handleCharClick(char: string) {
                         >
                             {{ char }}
                         </UButton>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-xs text-gray-600 dark:text-gray-400 mb-2">
+                        Regex Shortcuts
+                    </p>
+                    <div class="flex flex-wrap gap-1">
+                        <UTooltip
+                            v-for="item in regexShortcuts"
+                            :key="item.value"
+                            :text="item.label"
+                            :ui="{ base: 'text-xs' }"
+                            :popper="{ placement: 'top' }"
+                        >
+                            <UButton
+                                size="sm"
+                                variant="outline"
+                                color="neutral"
+                                class="font-mono"
+                                @click.stop="handleCharClick(item.value)"
+                            >
+                                {{ item.value }}
+                            </UButton>
+                        </UTooltip>
                     </div>
                 </div>
             </div>
