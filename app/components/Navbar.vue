@@ -3,9 +3,10 @@ const {
     isAdmin,
     sessionStatus,
 } = useAuth()
+const clientPathHeader = useClientPathHeader()
 
 const { data: stats } = await useAsyncData('layout-stats', () =>
-    $fetch('/api/stats')
+    $fetch('/api/stats', { headers: clientPathHeader.value })
 )
 
 const isAuthenticated = computed(() => sessionStatus.value === 'authenticated')
@@ -28,7 +29,7 @@ const {
     async () => {
         if (!isAdmin.value) return { count: 0 }
         try {
-            return await $fetch<{ count: number }>('/api/admin/pending-count')
+            return await $fetch<{ count: number }>('/api/admin/pending-count', { headers: clientPathHeader.value })
         }
         catch {
             return { count: 0 }

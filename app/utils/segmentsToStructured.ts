@@ -25,6 +25,7 @@ function tokensToSegments(tokens: IExampleToken[]): { segments: IExampleSegment[
 
     for (let i = startIdx; i < tokens.length; i++) {
         const token = tokens[i]
+        if (!token) continue
 
         if (token.kind === 'turoyo') {
             const trimmedValue = token.value.trim()

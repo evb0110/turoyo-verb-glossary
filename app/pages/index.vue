@@ -6,6 +6,7 @@ import { generateStemOptions } from '~/utils/generateStemOptions'
 import type { IVerbMetadataWithPreview } from '#shared/types/IVerbMetadataWithPreview'
 
 const showRegexHelp = ref(false)
+const clientPathHeader = useClientPathHeader()
 
 const q = useQuery('q', '')
 const searchEverything = useQuery('type', false, 'all', 'roots')
@@ -62,10 +63,12 @@ const {
                 verbMetadata?: Record<string, IVerbMetadataWithPreview>
             }>(endpoint, {
                 method: 'POST',
+                headers: clientPathHeader.value,
                 body: {
                     query,
                     useRegex: useRegex.value,
                     caseSensitive: caseSensitive.value,
+                    filters: filters.value,
                 },
             })
         }

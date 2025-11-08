@@ -1,0 +1,1 @@
+ALTER TABLE "user_activity_log" ADD COLUMN "host" text;

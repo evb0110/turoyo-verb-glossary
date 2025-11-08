@@ -1,12 +1,16 @@
 <script setup lang="ts">
-import type { IAuthUser } from '#shared/types/IAuthUser'
+import { formatDateTime } from '~/utils/formatDateTime'
 
 const { user } = useAuth()
+const clientPathHeader = useClientPathHeader()
 
 const {
     data: users,
     refresh: refreshUsers,
-} = await useFetch<IAuthUser[]>('/api/admin/users', { watch: false })
+} = await useFetch('/api/admin/users', {
+    watch: false,
+    headers: clientPathHeader.value,
+})
 
 const loading = ref(null as string | null)
 const toastStore = useToast()
@@ -14,7 +18,10 @@ const toastStore = useToast()
 const approveUser = async (userId: string) => {
     loading.value = userId
     try {
-        await $fetch(`/api/admin/users/${userId}/activate`, { method: 'PATCH' })
+        await $fetch(`/api/admin/users/${userId}/activate`, {
+            method: 'PATCH',
+            headers: clientPathHeader.value,
+        })
         await refreshUsers()
         toastStore.add({
             title: 'User approved',
@@ -38,7 +45,10 @@ const approveUser = async (userId: string) => {
 const blockUser = async (userId: string) => {
     loading.value = userId
     try {
-        await $fetch(`/api/admin/users/${userId}/block`, { method: 'PATCH' })
+        await $fetch(`/api/admin/users/${userId}/block`, {
+            method: 'PATCH',
+            headers: clientPathHeader.value,
+        })
         await refreshUsers()
         toastStore.add({
             title: 'User blocked',
@@ -62,7 +72,10 @@ const blockUser = async (userId: string) => {
 const unblockUser = async (userId: string) => {
     loading.value = userId
     try {
-        await $fetch(`/api/admin/users/${userId}/activate`, { method: 'PATCH' })
+        await $fetch(`/api/admin/users/${userId}/activate`, {
+            method: 'PATCH',
+            headers: clientPathHeader.value,
+        })
         await refreshUsers()
         toastStore.add({
             title: 'User unblocked',
@@ -97,43 +110,12 @@ const getRoleBadgeColor = (role: string) => {
             return 'neutral'
     }
 }
-
-const formatDate = (date: string | Date) => {
-    return new Date(date).toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit',
-    })
-}
 </script>
 
 <template>
-    <div class="container mx-auto px-4 py-8 max-w-6xl">
-        <div class="mb-8">
-            <div class="flex items-center justify-between">
-                <div>
-                    <h1 class="text-3xl font-bold text-gray-900 dark:text-white">
-                        User Management
-                    </h1>
-                    <p class="mt-2 text-gray-600 dark:text-gray-400">
-                        Manage user access and permissions
-                    </p>
-                </div>
-                <UButton
-                    to="/"
-                    color="neutral"
-                    variant="soft"
-                    icon="i-heroicons-arrow-left"
-                >
-                    Back to Glossary
-                </UButton>
-            </div>
-        </div>
-
-        <UCard>
-            <div class="overflow-x-auto">
+    <AdminPageShell description="Users · Manage access and permissions.">
+        <UCard class="mt-4">
+            <div class="mt-4 overflow-x-auto">
                 <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
                     <thead>
                         <tr>
@@ -198,7 +180,7 @@ const formatDate = (date: string | Date) => {
                                 </UBadge>
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">
-                                {{ formatDate(u.createdAt) }}
+                                {{ formatDateTime(u.createdAt) }}
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                 <div class="flex justify-end gap-2">
@@ -250,5 +232,5 @@ const formatDate = (date: string | Date) => {
                 No users found
             </p>
         </div>
-    </div>
+    </AdminPageShell>
 </template>

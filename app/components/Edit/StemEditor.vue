@@ -26,7 +26,7 @@ function removeGroup(name: string) {
 function renameGroup(oldName: string, newName: string) {
     const name = newName.trim()
     if (!name || name === oldName) return
-    const data = model.value.conjugations[oldName]
+    const data = model.value.conjugations[oldName] ?? []
     const {
         [oldName]: _,
         ...rest
@@ -49,13 +49,16 @@ function addExample(name: string) {
 }
 
 function removeExample(name: string, idx: number) {
-    model.value.conjugations[name] = model.value.conjugations[name].filter((_, i) => i !== idx)
+    const arr = model.value.conjugations[name]
+    if (!arr) return
+    model.value.conjugations[name] = arr.filter((_, i) => i !== idx)
 }
 
 function moveExample(name: string, from: number, to: number) {
     const arr = model.value.conjugations[name]
-    if (from < 0 || from >= arr.length || to < 0 || to > arr.length) return
+    if (!arr || from < 0 || from >= arr.length || to < 0 || to > arr.length) return
     const item = arr.splice(from, 1)[0]
+    if (!item) return
     arr.splice(to, 0, item)
 }
 
@@ -118,9 +121,9 @@ function updateExampleReferences(ex: { references: string[] }, value: string) {
                         <div>
                             <label class="block text-sm font-medium mb-1">Group name</label>
                             <UInput
-                                :model-value="name"
+                                :model-value="String(name)"
                                 placeholder="Preterit, Infectum, Imperativ, ..."
-                                @update:model-value="v => renameGroup(name as string, v)"
+                                @update:model-value="v => renameGroup(String(name), v)"
                             />
                         </div>
                     </div>

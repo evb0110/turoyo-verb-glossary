@@ -150,7 +150,7 @@ function handleClear() {
                             v-for="item in regexShortcuts"
                             :key="item.value"
                             :text="item.label"
-                            :ui="{ base: 'text-xs' }"
+                            :ui="{ text: 'text-xs' }"
                             :popper="{ placement: 'top' }"
                         >
                             <UButton
@@ -171,7 +171,7 @@ function handleClear() {
                         Editing
                     </p>
                     <div class="flex flex-wrap gap-1">
-                        <UTooltip text="Backspace" :ui="{ base: 'text-xs' }" :popper="{ placement: 'top' }">
+                        <UTooltip text="Backspace" :ui="{ text: 'text-xs' }" :popper="{ placement: 'top' }">
                             <UButton
                                 size="sm"
                                 variant="outline"
@@ -180,7 +180,7 @@ function handleClear() {
                                 @click.stop="handleBackspace"
                             />
                         </UTooltip>
-                        <UTooltip text="Space" :ui="{ base: 'text-xs' }" :popper="{ placement: 'top' }">
+                        <UTooltip text="Space" :ui="{ text: 'text-xs' }" :popper="{ placement: 'top' }">
                             <UButton
                                 size="sm"
                                 variant="outline"
@@ -190,7 +190,7 @@ function handleClear() {
                                 Space
                             </UButton>
                         </UTooltip>
-                        <UTooltip text="Clear all" :ui="{ base: 'text-xs' }" :popper="{ placement: 'top' }">
+                        <UTooltip text="Clear all" :ui="{ text: 'text-xs' }" :popper="{ placement: 'top' }">
                             <UButton
                                 size="sm"
                                 variant="outline"

@@ -4,6 +4,7 @@ import { deepClone } from '~/utils/deepClone'
 import type { IVerb } from '#shared/types/IVerb'
 
 const route = useRoute()
+const clientPathHeader = useClientPathHeader()
 
 const toBack = computed(() => {
     return {
@@ -15,7 +16,7 @@ const toBack = computed(() => {
 const {
     data: verb,
     error,
-} = await useFetch(() => `/api/verb/${route.params.root}`)
+} = await useFetch(() => `/api/verb/${route.params.root}`, { headers: clientPathHeader.value })
 
 const editMode = ref(false)
 const editableVerb = ref<IVerb | null>(null)

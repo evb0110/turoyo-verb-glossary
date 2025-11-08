@@ -318,7 +318,7 @@ function removeExample(g: IEditableConjugationGroup, eIdx: number) {
             <div class="flex items-center gap-3">
                 <label class="text-sm font-medium">Relationship</label>
                 <URadioGroup
-                    v-model="draft.etymology.relationship"
+                    v-model="draft.etymology!.relationship"
                     :options="[
                         { value: undefined, label: 'None' },
                         { value: 'also', label: 'also' },
