@@ -76,16 +76,15 @@
     },
     {
       "stem": "Detransitive",
-      "forms": [],
+      "forms": ["staunen"],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "xəd šqili u=ḥəs-aṯṯe bəṯər b-šawṭo mašmaʕli ḥəs diṯṯe b-i=makina kul kas mdamər mdamri me d-məlli ṣuróyo-no",
+            "turoyo": "xəd šqili u=ḥəs-aṯṯe bəṯər b-šawṭo mašmaʕli ḥəs diṯṯe b-i=makina kul kas mdamər",
             "translations": [
-              "eine Weile, nachdem ich ihre Stimmen aufgenommen hatte, liess ich sie ihre Stimmen mit dem Gerät hören, und alles staunte",
-              "sie staunten, als ich sagte, ich sei Christ"
+              "eine Weile, nachdem ich ihre Stimmen aufgenommen hatte, liess ich sie ihre Stimmen mit dem Gerät hören, und alles staunte"
             ],
-            "references": ["248", "11/182", "JL 18.7.9"],
+            "references": ["248", "11/182"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -130,7 +129,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "xəd šqili u=ḥəs-aṯṯe bəṯər b-šawṭo mašmaʕli ḥəs diṯṯe b-i=makina, kul kas mdamər ʻeine Weile, nachdem ich ihre Stimmen aufgenommen hatte, liess ich sie ihre Stimmen mit dem Gerät hören, und alles staunteʼ; 248; 11/182;"
+          },
+          {
+            "turoyo": "mdamri me d-məlli ṣuróyo-no",
+            "translations": ["sie staunten, als ich sagte, ich sei Christ"],
+            "references": ["JL 18.7.9"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mdamri me d-məlli ṣuróyo-no "
@@ -152,7 +159,7 @@
                 "value": ";"
               }
             ],
-            "text": "xəd šqili u=ḥəs-aṯṯe bəṯər b-šawṭo mašmaʕli ḥəs diṯṯe b-i=makina, kul kas mdamər ʻeine Weile, nachdem ich ihre Stimmen aufgenommen hatte, liess ich sie ihre Stimmen mit dem Gerät hören, und alles staunteʼ; 248; 11/182; mdamri me d-məlli ṣuróyo-no ʻsie staunten, als ich sagte, ich sei Christʼ JL 18.7.9;"
+            "text": "mdamri me d-məlli ṣuróyo-no ʻsie staunten, als ich sagte, ich sei Christʼ JL 18.7.9;"
           }
         ],
         "Part. Pass.": [

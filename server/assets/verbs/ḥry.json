@@ -18,16 +18,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mḥele ʕal ḥaṣe d-u=ḥmoro ḥrele ʕulbo d-dinore prs qayimo i=qyamto l-i=emo ḥrela ʕal u=čelikayḏa omər omər",
+            "turoyo": "mḥele ʕal ḥaṣe d-u=ḥmoro ḥrele ʕulbo d-dinore prs",
             "translations": [
-              "er schlug den Esel auf den Rücken, und dieser machte gleich eine ganze Schachtel voll Goldstücke",
-              "der Jüngste Tag brach an, die Mutter bekackte ihr Kind (d.h. es war ein grosses Gedränge)",
-              "aḥuno, ŭno mazraqli. hat mə səmlox?",
-              "ašər",
-              "ŭno-ste ḥreli",
-              "Bruder, ich habe mein Wasser gelassen. Was hast du gemacht?” Der andere spricht: “Wahrlich, ich habe gekackt"
+              "er schlug den Esel auf den Rücken, und dieser machte gleich eine ganze Schachtel voll Goldstücke"
             ],
-            "references": ["332", "236/11", "334", "65/267", "6/95"],
+            "references": ["332", "236/11"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -72,7 +67,21 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mḥele ʕal ḥaṣe d-u=ḥmoro, ḥrele ʕulbo d-dinore ʻer schlug den Esel auf den Rücken, und dieser machte gleich eine ganze Schachtel voll Goldstückeʼ; 332; prs 236/11;"
+          },
+          {
+            "turoyo": "qayimo i=qyamto l-i=emo ḥrela ʕal u=čelikayḏa omər omər",
+            "translations": [
+              "der Jüngste Tag brach an, die Mutter bekackte ihr Kind (d.h. es war ein grosses Gedränge)",
+              "“aḥuno, ŭno mazraqli. hat mə səmlox?”",
+              "“ašər”",
+              "“ŭno-ste ḥreli”",
+              "“Bruder, ich habe mein Wasser gelassen. Was hast du gemacht?” Der andere spricht: “Wahrlich, ich habe gekackt”"
+            ],
+            "references": ["334", "65/267", "6/95"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " qayimo i=qyamto"
@@ -170,17 +179,16 @@
                 "value": ";"
               }
             ],
-            "text": "mḥele ʕal ḥaṣe d-u=ḥmoro, ḥrele ʕulbo d-dinore ʻer schlug den Esel auf den Rücken, und dieser machte gleich eine ganze Schachtel voll Goldstückeʼ; 332; prs 236/11; qayimo i=qyamto, l-i=emo ḥrela ʕal u=čelikayḏa ʻder Jüngste Tag brach an, die Mutter bekackte ihr Kind (d.h. es war ein grosses Gedränge)ʼ; 334; 65/267; “aḥuno, ŭno mazraqli. hat mə səmlox?” omər “ašər”, omər “ŭno-ste ḥreli” ʻ“Bruder, ich habe mein Wasser gelassen. Was hast du gemacht?” Der andere spricht: “Wahrlich, ich habe gekackt”ʼ; 6/95;"
+            "text": "qayimo i=qyamto, l-i=emo ḥrela ʕal u=čelikayḏa ʻder Jüngste Tag brach an, die Mutter bekackte ihr Kind (d.h. es war ein grosses Gedränge)ʼ; 334; 65/267; “aḥuno, ŭno mazraqli. hat mə səmlox?” omər “ašər”, omər “ŭno-ste ḥreli” ʻ“Bruder, ich habe mein Wasser gelassen. Was hast du gemacht?” Der andere spricht: “Wahrlich, ich habe gekackt”ʼ; 6/95;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "obel-a larwal d-ḥəryo d-ḥa minayxu d-mazrəq emi g-mayṯo u=ḥreno d-ḥore babi g-moyəṯ",
+            "turoyo": "obel-a larwal d-ḥəryo",
             "translations": [
-              "bring es (das Mädchen f) hinaus, damit es sein Geschäft machen kann",
-              "wenn einer von euch sein Wasser lässt, stirbt meine Mutter, und wenn der andere kackt, stirbt mein Vater"
+              "bring es (das Mädchen f) hinaus, damit es sein Geschäft machen kann"
             ],
-            "references": ["356", "48/42", "6/88"],
+            "references": ["356", "48/42"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -217,7 +225,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "obel-a larwal d-ḥəryo ʻbring es (das Mädchen f) hinaus, damit es sein Geschäft machen kannʼ; 356; 48/42;"
+          },
+          {
+            "turoyo": "d-ḥa minayxu d-mazrəq emi g-mayṯo u=ḥreno d-ḥore babi g-moyəṯ",
+            "translations": [
+              "wenn einer von euch sein Wasser lässt, stirbt meine Mutter, und wenn der andere kackt, stirbt mein Vater"
+            ],
+            "references": ["6/88"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " d-ḥa minayxu d-mazrəq"
@@ -267,7 +285,7 @@
                 "value": ";"
               }
             ],
-            "text": "obel-a larwal d-ḥəryo ʻbring es (das Mädchen f) hinaus, damit es sein Geschäft machen kannʼ; 356; 48/42; d-ḥa minayxu d-mazrəq, emi g-mayṯo, u=ḥreno d-ḥore, babi g-moyəṯ ʻwenn einer von euch sein Wasser lässt, stirbt meine Mutter, und wenn der andere kackt, stirbt mein Vaterʼ; 6/88;"
+            "text": "d-ḥa minayxu d-mazrəq, emi g-mayṯo, u=ḥreno d-ḥore, babi g-moyəṯ ʻwenn einer von euch sein Wasser lässt, stirbt meine Mutter, und wenn der andere kackt, stirbt mein Vaterʼ; 6/88;"
           }
         ],
         "Infinitiv": [

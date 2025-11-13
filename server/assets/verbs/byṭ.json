@@ -172,13 +172,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "msawaḥle l-u=ǧənnawi fayiši šawto bīṭ u=ǧənnawi prs fayəš d-əmmat fəššakke mibəṭ lə=bīṭ biṭo i=ṭəbbe",
+            "turoyo": "msawaḥle l-u=ǧənnawi fayiši šawto bīṭ u=ǧənnawi prs",
             "translations": [
-              "darauf wurde der Dschennawi ruhiger; es dauerte eine Weile, da platzte er auseinander",
-              "wenn man meinte, eine Patrone würde losgehen, sie ging nicht los",
-              "der Ball ist geplatzt"
+              "darauf wurde der Dschennawi ruhiger; es dauerte eine Weile, da platzte er auseinander"
             ],
-            "references": ["530", "70/8", "530", "91/14", "530"],
+            "references": ["530", "70/8"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -231,7 +229,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "msawaḥle l-u=ǧənnawi, fayiši šawto, bīṭ u=ǧənnawi ʻdarauf wurde der Dschennawi ruhiger; es dauerte eine Weile, da platzte er auseinanderʼ; 530; prs 70/8;"
+          },
+          {
+            "turoyo": "fayəš d-əmmat fəššakke mibəṭ lə=bīṭ",
+            "translations": [
+              "wenn man meinte, eine Patrone würde losgehen, sie ging nicht los"
+            ],
+            "references": ["530", "91/14"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " fayəš d-əmmat fəššakke mibəṭ lə=bīṭ "
@@ -267,7 +275,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "fayəš d-əmmat fəššakke mibəṭ lə=bīṭ ʻwenn man meinte, eine Patrone würde losgehen, sie ging nicht losʼ; 530; 91/14;"
+          },
+          {
+            "turoyo": "biṭo i=ṭəbbe",
+            "translations": ["der Ball ist geplatzt"],
+            "references": ["530"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " biṭo i=ṭəbbe "
@@ -293,7 +309,7 @@
                 "value": ";"
               }
             ],
-            "text": "msawaḥle l-u=ǧənnawi, fayiši šawto, bīṭ u=ǧənnawi ʻdarauf wurde der Dschennawi ruhiger; es dauerte eine Weile, da platzte er auseinanderʼ; 530; prs 70/8; fayəš d-əmmat fəššakke mibəṭ lə=bīṭ ʻwenn man meinte, eine Patrone würde losgehen, sie ging nicht losʼ; 530; 91/14; biṭo i=ṭəbbe ʻder Ball ist geplatztʼ; 530;"
+            "text": "biṭo i=ṭəbbe ʻder Ball ist geplatztʼ; 530;"
           }
         ]
       }

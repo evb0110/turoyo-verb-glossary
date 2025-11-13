@@ -74,12 +74,11 @@
         ],
         "Infectum-wa": [
           {
-            "turoyo": "əzzé-wo i=naqqa d-tam-wo aʕ=ʕeze aʕle šŭqal-wo b-u=zōr b-u=sayf-ayḏe šŭqal-wo m-u=ʕulmo w-maṭṭe-wo l-gabe. nošo lo=mǧasar-wo aʕle d-ŭwéno-wo b-u=bayto hat lo=mǧasrat-wo ʕal u=ṭarš-ayḏi d-mŭḥát-wo-le",
+            "turoyo": "əzzé-wo i=naqqa d-tam-wo aʕ=ʕeze aʕle šŭqal-wo b-u=zōr b-u=sayf-ayḏe šŭqal-wo m-u=ʕulmo w-maṭṭe-wo l-gabe. nošo lo=mǧasar-wo aʕle",
             "translations": [
-              "jener pflegte immer, wenn ihm die Ziegen ausgingen, sich mit Gewalt, mit dem Schwerte, neue zu holen; er nahm sie den Leuten ab und holte sie zu sich. Niemand wagte sich an ihn heran",
-              "wäre ich zuhause gewesen, so hättest du nicht gewagt, mein Vieh wegzutreiben"
+              "jener pflegte immer, wenn ihm die Ziegen ausgingen, sich mit Gewalt, mit dem Schwerte, neue zu holen; er nahm sie den Leuten ab und holte sie zu sich. Niemand wagte sich an ihn heran"
             ],
-            "references": ["257", "29/284", "257", "30/115"],
+            "references": ["257", "29/284"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -148,7 +147,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "əzzé-wo i=naqqa d-tam-wo aʕ=ʕeze aʕle, šŭqal-wo b-u=zōr; b-u=sayf-ayḏe, šŭqal-wo m-u=ʕulmo, w-maṭṭe-wo l-gabe. nošo lo=mǧasar-wo aʕle ʻjener pflegte immer, wenn ihm die Ziegen ausgingen, sich mit Gewalt, mit dem Schwerte, neue zu holen; er nahm sie den Leuten ab und holte sie zu sich. Niemand wagte sich an ihn heranʼ; 257; 29/284;"
+          },
+          {
+            "turoyo": "d-ŭwéno-wo b-u=bayto hat lo=mǧasrat-wo ʕal u=ṭarš-ayḏi d-mŭḥát-wo-le",
+            "translations": [
+              "wäre ich zuhause gewesen, so hättest du nicht gewagt, mein Vieh wegzutreiben"
+            ],
+            "references": ["257", "30/115"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " d-ŭwéno-wo b-u=bayto hat lo=mǧasrat-wo ʕal u=ṭarš-ayḏi d-mŭḥát-wo-le "
@@ -186,12 +195,12 @@
                 "value": ";"
               }
             ],
-            "text": "əzzé-wo i=naqqa d-tam-wo aʕ=ʕeze aʕle, šŭqal-wo b-u=zōr; b-u=sayf-ayḏe, šŭqal-wo m-u=ʕulmo, w-maṭṭe-wo l-gabe. nošo lo=mǧasar-wo aʕle ʻjener pflegte immer, wenn ihm die Ziegen ausgingen, sich mit Gewalt, mit dem Schwerte, neue zu holen; er nahm sie den Leuten ab und holte sie zu sich. Niemand wagte sich an ihn heranʼ; 257; 29/284; d-ŭwéno-wo b-u=bayto hat lo=mǧasrat-wo ʕal u=ṭarš-ayḏi d-mŭḥát-wo-le ʻwäre ich zuhause gewesen, so hättest du nicht gewagt, mein Vieh wegzutreibenʼ; 257; 30/115;"
+            "text": "d-ŭwéno-wo b-u=bayto hat lo=mǧasrat-wo ʕal u=ṭarš-ayḏi d-mŭḥát-wo-le ʻwäre ich zuhause gewesen, so hättest du nicht gewagt, mein Vieh wegzutreibenʼ; 257; 30/115;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "lo=zayʕət! w-mǧasǝ́r lebox! həš l-ŭwe-lox fəkər здесь переходный?",
+            "turoyo": "lo=zayʕət! w-mǧasǝ́r lebox! həš l-ŭwe-lox fəkər",
             "translations": [
               "fürchte nichts und mache dein Herz mutig, mach dir keine Gedanke"
             ],
@@ -232,13 +241,21 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "lo=zayʕət! w-mǧasǝ́r lebox! həš l-ŭwe-lox fəkər ʻfürchte nichts und mache dein Herz mutig, mach dir keine Gedankeʼ; 257; 29/88;"
+          },
+          {
+            "turoyo": "здесь переходный?",
+            "translations": [],
+            "references": [],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " здесь переходный?"
               }
             ],
-            "text": "lo=zayʕət! w-mǧasǝ́r lebox! həš l-ŭwe-lox fəkər ʻfürchte nichts und mache dein Herz mutig, mach dir keine Gedankeʼ; 257; 29/88; здесь переходный?"
+            "text": "здесь переходный?"
           }
         ]
       }

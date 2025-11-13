@@ -18,13 +18,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "bəṯṯər mədde mšadalle l-u=ʕmiro i=ʕaskariye lə-Ṣṭambul w maškalle u=šulṭono mšadalle ax=xodume mšadarre mamṭalle me Suriya kmo=bənxătiye",
+            "turoyo": "bəṯṯər mədde mšadalle l-u=ʕmiro i=ʕaskariye lə-Ṣṭambul w maškalle u=šulṭono",
             "translations": [
-              "nach einiger Zeit schickte der Emîr das Militär nach Stambul zurück und bedankte beim Sultan",
-              "er schickte die Diener aus",
-              "sie schickten und holten aus Syrien ein paar Leute (von jenseits der Grenze)"
+              "nach einiger Zeit schickte der Emîr das Militär nach Stambul zurück und bedankte beim Sultan"
             ],
-            "references": ["243", "36/107", "69/405", "MM 140", "JL 15.6.12"],
+            "references": ["243", "36/107", "69/405"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -89,7 +87,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "bəṯṯər mədde, mšadalle l-u=ʕmiro i=ʕaskariye lə-Ṣṭambul, w maškalle u=šulṭono ʻnach einiger Zeit schickte der Emîr das Militär nach Stambul zurück und bedankte beim Sultanʼ; 243; 36/107; 69/405;"
+          },
+          {
+            "turoyo": "mšadalle ax=xodume",
+            "translations": ["er schickte die Diener aus"],
+            "references": ["MM 140"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mšadalle ax=xodume "
@@ -113,7 +119,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mšadalle ax=xodume ʻer schickte die Diener ausʼ; MM 140;"
+          },
+          {
+            "turoyo": "mšadarre mamṭalle me Suriya kmo=bənxătiye",
+            "translations": [
+              "sie schickten und holten aus Syrien ein paar Leute (von jenseits der Grenze)"
+            ],
+            "references": ["JL 15.6.12"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mšadarre"
@@ -143,25 +159,14 @@
                 "value": ";"
               }
             ],
-            "text": "bəṯṯər mədde, mšadalle l-u=ʕmiro i=ʕaskariye lə-Ṣṭambul, w maškalle u=šulṭono ʻnach einiger Zeit schickte der Emîr das Militär nach Stambul zurück und bedankte beim Sultanʼ; 243; 36/107; 69/405; mšadalle ax=xodume ʻer schickte die Diener ausʼ; MM 140; mšadarre, mamṭalle me Suriya kmo=bənxătiye ʻsie schickten und holten aus Syrien ein paar Leute (von jenseits der Grenze)ʼ JL 15.6.12;"
+            "text": "mšadarre, mamṭalle me Suriya kmo=bənxătiye ʻsie schickten und holten aus Syrien ein paar Leute (von jenseits der Grenze)ʼ JL 15.6.12;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "gə-mšadal-lux b-u=darb-ayḏux ramḥəl gə-mšadann-ux l-dukṯo omanno ko-ṭolabno m-alo šxwa də-mšadrət-li k-ubʕina də-mšadrútəl-lan qašo me-gabayxu",
-            "translations": [
-              "ich werde dich deiner Wege ziehen lassen",
-              "‘morgen werde ich dich woanders hinschicken’",
-              "‘ich antwortete: “Ich bitte Gott sogar darum, dass Sie mich wegschicken”’",
-              "‘Wir möchten, daß ihr uns von euch aus einen Pfarrer schickt’"
-            ],
-            "references": [
-              "246",
-              "69/439",
-              "JL 19.6.18",
-              "JL 19.6.19",
-              "33/66"
-            ],
+            "turoyo": "gə-mšadal-lux b-u=darb-ayḏux",
+            "translations": ["ich werde dich deiner Wege ziehen lassen"],
+            "references": ["246", "69/439"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -198,7 +203,19 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "gə-mšadal-lux b-u=darb-ayḏux ʻich werde dich deiner Wege ziehen lassenʼ; 246; 69/439;"
+          },
+          {
+            "turoyo": "ramḥəl gə-mšadann-ux l-dukṯo omanno ko-ṭolabno m-alo šxwa də-mšadrət-li k-ubʕina də-mšadrútəl-lan qašo me-gabayxu",
+            "translations": [
+              "‘morgen werde ich dich woanders hinschicken’",
+              "‘ich antwortete: “Ich bitte Gott sogar darum, dass Sie mich wegschicken”’",
+              "‘Wir möchten, daß ihr uns von euch aus einen Pfarrer schickt’"
+            ],
+            "references": ["JL 19.6.18", "JL 19.6.19", "33/66"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ramḥəl gə-mšadann-ux l-dukṯo "
@@ -268,14 +285,14 @@
                 "value": "33/66"
               }
             ],
-            "text": "gə-mšadal-lux b-u=darb-ayḏux ʻich werde dich deiner Wege ziehen lassenʼ; 246; 69/439; ramḥəl gə-mšadann-ux l-dukṯo ‘morgen werde ich dich woanders hinschicken’ JL 19.6.18; omanno ko-ṭolabno m-alo, šxwa də-mšadrət-li ‘ich antwortete: “Ich bitte Gott sogar darum, dass Sie mich wegschicken”’ JL 19.6.19; k-ubʕina də-mšadrútəl-lan qašo me-gabayxu ‘Wir möchten, daß ihr uns von euch aus einen Pfarrer schickt’; 33/66"
+            "text": "ramḥəl gə-mšadann-ux l-dukṯo ‘morgen werde ich dich woanders hinschicken’ JL 19.6.18; omanno ko-ṭolabno m-alo, šxwa də-mšadrət-li ‘ich antwortete: “Ich bitte Gott sogar darum, dass Sie mich wegschicken”’ JL 19.6.19; k-ubʕina də-mšadrútəl-lan qašo me-gabayxu ‘Wir möchten, daß ihr uns von euch aus einen Pfarrer schickt’; 33/66"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "mšader-e mšadérul-lan tre=zlamat l-gabayna ʻschickt zwei Männer zu uns’",
+            "turoyo": "mšader-e",
             "translations": ["schicke ihn"],
-            "references": ["248", "78/162", "32/21"],
+            "references": ["248", "78/162"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -312,7 +329,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mšader-e ʻschicke ihnʼ; 248; 78/162;"
+          },
+          {
+            "turoyo": "mšadérul-lan tre=zlamat l-gabayna ʻschickt zwei Männer zu uns’",
+            "translations": [],
+            "references": ["32/21"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mšadérul-lan tre=zlamat l-gabayna "
@@ -342,7 +367,7 @@
                 "value": ";"
               }
             ],
-            "text": "mšader-e ʻschicke ihnʼ; 248; 78/162; mšadérul-lan tre=zlamat l-gabayna ʻschickt zwei Männer zu uns’; 32/21;"
+            "text": "mšadérul-lan tre=zlamat l-gabayna ʻschickt zwei Männer zu uns’; 32/21;"
           }
         ]
       }

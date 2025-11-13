@@ -13,13 +13,8 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
-      "forms": ["mdawmər", "midawmər"],
-      "conjugations": {}
-    },
-    {
       "stem": "Detransitive",
-      "forms": [],
+      "forms": ["mdawmər", "midawmər"],
       "conjugations": {
         "Preterit": [
           {
@@ -96,13 +91,11 @@
         ],
         "Part. Pass.": [
           {
-            "turoyo": "mʕadele u=šṭərənǧ-awo w aṯi u=qaḥwači lqule k-omər fayəš mʕaǧbo w mdawmro mene hano fayəš mdawmro w-qimo w-məlle",
+            "turoyo": "mʕadele u=šṭərənǧ-awo w aṯi u=qaḥwači lqule k-omər fayəš mʕaǧbo w mdawmro mene",
             "translations": [
-              "er stellte das Schachspiel auf, und als der Kaffeewirt es ansah, kam er aus dem Staunen nicht heraus",
-              "šubḥo-lux aloho!",
-              "‘He was astonished and immovable, he said: “Glory to you, God!”’"
+              "er stellte das Schachspiel auf, und als der Kaffeewirt es ansah, kam er aus dem Staunen nicht heraus"
             ],
-            "references": ["774", "104/13", "32", "47/77"],
+            "references": ["774", "104/13", "32"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -159,7 +152,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mʕadele u=šṭərənǧ-awo, w aṯi u=qaḥwači lqule k-omər fayəš mʕaǧbo w mdawmro mene ʻer stellte das Schachspiel auf, und als der Kaffeewirt es ansah, kam er aus dem Staunen nicht herausʼ; 774; 104/13, 32;"
+          },
+          {
+            "turoyo": "hano fayəš mdawmro w-qimo w-məlle",
+            "translations": [
+              "“šubḥo-lux aloho!”",
+              "‘He was astonished and immovable, he said: “Glory to you, God!”’"
+            ],
+            "references": ["47/77"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " hano fayəš mdawmro w-qimo w-məlle"
@@ -197,12 +201,12 @@
                 "value": "47/77"
               }
             ],
-            "text": "mʕadele u=šṭərənǧ-awo, w aṯi u=qaḥwači lqule k-omər fayəš mʕaǧbo w mdawmro mene ʻer stellte das Schachspiel auf, und als der Kaffeewirt es ansah, kam er aus dem Staunen nicht herausʼ; 774; 104/13, 32; hano fayəš mdawmro w-qimo w-məlle: “šubḥo-lux aloho!” ‘He was astonished and immovable, he said: “Glory to you, God!”’; 47/77"
+            "text": "hano fayəš mdawmro w-qimo w-məlle: “šubḥo-lux aloho!” ‘He was astonished and immovable, he said: “Glory to you, God!”’; 47/77"
           }
         ]
       }
     }
   ],
-  "idioms": ["(Detrans.) auf's höchste Erstaunt, verblüfft sein;", "to wonder"],
+  "idioms": ["to wonder"],
   "uncertain": false
 }

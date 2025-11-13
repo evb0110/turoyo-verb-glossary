@@ -18,12 +18,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "drele u=malko m-i=səsto prs dralle u=šuro ʕal aṭ=ṭaye",
+            "turoyo": "drele u=malko m-i=səsto prs",
             "translations": [
-              "der König wurde (dadurch) vom Pferde heruntergeworfen",
-              "sie stürzten die Mauer über die Kurden"
+              "der König wurde (dadurch) vom Pferde heruntergeworfen"
             ],
-            "references": ["1", "332", "66/30", "335", "33/30"],
+            "references": ["1", "332", "66/30"],
             "tokens": [
               {
                 "kind": "ref",
@@ -68,7 +67,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) drele u=malko m-i=səsto ʻder König wurde (dadurch) vom Pferde heruntergeworfenʼ; 332; prs 66/30;"
+          },
+          {
+            "turoyo": "dralle u=šuro ʕal aṭ=ṭaye",
+            "translations": ["sie stürzten die Mauer über die Kurden"],
+            "references": ["335", "33/30"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " dralle u=šuro ʕal aṭ=ṭaye "
@@ -106,24 +113,12 @@
                 "value": ";"
               }
             ],
-            "text": "1) drele u=malko m-i=səsto ʻder König wurde (dadurch) vom Pferde heruntergeworfenʼ; 332; prs 66/30; dralle u=šuro ʕal aṭ=ṭaye ʻsie stürzten die Mauer über die Kurdenʼ; 335; 33/30;"
+            "text": "dralle u=šuro ʕal aṭ=ṭaye ʻsie stürzten die Mauer über die Kurdenʼ; 335; 33/30;"
           },
           {
-            "turoyo": "aṯi u=tagoro drele šlomo aʕlayye ʕabiri l-u=čadər diḏe dralle šlomo aʕle lo=šlomo drele aʕle w-lo=mede",
-            "translations": [
-              "der Kaufmann erschien und begrüsste sie",
-              "‘Sie traten in sein Zelt ein und begrüßten ihn’",
-              "‘Er begrüßte [den Jungen] mit keinem Gruß und nichts’"
-            ],
-            "references": [
-              "2",
-              "MM 148",
-              "26/35",
-              "29/131",
-              "29/311",
-              "30/15",
-              "39/9"
-            ],
+            "turoyo": "aṯi u=tagoro drele šlomo aʕlayye",
+            "translations": ["der Kaufmann erschien und begrüsste sie"],
+            "references": ["2", "MM 148"],
             "tokens": [
               {
                 "kind": "ref",
@@ -156,7 +151,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "2) aṯi u=tagoro drele šlomo aʕlayye ʻder Kaufmann erschien und begrüsste sieʼ; MM 148;"
+          },
+          {
+            "turoyo": "ʕabiri l-u=čadər diḏe dralle šlomo aʕle",
+            "translations": ["‘Sie traten in sein Zelt ein und begrüßten ihn’"],
+            "references": ["26/35", "29/131"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ʕabiri l-u=čadər diḏe"
@@ -200,7 +203,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ʕabiri l-u=čadər diḏe, dralle šlomo aʕle ‘Sie traten in sein Zelt ein und begrüßten ihn’; 26/35; 29/131;"
+          },
+          {
+            "turoyo": "lo=šlomo drele aʕle w-lo=mede",
+            "translations": [
+              "‘Er begrüßte [den Jungen] mit keinem Gruß und nichts’"
+            ],
+            "references": ["29/311", "30/15", "39/9"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " lo=šlomo drele aʕle w-lo=mede "
@@ -246,15 +259,12 @@
                 "value": "39/9"
               }
             ],
-            "text": "2) aṯi u=tagoro drele šlomo aʕlayye ʻder Kaufmann erschien und begrüsste sieʼ; MM 148; ʕabiri l-u=čadər diḏe, dralle šlomo aʕle ‘Sie traten in sein Zelt ein und begrüßten ihn’; 26/35; 29/131; lo=šlomo drele aʕle w-lo=mede ‘Er begrüßte [den Jungen] mit keinem Gruß und nichts’; 29/311; 30/15; 39/9"
+            "text": "lo=šlomo drele aʕle w-lo=mede ‘Er begrüßte [den Jungen] mit keinem Gruß und nichts’; 29/311; 30/15; 39/9"
           },
           {
-            "turoyo": "dreli hawār ʕal ḥoli drele hawār w-haydān ʕal i=ʕašire nafəq-le ḥamšalfo l-qamuṯ-ayḏe",
-            "translations": [
-              "I called my uncle for help",
-              "‘[Der Scheich] stieß den Hilferuf aus über den Stamm; da kamen fünftausend zu ihm heraus’"
-            ],
-            "references": ["3", "337", "44/112", "29/415"],
+            "turoyo": "dreli hawār ʕal ḥoli",
+            "translations": ["I called my uncle for help"],
+            "references": ["3", "337", "44/112"],
             "tokens": [
               {
                 "kind": "ref",
@@ -299,7 +309,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "3) dreli hawār ʕal ḥoli ʻI called my uncle for helpʼ; 337; 44/112;"
+          },
+          {
+            "turoyo": "drele hawār w-haydān ʕal i=ʕašire nafəq-le ḥamšalfo l-qamuṯ-ayḏe",
+            "translations": [
+              "‘[Der Scheich] stieß den Hilferuf aus über den Stamm; da kamen fünftausend zu ihm heraus’"
+            ],
+            "references": ["29/415"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " drele hawār w-haydān ʕal i=ʕašire"
@@ -329,7 +349,7 @@
                 "value": "29/415"
               }
             ],
-            "text": "3) dreli hawār ʕal ḥoli ʻI called my uncle for helpʼ; 337; 44/112; drele hawār w-haydān ʕal i=ʕašire; nafəq-le ḥamšalfo l-qamuṯ-ayḏe ‘[Der Scheich] stieß den Hilferuf aus über den Stamm; da kamen fünftausend zu ihm heraus’; 29/415"
+            "text": "drele hawār w-haydān ʕal i=ʕašire; nafəq-le ḥamšalfo l-qamuṯ-ayḏe ‘[Der Scheich] stieß den Hilferuf aus über den Stamm; da kamen fünftausend zu ihm heraus’; 29/415"
           },
           {
             "turoyo": "ḥa mənne yăqīn dralle u=qufl-awo b-u=darbo",
@@ -378,7 +398,7 @@
           {
             "turoyo": "greʕuno kibe d-moḥe b-u=šuro g-dore-le",
             "translations": [
-              "‘(He was) a young man who could punch a wall and knock it down’"
+              "(He was) a young man who could punch a wall and knock it down"
             ],
             "references": ["1", "77/83"],
             "tokens": [
@@ -520,7 +540,7 @@
           {
             "turoyo": "w-u=barġal ko-saymína-le g-maḥtina tre=sahme d-maye w-ḥa d-barġal w-am=maye g-rəṯḥi g-maḥtina i=malḥo w-g-dorina u=barġal-ayḏan w-g-bošəl",
             "translations": [
-              "‘As for the wheat groats, we took two parts water and one part wheat groats, and as the water began boiling, we put salt in it, then we added the wheat groats, and they became ready’"
+              "As for the wheat groats, we took two parts water and one part wheat groats, and as the water began boiling, we put salt in it, then we added the wheat groats, and they became ready"
             ],
             "references": ["4", "JL 18.6.11"],
             "tokens": [
@@ -748,12 +768,11 @@
         ],
         "Imperativ": [
           {
-            "turoyo": "gamlo kle u=malaxo dray ṣlibo l-foṯux w ʕamǝ́ṣ ʕaynux xayifo d-šoqər ruḥux elo mʕawaqlan u=malaxo gə-mqatəl Mšiḥo aʕme prs drawu u=taʕlo prs",
+            "turoyo": "gamlo kle u=malaxo dray ṣlibo l-foṯux w ʕamǝ́ṣ ʕaynux xayifo d-šoqər ruḥux elo mʕawaqlan u=malaxo gə-mqatəl Mšiḥo aʕme prs",
             "translations": [
-              "Kamel, da ist der Engel, schlag ein Kreuz über dein Gesicht und schliesse die Augen; er hat's eilig, deine Seele zu holen, aber wir haben ihn aufgehalten, der Messias wird mit ihm zanken",
-              "so legt den Fuchs hin"
+              "Kamel, da ist der Engel, schlag ein Kreuz über dein Gesicht und schliesse die Augen; er hat's eilig, deine Seele zu holen, aber wir haben ihn aufgehalten, der Messias wird mit ihm zanken"
             ],
-            "references": ["372", "215/25", "374", "188/21"],
+            "references": ["372", "215/25"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -822,7 +841,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "gamlo kle u=malaxo, dray ṣlibo l-foṯux w ʕamǝ́ṣ ʕaynux, xayifo d-šoqər ruḥux, elo mʕawaqlan u=malaxo, gə-mqatəl Mšiḥo aʕme ʻKamel, da ist der Engel, schlag ein Kreuz über dein Gesicht und schliesse die Augen; er hat's eilig, deine Seele zu holen, aber wir haben ihn aufgehalten, der Messias wird mit ihm zankenʼ; 372; prs 215/25;"
+          },
+          {
+            "turoyo": "drawu u=taʕlo prs",
+            "translations": ["so legt den Fuchs hin"],
+            "references": ["374", "188/21"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " drawu u=taʕlo "
@@ -860,7 +887,7 @@
                 "value": ";"
               }
             ],
-            "text": "gamlo kle u=malaxo, dray ṣlibo l-foṯux w ʕamǝ́ṣ ʕaynux, xayifo d-šoqər ruḥux, elo mʕawaqlan u=malaxo, gə-mqatəl Mšiḥo aʕme ʻKamel, da ist der Engel, schlag ein Kreuz über dein Gesicht und schliesse die Augen; er hat's eilig, deine Seele zu holen, aber wir haben ihn aufgehalten, der Messias wird mit ihm zankenʼ; 372; prs 215/25; drawu u=taʕlo ʻso legt den Fuchs hinʼ; 374; prs 188/21;"
+            "text": "drawu u=taʕlo ʻso legt den Fuchs hinʼ; 374; prs 188/21;"
           }
         ]
       }
@@ -1095,12 +1122,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "qoyəm maṭalle i=baġalṯayḏe d-meqəm rawəx aʕla húwwal-le ḥaṭro b-iḏe w tloṯ=kore marwaxla l-i=baġalṯo a=tloṯ=kore maxṣūṣ madrele ruḥe l-i=arʕo ġắlabe noše madrela m-i=martabaṯṯe",
+            "turoyo": "qoyəm maṭalle i=baġalṯayḏe d-meqəm rawəx aʕla húwwal-le ḥaṭro b-iḏe w tloṯ=kore marwaxla l-i=baġalṯo a=tloṯ=kore maxṣūṣ madrele ruḥe l-i=arʕo",
             "translations": [
-              "da brachten sie das Maultier, auf dem er vorher geritten war und gaben ihm einen Stock in die Hand. Dreimal liess ihn das Maultier aufsitzen, dreimal liess er sich absichtlich abwerfen",
-              "sie hat viele Leute um Rang und Würden gebracht"
+              "da brachten sie das Maultier, auf dem er vorher geritten war und gaben ihm einen Stock in die Hand. Dreimal liess ihn das Maultier aufsitzen, dreimal liess er sich absichtlich abwerfen"
             ],
-            "references": ["1", "384", "29/433", "385"],
+            "references": ["1", "384", "29/433"],
             "tokens": [
               {
                 "kind": "ref",
@@ -1177,7 +1203,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) qoyəm maṭalle i=baġalṯayḏe, d-meqəm rawəx aʕla, húwwal-le ḥaṭro b-iḏe, w tloṯ=kore marwaxla l-i=baġalṯo, a=tloṯ=kore maxṣūṣ madrele ruḥe l-i=arʕo ʻda brachten sie das Maultier, auf dem er vorher geritten war und gaben ihm einen Stock in die Hand. Dreimal liess ihn das Maultier aufsitzen, dreimal liess er sich absichtlich abwerfenʼ; 384; 29/433;"
+          },
+          {
+            "turoyo": "ġắlabe noše madrela m-i=martabaṯṯe",
+            "translations": ["sie hat viele Leute um Rang und Würden gebracht"],
+            "references": ["385"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ġắlabe noše madrela m-i=martabaṯṯe "
@@ -1203,7 +1237,7 @@
                 "value": ";"
               }
             ],
-            "text": "1) qoyəm maṭalle i=baġalṯayḏe, d-meqəm rawəx aʕla, húwwal-le ḥaṭro b-iḏe, w tloṯ=kore marwaxla l-i=baġalṯo, a=tloṯ=kore maxṣūṣ madrele ruḥe l-i=arʕo ʻda brachten sie das Maultier, auf dem er vorher geritten war und gaben ihm einen Stock in die Hand. Dreimal liess ihn das Maultier aufsitzen, dreimal liess er sich absichtlich abwerfenʼ; 384; 29/433; ġắlabe noše madrela m-i=martabaṯṯe ʻsie hat viele Leute um Rang und Würden gebrachtʼ; 385;"
+            "text": "ġắlabe noše madrela m-i=martabaṯṯe ʻsie hat viele Leute um Rang und Würden gebrachtʼ; 385;"
           },
           {
             "turoyo": "U+Šamʕən du+Išk̇o súriwa əzzawayle l Súriya. Ánnaqqa kә́twayle palәk̇at d̥ Súriya aʕme kә́twayle palәk̇at d̥ Suriya aʕme. Qām aṯi li+qriṯo aṯi li+qriṯo madrile mṣakrile.‘ Šamʕən of Išk̇o was Syrian he went to Syria. Now then he had Syrian papers with him he had Syrian papers with him. He up and came to the village he came to the village he dropped them he lost them.",
@@ -1326,7 +1360,7 @@
     }
   ],
   "idioms": [
-    "[We probably need to split (1) into two meanings: 1) zur Erde niederwerfen, 2) fallen lassen; the example LB 155 is different situation: (1) is intentional agentive accomplishment, (2) is nonintentional agentive accomplishment. The meanings are different, but I am not sure, do we need that level of precision in this dictionary? I also hesitated to split the (1) meaning in hwy ‘werden, entstehen’: we have werden-entstehen ‘возникать’ and werden-verwandeln ‘становиться кем-то или чем-то’. I think in the case of hwy this range of meaning of werden is natural, like in old Russian становиться has these two meanings (И стал свет), though in modern Russian it is impossible (И появился свет). But I think the case with dry is a little different: intuitively there are many languages which has two different lexemes for 1) zur Erde niederwerfen, 2) fallen lassen, like  Italian abbattere vs. lasciar cadere, French faire tomber vs. laisser tomber, Turkish düşürmek vs devirmek]",
+    "[We probably need to split (1) into two meanings: 1) zur Erde niederwerfen, 2) fallen lassen; the example LB 155 is different situation: (1) is intentional agentive accomplishment, (2) is nonintentional agentive accomplishment. The meanings are different, but I am not sure, do we need that level of precision in this dictionary? I also hesitated to split the (1) meaning in hwy ‘werden, entstehen’: we have werden-entstehen ‘возникать’ and werden-verwandeln ‘становиться кем-то или чем-то’. I think in the case of hwy this range of meaning of werden is natural, like in old Russian становиться has these two meanings (И стал свет), though in modern Russian it is impossible (И появился свет). But I think the case with dry is a little different: intuitively there are many languages which has two different lexemes for 1) zur Erde niederwerfen, 2) fallen lassen, like Italian abbattere vs. lasciar cadere, French faire tomber vs. laisser tomber, Turkish düşürmek vs devirmek]",
     "worfeln;",
     "1) niederwerfen lassen; sich niederwerfen (mit ruḥo 2) loose"
   ],

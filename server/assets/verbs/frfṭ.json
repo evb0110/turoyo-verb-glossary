@@ -11,13 +11,8 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
-      "forms": ["mfarfaṭle", "mfarfəṭ"],
-      "conjugations": {}
-    },
-    {
       "stem": "Detransitive",
-      "forms": [],
+      "forms": ["mfarfaṭle", "mfarfəṭ"],
       "conjugations": {
         "Preterit": [
           {
@@ -71,7 +66,7 @@
           {
             "turoyo": "Naqqa i qaṭәn xila naqqa mfarfṭo 004_NE_Ditin_Hezar",
             "translations": [
-              "‘As soon as the cat ate, then she sniffled. suddenly died’"
+              "As soon as the cat ate, then she sniffled. suddenly died"
             ],
             "references": ["12", "23"],
             "tokens": [
@@ -113,12 +108,9 @@
         ],
         "Infectum": [
           {
-            "turoyo": "hama ḥzeli gava kale ko-mifarfəṭ kul=lalyo … šəmʕi-wa qole d-ʕezo oṯe-wa qarén mina qaymi-wa əzzehən-wa ga ʕezo kal-ko-mifarfto",
-            "translations": [
-              "I saw that [the cow] was panting",
-              "‘Every night (...) they heard the voice of a goat, the moan came from it, they stood up, went (and saw): the goat was in death-agony’"
-            ],
-            "references": ["775", "44/111", "LuF 304/67"],
+            "turoyo": "hama ḥzeli gava kale ko-mifarfəṭ",
+            "translations": ["I saw that [the cow] was panting"],
+            "references": ["775", "44/111"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -163,7 +155,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "hama ḥzeli: gava kale ko-mifarfəṭ ʻI saw that [the cow] was pantingʼ; 775; 44/111;"
+          },
+          {
+            "turoyo": "kul=lalyo … šəmʕi-wa qole d-ʕezo oṯe-wa qarén mina qaymi-wa əzzehən-wa ga ʕezo kal-ko-mifarfto",
+            "translations": [
+              "‘Every night (...) they heard the voice of a goat, the moan came from it, they stood up, went (and saw): the goat was in death-agony’"
+            ],
+            "references": ["LuF 304/67"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " kul=lalyo "
@@ -201,14 +203,12 @@
                 "value": ";"
               }
             ],
-            "text": "hama ḥzeli: gava kale ko-mifarfəṭ ʻI saw that [the cow] was pantingʼ; 775; 44/111; kul=lalyo (…) šəmʕi-wa qole d-ʕezo oṯe-wa qarén mina qaymi-wa əzzehən-wa ga ʕezo kal-ko-mifarfto ‘Every night (...) they heard the voice of a goat, the moan came from it, they stood up, went (and saw): the goat was in death-agony’ LuF 304/67;"
+            "text": "kul=lalyo (…) šəmʕi-wa qole d-ʕezo oṯe-wa qarén mina qaymi-wa əzzehən-wa ga ʕezo kal-ko-mifarfto ‘Every night (...) they heard the voice of a goat, the moan came from it, they stood up, went (and saw): the goat was in death-agony’ LuF 304/67;"
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) röcheln, schnaufen, die Bewegungen eines sterbenden, krepierenden machen, sterben, krepieren;"
-  ],
+  "idioms": null,
   "uncertain": false
 }

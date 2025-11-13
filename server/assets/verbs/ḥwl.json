@@ -46,13 +46,11 @@
             "text": "1. Lu Sargey mḥawele u baytayḏe. Sergey moved to a different house. (İlyas p.c)"
           },
           {
-            "turoyo": "b-i=ḥarayto ʕayəfno m-u=ḥāl-ano w-mḥaweli l-ġēr bayto mḥawéle-li ʕal i=qəṣṭaxana rabṯo d-Mawṣal Lo fayǝšli raḥatiye bu baytano kolozǝm d mḥawalne. İlyas p.c",
+            "turoyo": "b-i=ḥarayto ʕayəfno m-u=ḥāl-ano w-mḥaweli l-ġēr bayto",
             "translations": [
-              "schliesslich war ich diesen Zustand satt und zog in ein anderes Haus um",
-              "(er) überwies mich an das grosse Krankenhaus in Mossul",
-              "‘In this house there is no comfort anymore I need to move from it.’"
+              "schliesslich war ich diesen Zustand satt und zog in ein anderes Haus um"
             ],
-            "references": ["474", "2/53", "EL 43"],
+            "references": ["474", "2/53"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -89,7 +87,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "b-i=ḥarayto ʕayəfno m-u=ḥāl-ano w-mḥaweli l-ġēr bayto ʻschliesslich war ich diesen Zustand satt und zog in ein anderes Haus umʼ; 474; 2/53;"
+          },
+          {
+            "turoyo": "mḥawéle-li ʕal i=qəṣṭaxana rabṯo d-Mawṣal",
+            "translations": [
+              "(er) überwies mich an das grosse Krankenhaus in Mossul"
+            ],
+            "references": ["EL 43"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mḥawéle-li ʕal i=qəṣṭaxana rabṯo d-Mawṣal "
@@ -113,7 +121,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mḥawéle-li ʕal i=qəṣṭaxana rabṯo d-Mawṣal ʻ(er) überwies mich an das grosse Krankenhaus in Mossulʼ; EL 43;"
+          },
+          {
+            "turoyo": "Lo fayǝšli raḥatiye bu baytano kolozǝm d mḥawalne. İlyas p.c",
+            "translations": [
+              "‘In this house there is no comfort anymore I need to move from it.’"
+            ],
+            "references": [],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": "        Lo fayǝšli raḥatiye bu baytano kolozǝm d mḥawalne. "
@@ -139,17 +157,12 @@
                 "value": ")"
               }
             ],
-            "text": "b-i=ḥarayto ʕayəfno m-u=ḥāl-ano w-mḥaweli l-ġēr bayto ʻschliesslich war ich diesen Zustand satt und zog in ein anderes Haus umʼ; 474; 2/53; mḥawéle-li ʕal i=qəṣṭaxana rabṯo d-Mawṣal ʻ(er) überwies mich an das grosse Krankenhaus in Mossulʼ; EL 43; Lo fayǝšli raḥatiye bu baytano kolozǝm d mḥawalne. ‘In this house there is no comfort anymore I need to move from it.’ (İlyas p.c)"
+            "text": "Lo fayǝšli raḥatiye bu baytano kolozǝm d mḥawalne. ‘In this house there is no comfort anymore I need to move from it.’ (İlyas p.c)"
           },
           {
-            "turoyo": "mḥawalle l-abre d-ʕammi prs mublulle mḥawlulle mublúlle-le l-u=kon-ayḏe /101Ono bu qayṭo mḥaweli i ḥurmayḏi. İlyas p.c Hánostene mḥawlole l Oṣmán Aġá AA OA",
-            "translations": [
-              "man hat meinem Vetter eine Braut heimgeführt",
-              "‘Man geholt sie und hatte überführt, man brachte sie zu seinem Zelte’",
-              "‘In summer I married my wife.’",
-              "‘As for this one, Osman Agha married her’"
-            ],
-            "references": ["2", "475", "192/23", "26"],
+            "turoyo": "mḥawalle l-abre d-ʕammi prs",
+            "translations": ["man hat meinem Vetter eine Braut heimgeführt"],
+            "references": ["2", "475", "192/23"],
             "tokens": [
               {
                 "kind": "ref",
@@ -194,7 +207,19 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "2) mḥawalle l-abre d-ʕammi ʻman hat meinem Vetter eine Braut heimgeführtʼ; 475; prs 192/23;"
+          },
+          {
+            "turoyo": "mublulle mḥawlulle mublúlle-le l-u=kon-ayḏe /101Ono bu qayṭo mḥaweli i ḥurmayḏi. İlyas p.c Hánostene mḥawlole l Oṣmán Aġá AA OA",
+            "translations": [
+              "‘Man geholt sie und hatte überführt, man brachte sie zu seinem Zelte’",
+              "‘In summer I married my wife.’",
+              "‘As for this one, Osman Agha married her’"
+            ],
+            "references": ["26"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mublulle mḥawlulle"
@@ -284,7 +309,7 @@
                 "value": ")"
               }
             ],
-            "text": "2) mḥawalle l-abre d-ʕammi ʻman hat meinem Vetter eine Braut heimgeführtʼ; 475; prs 192/23; mublulle mḥawlulle, mublúlle-le l-u=kon-ayḏe ‘Man geholt sie und hatte überführt, man brachte sie zu seinem Zelte’; 26/101Ono bu qayṭo mḥaweli i ḥurmayḏi. ‘In summer I married my wife.’(İlyas p.c) Hánostene, mḥawlole l Oṣmán Aġá ‘As for this one, Osman Agha married her’ (AA, OA)"
+            "text": "mublulle mḥawlulle, mublúlle-le l-u=kon-ayḏe ‘Man geholt sie und hatte überführt, man brachte sie zu seinem Zelte’; 26/101Ono bu qayṭo mḥaweli i ḥurmayḏi. ‘In summer I married my wife.’(İlyas p.c) Hánostene, mḥawlole l Oṣmán Aġá ‘As for this one, Osman Agha married her’ (AA, OA)"
           }
         ],
         "Infectum": [
@@ -345,12 +370,9 @@
             "text": "1) kə-mḥawe-le tloṯ=kore ʻer verlegt es (das Haus) dreimalʼ; 474; prs 255/15;"
           },
           {
-            "turoyo": "gə-mḥawánno-lox kalo prs nahaye mḥayḏ̣arre u=ḥal diḏa ḥatta də-mḥawli-la",
-            "translations": [
-              "ich werde dir eine Braut heimführen",
-              "‘Schließlich machte man sie zurecht, um sie (in das Haus des bräutigams) zu überfuhren’"
-            ],
-            "references": ["2", "475", "28/29", "26/94"],
+            "turoyo": "gə-mḥawánno-lox kalo prs",
+            "translations": ["ich werde dir eine Braut heimführen"],
+            "references": ["2", "475", "28/29"],
             "tokens": [
               {
                 "kind": "ref",
@@ -395,7 +417,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "2) gə-mḥawánno-lox kalo ʻich werde dir eine Braut heimführenʼ; 475; prs 28/29;"
+          },
+          {
+            "turoyo": "nahaye mḥayḏ̣arre u=ḥal diḏa ḥatta də-mḥawli-la",
+            "translations": [
+              "‘Schließlich machte man sie zurecht, um sie (in das Haus des bräutigams) zu überfuhren’"
+            ],
+            "references": ["26/94"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " nahaye mḥayḏ̣arre u=ḥal diḏa ḥatta də-mḥawli-la "
@@ -417,16 +449,8 @@
                 "value": "26/94"
               }
             ],
-            "text": "2) gə-mḥawánno-lox kalo ʻich werde dir eine Braut heimführenʼ; 475; prs 28/29; nahaye mḥayḏ̣arre u=ḥal diḏa ḥatta də-mḥawli-la ‘Schließlich machte man sie zurecht, um sie (in das Haus des bräutigams) zu überfuhren’; 26/94"
-          }
-        ]
-      }
-    },
-    {
-      "stem": "Detransitive",
-      "forms": [],
-      "conjugations": {
-        "Infectum": [
+            "text": "nahaye mḥayḏ̣arre u=ḥal diḏa ḥatta də-mḥawli-la ‘Schließlich machte man sie zurecht, um sie (in das Haus des bräutigams) zu überfuhren’; 26/94"
+          },
           {
             "turoyo": "W ǧġili l ḥḏoḏe huwe soz ʕam ḥḏoḏe d miḥawli tavda w mḥalaffe aʕ ʕisaqyotaṯṯe ste they promised each other they will get married to each other",
             "translations": [],
@@ -476,13 +500,7 @@
             "text": "W ǧġili l ḥḏoḏe, huwe soz ʕam ḥḏoḏe d miḥawli tavda w mḥalaffe aʕ ʕisaqyotaṯṯe ste 267 MuZ 10: 49 they promised each other they will get married to each other"
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "get married (about a woman)"
-        }
-      ]
+      }
     }
   ],
   "idioms": null,

@@ -64,13 +64,9 @@
         ],
         "Infectum": [
           {
-            "turoyo": "ko-nəqro raġli ko-boxeno w-u=admo k-oṯe ġắlabe w-raġli ko-nuqri w-laybi koleno ʕarši konoqar Ilyas p.c. turkish zonklayan ağrı",
-            "translations": [
-              "mein Bein tut mir Weh",
-              "‘I wept, the blood was streaming heavily (from me), my legs hurt, and I could not bear (it)’",
-              "‘my tooth is throbbing (with pain)’"
-            ],
-            "references": ["254", "EL 47"],
+            "turoyo": "ko-nəqro raġli",
+            "translations": ["mein Bein tut mir Weh"],
+            "references": ["254"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -95,7 +91,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ko-nəqro raġli ʻmein Bein tut mir Wehʼ; 254;"
+          },
+          {
+            "turoyo": "ko-boxeno w-u=admo k-oṯe ġắlabe w-raġli ko-nuqri w-laybi koleno ʕarši konoqar Ilyas p.c. turkish zonklayan ağrı",
+            "translations": [
+              "‘I wept, the blood was streaming heavily (from me), my legs hurt, and I could not bear (it)’",
+              "‘my tooth is throbbing (with pain)’"
+            ],
+            "references": ["EL 47"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ko-boxeno"
@@ -177,7 +184,7 @@
                 "value": " zonklayan ağrı"
               }
             ],
-            "text": "ko-nəqro raġli ʻmein Bein tut mir Wehʼ; 254; ko-boxeno, w-u=admo k-oṯe ġắlabe, w-raġli ko-nuqri, w-laybi koleno ‘I wept, the blood was streaming heavily (from me), my legs hurt, and I could not bear (it)’ EL 47; ʕarši konoqar ‘my tooth is throbbing (with pain)’ (Ilyas p.c.) turkish: zonklayan ağrı"
+            "text": "ko-boxeno, w-u=admo k-oṯe ġắlabe, w-raġli ko-nuqri, w-laybi koleno ‘I wept, the blood was streaming heavily (from me), my legs hurt, and I could not bear (it)’ EL 47; ʕarši konoqar ‘my tooth is throbbing (with pain)’ (Ilyas p.c.) turkish: zonklayan ağrı"
           }
         ],
         "Infectum-wa": [
@@ -278,7 +285,7 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mədla l-i=xuṣayḏa məfqola maḥtola ʕal u=qallənayḏa w grišola hul d-samiqo w məḥyola b-u=fard-ano d-ṭize i=kafčke d-lebe manqrola i=kafčke d-lebe manqrola - topicalization!",
+            "turoyo": "mədla l-i=xuṣayḏa məfqola maḥtola ʕal u=qallənayḏa w grišola hul d-samiqo w məḥyola b-u=fard-ano d-ṭize i=kafčke d-lebe manqrola",
             "translations": [
               "da fasste sie ihren Ring, zog ihn ab, legte ihn auf ihre Pfeife, rauchte, bis er rotglühend war, drückte ihn auf eine seiner Hinterbacken, und tat ihm dabei weh bis ins Herz (wörtl.: den Löffel (f) des Herzens) hinein"
             ],
@@ -359,13 +366,21 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mədla l-i=xuṣayḏa, məfqola, maḥtola ʕal u=qallənayḏa, w grišola hul d-samiqo, w məḥyola b-u=fard-ano d-ṭize, i=kafčke d-lebe manqrola ʻda fasste sie ihren Ring, zog ihn ab, legte ihn auf ihre Pfeife, rauchte, bis er rotglühend war, drückte ihn auf eine seiner Hinterbacken, und tat ihm dabei weh bis ins Herz (wörtl.: den Löffel (f) des Herzens) hineinʼ; 254; 62/325;"
+          },
+          {
+            "turoyo": "i=kafčke d-lebe manqrola - topicalization!",
+            "translations": [],
+            "references": [],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " i=kafčke d-lebe manqrola - topicalization!"
               }
             ],
-            "text": "mədla l-i=xuṣayḏa, məfqola, maḥtola ʕal u=qallənayḏa, w grišola hul d-samiqo, w məḥyola b-u=fard-ano d-ṭize, i=kafčke d-lebe manqrola ʻda fasste sie ihren Ring, zog ihn ab, legte ihn auf ihre Pfeife, rauchte, bis er rotglühend war, drückte ihn auf eine seiner Hinterbacken, und tat ihm dabei weh bis ins Herz (wörtl.: den Löffel (f) des Herzens) hineinʼ; 254; 62/325; i=kafčke d-lebe manqrola - topicalization!"
+            "text": "i=kafčke d-lebe manqrola - topicalization!"
           }
         ]
       }

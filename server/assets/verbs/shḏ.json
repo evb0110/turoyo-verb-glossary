@@ -78,12 +78,9 @@
         ],
         "Infectum": [
           {
-            "turoyo": "u=mede də-ḥzeli hayo ko-sohaḏno Mḥammad bări me d-howe … b-karse d-i=emo aloho kṯule i=šăhad-aṯe d-ko-səhḏína-la ʕal əšme d-kətwa u=nbiyo d-aloho",
-            "translations": [
-              "‘nur das, was ich gesehen habe, bezeuge ich’",
-              "‘Before Muhammad was born, while he was in his mother’s womb, God had written the creed which we maintain about him (Muhammad), that he is the prophet of God’"
-            ],
-            "references": ["LB 153", "JL 20.7.42"],
+            "turoyo": "u=mede də-ḥzeli hayo ko-sohaḏno",
+            "translations": ["‘nur das, was ich gesehen habe, bezeuge ich’"],
+            "references": ["LB 153"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -116,7 +113,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "u=mede də-ḥzeli, hayo ko-sohaḏno ‘nur das, was ich gesehen habe, bezeuge ich’; LB 153;"
+          },
+          {
+            "turoyo": "Mḥammad bări me d-howe … b-karse d-i=emo aloho kṯule i=šăhad-aṯe d-ko-səhḏína-la ʕal əšme d-kətwa u=nbiyo d-aloho",
+            "translations": [
+              "‘Before Muhammad was born, while he was in his mother’s womb, God had written the creed which we maintain about him (Muhammad), that he is the prophet of God’"
+            ],
+            "references": ["JL 20.7.42"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " Mḥammad bări me d-howe "
@@ -178,7 +185,7 @@
                 "value": ";"
               }
             ],
-            "text": "u=mede də-ḥzeli, hayo ko-sohaḏno ‘nur das, was ich gesehen habe, bezeuge ich’; LB 153; Mḥammad bări me d-howe (…) b-karse d-i=emo, aloho kṯule, i=šăhad-aṯe d-ko-səhḏína-la, ʕal əšme d-kətwa u=nbiyo d-aloho ‘Before Muhammad was born, while he was in his mother’s womb, God had written the creed which we maintain about him (Muhammad), that he is the prophet of God’ JL 20.7.42;"
+            "text": "Mḥammad bări me d-howe (…) b-karse d-i=emo, aloho kṯule, i=šăhad-aṯe d-ko-səhḏína-la, ʕal əšme d-kətwa u=nbiyo d-aloho ‘Before Muhammad was born, while he was in his mother’s womb, God had written the creed which we maintain about him (Muhammad), that he is the prophet of God’ JL 20.7.42;"
           }
         ]
       }

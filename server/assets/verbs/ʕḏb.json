@@ -90,13 +90,11 @@
         ],
         "Infectum": [
           {
-            "turoyo": "g-nəḥrína-la w-uxlína-la liʔanno k-mʕaḏbo u=ʕamo ko-yoménan-xu lə=mʕaḏbútəl-li maḥétel-li b-dukṯo hənnək k-uḏʕi mən g-saymi áydarbo gə-mʕaḏbi-lux",
+            "turoyo": "g-nəḥrína-la w-uxlína-la liʔanno k-mʕaḏbo u=ʕamo",
             "translations": [
-              "we will slaughter [the goose, f] and eat since it torments the people",
-              "ich bitte euch, quält mich nicht (mehr). Bringt mich an einen (angenehmeren) Ort",
-              "sie (allein) wissen, was sie mit dir machen und wie sie dich quälen sollten"
+              "we will slaughter [the goose, f] and eat since it torments the people"
             ],
-            "references": ["165", "36/112", "LB 118", "LB 121"],
+            "references": ["165", "36/112"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -141,7 +139,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "g-nəḥrína-la w-uxlína-la, liʔanno k-mʕaḏbo u=ʕamo ʻwe will slaughter [the goose, f] and eat since it torments the peopleʼ; 165; 36/112;"
+          },
+          {
+            "turoyo": "ko-yoménan-xu lə=mʕaḏbútəl-li maḥétel-li b-dukṯo",
+            "translations": [
+              "ich bitte euch, quält mich nicht (mehr). Bringt mich an einen (angenehmeren) Ort"
+            ],
+            "references": ["LB 118"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ko-yoménan-xu lə=mʕaḏbútəl-li"
@@ -173,7 +181,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ko-yoménan-xu lə=mʕaḏbútəl-li, maḥétel-li b-dukṯo ʻich bitte euch, quält mich nicht (mehr). Bringt mich an einen (angenehmeren) Ortʼ; LB 118;"
+          },
+          {
+            "turoyo": "hənnək k-uḏʕi mən g-saymi áydarbo gə-mʕaḏbi-lux",
+            "translations": [
+              "sie (allein) wissen, was sie mit dir machen und wie sie dich quälen sollten"
+            ],
+            "references": ["LB 121"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " hənnək k-uḏʕi mən g-saymi"
@@ -207,7 +225,7 @@
                 "value": ";"
               }
             ],
-            "text": "g-nəḥrína-la w-uxlína-la, liʔanno k-mʕaḏbo u=ʕamo ʻwe will slaughter [the goose, f] and eat since it torments the peopleʼ; 165; 36/112; ko-yoménan-xu lə=mʕaḏbútəl-li, maḥétel-li b-dukṯo ʻich bitte euch, quält mich nicht (mehr). Bringt mich an einen (angenehmeren) Ortʼ; LB 118; hənnək k-uḏʕi mən g-saymi, áydarbo gə-mʕaḏbi-lux ʻsie (allein) wissen, was sie mit dir machen und wie sie dich quälen solltenʼ; LB 121;"
+            "text": "hənnək k-uḏʕi mən g-saymi, áydarbo gə-mʕaḏbi-lux ʻsie (allein) wissen, was sie mit dir machen und wie sie dich quälen solltenʼ; LB 121;"
           }
         ]
       }
@@ -218,13 +236,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ḥolo ḥur! mʕaḏbo taḥoli hul l-arke b-i=saʕaye ḥarayto mʕaḏəb aʕmux l-mən mʕaḏbat? d-ummát-way-li gd-oṯé-wayno",
+            "turoyo": "ḥolo ḥur! mʕaḏbo taḥoli hul l-arke",
             "translations": [
-              "Uncle! Look! The aunt has troubled herself [with that she came] here",
-              "er hat in der letzten Stunde mit dir gelitten",
-              "‘Why did you trouble yourself? If you asked me, I would have come’"
+              "Uncle! Look! The aunt has troubled herself [with that she came] here"
             ],
-            "references": ["172", "44/55", "LB 139", "44/51"],
+            "references": ["172", "44/55"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -261,7 +277,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ḥolo ḥur! mʕaḏbo taḥoli hul l-arke ʻUncle! Look! The aunt has troubled herself [with that she came] hereʼ; 172; 44/55;"
+          },
+          {
+            "turoyo": "b-i=saʕaye ḥarayto mʕaḏəb aʕmux",
+            "translations": ["er hat in der letzten Stunde mit dir gelitten"],
+            "references": ["LB 139"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " b-i=saʕaye ḥarayto mʕaḏəb aʕmux "
@@ -285,7 +309,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "b-i=saʕaye ḥarayto mʕaḏəb aʕmux ʻer hat in der letzten Stunde mit dir gelittenʼ; LB 139;"
+          },
+          {
+            "turoyo": "l-mən mʕaḏbat? d-ummát-way-li gd-oṯé-wayno",
+            "translations": [
+              "‘Why did you trouble yourself? If you asked me, I would have come’"
+            ],
+            "references": ["44/51"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " l-mən mʕaḏbat? d-ummát-way-li"
@@ -315,7 +349,7 @@
                 "value": "44/51"
               }
             ],
-            "text": "ḥolo ḥur! mʕaḏbo taḥoli hul l-arke ʻUncle! Look! The aunt has troubled herself [with that she came] hereʼ; 172; 44/55; b-i=saʕaye ḥarayto mʕaḏəb aʕmux ʻer hat in der letzten Stunde mit dir gelittenʼ; LB 139; l-mən mʕaḏbat? d-ummát-way-li, gd-oṯé-wayno ‘Why did you trouble yourself? If you asked me, I would have come’; 44/51"
+            "text": "l-mən mʕaḏbat? d-ummát-way-li, gd-oṯé-wayno ‘Why did you trouble yourself? If you asked me, I would have come’; 44/51"
           }
         ],
         "Infectum": [

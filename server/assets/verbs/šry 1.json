@@ -18,24 +18,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "šrele i=kačke me-ḥaṣe nxišole prs prs šrele ḥaṣe m-u=konayḏe šralle u=čŭwāl-awo m-aʕli w-mawfáqqal-li m-u=čŭwāl šralle as=səsy-aṯṯe marfənne bayn u=margo šrela li=čaye bayn am=maye tea dissolved in water Iyas pc",
+            "turoyo": "šrele i=kačke me-ḥaṣe nxišole prs prs",
             "translations": [
-              "darauf band er das Mädchen von seinem Rücken los und stiess sie an, (dass sie erwachte)",
-              "er verlor die Verbindung mit seinem Zelte",
-              "‘sie öffneten den Sack und zogen mich aus dem Sack heraus’",
-              "‘They let their horses out, let them out on the pasture’"
+              "darauf band er das Mädchen von seinem Rücken los und stiess sie an, (dass sie erwachte)"
             ],
-            "references": [
-              "333",
-              "40/7",
-              "181/6",
-              "333",
-              "65/407",
-              "LB 63",
-              "73/83",
-              "29",
-              "July 2020"
-            ],
+            "references": ["333", "40/7", "181/6"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -92,7 +79,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "šrele i=kačke me-ḥaṣe, nxišole ʻdarauf band er das Mädchen von seinem Rücken los und stiess sie an, (dass sie erwachte)ʼ; 333; prs 40/7; prs 181/6;"
+          },
+          {
+            "turoyo": "šrele ḥaṣe m-u=konayḏe",
+            "translations": ["er verlor die Verbindung mit seinem Zelte"],
+            "references": ["333", "65/407"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " šrele ḥaṣe m-u=konayḏe "
@@ -128,7 +123,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "šrele ḥaṣe m-u=konayḏe ʻer verlor die Verbindung mit seinem Zelteʼ; 333; 65/407;"
+          },
+          {
+            "turoyo": "šralle u=čŭwāl-awo m-aʕli w-mawfáqqal-li m-u=čŭwāl",
+            "translations": [
+              "‘sie öffneten den Sack und zogen mich aus dem Sack heraus’"
+            ],
+            "references": ["LB 63"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " šralle u=čŭwāl-awo m-aʕli w-mawfáqqal-li m-u=čŭwāl "
@@ -152,7 +157,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "šralle u=čŭwāl-awo m-aʕli w-mawfáqqal-li m-u=čŭwāl ‘sie öffneten den Sack und zogen mich aus dem Sack heraus’; LB 63;"
+          },
+          {
+            "turoyo": "šralle as=səsy-aṯṯe marfənne bayn u=margo šrela li=čaye bayn am=maye tea dissolved in water Iyas pc",
+            "translations": [
+              "‘They let their horses out, let them out on the pasture’"
+            ],
+            "references": ["73/83", "29", "July 2020"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " šralle as=səsy-aṯṯe"
@@ -210,7 +225,7 @@
                 "value": ")"
               }
             ],
-            "text": "šrele i=kačke me-ḥaṣe, nxišole ʻdarauf band er das Mädchen von seinem Rücken los und stiess sie an, (dass sie erwachte)ʼ; 333; prs 40/7; prs 181/6; šrele ḥaṣe m-u=konayḏe ʻer verlor die Verbindung mit seinem Zelteʼ; 333; 65/407; šralle u=čŭwāl-awo m-aʕli w-mawfáqqal-li m-u=čŭwāl ‘sie öffneten den Sack und zogen mich aus dem Sack heraus’; LB 63; šralle as=səsy-aṯṯe, marfənne bayn u=margo ‘They let their horses out, let them out on the pasture’ 73/83; šrela li=čaye bayn am=maye tea dissolved in water (Iyas pc 29 July 2020)"
+            "text": "šralle as=səsy-aṯṯe, marfənne bayn u=margo ‘They let their horses out, let them out on the pasture’ 73/83; šrela li=čaye bayn am=maye tea dissolved in water (Iyas pc 29 July 2020)"
           }
         ],
         "Infectum": [
@@ -218,7 +233,7 @@
             "turoyo": "daqăna i=daḥṯo šəryo пример отсутствует в указанном месте g-šoreno ruhi m-i…m-ano m-u=qays-ano",
             "translations": [
               "dass der Schweiss sich löst (beim Waschen)",
-              "‘ich will mich doch von diesem Holzpflock befreien!’"
+              "ich will mich doch von diesem Holzpflock befreien!"
             ],
             "references": ["357", "115/44", "LB 156"],
             "tokens": [
@@ -318,7 +333,7 @@
           {
             "turoyo": "kul=yawmo oṯe-wa šore-way-la w-maḥat-wa aʕla márham w-doʕar-wa maṣər-way-la",
             "translations": [
-              "‘Every day he (doctor, m.) came and unbound it (arm, m.) and put the salve on it and then bandaged it again’"
+              "Every day he (doctor, m.) came and unbound it (arm, m.) and put the salve on it and then bandaged it again"
             ],
             "references": ["LuF 300/52"],
             "tokens": [
@@ -348,12 +363,11 @@
         ],
         "Imperativ": [
           {
-            "turoyo": "u=qoḏ̣e madile l-u=abro omər tox šray u=zənǧər me-qḏoli prs qayimi qralle l-u=qaḏ̣i mərre «məttafaqlan. daxīl diḏux! šri-lan!»",
+            "turoyo": "u=qoḏ̣e madile l-u=abro omər tox šray u=zənǧər me-qḏoli prs",
             "translations": [
-              "da machte der Richter seinem Sohne durch Zeichen verständlich, er möchte ihm die Kette vom Halse losmachen",
-              "‘They called the judge and said: “We came to an agreement with each other. We beg you to set us free!”’"
+              "da machte der Richter seinem Sohne durch Zeichen verständlich, er möchte ihm die Kette vom Halse losmachen"
             ],
-            "references": ["372", "181/6", "39/28"],
+            "references": ["372", "181/6"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -398,7 +412,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "u=qoḏ̣e madile l-u=abro, omər tox šray u=zənǧər me-qḏoli ʻda machte der Richter seinem Sohne durch Zeichen verständlich, er möchte ihm die Kette vom Halse losmachenʼ; 372; prs 181/6;"
+          },
+          {
+            "turoyo": "qayimi qralle l-u=qaḏ̣i mərre «məttafaqlan. daxīl diḏux! šri-lan!»",
+            "translations": [
+              "‘They called the judge and said: “We came to an agreement with each other. We beg you to set us free!”’"
+            ],
+            "references": ["39/28"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " qayimi qralle l-u=qaḏ̣i mərre «məttafaqlan. daxīl diḏux! šri-lan!» "
@@ -428,7 +452,7 @@
                 "value": "[MT]"
               }
             ],
-            "text": "u=qoḏ̣e madile l-u=abro, omər tox šray u=zənǧər me-qḏoli ʻda machte der Richter seinem Sohne durch Zeichen verständlich, er möchte ihm die Kette vom Halse losmachenʼ; 372; prs 181/6; qayimi qralle l-u=qaḏ̣i mərre «məttafaqlan. daxīl diḏux! šri-lan!» ‘They called the judge and said: “We came to an agreement with each other. We beg you to set us free!”’; 39/28 [MT]"
+            "text": "qayimi qralle l-u=qaḏ̣i mərre «məttafaqlan. daxīl diḏux! šri-lan!» ‘They called the judge and said: “We came to an agreement with each other. We beg you to set us free!”’; 39/28 [MT]"
           }
         ]
       }
@@ -439,13 +463,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "šari u=baṣro də-druʕe d-u=zʕuro kule b-lalyo šarən ak=kalamčawat me iḏe d-Fawlus hamma hiye hawxa šre ḥaṣo qayəm kət-yo",
+            "turoyo": "šari u=baṣro də-druʕe d-u=zʕuro kule",
             "translations": [
-              "the whole boy’s arm skin separated (from his body)",
-              "‘in der Nacht lösten sich die Handschellen von der Hand des Paulus’",
-              "er stand (aus dem Bett), so, mit gelöstem Gürtel"
+              "the whole boy’s arm skin separated (from his body)"
             ],
-            "references": ["379", "LuF 300/51", "LB 179", "381", "97/63"],
+            "references": ["379", "LuF 300/51"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -482,7 +504,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "šari u=baṣro də-druʕe d-u=zʕuro kule ʻthe whole boy’s arm skin separated (from his body)ʼ; 379; LuF 300/51;"
+          },
+          {
+            "turoyo": "b-lalyo šarən ak=kalamčawat me iḏe d-Fawlus",
+            "translations": [
+              "‘in der Nacht lösten sich die Handschellen von der Hand des Paulus’"
+            ],
+            "references": ["LB 179"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " b-lalyo šarən ak=kalamčawat me iḏe d-Fawlus "
@@ -506,7 +538,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "b-lalyo šarən ak=kalamčawat me iḏe d-Fawlus ‘in der Nacht lösten sich die Handschellen von der Hand des Paulus’; LB 179;"
+          },
+          {
+            "turoyo": "hamma hiye hawxa šre ḥaṣo qayəm kət-yo",
+            "translations": [
+              "er stand (aus dem Bett), so, mit gelöstem Gürtel"
+            ],
+            "references": ["381", "97/63"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " hamma hiye hawxa"
@@ -560,7 +602,7 @@
                 "value": ";"
               }
             ],
-            "text": "šari u=baṣro də-druʕe d-u=zʕuro kule ʻthe whole boy’s arm skin separated (from his body)ʼ; 379; LuF 300/51; b-lalyo šarən ak=kalamčawat me iḏe d-Fawlus ‘in der Nacht lösten sich die Handschellen von der Hand des Paulus’; LB 179; hamma hiye hawxa, šre ḥaṣo, qayəm kət-yo ʻer stand (aus dem Bett), so, mit gelöstem Gürtelʼ; 381; 97/63;"
+            "text": "hamma hiye hawxa, šre ḥaṣo, qayəm kət-yo ʻer stand (aus dem Bett), so, mit gelöstem Gürtelʼ; 381; 97/63;"
           }
         ],
         "Part. Pass.": [
@@ -629,7 +671,7 @@
           {
             "turoyo": "me-tamo mšareli kṯuli a=kṯowe d-a=ṣlawoṯe d-i=ʕito yaʕni fanqiyoṯe w-ḥusoye w-a=kṯowe ḥrene xd-u=ʕmoḏo w-d-u=beroxo w-d-u=lewoyo w-mgalyune ИНФОРМАНТ ЗНАКОМ С КСЯ",
             "translations": [
-              "‘From there I began to copy ecclesiastical prayer books that are the Psalms, prayer books and other books such as books on christening, wedding, funeral ceremonies, and the Gospel’"
+              "From there I began to copy ecclesiastical prayer books that are the Psalms, prayer books and other books such as books on christening, wedding, funeral ceremonies, and the Gospel"
             ],
             "references": ["37/14"],
             "tokens": [

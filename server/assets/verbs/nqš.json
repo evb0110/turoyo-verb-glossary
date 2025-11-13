@@ -70,12 +70,11 @@
       "conjugations": {
         "Part. Pass.": [
           {
-            "turoyo": "u=qṭoro d-u=bayt-ayḏan kule mzayno w-nqíšo-we k-ḥoze xort šafiro ʕayne kome nqiše Kǝtli ǧulo kule mnaqšo yo ban naqšat šafire.",
+            "turoyo": "u=qṭoro d-u=bayt-ayḏan kule mzayno w-nqíšo-we",
             "translations": [
-              "die Decke in unserem Hause war ganz mit Zierat und Malerei bemalt",
-              "‘Er sieht plötzlich einen schönen Jüngling, die Augen schwarz, [wie] geschminkt’"
+              "die Decke in unserem Hause war ganz mit Zierat und Malerei bemalt"
             ],
-            "references": ["208", "1/22", "29/308"],
+            "references": ["208", "1/22"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -112,7 +111,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "u=qṭoro d-u=bayt-ayḏan kule mzayno w-nqíšo-we ʻdie Decke in unserem Hause war ganz mit Zierat und Malerei bemaltʼ; 208; 1/22;"
+          },
+          {
+            "turoyo": "k-ḥoze xort šafiro ʕayne kome nqiše Kǝtli ǧulo kule mnaqšo yo ban naqšat šafire.",
+            "translations": [
+              "‘Er sieht plötzlich einen schönen Jüngling, die Augen schwarz, [wie] geschminkt’"
+            ],
+            "references": ["29/308"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " k-ḥoze xort šafiro"
@@ -154,7 +163,7 @@
                 "value": "   Kǝtli ǧulo kule mnaqšo yo ban naqšat šafire."
               }
             ],
-            "text": "u=qṭoro d-u=bayt-ayḏan kule mzayno w-nqíšo-we ʻdie Decke in unserem Hause war ganz mit Zierat und Malerei bemaltʼ; 208; 1/22; k-ḥoze xort šafiro, ʕayne kome, nqiše ‘Er sieht plötzlich einen schönen Jüngling, die Augen schwarz, [wie] geschminkt’; 29/308 Kǝtli ǧulo kule mnaqšo yo ban naqšat šafire."
+            "text": "k-ḥoze xort šafiro, ʕayne kome, nqiše ‘Er sieht plötzlich einen schönen Jüngling, die Augen schwarz, [wie] geschminkt’; 29/308 Kǝtli ǧulo kule mnaqšo yo ban naqšat šafire."
           },
           {
             "turoyo": "I have a dress which is all painted with beautiful drawings. İlyas p.c I ʕitayḏan di qriṯo kula mnaqašto yo ban naqšat ʕatiqe.Our church in the village is all painted with all paintings. İlyas p.c",
@@ -195,22 +204,11 @@
               }
             ],
             "text": "I have a dress which is all painted with beautiful drawings. (İlyas p.c) I ʕitayḏan di qriṯo kula mnaqašto yo ban naqšat ʕatiqe.Our church in the village is all painted with all paintings. (İlyas p.c)"
-          }
-        ]
-      }
-    },
-    {
-      "stem": "II",
-      "forms": ["mnaqašle", "mnaqəš"],
-      "conjugations": {
-        "Part. Pass.": [
+          },
           {
-            "turoyo": "mnaqašto kula ḥaṣa gawə-d-ab=bote b-ak=kefe mnaqše mzáyno-yo",
-            "translations": [
-              "ihr (der Schlange) ganzer Rücken war gezeichnet",
-              "‘das Innere der Häuser ist mit schön behauenen Steinen geschmückt’"
-            ],
-            "references": ["208", "116/21", "11/18"],
+            "turoyo": "mnaqašto kula ḥaṣa",
+            "translations": ["ihr (der Schlange) ganzer Rücken war gezeichnet"],
+            "references": ["208", "116/21"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -247,7 +245,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mnaqašto kula ḥaṣa ʻihr (der Schlange) ganzer Rücken war gezeichnetʼ; 208; 116/21;"
+          },
+          {
+            "turoyo": "gawə-d-ab=bote b-ak=kefe mnaqše mzáyno-yo",
+            "translations": [
+              "‘das Innere der Häuser ist mit schön behauenen Steinen geschmückt’"
+            ],
+            "references": ["11/18"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " gawə-d-ab=bote b-ak=kefe mnaqše mzáyno-yo "
@@ -273,7 +281,7 @@
                 "value": ";"
               }
             ],
-            "text": "mnaqašto kula ḥaṣa ʻihr (der Schlange) ganzer Rücken war gezeichnetʼ; 208; 116/21; gawə-d-ab=bote b-ak=kefe mnaqše mzáyno-yo ‘das Innere der Häuser ist mit schön behauenen Steinen geschmückt’; 11/18;"
+            "text": "gawə-d-ab=bote b-ak=kefe mnaqše mzáyno-yo ‘das Innere der Häuser ist mit schön behauenen Steinen geschmückt’; 11/18;"
           }
         ],
         "Infinitiv": [
@@ -333,6 +341,11 @@
           }
         ]
       }
+    },
+    {
+      "stem": "II",
+      "forms": ["mnaqašle", "mnaqəš"],
+      "conjugations": {}
     }
   ],
   "idioms": ["sticken, bemalen, schminken;", "schmücken, verzieren;"],

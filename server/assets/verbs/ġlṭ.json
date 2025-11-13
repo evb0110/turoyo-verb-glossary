@@ -18,12 +18,11 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "ayna d-maḥatle əšma i=Šəmšo d-u=Ṣahro lə=ġaləṭ ko-mabahro xd-i=šəmšo d-u=ṣahro u=mede d-ubʕat gəd-obéno-lux šart d-msamḥat-li! liʔanno ġaləṭno b-ḥaq diḏux",
+            "turoyo": "ayna d-maḥatle əšma i=Šəmšo d-u=Ṣahro lə=ġaləṭ ko-mabahro xd-i=šəmšo d-u=ṣahro",
             "translations": [
-              "der, welcher sie Mondscheinchen genannt hatte, hatte keinen Fehler begangen. Sie leuchtet wie der Mondschein",
-              "‘I will give you whatever you want on condition that you will forgive me. Since I was mistaken in you’"
+              "der, welcher sie Mondscheinchen genannt hatte, hatte keinen Fehler begangen. Sie leuchtet wie der Mondschein"
             ],
-            "references": ["87", "115/128", "36/144"],
+            "references": ["87", "115/128"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -76,7 +75,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ayna d-maḥatle əšma i=Šəmšo d-u=Ṣahro, lə=ġaləṭ, ko-mabahro xd-i=šəmšo d-u=ṣahro ʻder, welcher sie Mondscheinchen genannt hatte, hatte keinen Fehler begangen. Sie leuchtet wie der Mondscheinʼ; 87; 115/128;"
+          },
+          {
+            "turoyo": "u=mede d-ubʕat gəd-obéno-lux šart d-msamḥat-li! liʔanno ġaləṭno b-ḥaq diḏux",
+            "translations": [
+              "‘I will give you whatever you want on condition that you will forgive me. Since I was mistaken in you’"
+            ],
+            "references": ["36/144"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " u=mede d-ubʕat"
@@ -114,7 +123,7 @@
                 "value": "36/144"
               }
             ],
-            "text": "ayna d-maḥatle əšma i=Šəmšo d-u=Ṣahro, lə=ġaləṭ, ko-mabahro xd-i=šəmšo d-u=ṣahro ʻder, welcher sie Mondscheinchen genannt hatte, hatte keinen Fehler begangen. Sie leuchtet wie der Mondscheinʼ; 87; 115/128; u=mede d-ubʕat, gəd-obéno-lux, šart d-msamḥat-li! liʔanno ġaləṭno b-ḥaq diḏux ‘I will give you whatever you want on condition that you will forgive me. Since I was mistaken in you’; 36/144"
+            "text": "u=mede d-ubʕat, gəd-obéno-lux, šart d-msamḥat-li! liʔanno ġaləṭno b-ḥaq diḏux ‘I will give you whatever you want on condition that you will forgive me. Since I was mistaken in you’; 36/144"
           }
         ]
       }
@@ -253,7 +262,7 @@
           {
             "turoyo": "lo=k-əbʕi kəṯwi-li b-i=qawiše. yawmo mġaləṭ ḥa m-ay=yazičiye m-ak=kaṯowe kṯúle-li b-i=qawiše",
             "translations": [
-              "‘They (other soldiers) did not want me to be assigned to the quarters. Once one of the scribes made a mistake and assigned me to the quarters’"
+              "They (other soldiers) did not want me to be assigned to the quarters. Once one of the scribes made a mistake and assigned me to the quarters"
             ],
             "references": ["JL 19.6.26"],
             "tokens": [
@@ -414,13 +423,7 @@
             ],
             "text": "kət-la l-i=ḥammāmčiye ḥmoro, k-miġalṭi bə-ḥḏoḏe ʻnun hatte die Badefrau auch einen Esel, (ganz von der Art jenes); die beiden waren zum Verwechseln ähnlichʼ; 174; prs 236/16;"
           }
-        ]
-      }
-    },
-    {
-      "stem": "II",
-      "forms": ["mġamamle", "mġaməm"],
-      "conjugations": {
+        ],
         "Part. Pass.": [
           {
             "turoyo": "aṯi mġammo l-u=bayto",
@@ -488,6 +491,11 @@
           }
         ]
       }
+    },
+    {
+      "stem": "II",
+      "forms": ["mġamamle", "mġaməm"],
+      "conjugations": {}
     }
   ],
   "idioms": [

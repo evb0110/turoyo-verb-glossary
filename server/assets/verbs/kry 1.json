@@ -18,13 +18,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ġắlabe karyóle-yo l-Kalaš ʕAli d-məlla u=xabr-awo ġắlabe aṯi aʕle zaḥme ġắlabe karyóla-yo ʕal i=səsto d-u=babo ġắlabe karyóle-yo l-u=dahba w ġắlabe qḥīr w mede foqəlḥad aṯi aʕle zaḥme",
+            "turoyo": "ġắlabe karyóle-yo l-Kalaš ʕAli d-məlla u=xabr-awo ġắlabe aṯi aʕle zaḥme",
             "translations": [
-              "Kalasch ʕAli wurde sehr ärgerlich, als sie das sagte; es kam ihn sehr hart an",
-              "das mit der Stute ihres Vaters missfiel dem Mädchen gar sehr",
-              "darüber ärgerte sich das Untier sehr; es wurde wütend und es kam es sehr hart an"
+              "Kalasch ʕAli wurde sehr ärgerlich, als sie das sagte; es kam ihn sehr hart an"
             ],
-            "references": ["2", "430", "112/250", "107/121", "112/331"],
+            "references": ["2", "430", "112/250"],
             "tokens": [
               {
                 "kind": "ref",
@@ -77,7 +75,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "2) ġắlabe karyóle-yo l-Kalaš ʕAli d-məlla u=xabr-awo, ġắlabe aṯi aʕle zaḥme ʻKalasch ʕAli wurde sehr ärgerlich, als sie das sagte; es kam ihn sehr hart anʼ; 430; 112/250;"
+          },
+          {
+            "turoyo": "ġắlabe karyóla-yo ʕal i=səsto d-u=babo",
+            "translations": [
+              "das mit der Stute ihres Vaters missfiel dem Mädchen gar sehr"
+            ],
+            "references": ["107/121"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ġắlabe karyóla-yo ʕal i=səsto d-u=babo "
@@ -101,7 +109,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ġắlabe karyóla-yo ʕal i=səsto d-u=babo ʻdas mit der Stute ihres Vaters missfiel dem Mädchen gar sehrʼ; 107/121;"
+          },
+          {
+            "turoyo": "ġắlabe karyóle-yo l-u=dahba w ġắlabe qḥīr w mede foqəlḥad aṯi aʕle zaḥme",
+            "translations": [
+              "darüber ärgerte sich das Untier sehr; es wurde wütend und es kam es sehr hart an"
+            ],
+            "references": ["112/331"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ġắlabe karyóle-yo l-u=dahba"
@@ -143,7 +161,7 @@
                 "value": ";"
               }
             ],
-            "text": "2) ġắlabe karyóle-yo l-Kalaš ʕAli d-məlla u=xabr-awo, ġắlabe aṯi aʕle zaḥme ʻKalasch ʕAli wurde sehr ärgerlich, als sie das sagte; es kam ihn sehr hart anʼ; 430; 112/250; ġắlabe karyóla-yo ʕal i=səsto d-u=babo ʻdas mit der Stute ihres Vaters missfiel dem Mädchen gar sehrʼ; 107/121; ġắlabe karyóle-yo l-u=dahba, w ġắlabe qḥīr, w mede foqəlḥad aṯi aʕle zaḥme ʻdarüber ärgerte sich das Untier sehr; es wurde wütend und es kam es sehr hart anʼ; 112/331;"
+            "text": "ġắlabe karyóle-yo l-u=dahba, w ġắlabe qḥīr, w mede foqəlḥad aṯi aʕle zaḥme ʻdarüber ärgerte sich das Untier sehr; es wurde wütend und es kam es sehr hart anʼ; 112/331;"
           }
         ]
       }
@@ -202,7 +220,7 @@
         ],
         "Imperativ": [
           {
-            "turoyo": "makrí lišonux В идиомы?",
+            "turoyo": "makrí lišonux",
             "translations": ["halt's Maul"],
             "references": ["430"],
             "tokens": [
@@ -229,13 +247,21 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "makrí lišonux ʻhalt's Maulʼ; 430;"
+          },
+          {
+            "turoyo": "В идиомы?",
+            "translations": [],
+            "references": [],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " В идиомы?"
               }
             ],
-            "text": "makrí lišonux ʻhalt's Maulʼ; 430; В идиомы?"
+            "text": "В идиомы?"
           }
         ]
       }

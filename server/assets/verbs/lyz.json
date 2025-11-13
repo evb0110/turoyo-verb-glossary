@@ -96,13 +96,11 @@
         ],
         "Infectum": [
           {
-            "turoyo": "hāāwk-yo d-kət-yo bəṯre flān baġalṯo ko-qoləʕ eba ko-maləz háwo-yo! lə=malizat edi malizat-ste ġamo layt",
+            "turoyo": "hāāwk-yo d-kət-yo bəṯre flān baġalṯo ko-qoləʕ eba ko-maləz háwo-yo!",
             "translations": [
-              "da! Der dort ist es. Der, welcher hinter dem und dem Maultier hergeht und es eilig antreibt, der ist es!",
-              "sprich nicht so schnell",
-              "wenn du dann ein bischen schneller machst, so schadet das nichts"
+              "da! Der dort ist es. Der, welcher hinter dem und dem Maultier hergeht und es eilig antreibt, der ist es!"
             ],
-            "references": ["545", "77/192", "547", "547", "69/317"],
+            "references": ["545", "77/192"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -163,7 +161,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "hāāwk-yo; d-kət-yo bəṯre flān baġalṯo, ko-qoləʕ eba ko-maləz, háwo-yo! ʻda! Der dort ist es. Der, welcher hinter dem und dem Maultier hergeht und es eilig antreibt, der ist es!ʼ; 545; 77/192;"
+          },
+          {
+            "turoyo": "lə=malizat",
+            "translations": ["sprich nicht so schnell"],
+            "references": ["547"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " lə=malizat "
@@ -187,7 +193,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "lə=malizat ʻsprich nicht so schnellʼ; 547;"
+          },
+          {
+            "turoyo": "edi malizat-ste ġamo layt",
+            "translations": [
+              "wenn du dann ein bischen schneller machst, so schadet das nichts"
+            ],
+            "references": ["547", "69/317"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " edi malizat-ste ġamo layt "
@@ -225,7 +241,7 @@
                 "value": ";"
               }
             ],
-            "text": "hāāwk-yo; d-kət-yo bəṯre flān baġalṯo, ko-qoləʕ eba ko-maləz, háwo-yo! ʻda! Der dort ist es. Der, welcher hinter dem und dem Maultier hergeht und es eilig antreibt, der ist es!ʼ; 545; 77/192; lə=malizat ʻsprich nicht so schnellʼ; 547; edi malizat-ste ġamo layt ʻwenn du dann ein bischen schneller machst, so schadet das nichtsʼ; 547; 69/317;"
+            "text": "edi malizat-ste ġamo layt ʻwenn du dann ein bischen schneller machst, so schadet das nichtsʼ; 547; 69/317;"
           }
         ]
       }

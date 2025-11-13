@@ -13,22 +13,14 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
-      "forms": ["rʕīm", "mərʕəm"],
-      "conjugations": {}
-    },
-    {
       "stem": "Detransitive",
-      "forms": [],
+      "forms": ["rʕīm", "mərʕəm"],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "rʕīm harke šəšwone briṯo b-u=aṯr-ano rʕimo aʕlux",
-            "translations": [
-              "hier wimmelt es von Ameisen",
-              "‘die ganze Welt hat sich in dieser Region deinetwegen versammelt’"
-            ],
-            "references": ["125", "LB 255"],
+            "turoyo": "rʕīm harke šəšwone",
+            "translations": ["hier wimmelt es von Ameisen"],
+            "references": ["125"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -53,7 +45,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "rʕīm harke šəšwone ʻhier wimmelt es von Ameisenʼ; 125;"
+          },
+          {
+            "turoyo": "briṯo b-u=aṯr-ano rʕimo aʕlux",
+            "translations": [
+              "‘die ganze Welt hat sich in dieser Region deinetwegen versammelt’"
+            ],
+            "references": ["LB 255"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " briṯo b-u=aṯr-ano rʕimo aʕlux "
@@ -75,7 +77,7 @@
                 "value": ";"
               }
             ],
-            "text": "rʕīm harke šəšwone ʻhier wimmelt es von Ameisenʼ; 125; briṯo b-u=aṯr-ano rʕimo aʕlux ‘die ganze Welt hat sich in dieser Region deinetwegen versammelt’ LB 255;"
+            "text": "briṯo b-u=aṯr-ano rʕimo aʕlux ‘die ganze Welt hat sich in dieser Region deinetwegen versammelt’ LB 255;"
           }
         ],
         "Part. Pass.": [
@@ -115,6 +117,6 @@
       }
     }
   ],
-  "idioms": ["(Detrans.) wimmeln, voll sein;"],
+  "idioms": null,
   "uncertain": false
 }

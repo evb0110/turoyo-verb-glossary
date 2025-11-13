@@ -3,7 +3,7 @@
   "etymology": {
     "etymons": [
       {
-        "raw": "prčq cf. Kurd. p’erçiqandin vt. (-p’erçiq-). 1"
+        "raw": "prčq cf. Kurd. p’erçiqandin vt. (-p’erçiq-). 1) to crush, press, smash, squash, KED 107"
       }
     ]
   },
@@ -161,12 +161,11 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "aloho k-mastər aʕle d-lo=k-mupčəq m-ad=diyarat prs zbəṭla riši ḥa mḥéle-li daḥfe yani d-riši lə=məpčəq",
+            "turoyo": "aloho k-mastər aʕle d-lo=k-mupčəq m-ad=diyarat prs",
             "translations": [
-              "Gott beschützt es (das männliche Glied m), dass es nicht von den Bergen zerquetscht wird",
-              "‘sie (die Steinplatte) drückte auf meinen Kopf, da gab mir einer einen Schubs, damit mein Kopf nicht zerdrückt würde’"
+              "Gott beschützt es (das männliche Glied m), dass es nicht von den Bergen zerquetscht wird"
             ],
-            "references": ["227", "255/22", "LB 78"],
+            "references": ["227", "255/22"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -203,7 +202,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "aloho k-mastər aʕle d-lo=k-mupčəq m-ad=diyarat ʻGott beschützt es (das männliche Glied m), dass es nicht von den Bergen zerquetscht wirdʼ; 227; prs 255/22;"
+          },
+          {
+            "turoyo": "zbəṭla riši ḥa mḥéle-li daḥfe yani d-riši lə=məpčəq",
+            "translations": [
+              "‘sie (die Steinplatte) drückte auf meinen Kopf, da gab mir einer einen Schubs, damit mein Kopf nicht zerdrückt würde’"
+            ],
+            "references": ["LB 78"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " zbəṭla riši"
@@ -245,7 +254,7 @@
                 "value": ";"
               }
             ],
-            "text": "aloho k-mastər aʕle d-lo=k-mupčəq m-ad=diyarat ʻGott beschützt es (das männliche Glied m), dass es nicht von den Bergen zerquetscht wirdʼ; 227; prs 255/22; zbəṭla riši, ḥa mḥéle-li daḥfe, yani d-riši lə=məpčəq ‘sie (die Steinplatte) drückte auf meinen Kopf, da gab mir einer einen Schubs, damit mein Kopf nicht zerdrückt würde’; LB 78;"
+            "text": "zbəṭla riši, ḥa mḥéle-li daḥfe, yani d-riši lə=məpčəq ‘sie (die Steinplatte) drückte auf meinen Kopf, da gab mir einer einen Schubs, damit mein Kopf nicht zerdrückt würde’; LB 78;"
           }
         ]
       }
@@ -256,7 +265,7 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mpačaqle Why tröpfeln?",
+            "turoyo": "mpačaqle",
             "translations": ["es fing an zu tröpfeln"],
             "references": ["227"],
             "tokens": [
@@ -283,13 +292,21 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mpačaqle ʻes fing an zu tröpfelnʼ; 227;"
+          },
+          {
+            "turoyo": "Why tröpfeln?",
+            "translations": [],
+            "references": [],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " Why tröpfeln?"
               }
             ],
-            "text": "mpačaqle ʻes fing an zu tröpfelnʼ; 227; Why tröpfeln?"
+            "text": "Why tröpfeln?"
           }
         ]
       }

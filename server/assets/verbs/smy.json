@@ -18,23 +18,12 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "sami u=ǧənnawi prs u=babo w-i=emo a=tre samən b-ayo d-kət-wayye sowe ḥakime-ze … b-a=qriyawoṯ-anək layt sami u=zʕuro w-yatu yatu qm-u=tarʕo aṯyo i=sawto ko-ḥayro mə=ḥayro ʕayna samən həngi layba ḥayro b-ak=kef-anək həngi ko-mabarqi",
+            "turoyo": "sami u=ǧənnawi prs u=babo w-i=emo a=tre samən b-ayo d-kət-wayye sowe",
             "translations": [
               "der Dämon wurde blind",
-              "‘Der Vater und die Mutter waren erblindet, weil sie so alt waren’",
-              "‘There were no healers in the villages. And the boy became blind and sat. He sat in front of the door.’",
-              "‘The old woman came and looked, and what did she see? Her eyes went blind. She could not look at these (precious) stone, they were shining too much’"
+              "‘Der Vater und die Mutter waren erblindet, weil sie so alt waren’"
             ],
-            "references": [
-              "348",
-              "158/32",
-              "57/9",
-              "20",
-              "70/200",
-              "24/245",
-              "76/144",
-              "77/175"
-            ],
+            "references": ["348", "158/32", "57/9", "20", "70/200", "24/245"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -139,7 +128,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "sami u=ǧənnawi ʻder Dämon wurde blindʼ; 348; prs 158/32; 57/9, 20; 70/200; u=babo w-i=emo a=tre samən, b-ayo d-kət-wayye sowe ‘Der Vater und die Mutter waren erblindet, weil sie so alt waren’; 24/245;"
+          },
+          {
+            "turoyo": "ḥakime-ze … b-a=qriyawoṯ-anək layt sami u=zʕuro w-yatu yatu qm-u=tarʕo aṯyo i=sawto ko-ḥayro mə=ḥayro ʕayna samən həngi layba ḥayro b-ak=kef-anək həngi ko-mabarqi",
+            "translations": [
+              "‘There were no healers in the villages. And the boy became blind and sat. He sat in front of the door.’",
+              "‘The old woman came and looked, and what did she see? Her eyes went blind. She could not look at these (precious) stone, they were shining too much’"
+            ],
+            "references": ["76/144", "77/175"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ḥakime-ze "
@@ -197,18 +197,16 @@
                 "value": ";"
               }
             ],
-            "text": "sami u=ǧənnawi ʻder Dämon wurde blindʼ; 348; prs 158/32; 57/9, 20; 70/200; u=babo w-i=emo a=tre samən, b-ayo d-kət-wayye sowe ‘Der Vater und die Mutter waren erblindet, weil sie so alt waren’; 24/245; ḥakime-ze (…) b-a=qriyawoṯ-anək layt sami u=zʕuro w-yatu yatu qm-u=tarʕo ‘There were no healers in the villages. And the boy became blind and sat. He sat in front of the door.’ 76/144; aṯyo i=sawto ko-ḥayro mə=ḥayro ʕayna samən həngi layba ḥayro b-ak=kef-anək həngi ko-mabarqi ‘The old woman came and looked, and what did she see? Her eyes went blind. She could not look at these (precious) stone, they were shining too much’ 77/175;"
+            "text": "ḥakime-ze (…) b-a=qriyawoṯ-anək layt sami u=zʕuro w-yatu yatu qm-u=tarʕo ‘There were no healers in the villages. And the boy became blind and sat. He sat in front of the door.’ 76/144; aṯyo i=sawto ko-ḥayro mə=ḥayro ʕayna samən həngi layba ḥayro b-ak=kef-anək həngi ko-mabarqi ‘The old woman came and looked, and what did she see? Her eyes went blind. She could not look at these (precious) stone, they were shining too much’ 77/175;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "hən m-a=nsanat m-awwəl d-k-owən yaʕni mə-gawə-d d-i=emaṯṯe sámye-ne hən minayye-ste bəṯṯər k-somən sumeno w-lu=ḥuzeno i=ʕəbr-aṯe! me d-xile i=qaliyo tayimo k-some",
+            "turoyo": "hən m-a=nsanat m-awwəl d-k-owən yaʕni mə-gawə-d d-i=emaṯṯe sámye-ne hən minayye-ste bəṯṯər k-somən",
             "translations": [
-              "‘manche Menschen sind von Geburt an, das heisst vom Mutterleibe an, blind; manche von ihnen erblinden erst später’",
-              "‘Würde ich doch erblinden und nicht diesen Greuel sehen!’",
-              "‘When he eats the cooked meat he will become blind’"
+              "‘manche Menschen sind von Geburt an, das heisst vom Mutterleibe an, blind; manche von ihnen erblinden erst später’"
             ],
-            "references": ["3/24", "30/94", "76/125"],
+            "references": ["3/24"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -257,7 +255,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "hən m-a=nsanat m-awwəl d-k-owən, yaʕni mə-gawə-d, d-i=emaṯṯe sámye-ne, hən minayye-ste bəṯṯər k-somən ‘manche Menschen sind von Geburt an, das heisst vom Mutterleibe an, blind; manche von ihnen erblinden erst später’; 3/24;"
+          },
+          {
+            "turoyo": "sumeno w-lu=ḥuzeno i=ʕəbr-aṯe!",
+            "translations": [
+              "‘Würde ich doch erblinden und nicht diesen Greuel sehen!’"
+            ],
+            "references": ["30/94"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " sumeno w-lu=ḥuzeno i=ʕəbr-aṯe! "
@@ -281,7 +289,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "sumeno w-lu=ḥuzeno i=ʕəbr-aṯe! ‘Würde ich doch erblinden und nicht diesen Greuel sehen!’; 30/94;"
+          },
+          {
+            "turoyo": "me d-xile i=qaliyo tayimo k-some",
+            "translations": [
+              "‘When he eats the cooked meat he will become blind’"
+            ],
+            "references": ["76/125"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " me d-xile i=qaliyo tayimo k-some "
@@ -303,7 +321,7 @@
                 "value": ";"
               }
             ],
-            "text": "hən m-a=nsanat m-awwəl d-k-owən, yaʕni mə-gawə-d, d-i=emaṯṯe sámye-ne, hən minayye-ste bəṯṯər k-somən ‘manche Menschen sind von Geburt an, das heisst vom Mutterleibe an, blind; manche von ihnen erblinden erst später’; 3/24; sumeno w-lu=ḥuzeno i=ʕəbr-aṯe! ‘Würde ich doch erblinden und nicht diesen Greuel sehen!’; 30/94; me d-xile i=qaliyo tayimo k-some ‘When he eats the cooked meat he will become blind’ 76/125;"
+            "text": "me d-xile i=qaliyo tayimo k-some ‘When he eats the cooked meat he will become blind’ 76/125;"
           }
         ]
       }
@@ -314,12 +332,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "háṯe-yo d-masmela babi azzoxu mṣadafxu ḥəzyalxu w ela masméla-lux",
+            "turoyo": "háṯe-yo d-masmela babi",
             "translations": [
-              "diese ist es, die meinen Vater blind gemacht hat",
-              "ihr habt sie zufällig getroffen und gesehen, und sie hat dich blind gemacht"
+              "diese ist es, die meinen Vater blind gemacht hat"
             ],
-            "references": ["385", "57/132", "57/28"],
+            "references": ["385", "57/132"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -356,7 +373,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "háṯe-yo d-masmela babi ʻdiese ist es, die meinen Vater blind gemacht hatʼ; 385; 57/132;"
+          },
+          {
+            "turoyo": "azzoxu mṣadafxu ḥəzyalxu w ela masméla-lux",
+            "translations": [
+              "ihr habt sie zufällig getroffen und gesehen, und sie hat dich blind gemacht"
+            ],
+            "references": ["57/28"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " azzoxu mṣadafxu ḥəzyalxu"
@@ -390,7 +417,7 @@
                 "value": ";"
               }
             ],
-            "text": "háṯe-yo d-masmela babi ʻdiese ist es, die meinen Vater blind gemacht hatʼ; 385; 57/132; azzoxu mṣadafxu ḥəzyalxu, w ela masméla-lux ʻihr habt sie zufällig getroffen und gesehen, und sie hat dich blind gemachtʼ; 57/28;"
+            "text": "azzoxu mṣadafxu ḥəzyalxu, w ela masméla-lux ʻihr habt sie zufällig getroffen und gesehen, und sie hat dich blind gemachtʼ; 57/28;"
           }
         ],
         "Infectum": [

@@ -20,7 +20,7 @@
           {
             "turoyo": "ʕaǧab ʕuǧabno qay kul lalyo lə=g-mhalhilítul-li ġálabe ádyawma kə=mhalhilítul-li ġálabe?",
             "translations": [
-              "‘Ich möchte wissen, warum ihr mir sonst am abend nie viel entgegentrillert, heute aber so viel!’"
+              "Ich möchte wissen, warum ihr mir sonst am abend nie viel entgegentrillert, heute aber so viel!"
             ],
             "references": ["29/277"],
             "tokens": [
@@ -136,7 +136,7 @@
           {
             "turoyo": "mʕaǧabbe mene m-u=sabab d-kət-wo b-u=galdo d-u=taʕlo",
             "translations": [
-              "‘Sie wunderten sich über ihn; denn er hatte ja erst das Fuchsfell aufgehabt’"
+              "Sie wunderten sich über ihn; denn er hatte ja erst das Fuchsfell aufgehabt"
             ],
             "references": ["2", "29/491"],
             "tokens": [
@@ -218,11 +218,10 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ḥluwwe ḥalwo mena səmme qaṭiro mšayaʕʕe l-u=šulṭono. ḥəlle aʕle l-u=šulṭono mʕaǧəb prs prs bəṯṯər məd-l-u=šulṭono ḥzele i=waṯiq-ayo u=muhr-awo mʕaǧəb mene ʕaǧayəb mʕaǧbo aydarbo-yo haṯe?",
+            "turoyo": "ḥluwwe ḥalwo mena səmme qaṭiro mšayaʕʕe l-u=šulṭono. ḥəlle aʕle l-u=šulṭono mʕaǧəb prs prs bəṯṯər məd-l-u=šulṭono ḥzele i=waṯiq-ayo u=muhr-awo mʕaǧəb mene",
             "translations": [
               "sie melkten sie (die Stute) und liessen die Milch dick werden. Diese dicke Milch schickten sie dem Sultan. Er besah sie und geriet in Erstaunen",
-              "‘Als der Sultan diese Urkunde und das Siegel sah, wunderte er sich über ihn’",
-              "‘Sie wunderte sich höchlichst: wie kann das sein?’"
+              "‘Als der Sultan diese Urkunde und das Siegel sah, wunderte er sich über ihn’"
             ],
             "references": [
               "172",
@@ -231,8 +230,7 @@
               "110/7",
               "36/60",
               "135",
-              "27/63",
-              "29/455"
+              "27/63"
             ],
             "tokens": [
               {
@@ -374,7 +372,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ḥluwwe ḥalwo mena, səmme qaṭiro, mšayaʕʕe l-u=šulṭono. ḥəlle aʕle l-u=šulṭono, mʕaǧəb ʻsie melkten sie (die Stute) und liessen die Milch dick werden. Diese dicke Milch schickten sie dem Sultan. Er besah sie und geriet in Erstaunenʼ; 172; prs 90/7, 22; prs 110/7; 36/60, 135; bəṯṯər məd-l-u=šulṭono ḥzele i=waṯiq-ayo u=muhr-awo, mʕaǧəb mene ‘Als der Sultan diese Urkunde und das Siegel sah, wunderte er sich über ihn’; 27/63;"
+          },
+          {
+            "turoyo": "ʕaǧayəb mʕaǧbo aydarbo-yo haṯe?",
+            "translations": [
+              "‘Sie wunderte sich höchlichst: wie kann das sein?’"
+            ],
+            "references": ["29/455"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ʕaǧayəb mʕaǧbo aydarbo-yo haṯe? "
@@ -396,7 +404,7 @@
                 "value": "29/455"
               }
             ],
-            "text": "ḥluwwe ḥalwo mena, səmme qaṭiro, mšayaʕʕe l-u=šulṭono. ḥəlle aʕle l-u=šulṭono, mʕaǧəb ʻsie melkten sie (die Stute) und liessen die Milch dick werden. Diese dicke Milch schickten sie dem Sultan. Er besah sie und geriet in Erstaunenʼ; 172; prs 90/7, 22; prs 110/7; 36/60, 135; bəṯṯər məd-l-u=šulṭono ḥzele i=waṯiq-ayo u=muhr-awo, mʕaǧəb mene ‘Als der Sultan diese Urkunde und das Siegel sah, wunderte er sich über ihn’; 27/63; ʕaǧayəb mʕaǧbo aydarbo-yo haṯe? ‘Sie wunderte sich höchlichst: wie kann das sein?’; 29/455"
+            "text": "ʕaǧayəb mʕaǧbo aydarbo-yo haṯe? ‘Sie wunderte sich höchlichst: wie kann das sein?’; 29/455"
           }
         ],
         "Infectum": [
@@ -596,7 +604,13 @@
             "text": "mʕadele u=šṭərənǧ-awo, w aṯi u=qaḥwači lqule k-omər fayəš mʕaǧbo w mdawmro mene ʻer stellte das Schachspiel auf, und als der Kaffeewirt es ansah, kam er aus dem Staunen nicht herausʼ; 175; 104/13, 115;"
           }
         ]
-      }
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "sich wundern"
+        }
+      ]
     },
     {
       "stem": "III",
@@ -604,7 +618,7 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ḥəlla ebe kayso maʕǧabla prs Очень странная грамматика",
+            "turoyo": "ḥəlla ebe kayso maʕǧabla prs",
             "translations": [
               "sie sah, dass er schön war, und er gefiel ihr wohl"
             ],
@@ -653,13 +667,21 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ḥəlla ebe kayso, maʕǧabla ʻsie sah, dass er schön war, und er gefiel ihr wohlʼ; 137; prs 71/37;"
+          },
+          {
+            "turoyo": "Очень странная грамматика",
+            "translations": [],
+            "references": [],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " Очень странная грамматика"
               }
             ],
-            "text": "ḥəlla ebe kayso, maʕǧabla ʻsie sah, dass er schön war, und er gefiel ihr wohlʼ; 137; prs 71/37; Очень странная грамматика"
+            "text": "Очень странная грамматика"
           }
         ],
         "Infectum": [

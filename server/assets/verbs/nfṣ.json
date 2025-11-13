@@ -18,12 +18,9 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "nfəṣle u=taxt l-tamho prs i=naqla d-qayəm nfəṣle u=kurk diḏe",
-            "translations": [
-              "er stiess das Bett weg",
-              "‘Als er aufstand, schüttelte er seinen Pelz’"
-            ],
-            "references": ["186", "43/23", "28/105"],
+            "turoyo": "nfəṣle u=taxt l-tamho prs",
+            "translations": ["er stiess das Bett weg"],
+            "references": ["186", "43/23"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -60,7 +57,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "nfəṣle u=taxt l-tamho ʻer stiess das Bett wegʼ; 186; prs 43/23;"
+          },
+          {
+            "turoyo": "i=naqla d-qayəm nfəṣle u=kurk diḏe",
+            "translations": ["‘Als er aufstand, schüttelte er seinen Pelz’"],
+            "references": ["28/105"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " i=naqla d-qayəm"
@@ -90,7 +95,7 @@
                 "value": "28/105"
               }
             ],
-            "text": "nfəṣle u=taxt l-tamho ʻer stiess das Bett wegʼ; 186; prs 43/23; i=naqla d-qayəm, nfəṣle u=kurk diḏe ‘Als er aufstand, schüttelte er seinen Pelz’; 28/105"
+            "text": "i=naqla d-qayəm, nfəṣle u=kurk diḏe ‘Als er aufstand, schüttelte er seinen Pelz’; 28/105"
           }
         ]
       }

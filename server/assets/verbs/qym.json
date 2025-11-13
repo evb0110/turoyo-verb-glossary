@@ -18,12 +18,11 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "a qayəm Ḥasso w Čakko ġbini raxiwi ʕal as=səsye aṯən l-arke l-u=Šām prs u=ʕmiro ʕabər lo=qayəm me qume. qḥir u=ʕmiro ġắlabe",
+            "turoyo": "a qayəm Ḥasso w Čakko ġbini raxiwi ʕal as=səsye aṯən l-arke l-u=Šām prs",
             "translations": [
-              "Ḥasso und Tschakko standen grollend auf, stiegen zu Pferde und reisten hierher nach Damaskus",
-              "‘The emir entered (the castle, m.), and he (Mamo) did not stand up before him. (So) emir became very angry’"
+              "Ḥasso und Tschakko standen grollend auf, stiegen zu Pferde und reisten hierher nach Damaskus"
             ],
-            "references": ["1", "560", "5/13", "74/88"],
+            "references": ["1", "560", "5/13"],
             "tokens": [
               {
                 "kind": "ref",
@@ -92,7 +91,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) a) qayəm Ḥasso w Čakko ġbini, raxiwi ʕal as=səsye, aṯən l-arke l-u=Šām ʻḤasso und Tschakko standen grollend auf, stiegen zu Pferde und reisten hierher nach Damaskusʼ; 560; prs 5/13;"
+          },
+          {
+            "turoyo": "u=ʕmiro ʕabər lo=qayəm me qume. qḥir u=ʕmiro ġắlabe",
+            "translations": [
+              "‘The emir entered (the castle, m.), and he (Mamo) did not stand up before him. (So) emir became very angry’"
+            ],
+            "references": ["74/88"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " u=ʕmiro ʕabər lo=qayəm me qume. qḥir u=ʕmiro ġắlabe "
@@ -114,15 +123,14 @@
                 "value": ";"
               }
             ],
-            "text": "1) a) qayəm Ḥasso w Čakko ġbini, raxiwi ʕal as=səsye, aṯən l-arke l-u=Šām ʻḤasso und Tschakko standen grollend auf, stiegen zu Pferde und reisten hierher nach Damaskusʼ; 560; prs 5/13; u=ʕmiro ʕabər lo=qayəm me qume. qḥir u=ʕmiro ġắlabe ‘The emir entered (the castle, m.), and he (Mamo) did not stand up before him. (So) emir became very angry’ 74/88;"
+            "text": "u=ʕmiro ʕabər lo=qayəm me qume. qḥir u=ʕmiro ġắlabe ‘The emir entered (the castle, m.), and he (Mamo) did not stand up before him. (So) emir became very angry’ 74/88;"
           },
           {
-            "turoyo": "b hawi ṣafro qayəm u=rabo d-i=qriṯo k-ḥoyər ṭaṣe layt ṣafro qayimina",
+            "turoyo": "b hawi ṣafro qayəm u=rabo d-i=qriṯo k-ḥoyər ṭaṣe layt",
             "translations": [
-              "‘Es wurde Morgen. Der Dorfvorsteher stand auf. Er schaut: keine Schale ist da!’",
-              "‘am Morgen standen wir auf’"
+              "‘Es wurde Morgen. Der Dorfvorsteher stand auf. Er schaut: keine Schale ist da!’"
             ],
-            "references": ["25/27", "JL 19.6.20"],
+            "references": ["25/27"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -163,7 +171,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "b) hawi ṣafro qayəm u=rabo d-i=qriṯo k-ḥoyər: ṭaṣe layt ‘Es wurde Morgen. Der Dorfvorsteher stand auf. Er schaut: keine Schale ist da!’; 25/27;"
+          },
+          {
+            "turoyo": "ṣafro qayimina",
+            "translations": ["‘am Morgen standen wir auf’"],
+            "references": ["JL 19.6.20"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ṣafro qayimina "
@@ -189,12 +205,12 @@
                 "value": ";"
               }
             ],
-            "text": "b) hawi ṣafro qayəm u=rabo d-i=qriṯo k-ḥoyər: ṭaṣe layt ‘Es wurde Morgen. Der Dorfvorsteher stand auf. Er schaut: keine Schale ist da!’; 25/27; ṣafro qayimina ‘am Morgen standen wir auf’; JL 19.6.20;"
+            "text": "ṣafro qayimina ‘am Morgen standen wir auf’; JL 19.6.20;"
           },
           {
             "turoyo": "hawa mede qayəm bahozat mede qayəm",
             "translations": [
-              "‘Das ist ein Wind, ein Wirbelsturm, der sich erhoben hat’"
+              "Das ist ein Wind, ein Wirbelsturm, der sich erhoben hat"
             ],
             "references": ["30/90"],
             "tokens": [
@@ -231,7 +247,7 @@
           },
           {
             "turoyo": "u=toz qayəm l-i=šmayo",
-            "translations": ["‘The dust rose to the sky’"],
+            "translations": ["The dust rose to the sky"],
             "references": ["2", "73/88"],
             "tokens": [
               {
@@ -264,8 +280,8 @@
           {
             "turoyo": "a l=awi fəlge d-lalyo k-ḥoze aṭ=ṭavat qayimi hēš b-i=arʕo lo=qayəm ḥa xtoṯe ko-doyəq hawxa",
             "translations": [
-              "‘It was not the middle of the night (yet), (when) he saw that the the thunderclouds had appeared’",
-              "‘There has not yet emerged on the earth someone, who could play (the lute, f.) like he did’"
+              "It was not the middle of the night (yet), (when) he saw that the the thunderclouds had appeared",
+              "There has not yet emerged on the earth someone, who could play (the lute, f.) like he did"
             ],
             "references": ["3", "73/40", "73/129"],
             "tokens": [
@@ -338,7 +354,7 @@
           },
           {
             "turoyo": "b u=wariḏo d-bēn ʕayne d-u=zʕuro qayəm",
-            "translations": ["‘Die Stirnader des Jünglings war geschwollen’"],
+            "translations": ["Die Stirnader des Jünglings war geschwollen"],
             "references": ["29/94"],
             "tokens": [
               {
@@ -373,12 +389,11 @@
             "text": "b) u=wariḏo d-bēn ʕayne d-u=zʕuro qayəm ‘Die Stirnader des Jünglings war geschwollen’; 29/94"
           },
           {
-            "turoyo": "yatu qoḏ̣e. qayəm u=qoḏ̣e qamoyo maʕzəl prs ʕal u=asas-ano məttafaqqe qayimo i=ʕaskariye i=ʕaskar me-ʕal i=qriṯo",
+            "turoyo": "yatu qoḏ̣e. qayəm u=qoḏ̣e qamoyo maʕzəl prs",
             "translations": [
-              "er nahm den Richtersitz ein, und der frühere Richter war abgesetzt",
-              "‘Auf dieser Grundlage einigten sie sich, und die Truppen, die Soldaten, zogen von dem Dorfe ab’"
+              "er nahm den Richtersitz ein, und der frühere Richter war abgesetzt"
             ],
-            "references": ["4", "562", "179/27", "32/28"],
+            "references": ["4", "562", "179/27"],
             "tokens": [
               {
                 "kind": "ref",
@@ -423,7 +438,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "4) yatu qoḏ̣e. qayəm u=qoḏ̣e qamoyo maʕzəl ʻer nahm den Richtersitz ein, und der frühere Richter war abgesetztʼ; 562; prs 179/27;"
+          },
+          {
+            "turoyo": "ʕal u=asas-ano məttafaqqe qayimo i=ʕaskariye i=ʕaskar me-ʕal i=qriṯo",
+            "translations": [
+              "‘Auf dieser Grundlage einigten sie sich, und die Truppen, die Soldaten, zogen von dem Dorfe ab’"
+            ],
+            "references": ["32/28"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ʕal u=asas-ano məttafaqqe"
@@ -469,24 +494,14 @@
                 "value": "[MT]"
               }
             ],
-            "text": "4) yatu qoḏ̣e. qayəm u=qoḏ̣e qamoyo maʕzəl ʻer nahm den Richtersitz ein, und der frühere Richter war abgesetztʼ; 562; prs 179/27; ʕal u=asas-ano məttafaqqe, qayimo i=ʕaskariye, i=ʕaskar me-ʕal i=qriṯo ‘Auf dieser Grundlage einigten sie sich, und die Truppen, die Soldaten, zogen von dem Dorfe ab’; 32/28 [MT]"
+            "text": "ʕal u=asas-ano məttafaqqe, qayimo i=ʕaskariye, i=ʕaskar me-ʕal i=qriṯo ‘Auf dieser Grundlage einigten sie sich, und die Truppen, die Soldaten, zogen von dem Dorfe ab’; 32/28 [MT]"
           },
           {
-            "turoyo": "qām u=papuko azzé mədle l-i=tīr w kăvanayḏe w azzé l-i=zyara qayəm u=xuri mḥele l-u=naviyayḏe qayəmno me tamo mahzamli",
+            "turoyo": "qām u=papuko azzé mədle l-i=tīr w kăvanayḏe w azzé l-i=zyara",
             "translations": [
-              "da machte sich der arme Kerl auf, nahm seinen Pfeil und Bogen ung ging zum Friedhof",
-              "der Bischof schlug seinen Enkel",
-              "‘da lief ich von dort weg’"
+              "da machte sich der arme Kerl auf, nahm seinen Pfeil und Bogen ung ging zum Friedhof"
             ],
-            "references": [
-              "10",
-              "560",
-              "67/14",
-              "36",
-              "562",
-              "40/29",
-              "JL 14.8.7"
-            ],
+            "references": ["10", "560", "67/14", "36"],
             "tokens": [
               {
                 "kind": "ref",
@@ -543,7 +558,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "10) qām u=papuko azzé mədle l-i=tīr w kăvanayḏe w azzé l-i=zyara ʻda machte sich der arme Kerl auf, nahm seinen Pfeil und Bogen ung ging zum Friedhofʼ; 560; 67/14, 36;"
+          },
+          {
+            "turoyo": "qayəm u=xuri mḥele l-u=naviyayḏe",
+            "translations": ["der Bischof schlug seinen Enkel"],
+            "references": ["562", "40/29"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " qayəm u=xuri mḥele l-u=naviyayḏe "
@@ -579,7 +602,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "qayəm u=xuri mḥele l-u=naviyayḏe ʻder Bischof schlug seinen Enkelʼ; 562; 40/29;"
+          },
+          {
+            "turoyo": "qayəmno me tamo mahzamli",
+            "translations": ["‘da lief ich von dort weg’"],
+            "references": ["JL 14.8.7"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " qayəmno me tamo mahzamli "
@@ -605,7 +636,7 @@
                 "value": " "
               }
             ],
-            "text": "10) qām u=papuko azzé mədle l-i=tīr w kăvanayḏe w azzé l-i=zyara ʻda machte sich der arme Kerl auf, nahm seinen Pfeil und Bogen ung ging zum Friedhofʼ; 560; 67/14, 36; qayəm u=xuri mḥele l-u=naviyayḏe ʻder Bischof schlug seinen Enkelʼ; 562; 40/29; qayəmno me tamo mahzamli ‘da lief ich von dort weg’ JL 14.8.7;"
+            "text": "qayəmno me tamo mahzamli ‘da lief ich von dort weg’ JL 14.8.7;"
           },
           {
             "turoyo": "ṭləble l-babux ono me-babi w qayəm l-babi húle-li b-ʕulbe d-lirat",
@@ -664,7 +695,7 @@
           {
             "turoyo": "qayəm ḥa m-a=greʕe yatu ʕal-u=kursi šqile i=mamlaxṯo mene",
             "translations": [
-              "‘Einer der Knechte hat sich erhoben und auf seinen Thron gesetzt und hat ihm das Reich weggenommen’"
+              "Einer der Knechte hat sich erhoben und auf seinen Thron gesetzt und hat ihm das Reich weggenommen"
             ],
             "references": ["13", "24/234"],
             "tokens": [
@@ -722,13 +753,11 @@
         ],
         "Infectum": [
           {
-            "turoyo": "a k-qaymo i=emo m-i=zuḥṯo d-u=babo k-məǧboro l-u=nḥoro d-u=ṭawro i=naqqa d-ʕabər l=femi-d-i=kone w-məlle «šlomo aʕlayxu! » qaymi kulle b-u=šubḥ-ayḏe u=abro həngi kasulo-yo me qadre d-ḥaṣe lə=k-qoyəm",
+            "turoyo": "a k-qaymo i=emo m-i=zuḥṯo d-u=babo k-məǧboro l-u=nḥoro d-u=ṭawro",
             "translations": [
-              "‘die Mutter steht auf, aus Angst von dem Vater, schlachtet notgedrungen den Ochsen’",
-              "‘Als er zur Tür des Zeltes hereintrat und \"Friede sei mit euch!\" sagte, erhoben sich alle ihm zu ehren’",
-              "‘(Her) son is so lazy (that) he does not get up from (lying) on his back’"
+              "‘die Mutter steht auf, aus Angst von dem Vater, schlachtet notgedrungen den Ochsen’"
             ],
-            "references": ["1", "6/14", "29/490", "77/43"],
+            "references": ["1", "6/14"],
             "tokens": [
               {
                 "kind": "ref",
@@ -777,7 +806,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) a) k-qaymo i=emo m-i=zuḥṯo d-u=babo, k-məǧboro l-u=nḥoro d-u=ṭawro ‘die Mutter steht auf, aus Angst von dem Vater, schlachtet notgedrungen den Ochsen’; 6/14;"
+          },
+          {
+            "turoyo": "i=naqqa d-ʕabər l=femi-d-i=kone w-məlle «šlomo aʕlayxu! » qaymi kulle b-u=šubḥ-ayḏe",
+            "translations": [
+              "‘Als er zur Tür des Zeltes hereintrat und \"Friede sei mit euch!\" sagte, erhoben sich alle ihm zu ehren’"
+            ],
+            "references": ["29/490"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " i=naqqa d-ʕabər l=femi-d-i=kone w-məlle «šlomo aʕlayxu! » qaymi kulle b-u=šubḥ-ayḏe "
@@ -801,7 +840,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "i=naqqa d-ʕabər l=femi-d-i=kone w-məlle «šlomo aʕlayxu! » qaymi kulle b-u=šubḥ-ayḏe ‘Als er zur Tür des Zeltes hereintrat und \"Friede sei mit euch!\" sagte, erhoben sich alle ihm zu ehren’; 29/490;"
+          },
+          {
+            "turoyo": "u=abro həngi kasulo-yo me qadre d-ḥaṣe lə=k-qoyəm",
+            "translations": [
+              "‘(Her) son is so lazy (that) he does not get up from (lying) on his back’"
+            ],
+            "references": ["77/43"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " u=abro həngi kasulo-yo me qadre d-ḥaṣe lə=k-qoyəm "
@@ -823,7 +872,7 @@
                 "value": ";"
               }
             ],
-            "text": "1) a) k-qaymo i=emo m-i=zuḥṯo d-u=babo, k-məǧboro l-u=nḥoro d-u=ṭawro ‘die Mutter steht auf, aus Angst von dem Vater, schlachtet notgedrungen den Ochsen’; 6/14; i=naqqa d-ʕabər l=femi-d-i=kone w-məlle «šlomo aʕlayxu! » qaymi kulle b-u=šubḥ-ayḏe ‘Als er zur Tür des Zeltes hereintrat und \"Friede sei mit euch!\" sagte, erhoben sich alle ihm zu ehren’; 29/490; u=abro həngi kasulo-yo me qadre d-ḥaṣe lə=k-qoyəm ‘(Her) son is so lazy (that) he does not get up from (lying) on his back’ 77/43;"
+            "text": "u=abro həngi kasulo-yo me qadre d-ḥaṣe lə=k-qoyəm ‘(Her) son is so lazy (that) he does not get up from (lying) on his back’ 77/43;"
           },
           {
             "turoyo": "b",
@@ -888,7 +937,7 @@
           {
             "turoyo": "bəṯṯər me d-ṣridili i=hawa b-imomo g-qaymo",
             "translations": [
-              "‘After we had sifted them (wheat, pl.; lentil, pl.; barley, pl.;), the wind rose in the afternoon’"
+              "After we had sifted them (wheat, pl.; lentil, pl.; barley, pl.;), the wind rose in the afternoon"
             ],
             "references": ["2", "JL 13.12.11"],
             "tokens": [
@@ -932,12 +981,9 @@
             "text": "2) bəṯṯər me d-ṣridili, i=hawa b-imomo g-qaymo ‘After we had sifted them (wheat, pl.; lentil, pl.; barley, pl.;), the wind rose in the afternoon’ JL 13.12.11;"
           },
           {
-            "turoyo": "lazəm d-qayimo i=ʕaskar me-ʕal-ani k-ubʕeno d-qaymitu m-i=baxč-aṯe diḏi m-u=sabab d-maḥrəwulxu",
-            "translations": [
-              "die Soldaten müssen von dort auch abziehen",
-              "‘Ich wünsche, daß ihr von diesem meinen Garten abzieht, denn ihr habt ihn verwüstet’"
-            ],
-            "references": ["4", "562", "32/31", "24/168"],
+            "turoyo": "lazəm d-qayimo i=ʕaskar me-ʕal-ani",
+            "translations": ["die Soldaten müssen von dort auch abziehen"],
+            "references": ["4", "562", "32/31"],
             "tokens": [
               {
                 "kind": "ref",
@@ -982,7 +1028,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "4) lazəm d-qayimo i=ʕaskar me-ʕal-ani ʻdie Soldaten müssen von dort auch abziehenʼ; 562; 32/31;"
+          },
+          {
+            "turoyo": "k-ubʕeno d-qaymitu m-i=baxč-aṯe diḏi m-u=sabab d-maḥrəwulxu",
+            "translations": [
+              "‘Ich wünsche, daß ihr von diesem meinen Garten abzieht, denn ihr habt ihn verwüstet’"
+            ],
+            "references": ["24/168"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " k-ubʕeno d-qaymitu m-i=baxč-aṯe diḏi m-u=sabab d-maḥrəwulxu "
@@ -1012,7 +1068,7 @@
                 "value": "[MT]"
               }
             ],
-            "text": "4) lazəm d-qayimo i=ʕaskar me-ʕal-ani ʻdie Soldaten müssen von dort auch abziehenʼ; 562; 32/31; k-ubʕeno d-qaymitu m-i=baxč-aṯe diḏi m-u=sabab d-maḥrəwulxu ‘Ich wünsche, daß ihr von diesem meinen Garten abzieht, denn ihr habt ihn verwüstet’; 24/168 [MT]"
+            "text": "k-ubʕeno d-qaymitu m-i=baxč-aṯe diḏi m-u=sabab d-maḥrəwulxu ‘Ich wünsche, daß ihr von diesem meinen Garten abzieht, denn ihr habt ihn verwüstet’; 24/168 [MT]"
           },
           {
             "turoyo": "u=ṭaʕnayḏi čike yaqúro-yo iḏa kān d-qoyəm taḥte",
@@ -1208,9 +1264,7 @@
           },
           {
             "turoyo": "ṣafro i=saʕa b-a=šwaʕ k-qoyamno m-i=šamṯo",
-            "translations": [
-              "‘um sieben Uhr morgens stehe ich vom Schlafe auf’"
-            ],
+            "translations": ["um sieben Uhr morgens stehe ich vom Schlafe auf"],
             "references": ["12", "9/1"],
             "tokens": [
               {
@@ -1251,7 +1305,7 @@
           {
             "turoyo": "gud oṯət l-arke ono w-az=zʕure g-qaymina-lux quṭlina-lux",
             "translations": [
-              "‘If you come here, the children and I are going to stand against you and kill you’"
+              "If you come here, the children and I are going to stand against you and kill you"
             ],
             "references": ["13", "81/47"],
             "tokens": [
@@ -1292,7 +1346,7 @@
             "turoyo": "a məqqa d-saymo-wa lə=saymo-wa lə=qoyam-wa l-ǝ́zze-wa lə=šoġal-wa b b-lalyo fəlge=d-lalyo qaymí-way-na l-i=ṣluṯo",
             "translations": [
               "was sie auch tat, er stand nicht auf, ging nirgends hin zum Arbeiten",
-              "‘(Jede) Nacht, um Mitternacht, standen wir auf zum Gebet’"
+              "(Jede) Nacht, um Mitternacht, standen wir auf zum Gebet"
             ],
             "references": ["1", "560", "77/73", "JL 5.10.9"],
             "tokens": [
@@ -1398,7 +1452,7 @@
           {
             "turoyo": "w ṣafre d-u=ʕeḏo mʕayḏí-way-na w qaymí-way-na oṯí-way-na l-u=bayto",
             "translations": [
-              "‘Am Ostermorgen feierten wir das Osterfest, und dann machten wir uns auf und gingen nach Hause’"
+              "Am Ostermorgen feierten wir das Osterfest, und dann machten wir uns auf und gingen nach Hause"
             ],
             "references": ["10", "JL 5.10.10"],
             "tokens": [
@@ -1444,24 +1498,9 @@
         ],
         "Imperativ": [
           {
-            "turoyo": "a qum k-aṯi u=malaxo prs qum. omər lo=qamno prs qəm səm-lan qaḥwa w səm-lan čaye səm-lan hno d-maqarṭina qayəṣ d-kit miṯe harke qumu l-aḥ=ḥaramiy-ani miskína-lle!",
-            "translations": [
-              "steh auf, der (Todes)engel ist gekommen",
-              "so mach dich weg”. “Nein, ich weiche nicht”, sagte er",
-              "steh auf, mach uns Kaffee, mach uns Tee, mach uns Dings, damit wir früstücken",
-              "‘Alle Toten, die hier sind, steht auf gegen diese Diebe! Laßt uns sie packen!’"
-            ],
-            "references": [
-              "1",
-              "560",
-              "223/29",
-              "560",
-              "179/26",
-              "561",
-              "73/78",
-              "77/64",
-              "25/71"
-            ],
+            "turoyo": "a qum k-aṯi u=malaxo prs",
+            "translations": ["steh auf, der (Todes)engel ist gekommen"],
+            "references": ["1", "560", "223/29"],
             "tokens": [
               {
                 "kind": "ref",
@@ -1522,7 +1561,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) a) qum, k-aṯi u=malaxo ʻsteh auf, der (Todes)engel ist gekommenʼ; 560; prs 223/29;"
+          },
+          {
+            "turoyo": "qum. omər lo=qamno prs",
+            "translations": [
+              "“so mach dich weg”. “Nein, ich weiche nicht”, sagte er"
+            ],
+            "references": ["560", "179/26"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " qum. omər lo=qamno "
@@ -1558,7 +1607,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "qum. omər lo=qamno ʻ“so mach dich weg”. “Nein, ich weiche nicht”, sagte erʼ; 560; prs 179/26;"
+          },
+          {
+            "turoyo": "qəm səm-lan qaḥwa w səm-lan čaye səm-lan hno d-maqarṭina",
+            "translations": [
+              "steh auf, mach uns Kaffee, mach uns Tee, mach uns Dings, damit wir früstücken"
+            ],
+            "references": ["561", "73/78", "77/64"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " qəm səm-lan qaḥwa w səm-lan čaye"
@@ -1622,7 +1681,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "qəm səm-lan qaḥwa w səm-lan čaye, səm-lan hno, d-maqarṭina ʻsteh auf, mach uns Kaffee, mach uns Tee, mach uns Dings, damit wir früstückenʼ; 561; 73/78; 77/64;"
+          },
+          {
+            "turoyo": "qayəṣ d-kit miṯe harke qumu l-aḥ=ḥaramiy-ani miskína-lle!",
+            "translations": [
+              "‘Alle Toten, die hier sind, steht auf gegen diese Diebe! Laßt uns sie packen!’"
+            ],
+            "references": ["25/71"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " qayəṣ d-kit miṯe harke qumu l-aḥ=ḥaramiy-ani miskína-lle! "
@@ -1644,11 +1713,11 @@
                 "value": "25/71"
               }
             ],
-            "text": "1) a) qum, k-aṯi u=malaxo ʻsteh auf, der (Todes)engel ist gekommenʼ; 560; prs 223/29; qum. omər lo=qamno ʻ“so mach dich weg”. “Nein, ich weiche nicht”, sagte erʼ; 560; prs 179/26; qəm səm-lan qaḥwa w səm-lan čaye, səm-lan hno, d-maqarṭina ʻsteh auf, mach uns Kaffee, mach uns Tee, mach uns Dings, damit wir früstückenʼ; 561; 73/78; 77/64; qayəṣ d-kit miṯe harke qumu l-aḥ=ḥaramiy-ani miskína-lle! ‘Alle Toten, die hier sind, steht auf gegen diese Diebe! Laßt uns sie packen!’; 25/71"
+            "text": "qayəṣ d-kit miṯe harke qumu l-aḥ=ḥaramiy-ani miskína-lle! ‘Alle Toten, die hier sind, steht auf gegen diese Diebe! Laßt uns sie packen!’; 25/71"
           },
           {
             "turoyo": "qəm Xāngīr mḥay i= ḏ̣arb-ayḏux",
-            "translations": ["‘Come on, Xangir, make your move!’"],
+            "translations": ["Come on, Xangir, make your move!"],
             "references": ["10", "73/57"],
             "tokens": [
               {
@@ -1687,7 +1756,7 @@
           {
             "turoyo": "məd-hawi lalyo u=ṭalyo u=abro lo=daməx. bal aṯi u=ṭayro ḥatta d-mobəl u=ḥabušo huwe qimo maḥiso mədle u=ḥabušo mobile",
             "translations": [
-              "‘als es Nacht wurde, schlief der Junge, der Sohn, nicht ein; aber der Vogel kam, um den Apfel wegzuholen. Während jener wach auf den Beinen stand, nahm der Vogel den Apfel und holte ihn weg’"
+              "als es Nacht wurde, schlief der Junge, der Sohn, nicht ein; aber der Vogel kam, um den Apfel wegzuholen. Während jener wach auf den Beinen stand, nahm der Vogel den Apfel und holte ihn weg"
             ],
             "references": ["1", "21/12"],
             "tokens": [
@@ -1753,12 +1822,11 @@
         ],
         "Infinitiv": [
           {
-            "turoyo": "bəṯṯər b-i=qyamto d-əbʕi qayimi mədli tlaṯ=lirat d-dahwo maḥtili b-iḏoṯayye walla lat-le qyamto ắbadan",
+            "turoyo": "bəṯṯər b-i=qyamto d-əbʕi qayimi mədli tlaṯ=lirat d-dahwo maḥtili b-iḏoṯayye",
             "translations": [
-              "als sie nachher aufstehen wollten, nahm ich drei Goldpfunde und gab sie ihnen in die Hand",
-              "sonst gibt es für ihn kein lebendig werden"
+              "als sie nachher aufstehen wollten, nahm ich drei Goldpfunde und gab sie ihnen in die Hand"
             ],
-            "references": ["11", "563", "63/333", "563", "115/309"],
+            "references": ["11", "563", "63/333"],
             "tokens": [
               {
                 "kind": "ref",
@@ -1819,7 +1887,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "11) bəṯṯər b-i=qyamto d-əbʕi qayimi, mədli tlaṯ=lirat d-dahwo, maḥtili b-iḏoṯayye ʻals sie nachher aufstehen wollten, nahm ich drei Goldpfunde und gab sie ihnen in die Handʼ; 563; 63/333;"
+          },
+          {
+            "turoyo": "walla lat-le qyamto ắbadan",
+            "translations": ["sonst gibt es für ihn kein lebendig werden"],
+            "references": ["563", "115/309"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " walla lat-le qyamto ắbadan "
@@ -1857,7 +1933,7 @@
                 "value": ";"
               }
             ],
-            "text": "11) bəṯṯər b-i=qyamto d-əbʕi qayimi, mədli tlaṯ=lirat d-dahwo, maḥtili b-iḏoṯayye ʻals sie nachher aufstehen wollten, nahm ich drei Goldpfunde und gab sie ihnen in die Handʼ; 563; 63/333; walla lat-le qyamto ắbadan ʻsonst gibt es für ihn kein lebendig werdenʼ; 563; 115/309;"
+            "text": "walla lat-le qyamto ắbadan ʻsonst gibt es für ihn kein lebendig werdenʼ; 563; 115/309;"
           }
         ]
       }
@@ -1922,12 +1998,9 @@
             "text": "1) maqəmla ʕal qarʕe ʻsie stellte ihn auf den Kopf, trieb es arg mit ihmʼ; 563; 88/73;"
           },
           {
-            "turoyo": "l-ma maqǝ́mle-li m-i=šanṯ-aṯe prs u=kuruko bəṯṯər məd-daməx šawṭo maqəmla l-i=kačke",
-            "translations": [
-              "wer hat mich aus diesem Schlafe aufgeweckt",
-              "‘Nachdem der Junge eine Weile geschlafen hatte, weckte ihn das Mädchen auf’"
-            ],
-            "references": ["2", "563", "45/17", "29/124"],
+            "turoyo": "l-ma maqǝ́mle-li m-i=šanṯ-aṯe prs",
+            "translations": ["wer hat mich aus diesem Schlafe aufgeweckt"],
+            "references": ["2", "563", "45/17"],
             "tokens": [
               {
                 "kind": "ref",
@@ -1972,7 +2045,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "2) l-ma maqǝ́mle-li m-i=šanṯ-aṯe ʻwer hat mich aus diesem Schlafe aufgewecktʼ; 563; prs 45/17;"
+          },
+          {
+            "turoyo": "u=kuruko bəṯṯər məd-daməx šawṭo maqəmla l-i=kačke",
+            "translations": [
+              "‘Nachdem der Junge eine Weile geschlafen hatte, weckte ihn das Mädchen auf’"
+            ],
+            "references": ["29/124"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " u=kuruko bəṯṯər məd-daməx šawṭo"
@@ -2002,7 +2085,7 @@
                 "value": "29/124"
               }
             ],
-            "text": "2) l-ma maqǝ́mle-li m-i=šanṯ-aṯe ʻwer hat mich aus diesem Schlafe aufgewecktʼ; 563; prs 45/17; u=kuruko bəṯṯər məd-daməx šawṭo, maqəmla l-i=kačke ‘Nachdem der Junge eine Weile geschlafen hatte, weckte ihn das Mädchen auf’; 29/124"
+            "text": "u=kuruko bəṯṯər məd-daməx šawṭo, maqəmla l-i=kačke ‘Nachdem der Junge eine Weile geschlafen hatte, weckte ihn das Mädchen auf’; 29/124"
           },
           {
             "turoyo": "maqəmle u=zlām sāx prs",
@@ -2061,12 +2144,11 @@
             "text": "3) maqəmle u=zlām sāx ʻer machte den Mann wieder lebendigʼ; 564; prs 155/31;"
           },
           {
-            "turoyo": "ono qay m-ayko kibi maklénan-ne? i=qyamto maqimalle hawi ʕaymo rabo b-i=šmayo. i=hawa w ab=bahozat maqəmme i=qyamto",
+            "turoyo": "ono qay m-ayko kibi maklénan-ne? i=qyamto maqimalle",
             "translations": [
-              "wie kann ich sie aufhalten? Sie haben einen Jüngsten Tag angerichtet",
-              "‘da entstand eine grosse Wolke am Himmel. Der Wind und der aufgewirbelte Staub machten einen “Jüngsten Tag”’"
+              "wie kann ich sie aufhalten? Sie haben einen Jüngsten Tag angerichtet"
             ],
-            "references": ["4", "564", "75/189", "8/14"],
+            "references": ["4", "564", "75/189"],
             "tokens": [
               {
                 "kind": "ref",
@@ -2111,7 +2193,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "4) ono qay m-ayko kibi maklénan-ne? i=qyamto maqimalle ʻwie kann ich sie aufhalten? Sie haben einen Jüngsten Tag angerichtetʼ; 564; 75/189;"
+          },
+          {
+            "turoyo": "hawi ʕaymo rabo b-i=šmayo. i=hawa w ab=bahozat maqəmme i=qyamto",
+            "translations": [
+              "‘da entstand eine grosse Wolke am Himmel. Der Wind und der aufgewirbelte Staub machten einen “Jüngsten Tag”’"
+            ],
+            "references": ["8/14"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " hawi ʕaymo rabo b-i=šmayo. i=hawa w ab=bahozat maqəmme i=qyamto "
@@ -2141,7 +2233,7 @@
                 "value": " "
               }
             ],
-            "text": "4) ono qay m-ayko kibi maklénan-ne? i=qyamto maqimalle ʻwie kann ich sie aufhalten? Sie haben einen Jüngsten Tag angerichtetʼ; 564; 75/189; hawi ʕaymo rabo b-i=šmayo. i=hawa w ab=bahozat maqəmme i=qyamto ‘da entstand eine grosse Wolke am Himmel. Der Wind und der aufgewirbelte Staub machten einen “Jüngsten Tag”’; 8/14;"
+            "text": "hawi ʕaymo rabo b-i=šmayo. i=hawa w ab=bahozat maqəmme i=qyamto ‘da entstand eine grosse Wolke am Himmel. Der Wind und der aufgewirbelte Staub machten einen “Jüngsten Tag”’; 8/14;"
           },
           {
             "turoyo": "maqəmle ḥreno səmle aġa prs",
@@ -2204,12 +2296,9 @@
             "text": "5) maqəmle ḥreno, səmle aġa ʻer setzte einen andern zum Häuptlingʼ; 564; prs 15/18;"
           },
           {
-            "turoyo": "maqǝ́mle-le ḥamši=greʕe ʕam ruḥe azzé l-u=ṣaydo maqəmle tralfo=suwariye aʕme kulle mnaqye b-sayfe w-rumaḥ",
-            "translations": [
-              "er nahm fünfzig Burschen auf die Jagd mit",
-              "‘Er hob zweitausend Reiter aus, die mit ihm [reiten sollten], alle ausgewählt, mit Schwert und Lanze’"
-            ],
-            "references": ["6", "564", "57/3", "29/413"],
+            "turoyo": "maqǝ́mle-le ḥamši=greʕe ʕam ruḥe azzé l-u=ṣaydo",
+            "translations": ["er nahm fünfzig Burschen auf die Jagd mit"],
+            "references": ["6", "564", "57/3"],
             "tokens": [
               {
                 "kind": "ref",
@@ -2262,7 +2351,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "6) maqǝ́mle-le ḥamši=greʕe ʕam ruḥe, azzé l-u=ṣaydo ʻer nahm fünfzig Burschen auf die Jagd mitʼ; 564; 57/3;"
+          },
+          {
+            "turoyo": "maqəmle tralfo=suwariye aʕme kulle mnaqye b-sayfe w-rumaḥ",
+            "translations": [
+              "‘Er hob zweitausend Reiter aus, die mit ihm [reiten sollten], alle ausgewählt, mit Schwert und Lanze’"
+            ],
+            "references": ["29/413"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " maqəmle tralfo=suwariye aʕme"
@@ -2292,15 +2391,14 @@
                 "value": "29/413"
               }
             ],
-            "text": "6) maqǝ́mle-le ḥamši=greʕe ʕam ruḥe, azzé l-u=ṣaydo ʻer nahm fünfzig Burschen auf die Jagd mitʼ; 564; 57/3; maqəmle tralfo=suwariye aʕme, kulle mnaqye b-sayfe w-rumaḥ ‘Er hob zweitausend Reiter aus, die mit ihm [reiten sollten], alle ausgewählt, mit Schwert und Lanze’; 29/413"
+            "text": "maqəmle tralfo=suwariye aʕme, kulle mnaqye b-sayfe w-rumaḥ ‘Er hob zweitausend Reiter aus, die mit ihm [reiten sollten], alle ausgewählt, mit Schwert und Lanze’; 29/413"
           },
           {
-            "turoyo": "maqəmme u=el-aṯṯe b-naqqa šeṯmo=elat xanat nafəq m-u=el-ayḏe aḥna qayimina me-ʕal ʕiwardo w-maqəmlan me-ʕal Dayro d-Ṣlibo w-me-ʕal Ḥaḥ",
+            "turoyo": "maqəmme u=el-aṯṯe b-naqqa šeṯmo=elat xanat nafəq m-u=el-ayḏe",
             "translations": [
-              "sie liessen ihren Stamm auf einmal aufbrechen; sechshundert Familien kamen aus seinem Stamm heraus",
-              "‘Wir sind von ‘Iwardo abgezogen und haben [das Militär] von Dēr Ṣalīb und Ḥāḥ abziehen lassen’"
+              "sie liessen ihren Stamm auf einmal aufbrechen; sechshundert Familien kamen aus seinem Stamm heraus"
             ],
-            "references": ["7", "565", "65/31", "32/39"],
+            "references": ["7", "565", "65/31"],
             "tokens": [
               {
                 "kind": "ref",
@@ -2353,7 +2451,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "7) maqəmme u=el-aṯṯe b-naqqa, šeṯmo=elat xanat nafəq m-u=el-ayḏe ʻsie liessen ihren Stamm auf einmal aufbrechen; sechshundert Familien kamen aus seinem Stamm herausʼ; 565; 65/31;"
+          },
+          {
+            "turoyo": "aḥna qayimina me-ʕal ʕiwardo w-maqəmlan me-ʕal Dayro d-Ṣlibo w-me-ʕal Ḥaḥ",
+            "translations": [
+              "‘Wir sind von ‘Iwardo abgezogen und haben [das Militär] von Dēr Ṣalīb und Ḥāḥ abziehen lassen’"
+            ],
+            "references": ["32/39"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " aḥna qayimina me-ʕal ʕiwardo w-maqəmlan me-ʕal Dayro d-Ṣlibo w-me-ʕal Ḥaḥ "
@@ -2375,12 +2483,12 @@
                 "value": "32/39"
               }
             ],
-            "text": "7) maqəmme u=el-aṯṯe b-naqqa, šeṯmo=elat xanat nafəq m-u=el-ayḏe ʻsie liessen ihren Stamm auf einmal aufbrechen; sechshundert Familien kamen aus seinem Stamm herausʼ; 565; 65/31; aḥna qayimina me-ʕal ʕiwardo w-maqəmlan me-ʕal Dayro d-Ṣlibo w-me-ʕal Ḥaḥ ‘Wir sind von ‘Iwardo abgezogen und haben [das Militär] von Dēr Ṣalīb und Ḥāḥ abziehen lassen’; 32/39"
+            "text": "aḥna qayimina me-ʕal ʕiwardo w-maqəmlan me-ʕal Dayro d-Ṣlibo w-me-ʕal Ḥaḥ ‘Wir sind von ‘Iwardo abgezogen und haben [das Militär] von Dēr Ṣalīb und Ḥāḥ abziehen lassen’; 32/39"
           },
           {
             "turoyo": "naqqa ḥəmyoni grəšle raġle d-i=čəfta omər tarq qṭile b-naqqa. maqəmlan me tamo zayiʕi me qole d-i=tfənge haw k-oṯən l-i=kozk=ayo",
             "translations": [
-              "‘Suddenly my father-in-law pulled the trigger, pow! And he killed him at once. Then we left that place. They (the partridges) were frightened by the sound of the rifle, and would no longer come to that trench’"
+              "Suddenly my father-in-law pulled the trigger, pow! And he killed him at once. Then we left that place. They (the partridges) were frightened by the sound of the rifle, and would no longer come to that trench"
             ],
             "references": ["8", "JL 8.11.15"],
             "tokens": [
@@ -2822,13 +2930,11 @@
             "text": "6) ma šwaʕ=əšne w lalʕal d-lə=maqimát-li-yo, xayən karixət aʕmi ʻwenn du ihn (den Stamm) nicht vom siebten Jahre an aufbietest, so hast du verrätisch an mir gehandeltʼ; 564; 65/254;"
           },
           {
-            "turoyo": "ṭr-əzze maqəm i=ʕaskar-ayḏe w-g-ʕofína-le iḏa b-ṭowuṯo d-lə=qaymitu gəd-uṯeno b-u=zor g-maqə́mnu-lxu aḥna gə-mšadrína-le l-aq=qəryawoṯ-ani maqimina i=ʕaskar me-tamo",
+            "turoyo": "ṭr-əzze maqəm i=ʕaskar-ayḏe w-g-ʕofína-le",
             "translations": [
-              "er soll gehen und seine Soldaten abziehen lassen, dann werden wir ihm für diesmal verzeihen",
-              "‘Wenn ihr nicht im Guten abzieht, so komme ich und werde euch mit Gewalt vertreiben’",
-              "‘Den (ein Mann, m) werden wir in die Dörfer schicken und die Soldaten abziehen lassen’"
+              "er soll gehen und seine Soldaten abziehen lassen, dann werden wir ihm für diesmal verzeihen"
             ],
-            "references": ["7", "565", "56/67", "24/168", "32/32"],
+            "references": ["7", "565", "56/67"],
             "tokens": [
               {
                 "kind": "ref",
@@ -2881,7 +2987,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "7) ṭr-əzze, maqəm i=ʕaskar-ayḏe w-g-ʕofína-le ʻer soll gehen und seine Soldaten abziehen lassen, dann werden wir ihm für diesmal verzeihenʼ; 565; 56/67;"
+          },
+          {
+            "turoyo": "iḏa b-ṭowuṯo d-lə=qaymitu gəd-uṯeno b-u=zor g-maqə́mnu-lxu",
+            "translations": [
+              "‘Wenn ihr nicht im Guten abzieht, so komme ich und werde euch mit Gewalt vertreiben’"
+            ],
+            "references": ["24/168"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " iḏa b-ṭowuṯo d-lə=qaymitu"
@@ -2913,7 +3029,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "iḏa b-ṭowuṯo d-lə=qaymitu, gəd-uṯeno b-u=zor g-maqə́mnu-lxu ‘Wenn ihr nicht im Guten abzieht, so komme ich und werde euch mit Gewalt vertreiben’; 24/168;"
+          },
+          {
+            "turoyo": "aḥna gə-mšadrína-le l-aq=qəryawoṯ-ani maqimina i=ʕaskar me-tamo",
+            "translations": [
+              "‘Den (ein Mann, m) werden wir in die Dörfer schicken und die Soldaten abziehen lassen’"
+            ],
+            "references": ["32/32"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " aḥna gə-mšadrína-le l-aq=qəryawoṯ-ani maqimina i=ʕaskar me-tamo "
@@ -2935,7 +3061,7 @@
                 "value": "32/32"
               }
             ],
-            "text": "7) ṭr-əzze, maqəm i=ʕaskar-ayḏe w-g-ʕofína-le ʻer soll gehen und seine Soldaten abziehen lassen, dann werden wir ihm für diesmal verzeihenʼ; 565; 56/67; iḏa b-ṭowuṯo d-lə=qaymitu, gəd-uṯeno b-u=zor g-maqə́mnu-lxu ‘Wenn ihr nicht im Guten abzieht, so komme ich und werde euch mit Gewalt vertreiben’; 24/168; aḥna gə-mšadrína-le l-aq=qəryawoṯ-ani maqimina i=ʕaskar me-tamo ‘Den (ein Mann, m) werden wir in die Dörfer schicken und die Soldaten abziehen lassen’; 32/32"
+            "text": "aḥna gə-mšadrína-le l-aq=qəryawoṯ-ani maqimina i=ʕaskar me-tamo ‘Den (ein Mann, m) werden wir in die Dörfer schicken und die Soldaten abziehen lassen’; 32/32"
           }
         ],
         "Infectum-wa": [
@@ -3100,12 +3226,11 @@
             "text": "6) ya abri qum maqəmlux qădar alfo tr-alfo=rawixe w izolux ʻmein Sohn! Biete dir ungefähr tausend Reiter auf und gehʼ; 564; 107/87;"
           },
           {
-            "turoyo": "mšayáʕle-lən greʕo omər zox aqim-ən me-tamo prs maqimu u=ʕam-ano m-aʕlayna!",
+            "turoyo": "mšayáʕle-lən greʕo omər zox aqim-ən me-tamo prs",
             "translations": [
-              "er schickte einen Diener an sie mit dem Befehl: “Geh, vertreibe sie von dort",
-              "‘Laßt dieses Volk von uns abziehen!’"
+              "er schickte einen Diener an sie mit dem Befehl: “Geh, vertreibe sie von dort”"
             ],
-            "references": ["7", "565", "6/14", "32/18"],
+            "references": ["7", "565", "6/14"],
             "tokens": [
               {
                 "kind": "ref",
@@ -3166,7 +3291,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "7) mšayáʕle-lən greʕo, omər zox, aqim-ən me-tamo ʻer schickte einen Diener an sie mit dem Befehl: “Geh, vertreibe sie von dort”ʼ; 565; prs 6/14;"
+          },
+          {
+            "turoyo": "maqimu u=ʕam-ano m-aʕlayna!",
+            "translations": ["‘Laßt dieses Volk von uns abziehen!’"],
+            "references": ["32/18"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " maqimu u=ʕam-ano m-aʕlayna! "
@@ -3188,7 +3321,7 @@
                 "value": "32/18"
               }
             ],
-            "text": "7) mšayáʕle-lən greʕo, omər zox, aqim-ən me-tamo ʻer schickte einen Diener an sie mit dem Befehl: “Geh, vertreibe sie von dort”ʼ; 565; prs 6/14; maqimu u=ʕam-ano m-aʕlayna! ‘Laßt dieses Volk von uns abziehen!’; 32/18"
+            "text": "maqimu u=ʕam-ano m-aʕlayna! ‘Laßt dieses Volk von uns abziehen!’; 32/18"
           }
         ]
       }
@@ -3321,7 +3454,7 @@
     }
   ],
   "idioms": [
-    "qayəm ʕal ruḥe -  zu sich kommen (после сна или потери сознания):",
+    "qayəm ʕal ruḥe - zu sich kommen (после сна или потери сознания):",
     "axər saʕaye haka tarte frəxxe lebe, hul d-aṯi hawne b-riše, ftəḥle ʕayne ko-ḥoyər layto noše. qayəm ʕal ruḥe. omər: “Aḥmad Aġa!” omər: “libe ya Mīr Mḥamma!” ʻman rieb ihm die Herzgegend ein, zwei Stunden lang, bis er wieder zu Bewusstsein kam. Er schlug die Augen auf und schaute: Niemand ist da. Er kam wieder zu sich und sprach: “Aḥmad Agha!” “Ja, Mīr Mḥamma?”ʼ; 561; 65/165-166; i=naqqa d-daməx, qayimo aṯyo; ḥzela damíxo-yo daʕiro. qayəm ʕal ruḥe ḥzele: innu layto kačke ʻals er eingeschlafen ist, kommt es, sieht, dass er eingeschlafen ist, und kehrt um. Da kam er zu sich und sah, dass kein Mädchen da warʼ; 83/61-62;",
     "qayim b-(чем) l-(кого) - versorgen:",
     "a) прямое значение - hano ḥəlle u=malko k-omər: “hano mə ʕǝ́ǧbo-yo! hano lo šulṭone, w lo dawlawat, lappe qayimi b-u=med-ano. m-áyko-yo, ak=kallaw-ani w m-ayko u=hn-ano kule?” ʻda schaut der König und denkt: “Was ist das für eine seltsame Sache? Keine Sultane, keine Dynastien können so etwas aufbringen. Woher kommt dieses viele Geld und all das?”ʼ; 561; 77/246; u=muklo u=štoyaṯṯe k-obən-ne w a=ǧġarataṯṯe, w ko-qayimi b-aw=waǧəbataṯṯe, ʕal mazbūṭ ʻgaben ihnen zu essen und zu trinken und Zigaretten zu rauchen und versorgen sie ordentlich, wie es sich gehörtʼ; 89/95; aloho howe raḏ̣yo m-i=ǧamaʕayḏi d-qayimi b-aw=waǧəbatat səmme səfra ʻGott möge Gefallen haben an meiner Gemeinde, die sich um alle gekümmert und ein Essen vorbereitet habenʼ; LB 348;",

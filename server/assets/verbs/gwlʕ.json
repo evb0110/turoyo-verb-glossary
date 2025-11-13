@@ -11,13 +11,8 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
-      "forms": ["mgawləʕ", "migawləʕ"],
-      "conjugations": {}
-    },
-    {
       "stem": "Detransitive",
-      "forms": [],
+      "forms": ["mgawləʕ", "migawləʕ"],
       "conjugations": {
         "Preterit": [
           {
@@ -51,61 +46,7 @@
               }
             ],
             "text": "lebi mgawləʕ ʻmich hat der Ekel gepacktʼ; 777;"
-          }
-        ],
-        "Infectum": [
-          {
-            "turoyo": "lebe d-ḥa ko-migawləʕ m-i=ḥzaytayḏe",
-            "translations": ["es konnte einem übel werden bei seinem Anblick"],
-            "references": ["777", "49/15"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "lebe d-ḥa ko-migawləʕ m-i=ḥzaytayḏe "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻes konnte einem übel werden bei seinem Anblickʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "777"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "49/15"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "lebe d-ḥa ko-migawləʕ m-i=ḥzaytayḏe ʻes konnte einem übel werden bei seinem Anblickʼ; 777; 49/15;"
-          }
-        ]
-      }
-    },
-    {
-      "stem": "I",
-      "forms": ["mgawlәč"],
-      "conjugations": {
-        "Preterit": [
+          },
           {
             "turoyo": "İ ǧiranayḏi kmgawlčo u muklo. My female neighbor messed up the food. İlyas p.c",
             "translations": [],
@@ -181,6 +122,50 @@
         ],
         "Infectum": [
           {
+            "turoyo": "lebe d-ḥa ko-migawləʕ m-i=ḥzaytayḏe",
+            "translations": ["es konnte einem übel werden bei seinem Anblick"],
+            "references": ["777", "49/15"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lebe d-ḥa ko-migawləʕ m-i=ḥzaytayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes konnte einem übel werden bei seinem Anblickʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "777"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "49/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lebe d-ḥa ko-migawləʕ m-i=ḥzaytayḏe ʻes konnte einem übel werden bei seinem Anblickʼ; 777; 49/15;"
+          },
+          {
             "turoyo": "Gmigawlčo i garʕayḏan. İlyas p.c",
             "translations": [],
             "references": [],
@@ -206,13 +191,13 @@
           }
         ]
       }
+    },
+    {
+      "stem": "I",
+      "forms": ["mgawlәč"],
+      "conjugations": {}
     }
   ],
-  "idioms": [
-    "(Detrans.) sich ekeln (lebe);",
-    "Gwlč",
-    "see also glvč",
-    "(squish, slop, squelch, puddle)"
-  ],
+  "idioms": ["Gwlč", "see also glvč", "(squish, slop, squelch, puddle)"],
   "uncertain": false
 }

@@ -18,13 +18,12 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "m-bəṯər mdawamle mədde d-šwaʕ=əšne b-u=ḥāl-ano bəṯṯər d-šqilan i=ḥəmmit-ayḏan mdawamlan ʕal u=darb-ayḏan mḥarabbe ʕam ḥḏoḏe saʕa w-mdawamme saʕa w-falge zəd m-u=qamoyo",
+            "turoyo": "m-bəṯər mdawamle mədde d-šwaʕ=əšne b-u=ḥāl-ano bəṯṯər d-šqilan i=ḥəmmit-ayḏan mdawamlan ʕal u=darb-ayḏan",
             "translations": [
               "und so tat er sieben Jahre lang",
-              "nachdem wir unsere Energie widergefunden hatten, setzten wir unsere Reise fort",
-              "‘Sie kämpften eine Stunde, anderthalb Stunden, länger als das erste Mal’"
+              "nachdem wir unsere Energie widergefunden hatten, setzten wir unsere Reise fort"
             ],
-            "references": ["473", "24/163", "11/50", "29/157"],
+            "references": ["473", "24/163", "11/50"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -101,7 +100,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "m-bəṯər mdawamle mədde d-šwaʕ=əšne b-u=ḥāl-ano ʻund so tat er sieben Jahre langʼ; 473; 24/163 [LTN]; bəṯṯər d-šqilan i=ḥəmmit-ayḏan, mdawamlan ʕal u=darb-ayḏan ʻnachdem wir unsere Energie widergefunden hatten, setzten wir unsere Reise fortʼ; 11/50;"
+          },
+          {
+            "turoyo": "mḥarabbe ʕam ḥḏoḏe saʕa w-mdawamme saʕa w-falge zəd m-u=qamoyo",
+            "translations": [
+              "‘Sie kämpften eine Stunde, anderthalb Stunden, länger als das erste Mal’"
+            ],
+            "references": ["29/157"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mḥarabbe ʕam ḥḏoḏe saʕa w-mdawamme saʕa w-falge zəd m-u=qamoyo "
@@ -131,17 +140,14 @@
                 "value": "[MT]"
               }
             ],
-            "text": "m-bəṯər mdawamle mədde d-šwaʕ=əšne b-u=ḥāl-ano ʻund so tat er sieben Jahre langʼ; 473; 24/163 [LTN]; bəṯṯər d-šqilan i=ḥəmmit-ayḏan, mdawamlan ʕal u=darb-ayḏan ʻnachdem wir unsere Energie widergefunden hatten, setzten wir unsere Reise fortʼ; 11/50; mḥarabbe ʕam ḥḏoḏe saʕa w-mdawamme saʕa w-falge zəd m-u=qamoyo ‘Sie kämpften eine Stunde, anderthalb Stunden, länger als das erste Mal’; 29/157 [MT]"
+            "text": "mḥarabbe ʕam ḥḏoḏe saʕa w-mdawamme saʕa w-falge zəd m-u=qamoyo ‘Sie kämpften eine Stunde, anderthalb Stunden, länger als das erste Mal’; 29/157 [MT]"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "u=tulifo k-mdawəm u=darb-ano k-mdawəm hōl l-u=Baḥar Komo",
-            "translations": [
-              "der Unterricht geht weiter",
-              "diese Strasse setzt sich fort bis zum Schwarzen Meere"
-            ],
-            "references": ["473", "4/74"],
+            "turoyo": "u=tulifo k-mdawəm",
+            "translations": ["der Unterricht geht weiter"],
+            "references": ["473"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -166,7 +172,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "u=tulifo k-mdawəm ʻder Unterricht geht weiterʼ; 473;"
+          },
+          {
+            "turoyo": "u=darb-ano k-mdawəm hōl l-u=Baḥar Komo",
+            "translations": [
+              "diese Strasse setzt sich fort bis zum Schwarzen Meere"
+            ],
+            "references": ["4/74"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " u=darb-ano k-mdawəm hōl l-u=Baḥar Komo "
@@ -192,7 +208,7 @@
                 "value": ";"
               }
             ],
-            "text": "u=tulifo k-mdawəm ʻder Unterricht geht weiterʼ; 473; u=darb-ano k-mdawəm hōl l-u=Baḥar Komo ʻdiese Strasse setzt sich fort bis zum Schwarzen Meereʼ; 4/74;"
+            "text": "u=darb-ano k-mdawəm hōl l-u=Baḥar Komo ʻdiese Strasse setzt sich fort bis zum Schwarzen Meereʼ; 4/74;"
           }
         ]
       }

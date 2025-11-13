@@ -18,12 +18,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "məd-maṯno qwurxul-li tloṯo=lalye itúx qm-i=ǧinazayḏi qm-u=qawro qwəṛṛe babi tamo w aḥna naʕime",
+            "turoyo": "məd-maṯno qwurxul-li tloṯo=lalye itúx qm-i=ǧinazayḏi qm-u=qawro",
             "translations": [
-              "wenn ich gestorben bin und ihr mich begraben habt, so komm drei Nächte lang (zur Totenwache) vor meine Leiche, vor mein Grab",
-              "dort begruben sie meinen Vater, und wir waren noch klein"
+              "wenn ich gestorben bin und ihr mich begraben habt, so komm drei Nächte lang (zur Totenwache) vor meine Leiche, vor mein Grab"
             ],
-            "references": ["449", "67/9", "JL 16.7.29"],
+            "references": ["449", "67/9"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -68,7 +67,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "məd-maṯno qwurxul-li, tloṯo=lalye itúx qm-i=ǧinazayḏi qm-u=qawro ʻwenn ich gestorben bin und ihr mich begraben habt, so komm drei Nächte lang (zur Totenwache) vor meine Leiche, vor mein Grabʼ; 449; 67/9;"
+          },
+          {
+            "turoyo": "qwəṛṛe babi tamo w aḥna naʕime",
+            "translations": [
+              "dort begruben sie meinen Vater, und wir waren noch klein"
+            ],
+            "references": ["JL 16.7.29"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " qwəṛṛe babi tamo"
@@ -98,27 +107,14 @@
                 "value": ";"
               }
             ],
-            "text": "məd-maṯno qwurxul-li, tloṯo=lalye itúx qm-i=ǧinazayḏi qm-u=qawro ʻwenn ich gestorben bin und ihr mich begraben habt, so komm drei Nächte lang (zur Totenwache) vor meine Leiche, vor mein Grabʼ; 449; 67/9; qwəṛṛe babi tamo, w aḥna naʕime ʻdort begruben sie meinen Vater, und wir waren noch kleinʼ JL 16.7.29;"
+            "text": "qwəṛṛe babi tamo, w aḥna naʕime ʻdort begruben sie meinen Vater, und wir waren noch kleinʼ JL 16.7.29;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "mašġila d-qawwru-lle prs prs qurət emux! sāġ lə=qurutəl-li aḥna g-mublína-le l-i=maqbara qurína-le",
-            "translations": [
-              "darauf wusch sie sie, um sie zu begraben",
-              "mögest du deine Mutter begraben (überleben)",
-              "begrabt mich nicht lebendig",
-              "‘Wir werden ihn schon zum Friedhof bringen und begraben’"
-            ],
-            "references": [
-              "454",
-              "147/30",
-              "149/8",
-              "454",
-              "76/167",
-              "LB 81",
-              "25/46"
-            ],
+            "turoyo": "mašġila d-qawwru-lle prs prs",
+            "translations": ["darauf wusch sie sie, um sie zu begraben"],
+            "references": ["454", "147/30", "149/8"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -167,7 +163,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mašġila d-qawwru-lle ʻdarauf wusch sie sie, um sie zu begrabenʼ; 454; prs 147/30; prs 149/8;"
+          },
+          {
+            "turoyo": "qurət emux!",
+            "translations": ["mögest du deine Mutter begraben (überleben)"],
+            "references": ["454", "76/167"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " qurət emux! "
@@ -203,7 +207,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "qurət emux! ʻmögest du deine Mutter begraben (überleben)ʼ; 454; 76/167;"
+          },
+          {
+            "turoyo": "sāġ lə=qurutəl-li",
+            "translations": ["begrabt mich nicht lebendig"],
+            "references": ["LB 81"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " sāġ lə=qurutəl-li "
@@ -227,7 +239,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "sāġ lə=qurutəl-li ʻbegrabt mich nicht lebendigʼ; LB 81;"
+          },
+          {
+            "turoyo": "aḥna g-mublína-le l-i=maqbara qurína-le",
+            "translations": [
+              "‘Wir werden ihn schon zum Friedhof bringen und begraben’"
+            ],
+            "references": ["25/46"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " aḥna g-mublína-le l-i=maqbara qurína-le "
@@ -249,7 +271,7 @@
                 "value": "25/46"
               }
             ],
-            "text": "mašġila d-qawwru-lle ʻdarauf wusch sie sie, um sie zu begrabenʼ; 454; prs 147/30; prs 149/8; qurət emux! ʻmögest du deine Mutter begraben (überleben)ʼ; 454; 76/167; sāġ lə=qurutəl-li ʻbegrabt mich nicht lebendigʼ; LB 81; aḥna g-mublína-le l-i=maqbara qurína-le ‘Wir werden ihn schon zum Friedhof bringen und begraben’; 25/46"
+            "text": "aḥna g-mublína-le l-i=maqbara qurína-le ‘Wir werden ihn schon zum Friedhof bringen und begraben’; 25/46"
           }
         ]
       }

@@ -104,25 +104,11 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "lo=k-maləq u=muklo d-lo ʕrāq prs u=zʕur-ano lăǧani k-maləq ummi man k-maləq-lox prs haṯe ko-maliqo eli lə=k-malə́q-lox hat zlam šex šex rabo",
+            "turoyo": "lo=k-maləq u=muklo d-lo ʕrāq prs",
             "translations": [
-              "Essen ohne Schnaps passt sich nicht, hat keine Art",
-              "dieser Junge passt für mich",
-              "sie sprachen: weisst du, wer für dich passt?",
-              "diese passt für mich",
-              "‘[Das] steht dir nicht wohl an; du bist ein grosser Scheich’"
+              "Essen ohne Schnaps passt sich nicht, hat keine Art"
             ],
-            "references": [
-              "545",
-              "35/32",
-              "545",
-              "60/139",
-              "545",
-              "71/25",
-              "546",
-              "61/101",
-              "26/80"
-            ],
+            "references": ["545", "35/32"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -159,7 +145,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "lo=k-maləq u=muklo d-lo ʕrāq ʻEssen ohne Schnaps passt sich nicht, hat keine Artʼ; 545; prs 35/32;"
+          },
+          {
+            "turoyo": "u=zʕur-ano lăǧani k-maləq ummi man k-maləq-lox prs",
+            "translations": [
+              "dieser Junge passt für mich",
+              "sie sprachen: weisst du, wer für dich passt?"
+            ],
+            "references": ["545", "60/139", "545", "71/25"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " u=zʕur-ano lăǧani k-maləq "
@@ -239,7 +236,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "u=zʕur-ano lăǧani k-maləq ʻdieser Junge passt für michʼ; 545; 60/139; ummi: man k-maləq-lox ʻsie sprachen: weisst du, wer für dich passt?ʼ; 545; prs 71/25;"
+          },
+          {
+            "turoyo": "haṯe ko-maliqo eli",
+            "translations": ["diese passt für mich"],
+            "references": ["546", "61/101"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " haṯe ko-maliqo eli "
@@ -275,7 +280,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "haṯe ko-maliqo eli ʻdiese passt für michʼ; 546; 61/101;"
+          },
+          {
+            "turoyo": "lə=k-malə́q-lox hat zlam šex šex rabo",
+            "translations": [
+              "‘[Das] steht dir nicht wohl an; du bist ein grosser Scheich’"
+            ],
+            "references": ["26/80"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " lə=k-malə́q-lox hat zlam šex"
@@ -309,7 +324,7 @@
                 "value": ";"
               }
             ],
-            "text": "lo=k-maləq u=muklo d-lo ʕrāq ʻEssen ohne Schnaps passt sich nicht, hat keine Artʼ; 545; prs 35/32; u=zʕur-ano lăǧani k-maləq ʻdieser Junge passt für michʼ; 545; 60/139; ummi: man k-maləq-lox ʻsie sprachen: weisst du, wer für dich passt?ʼ; 545; prs 71/25; haṯe ko-maliqo eli ʻdiese passt für michʼ; 546; 61/101; lə=k-malə́q-lox hat zlam šex, šex rabo ‘[Das] steht dir nicht wohl an; du bist ein grosser Scheich’; 26/80;"
+            "text": "lə=k-malə́q-lox hat zlam šex, šex rabo ‘[Das] steht dir nicht wohl an; du bist ein grosser Scheich’; 26/80;"
           }
         ]
       }

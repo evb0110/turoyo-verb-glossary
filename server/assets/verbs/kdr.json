@@ -13,22 +13,14 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "II",
-      "forms": ["mkadər", "mikadər"],
-      "conjugations": {}
-    },
-    {
       "stem": "Detransitive",
-      "forms": [],
+      "forms": ["mkadər", "mikadər"],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ḥa m-ay=yawme aṯi l-u=bayto mkadər uno harke mədde də-tloṯ=əšne fayəšno harke ʕal-aṯe mkadarno w-lebi mle ġamo",
-            "translations": [
-              "eines Tages kam er betrübt nach Hause",
-              "‘Ich bin ja schon seit drei Jahren hier. Deswegen bin ich betrübt und mein Herz hat sich mit Kummer gefüllt’"
-            ],
-            "references": ["248", "24/115", "24/119"],
+            "turoyo": "ḥa m-ay=yawme aṯi l-u=bayto mkadər",
+            "translations": ["eines Tages kam er betrübt nach Hause"],
+            "references": ["248", "24/115"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -73,7 +65,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ḥa m-ay=yawme aṯi l-u=bayto, mkadər ʻeines Tages kam er betrübt nach Hauseʼ; 248; 24/115;"
+          },
+          {
+            "turoyo": "uno harke mədde də-tloṯ=əšne fayəšno harke ʕal-aṯe mkadarno w-lebi mle ġamo",
+            "translations": [
+              "‘Ich bin ja schon seit drei Jahren hier. Deswegen bin ich betrübt und mein Herz hat sich mit Kummer gefüllt’"
+            ],
+            "references": ["24/119"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": "  uno harke mədde də-tloṯ=əšne fayəšno harke"
@@ -111,7 +113,7 @@
                 "value": "[MT]"
               }
             ],
-            "text": "ḥa m-ay=yawme aṯi l-u=bayto, mkadər ʻeines Tages kam er betrübt nach Hauseʼ; 248; 24/115; uno harke mədde də-tloṯ=əšne fayəšno harke; ʕal-aṯe mkadarno w-lebi mle ġamo ‘Ich bin ja schon seit drei Jahren hier. Deswegen bin ich betrübt und mein Herz hat sich mit Kummer gefüllt’; 24/119 [MT]"
+            "text": "uno harke mədde də-tloṯ=əšne fayəšno harke; ʕal-aṯe mkadarno w-lebi mle ġamo ‘Ich bin ja schon seit drei Jahren hier. Deswegen bin ich betrübt und mein Herz hat sich mit Kummer gefüllt’; 24/119 [MT]"
           }
         ],
         "Infectum": [
@@ -119,7 +121,7 @@
             "turoyo": "lo=mikadrət - axúl məfṣəḥ štay həč lə-mikadrət!",
             "translations": [
               "sei nicht betrübt",
-              "‘Iß, sei vergnügt, trinke, und sei durchaus nicht betrübt!’"
+              "Iß, sei vergnügt, trinke, und sei durchaus nicht betrübt!"
             ],
             "references": ["248", "249", "24/121"],
             "tokens": [
@@ -206,6 +208,6 @@
       }
     }
   ],
-  "idioms": ["(Detrans.) betrübt werden;"],
+  "idioms": null,
   "uncertain": false
 }

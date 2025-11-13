@@ -64,13 +64,11 @@
         ],
         "Infectum": [
           {
-            "turoyo": "hano u=sobo ko-mšayəl u=ṭaboxo ʕal u=dayroyo naʕimo w-ko-mṣaʕal-le b-u=ḥal-ano hənnək ku-mṣaʕri l-ḥḏoḏe u=ṭaboxo ko-mbalaġ-ġe šlome fayəš ko-mṣaʕro l-ruḥa w-l-i=saʕa d-ḥzela eba u=kačalōk",
+            "turoyo": "hano u=sobo ko-mšayəl u=ṭaboxo ʕal u=dayroyo naʕimo w-ko-mṣaʕal-le",
             "translations": [
-              "this old [monk] asked the cook about the young monk and abused him",
-              "‘Thus, they would abuse each other [and] the cook would send them regards’",
-              "‘She began to scold herself and the hour when she had seen the bald-headed’"
+              "this old [monk] asked the cook about the young monk and abused him"
             ],
-            "references": ["246", "42/4", "5", "42/8", "44/115"],
+            "references": ["246", "42/4", "5"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -119,7 +117,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "hano u=sobo ko-mšayəl u=ṭaboxo ʕal u=dayroyo naʕimo w-ko-mṣaʕal-le ʻthis old [monk] asked the cook about the young monk and abused himʼ; 246; 42/4, 5;"
+          },
+          {
+            "turoyo": "b-u=ḥal-ano hənnək ku-mṣaʕri l-ḥḏoḏe u=ṭaboxo ko-mbalaġ-ġe šlome",
+            "translations": [
+              "‘Thus, they would abuse each other [and] the cook would send them regards’"
+            ],
+            "references": ["42/8"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " b-u=ḥal-ano hənnək ku-mṣaʕri l-ḥḏoḏe"
@@ -151,7 +159,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "b-u=ḥal-ano hənnək ku-mṣaʕri l-ḥḏoḏe, u=ṭaboxo ko-mbalaġ-ġe šlome ‘Thus, they would abuse each other [and] the cook would send them regards’; 42/8;"
+          },
+          {
+            "turoyo": "fayəš ko-mṣaʕro l-ruḥa w-l-i=saʕa d-ḥzela eba u=kačalōk",
+            "translations": [
+              "‘She began to scold herself and the hour when she had seen the bald-headed’"
+            ],
+            "references": ["44/115"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " fayəš ko-mṣaʕro l-ruḥa w-l-i=saʕa d-ḥzela eba u=kačalōk "
@@ -173,18 +191,16 @@
                 "value": "44/115"
               }
             ],
-            "text": "hano u=sobo ko-mšayəl u=ṭaboxo ʕal u=dayroyo naʕimo w-ko-mṣaʕal-le ʻthis old [monk] asked the cook about the young monk and abused himʼ; 246; 42/4, 5; b-u=ḥal-ano hənnək ku-mṣaʕri l-ḥḏoḏe, u=ṭaboxo ko-mbalaġ-ġe šlome ‘Thus, they would abuse each other [and] the cook would send them regards’; 42/8; fayəš ko-mṣaʕro l-ruḥa w-l-i=saʕa d-ḥzela eba u=kačalōk ‘She began to scold herself and the hour when she had seen the bald-headed’; 44/115"
+            "text": "fayəš ko-mṣaʕro l-ruḥa w-l-i=saʕa d-ḥzela eba u=kačalōk ‘She began to scold herself and the hour when she had seen the bald-headed’; 44/115"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "i=naqqa d-marfan-wo aq=qarqure qum d-a=ʕwone u=qarqur-ano mṣaʕar-wo ənkān layto. lə=ko-mṣaʕro-wa l-babi gəd-oṯe l-gabi me-darbe d-ono əzzí l-gabe w-bəṯṯər m-aqqa ṣ=ṣurʕ-anək d-mṣaʕár-wayno-le",
+            "turoyo": "i=naqqa d-marfan-wo aq=qarqure qum d-a=ʕwone u=qarqur-ano mṣaʕar-wo",
             "translations": [
-              "wenn sie die Lämmer zu den Mutterschafen liessen, schimpfte dieses Lamm immer",
-              "es ist unmöglich. Sie würde meinen Vater nicht beschimpfen",
-              "‘He will come to me instead of me coming to him after those insults with which I used to abuse him’"
+              "wenn sie die Lämmer zu den Mutterschafen liessen, schimpfte dieses Lamm immer"
             ],
-            "references": ["59/88", "64/52", "42/14"],
+            "references": ["59/88"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -217,7 +233,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "i=naqqa d-marfan-wo aq=qarqure qum d-a=ʕwone, u=qarqur-ano mṣaʕar-wo ʻwenn sie die Lämmer zu den Mutterschafen liessen, schimpfte dieses Lamm immerʼ; 59/88;"
+          },
+          {
+            "turoyo": "ənkān layto. lə=ko-mṣaʕro-wa l-babi",
+            "translations": [
+              "es ist unmöglich. Sie würde meinen Vater nicht beschimpfen"
+            ],
+            "references": ["64/52"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ənkān layto. lə=ko-mṣaʕro-wa l-babi "
@@ -241,7 +267,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ənkān layto. lə=ko-mṣaʕro-wa l-babi ʻes ist unmöglich. Sie würde meinen Vater nicht beschimpfenʼ; 64/52;"
+          },
+          {
+            "turoyo": "gəd-oṯe l-gabi me-darbe d-ono əzzí l-gabe w-bəṯṯər m-aqqa ṣ=ṣurʕ-anək d-mṣaʕár-wayno-le",
+            "translations": [
+              "‘He will come to me instead of me coming to him after those insults with which I used to abuse him’"
+            ],
+            "references": ["42/14"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " gəd-oṯe l-gabi me-darbe d-ono əzzí l-gabe"
@@ -271,7 +307,7 @@
                 "value": "42/14"
               }
             ],
-            "text": "i=naqqa d-marfan-wo aq=qarqure qum d-a=ʕwone, u=qarqur-ano mṣaʕar-wo ʻwenn sie die Lämmer zu den Mutterschafen liessen, schimpfte dieses Lamm immerʼ; 59/88; ənkān layto. lə=ko-mṣaʕro-wa l-babi ʻes ist unmöglich. Sie würde meinen Vater nicht beschimpfenʼ; 64/52; gəd-oṯe l-gabi me-darbe d-ono əzzí l-gabe, w-bəṯṯər m-aqqa ṣ=ṣurʕ-anək d-mṣaʕár-wayno-le ‘He will come to me instead of me coming to him after those insults with which I used to abuse him’; 42/14"
+            "text": "gəd-oṯe l-gabi me-darbe d-ono əzzí l-gabe, w-bəṯṯər m-aqqa ṣ=ṣurʕ-anək d-mṣaʕár-wayno-le ‘He will come to me instead of me coming to him after those insults with which I used to abuse him’; 42/14"
           }
         ]
       }

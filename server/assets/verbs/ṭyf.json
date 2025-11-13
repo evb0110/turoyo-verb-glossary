@@ -18,12 +18,9 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "ṭayəf u=lăgan semo w dahwo prs i=ṭaṣe ṭayifo ḥalwo",
-            "translations": [
-              "das Becken floss über mit Silber und Gold",
-              "die Milch in der Schale floss über"
-            ],
-            "references": ["511", "12/24", "512"],
+            "turoyo": "ṭayəf u=lăgan semo w dahwo prs",
+            "translations": ["das Becken floss über mit Silber und Gold"],
+            "references": ["511", "12/24"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -60,7 +57,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ṭayəf u=lăgan semo w dahwo ʻdas Becken floss über mit Silber und Goldʼ; 511; prs 12/24;"
+          },
+          {
+            "turoyo": "i=ṭaṣe ṭayifo ḥalwo",
+            "translations": ["die Milch in der Schale floss über"],
+            "references": ["512"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " i=ṭaṣe ṭayifo ḥalwo "
@@ -86,7 +91,7 @@
                 "value": ";"
               }
             ],
-            "text": "ṭayəf u=lăgan semo w dahwo ʻdas Becken floss über mit Silber und Goldʼ; 511; prs 12/24; i=ṭaṣe ṭayifo ḥalwo ʻdie Milch in der Schale floss überʼ; 512;"
+            "text": "i=ṭaṣe ṭayifo ḥalwo ʻdie Milch in der Schale floss überʼ; 512;"
           }
         ]
       }

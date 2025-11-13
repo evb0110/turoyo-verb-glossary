@@ -18,24 +18,11 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "kīt maye b-u=bəstono nahro. qabəz u=qaṭuno qaṭəʕ am=maye prs w qaṭəʕno ʕal am=maye hīč d-lə=zuḥṯo maṭən l-Raṣəlʕayn w-qatiʕi Raṣəlʕayn qaṭəʕ b-u=nahro d-ʕaṣi qayəm rawəx ʕal i=səst-ayḏe w-barəm bəṯr ad=dəžmən w-qaṭəʕ l-qamuṯayye heš lə=qaṭiʕi u=ḥdud d-aʕ=ʕaniza",
+            "turoyo": "kīt maye b-u=bəstono nahro. qabəz u=qaṭuno qaṭəʕ am=maye prs",
             "translations": [
-              "in dem Garten war nämlich ein Wasser, ein Bach. Der Kater sprang und kam hinüber",
-              "‘und ich durchquerte das Wasser ganz ohne Furcht’",
-              "‘Sie kamen nach Rasel‘ain und gingen durch Rasel‘ain hindurch’",
-              "‘Er setzte über den Orontes’",
-              "‘Er stieg auf sein Pferd, ritt hinter den Feinden herum und trat ihnen gegenüber’",
-              "‘Sie hatten noch nicht die Grenze des Gebiets der 'Aneze überschritten’"
+              "in dem Garten war nämlich ein Wasser, ein Bach. Der Kater sprang und kam hinüber"
             ],
-            "references": [
-              "190",
-              "166/10",
-              "JL 9.9.12",
-              "30/33",
-              "30/72",
-              "30/96",
-              "29/116"
-            ],
+            "references": ["190", "166/10"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -88,7 +75,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "kīt maye b-u=bəstono, nahro. qabəz u=qaṭuno, qaṭəʕ am=maye ʻin dem Garten war nämlich ein Wasser, ein Bach. Der Kater sprang und kam hinüberʼ; 190; prs 166/10;"
+          },
+          {
+            "turoyo": "w qaṭəʕno ʕal am=maye hīč d-lə=zuḥṯo maṭən l-Raṣəlʕayn w-qatiʕi Raṣəlʕayn",
+            "translations": [
+              "‘und ich durchquerte das Wasser ganz ohne Furcht’",
+              "‘Sie kamen nach Rasel‘ain und gingen durch Rasel‘ain hindurch’"
+            ],
+            "references": ["JL 9.9.12", "30/33"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " w qaṭəʕno ʕal am=maye hīč d-lə=zuḥṯo "
@@ -132,7 +130,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "w qaṭəʕno ʕal am=maye hīč d-lə=zuḥṯo ‘und ich durchquerte das Wasser ganz ohne Furcht’ JL 9.9.12; maṭən l-Raṣəlʕayn w-qatiʕi Raṣəlʕayn ‘Sie kamen nach Rasel‘ain und gingen durch Rasel‘ain hindurch’; 30/33;"
+          },
+          {
+            "turoyo": "qaṭəʕ b-u=nahro d-ʕaṣi",
+            "translations": ["‘Er setzte über den Orontes’"],
+            "references": ["30/72"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " qaṭəʕ b-u=nahro d-ʕaṣi "
@@ -156,7 +162,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "qaṭəʕ b-u=nahro d-ʕaṣi ‘Er setzte über den Orontes’; 30/72;"
+          },
+          {
+            "turoyo": "qayəm rawəx ʕal i=səst-ayḏe w-barəm bəṯr ad=dəžmən w-qaṭəʕ l-qamuṯayye",
+            "translations": [
+              "‘Er stieg auf sein Pferd, ritt hinter den Feinden herum und trat ihnen gegenüber’"
+            ],
+            "references": ["30/96"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " qayəm rawəx ʕal i=səst-ayḏe w-barəm bəṯr ad=dəžmən w-qaṭəʕ l-qamuṯayye "
@@ -180,7 +196,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "qayəm rawəx ʕal i=səst-ayḏe w-barəm bəṯr ad=dəžmən w-qaṭəʕ l-qamuṯayye ‘Er stieg auf sein Pferd, ritt hinter den Feinden herum und trat ihnen gegenüber’; 30/96;"
+          },
+          {
+            "turoyo": "heš lə=qaṭiʕi u=ḥdud d-aʕ=ʕaniza",
+            "translations": [
+              "‘Sie hatten noch nicht die Grenze des Gebiets der 'Aneze überschritten’"
+            ],
+            "references": ["29/116"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " heš lə=qaṭiʕi u=ḥdud d-aʕ=ʕaniza "
@@ -202,18 +228,16 @@
                 "value": "29/116"
               }
             ],
-            "text": "kīt maye b-u=bəstono, nahro. qabəz u=qaṭuno, qaṭəʕ am=maye ʻin dem Garten war nämlich ein Wasser, ein Bach. Der Kater sprang und kam hinüberʼ; 190; prs 166/10; w qaṭəʕno ʕal am=maye hīč d-lə=zuḥṯo ‘und ich durchquerte das Wasser ganz ohne Furcht’ JL 9.9.12; maṭən l-Raṣəlʕayn w-qatiʕi Raṣəlʕayn ‘Sie kamen nach Rasel‘ain und gingen durch Rasel‘ain hindurch’; 30/33; qaṭəʕ b-u=nahro d-ʕaṣi ‘Er setzte über den Orontes’; 30/72; qayəm rawəx ʕal i=səst-ayḏe w-barəm bəṯr ad=dəžmən w-qaṭəʕ l-qamuṯayye ‘Er stieg auf sein Pferd, ritt hinter den Feinden herum und trat ihnen gegenüber’; 30/96; heš lə=qaṭiʕi u=ḥdud d-aʕ=ʕaniza ‘Sie hatten noch nicht die Grenze des Gebiets der 'Aneze überschritten’; 29/116"
+            "text": "heš lə=qaṭiʕi u=ḥdud d-aʕ=ʕaniza ‘Sie hatten noch nicht die Grenze des Gebiets der 'Aneze überschritten’; 29/116"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "ko-saymi lə=k-saymi ḥa d-maǧre qoṭəʕ lə=g-maǧre me-tamo w lugab hul d-quṭʕo ʕaynox báḥar-yo áydarbo g-quṭaʕno nošo d-lə=ḥŭze-li",
+            "turoyo": "ko-saymi lə=k-saymi ḥa d-maǧre qoṭəʕ lə=g-maǧre",
             "translations": [
-              "was sie auch tun, den Sprung zu wagen, keiner wagt ihn",
-              "‘von da aus weiter fort, soweit das Auge reicht, ist Meer’",
-              "‘Wie kann ich übersetzen, ohne daß mich jemand sieht?’"
+              "was sie auch tun, den Sprung zu wagen, keiner wagt ihn"
             ],
-            "references": ["190", "67/83", "95", "4/87", "30/71"],
+            "references": ["190", "67/83", "95"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -262,7 +286,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ko-saymi lə=k-saymi ḥa d-maǧre qoṭəʕ lə=g-maǧre ʻwas sie auch tun, den Sprung zu wagen, keiner wagt ihnʼ; 190; 67/83, 95;"
+          },
+          {
+            "turoyo": "me-tamo w lugab hul d-quṭʕo ʕaynox báḥar-yo",
+            "translations": [
+              "‘von da aus weiter fort, soweit das Auge reicht, ist Meer’"
+            ],
+            "references": ["4/87"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " me-tamo w lugab"
@@ -302,7 +336,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "me-tamo w lugab, hul d-quṭʕo ʕaynox, báḥar-yo ‘von da aus weiter fort, soweit das Auge reicht, ist Meer’; 4/87;"
+          },
+          {
+            "turoyo": "áydarbo g-quṭaʕno nošo d-lə=ḥŭze-li",
+            "translations": [
+              "‘Wie kann ich übersetzen, ohne daß mich jemand sieht?’"
+            ],
+            "references": ["30/71"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " áydarbo g-quṭaʕno"
@@ -332,7 +376,7 @@
                 "value": "30/71"
               }
             ],
-            "text": "ko-saymi lə=k-saymi ḥa d-maǧre qoṭəʕ lə=g-maǧre ʻwas sie auch tun, den Sprung zu wagen, keiner wagt ihnʼ; 190; 67/83, 95; me-tamo w lugab, hul d-quṭʕo ʕaynox, báḥar-yo ‘von da aus weiter fort, soweit das Auge reicht, ist Meer’; 4/87; áydarbo g-quṭaʕno, nošo d-lə=ḥŭze-li ‘Wie kann ich übersetzen, ohne daß mich jemand sieht?’; 30/71"
+            "text": "áydarbo g-quṭaʕno, nošo d-lə=ḥŭze-li ‘Wie kann ich übersetzen, ohne daß mich jemand sieht?’; 30/71"
           }
         ],
         "Infectum-wa": [
@@ -521,12 +565,9 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "qaṭ! maqṭaʕle i=ʕambiq-ayo ono g-maqṭaʕn-ux l-u=gab-awo d-am=maye Lehrbuch",
-            "translations": [
-              "er setzte “hopp!” über den Graben",
-              "‘ich helfe dir, auf die andere Seite des Wassers hinüberzugelangen’"
-            ],
-            "references": ["191", "67/77", "9.9.4"],
+            "turoyo": "qaṭ! maqṭaʕle i=ʕambiq-ayo",
+            "translations": ["er setzte “hopp!” über den Graben"],
+            "references": ["191", "67/77"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -563,7 +604,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "qaṭ! maqṭaʕle i=ʕambiq-ayo ʻer setzte “hopp!” über den Grabenʼ; 191; 67/77;"
+          },
+          {
+            "turoyo": "ono g-maqṭaʕn-ux l-u=gab-awo d-am=maye Lehrbuch",
+            "translations": [
+              "‘ich helfe dir, auf die andere Seite des Wassers hinüberzugelangen’"
+            ],
+            "references": ["9.9.4"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ono g-maqṭaʕn-ux l-u=gab-awo d-am=maye "
@@ -585,17 +636,14 @@
                 "value": "9.9.4"
               }
             ],
-            "text": "qaṭ! maqṭaʕle i=ʕambiq-ayo ʻer setzte “hopp!” über den Grabenʼ; 191; 67/77; ono g-maqṭaʕn-ux l-u=gab-awo d-am=maye ‘ich helfe dir, auf die andere Seite des Wassers hinüberzugelangen’; Lehrbuch 9.9.4"
+            "text": "ono g-maqṭaʕn-ux l-u=gab-awo d-am=maye ‘ich helfe dir, auf die andere Seite des Wassers hinüberzugelangen’; Lehrbuch 9.9.4"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "g-maqṭaʕno-la b-am=maye prs hat itúx gabi ono g-maqṭaʕn-ux l-u=gab-awo d-am=maye",
-            "translations": [
-              "ich werde sie über das Wasser bringen",
-              "komm du zu mir, ich helfe dir, auf die andere Seite des Wassers hinüberzugelangen"
-            ],
-            "references": ["191", "190/10", "JL 9.9.4"],
+            "turoyo": "g-maqṭaʕno-la b-am=maye prs",
+            "translations": ["ich werde sie über das Wasser bringen"],
+            "references": ["191", "190/10"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -632,7 +680,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "g-maqṭaʕno-la b-am=maye ʻich werde sie über das Wasser bringenʼ; 191; prs 190/10;"
+          },
+          {
+            "turoyo": "hat itúx gabi ono g-maqṭaʕn-ux l-u=gab-awo d-am=maye",
+            "translations": [
+              "komm du zu mir, ich helfe dir, auf die andere Seite des Wassers hinüberzugelangen"
+            ],
+            "references": ["JL 9.9.4"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " hat itúx gabi"
@@ -662,12 +720,12 @@
                 "value": ";"
               }
             ],
-            "text": "g-maqṭaʕno-la b-am=maye ʻich werde sie über das Wasser bringenʼ; 191; prs 190/10; hat itúx gabi, ono g-maqṭaʕn-ux l-u=gab-awo d-am=maye ʻkomm du zu mir, ich helfe dir, auf die andere Seite des Wassers hinüberzugelangenʼ JL 9.9.4;"
+            "text": "hat itúx gabi, ono g-maqṭaʕn-ux l-u=gab-awo d-am=maye ʻkomm du zu mir, ich helfe dir, auf die andere Seite des Wassers hinüberzugelangenʼ JL 9.9.4;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "tro rawxo i=kačke aʕlax b-u=baḥar aqṭeʕ-a prs Необычная форма без эмфатического t",
+            "turoyo": "tro rawxo i=kačke aʕlax b-u=baḥar aqṭeʕ-a prs",
             "translations": [
               "lass das Mädchen auf dich steigen und trage sie über das Wasser"
             ],
@@ -716,13 +774,21 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "tro rawxo i=kačke aʕlax b-u=baḥar, aqṭeʕ-a ʻlass das Mädchen auf dich steigen und trage sie über das Wasserʼ; 191; prs 83/23;"
+          },
+          {
+            "turoyo": "Необычная форма без эмфатического t",
+            "translations": [],
+            "references": [],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " Необычная форма без эмфатического t"
               }
             ],
-            "text": "tro rawxo i=kačke aʕlax b-u=baḥar, aqṭeʕ-a ʻlass das Mädchen auf dich steigen und trage sie über das Wasserʼ; 191; prs 83/23; Необычная форма без эмфатического t"
+            "text": "Необычная форма без эмфатического t"
           }
         ]
       }

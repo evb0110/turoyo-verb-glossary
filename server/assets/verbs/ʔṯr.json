@@ -80,13 +80,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "məd-məlle hawxa Šahrzamān ġắlabe qḥīr mʔaṯər bas u=tuhwiyaṯṯe l-i=maḥkame u=msoko d-u=wakilo u=qəfoyo d-as=suhḏe məd-kət-we šuġlo yarixo mʔaṯarno baxino šmənto w fayətno minayye məd-šamiʕo Sittilbudūr u=xabro d-a=greʕe mʔaṯro ʕayəq-la",
+            "turoyo": "məd-məlle hawxa Šahrzamān ġắlabe qḥīr mʔaṯər",
             "translations": [
-              "als er das sagte, wurde Scahrzamân sehr zornig und betrübt",
-              "aber die Leute dem Gericht übergeben, einen Anwalt nehmen, Zeugen ausfindig machen, das war eine lange Angelegenheit. So ärgerte ich mich denn, weinte ein wenig und verzichtete auf die Sachen",
-              "‘Als Sittilbudūr hörte, was die Knechte sagten, wurde sie betrübt und ärgerlich’"
+              "als er das sagte, wurde Scahrzamân sehr zornig und betrübt"
             ],
-            "references": ["741", "24/239", "423", "2/80", "24/212"],
+            "references": ["741", "24/239"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -131,7 +129,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "məd-məlle hawxa, Šahrzamān ġắlabe qḥīr mʔaṯər ʻals er das sagte, wurde Scahrzamân sehr zornig und betrübtʼ; 741; 24/239;"
+          },
+          {
+            "turoyo": "bas u=tuhwiyaṯṯe l-i=maḥkame u=msoko d-u=wakilo u=qəfoyo d-as=suhḏe məd-kət-we šuġlo yarixo mʔaṯarno baxino šmənto w fayətno minayye",
+            "translations": [
+              "aber die Leute dem Gericht übergeben, einen Anwalt nehmen, Zeugen ausfindig machen, das war eine lange Angelegenheit. So ärgerte ich mich denn, weinte ein wenig und verzichtete auf die Sachen"
+            ],
+            "references": ["423", "2/80"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " bas u=tuhwiyaṯṯe l-i=maḥkame"
@@ -215,7 +223,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "bas u=tuhwiyaṯṯe l-i=maḥkame, u=msoko d-u=wakilo, u=qəfoyo d-as=suhḏe, məd-kət-we šuġlo yarixo, mʔaṯarno, baxino šmənto, w fayətno minayye ʻaber die Leute dem Gericht übergeben, einen Anwalt nehmen, Zeugen ausfindig machen, das war eine lange Angelegenheit. So ärgerte ich mich denn, weinte ein wenig und verzichtete auf die Sachenʼ; 423; 2/80;"
+          },
+          {
+            "turoyo": "məd-šamiʕo Sittilbudūr u=xabro d-a=greʕe mʔaṯro ʕayəq-la",
+            "translations": [
+              "‘Als Sittilbudūr hörte, was die Knechte sagten, wurde sie betrübt und ärgerlich’"
+            ],
+            "references": ["24/212"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " məd-šamiʕo Sittilbudūr u=xabro d-a=greʕe"
@@ -253,10 +271,16 @@
                 "value": "24/212"
               }
             ],
-            "text": "məd-məlle hawxa, Šahrzamān ġắlabe qḥīr mʔaṯər ʻals er das sagte, wurde Scahrzamân sehr zornig und betrübtʼ; 741; 24/239; bas u=tuhwiyaṯṯe l-i=maḥkame, u=msoko d-u=wakilo, u=qəfoyo d-as=suhḏe, məd-kət-we šuġlo yarixo, mʔaṯarno, baxino šmənto, w fayətno minayye ʻaber die Leute dem Gericht übergeben, einen Anwalt nehmen, Zeugen ausfindig machen, das war eine lange Angelegenheit. So ärgerte ich mich denn, weinte ein wenig und verzichtete auf die Sachenʼ; 423; 2/80; məd-šamiʕo Sittilbudūr u=xabro d-a=greʕe, mʔaṯro, ʕayəq-la ‘Als Sittilbudūr hörte, was die Knechte sagten, wurde sie betrübt und ärgerlich’; 24/212"
+            "text": "məd-šamiʕo Sittilbudūr u=xabro d-a=greʕe, mʔaṯro, ʕayəq-la ‘Als Sittilbudūr hörte, was die Knechte sagten, wurde sie betrübt und ärgerlich’; 24/212"
           }
         ]
-      }
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "sich ärgern"
+        }
+      ]
     }
   ],
   "idioms": ["Eindruck machen;", "sich ärgern"],

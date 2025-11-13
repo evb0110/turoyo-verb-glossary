@@ -18,22 +18,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "hǧəmme ʕal u=malko liya w-l-a=greʕ-ayḏa msəkke yaṣiro mḥele raġle taḥt u=gawo d-i=sisto hǧəmle aʕla maʕlele ḥəs diḏe ʕumum kulle qayimi b-ḥubo b-šayno rawixi ʕal-as=səsy-aṯṯe <…> w-hǧəmme ʕal-ad=dəžmən i=naqqa d-mqadamle u=abr-ayḏe <…> w-b-ġaḏ̣ab hǧəmle rišayye w-grəšle u=sayfo mqadamle-lən hǧəmle ʕal i=oḏa ḥreto mofaqle u=ḥmor-awo w-dfəʕle lawġul l-u=diwan",
+            "turoyo": "hǧəmme ʕal u=malko liya w-l-a=greʕ-ayḏa msəkke yaṣiro",
             "translations": [
-              "sie und ihre Knechte stürmten auf einmal gegen den König an und nahmen ihn gefangen",
-              "‘Er schlug mit dem Fuß dem Pferd unter den Hauch, stürmte gegen sie an [und] erhob seine Stimme’",
-              "‘Alle erhoben sich einträchtig, setzen sich auf ihre Pferde <…> und griffen die Feinde an’",
-              "‘Nun kam der Sohn <…>, stürmte grimmig gegen sie an und kam mit gezücktem Schwert auf sie zu’",
-              "‘He ran into another room, brought out the donkey and forced him into the divan’"
+              "sie und ihre Knechte stürmten auf einmal gegen den König an und nahmen ihn gefangen"
             ],
-            "references": [
-              "69",
-              "24/173",
-              "24/215",
-              "29/19",
-              "29/361",
-              "84/53"
-            ],
+            "references": ["69", "24/173"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -86,7 +75,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "hǧəmme ʕal u=malko, liya w-l-a=greʕ-ayḏa, msəkke yaṣiro ʻsie und ihre Knechte stürmten auf einmal gegen den König an und nahmen ihn gefangenʼ; 69; 24/173;"
+          },
+          {
+            "turoyo": "mḥele raġle taḥt u=gawo d-i=sisto hǧəmle aʕla maʕlele ḥəs diḏe ʕumum kulle qayimi b-ḥubo b-šayno rawixi ʕal-as=səsy-aṯṯe <…> w-hǧəmme ʕal-ad=dəžmən",
+            "translations": [
+              "‘Er schlug mit dem Fuß dem Pferd unter den Hauch, stürmte gegen sie an [und] erhob seine Stimme’",
+              "‘Alle erhoben sich einträchtig, setzen sich auf ihre Pferde <…> und griffen die Feinde an’"
+            ],
+            "references": ["24/215", "29/19"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mḥele raġle taḥt u=gawo d-i=sisto"
@@ -166,7 +166,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mḥele raġle taḥt u=gawo d-i=sisto, hǧəmle aʕla, maʕlele ḥəs diḏe ‘Er schlug mit dem Fuß dem Pferd unter den Hauch, stürmte gegen sie an [und] erhob seine Stimme’; 24/215 [MT]; ʕumum kulle qayimi b-ḥubo b-šayno, rawixi ʕal-as=səsy-aṯṯe <…> w-hǧəmme ʕal-ad=dəžmən ‘Alle erhoben sich einträchtig, setzen sich auf ihre Pferde <…> und griffen die Feinde an’; 29/19;"
+          },
+          {
+            "turoyo": "i=naqqa d-mqadamle u=abr-ayḏe <…> w-b-ġaḏ̣ab hǧəmle rišayye w-grəšle u=sayfo mqadamle-lən",
+            "translations": [
+              "‘Nun kam der Sohn <…>, stürmte grimmig gegen sie an und kam mit gezücktem Schwert auf sie zu’"
+            ],
+            "references": ["29/361"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " i=naqqa d-mqadamle u=abr-ayḏe <…> w-b-ġaḏ̣ab hǧəmle rišayye"
@@ -206,7 +216,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "i=naqqa d-mqadamle u=abr-ayḏe <…> w-b-ġaḏ̣ab hǧəmle rišayye, w-grəšle u=sayfo, mqadamle-lən ‘Nun kam der Sohn <…>, stürmte grimmig gegen sie an und kam mit gezücktem Schwert auf sie zu’; 29/361;"
+          },
+          {
+            "turoyo": "hǧəmle ʕal i=oḏa ḥreto mofaqle u=ḥmor-awo w-dfəʕle lawġul l-u=diwan",
+            "translations": [
+              "‘He ran into another room, brought out the donkey and forced him into the divan’"
+            ],
+            "references": ["84/53"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " hǧəmle ʕal i=oḏa ḥreto mofaqle u=ḥmor-awo w-dfəʕle lawġul l-u=diwan "
@@ -236,20 +256,16 @@
                 "value": ";"
               }
             ],
-            "text": "hǧəmme ʕal u=malko, liya w-l-a=greʕ-ayḏa, msəkke yaṣiro ʻsie und ihre Knechte stürmten auf einmal gegen den König an und nahmen ihn gefangenʼ; 69; 24/173; mḥele raġle taḥt u=gawo d-i=sisto, hǧəmle aʕla, maʕlele ḥəs diḏe ‘Er schlug mit dem Fuß dem Pferd unter den Hauch, stürmte gegen sie an [und] erhob seine Stimme’; 24/215 [MT]; ʕumum kulle qayimi b-ḥubo b-šayno, rawixi ʕal-as=səsy-aṯṯe <…> w-hǧəmme ʕal-ad=dəžmən ‘Alle erhoben sich einträchtig, setzen sich auf ihre Pferde <…> und griffen die Feinde an’; 29/19; i=naqqa d-mqadamle u=abr-ayḏe <…> w-b-ġaḏ̣ab hǧəmle rišayye, w-grəšle u=sayfo, mqadamle-lən ‘Nun kam der Sohn <…>, stürmte grimmig gegen sie an und kam mit gezücktem Schwert auf sie zu’; 29/361; hǧəmle ʕal i=oḏa ḥreto mofaqle u=ḥmor-awo w-dfəʕle lawġul l-u=diwan ‘He ran into another room, brought out the donkey and forced him into the divan’ 84/53 [MT];"
+            "text": "hǧəmle ʕal i=oḏa ḥreto mofaqle u=ḥmor-awo w-dfəʕle lawġul l-u=diwan ‘He ran into another room, brought out the donkey and forced him into the divan’ 84/53 [MT];"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "i=šawṯo kula u=ḥa d-lat-le maye k-hoǧəm l-ab=bote d-kətte maye hano u=moro d-i=baxča maləmle a=greʕ-ayḏe aṯən d-huǧmi aʕlayye omár-way-no ha ʕIdo gd-oṯe g-hoǧamli w ha gd-oṯe-li məftakalle d-hoǧəm aʕlayye ḥatta d-qoṭəl a=greʕe w-hiya w-u=gawro uṯetu kulxu d-hužmina ʕal u=ʕadu d-xulṣina m-i=ḏ̣əlmiy-ayḏe m-i=ʕubudiy-ayḏe",
+            "turoyo": "i=šawṯo kula u=ḥa d-lat-le maye k-hoǧəm l-ab=bote d-kətte maye",
             "translations": [
-              "das ganze Stadtviertel, wer kein Wasser hat, stürmt in die Häuser, die Wasser haben",
-              "‘Da holte jener, der Herr des Gartens, seine Knechte zusammen und sie kamen, um jene anzugreifen’",
-              "‘ich dachte: Gleich wird ʕIdo mich angreifen, gleich geht er auf mich los’",
-              "‘Er gedachte jene anzugreifen, um die Knechte und sie und ihren Mann zu töten’",
-              "‘Ihr müßt alle kommen, damit wir den Feind angreifen und von seiner Tyrannei und Knechtschaft erlöst werden’"
+              "das ganze Stadtviertel, wer kein Wasser hat, stürmt in die Häuser, die Wasser haben"
             ],
-            "references": ["20/15", "24/170", "JL 19.6.34", "24/205", "29/16"],
+            "references": ["20/15"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -282,7 +298,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "i=šawṯo kula, u=ḥa d-lat-le maye k-hoǧəm l-ab=bote d-kətte maye ʻdas ganze Stadtviertel, wer kein Wasser hat, stürmt in die Häuser, die Wasser habenʼ; 20/15;"
+          },
+          {
+            "turoyo": "hano u=moro d-i=baxča maləmle a=greʕ-ayḏe aṯən d-huǧmi aʕlayye",
+            "translations": [
+              "‘Da holte jener, der Herr des Gartens, seine Knechte zusammen und sie kamen, um jene anzugreifen’"
+            ],
+            "references": ["24/170"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " hano u=moro d-i=baxča maləmle a=greʕ-ayḏe"
@@ -314,7 +340,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "hano u=moro d-i=baxča maləmle a=greʕ-ayḏe, aṯən d-huǧmi aʕlayye ‘Da holte jener, der Herr des Gartens, seine Knechte zusammen und sie kamen, um jene anzugreifen’; 24/170;"
+          },
+          {
+            "turoyo": "omár-way-no ha ʕIdo gd-oṯe g-hoǧamli w ha gd-oṯe-li məftakalle d-hoǧəm aʕlayye ḥatta d-qoṭəl a=greʕe w-hiya w-u=gawro",
+            "translations": [
+              "‘ich dachte: Gleich wird ʕIdo mich angreifen, gleich geht er auf mich los’",
+              "‘Er gedachte jene anzugreifen, um die Knechte und sie und ihren Mann zu töten’"
+            ],
+            "references": ["JL 19.6.34", "24/205"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": "  omár-way-no ha ʕIdo gd-oṯe g-hoǧamli"
@@ -366,7 +403,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "omár-way-no ha ʕIdo gd-oṯe g-hoǧamli, w ha gd-oṯe-li ‘ich dachte: Gleich wird ʕIdo mich angreifen, gleich geht er auf mich los’ JL 19.6.34; məftakalle d-hoǧəm aʕlayye ḥatta d-qoṭəl a=greʕe w-hiya w-u=gawro ‘Er gedachte jene anzugreifen, um die Knechte und sie und ihren Mann zu töten’; 24/205;"
+          },
+          {
+            "turoyo": "uṯetu kulxu d-hužmina ʕal u=ʕadu d-xulṣina m-i=ḏ̣əlmiy-ayḏe m-i=ʕubudiy-ayḏe",
+            "translations": [
+              "‘Ihr müßt alle kommen, damit wir den Feind angreifen und von seiner Tyrannei und Knechtschaft erlöst werden’"
+            ],
+            "references": ["29/16"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " uṯetu kulxu d-hužmina ʕal u=ʕadu d-xulṣina m-i=ḏ̣əlmiy-ayḏe"
@@ -404,7 +451,7 @@
                 "value": "[MT]"
               }
             ],
-            "text": "i=šawṯo kula, u=ḥa d-lat-le maye k-hoǧəm l-ab=bote d-kətte maye ʻdas ganze Stadtviertel, wer kein Wasser hat, stürmt in die Häuser, die Wasser habenʼ; 20/15; hano u=moro d-i=baxča maləmle a=greʕ-ayḏe, aṯən d-huǧmi aʕlayye ‘Da holte jener, der Herr des Gartens, seine Knechte zusammen und sie kamen, um jene anzugreifen’; 24/170; omár-way-no ha ʕIdo gd-oṯe g-hoǧamli, w ha gd-oṯe-li ‘ich dachte: Gleich wird ʕIdo mich angreifen, gleich geht er auf mich los’ JL 19.6.34; məftakalle d-hoǧəm aʕlayye ḥatta d-qoṭəl a=greʕe w-hiya w-u=gawro ‘Er gedachte jene anzugreifen, um die Knechte und sie und ihren Mann zu töten’; 24/205; uṯetu kulxu d-hužmina ʕal u=ʕadu d-xulṣina m-i=ḏ̣əlmiy-ayḏe, m-i=ʕubudiy-ayḏe ‘Ihr müßt alle kommen, damit wir den Feind angreifen und von seiner Tyrannei und Knechtschaft erlöst werden’; 29/16 [MT]"
+            "text": "uṯetu kulxu d-hužmina ʕal u=ʕadu d-xulṣina m-i=ḏ̣əlmiy-ayḏe, m-i=ʕubudiy-ayḏe ‘Ihr müßt alle kommen, damit wir den Feind angreifen und von seiner Tyrannei und Knechtschaft erlöst werden’; 29/16 [MT]"
           }
         ],
         "Imperativ": [
@@ -412,7 +459,7 @@
             "turoyo": "hǧamu aʕlayye w-bramu ann=arbaʕ qərnawoṯo aʕlayye i=naqla d-səlqina ʕal i=goro d-Mar Dodo də-Bsorino w-moḥina tfənge hatu me-ḥeḏər i=qriṯo hǧamu aʕla",
             "translations": [
               "stürmt auf sie und umzingelt sie von allen vier Ecken",
-              "‘When we get up on the roof of Mar Dodo of Bsorino and fire (our) rifles, you attack the village from the ring (around it)’"
+              "When we get up on the roof of Mar Dodo of Bsorino and fire (our) rifles, you attack the village from the ring (around it)"
             ],
             "references": ["120", "29/421", "71/92"],
             "tokens": [

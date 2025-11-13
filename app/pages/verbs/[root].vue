@@ -149,6 +149,23 @@ useHead({
                     </template>
                 </div>
             </div>
+
+            <UCard v-if="displayVerb?.idioms && displayVerb.idioms.length > 0">
+                <template #header>
+                    <h2 class="text-xl font-semibold">
+                        Idiomatic Phrases
+                    </h2>
+                </template>
+                <div class="space-y-3">
+                    <div
+                        v-for="(idiom, idx) in displayVerb.idioms"
+                        :key="idx"
+                        class="text-sm leading-relaxed border-l-2 border-gray-200 dark:border-gray-700 pl-3"
+                    >
+                        {{ idiom }}
+                    </div>
+                </div>
+            </UCard>
         </div>
     </div>
 </template>

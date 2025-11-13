@@ -53,7 +53,7 @@
       }
     },
     {
-      "stem": "II",
+      "stem": "Detransitive",
       "forms": ["mḥaramle", "mḥarəm"],
       "conjugations": {
         "Preterit": [
@@ -118,13 +118,55 @@
               }
             ],
             "text": "1) mḥaramle u=mukl-ayḏi, ʕal-awxa mḥalaqli l-i=garre d-Mīr Mḥama ʻer hat mein Essen für verboten erklärt; darum habe ich ihn in den Strudel von Mir Muhammed werfen lassenʼ; 181; 35/27;"
+          },
+          {
+            "turoyo": "mḥarəm bə-Ṣṭambəl",
+            "translations": [
+              "er blieb (trotz allem Flehen seiner Eltern) in Stambul"
+            ],
+            "references": ["2", "181"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥarəm bə-Ṣṭambəl "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer blieb (trotz allem Flehen seiner Eltern) in Stambulʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "181"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) mḥarəm bə-Ṣṭambəl ʻer blieb (trotz allem Flehen seiner Eltern) in Stambulʼ; 181;"
           }
         ],
         "ko-Preterit": [
           {
             "turoyo": "babi ko-mḥaramle-li m-u=quṣro lo=ko-ʕəbrono",
             "translations": [
-              "‘My father has banned me from entering the castle’"
+              "My father has banned me from entering the castle"
             ],
             "references": ["75/228"],
             "tokens": [
@@ -154,13 +196,9 @@
         ],
         "Infectum": [
           {
-            "turoyo": "ko-maḥarmət an=noše b-i=ʕiṯo k-uxlo b-as=sefoqe d-u=ʕamo ku=mḥarmo u=muklo qumayye mḥaramno aǧ=ǧaʕdat-ani ʕal u=ʕamo",
-            "translations": [
-              "du verdammst die Menschen in der Kirche",
-              "‘it (the goose, f) eats from the people’s dishes and makes the food uneatable for them’",
-              "ich werde diese Strassen für das Volk unpassierbar machen"
-            ],
-            "references": ["1", "LB 103", "36/113", "181", "95/66"],
+            "turoyo": "ko-maḥarmət an=noše b-i=ʕiṯo",
+            "translations": ["du verdammst die Menschen in der Kirche"],
+            "references": ["1", "LB 103"],
             "tokens": [
               {
                 "kind": "ref",
@@ -193,7 +231,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) ko-maḥarmət an=noše b-i=ʕiṯo ʻdu verdammst die Menschen in der Kircheʼ; LB 103;"
+          },
+          {
+            "turoyo": "k-uxlo b-as=sefoqe d-u=ʕamo ku=mḥarmo u=muklo qumayye",
+            "translations": [
+              "‘it (the goose, f) eats from the people’s dishes and makes the food uneatable for them’"
+            ],
+            "references": ["36/113"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " k-uxlo b-as=sefoqe d-u=ʕamo"
@@ -225,7 +273,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "k-uxlo b-as=sefoqe d-u=ʕamo, ku=mḥarmo u=muklo qumayye ‘it (the goose, f) eats from the people’s dishes and makes the food uneatable for them’; 36/113;"
+          },
+          {
+            "turoyo": "mḥaramno aǧ=ǧaʕdat-ani ʕal u=ʕamo",
+            "translations": [
+              "ich werde diese Strassen für das Volk unpassierbar machen"
+            ],
+            "references": ["181", "95/66"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": "  mḥaramno aǧ=ǧaʕdat-ani ʕal u=ʕamo "
@@ -263,7 +321,7 @@
                 "value": ";"
               }
             ],
-            "text": "1) ko-maḥarmət an=noše b-i=ʕiṯo ʻdu verdammst die Menschen in der Kircheʼ; LB 103; k-uxlo b-as=sefoqe d-u=ʕamo, ku=mḥarmo u=muklo qumayye ‘it (the goose, f) eats from the people’s dishes and makes the food uneatable for them’; 36/113; mḥaramno aǧ=ǧaʕdat-ani ʕal u=ʕamo ʻich werde diese Strassen für das Volk unpassierbar machenʼ; 181; 95/66;"
+            "text": "mḥaramno aǧ=ǧaʕdat-ani ʕal u=ʕamo ʻich werde diese Strassen für das Volk unpassierbar machenʼ; 181; 95/66;"
           }
         ],
         "Imperativ": [
@@ -318,56 +376,6 @@
               }
             ],
             "text": "1) mḥarǝ́m u=ḥalwayḏax aʕle ʻdeine Milch solle ihm verboten seinʼ; 181; 105/119;"
-          }
-        ]
-      }
-    },
-    {
-      "stem": "Detransitive",
-      "forms": [],
-      "conjugations": {
-        "Preterit": [
-          {
-            "turoyo": "mḥarəm bə-Ṣṭambəl",
-            "translations": [
-              "er blieb (trotz allem Flehen seiner Eltern) in Stambul"
-            ],
-            "references": ["2", "181"],
-            "tokens": [
-              {
-                "kind": "ref",
-                "value": "2"
-              },
-              {
-                "kind": "punct",
-                "value": ")"
-              },
-              {
-                "kind": "turoyo",
-                "value": " mḥarəm bə-Ṣṭambəl "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻer blieb (trotz allem Flehen seiner Eltern) in Stambulʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "181"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "2) mḥarəm bə-Ṣṭambəl ʻer blieb (trotz allem Flehen seiner Eltern) in Stambulʼ; 181;"
           }
         ]
       }

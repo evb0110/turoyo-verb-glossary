@@ -18,12 +18,9 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "ʕayizat mo=lirat lə=ʕayǝ́zno-le qərš",
-            "translations": [
-              "du brauchst 100 Pfund",
-              "ich brauchte keinen Groschen von ihm"
-            ],
-            "references": ["513", "513"],
+            "turoyo": "ʕayizat mo=lirat",
+            "translations": ["du brauchst 100 Pfund"],
+            "references": ["513"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -48,7 +45,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ʕayizat mo=lirat ʻdu brauchst 100 Pfundʼ; 513;"
+          },
+          {
+            "turoyo": "lə=ʕayǝ́zno-le qərš",
+            "translations": ["ich brauchte keinen Groschen von ihm"],
+            "references": ["513"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " lə=ʕayǝ́zno-le qərš "
@@ -74,14 +79,14 @@
                 "value": ";"
               }
             ],
-            "text": "ʕayizat mo=lirat ʻdu brauchst 100 Pfundʼ; 513; lə=ʕayǝ́zno-le qərš ʻich brauchte keinen Groschen von ihmʼ; 513;"
+            "text": "lə=ʕayǝ́zno-le qərš ʻich brauchte keinen Groschen von ihmʼ; 513;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "k-ʕŭyaz-li kallat lo=k-ʕaz-li mede",
-            "translations": ["ich brauche Geld", "ich brauche nichts"],
-            "references": ["516", "516"],
+            "turoyo": "k-ʕŭyaz-li kallat",
+            "translations": ["ich brauche Geld"],
+            "references": ["516"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -106,7 +111,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "k-ʕŭyaz-li kallat ʻich brauche Geldʼ; 516;"
+          },
+          {
+            "turoyo": "lo=k-ʕaz-li mede",
+            "translations": ["ich brauche nichts"],
+            "references": ["516"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " lo=k-ʕaz-li mede "
@@ -132,7 +145,7 @@
                 "value": ";"
               }
             ],
-            "text": "k-ʕŭyaz-li kallat ʻich brauche Geldʼ; 516; lo=k-ʕaz-li mede ʻich brauche nichtsʼ; 516;"
+            "text": "lo=k-ʕaz-li mede ʻich brauche nichtsʼ; 516;"
           }
         ],
         "Infectum-wa": [

@@ -72,7 +72,7 @@
           {
             "turoyo": "hani lo=mʔamanne ʕal i=ḥkume",
             "translations": [
-              "‘Jene hatten aber kein Vertrauen zu der Regierung’"
+              "Jene hatten aber kein Vertrauen zu der Regierung"
             ],
             "references": ["3", "32/17"],
             "tokens": [
@@ -110,12 +110,9 @@
         ],
         "Infectum": [
           {
-            "turoyo": "ko-mʔamən l-u=ʕabid-ayḏe an=noš-ani lo=ku-mʔamnən-xu ábadan d-l=obénan-ne ono baxti",
-            "translations": [
-              "er vertraut seinem Sklaven",
-              "‘Diese Leute haben gar kein Vertrauen zu euch, wenn ich ihnen nicht mein Ehrenwert gebe’"
-            ],
-            "references": ["3", "740", "88/175", "32/24"],
+            "turoyo": "ko-mʔamən l-u=ʕabid-ayḏe",
+            "translations": ["er vertraut seinem Sklaven"],
+            "references": ["3", "740", "88/175"],
             "tokens": [
               {
                 "kind": "ref",
@@ -160,7 +157,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "3) ko-mʔamən l-u=ʕabid-ayḏe ʻer vertraut seinem Sklavenʼ; 740; 88/175;"
+          },
+          {
+            "turoyo": "an=noš-ani lo=ku-mʔamnən-xu ábadan d-l=obénan-ne ono baxti",
+            "translations": [
+              "‘Diese Leute haben gar kein Vertrauen zu euch, wenn ich ihnen nicht mein Ehrenwert gebe’"
+            ],
+            "references": ["32/24"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " an=noš-ani lo=ku-mʔamnən-xu ábadan d-l=obénan-ne ono baxti "
@@ -190,7 +197,7 @@
                 "value": "[MT]"
               }
             ],
-            "text": "3) ko-mʔamən l-u=ʕabid-ayḏe ʻer vertraut seinem Sklavenʼ; 740; 88/175; an=noš-ani lo=ku-mʔamnən-xu ábadan d-l=obénan-ne ono baxti ‘Diese Leute haben gar kein Vertrauen zu euch, wenn ich ihnen nicht mein Ehrenwert gebe’; 32/24 [MT]"
+            "text": "an=noš-ani lo=ku-mʔamnən-xu ábadan d-l=obénan-ne ono baxti ‘Diese Leute haben gar kein Vertrauen zu euch, wenn ich ihnen nicht mein Ehrenwert gebe’; 32/24 [MT]"
           },
           {
             "turoyo": "b-u=kār-ano kul kas kə-mʔamən aḥ=ḥeṭe a=sʕore u=pačīk u=daḥno a=ṭlawḥe w ak=kušnayḏe",
@@ -357,7 +364,13 @@
             "text": "ono k-obénan-xu waʕd ʕam aloho, inno d-ʔi=ḥkum-aṯe lə=ko-maxina-lxu, gəf-fayšutu mʔamne ʻich gebe euch das Versprechen vor Gott, dass diese Regierung keinen Verrat an euch üben wird, und dass ihr sicher sein werdetʼ; 741; 32/27; [MT]"
           }
         ]
-      }
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "1) sicher sein"
+        }
+      ]
     }
   ],
   "idioms": ["1) sicher sein"],

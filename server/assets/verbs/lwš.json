@@ -21,8 +21,8 @@
             "turoyo": "qayəm Mammo lwəšle u=sayfo w u=turso prs prs prs prs prs ḥatta d-a=greʕe w-u=mal diḏa d-lə=mibarbəz <…> ǧbiro lwəšla ǧule d-u=gawro - qayimo mə-ṣafro <…> lwəšla post d-i=ġəzalat aʕla",
             "translations": [
               "da machte sich Mammo auf, griff zu Säbel und Schild",
-              "‘Damit die Knechte und ihr Eigenturn sich nicht verstreuten <…> zog sie die Kleider ihres Mannes an’",
-              "‘[Die Tochter] stand früh am Morgen auf und <…> zog ihre Gazellenhaut über’"
+              "Damit die Knechte und ihr Eigenturn sich nicht verstreuten <…> zog sie die Kleider ihres Mannes an",
+              "[Die Tochter] stand früh am Morgen auf und <…> zog ihre Gazellenhaut über"
             ],
             "references": [
               "449",
@@ -222,7 +222,7 @@
           {
             "turoyo": "walakən lwəš-wo-le ǧule d-kačkāt w-kḥile ʕayne u=ləbs-ayḏe kule d- kačkāt d-nošo d-l=uḏaʕ-le",
             "translations": [
-              "‘Er hatte sich aber Mädchenkleider angezogen und die Augen geschminkt, und seine Kleidung war ganz die von Mädchen, damit ihn niemand in der Mädchentracht erkennen sollte’"
+              "Er hatte sich aber Mädchenkleider angezogen und die Augen geschminkt, und seine Kleidung war ganz die von Mädchen, damit ihn niemand in der Mädchentracht erkennen sollte"
             ],
             "references": ["29/55"],
             "tokens": [
@@ -268,13 +268,9 @@
         ],
         "Infectum": [
           {
-            "turoyo": "u=zlām d-lowaš-še gəm-moyəṯ k-lŭwašno i=məššay-ayḏi k-əzzino l-i=ʕayno d-am=maye k-mašəġno iḏi foṯi b-am=maye w u=ṣafono k-manḏ̣afno aṭ=ṭarfon-ayḏi i=naqla d-šləḥle l-u=zangīn aǧ=ǧul-ayḏe ko-ʕobər u=malaxo w-ko-lowəš aǧ=ǧule d-u=zangīn",
-            "translations": [
-              "der Mann, der sie (pl) anzieht, der stirbt",
-              "‘ziehe meine Pantoffeln an, gehe zum Wasserhahn, wasche mir Hände und Gesicht mit Wasser und Seife, säubere mit die Fingernägel’",
-              "‘When the rich man took off his clothes, the angel entered [the bathhouse] and put on the rich man’s clothes’"
-            ],
-            "references": ["453", "69/513", "9/3", "43/9"],
+            "turoyo": "u=zlām d-lowaš-še gəm-moyəṯ",
+            "translations": ["der Mann, der sie (pl) anzieht, der stirbt"],
+            "references": ["453", "69/513"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -311,7 +307,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "u=zlām d-lowaš-še gəm-moyəṯ ʻder Mann, der sie (pl) anzieht, der stirbtʼ; 453; 69/513;"
+          },
+          {
+            "turoyo": "k-lŭwašno i=məššay-ayḏi k-əzzino l-i=ʕayno d-am=maye k-mašəġno iḏi foṯi b-am=maye w u=ṣafono k-manḏ̣afno aṭ=ṭarfon-ayḏi",
+            "translations": [
+              "‘ziehe meine Pantoffeln an, gehe zum Wasserhahn, wasche mir Hände und Gesicht mit Wasser und Seife, säubere mit die Fingernägel’"
+            ],
+            "references": ["9/3"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " k-lŭwašno i=məššay-ayḏi"
@@ -383,7 +389,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "k-lŭwašno i=məššay-ayḏi, k-əzzino l-i=ʕayno, d-am=maye, k-mašəġno iḏi foṯi, b-am=maye, w u=ṣafono, k-manḏ̣afno aṭ=ṭarfon-ayḏi ‘ziehe meine Pantoffeln an, gehe zum Wasserhahn, wasche mir Hände und Gesicht mit Wasser und Seife, säubere mit die Fingernägel’; 9/3;"
+          },
+          {
+            "turoyo": "i=naqla d-šləḥle l-u=zangīn aǧ=ǧul-ayḏe ko-ʕobər u=malaxo w-ko-lowəš aǧ=ǧule d-u=zangīn",
+            "translations": [
+              "‘When the rich man took off his clothes, the angel entered [the bathhouse] and put on the rich man’s clothes’"
+            ],
+            "references": ["43/9"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " i=naqla d-šləḥle l-u=zangīn aǧ=ǧul-ayḏe"
@@ -413,7 +429,7 @@
                 "value": "43/9"
               }
             ],
-            "text": "u=zlām d-lowaš-še gəm-moyəṯ ʻder Mann, der sie (pl) anzieht, der stirbtʼ; 453; 69/513; k-lŭwašno i=məššay-ayḏi, k-əzzino l-i=ʕayno, d-am=maye, k-mašəġno iḏi foṯi, b-am=maye, w u=ṣafono, k-manḏ̣afno aṭ=ṭarfon-ayḏi ‘ziehe meine Pantoffeln an, gehe zum Wasserhahn, wasche mir Hände und Gesicht mit Wasser und Seife, säubere mit die Fingernägel’; 9/3; i=naqla d-šləḥle l-u=zangīn aǧ=ǧul-ayḏe, ko-ʕobər u=malaxo w-ko-lowəš aǧ=ǧule d-u=zangīn ‘When the rich man took off his clothes, the angel entered [the bathhouse] and put on the rich man’s clothes’; 43/9"
+            "text": "i=naqla d-šləḥle l-u=zangīn aǧ=ǧul-ayḏe, ko-ʕobər u=malaxo w-ko-lowəš aǧ=ǧule d-u=zangīn ‘When the rich man took off his clothes, the angel entered [the bathhouse] and put on the rich man’s clothes’; 43/9"
           }
         ],
         "Infectum-wa": [
@@ -490,12 +506,11 @@
         ],
         "Imperativ": [
           {
-            "turoyo": "mǝ́lla-le l-i=kačke lwaš i=qəmist-aṯi w mqatəl prs prs u=qaputayḏe kule ṭíno-yo lə=lušət-le",
+            "turoyo": "mǝ́lla-le l-i=kačke lwaš i=qəmist-aṯi w mqatəl prs prs",
             "translations": [
-              "das Mädchen sprach zu ihm: “Ziehe dieses Hemd hier an und kämpfe",
-              "sein Mantel ist voller Dreck, ziehe ihn nicht an"
+              "das Mädchen sprach zu ihm: “Ziehe dieses Hemd hier an und kämpfe”"
             ],
-            "references": ["456", "24/25", "64/12", "LB 291"],
+            "references": ["456", "24/25", "64/12"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -544,7 +559,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mǝ́lla-le l-i=kačke lwaš i=qəmist-aṯi w mqatəl ʻdas Mädchen sprach zu ihm: “Ziehe dieses Hemd hier an und kämpfe”ʼ; 456; prs 24/25; prs 64/12;"
+          },
+          {
+            "turoyo": "u=qaputayḏe kule ṭíno-yo lə=lušət-le",
+            "translations": [
+              "sein Mantel ist voller Dreck, ziehe ihn nicht an"
+            ],
+            "references": ["LB 291"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " u=qaputayḏe kule ṭíno-yo lə=lušət-le "
@@ -570,17 +595,14 @@
                 "value": ";"
               }
             ],
-            "text": "mǝ́lla-le l-i=kačke lwaš i=qəmist-aṯi w mqatəl ʻdas Mädchen sprach zu ihm: “Ziehe dieses Hemd hier an und kämpfe”ʼ; 456; prs 24/25; prs 64/12; u=qaputayḏe kule ṭíno-yo lə=lušət-le ʻsein Mantel ist voller Dreck, ziehe ihn nicht anʼ; LB 291;"
+            "text": "u=qaputayḏe kule ṭíno-yo lə=lušət-le ʻsein Mantel ist voller Dreck, ziehe ihn nicht anʼ; LB 291;"
           }
         ],
         "Part act.": [
           {
-            "turoyo": "ḥzéli-lxu lawoše xd-a=ʕmirone kulle rawixe d-as=səsye u=ʕaskar lawiše-ne",
-            "translations": [
-              "ich sah, dass ihr euch kleidet wie die Emire",
-              "‘They were all sitting astride horses, dressed like soldiers’"
-            ],
-            "references": ["457", "36/37", "LuF 268/21"],
+            "turoyo": "ḥzéli-lxu lawoše xd-a=ʕmirone",
+            "translations": ["ich sah, dass ihr euch kleidet wie die Emire"],
+            "references": ["457", "36/37"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -617,7 +639,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ḥzéli-lxu lawoše xd-a=ʕmirone ʻich sah, dass ihr euch kleidet wie die Emireʼ; 457; 36/37;"
+          },
+          {
+            "turoyo": "kulle rawixe d-as=səsye u=ʕaskar lawiše-ne",
+            "translations": [
+              "‘They were all sitting astride horses, dressed like soldiers’"
+            ],
+            "references": ["LuF 268/21"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " kulle rawixe d-as=səsye u=ʕaskar lawiše-ne "
@@ -639,7 +671,7 @@
                 "value": ";"
               }
             ],
-            "text": "ḥzéli-lxu lawoše xd-a=ʕmirone ʻich sah, dass ihr euch kleidet wie die Emireʼ; 457; 36/37; kulle rawixe d-as=səsye u=ʕaskar lawiše-ne ‘They were all sitting astride horses, dressed like soldiers’ LuF 268/21;"
+            "text": "kulle rawixe d-as=səsye u=ʕaskar lawiše-ne ‘They were all sitting astride horses, dressed like soldiers’ LuF 268/21;"
           }
         ]
       }
@@ -650,12 +682,9 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "i=faner-aṯe lo=ko-məlwošo awwəl d-naḥət u=maṭro i=šəmmaʕa k-məftoḥo k-məlwošo",
-            "translations": [
-              "diese Wollweste kann man nicht anziehen",
-              "‘sobald der Regen herabkommt, macht man die Regenhaut auf und zieht sue an’"
-            ],
-            "references": ["458", "9/20"],
+            "turoyo": "i=faner-aṯe lo=ko-məlwošo",
+            "translations": ["diese Wollweste kann man nicht anziehen"],
+            "references": ["458"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -680,7 +709,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "i=faner-aṯe lo=ko-məlwošo ʻdiese Wollweste kann man nicht anziehenʼ; 458;"
+          },
+          {
+            "turoyo": "awwəl d-naḥət u=maṭro i=šəmmaʕa k-məftoḥo k-məlwošo",
+            "translations": [
+              "‘sobald der Regen herabkommt, macht man die Regenhaut auf und zieht sue an’"
+            ],
+            "references": ["9/20"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " awwəl"
@@ -738,18 +777,42 @@
                 "value": ";"
               }
             ],
-            "text": "i=faner-aṯe lo=ko-məlwošo ʻdiese Wollweste kann man nicht anziehenʼ; 458; awwəl, d-naḥət u=maṭro, i=šəmmaʕa, k-məftoḥo, k-məlwošo ‘sobald der Regen herabkommt, macht man die Regenhaut auf und zieht sue an’; 9/20;"
+            "text": "awwəl, d-naḥət u=maṭro, i=šəmmaʕa, k-məftoḥo, k-məlwošo ‘sobald der Regen herabkommt, macht man die Regenhaut auf und zieht sue an’; 9/20;"
+          },
+          {
+            "turoyo": "ko-mitalwəš",
+            "translations": [],
+            "references": ["463"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mitalwəš"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "463"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-mitalwəš; 463;"
           }
         ],
         "Part. Pass.": [
           {
-            "turoyo": "u=gomlak lwíšo-yo i=aṯto kila lwəšto ǧule d-gawre w-haka l=awyo lawəšto aǧ=ǧule d-i=kaluṯo xa ono mdaglono-no",
-            "translations": [
-              "das Hemd ist angezogen, getragen",
-              "‘[Seine] Frau ist mit Männerkleidern bekleidet’",
-              "‘And if she is not dressed in the wedding gown, then I am a liar’"
-            ],
-            "references": ["459", "24/203", "74/134"],
+            "turoyo": "u=gomlak lwíšo-yo",
+            "translations": ["das Hemd ist angezogen, getragen"],
+            "references": ["459"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -774,7 +837,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "u=gomlak lwíšo-yo ʻdas Hemd ist angezogen, getragenʼ; 459;"
+          },
+          {
+            "turoyo": "i=aṯto kila lwəšto ǧule d-gawre",
+            "translations": ["‘[Seine] Frau ist mit Männerkleidern bekleidet’"],
+            "references": ["24/203"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " i=aṯto kila lwəšto ǧule d-gawre "
@@ -798,7 +869,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "i=aṯto kila lwəšto ǧule d-gawre ‘[Seine] Frau ist mit Männerkleidern bekleidet’; 24/203;"
+          },
+          {
+            "turoyo": "w-haka l=awyo lawəšto aǧ=ǧule d-i=kaluṯo xa ono mdaglono-no",
+            "translations": [
+              "‘And if she is not dressed in the wedding gown, then I am a liar’"
+            ],
+            "references": ["74/134"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " w-haka l=awyo lawəšto aǧ=ǧule d-i=kaluṯo"
@@ -828,7 +909,69 @@
                 "value": ";"
               }
             ],
-            "text": "u=gomlak lwíšo-yo ʻdas Hemd ist angezogen, getragenʼ; 459; i=aṯto kila lwəšto ǧule d-gawre ‘[Seine] Frau ist mit Männerkleidern bekleidet’; 24/203; w-haka l=awyo lawəšto aǧ=ǧule d-i=kaluṯo, xa ono mdaglono-no ‘And if she is not dressed in the wedding gown, then I am a liar’ 74/134;"
+            "text": "w-haka l=awyo lawəšto aǧ=ǧule d-i=kaluṯo, xa ono mdaglono-no ‘And if she is not dressed in the wedding gown, then I am a liar’ 74/134;"
+          },
+          {
+            "turoyo": "ʕabiri l-u=quṣro kle Ǧawhar malwišo kət-le tre=nišanat m-d-u=šulṭono prs",
+            "translations": [
+              "sie begaben sich nun in's Schloss hinein, Dschauhar im Prachtgewande und mit zwei Orden, die er vom Sultan erhalten hatte"
+            ],
+            "references": ["463", "110/31"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕabiri l-u=quṣro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kle Ǧawhar malwišo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kət-le tre=nišanat m-d-u=šulṭono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie begaben sich nun in's Schloss hinein, Dschauhar im Prachtgewande und mit zwei Orden, die er vom Sultan erhalten hatteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "463"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "110/31"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ʕabiri l-u=quṣro, kle Ǧawhar malwišo, kət-le tre=nišanat m-d-u=šulṭono ʻsie begaben sich nun in's Schloss hinein, Dschauhar im Prachtgewande und mit zwei Orden, die er vom Sultan erhalten hatteʼ; 463; prs 110/31;"
           }
         ],
         "Nomen Patiens": [
@@ -876,6 +1019,36 @@
             ],
             "text": "kalən lwišoye d-xəlʕa ʻsie haben Ehrenkleider anʼ; 459; 35/55;"
           }
+        ],
+        "Preterit": [
+          {
+            "turoyo": "malwəš",
+            "translations": [],
+            "references": ["463"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "malwəš"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "463"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "malwəš; 463;"
+          }
         ]
       }
     },
@@ -885,14 +1058,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "qayəm u=šulṭono malwašle a=tre húle-lən kul ḥa nišān omər aḥkemu ʕal ab-bohta prs malwaššal-le disa u=qaputayḏi mublənne l-u=ḥəmmam masḥənne malwišle-lin ǧule naḏ̣ife maytalle mətwile ʕal-i-ṣufr-ayḏe l-u=muklo mofaqle i=badle d-i=mulukiye d-u=babo rasman w-malwášle-le-yo",
+            "turoyo": "qayəm u=šulṭono malwašle a=tre húle-lən kul ḥa nišān omər aḥkemu ʕal ab-bohta prs",
             "translations": [
-              "der Sultan gab den beiden Ehrenkleider, verlieh jedem einen Orden und sagte:”Regiert über die Kurden",
-              "sie zogen mir wieder meinen Mantel über",
-              "‘Man führte sie ins Bad, man wusch sie, er ließ ihnen saubere Kleider anziehen, und holte sie, ließ sie an seiner Tafel sitzen’",
-              "‘[Badrchan Bag] holte das königliche Gewand seines Vaters offiziell hervor und bekleidete ihn damit’"
+              "der Sultan gab den beiden Ehrenkleider, verlieh jedem einen Orden und sagte:”Regiert über die Kurden”"
             ],
-            "references": ["1", "460", "90/25", "LB 75", "24/246", "28/43"],
+            "references": ["1", "460", "90/25"],
             "tokens": [
               {
                 "kind": "ref",
@@ -961,7 +1131,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) qayəm u=šulṭono, malwašle a=tre, húle-lən kul ḥa nišān, omər aḥkemu ʕal ab-bohta ʻder Sultan gab den beiden Ehrenkleider, verlieh jedem einen Orden und sagte:”Regiert über die Kurden”ʼ; 460; prs 90/25;"
+          },
+          {
+            "turoyo": "malwaššal-le disa u=qaputayḏi",
+            "translations": ["sie zogen mir wieder meinen Mantel über"],
+            "references": ["LB 75"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " malwaššal-le disa u=qaputayḏi "
@@ -985,7 +1163,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "malwaššal-le disa u=qaputayḏi ʻsie zogen mir wieder meinen Mantel überʼ; LB 75;"
+          },
+          {
+            "turoyo": "mublənne l-u=ḥəmmam masḥənne malwišle-lin ǧule naḏ̣ife maytalle mətwile ʕal-i-ṣufr-ayḏe l-u=muklo mofaqle i=badle d-i=mulukiye d-u=babo rasman w-malwášle-le-yo",
+            "translations": [
+              "‘Man führte sie ins Bad, man wusch sie, er ließ ihnen saubere Kleider anziehen, und holte sie, ließ sie an seiner Tafel sitzen’",
+              "‘[Badrchan Bag] holte das königliche Gewand seines Vaters offiziell hervor und bekleidete ihn damit’"
+            ],
+            "references": ["24/246", "28/43"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mublənne l-u=ḥəmmam"
@@ -1079,35 +1268,7 @@
                 "value": "28/43"
               }
             ],
-            "text": "1) qayəm u=šulṭono, malwašle a=tre, húle-lən kul ḥa nišān, omər aḥkemu ʕal ab-bohta ʻder Sultan gab den beiden Ehrenkleider, verlieh jedem einen Orden und sagte:”Regiert über die Kurden”ʼ; 460; prs 90/25; malwaššal-le disa u=qaputayḏi ʻsie zogen mir wieder meinen Mantel überʼ; LB 75; mublənne l-u=ḥəmmam, masḥənne, malwišle-lin ǧule naḏ̣ife, maytalle mətwile ʕal-i-ṣufr-ayḏe l-u=muklo ‘Man führte sie ins Bad, man wusch sie, er ließ ihnen saubere Kleider anziehen, und holte sie, ließ sie an seiner Tafel sitzen’; 24/246 [MT]; mofaqle i=badle d-i=mulukiye d-u=babo, rasman, w-malwášle-le-yo ‘[Badrchan Bag] holte das königliche Gewand seines Vaters offiziell hervor und bekleidete ihn damit’; 28/43"
-          },
-          {
-            "turoyo": "malwəš",
-            "translations": [],
-            "references": ["463"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "malwəš"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "463"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "malwəš; 463;"
+            "text": "mublənne l-u=ḥəmmam, masḥənne, malwišle-lin ǧule naḏ̣ife, maytalle mətwile ʕal-i-ṣufr-ayḏe l-u=muklo ‘Man führte sie ins Bad, man wusch sie, er ließ ihnen saubere Kleider anziehen, und holte sie, ließ sie an seiner Tafel sitzen’; 24/246 [MT]; mofaqle i=badle d-i=mulukiye d-u=babo, rasman, w-malwášle-le-yo ‘[Badrchan Bag] holte das königliche Gewand seines Vaters offiziell hervor und bekleidete ihn damit’; 28/43"
           }
         ],
         "Infectum": [
@@ -1162,34 +1323,6 @@
               }
             ],
             "text": "2) k-malwaš-še ǧule ma-ḥa=šəkl l-a=tre ʻsie trugen Kleider von einer Artʼ; 462; prs 121/27;"
-          },
-          {
-            "turoyo": "ko-mitalwəš",
-            "translations": [],
-            "references": ["463"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "ko-mitalwəš"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "463"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "ko-mitalwəš; 463;"
           }
         ],
         "Infectum-wa": [
@@ -1276,7 +1409,7 @@
           {
             "turoyo": "ʕal i=ṣufr-ayḏi gd-oxəl w-m-aǧ=ǧul-ayḏi malwešəl-le my clothes’",
             "translations": [
-              "‘He shall eat from my table, and you shall dress him in (lit. ‘from’"
+              "He shall eat from my table, and you shall dress him in (lit. ‘from"
             ],
             "references": ["1", "73/139"],
             "tokens": [
@@ -1374,70 +1507,6 @@
               }
             ],
             "text": "2) malweš-le aǧ=ǧul-ani ʻzieht ihm diese Kleider anʼ; 463; 77/193;"
-          }
-        ],
-        "Part. Pass.": [
-          {
-            "turoyo": "ʕabiri l-u=quṣro kle Ǧawhar malwišo kət-le tre=nišanat m-d-u=šulṭono prs",
-            "translations": [
-              "sie begaben sich nun in's Schloss hinein, Dschauhar im Prachtgewande und mit zwei Orden, die er vom Sultan erhalten hatte"
-            ],
-            "references": ["463", "110/31"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "ʕabiri l-u=quṣro"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " kle Ǧawhar malwišo"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " kət-le tre=nišanat m-d-u=šulṭono "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻsie begaben sich nun in's Schloss hinein, Dschauhar im Prachtgewande und mit zwei Orden, die er vom Sultan erhalten hatteʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "463"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " prs "
-              },
-              {
-                "kind": "ref",
-                "value": "110/31"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "ʕabiri l-u=quṣro, kle Ǧawhar malwišo, kət-le tre=nišanat m-d-u=šulṭono ʻsie begaben sich nun in's Schloss hinein, Dschauhar im Prachtgewande und mit zwei Orden, die er vom Sultan erhalten hatteʼ; 463; prs 110/31;"
           }
         ]
       }

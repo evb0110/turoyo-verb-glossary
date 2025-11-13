@@ -21,7 +21,7 @@
             "turoyo": "aṭ=ṭaye d-ḥeḏoran ... səmme u=hənǧ-aṯṯe aʕlan w-layimi m-aq=qəryawoṯe ḥrene d-aṭ=Ṭaye aṯən w-layimi ḥeḏore d-i=qriṯo fayəš ku-mḥarbi aʕmayye",
             "translations": [
               "die Muslime um uns herum ... suchten einen Vorwand gegen uns und versammelten sich",
-              "‘Aus den anderen Dörfern der Muhammedaner kamen sie und sammelten sich rings um das Dorf und kämpften nunmehr mit ihnen (mit dem Volk von ‘Iwardo)’"
+              "Aus den anderen Dörfern der Muhammedaner kamen sie und sammelten sich rings um das Dorf und kämpften nunmehr mit ihnen (mit dem Volk von ‘Iwardo)"
             ],
             "references": ["JL 10.12.1", "32/7"],
             "tokens": [
@@ -85,14 +85,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "maləmle ʕaskar w mšayaʕle rišayye prs mə-bəṯər d-maləmle aʕle i=maḥkame huwwe qarār bəṯṯər maləmle u=məžləs diḏe mšawalle bənne Šaṭír Šumān w-Murād azzə́n mədde ak=kallāt malimənne aṯən l-u=bayto w-fləġinne tamo ʕal ḥḏoḏe",
+            "turoyo": "maləmle ʕaskar w mšayaʕle rišayye prs",
             "translations": [
-              "er sammelte Soldaten und schickte sie gegen jene Leute",
-              "‘Er rief das Gericht über ihn zusammen, und die fällten das Urteil’",
-              "‘Dann versammelte er seine Ratsversammlung [und] beriet sich mit ihnen’",
-              "‘Schaṭir Schumān und Murād gingen hin, nahmen das Geld, sammelten es auf, gingen nach Hause und teilten es unter sich’"
+              "er sammelte Soldaten und schickte sie gegen jene Leute"
             ],
-            "references": ["537", "61/4", "537", "21/50", "24/98", "25/73"],
+            "references": ["537", "61/4"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -129,7 +126,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "maləmle ʕaskar w mšayaʕle rišayye ʻer sammelte Soldaten und schickte sie gegen jene Leuteʼ; 537; prs 61/4;"
+          },
+          {
+            "turoyo": "mə-bəṯər d-maləmle aʕle i=maḥkame huwwe qarār",
+            "translations": [
+              "‘Er rief das Gericht über ihn zusammen, und die fällten das Urteil’"
+            ],
+            "references": ["537", "21/50"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": "mə-bəṯər d-maləmle aʕle i=maḥkame huwwe qarār "
@@ -173,7 +180,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mə-bəṯər d-maləmle aʕle i=maḥkame huwwe qarār ‘Er rief das Gericht über ihn zusammen, und die fällten das Urteil’; [MT] 537; 21/50;"
+          },
+          {
+            "turoyo": "bəṯṯər maləmle u=məžləs diḏe mšawalle bənne Šaṭír Šumān w-Murād azzə́n mədde ak=kallāt malimənne aṯən l-u=bayto w-fləġinne tamo ʕal ḥḏoḏe",
+            "translations": [
+              "‘Dann versammelte er seine Ratsversammlung [und] beriet sich mit ihnen’",
+              "‘Schaṭir Schumān und Murād gingen hin, nahmen das Geld, sammelten es auf, gingen nach Hause und teilten es unter sich’"
+            ],
+            "references": ["24/98", "25/73"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " bəṯṯər maləmle u=məžləs diḏe"
@@ -251,7 +269,7 @@
                 "value": "25/73"
               }
             ],
-            "text": "maləmle ʕaskar w mšayaʕle rišayye ʻer sammelte Soldaten und schickte sie gegen jene Leuteʼ; 537; prs 61/4;mə-bəṯər d-maləmle aʕle i=maḥkame huwwe qarār ‘Er rief das Gericht über ihn zusammen, und die fällten das Urteil’; [MT] 537; 21/50; bəṯṯər maləmle u=məžləs diḏe, mšawalle bənne ‘Dann versammelte er seine Ratsversammlung [und] beriet sich mit ihnen’; 24/98 [MT]; Šaṭír Šumān w-Murād, azzə́n mədde ak=kallāt malimənne, aṯən l-u=bayto w-fləġinne tamo ʕal ḥḏoḏe ‘Schaṭir Schumān und Murād gingen hin, nahmen das Geld, sammelten es auf, gingen nach Hause und teilten es unter sich’; 25/73"
+            "text": "bəṯṯər maləmle u=məžləs diḏe, mšawalle bənne ‘Dann versammelte er seine Ratsversammlung [und] beriet sich mit ihnen’; 24/98 [MT]; Šaṭír Šumān w-Murād, azzə́n mədde ak=kallāt malimənne, aṯən l-u=bayto w-fləġinne tamo ʕal ḥḏoḏe ‘Schaṭir Schumān und Murād gingen hin, nahmen das Geld, sammelten es auf, gingen nach Hause und teilten es unter sich’; 25/73"
           }
         ],
         "Preterit-wa": [
@@ -302,23 +320,12 @@
         ],
         "Infectum": [
           {
-            "turoyo": "ho m-i=dašto d-Mawṣal bizi a=greʕayḏe k-malimi zād maḥatle b-aʕ=ʕanebər prs prs ak=kallawat-ani lo hat gəm-malimat-te i=naqla də-g-dumxo i=ʕamṯo k-qoyəm hedika k-uzzé k-maləm fŭtuḥe w-k-maḥət-te b-dukṯə-d-u=laḥmo d-ak=kəṯoṯ-anək g-maləmno u=məžləs w-noše d-howən ʕaqəl sowe",
+            "turoyo": "ho m-i=dašto d-Mawṣal bizi a=greʕayḏe k-malimi zād maḥatle b-aʕ=ʕanebər prs prs ak=kallawat-ani lo hat gəm-malimat-te",
             "translations": [
               "in die Ebene neben Môçul mussten sein Diener sich verteilen und Korn aufbringen",
-              "nicht du bringst ja das Geld zusammen",
-              "‘als die Tante schläft, steht er vorsichtig auf, geht und sucht Kuhfladen zusammen, legt sie an Stelle des Brotes und der Hühner’",
-              "‘Dann werde ich die Ratsversammlung einberufen, Leute, die klug sind, und alte’"
+              "nicht du bringst ja das Geld zusammen"
             ],
-            "references": [
-              "546",
-              "35/14",
-              "154/12",
-              "11/104",
-              "547",
-              "102/25",
-              "6/30",
-              "26/46"
-            ],
+            "references": ["546", "35/14", "154/12", "11/104", "547", "102/25"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -423,7 +430,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ho m-i=dašto d-Mawṣal bizi a=greʕayḏe k-malimi zād, maḥatle b-aʕ=ʕanebər ʻin die Ebene neben Môçul mussten sein Diener sich verteilen und Korn aufbringenʼ; 546; prs 35/14; prs 154/12; 11/104; ak=kallawat-ani lo hat gəm-malimat-te ʻnicht du bringst ja das Geld zusammenʼ; 547; 102/25;"
+          },
+          {
+            "turoyo": "i=naqla də-g-dumxo i=ʕamṯo k-qoyəm hedika k-uzzé k-maləm fŭtuḥe w-k-maḥət-te b-dukṯə-d-u=laḥmo d-ak=kəṯoṯ-anək",
+            "translations": [
+              "‘als die Tante schläft, steht er vorsichtig auf, geht und sucht Kuhfladen zusammen, legt sie an Stelle des Brotes und der Hühner’"
+            ],
+            "references": ["6/30"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " i=naqla də-g-dumxo i=ʕamṯo k-qoyəm hedika k-uzzé k-maləm fŭtuḥe"
@@ -455,7 +472,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "i=naqla də-g-dumxo i=ʕamṯo k-qoyəm hedika k-uzzé k-maləm fŭtuḥe, w-k-maḥət-te b-dukṯə-d-u=laḥmo d-ak=kəṯoṯ-anək ‘als die Tante schläft, steht er vorsichtig auf, geht und sucht Kuhfladen zusammen, legt sie an Stelle des Brotes und der Hühner’; 6/30;"
+          },
+          {
+            "turoyo": "g-maləmno u=məžləs w-noše d-howən ʕaqəl sowe",
+            "translations": [
+              "‘Dann werde ich die Ratsversammlung einberufen, Leute, die klug sind, und alte’"
+            ],
+            "references": ["26/46"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " g-maləmno u=məžləs w-noše d-howən ʕaqəl"
@@ -485,7 +512,7 @@
                 "value": "26/46"
               }
             ],
-            "text": "ho m-i=dašto d-Mawṣal bizi a=greʕayḏe k-malimi zād, maḥatle b-aʕ=ʕanebər ʻin die Ebene neben Môçul mussten sein Diener sich verteilen und Korn aufbringenʼ; 546; prs 35/14; prs 154/12; 11/104; ak=kallawat-ani lo hat gəm-malimat-te ʻnicht du bringst ja das Geld zusammenʼ; 547; 102/25; i=naqla də-g-dumxo i=ʕamṯo k-qoyəm hedika k-uzzé k-maləm fŭtuḥe, w-k-maḥət-te b-dukṯə-d-u=laḥmo d-ak=kəṯoṯ-anək ‘als die Tante schläft, steht er vorsichtig auf, geht und sucht Kuhfladen zusammen, legt sie an Stelle des Brotes und der Hühner’; 6/30; g-maləmno u=məžləs w-noše d-howən ʕaqəl, sowe ‘Dann werde ich die Ratsversammlung einberufen, Leute, die klug sind, und alte’; 26/46"
+            "text": "g-maləmno u=məžləs w-noše d-howən ʕaqəl, sowe ‘Dann werde ich die Ratsversammlung einberufen, Leute, die klug sind, und alte’; 26/46"
           }
         ],
         "Infectum-wa": [

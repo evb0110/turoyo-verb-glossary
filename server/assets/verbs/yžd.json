@@ -18,12 +18,9 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mawžadle iḏe l-u=ʕmiro mojadle u=maktubayḏe l-qum u=šulṭono",
-            "translations": [
-              "er streckte seine Hand aus",
-              "der Emir streckte seinen Brief dem Sultan hin"
-            ],
-            "references": ["665", "665", "36/57"],
+            "turoyo": "mawžadle iḏe",
+            "translations": ["er streckte seine Hand aus"],
+            "references": ["665"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -48,7 +45,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mawžadle iḏe ʻer streckte seine Hand ausʼ; 665;"
+          },
+          {
+            "turoyo": "l-u=ʕmiro mojadle u=maktubayḏe l-qum u=šulṭono",
+            "translations": ["der Emir streckte seinen Brief dem Sultan hin"],
+            "references": ["665", "36/57"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " l-u=ʕmiro mojadle u=maktubayḏe l-qum u=šulṭono "
@@ -86,7 +91,7 @@
                 "value": ";"
               }
             ],
-            "text": "mawžadle iḏe ʻer streckte seine Hand ausʼ; 665; l-u=ʕmiro mojadle u=maktubayḏe l-qum u=šulṭono ʻder Emir streckte seinen Brief dem Sultan hinʼ; 665; 36/57;"
+            "text": "l-u=ʕmiro mojadle u=maktubayḏe l-qum u=šulṭono ʻder Emir streckte seinen Brief dem Sultan hinʼ; 665; 36/57;"
           }
         ],
         "Infectum": [
@@ -293,9 +298,9 @@
         ],
         "Infinitiv": [
           {
-            "turoyo": "mžodo tawžido",
+            "turoyo": "mžodo",
             "translations": ["ausstrecken"],
-            "references": ["664", "665"],
+            "references": ["664"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -320,7 +325,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mžodo ʻausstreckenʼ; 664;"
+          },
+          {
+            "turoyo": "tawžido",
+            "translations": [],
+            "references": ["665"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " tawžido"
@@ -342,7 +355,7 @@
                 "value": ";"
               }
             ],
-            "text": "mžodo ʻausstreckenʼ; 664; tawžido; 665;"
+            "text": "tawžido; 665;"
           }
         ]
       }

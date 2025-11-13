@@ -18,11 +18,8 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "satənno harke ḥḏo gawiro w saṭiro p.c. IT",
-            "translations": [
-              "ich habe hier Schutz gefunden (für die Nacht)",
-              "‘eine (Frau) hat geheiratet und für sich Sicherheit erlangt’"
-            ],
+            "turoyo": "satənno harke",
+            "translations": ["ich habe hier Schutz gefunden (für die Nacht)"],
             "references": ["256"],
             "tokens": [
               {
@@ -48,7 +45,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "satənno harke ʻich habe hier Schutz gefunden (für die Nacht)ʼ; 256;"
+          },
+          {
+            "turoyo": "ḥḏo gawiro w saṭiro p.c. IT",
+            "translations": [
+              "‘eine (Frau) hat geheiratet und für sich Sicherheit erlangt’"
+            ],
+            "references": [],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ḥḏo gawiro w saṭiro "
@@ -70,18 +77,14 @@
                 "value": ";"
               }
             ],
-            "text": "satənno harke ʻich habe hier Schutz gefunden (für die Nacht)ʼ; 256; ḥḏo gawiro w saṭiro ‘eine (Frau) hat geheiratet und für sich Sicherheit erlangt’; p.c. IT;"
+            "text": "ḥḏo gawiro w saṭiro ‘eine (Frau) hat geheiratet und für sich Sicherheit erlangt’; p.c. IT;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "b-u=talgo ayko ko-ṣətri aṭ=ṭayre kal ko-ṣotanno b-u=xēr d-aloho a=bnoṯ-ani d-səṭri ṭawwo gt-owe-wa p.c. BS",
-            "translations": [
-              "wo finden die Vögel bei Schnee Schutz",
-              "‘ich lebe im Schutz der Gnade Gottes’",
-              "‘es wäre gut, wenn diese Mädchen heiraten (d.h. in der Ehe Schutz finden) würden; p.c. IT; satər gabayna ‘er hat bei uns Zuflucht gefunden’"
-            ],
-            "references": ["256", "60/313"],
+            "turoyo": "b-u=talgo ayko ko-ṣətri aṭ=ṭayre",
+            "translations": ["wo finden die Vögel bei Schnee Schutz"],
+            "references": ["256"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -106,7 +109,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "b-u=talgo ayko ko-ṣətri aṭ=ṭayre ʻwo finden die Vögel bei Schnee Schutzʼ; 256;"
+          },
+          {
+            "turoyo": "kal ko-ṣotanno b-u=xēr d-aloho",
+            "translations": ["‘ich lebe im Schutz der Gnade Gottes’"],
+            "references": ["60/313"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " kal ko-ṣotanno b-u=xēr d-aloho "
@@ -130,7 +141,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "kal ko-ṣotanno b-u=xēr d-aloho ‘ich lebe im Schutz der Gnade Gottes’; 60/313;"
+          },
+          {
+            "turoyo": "a=bnoṯ-ani d-səṭri ṭawwo gt-owe-wa p.c. BS",
+            "translations": [
+              "‘es wäre gut, wenn diese Mädchen heiraten (d.h. in der Ehe Schutz finden) würden; p.c. IT; satər gabayna ‘er hat bei uns Zuflucht gefunden’"
+            ],
+            "references": [],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " a=bnoṯ-ani d-səṭri ṭawwo gt-owe-wa "
@@ -152,13 +173,13 @@
                 "value": ";"
               }
             ],
-            "text": "b-u=talgo ayko ko-ṣətri aṭ=ṭayre ʻwo finden die Vögel bei Schnee Schutzʼ; 256; kal ko-ṣotanno b-u=xēr d-aloho ‘ich lebe im Schutz der Gnade Gottes’; 60/313; a=bnoṯ-ani d-səṭri ṭawwo gt-owe-wa ‘es wäre gut, wenn diese Mädchen heiraten (d.h. in der Ehe Schutz finden) würden; p.c. IT; satər gabayna ‘er hat bei uns Zuflucht gefunden’; p.c. BS;"
+            "text": "a=bnoṯ-ani d-səṭri ṭawwo gt-owe-wa ‘es wäre gut, wenn diese Mädchen heiraten (d.h. in der Ehe Schutz finden) würden; p.c. IT; satər gabayna ‘er hat bei uns Zuflucht gefunden’; p.c. BS;"
           }
         ],
         "Imperativ": [
           {
             "turoyo": "zux w sṭar tamo ST",
-            "translations": ["‘geh und finde dort Zuflucht!’"],
+            "translations": ["geh und finde dort Zuflucht!"],
             "references": [],
             "tokens": [
               {
@@ -190,16 +211,11 @@
     {
       "stem": "II",
       "forms": ["msatər", "misatər"],
-      "conjugations": {}
-    },
-    {
-      "stem": "Detransitive",
-      "forms": [],
       "conjugations": {
         "Preterit": [
           {
             "turoyo": "nafəq msatər tamo BS",
-            "translations": ["‘er ging und fand dort Zuflucht’"],
+            "translations": ["er ging und fand dort Zuflucht"],
             "references": [],
             "tokens": [
               {
@@ -229,7 +245,7 @@
         "Infectum": [
           {
             "turoyo": "uʕdo kle k-misatər tamo BS",
-            "translations": ["‘jetzt ist er dort in Sicherheit’"],
+            "translations": ["jetzt ist er dort in Sicherheit"],
             "references": [],
             "tokens": [
               {
@@ -256,13 +272,7 @@
             "text": "uʕdo kle k-misatər tamo ‘jetzt ist er dort in Sicherheit’; BS;"
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "(???)"
-        }
-      ]
+      }
     },
     {
       "stem": "III",
@@ -270,13 +280,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ḥamməš w arbʕi=daqayəq b-u=kār-ano qṭəfina m-i=zuḥṯo bale l-aloho maṣṭálle-lan w maṭina sāġ salīm l-Məḏyaḏ aloho mastalle aʕlox prs ádyawma l-aloho maṣṭalle u=tawr-ayḏan",
+            "turoyo": "ḥamməš w arbʕi=daqayəq b-u=kār-ano qṭəfina m-i=zuḥṯo bale l-aloho maṣṭálle-lan w maṭina sāġ salīm l-Məḏyaḏ",
             "translations": [
-              "45 Minuten lang waren wir blass vor Angst; aber Gott bewahrte uns, und wir gelangten heil und lebendig nach Miḏyaḏ",
-              "Gott hat dich bewahrt",
-              "‘Today God has protected our cow’"
+              "45 Minuten lang waren wir blass vor Angst; aber Gott bewahrte uns, und wir gelangten heil und lebendig nach Miḏyaḏ"
             ],
-            "references": ["11/146", "256", "184/20", "44/110"],
+            "references": ["11/146"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -325,7 +333,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ḥamməš w arbʕi=daqayəq b-u=kār-ano qṭəfina m-i=zuḥṯo; bale, l-aloho maṣṭálle-lan, w maṭina sāġ salīm l-Məḏyaḏ ʻ45 Minuten lang waren wir blass vor Angst; aber Gott bewahrte uns, und wir gelangten heil und lebendig nach Miḏyaḏʼ; 11/146;"
+          },
+          {
+            "turoyo": "aloho mastalle aʕlox prs",
+            "translations": ["Gott hat dich bewahrt"],
+            "references": ["256", "184/20"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " aloho mastalle aʕlox "
@@ -361,7 +377,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "aloho mastalle aʕlox ʻGott hat dich bewahrtʼ; 256; prs 184/20;"
+          },
+          {
+            "turoyo": "ádyawma l-aloho maṣṭalle u=tawr-ayḏan",
+            "translations": ["‘Today God has protected our cow’"],
+            "references": ["44/110"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ádyawma l-aloho maṣṭalle u=tawr-ayḏan "
@@ -383,43 +407,14 @@
                 "value": "44/110"
               }
             ],
-            "text": "ḥamməš w arbʕi=daqayəq b-u=kār-ano qṭəfina m-i=zuḥṯo; bale, l-aloho maṣṭálle-lan, w maṭina sāġ salīm l-Məḏyaḏ ʻ45 Minuten lang waren wir blass vor Angst; aber Gott bewahrte uns, und wir gelangten heil und lebendig nach Miḏyaḏʼ; 11/146; aloho mastalle aʕlox ʻGott hat dich bewahrtʼ; 256; prs 184/20; ádyawma l-aloho maṣṭalle u=tawr-ayḏan ‘Today God has protected our cow’; 44/110"
-          },
-          {
-            "turoyo": "mtastər aʕle b-i=qriṯo BS",
-            "translations": ["‘es wurde ihm im Dorf Schutz gewährt’"],
-            "references": [],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "mtastər aʕle b-i=qriṯo "
-              },
-              {
-                "kind": "translation",
-                "value": "‘es wurde ihm im Dorf Schutz gewährt’"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " BS"
-              }
-            ],
-            "text": "mtastər aʕle b-i=qriṯo ‘es wurde ihm im Dorf Schutz gewährt’; BS"
+            "text": "ádyawma l-aloho maṣṭalle u=tawr-ayḏan ‘Today God has protected our cow’; 44/110"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "alo mastər aʕla prs way alo masṭər ʕal u=bayt-ano d-kət-yo hawxa kad-ḥălāl u=qašo ko-masṭər ʕal an=noše w lo=k-omər u=stəʕrafaṯṯe p.c. IT kīt ṭayo tamo ko-masṭər aṣ=ṣuroye p.c. IT",
-            "translations": [
-              "Gott behüte sie",
-              "‘oh, möge Gott diese Familie schützen, die so tüchtig ist’",
-              "‘der Priester behütet (sein Wissen) über die Menschen und macht ihre Beichte nicht bekannt’",
-              "‘dort gibt es einen Muslim, der Christen Schutz bietet’"
-            ],
-            "references": ["256", "111/17", "LB 239"],
+            "turoyo": "alo mastər aʕla prs",
+            "translations": ["Gott behüte sie"],
+            "references": ["256", "111/17"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -456,7 +451,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "alo mastər aʕla ʻGott behüte sieʼ; 256; prs 111/17;"
+          },
+          {
+            "turoyo": "way alo masṭər ʕal u=bayt-ano d-kət-yo hawxa kad-ḥălāl",
+            "translations": [
+              "‘oh, möge Gott diese Familie schützen, die so tüchtig ist’"
+            ],
+            "references": ["LB 239"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " way alo masṭər ʕal u=bayt-ano d-kət-yo hawxa kad-ḥălāl "
@@ -480,7 +485,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "way alo masṭər ʕal u=bayt-ano d-kət-yo hawxa kad-ḥălāl ‘oh, möge Gott diese Familie schützen, die so tüchtig ist’; LB 239;"
+          },
+          {
+            "turoyo": "u=qašo ko-masṭər ʕal an=noše w lo=k-omər u=stəʕrafaṯṯe p.c. IT kīt ṭayo tamo ko-masṭər aṣ=ṣuroye p.c. IT",
+            "translations": [
+              "‘der Priester behütet (sein Wissen) über die Menschen und macht ihre Beichte nicht bekannt’",
+              "‘dort gibt es einen Muslim, der Christen Schutz bietet’"
+            ],
+            "references": [],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": "  u=qašo ko-masṭər ʕal an=noše w lo=k-omər u=stəʕrafaṯṯe "
@@ -522,49 +538,7 @@
                 "value": ";"
               }
             ],
-            "text": "alo mastər aʕla ʻGott behüte sieʼ; 256; prs 111/17; way alo masṭər ʕal u=bayt-ano d-kət-yo hawxa kad-ḥălāl ‘oh, möge Gott diese Familie schützen, die so tüchtig ist’; LB 239; u=qašo ko-masṭər ʕal an=noše w lo=k-omər u=stəʕrafaṯṯe ‘der Priester behütet (sein Wissen) über die Menschen und macht ihre Beichte nicht bekannt’; p.c. IT; kīt ṭayo tamo ko-masṭər aṣ=ṣuroye ‘dort gibt es einen Muslim, der Christen Schutz bietet’; p.c. IT;"
-          },
-          {
-            "turoyo": "k-lozəm mitastər aʕle see above u=qašo ko-mastər BS",
-            "translations": [
-              "‘es muss über “seine Vergehen” geschwiegen werden’"
-            ],
-            "references": [],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "k-lozəm mitastər aʕle "
-              },
-              {
-                "kind": "translation",
-                "value": "‘es muss über “seine Vergehen” geschwiegen werden’"
-              },
-              {
-                "kind": "turoyo",
-                "value": " see above"
-              },
-              {
-                "kind": "punct",
-                "value": ":"
-              },
-              {
-                "kind": "turoyo",
-                "value": " u=qašo ko-mastər"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " BS"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "k-lozəm mitastər aʕle ‘es muss über “seine Vergehen” geschwiegen werden’ see above: u=qašo ko-mastər; BS;"
+            "text": "u=qašo ko-masṭər ʕal an=noše w lo=k-omər u=stəʕrafaṯṯe ‘der Priester behütet (sein Wissen) über die Menschen und macht ihre Beichte nicht bekannt’; p.c. IT; kīt ṭayo tamo ko-masṭər aṣ=ṣuroye ‘dort gibt es einen Muslim, der Christen Schutz bietet’; p.c. IT;"
           }
         ],
         "Infectum-wa": [
@@ -610,7 +584,7 @@
         "Imperativ": [
           {
             "turoyo": "zux l-u=bayt-ayḏux w-maṣṭár ruḥux",
-            "translations": ["‘Go to your home and hide yourself!’"],
+            "translations": ["Go to your home and hide yourself!"],
             "references": ["41/39"],
             "tokens": [
               {
@@ -635,6 +609,82 @@
               }
             ],
             "text": "zux l-u=bayt-ayḏux w-maṣṭár ruḥux ‘Go to your home and hide yourself!’; 41/39"
+          }
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "mtastər aʕle b-i=qriṯo BS",
+            "translations": ["es wurde ihm im Dorf Schutz gewährt"],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mtastər aʕle b-i=qriṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘es wurde ihm im Dorf Schutz gewährt’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " BS"
+              }
+            ],
+            "text": "mtastər aʕle b-i=qriṯo ‘es wurde ihm im Dorf Schutz gewährt’; BS"
+          }
+        ],
+        "Infectum": [
+          {
+            "turoyo": "k-lozəm mitastər aʕle see above u=qašo ko-mastər BS",
+            "translations": [
+              "es muss über “seine Vergehen” geschwiegen werden"
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-lozəm mitastər aʕle "
+              },
+              {
+                "kind": "translation",
+                "value": "‘es muss über “seine Vergehen” geschwiegen werden’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " see above"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=qašo ko-mastər"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " BS"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "k-lozəm mitastər aʕle ‘es muss über “seine Vergehen” geschwiegen werden’ see above: u=qašo ko-mastər; BS;"
           }
         ],
         "Part. Pass.": [

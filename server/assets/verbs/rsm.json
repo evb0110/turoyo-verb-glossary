@@ -18,13 +18,9 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "l-u=ḥasyo d-i=dayro rsəmle aḥuni dayroyo rsəmle l-ḥasyo Tuma u=muxtar qašo ṭləble l-u=ʕamo səryoyo w-l-u=faṭəryarxo w-rsəmme mafəryono l-u=Ṭuro",
-            "translations": [
-              "The abbot ordained my brother as monk",
-              "‘Der Metropolit Tuma ordinierte den Schultheiß als Pfarrer’",
-              "‘das christliche Volk und der Patriarch verlangte ihn, und man ordinierte ihn zum Erzbischof des Ṭurʕabdin’"
-            ],
-            "references": ["72", "37/7", "33/87", "35/6"],
+            "turoyo": "l-u=ḥasyo d-i=dayro rsəmle aḥuni dayroyo",
+            "translations": ["The abbot ordained my brother as monk"],
+            "references": ["72", "37/7"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -61,7 +57,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "l-u=ḥasyo d-i=dayro rsəmle aḥuni dayroyo ʻThe abbot ordained my brother as monkʼ; 72; 37/7;"
+          },
+          {
+            "turoyo": "rsəmle l-ḥasyo Tuma u=muxtar qašo ṭləble l-u=ʕamo səryoyo w-l-u=faṭəryarxo w-rsəmme mafəryono l-u=Ṭuro",
+            "translations": [
+              "‘Der Metropolit Tuma ordinierte den Schultheiß als Pfarrer’",
+              "‘das christliche Volk und der Patriarch verlangte ihn, und man ordinierte ihn zum Erzbischof des Ṭurʕabdin’"
+            ],
+            "references": ["33/87", "35/6"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " rsəmle l-ḥasyo Tuma u=muxtar qašo "
@@ -111,7 +118,7 @@
                 "value": "35/6"
               }
             ],
-            "text": "l-u=ḥasyo d-i=dayro rsəmle aḥuni dayroyo ʻThe abbot ordained my brother as monkʼ; 72; 37/7; rsəmle l-ḥasyo Tuma u=muxtar qašo ‘Der Metropolit Tuma ordinierte den Schultheiß als Pfarrer’; 33/87 ṭləble l-u=ʕamo səryoyo w-l-u=faṭəryarxo, w-rsəmme mafəryono l-u=Ṭuro ‘das christliche Volk und der Patriarch verlangte ihn, und man ordinierte ihn zum Erzbischof des Ṭurʕabdin’; 35/6"
+            "text": "rsəmle l-ḥasyo Tuma u=muxtar qašo ‘Der Metropolit Tuma ordinierte den Schultheiß als Pfarrer’; 33/87 ṭləble l-u=ʕamo səryoyo w-l-u=faṭəryarxo, w-rsəmme mafəryono l-u=Ṭuro ‘das christliche Volk und der Patriarch verlangte ihn, und man ordinierte ihn zum Erzbischof des Ṭurʕabdin’; 35/6"
           }
         ]
       }
@@ -122,12 +129,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "rsim qašo w-xdəmle u=darbo d-i=dayroyuṯo ġắlabe ṭowo b-i=šato d-eba rsim babi qašo l-Karborān nqilan u=bayt-ayḏan l-Karborān",
+            "turoyo": "rsim qašo w-xdəmle u=darbo d-i=dayroyuṯo ġắlabe ṭowo",
             "translations": [
-              "er wurde zum Priester ordiniert und diente sehr gut in der Weise des Mönchtums",
-              "‘In the year when my father was ordained to the office of a priest to Karboran we moved to Karboran’"
+              "er wurde zum Priester ordiniert und diente sehr gut in der Weise des Mönchtums"
             ],
-            "references": ["126", "35/4", "37/5"],
+            "references": ["126", "35/4"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -164,7 +170,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "rsim qašo w-xdəmle u=darbo d-i=dayroyuṯo ġắlabe ṭowo ʻer wurde zum Priester ordiniert und diente sehr gut in der Weise des Mönchtumsʼ; 126; 35/4;"
+          },
+          {
+            "turoyo": "b-i=šato d-eba rsim babi qašo l-Karborān nqilan u=bayt-ayḏan l-Karborān",
+            "translations": [
+              "‘In the year when my father was ordained to the office of a priest to Karboran we moved to Karboran’"
+            ],
+            "references": ["37/5"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " b-i=šato d-eba rsim babi qašo l-Karborān"
@@ -202,7 +218,7 @@
                 "value": "[MT]"
               }
             ],
-            "text": "rsim qašo w-xdəmle u=darbo d-i=dayroyuṯo ġắlabe ṭowo ʻer wurde zum Priester ordiniert und diente sehr gut in der Weise des Mönchtumsʼ; 126; 35/4; b-i=šato d-eba rsim babi qašo l-Karborān, nqilan u=bayt-ayḏan l-Karborān ‘In the year when my father was ordained to the office of a priest to Karboran we moved to Karboran’; 37/5 [MT]"
+            "text": "b-i=šato d-eba rsim babi qašo l-Karborān, nqilan u=bayt-ayḏan l-Karborān ‘In the year when my father was ordained to the office of a priest to Karboran we moved to Karboran’; 37/5 [MT]"
           }
         ],
         "Infectum": [

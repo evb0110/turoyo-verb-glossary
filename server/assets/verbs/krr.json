@@ -64,12 +64,9 @@
         ],
         "Infectum": [
           {
-            "turoyo": "u=mʕalləm kə-mkarər i=ǧumle k-obaʕno naqqá ḥreto d-mkarrat-li abrə d-man-hat",
-            "translations": [
-              "der Lehrer wiederholt den Satz",
-              "‘Ich verlange noch einmal, daß du mir wiederholst, wessen Sohn du bist’"
-            ],
-            "references": ["498", "29/205"],
+            "turoyo": "u=mʕalləm kə-mkarər i=ǧumle",
+            "translations": ["der Lehrer wiederholt den Satz"],
+            "references": ["498"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -94,7 +91,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "u=mʕalləm kə-mkarər i=ǧumle ʻder Lehrer wiederholt den Satzʼ; 498;"
+          },
+          {
+            "turoyo": "k-obaʕno naqqá ḥreto d-mkarrat-li abrə d-man-hat",
+            "translations": [
+              "‘Ich verlange noch einmal, daß du mir wiederholst, wessen Sohn du bist’"
+            ],
+            "references": ["29/205"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " k-obaʕno naqqá ḥreto d-mkarrat-li abrə d-man-hat "
@@ -116,7 +123,7 @@
                 "value": "29/205"
               }
             ],
-            "text": "u=mʕalləm kə-mkarər i=ǧumle ʻder Lehrer wiederholt den Satzʼ; 498; k-obaʕno naqqá ḥreto d-mkarrat-li abrə d-man-hat ‘Ich verlange noch einmal, daß du mir wiederholst, wessen Sohn du bist’; 29/205"
+            "text": "k-obaʕno naqqá ḥreto d-mkarrat-li abrə d-man-hat ‘Ich verlange noch einmal, daß du mir wiederholst, wessen Sohn du bist’; 29/205"
           }
         ]
       }

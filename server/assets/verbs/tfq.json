@@ -136,19 +136,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "tfīq ʕaskar d-ʕavd w tartemeniye aʕlayye prs prs dibbe tfīqo aʕlaiye prs Mǝn yo tfiq ebax? mǝn masale yo? ” What is that happened to her/you what is the problem?”",
+            "turoyo": "tfīq ʕaskar d-ʕavd w tartemeniye aʕlayye prs prs",
             "translations": [
-              "da überfiel sie eine Schar von Unholden und Riesen",
-              "eine Bärin stiess auf sie"
+              "da überfiel sie eine Schar von Unholden und Riesen"
             ],
-            "references": [
-              "51/20",
-              "222/24",
-              "97/6",
-              "127",
-              "218/20",
-              "SZ 5.45"
-            ],
+            "references": ["51/20", "222/24", "97/6"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -197,7 +189,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "tfīq ʕaskar d-ʕavd w tartemeniye aʕlayye ʻda überfiel sie eine Schar von Unholden und Riesenʼ; prs 51/20; prs 222/24; 97/6;"
+          },
+          {
+            "turoyo": "dibbe tfīqo aʕlaiye prs",
+            "translations": ["eine Bärin stiess auf sie"],
+            "references": ["127", "218/20"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " dibbe tfīqo aʕlaiye "
@@ -233,7 +233,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "dibbe tfīqo aʕlaiye ʻeine Bärin stiess auf sieʼ; 127; prs 218/20;"
+          },
+          {
+            "turoyo": "Mǝn yo tfiq ebax? mǝn masale yo? ” What is that happened to her/you what is the problem?”",
+            "translations": [],
+            "references": ["SZ 5.45"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " Mǝn yo tfiq eba"
@@ -275,7 +283,7 @@
                 "value": ")"
               }
             ],
-            "text": "tfīq ʕaskar d-ʕavd w tartemeniye aʕlayye ʻda überfiel sie eine Schar von Unholden und Riesenʼ; prs 51/20; prs 222/24; 97/6; dibbe tfīqo aʕlaiye ʻeine Bärin stiess auf sieʼ; 127; prs 218/20; Mǝn yo tfiq eba(x)? mǝn masale yo? ” What is that happened to her/you, what is the problem?” (SZ 5.45)"
+            "text": "Mǝn yo tfiq eba(x)? mǝn masale yo? ” What is that happened to her/you, what is the problem?” (SZ 5.45)"
           }
         ],
         "Infectum": [

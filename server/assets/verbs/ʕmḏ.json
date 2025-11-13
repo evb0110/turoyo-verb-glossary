@@ -108,12 +108,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "Fuṭruṣ u=šliḥo u=yawmo d-naḥito i=ruḥo qadišo l-at=talmiḏe maʕmaḏle zəd mə-tloṯ-alfo=noše mqarawle bəṯṯər m-u=qerowo maʕmaḏle naʕime",
+            "turoyo": "Fuṭruṣ u=šliḥo u=yawmo d-naḥito i=ruḥo qadišo l-at=talmiḏe maʕmaḏle zəd mə-tloṯ-alfo=noše",
             "translations": [
-              "der Apostel Petrus taufte an dem Tage, als der Heilige Geist auf die Jünger herabkam, mehr als dreitausend Menschen",
-              "er zelebrierte die Messe; nach der Messe taufte er Kinder"
+              "der Apostel Petrus taufte an dem Tage, als der Heilige Geist auf die Jünger herabkam, mehr als dreitausend Menschen"
             ],
-            "references": ["137", "12/4", "33/91"],
+            "references": ["137", "12/4"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -166,7 +165,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "Fuṭruṣ u=šliḥo u=yawmo, d-naḥito i=ruḥo qadišo l-at=talmiḏe, maʕmaḏle zəd mə-tloṯ-alfo=noše ʻder Apostel Petrus taufte an dem Tage, als der Heilige Geist auf die Jünger herabkam, mehr als dreitausend Menschenʼ; 137; 12/4;"
+          },
+          {
+            "turoyo": "mqarawle bəṯṯər m-u=qerowo maʕmaḏle naʕime",
+            "translations": [
+              "er zelebrierte die Messe; nach der Messe taufte er Kinder"
+            ],
+            "references": ["33/91"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mqarawle"
@@ -208,14 +217,14 @@
                 "value": ";"
               }
             ],
-            "text": "Fuṭruṣ u=šliḥo u=yawmo, d-naḥito i=ruḥo qadišo l-at=talmiḏe, maʕmaḏle zəd mə-tloṯ-alfo=noše ʻder Apostel Petrus taufte an dem Tage, als der Heilige Geist auf die Jünger herabkam, mehr als dreitausend Menschenʼ; 137; 12/4; mqarawle, bəṯṯər m-u=qerowo maʕmaḏle naʕime ʻer zelebrierte die Messe; nach der Messe taufte er Kinderʼ; 33/91 [MT];"
+            "text": "mqarawle, bəṯṯər m-u=qerowo maʕmaḏle naʕime ʻer zelebrierte die Messe; nach der Messe taufte er Kinderʼ; 33/91 [MT];"
           }
         ],
         "Infectum": [
           {
             "turoyo": "i=naqqa d-k-owal-le l-ap=pirate b-a=tmanyo yawme ko-məblən-ne l-i=ʕito w-aq=qaše ko-maʕəmḏən-ne b-am=maye w-b-i=moran",
             "translations": [
-              "‘When women give birth, in eight days (the children) are brought to the church. And the priests baptize them with water and chrism’"
+              "When women give birth, in eight days (the children) are brought to the church. And the priests baptize them with water and chrism"
             ],
             "references": ["94/48"],
             "tokens": [
@@ -261,7 +270,7 @@
           {
             "turoyo": "w hawxa kulle bə-ḥḏo=naqla mtáʕmiḏi w hawən Mšəḥoye",
             "translations": [
-              "‘so wurden alle (Leute pl) auf einmal getauft und wurden Christen’"
+              "so wurden alle (Leute pl) auf einmal getauft und wurden Christen"
             ],
             "references": ["12/10"],
             "tokens": [
@@ -519,7 +528,13 @@
             "text": "tfu aʕlax! ya ḥaywane hiroḏiye də-qṭəʕlax qarʕe d-Yuḥanōn u=Maʕmiḏono ʻpfui über dich, du Herodesbestie, die den Kopf Johannes des Täufers abgeschnitten hatʼ; 152; 59/16, 32, 42;"
           }
         ]
-      }
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "getauft werden;"
+        }
+      ]
     }
   ],
   "idioms": ["sich taufen lassen;", "taufen;", "getauft werden;"],

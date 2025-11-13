@@ -40,17 +40,15 @@
     },
     {
       "stem": "Detransitive",
-      "forms": [],
+      "forms": ["qrīf", "məqrəf"],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "nafəl l-i=arʕo. qrīf ḥaṣo d-u=taʕlo prs məd-šaməʕ haṯe m-u=ġamo nafəl m-i=sisto qrif qḏole əšmo=ḥreno məd-rafəʕ i=dukṯo d-u=nargo naqla qrifo i=dawmo taḥte w-nafilo",
+            "turoyo": "nafəl l-i=arʕo. qrīf ḥaṣo d-u=taʕlo prs",
             "translations": [
-              "er (der Fuchs) fiel auf die Erde herunter und ihm brach der Rücken",
-              "‘Als er das hörte, fiel er aus Gram vom Pferde und brach sich das Genick’",
-              "After a while, since the place [where] the axe [was chopping] had become thin, the tree under him broke at once and fell"
+              "er (der Fuchs) fiel auf die Erde herunter und ihm brach der Rücken"
             ],
-            "references": ["126", "193/1", "23/53", "46/8"],
+            "references": ["126", "193/1"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -87,7 +85,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "nafəl l-i=arʕo. qrīf ḥaṣo d-u=taʕlo ʻer (der Fuchs) fiel auf die Erde herunter und ihm brach der Rückenʼ; 126; prs 193/1;"
+          },
+          {
+            "turoyo": "məd-šaməʕ haṯe m-u=ġamo nafəl m-i=sisto qrif qḏole əšmo=ḥreno məd-rafəʕ i=dukṯo d-u=nargo naqla qrifo i=dawmo taḥte w-nafilo",
+            "translations": [
+              "‘Als er das hörte, fiel er aus Gram vom Pferde und brach sich das Genick’",
+              "After a while, since the place [where] the axe [was chopping] had become thin, the tree under him broke at once and fell"
+            ],
+            "references": ["23/53", "46/8"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " məd-šaməʕ haṯe m-u=ġamo nafəl m-i=sisto qrif qḏole "
@@ -153,7 +162,7 @@
                 "value": "[MT]"
               }
             ],
-            "text": "nafəl l-i=arʕo. qrīf ḥaṣo d-u=taʕlo ʻer (der Fuchs) fiel auf die Erde herunter und ihm brach der Rückenʼ; 126; prs 193/1; məd-šaməʕ haṯe m-u=ġamo nafəl m-i=sisto qrif qḏole ‘Als er das hörte, fiel er aus Gram vom Pferde und brach sich das Genick’; 23/53 [MT]; əšmo=ḥreno məd-rafəʕ i=dukṯo d-u=nargo naqla qrifo i=dawmo taḥte w-nafilo ʻAfter a while, since the place [where] the axe [was chopping] had become thin, the tree under him broke at once and fellʼ; 46/8; [MT]"
+            "text": "məd-šaməʕ haṯe m-u=ġamo nafəl m-i=sisto qrif qḏole ‘Als er das hörte, fiel er aus Gram vom Pferde und brach sich das Genick’; 23/53 [MT]; əšmo=ḥreno məd-rafəʕ i=dukṯo d-u=nargo naqla qrifo i=dawmo taḥte w-nafilo ʻAfter a while, since the place [where] the axe [was chopping] had become thin, the tree under him broke at once and fellʼ; 46/8; [MT]"
           }
         ],
         "Infectum": [
@@ -340,7 +349,13 @@
             "text": "b-qrafte də-qḏolux oṯət, w b-i=ṭyarto d-ʕaynux oṯət yabo ʻdass dir der Hals brechen und die Augen herausfliegen möchten!ʼ; 124; 66/207;"
           }
         ]
-      }
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "brechen"
+        }
+      ]
     }
   ],
   "idioms": ["qrīf/məqrəf", "brechen"],

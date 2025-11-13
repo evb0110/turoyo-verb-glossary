@@ -11,24 +11,16 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
-      "forms": ["ġbīn", "məġbən"],
-      "conjugations": {}
-    },
-    {
       "stem": "Detransitive",
-      "forms": [],
+      "forms": ["ġbīn", "məġbən"],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ġbīn u=malko d-ad=dədwone mqaharre l-u=malko w l-u=ʕmiro. aṯi u=malko d-ad=dədwone ġbīn aṯi l-u=bayto prs u=ḥa yawmo ad=dayroy-ani ġbini mə-ḥḏoḏe kul ḥa məlle l-u=ḥreno omər Ono ġbinno mu+Laḥdo Ilyas p.c.",
+            "turoyo": "ġbīn u=malko d-ad=dədwone mqaharre l-u=malko w l-u=ʕmiro. aṯi u=malko d-ad=dədwone ġbīn aṯi l-u=bayto prs",
             "translations": [
-              "da ward der Fliegenkönig zornig, stritt mit dem Fürsten und kehrte zornig nach Hause zurück",
-              "l-oṯat gabi!",
-              "‘One day the monks got angry with each other and told to each other: “Do not come to me!”’",
-              "‘I became angry with L.’"
+              "da ward der Fliegenkönig zornig, stritt mit dem Fürsten und kehrte zornig nach Hause zurück"
             ],
-            "references": ["262", "169/5", "42/2"],
+            "references": ["262", "169/5"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -81,7 +73,19 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ġbīn u=malko d-ad=dədwone, mqaharre l-u=malko w l-u=ʕmiro. aṯi u=malko d-ad=dədwone ġbīn, aṯi l-u=bayto ʻda ward der Fliegenkönig zornig, stritt mit dem Fürsten und kehrte zornig nach Hause zurückʼ; 262; prs 169/5;"
+          },
+          {
+            "turoyo": "u=ḥa yawmo ad=dayroy-ani ġbini mə-ḥḏoḏe kul ḥa məlle l-u=ḥreno omər Ono ġbinno mu+Laḥdo Ilyas p.c.",
+            "translations": [
+              "“l-oṯat gabi!”",
+              "‘One day the monks got angry with each other and told to each other: “Do not come to me!”’",
+              "‘I became angry with L.’"
+            ],
+            "references": ["42/2"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " u=ḥa yawmo ad=dayroy-ani ġbini mə-ḥḏoḏe"
@@ -159,17 +163,16 @@
                 "value": ")"
               }
             ],
-            "text": "ġbīn u=malko d-ad=dədwone, mqaharre l-u=malko w l-u=ʕmiro. aṯi u=malko d-ad=dədwone ġbīn, aṯi l-u=bayto ʻda ward der Fliegenkönig zornig, stritt mit dem Fürsten und kehrte zornig nach Hause zurückʼ; 262; prs 169/5; u=ḥa yawmo ad=dayroy-ani ġbini mə-ḥḏoḏe, kul ḥa məlle l-u=ḥreno, omər: “l-oṯat gabi!” ‘One day the monks got angry with each other and told to each other: “Do not come to me!”’; 42/2 Ono ġbinno mu+Laḥdo ‘I became angry with L.’ (Ilyas p.c.)"
+            "text": "u=ḥa yawmo ad=dayroy-ani ġbini mə-ḥḏoḏe, kul ḥa məlle l-u=ḥreno, omər: “l-oṯat gabi!” ‘One day the monks got angry with each other and told to each other: “Do not come to me!”’; 42/2 Ono ġbinno mu+Laḥdo ‘I became angry with L.’ (Ilyas p.c.)"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "u=ḥa d-məġbən gəm-məqṭəʕ qariše me-ḥaṣe g-duʕrutu aḥunux u=rabo kt-owe šulṭono w-g-madaʕrina-nxu l-i=walaye. abadan lo=məġbonət",
+            "turoyo": "u=ḥa d-məġbən gəm-məqṭəʕ qariše me-ḥaṣe",
             "translations": [
-              "dem, welcher sich ärgert, werden Riemen aus dem Rücken geschnitten",
-              "‘You will return (to your state), your elder brother will become a sultan. We will let you go back to your town. And you will never be sad (again)’"
+              "dem, welcher sich ärgert, werden Riemen aus dem Rücken geschnitten"
             ],
-            "references": ["262", "48/5", "73/206"],
+            "references": ["262", "48/5"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -214,7 +217,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "u=ḥa d-məġbən, gəm-məqṭəʕ qariše me-ḥaṣe ʻdem, welcher sich ärgert, werden Riemen aus dem Rücken geschnittenʼ; 262; 48/5;"
+          },
+          {
+            "turoyo": "g-duʕrutu aḥunux u=rabo kt-owe šulṭono w-g-madaʕrina-nxu l-i=walaye. abadan lo=məġbonət",
+            "translations": [
+              "‘You will return (to your state), your elder brother will become a sultan. We will let you go back to your town. And you will never be sad (again)’"
+            ],
+            "references": ["73/206"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " g-duʕrutu"
@@ -252,7 +265,7 @@
                 "value": ";"
               }
             ],
-            "text": "u=ḥa d-məġbən, gəm-məqṭəʕ qariše me-ḥaṣe ʻdem, welcher sich ärgert, werden Riemen aus dem Rücken geschnittenʼ; 262; 48/5; g-duʕrutu, aḥunux u=rabo kt-owe šulṭono, w-g-madaʕrina-nxu l-i=walaye. abadan lo=məġbonət ‘You will return (to your state), your elder brother will become a sultan. We will let you go back to your town. And you will never be sad (again)’ 73/206;"
+            "text": "g-duʕrutu, aḥunux u=rabo kt-owe šulṭono, w-g-madaʕrina-nxu l-i=walaye. abadan lo=məġbonət ‘You will return (to your state), your elder brother will become a sultan. We will let you go back to your town. And you will never be sad (again)’ 73/206;"
           }
         ],
         "Part. Pass.": [
@@ -382,9 +395,6 @@
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) sich ärgern, verstimmt, vergrämt werden;",
-    "ärgern, verstimmen, vergrämen;"
-  ],
+  "idioms": ["ärgern, verstimmen, vergrämen;"],
   "uncertain": false
 }

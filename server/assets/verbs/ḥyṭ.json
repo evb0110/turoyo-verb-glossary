@@ -18,12 +18,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ḥəṭli ač=čawaliy-ani b-i=msalle səmme raġli ʕamaliye ḥiṭənne",
+            "turoyo": "ḥəṭli ač=čawaliy-ani b-i=msalle",
             "translations": [
-              "ich habe diese Säcke in weiten Stichen mit der Sacknadel genäht",
-              "‘They operated on my legs and sewed them up’"
+              "ich habe diese Säcke in weiten Stichen mit der Sacknadel genäht"
             ],
-            "references": ["508", "EL 49"],
+            "references": ["508"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -48,7 +47,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ḥəṭli ač=čawaliy-ani b-i=msalle ʻich habe diese Säcke in weiten Stichen mit der Sacknadel genähtʼ; 508;"
+          },
+          {
+            "turoyo": "səmme raġli ʕamaliye ḥiṭənne",
+            "translations": ["‘They operated on my legs and sewed them up’"],
+            "references": ["EL 49"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " səmme raġli ʕamaliye ḥiṭənne "
@@ -70,18 +77,14 @@
                 "value": ";"
               }
             ],
-            "text": "ḥəṭli ač=čawaliy-ani b-i=msalle ʻich habe diese Säcke in weiten Stichen mit der Sacknadel genähtʼ; 508; səmme raġli ʕamaliye ḥiṭənne ‘They operated on my legs and sewed them up’ EL 49;"
+            "text": "səmme raġli ʕamaliye ḥiṭənne ‘They operated on my legs and sewed them up’ EL 49;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "ṭro u=bărān ḥoyəṭ u=kafan prs kla barṯe d-Fataḥbak k-ḥayṭo bəšto b-u=šəbbak prs kubxu ḥayṭútu-le-le",
-            "translations": [
-              "der Widder soll das Todtenhemd nähen",
-              "am Fenster nähte eben die Tochter des Fataḥ-Bek einen Rock",
-              "könnt ihr ihn annähen?"
-            ],
-            "references": ["515", "211/8", "518", "40/29", "520"],
+            "turoyo": "ṭro u=bărān ḥoyəṭ u=kafan prs",
+            "translations": ["der Widder soll das Todtenhemd nähen"],
+            "references": ["515", "211/8"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -118,7 +121,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ṭro u=bărān ḥoyəṭ u=kafan ʻder Widder soll das Todtenhemd nähenʼ; 515; prs 211/8;"
+          },
+          {
+            "turoyo": "kla barṯe d-Fataḥbak k-ḥayṭo bəšto b-u=šəbbak prs",
+            "translations": [
+              "am Fenster nähte eben die Tochter des Fataḥ-Bek einen Rock"
+            ],
+            "references": ["518", "40/29"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " kla barṯe d-Fataḥbak k-ḥayṭo bəšto b-u=šəbbak "
@@ -154,7 +167,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "kla barṯe d-Fataḥbak k-ḥayṭo bəšto b-u=šəbbak ʻam Fenster nähte eben die Tochter des Fataḥ-Bek einen Rockʼ; 518; prs 40/29;"
+          },
+          {
+            "turoyo": "kubxu ḥayṭútu-le-le",
+            "translations": ["könnt ihr ihn annähen?"],
+            "references": ["520"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " kubxu ḥayṭútu-le-le "
@@ -180,7 +201,7 @@
                 "value": ";"
               }
             ],
-            "text": "ṭro u=bărān ḥoyəṭ u=kafan ʻder Widder soll das Todtenhemd nähenʼ; 515; prs 211/8; kla barṯe d-Fataḥbak k-ḥayṭo bəšto b-u=šəbbak ʻam Fenster nähte eben die Tochter des Fataḥ-Bek einen Rockʼ; 518; prs 40/29; kubxu ḥayṭútu-le-le ʻkönnt ihr ihn annähen?ʼ; 520;"
+            "text": "kubxu ḥayṭútu-le-le ʻkönnt ihr ihn annähen?ʼ; 520;"
           }
         ],
         "Infectum-wa": [

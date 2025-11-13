@@ -18,13 +18,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "maḥatle u=adm-ano b-u=lăgan w-ṭəšle l-i=laš-ayḏe ṭəšle ṣafuno nḥəlle u=zʕuro w amṭele u=admayḏe ṭəšše ʕal i=laše d-Gōrgīs",
+            "turoyo": "maḥatle u=adm-ano b-u=lăgan w-ṭəšle l-i=laš-ayḏe",
             "translations": [
-              "er tat das Blut in das Becken und er bestrich damit seinen Körper",
-              "er seifte ihn ein",
-              "er schlachtete den Kleinen, brachte das Blut herbei, und sie strichen es auf den toten Gorgis"
+              "er tat das Blut in das Becken und er bestrich damit seinen Körper"
             ],
-            "references": ["504", "30/23", "504", "507", "115/314"],
+            "references": ["504", "30/23"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -69,7 +67,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "maḥatle u=adm-ano b-u=lăgan, w-ṭəšle l-i=laš-ayḏe ʻer tat das Blut in das Becken und er bestrich damit seinen Körperʼ; 504; 30/23;"
+          },
+          {
+            "turoyo": "ṭəšle ṣafuno",
+            "translations": ["er seifte ihn ein"],
+            "references": ["504"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ṭəšle ṣafuno "
@@ -93,7 +99,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ṭəšle ṣafuno ʻer seifte ihn einʼ; 504;"
+          },
+          {
+            "turoyo": "nḥəlle u=zʕuro w amṭele u=admayḏe ṭəšše ʕal i=laše d-Gōrgīs",
+            "translations": [
+              "er schlachtete den Kleinen, brachte das Blut herbei, und sie strichen es auf den toten Gorgis"
+            ],
+            "references": ["507", "115/314"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " nḥəlle u=zʕuro"
@@ -147,7 +163,7 @@
                 "value": ";"
               }
             ],
-            "text": "maḥatle u=adm-ano b-u=lăgan, w-ṭəšle l-i=laš-ayḏe ʻer tat das Blut in das Becken und er bestrich damit seinen Körperʼ; 504; 30/23; ṭəšle ṣafuno ʻer seifte ihn einʼ; 504; nḥəlle u=zʕuro, w amṭele u=admayḏe, ṭəšše ʕal i=laše d-Gōrgīs ʻer schlachtete den Kleinen, brachte das Blut herbei, und sie strichen es auf den toten Gorgisʼ; 507; 115/314;"
+            "text": "nḥəlle u=zʕuro, w amṭele u=admayḏe, ṭəšše ʕal i=laše d-Gōrgīs ʻer schlachtete den Kleinen, brachte das Blut herbei, und sie strichen es auf den toten Gorgisʼ; 507; 115/314;"
           }
         ],
         "Infectum": [

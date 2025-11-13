@@ -58,13 +58,11 @@
             "text": "1) frəqle sawke ʻer machte sich einen Scheitelʼ; 199;"
           },
           {
-            "turoyo": "sǝ́mle-le hawxa l-u=taʕlo. frəqle l-u=taʕlo prs l-i=kačke frəqla buwe ki hano gawro tamām-yo b-am=mo mo frəqli ki hano i=darbo d-gawri-yo",
+            "turoyo": "sǝ́mle-le hawxa l-u=taʕlo. frəqle l-u=taʕlo prs",
             "translations": [
-              "inzwischen streckte der Mann dem Fuchse (heimlich zwei Finger) entgegen, und der Fuchs verstand das Zeichen",
-              "‘Das Mädchen erkannte, daß dies ein vollkommener Mann war’",
-              "‘Es ist mir hundert zu hundert klar geworden, daß dies der Schlag meines Gatten ist’"
+              "inzwischen streckte der Mann dem Fuchse (heimlich zwei Finger) entgegen, und der Fuchs verstand das Zeichen"
             ],
-            "references": ["3", "199", "214/14", "29/431", "30/139"],
+            "references": ["3", "199", "214/14"],
             "tokens": [
               {
                 "kind": "ref",
@@ -109,7 +107,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "3) sǝ́mle-le hawxa l-u=taʕlo. frəqle l-u=taʕlo ʻinzwischen streckte der Mann dem Fuchse (heimlich zwei Finger) entgegen, und der Fuchs verstand das Zeichenʼ; 199; prs 214/14;"
+          },
+          {
+            "turoyo": "l-i=kačke frəqla buwe ki hano gawro tamām-yo",
+            "translations": [
+              "‘Das Mädchen erkannte, daß dies ein vollkommener Mann war’"
+            ],
+            "references": ["29/431"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " l-i=kačke frəqla buwe ki hano gawro tamām-yo "
@@ -133,7 +141,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "l-i=kačke frəqla buwe ki hano gawro tamām-yo ‘Das Mädchen erkannte, daß dies ein vollkommener Mann war’; 29/431;"
+          },
+          {
+            "turoyo": "b-am=mo mo frəqli ki hano i=darbo d-gawri-yo",
+            "translations": [
+              "‘Es ist mir hundert zu hundert klar geworden, daß dies der Schlag meines Gatten ist’"
+            ],
+            "references": ["30/139"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " b-am=mo mo frəqli ki hano i=darbo d-gawri-yo "
@@ -155,7 +173,7 @@
                 "value": "30/139"
               }
             ],
-            "text": "3) sǝ́mle-le hawxa l-u=taʕlo. frəqle l-u=taʕlo ʻinzwischen streckte der Mann dem Fuchse (heimlich zwei Finger) entgegen, und der Fuchs verstand das Zeichenʼ; 199; prs 214/14; l-i=kačke frəqla buwe ki hano gawro tamām-yo ‘Das Mädchen erkannte, daß dies ein vollkommener Mann war’; 29/431; b-am=mo mo frəqli ki hano i=darbo d-gawri-yo ‘Es ist mir hundert zu hundert klar geworden, daß dies der Schlag meines Gatten ist’; 30/139"
+            "text": "b-am=mo mo frəqli ki hano i=darbo d-gawri-yo ‘Es ist mir hundert zu hundert klar geworden, daß dies der Schlag meines Gatten ist’; 30/139"
           }
         ],
         "Infectum": [
@@ -292,7 +310,7 @@
           {
             "turoyo": "walaw mən d-howe lə=k-məfrəqono mene. k-ubʕono d-uno-ste d-əzzino aʕme",
             "translations": [
-              "‘Was auch immer geschehen mag, ich trenne mich nicht von ihm. Ich möchte mit ihm gehen’"
+              "Was auch immer geschehen mag, ich trenne mich nicht von ihm. Ich möchte mit ihm gehen"
             ],
             "references": ["2", "24/128"],
             "tokens": [
@@ -400,7 +418,13 @@
             "text": "1) kale i=arʕo ḥamši=b-ḥamši=ṣanṭime, kala frəqto m-i=arʕo ʻda ist der Boden fünfzig mal fünfzig Zentimeter gespaltenʼ; 199; 87/134;"
           }
         ]
-      }
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "1) gespalten werden; 2) sich trennen;"
+        }
+      ]
     },
     {
       "stem": "II",
@@ -476,12 +500,9 @@
         ],
         "Infectum": [
           {
-            "turoyo": "layt nošo d-mfarəq u=baṣro prs lazəm d-nuḥrat u=tawro d-i=fadono w-mfarqat-le ʕal af=faqire",
-            "translations": [
-              "es fehlt jemand, der das Fleisch zerteilt",
-              "‘It is necessary that you should kill the team ox and share it with the poor’"
-            ],
-            "references": ["199", "222/34", "44/133"],
+            "turoyo": "layt nošo d-mfarəq u=baṣro prs",
+            "translations": ["es fehlt jemand, der das Fleisch zerteilt"],
+            "references": ["199", "222/34"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -518,7 +539,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "layt nošo d-mfarəq u=baṣro ʻes fehlt jemand, der das Fleisch zerteiltʼ; 199; prs 222/34;"
+          },
+          {
+            "turoyo": "lazəm d-nuḥrat u=tawro d-i=fadono w-mfarqat-le ʕal af=faqire",
+            "translations": [
+              "‘It is necessary that you should kill the team ox and share it with the poor’"
+            ],
+            "references": ["44/133"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " lazəm d-nuḥrat u=tawro d-i=fadono w-mfarqat-le ʕal af=faqire "
@@ -540,7 +571,7 @@
                 "value": "44/133"
               }
             ],
-            "text": "layt nošo d-mfarəq u=baṣro ʻes fehlt jemand, der das Fleisch zerteiltʼ; 199; prs 222/34; lazəm d-nuḥrat u=tawro d-i=fadono w-mfarqat-le ʕal af=faqire ‘It is necessary that you should kill the team ox and share it with the poor’; 44/133"
+            "text": "lazəm d-nuḥrat u=tawro d-i=fadono w-mfarqat-le ʕal af=faqire ‘It is necessary that you should kill the team ox and share it with the poor’; 44/133"
           }
         ]
       }

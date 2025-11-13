@@ -16,12 +16,9 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mlaʕele omər baṭanno prs u=ḥa=yawmo aṯyo žənəke sawto w faqərto mlaʕela w ṭləbla meni i=awday-aṯe",
-            "translations": [
-              "er bettelte und sagte: “Ich bin müde",
-              "‘eines Tages kam eine alte, arme Frau und bat mich inständigst um dieses Zimmer’"
-            ],
-            "references": ["415", "195/5", "2/64"],
+            "turoyo": "mlaʕele omər baṭanno prs",
+            "translations": ["er bettelte und sagte: “Ich bin müde”"],
+            "references": ["415", "195/5"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -66,7 +63,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mlaʕele, omər baṭanno ʻer bettelte und sagte: “Ich bin müde”ʼ; 415; prs 195/5;"
+          },
+          {
+            "turoyo": "u=ḥa=yawmo aṯyo žənəke sawto w faqərto mlaʕela w ṭləbla meni i=awday-aṯe",
+            "translations": [
+              "‘eines Tages kam eine alte, arme Frau und bat mich inständigst um dieses Zimmer’"
+            ],
+            "references": ["2/64"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " u=ḥa=yawmo aṯyo žənəke sawto"
@@ -116,7 +123,7 @@
                 "value": ";"
               }
             ],
-            "text": "mlaʕele, omər baṭanno ʻer bettelte und sagte: “Ich bin müde”ʼ; 415; prs 195/5; u=ḥa=yawmo aṯyo žənəke sawto, w faqərto, mlaʕela w ṭləbla meni, i=awday-aṯe ‘eines Tages kam eine alte, arme Frau und bat mich inständigst um dieses Zimmer’; 2/64;"
+            "text": "u=ḥa=yawmo aṯyo žənəke sawto, w faqərto, mlaʕela w ṭləbla meni, i=awday-aṯe ‘eines Tages kam eine alte, arme Frau und bat mich inständigst um dieses Zimmer’; 2/64;"
           }
         ]
       }
@@ -164,7 +171,7 @@
               "Ma lə gbatli u mašruqawo, gdobenux klabṯo?",
               "Bele, ašər, komilaʕeno. I klabṯo gəmḥamyo aʕ ʕezayḏi mad dewe.",
               "(The bird) said: \"Won't you give me that flute, and I will give you a dog?\" He said: \"Yes of course, I beg you, a dog will protect my goats from wolves.",
-              "‘I wish very much to come and look for the (lost) cow’"
+              "I wish very much to come and look for the (lost) cow"
             ],
             "references": ["43"],
             "tokens": [

@@ -22,7 +22,7 @@
             "translations": [
               "er hat den Becher des Königs gestolen",
               "Wir wollen zwischen die Gräber gehen; dort teilen wir das Geld, das wir aus dem Schatzhaus des Sultans gestohlen haben",
-              "‘Was ich sagen werde, darauf antworte, damit wir uns vor dem Totgeschlagen werden retten und außerdem das, was sie gestohlen haben, für uns bleibt!’"
+              "Was ich sagen werde, darauf antworte, damit wir uns vor dem Totgeschlagen werden retten und außerdem das, was sie gestohlen haben, für uns bleibt!"
             ],
             "references": [
               "271",
@@ -196,14 +196,11 @@
         ],
         "Infectum": [
           {
-            "turoyo": "maḥatle l-u=paša qm-i=xazne qiro w zafto w rəṣle aʕle ʕafro ayna d-oṯe gonu g-miġəṭ b-u=qiro w b-u=zafto lo=k-nofəq g-mŭsak-le u=paša prs prs Šahrzamān i=naqqa <…> d-damixo Sittilbudūr azzé ʕabər l-u=čadər diḏa ḥatta d-gonu mede mena d-izzóx s-i=armalt-ayo d-kət-yo ǧirān diḏan kət-la ṭaṣe d-gunwat-la w-amṭát-li-yo mə́qqayəṣ d-ubʕət gd-ubéno-lox kaʕbe i=barṯ-ayḏux azzayo b-ramšəl b-lalyo d-gunwo u=zlām-ano u=nuxroyo d-aṯi gaban",
+            "turoyo": "maḥatle l-u=paša qm-i=xazne qiro w zafto w rəṣle aʕle ʕafro ayna d-oṯe gonu g-miġəṭ b-u=qiro w b-u=zafto lo=k-nofəq g-mŭsak-le u=paša prs prs",
             "translations": [
-              "der Statthalter hatte vor dem Schatze eine Grube voll Pech und Harz angelegt und Erde darüber streuen lassen, damit jeder, der etwa stehlen würde, in das Pech und Harz einsinke und nicht mehr herauskomme, so dass man ihn fassen könne",
-              "‘Schahrzamān ging, als <…> Sittilbudūr schlief, in das Zelt seiner [Frau], um ihr etwas wegzunehmen’",
-              "‘Du sollst zu jener Witwe gehen, die unsere Nachbarin ist. Die hat eine Schale. Wenn du die stiehlst und mir bringst, gebe ich dir soviel Knöchel, als du haben willst’",
-              "‘Last night your daughter went to rob this foreign man who came to us’"
+              "der Statthalter hatte vor dem Schatze eine Grube voll Pech und Harz angelegt und Erde darüber streuen lassen, damit jeder, der etwa stehlen würde, in das Pech und Harz einsinke und nicht mehr herauskomme, so dass man ihn fassen könne"
             ],
-            "references": ["275", "117/9", "119/32", "24/139", "25/9", "83/91"],
+            "references": ["275", "117/9", "119/32"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -276,7 +273,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "maḥatle l-u=paša qm-i=xazne qiro w zafto w rəṣle aʕle ʕafro, ayna d-oṯe gonu g-miġəṭ b-u=qiro w b-u=zafto, lo=k-nofəq, g-mŭsak-le u=paša ʻder Statthalter hatte vor dem Schatze eine Grube voll Pech und Harz angelegt und Erde darüber streuen lassen, damit jeder, der etwa stehlen würde, in das Pech und Harz einsinke und nicht mehr herauskomme, so dass man ihn fassen könneʼ; 275; prs 117/9; prs 119/32;"
+          },
+          {
+            "turoyo": "Šahrzamān i=naqqa <…> d-damixo Sittilbudūr azzé ʕabər l-u=čadər diḏa ḥatta d-gonu mede mena",
+            "translations": [
+              "‘Schahrzamān ging, als <…> Sittilbudūr schlief, in das Zelt seiner [Frau], um ihr etwas wegzunehmen’"
+            ],
+            "references": ["24/139"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " Šahrzamān"
@@ -316,7 +323,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "Šahrzamān, i=naqqa <…> d-damixo Sittilbudūr, azzé ʕabər l-u=čadər diḏa ḥatta d-gonu mede mena ‘Schahrzamān ging, als <…> Sittilbudūr schlief, in das Zelt seiner [Frau], um ihr etwas wegzunehmen’; 24/139;"
+          },
+          {
+            "turoyo": "d-izzóx s-i=armalt-ayo d-kət-yo ǧirān diḏan kət-la ṭaṣe d-gunwat-la w-amṭát-li-yo mə́qqayəṣ d-ubʕət gd-ubéno-lox kaʕbe i=barṯ-ayḏux azzayo b-ramšəl b-lalyo d-gunwo u=zlām-ano u=nuxroyo d-aṯi gaban",
+            "translations": [
+              "‘Du sollst zu jener Witwe gehen, die unsere Nachbarin ist. Die hat eine Schale. Wenn du die stiehlst und mir bringst, gebe ich dir soviel Knöchel, als du haben willst’",
+              "‘Last night your daughter went to rob this foreign man who came to us’"
+            ],
+            "references": ["25/9", "83/91"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " d-izzóx s-i=armalt-ayo d-kət-yo ǧirān diḏan"
@@ -394,7 +412,7 @@
                 "value": ";"
               }
             ],
-            "text": "maḥatle l-u=paša qm-i=xazne qiro w zafto w rəṣle aʕle ʕafro, ayna d-oṯe gonu g-miġəṭ b-u=qiro w b-u=zafto, lo=k-nofəq, g-mŭsak-le u=paša ʻder Statthalter hatte vor dem Schatze eine Grube voll Pech und Harz angelegt und Erde darüber streuen lassen, damit jeder, der etwa stehlen würde, in das Pech und Harz einsinke und nicht mehr herauskomme, so dass man ihn fassen könneʼ; 275; prs 117/9; prs 119/32; Šahrzamān, i=naqqa <…> d-damixo Sittilbudūr, azzé ʕabər l-u=čadər diḏa ḥatta d-gonu mede mena ‘Schahrzamān ging, als <…> Sittilbudūr schlief, in das Zelt seiner [Frau], um ihr etwas wegzunehmen’; 24/139; d-izzóx s-i=armalt-ayo d-kət-yo ǧirān diḏan; kət-la ṭaṣe, d-gunwat-la w-amṭát-li-yo, mə́qqayəṣ d-ubʕət gd-ubéno-lox kaʕbe ‘Du sollst zu jener Witwe gehen, die unsere Nachbarin ist. Die hat eine Schale. Wenn du die stiehlst und mir bringst, gebe ich dir soviel Knöchel, als du haben willst’; 25/9 [MT]; i=barṯ-ayḏux azzayo b-ramšəl b-lalyo d-gunwo u=zlām-ano u=nuxroyo d-aṯi gaban ‘Last night your daughter went to rob this foreign man who came to us’ 83/91;"
+            "text": "d-izzóx s-i=armalt-ayo d-kət-yo ǧirān diḏan; kət-la ṭaṣe, d-gunwat-la w-amṭát-li-yo, mə́qqayəṣ d-ubʕət gd-ubéno-lox kaʕbe ‘Du sollst zu jener Witwe gehen, die unsere Nachbarin ist. Die hat eine Schale. Wenn du die stiehlst und mir bringst, gebe ich dir soviel Knöchel, als du haben willst’; 25/9 [MT]; i=barṯ-ayḏux azzayo b-ramšəl b-lalyo d-gunwo u=zlām-ano u=nuxroyo d-aṯi gaban ‘Last night your daughter went to rob this foreign man who came to us’ 83/91;"
           }
         ],
         "Infectum-wa": [
@@ -547,13 +565,9 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "gnīw me-gabaye tre=ʕeze b-ramšəl tarʕo me diḏan lə=ftīḥ. w áydarbo u=ʕazl-ano gnīw? mamṭila-le maṯle <…> u=šayro aydarbo gniw",
-            "translations": [
-              "zwei Ziegen sind gestern gestohlen worden",
-              "keine unserer Türen ist aufgebrochen worden. Wie ist dann dieses Wollgarn gestohlen worden?",
-              "‘Sie brachte die Rede <…> wie dann das Armband gestohlen wurde’"
-            ],
-            "references": ["278", "115/9", "JL 17.6.5", "24/223"],
+            "turoyo": "gnīw me-gabaye tre=ʕeze b-ramšəl",
+            "translations": ["zwei Ziegen sind gestern gestohlen worden"],
+            "references": ["278", "115/9"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -590,7 +604,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "gnīw me-gabaye tre=ʕeze b-ramšəl ʻzwei Ziegen sind gestern gestohlen wordenʼ; 278; 115/9;"
+          },
+          {
+            "turoyo": "tarʕo me diḏan lə=ftīḥ. w áydarbo u=ʕazl-ano gnīw? mamṭila-le maṯle <…> u=šayro aydarbo gniw",
+            "translations": [
+              "keine unserer Türen ist aufgebrochen worden. Wie ist dann dieses Wollgarn gestohlen worden?",
+              "‘Sie brachte die Rede <…> wie dann das Armband gestohlen wurde’"
+            ],
+            "references": ["JL 17.6.5", "24/223"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " tarʕo me diḏan lə=ftīḥ. w áydarbo u=ʕazl-ano gnīw? "
@@ -632,7 +657,7 @@
                 "value": "24/223"
               }
             ],
-            "text": "gnīw me-gabaye tre=ʕeze b-ramšəl ʻzwei Ziegen sind gestern gestohlen wordenʼ; 278; 115/9; tarʕo me diḏan lə=ftīḥ. w áydarbo u=ʕazl-ano gnīw? ʻkeine unserer Türen ist aufgebrochen worden. Wie ist dann dieses Wollgarn gestohlen worden?ʼ JL 17.6.5; mamṭila-le maṯle <…> u=šayro aydarbo gniw ‘Sie brachte die Rede <…> wie dann das Armband gestohlen wurde’; 24/223"
+            "text": "tarʕo me diḏan lə=ftīḥ. w áydarbo u=ʕazl-ano gnīw? ʻkeine unserer Türen ist aufgebrochen worden. Wie ist dann dieses Wollgarn gestohlen worden?ʼ JL 17.6.5; mamṭila-le maṯle <…> u=šayro aydarbo gniw ‘Sie brachte die Rede <…> wie dann das Armband gestohlen wurde’; 24/223"
           }
         ],
         "Infinitiv": [

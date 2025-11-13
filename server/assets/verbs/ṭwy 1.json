@@ -18,13 +18,11 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "l-ḥaqiqa i=qəbba d-i=ʕito w i=ṣanʕa d-kiba k-ṭowe u=ḥzoy-ayḏa u=fəʕl-ano kule d-simlox lə=ṭowe gabi qərš u=galdo d-u=taʕlo lu=k-ṭowe lera",
+            "turoyo": "l-ḥaqiqa i=qəbba d-i=ʕito w i=ṣanʕa d-kiba k-ṭowe u=ḥzoy-ayḏa",
             "translations": [
-              "die Kuppel der Kirche und die Kunst daran ist wirklich sehenswert",
-              "‘All dies, was du getan hast, ist bei mir keinen Groschen wert’",
-              "‘Diese Fuchshaut ist doch kein Pfund wert’"
+              "die Kuppel der Kirche und die Kunst daran ist wirklich sehenswert"
             ],
-            "references": ["613", "11/165", "29/381", "29/392"],
+            "references": ["613", "11/165"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -69,7 +67,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "l-ḥaqiqa, i=qəbba d-i=ʕito w i=ṣanʕa d-kiba k-ṭowe u=ḥzoy-ayḏa ʻdie Kuppel der Kirche und die Kunst daran ist wirklich sehenswertʼ; 613; 11/165;"
+          },
+          {
+            "turoyo": "u=fəʕl-ano kule d-simlox lə=ṭowe gabi qərš",
+            "translations": [
+              "‘All dies, was du getan hast, ist bei mir keinen Groschen wert’"
+            ],
+            "references": ["29/381"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " u=fəʕl-ano kule d-simlox lə=ṭowe gabi qərš "
@@ -93,7 +101,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "u=fəʕl-ano kule d-simlox lə=ṭowe gabi qərš ‘All dies, was du getan hast, ist bei mir keinen Groschen wert’; 29/381;"
+          },
+          {
+            "turoyo": "u=galdo d-u=taʕlo lu=k-ṭowe lera",
+            "translations": ["‘Diese Fuchshaut ist doch kein Pfund wert’"],
+            "references": ["29/392"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " u=galdo d-u=taʕlo lu=k-ṭowe lera "
@@ -119,11 +135,11 @@
                 "value": "\n"
               }
             ],
-            "text": "l-ḥaqiqa, i=qəbba d-i=ʕito w i=ṣanʕa d-kiba k-ṭowe u=ḥzoy-ayḏa ʻdie Kuppel der Kirche und die Kunst daran ist wirklich sehenswertʼ; 613; 11/165; u=fəʕl-ano kule d-simlox lə=ṭowe gabi qərš ‘All dies, was du getan hast, ist bei mir keinen Groschen wert’; 29/381; u=galdo d-u=taʕlo lu=k-ṭowe lera ‘Diese Fuchshaut ist doch kein Pfund wert’; 29/392"
+            "text": "u=galdo d-u=taʕlo lu=k-ṭowe lera ‘Diese Fuchshaut ist doch kein Pfund wert’; 29/392"
           },
           {
             "turoyo": "i+Meri lo+ṭuyo u+mede d̥kosōmna Ilyas p.c.",
-            "translations": ["‘Mery is not worthy of what I do for her’"],
+            "translations": ["Mery is not worthy of what I do for her"],
             "references": [],
             "tokens": [
               {
@@ -156,7 +172,7 @@
           {
             "turoyo": "lo+ṭowe Putin dan+noše dkomaqәṭli ruḥayye aʕle Ilyas p.c.",
             "translations": [
-              "‘Putin is not worthy of people killing themselves for him’"
+              "Putin is not worthy of people killing themselves for him"
             ],
             "references": [],
             "tokens": [

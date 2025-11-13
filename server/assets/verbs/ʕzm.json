@@ -152,12 +152,11 @@
       "conjugations": {
         "Part. Pass.": [
           {
-            "turoyo": "xayifo de qṭaʕʕe kul ḥa m-an=naʕimaṯṯe badle w i=badlayḏax mawbela l-i=aṯto w i=badlayḏi w i=qundərayḏi tavda mawbe-lən l-u=gawro w mal-le l-u=gawro-ste ṭr-oṯe l-gabi mʕázmo-yo mʕazme-hatu l-u=quṣro",
+            "turoyo": "xayifo de qṭaʕʕe kul ḥa m-an=naʕimaṯṯe badle w i=badlayḏax mawbela l-i=aṯto w i=badlayḏi w i=qundərayḏi tavda mawbe-lən l-u=gawro w mal-le l-u=gawro-ste ṭr-oṯe l-gabi mʕázmo-yo",
             "translations": [
-              "scneide schnell jedem von den Kindern einen Anzug zu, bring dein Gewand der Frau, und meines samt meinen Schuhen dem Mann, und sag dem Mann, er solle zu mir kommen, er sei eingeladen",
-              "‘You are invited to the castle’"
+              "scneide schnell jedem von den Kindern einen Anzug zu, bring dein Gewand der Frau, und meines samt meinen Schuhen dem Mann, und sag dem Mann, er solle zu mir kommen, er sei eingeladen"
             ],
-            "references": ["175", "108/27", "MM 145"],
+            "references": ["175", "108/27"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -226,7 +225,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "xayifo de qṭaʕʕe kul ḥa m-an=naʕimaṯṯe badle, w i=badlayḏax mawbela l-i=aṯto, w i=badlayḏi w i=qundərayḏi tavda, mawbe-lən l-u=gawro, w mal-le l-u=gawro-ste ṭr-oṯe l-gabi mʕázmo-yo ʻscneide schnell jedem von den Kindern einen Anzug zu, bring dein Gewand der Frau, und meines samt meinen Schuhen dem Mann, und sag dem Mann, er solle zu mir kommen, er sei eingeladenʼ; 175; 108/27;"
+          },
+          {
+            "turoyo": "mʕazme-hatu l-u=quṣro",
+            "translations": ["‘You are invited to the castle’"],
+            "references": ["MM 145"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mʕazme-hatu l-u=quṣro "
@@ -248,10 +255,53 @@
                 "value": ";"
               }
             ],
-            "text": "xayifo de qṭaʕʕe kul ḥa m-an=naʕimaṯṯe badle, w i=badlayḏax mawbela l-i=aṯto, w i=badlayḏi w i=qundərayḏi tavda, mawbe-lən l-u=gawro, w mal-le l-u=gawro-ste ṭr-oṯe l-gabi mʕázmo-yo ʻscneide schnell jedem von den Kindern einen Anzug zu, bring dein Gewand der Frau, und meines samt meinen Schuhen dem Mann, und sag dem Mann, er solle zu mir kommen, er sei eingeladenʼ; 175; 108/27; mʕazme-hatu l-u=quṣro ‘You are invited to the castle’ MM 145;"
+            "text": "mʕazme-hatu l-u=quṣro ‘You are invited to the castle’ MM 145;"
+          },
+          {
+            "turoyo": "mmáʕzəmo-yo",
+            "translations": ["er ist eingeladen"],
+            "references": ["157"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mmáʕzəmo-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer ist eingeladenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "157"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mmáʕzəmo-yo ʻer ist eingeladenʼ; 157;"
           }
         ]
       }
+    },
+    {
+      "stem": "Action Noun",
+      "forms": [],
+      "conjugations": {},
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "1) inviting, invitation;"
+        }
+      ]
     },
     {
       "stem": "II",
@@ -383,13 +433,9 @@
         ],
         "Infectum": [
           {
-            "turoyo": "qore-lox u=malko g-maʕzam-lox prs haqqayəṣ k-maʕzimína-lox naqqa hat-ste səm-lan ʕazima mede! k-ubʕono d-oṯət sidayna lalyo ḥreno maʕazmína-lox saymina-lox muklo",
-            "translations": [
-              "der König lässt dich bitten und ladet dich ein",
-              "wir laden dich so oft ein, lad du uns doch auch einmal ein!",
-              "‘Ich möchte, daß du zu uns kommst. Wir wollen dich für nächste Nacht einladen und für dich ein Essen bereiten’"
-            ],
-            "references": ["147", "65/27", "11/253", "24/219"],
+            "turoyo": "qore-lox u=malko g-maʕzam-lox prs",
+            "translations": ["der König lässt dich bitten und ladet dich ein"],
+            "references": ["147", "65/27"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -426,7 +472,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "qore-lox u=malko g-maʕzam-lox ʻder König lässt dich bitten und ladet dich einʼ; 147; prs 65/27;"
+          },
+          {
+            "turoyo": "haqqayəṣ k-maʕzimína-lox naqqa hat-ste səm-lan ʕazima mede!",
+            "translations": [
+              "wir laden dich so oft ein, lad du uns doch auch einmal ein!"
+            ],
+            "references": ["11/253"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " haqqayəṣ k-maʕzimína-lox"
@@ -458,7 +514,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "haqqayəṣ k-maʕzimína-lox, naqqa hat-ste səm-lan ʕazima mede! ʻwir laden dich so oft ein, lad du uns doch auch einmal ein!ʼ; 11/253;"
+          },
+          {
+            "turoyo": "k-ubʕono d-oṯət sidayna lalyo ḥreno maʕazmína-lox saymina-lox muklo",
+            "translations": [
+              "‘Ich möchte, daß du zu uns kommst. Wir wollen dich für nächste Nacht einladen und für dich ein Essen bereiten’"
+            ],
+            "references": ["24/219"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " k-ubʕono d-oṯət sidayna lalyo ḥreno maʕazmína-lox"
@@ -488,7 +554,7 @@
                 "value": "24/219"
               }
             ],
-            "text": "qore-lox u=malko g-maʕzam-lox ʻder König lässt dich bitten und ladet dich einʼ; 147; prs 65/27; haqqayəṣ k-maʕzimína-lox, naqqa hat-ste səm-lan ʕazima mede! ʻwir laden dich so oft ein, lad du uns doch auch einmal ein!ʼ; 11/253; k-ubʕono d-oṯət sidayna lalyo ḥreno maʕazmína-lox, saymina-lox muklo ‘Ich möchte, daß du zu uns kommst. Wir wollen dich für nächste Nacht einladen und für dich ein Essen bereiten’; 24/219"
+            "text": "k-ubʕono d-oṯət sidayna lalyo ḥreno maʕazmína-lox, saymina-lox muklo ‘Ich möchte, daß du zu uns kommst. Wir wollen dich für nächste Nacht einladen und für dich ein Essen bereiten’; 24/219"
           }
         ],
         "Infectum-wa": [
@@ -560,49 +626,10 @@
             ],
             "text": "maʕzǝ́m ʻlade einʼ; 151;"
           }
-        ],
-        "Part. Pass.": [
-          {
-            "turoyo": "mmáʕzəmo-yo",
-            "translations": ["er ist eingeladen"],
-            "references": ["157"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "mmáʕzəmo-yo "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻer ist eingeladenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "157"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "mmáʕzəmo-yo ʻer ist eingeladenʼ; 157;"
-          }
         ]
       }
     }
   ],
-  "idioms": [
-    "einladen;",
-    "Action Noun",
-    "1) inviting, invitation;",
-    "einladen;"
-  ],
+  "idioms": ["einladen;", "1) inviting, invitation;", "einladen;"],
   "uncertain": false
 }

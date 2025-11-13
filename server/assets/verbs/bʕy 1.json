@@ -90,13 +90,11 @@
         ],
         "Infectum": [
           {
-            "turoyo": "k-ubʕe d-moḥe-li ʕal d-naḥənno mšamleli w məlli i=abaḥīḏ hano d-obaʕ-li gəd-šoqlal-le ya u=wab-ayḏi! k-ubʕeno menox d-ubat-li məqdār d-kallāt",
+            "turoyo": "k-ubʕe d-moḥe-li ʕal d-naḥənno mšamleli w məlli i=abaḥīḏ",
             "translations": [
-              "er will mich schlagen, weil ich vorgetreten bin und geräuchert habe, und weil ich die Psalmen rezitiert und das Credo gesprochen habe",
-              "wenn er mich haben will, werde ich ihn nehmen",
-              "‘Vater, ich möchte, daß du mir etwas Geld gibst’"
+              "er will mich schlagen, weil ich vorgetreten bin und geräuchert habe, und weil ich die Psalmen rezitiert und das Credo gesprochen habe"
             ],
-            "references": ["1", "733", "40/14", "733", "95/55", "24/47"],
+            "references": ["1", "733", "40/14"],
             "tokens": [
               {
                 "kind": "ref",
@@ -157,7 +155,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) k-ubʕe d-moḥe-li ʕal d-naḥənno, mšamleli, w məlli i=abaḥīḏ ʻer will mich schlagen, weil ich vorgetreten bin und geräuchert habe, und weil ich die Psalmen rezitiert und das Credo gesprochen habeʼ; 733; 40/14;"
+          },
+          {
+            "turoyo": "hano d-obaʕ-li gəd-šoqlal-le",
+            "translations": ["wenn er mich haben will, werde ich ihn nehmen"],
+            "references": ["733", "95/55"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " hano d-obaʕ-li"
@@ -201,7 +207,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "hano d-obaʕ-li, gəd-šoqlal-le ʻwenn er mich haben will, werde ich ihn nehmenʼ; 733; 95/55;"
+          },
+          {
+            "turoyo": "ya u=wab-ayḏi! k-ubʕeno menox d-ubat-li məqdār d-kallāt",
+            "translations": [
+              "‘Vater, ich möchte, daß du mir etwas Geld gibst’"
+            ],
+            "references": ["24/47"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ya u=wab-ayḏi!  k-ubʕeno menox d-ubat-li  məqdār d-kallāt "
@@ -227,16 +243,12 @@
                 "value": " "
               }
             ],
-            "text": "1) k-ubʕe d-moḥe-li ʕal d-naḥənno, mšamleli, w məlli i=abaḥīḏ ʻer will mich schlagen, weil ich vorgetreten bin und geräuchert habe, und weil ich die Psalmen rezitiert und das Credo gesprochen habeʼ; 733; 40/14; hano d-obaʕ-li, gəd-šoqlal-le ʻwenn er mich haben will, werde ich ihn nehmenʼ; 733; 95/55; ya u=wab-ayḏi! k-ubʕeno menox d-ubat-li məqdār d-kallāt ‘Vater, ich möchte, daß du mir etwas Geld gibst’; 24/47"
+            "text": "ya u=wab-ayḏi! k-ubʕeno menox d-ubat-li məqdār d-kallāt ‘Vater, ich möchte, daß du mir etwas Geld gibst’; 24/47"
           },
           {
-            "turoyo": "k-əbʕe-ya d-qəṭlal-lux wya d-nəfqono m-i=qriṯ-aṯe ya d-əbʕe d-qoṭaʕno qarʕux a qoṭanno ruḥi ono iḏa d-ubʕe-lox d-luzam-lox mal kallāt gd-ubéno-lox",
-            "translations": [
-              "ich muss dich töten oder dieses Dorf verlassen",
-              "entweder muss ich dir den Kopf abschlagen oder mich selber töten",
-              "‘Wenn du Geld und Gut brauchst und nötig hast, so gebe ich es dir’"
-            ],
-            "references": ["2", "733", "734", "52/48", "26/250"],
+            "turoyo": "k-əbʕe-ya d-qəṭlal-lux wya d-nəfqono m-i=qriṯ-aṯe",
+            "translations": ["ich muss dich töten oder dieses Dorf verlassen"],
+            "references": ["2", "733"],
             "tokens": [
               {
                 "kind": "ref",
@@ -269,7 +281,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "2) k-əbʕe-ya d-qəṭlal-lux wya d-nəfqono m-i=qriṯ-aṯe ʻich muss dich töten oder dieses Dorf verlassenʼ; 733;"
+          },
+          {
+            "turoyo": "ya d-əbʕe d-qoṭaʕno qarʕux a qoṭanno ruḥi ono",
+            "translations": [
+              "entweder muss ich dir den Kopf abschlagen oder mich selber töten"
+            ],
+            "references": ["734", "52/48"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ya d-əbʕe d-qoṭaʕno qarʕux a qoṭanno ruḥi ono "
@@ -305,7 +327,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ya d-əbʕe d-qoṭaʕno qarʕux a qoṭanno ruḥi ono ʻentweder muss ich dir den Kopf abschlagen oder mich selber tötenʼ; 734; 52/48;"
+          },
+          {
+            "turoyo": "iḏa d-ubʕe-lox d-luzam-lox mal kallāt gd-ubéno-lox",
+            "translations": [
+              "‘Wenn du Geld und Gut brauchst und nötig hast, so gebe ich es dir’"
+            ],
+            "references": ["26/250"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " iḏa d-ubʕe-lox d-luzam-lox mal"
@@ -343,7 +375,7 @@
                 "value": "26/250"
               }
             ],
-            "text": "2) k-əbʕe-ya d-qəṭlal-lux wya d-nəfqono m-i=qriṯ-aṯe ʻich muss dich töten oder dieses Dorf verlassenʼ; 733; ya d-əbʕe d-qoṭaʕno qarʕux a qoṭanno ruḥi ono ʻentweder muss ich dir den Kopf abschlagen oder mich selber tötenʼ; 734; 52/48; iḏa d-ubʕe-lox d-luzam-lox mal, kallāt, gd-ubéno-lox ‘Wenn du Geld und Gut brauchst und nötig hast, so gebe ich es dir’; 26/250"
+            "text": "iḏa d-ubʕe-lox d-luzam-lox mal, kallāt, gd-ubéno-lox ‘Wenn du Geld und Gut brauchst und nötig hast, so gebe ich es dir’; 26/250"
           }
         ]
       }

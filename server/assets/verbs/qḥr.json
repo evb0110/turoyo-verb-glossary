@@ -202,13 +202,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "k-ubʕono ya u=ṭayr-ayḏi be áyko-hət? d-oṯət ḥəzyal-lux ġắlabe qḥirono aʕlux i=barṯo d-u=malk-ano ḥəlla hano lat-yo gawro hano lat-yo u=uṣul d-i=zawaǧiye ʕayəq-la qḥiro Šahrzamān qḥir « aydarbo kali qume b-i=qale u=zlam-ano?",
+            "turoyo": "k-ubʕono ya u=ṭayr-ayḏi be áyko-hət? d-oṯət ḥəzyal-lux ġắlabe qḥirono aʕlux",
             "translations": [
-              "mein Vogel, wo bist du? Ich will, dass du kommst, damit ich dich sehe. Ich bin sehr böse auf dich",
-              "‘Die Königstochter schaute: das ist gar kein Mann, das ist nicht die Regel der Ehe. Sie wurde mißmutig und zornig’",
-              "‘Schahrzamān wurde zornig. \"Wie konnte dieser Mann mir im Kampf gegenübertreten ?\"’"
+              "mein Vogel, wo bist du? Ich will, dass du kommst, damit ich dich sehe. Ich bin sehr böse auf dich"
             ],
-            "references": ["259", "70/140", "24/186", "24/21"],
+            "references": ["259", "70/140"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -253,7 +251,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "k-ubʕono ya u=ṭayr-ayḏi be áyko-hət? d-oṯət ḥəzyal-lux, ġắlabe qḥirono aʕlux ʻmein Vogel, wo bist du? Ich will, dass du kommst, damit ich dich sehe. Ich bin sehr böse auf dichʼ; 259; 70/140;"
+          },
+          {
+            "turoyo": "i=barṯo d-u=malk-ano ḥəlla hano lat-yo gawro hano lat-yo u=uṣul d-i=zawaǧiye ʕayəq-la qḥiro Šahrzamān qḥir « aydarbo kali qume b-i=qale u=zlam-ano?",
+            "translations": [
+              "‘Die Königstochter schaute: das ist gar kein Mann, das ist nicht die Regel der Ehe. Sie wurde mißmutig und zornig’",
+              "‘Schahrzamān wurde zornig. \"Wie konnte dieser Mann mir im Kampf gegenübertreten ?\"’"
+            ],
+            "references": ["24/186", "24/21"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " i=barṯo d-u=malk-ano ḥəlla"
@@ -347,17 +356,14 @@
                 "value": "24/21"
               }
             ],
-            "text": "k-ubʕono ya u=ṭayr-ayḏi be áyko-hət? d-oṯət ḥəzyal-lux, ġắlabe qḥirono aʕlux ʻmein Vogel, wo bist du? Ich will, dass du kommst, damit ich dich sehe. Ich bin sehr böse auf dichʼ; 259; 70/140; i=barṯo d-u=malk-ano ḥəlla: hano lat-yo gawro, hano lat-yo u=uṣul d-i=zawaǧiye, ʕayəq-la, qḥiro ‘Die Königstochter schaute: das ist gar kein Mann, das ist nicht die Regel der Ehe. Sie wurde mißmutig und zornig’; 24/186 [MT]; Šahrzamān qḥir: « aydarbo kali qume b-i=qale u=zlam-ano? ‘Schahrzamān wurde zornig. \"Wie konnte dieser Mann mir im Kampf gegenübertreten ?\"’; 24/21"
+            "text": "i=barṯo d-u=malk-ano ḥəlla: hano lat-yo gawro, hano lat-yo u=uṣul d-i=zawaǧiye, ʕayəq-la, qḥiro ‘Die Königstochter schaute: das ist gar kein Mann, das ist nicht die Regel der Ehe. Sie wurde mißmutig und zornig’; 24/186 [MT]; Šahrzamān qḥir: « aydarbo kali qume b-i=qale u=zlam-ano? ‘Schahrzamān wurde zornig. \"Wie konnte dieser Mann mir im Kampf gegenübertreten ?\"’; 24/21"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "lə=məqḥorat ḥolo ábadan! ko-maḥət qarʕe qume hawxa ko-məqḥər and became sad’",
-            "translations": [
-              "Uncle, do not be sad at all",
-              "‘He lost his heart (lit. ‘put his head in front of him’"
-            ],
-            "references": ["259", "44/17", "73/325"],
+            "turoyo": "lə=məqḥorat ḥolo ábadan!",
+            "translations": ["Uncle, do not be sad at all"],
+            "references": ["259", "44/17"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -402,7 +408,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "lə=məqḥorat ḥolo, ábadan! ʻUncle, do not be sad at allʼ; 259; 44/17;"
+          },
+          {
+            "turoyo": "ko-maḥət qarʕe qume hawxa ko-məqḥər and became sad’",
+            "translations": [
+              "‘He lost his heart (lit. ‘put his head in front of him’"
+            ],
+            "references": ["73/325"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ko-maḥət qarʕe qume hawxa"
@@ -436,10 +452,16 @@
                 "value": ";"
               }
             ],
-            "text": "lə=məqḥorat ḥolo, ábadan! ʻUncle, do not be sad at allʼ; 259; 44/17; ko-maḥət qarʕe qume hawxa, ko-məqḥər ‘He lost his heart (lit. ‘put his head in front of him’) and became sad’ 73/325;"
+            "text": "ko-maḥət qarʕe qume hawxa, ko-məqḥər ‘He lost his heart (lit. ‘put his head in front of him’) and became sad’ 73/325;"
           }
         ]
-      }
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "böse, zornig, ärgerlich, missmutig werden, auf (ʕal, m-)"
+        }
+      ]
     },
     {
       "stem": "III",

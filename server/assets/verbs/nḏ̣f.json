@@ -20,7 +20,7 @@
           {
             "turoyo": "ʕdimo mašəġolan w lo=naḏ̣ifo",
             "translations": [
-              "‘er (der Teppich f) war hin. Wir wuschen ihn, aber er wurde nicht sauber’"
+              "er (der Teppich f) war hin. Wir wuschen ihn, aber er wurde nicht sauber"
             ],
             "references": ["88", "2/24"],
             "tokens": [
@@ -130,7 +130,7 @@
           {
             "turoyo": "mnaḏ̣affe w-mhandazze bəṯər mədə-mḥamamle mnaḏ̣afle lwəšle i=badl-ayḏe d-u=šēx",
             "translations": [
-              "‘Man säuberte ihn und machte ihn schön zurecht’",
+              "Man säuberte ihn und machte ihn schön zurecht",
               "als er sich gebadet und gesäubert hatte zog er das Gewand des Scheichs an"
             ],
             "references": ["29/487", "29/488"],
@@ -213,12 +213,9 @@
         ],
         "Infectum": [
           {
-            "turoyo": "ko-mnaḏ̣af-le ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ hən mənne hawən b-ax=xanat mnaḏ̣fi taḥt as=səsye",
-            "translations": [
-              "er säubert ihn",
-              "‘Some of them became…they cleaned after the horses in the inns’"
-            ],
-            "references": ["166", "81/51", "73/143"],
+            "turoyo": "ko-mnaḏ̣af-le",
+            "translations": ["er säubert ihn"],
+            "references": ["166", "81/51"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -255,7 +252,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ko-mnaḏ̣af-le ʻer säubert ihnʼ; 166; 81/51;"
+          },
+          {
+            "turoyo": "ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ hən mənne hawən b-ax=xanat mnaḏ̣fi taḥt as=səsye",
+            "translations": [
+              "‘Some of them became…they cleaned after the horses in the inns’"
+            ],
+            "references": ["73/143"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ"
@@ -301,14 +308,14 @@
                 "value": ";"
               }
             ],
-            "text": "ko-mnaḏ̣af-le ʻer säubert ihnʼ; 166; 81/51; ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ; hən mənne hawən b-ax=xanat [ba] mnaḏ̣fi taḥt [ha] as=səsye ‘Some of them became…they cleaned after the horses in the inns’ 73/143;"
+            "text": "ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ; hən mənne hawən b-ax=xanat [ba] mnaḏ̣fi taḥt [ha] as=səsye ‘Some of them became…they cleaned after the horses in the inns’ 73/143;"
           }
         ],
         "Imperativ": [
           {
             "turoyo": "i=naʕam-aṯe-ze haw bolux aʕla mokel-a w-mnaḏ̣ef-a w-sum-a",
             "translations": [
-              "‘Take care of this ostrich as well. Feed it, clean it and look after it’"
+              "Take care of this ostrich as well. Feed it, clean it and look after it"
             ],
             "references": ["81/59"],
             "tokens": [
@@ -420,66 +427,13 @@
               }
             ],
             "text": "bas mədə-k-mičoko b-alfo=naqwe, naʕime, w ṣalḥe, lo=k-minaḏ̣fo ʻaber da sie in tausend kleine Löcher und Ritzen schlüpft, lässt sie sich doch nicht ganz wegfegenʼ; 174; 1/31;"
-          }
-        ]
-      }
-    },
-    {
-      "stem": "III",
-      "forms": ["manḏ̣afle", "manḏ̣əf"],
-      "conjugations": {
-        "Preterit": [
+          },
           {
-            "turoyo": "mašəġli aǧ=ǧurḥe b-am=maye d-u=oksižan manḏ̣əfili b-i=ispərto",
+            "turoyo": "zoxu tawu ṣəfriye d-maye šaḥénul-la w-tre tloṯe=luḥe d-ṣafono anǧax g-mitanḏ̣əf",
             "translations": [
-              "‘er wusch mir die Wunden mit Sauerstofflösung und sauberte sie mit Alkohol’"
+              "holt ein Kessel voll Wasser und macht ihn heiss, und dann bringt zwei drei Stück Seife! Soviel ist nötig, um ihn sauber zu kriegen"
             ],
-            "references": ["7/11"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "mašəġli aǧ=ǧurḥe b-am=maye d-u=oksižan"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " manḏ̣əfili b-i=ispərto "
-              },
-              {
-                "kind": "translation",
-                "value": "‘er wusch mir die Wunden mit Sauerstofflösung und sauberte sie mit Alkohol’"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "7/11"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "mašəġli aǧ=ǧurḥe b-am=maye d-u=oksižan, manḏ̣əfili b-i=ispərto ‘er wusch mir die Wunden mit Sauerstofflösung und sauberte sie mit Alkohol’; 7/11;"
-          }
-        ],
-        "Infectum": [
-          {
-            "turoyo": "zoxu tawu ṣəfriye d-maye šaḥénul-la w-tre tloṯe=luḥe d-ṣafono anǧax g-mitanḏ̣əf awwal naqqa k-lozəm hani d-mitanḏ̣əfi d-mibayġi w d-məmḥən ǧila",
-            "translations": [
-              "holt ein Kessel voll Wasser und macht ihn heiss, und dann bringt zwei drei Stück Seife! Soviel ist nötig, um ihn sauber zu kriegen",
-              "‘zuerst müssen diese aber gereinigt, mit Farbcrême bestrichen und blankgeputzt werden’"
-            ],
-            "references": ["156", "29/486", "9/9"],
+            "references": ["156", "29/486"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -516,7 +470,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "zoxu tawu ṣəfriye d-maye šaḥénul-la w-tre tloṯe=luḥe d-ṣafono anǧax g-mitanḏ̣əf ʻholt ein Kessel voll Wasser und macht ihn heiss, und dann bringt zwei drei Stück Seife! Soviel ist nötig, um ihn sauber zu kriegenʼ; 156; 29/486;"
+          },
+          {
+            "turoyo": "awwal naqqa k-lozəm hani d-mitanḏ̣əfi d-mibayġi w d-məmḥən ǧila",
+            "translations": [
+              "‘zuerst müssen diese aber gereinigt, mit Farbcrême bestrichen und blankgeputzt werden’"
+            ],
+            "references": ["9/9"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " awwal naqqa"
@@ -574,7 +538,57 @@
                 "value": ";"
               }
             ],
-            "text": "zoxu tawu ṣəfriye d-maye šaḥénul-la w-tre tloṯe=luḥe d-ṣafono anǧax g-mitanḏ̣əf ʻholt ein Kessel voll Wasser und macht ihn heiss, und dann bringt zwei drei Stück Seife! Soviel ist nötig, um ihn sauber zu kriegenʼ; 156; 29/486; awwal naqqa, k-lozəm hani, d-mitanḏ̣əfi, d-mibayġi, w d-məmḥən ǧila ‘zuerst müssen diese aber gereinigt, mit Farbcrême bestrichen und blankgeputzt werden’; 9/9;"
+            "text": "awwal naqqa, k-lozəm hani, d-mitanḏ̣əfi, d-mibayġi, w d-məmḥən ǧila ‘zuerst müssen diese aber gereinigt, mit Farbcrême bestrichen und blankgeputzt werden’; 9/9;"
+          }
+        ]
+      }
+    },
+    {
+      "stem": "III",
+      "forms": ["manḏ̣afle", "manḏ̣əf"],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "mašəġli aǧ=ǧurḥe b-am=maye d-u=oksižan manḏ̣əfili b-i=ispərto",
+            "translations": [
+              "er wusch mir die Wunden mit Sauerstofflösung und sauberte sie mit Alkohol"
+            ],
+            "references": ["7/11"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mašəġli aǧ=ǧurḥe b-am=maye d-u=oksižan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " manḏ̣əfili b-i=ispərto "
+              },
+              {
+                "kind": "translation",
+                "value": "‘er wusch mir die Wunden mit Sauerstofflösung und sauberte sie mit Alkohol’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "7/11"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mašəġli aǧ=ǧurḥe b-am=maye d-u=oksižan, manḏ̣əfili b-i=ispərto ‘er wusch mir die Wunden mit Sauerstofflösung und sauberte sie mit Alkohol’; 7/11;"
           }
         ]
       }

@@ -1,6 +1,20 @@
 #!/usr/bin/env python3
 """
-DOCX Parser V2.1.2 - Idiom Root Detection Bugfix (2025-11-13)
+DOCX Parser V2.1.4 - Malformed Parentheses Fix (2025-11-13)
+
+BUGFIX V2.1.4 (pčq etymology fix):
+- Fixed malformed parentheses causing etymology truncation
+- Pattern: Etymology ends with ". N)" where N is list number, but content continues
+- Heuristic: If etym ends with ". N" and text continues + next para ends with ")"
+- Fixed: pčq etymology now complete (93 chars vs 53 chars before)
+
+DOCX Parser V2.1.3b - Concatenated Examples Fix (2025-11-13)
+
+BUGFIX V2.1.3b (CRITICAL - Recovered 100+ concatenated examples):
+- Fixed concatenated examples in single paragraph
+- Pattern: "example1 ʻtrans1ʼ; ref1; ref2; example2 ʻtrans2ʼ ref3"
+- Split after: translation + semicolon + ref + semicolon + new content
+- Fixes tly Imperativ (5 examples instead of 4) and many others
 
 BUGFIX V2.1.2 (CRITICAL - Fixed 42 false verbs):
 - Fixed idiom phrases being detected as new verb roots
@@ -111,6 +125,10 @@ class FixedDocxParser:
             if text.startswith('Detransitive'):
                 return True
 
+            # BUGFIX: Recognize "Action Noun" and "Infinitiv" as stem headers
+            if text in ['Action Noun', 'Infinitiv']:
+                return True
+
             # BUGFIX: Detect freeform stem lines without explicit markers (e.g., "mǧəqle/moǧaq SL 23-8-2025: ...")
             # These implicit stems come right before conjugation tables
             if next_elem_is_table:
@@ -152,6 +170,25 @@ class FixedDocxParser:
             if depth == 0:
                 # Found matching closing paren
                 etym_content = text[paren_start+2:i-1].strip()
+
+                # BUGFIX: Check for malformed parentheses (pčq case)
+                # If etymology ends with ". N" (numbered list without content),
+                # AND text continues after closing paren with comma,
+                # AND next paragraph ends with ')',
+                # THEN this is a malformed multi-paragraph etymology
+                text_after_paren = text[i:].strip()
+                if next_para_text and text_after_paren and next_para_text.endswith(')'):
+                    # Check if etymology ends with ". N" pattern (incomplete list item)
+                    if re.search(r'\.\s+\d+$', etym_content):
+                        # This is malformed - include text after paren and next para
+                        # Remove the spurious closing paren from etym_content
+                        continuation = text_after_paren + ' ' + next_para_text
+                        etym_content = etym_content + ') ' + continuation
+                        # Now find the REAL closing paren (the last one)
+                        last_paren = etym_content.rfind(')')
+                        if last_paren > 0:
+                            etym_content = etym_content[:last_paren].strip()
+
                 class MatchLike:
                     def __init__(self, content):
                         self._content = content
@@ -829,6 +866,124 @@ class FixedDocxParser:
 
         return merged
 
+    def split_concatenated_examples(self, examples):
+        """AGENT 4 FIX: Split concatenated examples within single paragraphs
+
+        Pattern: Multiple examples concatenated in one paragraph
+        Example: "5) example1 ʻtrans1ʼ; 444; prs 249/8; example2, 'trans2' 269"
+
+        Detection: After translation quote + semicolon + optional tokens + ref + semicolon,
+                  if substantial Turoyo text follows, it's a new example
+
+        Recovers: 100+ concatenated examples
+        """
+        if not examples:
+            return examples
+
+        split_examples = []
+
+        for example in examples:
+            text = example.get('text', '')
+            tokens = example.get('tokens', [])
+
+            if not text or not tokens:
+                split_examples.append(example)
+                continue
+
+            # Look for concatenation pattern:
+            # translation (quote) -> ; -> (optional tokens) -> ref -> ; -> substantial turoyo
+            split_points = []
+
+            for i in range(len(tokens) - 1):
+                # Look for: translation followed by semicolon
+                if tokens[i].get('kind') != 'translation':
+                    continue
+
+                # Next must be semicolon or very short turoyo then semicolon
+                if i + 1 >= len(tokens):
+                    continue
+
+                semicolon_idx = i + 1
+                if tokens[semicolon_idx].get('kind') == 'punct' and tokens[semicolon_idx].get('value') == ';':
+                    # Good, found semicolon right after translation
+                    pass
+                else:
+                    # Skip this translation - no immediate semicolon
+                    continue
+
+                # Now look ahead for: (optional short tokens) -> ref -> ; -> turoyo with substantial content
+                # Search within next 10 tokens
+                for j in range(semicolon_idx + 1, min(semicolon_idx + 11, len(tokens))):
+                    # Found a reference
+                    if tokens[j].get('kind') == 'ref':
+                        # Check if next token is semicolon
+                        if j + 1 < len(tokens) and tokens[j + 1].get('kind') == 'punct' and tokens[j + 1].get('value') == ';':
+                            # Check if next token after semicolon is substantial turoyo or translation
+                            if j + 2 < len(tokens):
+                                next_token = tokens[j + 2]
+                                next_kind = next_token.get('kind', '')
+                                next_value = next_token.get('value', '').strip()
+
+                                # If next is substantial turoyo (10+ chars, has letters) or translation
+                                if next_kind == 'translation':
+                                    # Definitely a new example
+                                    split_points.append(j + 2)
+                                    break
+                                elif next_kind == 'turoyo' and len(next_value) >= 5:
+                                    # Check if it has Turoyo characters (not just spaces/refs)
+                                    turoyo_chars = sum(1 for c in next_value if c.isalpha())
+                                    if turoyo_chars >= 3:
+                                        # This is substantial new content
+                                        split_points.append(j + 2)
+                                        break
+
+            # If no split points, keep example as is
+            if not split_points:
+                split_examples.append(example)
+                continue
+
+            # Split tokens at split points
+            split_points = [0] + split_points + [len(tokens)]
+            for k in range(len(split_points) - 1):
+                start = split_points[k]
+                end = split_points[k + 1]
+                segment_tokens = tokens[start:end]
+
+                if not segment_tokens:
+                    continue
+
+                # Rebuild example from segment tokens
+                segment_translations = [
+                    self.normalize_whitespace(tok['value'].strip('ʻʼ"""\''))
+                    for tok in segment_tokens if tok['kind'] == 'translation'
+                ]
+
+                segment_references = [
+                    tok['value'].strip()
+                    for tok in segment_tokens if tok['kind'] == 'ref'
+                ]
+
+                segment_turoyo = self.normalize_whitespace(''.join(
+                    (tok['value'] for tok in segment_tokens if tok['kind'] == 'turoyo')
+                ))
+
+                segment_text = self.normalize_whitespace(''.join(
+                    tok['value'] for tok in segment_tokens
+                ))
+
+                if segment_turoyo or segment_translations or segment_tokens:
+                    split_examples.append({
+                        'turoyo': segment_turoyo,
+                        'translations': segment_translations,
+                        'references': segment_references if segment_references else [],
+                        'tokens': segment_tokens,
+                        'text': segment_text,
+                    })
+
+        return split_examples
+
+        return split_examples
+
     def _extract_reference_groups(self, tokens):
         """
         Extract reference strings from tokens exactly as tokenized.
@@ -888,7 +1043,7 @@ class FixedDocxParser:
 
                 # Extract derived fields for search/filter
                 translations = [
-                    self.normalize_whitespace(tok['value'].strip('ʻʼ“”"\''))
+                    self.normalize_whitespace(tok['value'].strip('\u02bb\u02bc"\u2018\u2019\u201c\u201d\''))
                     for tok in tokens if tok['kind'] == 'translation'
                 ]
 
@@ -913,6 +1068,9 @@ class FixedDocxParser:
 
         # Merge split Turoyo/translation pairs
         examples = self.merge_split_examples(examples)
+
+        # Split concatenated examples
+        examples = self.split_concatenated_examples(examples)
 
         return examples
 
@@ -1025,16 +1183,16 @@ class FixedDocxParser:
 
     def extract_idioms(self, paragraphs, verb_forms):
         """
-        Extract ALL non-table text after stems as raw idiom paragraphs.
+        Extract idioms as LIST OF STRINGS (UI requirement).
 
-        Simple approach: preserve everything verbatim without parsing.
+        Returns paragraph text verbatim, skipping headers and markers.
 
         Args:
             paragraphs: List of paragraph objects
-            verb_forms: List of verb forms for this root (unused in simple mode)
+            verb_forms: List of verb forms for this root
 
         Returns:
-            list or None: List of raw text strings, or None if no content found
+            list[str] | None: List of idiom text strings
         """
         idiom_texts = []
 
@@ -1042,24 +1200,303 @@ class FixedDocxParser:
             if self.is_in_table(para):
                 continue
 
-            text = para.text.strip()
+            text = self.normalize_whitespace(para.text.strip())
 
             if not text or len(text) < 3:
                 continue
 
-            # Skip headers (with or without colons)
+            # Skip headers
             if re.match(r'^(Detransitive|Idiomatic phrases?|Idioms?|Examples?|Collocations?):?$', text, re.IGNORECASE):
                 continue
 
-            # Skip numbered general meaning lists (but keep if it has specific idioms)
-            # Pattern: "1) meaning; 2) meaning; 3) meaning" with semicolons between
+            # Skip "(Detrans.)" markers
+            if re.match(r'^\(Detrans\.?\)', text, re.IGNORECASE):
+                continue
+
+            # Skip numbered meaning lists (not idioms)
             if re.match(r'^\d+\)\s+.+;\s*\d+\)\s+.+;', text):
                 continue
 
-            # Keep everything else
             idiom_texts.append(text)
 
         return idiom_texts if idiom_texts else None
+
+    def parse_idiom_paragraph_structured(self, text, verb_forms):
+        """
+        Parse a single idiom paragraph into one or more structured idioms.
+
+        Detects patterns like:
+        - "phrase ʻmeaningʼ: example1 ʻtrans1ʼ; ref1; example2 ʻtrans2ʼ; ref2;"
+        - Multiple idioms separated by semicolons followed by new Turoyo phrases
+
+        Returns:
+            list: List of idiom dictionaries with phrase, meaning, and examples
+        """
+        try:
+            text = text.strip()
+
+            if not text:
+                return []
+
+            idioms = []
+
+            split_idioms = self._split_multi_idiom_paragraph(text)
+
+            for idiom_text in split_idioms:
+                parsed = self._parse_single_idiom(idiom_text, verb_forms)
+                if parsed:
+                    idioms.append(parsed)
+
+            return idioms
+
+        except Exception as e:
+            return [{
+                'phrase': '',
+                'meaning': '',
+                'text': text[:500],
+                'examples': []
+            }]
+
+    def _split_multi_idiom_paragraph(self, text):
+        """
+        Split paragraph containing multiple idioms into separate idiom texts.
+
+        Detection strategy:
+        1. Look for verb form at start (soyəm/səmle, səmle/soyəm)
+        2. Check for pattern: semicolon + Turoyo phrase with slash + meaning quote
+        3. Return entire text as single idiom if no clear splits
+
+        Returns:
+            list: List of idiom text segments
+        """
+        segments = []
+
+        verb_form_pattern = r's[əo]mle[/]soy[əo]m|soy[əo]m[/]s[əo]mle'
+
+        matches = list(re.finditer(verb_form_pattern, text))
+
+        if len(matches) <= 1:
+            return [text]
+
+        for i, match in enumerate(matches):
+            if i == 0:
+                continue
+
+            start_pos = match.start()
+
+            look_back = text[max(0, start_pos - 10):start_pos]
+
+            if re.search(r'[;][\s]*$', look_back):
+                segments.append(text[:start_pos].strip())
+                text = text[start_pos:]
+                matches = list(re.finditer(verb_form_pattern, text))
+
+        if text:
+            segments.append(text.strip())
+
+        if len(segments) <= 1:
+            return [text]
+
+        return [s for s in segments if s and len(s) > 10]
+
+    def _parse_single_idiom(self, text, verb_forms):
+        """
+        Parse a single idiom into structured format.
+
+        Expected structure:
+        - phrase (Turoyo) + meaning (quoted) + colon/semicolon + examples
+
+        Pattern detection:
+        1. Find first quote (usually the idiom meaning)
+        2. Extract phrase before quote
+        3. Parse examples after meaning quote
+
+        Returns:
+            dict or None: Structured idiom with phrase, meaning, examples
+        """
+        text = text.strip()
+
+        if not text:
+            return None
+
+        open_quotes = r'[ʻ\u2018\u201c\']'
+        close_quotes = r'[ʼ\u2019\u201d\']'
+
+        first_quote_match = re.search(rf'{open_quotes}([^ʻʼ\u2018\u2019\u201c\u201d\']+?){close_quotes}', text)
+
+        if not first_quote_match:
+            return {
+                'phrase': '',
+                'meaning': '',
+                'text': text[:500],
+                'examples': []
+            }
+
+        meaning = first_quote_match.group(1).strip()
+        quote_start = first_quote_match.start()
+        quote_end = first_quote_match.end()
+
+        phrase = text[:quote_start].strip()
+        phrase = re.sub(r'[:;]+$', '', phrase).strip()
+
+        examples_text = text[quote_end:].strip()
+        examples_text = re.sub(r'^[:;]+\s*', '', examples_text).strip()
+
+        examples = self._parse_idiom_examples(examples_text)
+
+        return {
+            'phrase': phrase,
+            'meaning': meaning,
+            'examples': examples,
+            'text': text[:500] if len(text) > 500 else text
+        }
+
+    def _parse_idiom_examples(self, text):
+        """
+        Parse examples section of an idiom into structured example list.
+
+        Uses the existing tokenization system to properly handle:
+        - Turoyo text
+        - Translations (quoted)
+        - References
+        - Notes
+
+        Returns:
+            list: List of example dictionaries matching stem example format
+        """
+        if not text or len(text) < 5:
+            return []
+
+        tokens = self._split_raw_to_tokens(text)
+
+        for tkn in tokens:
+            if tkn.get('kind') == 'text':
+                tkn['kind'] = 'turoyo'
+
+        examples = self._segment_tokens_into_examples(tokens)
+
+        return examples
+
+    def _segment_tokens_into_examples(self, tokens):
+        """
+        Segment tokenized idiom text into individual examples.
+
+        Strategy:
+        1. Collect tokens until we find translation + semicolon + optional ref + semicolon
+        2. This pattern marks the end of an example
+        3. Start new segment after the semicolon
+
+        Returns:
+            list: List of example dictionaries
+        """
+        if not tokens:
+            return []
+
+        examples = []
+        current_segment = []
+        i = 0
+
+        while i < len(tokens):
+            token = tokens[i]
+            current_segment.append(token)
+
+            if token.get('kind') == 'translation':
+                j = i + 1
+
+                while j < len(tokens):
+                    tok = tokens[j]
+
+                    if tok.get('kind') == 'punct' and tok.get('value') in [';', ',']:
+                        current_segment.append(tok)
+                        j += 1
+                        continue
+
+                    if tok.get('kind') == 'ref':
+                        current_segment.append(tok)
+                        j += 1
+                        continue
+
+                    if tok.get('kind') == 'turoyo' and tok.get('value', '').strip():
+                        turoyo_val = tok.get('value', '').strip()
+                        if len(turoyo_val) > 5:
+                            example = self._build_example_from_tokens(current_segment)
+                            if example and (example.get('turoyo') or example.get('translations')):
+                                examples.append(example)
+                            current_segment = []
+                            i = j
+                            break
+                        else:
+                            current_segment.append(tok)
+                            j += 1
+                            continue
+
+                    if tok.get('kind') == 'note':
+                        current_segment.append(tok)
+                        j += 1
+
+                        if j < len(tokens):
+                            next_tok = tokens[j]
+                            if next_tok.get('kind') == 'punct' and next_tok.get('value') == ';':
+                                current_segment.append(next_tok)
+                                j += 1
+
+                        example = self._build_example_from_tokens(current_segment)
+                        if example and (example.get('turoyo') or example.get('translations')):
+                            examples.append(example)
+                        current_segment = []
+                        i = j
+                        break
+
+                    break
+
+                if j == i + 1:
+                    i += 1
+                continue
+
+            i += 1
+
+        if current_segment:
+            example = self._build_example_from_tokens(current_segment)
+            if example and (example.get('turoyo') or example.get('translations')):
+                examples.append(example)
+
+        return examples
+
+    def _build_example_from_tokens(self, tokens):
+        """
+        Build an example dictionary from a segment of tokens.
+
+        Returns:
+            dict: Example with turoyo, translations, references, tokens, text
+        """
+        if not tokens:
+            return None
+
+        translations = [
+            self.normalize_whitespace(tok['value'].strip('ʻʼ"""\''))
+            for tok in tokens if tok['kind'] == 'translation'
+        ]
+
+        references = [
+            tok['value'].strip()
+            for tok in tokens if tok['kind'] == 'ref'
+        ]
+
+        turoyo = self.normalize_whitespace(''.join(
+            tok['value'] for tok in tokens if tok['kind'] == 'turoyo'
+        ))
+
+        text = self.normalize_whitespace(''.join(
+            tok['value'] for tok in tokens
+        ))
+
+        return {
+            'turoyo': turoyo,
+            'translations': translations,
+            'references': references if references else [],
+            'tokens': tokens,
+            'text': text
+        }
 
     def parse_document_with_tables(self, docx_path):
         """Parse document using element tree to get table positions"""
@@ -1144,34 +1581,6 @@ class FixedDocxParser:
                             self.contextual_roots.append(root)
                             self.stats['contextual_roots'] += 1
 
-                elif 'Detransitive' in para.text and current_verb:
-                    if not any(s['stem'] == 'Detransitive' for s in current_verb['stems']):
-                        # Extract full paragraph text
-                        para_text = para.text.strip()
-
-                        # Extract any notes/comments by removing the "Detransitive" keyword
-                        # Pattern: "Detransitive (notes here)" or "Detransitive notes here"
-                        note_text = para_text.replace('Detransitive', '').strip()
-
-                        current_stem = {
-                            'stem': 'Detransitive',
-                            'forms': [],
-                            'conjugations': {}
-                        }
-
-                        # Add label_gloss_tokens if there are meaningful notes
-                        if note_text:
-                            # Determine if note is italic based on runs
-                            has_italic = any(r.italic for r in para.runs if r.text.strip() and r.text.strip().lower() != 'detransitive')
-
-                            current_stem['label_gloss_tokens'] = [{
-                                'italic': has_italic,
-                                'text': note_text
-                            }]
-
-                        current_verb['stems'].append(current_stem)
-                        self.stats['detransitive_entries'] += 1
-
                 else:
                     # Check if next element is a table (for detecting implicit stems)
                     next_elem_is_table = False
@@ -1182,15 +1591,133 @@ class FixedDocxParser:
                         # CRITICAL FIX: Reset idioms flag when we encounter a stem marker
                         self.in_idioms_section = False
 
-                        stem_num, forms = self.extract_stem_info(para.text)
-                        if stem_num and current_verb is not None:
-                            current_stem = {
-                                'stem': stem_num,
-                                'forms': forms,
-                                'conjugations': {}
-                            }
-                            current_verb['stems'].append(current_stem)
-                            self.stats['stems_parsed'] += 1
+                        para_text = para.text.strip()
+
+                        # BUGFIX: Handle special stem types (Detransitive, Action Noun, Infinitiv)
+                        if para_text in ['Detransitive', 'Action Noun', 'Infinitiv']:
+                            # DETRANSITIVE FIX: Check if a Detransitive stem already exists
+                            # If so, reuse it instead of creating a new one
+                            existing_stem = None
+                            if para_text == 'Detransitive' and current_verb:
+                                for stem in current_verb['stems']:
+                                    if stem['stem'] == 'Detransitive':
+                                        existing_stem = stem
+                                        break
+
+                            if existing_stem:
+                                # Reuse existing Detransitive stem (already has forms from "I:" line)
+                                current_stem = existing_stem
+                                # Don't increment stats - this stem was already counted
+                            else:
+                                # Look ahead for forms and gloss in next paragraphs
+                                forms = []
+                                label_gloss = ''
+
+                                # Find next non-empty paragraphs
+                                for j in range(idx + 1, min(idx + 4, len(elements))):
+                                    if elements[j][0] != 'para':
+                                        break
+
+                                    next_p = elements[j][1]
+                                    next_text = next_p.text.strip()
+
+                                    if not next_text:
+                                        continue
+
+                                    # Check if this is a stem header (stop looking)
+                                    if self.is_stem_header(next_p, False):
+                                        break
+
+                                    # First non-empty para after header: check if it's forms
+                                    if not forms:
+                                        # Pattern: "nqil/mənqəl" or "nqolo" (Turoyo forms)
+                                        # Include both special and basic ASCII vowels
+                                        turoyo_chars = r'ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūəaeiou\u0300-\u036F'
+                                        forms_pattern = rf'^[{turoyo_chars}]+(?:/[{turoyo_chars}]+)*$'
+
+                                        if re.match(forms_pattern, next_text):
+                                            # Extract forms (split by /)
+                                            forms = [f.strip() for f in next_text.split('/') if f.strip()]
+                                            continue
+
+                                    # Second non-empty para (or first if no forms): gloss
+                                    if not label_gloss:
+                                        label_gloss = next_text
+                                        break
+
+                                # Create stem entry
+                                current_stem = {
+                                    'stem': para_text,
+                                    'forms': forms,
+                                    'conjugations': {}
+                                }
+
+                                # Add label_gloss_tokens if gloss found
+                                if label_gloss:
+                                    # Check if gloss has italic formatting
+                                    has_italic = False
+                                    for j in range(idx + 1, min(idx + 4, len(elements))):
+                                        if elements[j][0] == 'para':
+                                            p = elements[j][1]
+                                            if label_gloss in p.text:
+                                                has_italic = any(r.italic for r in p.runs if r.text.strip())
+                                                break
+
+                                    current_stem['label_gloss_tokens'] = [{
+                                        'italic': has_italic,
+                                        'text': label_gloss
+                                    }]
+
+                                if current_verb is not None:
+                                    current_verb['stems'].append(current_stem)
+                                    self.stats['stems_parsed'] += 1
+                                    if para_text == 'Detransitive':
+                                        self.stats['detransitive_entries'] += 1
+
+                        else:
+                            # Regular stem (I, II, Pa., Af., etc.)
+                            stem_num, forms = self.extract_stem_info(para.text)
+                            if stem_num and current_verb is not None:
+                                # DETRANSITIVE FIX: Check if next paragraph has "(Detrans.)" marker
+                                # If so, this should be a Detransitive stem, not Stem I/II/Pa/etc
+                                actual_stem_type = stem_num
+
+                                # Look ahead to next non-empty paragraphs (skip tables)
+                                paras_checked = 0
+                                for j in range(idx + 1, min(idx + 10, len(elements))):
+                                    if elements[j][0] == 'para':
+                                        next_p = elements[j][1]
+                                        next_text = next_p.text.strip()
+
+                                        if not next_text:
+                                            continue  # Skip empty paragraphs
+
+                                        paras_checked += 1
+
+                                        if '(Detrans' in next_text:
+                                            # This is actually a Detransitive stem
+                                            actual_stem_type = 'Detransitive'
+                                            break
+
+                                        # Stop at next stem header or "Detransitive" header
+                                        if self.is_stem_header(next_p, False) or next_text.startswith('Detransitive'):
+                                            break
+
+                                        # Stop after checking 3 non-empty paragraphs
+                                        if paras_checked >= 3:
+                                            break
+                                    # Don't break on tables - keep looking past them
+
+                                current_stem = {
+                                    'stem': actual_stem_type,
+                                    'forms': forms,
+                                    'conjugations': {}
+                                }
+                                current_verb['stems'].append(current_stem)
+                                self.stats['stems_parsed'] += 1
+
+                                if actual_stem_type == 'Detransitive':
+                                    self.stats['detransitive_entries'] = self.stats.get('detransitive_entries', 0) + 1
 
                     elif current_verb is not None and current_verb.get('stems'):
                         # CRITICAL FIX: Detect "Idiomatic Phrases" header and set flag

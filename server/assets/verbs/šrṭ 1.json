@@ -268,23 +268,16 @@
       }
     },
     {
-      "stem": "I",
-      "forms": ["šrīṭ", "məšrəṭ"],
-      "conjugations": {}
-    },
-    {
       "stem": "Detransitive",
-      "forms": [],
+      "forms": ["šrīṭ", "məšrəṭ"],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "qayəm ġắlabe qḥīr w naqqa ḥzelan šrīṭ mə-ḥḏoḏe šriṭ u=ḥawy-awo me-ʕal qḏole d-u=qašo w-azzé ʕabər b-gawe d-u=ṣʕuno u=kurrək ḥəlle u=ḥawyano i=ḥayyaṯe gəšriṭo me bayn dam=maye i=kurfaṯe d dawṣo u=ḥolo .",
+            "turoyo": "qayəm ġắlabe qḥīr w naqqa ḥzelan šrīṭ mə-ḥḏoḏe",
             "translations": [
-              "sie (die Schlange m) wurde sehr böse, und auf einmal sahen wir, wie sie sich auseinanderrollte",
-              "‘This snake untwined from the priest’s neck and crawled into the sandal’",
-              "‘the boy saw how this snake crawled from the water to bite the uncle’"
+              "sie (die Schlange m) wurde sehr böse, und auf einmal sahen wir, wie sie sich auseinanderrollte"
             ],
-            "references": ["126", "92/22", "47/71", "96", "60"],
+            "references": ["126", "92/22"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -329,7 +322,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "qayəm ġắlabe qḥīr, w naqqa ḥzelan šrīṭ mə-ḥḏoḏe ʻsie (die Schlange m) wurde sehr böse, und auf einmal sahen wir, wie sie sich auseinanderrollteʼ; 126; 92/22;"
+          },
+          {
+            "turoyo": "šriṭ u=ḥawy-awo me-ʕal qḏole d-u=qašo w-azzé ʕabər b-gawe d-u=ṣʕuno u=kurrək ḥəlle u=ḥawyano i=ḥayyaṯe gəšriṭo me bayn dam=maye i=kurfaṯe d dawṣo u=ḥolo .",
+            "translations": [
+              "‘This snake untwined from the priest’s neck and crawled into the sandal’",
+              "‘the boy saw how this snake crawled from the water to bite the uncle’"
+            ],
+            "references": ["47/71", "96", "60"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " šriṭ u=ḥawy-awo me-ʕal qḏole d-u=qašo w-azzé ʕabər b-gawe d-u=ṣʕuno "
@@ -387,7 +391,7 @@
                 "value": "."
               }
             ],
-            "text": "qayəm ġắlabe qḥīr, w naqqa ḥzelan šrīṭ mə-ḥḏoḏe ʻsie (die Schlange m) wurde sehr böse, und auf einmal sahen wir, wie sie sich auseinanderrollteʼ; 126; 92/22; šriṭ u=ḥawy-awo me-ʕal qḏole d-u=qašo w-azzé ʕabər b-gawe d-u=ṣʕuno ‘This snake untwined from the priest’s neck and crawled into the sandal’; 47/71 u=kurrək ḥəlle u=ḥawyano i=ḥayyaṯe gəšriṭo me bayn dam=maye i=kurfaṯe d dawṣo u=ḥolo ‘the boy saw how this snake crawled from the water to bite the uncle’ (96:60)."
+            "text": "šriṭ u=ḥawy-awo me-ʕal qḏole d-u=qašo w-azzé ʕabər b-gawe d-u=ṣʕuno ‘This snake untwined from the priest’s neck and crawled into the sandal’; 47/71 u=kurrək ḥəlle u=ḥawyano i=ḥayyaṯe gəšriṭo me bayn dam=maye i=kurfaṯe d dawṣo u=ḥolo ‘the boy saw how this snake crawled from the water to bite the uncle’ (96:60)."
           },
           {
             "turoyo": "Šriṭo i fanerayḏi. My sweater was undone распутился. İlyas p.c",
@@ -433,6 +437,6 @@
       }
     }
   ],
-  "idioms": ["(Detrans.) sich auseinanderrollen;"],
+  "idioms": null,
   "uncertain": false
 }

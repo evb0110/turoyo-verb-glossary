@@ -13,22 +13,16 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "II",
-      "forms": ["mʕakəs", "miʕakəs"],
-      "conjugations": {}
-    },
-    {
       "stem": "Detransitive",
-      "forms": [],
+      "forms": ["mʕakəs", "miʕakəs"],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "u=zʕuro mʕakəs mini me d-hawxa məlli mʕakəs mini",
+            "turoyo": "u=zʕuro mʕakəs mini",
             "translations": [
-              "der Junge sträubte sich eigensinnig gegen mich (das, was ich sagte)",
-              "‘als ich das sagte, nahm er es mir übel’"
+              "der Junge sträubte sich eigensinnig gegen mich (das, was ich sagte)"
             ],
-            "references": ["172", "JL 19.6.17"],
+            "references": ["172"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -53,7 +47,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "u=zʕuro mʕakəs mini ʻder Junge sträubte sich eigensinnig gegen mich (das, was ich sagte)ʼ; 172;"
+          },
+          {
+            "turoyo": "me d-hawxa məlli mʕakəs mini",
+            "translations": ["‘als ich das sagte, nahm er es mir übel’"],
+            "references": ["JL 19.6.17"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " me d-hawxa məlli"
@@ -83,14 +85,12 @@
                 "value": ";"
               }
             ],
-            "text": "u=zʕuro mʕakəs mini ʻder Junge sträubte sich eigensinnig gegen mich (das, was ich sagte)ʼ; 172; me d-hawxa məlli, mʕakəs mini ‘als ich das sagte, nahm er es mir übel’ JL 19.6.17;"
+            "text": "me d-hawxa məlli, mʕakəs mini ‘als ich das sagte, nahm er es mir übel’ JL 19.6.17;"
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) im Gegensatz kommen, sträuben; sich ärgern (über) Lehrbuch 19.4;"
-  ],
+  "idioms": null,
   "uncertain": false
 }

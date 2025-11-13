@@ -94,14 +94,11 @@
         ],
         "Infectum": [
           {
-            "turoyo": "hano lə=ṭrele lə=fayəš g-ʕore b-galde u=malko waxt-a d-midaywən tarte=žăbaš lo=k-ʕorən bə-ḥdo=iḏo ftəḥla lăġam ḥəkm d-əzzele zlām d-ʕore-le kul qelayto anǧax k-ʕŭre-la ḥa=ənsān w bas",
+            "turoyo": "hano lə=ṭrele lə=fayəš g-ʕore b-galde u=malko waxt-a d-midaywən",
             "translations": [
-              "dem König liess es keine Ruhe, er wollte wohl aus der Haut fahren und war nahe daran, wahnsinnig zu werden",
-              "zwei Wassermelonen gehen nicht in eine Hand",
-              "sie liess einen Gang graben, so gross, dass ein Mann hineinging",
-              "jede Zelle hat nur für einen Menschen Platz"
+              "dem König liess es keine Ruhe, er wollte wohl aus der Haut fahren und war nahe daran, wahnsinnig zu werden"
             ],
-            "references": ["355", "81/103", "357", "365", "66/334", "11/123"],
+            "references": ["355", "81/103"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -154,7 +151,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "hano lə=ṭrele; lə=fayəš g-ʕore b-galde u=malko, waxt-a d-midaywən ʻdem König liess es keine Ruhe, er wollte wohl aus der Haut fahren und war nahe daran, wahnsinnig zu werdenʼ; 355; 81/103;"
+          },
+          {
+            "turoyo": "tarte=žăbaš lo=k-ʕorən bə-ḥdo=iḏo",
+            "translations": ["zwei Wassermelonen gehen nicht in eine Hand"],
+            "references": ["357"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " tarte=žăbaš lo=k-ʕorən bə-ḥdo=iḏo "
@@ -178,7 +183,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "tarte=žăbaš lo=k-ʕorən bə-ḥdo=iḏo ʻzwei Wassermelonen gehen nicht in eine Handʼ; 357;"
+          },
+          {
+            "turoyo": "ftəḥla lăġam ḥəkm d-əzzele zlām d-ʕore-le",
+            "translations": [
+              "sie liess einen Gang graben, so gross, dass ein Mann hineinging"
+            ],
+            "references": ["365", "66/334"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ftəḥla lăġam ḥəkm d-əzzele zlām d-ʕore-le "
@@ -214,7 +229,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ftəḥla lăġam ḥəkm d-əzzele zlām d-ʕore-le ʻsie liess einen Gang graben, so gross, dass ein Mann hineingingʼ; 365; 66/334;"
+          },
+          {
+            "turoyo": "kul qelayto anǧax k-ʕŭre-la ḥa=ənsān w bas",
+            "translations": ["jede Zelle hat nur für einen Menschen Platz"],
+            "references": ["11/123"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " kul qelayto"
@@ -256,7 +279,7 @@
                 "value": ";"
               }
             ],
-            "text": "hano lə=ṭrele; lə=fayəš g-ʕore b-galde u=malko, waxt-a d-midaywən ʻdem König liess es keine Ruhe, er wollte wohl aus der Haut fahren und war nahe daran, wahnsinnig zu werdenʼ; 355; 81/103; tarte=žăbaš lo=k-ʕorən bə-ḥdo=iḏo ʻzwei Wassermelonen gehen nicht in eine Handʼ; 357; ftəḥla lăġam ḥəkm d-əzzele zlām d-ʕore-le ʻsie liess einen Gang graben, so gross, dass ein Mann hineingingʼ; 365; 66/334; kul qelayto, anǧax, k-ʕŭre-la ḥa=ənsān w bas ʻjede Zelle hat nur für einen Menschen Platzʼ; 11/123;"
+            "text": "kul qelayto, anǧax, k-ʕŭre-la ḥa=ənsān w bas ʻjede Zelle hat nur für einen Menschen Platzʼ; 11/123;"
           },
           {
             "turoyo": "HD. Yaho omaṇṇo aḥna səmlan ṣobat ay gmaḥtínanne? Law+koʕorən ʕal u+ḥmoro… For goodness’ sake I say we made ovens where will we put them? They do not fit upon the donkey",
@@ -433,7 +456,7 @@
           {
             "turoyo": "yatiwi xəlle maʕralle sawiʕi qayəm u=malko d-əzzeyo mašəġ iḏe",
             "translations": [
-              "‘They sat, ate, had dinner and became sated. Finally the king stood up to go and wash his hands’"
+              "They sat, ate, had dinner and became sated. Finally the king stood up to go and wash his hands"
             ],
             "references": ["2", "77/247"],
             "tokens": [
@@ -471,12 +494,9 @@
         ],
         "Infectum": [
           {
-            "turoyo": "ko-maʕəryo qrawu l-ani l-aḥ=ḥawron-aṯxu d-kətne qariwe alxu ṭr=oṯən maʕrən aʕmayxu",
-            "translations": [
-              "sie isst zu Mittag",
-              "‘Approach your friends that are near you. Let them come and eat lunch with us’"
-            ],
-            "references": ["2", "392", "76/64"],
+            "turoyo": "ko-maʕəryo",
+            "translations": ["sie isst zu Mittag"],
+            "references": ["2", "392"],
             "tokens": [
               {
                 "kind": "ref",
@@ -509,7 +529,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "2) ko-maʕəryo ʻsie isst zu Mittagʼ; 392;"
+          },
+          {
+            "turoyo": "qrawu l-ani l-aḥ=ḥawron-aṯxu d-kətne qariwe alxu ṭr=oṯən maʕrən aʕmayxu",
+            "translations": [
+              "‘Approach your friends that are near you. Let them come and eat lunch with us’"
+            ],
+            "references": ["76/64"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " qrawu l-ani l-aḥ=ḥawron-aṯxu d-kətne qariwe alxu ṭr=oṯən maʕrən aʕmayxu "
@@ -531,7 +561,7 @@
                 "value": ";"
               }
             ],
-            "text": "2) ko-maʕəryo ʻsie isst zu Mittagʼ; 392; qrawu l-ani l-aḥ=ḥawron-aṯxu d-kətne qariwe alxu ṭr=oṯən maʕrən aʕmayxu ‘Approach your friends that are near you. Let them come and eat lunch with us’ 76/64;"
+            "text": "qrawu l-ani l-aḥ=ḥawron-aṯxu d-kətne qariwe alxu ṭr=oṯən maʕrən aʕmayxu ‘Approach your friends that are near you. Let them come and eat lunch with us’ 76/64;"
           }
         ],
         "Infectum-wa": [

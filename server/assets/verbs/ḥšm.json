@@ -18,13 +18,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "maḥšamle l-u=paša w daməx prs hawi lalyo maḥšamme ʕam ḥḏoḏe maḥšamle bəṯṯər mə-ḥšəmto saləq l-i=goro daməx ʕal i=goro",
+            "turoyo": "maḥšamle l-u=paša w daməx prs",
             "translations": [
-              "der Statthalter ass zu Nacht und legte sich schlafen",
-              "‘Als es abend wurde, nahmen sie auch das Nachtmahl miteinander ein’",
-              "‘After he had dinner he went up on the roof and retired to bed’"
+              "der Statthalter ass zu Nacht und legte sich schlafen"
             ],
-            "references": ["1", "137", "118/29", "29/68", "41/12"],
+            "references": ["1", "137", "118/29"],
             "tokens": [
               {
                 "kind": "ref",
@@ -69,7 +67,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) maḥšamle l-u=paša w daməx ʻder Statthalter ass zu Nacht und legte sich schlafenʼ; 137; prs 118/29;"
+          },
+          {
+            "turoyo": "hawi lalyo maḥšamme ʕam ḥḏoḏe",
+            "translations": [
+              "‘Als es abend wurde, nahmen sie auch das Nachtmahl miteinander ein’"
+            ],
+            "references": ["29/68"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " hawi lalyo maḥšamme ʕam ḥḏoḏe "
@@ -93,7 +101,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "hawi lalyo maḥšamme ʕam ḥḏoḏe ‘Als es abend wurde, nahmen sie auch das Nachtmahl miteinander ein’; 29/68;"
+          },
+          {
+            "turoyo": "maḥšamle bəṯṯər mə-ḥšəmto saləq l-i=goro daməx ʕal i=goro",
+            "translations": [
+              "‘After he had dinner he went up on the roof and retired to bed’"
+            ],
+            "references": ["41/12"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " maḥšamle"
@@ -139,7 +157,7 @@
                 "value": "[MT]"
               }
             ],
-            "text": "1) maḥšamle l-u=paša w daməx ʻder Statthalter ass zu Nacht und legte sich schlafenʼ; 137; prs 118/29; hawi lalyo maḥšamme ʕam ḥḏoḏe ‘Als es abend wurde, nahmen sie auch das Nachtmahl miteinander ein’; 29/68; maḥšamle, bəṯṯər mə-ḥšəmto saləq l-i=goro, daməx ʕal i=goro ‘After he had dinner he went up on the roof and retired to bed’; 41/12 [MT]"
+            "text": "maḥšamle, bəṯṯər mə-ḥšəmto saləq l-i=goro, daməx ʕal i=goro ‘After he had dinner he went up on the roof and retired to bed’; 41/12 [MT]"
           }
         ],
         "Infectum": [
@@ -244,12 +262,9 @@
         ],
         "Imperativ": [
           {
-            "turoyo": "aḥšḗm w lo=zayʕat prs toxu maḥšemu aʕman",
-            "translations": [
-              "iss und habe keine Furcht",
-              "kommt, esst mit uns"
-            ],
-            "references": ["1", "151", "14/32", "MM 149"],
+            "turoyo": "aḥšḗm w lo=zayʕat prs",
+            "translations": ["iss und habe keine Furcht"],
+            "references": ["1", "151", "14/32"],
             "tokens": [
               {
                 "kind": "ref",
@@ -294,7 +309,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) aḥšḗm w lo=zayʕat ʻiss und habe keine Furchtʼ; 151; prs 14/32;"
+          },
+          {
+            "turoyo": "toxu maḥšemu aʕman",
+            "translations": ["kommt, esst mit uns"],
+            "references": ["MM 149"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " toxu maḥšemu aʕman "
@@ -320,7 +343,7 @@
                 "value": ";"
               }
             ],
-            "text": "1) aḥšḗm w lo=zayʕat ʻiss und habe keine Furchtʼ; 151; prs 14/32; toxu maḥšemu aʕman ʻkommt, esst mit unsʼ; MM 149;"
+            "text": "toxu maḥšemu aʕman ʻkommt, esst mit unsʼ; MM 149;"
           }
         ]
       }

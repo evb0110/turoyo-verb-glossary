@@ -18,12 +18,9 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "u=ṭaʕnayḏi xayəf hawxa mḥele m-i=yaqurto fako ḥreno i=ḥreto xayifo",
-            "translations": [
-              "meine Last ist so leicht geworden",
-              "‘Nun biß er vondem schwereren Stück einen weiteren bissen ab, und nun wurde dieses leichter’"
-            ],
-            "references": ["511", "6/33", "34", "22/9"],
+            "turoyo": "u=ṭaʕnayḏi xayəf",
+            "translations": ["meine Last ist so leicht geworden"],
+            "references": ["511", "6/33", "34"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -72,7 +69,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "u=ṭaʕnayḏi xayəf ʻmeine Last ist so leicht gewordenʼ; 511; 6/33, 34;"
+          },
+          {
+            "turoyo": "hawxa mḥele m-i=yaqurto fako ḥreno i=ḥreto xayifo",
+            "translations": [
+              "‘Nun biß er vondem schwereren Stück einen weiteren bissen ab, und nun wurde dieses leichter’"
+            ],
+            "references": ["22/9"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " hawxa mḥele m-i=yaqurto fako ḥreno"
@@ -102,7 +109,7 @@
                 "value": "22/9"
               }
             ],
-            "text": "u=ṭaʕnayḏi xayəf ʻmeine Last ist so leicht gewordenʼ; 511; 6/33, 34; hawxa mḥele m-i=yaqurto fako ḥreno, i=ḥreto xayifo ‘Nun biß er vondem schwereren Stück einen weiteren bissen ab, und nun wurde dieses leichter’; 22/9"
+            "text": "hawxa mḥele m-i=yaqurto fako ḥreno, i=ḥreto xayifo ‘Nun biß er vondem schwereren Stück einen weiteren bissen ab, und nun wurde dieses leichter’; 22/9"
           }
         ],
         "Infectum": [
@@ -110,7 +117,7 @@
             "turoyo": "u=zʕur-ano <...> yatu məftakalle áydarbo maqnaʕ-la w-áydarbo mašmaʕ-la ḥatta d-u=kew-ayḏa d-xoyəf me d-maṭət-li əšmo k-xayfo i=masale haka qadirina k-xəlṣina",
             "translations": [
               "der Jüngling <...> dachte nach, wie er sie überzeugen, und wie er sie zum Hören bringen könnte, damit ihre Krankheit leichter würde",
-              "‘When you reach me, the (whole) thing will become a bit easier. (And then) if we succeed, we will escape’"
+              "When you reach me, the (whole) thing will become a bit easier. (And then) if we succeed, we will escape"
             ],
             "references": ["517", "24/80", "78/180"],
             "tokens": [
@@ -200,15 +207,11 @@
         ],
         "Part act.": [
           {
-            "turoyo": "kǝ́t-wo-le abre d-ʕammo daywóno-wa ʕaqəl diḏe xayífo-wa prs ṣafro qayimi aḥ=ḥawrone mǝ́rral-le əmmi omər abre d-ʕammi qay xayifo daʕirət?",
+            "turoyo": "kǝ́t-wo-le abre d-ʕammo daywóno-wa ʕaqəl diḏe xayífo-wa prs",
             "translations": [
-              "er hatte einen Vetter, der war verrückt, und sein Verstand schwach",
-              "qum!",
-              "baʕ, hēš xayífo-yo",
-              "am Morgen standen die Kameraden auf und sprachen zu ihm: “Steh auf!” “Ach was; es ist ja noch früh",
-              "Vetter, warum bist du so früh zurückgekommen?"
+              "er hatte einen Vetter, der war verrückt, und sein Verstand schwach"
             ],
-            "references": ["528", "172/29", "528", "73/354", "528", "52/122"],
+            "references": ["528", "172/29"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -261,7 +264,19 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "kǝ́t-wo-le abre d-ʕammo, daywóno-wa, ʕaqəl diḏe xayífo-wa ʻer hatte einen Vetter, der war verrückt, und sein Verstand schwachʼ; 528; prs 172/29;"
+          },
+          {
+            "turoyo": "ṣafro qayimi aḥ=ḥawrone mǝ́rral-le əmmi omər",
+            "translations": [
+              "“qum!”",
+              "“baʕ, hēš xayífo-yo”",
+              "am Morgen standen die Kameraden auf und sprachen zu ihm: “Steh auf!” “Ach was; es ist ja noch früh”"
+            ],
+            "references": ["528", "73/354"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ṣafro qayimi aḥ=ḥawrone mǝ́rral-le əmmi"
@@ -329,7 +344,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ṣafro qayimi aḥ=ḥawrone mǝ́rral-le əmmi: “qum!” omər: “baʕ, hēš xayífo-yo” ʻam Morgen standen die Kameraden auf und sprachen zu ihm: “Steh auf!” “Ach was; es ist ja noch früh”ʼ; 528; 73/354;"
+          },
+          {
+            "turoyo": "abre d-ʕammi qay xayifo daʕirət?",
+            "translations": ["Vetter, warum bist du so früh zurückgekommen?"],
+            "references": ["528", "52/122"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " abre d-ʕammi"
@@ -375,7 +398,7 @@
                 "value": ";"
               }
             ],
-            "text": "kǝ́t-wo-le abre d-ʕammo, daywóno-wa, ʕaqəl diḏe xayífo-wa ʻer hatte einen Vetter, der war verrückt, und sein Verstand schwachʼ; 528; prs 172/29; ṣafro qayimi aḥ=ḥawrone mǝ́rral-le əmmi: “qum!” omər: “baʕ, hēš xayífo-yo” ʻam Morgen standen die Kameraden auf und sprachen zu ihm: “Steh auf!” “Ach was; es ist ja noch früh”ʼ; 528; 73/354; abre d-ʕammi, qay xayifo daʕirət? ʻVetter, warum bist du so früh zurückgekommen?ʼ; 528; 52/122;"
+            "text": "abre d-ʕammi, qay xayifo daʕirət? ʻVetter, warum bist du so früh zurückgekommen?ʼ; 528; 52/122;"
           }
         ]
       }

@@ -18,12 +18,9 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "u=kewayḏe zayəd zəd bnele ak=kallat d-u=taʕlo zayidi zəd mə-d-u=kalbo prs",
-            "translations": [
-              "seine Schmerzen sind noch schlimmer geworden",
-              "der Hund zählte das Geld des Fuchses, und es war mehr als das seinige"
-            ],
-            "references": ["579", "75/329", "513", "225/15"],
+            "turoyo": "u=kewayḏe zayəd zəd",
+            "translations": ["seine Schmerzen sind noch schlimmer geworden"],
+            "references": ["579", "75/329"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -60,7 +57,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "u=kewayḏe zayəd zəd ʻseine Schmerzen sind noch schlimmer gewordenʼ; 579; 75/329;"
+          },
+          {
+            "turoyo": "bnele ak=kallat d-u=taʕlo zayidi zəd mə-d-u=kalbo prs",
+            "translations": [
+              "der Hund zählte das Geld des Fuchses, und es war mehr als das seinige"
+            ],
+            "references": ["513", "225/15"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " bnele ak=kallat d-u=taʕlo"
@@ -106,7 +113,7 @@
                 "value": ";"
               }
             ],
-            "text": "u=kewayḏe zayəd zəd ʻseine Schmerzen sind noch schlimmer gewordenʼ; 579; 75/329; bnele ak=kallat d-u=taʕlo, zayidi zəd mə-d-u=kalbo ʻder Hund zählte das Geld des Fuchses, und es war mehr als das seinigeʼ; 513; prs 225/15;"
+            "text": "bnele ak=kallat d-u=taʕlo, zayidi zəd mə-d-u=kalbo ʻder Hund zählte das Geld des Fuchses, und es war mehr als das seinigeʼ; 513; prs 225/15;"
           }
         ],
         "Infectum": [
@@ -381,12 +388,11 @@
         ],
         "Infectum": [
           {
-            "turoyo": "aloho mawrəx ʕumrayxu w mazəd u=tamṯīl dəṯxu aloho mozəd i=ḥukume w aloho mozəd i=ǧamaʕ-ayḏan",
+            "turoyo": "aloho mawrəx ʕumrayxu w mazəd u=tamṯīl dəṯxu",
             "translations": [
-              "Gott schenke euch langes Leben und lasse euresgleichen zahlreich werden",
-              "Gott möge die Regierung vermehren und möge unsere Gemeinde vermehren"
+              "Gott schenke euch langes Leben und lasse euresgleichen zahlreich werden"
             ],
-            "references": ["1", "580", "11/332", "580", "68/37"],
+            "references": ["1", "580", "11/332"],
             "tokens": [
               {
                 "kind": "ref",
@@ -431,7 +437,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) aloho mawrəx ʕumrayxu w mazəd u=tamṯīl dəṯxu ʻGott schenke euch langes Leben und lasse euresgleichen zahlreich werdenʼ; 580; 11/332;"
+          },
+          {
+            "turoyo": "aloho mozəd i=ḥukume w aloho mozəd i=ǧamaʕ-ayḏan",
+            "translations": [
+              "Gott möge die Regierung vermehren und möge unsere Gemeinde vermehren"
+            ],
+            "references": ["580", "68/37"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " aloho mozəd i=ḥukume"
@@ -477,7 +493,7 @@
                 "value": ";"
               }
             ],
-            "text": "1) aloho mawrəx ʕumrayxu w mazəd u=tamṯīl dəṯxu ʻGott schenke euch langes Leben und lasse euresgleichen zahlreich werdenʼ; 580; 11/332; aloho mozəd i=ḥukume, w aloho mozəd i=ǧamaʕ-ayḏan ʻGott möge die Regierung vermehren und möge unsere Gemeinde vermehrenʼ; 580; 68/37;"
+            "text": "aloho mozəd i=ḥukume, w aloho mozəd i=ǧamaʕ-ayḏan ʻGott möge die Regierung vermehren und möge unsere Gemeinde vermehrenʼ; 580; 68/37;"
           }
         ]
       }

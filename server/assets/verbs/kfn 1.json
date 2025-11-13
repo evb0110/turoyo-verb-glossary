@@ -18,13 +18,9 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "kafən kfəlli axeli-li əšmo qəddat prs kafinono ono-ste xtaṯṯe fayəš ko-rəʕyono",
-            "translations": [
-              "er hungerte",
-              "ich war hungrig und frass desshalb etwas von den Riemen",
-              "‘I became hungry, and (then) I also started to graze like they (gazelles, pl.) (did) MM 84; me zawno-yo lo=xili, kali kafino mayəṯno m-u=kafno ‘I have not eaten for a long time. I have become hungry, I am dying from hunger!’"
-            ],
-            "references": ["261", "261", "192/3", "73/329"],
+            "turoyo": "kafən",
+            "translations": ["er hungerte"],
+            "references": ["261"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -49,7 +45,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "kafən ʻer hungerteʼ; 261;"
+          },
+          {
+            "turoyo": "kfəlli axeli-li əšmo qəddat prs",
+            "translations": [
+              "ich war hungrig und frass desshalb etwas von den Riemen"
+            ],
+            "references": ["261", "192/3"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " kfəlli"
@@ -93,7 +99,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "kfəlli, axeli-li əšmo qəddat ʻich war hungrig und frass desshalb etwas von den Riemenʼ; 261; prs 192/3;"
+          },
+          {
+            "turoyo": "kafinono ono-ste xtaṯṯe fayəš ko-rəʕyono",
+            "translations": [
+              "‘I became hungry, and (then) I also started to graze like they (gazelles, pl.) (did) MM 84; me zawno-yo lo=xili, kali kafino mayəṯno m-u=kafno ‘I have not eaten for a long time. I have become hungry, I am dying from hunger!’"
+            ],
+            "references": ["73/329"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " kafinono ono-ste xtaṯṯe fayəš ko-rəʕyono "
@@ -115,18 +131,14 @@
                 "value": ";"
               }
             ],
-            "text": "kafən ʻer hungerteʼ; 261; kfəlli, axeli-li əšmo qəddat ʻich war hungrig und frass desshalb etwas von den Riemenʼ; 261; prs 192/3; kafinono ono-ste xtaṯṯe fayəš ko-rəʕyono ‘I became hungry, and (then) I also started to graze like they (gazelles, pl.) (did) MM 84; me zawno-yo lo=xili, kali kafino mayəṯno m-u=kafno ‘I have not eaten for a long time. I have become hungry, I am dying from hunger!’ 73/329;"
+            "text": "kafinono ono-ste xtaṯṯe fayəš ko-rəʕyono ‘I became hungry, and (then) I also started to graze like they (gazelles, pl.) (did) MM 84; me zawno-yo lo=xili, kali kafino mayəṯno m-u=kafno ‘I have not eaten for a long time. I have become hungry, I am dying from hunger!’ 73/329;"
           }
         ],
         "Part act.": [
           {
-            "turoyo": "aṯi dewo kafino prs ṭuro kafino aṯino kafino-no … oxaṇṇo fako doʕaṇṇo gab ʕamṯi",
-            "translations": [
-              "da kam ein hungriger Wolf heran",
-              "‘Hungerberg’",
-              "‘I came hungry (…) I would like to eat a bit and get back to my aunt’"
-            ],
-            "references": ["262", "182/15", "30/17", "75/80"],
+            "turoyo": "aṯi dewo kafino prs",
+            "translations": ["da kam ein hungriger Wolf heran"],
+            "references": ["262", "182/15"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -163,7 +175,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "aṯi dewo kafino ʻda kam ein hungriger Wolf heranʼ; 262; prs 182/15;"
+          },
+          {
+            "turoyo": "ṭuro kafino",
+            "translations": ["‘Hungerberg’"],
+            "references": ["30/17"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ṭuro kafino "
@@ -187,7 +207,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ṭuro kafino ‘Hungerberg’; 30/17;"
+          },
+          {
+            "turoyo": "aṯino kafino-no … oxaṇṇo fako doʕaṇṇo gab ʕamṯi",
+            "translations": [
+              "‘I came hungry (…) I would like to eat a bit and get back to my aunt’"
+            ],
+            "references": ["75/80"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " aṯino kafino-no "
@@ -225,7 +255,7 @@
                 "value": ";"
               }
             ],
-            "text": "aṯi dewo kafino ʻda kam ein hungriger Wolf heranʼ; 262; prs 182/15; ṭuro kafino ‘Hungerberg’; 30/17; aṯino kafino-no (…) oxaṇṇo fako doʕaṇṇo gab ʕamṯi ‘I came hungry (…) I would like to eat a bit and get back to my aunt’ 75/80;"
+            "text": "aṯino kafino-no (…) oxaṇṇo fako doʕaṇṇo gab ʕamṯi ‘I came hungry (…) I would like to eat a bit and get back to my aunt’ 75/80;"
           }
         ]
       }

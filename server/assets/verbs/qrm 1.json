@@ -11,24 +11,16 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "II",
-      "forms": ["mqarəm", "miqarəm"],
-      "conjugations": {}
-    },
-    {
       "stem": "Detransitive",
-      "forms": [],
+      "forms": ["mqarəm", "miqarəm"],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "hul də-mṯabatli mene i=ḥəkkoye d-Zine Wazira w Badrxān mqarəm lišoni b-u=mamro hawo u=ḥreno mqarmi ʕayne b-u=darbo ḥaṣi mqarəm ST mqarmina b-u=ytowo ST",
+            "turoyo": "hul də-mṯabatli mene i=ḥəkkoye d-Zine Wazira w Badrxān mqarəm lišoni b-u=mamro",
             "translations": [
-              "bis ich aber von ihm die Geschichte von “Zine Wazire und Badrchan” aufgenommen hatte, hatte ich mir den Mund fusselig geredet",
-              "‘The other man’s eyes strained [to gaze] at the way’",
-              "‘mein Rücken ist steif geworden’",
-              "‘wir sind vom Sitzen steif geworden’"
+              "bis ich aber von ihm die Geschichte von “Zine Wazire und Badrchan” aufgenommen hatte, hatte ich mir den Mund fusselig geredet"
             ],
-            "references": ["188", "11/264", "44/60"],
+            "references": ["188", "11/264"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -81,7 +73,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "hul də-mṯabatli mene i=ḥəkkoye d-Zine Wazira, w Badrxān, mqarəm lišoni b-u=mamro ʻbis ich aber von ihm die Geschichte von “Zine Wazire und Badrchan” aufgenommen hatte, hatte ich mir den Mund fusselig geredetʼ; 188; 11/264;"
+          },
+          {
+            "turoyo": "hawo u=ḥreno mqarmi ʕayne b-u=darbo",
+            "translations": [
+              "‘The other man’s eyes strained [to gaze] at the way’"
+            ],
+            "references": ["44/60"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " hawo u=ḥreno mqarmi ʕayne b-u=darbo "
@@ -105,7 +107,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "hawo u=ḥreno mqarmi ʕayne b-u=darbo ‘The other man’s eyes strained [to gaze] at the way’; 44/60;"
+          },
+          {
+            "turoyo": "ḥaṣi mqarəm ST mqarmina b-u=ytowo ST",
+            "translations": [
+              "‘mein Rücken ist steif geworden’",
+              "‘wir sind vom Sitzen steif geworden’"
+            ],
+            "references": [],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ḥaṣi mqarəm "
@@ -147,14 +160,12 @@
                 "value": ";"
               }
             ],
-            "text": "hul də-mṯabatli mene i=ḥəkkoye d-Zine Wazira, w Badrxān, mqarəm lišoni b-u=mamro ʻbis ich aber von ihm die Geschichte von “Zine Wazire und Badrchan” aufgenommen hatte, hatte ich mir den Mund fusselig geredetʼ; 188; 11/264; hawo u=ḥreno mqarmi ʕayne b-u=darbo ‘The other man’s eyes strained [to gaze] at the way’; 44/60; ḥaṣi mqarəm ‘mein Rücken ist steif geworden’; ST; mqarmina b-u=ytowo ‘wir sind vom Sitzen steif geworden’; ST;"
+            "text": "ḥaṣi mqarəm ‘mein Rücken ist steif geworden’; ST; mqarmina b-u=ytowo ‘wir sind vom Sitzen steif geworden’; ST;"
           }
         ]
       }
     }
   ],
-  "idioms": [
-    "(Detrans.) sich überanstrengen, vorübergehend Schmerz empfinden;"
-  ],
+  "idioms": null,
   "uncertain": false
 }

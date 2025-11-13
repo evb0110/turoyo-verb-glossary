@@ -232,12 +232,11 @@
         ],
         "Infectum-wa": [
           {
-            "turoyo": "d-l=owe-wa m-u=šarwol-ano g-məfṭaṣ-wa ʕomər bayte d-alo d-kət-wayt harke naxa g-məfṭaṣ-wa u=tawr-ayḏan!",
+            "turoyo": "d-l=owe-wa m-u=šarwol-ano g-məfṭaṣ-wa",
             "translations": [
-              "‘If there were no pants, [the cow] would have suffocated’",
-              "‘it is so fortunate that you were here. Otherwise, our cow would have suffocated’"
+              "‘If there were no pants, [the cow] would have suffocated’"
             ],
-            "references": ["44/95", "44/114"],
+            "references": ["44/95"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -270,7 +269,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "d-l=owe-wa m-u=šarwol-ano, g-məfṭaṣ-wa ‘If there were no pants, [the cow] would have suffocated’; 44/95;"
+          },
+          {
+            "turoyo": "ʕomər bayte d-alo d-kət-wayt harke naxa g-məfṭaṣ-wa u=tawr-ayḏan!",
+            "translations": [
+              "‘it is so fortunate that you were here. Otherwise, our cow would have suffocated’"
+            ],
+            "references": ["44/114"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ʕomər bayte d-alo d-kət-wayt harke"
@@ -300,10 +309,16 @@
                 "value": "44/114"
               }
             ],
-            "text": "d-l=owe-wa m-u=šarwol-ano, g-məfṭaṣ-wa ‘If there were no pants, [the cow] would have suffocated’; 44/95; ʕomər bayte d-alo d-kət-wayt harke, naxa g-məfṭaṣ-wa u=tawr-ayḏan! ‘it is so fortunate that you were here. Otherwise, our cow would have suffocated’; 44/114"
+            "text": "ʕomər bayte d-alo d-kət-wayt harke, naxa g-məfṭaṣ-wa u=tawr-ayḏan! ‘it is so fortunate that you were here. Otherwise, our cow would have suffocated’; 44/114"
           }
         ]
-      }
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "sich ersticken"
+        }
+      ]
     }
   ],
   "idioms": ["ersticken, krepieren;", "sich ersticken"],

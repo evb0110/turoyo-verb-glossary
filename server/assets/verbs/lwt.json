@@ -128,12 +128,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "u=čakat mlawət k-lozəm d-mitašəġ w-daqnayye yarixo an=naynuk-aṯṯe yarixi mlawti",
+            "turoyo": "u=čakat mlawət k-lozəm d-mitašəġ",
             "translations": [
-              "die Jacke ist schmutzig, sie muss gewaschen werden",
-              "‘Their beard became long, and their nails became long, they (nails) were dirty’"
+              "die Jacke ist schmutzig, sie muss gewaschen werden"
             ],
-            "references": ["475", "73/165"],
+            "references": ["475"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -166,7 +165,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "u=čakat mlawət, k-lozəm d-mitašəġ ʻdie Jacke ist schmutzig, sie muss gewaschen werdenʼ; 475;"
+          },
+          {
+            "turoyo": "w-daqnayye yarixo an=naynuk-aṯṯe yarixi mlawti",
+            "translations": [
+              "‘Their beard became long, and their nails became long, they (nails) were dirty’"
+            ],
+            "references": ["73/165"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " w-daqnayye yarixo"
@@ -204,7 +213,7 @@
                 "value": ";"
               }
             ],
-            "text": "u=čakat mlawət, k-lozəm d-mitašəġ ʻdie Jacke ist schmutzig, sie muss gewaschen werdenʼ; 475; w-daqnayye yarixo, an=naynuk-aṯṯe yarixi, mlawti ‘Their beard became long, and their nails became long, they (nails) were dirty’ 73/165;"
+            "text": "w-daqnayye yarixo, an=naynuk-aṯṯe yarixi, mlawti ‘Their beard became long, and their nails became long, they (nails) were dirty’ 73/165;"
           }
         ],
         "Infectum": [
@@ -320,8 +329,19 @@
           }
         ]
       }
+    },
+    {
+      "stem": "Action Noun",
+      "forms": ["lewoto"],
+      "conjugations": {},
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "dirtying;"
+        }
+      ]
     }
   ],
-  "idioms": ["1) beschmutzen;", "Action Noun", "lewoto", "dirtying;"],
+  "idioms": ["1) beschmutzen;", "lewoto", "dirtying;"],
   "uncertain": false
 }

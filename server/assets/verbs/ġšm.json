@@ -142,7 +142,7 @@
           {
             "turoyo": "w-i=walaye d-u=Fīl-aṯe b-Ṭuro d-aʕ=ʕabode-yo … uʕdo dukṯe d-i=walaye ġayərto-yo",
             "translations": [
-              "‘And this town of Fil is (situated) at the Mountain of Worshippers (…). Nowadays the (former) site of the town is under the earth’s surface’"
+              "And this town of Fil is (situated) at the Mountain of Worshippers (…). Nowadays the (former) site of the town is under the earth’s surface"
             ],
             "references": ["77/6"],
             "tokens": [
@@ -324,8 +324,8 @@
             "turoyo": "mġayər u=rang-ayḏe aṯi rang ḥreno mġayro ač=čuwedər diṯṯe w-hənne i=waḏ̣ʕiye i=qiyaf-aṯṯe mġayro ṣurte mġayro w-d-əzzé bayn aq=qabayəl-ayḏe nošo lu=k-uḏaʕ-le",
             "translations": [
               "sein Gesicht hatte sich verändert und eine andere Farbe angenommen",
-              "‘Die Zelte sind verändert, und es ist alles anders bei ihnen, und ihr Aufzug ist verändert’",
-              "‘Sein Gesicht veränderte sich, und wenn er unter seine Stammesangehörigen ging, erkannte ihn niemand’"
+              "Die Zelte sind verändert, und es ist alles anders bei ihnen, und ihr Aufzug ist verändert",
+              "Sein Gesicht veränderte sich, und wenn er unter seine Stammesangehörigen ging, erkannte ihn niemand"
             ],
             "references": ["490", "30/156", "43/47", "50", "24/201", "30/24"],
             "tokens": [
@@ -509,7 +509,13 @@
             "text": "məd-k-oṯe l-boli u=med-awo, d-nafəq m-iḏi ko-miġayər ʕaqəl diḏi ʻwenn mir diese Sache, die meiner hand entglitten ist, in den Sinn kommt, so verwirrt sich mein Verstandʼ; 490; 52/178;"
           }
         ]
-      }
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "sich verändern"
+        }
+      ]
     },
     {
       "stem": "III",
@@ -517,12 +523,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "hani maġəlli tarte=kore i=gammiye d-u=gammičiy-awo i=gammiy-aṯe diḏan maġirole",
+            "turoyo": "hani maġəlli tarte=kore i=gammiye d-u=gammičiy-awo",
             "translations": [
-              "ich habe zweimal das Schiff des Schiffers versenkt",
-              "unser Schiff versenkte er"
+              "ich habe zweimal das Schiff des Schiffers versenkt"
             ],
-            "references": ["540", "96/235", "540", "63/56"],
+            "references": ["540", "96/235"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -559,7 +564,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "hani maġəlli tarte=kore i=gammiye d-u=gammičiy-awo ʻich habe zweimal das Schiff des Schiffers versenktʼ; 540; 96/235;"
+          },
+          {
+            "turoyo": "i=gammiy-aṯe diḏan maġirole",
+            "translations": ["unser Schiff versenkte er"],
+            "references": ["540", "63/56"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " i=gammiy-aṯe diḏan maġirole "
@@ -597,17 +610,16 @@
                 "value": ";"
               }
             ],
-            "text": "hani maġəlli tarte=kore i=gammiye d-u=gammičiy-awo ʻich habe zweimal das Schiff des Schiffers versenktʼ; 540; 96/235; i=gammiy-aṯe diḏan maġirole ʻunser Schiff versenkte erʼ; 540; 63/56;"
+            "text": "i=gammiy-aṯe diḏan maġirole ʻunser Schiff versenkte erʼ; 540; 63/56;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "oʕdo ḥa g-maġər u=ḥreno taḥt i=arʕo u=təmamayḏe g-maġirína-le b-u=baḥar",
+            "turoyo": "oʕdo ḥa g-maġər u=ḥreno taḥt i=arʕo",
             "translations": [
-              "jetzt wird der eine den anderen unter die Erde sinken lassen",
-              "wir werden es (das Floss m) mit allem, was darauf ist, im Meere untergehen lassen"
+              "jetzt wird der eine den anderen unter die Erde sinken lassen"
             ],
-            "references": ["545", "115/193", "548", "73/219"],
+            "references": ["545", "115/193"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -644,7 +656,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "oʕdo ḥa g-maġər u=ḥreno taḥt i=arʕo ʻjetzt wird der eine den anderen unter die Erde sinken lassenʼ; 545; 115/193;"
+          },
+          {
+            "turoyo": "u=təmamayḏe g-maġirína-le b-u=baḥar",
+            "translations": [
+              "wir werden es (das Floss m) mit allem, was darauf ist, im Meere untergehen lassen"
+            ],
+            "references": ["548", "73/219"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " u=təmamayḏe g-maġirína-le b-u=baḥar "
@@ -682,7 +704,7 @@
                 "value": ";"
               }
             ],
-            "text": "oʕdo ḥa g-maġər u=ḥreno taḥt i=arʕo ʻjetzt wird der eine den anderen unter die Erde sinken lassenʼ; 545; 115/193; u=təmamayḏe g-maġirína-le b-u=baḥar ʻwir werden es (das Floss m) mit allem, was darauf ist, im Meere untergehen lassenʼ; 548; 73/219;"
+            "text": "u=təmamayḏe g-maġirína-le b-u=baḥar ʻwir werden es (das Floss m) mit allem, was darauf ist, im Meere untergehen lassenʼ; 548; 73/219;"
           }
         ]
       }

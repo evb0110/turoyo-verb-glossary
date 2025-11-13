@@ -18,12 +18,9 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mqalela ḥəmṣe maḥtila ʕal i=arʕo prs haṯe i=ḥurma nḥəlla i=qazo w-mbašlola w-mqalyola",
-            "translations": [
-              "sie röstete Erbsen und legte sie auf die Erde",
-              "‘This woman killed the goose, cooked and roasted it’"
-            ],
-            "references": ["415", "239/2", "415", "44/42"],
+            "turoyo": "mqalela ḥəmṣe maḥtila ʕal i=arʕo prs",
+            "translations": ["sie röstete Erbsen und legte sie auf die Erde"],
+            "references": ["415", "239/2"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -68,7 +65,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mqalela ḥəmṣe, maḥtila ʕal i=arʕo ʻsie röstete Erbsen und legte sie auf die Erdeʼ; 415; prs 239/2;"
+          },
+          {
+            "turoyo": "haṯe i=ḥurma nḥəlla i=qazo w-mbašlola w-mqalyola",
+            "translations": [
+              "‘This woman killed the goose, cooked and roasted it’"
+            ],
+            "references": ["415", "44/42"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " haṯe i=ḥurma nḥəlla i=qazo w-mbašlola w-mqalyola "
@@ -106,17 +113,16 @@
                 "value": ";"
               }
             ],
-            "text": "mqalela ḥəmṣe, maḥtila ʕal i=arʕo ʻsie röstete Erbsen und legte sie auf die Erdeʼ; 415; prs 239/2; haṯe i=ḥurma nḥəlla i=qazo w-mbašlola w-mqalyola ‘This woman killed the goose, cooked and roasted it’; 415; 44/42;"
+            "text": "haṯe i=ḥurma nḥəlla i=qazo w-mbašlola w-mqalyola ‘This woman killed the goose, cooked and roasted it’; 415; 44/42;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "ʕabiro l-i=mʕarṯo lawġul d-saymo-le ṣfero mqalyole kmo=beʕe kət-lan gḏayto taqənto g-mqalyal-la",
+            "turoyo": "ʕabiro l-i=mʕarṯo lawġul d-saymo-le ṣfero mqalyole kmo=beʕe",
             "translations": [
-              "sie geht innen in die Höhle hinein, um ihm ein Omelett zu machen, ihm ein paar Eier zu braten",
-              "‘We have a fat hen which I am going to roast’"
+              "sie geht innen in die Höhle hinein, um ihm ein Omelett zu machen, ihm ein paar Eier zu braten"
             ],
-            "references": ["420", "75/81", "44/68"],
+            "references": ["420", "75/81"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -169,7 +175,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ʕabiro l-i=mʕarṯo lawġul, d-saymo-le ṣfero, mqalyole kmo=beʕe ʻsie geht innen in die Höhle hinein, um ihm ein Omelett zu machen, ihm ein paar Eier zu bratenʼ; 420; 75/81;"
+          },
+          {
+            "turoyo": "kət-lan gḏayto taqənto g-mqalyal-la",
+            "translations": ["‘We have a fat hen which I am going to roast’"],
+            "references": ["44/68"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " kət-lan gḏayto taqənto"
@@ -199,14 +213,14 @@
                 "value": "44/68"
               }
             ],
-            "text": "ʕabiro l-i=mʕarṯo lawġul, d-saymo-le ṣfero, mqalyole kmo=beʕe ʻsie geht innen in die Höhle hinein, um ihm ein Omelett zu machen, ihm ein paar Eier zu bratenʼ; 420; 75/81; kət-lan gḏayto taqənto, g-mqalyal-la ‘We have a fat hen which I am going to roast’; 44/68"
+            "text": "kət-lan gḏayto taqənto, g-mqalyal-la ‘We have a fat hen which I am going to roast’; 44/68"
           }
         ],
         "Imperativ": [
           {
             "turoyo": "bašel-a mqaliy-a! gəd-uxlína-la",
             "translations": [
-              "‘Cook it (the goose, f) and roast it! We will eat it’"
+              "Cook it (the goose, f) and roast it! We will eat it"
             ],
             "references": ["36/114"],
             "tokens": [
@@ -252,8 +266,8 @@
           {
             "turoyo": "mobele aʕme muklo ḥamšo=kilowat tamre ʕǧine mqalye b-u=məšḥo k-saymono ádyawma qazo mqalayto w-bardəš d-rezo",
             "translations": [
-              "‘Er nahm Essen mit: fünf Kilo gepreßte Datteln, in Fett geröstet’",
-              "‘Today, I am going to cook a roasted goose and a pot of rice’"
+              "Er nahm Essen mit: fünf Kilo gepreßte Datteln, in Fett geröstet",
+              "Today, I am going to cook a roasted goose and a pot of rice"
             ],
             "references": ["29/48", "44/37"],
             "tokens": [

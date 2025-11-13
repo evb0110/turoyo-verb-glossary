@@ -49,13 +49,7 @@
             ],
             "text": "ko-mzaqəf b-ruḥe ʻer redet grob, böseʼ; 194;"
           }
-        ]
-      }
-    },
-    {
-      "stem": "Detransitive",
-      "forms": [],
-      "conjugations": {
+        ],
         "Preterit": [
           {
             "turoyo": "mzaqfo i=ale",
@@ -92,12 +86,8 @@
         ],
         "Part. Pass.": [
           {
-            "turoyo": "mzaqfo i+ale mzaqáftoyo the opposite of i+ale mšafáltoyo",
-            "translations": [
-              "hochmütig, abweisend",
-              "‘~ the plough is deep in soil’",
-              "‘the plough goes shallow’"
-            ],
+            "turoyo": "mzaqfo",
+            "translations": ["hochmütig, abweisend"],
             "references": ["194"],
             "tokens": [
               {
@@ -123,7 +113,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mzaqfo ʻhochmütig, abweisendʼ; 194;"
+          },
+          {
+            "turoyo": "i+ale mzaqáftoyo the opposite of i+ale mšafáltoyo",
+            "translations": [
+              "‘~ the plough is deep in soil’",
+              "‘the plough goes shallow’"
+            ],
+            "references": [],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " i+ale mzaqáftoyo "
@@ -145,16 +146,10 @@
                 "value": "‘the plough goes shallow’"
               }
             ],
-            "text": "mzaqfo ʻhochmütig, abweisendʼ; 194; i+ale mzaqáftoyo ‘~ the plough is deep in soil’, the opposite of i+ale mšafáltoyo ‘the plough goes shallow’"
+            "text": "i+ale mzaqáftoyo ‘~ the plough is deep in soil’, the opposite of i+ale mšafáltoyo ‘the plough goes shallow’"
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "(it must belong to the previous root - SL)"
-        }
-      ]
+      }
     }
   ],
   "idioms": ["beklatschen;"],

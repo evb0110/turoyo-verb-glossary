@@ -58,12 +58,9 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ayko marfelux? hat marfélux-li w-ono šuġlo aʕmux lo=fayəš-li",
-            "translations": [
-              "‘Wo (wieso) hast du sie durchgelassen?’",
-              "‘you left me alone and I have no more business to do with you’"
-            ],
-            "references": ["1", "28/95", "36/102"],
+            "turoyo": "ayko marfelux?",
+            "translations": ["‘Wo (wieso) hast du sie durchgelassen?’"],
+            "references": ["1", "28/95"],
             "tokens": [
               {
                 "kind": "ref",
@@ -96,7 +93,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) ayko marfelux? ‘Wo (wieso) hast du sie durchgelassen?’; 28/95;"
+          },
+          {
+            "turoyo": "hat marfélux-li w-ono šuġlo aʕmux lo=fayəš-li",
+            "translations": [
+              "‘you left me alone and I have no more business to do with you’"
+            ],
+            "references": ["36/102"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " hat marfélux-li"
@@ -126,15 +133,14 @@
                 "value": "36/102"
               }
             ],
-            "text": "1) ayko marfelux? ‘Wo (wieso) hast du sie durchgelassen?’; 28/95; hat marfélux-li, w-ono šuġlo aʕmux lo=fayəš-li ‘you left me alone and I have no more business to do with you’; 36/102"
+            "text": "hat marfélux-li, w-ono šuġlo aʕmux lo=fayəš-li ‘you left me alone and I have no more business to do with you’; 36/102"
           },
           {
-            "turoyo": "maṭən l-i=dašto d-Rǝ́ḥaye w marfalle u=səng d-ak=kowan l-i=arʕo marfəlal-le ʕalqe prs",
+            "turoyo": "maṭən l-i=dašto d-Rǝ́ḥaye w marfalle u=səng d-ak=kowan l-i=arʕo",
             "translations": [
-              "sie kamen zu der Ebene von Urfa und liessen die Pflöcke ihrer Zelte in die Erde ein",
-              "man setzte ihm Blutegel an"
+              "sie kamen zu der Ebene von Urfa und liessen die Pflöcke ihrer Zelte in die Erde ein"
             ],
-            "references": ["2", "387", "65/34", "389", "102/16"],
+            "references": ["2", "387", "65/34"],
             "tokens": [
               {
                 "kind": "ref",
@@ -187,7 +193,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "2) maṭən l-i=dašto d-Rǝ́ḥaye, w marfalle u=səng d-ak=kowan l-i=arʕo ʻsie kamen zu der Ebene von Urfa und liessen die Pflöcke ihrer Zelte in die Erde einʼ; 387; 65/34;"
+          },
+          {
+            "turoyo": "marfəlal-le ʕalqe prs",
+            "translations": ["man setzte ihm Blutegel an"],
+            "references": ["389", "102/16"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " marfəlal-le ʕalqe "
@@ -225,12 +239,12 @@
                 "value": ";"
               }
             ],
-            "text": "2) maṭən l-i=dašto d-Rǝ́ḥaye, w marfalle u=səng d-ak=kowan l-i=arʕo ʻsie kamen zu der Ebene von Urfa und liessen die Pflöcke ihrer Zelte in die Erde einʼ; 387; 65/34; marfəlal-le ʕalqe ʻman setzte ihm Blutegel anʼ; 389; prs 102/16;"
+            "text": "marfəlal-le ʕalqe ʻman setzte ihm Blutegel anʼ; 389; prs 102/16;"
           },
           {
             "turoyo": "hano məd-marfele ag=gawze xalyo iḏe Ritter loslassen",
             "translations": [
-              "‘After he threw out the nuts, his hand became empty’"
+              "After he threw out the nuts, his hand became empty"
             ],
             "references": ["3", "46/16"],
             "tokens": [
@@ -322,13 +336,9 @@
             "text": "lu+Sargey marfele ḥṣar fәšak̇at"
           },
           {
-            "turoyo": "marfele i=ḥaywan-ayḏe ʕal am=maye marfele i=gammiye b-u=baḥar mṭalle baġalṯo maḥatte i=šlado ʕal ḥaṣa d-i=baġalṯo w-marfəyalle",
-            "translations": [
-              "er liess sein Tier (zum Trinken) ans Wasser",
-              "er liess das Schiff ins Meer",
-              "‘Sie holten eine Mauleselin, luden der Mauleselin die Leiche auf den Rücken und ließen sie laufen’"
-            ],
-            "references": ["4", "384", "29/61", "384", "63/54", "35/68"],
+            "turoyo": "marfele i=ḥaywan-ayḏe ʕal am=maye",
+            "translations": ["er liess sein Tier (zum Trinken) ans Wasser"],
+            "references": ["4", "384", "29/61"],
             "tokens": [
               {
                 "kind": "ref",
@@ -373,7 +383,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "4) marfele i=ḥaywan-ayḏe ʕal am=maye ʻer liess sein Tier (zum Trinken) ans Wasserʼ; 384; 29/61;"
+          },
+          {
+            "turoyo": "marfele i=gammiye b-u=baḥar",
+            "translations": ["er liess das Schiff ins Meer"],
+            "references": ["384", "63/54"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " marfele i=gammiye b-u=baḥar "
@@ -409,7 +427,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "marfele i=gammiye b-u=baḥar ʻer liess das Schiff ins Meerʼ; 384; 63/54;"
+          },
+          {
+            "turoyo": "mṭalle baġalṯo maḥatte i=šlado ʕal ḥaṣa d-i=baġalṯo w-marfəyalle",
+            "translations": [
+              "‘Sie holten eine Mauleselin, luden der Mauleselin die Leiche auf den Rücken und ließen sie laufen’"
+            ],
+            "references": ["35/68"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mṭalle baġalṯo"
@@ -439,15 +467,12 @@
                 "value": "35/68"
               }
             ],
-            "text": "4) marfele i=ḥaywan-ayḏe ʕal am=maye ʻer liess sein Tier (zum Trinken) ans Wasserʼ; 384; 29/61; marfele i=gammiye b-u=baḥar ʻer liess das Schiff ins Meerʼ; 384; 63/54; mṭalle baġalṯo, maḥatte i=šlado ʕal ḥaṣa d-i=baġalṯo w-marfəyalle ‘Sie holten eine Mauleselin, luden der Mauleselin die Leiche auf den Rücken und ließen sie laufen’; 35/68"
+            "text": "mṭalle baġalṯo, maḥatte i=šlado ʕal ḥaṣa d-i=baġalṯo w-marfəyalle ‘Sie holten eine Mauleselin, luden der Mauleselin die Leiche auf den Rücken und ließen sie laufen’; 35/68"
           },
           {
-            "turoyo": "nḥəlle marfele i=kačke prs mqayadle šawʕo=yawme w-šawʕo=lalye b-u=bayt-ayḏe w-lə=marfele",
-            "translations": [
-              "er nahm ihm das Leben und erlöste das Mädchen",
-              "Er hielt ihn sieben Tage und sieben Nächte [bei sich] im Hause gefesselt und ließ ihn nicht frei"
-            ],
-            "references": ["5", "384", "58/12", "30/173"],
+            "turoyo": "nḥəlle marfele i=kačke prs",
+            "translations": ["er nahm ihm das Leben und erlöste das Mädchen"],
+            "references": ["5", "384", "58/12"],
             "tokens": [
               {
                 "kind": "ref",
@@ -500,7 +525,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "5) nḥəlle, marfele i=kačke ʻer nahm ihm das Leben und erlöste das Mädchenʼ; 384; prs 58/12;"
+          },
+          {
+            "turoyo": "mqayadle šawʕo=yawme w-šawʕo=lalye b-u=bayt-ayḏe w-lə=marfele",
+            "translations": [
+              "Er hielt ihn sieben Tage und sieben Nächte [bei sich] im Hause gefesselt und ließ ihn nicht frei"
+            ],
+            "references": ["30/173"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mqayadle šawʕo=yawme w-šawʕo=lalye b-u=bayt-ayḏe w-lə=marfele "
@@ -526,7 +561,7 @@
                 "value": ";"
               }
             ],
-            "text": "5) nḥəlle, marfele i=kačke ʻer nahm ihm das Leben und erlöste das Mädchenʼ; 384; prs 58/12; mqayadle šawʕo=yawme w-šawʕo=lalye b-u=bayt-ayḏe w-lə=marfele ʻEr hielt ihn sieben Tage und sieben Nächte [bei sich] im Hause gefesselt und ließ ihn nicht freiʼ; 30/173;"
+            "text": "mqayadle šawʕo=yawme w-šawʕo=lalye b-u=bayt-ayḏe w-lə=marfele ʻEr hielt ihn sieben Tage und sieben Nächte [bei sich] im Hause gefesselt und ließ ihn nicht freiʼ; 30/173;"
           },
           {
             "turoyo": "marfele u=dalolo b-i=walaye d-Bəġdəd",
@@ -567,13 +602,9 @@
         ],
         "Infectum": [
           {
-            "turoyo": "ko-marfe i=turto ʕas uno aydarbo marfeno ʕammi? abri madām ki g-quṭlat-li w-gə-mxažlát-li qm-u=ʕulm-ano kule <…> šqu-lox u=tālano marféli-lox-yo",
-            "translations": [
-              "er lässt die Kuh hinaus",
-              "‘Aber soll ich vielleicht meinen Oheim im Stiche lassen?’",
-              "mein Sohn, wenn du mich denn töten und mich vor all diesen Leuten beschämen willst <…>so nimm all dies geraubte Vieh. Ich überlasse es dir"
-            ],
-            "references": ["1", "393", "90/3", "25/45", "29/450"],
+            "turoyo": "ko-marfe i=turto",
+            "translations": ["er lässt die Kuh hinaus"],
+            "references": ["1", "393", "90/3"],
             "tokens": [
               {
                 "kind": "ref",
@@ -618,7 +649,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) ko-marfe i=turto ʻer lässt die Kuh hinausʼ; 393; 90/3;"
+          },
+          {
+            "turoyo": "ʕas uno aydarbo marfeno ʕammi?",
+            "translations": [
+              "‘Aber soll ich vielleicht meinen Oheim im Stiche lassen?’"
+            ],
+            "references": ["25/45"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ʕas uno aydarbo marfeno ʕammi? "
@@ -642,7 +683,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ʕas uno aydarbo marfeno ʕammi? ‘Aber soll ich vielleicht meinen Oheim im Stiche lassen?’; 25/45;"
+          },
+          {
+            "turoyo": "abri madām ki g-quṭlat-li w-gə-mxažlát-li qm-u=ʕulm-ano kule <…> šqu-lox u=tālano marféli-lox-yo",
+            "translations": [
+              "mein Sohn, wenn du mich denn töten und mich vor all diesen Leuten beschämen willst <…>so nimm all dies geraubte Vieh. Ich überlasse es dir"
+            ],
+            "references": ["29/450"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " abri madām ki g-quṭlat-li"
@@ -676,7 +727,7 @@
                 "value": ";"
               }
             ],
-            "text": "1) ko-marfe i=turto ʻer lässt die Kuh hinausʼ; 393; 90/3; ʕas uno aydarbo marfeno ʕammi? ‘Aber soll ich vielleicht meinen Oheim im Stiche lassen?’; 25/45; abri madām ki g-quṭlat-li, w-gə-mxažlát-li qm-u=ʕulm-ano kule <…> šqu-lox u=tālano marféli-lox-yo ʻmein Sohn, wenn du mich denn töten und mich vor all diesen Leuten beschämen willst <…>so nimm all dies geraubte Vieh. Ich überlasse es dirʼ; 29/450;"
+            "text": "abri madām ki g-quṭlat-li, w-gə-mxažlát-li qm-u=ʕulm-ano kule <…> šqu-lox u=tālano marféli-lox-yo ʻmein Sohn, wenn du mich denn töten und mich vor all diesen Leuten beschämen willst <…>so nimm all dies geraubte Vieh. Ich überlasse es dirʼ; 29/450;"
           },
           {
             "turoyo": "Gmarfeno aḥ=ḥuṭe di=šakale I am untying the laces of my shoes Ilyas p.c.",
@@ -877,13 +928,11 @@
             "text": "4) “ono k-obaʕno d-obət-li daṣṭər d-əzzino koraxno aʕla, d-amṭen-a” – k-omər: “abri! (…) layban marfina-lux” ‘I want you to give me a permission to go and look for her, to bring her” – He said: “My son! We cannot let you go” 74/39;"
           },
           {
-            "turoyo": "k-ummi-le əšme u=Barʕabrān lo=k-marfe nošo prs g-marfena barṯəx prs iḏa d-oṯe d-marfétul-li lu=g-mamnáʕnu-lxu m-i=marʕa d-i=baxč-aṯe",
+            "turoyo": "k-ummi-le əšme u=Barʕabrān lo=k-marfe nošo prs",
             "translations": [
-              "man nennt ihn Barʕabran und er lässt nie jemand lebendig davonkommen",
-              "(ich will) deine Tochter (von ihm) frei machen",
-              "‘Wenn ihr mich freilaßt, werde ich euch am Abweiden dieses Gartens nicht hindern’"
+              "man nennt ihn Barʕabran und er lässt nie jemand lebendig davonkommen"
             ],
-            "references": ["5", "393", "33/32", "395", "195/34", "24/177"],
+            "references": ["5", "393", "33/32"],
             "tokens": [
               {
                 "kind": "ref",
@@ -936,7 +985,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "5) k-ummi-le əšme u=Barʕabrān, lo=k-marfe nošo ʻman nennt ihn Barʕabran und er lässt nie jemand lebendig davonkommenʼ; 393; prs 33/32;"
+          },
+          {
+            "turoyo": "g-marfena barṯəx prs",
+            "translations": ["(ich will) deine Tochter (von ihm) frei machen"],
+            "references": ["395", "195/34"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " g-marfena barṯəx "
@@ -972,7 +1029,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "g-marfena barṯəx ʻ(ich will) deine Tochter (von ihm) frei machenʼ; 395; prs 195/34;"
+          },
+          {
+            "turoyo": "iḏa d-oṯe d-marfétul-li lu=g-mamnáʕnu-lxu m-i=marʕa d-i=baxč-aṯe",
+            "translations": [
+              "‘Wenn ihr mich freilaßt, werde ich euch am Abweiden dieses Gartens nicht hindern’"
+            ],
+            "references": ["24/177"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " iḏa d-oṯe d-marfétul-li"
@@ -1014,15 +1081,14 @@
                 "value": ";"
               }
             ],
-            "text": "5) k-ummi-le əšme u=Barʕabrān, lo=k-marfe nošo ʻman nennt ihn Barʕabran und er lässt nie jemand lebendig davonkommenʼ; 393; prs 33/32; g-marfena barṯəx ʻ(ich will) deine Tochter (von ihm) frei machenʼ; 395; prs 195/34; iḏa d-oṯe d-marfétul-li, lu=g-mamnáʕnu-lxu m-i=marʕa d-i=baxč-aṯe ‘Wenn ihr mich freilaßt, werde ich euch am Abweiden dieses Gartens nicht hindern’; 24/177 [MT];"
+            "text": "iḏa d-oṯe d-marfétul-li, lu=g-mamnáʕnu-lxu m-i=marʕa d-i=baxč-aṯe ‘Wenn ihr mich freilaßt, werde ich euch am Abweiden dieses Gartens nicht hindern’; 24/177 [MT];"
           },
           {
-            "turoyo": "gəm-marfyono ruḥi čikənto l-i=məštuṯo g-marfina bəhn diḏan b-u=ṭuro w gd-oṯina",
+            "turoyo": "gəm-marfyono ruḥi čikənto l-i=məštuṯo",
             "translations": [
-              "ich will mich ein wenig dem Hochzeitsvergnügen hingeben",
-              "wir werden dann auf dem Berge ein wenig Luft schnappen und dann wieder gehen"
+              "ich will mich ein wenig dem Hochzeitsvergnügen hingeben"
             ],
-            "references": ["395", "395", "66/251"],
+            "references": ["395"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -1047,7 +1113,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "gəm-marfyono ruḥi čikənto l-i=məštuṯo ʻich will mich ein wenig dem Hochzeitsvergnügen hingebenʼ; 395;"
+          },
+          {
+            "turoyo": "g-marfina bəhn diḏan b-u=ṭuro w gd-oṯina",
+            "translations": [
+              "wir werden dann auf dem Berge ein wenig Luft schnappen und dann wieder gehen"
+            ],
+            "references": ["395", "66/251"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " g-marfina bəhn diḏan b-u=ṭuro w gd-oṯina "
@@ -1085,12 +1161,12 @@
                 "value": ";"
               }
             ],
-            "text": "gəm-marfyono ruḥi čikənto l-i=məštuṯo ʻich will mich ein wenig dem Hochzeitsvergnügen hingebenʼ; 395; g-marfina bəhn diḏan b-u=ṭuro w gd-oṯina ʻwir werden dann auf dem Berge ein wenig Luft schnappen und dann wieder gehenʼ; 395; 66/251;"
+            "text": "g-marfina bəhn diḏan b-u=ṭuro w gd-oṯina ʻwir werden dann auf dem Berge ein wenig Luft schnappen und dann wieder gehenʼ; 395; 66/251;"
           },
           {
             "turoyo": "ramḥəl g-marfeno amro b-i=walaye g-malwašno məqqa d-əbʕət ʕaskar",
             "translations": [
-              "‘Tomorrow I am going to issue an order in the city. I am going to equip as many soldiers as you wish’"
+              "Tomorrow I am going to issue an order in the city. I am going to equip as many soldiers as you wish"
             ],
             "references": ["10", "73/204"],
             "tokens": [
@@ -1276,12 +1352,11 @@
             "text": "1) marfe-wo an=naʕime bə-ḥḏoḏe ʻer liess immer die Knaben aufeinander losʼ; 405; 29/295;"
           },
           {
-            "turoyo": "kət-wa čammat kulle ṭino marfən-wa maye aʕlayye tamo kət-yo ṭayro marfan-wo u=ḥa d-uṯe-wo u=ṭayr-awo d-kule-wo ʕal riše huwe huwe-wo ḥakəm d-i=walay-ayo",
+            "turoyo": "kət-wa čammat kulle ṭino marfən-wa maye aʕlayye",
             "translations": [
-              "‘es gab Sümpfe voller Schlamm, in die man Wasser leitete’",
-              "‘Es war dort ein Vogel, den pflegte man loszulassen, und derjenige, auf dessen Haupt jener Vogel sich niederließ, der wurde Herrscher jener Stadt’"
+              "‘es gab Sümpfe voller Schlamm, in die man Wasser leitete’"
             ],
-            "references": ["3", "LB 221", "24/310"],
+            "references": ["3", "LB 221"],
             "tokens": [
               {
                 "kind": "ref",
@@ -1322,7 +1397,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "3) kət-wa čammat kulle ṭino, marfən-wa maye aʕlayye ‘es gab Sümpfe voller Schlamm, in die man Wasser leitete’; LB 221;"
+          },
+          {
+            "turoyo": "tamo kət-yo ṭayro marfan-wo u=ḥa d-uṯe-wo u=ṭayr-awo d-kule-wo ʕal riše huwe huwe-wo ḥakəm d-i=walay-ayo",
+            "translations": [
+              "‘Es war dort ein Vogel, den pflegte man loszulassen, und derjenige, auf dessen Haupt jener Vogel sich niederließ, der wurde Herrscher jener Stadt’"
+            ],
+            "references": ["24/310"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " tamo kət-yo ṭayro"
@@ -1372,12 +1457,12 @@
                 "value": ";"
               }
             ],
-            "text": "3) kət-wa čammat kulle ṭino, marfən-wa maye aʕlayye ‘es gab Sümpfe voller Schlamm, in die man Wasser leitete’; LB 221; tamo kət-yo ṭayro; marfan-wo u=ḥa d-uṯe-wo u=ṭayr-awo d-kule-wo ʕal riše, huwe huwe-wo ḥakəm d-i=walay-ayo ‘Es war dort ein Vogel, den pflegte man loszulassen, und derjenige, auf dessen Haupt jener Vogel sich niederließ, der wurde Herrscher jener Stadt’; 24/310 [MT];"
+            "text": "tamo kət-yo ṭayro; marfan-wo u=ḥa d-uṯe-wo u=ṭayr-awo d-kule-wo ʕal riše, huwe huwe-wo ḥakəm d-i=walay-ayo ‘Es war dort ein Vogel, den pflegte man loszulassen, und derjenige, auf dessen Haupt jener Vogel sich niederließ, der wurde Herrscher jener Stadt’; 24/310 [MT];"
           },
           {
             "turoyo": "hat d-owat-wo mə-darb-u=yuzbašiy-awo gə-marfat-wo i=žinik-ayo hawxa",
             "translations": [
-              "‘Wenn du an Stelle jenes Hauptmanns gewesen wärest, würdest du die Frau so haben gehen lassen?’"
+              "Wenn du an Stelle jenes Hauptmanns gewesen wärest, würdest du die Frau so haben gehen lassen?"
             ],
             "references": ["5", "26/187"],
             "tokens": [
@@ -1478,7 +1563,7 @@
         "Imperativ": [
           {
             "turoyo": "aḥuno marfí ag-gawze m-iḏux! Ritter loslassen",
-            "translations": ["‘Brother, throw the nuts out of your hand’"],
+            "translations": ["Brother, throw the nuts out of your hand"],
             "references": ["3", "45/15"],
             "tokens": [
               {
@@ -1546,9 +1631,7 @@
           },
           {
             "turoyo": "tux annaqla marfi-li da d-hat əzzux w-ono",
-            "translations": [
-              "‘Come now, set me free, so that you can go and I’"
-            ],
+            "translations": ["Come now, set me free, so that you can go and I"],
             "references": ["4", "75/95"],
             "tokens": [
               {
@@ -1584,7 +1667,7 @@
           },
           {
             "turoyo": "b-u=rišo marfí ruḥux l-u=qawr-awo!",
-            "translations": ["‘lass dich kopfüber ins Grab!’"],
+            "translations": ["lass dich kopfüber ins Grab!"],
             "references": ["8", "LB 77"],
             "tokens": [
               {
@@ -1631,12 +1714,9 @@
       "conjugations": {
         "Part. Pass.": [
           {
-            "turoyo": "kla marfayto b-u=ṭuro prs kul ḥa g-maḥanno tfənge b-kaṯpayye w i=dašt-aṯe d-lo ḥemoyo qumux marfáyto-yo qumux",
-            "translations": [
-              "sie läuft frei auf dem Berg herum",
-              "jedem werde ich ein Gewehr über die Schulter hängen, und diese Ebene soll dir ohne Vorbehalt zur Verfügung stehen oder überlassen sein"
-            ],
-            "references": ["410", "213/30", "410", "65/130"],
+            "turoyo": "kla marfayto b-u=ṭuro prs",
+            "translations": ["sie läuft frei auf dem Berg herum"],
+            "references": ["410", "213/30"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -1673,7 +1753,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "kla marfayto b-u=ṭuro ʻsie läuft frei auf dem Berg herumʼ; 410; prs 213/30;"
+          },
+          {
+            "turoyo": "kul ḥa g-maḥanno tfənge b-kaṯpayye w i=dašt-aṯe d-lo ḥemoyo qumux marfáyto-yo qumux",
+            "translations": [
+              "jedem werde ich ein Gewehr über die Schulter hängen, und diese Ebene soll dir ohne Vorbehalt zur Verfügung stehen oder überlassen sein"
+            ],
+            "references": ["410", "65/130"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " kul ḥa g-maḥanno tfənge b-kaṯpayye w i=dašt-aṯe d-lo ḥemoyo qumux"
@@ -1719,14 +1809,14 @@
                 "value": ";"
               }
             ],
-            "text": "kla marfayto b-u=ṭuro ʻsie läuft frei auf dem Berg herumʼ; 410; prs 213/30; kul ḥa g-maḥanno tfənge b-kaṯpayye w i=dašt-aṯe d-lo ḥemoyo qumux, marfáyto-yo qumux ʻjedem werde ich ein Gewehr über die Schulter hängen, und diese Ebene soll dir ohne Vorbehalt zur Verfügung stehen oder überlassen seinʼ; 410; 65/130;"
+            "text": "kul ḥa g-maḥanno tfənge b-kaṯpayye w i=dašt-aṯe d-lo ḥemoyo qumux, marfáyto-yo qumux ʻjedem werde ich ein Gewehr über die Schulter hängen, und diese Ebene soll dir ohne Vorbehalt zur Verfügung stehen oder überlassen seinʼ; 410; 65/130;"
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "tarfoyo jastr",
+            "turoyo": "tarfoyo",
             "translations": ["Loslassen"],
-            "references": ["409", "116"],
+            "references": ["409"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -1751,7 +1841,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "tarfoyo ʻLoslassenʼ; 409;"
+          },
+          {
+            "turoyo": "jastr",
+            "translations": [],
+            "references": ["116"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " jastr "
@@ -1765,7 +1863,7 @@
                 "value": ";"
               }
             ],
-            "text": "tarfoyo ʻLoslassenʼ; 409; jastr 116;"
+            "text": "jastr 116;"
           }
         ]
       }
@@ -1829,7 +1927,7 @@
     "schlaff, lose werden;",
     "marfe/marfele femo ‘verlassen’ (in Erzählung): gəm-marfena femo m-ano g-əzan bəṯr-u=šulṭon-ayḏan ‘Wir wollen nun Badrchan Bag lassen, und unserem Sultan folgen’; 28/68",
     "marfe/marfele daqno ‘den Bart wachsen lassen’: mdagšina, marfelan daqno ʻwir hatten uns verändert, hatten uns einen Bart wachsen lassenʼ; EL 89;",
-    "marfe/marfele nuro ‘in Brand stecken’: marfele nuro b-u=baytayḏe ʻer steckte sein Haus in Brandʼ; 384; prs 5/6; 74/100; maḥatte a=tre-abn-ayḏe ʕal-aq=qayse marfele nuro b-aq=qayse muqḏile ‘Man legte die beiden Söhne darauf und er (der Vater) zündete das Holz an und verbrannte sie’; 21/91 [MT];  k-marfən i=nuro b-u=barūd ʻsie setzen das Pulver in Brandʼ; 393; prs 159/14;k-mahzəm k-uzzé l-i=qriṯo. k-uzzé ʕal aḥ=ḥaṣode, tamo kə-mhawər ʕal aḥ=ḥaṣode k-omər “l-babi məlle: marfawu nuro b-aḥ=ḥeṭe, zoxu l-ab=bote!” ‘er macht sich davon und geht ins Dorf. Er geht zu den Schnittern und ruft dort den Schnittern zu: “Der Vater hat gesagt: Steckt den Weizen in Brand und geht nach Hause!”’; 408; 6/19;",
+    "marfe/marfele nuro ‘in Brand stecken’: marfele nuro b-u=baytayḏe ʻer steckte sein Haus in Brandʼ; 384; prs 5/6; 74/100; maḥatte a=tre-abn-ayḏe ʕal-aq=qayse marfele nuro b-aq=qayse muqḏile ‘Man legte die beiden Söhne darauf und er (der Vater) zündete das Holz an und verbrannte sie’; 21/91 [MT]; k-marfən i=nuro b-u=barūd ʻsie setzen das Pulver in Brandʼ; 393; prs 159/14;k-mahzəm k-uzzé l-i=qriṯo. k-uzzé ʕal aḥ=ḥaṣode, tamo kə-mhawər ʕal aḥ=ḥaṣode k-omər “l-babi məlle: marfawu nuro b-aḥ=ḥeṭe, zoxu l-ab=bote!” ‘er macht sich davon und geht ins Dorf. Er geht zu den Schnittern und ruft dort den Schnittern zu: “Der Vater hat gesagt: Steckt den Weizen in Brand und geht nach Hause!”’; 408; 6/19;",
     "marfe/marfele i=ruḥo ‘to gasp out one’s life’",
     "marfe/marfele aḏno – to listen to carefully. koṯәn aq+qaše koqorәn tәšʕiṯo, qorәn at+tešʕәyawoṯe daq+qadiše, e . . . komarfono aḏni aʕlayye priests come, they read a story, they read stories about saints, yes... I lend my ears to them (NE_first interview)",
     "rgʕ (unknown)",

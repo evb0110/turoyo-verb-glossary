@@ -160,21 +160,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "hawi də-mʕawəq mədde d-tloṯo=yarḥe tamo - bəṯṯər mədə-mʕawəq u=taǧər ʕasro=yawme b-i-taǧara daʕər l-u=bayto aḏəʕ Ḥasan w-Ḥusayn mʕawqi",
+            "turoyo": "hawi də-mʕawəq mədde d-tloṯo=yarḥe tamo -",
             "translations": [
-              "da geschah es, dass er dort drei Monate aufgehalten wurde",
-              "‘Nachdem der Kaufmann sich zehn Tage lang mit Handels-geschäften aufgehalten hatte, kehrte er nach Hause zurück’",
-              "‘Er merkte, daß Ḥasan und Ḥusayn sich verspäteten’"
+              "da geschah es, dass er dort drei Monate aufgehalten wurde"
             ],
-            "references": [
-              "472",
-              "473",
-              "26/4",
-              "23/49",
-              "33/42",
-              "75/97",
-              "29/180"
-            ],
+            "references": ["472", "473", "26/4"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -219,7 +209,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "hawi də-mʕawəq mədde d-tloṯo=yarḥe tamo ʻda geschah es, dass er dort drei Monate aufgehalten wurdeʼ; 472-473; 26/4;"
+          },
+          {
+            "turoyo": "bəṯṯər mədə-mʕawəq u=taǧər ʕasro=yawme b-i-taǧara daʕər l-u=bayto",
+            "translations": [
+              "‘Nachdem der Kaufmann sich zehn Tage lang mit Handels-geschäften aufgehalten hatte, kehrte er nach Hause zurück’"
+            ],
+            "references": ["23/49", "33/42", "75/97"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " bəṯṯər mədə-mʕawəq u=taǧər ʕasro=yawme b-i-taǧara"
@@ -275,7 +275,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "bəṯṯər mədə-mʕawəq u=taǧər ʕasro=yawme b-i-taǧara, daʕər l-u=bayto ‘Nachdem der Kaufmann sich zehn Tage lang mit Handels-geschäften aufgehalten hatte, kehrte er nach Hause zurück’; 23/49; 33/42; 75/97;"
+          },
+          {
+            "turoyo": "aḏəʕ Ḥasan w-Ḥusayn mʕawqi",
+            "translations": [
+              "‘Er merkte, daß Ḥasan und Ḥusayn sich verspäteten’"
+            ],
+            "references": ["29/180"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " aḏəʕ Ḥasan w-Ḥusayn mʕawqi "
@@ -297,7 +307,7 @@
                 "value": "29/180"
               }
             ],
-            "text": "hawi də-mʕawəq mədde d-tloṯo=yarḥe tamo ʻda geschah es, dass er dort drei Monate aufgehalten wurdeʼ; 472-473; 26/4; bəṯṯər mədə-mʕawəq u=taǧər ʕasro=yawme b-i-taǧara, daʕər l-u=bayto ‘Nachdem der Kaufmann sich zehn Tage lang mit Handels-geschäften aufgehalten hatte, kehrte er nach Hause zurück’; 23/49; 33/42; 75/97; aḏəʕ Ḥasan w-Ḥusayn mʕawqi ‘Er merkte, daß Ḥasan und Ḥusayn sich verspäteten’; 29/180"
+            "text": "aḏəʕ Ḥasan w-Ḥusayn mʕawqi ‘Er merkte, daß Ḥasan und Ḥusayn sich verspäteten’; 29/180"
           }
         ],
         "Infectum": [
@@ -406,7 +416,13 @@
             "text": "ʕəwoqo; 473; ʕewoqo; 473;"
           }
         ]
-      }
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "sich (unterwegs) aufhalten, aufgehalten werden, sich verspäten, zu spät kommen"
+        }
+      ]
     }
   ],
   "idioms": [

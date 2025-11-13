@@ -13,23 +13,16 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
-      "forms": ["ṯnīḥ", "məṯnəḥ"],
-      "conjugations": {}
-    },
-    {
       "stem": "Detransitive",
-      "forms": [],
+      "forms": ["ṯnīḥ", "məṯnəḥ"],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "fayəš arbʕo=yawme l-axile ṯnīḥ prs me d-hawxa məlle lebi ṯnīḥ bəṯṯər məd-ṯnəḥno bdeli b-i=waḏ̣ifa d-úle-li l-u=profasor myaqro Helmut Ritter",
+            "turoyo": "fayəš arbʕo=yawme l-axile ṯnīḥ prs",
             "translations": [
-              "vier Tage hindurch enthielt er sich des Fressens und hatte Ruhe",
-              "nachdem er das gesagt hatte, beruhigte ich mich",
-              "dann, nachdem ich mich erholt hatte, ging ich an die Aufgabe, die mir der verehrte Professor Hellmut Ritter gestellt hatte"
+              "vier Tage hindurch enthielt er sich des Fressens und hatte Ruhe"
             ],
-            "references": ["1", "126", "186/19", "LB 258", "11/10"],
+            "references": ["1", "126", "186/19"],
             "tokens": [
               {
                 "kind": "ref",
@@ -82,7 +75,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) fayəš arbʕo=yawme l-axile, ṯnīḥ ʻvier Tage hindurch enthielt er sich des Fressens und hatte Ruheʼ; 126; prs 186/19;"
+          },
+          {
+            "turoyo": "me d-hawxa məlle lebi ṯnīḥ bəṯṯər məd-ṯnəḥno bdeli b-i=waḏ̣ifa d-úle-li l-u=profasor myaqro Helmut Ritter",
+            "translations": [
+              "nachdem er das gesagt hatte, beruhigte ich mich",
+              "dann, nachdem ich mich erholt hatte, ging ich an die Aufgabe, die mir der verehrte Professor Hellmut Ritter gestellt hatte"
+            ],
+            "references": ["LB 258", "11/10"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " me d-hawxa məlle lebi ṯnīḥ "
@@ -140,12 +144,12 @@
                 "value": " "
               }
             ],
-            "text": "1) fayəš arbʕo=yawme l-axile, ṯnīḥ ʻvier Tage hindurch enthielt er sich des Fressens und hatte Ruheʼ; 126; prs 186/19; me d-hawxa məlle lebi ṯnīḥ ʻnachdem er das gesagt hatte, beruhigte ich michʼ LB 258; bəṯṯər məd-ṯnəḥno, bdeli b-i=waḏ̣ifa d-úle-li l-u=profasor myaqro Helmut Ritter ʻdann, nachdem ich mich erholt hatte, ging ich an die Aufgabe, die mir der verehrte Professor Hellmut Ritter gestellt hatteʼ; 11/10;"
+            "text": "me d-hawxa məlle lebi ṯnīḥ ʻnachdem er das gesagt hatte, beruhigte ich michʼ LB 258; bəṯṯər məd-ṯnəḥno, bdeli b-i=waḏ̣ifa d-úle-li l-u=profasor myaqro Helmut Ritter ʻdann, nachdem ich mich erholt hatte, ging ich an die Aufgabe, die mir der verehrte Professor Hellmut Ritter gestellt hatteʼ; 11/10;"
           },
           {
             "turoyo": "m-bəṯṯər a=tloṯo-yawme <…> gəd-əṯyo hiya b-raġla sidox w-g-ḥuzat-la kila ṯniḥo",
             "translations": [
-              "‘Nach drei Tagen wird sie <…> selber auf eigenen Füßen zu dir kommen, und du wirst sie genesen vor dir sehen’"
+              "Nach drei Tagen wird sie <…> selber auf eigenen Füßen zu dir kommen, und du wirst sie genesen vor dir sehen"
             ],
             "references": ["2", "24/77"],
             "tokens": [
@@ -191,13 +195,11 @@
         ],
         "Infectum": [
           {
-            "turoyo": "gəm-mŭḥeno talane aʕlayye lo=g-məṯnəḥ lebi w qŭṭanno kmo=minayye lo=g-məṯnəḥ lebi tamo maḥatte ač=čuwedir dəṯṯe ḥatta d-məṯnoḥi k-omal-la ṭray mini riši ko-koyu lo=qadənno əzzino ʕam aḥuni l-u=ṣaydo daʕənno lazəm məṯnəḥno",
+            "turoyo": "gəm-mŭḥeno talane aʕlayye lo=g-məṯnəḥ lebi w qŭṭanno kmo=minayye lo=g-məṯnəḥ lebi",
             "translations": [
-              "ich will ihnen Vieherden wegtreiben, so wird mein Herz nicht ruhig; und wenn ich ein paar von ihnen töte, wird mein Herz nicht ruhig",
-              "‘Dort stellten sie ihre Zelte auf, um auszuruhen’",
-              "‘He said to her: “Leave me alone! I have a headache. I could not go for a hunt with brother, so I came back, and I must have a rest’"
+              "ich will ihnen Vieherden wegtreiben, so wird mein Herz nicht ruhig; und wenn ich ein paar von ihnen töte, wird mein Herz nicht ruhig"
             ],
-            "references": ["1", "129", "29/138", "24/138", "78/17"],
+            "references": ["1", "129", "29/138"],
             "tokens": [
               {
                 "kind": "ref",
@@ -266,7 +268,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) gəm-mŭḥeno talane aʕlayye, lo=g-məṯnəḥ lebi; w qŭṭanno kmo=minayye, lo=g-məṯnəḥ lebi ʻich will ihnen Vieherden wegtreiben, so wird mein Herz nicht ruhig; und wenn ich ein paar von ihnen töte, wird mein Herz nicht ruhigʼ; 129; 29/138;"
+          },
+          {
+            "turoyo": "tamo maḥatte ač=čuwedir dəṯṯe ḥatta d-məṯnoḥi",
+            "translations": [
+              "‘Dort stellten sie ihre Zelte auf, um auszuruhen’"
+            ],
+            "references": ["24/138"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " tamo maḥatte ač=čuwedir dəṯṯe ḥatta d-məṯnoḥi "
@@ -290,7 +302,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "tamo maḥatte ač=čuwedir dəṯṯe ḥatta d-məṯnoḥi ‘Dort stellten sie ihre Zelte auf, um auszuruhen’; 24/138;"
+          },
+          {
+            "turoyo": "k-omal-la ṭray mini riši ko-koyu lo=qadənno əzzino ʕam aḥuni l-u=ṣaydo daʕənno lazəm məṯnəḥno",
+            "translations": [
+              "‘He said to her: “Leave me alone! I have a headache. I could not go for a hunt with brother, so I came back, and I must have a rest’"
+            ],
+            "references": ["78/17"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " k-omal-la ṭray mini riši ko-koyu lo=qadənno əzzino ʕam aḥuni l-u=ṣaydo daʕənno lazəm məṯnəḥno "
@@ -312,17 +334,16 @@
                 "value": ";"
               }
             ],
-            "text": "1) gəm-mŭḥeno talane aʕlayye, lo=g-məṯnəḥ lebi; w qŭṭanno kmo=minayye, lo=g-məṯnəḥ lebi ʻich will ihnen Vieherden wegtreiben, so wird mein Herz nicht ruhig; und wenn ich ein paar von ihnen töte, wird mein Herz nicht ruhigʼ; 129; 29/138; tamo maḥatte ač=čuwedir dəṯṯe ḥatta d-məṯnoḥi ‘Dort stellten sie ihre Zelte auf, um auszuruhen’; 24/138; k-omal-la ṭray mini riši ko-koyu lo=qadənno əzzino ʕam aḥuni l-u=ṣaydo daʕənno lazəm məṯnəḥno ‘He said to her: “Leave me alone! I have a headache. I could not go for a hunt with brother, so I came back, and I must have a rest’ 78/17;"
+            "text": "k-omal-la ṭray mini riši ko-koyu lo=qadənno əzzino ʕam aḥuni l-u=ṣaydo daʕənno lazəm məṯnəḥno ‘He said to her: “Leave me alone! I have a headache. I could not go for a hunt with brother, so I came back, and I must have a rest’ 78/17;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "ḥet i=xắraze me-qḏoləx w u=gurno w məṯnǝ́ḥ prs məṯnáḥ m-u=taʕb-ano",
+            "turoyo": "ḥet i=xắraze me-qḏoləx w u=gurno w məṯnǝ́ḥ prs",
             "translations": [
-              "lege den Brunnenrand von deinem Halse hin, und auch den Trog, und ruhe dich aus",
-              "rest from this trouble"
+              "lege den Brunnenrand von deinem Halse hin, und auch den Trog, und ruhe dich aus"
             ],
-            "references": ["133", "150/7", "47/14"],
+            "references": ["133", "150/7"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -359,7 +380,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ḥet i=xắraze me-qḏoləx w u=gurno w məṯnǝ́ḥ ʻlege den Brunnenrand von deinem Halse hin, und auch den Trog, und ruhe dich ausʼ; 133; prs 150/7;"
+          },
+          {
+            "turoyo": "məṯnáḥ m-u=taʕb-ano",
+            "translations": ["rest from this trouble"],
+            "references": ["47/14"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " məṯnáḥ m-u=taʕb-ano "
@@ -385,7 +414,7 @@
                 "value": ";"
               }
             ],
-            "text": "ḥet i=xắraze me-qḏoləx w u=gurno w məṯnǝ́ḥ ʻlege den Brunnenrand von deinem Halse hin, und auch den Trog, und ruhe dich ausʼ; 133; prs 150/7; məṯnáḥ m-u=taʕb-ano ʻrest from this troubleʼ; 47/14;"
+            "text": "məṯnáḥ m-u=taʕb-ano ʻrest from this troubleʼ; 47/14;"
           }
         ],
         "Nomen Patiens": [
@@ -442,13 +471,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "u=ḥakim-ano səmle aʕmayna ṭowuṯo rabṯo maṯnaḥle i=barṯ-ayḏi huwe aṯi bəṯri w-maṯnáḥle-li l-aloho maṯnáḥle-li b-u=admo d-i=ġazale",
+            "turoyo": "u=ḥakim-ano səmle aʕmayna ṭowuṯo rabṯo maṯnaḥle i=barṯ-ayḏi",
             "translations": [
-              "dieser Arzt hat uns eine grosse Wohltat erwiesen, er hat meine Tochter gesund gemacht",
-              "‘Er ist mir nachgegangen und hat mich geheilt’",
-              "‘Gott hat mich genesen lassen mit dem Blut der Gazelle’"
+              "dieser Arzt hat uns eine grosse Wohltat erwiesen, er hat meine Tochter gesund gemacht"
             ],
-            "references": ["1", "137", "24/98", "24/128", "30/149"],
+            "references": ["1", "137", "24/98"],
             "tokens": [
               {
                 "kind": "ref",
@@ -501,7 +528,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) u=ḥakim-ano səmle aʕmayna ṭowuṯo rabṯo, maṯnaḥle i=barṯ-ayḏi ʻdieser Arzt hat uns eine grosse Wohltat erwiesen, er hat meine Tochter gesund gemachtʼ; 137; 24/98;"
+          },
+          {
+            "turoyo": "huwe aṯi bəṯri w-maṯnáḥle-li",
+            "translations": ["‘Er ist mir nachgegangen und hat mich geheilt’"],
+            "references": ["24/128"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " huwe aṯi bəṯri w-maṯnáḥle-li "
@@ -525,7 +560,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "huwe aṯi bəṯri w-maṯnáḥle-li ‘Er ist mir nachgegangen und hat mich geheilt’; 24/128;"
+          },
+          {
+            "turoyo": "l-aloho maṯnáḥle-li b-u=admo d-i=ġazale",
+            "translations": [
+              "‘Gott hat mich genesen lassen mit dem Blut der Gazelle’"
+            ],
+            "references": ["30/149"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " l-aloho maṯnáḥle-li b-u=admo d-i=ġazale "
@@ -547,15 +592,15 @@
                 "value": "30/149"
               }
             ],
-            "text": "1) u=ḥakim-ano səmle aʕmayna ṭowuṯo rabṯo, maṯnaḥle i=barṯ-ayḏi ʻdieser Arzt hat uns eine grosse Wohltat erwiesen, er hat meine Tochter gesund gemachtʼ; 137; 24/98; huwe aṯi bəṯri w-maṯnáḥle-li ‘Er ist mir nachgegangen und hat mich geheilt’; 24/128; l-aloho maṯnáḥle-li b-u=admo d-i=ġazale ‘Gott hat mich genesen lassen mit dem Blut der Gazelle’; 30/149"
+            "text": "l-aloho maṯnáḥle-li b-u=admo d-i=ġazale ‘Gott hat mich genesen lassen mit dem Blut der Gazelle’; 30/149"
           }
         ],
         "Infectum": [
           {
             "turoyo": "kile aṯi ḥakimo ḥaṯo l-i=walaye ku-mwaʕəd d-maṯnəḥ kul kayiwe kul ʕəlle d-huwe-lin uno aḏəʕno d-hat-ste kayuto-hat b-u=ġamo w-b-i=ḥəzniye w-aṯino ḥatta d-maṯnáḥno-ləx!",
             "translations": [
-              "‘Da ist ein neuer Arzt in die Stadt gekommen; der verspricht alle Kranken zu heilen, alle Leiden, die sie haben’",
-              "‘Ich weiß, daß du auch krank bist in Kummer und Traurigkeit, und ich bin gekommen, dich gesund zu machen!’"
+              "Da ist ein neuer Arzt in die Stadt gekommen; der verspricht alle Kranken zu heilen, alle Leiden, die sie haben",
+              "Ich weiß, daß du auch krank bist in Kummer und Traurigkeit, und ich bin gekommen, dich gesund zu machen!"
             ],
             "references": ["1", "24/57", "24/83"],
             "tokens": [
@@ -659,13 +704,11 @@
             "text": "1) kile aṯi ḥakimo ḥaṯo l-i=walaye, ku-mwaʕəd d-maṯnəḥ kul kayiwe, kul ʕəlle d-huwe-lin ‘Da ist ein neuer Arzt in die Stadt gekommen; der verspricht alle Kranken zu heilen, alle Leiden, die sie haben’; 24/57 [MT]; uno aḏəʕno d-hat-ste kayuto-hat b-u=ġamo w-b-i=ḥəzniye, w-aṯino ḥatta d-maṯnáḥno-ləx! ‘Ich weiß, daß du auch krank bist in Kummer und Traurigkeit, und ich bin gekommen, dich gesund zu machen!’; 24/83 [MT]"
           },
           {
-            "turoyo": "l-babux mšadálle-lux hano hadiye w d-maṯanḥət u=səsyayḏux aloho d-lo=maṯnaḥḥe ya u=wab-ayḏi! k-ubʕeno menox d-ubat-li məqdār d-kallāt ḥatta d-əzzino kuraxno b-aw=walayat w-d-maṯnaḥno u=kew-ano diḏi d-gurašno hawa",
+            "turoyo": "l-babux mšadálle-lux hano hadiye w d-maṯanḥət u=səsyayḏux",
             "translations": [
-              "dein Vater schickt dir dies (das Pferd) als Geschenk, damit du deinem Pferde Ruhe gönnen kannst",
-              "möge sie Gott nicht zur Ruhe kommen lassen",
-              "‘Vater, ich möchte, daß du mir etwas Geld gibst, damit ich gehe und in den Städten umherreise und Linderung für mein Leiden suche, etwas Luft atme’"
+              "dein Vater schickt dir dies (das Pferd) als Geschenk, damit du deinem Pferde Ruhe gönnen kannst"
             ],
-            "references": ["2", "144", "115/283", "DD 393/5", "24/47"],
+            "references": ["2", "144", "115/283"],
             "tokens": [
               {
                 "kind": "ref",
@@ -710,7 +753,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "2) l-babux mšadálle-lux hano hadiye w d-maṯanḥət u=səsyayḏux ʻdein Vater schickt dir dies (das Pferd) als Geschenk, damit du deinem Pferde Ruhe gönnen kannstʼ; 144; 115/283;"
+          },
+          {
+            "turoyo": "aloho d-lo=maṯnaḥḥe",
+            "translations": ["möge sie Gott nicht zur Ruhe kommen lassen"],
+            "references": ["DD 393/5"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " aloho d-lo=maṯnaḥḥe "
@@ -734,7 +785,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "aloho d-lo=maṯnaḥḥe ʻmöge sie Gott nicht zur Ruhe kommen lassenʼ; DD 393/5;"
+          },
+          {
+            "turoyo": "ya u=wab-ayḏi! k-ubʕeno menox d-ubat-li məqdār d-kallāt ḥatta d-əzzino kuraxno b-aw=walayat w-d-maṯnaḥno u=kew-ano diḏi d-gurašno hawa",
+            "translations": [
+              "‘Vater, ich möchte, daß du mir etwas Geld gibst, damit ich gehe und in den Städten umherreise und Linderung für mein Leiden suche, etwas Luft atme’"
+            ],
+            "references": ["24/47"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ya u=wab-ayḏi!  k-ubʕeno menox d-ubat-li məqdār d-kallāt ḥatta d-əzzino kuraxno b-aw=walayat w-d-maṯnaḥno u=kew-ano diḏi"
@@ -772,7 +833,7 @@
                 "value": "[MT]"
               }
             ],
-            "text": "2) l-babux mšadálle-lux hano hadiye w d-maṯanḥət u=səsyayḏux ʻdein Vater schickt dir dies (das Pferd) als Geschenk, damit du deinem Pferde Ruhe gönnen kannstʼ; 144; 115/283; aloho d-lo=maṯnaḥḥe ʻmöge sie Gott nicht zur Ruhe kommen lassenʼ; DD 393/5; ya u=wab-ayḏi! k-ubʕeno menox d-ubat-li məqdār d-kallāt ḥatta d-əzzino kuraxno b-aw=walayat w-d-maṯnaḥno u=kew-ano diḏi, d-gurašno hawa ‘Vater, ich möchte, daß du mir etwas Geld gibst, damit ich gehe und in den Städten umherreise und Linderung für mein Leiden suche, etwas Luft atme’; 24/47 [MT]"
+            "text": "ya u=wab-ayḏi! k-ubʕeno menox d-ubat-li məqdār d-kallāt ḥatta d-əzzino kuraxno b-aw=walayat w-d-maṯnaḥno u=kew-ano diḏi, d-gurašno hawa ‘Vater, ich möchte, daß du mir etwas Geld gibst, damit ich gehe und in den Städten umherreise und Linderung für mein Leiden suche, etwas Luft atme’; 24/47 [MT]"
           }
         ],
         "Imperativ": [
@@ -842,6 +903,6 @@
       }
     }
   ],
-  "idioms": ["(Detrans.) 1) Ruhe bekommen, ausruhen; 2) gesund werden;"],
+  "idioms": null,
   "uncertain": false
 }

@@ -18,14 +18,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "hano u=kačălōk məd-šaməʕ hawxa hedika mlele ʕebe abšoṯe mlēlê-le qalyūn prs əšto=šeritat kulle mlalli u=ʕmiro-sti mlele ak=kis-ayḏe kallāwat",
+            "turoyo": "hano u=kačălōk məd-šaməʕ hawxa hedika mlele ʕebe abšoṯe",
             "translations": [
-              "as soon as the baldhead heard this, he secretly filled his pockets with raisins",
-              "er stopfte sich eine Pfeife",
-              "‘ich habe sechs Tonbänder ganz gefüllt’",
-              "‘Der Emir füllte seine Beutel mit Geld’"
+              "as soon as the baldhead heard this, he secretly filled his pockets with raisins"
             ],
-            "references": ["333", "44/39", "341", "71/29", "14/3", "36/27"],
+            "references": ["333", "44/39"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -70,7 +67,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "hano u=kačălōk məd-šaməʕ hawxa, hedika mlele ʕebe abšoṯe ʻas soon as the baldhead heard this, he secretly filled his pockets with raisinsʼ; 333; 44/39;"
+          },
+          {
+            "turoyo": "mlēlê-le qalyūn prs",
+            "translations": ["er stopfte sich eine Pfeife"],
+            "references": ["341", "71/29"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mlēlê-le qalyūn "
@@ -106,7 +111,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mlēlê-le qalyūn ʻer stopfte sich eine Pfeifeʼ; 341; prs 71/29;"
+          },
+          {
+            "turoyo": "əšto=šeritat kulle mlalli",
+            "translations": ["‘ich habe sechs Tonbänder ganz gefüllt’"],
+            "references": ["14/3"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": "  əšto=šeritat kulle mlalli "
@@ -130,7 +143,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "əšto=šeritat kulle mlalli ‘ich habe sechs Tonbänder ganz gefüllt’; 14/3;"
+          },
+          {
+            "turoyo": "u=ʕmiro-sti mlele ak=kis-ayḏe kallāwat",
+            "translations": ["‘Der Emir füllte seine Beutel mit Geld’"],
+            "references": ["36/27"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " u=ʕmiro-sti mlele ak=kis-ayḏe kallāwat "
@@ -152,7 +173,7 @@
                 "value": "36/27"
               }
             ],
-            "text": "hano u=kačălōk məd-šaməʕ hawxa, hedika mlele ʕebe abšoṯe ʻas soon as the baldhead heard this, he secretly filled his pockets with raisinsʼ; 333; 44/39; mlēlê-le qalyūn ʻer stopfte sich eine Pfeifeʼ; 341; prs 71/29; əšto=šeritat kulle mlalli ‘ich habe sechs Tonbänder ganz gefüllt’; 14/3; u=ʕmiro-sti mlele ak=kis-ayḏe kallāwat ‘Der Emir füllte seine Beutel mit Geld’; 36/27"
+            "text": "u=ʕmiro-sti mlele ak=kis-ayḏe kallāwat ‘Der Emir füllte seine Beutel mit Geld’; 36/27"
           }
         ],
         "Preterit-wa": [
@@ -205,13 +226,11 @@
         ],
         "Infectum": [
           {
-            "turoyo": "g-mŭleno sefox kaʕbe - u=təšriqo d-as=safrune k-mole lebe d-u=nsab naša i=... more d-u=bayt-awo ko-nəfqo ko-məlyo mayo",
+            "turoyo": "g-mŭleno sefox kaʕbe -",
             "translations": [
-              "ich werde deinen Schoss mit Spielknöcheln füllen",
-              "‘das Gezwitscher der Vögel erfüllte das Herz mit froher Stimmung’",
-              "‘die Besitzerin dieses Hauses kam heraus und füllte Wasser’"
+              "ich werde deinen Schoss mit Spielknöcheln füllen"
             ],
-            "references": ["358", "359", "25/8", "8/5", "LB 237"],
+            "references": ["358", "359", "25/8"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -256,7 +275,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "g-mŭleno sefox kaʕbe ʻich werde deinen Schoss mit Spielknöcheln füllenʼ; 358-359; 25/8;"
+          },
+          {
+            "turoyo": "u=təšriqo d-as=safrune k-mole lebe d-u=nsab naša",
+            "translations": [
+              "‘das Gezwitscher der Vögel erfüllte das Herz mit froher Stimmung’"
+            ],
+            "references": ["8/5"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " u=təšriqo d-as=safrune"
@@ -304,7 +333,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "u=təšriqo d-as=safrune, k-mole, lebe d-u=nsab, naša ‘das Gezwitscher der Vögel erfüllte das Herz mit froher Stimmung’; 8/5;"
+          },
+          {
+            "turoyo": "i=... more d-u=bayt-awo ko-nəfqo ko-məlyo mayo",
+            "translations": [
+              "‘die Besitzerin dieses Hauses kam heraus und füllte Wasser’"
+            ],
+            "references": ["LB 237"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " i=... more d-u=bayt-awo ko-nəfqo ko-məlyo mayo "
@@ -342,12 +381,12 @@
                 "value": ";"
               }
             ],
-            "text": "g-mŭleno sefox kaʕbe ʻich werde deinen Schoss mit Spielknöcheln füllenʼ; 358-359; 25/8; u=təšriqo d-as=safrune, k-mole, lebe d-u=nsab, naša ‘das Gezwitscher der Vögel erfüllte das Herz mit froher Stimmung’; 8/5; i=... more d-u=bayt-awo ko-nəfqo ko-məlyo mayo ‘die Besitzerin dieses Hauses kam heraus und füllte Wasser’; LB 237; [from the discussion with Shabo I conclude that most probably it means that she drew some water, she filled a reservoir with water. Shabo: Mlele maye is also used when women went with their jars to the wells and sources outside the village to bring home water to drink. “azzehin an nishe molin maye”];"
+            "text": "i=... more d-u=bayt-awo ko-nəfqo ko-məlyo mayo ‘die Besitzerin dieses Hauses kam heraus und füllte Wasser’; LB 237; [from the discussion with Shabo I conclude that most probably it means that she drew some water, she filled a reservoir with water. Shabo: Mlele maye is also used when women went with their jars to the wells and sources outside the village to bring home water to drink. “azzehin an nishe molin maye”];"
           },
           {
             "turoyo": "ḥzalle gubo b-u=ṭuro abiʕi d-šotən lat-wo aʕmayye dawlo d-molən maye",
             "translations": [
-              "‘Da fanden sie eine Zisterne auf dem Berge; sie wollten trinken, aber sie hatten keinen Eimer mit, um Wasser hineinzufüllen’"
+              "Da fanden sie eine Zisterne auf dem Berge; sie wollten trinken, aber sie hatten keinen Eimer mit, um Wasser hineinzufüllen"
             ],
             "references": ["21/74"],
             "tokens": [
@@ -404,7 +443,7 @@
             "turoyo": "kul=daworo lo=k-oḏaʕno amma ono i=naqla d-sám-way-no u=laġnayḏi molé-way-no kiso m-u=buzarʕo w mʕaláq-way-no aḥna k-əmmína-la ture b-kaṯpi g-maḥtí-way-na u=fəršək b-i=pačke w-g-maḥtó-way-no-le b-i=zarke w-g-məlyó-way-no i=zarke ḥalwo",
             "translations": [
               "(ob) jeder Pflüger (es so hielt), weiss ich nicht, aber ich, wenn ich meinen Saatstreifen bearbeitete (wörtl.: machte), füllte ich einen Sack mit Saatgut und hängte mir die Umhängetasche, wie wir sie nennen, über die Schulter",
-              "‘We put the rennet extract in a piece of cloth, and I put it into a dish and filled the dish with milk’"
+              "We put the rennet extract in a piece of cloth, and I put it into a dish and filled the dish with milk"
             ],
             "references": ["JL 10.11.3", "JL 11.12.5"],
             "tokens": [
@@ -572,27 +611,9 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mle u=bayto maye prs mle ʕayna m-i=gawruṯ-ayḏe nafəq u=šaṭ xd-u=baḥar nafəl ʕal i=walaye. hawi ġəlbġəlb b-i=walaye. malyo i=walaye maye prs prs uno harke mədde də-tloṯ=əšne fayəšno harke ʕal-aṯe mkadarno w-lebi mle ġamo",
-            "translations": [
-              "das Haus füllte sich mit Wasser",
-              "ihr Auge wurde von seiner Männlichkeit erfüllt",
-              "der Fluss ergoss sich über die Stadt wie ein Meer. Ein grosses Getöse erhob sich in derselben, und sie füllte sich mit Wasser",
-              "‘Ich bin ja schon seit drei Jahren hier. Deswegen bin ich betrübt und mein Herz hat sich mit Kummer gefüllt’"
-            ],
-            "references": [
-              "379",
-              "28/21",
-              "379",
-              "29/94",
-              "105",
-              "112",
-              "172",
-              "349",
-              "181/35",
-              "235/31",
-              "37",
-              "24/119"
-            ],
+            "turoyo": "mle u=bayto maye prs",
+            "translations": ["das Haus füllte sich mit Wasser"],
+            "references": ["379", "28/21"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -629,7 +650,30 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mle u=bayto maye ʻdas Haus füllte sich mit Wasserʼ; 379; prs 28/21;"
+          },
+          {
+            "turoyo": "mle ʕayna m-i=gawruṯ-ayḏe nafəq u=šaṭ xd-u=baḥar nafəl ʕal i=walaye. hawi ġəlbġəlb b-i=walaye. malyo i=walaye maye prs prs uno harke mədde də-tloṯ=əšne fayəšno harke ʕal-aṯe mkadarno w-lebi mle ġamo",
+            "translations": [
+              "ihr Auge wurde von seiner Männlichkeit erfüllt",
+              "der Fluss ergoss sich über die Stadt wie ein Meer. Ein grosses Getöse erhob sich in derselben, und sie füllte sich mit Wasser",
+              "‘Ich bin ja schon seit drei Jahren hier. Deswegen bin ich betrübt und mein Herz hat sich mit Kummer gefüllt’"
+            ],
+            "references": [
+              "379",
+              "29/94",
+              "105",
+              "112",
+              "172",
+              "349",
+              "181/35",
+              "235/31",
+              "37",
+              "24/119"
+            ],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mle ʕayna m-i=gawruṯ-ayḏe "
@@ -807,18 +851,54 @@
                 "value": "[MT]"
               }
             ],
-            "text": "mle u=bayto maye ʻdas Haus füllte sich mit Wasserʼ; 379; prs 28/21; mle ʕayna m-i=gawruṯ-ayḏe ʻihr Auge wurde von seiner Männlichkeit erfülltʼ; 379; 29/94, 105, 112, 172; nafəq u=šaṭ xd-u=baḥar, nafəl ʕal i=walaye. hawi ġəlbġəlb b-i=walaye. malyo i=walaye maye ʻder Fluss ergoss sich über die Stadt wie ein Meer. Ein grosses Getöse erhob sich in derselben, und sie füllte sich mit Wasserʼ; 349; prs 181/35; prs 235/31, 37; uno harke mədde də-tloṯ=əšne fayəšno harke; ʕal-aṯe mkadarno w-lebi mle ġamo ‘Ich bin ja schon seit drei Jahren hier. Deswegen bin ich betrübt und mein Herz hat sich mit Kummer gefüllt’; 24/119 [MT]"
+            "text": "mle ʕayna m-i=gawruṯ-ayḏe ʻihr Auge wurde von seiner Männlichkeit erfülltʼ; 379; 29/94, 105, 112, 172; nafəq u=šaṭ xd-u=baḥar, nafəl ʕal i=walaye. hawi ġəlbġəlb b-i=walaye. malyo i=walaye maye ʻder Fluss ergoss sich über die Stadt wie ein Meer. Ein grosses Getöse erhob sich in derselben, und sie füllte sich mit Wasserʼ; 349; prs 181/35; prs 235/31, 37; uno harke mədde də-tloṯ=əšne fayəšno harke; ʕal-aṯe mkadarno w-lebi mle ġamo ‘Ich bin ja schon seit drei Jahren hier. Deswegen bin ich betrübt und mein Herz hat sich mit Kummer gefüllt’; 24/119 [MT]"
+          },
+          {
+            "turoyo": "mmanəʕ",
+            "translations": ["er wurde mager, schwach"],
+            "references": ["2", "630"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mmanəʕ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wurde mager, schwachʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "630"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) mmanəʕ ʻer wurde mager, schwachʼ; 630;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "k-məmle u=baytayḏan maye prs a=plažat yaʕni ad=dəkoṯo d-u=sḥoyo d-u=baḥar w aq=qahwat d-ʕal femə-d-u=baḥar w d-kət-ne ʕal rišə-d-u=ṭuro w ḥáṣəli kul xaṣra k-məmloyo rabe w naʕime k-uweno mamnūn ḥatta d-gawi d-məmle muklo",
-            "translations": [
-              "unser Haus füllt sich mit Wasser",
-              "‘die Strände, das heisst die Orte, wo man im Meere baden kann, die Kaffeehäuser am Ufer des Meeres und oben auf dem Berge, kurz alle Seiten, füllen sich mit grossen und kleinen’",
-              "‘Ich bin sehr dankbar, damit mein Magen einmal voll wird’"
-            ],
-            "references": ["380", "27/32", "4/45", "24/273"],
+            "turoyo": "k-məmle u=baytayḏan maye prs",
+            "translations": ["unser Haus füllt sich mit Wasser"],
+            "references": ["380", "27/32"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -855,7 +935,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "k-məmle u=baytayḏan maye ʻunser Haus füllt sich mit Wasserʼ; 380; prs 27/32;"
+          },
+          {
+            "turoyo": "a=plažat yaʕni ad=dəkoṯo d-u=sḥoyo d-u=baḥar w aq=qahwat d-ʕal femə-d-u=baḥar w d-kət-ne ʕal rišə-d-u=ṭuro w ḥáṣəli kul xaṣra k-məmloyo rabe w naʕime",
+            "translations": [
+              "‘die Strände, das heisst die Orte, wo man im Meere baden kann, die Kaffeehäuser am Ufer des Meeres und oben auf dem Berge, kurz alle Seiten, füllen sich mit grossen und kleinen’"
+            ],
+            "references": ["4/45"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " a=plažat"
@@ -943,7 +1033,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "a=plažat, yaʕni, ad=dəkoṯo d-u=sḥoyo, d-u=baḥar, w aq=qahwat, d-ʕal femə-d-u=baḥar, w d-kət-ne ʕal rišə-d-u=ṭuro, w ḥáṣəli kul xaṣra k-məmloyo, rabe w naʕime ‘die Strände, das heisst die Orte, wo man im Meere baden kann, die Kaffeehäuser am Ufer des Meeres und oben auf dem Berge, kurz alle Seiten, füllen sich mit grossen und kleinen’; 4/45;"
+          },
+          {
+            "turoyo": "k-uweno mamnūn ḥatta d-gawi d-məmle muklo",
+            "translations": [
+              "‘Ich bin sehr dankbar, damit mein Magen einmal voll wird’"
+            ],
+            "references": ["24/273"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " k-uweno mamnūn ḥatta d-gawi d-məmle muklo "
@@ -965,17 +1065,78 @@
                 "value": "24/273"
               }
             ],
-            "text": "k-məmle u=baytayḏan maye ʻunser Haus füllt sich mit Wasserʼ; 380; prs 27/32; a=plažat, yaʕni, ad=dəkoṯo d-u=sḥoyo, d-u=baḥar, w aq=qahwat, d-ʕal femə-d-u=baḥar, w d-kət-ne ʕal rišə-d-u=ṭuro, w ḥáṣəli kul xaṣra k-məmloyo, rabe w naʕime ‘die Strände, das heisst die Orte, wo man im Meere baden kann, die Kaffeehäuser am Ufer des Meeres und oben auf dem Berge, kurz alle Seiten, füllen sich mit grossen und kleinen’; 4/45; k-uweno mamnūn ḥatta d-gawi d-məmle muklo ‘Ich bin sehr dankbar, damit mein Magen einmal voll wird’; 24/273"
+            "text": "k-uweno mamnūn ḥatta d-gawi d-məmle muklo ‘Ich bin sehr dankbar, damit mein Magen einmal voll wird’; 24/273"
+          },
+          {
+            "turoyo": "yawmo ʕal yawmo ko-mimanəʕ w k-owe ḏ̣ăʕīf",
+            "translations": [
+              "er nahm Tag für Tag ab und wurde schwach und mager"
+            ],
+            "references": ["2", "630", "87/9"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " yawmo ʕal yawmo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-mimanəʕ w k-owe ḏ̣ăʕīf "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer nahm Tag für Tag ab und wurde schwach und magerʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "630"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "87/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) yawmo ʕal yawmo, ko-mimanəʕ w k-owe ḏ̣ăʕīf ʻer nahm Tag für Tag ab und wurde schwach und magerʼ; 630; 87/9;"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "ṭowo am=may-ani m-i=navayto məmlən-wa at=tart-ani məmloyo-wa maye šaʕuṯe",
+            "turoyo": "ṭowo am=may-ani m-i=navayto məmlən-wa at=tart-ani",
             "translations": [
-              "mit dem Wasser aus den mittleren (Becken) müssten die beiden anderen gefüllt werden",
-              "‘It (horn, f.) filled with yellow liquid’"
+              "mit dem Wasser aus den mittleren (Becken) müssten die beiden anderen gefüllt werden"
             ],
-            "references": ["381", "100/20", "LuF 294/29"],
+            "references": ["381", "100/20"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -1012,7 +1173,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ṭowo am=may-ani m-i=navayto məmlən-wa at=tart-ani ʻmit dem Wasser aus den mittleren (Becken) müssten die beiden anderen gefüllt werdenʼ; 381; 100/20;"
+          },
+          {
+            "turoyo": "məmloyo-wa maye šaʕuṯe",
+            "translations": ["‘It (horn, f.) filled with yellow liquid’"],
+            "references": ["LuF 294/29"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " məmloyo-wa maye šaʕuṯe "
@@ -1034,7 +1203,7 @@
                 "value": ";"
               }
             ],
-            "text": "ṭowo am=may-ani m-i=navayto məmlən-wa at=tart-ani ʻmit dem Wasser aus den mittleren (Becken) müssten die beiden anderen gefüllt werdenʼ; 381; 100/20; məmloyo-wa maye šaʕuṯe ‘It (horn, f.) filled with yellow liquid’ LuF 294/29;"
+            "text": "məmloyo-wa maye šaʕuṯe ‘It (horn, f.) filled with yellow liquid’ LuF 294/29;"
           }
         ],
         "Imperativ": [
@@ -1101,13 +1270,11 @@
         ],
         "Part pass.": [
           {
-            "turoyo": "k-omər aṯi b-ʕaṣriye m-u=šuqo w disa xəd zlām t-owe malyo ġăḏ̣ab mǝ́lle-la l-i=aṯtayḏe izáx mamṭi-li i=ḥaṭr-ayo d-moḥen-ax! m-u=ʕamo w ʕulmo lo=k-miqafe dukṯo b-tu wāṣṭa. kulle malye šləḥli mləṯto ṭino",
+            "turoyo": "k-omər aṯi b-ʕaṣriye m-u=šuqo w disa xəd zlām t-owe malyo ġăḏ̣ab mǝ́lle-la l-i=aṯtayḏe izáx mamṭi-li i=ḥaṭr-ayo d-moḥen-ax!",
             "translations": [
-              "‘am Abend kam der Mann vom Markt nach Hause und wieder sagte, wie ein wuterfüllter Mann, zu seiner Frau: Geh und bringe mir den Stock, dass ich dich prügele!’",
-              "‘wegen des vielen Volks und der vielen Leute ist in keinem Verkehrsmittel Platz zu finden’",
-              "‘ich zog (sie) aus, sie waren voller Dreck’"
+              "‘am Abend kam der Mann vom Markt nach Hause und wieder sagte, wie ein wuterfüllter Mann, zu seiner Frau: Geh und bringe mir den Stock, dass ich dich prügele!’"
             ],
-            "references": ["375", "62/38", "4/61", "LB 259"],
+            "references": ["375", "62/38"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -1168,7 +1335,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "k-omər aṯi b-ʕaṣriye m-u=šuqo, w disa xəd zlām t-owe malyo ġăḏ̣ab, mǝ́lle-la l-i=aṯtayḏe: izáx mamṭi-li i=ḥaṭr-ayo d-moḥen-ax! ‘am Abend kam der Mann vom Markt nach Hause und wieder sagte, wie ein wuterfüllter Mann, zu seiner Frau: Geh und bringe mir den Stock, dass ich dich prügele!’; 375; 62/38;"
+          },
+          {
+            "turoyo": "m-u=ʕamo w ʕulmo lo=k-miqafe dukṯo b-tu wāṣṭa. kulle malye",
+            "translations": [
+              "‘wegen des vielen Volks und der vielen Leute ist in keinem Verkehrsmittel Platz zu finden’"
+            ],
+            "references": ["4/61"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " m-u=ʕamo w ʕulmo"
@@ -1200,7 +1377,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "m-u=ʕamo w ʕulmo, lo=k-miqafe dukṯo b-tu wāṣṭa. kulle malye ‘wegen des vielen Volks und der vielen Leute ist in keinem Verkehrsmittel Platz zu finden’; 4/61;"
+          },
+          {
+            "turoyo": "šləḥli mləṯto ṭino",
+            "translations": ["‘ich zog (sie) aus, sie waren voller Dreck’"],
+            "references": ["LB 259"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " šləḥli"
@@ -1230,7 +1415,7 @@
                 "value": ";"
               }
             ],
-            "text": "k-omər aṯi b-ʕaṣriye m-u=šuqo, w disa xəd zlām t-owe malyo ġăḏ̣ab, mǝ́lle-la l-i=aṯtayḏe: izáx mamṭi-li i=ḥaṭr-ayo d-moḥen-ax! ‘am Abend kam der Mann vom Markt nach Hause und wieder sagte, wie ein wuterfüllter Mann, zu seiner Frau: Geh und bringe mir den Stock, dass ich dich prügele!’; 375; 62/38; m-u=ʕamo w ʕulmo, lo=k-miqafe dukṯo b-tu wāṣṭa. kulle malye ‘wegen des vielen Volks und der vielen Leute ist in keinem Verkehrsmittel Platz zu finden’; 4/61; šləḥli, mləṯto ṭino ‘ich zog (sie) aus, sie waren voller Dreck’ LB 259;"
+            "text": "šləḥli, mləṯto ṭino ‘ich zog (sie) aus, sie waren voller Dreck’ LB 259;"
           }
         ]
       }
@@ -1323,46 +1508,6 @@
               }
             ],
             "text": "2) manaʕli ruḥi m-u=muklo ʻich verweigerte die Nahrung und magerte abʼ; 629;"
-          },
-          {
-            "turoyo": "mmanəʕ",
-            "translations": ["er wurde mager, schwach"],
-            "references": ["2", "630"],
-            "tokens": [
-              {
-                "kind": "ref",
-                "value": "2"
-              },
-              {
-                "kind": "punct",
-                "value": ")"
-              },
-              {
-                "kind": "turoyo",
-                "value": " mmanəʕ "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻer wurde mager, schwachʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "630"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "2) mmanəʕ ʻer wurde mager, schwachʼ; 630;"
           }
         ],
         "Part act.": [
@@ -1445,70 +1590,6 @@
             ],
             "text": "1) tamo ab=bakčiye an=nəṭure, maklalle huḏoyo mǝ́rral-le: “kito manəʕ” ʻdort hileten ihn die Wächter, die Torhüter, und sprachen zu ihm: “Es liegt ein Verbot vor”ʼ; 629; 24/300;"
           }
-        ],
-        "Infectum": [
-          {
-            "turoyo": "yawmo ʕal yawmo ko-mimanəʕ w k-owe ḏ̣ăʕīf",
-            "translations": [
-              "er nahm Tag für Tag ab und wurde schwach und mager"
-            ],
-            "references": ["2", "630", "87/9"],
-            "tokens": [
-              {
-                "kind": "ref",
-                "value": "2"
-              },
-              {
-                "kind": "punct",
-                "value": ")"
-              },
-              {
-                "kind": "turoyo",
-                "value": " yawmo ʕal yawmo"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " ko-mimanəʕ w k-owe ḏ̣ăʕīf "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻer nahm Tag für Tag ab und wurde schwach und magerʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "630"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "87/9"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "2) yawmo ʕal yawmo, ko-mimanəʕ w k-owe ḏ̣ăʕīf ʻer nahm Tag für Tag ab und wurde schwach und magerʼ; 630; 87/9;"
-          }
         ]
       }
     },
@@ -1520,7 +1601,7 @@
           {
             "turoyo": "iḏa d-oṯe d-marfétul-li lu=g-mamnáʕnu-lxu m-i=marʕa d-i=baxč-aṯe",
             "translations": [
-              "‘Wenn ihr mich freilaßt, werde ich euch am Abweiden dieses Gartens nicht hindern’"
+              "Wenn ihr mich freilaßt, werde ich euch am Abweiden dieses Gartens nicht hindern"
             ],
             "references": ["24/177"],
             "tokens": [

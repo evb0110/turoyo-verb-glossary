@@ -18,12 +18,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "l-u=zlām səxle u=ḥawrayḏi ʕal ak=kallawat səxle u=ḥawronayḏe ʕal ak=kallawat",
+            "turoyo": "l-u=zlām səxle u=ḥawrayḏi ʕal ak=kallawat",
             "translations": [
-              "der Mann bedrängte meinen Freund wegen des Geldes",
-              "er bedrängte seine Freunde um Geld"
+              "der Mann bedrängte meinen Freund wegen des Geldes"
             ],
-            "references": ["581", "506"],
+            "references": ["581"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -48,7 +47,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "l-u=zlām səxle u=ḥawrayḏi ʕal ak=kallawat ʻder Mann bedrängte meinen Freund wegen des Geldesʼ; 581;"
+          },
+          {
+            "turoyo": "səxle u=ḥawronayḏe ʕal ak=kallawat",
+            "translations": ["er bedrängte seine Freunde um Geld"],
+            "references": ["506"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " səxle u=ḥawronayḏe ʕal ak=kallawat "
@@ -74,7 +81,7 @@
                 "value": ";"
               }
             ],
-            "text": "l-u=zlām səxle u=ḥawrayḏi ʕal ak=kallawat ʻder Mann bedrängte meinen Freund wegen des Geldesʼ; 581; səxle u=ḥawronayḏe ʕal ak=kallawat ʻer bedrängte seine Freunde um Geldʼ; 506;"
+            "text": "səxle u=ḥawronayḏe ʕal ak=kallawat ʻer bedrängte seine Freunde um Geldʼ; 506;"
           }
         ]
       }

@@ -18,14 +18,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "lə=madəmlux arbaʕ=saʕayat d-zəbṭat nawba ʕal u=qawro d-babayna w ġắlabe waxtat madəmli u=med-ano ʕal d-kət-wa i=aṯto mhaymanto w-ruḥmo-wa aloho <…> madəmla ʕal u=xayər w-ʕal i=ṭowuṯo w-madəmle u=šuġl-ano",
+            "turoyo": "lə=madəmlux arbaʕ=saʕayat d-zəbṭat nawba ʕal u=qawro d-babayna",
             "translations": [
-              "keine vier Stunden hast du durchgehalten mit der Wache am Grabe unseres Vaters",
-              "ich habe diese Sache ja sehr lange getrieben",
-              "Since the wife was devout and loved God, she kept doing good deeds",
-              "‘So the things went on’"
+              "keine vier Stunden hast du durchgehalten mit der Wache am Grabe unseres Vaters"
             ],
-            "references": ["539", "61/56", "RT 31", "43/5", "JL 20.7.35"],
+            "references": ["539", "61/56"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -62,7 +59,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "lə=madəmlux arbaʕ=saʕayat d-zəbṭat nawba ʕal u=qawro d-babayna ʻkeine vier Stunden hast du durchgehalten mit der Wache am Grabe unseres Vatersʼ; 539; 61/56;"
+          },
+          {
+            "turoyo": "w ġắlabe waxtat madəmli u=med-ano",
+            "translations": ["ich habe diese Sache ja sehr lange getrieben"],
+            "references": ["RT 31"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " w ġắlabe waxtat madəmli u=med-ano "
@@ -86,7 +91,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "w ġắlabe waxtat madəmli u=med-ano ʻich habe diese Sache ja sehr lange getriebenʼ; RT 31;"
+          },
+          {
+            "turoyo": "ʕal d-kət-wa i=aṯto mhaymanto w-ruḥmo-wa aloho <…> madəmla ʕal u=xayər w-ʕal i=ṭowuṯo w-madəmle u=šuġl-ano",
+            "translations": [
+              "“Since the wife was devout and loved God, she kept doing good deeds”",
+              "‘So the things went on’"
+            ],
+            "references": ["43/5", "JL 20.7.35"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ʕal d-kət-wa i=aṯto mhaymanto w-ruḥmo-wa aloho <…> madəmla ʕal u=xayər w-ʕal i=ṭowuṯo "
@@ -140,7 +156,7 @@
                 "value": ";"
               }
             ],
-            "text": "lə=madəmlux arbaʕ=saʕayat d-zəbṭat nawba ʕal u=qawro d-babayna ʻkeine vier Stunden hast du durchgehalten mit der Wache am Grabe unseres Vatersʼ; 539; 61/56; w ġắlabe waxtat madəmli u=med-ano ʻich habe diese Sache ja sehr lange getriebenʼ; RT 31; ʕal d-kət-wa i=aṯto mhaymanto w-ruḥmo-wa aloho <…> madəmla ʕal u=xayər w-ʕal i=ṭowuṯo “Since the wife was devout and loved God, she kept doing good deeds”; 43/5 [MT]; w-madəmle u=šuġl-ano ‘So the things went on’ JL 20.7.35;"
+            "text": "ʕal d-kət-wa i=aṯto mhaymanto w-ruḥmo-wa aloho <…> madəmla ʕal u=xayər w-ʕal i=ṭowuṯo “Since the wife was devout and loved God, she kept doing good deeds”; 43/5 [MT]; w-madəmle u=šuġl-ano ‘So the things went on’ JL 20.7.35;"
           }
         ],
         "Infectum": [
@@ -148,7 +164,7 @@
             "turoyo": "alo madəm-lox prs prs aloho madəm-xu ŭbal-xu ḥaye yarixe w basime",
             "translations": [
               "Gott schenke dir langes Leben",
-              "‘Gott möge Sie erhalten und Ihnen ein langes, angenehmes Leben schencken!’"
+              "Gott möge Sie erhalten und Ihnen ein langes, angenehmes Leben schencken!"
             ],
             "references": [
               "545",

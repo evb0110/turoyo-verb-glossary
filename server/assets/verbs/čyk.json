@@ -18,21 +18,9 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "čəkle u=sayfo b-gawe prs čəkle u=rawš-ayḏe taḥt i=walaye čəkla b-u=naqwo prs",
-            "translations": [
-              "er stiess ihm das Schwert in den Bauch",
-              "er schob seine Schaufel unter die Stadt",
-              "sie steckte ihn in das Loch"
-            ],
-            "references": [
-              "1",
-              "506",
-              "106/13",
-              "506",
-              "73/429",
-              "506",
-              "184/7"
-            ],
+            "turoyo": "čəkle u=sayfo b-gawe prs",
+            "translations": ["er stiess ihm das Schwert in den Bauch"],
+            "references": ["1", "506", "106/13"],
             "tokens": [
               {
                 "kind": "ref",
@@ -77,7 +65,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) čəkle u=sayfo b-gawe ʻer stiess ihm das Schwert in den Bauchʼ; 506; prs 106/13;"
+          },
+          {
+            "turoyo": "čəkle u=rawš-ayḏe taḥt i=walaye",
+            "translations": ["er schob seine Schaufel unter die Stadt"],
+            "references": ["506", "73/429"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " čəkle u=rawš-ayḏe taḥt i=walaye "
@@ -113,7 +109,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "čəkle u=rawš-ayḏe taḥt i=walaye ʻer schob seine Schaufel unter die Stadtʼ; 506; 73/429;"
+          },
+          {
+            "turoyo": "čəkla b-u=naqwo prs",
+            "translations": ["sie steckte ihn in das Loch"],
+            "references": ["506", "184/7"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " čəkla b-u=naqwo "
@@ -151,15 +155,12 @@
                 "value": ";"
               }
             ],
-            "text": "1) čəkle u=sayfo b-gawe ʻer stiess ihm das Schwert in den Bauchʼ; 506; prs 106/13; čəkle u=rawš-ayḏe taḥt i=walaye ʻer schob seine Schaufel unter die Stadtʼ; 506; 73/429; čəkla b-u=naqwo ʻsie steckte ihn in das Lochʼ; 506; prs 184/7;"
+            "text": "čəkla b-u=naqwo ʻsie steckte ihn in das Lochʼ; 506; prs 184/7;"
           },
           {
-            "turoyo": "čəkle ruḥe taḥt i=kone azzé dūz doġri čəkle ruḥe bayn ar=rəšwone",
-            "translations": [
-              "er schlüpfte unter das Zelt",
-              "‘Er ging gerade zu und schlüpfte zwischen die Packsättel der Esel’"
-            ],
-            "references": ["2", "506", "29/62", "29/400"],
+            "turoyo": "čəkle ruḥe taḥt i=kone",
+            "translations": ["er schlüpfte unter das Zelt"],
+            "references": ["2", "506", "29/62"],
             "tokens": [
               {
                 "kind": "ref",
@@ -204,7 +205,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "2) čəkle ruḥe taḥt i=kone ʻer schlüpfte unter das Zeltʼ; 506; 29/62;"
+          },
+          {
+            "turoyo": "azzé dūz doġri čəkle ruḥe bayn ar=rəšwone",
+            "translations": [
+              "‘Er ging gerade zu und schlüpfte zwischen die Packsättel der Esel’"
+            ],
+            "references": ["29/400"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " azzé dūz doġri čəkle ruḥe bayn ar=rəšwone "
@@ -226,7 +237,7 @@
                 "value": "29/400"
               }
             ],
-            "text": "2) čəkle ruḥe taḥt i=kone ʻer schlüpfte unter das Zeltʼ; 506; 29/62; azzé dūz doġri čəkle ruḥe bayn ar=rəšwone ‘Er ging gerade zu und schlüpfte zwischen die Packsättel der Esel’; 29/400"
+            "text": "azzé dūz doġri čəkle ruḥe bayn ar=rəšwone ‘Er ging gerade zu und schlüpfte zwischen die Packsättel der Esel’; 29/400"
           }
         ],
         "Infectum": [
@@ -448,12 +459,11 @@
         ],
         "Imperativ": [
           {
-            "turoyo": "čuk-e b-gawe ṣraṭ gawe prs čək u=rawšo taḥt i=walaye w-tlay-a",
+            "turoyo": "čuk-e b-gawe ṣraṭ gawe prs",
             "translations": [
-              "stich es (das Schwert) ihm in den Bauch und schlitze ihm denselben auf",
-              "‘Place the shovel under the city and raise it’"
+              "stich es (das Schwert) ihm in den Bauch und schlitze ihm denselben auf"
             ],
-            "references": ["1", "526", "106/11", "73/428"],
+            "references": ["1", "526", "106/11"],
             "tokens": [
               {
                 "kind": "ref",
@@ -506,7 +516,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) čuk-e b-gawe, ṣraṭ gawe ʻstich es (das Schwert) ihm in den Bauch und schlitze ihm denselben aufʼ; 526; prs 106/11;"
+          },
+          {
+            "turoyo": "čək u=rawšo taḥt i=walaye w-tlay-a",
+            "translations": ["‘Place the shovel under the city and raise it’"],
+            "references": ["73/428"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " čək u=rawšo taḥt i=walaye w-tlay-a "
@@ -528,40 +546,20 @@
                 "value": ";"
               }
             ],
-            "text": "1) čuk-e b-gawe, ṣraṭ gawe ʻstich es (das Schwert) ihm in den Bauch und schlitze ihm denselben aufʼ; 526; prs 106/11; čək u=rawšo taḥt i=walaye w-tlay-a ‘Place the shovel under the city and raise it’ 73/428;"
+            "text": "čək u=rawšo taḥt i=walaye w-tlay-a ‘Place the shovel under the city and raise it’ 73/428;"
           }
         ]
       }
     },
     {
       "stem": "Detransitive",
-      "forms": [],
+      "forms": ["čīk", "mičək"],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "čīk baynalle w l-u=sabʕo čīk u=šiḏo b-lebi fəlge d-u=gald-ayḏa lə=čīk b-femi čīk b-i=qamayt-ayḏan maklelelan iḏi čiko ʕul m-i=dapṯo ḥreto grəšli i=dapṯ-ayo-ste ánnaqla ko-ḥanno kale-yo čuko ko-čīk baytək b-u=bayt-aṯṯe <…> omər –",
-            "translations": [
-              "er trat zwischen sie und den Löwen",
-              "der Satan schlich mir ins Herz",
-              "nicht einmal die Hälfte davon habe ich in den Mund gesteckt",
-              "sie überholten uns und hielten uns an",
-              "meine Hand gelangte über das nächste Brett, dass ich dann auch herunterzog",
-              "hano ádṣafro mḥalaqle <…> čīk lawġəl gaban <…> hat-ste oʕdo ʕabirət, bəṯṯər me d-čikət b-i=səṭra d-u=baytayḏy d-maqṭanno aqqa naʕim-ani qumux, k-oben-ux soz ono lə=g-ṭoreno mede oṯe aʕlux",
-              "nun, ich schaute so, siehe, da war ein Vogel, da war ein Sperling in ihr Haus geflogen. <…> Er sagte: “Dieser (Vogel) ist heute morgen zu uns geflogen, <…> er ist zu uns hinein geflogen <…>. Du bist jetzt auch hineingekommen und nachdem du dich unter den Schutz meines Hauses gestellt hast, gebe ich dir mein Versprechen, auch wenn ich alle diese Kinder deinetwegen töten liesse, würde ich nicht erlauben, dass dir etwas zustösst!’’"
-            ],
-            "references": [
-              "2",
-              "530",
-              "61/112",
-              "530",
-              "52/174",
-              "88/177",
-              "LB 109",
-              "EL 79",
-              "LB 191",
-              "LB 280",
-              "282"
-            ],
+            "turoyo": "čīk baynalle w l-u=sabʕo",
+            "translations": ["er trat zwischen sie und den Löwen"],
+            "references": ["2", "530", "61/112"],
             "tokens": [
               {
                 "kind": "ref",
@@ -606,7 +604,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "2)čīk baynalle w l-u=sabʕo ʻer trat zwischen sie und den Löwenʼ; 530; 61/112;"
+          },
+          {
+            "turoyo": "čīk u=šiḏo b-lebi",
+            "translations": ["der Satan schlich mir ins Herz"],
+            "references": ["530", "52/174", "88/177"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " čīk u=šiḏo b-lebi "
@@ -654,7 +660,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "čīk u=šiḏo b-lebi ʻder Satan schlich mir ins Herzʼ; 530; 52/174; 88/177;"
+          },
+          {
+            "turoyo": "fəlge d-u=gald-ayḏa lə=čīk b-femi",
+            "translations": [
+              "nicht einmal die Hälfte davon habe ich in den Mund gesteckt"
+            ],
+            "references": ["LB 109"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " fəlge d-u=gald-ayḏa lə=čīk b-femi "
@@ -678,7 +694,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "fəlge d-u=gald-ayḏa lə=čīk b-femi ʻnicht einmal die Hälfte davon habe ich in den Mund gestecktʼ; LB 109;"
+          },
+          {
+            "turoyo": "čīk b-i=qamayt-ayḏan maklelelan iḏi čiko ʕul m-i=dapṯo ḥreto grəšli i=dapṯ-ayo-ste",
+            "translations": [
+              "sie überholten uns und hielten uns an",
+              "meine Hand gelangte über das nächste Brett, dass ich dann auch herunterzog"
+            ],
+            "references": ["EL 79", "LB 191"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " čīk b-i=qamayt-ayḏan"
@@ -738,7 +765,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "čīk b-i=qamayt-ayḏan, maklelelan ʻsie überholten uns und hielten uns anʼ EL 79; iḏi čiko ʕul m-i=dapṯo ḥreto, grəšli i=dapṯ-ayo-ste ʻmeine Hand gelangte über das nächste Brett, dass ich dann auch herunterzogʼ; LB 191;"
+          },
+          {
+            "turoyo": "ánnaqla ko-ḥanno kale-yo čuko ko-čīk baytək b-u=bayt-aṯṯe <…> omər –",
+            "translations": [
+              "“hano ádṣafro mḥalaqle <…> čīk lawġəl gaban <…> hat-ste oʕdo ʕabirət, bəṯṯər me d-čikət b-i=səṭra d-u=baytayḏy d-maqṭanno aqqa naʕim-ani qumux, k-oben-ux soz ono lə=g-ṭoreno mede oṯe aʕlux”",
+              "nun, ich schaute so, siehe, da war ein Vogel, da war ein Sperling in ihr Haus geflogen. <…> Er sagte: “Dieser (Vogel) ist heute morgen zu uns geflogen, <…> er ist zu uns hinein geflogen <…>. Du bist jetzt auch hineingekommen und nachdem du dich unter den Schutz meines Hauses gestellt hast, gebe ich dir mein Versprechen, auch wenn ich alle diese Kinder deinetwegen töten liesse, würde ich nicht erlauben, dass dir etwas zustösst!’’"
+            ],
+            "references": ["LB 280", "282"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ánnaqla ko-ḥanno kale-yo čuko"
@@ -796,7 +834,7 @@
                 "value": ";"
               }
             ],
-            "text": "2)čīk baynalle w l-u=sabʕo ʻer trat zwischen sie und den Löwenʼ; 530; 61/112; čīk u=šiḏo b-lebi ʻder Satan schlich mir ins Herzʼ; 530; 52/174; 88/177; fəlge d-u=gald-ayḏa lə=čīk b-femi ʻnicht einmal die Hälfte davon habe ich in den Mund gestecktʼ; LB 109; čīk b-i=qamayt-ayḏan, maklelelan ʻsie überholten uns und hielten uns anʼ EL 79; iḏi čiko ʕul m-i=dapṯo ḥreto, grəšli i=dapṯ-ayo-ste ʻmeine Hand gelangte über das nächste Brett, dass ich dann auch herunterzogʼ; LB 191; ánnaqla ko-ḥanno kale-yo čuko, ko-čīk baytək b-u=bayt-aṯṯe <…> omər: “hano ádṣafro mḥalaqle <…> čīk lawġəl gaban <…> hat-ste oʕdo ʕabirət, bəṯṯər me d-čikət b-i=səṭra d-u=baytayḏy d-maqṭanno aqqa naʕim-ani qumux, k-oben-ux soz ono lə=g-ṭoreno mede oṯe aʕlux” ʻnun, ich schaute so, siehe, da war ein Vogel, da war ein Sperling in ihr Haus geflogen. <…> Er sagte: “Dieser (Vogel) ist heute morgen zu uns geflogen, <…> er ist zu uns hinein geflogen <…>. Du bist jetzt auch hineingekommen und nachdem du dich unter den Schutz meines Hauses gestellt hast, gebe ich dir mein Versprechen, auch wenn ich alle diese Kinder deinetwegen töten liesse, würde ich nicht erlauben, dass dir etwas zustösst!’’ʼ; LB 280–282;"
+            "text": "ánnaqla ko-ḥanno kale-yo čuko, ko-čīk baytək b-u=bayt-aṯṯe <…> omər: “hano ádṣafro mḥalaqle <…> čīk lawġəl gaban <…> hat-ste oʕdo ʕabirət, bəṯṯər me d-čikət b-i=səṭra d-u=baytayḏy d-maqṭanno aqqa naʕim-ani qumux, k-oben-ux soz ono lə=g-ṭoreno mede oṯe aʕlux” ʻnun, ich schaute so, siehe, da war ein Vogel, da war ein Sperling in ihr Haus geflogen. <…> Er sagte: “Dieser (Vogel) ist heute morgen zu uns geflogen, <…> er ist zu uns hinein geflogen <…>. Du bist jetzt auch hineingekommen und nachdem du dich unter den Schutz meines Hauses gestellt hast, gebe ich dir mein Versprechen, auch wenn ich alle diese Kinder deinetwegen töten liesse, würde ich nicht erlauben, dass dir etwas zustösst!’’ʼ; LB 280–282;"
           },
           {
             "turoyo": "ko-čik ḥarb b-qarʕe d-u=ṭuro",
@@ -1007,31 +1045,11 @@
         ],
         "Infectum": [
           {
-            "turoyo": "čīk baynaṯṯe xud u=dewo d-mičək bayn aʕ=ʕeze mičokət bayn al=lappat d-i=maraḥt-ayo ko-mičoqi ak=kube b-ḥaṣi bas mədə-k-mičoko b-alfo=naqwe naʕime w-ṣalḥe lo=k-minaḏ̣fo ḥəlli ko-mičəkno b-u=ṣalon-aṯṯe d-ko-ʕobər l-u=bayt-aṯṯe ubaʕno <…> duʕanno l-i=qabil-ayḏi w-l-u=kursiy-ayḏi d-mičəkno bayn aʕ=ʕašair d-kət-ne ʕayəd diḏi gd-oṯe g-mičək b-i=nuqr-aṯe w-g-maqlibina u=ʕafro aʕle w-gəm-məfṭəṣ b-u=ʕafro g-xulṣina mene b-lalyo ko-mičək b-šqifo mede hul ṣafro",
+            "turoyo": "čīk baynaṯṯe xud u=dewo d-mičək bayn aʕ=ʕeze",
             "translations": [
-              "er fuhr unter sie, wie der Wolf unter die Ziegen fährt",
-              "du gerätst dem frechen Weib in die Klauen",
-              "(dabei) stachen mir Dornen in meinen Rücken",
-              "aber da sie (die Wanze) in Tausend kleine Löcher und Ritzen schlüpft, lässt sie sich doch nicht ganz wegfegen",
-              "ich merkte, dass ich beinahe in ihrem Flur, der in das Hausinnere führte, wäre",
-              "‘Ich möchte <…> daß ich zu meinem Stamme zurückkehren kann und zu meinem Herrensitz, daß ich mich unter die Stämme begeben kann, die mir angehören’",
-              "‘Dann wird er kommen und in diese Grube hineingeraten, und dann stülpen wir die Erde auf ihn, und er wird im dem Erdreich ersticken und wir werden ihn los’",
-              "‘At night he used to penetrate in some earth cleft and [stay there] till morning’"
+              "er fuhr unter sie, wie der Wolf unter die Ziegen fährt"
             ],
-            "references": [
-              "2",
-              "532",
-              "78/113",
-              "68/462",
-              "532",
-              "75/122",
-              "LB 55",
-              "1/31",
-              "LB 203",
-              "29/243",
-              "29/275",
-              "43/28"
-            ],
+            "references": ["2", "532", "78/113", "68/462"],
             "tokens": [
               {
                 "kind": "ref",
@@ -1088,7 +1106,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "2) čīk baynaṯṯe xud u=dewo d-mičək bayn aʕ=ʕeze ʻer fuhr unter sie, wie der Wolf unter die Ziegen fährtʼ; 532; 78/113; 68/462;"
+          },
+          {
+            "turoyo": "mičokət bayn al=lappat d-i=maraḥt-ayo",
+            "translations": ["du gerätst dem frechen Weib in die Klauen"],
+            "references": ["532", "75/122"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mičokət bayn al=lappat d-i=maraḥt-ayo "
@@ -1124,7 +1150,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mičokət bayn al=lappat d-i=maraḥt-ayo ʻdu gerätst dem frechen Weib in die Klauenʼ; 532; 75/122;"
+          },
+          {
+            "turoyo": "ko-mičoqi ak=kube b-ḥaṣi",
+            "translations": ["(dabei) stachen mir Dornen in meinen Rücken"],
+            "references": ["LB 55"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ko-mičoqi ak=kube b-ḥaṣi "
@@ -1148,7 +1182,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ko-mičoqi ak=kube b-ḥaṣi ʻ(dabei) stachen mir Dornen in meinen Rückenʼ; LB 55;"
+          },
+          {
+            "turoyo": "bas mədə-k-mičoko b-alfo=naqwe naʕime w-ṣalḥe lo=k-minaḏ̣fo",
+            "translations": [
+              "aber da sie (die Wanze) in Tausend kleine Löcher und Ritzen schlüpft, lässt sie sich doch nicht ganz wegfegen"
+            ],
+            "references": ["1/31"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " bas mədə-k-mičoko b-alfo=naqwe naʕime w-ṣalḥe lo=k-minaḏ̣fo "
@@ -1172,7 +1216,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "bas mədə-k-mičoko b-alfo=naqwe naʕime w-ṣalḥe lo=k-minaḏ̣fo ʻaber da sie (die Wanze) in Tausend kleine Löcher und Ritzen schlüpft, lässt sie sich doch nicht ganz wegfegenʼ; 1/31;"
+          },
+          {
+            "turoyo": "ḥəlli ko-mičəkno b-u=ṣalon-aṯṯe d-ko-ʕobər l-u=bayt-aṯṯe ubaʕno <…> duʕanno l-i=qabil-ayḏi w-l-u=kursiy-ayḏi d-mičəkno bayn aʕ=ʕašair d-kət-ne ʕayəd diḏi",
+            "translations": [
+              "ich merkte, dass ich beinahe in ihrem Flur, der in das Hausinnere führte, wäre",
+              "‘Ich möchte <…> daß ich zu meinem Stamme zurückkehren kann und zu meinem Herrensitz, daß ich mich unter die Stämme begeben kann, die mir angehören’"
+            ],
+            "references": ["LB 203", "29/243"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ḥəlli ko-mičəkno b-u=ṣalon-aṯṯe d-ko-ʕobər l-u=bayt-aṯṯe "
@@ -1240,7 +1295,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ḥəlli ko-mičəkno b-u=ṣalon-aṯṯe d-ko-ʕobər l-u=bayt-aṯṯe ʻich merkte, dass ich beinahe in ihrem Flur, der in das Hausinnere führte, wäreʼ; LB 203; [+JL 9.9.7]; ubaʕno <…> duʕanno l-i=qabil-ayḏi w-l-u=kursiy-ayḏi, d-mičəkno bayn aʕ=ʕašair d-kət-ne ʕayəd diḏi ‘Ich möchte <…> daß ich zu meinem Stamme zurückkehren kann und zu meinem Herrensitz, daß ich mich unter die Stämme begeben kann, die mir angehören’; 29/243;"
+          },
+          {
+            "turoyo": "gd-oṯe g-mičək b-i=nuqr-aṯe w-g-maqlibina u=ʕafro aʕle w-gəm-məfṭəṣ b-u=ʕafro g-xulṣina mene b-lalyo ko-mičək b-šqifo mede hul ṣafro",
+            "translations": [
+              "‘Dann wird er kommen und in diese Grube hineingeraten, und dann stülpen wir die Erde auf ihn, und er wird im dem Erdreich ersticken und wir werden ihn los’",
+              "‘At night he used to penetrate in some earth cleft and [stay there] till morning’"
+            ],
+            "references": ["29/275", "43/28"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " gd-oṯe g-mičək b-i=nuqr-aṯe"
@@ -1310,17 +1376,16 @@
                 "value": "43/28"
               }
             ],
-            "text": "2) čīk baynaṯṯe xud u=dewo d-mičək bayn aʕ=ʕeze ʻer fuhr unter sie, wie der Wolf unter die Ziegen fährtʼ; 532; 78/113; 68/462; mičokət bayn al=lappat d-i=maraḥt-ayo ʻdu gerätst dem frechen Weib in die Klauenʼ; 532; 75/122; ko-mičoqi ak=kube b-ḥaṣi ʻ(dabei) stachen mir Dornen in meinen Rückenʼ; LB 55; bas mədə-k-mičoko b-alfo=naqwe naʕime w-ṣalḥe lo=k-minaḏ̣fo ʻaber da sie (die Wanze) in Tausend kleine Löcher und Ritzen schlüpft, lässt sie sich doch nicht ganz wegfegenʼ; 1/31; ḥəlli ko-mičəkno b-u=ṣalon-aṯṯe d-ko-ʕobər l-u=bayt-aṯṯe ʻich merkte, dass ich beinahe in ihrem Flur, der in das Hausinnere führte, wäreʼ; LB 203; [+JL 9.9.7]; ubaʕno <…> duʕanno l-i=qabil-ayḏi w-l-u=kursiy-ayḏi, d-mičəkno bayn aʕ=ʕašair d-kət-ne ʕayəd diḏi ‘Ich möchte <…> daß ich zu meinem Stamme zurückkehren kann und zu meinem Herrensitz, daß ich mich unter die Stämme begeben kann, die mir angehören’; 29/243; gd-oṯe g-mičək b-i=nuqr-aṯe, w-g-maqlibina u=ʕafro aʕle, w-gəm-məfṭəṣ b-u=ʕafro g-xulṣina mene ‘Dann wird er kommen und in diese Grube hineingeraten, und dann stülpen wir die Erde auf ihn, und er wird im dem Erdreich ersticken und wir werden ihn los’; 29/275 [MT]; b-lalyo ko-mičək b-šqifo mede hul ṣafro ‘At night he used to penetrate in some earth cleft and [stay there] till morning’; 43/28"
+            "text": "gd-oṯe g-mičək b-i=nuqr-aṯe, w-g-maqlibina u=ʕafro aʕle, w-gəm-məfṭəṣ b-u=ʕafro g-xulṣina mene ‘Dann wird er kommen und in diese Grube hineingeraten, und dann stülpen wir die Erde auf ihn, und er wird im dem Erdreich ersticken und wir werden ihn los’; 29/275 [MT]; b-lalyo ko-mičək b-šqifo mede hul ṣafro ‘At night he used to penetrate in some earth cleft and [stay there] till morning’; 43/28"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "i=kelike d-šotí-way-na i=ǧġar-ayḏan mičokí-way-na b-aq=qamyon-ayḏan w mḥaláq-way-no l-u=laġno mičə́k-way-no b-u=fəlgo",
+            "turoyo": "i=kelike d-šotí-way-na i=ǧġar-ayḏan mičokí-way-na b-aq=qamyon-ayḏan",
             "translations": [
-              "wenn wir unsere Zigarette rauchten, zogen wir uns in unsere Lastwagen zurück",
-              "und ich warf (das Saatgut) auf dem Saatstreifen aus, in dessen Mitten ich mich begab"
+              "wenn wir unsere Zigarette rauchten, zogen wir uns in unsere Lastwagen zurück"
             ],
-            "references": ["EL 71", "JL 10.11.3"],
+            "references": ["EL 71"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -1345,7 +1410,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "i=kelike d-šotí-way-na i=ǧġar-ayḏan mičokí-way-na b-aq=qamyon-ayḏan ʻwenn wir unsere Zigarette rauchten, zogen wir uns in unsere Lastwagen zurückʼ; EL 71;"
+          },
+          {
+            "turoyo": "w mḥaláq-way-no l-u=laġno mičə́k-way-no b-u=fəlgo",
+            "translations": [
+              "und ich warf (das Saatgut) auf dem Saatstreifen aus, in dessen Mitten ich mich begab"
+            ],
+            "references": ["JL 10.11.3"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " w mḥaláq-way-no l-u=laġno mičə́k-way-no b-u=fəlgo "
@@ -1367,7 +1442,7 @@
                 "value": ";"
               }
             ],
-            "text": "i=kelike d-šotí-way-na i=ǧġar-ayḏan mičokí-way-na b-aq=qamyon-ayḏan ʻwenn wir unsere Zigarette rauchten, zogen wir uns in unsere Lastwagen zurückʼ; EL 71; w mḥaláq-way-no l-u=laġno mičə́k-way-no b-u=fəlgo ʻund ich warf (das Saatgut) auf dem Saatstreifen aus, in dessen Mitten ich mich begabʼ JL 10.11.3;"
+            "text": "w mḥaláq-way-no l-u=laġno mičə́k-way-no b-u=fəlgo ʻund ich warf (das Saatgut) auf dem Saatstreifen aus, in dessen Mitten ich mich begabʼ JL 10.11.3;"
           }
         ],
         "Imperativ": [
@@ -1466,7 +1541,13 @@
             "text": "kīt mʕarṯo naʕimto d-u=medayḏi ... mičík biya qud ḥozena ʻich habe ein kleines Gelass für meine Habseligkeiten... krieche dort hinein, bis wir sehen, (was weiter zu tun ist)ʼ; 533; prs 69/37; prs 202/10, 13; prs 227/17, 18;"
           }
         ]
-      }
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": true,
+          "text": "2) schleichen, geraten, durchdringen; 3) (ḥarb) entbrennen (Kampf), 4) (lebe) sich verlieben; 5) ‘to plunge’ (into water)"
+        }
+      ]
     },
     {
       "stem": "I",
@@ -1557,7 +1638,7 @@
     "1) hineinstecken, stiessen, schieben, 2) schlüpfen, hineinkriechen, schleichen, durchdrängen, geraten (mit ruḥo) ???,",
     "čīk/mičək",
     "čəkno b-băxt d-alo w diḏəx ʻich bitte dich um Gottes willenʼ; MM 113;",
-    "Omar, ‘Yade, kobaʕno, yade, d̥ṭorat mini. Koḏaʕno qquṭli ʕammi, w Ăḷah, qquṭli aš+šawʕo+abnáyḏestene. D̥ šәmʕat xabri, yade … žboyi d̥xaṭәr  … čikno baxt du+qawre  dbábistene w dbábaxstene, kobaʕno d̥ṭorat mini (OA, AA)",
+    "Omar, ‘Yade, kobaʕno, yade, d̥ṭorat mini. Koḏaʕno qquṭli ʕammi, w Ăḷah, qquṭli aš+šawʕo+abnáyḏestene. D̥ šәmʕat xabri, yade … žboyi d̥xaṭәr … čikno baxt du+qawre dbábistene w dbábaxstene, kobaʕno d̥ṭorat mini (OA, AA)",
     "čylš (< Turk. çaləšmak cf. Маг 107: трудиться, работать; заниматься;)",
     "studieren, arbeiten;"
   ],

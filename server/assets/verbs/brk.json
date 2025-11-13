@@ -66,13 +66,11 @@
         ],
         "Preterit": [
           {
-            "turoyo": "azzé u=qašo l-qum u=mgalyən w-brəkle w-mṣalele me də-mkameli i=ṣluṯ-aṯe brəkli tloṯo=bərke haṯe aṯyo w-brəkla quma d-i=dawmo w-mṣalela w-ṭləbla m-u=qadišo d-i=zyara",
+            "turoyo": "azzé u=qašo l-qum u=mgalyən w-brəkle w-mṣalele",
             "translations": [
-              "the priest went before the Gospel, kneeled and prayed",
-              "nachdem ich dieses Gebet beendet hatte, kniete ich mich dreimal nieder",
-              "‘She came, kneeled before the tree, prayed and begged the saint’s tomb’"
+              "the priest went before the Gospel, kneeled and prayed"
             ],
-            "references": ["72", "47/70", "61/227", "LB 184", "44/130"],
+            "references": ["72", "47/70", "61/227"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -129,7 +127,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "azzé u=qašo l-qum u=mgalyən, w-brəkle w-mṣalele ʻthe priest went before the Gospel, kneeled and prayedʼ; 72; 47/70; 61/227;"
+          },
+          {
+            "turoyo": "me də-mkameli i=ṣluṯ-aṯe brəkli tloṯo=bərke",
+            "translations": [
+              "nachdem ich dieses Gebet beendet hatte, kniete ich mich dreimal nieder"
+            ],
+            "references": ["LB 184"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " me də-mkameli i=ṣluṯ-aṯe brəkli tloṯo=bərke "
@@ -153,7 +161,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "me də-mkameli i=ṣluṯ-aṯe brəkli tloṯo=bərke ʻnachdem ich dieses Gebet beendet hatte, kniete ich mich dreimal niederʼ; LB 184;"
+          },
+          {
+            "turoyo": "haṯe aṯyo w-brəkla quma d-i=dawmo w-mṣalela w-ṭləbla m-u=qadišo d-i=zyara",
+            "translations": [
+              "‘She came, kneeled before the tree, prayed and begged the saint’s tomb’"
+            ],
+            "references": ["44/130"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " haṯe aṯyo w-brəkla quma d-i=dawmo w-mṣalela w-ṭləbla m-u=qadišo d-i=zyara "
@@ -175,7 +193,7 @@
                 "value": "44/130"
               }
             ],
-            "text": "azzé u=qašo l-qum u=mgalyən, w-brəkle w-mṣalele ʻthe priest went before the Gospel, kneeled and prayedʼ; 72; 47/70; 61/227; me də-mkameli i=ṣluṯ-aṯe brəkli tloṯo=bərke ʻnachdem ich dieses Gebet beendet hatte, kniete ich mich dreimal niederʼ; LB 184; haṯe aṯyo w-brəkla quma d-i=dawmo w-mṣalela w-ṭləbla m-u=qadišo d-i=zyara ‘She came, kneeled before the tree, prayed and begged the saint’s tomb’; 44/130"
+            "text": "haṯe aṯyo w-brəkla quma d-i=dawmo w-mṣalela w-ṭləbla m-u=qadišo d-i=zyara ‘She came, kneeled before the tree, prayed and begged the saint’s tomb’; 44/130"
           }
         ]
       }

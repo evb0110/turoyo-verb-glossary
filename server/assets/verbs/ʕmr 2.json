@@ -90,14 +90,13 @@
         ],
         "Part": [
           {
-            "turoyo": "- i=qriṯo bayni tre=dyarat ʕamǝ́rto-yo",
+            "turoyo": "-",
             "translations": [
-              "maḥrawno i=arʕo maʕmanno i=arʕo?",
-              "dayiman k-obaʕno d-ʔi=arʕo d-huyo ʕamərto",
-              "soll ich die Welt zerstören oder aufbauen?” “ich wünsche immer, dass die Welt aufgebaut sei",
-              "das Dorf ist zwischen zwei Bergen erbaut"
+              "“maḥrawno i=arʕo maʕmanno i=arʕo?”",
+              "“dayiman k-obaʕno d-ʔi=arʕo d-huyo ʕamərto”",
+              "“soll ich die Welt zerstören oder aufbauen?” “ich wünsche immer, dass die Welt aufgebaut sei”"
             ],
-            "references": ["237", "65/462", "463", "11/60"],
+            "references": ["237", "65/462", "463"],
             "tokens": [
               {
                 "kind": "translation",
@@ -154,7 +153,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "“maḥrawno i=arʕo maʕmanno i=arʕo?” “dayiman k-obaʕno d-ʔi=arʕo d-huyo ʕamərto” ʻ“soll ich die Welt zerstören oder aufbauen?” “ich wünsche immer, dass die Welt aufgebaut sei”ʼ; 237; 65/462-463;"
+          },
+          {
+            "turoyo": "i=qriṯo bayni tre=dyarat ʕamǝ́rto-yo",
+            "translations": ["das Dorf ist zwischen zwei Bergen erbaut"],
+            "references": ["11/60"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " i=qriṯo"
@@ -188,7 +195,7 @@
                 "value": ";"
               }
             ],
-            "text": "“maḥrawno i=arʕo maʕmanno i=arʕo?” “dayiman k-obaʕno d-ʔi=arʕo d-huyo ʕamərto” ʻ“soll ich die Welt zerstören oder aufbauen?” “ich wünsche immer, dass die Welt aufgebaut sei”ʼ; 237; 65/462-463; i=qriṯo, bayni tre=dyarat ʕamǝ́rto-yo ʻdas Dorf ist zwischen zwei Bergen erbautʼ; 11/60;"
+            "text": "i=qriṯo, bayni tre=dyarat ʕamǝ́rto-yo ʻdas Dorf ist zwischen zwei Bergen erbautʼ; 11/60;"
           }
         ]
       }
@@ -199,13 +206,9 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "maʕmalle quṣro w-awdayat prs hiya-ste aṯyo l-i=ziyara d-u=qadiš-ano w maʕmálla-la quṣro ǧirān d-i=ʕito mə-traḥṣar=qaṭat l-Silo mbele ap=pismam-ayḏe w-azzehən l-i=dašt-ayo w-yatiwi eba w-maʕmralle",
-            "translations": [
-              "er baute sich ein Schloss mit Zimmern",
-              "auch sie (eine Tochter des Königs des Byzantiners) kam, das Heiligtum zu besuchen, und baute sich ein zwölfstöckiges Schloss in der Nachbarschaft der Kirche",
-              "‘Silo took his cousins away to that plain and they settled down in it and built it up’"
-            ],
-            "references": ["239", "24/34", "11/113", "36/147"],
+            "turoyo": "maʕmalle quṣro w-awdayat prs",
+            "translations": ["er baute sich ein Schloss mit Zimmern"],
+            "references": ["239", "24/34"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -242,7 +245,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "maʕmalle quṣro w-awdayat ʻer baute sich ein Schloss mit Zimmernʼ; 239; prs 24/34;"
+          },
+          {
+            "turoyo": "hiya-ste aṯyo l-i=ziyara d-u=qadiš-ano w maʕmálla-la quṣro ǧirān d-i=ʕito mə-traḥṣar=qaṭat",
+            "translations": [
+              "auch sie (eine Tochter des Königs des Byzantiners) kam, das Heiligtum zu besuchen, und baute sich ein zwölfstöckiges Schloss in der Nachbarschaft der Kirche"
+            ],
+            "references": ["11/113"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " hiya-ste aṯyo l-i=ziyara d-u=qadiš-ano w maʕmálla-la quṣro"
@@ -274,7 +287,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "hiya-ste aṯyo l-i=ziyara d-u=qadiš-ano w maʕmálla-la quṣro, ǧirān d-i=ʕito mə-traḥṣar=qaṭat ʻauch sie (eine Tochter des Königs des Byzantiners) kam, das Heiligtum zu besuchen, und baute sich ein zwölfstöckiges Schloss in der Nachbarschaft der Kircheʼ; 11/113;"
+          },
+          {
+            "turoyo": "l-Silo mbele ap=pismam-ayḏe w-azzehən l-i=dašt-ayo w-yatiwi eba w-maʕmralle",
+            "translations": [
+              "‘Silo took his cousins away to that plain and they settled down in it and built it up’"
+            ],
+            "references": ["36/147"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " l-Silo mbele ap=pismam-ayḏe w-azzehən l-i=dašt-ayo w-yatiwi eba w-maʕmralle "
@@ -296,7 +319,7 @@
                 "value": "36/147"
               }
             ],
-            "text": "maʕmalle quṣro w-awdayat ʻer baute sich ein Schloss mit Zimmernʼ; 239; prs 24/34; hiya-ste aṯyo l-i=ziyara d-u=qadiš-ano w maʕmálla-la quṣro, ǧirān d-i=ʕito mə-traḥṣar=qaṭat ʻauch sie (eine Tochter des Königs des Byzantiners) kam, das Heiligtum zu besuchen, und baute sich ein zwölfstöckiges Schloss in der Nachbarschaft der Kircheʼ; 11/113; l-Silo mbele ap=pismam-ayḏe w-azzehən l-i=dašt-ayo w-yatiwi eba w-maʕmralle ‘Silo took his cousins away to that plain and they settled down in it and built it up’; 36/147"
+            "text": "l-Silo mbele ap=pismam-ayḏe w-azzehən l-i=dašt-ayo w-yatiwi eba w-maʕmralle ‘Silo took his cousins away to that plain and they settled down in it and built it up’; 36/147"
           },
           {
             "turoyo": "Annaqqa hani kul ak kefe d əmmina d maʕmarre kulle gyuqḏi",
@@ -473,14 +496,11 @@
         ],
         "Infectum": [
           {
-            "turoyo": "šarṭ d-qoṭəʕ qarʕe w maḥat-le w maʕmər ebe k-obaʕno maʕamrət-li ḥəmmām rabo gəd-əzzino maʕmárno-li qriṯo eli w-l-ap=pismam-ayḏi tamo ono d-moyadno ak=kallawat-ani w-oṯeno d-əbʕe d-maʕmánno-li bayto ḥaṯo w-rabo",
+            "turoyo": "šarṭ d-qoṭəʕ qarʕe w maḥat-le w maʕmər ebe",
             "translations": [
-              "(es ist ausgemachte) Bedingung, dass er ihm den Kopf abschlägt, hinlegt, und damit (das Schloss aus Menschenschädeln) baut",
-              "ich möchte, dass du mir ein grosses Hammam erbaust",
-              "‘I will go and build a village there for me and for my cousins’",
-              "‘If I take this money and come back, I will have to build a new and big house for me’"
+              "(es ist ausgemachte) Bedingung, dass er ihm den Kopf abschlägt, hinlegt, und damit (das Schloss aus Menschenschädeln) baut"
             ],
-            "references": ["241", "57/138", "MM 123", "36/146", "47/7"],
+            "references": ["241", "57/138"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -533,7 +553,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "šarṭ, d-qoṭəʕ qarʕe w maḥat-le, w maʕmər ebe ʻ(es ist ausgemachte) Bedingung, dass er ihm den Kopf abschlägt, hinlegt, und damit (das Schloss aus Menschenschädeln) bautʼ; 241; 57/138;"
+          },
+          {
+            "turoyo": "k-obaʕno maʕamrət-li ḥəmmām rabo gəd-əzzino maʕmárno-li qriṯo eli w-l-ap=pismam-ayḏi tamo",
+            "translations": [
+              "ich möchte, dass du mir ein grosses Hammam erbaust",
+              "‘I will go and build a village there for me and for my cousins’"
+            ],
+            "references": ["MM 123", "36/146"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " k-obaʕno maʕamrət-li ḥəmmām rabo "
@@ -585,7 +616,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "k-obaʕno maʕamrət-li ḥəmmām rabo ʻich möchte, dass du mir ein grosses Hammam erbaustʼ MM 123; gəd-əzzino maʕmárno-li qriṯo, eli w-l-ap=pismam-ayḏi tamo ‘I will go and build a village there for me and for my cousins’; 36/146;"
+          },
+          {
+            "turoyo": "ono d-moyadno ak=kallawat-ani w-oṯeno d-əbʕe d-maʕmánno-li bayto ḥaṯo w-rabo",
+            "translations": [
+              "‘If I take this money and come back, I will have to build a new and big house for me’"
+            ],
+            "references": ["47/7"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ono d-moyadno ak=kallawat-ani w-oṯeno d-əbʕe d-maʕmánno-li bayto ḥaṯo w-rabo "
@@ -607,14 +648,14 @@
                 "value": "47/7"
               }
             ],
-            "text": "šarṭ, d-qoṭəʕ qarʕe w maḥat-le, w maʕmər ebe ʻ(es ist ausgemachte) Bedingung, dass er ihm den Kopf abschlägt, hinlegt, und damit (das Schloss aus Menschenschädeln) bautʼ; 241; 57/138; k-obaʕno maʕamrət-li ḥəmmām rabo ʻich möchte, dass du mir ein grosses Hammam erbaustʼ MM 123; gəd-əzzino maʕmárno-li qriṯo, eli w-l-ap=pismam-ayḏi tamo ‘I will go and build a village there for me and for my cousins’; 36/146; ono d-moyadno ak=kallawat-ani w-oṯeno d-əbʕe d-maʕmánno-li bayto ḥaṯo w-rabo ‘If I take this money and come back, I will have to build a new and big house for me’; 47/7"
+            "text": "ono d-moyadno ak=kallawat-ani w-oṯeno d-əbʕe d-maʕmánno-li bayto ḥaṯo w-rabo ‘If I take this money and come back, I will have to build a new and big house for me’; 47/7"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "maʕmar-wo maʕmar-wo",
-            "translations": ["er pflegte zu bauen", "er würde bauen"],
-            "references": ["149", "149"],
+            "turoyo": "maʕmar-wo",
+            "translations": ["er pflegte zu bauen"],
+            "references": ["149"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -639,7 +680,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "maʕmar-wo ʻer pflegte zu bauenʼ; 149;"
+          },
+          {
+            "turoyo": "maʕmar-wo",
+            "translations": ["er würde bauen"],
+            "references": ["149"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " maʕmar-wo "
@@ -665,7 +714,7 @@
                 "value": ";"
               }
             ],
-            "text": "maʕmar-wo ʻer pflegte zu bauenʼ; 149; maʕmar-wo ʻer würde bauenʼ; 149;"
+            "text": "maʕmar-wo ʻer würde bauenʼ; 149;"
           }
         ],
         "Part. Act.": [
@@ -710,12 +759,9 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "u=bayto mmaʕmər mə-taxtayat - mmaʕmər ʕito tamo -- MUST BE 2ND STEM!",
-            "translations": [
-              "das Haus ist aus Brettern gebaut",
-              "dort ist eine Kirche gebaut worden"
-            ],
-            "references": ["241", "242", "1/8", "242"],
+            "turoyo": "u=bayto mmaʕmər mə-taxtayat -",
+            "translations": ["das Haus ist aus Brettern gebaut"],
+            "references": ["241", "242", "1/8"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -760,7 +806,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "u=bayto mmaʕmər mə-taxtayat ʻdas Haus ist aus Brettern gebautʼ; 241-242; 1/8;"
+          },
+          {
+            "turoyo": "mmaʕmər ʕito tamo",
+            "translations": ["dort ist eine Kirche gebaut worden"],
+            "references": ["242"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mmaʕmər ʕito tamo "
@@ -784,13 +838,21 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mmaʕmər ʕito tamo ʻdort ist eine Kirche gebaut wordenʼ; 242;"
+          },
+          {
+            "turoyo": "-- MUST BE 2ND STEM!",
+            "translations": [],
+            "references": [],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " -- MUST BE 2ND STEM!"
               }
             ],
-            "text": "u=bayto mmaʕmər mə-taxtayat ʻdas Haus ist aus Brettern gebautʼ; 241-242; 1/8; mmaʕmər ʕito tamo ʻdort ist eine Kirche gebaut wordenʼ; 242; -- MUST BE 2ND STEM!"
+            "text": "-- MUST BE 2ND STEM!"
           }
         ],
         "Infectum": [
@@ -829,12 +891,11 @@
         ],
         "Part. Pass.": [
           {
-            "turoyo": "u=ḥa=yawmo fayiti qum quṣro kule kale maʕəmro m-aq=qarʕe d-a=nsanat maʕəmro-yo b-falge d-u=nahro но хотелось бы mamʕər",
+            "turoyo": "u=ḥa=yawmo fayiti qum quṣro kule kale maʕəmro m-aq=qarʕe d-a=nsanat",
             "translations": [
-              "eines Tages kamen sie an einem Schloss vorbei, das ganz und gar aus Menschenschädeln erbaut war",
-              "‘Es (das Schloß, f) ist in der Mitte des Flusses gebaut’"
+              "eines Tages kamen sie an einem Schloss vorbei, das ganz und gar aus Menschenschädeln erbaut war"
             ],
-            "references": ["157", "57/135", "136", "36/5"],
+            "references": ["157", "57/135", "136"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -883,7 +944,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "u=ḥa=yawmo fayiti qum quṣro kule kale maʕəmro m-aq=qarʕe d-a=nsanat ʻeines Tages kamen sie an einem Schloss vorbei, das ganz und gar aus Menschenschädeln erbaut warʼ; 157; 57/135, 136;"
+          },
+          {
+            "turoyo": "maʕəmro-yo b-falge d-u=nahro но хотелось бы mamʕər",
+            "translations": [
+              "‘Es (das Schloß, f) ist in der Mitte des Flusses gebaut’"
+            ],
+            "references": ["36/5"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " maʕəmro-yo b-falge d-u=nahro "
@@ -909,7 +980,7 @@
                 "value": " но хотелось бы mamʕər"
               }
             ],
-            "text": "u=ḥa=yawmo fayiti qum quṣro kule kale maʕəmro m-aq=qarʕe d-a=nsanat ʻeines Tages kamen sie an einem Schloss vorbei, das ganz und gar aus Menschenschädeln erbaut warʼ; 157; 57/135, 136; maʕəmro-yo b-falge d-u=nahro ‘Es (das Schloß, f) ist in der Mitte des Flusses gebaut’; 36/5 но хотелось бы mamʕər"
+            "text": "maʕəmro-yo b-falge d-u=nahro ‘Es (das Schloß, f) ist in der Mitte des Flusses gebaut’; 36/5 но хотелось бы mamʕər"
           }
         ]
       }
@@ -920,13 +991,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "həzla raġla l-i=gamlo laf qarʕa ršəmla ṣlibo l-foṯa w mʕamaṣla ʕayna prs əšmo mʕamaṣle ʕaynoṯe w ḥəlle raḥuqo raḥuqo w bdele b-i=žġaliye i=naqq-ayo mʕamaṣli ʕaynoṯi w aṯyo i=nəʕmuṯayḏi d-Məḏyaḏ l-boli",
+            "turoyo": "həzla raġla l-i=gamlo laf qarʕa ršəmla ṣlibo l-foṯa w mʕamaṣla ʕayna prs",
             "translations": [
-              "das Kamel bewegte den Fuss gegen den Kopf hin, schlug ein Kreuz über's Gesicht und schloss die Augen",
-              "(mein Ḥanna) kniff die Augen ein wenig zusammen, blickte weit, weit in die Ferne und begann zu sprechen",
-              "‘da schloss ich die Augen und meine Kindheit in Miḏyaḏ kam mir in Erinnerung’"
+              "das Kamel bewegte den Fuss gegen den Kopf hin, schlug ein Kreuz über's Gesicht und schloss die Augen"
             ],
-            "references": ["215/27", "11/227", "12/29"],
+            "references": ["215/27"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -959,7 +1028,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "həzla raġla l-i=gamlo laf qarʕa, ršəmla ṣlibo l-foṯa w mʕamaṣla ʕayna ʻdas Kamel bewegte den Fuss gegen den Kopf hin, schlug ein Kreuz über's Gesicht und schloss die Augenʼ; prs 215/27;"
+          },
+          {
+            "turoyo": "əšmo mʕamaṣle ʕaynoṯe w ḥəlle raḥuqo raḥuqo w bdele b-i=žġaliye",
+            "translations": [
+              "(mein Ḥanna) kniff die Augen ein wenig zusammen, blickte weit, weit in die Ferne und begann zu sprechen"
+            ],
+            "references": ["11/227"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " əšmo mʕamaṣle ʕaynoṯe"
@@ -1007,7 +1086,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "əšmo mʕamaṣle ʕaynoṯe, w ḥəlle raḥuqo, raḥuqo, w bdele b-i=žġaliye ʻ(mein Ḥanna) kniff die Augen ein wenig zusammen, blickte weit, weit in die Ferne und begann zu sprechenʼ; 11/227;"
+          },
+          {
+            "turoyo": "i=naqq-ayo mʕamaṣli ʕaynoṯi w aṯyo i=nəʕmuṯayḏi d-Məḏyaḏ l-boli",
+            "translations": [
+              "‘da schloss ich die Augen und meine Kindheit in Miḏyaḏ kam mir in Erinnerung’"
+            ],
+            "references": ["12/29"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " i=naqq-ayo"
@@ -1049,7 +1138,7 @@
                 "value": ";"
               }
             ],
-            "text": "həzla raġla l-i=gamlo laf qarʕa, ršəmla ṣlibo l-foṯa w mʕamaṣla ʕayna ʻdas Kamel bewegte den Fuss gegen den Kopf hin, schlug ein Kreuz über's Gesicht und schloss die Augenʼ; prs 215/27; əšmo mʕamaṣle ʕaynoṯe, w ḥəlle raḥuqo, raḥuqo, w bdele b-i=žġaliye ʻ(mein Ḥanna) kniff die Augen ein wenig zusammen, blickte weit, weit in die Ferne und begann zu sprechenʼ; 11/227; i=naqq-ayo, mʕamaṣli ʕaynoṯi, w aṯyo i=nəʕmuṯayḏi d-Məḏyaḏ l-boli ‘da schloss ich die Augen und meine Kindheit in Miḏyaḏ kam mir in Erinnerung’; 12/29;"
+            "text": "i=naqq-ayo, mʕamaṣli ʕaynoṯi, w aṯyo i=nəʕmuṯayḏi d-Məḏyaḏ l-boli ‘da schloss ich die Augen und meine Kindheit in Miḏyaḏ kam mir in Erinnerung’; 12/29;"
           }
         ],
         "Imperativ": [

@@ -13,22 +13,16 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "II",
-      "forms": ["mnakəf", "minakəf"],
-      "conjugations": {}
-    },
-    {
       "stem": "Detransitive",
-      "forms": [],
+      "forms": ["mnakəf", "minakəf"],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "l-ázze s-u=babo mnakəf d-doʕər s-u=babo m-i=nəkfuṯayḏe qrelele omər abri haw-li iḏux magwaḷḷi-lux i=barṯ-ayḏi hule-le iḏe mnakəf lo=qadər d-omər lo -",
+            "turoyo": "l-ázze s-u=babo mnakəf d-doʕər s-u=babo m-i=nəkfuṯayḏe",
             "translations": [
-              "er ging nicht heim zum Vater, er schämte sich, zu ihm zurückzukehren",
-              "‘He (the sheikh, m.) called him and said: “Son, give my my hand. I marry you to my daughter”. He (ʕOmar) gave him his hand. He was ashamed and he could not say no’"
+              "er ging nicht heim zum Vater, er schämte sich, zu ihm zurückzukehren"
             ],
-            "references": ["172", "57/54", "78/144", "78/143", "144"],
+            "references": ["172", "57/54", "78/144"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -77,7 +71,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "l-ázze s-u=babo mnakəf d-doʕər s-u=babo m-i=nəkfuṯayḏe ʻer ging nicht heim zum Vater, er schämte sich, zu ihm zurückzukehrenʼ; 172; 57/54; 78/144;"
+          },
+          {
+            "turoyo": "qrelele omər abri haw-li iḏux magwaḷḷi-lux i=barṯ-ayḏi hule-le iḏe mnakəf lo=qadər d-omər lo -",
+            "translations": [
+              "‘He (the sheikh, m.) called him and said: “Son, give my my hand. I marry you to my daughter”. He (ʕOmar) gave him his hand. He was ashamed and he could not say no’"
+            ],
+            "references": ["78/143", "144"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " qrelele omər abri haw-li iḏux magwaḷḷi-lux i=barṯ-ayḏi hule-le iḏe mnakəf lo=qadər d-omər lo "
@@ -107,17 +111,16 @@
                 "value": ";"
               }
             ],
-            "text": "l-ázze s-u=babo mnakəf d-doʕər s-u=babo m-i=nəkfuṯayḏe ʻer ging nicht heim zum Vater, er schämte sich, zu ihm zurückzukehrenʼ; 172; 57/54; 78/144; qrelele omər abri haw-li iḏux magwaḷḷi-lux i=barṯ-ayḏi hule-le iḏe mnakəf lo=qadər d-omər lo ‘He (the sheikh, m.) called him and said: “Son, give my my hand. I marry you to my daughter”. He (ʕOmar) gave him his hand. He was ashamed and he could not say no’ 78/143-144;"
+            "text": "qrelele omər abri haw-li iḏux magwaḷḷi-lux i=barṯ-ayḏi hule-le iḏe mnakəf lo=qadər d-omər lo ‘He (the sheikh, m.) called him and said: “Son, give my my hand. I marry you to my daughter”. He (ʕOmar) gave him his hand. He was ashamed and he could not say no’ 78/143-144;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "barṯo i=naqla d-ko-mhalxo i=ʕayno ko-minakfo ḥayro aʕla iḏa babi d-ube-li ǧabriye laybi saymono w-b-u=zor lu=k-owe ʕaybo-yo w-k-minakfono",
+            "turoyo": "barṯo i=naqla d-ko-mhalxo i=ʕayno ko-minakfo ḥayro aʕla",
             "translations": [
-              "ein Mädchen, wenn das schreitet, so schämt sich das Auge, nach ihm (das Mädchen f) zu blicken",
-              "‘Wenn mein Vater mich in die Ehe gibt, mit Gewalt kann ich nichts tun, das wäre ungehörig und ich schäme mich, (das zu tun)’"
+              "ein Mädchen, wenn das schreitet, so schämt sich das Auge, nach ihm (das Mädchen f) zu blicken"
             ],
-            "references": ["173", "74/5", "26/90"],
+            "references": ["173", "74/5"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -170,7 +173,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "barṯo, i=naqla d-ko-mhalxo, i=ʕayno ko-minakfo ḥayro aʕla ʻein Mädchen, wenn das schreitet, so schämt sich das Auge, nach ihm (das Mädchen f) zu blickenʼ; 173; 74/5;"
+          },
+          {
+            "turoyo": "iḏa babi d-ube-li ǧabriye laybi saymono w-b-u=zor lu=k-owe ʕaybo-yo w-k-minakfono",
+            "translations": [
+              "‘Wenn mein Vater mich in die Ehe gibt, mit Gewalt kann ich nichts tun, das wäre ungehörig und ich schäme mich, (das zu tun)’"
+            ],
+            "references": ["26/90"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": "  iḏa babi d-ube-li"
@@ -224,17 +237,16 @@
                 "value": "[MT]"
               }
             ],
-            "text": "barṯo, i=naqla d-ko-mhalxo, i=ʕayno ko-minakfo ḥayro aʕla ʻein Mädchen, wenn das schreitet, so schämt sich das Auge, nach ihm (das Mädchen f) zu blickenʼ; 173; 74/5; iḏa babi d-ube-li, ǧabriye laybi saymono, w-b-u=zor lu=k-owe, ʕaybo-yo w-k-minakfono ‘Wenn mein Vater mich in die Ehe gibt, mit Gewalt kann ich nichts tun, das wäre ungehörig und ich schäme mich, (das zu tun)’; 26/90 [MT]"
+            "text": "iḏa babi d-ube-li, ǧabriye laybi saymono, w-b-u=zor lu=k-owe, ʕaybo-yo w-k-minakfono ‘Wenn mein Vater mich in die Ehe gibt, mit Gewalt kann ich nichts tun, das wäre ungehörig und ich schäme mich, (das zu tun)’; 26/90 [MT]"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "alla wakīl minakaf-wa b-ruḥe odaye xlíṯo-wa minakaf-wa d-omər zux ftaḥ-a ḥzay ġálabe minakaf-wo ki d-uṯe-wo l-u=bayt-ayḏe",
+            "turoyo": "alla wakīl minakaf-wa b-ruḥe odaye xlíṯo-wa minakaf-wa d-omər zux ftaḥ-a ḥzay",
             "translations": [
-              "weiss Gott, er hat sich nur geschämt, weil es ein leeres Zimmer war. Er hat sich geschämt, mir zu sagen: “Geh, öffne es und sieh!",
-              "‘Er schämte sich sehr, nach Hause zu gehen’"
+              "weiss Gott, er hat sich nur geschämt, weil es ein leeres Zimmer war. Er hat sich geschämt, mir zu sagen: “Geh, öffne es und sieh!”"
             ],
-            "references": ["174", "69/478", "30/73"],
+            "references": ["174", "69/478"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -279,7 +291,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "alla wakīl minakaf-wa b-ruḥe odaye xlíṯo-wa, minakaf-wa d-omər zux ftaḥ-a ḥzay ʻweiss Gott, er hat sich nur geschämt, weil es ein leeres Zimmer war. Er hat sich geschämt, mir zu sagen: “Geh, öffne es und sieh!”ʼ; 174; 69/478;"
+          },
+          {
+            "turoyo": "ġálabe minakaf-wo ki d-uṯe-wo l-u=bayt-ayḏe",
+            "translations": ["‘Er schämte sich sehr, nach Hause zu gehen’"],
+            "references": ["30/73"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ġálabe minakaf-wo ki d-uṯe-wo l-u=bayt-ayḏe "
@@ -301,19 +321,18 @@
                 "value": "30/73"
               }
             ],
-            "text": "alla wakīl minakaf-wa b-ruḥe odaye xlíṯo-wa, minakaf-wa d-omər zux ftaḥ-a ḥzay ʻweiss Gott, er hat sich nur geschämt, weil es ein leeres Zimmer war. Er hat sich geschämt, mir zu sagen: “Geh, öffne es und sieh!”ʼ; 174; 69/478; ġálabe minakaf-wo ki d-uṯe-wo l-u=bayt-ayḏe ‘Er schämte sich sehr, nach Hause zu gehen’; 30/73"
+            "text": "ġálabe minakaf-wo ki d-uṯe-wo l-u=bayt-ayḏe ‘Er schämte sich sehr, nach Hause zu gehen’; 30/73"
           }
         ],
         "Part. Pass.": [
           {
-            "turoyo": "mšayelan. omər k-ubaʕno d-madʕərət u=talano dəṯṯe w-lu=ṭurat-li mnakfo",
+            "turoyo": "mšayelan. omər",
             "translations": [
-              "mə xēr?",
-              "ġắlabe mnákfo-no qumayxu!",
-              "was gibt es gutes?” fragten wir. Er sprach: “Ich muss mir sehr vor euch schämen",
-              "‘Ich möchte, daß du ihr geraubtes Vieh zurückgibst und mich nicht beschämt dastehen lässest’"
+              "“mə xēr?”",
+              "“ġắlabe mnákfo-no qumayxu!”",
+              "”was gibt es gutes?” fragten wir. Er sprach: “Ich muss mir sehr vor euch schämen”"
             ],
-            "references": ["175", "11/258", "29/445"],
+            "references": ["175", "11/258"],
             "tokens": [
               {
                 "kind": "translation",
@@ -370,7 +389,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "“mə xēr?” mšayelan. omər: “ġắlabe mnákfo-no qumayxu!” ʻ”was gibt es gutes?” fragten wir. Er sprach: “Ich muss mir sehr vor euch schämen”ʼ; 175; 11/258;"
+          },
+          {
+            "turoyo": "k-ubaʕno d-madʕərət u=talano dəṯṯe w-lu=ṭurat-li mnakfo",
+            "translations": [
+              "‘Ich möchte, daß du ihr geraubtes Vieh zurückgibst und mich nicht beschämt dastehen lässest’"
+            ],
+            "references": ["29/445"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " k-ubaʕno d-madʕərət u=talano dəṯṯe w-lu=ṭurat-li mnakfo "
@@ -392,12 +421,12 @@
                 "value": "29/445"
               }
             ],
-            "text": "“mə xēr?” mšayelan. omər: “ġắlabe mnákfo-no qumayxu!” ʻ”was gibt es gutes?” fragten wir. Er sprach: “Ich muss mir sehr vor euch schämen”ʼ; 175; 11/258; k-ubaʕno d-madʕərət u=talano dəṯṯe w-lu=ṭurat-li mnakfo ‘Ich möchte, daß du ihr geraubtes Vieh zurückgibst und mich nicht beschämt dastehen lässest’; 29/445"
+            "text": "k-ubaʕno d-madʕərət u=talano dəṯṯe w-lu=ṭurat-li mnakfo ‘Ich möchte, daß du ihr geraubtes Vieh zurückgibst und mich nicht beschämt dastehen lässest’; 29/445"
           }
         ]
       }
     }
   ],
-  "idioms": ["(Detrans.) sich schämen;"],
+  "idioms": null,
   "uncertain": false
 }

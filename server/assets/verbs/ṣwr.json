@@ -18,12 +18,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "muḥaqqaq hano l-aḥuni u=naǧoro mṣawalle i=barṯ-aṯe b-u=maktūb-ano kə-mšayáʕno-lxu ṣuwar m-də-mṣawalli b-i=Ṣṭambul",
+            "turoyo": "muḥaqqaq hano l-aḥuni u=naǧoro mṣawalle i=barṯ-aṯe",
             "translations": [
-              "sicherlich hat mein Kamerad, der Schreiner, dieses Mädchen geschnitzt",
-              "‘in diesem Briefe schicke ich Ihnen Aufnahmen, die ich in Stambul gemacht habe’"
+              "sicherlich hat mein Kamerad, der Schreiner, dieses Mädchen geschnitzt"
             ],
-            "references": ["471", "62/283", "20/22"],
+            "references": ["471", "62/283"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -60,7 +59,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "muḥaqqaq hano l-aḥuni u=naǧoro mṣawalle i=barṯ-aṯe ʻsicherlich hat mein Kamerad, der Schreiner, dieses Mädchen geschnitztʼ; 471; 62/283;"
+          },
+          {
+            "turoyo": "b-u=maktūb-ano kə-mšayáʕno-lxu ṣuwar m-də-mṣawalli b-i=Ṣṭambul",
+            "translations": [
+              "‘in diesem Briefe schicke ich Ihnen Aufnahmen, die ich in Stambul gemacht habe’"
+            ],
+            "references": ["20/22"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " b-u=maktūb-ano kə-mšayáʕno-lxu ṣuwar m-də-mṣawalli b-i=Ṣṭambul "
@@ -82,12 +91,12 @@
                 "value": "20/22"
               }
             ],
-            "text": "muḥaqqaq hano l-aḥuni u=naǧoro mṣawalle i=barṯ-aṯe ʻsicherlich hat mein Kamerad, der Schreiner, dieses Mädchen geschnitztʼ; 471; 62/283; b-u=maktūb-ano kə-mšayáʕno-lxu ṣuwar m-də-mṣawalli b-i=Ṣṭambul ‘in diesem Briefe schicke ich Ihnen Aufnahmen, die ich in Stambul gemacht habe’; 20/22"
+            "text": "b-u=maktūb-ano kə-mšayáʕno-lxu ṣuwar m-də-mṣawalli b-i=Ṣṭambul ‘in diesem Briefe schicke ich Ihnen Aufnahmen, die ich in Stambul gemacht habe’; 20/22"
           },
           {
             "turoyo": "ǧbiro lwəšla ǧule d-u=gawro w-mṣawalla ruḥa xədoṯe",
             "translations": [
-              "‘Sie zog - es blieb ihr nichts anderes übrig - die Kleider ihres Mannes an und gab sich ein Aussehen wie er’"
+              "Sie zog - es blieb ihr nichts anderes übrig - die Kleider ihres Mannes an und gab sich ein Aussehen wie er"
             ],
             "references": ["2", "24/152"],
             "tokens": [
@@ -269,7 +278,13 @@
             "text": "kəlla mṣawarto l-qul ʕayni ʻsie steht mir noch vor Augenʼ; 472; 2/18;"
           }
         ]
-      }
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "die Gestalt von etwas annehmen, sich verwandeln in;"
+        }
+      ]
     }
   ],
   "idioms": [

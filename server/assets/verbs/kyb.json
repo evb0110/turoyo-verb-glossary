@@ -18,12 +18,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "i=naqla d-kəble l-u=šulṭono katfe ḥaṣe u=waziro dəšle ʕal katfe d-u=šulṭono šqila u=zoġo maḥatla b-u=kuxo kəbla qarʕa prs",
+            "turoyo": "i=naqla d-kəble l-u=šulṭono katfe ḥaṣe u=waziro dəšle ʕal katfe d-u=šulṭono",
             "translations": [
-              "als der Sultan seine Schulter, seinen Rücken gebeugt hatte, trat der Wesir auf die Schulter des Sultans",
-              "sie nahm den Hahn und setzte ihn wieder in’s Hühnerhaus; dabei bückte sie sich mit ihrem Kopf"
+              "als der Sultan seine Schulter, seinen Rücken gebeugt hatte, trat der Wesir auf die Schulter des Sultans"
             ],
-            "references": ["505", "27/10", "506", "29/17"],
+            "references": ["505", "27/10"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -76,7 +75,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "i=naqla d-kəble l-u=šulṭono katfe, ḥaṣe, u=waziro dəšle ʕal katfe d-u=šulṭono ʻals der Sultan seine Schulter, seinen Rücken gebeugt hatte, trat der Wesir auf die Schulter des Sultansʼ; 505; 27/10;"
+          },
+          {
+            "turoyo": "šqila u=zoġo maḥatla b-u=kuxo kəbla qarʕa prs",
+            "translations": [
+              "sie nahm den Hahn und setzte ihn wieder in’s Hühnerhaus; dabei bückte sie sich mit ihrem Kopf"
+            ],
+            "references": ["506", "29/17"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " šqila u=zoġo"
@@ -130,18 +139,14 @@
                 "value": ";"
               }
             ],
-            "text": "i=naqla d-kəble l-u=šulṭono katfe, ḥaṣe, u=waziro dəšle ʕal katfe d-u=šulṭono ʻals der Sultan seine Schulter, seinen Rücken gebeugt hatte, trat der Wesir auf die Schulter des Sultansʼ; 505; 27/10; šqila u=zoġo, maḥatla b-u=kuxo, kəbla qarʕa ʻsie nahm den Hahn und setzte ihn wieder in’s Hühnerhaus; dabei bückte sie sich mit ihrem Kopfʼ; 506; prs 29/17;"
+            "text": "šqila u=zoġo, maḥatla b-u=kuxo, kəbla qarʕa ʻsie nahm den Hahn und setzte ihn wieder in’s Hühnerhaus; dabei bückte sie sich mit ihrem Kopfʼ; 506; prs 29/17;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "k-koyəb i=dgušto ʕal katfe ya u=šulṭon-ayḏi iḏa d-saymət musaʕada d-kaybət ḥaṣox g-isaqno w-g-madn-e amṭen-ox u=ḥabušo huwe mə-darbə-d-huwe d-omər uno g-kuyabno <…> huwe mə́lle-lox luxāt kub! g-isaqno ʕal ḥasox -",
-            "translations": [
-              "er kippt den Krug auf der Schulter um",
-              "‘Mein Sultan, wenn du erlaubst und deinen Rücken beugst, werde ich darauf steigen, den Apfel fassen und dir herunterholen’",
-              "‘Und er, statt zu sagen: Ich will mich bücken <…> sprach zu dir: Bücke dich! Ich werde auf deinen Rücken steigen!’"
-            ],
-            "references": ["517", "6/67", "27/8", "27/66", "67"],
+            "turoyo": "k-koyəb i=dgušto ʕal katfe",
+            "translations": ["er kippt den Krug auf der Schulter um"],
+            "references": ["517", "6/67"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -178,7 +183,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "k-koyəb i=dgušto ʕal katfe ʻer kippt den Krug auf der Schulter umʼ; 517; 6/67;"
+          },
+          {
+            "turoyo": "ya u=šulṭon-ayḏi iḏa d-saymət musaʕada d-kaybət ḥaṣox g-isaqno w-g-madn-e amṭen-ox u=ḥabušo huwe mə-darbə-d-huwe d-omər uno g-kuyabno <…> huwe mə́lle-lox luxāt kub! g-isaqno ʕal ḥasox -",
+            "translations": [
+              "‘Mein Sultan, wenn du erlaubst und deinen Rücken beugst, werde ich darauf steigen, den Apfel fassen und dir herunterholen’",
+              "‘Und er, statt zu sagen: Ich will mich bücken <…> sprach zu dir: Bücke dich! Ich werde auf deinen Rücken steigen!’"
+            ],
+            "references": ["27/8", "27/66", "67"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ya u=šulṭon-ayḏi"
@@ -264,7 +280,7 @@
                 "value": "67"
               }
             ],
-            "text": "k-koyəb i=dgušto ʕal katfe ʻer kippt den Krug auf der Schulter umʼ; 517; 6/67; ya u=šulṭon-ayḏi, iḏa d-saymət musaʕada d-kaybət ḥaṣox, g-isaqno w-g-madn-e amṭen-ox u=ḥabušo ‘Mein Sultan, wenn du erlaubst und deinen Rücken beugst, werde ich darauf steigen, den Apfel fassen und dir herunterholen’; 27/8 [MT]; huwe mə-darbə-d-huwe d-omər uno g-kuyabno <…> huwe mə́lle-lox luxāt: kub! g-isaqno ʕal ḥasox ‘Und er, statt zu sagen: Ich will mich bücken <…> sprach zu dir: Bücke dich! Ich werde auf deinen Rücken steigen!’; 27/66-67"
+            "text": "ya u=šulṭon-ayḏi, iḏa d-saymət musaʕada d-kaybət ḥaṣox, g-isaqno w-g-madn-e amṭen-ox u=ḥabušo ‘Mein Sultan, wenn du erlaubst und deinen Rücken beugst, werde ich darauf steigen, den Apfel fassen und dir herunterholen’; 27/8 [MT]; huwe mə-darbə-d-huwe d-omər uno g-kuyabno <…> huwe mə́lle-lox luxāt: kub! g-isaqno ʕal ḥasox ‘Und er, statt zu sagen: Ich will mich bücken <…> sprach zu dir: Bücke dich! Ich werde auf deinen Rücken steigen!’; 27/66-67"
           }
         ],
         "Imperativ": [

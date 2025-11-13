@@ -71,7 +71,7 @@
           },
           {
             "turoyo": "qariwo l-i=dukṯ-ayḏe",
-            "translations": ["‘(der Stamm, f) war nahe seinem Wohnort’"],
+            "translations": ["(der Stamm, f) war nahe seinem Wohnort"],
             "references": ["2", "26/102"],
             "tokens": [
               {
@@ -108,12 +108,11 @@
         ],
         "Infectum": [
           {
-            "turoyo": "Gōrgīs k-ḥoze me-taḥt u=taxt k-aṯyo ʕiqarwo kiba ṣito m-aš=šaʕuṯ-ani d-qərwo l-ḥa g-ṭəryole b-i=dukṯo ʕammo makli iḏux u=zʕur-ano lo=qurwət-le",
+            "turoyo": "Gōrgīs k-ḥoze me-taḥt u=taxt k-aṯyo ʕiqarwo kiba ṣito m-aš=šaʕuṯ-ani d-qərwo l-ḥa g-ṭəryole b-i=dukṯo",
             "translations": [
-              "da sieht Gōrgīs von unter dem Bette her, wie ein etwa spannenlanger Skorpion kommt, einer von jenen gelben, die, wenn sie an einen herankommen, einen auf der Stelle tot liegen lassen",
-              "‘Uncle! Hold off your hand. Do not approach this young man’"
+              "da sieht Gōrgīs von unter dem Bette her, wie ein etwa spannenlanger Skorpion kommt, einer von jenen gelben, die, wenn sie an einen herankommen, einen auf der Stelle tot liegen lassen"
             ],
-            "references": ["1", "284", "115/294", "75/191"],
+            "references": ["1", "284", "115/294"],
             "tokens": [
               {
                 "kind": "ref",
@@ -182,7 +181,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) Gōrgīs k-ḥoze me-taḥt u=taxt: k-aṯyo ʕiqarwo kiba ṣito, m-aš=šaʕuṯ-ani d-qərwo l-ḥa, g-ṭəryole b-i=dukṯo ʻda sieht Gōrgīs von unter dem Bette her, wie ein etwa spannenlanger Skorpion kommt, einer von jenen gelben, die, wenn sie an einen herankommen, einen auf der Stelle tot liegen lassenʼ; 284; 115/294;"
+          },
+          {
+            "turoyo": "ʕammo makli iḏux u=zʕur-ano lo=qurwət-le",
+            "translations": [
+              "‘Uncle! Hold off your hand. Do not approach this young man’"
+            ],
+            "references": ["75/191"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ʕammo makli iḏux u=zʕur-ano lo=qurwət-le "
@@ -204,7 +213,7 @@
                 "value": ";"
               }
             ],
-            "text": "1) Gōrgīs k-ḥoze me-taḥt u=taxt: k-aṯyo ʕiqarwo kiba ṣito, m-aš=šaʕuṯ-ani d-qərwo l-ḥa, g-ṭəryole b-i=dukṯo ʻda sieht Gōrgīs von unter dem Bette her, wie ein etwa spannenlanger Skorpion kommt, einer von jenen gelben, die, wenn sie an einen herankommen, einen auf der Stelle tot liegen lassenʼ; 284; 115/294; ʕammo makli iḏux u=zʕur-ano lo=qurwət-le ‘Uncle! Hold off your hand. Do not approach this young man’ 75/191;"
+            "text": "ʕammo makli iḏux u=zʕur-ano lo=qurwət-le ‘Uncle! Hold off your hand. Do not approach this young man’ 75/191;"
           },
           {
             "turoyo": "u=zʕur-ano k-qŭráw-lox-yo",
@@ -255,13 +264,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "u=saṯwo-ste mqarawle u=ḥal-ayḏan gəd-owe ġắlabe šapərza me-d-mqarawla ḥzela kal kit tawro=ḥreno čike əšmo balako mqarawwe ʕal-u=ṭuro d-u=kəkwo",
+            "turoyo": "u=saṯwo-ste mqarawle u=ḥal-ayḏan gəd-owe ġắlabe šapərza",
             "translations": [
-              "‘der Winter ist nahe gerückt, und so wird es uns schlimm ergehen’",
-              "‘As soon as she came nearer she saw that there was another ox, a little bit speckled’",
-              "‘They approached the Kəkwo mountain’"
+              "‘der Winter ist nahe gerückt, und so wird es uns schlimm ergehen’"
             ],
-            "references": ["1", "284", "10/4", "44/102", "LuF 270/22"],
+            "references": ["1", "284", "10/4"],
             "tokens": [
               {
                 "kind": "ref",
@@ -314,7 +321,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) u=saṯwo-ste mqarawle, u=ḥal-ayḏan gəd-owe ġắlabe šapərza ‘der Winter ist nahe gerückt, und so wird es uns schlimm ergehen’; 284; 10/4;"
+          },
+          {
+            "turoyo": "me-d-mqarawla ḥzela kal kit tawro=ḥreno čike əšmo balako",
+            "translations": [
+              "‘As soon as she came nearer she saw that there was another ox, a little bit speckled’"
+            ],
+            "references": ["44/102"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " me-d-mqarawla ḥzela"
@@ -354,7 +371,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "me-d-mqarawla ḥzela: kal kit tawro=ḥreno čike, əšmo balako ‘As soon as she came nearer she saw that there was another ox, a little bit speckled’; 44/102;"
+          },
+          {
+            "turoyo": "mqarawwe ʕal-u=ṭuro d-u=kəkwo",
+            "translations": ["‘They approached the Kəkwo mountain’"],
+            "references": ["LuF 270/22"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mqarawwe ʕal-u=ṭuro d-u=kəkwo "
@@ -376,7 +401,7 @@
                 "value": ";"
               }
             ],
-            "text": "1) u=saṯwo-ste mqarawle, u=ḥal-ayḏan gəd-owe ġắlabe šapərza ‘der Winter ist nahe gerückt, und so wird es uns schlimm ergehen’; 284; 10/4; me-d-mqarawla ḥzela: kal kit tawro=ḥreno čike, əšmo balako ‘As soon as she came nearer she saw that there was another ox, a little bit speckled’; 44/102; mqarawwe ʕal-u=ṭuro d-u=kəkwo ‘They approached the Kəkwo mountain’ LuF 270/22;"
+            "text": "mqarawwe ʕal-u=ṭuro d-u=kəkwo ‘They approached the Kəkwo mountain’ LuF 270/22;"
           },
           {
             "turoyo": "mqarawle bəṯṯər m-u=qerowo maʕmaḏle naʕime",
@@ -645,12 +670,11 @@
             "text": "2) mqarawno u=darbayḏi; 285; 116/90; 111/64, 72, 75; (ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ)"
           },
           {
-            "turoyo": "mətyaqalle d-məqqa d-howe u=kuhno ḥaṭoyo i=naqqa də-mqaru gəd-nəḥto i=Ruḥo Qadišo ʕal u=qurbon-ayḏe kul šato b-yawmo mbayno ak=kuhne d-ar=Rum k-oṯən k-maqiṯi qandelo aw šamʕo kə-mṣalən w kə-mqarwi",
+            "turoyo": "mətyaqalle d-məqqa d-howe u=kuhno ḥaṭoyo i=naqqa də-mqaru gəd-nəḥto i=Ruḥo Qadišo ʕal u=qurbon-ayḏe",
             "translations": [
-              "He understood: what a sinner should be the priest if the Holy Spirit descends upon his host when he celebrates mass",
-              "‘jedes Jahr an einem bestimmten Tage kommen die griechischen Priester, zünden Leuchter oder Kerzen an, beten und zelebrieren das Messopfer’"
+              "He understood: what a sinner should be the priest if the Holy Spirit descends upon his host when he celebrates mass"
             ],
-            "references": ["3", "285", "47/80", "1/6"],
+            "references": ["3", "285", "47/80"],
             "tokens": [
               {
                 "kind": "ref",
@@ -711,7 +735,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "3) mətyaqalle d-məqqa d-howe u=kuhno ḥaṭoyo, i=naqqa də-mqaru, gəd-nəḥto i=Ruḥo Qadišo ʕal u=qurbon-ayḏe ʻHe understood: what a sinner should be the priest if the Holy Spirit descends upon his host when he celebrates massʼ; 285; 47/80;"
+          },
+          {
+            "turoyo": "kul šato b-yawmo mbayno ak=kuhne d-ar=Rum k-oṯən k-maqiṯi qandelo aw šamʕo kə-mṣalən w kə-mqarwi",
+            "translations": [
+              "‘jedes Jahr an einem bestimmten Tage kommen die griechischen Priester, zünden Leuchter oder Kerzen an, beten und zelebrieren das Messopfer’"
+            ],
+            "references": ["1/6"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " kul šato"
@@ -769,14 +803,14 @@
                 "value": ";"
               }
             ],
-            "text": "3) mətyaqalle d-məqqa d-howe u=kuhno ḥaṭoyo, i=naqqa də-mqaru, gəd-nəḥto i=Ruḥo Qadišo ʕal u=qurbon-ayḏe ʻHe understood: what a sinner should be the priest if the Holy Spirit descends upon his host when he celebrates massʼ; 285; 47/80; kul šato, b-yawmo mbayno ak=kuhne d-ar=Rum k-oṯən, k-maqiṯi qandelo, aw šamʕo; kə-mṣalən w kə-mqarwi ‘jedes Jahr an einem bestimmten Tage kommen die griechischen Priester, zünden Leuchter oder Kerzen an, beten und zelebrieren das Messopfer’; 1/6;"
+            "text": "kul šato, b-yawmo mbayno ak=kuhne d-ar=Rum k-oṯən, k-maqiṯi qandelo, aw šamʕo; kə-mṣalən w kə-mqarwi ‘jedes Jahr an einem bestimmten Tage kommen die griechischen Priester, zünden Leuchter oder Kerzen an, beten und zelebrieren das Messopfer’; 1/6;"
           }
         ],
         "Imperativ": [
           {
             "turoyo": "abuna qaráw qurbono ʕal i=ruḥo d-u=gabrayḏi",
             "translations": [
-              "‘Hochwürden! Lies eine Messe für die Seele meines Mannes!’"
+              "Hochwürden! Lies eine Messe für die Seele meines Mannes!"
             ],
             "references": ["116/5"],
             "tokens": [

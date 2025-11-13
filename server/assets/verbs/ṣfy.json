@@ -19,7 +19,7 @@
         "Preterit Intransitive": [
           {
             "turoyo": "m-i=walaye də-Ṣtambul ṣafən b-Mawṣal",
-            "translations": ["‘Sie gerieten von der Stadt Stambul nach Moßul’"],
+            "translations": ["Sie gerieten von der Stadt Stambul nach Moßul"],
             "references": ["2", "24/266"],
             "tokens": [
               {
@@ -110,12 +110,11 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "aṯi l-u=bayto mṣafele u=šuġlayḏe prs mqatalle mede lə=mṣafalle",
+            "turoyo": "aṯi l-u=bayto mṣafele u=šuġlayḏe prs",
             "translations": [
-              "er kam nach Hause, und brachte seine Geschäfte zu Ende",
-              "sie kämpften miteinander, sie brachten nichts zustande"
+              "er kam nach Hause, und brachte seine Geschäfte zu Ende"
             ],
-            "references": ["1", "415", "13/31", "415", "60/122"],
+            "references": ["1", "415", "13/31"],
             "tokens": [
               {
                 "kind": "ref",
@@ -168,7 +167,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) aṯi l-u=bayto, mṣafele u=šuġlayḏe ʻer kam nach Hause, und brachte seine Geschäfte zu Endeʼ; 415; prs 13/31;"
+          },
+          {
+            "turoyo": "mqatalle mede lə=mṣafalle",
+            "translations": [
+              "sie kämpften miteinander, sie brachten nichts zustande"
+            ],
+            "references": ["415", "60/122"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mqatalle"
@@ -214,18 +223,14 @@
                 "value": ";"
               }
             ],
-            "text": "1) aṯi l-u=bayto, mṣafele u=šuġlayḏe ʻer kam nach Hause, und brachte seine Geschäfte zu Endeʼ; 415; prs 13/31; mqatalle, mede lə=mṣafalle ʻsie kämpften miteinander, sie brachten nichts zustandeʼ; 415; 60/122;"
+            "text": "mqatalle, mede lə=mṣafalle ʻsie kämpften miteinander, sie brachten nichts zustandeʼ; 415; 60/122;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "lo=qadər də-mṣafe mede prs kla i=pire tamo lo=kə-mtanyo hul də-mṣafən i=daʕwaṯṯe prs hat maslam-li i=šariʕ-aṯṯe uno gə-mṣafyal-la",
-            "translations": [
-              "er konnte nichts ausrichten",
-              "die Alte war zugegen, redete aber nicht, bis sie ihre Sache in's Reine gebracht hatten",
-              "‘Übergib du mir ihren Rechtsstreit! Ich werde ihn schon schlichten’"
-            ],
-            "references": ["1", "419", "196/4", "420", "204/13", "26/55"],
+            "turoyo": "lo=qadər də-mṣafe mede prs",
+            "translations": ["er konnte nichts ausrichten"],
+            "references": ["1", "419", "196/4"],
             "tokens": [
               {
                 "kind": "ref",
@@ -270,7 +275,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) lo=qadər də-mṣafe mede ʻer konnte nichts ausrichtenʼ; 419; prs 196/4;"
+          },
+          {
+            "turoyo": "kla i=pire tamo lo=kə-mtanyo hul də-mṣafən i=daʕwaṯṯe prs",
+            "translations": [
+              "die Alte war zugegen, redete aber nicht, bis sie ihre Sache in's Reine gebracht hatten"
+            ],
+            "references": ["420", "204/13"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " kla i=pire tamo"
@@ -314,7 +329,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "kla i=pire tamo, lo=kə-mtanyo hul də-mṣafən i=daʕwaṯṯe ʻdie Alte war zugegen, redete aber nicht, bis sie ihre Sache in's Reine gebracht hattenʼ; 420; prs 204/13;"
+          },
+          {
+            "turoyo": "hat maslam-li i=šariʕ-aṯṯe uno gə-mṣafyal-la",
+            "translations": [
+              "‘Übergib du mir ihren Rechtsstreit! Ich werde ihn schon schlichten’"
+            ],
+            "references": ["26/55"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " hat maslam-li i=šariʕ-aṯṯe"
@@ -352,7 +377,7 @@
                 "value": "[MT]"
               }
             ],
-            "text": "1) lo=qadər də-mṣafe mede ʻer konnte nichts ausrichtenʼ; 419; prs 196/4; kla i=pire tamo, lo=kə-mtanyo hul də-mṣafən i=daʕwaṯṯe ʻdie Alte war zugegen, redete aber nicht, bis sie ihre Sache in's Reine gebracht hattenʼ; 420; prs 204/13; hat maslam-li i=šariʕ-aṯṯe, uno gə-mṣafyal-la ‘Übergib du mir ihren Rechtsstreit! Ich werde ihn schon schlichten’; 26/55 [MT]"
+            "text": "hat maslam-li i=šariʕ-aṯṯe, uno gə-mṣafyal-la ‘Übergib du mir ihren Rechtsstreit! Ich werde ihn schon schlichten’; 26/55 [MT]"
           },
           {
             "turoyo": "məd-k-oṯe čāx d-u=qṭofayḏe ko-qəṭfi aq=qarʕe d-u=daḥno ko-dayqən-ne ko-mṣafən-ne",

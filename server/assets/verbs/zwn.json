@@ -21,8 +21,8 @@
             "turoyo": "húle-le tremo w-zwəlle i=dukan-ayḏe u=taǧər aḏəʕ d-u=abro d-u=faqir-awo d-zwəlle-yo aḥuno k-aṯino d-hozeno zwə́llux-li turto?",
             "translations": [
               "er gab ihm zweihundert und kaufte ihm den Laden ab",
-              "‘Der Kaufmann erkannte, daß es der Sohn des armen war, den er gekauft hatte’",
-              "‘Brother, I have come [here] to see if you bought a cow for me’"
+              "Der Kaufmann erkannte, daß es der Sohn des armen war, den er gekauft hatte",
+              "Brother, I have come [here] to see if you bought a cow for me"
             ],
             "references": ["1", "MM 36", "23/35", "39/10"],
             "tokens": [
@@ -126,12 +126,11 @@
             "text": "1) húle-le tremo w-zwəlle i=dukan-ayḏe ʻer gab ihm zweihundert und kaufte ihm den Laden abʼ MM 36; u=taǧər aḏəʕ: d-u=abro d-u=faqir-awo d-zwəlle-yo ‘Der Kaufmann erkannte, daß es der Sohn des armen war, den er gekauft hatte’; 23/35 [MT]; aḥuno, k-aṯino d-hozeno zwə́llux-li turto? ‘Brother, I have come [here] to see if you bought a cow for me’; 39/10"
           },
           {
-            "turoyo": "b-i=mxabara d-səmxu w d-gə-saymutu m-darbi l-Almanya zwənxu lebi d-saymət hawxa mede zwə́lləx-li",
+            "turoyo": "b-i=mxabara d-səmxu w d-gə-saymutu m-darbi l-Almanya zwənxu lebi",
             "translations": [
-              "mit der Korrespondenz, die Sie an meiner Statt mit Deutschlanf geführt haben und noch führen werden, haben Sie mein Herz gewonnen",
-              "‘Wenn du so etwas tust, kaufst du mich (gewinnst du mein Herz)’"
+              "mit der Korrespondenz, die Sie an meiner Statt mit Deutschlanf geführt haben und noch führen werden, haben Sie mein Herz gewonnen"
             ],
-            "references": ["2", "451", "20/3", "28/78"],
+            "references": ["2", "451", "20/3"],
             "tokens": [
               {
                 "kind": "ref",
@@ -176,7 +175,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "2) b-i=mxabara d-səmxu w d-gə-saymutu m-darbi l-Almanya zwənxu lebi ʻmit der Korrespondenz, die Sie an meiner Statt mit Deutschlanf geführt haben und noch führen werden, haben Sie mein Herz gewonnenʼ; 451; 20/3;"
+          },
+          {
+            "turoyo": "d-saymət hawxa mede zwə́lləx-li",
+            "translations": [
+              "‘Wenn du so etwas tust, kaufst du mich (gewinnst du mein Herz)’"
+            ],
+            "references": ["28/78"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " d-saymət hawxa mede"
@@ -206,18 +215,16 @@
                 "value": "28/78"
               }
             ],
-            "text": "2) b-i=mxabara d-səmxu w d-gə-saymutu m-darbi l-Almanya zwənxu lebi ʻmit der Korrespondenz, die Sie an meiner Statt mit Deutschlanf geführt haben und noch führen werden, haben Sie mein Herz gewonnenʼ; 451; 20/3; d-saymət hawxa mede, zwə́lləx-li ‘Wenn du so etwas tust, kaufst du mich (gewinnst du mein Herz)’; 28/78"
+            "text": "d-saymət hawxa mede, zwə́lləx-li ‘Wenn du so etwas tust, kaufst du mich (gewinnst du mein Herz)’; 28/78"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "kul tloṯ arbʕo=yarḥe ko-lotam-le kmo=maǧidiye g-zowən appe ǧule aḥuno k-obaʕno d-zawnat-li turto ono huli kallāt l-u=qašo d-zowal-li turto",
+            "turoyo": "kul tloṯ arbʕo=yarḥe ko-lotam-le kmo=maǧidiye g-zowən appe ǧule",
             "translations": [
-              "alle drei, vier Monate hat er ein paar Taler zusammen und kauft sich damit Kleider",
-              "‘Brother! I want you to buy me a cow’",
-              "‘I gave money to the priest that he might buy a cow for me’"
+              "alle drei, vier Monate hat er ein paar Taler zusammen und kauft sich damit Kleider"
             ],
-            "references": ["1", "453", "116/15", "39/1", "39/6"],
+            "references": ["1", "453", "116/15"],
             "tokens": [
               {
                 "kind": "ref",
@@ -270,7 +277,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) kul tloṯ arbʕo=yarḥe ko-lotam-le kmo=maǧidiye, g-zowən appe ǧule ʻalle drei, vier Monate hat er ein paar Taler zusammen und kauft sich damit Kleiderʼ; 453; 116/15;"
+          },
+          {
+            "turoyo": "aḥuno k-obaʕno d-zawnat-li turto",
+            "translations": ["‘Brother! I want you to buy me a cow’"],
+            "references": ["39/1"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " aḥuno"
@@ -302,7 +317,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "aḥuno, k-obaʕno d-zawnat-li turto ‘Brother! I want you to buy me a cow’; 39/1;"
+          },
+          {
+            "turoyo": "ono huli kallāt l-u=qašo d-zowal-li turto",
+            "translations": [
+              "‘I gave money to the priest that he might buy a cow for me’"
+            ],
+            "references": ["39/6"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ono huli kallāt l-u=qašo d-zowal-li turto "
@@ -324,7 +349,7 @@
                 "value": "39/6"
               }
             ],
-            "text": "1) kul tloṯ arbʕo=yarḥe ko-lotam-le kmo=maǧidiye, g-zowən appe ǧule ʻalle drei, vier Monate hat er ein paar Taler zusammen und kauft sich damit Kleiderʼ; 453; 116/15; aḥuno, k-obaʕno d-zawnat-li turto ‘Brother! I want you to buy me a cow’; 39/1; ono huli kallāt l-u=qašo d-zowal-li turto ‘I gave money to the priest that he might buy a cow for me’; 39/6"
+            "text": "ono huli kallāt l-u=qašo d-zowal-li turto ‘I gave money to the priest that he might buy a cow for me’; 39/6"
           }
         ],
         "Imperativ": [
@@ -437,21 +462,12 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mzaballe l-u=Kosa ad=dərrayat kul ḥḏo b-alfo prs lăšan d-miṣafe u=dayno d-aʕla am=more d-u=dayno mawfaqqe am=mədon-ani l-u=măzād w-mzabnənne l-aš=šaqole d-am=mədone ʕatiqe məd-tayimi mzabanne as=səsy-aṯṯe w-xəlle u=ḥaq d-anək-sti",
+            "turoyo": "mzaballe l-u=Kosa ad=dərrayat kul ḥḏo b-alfo prs lăšan d-miṣafe u=dayno d-aʕla am=more d-u=dayno mawfaqqe am=mədon-ani l-u=măzād w-mzabnənne l-aš=šaqole d-am=mədone ʕatiqe",
             "translations": [
               "Kosa verkaufte die Perlen, jede für tausend (Piaster)",
-              "zur Bereinigung ihrer Schulden hatten die Gläubiger diese Sachen versteigert und an die Aufkäufer von alten Sachen verkauft",
-              "‘Und als das (das Geld, pl) zu Ende war, verkauften sie ihre Pferde und aßen den Erlös davon auf’"
+              "zur Bereinigung ihrer Schulden hatten die Gläubiger diese Sachen versteigert und an die Aufkäufer von alten Sachen verkauft"
             ],
-            "references": [
-              "464",
-              "113/9",
-              "23/14",
-              "56/117",
-              "424",
-              "2/77",
-              "36/32"
-            ],
+            "references": ["464", "113/9", "23/14", "56/117", "424", "2/77"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -572,7 +588,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mzaballe l-u=Kosa ad=dərrayat, kul ḥḏo b-alfo ʻKosa verkaufte die Perlen, jede für tausend (Piaster)ʼ; 464; prs 113/9; 23/14; 56/117; lăšan d-miṣafe u=dayno d-aʕla, am=more d-u=dayno mawfaqqe am=mədon-ani l-u=măzād, w-mzabnənne l-aš=šaqole d-am=mədone ʕatiqe ʻzur Bereinigung ihrer Schulden hatten die Gläubiger diese Sachen versteigert und an die Aufkäufer von alten Sachen verkauftʼ; 424; 2/77;"
+          },
+          {
+            "turoyo": "məd-tayimi mzabanne as=səsy-aṯṯe w-xəlle u=ḥaq d-anək-sti",
+            "translations": [
+              "‘Und als das (das Geld, pl) zu Ende war, verkauften sie ihre Pferde und aßen den Erlös davon auf’"
+            ],
+            "references": ["36/32"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " məd-tayimi"
@@ -610,18 +636,14 @@
                 "value": "[MT]"
               }
             ],
-            "text": "mzaballe l-u=Kosa ad=dərrayat, kul ḥḏo b-alfo ʻKosa verkaufte die Perlen, jede für tausend (Piaster)ʼ; 464; prs 113/9; 23/14; 56/117; lăšan d-miṣafe u=dayno d-aʕla, am=more d-u=dayno mawfaqqe am=mədon-ani l-u=măzād, w-mzabnənne l-aš=šaqole d-am=mədone ʕatiqe ʻzur Bereinigung ihrer Schulden hatten die Gläubiger diese Sachen versteigert und an die Aufkäufer von alten Sachen verkauftʼ; 424; 2/77; məd-tayimi, mzabanne as=səsy-aṯṯe w-xəlle u=ḥaq d-anək-sti ‘Und als das (das Geld, pl) zu Ende war, verkauften sie ihre Pferde und aßen den Erlös davon auf’; 36/32 [MT]"
+            "text": "məd-tayimi, mzabanne as=səsy-aṯṯe w-xəlle u=ḥaq d-anək-sti ‘Und als das (das Geld, pl) zu Ende war, verkauften sie ihre Pferde und aßen den Erlös davon auf’; 36/32 [MT]"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "kə-mzaban-ne ḥeṭe l-ann=aḥunone prs k-ubʕeno də-mzabnat-li u=abr-ano diḏux d-hawi gud əbʕat amane maḥtat-te gabi ono g-mobánna-nne l-i=walaye d-Bəġdəd kīt tagore rabe tamo gə-mzabánna-nne tamo",
-            "translations": [
-              "er verkauft den Brüdern Weizen",
-              "‘Ich möchte, daß du mir den Sohn verkaufst, der dir geboren ist’",
-              "‘If you will, you can entrust me with them (pearls, pl.). I shall bring them to the city of Baghdad. There are big merchants (in Baghdad), and I shall sell them there’"
-            ],
-            "references": ["464", "19/19", "116/15", "23/13", "77/180"],
+            "turoyo": "kə-mzaban-ne ḥeṭe l-ann=aḥunone prs",
+            "translations": ["er verkauft den Brüdern Weizen"],
+            "references": ["464", "19/19", "116/15"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -670,7 +692,18 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "kə-mzaban-ne ḥeṭe l-ann=aḥunone ʻer verkauft den Brüdern Weizenʼ; 464; prs 19/19; 116/15;"
+          },
+          {
+            "turoyo": "k-ubʕeno də-mzabnat-li u=abr-ano diḏux d-hawi gud əbʕat amane maḥtat-te gabi ono g-mobánna-nne l-i=walaye d-Bəġdəd kīt tagore rabe tamo gə-mzabánna-nne tamo",
+            "translations": [
+              "‘Ich möchte, daß du mir den Sohn verkaufst, der dir geboren ist’",
+              "‘If you will, you can entrust me with them (pearls, pl.). I shall bring them to the city of Baghdad. There are big merchants (in Baghdad), and I shall sell them there’"
+            ],
+            "references": ["23/13", "77/180"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " k-ubʕeno də-mzabnat-li u=abr-ano diḏux d-hawi "
@@ -724,7 +757,7 @@
                 "value": ";"
               }
             ],
-            "text": "kə-mzaban-ne ḥeṭe l-ann=aḥunone ʻer verkauft den Brüdern Weizenʼ; 464; prs 19/19; 116/15; k-ubʕeno də-mzabnat-li u=abr-ano diḏux d-hawi ‘Ich möchte, daß du mir den Sohn verkaufst, der dir geboren ist’; 23/13 [MT]; gud əbʕat amane maḥtat-te gabi ono g-mobánna-nne l-i=walaye d-Bəġdəd kīt tagore rabe tamo gə-mzabánna-nne tamo ‘If you will, you can entrust me with them (pearls, pl.). I shall bring them to the city of Baghdad. There are big merchants (in Baghdad), and I shall sell them there’ 77/180;"
+            "text": "k-ubʕeno də-mzabnat-li u=abr-ano diḏux d-hawi ‘Ich möchte, daß du mir den Sohn verkaufst, der dir geboren ist’; 23/13 [MT]; gud əbʕat amane maḥtat-te gabi ono g-mobánna-nne l-i=walaye d-Bəġdəd kīt tagore rabe tamo gə-mzabánna-nne tamo ‘If you will, you can entrust me with them (pearls, pl.). I shall bring them to the city of Baghdad. There are big merchants (in Baghdad), and I shall sell them there’ 77/180;"
           }
         ],
         "Infectum-wa": [
@@ -901,15 +934,9 @@
         ],
         "Infinitiv": [
           {
-            "turoyo": "mʕaǧəb m-u=zwono w m-u=zəbonaṯṯe prs mə=kīt aʕmux k-omər ašər kīt aʕmi ḥalwo d-aryo m-ayko-yo omər ko l-u=zebono kəbʕutu – He said – – He said -",
-            "translations": [
-              "er wunderte sich über ihr Kaufen und Verkaufen",
-              "What do you have?",
-              "Indeed I have lion’s milk",
-              "From where?",
-              "Now it is for sale. Do you want (it)?"
-            ],
-            "references": ["465", "125/22", "75/316", "317"],
+            "turoyo": "mʕaǧəb m-u=zwono w m-u=zəbonaṯṯe prs",
+            "translations": ["er wunderte sich über ihr Kaufen und Verkaufen"],
+            "references": ["465", "125/22"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -946,7 +973,20 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "mʕaǧəb m-u=zwono w m-u=zəbonaṯṯe ʻer wunderte sich über ihr Kaufen und Verkaufenʼ; 465; prs 125/22;"
+          },
+          {
+            "turoyo": "mə=kīt aʕmux k-omər ašər kīt aʕmi ḥalwo d-aryo m-ayko-yo omər ko l-u=zebono kəbʕutu – He said – – He said -",
+            "translations": [
+              "“What do you have?”",
+              "“Indeed I have lion’s milk”",
+              "“From where?”",
+              "“Now it is for sale. Do you want (it)?”"
+            ],
+            "references": ["75/316", "317"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " mə=kīt aʕmux k-omər ašər kīt aʕmi ḥalwo d-aryo m-ayko-yo omər ko l-u=zebono kəbʕutu "
@@ -1016,7 +1056,7 @@
                 "value": ";"
               }
             ],
-            "text": "mʕaǧəb m-u=zwono w m-u=zəbonaṯṯe ʻer wunderte sich über ihr Kaufen und Verkaufenʼ; 465; prs 125/22; mə=kīt aʕmux k-omər ašər kīt aʕmi ḥalwo d-aryo m-ayko-yo omər ko l-u=zebono kəbʕutu “What do you have?” – He said: “Indeed I have lion’s milk” – “From where?” – He said: “Now it is for sale. Do you want (it)?” 75/316-317;"
+            "text": "mə=kīt aʕmux k-omər ašər kīt aʕmi ḥalwo d-aryo m-ayko-yo omər ko l-u=zebono kəbʕutu “What do you have?” – He said: “Indeed I have lion’s milk” – “From where?” – He said: “Now it is for sale. Do you want (it)?” 75/316-317;"
           }
         ]
       }

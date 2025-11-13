@@ -23,7 +23,7 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "tbənno Пример отсутствует в указанном месте",
+            "turoyo": "tbənno",
             "translations": ["ich bin ganz zerschlagen"],
             "references": ["238", "88/83"],
             "tokens": [
@@ -62,21 +62,23 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "tbənno ʻich bin ganz zerschlagenʼ; 238; 88/83;"
+          },
+          {
+            "turoyo": "Пример отсутствует в указанном месте",
+            "translations": [],
+            "references": [],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " Пример отсутствует в указанном месте"
               }
             ],
-            "text": "tbənno ʻich bin ganz zerschlagenʼ; 238; 88/83; Пример отсутствует в указанном месте"
+            "text": "Пример отсутствует в указанном месте"
           }
-        ]
-      }
-    },
-    {
-      "stem": "II",
-      "forms": ["mtaballe", "mtabər"],
-      "conjugations": {
+        ],
         "Preterit-wa": [
           {
             "turoyo": "b-u=nfolo d-nafəl-wa məskeno mtabar-wa",
@@ -182,6 +184,11 @@
           }
         ]
       }
+    },
+    {
+      "stem": "II",
+      "forms": ["mtaballe", "mtabər"],
+      "conjugations": {}
     }
   ],
   "idioms": ["zerschlagen;", "zerschlagen;"],

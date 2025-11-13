@@ -13,25 +13,16 @@
   "cross_reference": null,
   "stems": [
     {
-      "stem": "I",
-      "forms": ["fṣīḥ", "məfṣəḥ"],
-      "conjugations": {}
-    },
-    {
       "stem": "Detransitive",
-      "forms": [],
+      "forms": ["fṣīḥ", "məfṣəḥ"],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ġắlabe fṣəḥno d-kətno bwār d-u=bayt-awo fṣəḥno l-i=mṯayt-aṯxu d-aṯutu b-xēr w-salame u=mṣaydono lát-wo-le abne heš. fṣiḥ buwe huwe w-i=aṯto ġálabe bəṯṯər d-məlle d-šamiʕi hawxa u=ahl d-i=walaye d-kit-yo ḥakimo hano fṣiḥi ġálabe fṣəḥina ġálabe aʕmox",
+            "turoyo": "ġắlabe fṣəḥno d-kətno bwār d-u=bayt-awo",
             "translations": [
-              "ich freute mich sehr, wie ich so gegenüber diesem Haus stand",
-              "ich habe mich über euer kommen gefreut, dass ihr gut und wohlbehalten heimgekommen seid",
-              "‘Denn der fiseher hatte noch keine Söhne, er und seine frau hatten an ihm große Freude’",
-              "‘Als er so sprach und die Leute der Stadt hörten, daß er Arzt war, freuten sie sich sehr’",
-              "‘Wir haben uns so sehr über dich gefreut’"
+              "ich freute mich sehr, wie ich so gegenüber diesem Haus stand"
             ],
-            "references": ["LB 240", "19/1", "23/28", "24/57", "29/278"],
+            "references": ["LB 240"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -56,7 +47,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "ġắlabe fṣəḥno d-kətno bwār d-u=bayt-awo ʻich freute mich sehr, wie ich so gegenüber diesem Haus standʼ; LB 240;"
+          },
+          {
+            "turoyo": "fṣəḥno l-i=mṯayt-aṯxu d-aṯutu b-xēr w-salame",
+            "translations": [
+              "ich habe mich über euer kommen gefreut, dass ihr gut und wohlbehalten heimgekommen seid"
+            ],
+            "references": ["19/1"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " fṣəḥno l-i=mṯayt-aṯxu d-aṯutu b-xēr w-salame "
@@ -80,7 +81,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "fṣəḥno l-i=mṯayt-aṯxu d-aṯutu b-xēr w-salame ʻich habe mich über euer kommen gefreut, dass ihr gut und wohlbehalten heimgekommen seidʼ; 19/1;"
+          },
+          {
+            "turoyo": "u=mṣaydono lát-wo-le abne heš. fṣiḥ buwe huwe w-i=aṯto ġálabe",
+            "translations": [
+              "‘Denn der fiseher hatte noch keine Söhne, er und seine frau hatten an ihm große Freude’"
+            ],
+            "references": ["23/28"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " u=mṣaydono lát-wo-le abne heš. fṣiḥ buwe huwe w-i=aṯto ġálabe "
@@ -104,7 +115,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "u=mṣaydono lát-wo-le abne heš. fṣiḥ buwe huwe w-i=aṯto ġálabe ‘Denn der fiseher hatte noch keine Söhne, er und seine frau hatten an ihm große Freude’; 23/28;"
+          },
+          {
+            "turoyo": "bəṯṯər d-məlle d-šamiʕi hawxa u=ahl d-i=walaye d-kit-yo ḥakimo hano fṣiḥi ġálabe",
+            "translations": [
+              "‘Als er so sprach und die Leute der Stadt hörten, daß er Arzt war, freuten sie sich sehr’"
+            ],
+            "references": ["24/57"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " bəṯṯər d-məlle"
@@ -152,7 +173,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "bəṯṯər d-məlle, d-šamiʕi hawxa u=ahl d-i=walaye, d-kit-yo ḥakimo hano, fṣiḥi ġálabe ‘Als er so sprach und die Leute der Stadt hörten, daß er Arzt war, freuten sie sich sehr’; 24/57;"
+          },
+          {
+            "turoyo": "fṣəḥina ġálabe aʕmox",
+            "translations": ["‘Wir haben uns so sehr über dich gefreut’"],
+            "references": ["29/278"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " fṣəḥina ġálabe aʕmox "
@@ -174,7 +203,7 @@
                 "value": "29/278"
               }
             ],
-            "text": "ġắlabe fṣəḥno d-kətno bwār d-u=bayt-awo ʻich freute mich sehr, wie ich so gegenüber diesem Haus standʼ; LB 240; fṣəḥno l-i=mṯayt-aṯxu d-aṯutu b-xēr w-salame ʻich habe mich über euer kommen gefreut, dass ihr gut und wohlbehalten heimgekommen seidʼ; 19/1; u=mṣaydono lát-wo-le abne heš. fṣiḥ buwe huwe w-i=aṯto ġálabe ‘Denn der fiseher hatte noch keine Söhne, er und seine frau hatten an ihm große Freude’; 23/28; bəṯṯər d-məlle, d-šamiʕi hawxa u=ahl d-i=walaye, d-kit-yo ḥakimo hano, fṣiḥi ġálabe ‘Als er so sprach und die Leute der Stadt hörten, daß er Arzt war, freuten sie sich sehr’; 24/57; fṣəḥina ġálabe aʕmox ‘Wir haben uns so sehr über dich gefreut’; 29/278"
+            "text": "fṣəḥina ġálabe aʕmox ‘Wir haben uns so sehr über dich gefreut’; 29/278"
           }
         ],
         "Infectum": [
@@ -363,7 +392,7 @@
             "turoyo": "ya u=babayḏi məfṣǝ́ḥ axúl məfṣəḥ štay həč lə-mikadrət!",
             "translations": [
               "Vater! Freue dich",
-              "‘Iß, sei vergnügt, trinke, und sei durchaus nicht betrübt!’"
+              "Iß, sei vergnügt, trinke, und sei durchaus nicht betrübt!"
             ],
             "references": ["133", "24/122", "24/121"],
             "tokens": [
@@ -558,6 +587,6 @@
       }
     }
   ],
-  "idioms": ["(Detrans.) sich freuen, Freude haben;", "erfreuen;"],
+  "idioms": ["erfreuen;"],
   "uncertain": false
 }
