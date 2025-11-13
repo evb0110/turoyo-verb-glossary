@@ -1,13 +1,6 @@
 #!/usr/bin/env python3
 """
-DOCX Parser V2.1.2 - Idiom Root Detection Bugfix (2025-11-13)
-
-BUGFIX V2.1.2 (CRITICAL - Fixed 42 false verbs):
-- Fixed idiom phrases being detected as new verb roots
-- Added state tracking: self.in_idioms_section flag
-- Idioms like "hənnək ḥariwi..." no longer create false verbs
-- Stems after idioms now assigned to correct parent verb
-- Reduced verb count from 1502 to 1460 (correct count)
+DOCX Parser V2.1.1 - Regression Bugfix (2025-10-31)
 
 BUGFIX V2.1.1 (CRITICAL - Recovered 150+ lost examples):
 - Fixed case-sensitivity bug in is_reference_only()
@@ -52,17 +45,12 @@ class FixedDocxParser:
         self.stats = defaultdict(int)
         self.contextual_roots = []
         self.pending_idiom_paras = []
-        self.in_idioms_section = False
 
     def is_letter_header(self, para):
         return para.style and para.style.name == 'Heading 1'
 
     def is_root_paragraph(self, para, next_para=None):
         if not para.text.strip():
-            return False
-
-        # CRITICAL FIX: Don't detect roots when we're in an idioms section
-        if self.in_idioms_section:
             return False
 
         text = para.text.strip()
@@ -100,7 +88,7 @@ class FixedDocxParser:
 
         return False
 
-    def is_stem_header(self, para, next_elem_is_table=False):
+    def is_stem_header(self, para):
         if not para.text.strip():
             return False
 
@@ -111,16 +99,14 @@ class FixedDocxParser:
             if text.startswith('Detransitive'):
                 return True
 
-            # BUGFIX: Detect freeform stem lines without explicit markers (e.g., "mǧəqle/moǧaq SL 23-8-2025: ...")
-            # These implicit stems come right before conjugation tables
-            if next_elem_is_table:
-                # Check if line starts with italic Turoyo forms (verb conjugations)
-                # Pattern: starts with Turoyo characters, has italic formatting
+            # BUGFIX: Detect unprefixed Štaʔ/Paʕʕel stems by their characteristic prefixes
+            # Examples: məthaymən (Št. of hymn), mḥabasle (Pa. of ḥbs)
+            # Pattern: Single word starting with m- prefix, all Turoyo chars, no spaces except /
+            turoyo_word = r'^(mə[tṭ]|ma[tṭ]?|m[ṣṭḥš])[ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūə/\u0300-\u036F]+$'
+            if re.match(turoyo_word, text, re.UNICODE):
+                # Only accept if it's italic (Turoyo text) and short (< 50 chars = likely a form, not an idiom)
                 has_italic = any(r.italic for r in para.runs if r.text.strip())
-                turoyo_start = re.match(r'^[ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūə̀-ͯ]{3,}', text)
-
-                # If starts with Turoyo and has italic runs, treat as implicit Stem I
-                if has_italic and turoyo_start:
+                if has_italic and len(text) < 50:
                     return True
 
             return False
@@ -445,29 +431,15 @@ class FixedDocxParser:
         return root, etymology
 
     def extract_stem_info(self, text):
-        match = re.match(r'^([IVX]+|Pa\.|Af\.|Št\.|Šaf\.):\s*(.+)', text.strip())
-
-        if not match:
-            # BUGFIX: Handle implicit stems (no marker, just forms and notes)
-            # Example: "mǧəqle/moǧaq SL 23-8-2025: the verb looks like..."
-            # Check if this starts with Turoyo characters (likely forms)
-            implicit_match = re.match(r'^([ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūə̀-ͯ][^\s]*(?:/[^\s]+)*)', text.strip())
-            if implicit_match:
-                # Extract forms from the beginning
-                forms_str = implicit_match.group(1)
+        match = re.match(r'^([IVX]+):\s*(.+)', text.strip())
+        if match:
+            stem_num = match.group(1)
+            forms_text = match.group(2).strip()
+            forms_match = re.match(r'^([^\s]+(?:/[^\s]+)*)', forms_text)
+            if forms_match:
+                forms_str = forms_match.group(1)
                 forms = [f.strip() for f in forms_str.split('/') if f.strip()]
-                # Default to Stem I for implicit stems
-                return 'I', forms
-
-            return None, []
-
-        stem_num = match.group(1)
-        forms_text = match.group(2).strip()
-        forms_match = re.match(r'^([^\s]+(?:/[^\s]+)*)', forms_text)
-        if forms_match:
-            forms_str = forms_match.group(1)
-            forms = [f.strip() for f in forms_str.split('/') if f.strip()]
-            return stem_num, forms
+                return stem_num, forms
         return None, []
 
     def extract_translations_improved(self, cell_text):
@@ -1047,8 +1019,8 @@ class FixedDocxParser:
             if not text or len(text) < 3:
                 continue
 
-            # Skip headers (with or without colons)
-            if re.match(r'^(Detransitive|Idiomatic phrases?|Idioms?|Examples?|Collocations?):?$', text, re.IGNORECASE):
+            # BUGFIX: Skip headers (with flexible matching for variations like "Idiomatic phrases:")
+            if re.match(r'^(Detransitive|Idiomatic phrases?:?|Idioms?:?|Examples?:?|Collocations?:?)$', text, re.IGNORECASE):
                 continue
 
             # Skip numbered general meaning lists (but keep if it has specific idioms)
@@ -1122,9 +1094,6 @@ class FixedDocxParser:
                         self.verbs.append(current_verb)
                         self.stats['verbs_parsed'] += 1
 
-                    # CRITICAL FIX: Reset idioms flag when starting a new verb
-                    self.in_idioms_section = False
-
                     # Pass next paragraph text for multi-paragraph etymology support
                     next_para_text = next_para.text if next_para else None
                     root, etymology = self.extract_root_and_etymology(para.text, next_para_text)
@@ -1146,59 +1115,27 @@ class FixedDocxParser:
 
                 elif 'Detransitive' in para.text and current_verb:
                     if not any(s['stem'] == 'Detransitive' for s in current_verb['stems']):
-                        # Extract full paragraph text
-                        para_text = para.text.strip()
-
-                        # Extract any notes/comments by removing the "Detransitive" keyword
-                        # Pattern: "Detransitive (notes here)" or "Detransitive notes here"
-                        note_text = para_text.replace('Detransitive', '').strip()
-
                         current_stem = {
                             'stem': 'Detransitive',
                             'forms': [],
                             'conjugations': {}
                         }
-
-                        # Add label_gloss_tokens if there are meaningful notes
-                        if note_text:
-                            # Determine if note is italic based on runs
-                            has_italic = any(r.italic for r in para.runs if r.text.strip() and r.text.strip().lower() != 'detransitive')
-
-                            current_stem['label_gloss_tokens'] = [{
-                                'italic': has_italic,
-                                'text': note_text
-                            }]
-
                         current_verb['stems'].append(current_stem)
                         self.stats['detransitive_entries'] += 1
 
-                else:
-                    # Check if next element is a table (for detecting implicit stems)
-                    next_elem_is_table = False
-                    if idx + 1 < len(elements) and elements[idx + 1][0] == 'table':
-                        next_elem_is_table = True
+                elif self.is_stem_header(para):
+                    stem_num, forms = self.extract_stem_info(para.text)
+                    if stem_num and current_verb is not None:
+                        current_stem = {
+                            'stem': stem_num,
+                            'forms': forms,
+                            'conjugations': {}
+                        }
+                        current_verb['stems'].append(current_stem)
+                        self.stats['stems_parsed'] += 1
 
-                    if self.is_stem_header(para, next_elem_is_table):
-                        # CRITICAL FIX: Reset idioms flag when we encounter a stem marker
-                        self.in_idioms_section = False
-
-                        stem_num, forms = self.extract_stem_info(para.text)
-                        if stem_num and current_verb is not None:
-                            current_stem = {
-                                'stem': stem_num,
-                                'forms': forms,
-                                'conjugations': {}
-                            }
-                            current_verb['stems'].append(current_stem)
-                            self.stats['stems_parsed'] += 1
-
-                    elif current_verb is not None and current_verb.get('stems'):
-                        # CRITICAL FIX: Detect "Idiomatic Phrases" header and set flag
-                        para_text = para.text.strip()
-                        if re.match(r'^(Idiomatic phrases?|Idioms?):?$', para_text, re.IGNORECASE):
-                            self.in_idioms_section = True
-
-                        self.pending_idiom_paras.append(para)
+                elif current_verb is not None and current_verb.get('stems'):
+                    self.pending_idiom_paras.append(para)
 
             elif elem_type == 'table':
                 table = elem

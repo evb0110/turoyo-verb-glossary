@@ -133,6 +133,29 @@ export function generateExcerpts(
         }
     }
 
+    if (verb.idioms?.length) {
+        for (const idiom of verb.idioms) {
+            if (!idiom) continue
+            if (excerpts.length >= maxExcerpts) break
+
+            for (const match of matchAll(idiom, regex)) {
+                if (excerpts.length >= maxExcerpts) break
+                if (match.index === undefined) continue
+
+                const excerptText = extractContext(idiom, match.index, match[0].length, 60)
+                if (shouldAddExcerpt(excerptText, seenTexts)) {
+                    seenTexts.add(excerptText)
+                    excerpts.push({
+                        type: 'idiom',
+                        html: excerptText,
+                        label: 'Idiom:',
+                        text: excerptText,
+                    })
+                }
+            }
+        }
+    }
+
     if (verb.etymology && Array.isArray(verb.etymology.etymons)) {
         for (const etymon of verb.etymology.etymons) {
             if (excerpts.length >= maxExcerpts) {

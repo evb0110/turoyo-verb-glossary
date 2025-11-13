@@ -75,6 +75,14 @@ function etymologyMatches(
     ) ?? false
 }
 
+function idiomsMatch(
+    idioms: IVerb['idioms'],
+    query: string,
+    opts: ISearchOptions
+): boolean {
+    return idioms?.some(idiom => matchesPattern(idiom, query, opts)) ?? false
+}
+
 function verbMatches(
     verb: IVerb,
     query: string,
@@ -85,6 +93,7 @@ function verbMatches(
         || verb.lemma_header_tokens?.some(token => matchesPattern(token.text, query, opts)) === true
         || verb.stems.some(stem => stemMatches(stem, query, opts))
         || etymologyMatches(verb.etymology, query, opts)
+        || idiomsMatch(verb.idioms, query, opts)
     )
 }
 

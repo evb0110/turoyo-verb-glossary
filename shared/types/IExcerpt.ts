@@ -1,5 +1,5 @@
 export interface IExcerpt {
-    type: 'form' | 'example' | 'translation' | 'etymology' | 'gloss'
+    type: 'form' | 'example' | 'translation' | 'etymology' | 'gloss' | 'idiom'
     stem?: string
     conjugationType?: string
     text: string

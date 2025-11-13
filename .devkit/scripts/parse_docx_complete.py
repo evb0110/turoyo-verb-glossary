@@ -9,6 +9,7 @@ import json
 from pathlib import Path
 from docx import Document
 from collections import defaultdict
+import copy
 
 class CompleteDocxParser:
     """Parse verbs from DOCX with proper table handling"""
@@ -72,25 +73,83 @@ class CompleteDocxParser:
                 return stem_num, forms
         return None, []
 
+    def normalize_header(self, header):
+        """Normalize conjugation headers to canonical keys"""
+        if header is None:
+            return []
+
+        h = self.normalize_whitespace(header)
+        if not h:
+            return []
+
+        mapping = {
+            'Infectum - wa': 'Infectum-wa',
+            'Infectum – wa': 'Infectum-wa',
+            'Infectum — wa': 'Infectum-wa',
+            'Infectum–wa': 'Infectum-wa',
+            'Infectum — Transitive': 'Infectum-Transitive',
+            ' Infectum': 'Infectum',
+            'Imperativ': 'Imperative',
+            'Infinitiv': 'Infinitive',
+            'Preterite': 'Preterit',
+            'Part act.': 'Participle_Active',
+            'Part. act.': 'Participle_Active',
+            'Part Act.': 'Participle_Active',
+            'Part act': 'Participle_Active',
+            'Part. Act.': 'Participle_Active',
+            'Part act.': 'Participle_Active',
+            'Part pass.': 'Participle_Passive',
+            'Part. pass.': 'Participle_Passive',
+            'Part. Pass.': 'Participle_Passive',
+            'Part.Pass': 'Participle_Passive',
+            'Part pass': 'Participle_Passive',
+            'Pass. Part.': 'Participle_Passive',
+            'Passive Part.': 'Participle_Passive',
+            'Part': 'Participle',
+            'Participle': 'Participle',
+            'Nomen Patiens': 'Nomen Patiens',
+            'Nomen Patientis?': 'Nomen Patiens',
+            'Nomen Actionis': 'Nomen Actionis',
+            'Nomen agentis': 'Nomen agentis',
+        }
+
+        normalized = mapping.get(h, h)
+        if ' and ' in normalized:
+            parts = [
+                mapping.get(part.strip(), part.strip())
+                for part in normalized.split(' and ')
+                if part.strip()
+            ]
+            return parts
+
+        return [normalized]
+
+    def normalize_whitespace(self, text):
+        if not text:
+            return ""
+        return re.sub(r'\s+', ' ', text).strip()
+
     def parse_table_cell(self, cell_text):
         """Parse examples from table cell text"""
+        cell_text = cell_text.strip()
+        if not cell_text:
+            return []
+
         examples = []
-        parts = re.split(r'\n?\d+\)\s*', cell_text)
+        parts = re.split(r'(?:^|\n)\s*\d+\)\s*', cell_text)
 
         for part in parts:
             part = part.strip()
             if not part:
                 continue
 
-            # Extract translations (text in quotes)
-            translations = re.findall(r'[ʻ\'\"]([\w\s,;.:!?äöüßÄÖÜ\-]+)[ʼ\'\"]', part)
-            # Extract references (numbers like "731; 24/51")
-            references = re.findall(r'\d+(?:;\s*\d+)?(?:/\d+)?', part)
+            translations = re.findall(r'[ʻ\'\"“”‘’]([^ʻ\'\"“”‘’]{3,})[ʼ\'\"“”‘’]', part)
+            references = re.findall(r'\d+(?:/\d+)?', part)
 
             example = {
-                'turoyo': part,
-                'translations': [t.strip() for t in translations if len(t.strip()) > 3],
-                'references': references[:2] if references else []
+                'turoyo': self.normalize_whitespace(part),
+                'translations': [self.normalize_whitespace(t) for t in translations if t.strip()],
+                'references': [self.normalize_whitespace(r) for r in references[:3]]
             }
 
             examples.append(example)
@@ -124,10 +183,13 @@ class CompleteDocxParser:
         # Now parse through elements sequentially
         current_verb = None
         current_stem = None
+        collecting_gloss_for_stem = False
+        collecting_idioms = False
 
         for elem_type, elem in elements:
             if elem_type == 'para':
                 para = elem
+                text = para.text.strip()
 
                 # Letter header
                 if self.is_letter_header(para):
@@ -136,8 +198,14 @@ class CompleteDocxParser:
                 # Root (new verb)
                 if self.is_root_paragraph(para):
                     if current_verb:
+                        idioms = current_verb.get('idioms')
+                        if idioms == []:
+                            current_verb['idioms'] = None
                         self.verbs.append(current_verb)
                         self.stats['verbs_parsed'] += 1
+
+                    collecting_idioms = False
+                    collecting_gloss_for_stem = False
 
                     root, etymology = self.extract_root_and_etymology(para.text)
                     if root:
@@ -161,36 +229,91 @@ class CompleteDocxParser:
                         }
                         current_verb['stems'].append(current_stem)
                         self.stats['stems_parsed'] += 1
+                        collecting_gloss_for_stem = True
+                        collecting_idioms = False
 
                 # Detransitive marker
                 elif 'Detransitive' in para.text and current_verb:
                     if not any(s['stem'] == 'Detransitive' for s in current_verb['stems']):
+                        note_text = para.text.split('Detransitive', 1)[1].strip() if 'Detransitive' in para.text else ''
+                        note_text = note_text.lstrip(':-').strip()
                         current_stem = {
                             'stem': 'Detransitive',
                             'forms': [],
                             'conjugations': {}
                         }
+                        if note_text:
+                            current_stem['label_gloss_tokens'] = [{'italic': False, 'text': note_text}]
                         current_verb['stems'].append(current_stem)
                         self.stats['detransitive_entries'] += 1
+                        collecting_gloss_for_stem = bool(note_text)
+                        collecting_idioms = False
+
+                elif not text:
+                    if collecting_gloss_for_stem:
+                        collecting_gloss_for_stem = False
+                    continue
+
+                elif current_verb is not None:
+                    lowered = text.lower()
+                    if lowered in {'idiomatic phrases', 'idiomatic phrases:', 'idioms', 'idioms:', 'collocations', 'collocations:'}:
+                        if current_verb.get('idioms') is None:
+                            current_verb['idioms'] = []
+                        collecting_idioms = True
+                        collecting_gloss_for_stem = False
+                        continue
+
+                    if collecting_idioms:
+                        if current_verb.get('idioms') is None:
+                            current_verb['idioms'] = []
+                        current_verb['idioms'].append(text)
+                        continue
+
+                    if current_stem is not None and collecting_gloss_for_stem:
+                        tokens = current_stem.setdefault('label_gloss_tokens', [])
+                        if tokens:
+                            tokens.append({'italic': False, 'text': ' '})
+                        tokens.append({'italic': False, 'text': text})
+                        continue
+
+                    collecting_gloss_for_stem = False
 
             elif elem_type == 'table':
                 table = elem
 
-                # Associate table with current stem
                 if current_stem is not None and table.rows:
-                    row = table.rows[0]
-                    if len(row.cells) >= 2:
-                        conj_type = row.cells[0].text.strip()
-                        examples_text = row.cells[1].text.strip()
+                    last_headers = None
+                    for row in table.rows:
+                        if len(row.cells) < 2:
+                            continue
+
+                        raw_header = row.cells[0].text
+                        examples_text = row.cells[1].text
+
+                        headers = self.normalize_header(raw_header) if raw_header.strip() else last_headers
+                        if not headers:
+                            continue
 
                         examples = self.parse_table_cell(examples_text)
+                        if not examples:
+                            last_headers = headers
+                            continue
 
-                        if conj_type and examples:
-                            current_stem['conjugations'][conj_type] = examples
+                        for header in headers:
+                            existing = current_stem['conjugations'].setdefault(header, [])
+                            existing.extend(copy.deepcopy(examples))
                             self.stats['examples_parsed'] += len(examples)
+
+                        last_headers = headers
+
+                collecting_gloss_for_stem = False
+                collecting_idioms = False
 
         # Save last verb
         if current_verb:
+            idioms = current_verb.get('idioms')
+            if idioms == []:
+                current_verb['idioms'] = None
             self.verbs.append(current_verb)
             self.stats['verbs_parsed'] += 1
 
@@ -235,8 +358,6 @@ class CompleteDocxParser:
 
     def split_into_files(self, output_dir):
         """Split verbs into individual JSON files"""
-        print(f"\n🔄 Splitting into individual files...")
-
         output_path = Path(output_dir)
         output_path.mkdir(parents=True, exist_ok=True)
 
@@ -259,6 +380,7 @@ def main():
 
     parser.save_json('.devkit/analysis/docx_complete_parsed.json')
     parser.split_into_files('.devkit/analysis/docx_verbs')
+    parser.split_into_files('server/assets/verbs')
 
     print("\n" + "=" * 80)
     print("FINAL STATISTICS")

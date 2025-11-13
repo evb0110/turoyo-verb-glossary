@@ -7,6 +7,7 @@ export interface IVerb {
     cross_reference: string | null
     stems: IStem[]
     uncertain: boolean
+    idioms?: string[] | null
 
     lemma_header_raw?: string
 
