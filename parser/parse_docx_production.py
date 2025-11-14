@@ -1,6 +1,28 @@
 #!/usr/bin/env python3
 """
-DOCX Parser V2.1.5 - Multiple Example Concatenation Fix (2025-11-14)
+DOCX Parser V2.1.8 - Separate Paragraph Gloss Fix (2025-11-14)
+
+BUGFIX V2.1.8 (CRITICAL - Capture glosses in separate paragraphs):
+- Fixed parser missing stem glosses that appear in separate paragraph after stem header
+- After detecting stem header, look ahead to next paragraph for potential gloss
+- If next para is non-empty, non-table, non-stem-header text, capture it as gloss
+- Mark consumed gloss paragraphs to prevent them appearing in idioms section
+- Example: ʕbr Stem I now has gloss "hineintreten, hineingehen (mit b-; l-);"
+- Preserves both same-line glosses (mǧq) and separate-paragraph glosses (ʕbr)
+
+BUGFIX V2.1.7 (CRITICAL - Fixed stem glosses extracted as idioms):
+- Fixed parser extracting stem glosses as idioms when they appear after "Idiomatic Phrases" header
+- Only append paragraphs to pending_idiom_paras AFTER idioms header is found
+- Stop collecting idioms when new stem header is encountered (prevents Stem III glosses being extracted)
+- Example: ʕbr now has 3 idioms (was 4, incorrectly included Stem III gloss)
+- Affected verbs: All verbs with idioms followed by additional stems (Stem III, Af., etc.)
+
+BUGFIX V2.1.6 (CRITICAL - Fixed hallucinated idioms):
+- Fixed parser extracting stem forms/glosses as idioms when no "Idiomatic Phrases" header exists
+- Added in_idioms_section flag parameter to extract_idioms() function
+- Only extract idioms when "Idiomatic Phrases" header was explicitly found in DOCX
+- Example: nql now has "idioms": null (was hallucinating 5 items: forms/glosses from stems)
+- Fixed: 54 verbs with real idioms preserved, ~1400+ verbs with hallucinated idioms fixed
 
 BUGFIX V2.1.5 (CRITICAL - tḥsd 1 Infectum fix):
 - Fixed year numbers in parenthetical notes (e.g., "(Notes 2018)") being detected as numbered list items
@@ -75,16 +97,13 @@ class FixedDocxParser:
         self.contextual_roots = []
         self.pending_idiom_paras = []
         self.in_idioms_section = False
+        self.consumed_para_indices = set()  # Track paragraphs used as stem glosses
 
     def is_letter_header(self, para):
         return para.style and para.style.name == 'Heading 1'
 
     def is_root_paragraph(self, para, next_para=None):
         if not para.text.strip():
-            return False
-
-        # CRITICAL FIX: Don't detect roots when we're in an idioms section
-        if self.in_idioms_section:
             return False
 
         text = para.text.strip()
@@ -501,10 +520,12 @@ class FixedDocxParser:
                 # Extract forms from the beginning
                 forms_str = implicit_match.group(1)
                 forms = [f.strip() for f in forms_str.split('/') if f.strip()]
+                # Extract gloss text after forms (if any)
+                gloss_text = text[implicit_match.end():].strip()
                 # Default to Stem I for implicit stems
-                return 'I', forms
+                return 'I', forms, gloss_text
 
-            return None, []
+            return None, [], ''
 
         stem_num = match.group(1)
         forms_text = match.group(2).strip()
@@ -512,8 +533,61 @@ class FixedDocxParser:
         if forms_match:
             forms_str = forms_match.group(1)
             forms = [f.strip() for f in forms_str.split('/') if f.strip()]
-            return stem_num, forms
-        return None, []
+            # Extract gloss text after forms (if any)
+            gloss_text = forms_text[forms_match.end():].strip()
+            return stem_num, forms, gloss_text
+        return None, [], ''
+
+    def tokenize_paragraph_runs(self, para, target_text):
+        """Extract tokens from paragraph runs for gloss text with italic preservation
+
+        Args:
+            para: The paragraph object containing runs
+            target_text: The specific text to tokenize (substring of para.text)
+
+        Returns:
+            List of token dicts with 'italic' and 'text' keys
+        """
+        tokens = []
+
+        # Find the starting position of target_text in the full paragraph text
+        full_text = para.text
+        start_pos = full_text.find(target_text)
+
+        if start_pos == -1:
+            return tokens
+
+        end_pos = start_pos + len(target_text)
+
+        # Track position as we iterate through runs
+        current_pos = 0
+
+        for run in para.runs:
+            run_text = run.text
+            run_len = len(run_text)
+            run_end = current_pos + run_len
+
+            # Check if this run overlaps with target text
+            if run_end > start_pos and current_pos < end_pos:
+                # Calculate overlap
+                overlap_start = max(0, start_pos - current_pos)
+                overlap_end = min(run_len, end_pos - current_pos)
+
+                text_fragment = run_text[overlap_start:overlap_end]
+
+                if text_fragment:
+                    tokens.append({
+                        'italic': bool(run.italic),
+                        'text': text_fragment
+                    })
+
+            current_pos = run_end
+
+            # Stop if we've passed the end of target text
+            if current_pos >= end_pos:
+                break
+
+        return tokens
 
     def extract_translations_improved(self, cell_text):
         """Extract translations with comprehensive quote handling"""
@@ -1260,7 +1334,7 @@ class FixedDocxParser:
             }] if turoyo_part or translation_part else []
         }
 
-    def extract_idioms(self, paragraphs, verb_forms):
+    def extract_idioms(self, paragraphs, verb_forms, in_idioms_section=False):
         """
         Extract idioms as LIST OF STRINGS (UI requirement).
 
@@ -1269,10 +1343,15 @@ class FixedDocxParser:
         Args:
             paragraphs: List of paragraph objects
             verb_forms: List of verb forms for this root
+            in_idioms_section: Whether "Idiomatic Phrases" header was found
 
         Returns:
             list[str] | None: List of idiom text strings
         """
+        # CRITICAL FIX: Only extract idioms if we encountered "Idiomatic Phrases" header
+        if not in_idioms_section:
+            return None
+
         idiom_texts = []
 
         for para in paragraphs:
@@ -1630,7 +1709,7 @@ class FixedDocxParser:
                             all_verb_forms = []
                             for stem in current_verb.get('stems', []):
                                 all_verb_forms.extend(stem.get('forms', []))
-                            idioms = self.extract_idioms(self.pending_idiom_paras, all_verb_forms)
+                            idioms = self.extract_idioms(self.pending_idiom_paras, all_verb_forms, self.in_idioms_section)
                             if idioms:
                                 current_verb['idioms'] = idioms
                                 self.stats['idioms_extracted'] = self.stats.get('idioms_extracted', 0) + len(idioms)
@@ -1667,13 +1746,23 @@ class FixedDocxParser:
                         next_elem_is_table = True
 
                     if self.is_stem_header(para, next_elem_is_table):
-                        # CRITICAL FIX: Reset idioms flag when we encounter a stem marker
-                        self.in_idioms_section = False
-
                         para_text = para.text.strip()
 
                         # BUGFIX: Handle special stem types (Detransitive, Action Noun, Infinitiv)
                         if para_text in ['Detransitive', 'Action Noun', 'Infinitiv']:
+                            # BUGFIX V2.1.7: Extract idioms before starting new stem
+                            if self.in_idioms_section and self.pending_idiom_paras:
+                                all_verb_forms = []
+                                for stem in current_verb.get('stems', []):
+                                    all_verb_forms.extend(stem.get('forms', []))
+                                idioms = self.extract_idioms(self.pending_idiom_paras, all_verb_forms, self.in_idioms_section)
+                                if idioms:
+                                    current_verb['idioms'] = idioms
+                                    self.stats['idioms_extracted'] = self.stats.get('idioms_extracted', 0) + len(idioms)
+                                # Clear buffer and reset flag
+                                self.pending_idiom_paras = []
+                                self.in_idioms_section = False
+
                             # DETRANSITIVE FIX: Check if a Detransitive stem already exists
                             # If so, reuse it instead of creating a new one
                             existing_stem = None
@@ -1755,8 +1844,21 @@ class FixedDocxParser:
 
                         else:
                             # Regular stem (I, II, Pa., Af., etc.)
-                            stem_num, forms = self.extract_stem_info(para.text)
+                            stem_num, forms, gloss_text = self.extract_stem_info(para.text)
                             if stem_num and current_verb is not None:
+                                # BUGFIX V2.1.7: Extract idioms before starting new stem
+                                if self.in_idioms_section and self.pending_idiom_paras:
+                                    all_verb_forms = []
+                                    for stem in current_verb.get('stems', []):
+                                        all_verb_forms.extend(stem.get('forms', []))
+                                    idioms = self.extract_idioms(self.pending_idiom_paras, all_verb_forms, self.in_idioms_section)
+                                    if idioms:
+                                        current_verb['idioms'] = idioms
+                                        self.stats['idioms_extracted'] = self.stats.get('idioms_extracted', 0) + len(idioms)
+                                    # Clear buffer and reset flag
+                                    self.pending_idiom_paras = []
+                                    self.in_idioms_section = False
+
                                 # DETRANSITIVE FIX: Check if next paragraph has "(Detrans.)" marker
                                 # If so, this should be a Detransitive stem, not Stem I/II/Pa/etc
                                 actual_stem_type = stem_num
@@ -1792,6 +1894,47 @@ class FixedDocxParser:
                                     'forms': forms,
                                     'conjugations': {}
                                 }
+
+                                # Add label_gloss_tokens if gloss text exists
+                                if gloss_text:
+                                    gloss_tokens = self.tokenize_paragraph_runs(para, gloss_text)
+                                    if gloss_tokens:
+                                        current_stem['label_gloss_tokens'] = gloss_tokens
+
+                                # BUGFIX V2.1.8: Check for separate paragraph gloss
+                                # If no gloss on same line, look ahead to next paragraph
+                                if not gloss_text:
+                                    for j in range(idx + 1, min(idx + 3, len(elements))):
+                                        if elements[j][0] == 'para':
+                                            next_p = elements[j][1]
+                                            next_text = next_p.text.strip()
+
+                                            # Skip empty paragraphs
+                                            if not next_text:
+                                                continue
+
+                                            # Stop if next para is another stem header
+                                            if self.is_stem_header(next_p, False):
+                                                break
+
+                                            # Stop if next para is idioms header
+                                            if re.match(r'^(Idiomatic phrases?|Idioms?):?$', next_text, re.IGNORECASE):
+                                                break
+
+                                            # This paragraph is likely a separate gloss
+                                            # Tokenize it and mark as consumed
+                                            gloss_tokens = self.tokenize_paragraph_runs(next_p, next_text)
+                                            if gloss_tokens:
+                                                current_stem['label_gloss_tokens'] = gloss_tokens
+                                                # Mark this paragraph index as consumed
+                                                self.consumed_para_indices.add(j)
+                                                self.stats['separate_glosses_captured'] = self.stats.get('separate_glosses_captured', 0) + 1
+                                            break
+
+                                        # Stop at first table (conjugations)
+                                        elif elements[j][0] == 'table':
+                                            break
+
                                 current_verb['stems'].append(current_stem)
                                 self.stats['stems_parsed'] += 1
 
@@ -1804,7 +1947,11 @@ class FixedDocxParser:
                         if re.match(r'^(Idiomatic phrases?|Idioms?):?$', para_text, re.IGNORECASE):
                             self.in_idioms_section = True
 
-                        self.pending_idiom_paras.append(para)
+                        # BUGFIX V2.1.7: Only append paragraphs AFTER idioms header is found
+                        # This prevents stem glosses from being extracted as idioms
+                        # BUGFIX V2.1.8: Skip consumed paragraphs (used as separate glosses)
+                        if self.in_idioms_section and idx not in self.consumed_para_indices:
+                            self.pending_idiom_paras.append(para)
 
             elif elem_type == 'table':
                 table = elem
@@ -1829,7 +1976,7 @@ class FixedDocxParser:
                 all_verb_forms = []
                 for stem in current_verb.get('stems', []):
                     all_verb_forms.extend(stem.get('forms', []))
-                idioms = self.extract_idioms(self.pending_idiom_paras, all_verb_forms)
+                idioms = self.extract_idioms(self.pending_idiom_paras, all_verb_forms, self.in_idioms_section)
                 if idioms:
                     current_verb['idioms'] = idioms
                     self.stats['idioms_extracted'] = self.stats.get('idioms_extracted', 0) + len(idioms)
@@ -1842,6 +1989,8 @@ class FixedDocxParser:
             print(f"   💬 {self.stats['idioms_extracted']} idiomatic expressions extracted")
         if self.stats.get('contextual_roots'):
             print(f"   🔍 {self.stats['contextual_roots']} roots found via contextual validation")
+        if self.stats.get('separate_glosses_captured'):
+            print(f"   📝 {self.stats['separate_glosses_captured']} separate-paragraph glosses captured")
 
     def add_homonym_numbers(self):
         """Add sequential numbers to homonyms with different etymologies
