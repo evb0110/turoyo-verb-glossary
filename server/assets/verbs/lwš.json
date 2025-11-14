@@ -18,11 +18,10 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "qayəm Mammo lwəšle u=sayfo w u=turso prs prs prs prs prs ḥatta d-a=greʕe w-u=mal diḏa d-lə=mibarbəz <…> ǧbiro lwəšla ǧule d-u=gawro - qayimo mə-ṣafro <…> lwəšla post d-i=ġəzalat aʕla",
+            "turoyo": "qayəm Mammo lwəšle u=sayfo w u=turso prs prs prs prs prs ḥatta d-a=greʕe w-u=mal diḏa d-lə=mibarbəz <…> ǧbiro lwəšla ǧule d-u=gawro -",
             "translations": [
               "da machte sich Mammo auf, griff zu Säbel und Schild",
-              "Damit die Knechte und ihr Eigenturn sich nicht verstreuten <…> zog sie die Kleider ihres Mannes an",
-              "[Die Tochter] stand früh am Morgen auf und <…> zog ihre Gazellenhaut über"
+              "‘Damit die Knechte und ihr Eigenturn sich nicht verstreuten <…> zog sie die Kleider ihres Mannes an’"
             ],
             "references": [
               "449",
@@ -34,8 +33,7 @@
               "47/72",
               "75/185",
               "24/151",
-              "152",
-              "28/79"
+              "152"
             ],
             "tokens": [
               {
@@ -193,7 +191,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "qayəm Mammo, lwəšle u=sayfo w u=turso ʻda machte sich Mammo auf, griff zu Säbel und Schildʼ; 449; prs 2/3; prs 10/26; prs 24/16; prs 133/36; prs 33/17; 47/72; 75/185; ḥatta d-a=greʕe w-u=mal diḏa d-lə=mibarbəz <…> ǧbiro lwəšla ǧule d-u=gawro ‘Damit die Knechte und ihr Eigenturn sich nicht verstreuten <…> zog sie die Kleider ihres Mannes an’; 24/151-152 [MT];"
+          },
+          {
+            "turoyo": "qayimo mə-ṣafro <…> lwəšla post d-i=ġəzalat aʕla",
+            "translations": [
+              "‘[Die Tochter] stand früh am Morgen auf und <…> zog ihre Gazellenhaut über’"
+            ],
+            "references": ["28/79"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " qayimo mə-ṣafro <…> lwəšla post d-i=ġəzalat aʕla "
@@ -215,7 +223,7 @@
                 "value": "28/79"
               }
             ],
-            "text": "qayəm Mammo, lwəšle u=sayfo w u=turso ʻda machte sich Mammo auf, griff zu Säbel und Schildʼ; 449; prs 2/3; prs 10/26; prs 24/16; prs 133/36; prs 33/17; 47/72; 75/185; ḥatta d-a=greʕe w-u=mal diḏa d-lə=mibarbəz <…> ǧbiro lwəšla ǧule d-u=gawro ‘Damit die Knechte und ihr Eigenturn sich nicht verstreuten <…> zog sie die Kleider ihres Mannes an’; 24/151-152 [MT]; qayimo mə-ṣafro <…> lwəšla post d-i=ġəzalat aʕla ‘[Die Tochter] stand früh am Morgen auf und <…> zog ihre Gazellenhaut über’; 28/79"
+            "text": "qayimo mə-ṣafro <…> lwəšla post d-i=ġəzalat aʕla ‘[Die Tochter] stand früh am Morgen auf und <…> zog ihre Gazellenhaut über’; 28/79"
           }
         ],
         "Preterit-wa": [
@@ -1407,11 +1415,11 @@
         ],
         "Imperativ": [
           {
-            "turoyo": "ʕal i=ṣufr-ayḏi gd-oxəl w-m-aǧ=ǧul-ayḏi malwešəl-le my clothes’",
+            "turoyo": "ʕal i=ṣufr-ayḏi gd-oxəl w-m-aǧ=ǧul-ayḏi malwešəl-le",
             "translations": [
-              "He shall eat from my table, and you shall dress him in (lit. ‘from"
+              "‘He shall eat from my table, and you shall dress him in (lit. ‘from’"
             ],
-            "references": ["1", "73/139"],
+            "references": ["1"],
             "tokens": [
               {
                 "kind": "ref",
@@ -1440,7 +1448,15 @@
               {
                 "kind": "punct",
                 "value": ")"
-              },
+              }
+            ],
+            "text": "1) ʕal i=ṣufr-ayḏi gd-oxəl, w-m-aǧ=ǧul-ayḏi malwešəl-le ‘He shall eat from my table, and you shall dress him in (lit. ‘from’)"
+          },
+          {
+            "turoyo": "my clothes’",
+            "translations": [],
+            "references": ["73/139"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " my clothes’ "
@@ -1454,7 +1470,7 @@
                 "value": ";"
               }
             ],
-            "text": "1) ʕal i=ṣufr-ayḏi gd-oxəl, w-m-aǧ=ǧul-ayḏi malwešəl-le ‘He shall eat from my table, and you shall dress him in (lit. ‘from’) my clothes’ 73/139;"
+            "text": "my clothes’ 73/139;"
           },
           {
             "turoyo": "malweš-le aǧ=ǧul-ani",

@@ -340,12 +340,11 @@
         ],
         "Infectum": [
           {
-            "turoyo": "mḥalaqle u=ḥawlo l-ḥaṣe d-u=abro d-i=pire u=abro d-i=pire d-noḥət l-gawa d-i=biro d-šote maye ʻda warf er dem Sohn der Alten den Strick um damit er in den Brunnen hinuntersteigen Wasser trinken sollte ḥzalle gubo b-u=ṭuro abiʕi d-šotən lat-wo aʕmayye dawlo d-molən maye tamo k-noḥər dubḥo w-hul ʕaṣriye huwe w-an=naʕim-ayḏe k-saymi muklo k-uxli šotən",
+            "turoyo": "mḥalaqle u=ḥawlo l-ḥaṣe d-u=abro d-i=pire u=abro d-i=pire d-noḥət l-gawa d-i=biro d-šote maye ʻda warf er dem Sohn der Alten den Strick um damit er in den Brunnen hinuntersteigen Wasser trinken sollte ḥzalle gubo b-u=ṭuro abiʕi d-šotən lat-wo aʕmayye dawlo d-molən maye",
             "translations": [
-              "Da fanden sie eine Zisterne auf dem Berge; sie wollten trinken, aber sie hatten keinen Eimer mit, um Wasser hineinzufüllen",
-              "Dort schlachtet er das Opfer, und bis zum Abend bereitet er mit seinen Kindern Essen; sie essen und trinken"
+              "‘Da fanden sie eine Zisterne auf dem Berge; sie wollten trinken, aber sie hatten keinen Eimer mit, um Wasser hineinzufüllen’"
             ],
-            "references": ["1", "356", "64/77", "21/74", "24/296"],
+            "references": ["1", "356", "64/77", "21/74"],
             "tokens": [
               {
                 "kind": "ref",
@@ -466,7 +465,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) mḥalaqle u=ḥawlo l-ḥaṣe d-u=abro d-i=pire; u=abro d-i=pire d-noḥət l-gawa d-i=biro d-šote maye ʻda warf er dem Sohn der Alten den Strick um, damit er in den Brunnen hinuntersteigen, Wasser trinken sollte; 356; 64/77; ḥzalle gubo b-u=ṭuro, abiʕi d-šotən, lat-wo aʕmayye dawlo d-molən maye ‘Da fanden sie eine Zisterne auf dem Berge; sie wollten trinken, aber sie hatten keinen Eimer mit, um Wasser hineinzufüllen’; 21/74 [MT];"
+          },
+          {
+            "turoyo": "tamo k-noḥər dubḥo w-hul ʕaṣriye huwe w-an=naʕim-ayḏe k-saymi muklo k-uxli šotən",
+            "translations": [
+              "‘Dort schlachtet er das Opfer, und bis zum Abend bereitet er mit seinen Kindern Essen; sie essen und trinken’"
+            ],
+            "references": ["24/296"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " tamo k-noḥər dubḥo w-hul ʕaṣriye huwe w-an=naʕim-ayḏe k-saymi muklo k-uxli šotən "
@@ -488,7 +497,7 @@
                 "value": "24/296"
               }
             ],
-            "text": "1) mḥalaqle u=ḥawlo l-ḥaṣe d-u=abro d-i=pire; u=abro d-i=pire d-noḥət l-gawa d-i=biro d-šote maye ʻda warf er dem Sohn der Alten den Strick um, damit er in den Brunnen hinuntersteigen, Wasser trinken sollte; 356; 64/77; ḥzalle gubo b-u=ṭuro, abiʕi d-šotən, lat-wo aʕmayye dawlo d-molən maye ‘Da fanden sie eine Zisterne auf dem Berge; sie wollten trinken, aber sie hatten keinen Eimer mit, um Wasser hineinzufüllen’; 21/74 [MT]; tamo k-noḥər dubḥo w-hul ʕaṣriye huwe w-an=naʕim-ayḏe k-saymi muklo k-uxli šotən ‘Dort schlachtet er das Opfer, und bis zum Abend bereitet er mit seinen Kindern Essen; sie essen und trinken’; 24/296"
+            "text": "tamo k-noḥər dubḥo w-hul ʕaṣriye huwe w-an=naʕim-ayḏe k-saymi muklo k-uxli šotən ‘Dort schlachtet er das Opfer, und bis zum Abend bereitet er mit seinen Kindern Essen; sie essen und trinken’; 24/296"
           },
           {
             "turoyo": "k-ḥozət ḥa gawro zlām sowo kət-le b-iḏe qalyūn k-šote",
@@ -831,12 +840,9 @@
         ],
         "Imperativ": [
           {
-            "turoyo": "de ko-štay paške axúl məfṣəḥ štay həč lə-mikadrət!",
-            "translations": [
-              "so trink doch einen Tropfen",
-              "Iß, sei vergnügt, trinke, und sei durchaus nicht betrübt!"
-            ],
-            "references": ["1", "372", "75/334", "24/121"],
+            "turoyo": "de ko-štay paške",
+            "translations": ["so trink doch einen Tropfen"],
+            "references": ["1", "372", "75/334"],
             "tokens": [
               {
                 "kind": "ref",
@@ -881,7 +887,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "1) de ko-štay paške ʻso trink doch einen Tropfenʼ; 372; 75/334;"
+          },
+          {
+            "turoyo": "axúl məfṣəḥ štay həč lə-mikadrət!",
+            "translations": [
+              "‘Iß, sei vergnügt, trinke, und sei durchaus nicht betrübt!’"
+            ],
+            "references": ["24/121"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " axúl"
@@ -927,7 +943,7 @@
                 "value": "[MT]"
               }
             ],
-            "text": "1) de ko-štay paške ʻso trink doch einen Tropfenʼ; 372; 75/334; axúl, məfṣəḥ, štay həč lə-mikadrət! ‘Iß, sei vergnügt, trinke, und sei durchaus nicht betrübt!’; 24/121 [MT]"
+            "text": "axúl, məfṣəḥ, štay həč lə-mikadrət! ‘Iß, sei vergnügt, trinke, und sei durchaus nicht betrübt!’; 24/121 [MT]"
           }
         ],
         "Part act.": [
@@ -1256,12 +1272,9 @@
             "text": "1) maštálla-le samo ʻsie gaben ihm Gift zu trinkenʼ; 389; prs 27/13;"
           },
           {
-            "turoyo": "maštele ann=aḥənone w-i=barṯo d-u=malko bəṯər məd-štalle ṭralle b-gawə-d-u=gubo w-azzə́n maštalle as=səsy-aṯṯe",
-            "translations": [
-              "‘Er gab seinen Brüdern und der Tochter des Königs zu trinken; nachdem sie getrunken hatten, ließen sie ihn in der Zisterne und gingen fort’",
-              "‘They watered their horses’"
-            ],
-            "references": ["21/75", "73/83"],
+            "turoyo": "maštele ann=aḥənone w-i=barṯo d-u=malko",
+            "translations": [],
+            "references": [],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -1270,7 +1283,17 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "maštele ann=aḥənone w-i=barṯo d-u=malko;"
+          },
+          {
+            "turoyo": "bəṯər məd-štalle ṭralle b-gawə-d-u=gubo w-azzə́n",
+            "translations": [
+              "‘Er gab seinen Brüdern und der Tochter des Königs zu trinken; nachdem sie getrunken hatten, ließen sie ihn in der Zisterne und gingen fort’"
+            ],
+            "references": ["21/75"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " bəṯər məd-štalle ṭralle b-gawə-d-u=gubo w-azzə́n "
@@ -1302,7 +1325,15 @@
               {
                 "kind": "punct",
                 "value": ";"
-              },
+              }
+            ],
+            "text": "bəṯər məd-štalle ṭralle b-gawə-d-u=gubo w-azzə́n ‘Er gab seinen Brüdern und der Tochter des Königs zu trinken; nachdem sie getrunken hatten, ließen sie ihn in der Zisterne und gingen fort’; 21/75 [MT];"
+          },
+          {
+            "turoyo": "maštalle as=səsy-aṯṯe",
+            "translations": ["‘They watered their horses’"],
+            "references": ["73/83"],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " maštalle as=səsy-aṯṯe "
@@ -1328,7 +1359,7 @@
                 "value": " "
               }
             ],
-            "text": "maštele ann=aḥənone w-i=barṯo d-u=malko; bəṯər məd-štalle ṭralle b-gawə-d-u=gubo w-azzə́n ‘Er gab seinen Brüdern und der Tochter des Königs zu trinken; nachdem sie getrunken hatten, ließen sie ihn in der Zisterne und gingen fort’; 21/75 [MT]; maštalle as=səsy-aṯṯe ‘They watered their horses’ 73/83;"
+            "text": "maštalle as=səsy-aṯṯe ‘They watered their horses’ 73/83;"
           },
           {
             "turoyo": "ko-məblila s-az=zaqore w az=zaqore ko-maštəl-la ʕal u=šaqyo",

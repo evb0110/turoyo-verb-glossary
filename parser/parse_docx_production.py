@@ -1,6 +1,14 @@
 #!/usr/bin/env python3
 """
-DOCX Parser V2.1.4 - Malformed Parentheses Fix (2025-11-13)
+DOCX Parser V2.1.5 - Multiple Example Concatenation Fix (2025-11-14)
+
+BUGFIX V2.1.5 (CRITICAL - tḥsd 1 Infectum fix):
+- Fixed year numbers in parenthetical notes (e.g., "(Notes 2018)") being detected as numbered list items
+- Changed numbered list regex from \d+ to \d{1,2} (max 2 digits)
+- Added Pattern 2 split: translation1 ; ref ; turoyo translation2 (multi-translation detection)
+- Added Pattern 3 split: translation ... (ref) substantial_turoyo (parenthetical note + new example)
+- Added split point deduplication to prevent creating duplicate examples
+- Fixed: tḥsd 1 Infectum now has 4 examples (was 2, missing first 2 examples)
 
 BUGFIX V2.1.4 (pčq etymology fix):
 - Fixed malformed parentheses causing etymology truncation
@@ -890,10 +898,77 @@ class FixedDocxParser:
                 split_examples.append(example)
                 continue
 
-            # Look for concatenation pattern:
-            # translation (quote) -> ; -> (optional tokens) -> ref -> ; -> substantial turoyo
+            # Look for concatenation patterns:
+            # Pattern 1: translation -> ; -> ref -> ; -> substantial turoyo
+            # Pattern 2: translation -> ; -> ref(s) -> ; -> turoyo translation  [BUGFIX for tḥsd 1]
+            #            ^^^^^^^^^^ example 1 ^^^^^^^^^^    ^^^^^^^^^ example 2 ^^^^^^^^^^
+            # Pattern 3: translation -> ... -> (ref) -> substantial turoyo
             split_points = []
 
+            # PATTERN 2: translation1 ; ref ; [ref ;] turoyo translation2
+            # Example: "ex1 'trans1' ; 791; prs 226/22; ko-ex2 'trans2' ..."
+            # Split before the turoyo that precedes translation2
+            for i in range(len(tokens) - 1):
+                if tokens[i].get('kind') != 'translation':
+                    continue
+
+                # Look ahead for: ; ref ; ... ; turoyo (with words) translation
+                # This indicates the start of a new example
+                found_pattern = False
+                for j in range(i + 1, min(i + 15, len(tokens))):
+                    # Found another translation after the first one
+                    if tokens[j].get('kind') == 'translation':
+                        # Check if there's Turoyo text right before this translation
+                        if j > 0 and tokens[j-1].get('kind') == 'turoyo':
+                            turoyo_val = tokens[j-1].get('value', '').strip()
+                            # Remove leading/trailing punctuation and whitespace
+                            turoyo_words = [w for w in turoyo_val.split() if len(w) >= 2 and any(c.isalpha() for c in w)]
+                            if len(turoyo_words) >= 2:
+                                # Found start of new example: the Turoyo before translation2
+                                # But we need to check if there was a ; ref ; pattern before it
+                                # Look backward from j-1 to i+1 to find the semicolon after refs
+                                last_semicolon = None
+                                for k in range(j-2, i, -1):
+                                    if tokens[k].get('kind') == 'punct' and tokens[k].get('value') == ';':
+                                        last_semicolon = k
+                                        break
+
+                                if last_semicolon is not None:
+                                    # Split after the last semicolon before the new Turoyo
+                                    # Find the first Turoyo token after the semicolon
+                                    for m in range(last_semicolon + 1, j):
+                                        if tokens[m].get('kind') == 'turoyo':
+                                            turoyo_check = tokens[m].get('value', '').strip()
+                                            if any(c.isalpha() for c in turoyo_check):
+                                                split_points.append(m)
+                                                found_pattern = True
+                                                break
+                                if found_pattern:
+                                    break
+
+            # PATTERN 3: translation ... (ref) substantial_turoyo
+            # Example: "ko-mǝtḥasadno 'I envy' – note (Notes 2018) ko maḥsadno ..."
+            for i in range(len(tokens) - 1):
+                if tokens[i].get('kind') != 'translation':
+                    continue
+
+                # Look for closing paren ) followed by substantial turoyo within next 5 tokens
+                for j in range(i + 1, min(i + 6, len(tokens))):
+                    # Found closing paren after translation
+                    if tokens[j].get('kind') == 'punct' and tokens[j].get('value') == ')':
+                        # Check if next token is substantial turoyo
+                        if j + 1 < len(tokens):
+                            next_token = tokens[j + 1]
+                            if next_token.get('kind') == 'turoyo':
+                                turoyo_val = next_token.get('value', '').strip()
+                                # Check if substantial: starts with Turoyo word (not just whitespace/dash)
+                                turoyo_words = [w for w in turoyo_val.split() if len(w) >= 2 and any(c.isalpha() for c in w)]
+                                if len(turoyo_words) >= 2:
+                                    # This is a new example starting after the closing paren
+                                    split_points.append(j + 1)
+                                    break
+
+            # PATTERN 1: translation -> ; -> ref -> ; -> substantial turoyo
             for i in range(len(tokens) - 1):
                 # Look for: translation followed by semicolon
                 if tokens[i].get('kind') != 'translation':
@@ -941,6 +1016,9 @@ class FixedDocxParser:
             if not split_points:
                 split_examples.append(example)
                 continue
+
+            # Remove duplicates and sort split points
+            split_points = sorted(set(split_points))
 
             # Split tokens at split points
             split_points = [0] + split_points + [len(tokens)]
@@ -1018,8 +1096,9 @@ class FixedDocxParser:
 
             # Split paragraph into numbered items when present (e.g., "1) ... 2) ...")
             # Find all occurrences of "N) " and build segments
+            # BUGFIX: Only match 1-2 digit numbers (not years like 2018 in "(Notes 2018)")
             indices = []
-            for m in re.finditer(r'(?:^|\s)(\d+)\)\s', para_text):
+            for m in re.finditer(r'(?:^|\s)(\d{1,2})\)\s', para_text):
                 # Start at the digit position (exclude leading whitespace)
                 indices.append(m.start(1))
             if not indices:

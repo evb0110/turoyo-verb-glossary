@@ -134,10 +134,76 @@
         ],
         "Infectum": [
           {
-            "turoyo": "ko maḥsadno u Sergey qarši d Gule – I make Gule envious of Sergey.",
-            "translations": [],
+            "turoyo": "lo=mitaḥəsditu w lo=gunwitu prs",
+            "translations": [
+              "seid nicht neidisch aufeinander und stehlt nicht"
+            ],
+            "references": ["791", "226/22"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lo=mitaḥəsditu w lo=gunwitu "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻseid nicht neidisch aufeinander und stehlt nichtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "791"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "226/22"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lo=mitaḥəsditu w lo=gunwitu ʻseid nicht neidisch aufeinander und stehlt nichtʼ; 791; prs 226/22;"
+          },
+          {
+            "turoyo": "ko-mǝtḥasadno mu ǧiranayḏi – this form deviates from what we have in the Verb table. Notes",
+            "translations": ["‘I envy my neighbour’"],
             "references": ["2018"],
             "tokens": [
+              {
+                "kind": "turoyo",
+                "value": " ko-mǝtḥasadno mu ǧiranayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I envy my neighbour’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " – this form deviates from what we have in the Verb table. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Notes "
+              },
               {
                 "kind": "ref",
                 "value": "2018"
@@ -145,13 +211,21 @@
               {
                 "kind": "punct",
                 "value": ")"
-              },
+              }
+            ],
+            "text": "ko-mǝtḥasadno mu ǧiranayḏi ‘I envy my neighbour’ – this form deviates from what we have in the Verb table. (Notes 2018)"
+          },
+          {
+            "turoyo": "ko maḥsadno u Sergey qarši d Gule – I make Gule envious of Sergey.",
+            "translations": [],
+            "references": [],
+            "tokens": [
               {
                 "kind": "turoyo",
                 "value": " ko maḥsadno u Sergey qarši d Gule – I make Gule envious of Sergey."
               }
             ],
-            "text": "2018) ko maḥsadno u Sergey qarši d Gule – I make Gule envious of Sergey."
+            "text": "ko maḥsadno u Sergey qarši d Gule – I make Gule envious of Sergey."
           },
           {
             "turoyo": "i+Ksenya kul naqqa komәtḥasdo mini Ilyas p.c.",
