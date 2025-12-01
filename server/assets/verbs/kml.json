@@ -10,6 +10,7 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -388,9 +389,9 @@
             "text": "bəṯṯər šaġilina b-u=bayto, hul d-ʕəmran kaməl čaḥṣar ʻdanach arbeitete ich zu Hause, bis ich neunzehn Jahre alt geworden warʼ; EL 7;"
           },
           {
-            "turoyo": ". Ilyas p.c. + U Šabo kamile ḥsar ǝšne d mayǝṯ",
+            "turoyo": ". 2018 Ilyas p.c. + U Šabo kamile ḥsar ǝšne d mayǝṯ",
             "translations": [],
-            "references": ["24.10", "2018", "209"],
+            "references": ["24.10", "209"],
             "tokens": [
               {
                 "kind": "ref",
@@ -398,15 +399,7 @@
               },
               {
                 "kind": "turoyo",
-                "value": ". "
-              },
-              {
-                "kind": "ref",
-                "value": "2018"
-              },
-              {
-                "kind": "turoyo",
-                "value": " Ilyas p.c. + "
+                "value": ". 2018 Ilyas p.c. + "
               },
               {
                 "kind": "ref",
@@ -1883,6 +1876,36 @@
             ],
             "text": "u=laġn-ayḏan me d-tayəm-wa g-bəzri-way-na u=laġno=ḥreno-ste, w-hul ʕaṣriye mkamlí-way-na i=arʕ-ayḏan i=fadon-ayḏan d-i=arʕo ‘Our furrow … as soon as it had been done, we sowed another one, and towards the evening we used to finish cultivating our land, i.e., the daily portion of it’ JL 10.11.7;"
           }
+        ],
+        "Imperative": [
+          {
+            "turoyo": "mkamál aʕla-ze qṭala hiya-ste",
+            "translations": ["Finish her off as well!"],
+            "references": ["LuF 282/27"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mkamál aʕla-ze qṭala hiya-ste "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Finish her off as well!’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LuF 282/27"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mkamál aʕla-ze qṭala hiya-ste ‘Finish her off as well!’ LuF 282/27;"
+          }
         ]
       },
       "label_gloss_tokens": [
@@ -2071,6 +2094,5 @@
   ],
   "idioms": [
     "ayna d-ṭoʕən egarṯo, wole də-mkaməl urḥe (может, ruḥe?) ʻwer eine Mission hat und sein Ziel erreichen mussʼ; DD 393/14; Надо проверить контекст - не все слова понятны и поддаются нормализации"
-  ],
-  "uncertain": false
+  ]
 }

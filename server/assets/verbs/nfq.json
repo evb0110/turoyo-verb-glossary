@@ -10,6 +10,7 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -2279,6 +2280,58 @@
             "text": "4)"
           }
         ],
+        "ko-Preterit": [
+          {
+            "turoyo": "mbállal-li l-i=qriṯo ko-mawfaqqe a=nvinaṯṯe ko-hdəffe aš=šuronaṯṯe",
+            "translations": [
+              "‘They brought me to the village. They (the military forces, f.) have taken out their (the villagers’"
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mbállal-li l-i=qriṯo ko-mawfaqqe a=nvinaṯṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-hdəffe aš=šuronaṯṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘They brought me to the village. They (the military forces, f.) have taken out their (the villagers’"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "mbállal-li l-i=qriṯo ko-mawfaqqe a=nvinaṯṯe, ko-hdəffe aš=šuronaṯṯe ‘They brought me to the village. They (the military forces, f.) have taken out their (the villagers’)"
+          },
+          {
+            "turoyo": "beds and demolished their walls’",
+            "translations": [],
+            "references": ["LB 329"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": " beds and demolished their walls’ "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 329"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "beds and demolished their walls’ LB 329;"
+          }
+        ],
         "Infectum": [
           {
             "turoyo": "hama d-mawfəq qarʕe m-u=naqwo k-mŭsak-le k-qŭṭe-le",
@@ -3086,6 +3139,62 @@
             "text": "Songs? Do not expose me in songs from Germany they demand from me a bride’s song, no, no, don’t bring this into play. (Nisane first interview)"
           }
         ],
+        "Infectum-wa": [
+          {
+            "turoyo": "d-hawi-wa əšmo šaḥino g-maḥtí-way-na u=xuṯro eba w-kt-uyo-wa masto ṣpahi g-məfqí-way-na-la hawxa b-at=tarwoḏe",
+            "translations": [
+              "When it (milk m.) had become a little bit hot, we put the ferment into it (pot f.), and it (?) became fine clabber, and we took it out with spoons"
+            ],
+            "references": ["1", "JL 12.14.4"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-hawi-wa əšmo šaḥino g-maḥtí-way-na u=xuṯro eba"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-kt-uyo-wa masto ṣpahi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-məfqí-way-na-la hawxa b-at=tarwoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘When it (milk m.) had become a little bit hot, we put the ferment into it (pot f.), and it (?) became fine clabber, and we took it out with spoons’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 12.14.4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) d-hawi-wa əšmo šaḥino g-maḥtí-way-na u=xuṯro eba, w-kt-uyo-wa masto ṣpahi, g-məfqí-way-na-la hawxa b-at=tarwoḏe ‘When it (milk m.) had become a little bit hot, we put the ferment into it (pot f.), and it (?) became fine clabber, and we took it out with spoons’ JL 12.14.4;"
+          }
+        ],
         "Imperativ": [
           {
             "turoyo": "awfeq awfáq mawfáq mofáq ofáq mfáq mofǝ́q mfáqul-le u=muhro",
@@ -3389,6 +3498,5 @@
   ],
   "idioms": [
     "mofəq/mofaqle m-u=nufus ‘lit.: aus dem Register der Lebenden streichen, zum Tode verurteilen???’: hule l-u=šulṭono amro, mofaqqe m-u=nufus ‘Da gab der Sultan befehl, und man strich ihn aus dem Register der Lebenden’; 27/52"
-  ],
-  "uncertain": false
+  ]
 }

@@ -18,7 +18,7 @@ export class SqliteVerbDatabase implements IVerbDatabase {
                 etymology TEXT,
                 cross_reference TEXT,
                 stems TEXT NOT NULL,
-                uncertain INTEGER DEFAULT 0
+                idioms TEXT
             );
 
             CREATE INDEX IF NOT EXISTS idx_root ON verbs(root);
@@ -77,7 +77,7 @@ export class SqliteVerbDatabase implements IVerbDatabase {
     async upsertVerb(verb: IVerb): Promise<void> {
         this.db
             .prepare(`
-                INSERT OR REPLACE INTO verbs (root, etymology, cross_reference, stems, uncertain)
+                INSERT OR REPLACE INTO verbs (root, etymology, cross_reference, stems, idioms)
                 VALUES (?, ?, ?, ?, ?)
             `)
             .run(
@@ -85,13 +85,13 @@ export class SqliteVerbDatabase implements IVerbDatabase {
                 verb.etymology ? JSON.stringify(verb.etymology) : null,
                 verb.cross_reference,
                 JSON.stringify(verb.stems),
-                verb.uncertain ? 1 : 0
+                verb.idioms ? JSON.stringify(verb.idioms) : null
             )
     }
 
     async upsertMany(verbs: IVerb[]): Promise<void> {
         const insert = this.db.prepare(`
-            INSERT OR REPLACE INTO verbs (root, etymology, cross_reference, stems, uncertain)
+            INSERT OR REPLACE INTO verbs (root, etymology, cross_reference, stems, idioms)
             VALUES (?, ?, ?, ?, ?)
         `)
 
@@ -102,7 +102,7 @@ export class SqliteVerbDatabase implements IVerbDatabase {
                     verb.etymology ? JSON.stringify(verb.etymology) : null,
                     verb.cross_reference,
                     JSON.stringify(verb.stems),
-                    verb.uncertain ? 1 : 0
+                    verb.idioms ? JSON.stringify(verb.idioms) : null
                 )
             }
         })
@@ -124,7 +124,7 @@ export class SqliteVerbDatabase implements IVerbDatabase {
             etymology: row.etymology ? JSON.parse(row.etymology) : null,
             cross_reference: row.cross_reference,
             stems: JSON.parse(row.stems),
-            uncertain: row.uncertain === 1,
+            idioms: row.idioms ? JSON.parse(row.idioms) : null,
         }
     }
 }

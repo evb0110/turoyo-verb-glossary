@@ -1,5 +1,7 @@
 import { pgTable, text, timestamp, boolean, pgEnum, integer, jsonb } from 'drizzle-orm/pg-core'
 import { activityEventTypes } from '../../shared/config/activityEventTypes'
+import type { IEtymology } from '../../shared/types/IEtymology'
+import type { IStem } from '../../shared/types/IStem'
 
 export const userRoleEnum = pgEnum('user_role', ['admin', 'user', 'pending', 'blocked'])
 export const activityEventTypeEnum = pgEnum('activity_event_type', activityEventTypes)
@@ -101,4 +103,17 @@ export const userActivityLog = pgTable('user_activity_log', {
     metadata: jsonb('metadata').$type<Record<string, unknown> | null>(),
     statusCode: integer('status_code').default(200).notNull(),
     createdAt: timestamp('created_at').defaultNow().notNull(),
+})
+
+export const verbs = pgTable('verbs', {
+    root: text('root').primaryKey(),
+    etymology: jsonb('etymology').$type<IEtymology | null>(),
+    crossReference: text('cross_reference'),
+    stems: jsonb('stems').$type<IStem[]>().notNull(),
+    idioms: jsonb('idioms').$type<string[] | null>(),
+    createdAt: timestamp('created_at').defaultNow().notNull(),
+    updatedAt: timestamp('updated_at')
+        .defaultNow()
+        .$onUpdate(() => new Date())
+        .notNull(),
 })

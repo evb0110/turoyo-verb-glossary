@@ -10,6 +10,7 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -395,6 +396,44 @@
               }
             ],
             "text": "g-isqina ḥa mənayna ʕal ḥaṣe maydina l-u=ḥabušo ‘Einer von uns kann auf seinen Rücken steigen und wir können den Apfel greifen’; 27/66"
+          }
+        ],
+        "Infectum-wa": [
+          {
+            "turoyo": "hən mənne yasiqi yəsqi-wa ʕal i=goro d-i=ʕito",
+            "translations": ["Some of them got up on the church’s roof"],
+            "references": ["LB 380"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hən mənne yasiqi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " yəsqi-wa ʕal i=goro d-i=ʕito "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Some of them got up on the church’s roof’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 380"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hən mənne yasiqi, yəsqi-wa ʕal i=goro d-i=ʕito ‘Some of them got up on the church’s roof’ LB 380;"
           }
         ],
         "Imperativ": [
@@ -1007,6 +1046,5 @@
       ]
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }

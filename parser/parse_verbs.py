@@ -55,7 +55,8 @@ class TuroyoVerbParser:
 
     def extract_roots_from_section(self, section_html):
         """Extract verb entries from a letter section"""
-        root_pattern = r'<p[^>]*class="western"[^>]*>(?:<font[^>]*>)?<span[^>]*>([ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzžḏṯẓāēīūə]{2,6})(?:\s*\d+)?[^<]*</span>'
+        ROOT_CHARS = 'ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzžḏṯẓāēīūə'
+        root_pattern = rf'<p[^>]*class="western"[^>]*>(?:<font[^>]*>)*(?:<i[^>]*>)?<span[^>]*>([{ROOT_CHARS}]{{2,6}})(?:\s*\d+)?[^<]*</span>'
 
         valid_matches = []
         for match in re.finditer(root_pattern, section_html):
@@ -66,7 +67,19 @@ class TuroyoVerbParser:
             span_content = match.group(0)
             span_text_match = re.search(r'<span[^>]*>([^<]+)</span>', span_content)
             if span_text_match:
+                before = section_html[:match.start()]
+                last_table_open = before.rfind('<table')
+                last_table_close = before.rfind('</table>')
+                if last_table_open != -1 and (last_table_close == -1 or last_table_open > last_table_close):
+                    continue
+
                 full_span_text = span_text_match.group(1).strip()
+                cleaned_span = self.normalize_whitespace(full_span_text)
+                if len(cleaned_span.split()) > 2:
+                    continue
+                trailing = cleaned_span[len(root_chars):].strip()
+                if trailing and not re.match(r'^[.:;]?\d{0,2}$', trailing):
+                    continue
                 if ';' in full_span_text and not any(c in full_span_text for c in SPECIAL_TUROYO_CHARS):
                     continue
 
@@ -184,6 +197,7 @@ class TuroyoVerbParser:
         etym_text = re.sub(r'<[^>]+>', '', etym_text)
         etym_text = html.unescape(etym_text)
         etym_text = self.normalize_whitespace(etym_text)
+        raw_with_bracket = f"< {etym_text}"
 
         relationship = None
         etymon_parts = [etym_text]
@@ -207,7 +221,7 @@ class TuroyoVerbParser:
         if not etymons:
             return None
 
-        result = {'etymons': etymons}
+        result = {'etymons': etymons, 'raw': raw_with_bracket}
         if relationship:
             result['relationship'] = relationship
 
@@ -324,6 +338,39 @@ class TuroyoVerbParser:
                     })
 
         stems.sort(key=lambda x: x['position'])
+        if stems:
+            return stems
+
+        # Fallback for simplified markup (e.g. tests) where the font nesting is lighter
+        soup = BeautifulSoup(entry_html, 'html.parser')
+        roman_re = re.compile(r'^([IVX]+):?$')
+        special_chars = 'ʔʕġǧḥṣštṭḏṯẓāēīūə'
+        spans = list(soup.find_all('span'))
+
+        for idx, span in enumerate(spans):
+            text = self.normalize_whitespace(span.get_text())
+            m = roman_re.match(text)
+            if not m:
+                continue
+
+            stem_num = m.group(1)
+            forms = []
+            for following in spans[idx + 1:]:
+                f_text = self.normalize_whitespace(following.get_text())
+                if roman_re.match(f_text):
+                    break
+                if '/' in f_text or any(c in f_text for c in special_chars):
+                    clean = f_text.replace('?', '')
+                    forms = [f.strip() for f in clean.split('/') if f.strip() and f != '?']
+                    if forms:
+                        break
+            if forms:
+                stems.append({
+                    'stem': stem_num,
+                    'forms': forms,
+                    'position': idx
+                })
+
         return stems
 
     def find_detransitive_position(self, entry_html):

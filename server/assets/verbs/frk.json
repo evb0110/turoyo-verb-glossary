@@ -8,6 +8,7 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -446,11 +447,572 @@
               }
             ],
             "text": "i+daʕwo komifark̇o (Ilyas p.c.) ‘the wedding party guests are leaving the party’"
+          },
+          {
+            "turoyo": "walaw mən d-howe lə=k-məfrəqono mene. k-ubʕono d-uno-ste d-əzzino aʕme",
+            "translations": [
+              "Was auch immer geschehen mag, ich trenne mich nicht von ihm. Ich möchte mit ihm gehen"
+            ],
+            "references": ["2", "24/128"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " walaw mən d-howe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=k-məfrəqono mene. k-ubʕono d-uno-ste d-əzzino aʕme "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Was auch immer geschehen mag, ich trenne mich nicht von ihm. Ich möchte mit ihm gehen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/128"
+              }
+            ],
+            "text": "2) walaw mən d-howe, lə=k-məfrəqono mene. k-ubʕono d-uno-ste d-əzzino aʕme ‘Was auch immer geschehen mag, ich trenne mich nicht von ihm. Ich möchte mit ihm gehen’; 24/128"
+          }
+        ],
+        "Infectum-wa": [
+          {
+            "turoyo": "b-Kurúčašma d-l-ówe-wo haqqāṣ qalabaləġ w tōz balki lo=k-məfraqno-wo m-tamo",
+            "translations": [
+              "wenn in Kuruçesme nicht soviel Lärm und Staub gewesen ware, hätte ich mich vielleicht nicht von dort getrennt"
+            ],
+            "references": ["2", "2/55"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-Kurúčašma d-l-ówe-wo haqqāṣ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qalabaləġ w tōz"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " balki lo=k-məfraqno-wo m-tamo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn in Kuruçesme nicht soviel Lärm und Staub gewesen ware, hätte ich mich vielleicht nicht von dort getrenntʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/55"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) b-Kurúčašma d-l-ówe-wo haqqāṣ, qalabaləġ w tōz, balki lo=k-məfraqno-wo m-tamo ʻwenn in Kuruçesme nicht soviel Lärm und Staub gewesen ware, hätte ich mich vielleicht nicht von dort getrenntʼ; 2/55;"
+          }
+        ],
+        "Part. Pass.": [
+          {
+            "turoyo": "kale i=arʕo ḥamši=b-ḥamši=ṣanṭime kala frəqto m-i=arʕo",
+            "translations": [
+              "da ist der Boden fünfzig mal fünfzig Zentimeter gespalten"
+            ],
+            "references": ["1", "199", "87/134"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kale i=arʕo ḥamši=b-ḥamši=ṣanṭime"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kala frəqto m-i=arʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda ist der Boden fünfzig mal fünfzig Zentimeter gespaltenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "199"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "87/134"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) kale i=arʕo ḥamši=b-ḥamši=ṣanṭime, kala frəqto m-i=arʕo ʻda ist der Boden fünfzig mal fünfzig Zentimeter gespaltenʼ; 199; 87/134;"
           }
         ]
       }
+    },
+    {
+      "stem": "I",
+      "forms": ["frəqle", "forəq"],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "frəqle sawke",
+            "translations": ["er machte sich einen Scheitel"],
+            "references": ["1", "199"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " frəqle sawke "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer machte sich einen Scheitelʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "199"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) frəqle sawke ʻer machte sich einen Scheitelʼ; 199;"
+          },
+          {
+            "turoyo": "sǝ́mle-le hawxa l-u=taʕlo. frəqle l-u=taʕlo prs",
+            "translations": [
+              "inzwischen streckte der Mann dem Fuchse (heimlich zwei Finger) entgegen, und der Fuchs verstand das Zeichen"
+            ],
+            "references": ["3", "199", "214/14"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " sǝ́mle-le hawxa l-u=taʕlo. frəqle l-u=taʕlo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻinzwischen streckte der Mann dem Fuchse (heimlich zwei Finger) entgegen, und der Fuchs verstand das Zeichenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "199"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "214/14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "3) sǝ́mle-le hawxa l-u=taʕlo. frəqle l-u=taʕlo ʻinzwischen streckte der Mann dem Fuchse (heimlich zwei Finger) entgegen, und der Fuchs verstand das Zeichenʼ; 199; prs 214/14;"
+          },
+          {
+            "turoyo": "l-i=kačke frəqla buwe ki hano gawro tamām-yo",
+            "translations": [
+              "‘Das Mädchen erkannte, daß dies ein vollkommener Mann war’"
+            ],
+            "references": ["29/431"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": " l-i=kačke frəqla buwe ki hano gawro tamām-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Das Mädchen erkannte, daß dies ein vollkommener Mann war’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/431"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "l-i=kačke frəqla buwe ki hano gawro tamām-yo ‘Das Mädchen erkannte, daß dies ein vollkommener Mann war’; 29/431;"
+          },
+          {
+            "turoyo": "b-am=mo mo frəqli ki hano i=darbo d-gawri-yo",
+            "translations": [
+              "‘Es ist mir hundert zu hundert klar geworden, daß dies der Schlag meines Gatten ist’"
+            ],
+            "references": ["30/139"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": " b-am=mo mo frəqli ki hano i=darbo d-gawri-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Es ist mir hundert zu hundert klar geworden, daß dies der Schlag meines Gatten ist’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/139"
+              }
+            ],
+            "text": "b-am=mo mo frəqli ki hano i=darbo d-gawri-yo ‘Es ist mir hundert zu hundert klar geworden, daß dies der Schlag meines Gatten ist’; 30/139"
+          }
+        ],
+        "Infectum": [
+          {
+            "turoyo": "de ġamo layt! gd-ŭṯe-lan səsyo b-dukṯe lo=k-fərqo!",
+            "translations": [
+              "ach, es schadet nichts! Wir bekommen ja ein Pferd statt dessen, es macht keinen Unterschied"
+            ],
+            "references": ["2", "199", "6/65"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " de ġamo layt! gd-ŭṯe-lan səsyo b-dukṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=k-fərqo! "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻach, es schadet nichts! Wir bekommen ja ein Pferd statt dessen, es macht keinen Unterschiedʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "199"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/65"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) de ġamo layt! gd-ŭṯe-lan səsyo b-dukṯe, lo=k-fərqo! ʻach, es schadet nichts! Wir bekommen ja ein Pferd statt dessen, es macht keinen Unterschiedʼ; 199; 6/65;"
+          }
+        ]
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "1) spalten; 2) einen Unterschied machen; 3) merken;"
+        }
+      ]
+    },
+    {
+      "stem": "II",
+      "forms": ["mfaraqle", "mfarəq"],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "i=naqla də-mfaraqlən ak=kallawat kulle fayəš ʕalbe d-dahwo",
+            "translations": [
+              "als sie das ganze Geld verteilt hatten, blieb noch ein Scheffel Gold übrig"
+            ],
+            "references": ["199", "86/16", "89/128"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqla də-mfaraqlən ak=kallawat kulle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " fayəš ʕalbe d-dahwo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals sie das ganze Geld verteilt hatten, blieb noch ein Scheffel Gold übrigʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "199"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "86/16"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "89/128"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=naqla də-mfaraqlən ak=kallawat kulle, fayəš ʕalbe d-dahwo ʻals sie das ganze Geld verteilt hatten, blieb noch ein Scheffel Gold übrigʼ; 199; 86/16; 89/128;"
+          }
+        ],
+        "Infectum": [
+          {
+            "turoyo": "layt nošo d-mfarəq u=baṣro prs",
+            "translations": ["es fehlt jemand, der das Fleisch zerteilt"],
+            "references": ["199", "222/34"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "layt nošo d-mfarəq u=baṣro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes fehlt jemand, der das Fleisch zerteiltʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "199"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "222/34"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "layt nošo d-mfarəq u=baṣro ʻes fehlt jemand, der das Fleisch zerteiltʼ; 199; prs 222/34;"
+          },
+          {
+            "turoyo": "lazəm d-nuḥrat u=tawro d-i=fadono w-mfarqat-le ʕal af=faqire",
+            "translations": [
+              "‘It is necessary that you should kill the team ox and share it with the poor’"
+            ],
+            "references": ["44/133"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": " lazəm d-nuḥrat u=tawro d-i=fadono w-mfarqat-le ʕal af=faqire "
+              },
+              {
+                "kind": "translation",
+                "value": "‘It is necessary that you should kill the team ox and share it with the poor’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/133"
+              }
+            ],
+            "text": "lazəm d-nuḥrat u=tawro d-i=fadono w-mfarqat-le ʕal af=faqire ‘It is necessary that you should kill the team ox and share it with the poor’; 44/133"
+          }
+        ]
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "verteilen;"
+        }
+      ]
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }

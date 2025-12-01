@@ -10,6 +10,7 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -309,6 +310,70 @@
             ],
             "text": "gəd-oṯe l-gabi me-darbe d-ono əzzí l-gabe, w-bəṯṯər m-aqqa ṣ=ṣurʕ-anək d-mṣaʕár-wayno-le ‘He will come to me instead of me coming to him after those insults with which I used to abuse him’; 42/14"
           }
+        ],
+        "Imperative": [
+          {
+            "turoyo": "Zax w itax ḥeḏorayye mbasamme w ṣaʕar elan balki ṭəlbilax.",
+            "translations": [
+              "Go and come around them, try to please them and swear at us, maybe they will ask you in marriage."
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Zax w itax ḥeḏorayye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mbasamme w ṣaʕar elan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " balki ṭəlbilax. "
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "\"Go and come around them, try to please them and swear at us, maybe they will ask you in marriage.\""
+              }
+            ],
+            "text": "Zax w itax ḥeḏorayye, mbasamme w ṣaʕar elan, balki ṭəlbilax. : \"Go and come around them, try to please them and swear at us, maybe they will ask you in marriage.\""
+          },
+          {
+            "turoyo": "NE_Dilo_and_Falako",
+            "translations": [],
+            "references": ["07"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": " NE_Dilo_and_Falako"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "ref",
+                "value": "07"
+              }
+            ],
+            "text": "NE_Dilo_and_Falako;07"
+          }
         ]
       },
       "label_gloss_tokens": [
@@ -319,6 +384,5 @@
       ]
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }

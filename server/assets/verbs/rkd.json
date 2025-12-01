@@ -10,6 +10,7 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -81,7 +82,54 @@
     {
       "stem": "II",
       "forms": ["mrakadle", "mrakəd"],
-      "conjugations": {},
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "šaḥəl-le əšmo mrakəd hawxa əšmo",
+            "translations": ["He got warm a bit and calmed down a bit"],
+            "references": ["2", "LuF 280/23"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " šaḥəl-le əšmo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mrakəd hawxa əšmo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘He got warm a bit and calmed down a bit’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LuF 280/23"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) šaḥəl-le əšmo, mrakəd hawxa əšmo ‘He got warm a bit and calmed down a bit’ LuF 280/23;"
+          }
+        ]
+      },
       "label_gloss_tokens": [
         {
           "italic": false,
@@ -90,6 +138,5 @@
       ]
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }

@@ -14,10 +14,13 @@ defineProps<{
                 <h1 class="text-3xl font-semibold tracking-tight turoyo-text">
                     {{ verb.root }}
                 </h1>
+                <p v-if="verb.root_gloss" class="text-sm text-gray-600 dark:text-gray-400">
+                    {{ verb.root_gloss }}
+                </p>
             </div>
 
             <div class="flex flex-wrap items-center gap-2">
-                <UBadge v-if="verb.uncertain" variant="soft">
+                <UBadge v-if="verb.etymology?.uncertain" variant="soft">
                     Uncertain
                 </UBadge>
                 <UBadge v-if="verb.cross_reference" variant="soft">

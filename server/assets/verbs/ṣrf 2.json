@@ -10,6 +10,7 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -343,6 +344,29 @@
     {
       "stem": "III",
       "forms": ["maṣrafle", "maṣrəf"],
+      "conjugations": {},
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "ausgeben (Geld), verwenden für ("
+        },
+        {
+          "italic": true,
+          "text": "ʕ"
+        },
+        {
+          "italic": true,
+          "text": "al"
+        },
+        {
+          "italic": false,
+          "text": ");"
+        }
+      ]
+    },
+    {
+      "stem": "I",
+      "forms": ["ausgeben"],
       "conjugations": {
         "Infectum": [
           {
@@ -528,7 +552,7 @@
       "label_gloss_tokens": [
         {
           "italic": false,
-          "text": "ausgeben (Geld), verwenden für ("
+          "text": "(Geld), verwenden für ("
         },
         {
           "italic": true,
@@ -550,6 +574,5 @@
       "conjugations": {}
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }

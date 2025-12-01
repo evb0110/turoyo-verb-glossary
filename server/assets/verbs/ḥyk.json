@@ -10,6 +10,7 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -18,9 +19,9 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": ". naqqa l-Zaynāl Bage hawxa ḥəkle qḏole . l aloho ḥikile God destroyed them Ilyas p.-- aloho ḥǝkle = aloho qšǝʕle Ilyas p.c",
+            "turoyo": ". naqqa l-Zaynāl Bage hawxa ḥəkle qḏole . l aloho ḥikile God destroyed them Ilyas p.--2018 aloho ḥǝkle = aloho qšǝʕle Ilyas p.c",
             "translations": ["auf einmal kratzt sich Zeinâl Bäge so am Hals"],
-            "references": ["1", "505", "65/46", "2", "c. 29", "10", "2018"],
+            "references": ["1", "505", "65/46", "2", "c. 29", "10"],
             "tokens": [
               {
                 "kind": "ref",
@@ -92,11 +93,7 @@
               },
               {
                 "kind": "turoyo",
-                "value": "-"
-              },
-              {
-                "kind": "ref",
-                "value": "2018"
+                "value": "-2018"
               },
               {
                 "kind": "punct",
@@ -245,6 +242,32 @@
             ],
             "text": "ḥiko = damned by God, worthy of destruction, cursed: Kəmmo: “Kəšša ḥiko” кыш, проклятый” – злая мачеха обращается к петуху (Ni 270: 62)"
           }
+        ],
+        "Infectum – wa": [
+          {
+            "turoyo": "Aṯmǝl ḥaṣi ḥoyakwa/ḥokwa. Yesterday my back was itching. İlyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Aṯmǝl ḥaṣi ḥoyakwa/ḥokwa. Yesterday my back was itching. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Aṯmǝl ḥaṣi ḥoyakwa/ḥokwa. Yesterday my back was itching. (İlyas p.c)"
+          }
         ]
       },
       "label_gloss_tokens": [
@@ -329,6 +352,5 @@
       ]
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }

@@ -1,6 +1,10 @@
 {
   "root": "ḥyṣl",
-  "etymology": null,
+  "etymology": {
+    "etymons": [],
+    "uncertain": true
+  },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -413,11 +417,11 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "lə=k-oḏaʕno ayko g-miḥayṣəl",
+            "turoyo": "lə=k-oḏaʕno ayko g-miḥayṣəl 6923",
             "translations": [
               "ich weiss nicht, wo man seiner habhaft werden kann"
             ],
-            "references": ["782", "6923"],
+            "references": ["782"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -445,11 +449,7 @@
               },
               {
                 "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "6923"
+                "value": " 6923"
               },
               {
                 "kind": "punct",
@@ -492,6 +492,5 @@
       }
     }
   ],
-  "idioms": null,
-  "uncertain": true
+  "idioms": null
 }

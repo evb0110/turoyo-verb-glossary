@@ -10,11 +10,35 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
       "stem": "II",
       "forms": ["mqaralle", "mqarər"],
+      "conjugations": {},
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "beschliessen (etw. "
+        },
+        {
+          "italic": true,
+          "text": "ʕ"
+        },
+        {
+          "italic": true,
+          "text": "al"
+        },
+        {
+          "italic": false,
+          "text": ");"
+        }
+      ]
+    },
+    {
+      "stem": "I",
+      "forms": ["beschliessen"],
       "conjugations": {
         "Preterit": [
           {
@@ -66,7 +90,7 @@
       "label_gloss_tokens": [
         {
           "italic": false,
-          "text": "beschliessen (etw. "
+          "text": "(etw. "
         },
         {
           "italic": true,
@@ -83,6 +107,5 @@
       ]
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }

@@ -10,6 +10,7 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -956,6 +957,46 @@
             ],
             "text": "g-fərsí-way-na-le ʕal i=goro, əmmí-way-na d-mede lə=ǧore-le d-lə=ḥoməṣ ʻwir breiteten ihn (die Weizengrütze m) nochmals auf dem Dach aus, damit ihm nichts passierte, damit er nicht sauer wurdeʼ JL 17.5.13;"
           }
+        ],
+        "Infectum-wa": [
+          {
+            "turoyo": "fayšo-wa dērtər=šato-ze mede lo=ǧore-way-la i=gweto huyo-wa ṭawto",
+            "translations": [
+              "It (cheese, f.) kept also for the next year, and nothing happened to it, it was fine"
+            ],
+            "references": ["JL 11.12.13"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "fayšo-wa dērtər=šato-ze mede lo=ǧore-way-la i=gweto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " huyo-wa ṭawto "
+              },
+              {
+                "kind": "translation",
+                "value": "‘It (cheese, f.) kept also for the next year, and nothing happened to it, it was fine’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 11.12.13"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "fayšo-wa dērtər=šato-ze mede lo=ǧore-way-la i=gweto, huyo-wa ṭawto ‘It (cheese, f.) kept also for the next year, and nothing happened to it, it was fine’ JL 11.12.13;"
+          }
         ]
       },
       "label_gloss_tokens": [
@@ -1500,6 +1541,5 @@
       ]
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }

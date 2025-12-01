@@ -10,6 +10,7 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -100,54 +101,6 @@
               }
             ],
             "text": "1) lə=k-mḥaykimi ḥḏoḏe ʻsie können einander keinen Streich beibringenʼ; 781;"
-          },
-          {
-            "turoyo": "I+tərto lo gmaḥilo ʕal u+čalikayḏa the cow does not accept her new-born one p.c. of ʕanter and Ilyas --",
-            "translations": [],
-            "references": ["05", "01", "2021"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": " I+tərto lo gmaḥilo ʕal u+čalikayḏa  the cow does not accept her new-born  one "
-              },
-              {
-                "kind": "punct",
-                "value": "("
-              },
-              {
-                "kind": "turoyo",
-                "value": "p.c. of ʕanter and Ilyas"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "05"
-              },
-              {
-                "kind": "turoyo",
-                "value": "-"
-              },
-              {
-                "kind": "ref",
-                "value": "01"
-              },
-              {
-                "kind": "turoyo",
-                "value": "-"
-              },
-              {
-                "kind": "ref",
-                "value": "2021"
-              }
-            ],
-            "text": "I+tərto lo gmaḥilo ʕal u+čalikayḏa the cow does not accept her new-born one (p.c. of ʕanter and Ilyas, 05-01-2021"
           }
         ]
       },
@@ -205,8 +158,93 @@
           "text": ";"
         }
       ]
+    },
+    {
+      "stem": "I",
+      "forms": ["ḥyl"],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "I+tərto lo gmaḥilo ʕal u+čalikayḏa the cow does not accept her new-born one p.c. of ʕanter and Ilyas --2021",
+            "translations": [],
+            "references": ["05", "01"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": " I+tərto lo gmaḥilo ʕal u+čalikayḏa  the cow does not accept her new-born  one "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "p.c. of ʕanter and Ilyas"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "05"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "01"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-2021"
+              }
+            ],
+            "text": "I+tərto lo gmaḥilo ʕal u+čalikayḏa the cow does not accept her new-born one (p.c. of ʕanter and Ilyas, 05-01-2021"
+          }
+        ]
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "III "
+        },
+        {
+          "italic": true,
+          "text": "maḥəlla"
+        },
+        {
+          "italic": true,
+          "text": "/"
+        },
+        {
+          "italic": true,
+          "text": "maḥilo"
+        },
+        {
+          "italic": false,
+          "text": " (f.) = "
+        },
+        {
+          "italic": false,
+          "text": "mqaḥamla"
+        },
+        {
+          "italic": false,
+          "text": "/"
+        },
+        {
+          "italic": false,
+          "text": "mqaḥmo"
+        }
+      ]
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }

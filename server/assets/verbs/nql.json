@@ -10,6 +10,7 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -638,21 +639,13 @@
             "text": "u=ḥasyo d-i=dayro əšme Ḥasyo Ḥanna Gandur-wa, nqil me-tamo l-Bayrūt ‘The abbot of the monastery whose name was Ḥasyo Ḥanna Gandur moved to Beirut from there’; 37/9"
           },
           {
-            "turoyo": "nqīl maḥ+ḥayani hasyo dolabani bi+šato *nqīl hasyo dolabani bi+šato m= is obligatory! Hasyo Dolabani died in pc Ilyas",
+            "turoyo": "nqīl maḥ+ḥayani hasyo dolabani bi+šato 1969 *nqīl hasyo dolabani bi+šato 1969 m= is obligatory! Hasyo Dolabani died in 1969 pc Ilyas",
             "translations": [],
-            "references": ["1969", "1969", "1969", "17/08/25"],
+            "references": ["17/08/25"],
             "tokens": [
               {
                 "kind": "turoyo",
-                "value": "nqīl maḥ+ḥayani hasyo dolabani bi+šato "
-              },
-              {
-                "kind": "ref",
-                "value": "1969"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
+                "value": "nqīl maḥ+ḥayani hasyo dolabani bi+šato 1969 "
               },
               {
                 "kind": "punct",
@@ -660,15 +653,7 @@
               },
               {
                 "kind": "turoyo",
-                "value": "*nqīl hasyo dolabani bi+šato "
-              },
-              {
-                "kind": "ref",
-                "value": "1969"
-              },
-              {
-                "kind": "turoyo",
-                "value": " m= is obligatory!"
+                "value": "*nqīl hasyo dolabani bi+šato 1969 m= is obligatory!"
               },
               {
                 "kind": "punct",
@@ -676,15 +661,7 @@
               },
               {
                 "kind": "turoyo",
-                "value": " Hasyo Dolabani died in "
-              },
-              {
-                "kind": "ref",
-                "value": "1969"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
+                "value": " Hasyo Dolabani died in 1969 "
               },
               {
                 "kind": "punct",
@@ -704,6 +681,84 @@
               }
             ],
             "text": "nqīl maḥ+ḥayani hasyo dolabani bi+šato 1969 (*nqīl hasyo dolabani bi+šato 1969 m= is obligatory!) Hasyo Dolabani died in 1969 (pc Ilyas 17/08/25)"
+          }
+        ],
+        "Infectum": [
+          {
+            "turoyo": "Ašə́r aḥna dәzzan du+generasyonano diḏan dmәnqolina mi+arʕaṯe gmәṭʕәn a+d̥koṯani kulle Really if we go this generation of ours if we pass away lit. all these places will be forgotten dayroyo",
+            "translations": ["if we are carried from this earth"],
+            "references": ["Aziz 60"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Ašə́r aḥna dәzzan du+generasyonano diḏan dmәnqolina mi+arʕaṯe gmәṭʕәn a+d̥koṯani kulle Really"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " if we go"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " this generation of ours"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " if we pass away "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "lit. "
+              },
+              {
+                "kind": "translation",
+                "value": "‘if we are carried from this earth’"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " all these places will be forgotten "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "dayroyo "
+              },
+              {
+                "kind": "ref",
+                "value": "Aziz 60"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Ašə́r aḥna dәzzan du+generasyonano diḏan dmәnqolina mi+arʕaṯe gmәṭʕәn a+d̥koṯani kulle Really, if we go, this generation of ours, if we pass away (lit. ‘if we are carried from this earth’), all these places will be forgotten (dayroyo Aziz 60)"
           }
         ]
       },
@@ -875,6 +930,5 @@
       ]
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }

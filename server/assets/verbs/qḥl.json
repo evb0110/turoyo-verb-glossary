@@ -1,6 +1,9 @@
 {
   "root": "qḥl",
-  "etymology": null,
+  "etymology": {
+    "etymons": []
+  },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -43,9 +46,9 @@
         ],
         "Infectum": [
           {
-            "turoyo": "I+tərto lo kəmqaḥmo ʕal u+čelikayḏa Ilyas p.--",
+            "turoyo": "I+tərto lo kəmqaḥmo ʕal u+čelikayḏa Ilyas p.--2021",
             "translations": [],
-            "references": ["c. 5", "01", "2021"],
+            "references": ["c. 5", "01"],
             "tokens": [
               {
                 "kind": "turoyo",
@@ -73,11 +76,7 @@
               },
               {
                 "kind": "turoyo",
-                "value": "-"
-              },
-              {
-                "kind": "ref",
-                "value": "2021"
+                "value": "-2021"
               },
               {
                 "kind": "punct",
@@ -85,6 +84,32 @@
               }
             ],
             "text": "I+tərto lo kəmqaḥmo ʕal u+čelikayḏa (Ilyas p.c. 5-01-2021)"
+          }
+        ],
+        "Infectum-wa": [
+          {
+            "turoyo": "U-ʕulmo mqaḥamwa ʕal Oṣmán zәd me Aḥmắd Aġá Aḥmad Aġa_Oṣman _Aġa_12_08_2020",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "U-ʕulmo mqaḥamwa ʕal Oṣmán zәd me Aḥmắd Aġá "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Aḥmad Aġa_Oṣman _Aġa_12_08_2020"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "U-ʕulmo mqaḥamwa ʕal Oṣmán zәd me Aḥmắd Aġá (Aḥmad Aġa_Oṣman _Aġa_12_08_2020)"
           }
         ]
       },
@@ -96,6 +121,5 @@
       ]
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }

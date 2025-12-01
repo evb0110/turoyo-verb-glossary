@@ -55,6 +55,9 @@ const groupedEtymons = computed(() => {
                 <p v-if="etymon.meaning" class="text-muted">
                     {{ etymon.meaning }}
                 </p>
+                <p v-if="etymon.notes" class="text-muted">
+                    {{ etymon.notes }}
+                </p>
                 <p v-if="etymon.reference" class="text-xs text-muted">
                     Ref: {{ etymon.reference }}
                 </p>

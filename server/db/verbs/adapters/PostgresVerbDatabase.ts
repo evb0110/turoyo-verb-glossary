@@ -21,7 +21,9 @@ export class PostgresVerbDatabase implements IVerbDatabase {
                 etymology JSONB,
                 cross_reference TEXT,
                 stems JSONB NOT NULL,
-                uncertain BOOLEAN DEFAULT false
+                idioms JSONB,
+                created_at TIMESTAMP DEFAULT NOW() NOT NULL,
+                updated_at TIMESTAMP DEFAULT NOW() NOT NULL
             )
         `
 
@@ -90,19 +92,20 @@ export class PostgresVerbDatabase implements IVerbDatabase {
         await this.ensureSchema()
 
         await this.sql`
-            INSERT INTO verbs (root, etymology, cross_reference, stems, uncertain)
+            INSERT INTO verbs (root, etymology, cross_reference, stems, idioms)
             VALUES (
                 ${verb.root},
                 ${verb.etymology ? JSON.stringify(verb.etymology) : null},
                 ${verb.cross_reference},
                 ${JSON.stringify(verb.stems)},
-                ${verb.uncertain}
+                ${verb.idioms ? JSON.stringify(verb.idioms) : null}
             )
             ON CONFLICT (root) DO UPDATE SET
                 etymology = EXCLUDED.etymology,
                 cross_reference = EXCLUDED.cross_reference,
                 stems = EXCLUDED.stems,
-                uncertain = EXCLUDED.uncertain
+                idioms = EXCLUDED.idioms,
+                updated_at = NOW()
         `
     }
 
@@ -129,7 +132,7 @@ export class PostgresVerbDatabase implements IVerbDatabase {
             etymology: row.etymology,
             cross_reference: row.cross_reference,
             stems: row.stems,
-            uncertain: row.uncertain,
+            idioms: row.idioms,
         }
     }
 }

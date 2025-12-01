@@ -10,11 +10,55 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
       "stem": "I",
       "forms": ["šaḥən", "šoḥən"],
+      "conjugations": {},
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "warm "
+        },
+        {
+          "italic": false,
+          "text": "werden"
+        },
+        {
+          "italic": false,
+          "text": "; j-m warm "
+        },
+        {
+          "italic": false,
+          "text": "werden"
+        },
+        {
+          "italic": false,
+          "text": " ("
+        },
+        {
+          "italic": false,
+          "text": "mit"
+        },
+        {
+          "italic": false,
+          "text": " "
+        },
+        {
+          "italic": true,
+          "text": "l-"
+        },
+        {
+          "italic": false,
+          "text": ")"
+        }
+      ]
+    },
+    {
+      "stem": "I",
+      "forms": ["warm"],
       "conjugations": {
         "Preterit Intransitive": [
           {
@@ -78,6 +122,60 @@
               }
             ],
             "text": "čik bayn a=ʕwone hawxa šaḥəl-le əšmo ‘He found himself between the sheep and got warm a little bit’ LuF 280/23;"
+          }
+        ],
+        "ko-Preterit": [
+          {
+            "turoyo": "ḥzela ko-šaḥino i=lašayḏe",
+            "translations": ["sie sah, sein Körper war warm geworden"],
+            "references": ["86", "64/181"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥzela"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-šaḥino i=lašayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie sah, sein Körper war warm gewordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "86"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "64/181"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥzela: ko-šaḥino i=lašayḏe ʻsie sah, sein Körper war warm gewordenʼ; 86; 64/181;"
           }
         ],
         "Infectum": [
@@ -322,10 +420,6 @@
         ]
       },
       "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "warm "
-        },
         {
           "italic": false,
           "text": "werden"
@@ -1191,6 +1285,5 @@
       ]
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }

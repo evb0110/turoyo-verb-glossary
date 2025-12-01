@@ -22,7 +22,7 @@ export function calculateStats(verbs: Array<IVerb | null>) {
             stats.cross_references++
         }
 
-        if (verb.uncertain) {
+        if (verb.etymology?.uncertain) {
             stats.uncertain_entries++
         }
 

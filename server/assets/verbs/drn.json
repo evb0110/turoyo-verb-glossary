@@ -1,11 +1,33 @@
 {
   "root": "drn",
-  "etymology": null,
+  "etymology": {
+    "etymons": []
+  },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
       "stem": "I",
       "forms": ["drəlle", "dorən"],
+      "conjugations": {},
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "mit dem schwarzen, glatten Stein "
+        },
+        {
+          "italic": true,
+          "text": "dōrūno"
+        },
+        {
+          "italic": false,
+          "text": " glätten (getünchte Wand);"
+        }
+      ]
+    },
+    {
+      "stem": "I",
+      "forms": ["mit"],
       "conjugations": {
         "Imperativ": [
           {
@@ -41,7 +63,7 @@
       "label_gloss_tokens": [
         {
           "italic": false,
-          "text": "mit dem schwarzen, glatten Stein "
+          "text": "dem schwarzen, glatten Stein "
         },
         {
           "italic": true,
@@ -102,6 +124,5 @@
       ]
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }

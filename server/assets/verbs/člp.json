@@ -10,6 +10,7 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -99,8 +100,85 @@
           "text": "abdrücken (Gewehr);"
         }
       ]
+    },
+    {
+      "stem": "I",
+      "forms": ["čləqle", "čoləq"],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "ko-čoləq ʕayne",
+            "translations": [],
+            "references": ["229"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-čoləq ʕayne"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "229"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-čoləq ʕayne; 229;"
+          }
+        ]
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "Augenlid oder Lippe mit dem Finger herunterziehen, so dass man das rote Fleisch sieht;"
+        }
+      ]
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Part. Pass.": [
+          {
+            "turoyo": "ʕayne d-u=zʕuro člíqe-ne",
+            "translations": [],
+            "references": ["229"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕayne d-u=zʕuro člíqe-ne"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "229"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ʕayne d-u=zʕuro člíqe-ne; 229;"
+          }
+        ]
+      }
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }

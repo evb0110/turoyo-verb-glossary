@@ -10,6 +10,7 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -87,6 +88,49 @@
     {
       "stem": "II",
       "forms": ["mšahadle", "mšahəd"],
+      "conjugations": {},
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "das "
+        },
+        {
+          "italic": false,
+          "text": "islamische"
+        },
+        {
+          "italic": false,
+          "text": " "
+        },
+        {
+          "italic": false,
+          "text": "Glaubensbekenntnis"
+        },
+        {
+          "italic": false,
+          "text": " ("
+        },
+        {
+          "italic": true,
+          "text": "šăhada"
+        },
+        {
+          "italic": false,
+          "text": ") "
+        },
+        {
+          "italic": false,
+          "text": "ablegen"
+        },
+        {
+          "italic": false,
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "stem": "I",
+      "forms": ["das"],
       "conjugations": {
         "Preterit": [
           {
@@ -295,10 +339,6 @@
       "label_gloss_tokens": [
         {
           "italic": false,
-          "text": "das "
-        },
-        {
-          "italic": false,
           "text": "islamische"
         },
         {
@@ -332,6 +372,5 @@
       ]
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }

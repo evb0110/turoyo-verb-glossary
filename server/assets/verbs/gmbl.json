@@ -1,11 +1,14 @@
 {
   "root": "gmbl",
-  "etymology": null,
+  "etymology": {
+    "etymons": []
+  },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
       "stem": "II",
-      "forms": ["mgamballe", "mgambal"],
+      "forms": ["mgamballe", "mgambal (Kfarze)"],
       "conjugations": {
         "Preterite": [
           {
@@ -204,12 +207,66 @@
             ],
             "text": "They threw him into a cistern, they threw him into a cistern, it passed and they took his shirt, they took his shirt, they dunked it into… into blood, into a whatsit. (Joseph Story)"
           }
+        ],
+        "Infectum": [
+          {
+            "turoyo": "An naʕime kәmgambli ruḥayye bu ʕafro. İlyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "An naʕime kәmgambli ruḥayye bu ʕafro.   "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "An naʕime kәmgambli ruḥayye bu ʕafro. (İlyas p.c)"
+          },
+          {
+            "turoyo": "U brozo kәmgambal ruḥe bu ṭino. İlyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "U brozo kәmgambal ruḥe bu ṭino.           "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "U brozo kәmgambal ruḥe bu ṭino. (İlyas p.c)"
+          }
         ]
       },
       "label_gloss_tokens": [
         {
           "italic": false,
-          "text": "(Kfarze)"
+          "text": "вывалять (в грязи)"
+        },
+        {
+          "italic": false,
+          "text": ";  to dunk/bathe into mud"
         }
       ]
     },
@@ -262,6 +319,104 @@
             ],
             "text": "U zlam nafәl mi goro, mgambal bu admo. (İlyas p.c) the man fell from the roof, he became awash in blood"
           }
+        ],
+        "Infectum": [
+          {
+            "turoyo": "Noše bari mini l-azzeyo azzí ono qamayto aʕle. Ono siporči wayno rohaṭwayno marke mḥalaqwayno raġli l-tamhenik̇é rohaṭwayno. Azzino ʕal riše kal komigambal twir qarʕe mpalpax qarʕe w ʕayne tavda w druʕone",
+            "translations": [],
+            "references": ["219", "NI 6"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Noše bari mini l-azzeyo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " azzí ono qamayto aʕle. Ono siporči wayno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " rohaṭwayno marke"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥalaqwayno raġli l-tamhenik̇é"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " rohaṭwayno. Azzino ʕal riše"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kal komigambal"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " twir qarʕe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mpalpax qarʕe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ʕayne tavda w druʕone "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "ref",
+                "value": "219"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "NI 6"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Noše bari mini l-azzeyo, azzí ono qamayto aʕle. Ono siporči wayno, rohaṭwayno marke, mḥalaqwayno raġli l-tamhenik̇é, rohaṭwayno. Azzino ʕal riše, kal komigambal, twir qarʕe, mpalpax qarʕe, w ʕayne tavda w druʕone (219 NI 6)"
+          }
         ]
       },
       "label_gloss_tokens": [
@@ -272,6 +427,5 @@
       ]
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }

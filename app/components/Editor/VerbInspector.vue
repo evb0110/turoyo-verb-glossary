@@ -27,7 +27,6 @@ interface EditableVerbModel {
     cross_reference: IVerb['cross_reference']
     stems: EditableStem[]
     idioms?: string[] | null
-    uncertain: boolean
 }
 
 function conjugationsToGroups(conjugations: Record<string, IExample[]> | undefined | null): IEditableConjugationGroup[] {
@@ -64,7 +63,6 @@ function toEditable(verb: IVerb): EditableVerbModel {
             groups: conjugationsToGroups(s.conjugations),
         })),
         idioms: (verb as any).idioms ?? null,
-        uncertain: !!verb.uncertain,
     }
 }
 
@@ -81,7 +79,6 @@ function fromEditable(model: EditableVerbModel): IVerb {
         etymology: deepClone(model.etymology),
         cross_reference: model.cross_reference ?? null,
         stems,
-        uncertain: !!model.uncertain,
         ...(model as any).idioms != null ? { idioms: deepClone((model as any).idioms) } : {},
     } as IVerb
 }
@@ -283,7 +280,7 @@ function removeExample(g: IEditableConjugationGroup, eIdx: number) {
             </div>
             <div class="flex items-center gap-3">
                 <label class="text-sm font-medium">Uncertain</label>
-                <UToggle v-model="draft.uncertain"/>
+                <UToggle v-model="draft.etymology!.uncertain"/>
             </div>
             <div>
                 <label class="block text-sm font-medium mb-1">Cross reference</label>

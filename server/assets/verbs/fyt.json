@@ -10,6 +10,7 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -1180,30 +1181,6 @@
               }
             ],
             "text": "dayman ḥəzənni-we ʕal u=kew-ayḏe w-ʕal a=mrore d-mafətle ‘Er war immer bekümmert über seine Krankheit und all das Bittere, das er durchgemacht hatte’; 30/41"
-          },
-          {
-            "turoyo": "aǧ-ǧule fayiṭi Ilyas p.c.",
-            "translations": [],
-            "references": [],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "aǧ-ǧule fayiṭi "
-              },
-              {
-                "kind": "punct",
-                "value": "("
-              },
-              {
-                "kind": "turoyo",
-                "value": "Ilyas p.c."
-              },
-              {
-                "kind": "punct",
-                "value": ")"
-              }
-            ],
-            "text": "aǧ-ǧule fayiṭi (Ilyas p.c.)"
           }
         ],
         "Infectum": [
@@ -1381,8 +1358,85 @@
           "text": ") wegkommen, sich fortmachen von; 2) zeitlich: verbringen; 3) ausstehen, durchmachen;"
         }
       ]
+    },
+    {
+      "stem": "I",
+      "forms": ["fayəṭ", "foyaṭ"],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "aǧ-ǧule fayiṭi Ilyas p.c.",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aǧ-ǧule fayiṭi "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "aǧ-ǧule fayiṭi (Ilyas p.c.)"
+          }
+        ],
+        "Participle": [
+          {
+            "turoyo": "bote fayiṭe = ḥariwe Bote fayiṭe dəmmínanne bote fayiṭe Isḥaq Old houses",
+            "translations": [],
+            "references": ["35"],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bote fayiṭe = ḥariwe"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Bote fayiṭe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " dəmmínanne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " bote fayiṭe Isḥaq Old houses"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "ref",
+                "value": "35"
+              }
+            ],
+            "text": "bote fayiṭe = ḥariwe; Bote fayiṭe, dəmmínanne, bote fayiṭe Isḥaq Old houses:35"
+          }
+        ]
+      }
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }

@@ -10,6 +10,7 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -368,7 +369,10 @@
     },
     {
       "stem": "II",
-      "forms": ["maqdaḥle", "maqdǝḥ"],
+      "forms": [
+        "maqdaḥle",
+        "maqdǝḥ (İlyas pronounce d as ḏ and says this is the majority pronounciation)"
+      ],
       "conjugations": {
         "Infectum": [
           {
@@ -467,16 +471,91 @@
             ],
             "text": "Gmaqḏaḥno i soba. ‘I will burn the stove.’ (İlyas p.c)"
           }
+        ],
+        "Preterite": [
+          {
+            "turoyo": "Maqḏaḥli i nuro. İlyas p.c",
+            "translations": ["I burned the fire."],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Maqḏaḥli i nuro. "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I burned the fire.’"
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Maqḏaḥli i nuro. ‘I burned the fire.’(İlyas p.c)"
+          },
+          {
+            "turoyo": "Maqḏaḥli i ṭfayo. İlyas p.c",
+            "translations": ["I made a bonefire."],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Maqḏaḥli i ṭfayo. "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I made a bonefire.’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Maqḏaḥli i ṭfayo. ‘I made a bonefire.’ (İlyas p.c)"
+          }
+        ],
+        "Infinitive": [
+          {
+            "turoyo": "Teqḏoḥo",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Teqḏoḥo"
+              }
+            ],
+            "text": "Teqḏoḥo"
+          }
         ]
       },
       "label_gloss_tokens": [
         {
           "italic": true,
-          "text": "(İlyas pronounce d as ḏ and says this is the majority pronounciation)"
+          "text": "to burn, to light"
         }
       ]
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }

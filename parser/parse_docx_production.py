@@ -107,12 +107,12 @@ class FixedDocxParser:
             return False
 
         text = para.text.strip()
-        turoyo_chars = r'ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūə'
+        turoyo_chars = r'ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūəǝaeiou'
         # CRITICAL FIX: Include combining diacritics (U+0300-U+036F) to handle decomposed characters like ḏ̣ (ḏ + combining dot below)
         turoyo_with_combining = rf'[{turoyo_chars}\u0300-\u036F]'
 
         has_root = re.match(rf'^({turoyo_with_combining}{{2,12}})(?:\s+\d+)?(?:\s|\(|<|$)', text)
-        is_cross_ref = bool(re.search(r'→|See\s+[ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūə]', text))
+        is_cross_ref = bool(re.search(r'→|see\s+[ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūəǝ]', text, re.IGNORECASE))
 
         if not has_root or is_cross_ref:
             return False
@@ -149,7 +149,7 @@ class FixedDocxParser:
         has_stem = re.match(r'^([IVX]+|Pa\.|Af\.|Št\.|Šaf\.):\s*', text)
 
         if not has_stem:
-            if text.startswith('Detransitive'):
+            if text == 'Detransitive':
                 return True
 
             # BUGFIX: Recognize "Action Noun" and "Infinitiv" as stem headers
@@ -162,10 +162,13 @@ class FixedDocxParser:
                 # Check if line starts with italic Turoyo forms (verb conjugations)
                 # Pattern: starts with Turoyo characters, has italic formatting
                 has_italic = any(r.italic for r in para.runs if r.text.strip())
-                turoyo_start = re.match(r'^[ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūə̀-ͯ]{3,}', text)
+                turoyo_chars = r'ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūəǝaeioù-ͯ'
+                turoyo_start = re.match(rf'^[{turoyo_chars}]{{3,}}', text)
+                slash_forms = re.match(rf'^[{turoyo_chars}]+(?:/\s*[{turoyo_chars}]+)+', text)
 
                 # If starts with Turoyo and has italic runs, treat as implicit Stem I
-                if has_italic and turoyo_start:
+                # Also allow non-italic rows when they are clearly Turoyo slash-separated forms
+                if (has_italic and turoyo_start) or slash_forms:
                     return True
 
             return False
@@ -497,16 +500,31 @@ class FixedDocxParser:
     def extract_root_and_etymology(self, text, next_para_text=None):
         text = text.strip()
         # CRITICAL FIX: Include combining diacritics to match decomposed characters
-        root_match = re.match(r'^([ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūə\u0300-\u036F]{2,12}(?:\s+\d+)?)(?:\s|\(|<|$)', text)
+        root_match = re.match(r'^([ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūəǝ\u0300-\u036F]{2,12}(?:\s+\d+)?)(?:\s|\(|<|$)', text)
         if not root_match:
-            return None, None
+            return None, None, None, None
 
         root = root_match.group(1).strip()
+
+        # Check for cross-reference pattern (e.g., "see ǧġl1", "see also šġl3")
+        cross_ref_match = re.search(r'\bsee\s+(?:also\s+)?([ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūəǝ\u0300-\u036F]{2,12}(?:\s+\d+)?(?:,\s*[ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūəǝ\u0300-\u036F]{2,12}(?:\s+\d+)?)*)', text, re.IGNORECASE)
+        cross_reference = cross_ref_match.group(1).strip() if cross_ref_match else None
 
         # Parse full etymology with multi-paragraph support
         etymology = self.parse_etymology_full(text, next_para_text)
 
-        return root, etymology
+        # Extract root-level gloss (non-etymology parenthetical content)
+        root_gloss = None
+        if not etymology:
+            # No etymology marker found, check for simple gloss in parentheses
+            gloss_match = re.search(r'\(([^<].+)\)', text)
+            if gloss_match:
+                potential_gloss = gloss_match.group(1).strip()
+                # Filter out "unknown" and editorial notes
+                if not re.search(r'unknown|\?{3}|SL |note:', potential_gloss, re.IGNORECASE):
+                    root_gloss = potential_gloss
+
+        return root, etymology, root_gloss, cross_reference
 
     def extract_stem_info(self, text):
         match = re.match(r'^([IVX]+|Pa\.|Af\.|Št\.|Šaf\.):\s*(.+)', text.strip())
@@ -515,7 +533,7 @@ class FixedDocxParser:
             # BUGFIX: Handle implicit stems (no marker, just forms and notes)
             # Example: "mǧəqle/moǧaq SL 23-8-2025: the verb looks like..."
             # Check if this starts with Turoyo characters (likely forms)
-            implicit_match = re.match(r'^([ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūə̀-ͯ][^\s]*(?:/[^\s]+)*)', text.strip())
+            implicit_match = re.match(r'^([ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūəǝaeioù-ͯ][^\s]*(?:/\s*[^\s]+)*)', text.strip())
             if implicit_match:
                 # Extract forms from the beginning
                 forms_str = implicit_match.group(1)
@@ -529,7 +547,7 @@ class FixedDocxParser:
 
         stem_num = match.group(1)
         forms_text = match.group(2).strip()
-        forms_match = re.match(r'^([^\s]+(?:/[^\s]+)*)', forms_text)
+        forms_match = re.match(r'^(\S+(?:\s*\([^)]+\))?(?:/\S+(?:\s*\([^)]+\))?)*)', forms_text)
         if forms_match:
             forms_str = forms_match.group(1)
             forms = [f.strip() for f in forms_str.split('/') if f.strip()]
@@ -665,7 +683,7 @@ class FixedDocxParser:
             r'\+\s*[A-Z][a-zA-Z\s]+[a-z]+\.\s*\d+(?:[./]\d+)*'  # + Leb Beg s.66/100
             r'|(?<![A-Za-z])[a-z]+\.\s*\d+(?:[./]\d+)*'  # s.66/100 or s. 66/100
             r'|(?<![A-Za-z])[A-Z][A-Za-z]{0,3}\s+\d+(?:[./]\d+)*'  # LB 147
-            r'|\d+(?:[./]\d+)*'  # 24/147
+            r'|(?<!\d)\d{1,3}(?:[./]\d+)*'  # 24/147 (max 3 digits, not part of year)
             r')(?=(?:[^\w]|$))'
         )
 
@@ -822,7 +840,7 @@ class FixedDocxParser:
         text = text.strip()
 
         # AGENT 1 FIX 3: Add \u0300-\u036F (combining) and \u00C0-\u017F (Latin Extended for é, í, à)
-        turoyo_with_diacritics = r'[a-zāēīūəʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓ\u0300-\u036F\u00C0-\u017F\s\-=]'
+        turoyo_with_diacritics = r'[a-zāēīūəǝʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓ\u0300-\u036F\u00C0-\u017F\s\-=]'
 
         simple_form_with_ref = rf'^{turoyo_with_diacritics}+;\s*\d+\s*;\s*$'
         if re.match(simple_form_with_ref, text, re.IGNORECASE):
@@ -897,7 +915,7 @@ class FixedDocxParser:
             if re.match(r'^\d+$', part):
                 references.append(part)
             elif len(part) > 1:
-                turoyo_ratio = sum(1 for c in part if c in 'ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūə-=')
+                turoyo_ratio = sum(1 for c in part if c in 'ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūəǝaeiou-=')
                 if turoyo_ratio >= 2 or self.is_likely_turoyo(part):
                     forms.append(part)
 
@@ -1251,7 +1269,7 @@ class FixedDocxParser:
         if has_verb_form and has_quotation:
             return True
 
-        turoyo_chars = r'ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūə'
+        turoyo_chars = r'ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūəǝ'
         starts_with_turoyo = bool(re.match(rf'^[{turoyo_chars}]', text, re.UNICODE))
 
         if starts_with_turoyo and has_quotation and len(text) > 30:
@@ -1662,6 +1680,11 @@ class FixedDocxParser:
 
         doc = Document(docx_path)
 
+        # BUGFIX: Reset per-file state to prevent pollution from previous files
+        self.pending_idiom_paras = []
+        self.in_idioms_section = False
+        self.consumed_para_indices = set()
+
         # Build element map
         elements = []
         for el in doc.element.body:
@@ -1722,16 +1745,20 @@ class FixedDocxParser:
 
                     # Pass next paragraph text for multi-paragraph etymology support
                     next_para_text = next_para.text if next_para else None
-                    root, etymology = self.extract_root_and_etymology(para.text, next_para_text)
+                    root, etymology, root_gloss, cross_reference = self.extract_root_and_etymology(para.text, next_para_text)
                     if root:
                         current_verb = {
                             'root': root,
-                            'etymology': etymology,
-                            'cross_reference': None,
+                            'etymology': etymology if etymology else {'etymons': []},
+                            'root_gloss': root_gloss,
+                            'cross_reference': cross_reference,
                             'stems': [],
                             'idioms': None,
-                            'uncertain': '???' in para.text
                         }
+                        
+                        # Assign uncertain flag to etymology
+                        if '???' in para.text:
+                            current_verb['etymology']['uncertain'] = True
                         current_stem = None
                         self.pending_idiom_paras = []
 
@@ -1742,8 +1769,15 @@ class FixedDocxParser:
                 else:
                     # Check if next element is a table (for detecting implicit stems)
                     next_elem_is_table = False
-                    if idx + 1 < len(elements) and elements[idx + 1][0] == 'table':
-                        next_elem_is_table = True
+                    # Look ahead a few elements, skipping empty paragraphs, to see if a table follows
+                    for j in range(idx + 1, min(idx + 4, len(elements))):
+                        et, el = elements[j]
+                        if et == 'para' and el.text.strip():
+                            # Stop at first non-empty paragraph
+                            break
+                        if et == 'table':
+                            next_elem_is_table = True
+                            break
 
                     if self.is_stem_header(para, next_elem_is_table):
                         para_text = para.text.strip()
@@ -1800,7 +1834,7 @@ class FixedDocxParser:
                                     if not forms:
                                         # Pattern: "nqil/mənqəl" or "nqolo" (Turoyo forms)
                                         # Include both special and basic ASCII vowels
-                                        turoyo_chars = r'ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūəaeiou\u0300-\u036F'
+                                        turoyo_chars = r'ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūəǝaeiou\u0300-\u036F'
                                         forms_pattern = rf'^[{turoyo_chars}]+(?:/[{turoyo_chars}]+)*$'
 
                                         if re.match(forms_pattern, next_text):
@@ -1957,19 +1991,19 @@ class FixedDocxParser:
                 table = elem
 
                 if current_stem is not None and table.rows:
-                    row = table.rows[0]
-                    if len(row.cells) >= 2:
-                        conj_type = row.cells[0].text.strip()
-                        examples_cell = row.cells[1]
+                    for row in table.rows:
+                        if len(row.cells) >= 2:
+                            conj_type = row.cells[0].text.strip()
+                            examples_cell = row.cells[1]
 
-                        examples = self.parse_table_cell(examples_cell)
+                            examples = self.parse_table_cell(examples_cell)
 
-                        if conj_type and examples:
-                            if conj_type in current_stem['conjugations']:
-                                current_stem['conjugations'][conj_type].extend(examples)
-                            else:
-                                current_stem['conjugations'][conj_type] = examples
-                            self.stats['examples_parsed'] += len(examples)
+                            if conj_type and examples:
+                                if conj_type in current_stem['conjugations']:
+                                    current_stem['conjugations'][conj_type].extend(examples)
+                                else:
+                                    current_stem['conjugations'][conj_type] = examples
+                                self.stats['examples_parsed'] += len(examples)
 
         if current_verb:
             if self.pending_idiom_paras:
@@ -2058,6 +2092,36 @@ class FixedDocxParser:
         else:
             print(f"   ℹ️  No unnumbered homonyms requiring auto-numbering found")
 
+    def resolve_duplicate_roots(self):
+        """Ensure roots are unique so files are not overwritten"""
+        used = set()
+        renamed = 0
+        unique_verbs = []
+
+        for verb in self.verbs:
+            root = verb['root']
+            candidate = root
+            suffix = 2
+
+            while candidate in used:
+                candidate = f"{root}__dup{suffix}"
+                suffix += 1
+
+            if candidate != root:
+                print(f"   ⚠️  Duplicate root '{root}' encountered, renaming to '{candidate}' to preserve data")
+                verb = dict(verb)
+                verb['root'] = candidate
+                renamed += 1
+
+            used.add(candidate)
+            unique_verbs.append(verb)
+
+        self.verbs = unique_verbs
+
+        if renamed:
+            self.stats['duplicate_roots_renamed'] = renamed
+            print(f"   ✅ Renamed {renamed} duplicate roots to avoid overwriting files")
+
     def parse_all_files(self, docx_dir):
         print("=" * 80)
         print("DOCX PARSER V2 - WITH CONTEXTUAL VALIDATION")
@@ -2071,6 +2135,7 @@ class FixedDocxParser:
 
         # Add homonym numbering AFTER parsing all files
         self.add_homonym_numbers()
+        self.resolve_duplicate_roots()
 
         return self.verbs
 

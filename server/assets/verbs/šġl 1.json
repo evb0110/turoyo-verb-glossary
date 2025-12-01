@@ -8,11 +8,12 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
       "stem": "I",
-      "forms": ["šaġəl"],
+      "forms": ["šaġəl (šġile)", "šoġəl"],
       "conjugations": {
         "Preterit Intransitive": [
           {
@@ -392,21 +393,13 @@
             "text": "ʕal ad=dōlmīše w-ʕal at=taqsiyat šoġal-way-no, hul l-aš=šawʕo=w-šawʕi ‘I drove (lit. ‘worked on’)"
           },
           {
-            "turoyo": "minibuses and cabs until ’",
+            "turoyo": "minibuses and cabs until 1977’",
             "translations": [],
-            "references": ["1977", "EL 20"],
+            "references": ["EL 20"],
             "tokens": [
               {
                 "kind": "turoyo",
-                "value": " minibuses and cabs until "
-              },
-              {
-                "kind": "ref",
-                "value": "1977"
-              },
-              {
-                "kind": "turoyo",
-                "value": "’ "
+                "value": " minibuses and cabs until 1977’ "
               },
               {
                 "kind": "ref",
@@ -519,20 +512,32 @@
       },
       "label_gloss_tokens": [
         {
-          "italic": true,
-          "text": "("
+          "italic": false,
+          "text": "1) "
+        },
+        {
+          "italic": false,
+          "text": "arbeiten"
+        },
+        {
+          "italic": false,
+          "text": ", "
+        },
+        {
+          "italic": false,
+          "text": "funktionieren"
+        },
+        {
+          "italic": false,
+          "text": "; 2) to earn (???) (something "
         },
         {
           "italic": true,
-          "text": "šġile"
+          "text": "b-"
         },
         {
-          "italic": true,
-          "text": ")/"
-        },
-        {
-          "italic": true,
-          "text": "šoġəl"
+          "italic": false,
+          "text": "), to make wages; 3) affect, have an effect on;"
         }
       ]
     },
@@ -989,6 +994,7 @@
       ]
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": [
+    "i=nuro šaġəl/šoġəl ʕal- ‘to burn (tr.)’ w i=nuro šəġlo aʕle hul d-moyəṯ ʻund das Feuer soll ihn brennen, bis er stirbtʼ; RT 23; b-u=šəkl-ano, ʕAlo i=nuro šaġilo aʕle ʻso brannte das Feuer den ʕAloʼ; RT 33;"
+  ]
 }

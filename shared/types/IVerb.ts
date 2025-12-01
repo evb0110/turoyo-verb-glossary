@@ -4,9 +4,9 @@ import type { IStem } from '#shared/types/IStem'
 export interface IVerb {
     root: string
     etymology: IEtymology | null
+    root_gloss?: string | null
     cross_reference: string | null
     stems: IStem[]
-    uncertain: boolean
     idioms?: string[] | null
 
     lemma_header_raw?: string

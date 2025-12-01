@@ -10,6 +10,7 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -133,6 +134,66 @@
             ],
             "text": "Lә tre zlamat mqatalle, mpalpaxxe ḥḏoḏe. Two men fought, they beat each other up. (İlyas p.c)"
           }
+        ],
+        "Infectum": [
+          {
+            "turoyo": "Mәd ak kalbe d kәmqatli kompalpxi ḥḏoḏe. When the dogs fight they beat up each other. İlyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Mәd ak kalbe d kәmqatli kompalpxi ḥḏoḏe. When the dogs fight they beat up each other. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Mәd ak kalbe d kәmqatli kompalpxi ḥḏoḏe. When the dogs fight they beat up each other. (İlyas p.c)"
+          }
+        ],
+        "Infectum - wa": [
+          {
+            "turoyo": "Azzino li šuqo ḥzeli tre zlamat mpalpxiwa ḥḏoḏe.İlyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Azzino li šuqo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥzeli  tre zlamat mpalpxiwa  ḥḏoḏe."
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Azzino li šuqo, ḥzeli tre zlamat mpalpxiwa ḥḏoḏe.(İlyas p.c)"
+          }
         ]
       },
       "label_gloss_tokens": [
@@ -201,21 +262,72 @@
             ],
             "text": "1.aḥ ḥәmṣe mpaxpxi ʕal u dawqo. Chickpeans burst open on a frying pan. (ilyas p.c)"
           }
+        ],
+        "Infectum": [
+          {
+            "turoyo": ". Mәd až žabaš d komoṭәn komipaxpxi. When watermelons become ripe they split open/ burst. İlyas p.c",
+            "translations": [],
+            "references": ["1"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". Mәd až žabaš d komoṭәn komipaxpxi. When watermelons become ripe they split open/ burst.  "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "1. Mәd až žabaš d komoṭәn komipaxpxi. When watermelons become ripe they split open/ burst. (İlyas p.c)"
+          },
+          {
+            "turoyo": ". Ag garme das sowe komipaxpxi. The bones of old people break. İlyas p.c",
+            "translations": [],
+            "references": ["3"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". Ag garme das sowe komipaxpxi. The bones of old people break. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "3. Ag garme das sowe komipaxpxi. The bones of old people break. (İlyas p.c)"
+          }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": ["mpaxpaxle", "mpaxpax"],
-      "conjugations": {},
-      "label_gloss_tokens": [
-        {
-          "italic": true,
-          "text": "(Kfarze)"
-        }
-      ]
+      "forms": ["mpaxpaxle", "mpaxpax (Kfarze)"],
+      "conjugations": {}
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }

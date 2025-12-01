@@ -10,6 +10,7 @@
       }
     ]
   },
+  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -1220,6 +1221,44 @@
             ],
             "text": "2) u=ṭalobo d-ḥoṯi u=dəžmənayḏan ʻder Freier meiner Schwester ist unser Feindʼ; 218; 53/93;"
           }
+        ],
+        "Infinitive": [
+          {
+            "turoyo": "aṯən l-u=ṭlobo d-ḥoṯi",
+            "translations": ["They came to ask my sister’s hand"],
+            "references": ["2", "JL 9.9.1"],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aṯən l-u=ṭlobo d-ḥoṯi "
+              },
+              {
+                "kind": "translation",
+                "value": "‘They came to ask my sister’s hand’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 9.9.1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) aṯən l-u=ṭlobo d-ḥoṯi ‘They came to ask my sister’s hand’ JL 9.9.1;"
+          }
         ]
       },
       "label_gloss_tokens": [
@@ -1664,6 +1703,5 @@
       ]
     }
   ],
-  "idioms": null,
-  "uncertain": false
+  "idioms": null
 }
