@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,60 +18,13 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ko-mḥavzi ġắlabe ʕal u=ǧənsaṯṯe ʕal i=kḥeliye d-as=səsye d-ruḥayye",
-            "translations": [
-              "sie achten sehr darauf, Ihrerasse, die Rassereinheit ihrer Pferde zu erhalten"
-            ],
-            "references": ["82/10"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "ko-mḥavzi ġắlabe ʕal u=ǧənsaṯṯe"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " ʕal i=kḥeliye d-as=səsye d-ruḥayye "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻsie achten sehr darauf, Ihrerasse, die Rassereinheit ihrer Pferde zu erhaltenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "82/10"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "ko-mḥavzi ġắlabe ʕal u=ǧənsaṯṯe, ʕal i=kḥeliye d-as=səsye d-ruḥayye ʻsie achten sehr darauf, Ihrerasse, die Rassereinheit ihrer Pferde zu erhaltenʼ; 82/10;"
+            "turoyo": "ko-mḥavziġắlabeʕal u=ǧənsaṯṯe, ʕal i=kḥeliye d-as=səsye d-ruḥayye 82/10;",
+            "translations": ["Rassereinheit"],
+            "references": ["82/10"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "erhalten"
-        },
-        {
-          "italic": false,
-          "text": "?;"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

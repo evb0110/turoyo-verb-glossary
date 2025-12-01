@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,80 +18,13 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "hēš kīt ġắlabe d-mitaḥkən b-ḥaq d-a=dkoṯ-ani bale ŭno b-haqqayṣ k-məktafeno",
-            "translations": [
-              "es gibt noch viele Dinge, die sich über diese Orte erzählen liessen, aber mit soviel will ich begnügen"
-            ],
-            "references": ["808", "11/322"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "hēš kīt ġắlabe d-mitaḥkən b-ḥaq d-a=dkoṯ-ani"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " bale ŭno b-haqqayṣ k-məktafeno "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻes gibt noch viele Dinge, die sich über diese Orte erzählen liessen, aber mit soviel will ich begnügenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "808"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "11/322"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "hēš kīt ġắlabe d-mitaḥkən b-ḥaq d-a=dkoṯ-ani; bale ŭno b-haqqayṣ k-məktafeno ʻes gibt noch viele Dinge, die sich über diese Orte erzählen liessen, aber mit soviel will ich begnügenʼ; 808; 11/322;"
+            "turoyo": "hēškītġắlabe d-mitaḥkən b-ḥaq d-a=dkoṯ-ani; bale ŭno b-haqqayṣ k-məktafeno 808; 11/322;",
+            "translations": ["Dinge, die"],
+            "references": ["808; 11/322"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "sich"
-        },
-        {
-          "italic": false,
-          "text": " "
-        },
-        {
-          "italic": false,
-          "text": "begnügen"
-        },
-        {
-          "italic": false,
-          "text": ";"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

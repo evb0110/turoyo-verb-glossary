@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,71 +18,12 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "naqqa ʕal ḥəs d-u=baxyayḏa u=aḥuno tayəz m-i=šamṯo",
-            "translations": [
-              "auf einmal fuhr der Bruder von dem Geräusch ihres Weinens aus dem Schlafe auf"
-            ],
-            "references": ["512", "65/277"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "naqqa ʕal ḥəs d-u=baxyayḏa u=aḥuno tayəz m-i=šamṯo "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻauf einmal fuhr der Bruder von dem Geräusch ihres Weinens aus dem Schlafe aufʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "512"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "65/277"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "naqqa ʕal ḥəs d-u=baxyayḏa u=aḥuno tayəz m-i=šamṯo ʻauf einmal fuhr der Bruder von dem Geräusch ihres Weinens aus dem Schlafe aufʼ; 512; 65/277;"
+            "turoyo": "naqqaʕalḥəs d-u=baxyayḏa u=aḥunotayəz m-i=šamṯo 512; 65/277;",
+            "translations": ["der Bruder von"],
+            "references": ["512; 65/277"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "erschreckt"
-        },
-        {
-          "italic": false,
-          "text": " "
-        },
-        {
-          "italic": false,
-          "text": "auffahren"
-        },
-        {
-          "italic": false,
-          "text": " (to wake up with a start)"
-        }
-      ]
+      }
     },
     {
       "stem": "III",
@@ -91,32 +31,13 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "lu+dədwono matəzle i+šanṯayḏi awakened me from sleeping",
-            "translations": [],
-            "references": [],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "lu+dədwono matəzle i+šanṯayḏi "
-              },
-              {
-                "kind": "punct",
-                "value": "("
-              },
-              {
-                "kind": "turoyo",
-                "value": "awakened me from sleeping"
-              },
-              {
-                "kind": "punct",
-                "value": ")"
-              }
-            ],
-            "text": "lu+dədwono matəzle i+šanṯayḏi (awakened me from sleeping)"
+            "turoyo": "lu+dədwonomatəzlei+šanṯayḏi",
+            "translations": ["(awakened me from sleeping)"],
+            "references": []
           }
         ]
       }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

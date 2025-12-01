@@ -10,68 +10,17 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
       "stem": "I",
       "forms": ["šṭəḥle", "šoṭəḥ"],
-      "conjugations": {},
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "ausstrecken"
-        },
-        {
-          "italic": false,
-          "text": ";"
-        }
-      ]
-    },
-    {
-      "stem": "Detransitive",
-      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "šṭīḥ b-i=šəmšo -",
-            "translations": ["er streckte sich in der Sonne aus"],
-            "references": ["125", "126"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "šṭīḥ b-i=šəmšo "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻer streckte sich in der Sonne ausʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "125"
-              },
-              {
-                "kind": "turoyo",
-                "value": "-"
-              },
-              {
-                "kind": "ref",
-                "value": "126"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "šṭīḥ b-i=šəmšo ʻer streckte sich in der Sonne ausʼ; 125-126;"
+            "turoyo": "šṭīḥ b-i=šəmšo 125-126;",
+            "translations": ["in der Sonne"],
+            "references": ["125", "126"]
           }
         ]
       }
@@ -79,37 +28,8 @@
     {
       "stem": "I",
       "forms": ["šәmle", "šoyam"],
-      "conjugations": {
-        "Infectum": [
-          {
-            "turoyo": "Ilyas p.c. adyawma kulle mi+zakme košomno",
-            "translations": [],
-            "references": [],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "Ilyas p.c."
-              },
-              {
-                "kind": "punct",
-                "value": ":"
-              },
-              {
-                "kind": "turoyo",
-                "value": " adyawma kulle mi+zakme košomno"
-              }
-            ],
-            "text": "Ilyas p.c.: adyawma kulle mi+zakme košomno"
-          }
-        ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "blow one’s nose"
-        }
-      ]
+      "conjugations": {}
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

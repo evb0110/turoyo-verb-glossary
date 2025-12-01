@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,46 +18,13 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ko-losəʕ",
-            "translations": ["er kaut"],
-            "references": ["99"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "ko-losəʕ "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻer kautʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "99"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "ko-losəʕ ʻer kautʼ; 99;"
+            "turoyo": "ko-losəʕ 99;",
+            "translations": [],
+            "references": ["99"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "kauen;"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

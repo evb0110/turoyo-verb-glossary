@@ -8,27 +8,12 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
       "stem": "II",
       "forms": ["mraḥable", "mraḥəb"],
-      "conjugations": {},
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "begrüssen ("
-        },
-        {
-          "italic": true,
-          "text": "mraḥəb - mraḥable"
-        },
-        {
-          "italic": false,
-          "text": ");"
-        }
-      ]
+      "conjugations": {}
     },
     {
       "stem": "III",
@@ -36,56 +21,15 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "u=laly-awo k-ḥŭzal-le k-márḥəbi bə-ḥḏoḏe ġắlabe",
+            "turoyo": "u=laly-awo k-ḥŭzal-le, k-márḥəbi bə-ḥḏoḏe ġắlabe 6/76;",
             "translations": [
-              "am Abend finden sie ihn, und sie begrüssen einander herzlich"
+              "‘am Abend finden sie ihn, und sie begrüssen einander herzlich’;"
             ],
-            "references": ["6/76"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "u=laly-awo k-ḥŭzal-le"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " k-márḥəbi bə-ḥḏoḏe ġắlabe "
-              },
-              {
-                "kind": "translation",
-                "value": "‘am Abend finden sie ihn, und sie begrüssen einander herzlich’"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "6/76"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "u=laly-awo k-ḥŭzal-le, k-márḥəbi bə-ḥḏoḏe ġắlabe ‘am Abend finden sie ihn, und sie begrüssen einander herzlich’; 6/76;"
+            "references": ["6/76"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "begrüssen;"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

@@ -10,81 +10,21 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
-      "stem": "Detransitive",
+      "stem": "II",
       "forms": ["mḥaǧəm", "miḥaǧəm"],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "naw k-miḥaǧmi b-i=oda",
-            "translations": [
-              "sie gehen nicht mehr in das Zimmer hinein, finden keinen platz mehr darin"
-            ],
-            "references": ["200"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "naw k-miḥaǧmi b-i=oda "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻsie gehen nicht mehr in das Zimmer hinein, finden keinen platz mehr darinʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "200"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "naw k-miḥaǧmi b-i=oda ʻsie gehen nicht mehr in das Zimmer hinein, finden keinen platz mehr darinʼ; 200;"
+            "turoyo": "naw k-miḥaǧmi b-i=oda 200;",
+            "translations": ["in das Zimmer"],
+            "references": ["200"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "("
-        },
-        {
-          "italic": false,
-          "text": "Detrans"
-        },
-        {
-          "italic": false,
-          "text": ".) "
-        },
-        {
-          "italic": false,
-          "text": "hineingehen"
-        },
-        {
-          "italic": false,
-          "text": ", Platz "
-        },
-        {
-          "italic": false,
-          "text": "finden"
-        },
-        {
-          "italic": false,
-          "text": ";"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

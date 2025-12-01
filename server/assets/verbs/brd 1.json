@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,46 +18,13 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "barəd lebi mina",
-            "translations": ["mein Herz wurde kalt zu ihr"],
-            "references": ["87"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "barəd lebi mina "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻmein Herz wurde kalt zu ihrʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "87"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "barəd lebi mina ʻmein Herz wurde kalt zu ihrʼ; 87;"
+            "turoyo": "barəd lebi mina 87;",
+            "translations": ["ʻmein Herz wurde kalt zu ihrʼ;"],
+            "references": ["87"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "kalt werden;"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

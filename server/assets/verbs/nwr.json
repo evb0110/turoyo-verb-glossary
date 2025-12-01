@@ -8,8 +8,7 @@
       }
     ]
   },
-  "root_gloss": null,
-  "cross_reference": "nwhr",
+  "cross_reference": null,
   "stems": [
     {
       "stem": "II",
@@ -17,86 +16,23 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "u=ṣalōn mnawalle b-i=meṯaytayḏux p.c. ST",
-            "translations": ["der Saal ist erleuchtet durch dein Kommen"],
-            "references": ["2"],
-            "tokens": [
-              {
-                "kind": "ref",
-                "value": "2"
-              },
-              {
-                "kind": "punct",
-                "value": ")"
-              },
-              {
-                "kind": "turoyo",
-                "value": " u=ṣalōn mnawalle b-i=meṯaytayḏux "
-              },
-              {
-                "kind": "translation",
-                "value": "‘der Saal ist erleuchtet durch dein Kommen’"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " p.c. ST"
-              }
+            "turoyo": "1)mnawallan u=ṣalōn ‘’; p.c. ST; 2) u=ṣalōn mnawalle b-i=meṯaytayḏux p.c. ST",
+            "translations": [
+              "wir haben den Saal beleuchtet",
+              "‘der Saal ist erleuchtet durch dein Kommen’;"
             ],
-            "text": "2) u=ṣalōn mnawalle b-i=meṯaytayḏux ‘der Saal ist erleuchtet durch dein Kommen’; p.c. ST"
+            "references": ["1", "2"]
           }
-        ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "1) beleuchten (trans.); 2) leuchten (intrans.);"
-        }
-      ]
-    },
-    {
-      "stem": "Detransitive",
-      "forms": [],
-      "conjugations": {
+        ],
         "Pass. Part.": [
           {
-            "turoyo": "xōrt suryoyo mnawro",
-            "translations": ["ein gebildeter syrischer Junge"],
-            "references": ["11/70"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "xōrt suryoyo mnawro "
-              },
-              {
-                "kind": "translation",
-                "value": "‘ein gebildeter syrischer Junge’"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "11/70"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "xōrt suryoyo mnawro ‘ein gebildeter syrischer Junge’; 11/70;"
+            "turoyo": "xōrt suryoyo mnawro 11/70;",
+            "translations": ["‘ein gebildeter syrischer Junge’;"],
+            "references": ["11/70"]
           }
         ]
       }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

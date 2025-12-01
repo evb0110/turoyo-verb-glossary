@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,80 +18,16 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "l-u=zlām səxle u=ḥawrayḏi ʕal ak=kallawat",
+            "turoyo": "l-u=zlām səxle u=ḥawrayḏi ʕal ak=kallawat 581; səxle u=ḥawronayḏe ʕal ak=kallawat 506;",
             "translations": [
-              "der Mann bedrängte meinen Freund wegen des Geldes"
+              "der Mann bedrängte meinen Freund wegen des Geldes",
+              "er bedrängte seine Freunde um Geld"
             ],
-            "references": ["581"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "l-u=zlām səxle u=ḥawrayḏi ʕal ak=kallawat "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻder Mann bedrängte meinen Freund wegen des Geldesʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "581"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "l-u=zlām səxle u=ḥawrayḏi ʕal ak=kallawat ʻder Mann bedrängte meinen Freund wegen des Geldesʼ; 581;"
-          },
-          {
-            "turoyo": "səxle u=ḥawronayḏe ʕal ak=kallawat",
-            "translations": ["er bedrängte seine Freunde um Geld"],
-            "references": ["506"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": " səxle u=ḥawronayḏe ʕal ak=kallawat "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻer bedrängte seine Freunde um Geldʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "506"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "səxle u=ḥawronayḏe ʕal ak=kallawat ʻer bedrängte seine Freunde um Geldʼ; 506;"
+            "references": ["581", "506"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "bedrängen;"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

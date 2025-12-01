@@ -7,19 +7,12 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
       "stem": "I",
       "forms": ["bčəqle", "bočəq"],
-      "conjugations": {},
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "zerquetschen, zermalmen;"
-        }
-      ]
+      "conjugations": {}
     },
     {
       "stem": "II",
@@ -27,58 +20,13 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mbačaqle",
-            "translations": ["es fing an zu tröpfeln"],
-            "references": ["227"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "mbačaqle "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻes fing an zu tröpfelnʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "227"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "mbačaqle ʻes fing an zu tröpfelnʼ; 227;"
-          },
-          {
-            "turoyo": "Why tröpfeln?",
-            "translations": [],
-            "references": [],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": " Why tröpfeln?"
-              }
-            ],
-            "text": "Why tröpfeln?"
+            "turoyo": "mbačaqle 227; Why tröpfeln?",
+            "translations": ["ʻes fing an zu tröpfelnʼ;"],
+            "references": ["227"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "zerquetschen, zermalmen;"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

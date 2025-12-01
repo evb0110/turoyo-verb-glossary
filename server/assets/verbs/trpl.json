@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,96 +18,13 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mtarpəl u=ḥmoro taḥt u=ṭaʕno nafəl u=ḥmoro prs",
-            "translations": [
-              "der Esel überschlug sich köpflings unter der Last und fiel zu Boden"
-            ],
-            "references": ["792", "139/29", "33", "95/243"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "mtarpəl u=ḥmoro taḥt u=ṭaʕno"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " nafəl u=ḥmoro "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻder Esel überschlug sich köpflings unter der Last und fiel zu Bodenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "792"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " prs "
-              },
-              {
-                "kind": "ref",
-                "value": "139/29"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "33"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "95/243"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "mtarpəl u=ḥmoro taḥt u=ṭaʕno, nafəl u=ḥmoro ʻder Esel überschlug sich köpflings unter der Last und fiel zu Bodenʼ; 792; prs 139/29, 33; 95/243;"
+            "turoyo": "mtarpəl u=ḥmorotaḥt u=ṭaʕno, nafəl u=ḥmoro 792; prs 139/29, 33; 95/243;",
+            "translations": ["überschlug", "der Last und"],
+            "references": ["792", "139/29"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "stolpern"
-        },
-        {
-          "italic": false,
-          "text": ";"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

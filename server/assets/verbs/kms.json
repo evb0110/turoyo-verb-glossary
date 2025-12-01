@@ -1,9 +1,6 @@
 {
   "root": "kms",
-  "etymology": {
-    "etymons": []
-  },
-  "root_gloss": null,
+  "etymology": null,
   "cross_reference": null,
   "stems": [
     {
@@ -12,66 +9,13 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mkamasle",
-            "translations": ["er schlug ihn mit der flachen Hand auf den Kopf"],
-            "references": ["163"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "mkamasle "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻer schlug ihn mit der flachen Hand auf den Kopfʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "163"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "mkamasle ʻer schlug ihn mit der flachen Hand auf den Kopfʼ; 163;"
+            "turoyo": "mkamasle 163;",
+            "translations": ["Hand auf den"],
+            "references": ["163"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "mit"
-        },
-        {
-          "italic": false,
-          "text": " der "
-        },
-        {
-          "italic": false,
-          "text": "flachen"
-        },
-        {
-          "italic": false,
-          "text": " Hand auf den Kopf "
-        },
-        {
-          "italic": false,
-          "text": "schlagen"
-        },
-        {
-          "italic": false,
-          "text": ";"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

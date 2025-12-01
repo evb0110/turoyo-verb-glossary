@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,110 +18,13 @@
       "conjugations": {
         "Imperativ": [
           {
-            "turoyo": "alḥamdəlla mhaškǝ́r u=morayḏux w aloho rabo-yo",
-            "translations": [
-              "Gott sei gedankt! Danke deinem Herrn! Gott ist gross"
-            ],
-            "references": ["778", "69/26"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "alḥamdəlla mhaškǝ́r u=morayḏux"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " w aloho rabo-yo "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻGott sei gedankt! Danke deinem Herrn! Gott ist grossʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "778"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "69/26"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "alḥamdəlla mhaškǝ́r u=morayḏux, w aloho rabo-yo ʻGott sei gedankt! Danke deinem Herrn! Gott ist grossʼ; 778; 69/26;"
-          }
-        ],
-        "Infectum": [
-          {
-            "turoyo": "Hanno_Dewo An+naʕimayḏan ṭawwe yani problám latlan man+naʕime. Me lebi komaṇṇo ġắlăbe ṭawwe nafiqi an+naʕime. Komhaškrina me Moryo u+Alohayḏan",
-            "translations": [],
-            "references": [],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "Hanno_Dewo"
-              },
-              {
-                "kind": "punct",
-                "value": ":"
-              },
-              {
-                "kind": "turoyo",
-                "value": " An+naʕimayḏan ṭawwe"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " yani problám latlan man+naʕime. Me lebi komaṇṇo"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " ġắlăbe ṭawwe nafiqi an+naʕime. Komhaškrina me Moryo u+Alohayḏan"
-              }
-            ],
-            "text": "Hanno_Dewo: An+naʕimayḏan ṭawwe, yani problám latlan man+naʕime. Me lebi komaṇṇo, ġắlăbe ṭawwe nafiqi an+naʕime. Komhaškrina me Moryo u+Alohayḏan"
+            "turoyo": "alḥamdəllamhaškǝ́r u=morayḏux, w alohorabo-yo 778; 69/26;",
+            "translations": ["Herrn! Gott"],
+            "references": ["778; 69/26"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "danken"
-        },
-        {
-          "italic": false,
-          "text": ";"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

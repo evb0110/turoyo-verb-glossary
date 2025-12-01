@@ -43,6 +43,9 @@ if (import.meta.client) {
     const hasHydrated = ref(false)
     onMounted(() => {
         hasHydrated.value = true
+        if (shouldFetchPending.value) {
+            refreshPendingCount()
+        }
     })
 
     watch(shouldFetchPending, (should, wasShould) => {
@@ -90,8 +93,17 @@ if (import.meta.client) {
                     color="primary"
                     variant="soft"
                     icon="i-heroicons-cog-6-tooth"
+                    class="relative"
                 >
                     Admin
+                    <span
+                        v-if="pendingCount > 0"
+                        class="
+                            absolute -right-1 -top-1 h-2 w-2 rounded-full
+                            bg-red-500 ring-2 ring-white dark:ring-gray-950
+                        "
+                        aria-hidden="true"
+                    ></span>
                     <template v-if="pendingCount > 0" #trailing>
                         <UBadge color="warning" variant="solid" size="xs">
                             {{ pendingCount }}

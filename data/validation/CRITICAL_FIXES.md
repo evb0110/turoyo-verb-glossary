@@ -7,6 +7,7 @@
 **Problem**: `None` vs `''` treated as different in etymology comparison
 
 **Current Code**:
+
 ```python
 sig = (
     first_etymon.get('source', ''),
@@ -18,6 +19,7 @@ sig = (
 ```
 
 **Fixed Code**:
+
 ```python
 sig = (
     first_etymon.get('source') or '',
@@ -39,6 +41,7 @@ sig = (
 **Problem**: Pre-numbered roots (e.g., "ʕmr 1") get numbered again → "ʕmr 1 1"
 
 **Current Code**:
+
 ```python
 def add_homonym_numbers(self):
     root_groups = defaultdict(list)
@@ -48,6 +51,7 @@ def add_homonym_numbers(self):
 ```
 
 **Fixed Code**:
+
 ```python
 def add_homonym_numbers(self):
     root_groups = defaultdict(list)
@@ -96,6 +100,7 @@ def add_homonym_numbers(self):
 ```
 
 **Key Changes**:
+
 1. Line 4-5: Extract base root without number using `re.sub(r'\s+\d+$', '', verb['root'])`
 2. Line 7: Use `base_root` as dictionary key instead of `verb['root']`
 3. Line 33: Assign `f"{base_root} {entry_num}"` instead of `f"{root} {entry_num}"`
@@ -109,6 +114,7 @@ def add_homonym_numbers(self):
 **Problem**: German glosses like "speichern;" match root pattern as "sp"
 
 **Add This Code** (before line 67 `for match in re.finditer(root_pattern...)`):
+
 ```python
 # Pre-filter: Remove obvious German gloss paragraphs before root extraction
 # Pattern: <p><span>germanword;</span></p> where germanword is Latin chars only
@@ -117,6 +123,7 @@ section_html = re.sub(german_gloss_paragraph, '<!-- FILTERED GERMAN GLOSS -->', 
 ```
 
 **Alternative** (more aggressive, use if above doesn't work):
+
 ```python
 # Pre-filter: Remove paragraphs that end with semicolon and have no Turoyo characters
 def has_turoyo_chars(text):
@@ -142,6 +149,7 @@ section_html = ''.join(filtered)
 **Location**: Various locations where patterns match
 
 **Add** to each pattern match section:
+
 ```python
 # In parse_stems() - Primary pattern (line 282)
 stems.append({
@@ -172,6 +180,7 @@ self.stats['stem_pattern_fallback'] += 1  # ADD THIS
 ```
 
 **Update stats output** (line 863):
+
 ```python
 print("=" * 80)
 print("✅ PARSING COMPLETE!")
@@ -189,61 +198,9 @@ print("=" * 80)
 
 ---
 
-## Testing Checklist
+## Testing Checklist (Legacy HTML Pipeline Deprecation)
 
-After applying fixes, verify:
-
-### 1. No German Glosses in Output
-```bash
-# Check for German words in root fields
-python3 -c "
-import json
-with open('data/verbs_final.json') as f:
-    data = json.load(f)
-german_words = ['speichern', 'bringen', 'erklären', 'geben', 'nehmen']
-for verb in data['verbs']:
-    for word in german_words:
-        if word in verb['root'].lower():
-            print(f'ERROR: Found \"{word}\" in root: {verb[\"root\"]}')"
-```
-
-### 2. No Double-Numbered Roots
-```bash
-# Check for patterns like "ʕmr 1 1"
-python3 -c "
-import json, re
-with open('data/verbs_final.json') as f:
-    data = json.load(f)
-for verb in data['verbs']:
-    if re.search(r'\d+\s+\d+$', verb['root']):
-        print(f'ERROR: Double-numbered root: {verb[\"root\"]}')"
-```
-
-### 3. Verify ʕmr Homonyms Exist
-```bash
-# Check that both ʕmr entries are present
-python3 -c "
-import json
-with open('data/verbs_final.json') as f:
-    data = json.load(f)
-omr = [v for v in data['verbs'] if 'ʕmr' in v['root']]
-print(f'Found {len(omr)} ʕmr entries:')
-for v in omr:
-    etym_src = v.get('etymology', {}).get('etymons', [{}])[0].get('source', 'N/A')
-    print(f'  - {v[\"root\"]}: etymology source = {etym_src}')"
-```
-
-### 4. Check Pre-Numbered Roots
-```bash
-# List all pre-numbered roots (should be ~177)
-python3 -c "
-import json, re
-with open('data/verbs_final.json') as f:
-    data = json.load(f)
-numbered = [v['root'] for v in data['verbs'] if re.search(r'\s+\d+$', v['root'])]
-print(f'Found {len(numbered)} numbered roots')
-print('First 10:', numbered[:10])"
-```
+The legacy HTML validation steps have been retired. Use the DOCX parser and validation workflow described in `PARSING.md` and `.devkit/analysis` instead.
 
 ---
 
@@ -277,13 +234,16 @@ echo "Backup saved to: parser/parse_verbs.py.backup"
 ## Summary
 
 **Must Fix** (before next production parse):
+
 - ✅ Fix #1: Etymology tuple comparison
 - ✅ Fix #2: Homonym double-numbering
 
 **Should Fix** (improves reliability):
+
 - ⚠️ Fix #3: German gloss pre-filtering
 
 **Nice to Have** (improves observability):
+
 - ℹ️ Fix #4: Pattern usage logging
 
 **Total Effort**: ~30 minutes for critical fixes

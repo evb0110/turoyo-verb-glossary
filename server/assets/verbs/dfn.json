@@ -10,199 +10,21 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
-    {
-      "stem": "Detransitive",
-      "forms": [],
-      "conjugations": {
-        "Infectum": [
-          {
-            "turoyo": "l-ayko d-əzzá i=baġalṯ-aṯi gəd-mədfən g-məqwər u=mafəryono tamo b-i=ʕit-ayo",
-            "translations": [
-              "da, wo diese Mauleselin hingeht, soll der Erzbischof begraben, beerdigt werden"
-            ],
-            "references": ["35/68"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "l-ayko d-əzzá i=baġalṯ-aṯi"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " gəd-mədfən"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " g-məqwər u=mafəryono tamo"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " b-i=ʕit-ayo "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻda, wo diese Mauleselin hingeht, soll der Erzbischof begraben, beerdigt werdenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "35/68"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "note",
-                "value": "[MT]"
-              }
-            ],
-            "text": "l-ayko d-əzzá i=baġalṯ-aṯi, gəd-mədfən, g-məqwər u=mafəryono tamo, b-i=ʕit-ayo ʻda, wo diese Mauleselin hingeht, soll der Erzbischof begraben, beerdigt werdenʼ; 35/68; [MT]"
-          }
-        ],
-        "Preterit": [
-          {
-            "turoyo": "mdafni a=kṯow-ayḏi",
-            "translations": ["meine Bücher sind verschwunden, gestohlen"],
-            "references": ["267"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "mdafni a=kṯow-ayḏi "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻmeine Bücher sind verschwunden, gestohlenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "267"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "mdafni a=kṯow-ayḏi ʻmeine Bücher sind verschwunden, gestohlenʼ; 267;"
-          }
-        ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "begraben werden"
-        }
-      ]
-    },
     {
       "stem": "II",
       "forms": ["mdafalle", "mdafən"],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mdafanne ġắlabe",
-            "translations": [
-              "sie hatten viele (Soldaten) zu begraben, sie hatten schwere Verluste"
-            ],
-            "references": ["263"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "mdafanne ġắlabe "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻsie hatten viele (Soldaten) zu begraben, sie hatten schwere Verlusteʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "263"
-              }
-            ],
-            "text": "mdafanne ġắlabe ʻsie hatten viele (Soldaten) zu begraben, sie hatten schwere Verlusteʼ; 263"
-          },
-          {
-            "turoyo": "mdafalli a=kṯowayḏi",
-            "translations": ["ich habe meine Bücher verloren"],
-            "references": ["267"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": " mdafalli a=kṯowayḏi "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻich habe meine Bücher verlorenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "267"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "mdafalli a=kṯowayḏi ʻich habe meine Bücher verlorenʼ; 267;"
+            "turoyo": "mdafni a=kṯow-ayḏi 267;",
+            "translations": ["meine Bücher sind verschwunden, gestohlen"],
+            "references": ["267"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "verlieren, begraben;"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

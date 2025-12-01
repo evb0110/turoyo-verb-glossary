@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,88 +18,20 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "u=rang d-u=panṭurayḏi bayər -",
-            "translations": ["die Farbe meiner Hose ist ausgeblichen"],
-            "references": ["510", "511"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "u=rang d-u=panṭurayḏi bayər "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻdie Farbe meiner Hose ist ausgeblichenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "510"
-              },
-              {
-                "kind": "turoyo",
-                "value": "-"
-              },
-              {
-                "kind": "ref",
-                "value": "511"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "u=rang d-u=panṭurayḏi bayər ʻdie Farbe meiner Hose ist ausgeblichenʼ; 510-511;"
+            "turoyo": "u=rang d-u=panṭurayḏi bayər 510-511;",
+            "translations": ["ʻdie Farbe meiner Hose ist ausgeblichenʼ;"],
+            "references": ["510", "511"]
           }
         ],
         "Part act.": [
           {
-            "turoyo": "muklo bayiro",
-            "translations": ["geschmackloses Essen"],
-            "references": ["527"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "muklo bayiro "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻgeschmackloses Essenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "527"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "muklo bayiro ʻgeschmackloses Essenʼ; 527;"
+            "turoyo": "muklo bayiro 527;",
+            "translations": ["ʻgeschmackloses Essenʼ;"],
+            "references": ["527"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "einbüssen (Geschmack, Farbe u.a.);"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

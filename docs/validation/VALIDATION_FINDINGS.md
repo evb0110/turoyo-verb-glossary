@@ -13,6 +13,7 @@ The validation framework was successfully tested and **IT WORKS AS DESIGNED**. D
 ### Validation System Performance
 
 ✅ **PASS** - Validation framework working correctly:
+
 - Baseline creation: ✅ 3-5 seconds
 - Validation execution: ✅ <10 seconds
 - HTML report generation: ✅ Working
@@ -39,7 +40,7 @@ The validation framework was successfully tested and **IT WORKS AS DESIGNED**. D
 
 ```bash
 # Proof:
-$ python3 -c "import json; print(len(json.load(open('data/verbs_final.json'))['verbs']))"
+$ # (legacy HTML baseline removed; use DOCX pipeline per PARSING.md)
 1632
 
 $ ls public/appdata/api/verbs/ | wc -l
@@ -50,21 +51,22 @@ $ diff: 1632 - 1561 = 71 verbs lost
 
 ### Duplicate Roots Found
 
-| Root | Count | Type |
-|------|-------|------|
-| st | 28 | German (stehen, stöhnen, etc.) |
-| tr | 13 | German (tragen, trinken, etc.) |
-| br | 8 | German (bringen, brechen, etc.) |
-| gl | 6 | German (glauben, etc.) |
-| gr | 5 | German (greifen, etc.) |
-| sp | 4 | German (speichern, etc.) |
-| fl | 4 | German (fliegen, etc.) |
-| kn | 3 | German (knien, etc.) |
-| Others | 14 | Various 2-letter combinations |
+| Root   | Count | Type                            |
+| ------ | ----- | ------------------------------- |
+| st     | 28    | German (stehen, stöhnen, etc.)  |
+| tr     | 13    | German (tragen, trinken, etc.)  |
+| br     | 8     | German (bringen, brechen, etc.) |
+| gl     | 6     | German (glauben, etc.)          |
+| gr     | 5     | German (greifen, etc.)          |
+| sp     | 4     | German (speichern, etc.)        |
+| fl     | 4     | German (fliegen, etc.)          |
+| kn     | 3     | German (knien, etc.)            |
+| Others | 14    | Various 2-letter combinations   |
 
 ### Verification
 
 All duplicate roots share these characteristics:
+
 - ✅ 2-letter Latin alphabet
 - ✅ No etymology (or minimal)
 - ✅ No stems (or empty stems)
@@ -78,6 +80,7 @@ All duplicate roots share these characteristics:
 ### The Filter Bug (parser/parse_verbs.py:71-79)
 
 Current code:
+
 ```python
 # FILTER: Skip German glosses (e.g., "speichern;")
 span_text_match = re.search(r'<span[^>]*>([^<]+)</span>', span_content)
@@ -93,6 +96,7 @@ if span_text_match:
 **Problem:** The check `any(c in full_span_text for c in 'ʔʕġǧḥṣštṭḏṯẓāēīūə')` is TRUE for German words!
 
 Example: German "stehen" contains 't', 's', 'h', 'e', 'n'
+
 - 't' IS in the Turoyo character set: `'ʔʕbčdfgġǧhḥklmnpqrsṣštṭwxyzžḏṯẓāēīūə'`
 - So filter thinks it's Turoyo!
 
@@ -133,12 +137,14 @@ The validation system **caught this bug immediately** through observation:
 4. **Conclusion:** 71 verbs silently lost
 
 Without validation, this would go unnoticed because:
+
 - Parser reports "1,632 verbs parsed" ✓
 - Files show 1,561 verbs ✓
 - No error messages
 - Silent data loss
 
 **Validation prevents this by:**
+
 - Tracking exact verb counts
 - Comparing before/after
 - Flagging unexpected changes
@@ -150,23 +156,23 @@ Without validation, this would go unnoticed because:
 
 ### Validation Framework Tests
 
-| Test | Status | Notes |
-|------|--------|-------|
-| Baseline creation | ✅ PASS | 1,561 verbs in 3-5 sec |
-| Validation execution | ✅ PASS | Correct comparison |
-| Change detection | ✅ PASS | Detected 0 changes |
-| HTML report | ✅ PASS | Generated correctly |
-| Exit codes | ✅ PASS | Returns 0 (no regressions) |
-| Performance | ✅ PASS | <10 seconds total |
+| Test                 | Status  | Notes                      |
+| -------------------- | ------- | -------------------------- |
+| Baseline creation    | ✅ PASS | 1,561 verbs in 3-5 sec     |
+| Validation execution | ✅ PASS | Correct comparison         |
+| Change detection     | ✅ PASS | Detected 0 changes         |
+| HTML report          | ✅ PASS | Generated correctly        |
+| Exit codes           | ✅ PASS | Returns 0 (no regressions) |
+| Performance          | ✅ PASS | <10 seconds total          |
 
 ### Parser Bug Tests
 
-| Test | Status | Notes |
-|------|--------|-------|
-| Extract count | 🐛 BUG | 1,632 extracted (71 false positives) |
-| File write count | 🐛 BUG | 1,561 written (71 lost) |
-| Duplicate detection | 🐛 BUG | 71 duplicates not numbered |
-| German gloss filter | 🐛 BUG | Fails for common letters |
+| Test                | Status | Notes                                |
+| ------------------- | ------ | ------------------------------------ |
+| Extract count       | 🐛 BUG | 1,632 extracted (71 false positives) |
+| File write count    | 🐛 BUG | 1,561 written (71 lost)              |
+| Duplicate detection | 🐛 BUG | 71 duplicates not numbered           |
+| German gloss filter | 🐛 BUG | Fails for common letters             |
 
 ---
 
@@ -179,6 +185,7 @@ Without validation, this would go unnoticed because:
    - Test: should reduce extractions from 1,632 to ~1,561
 
 2. **Add duplicate root check** in split_into_files()
+
    ```python
    if filename in written_files:
        print(f"ERROR: Duplicate root '{root}' - would overwrite!")
@@ -186,6 +193,7 @@ Without validation, this would go unnoticed because:
    ```
 
 3. **Re-run parser with validation**
+
    ```bash
    python3 parser/parse_verbs.py --validate
    ```
@@ -194,7 +202,7 @@ Without validation, this would go unnoticed because:
    ```bash
    python3 -c "
    import json
-   data = json.load(open('data/verbs_final.json'))
+   data = json.load(open('<deprecated legacy path>'))
    from collections import Counter
    roots = [v['root'] for v in data['verbs']]
    dupes = {r: c for r, c in Counter(roots).items() if c > 1}
@@ -244,7 +252,7 @@ open data/validation/regression_report.html
 > Clear visual report ✓
 
 # Step 5: Investigate discrepancy ✅
-python3 -c "import json; print(len(json.load(open('data/verbs_final.json'))['verbs']))"
+# (legacy HTML baseline removed; use DOCX pipeline per PARSING.md)
 > Found 1632 in JSON but 1561 in files ✓ → BUG DETECTED!
 ```
 
@@ -255,6 +263,7 @@ python3 -c "import json; print(len(json.load(open('data/verbs_final.json'))['ver
 ### Validation System: SUCCESS ✅
 
 The validation framework is **production-ready** and **working as designed**:
+
 - Fast (<10 seconds)
 - Accurate (detected data correctly)
 - Visual (HTML reports)
@@ -264,6 +273,7 @@ The validation framework is **production-ready** and **working as designed**:
 ### Parser Bug: FOUND 🐛
 
 Validation revealed a **critical silent data loss bug**:
+
 - 71 verbs extracted but not saved
 - German gloss filter failing
 - Duplicate roots overwriting each other
@@ -286,12 +296,14 @@ Validation revealed a **critical silent data loss bug**:
 ## Metrics
 
 **Time Investment:**
+
 - Build validation system: ~3 hours (automated via subagents)
 - Test validation system: ~15 minutes
 - Find critical bug: Immediate (during testing)
 - **ROI:** Infinite (prevented silent data loss)
 
 **Bug Impact:**
+
 - Severity: Critical (data loss)
 - Detection time: Without validation → Never (silent)
 - Detection time: With validation → Immediate

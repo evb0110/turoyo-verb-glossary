@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,124 +18,18 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "u=maṭro rakəd i=hawa baṭilo",
-            "translations": ["da liess der Regen nach, der Wind hörte auf"],
-            "references": ["88", "8/21"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "u=maṭro rakəd"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " i=hawa baṭilo "
-              },
-              {
-                "kind": "translation",
-                "value": "‘da liess der Regen nach, der Wind hörte auf’"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "88"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "8/21"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "u=maṭro rakəd, i=hawa baṭilo ‘da liess der Regen nach, der Wind hörte auf’; 88; 8/21;"
+            "turoyo": "u=maṭro rakəd, i=hawa baṭilo 88; 8/21;",
+            "translations": ["‘da liess der Regen nach, der Wind hörte auf’;"],
+            "references": ["88; 8/21"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "beruhigen;"
-        }
-      ]
+      }
     },
     {
       "stem": "II",
       "forms": ["mrakadle", "mrakəd"],
-      "conjugations": {
-        "Infectum": [
-          {
-            "turoyo": "šaḥəl-le əšmo mrakəd hawxa əšmo",
-            "translations": ["He got warm a bit and calmed down a bit"],
-            "references": ["2", "LuF 280/23"],
-            "tokens": [
-              {
-                "kind": "ref",
-                "value": "2"
-              },
-              {
-                "kind": "punct",
-                "value": ")"
-              },
-              {
-                "kind": "turoyo",
-                "value": " šaḥəl-le əšmo"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " mrakəd hawxa əšmo "
-              },
-              {
-                "kind": "translation",
-                "value": "‘He got warm a bit and calmed down a bit’"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "LuF 280/23"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "2) šaḥəl-le əšmo, mrakəd hawxa əšmo ‘He got warm a bit and calmed down a bit’ LuF 280/23;"
-          }
-        ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "1) beruhigen; 2) sich beruhigen"
-        }
-      ]
+      "conjugations": {}
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,66 +18,13 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ko-ḥəsmi",
-            "translations": ["sie beneiden"],
-            "references": ["100"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "ko-ḥəsmi "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻsie beneidenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "100"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "ko-ḥəsmi ʻsie beneidenʼ; 100;"
+            "turoyo": "ko-ḥəsmi 100;",
+            "translations": [],
+            "references": ["100"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "beneiden"
-        },
-        {
-          "italic": false,
-          "text": ", "
-        },
-        {
-          "italic": false,
-          "text": "neidisch"
-        },
-        {
-          "italic": false,
-          "text": " "
-        },
-        {
-          "italic": false,
-          "text": "werden"
-        },
-        {
-          "italic": false,
-          "text": ";"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

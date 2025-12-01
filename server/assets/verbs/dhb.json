@@ -10,85 +10,28 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
-      "stem": "Detransitive",
+      "stem": "II",
       "forms": ["mdahəb", "midahəb"],
       "conjugations": {
         "Preterit": [
           {
             "turoyo": "mdahbi",
             "translations": [],
-            "references": ["225"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "mdahbi"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "225"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "mdahbi; 225;"
+            "references": ["225"]
           }
         ],
         "Infectum": [
           {
-            "turoyo": "g-midahəb u=abrayḏi",
+            "turoyo": "g-midahəb u=abrayḏi 225;",
             "translations": ["dann ist mein Sohn verloren"],
-            "references": ["225"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "g-midahəb u=abrayḏi "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻdann ist mein Sohn verlorenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "225"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "g-midahəb u=abrayḏi ʻdann ist mein Sohn verlorenʼ; 225;"
+            "references": ["225"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "(Detrans.) zerstreuen, verloren gehen lassen;"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

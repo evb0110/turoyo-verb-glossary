@@ -8,7 +8,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -17,106 +16,22 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mʕartamle gwine",
-            "translations": ["er machte ein finsteres, böses Gesicht"],
-            "references": ["768"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "mʕartamle gwine "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻer machte ein finsteres, böses Gesichtʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "768"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "mʕartamle gwine ʻer machte ein finsteres, böses Gesichtʼ; 768;"
+            "turoyo": "mʕartamle gwine 768;",
+            "translations": ["ʻer machte ein finsteres, böses Gesichtʼ;"],
+            "references": ["768"]
           }
-        ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "finster machen"
-        }
-      ]
-    },
-    {
-      "stem": "Detransitive",
-      "forms": [],
-      "conjugations": {
+        ],
         "Part. Pass.": [
           {
-            "turoyo": "b-hawxa hawa mʕartamto ab=barqe w aš=šəʕaʕataṯṯe k-obi zuḥṯo rabṯo l-u=nsān",
+            "turoyo": "b-hawxa hawa mʕartamto ab=barqe w aš=šəʕaʕataṯṯe k-obi zuḥṯo rabṯo l-u=nsān 768; 8/20;",
             "translations": [
-              "bei solch finsterem Wetter machen die Blitze und ihre Strahlen dem Menschen grosse Furcht"
+              "ʻbei solch finsterem Wetter machen die Blitze und ihre Strahlen dem Menschen grosse Furchtʼ;"
             ],
-            "references": ["768", "8/20"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "b-hawxa hawa mʕartamto ab=barqe w aš=šəʕaʕataṯṯe k-obi zuḥṯo rabṯo l-u=nsān "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻbei solch finsterem Wetter machen die Blitze und ihre Strahlen dem Menschen grosse Furchtʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "768"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "8/20"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "b-hawxa hawa mʕartamto ab=barqe w aš=šəʕaʕataṯṯe k-obi zuḥṯo rabṯo l-u=nsān ʻbei solch finsterem Wetter machen die Blitze und ihre Strahlen dem Menschen grosse Furchtʼ; 768; 8/20;"
+            "references": ["768; 8/20"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "dunkel werden"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

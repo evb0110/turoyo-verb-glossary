@@ -10,220 +10,33 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
       "stem": "I",
       "forms": ["shəḏle", "sohəḏ"],
-      "conjugations": {},
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "zeugen (mit "
-        },
-        {
-          "italic": true,
-          "text": "ʕal-: "
-        },
-        {
-          "italic": false,
-          "text": "gegen j-n.);"
-        }
-      ]
-    },
-    {
-      "stem": "I",
-      "forms": ["zeugen"],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "u=ḥaloqo shəḏle aʕle b-u=ḥŭḏ̣ūr d-u=šulṭono w-d-ar=rabe d-i=mamlăke kulle",
+            "turoyo": "u=ḥaloqo shəḏle aʕle b-u=ḥŭḏ̣ūr d-u=šulṭono w-d-ar=rabe d-i=mamlăke kulle 68; 27/49, 50;",
             "translations": [
               "der Haarscherer ablegte gegen ihn Zeugnis in Gegenwart des Sultans und aller grossen des Reiches"
             ],
-            "references": ["68", "27/49", "50"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "u=ḥaloqo shəḏle aʕle b-u=ḥŭḏ̣ūr d-u=šulṭono w-d-ar=rabe d-i=mamlăke kulle "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻder Haarscherer ablegte gegen ihn Zeugnis in Gegenwart des Sultans und aller grossen des Reichesʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "68"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "27/49"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "50"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "u=ḥaloqo shəḏle aʕle b-u=ḥŭḏ̣ūr d-u=šulṭono w-d-ar=rabe d-i=mamlăke kulle ʻder Haarscherer ablegte gegen ihn Zeugnis in Gegenwart des Sultans und aller grossen des Reichesʼ; 68; 27/49, 50;"
+            "references": ["68; 27/49", "50"]
           }
         ],
         "Infectum": [
           {
-            "turoyo": "u=mede də-ḥzeli hayo ko-sohaḏno",
-            "translations": ["‘nur das, was ich gesehen habe, bezeuge ich’"],
-            "references": ["LB 153"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "u=mede də-ḥzeli"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " hayo ko-sohaḏno "
-              },
-              {
-                "kind": "translation",
-                "value": "‘nur das, was ich gesehen habe, bezeuge ich’"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "LB 153"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "u=mede də-ḥzeli, hayo ko-sohaḏno ‘nur das, was ich gesehen habe, bezeuge ich’; LB 153;"
-          },
-          {
-            "turoyo": "Mḥammad bări me d-howe … b-karse d-i=emo aloho kṯule i=šăhad-aṯe d-ko-səhḏína-la ʕal əšme d-kətwa u=nbiyo d-aloho",
+            "turoyo": "u=mede də-ḥzeli, hayo ko-sohaḏnoLB 153; Mḥammad bări me d-howe (…) b-karse d-i=emo, aloho kṯule, i=šăhad-aṯe d-ko-səhḏína-la, ʕal əšme d-kətwa u=nbiyo d-aloho",
             "translations": [
-              "‘Before Muhammad was born, while he was in his mother’s womb, God had written the creed which we maintain about him (Muhammad), that he is the prophet of God’"
+              "‘nur das, was ich gesehen habe, bezeuge ich’;",
+              "‘Before Muhammad was born, while he was in his mother’s womb, God had written the creed which we maintain about him (Muhammad), that he is the prophet of God’ JL 20.7.42;"
             ],
-            "references": ["JL 20.7.42"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": " Mḥammad bări me d-howe "
-              },
-              {
-                "kind": "punct",
-                "value": "("
-              },
-              {
-                "kind": "turoyo",
-                "value": "…"
-              },
-              {
-                "kind": "punct",
-                "value": ")"
-              },
-              {
-                "kind": "turoyo",
-                "value": " b-karse d-i=emo"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " aloho kṯule"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " i=šăhad-aṯe d-ko-səhḏína-la"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " ʕal əšme d-kətwa u=nbiyo d-aloho "
-              },
-              {
-                "kind": "translation",
-                "value": "‘Before Muhammad was born, while he was in his mother’s womb, God had written the creed which we maintain about him (Muhammad), that he is the prophet of God’"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "JL 20.7.42"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "Mḥammad bări me d-howe (…) b-karse d-i=emo, aloho kṯule, i=šăhad-aṯe d-ko-səhḏína-la, ʕal əšme d-kətwa u=nbiyo d-aloho ‘Before Muhammad was born, while he was in his mother’s womb, God had written the creed which we maintain about him (Muhammad), that he is the prophet of God’ JL 20.7.42;"
+            "references": ["153"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "(mit "
-        },
-        {
-          "italic": true,
-          "text": "ʕal-: "
-        },
-        {
-          "italic": false,
-          "text": "gegen j-n.);"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

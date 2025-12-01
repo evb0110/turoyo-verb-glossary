@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,108 +18,20 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "maʕlela me-ḥaṣa w ḥwəṭla b-i=arʕo",
-            "translations": [
-              "sie hob ihn hoch in die Höhe und schleuderte ihn von ihrem Rücken zur Erde"
-            ],
-            "references": ["449", "67/243"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "maʕlela me-ḥaṣa w ḥwəṭla b-i=arʕo "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻsie hob ihn hoch in die Höhe und schleuderte ihn von ihrem Rücken zur Erdeʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "449"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "67/243"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "maʕlela me-ḥaṣa w ḥwəṭla b-i=arʕo ʻsie hob ihn hoch in die Höhe und schleuderte ihn von ihrem Rücken zur Erdeʼ; 449; 67/243;"
+            "turoyo": "maʕlela me-ḥaṣa w ḥwəṭla b-i=arʕo 449; 67/243;",
+            "translations": ["schleuderte"],
+            "references": ["449; 67/243"]
           }
         ],
         "Infectum": [
           {
-            "turoyo": "g-ḥowaṭn-ux",
-            "translations": [
-              "ich werde dich verprügeln (mit dem ḥōwūṭo, dem Wäscheschlagholz)"
-            ],
-            "references": ["455"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "g-ḥowaṭn-ux "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻich werde dich verprügeln (mit dem ḥōwūṭo, dem Wäscheschlagholz)ʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "455"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "g-ḥowaṭn-ux ʻich werde dich verprügeln (mit dem ḥōwūṭo, dem Wäscheschlagholz)ʼ; 455;"
+            "turoyo": "g-ḥowaṭn-uxḥōwūṭo 455;",
+            "translations": ["verprügeln", "Wäscheschlagholz"],
+            "references": ["455"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "niederschmettern"
-        },
-        {
-          "italic": false,
-          "text": ", "
-        },
-        {
-          "italic": false,
-          "text": "verprügeln"
-        },
-        {
-          "italic": false,
-          "text": ";"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

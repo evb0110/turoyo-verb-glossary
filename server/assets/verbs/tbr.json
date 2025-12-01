@@ -10,188 +10,17 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
       "stem": "I",
       "forms": ["tbəlle", "tobər"],
-      "conjugations": {},
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "zerschlagen"
-        },
-        {
-          "italic": false,
-          "text": ";"
-        }
-      ]
-    },
-    {
-      "stem": "Detransitive",
-      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "tbənno",
-            "translations": ["ich bin ganz zerschlagen"],
-            "references": ["238", "88/83"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "tbənno "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻich bin ganz zerschlagenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "238"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "88/83"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "tbənno ʻich bin ganz zerschlagenʼ; 238; 88/83;"
-          },
-          {
-            "turoyo": "Пример отсутствует в указанном месте",
-            "translations": [],
-            "references": [],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": " Пример отсутствует в указанном месте"
-              }
-            ],
-            "text": "Пример отсутствует в указанном месте"
-          }
-        ],
-        "Preterit-wa": [
-          {
-            "turoyo": "b-u=nfolo d-nafəl-wa məskeno mtabar-wa",
-            "translations": [
-              "als er hinuntergefallen war, war er böse zugerichtet worden"
-            ],
-            "references": ["248", "70/230"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "b-u=nfolo d-nafəl-wa məskeno mtabar-wa "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻals er hinuntergefallen war, war er böse zugerichtet wordenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "248"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "70/230"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "b-u=nfolo d-nafəl-wa məskeno mtabar-wa ʻals er hinuntergefallen war, war er böse zugerichtet wordenʼ; 248; 70/230;"
-          }
-        ],
-        "Part. Pass.": [
-          {
-            "turoyo": "hano u=faqqa k-oṯe l-u=bayto qarʕe twiro mtabro",
-            "translations": [
-              "der Schulmeister kommt nach Hause; sein Schädel ist zerschlagen und zerhauen"
-            ],
-            "references": ["249", "88/261"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "hano u=faqqa k-oṯe l-u=bayto"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " qarʕe twiro mtabro "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻder Schulmeister kommt nach Hause; sein Schädel ist zerschlagen und zerhauenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "249"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "88/261"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "hano u=faqqa k-oṯe l-u=bayto; qarʕe twiro mtabro ʻder Schulmeister kommt nach Hause; sein Schädel ist zerschlagen und zerhauenʼ; 249; 88/261;"
+            "turoyo": "tbənno 238; 88/83; Примеротсутствует в указанномместе",
+            "translations": ["zerschlagen"],
+            "references": ["238; 88/83"]
           }
         ]
       }
@@ -199,18 +28,23 @@
     {
       "stem": "II",
       "forms": ["mtaballe", "mtabər"],
-      "conjugations": {},
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "zerschlagen"
-        },
-        {
-          "italic": false,
-          "text": ";"
-        }
-      ]
+      "conjugations": {
+        "Preterit-wa": [
+          {
+            "turoyo": "b-u=nfolo d-nafəl-waməskenomtabar-wa 248; 70/230;",
+            "translations": ["hinuntergefallen", "war, war er", "zugerichtet"],
+            "references": ["248; 70/230"]
+          }
+        ],
+        "Part. Pass.": [
+          {
+            "turoyo": "hano u=faqqa k-oṯe l-u=bayto; qarʕetwiromtabro 249; 88/261;",
+            "translations": ["Schulmeister", "Hause; sein", "zerschlagen"],
+            "references": ["249; 88/261"]
+          }
+        ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

@@ -815,7 +815,7 @@ def main():
 
     parser.parse_all()
 
-    parser.save_json('data/verbs_final.json')
+    parser.save_json('.devkit/analysis/html_legacy/verbs.json')
 
     parser.split_into_files()
 

@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,456 +18,54 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ḥurmútul-li m-u=ʕboro",
-            "translations": ["wollt ihr mir den Eingang verwehren"],
-            "references": ["181"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "ḥurmútul-li m-u=ʕboro "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻwollt ihr mir den Eingang verwehrenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "181"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "ḥurmútul-li m-u=ʕboro ʻwollt ihr mir den Eingang verwehrenʼ; 181;"
+            "turoyo": "ḥurmútul-li m-u=ʕboro 181;",
+            "translations": [],
+            "references": ["181"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "verhindern"
-        },
-        {
-          "italic": false,
-          "text": ", "
-        },
-        {
-          "italic": false,
-          "text": "berauben"
-        },
-        {
-          "italic": false,
-          "text": ", "
-        },
-        {
-          "italic": false,
-          "text": "entblössen"
-        },
-        {
-          "italic": false,
-          "text": ";"
-        }
-      ]
+      }
     },
     {
-      "stem": "Detransitive",
+      "stem": "II",
       "forms": ["mḥaramle", "mḥarəm"],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mḥaramle u=mukl-ayḏi ʕal-awxa mḥalaqli l-i=garre d-Mīr Mḥama",
-            "translations": [
-              "er hat mein Essen für verboten erklärt; darum habe ich ihn in den Strudel von Mir Muhammed werfen lassen"
-            ],
-            "references": ["1", "181", "35/27"],
-            "tokens": [
-              {
-                "kind": "ref",
-                "value": "1"
-              },
-              {
-                "kind": "punct",
-                "value": ")"
-              },
-              {
-                "kind": "turoyo",
-                "value": " mḥaramle u=mukl-ayḏi"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " ʕal-awxa mḥalaqli l-i=garre d-Mīr Mḥama "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻer hat mein Essen für verboten erklärt; darum habe ich ihn in den Strudel von Mir Muhammed werfen lassenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "181"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "35/27"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "1) mḥaramle u=mukl-ayḏi, ʕal-awxa mḥalaqli l-i=garre d-Mīr Mḥama ʻer hat mein Essen für verboten erklärt; darum habe ich ihn in den Strudel von Mir Muhammed werfen lassenʼ; 181; 35/27;"
-          },
-          {
-            "turoyo": "mḥarəm bə-Ṣṭambəl",
-            "translations": [
-              "er blieb (trotz allem Flehen seiner Eltern) in Stambul"
-            ],
-            "references": ["2", "181"],
-            "tokens": [
-              {
-                "kind": "ref",
-                "value": "2"
-              },
-              {
-                "kind": "punct",
-                "value": ")"
-              },
-              {
-                "kind": "turoyo",
-                "value": " mḥarəm bə-Ṣṭambəl "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻer blieb (trotz allem Flehen seiner Eltern) in Stambulʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "181"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "2) mḥarəm bə-Ṣṭambəl ʻer blieb (trotz allem Flehen seiner Eltern) in Stambulʼ; 181;"
+            "turoyo": "2) mḥarəmbə-Ṣṭambəl 181;",
+            "translations": [],
+            "references": ["2", "181"]
           }
         ],
         "ko-Preterit": [
           {
             "turoyo": "babi ko-mḥaramle-li m-u=quṣro lo=ko-ʕəbrono",
             "translations": [
-              "My father has banned me from entering the castle"
+              "‘My father has banned me from entering the castle’ 75/228;"
             ],
-            "references": ["75/228"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "babi ko-mḥaramle-li m-u=quṣro lo=ko-ʕəbrono "
-              },
-              {
-                "kind": "translation",
-                "value": "‘My father has banned me from entering the castle’"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "75/228"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "babi ko-mḥaramle-li m-u=quṣro lo=ko-ʕəbrono ‘My father has banned me from entering the castle’ 75/228;"
+            "references": []
           }
         ],
         "Infectum": [
           {
-            "turoyo": "ko-maḥarmət an=noše b-i=ʕiṯo",
-            "translations": ["du verdammst die Menschen in der Kirche"],
-            "references": ["1", "LB 103"],
-            "tokens": [
-              {
-                "kind": "ref",
-                "value": "1"
-              },
-              {
-                "kind": "punct",
-                "value": ")"
-              },
-              {
-                "kind": "turoyo",
-                "value": " ko-maḥarmət an=noše b-i=ʕiṯo "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻdu verdammst die Menschen in der Kircheʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "LB 103"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "1) ko-maḥarmət an=noše b-i=ʕiṯo ʻdu verdammst die Menschen in der Kircheʼ; LB 103;"
-          },
-          {
-            "turoyo": "k-uxlo b-as=sefoqe d-u=ʕamo ku=mḥarmo u=muklo qumayye",
+            "turoyo": "1) ko-maḥarmət an=noše b-i=ʕiṯoLB 103;k-uxlo b-as=sefoqe d-u=ʕamo, ku=mḥarmo u=mukloqumayyemḥaramnoaǧ=ǧaʕdat-ani ʕal u=ʕamo 181; 95/66;",
             "translations": [
-              "‘it (the goose, f) eats from the people’s dishes and makes the food uneatable for them’"
+              "die Menschen in der",
+              "‘it (the goose, f) eats from the people’s dishes and makes the food uneatable for them’; 36/",
+              "Strassen für das Volk",
+              "unpassierbar"
             ],
-            "references": ["36/113"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": " k-uxlo b-as=sefoqe d-u=ʕamo"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " ku=mḥarmo u=muklo qumayye "
-              },
-              {
-                "kind": "translation",
-                "value": "‘it (the goose, f) eats from the people’s dishes and makes the food uneatable for them’"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "36/113"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "k-uxlo b-as=sefoqe d-u=ʕamo, ku=mḥarmo u=muklo qumayye ‘it (the goose, f) eats from the people’s dishes and makes the food uneatable for them’; 36/113;"
-          },
-          {
-            "turoyo": "mḥaramno aǧ=ǧaʕdat-ani ʕal u=ʕamo",
-            "translations": [
-              "ich werde diese Strassen für das Volk unpassierbar machen"
-            ],
-            "references": ["181", "95/66"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "  mḥaramno aǧ=ǧaʕdat-ani ʕal u=ʕamo "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻich werde diese Strassen für das Volk unpassierbar machenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "181"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "95/66"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "mḥaramno aǧ=ǧaʕdat-ani ʕal u=ʕamo ʻich werde diese Strassen für das Volk unpassierbar machenʼ; 181; 95/66;"
+            "references": ["1", "103"]
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "mḥarǝ́m u=ḥalwayḏax aʕle",
-            "translations": ["deine Milch solle ihm verboten sein"],
-            "references": ["1", "181", "105/119"],
-            "tokens": [
-              {
-                "kind": "ref",
-                "value": "1"
-              },
-              {
-                "kind": "punct",
-                "value": ")"
-              },
-              {
-                "kind": "turoyo",
-                "value": " mḥarǝ́m u=ḥalwayḏax aʕle "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻdeine Milch solle ihm verboten seinʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "181"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "105/119"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "1) mḥarǝ́m u=ḥalwayḏax aʕle ʻdeine Milch solle ihm verboten seinʼ; 181; 105/119;"
+            "turoyo": "1) mḥarǝ́m u=ḥalwayḏaxaʕle 181; 105/119;",
+            "translations": [],
+            "references": ["1", "181; 105/119"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "1) für verboten, "
-        },
-        {
-          "italic": false,
-          "text": "unerlaubt"
-        },
-        {
-          "italic": false,
-          "text": " "
-        },
-        {
-          "italic": false,
-          "text": "erklären"
-        },
-        {
-          "italic": false,
-          "text": ", "
-        },
-        {
-          "italic": false,
-          "text": "verbannen"
-        },
-        {
-          "italic": false,
-          "text": ", make unusable; 2) ("
-        },
-        {
-          "italic": false,
-          "text": "Detrans"
-        },
-        {
-          "italic": false,
-          "text": ".) "
-        },
-        {
-          "italic": false,
-          "text": "eigensinnig"
-        },
-        {
-          "italic": false,
-          "text": " an "
-        },
-        {
-          "italic": false,
-          "text": "einem"
-        },
-        {
-          "italic": false,
-          "text": " Orte "
-        },
-        {
-          "italic": false,
-          "text": "bleiben"
-        },
-        {
-          "italic": false,
-          "text": ";"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

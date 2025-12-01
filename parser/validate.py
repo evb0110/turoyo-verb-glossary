@@ -315,7 +315,7 @@ class TuroyoValidator:
 
 
 def main():
-    json_file = Path('data/verbs_final.json')
+        json_file = Path('.devkit/analysis/html_legacy/verbs.json')
 
     if not json_file.exists():
         print(f"❌ {json_file} not found. Run extract_final.py first.")

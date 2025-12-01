@@ -10,87 +10,24 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
-      "stem": "Detransitive",
+      "stem": "II",
       "forms": ["mbaxəl", "mibaxəl"],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ko-mibaxəl me-ḥa",
-            "translations": ["er ist missgünstig gegen jemandem"],
-            "references": ["311"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "ko-mibaxəl me-ḥa "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻer ist missgünstig gegen jemandemʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "311"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
+            "turoyo": "ko-mibaxəl me-ḥa 311; kō-mībāxəl mīne 322;",
+            "translations": [
+              "ʻer ist missgünstig gegen jemandemʼ;",
+              "ʻer gönnt ihm nichtsʼ;"
             ],
-            "text": "ko-mibaxəl me-ḥa ʻer ist missgünstig gegen jemandemʼ; 311;"
-          },
-          {
-            "turoyo": "kō-mībāxəl mīne",
-            "translations": ["er gönnt ihm nichts"],
-            "references": ["322"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": " kō-mībāxəl mīne "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻer gönnt ihm nichtsʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "322"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "kō-mībāxəl mīne ʻer gönnt ihm nichtsʼ; 322;"
+            "references": ["311", "322"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "(Detrans.) nicht gönnen;"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

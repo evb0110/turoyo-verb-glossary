@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,46 +18,13 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mčamatte",
-            "translations": ["sie zementierten"],
-            "references": ["161"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "mčamatte "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻsie zementiertenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "161"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "mčamatte ʻsie zementiertenʼ; 161;"
+            "turoyo": "mčamatte 161;",
+            "translations": ["ʻsie zementiertenʼ;"],
+            "references": ["161"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "zementieren;"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

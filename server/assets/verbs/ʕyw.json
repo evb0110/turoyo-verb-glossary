@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,46 +18,13 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mʕayawla",
-            "translations": ["es ist wolkig geworden"],
-            "references": ["483"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "mʕayawla "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻes ist wolkig gewordenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "483"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "mʕayawla ʻes ist wolkig gewordenʼ; 483;"
+            "turoyo": "mʕayawla 483;",
+            "translations": ["ʻes ist wolkig gewordenʼ;"],
+            "references": ["483"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "wolkig werden;"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

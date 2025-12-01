@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,45 +18,12 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "bariqo ʕayne",
-            "translations": ["seine Augen wurden geblendet"],
-            "references": ["88"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "bariqo ʕayne "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻseine Augen wurden geblendetʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "88"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "bariqo ʕayne ʻseine Augen wurden geblendetʼ; 88;"
+            "turoyo": "bariqo ʕayne 88;",
+            "translations": ["ʻseine Augen wurden geblendetʼ;"],
+            "references": ["88"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "geblendet werden;"
-        }
-      ]
+      }
     },
     {
       "stem": "III",
@@ -65,236 +31,26 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "foṯa ḥewarto ko-mabarqo",
+            "turoyo": "foṯa ḥewarto, ko-mabarqo 143; 77/127; yawmo d-qáyṭo-yo, hawa basǝ́mto-yo; i=šəmšo k-mábrəqo w k-obo šḥanṯo l-hawīr 4/11; kile kit b-iḏa šayro d-almās, k-mabrəq ax d-u=kukwo ‘S’; 24/140",
             "translations": [
-              "ihr gesicht war weiss und sie leuchtete wie der Blitz"
+              "ʻihr gesicht war weiss und sie leuchtete wie der Blitzʼ;",
+              "ʻes ist ein Sommertag; das Wetter ist schön, die Sonne leuchtet hell und spendet Wärme ringsumherʼ;",
+              "ie hat an der Hand ein Diamantarmband, das blitzt wie ein Stern"
             ],
-            "references": ["143", "77/127"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "foṯa ḥewarto"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " ko-mabarqo "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻihr gesicht war weiss und sie leuchtete wie der Blitzʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "143"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "77/127"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "foṯa ḥewarto, ko-mabarqo ʻihr gesicht war weiss und sie leuchtete wie der Blitzʼ; 143; 77/127;"
-          },
-          {
-            "turoyo": "yawmo d-qáyṭo-yo hawa basǝ́mto-yo",
-            "translations": [],
-            "references": [],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": " yawmo d-qáyṭo-yo"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " hawa basǝ́mto-yo"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "yawmo d-qáyṭo-yo, hawa basǝ́mto-yo;"
-          },
-          {
-            "turoyo": "i=šəmšo k-mábrəqo w k-obo šḥanṯo l-hawīr",
-            "translations": [
-              "es ist ein Sommertag; das Wetter ist schön, die Sonne leuchtet hell und spendet Wärme ringsumher"
-            ],
-            "references": ["4/11"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": " i=šəmšo k-mábrəqo w k-obo šḥanṯo l-hawīr "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻes ist ein Sommertag; das Wetter ist schön, die Sonne leuchtet hell und spendet Wärme ringsumherʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "4/11"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "i=šəmšo k-mábrəqo w k-obo šḥanṯo l-hawīr ʻes ist ein Sommertag; das Wetter ist schön, die Sonne leuchtet hell und spendet Wärme ringsumherʼ; 4/11;"
-          },
-          {
-            "turoyo": "kile kit b-iḏa šayro d-almās k-mabrəq ax d-u=kukwo",
-            "translations": [
-              "‘Sie hat an der Hand ein Diamantarmband, das blitzt wie ein Stern’"
-            ],
-            "references": ["24/140"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": " kile kit b-iḏa šayro d-almās"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " k-mabrəq ax d-u=kukwo "
-              },
-              {
-                "kind": "translation",
-                "value": "‘Sie hat an der Hand ein Diamantarmband, das blitzt wie ein Stern’"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "24/140"
-              }
-            ],
-            "text": "kile kit b-iḏa šayro d-almās, k-mabrəq ax d-u=kukwo ‘Sie hat an der Hand ein Diamantarmband, das blitzt wie ein Stern’; 24/140"
+            "references": ["143; 77/127", "4/11"]
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "ʕayne mabarqi-wa xəd u=kukwo w hǧəmle aʕlayna mhalax-wo xd-u=šəkəl d-u=barqo",
+            "turoyo": "ʕayne mabarqi-wa, xəd u=kukwo; w hǧəmle aʕlayna, mhalax-wo xd-u=šəkəl d-u=barqo 150; 63/63;",
             "translations": [
-              "seine Augen funkelten wie ein Stern, und es (das Tier) schoss auf uns los und bewegte sich vorwärts wie der Blitz"
+              "ʻseine Augen funkelten wie ein Stern, und es (das Tier) schoss auf uns los und bewegte sich vorwärts wie der Blitzʼ;"
             ],
-            "references": ["150", "63/63"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "ʕayne mabarqi-wa"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " xəd u=kukwo"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " w hǧəmle aʕlayna"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " mhalax-wo xd-u=šəkəl d-u=barqo "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻseine Augen funkelten wie ein Stern, und es (das Tier) schoss auf uns los und bewegte sich vorwärts wie der Blitzʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "150"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "63/63"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "ʕayne mabarqi-wa, xəd u=kukwo; w hǧəmle aʕlayna, mhalax-wo xd-u=šəkəl d-u=barqo ʻseine Augen funkelten wie ein Stern, und es (das Tier) schoss auf uns los und bewegte sich vorwärts wie der Blitzʼ; 150; 63/63;"
+            "references": ["150; 63/63"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "glänzen, strahlen, funkeln;"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

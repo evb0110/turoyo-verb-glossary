@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,50 +18,13 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mšantrole",
-            "translations": ["er schleuderte sie"],
-            "references": ["790"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "mšantrole "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻer schleuderte sieʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "790"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "mšantrole ʻer schleuderte sieʼ; 790;"
+            "turoyo": "mšantrole 790;",
+            "translations": ["schleuderte"],
+            "references": ["790"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "schleudern"
-        },
-        {
-          "italic": false,
-          "text": ";"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

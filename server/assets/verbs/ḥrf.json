@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,59 +18,12 @@
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "ḥarəf u=mukl-ano",
-            "translations": [
-              "dieses Essen hat einen scharfen Geschmack bekommen"
-            ],
-            "references": ["87"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "ḥarəf u=mukl-ano "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻdieses Essen hat einen scharfen Geschmack bekommenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "87"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "ḥarəf u=mukl-ano ʻdieses Essen hat einen scharfen Geschmack bekommenʼ; 87;"
+            "turoyo": "ḥarəf u=mukl-ano 87;",
+            "translations": [],
+            "references": ["87"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "scharf"
-        },
-        {
-          "italic": false,
-          "text": " "
-        },
-        {
-          "italic": false,
-          "text": "werden"
-        },
-        {
-          "italic": false,
-          "text": ";"
-        }
-      ]
+      }
     },
     {
       "stem": "III",
@@ -79,80 +31,13 @@
       "conjugations": {
         "Preterit-wa": [
           {
-            "turoyo": "kǝ́t-way-le skino maḥarfó-way-le ġắlabe",
-            "translations": [
-              "er hatte ein Messer, das hatte er sehr scharf geschliffen"
-            ],
-            "references": ["163", "61/175"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "kǝ́t-way-le skino"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " maḥarfó-way-le ġắlabe "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻer hatte ein Messer, das hatte er sehr scharf geschliffenʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "163"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "61/175"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "kǝ́t-way-le skino, maḥarfó-way-le ġắlabe ʻer hatte ein Messer, das hatte er sehr scharf geschliffenʼ; 163; 61/175;"
+            "turoyo": "kǝ́t-way-leskino, maḥarfó-way-le ġắlabe 163; 61/175;",
+            "translations": ["Messer, das", "geschliffen"],
+            "references": ["163; 61/175"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "scharf"
-        },
-        {
-          "italic": false,
-          "text": " "
-        },
-        {
-          "italic": false,
-          "text": "machen"
-        },
-        {
-          "italic": false,
-          "text": ";"
-        }
-      ]
+      }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,94 +18,20 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mraǧele u=taʕlo marfal-le prs",
+            "turoyo": "mraǧele u=taʕlo, marfal-le 415; prs 193/34;",
             "translations": [
               "er bat um den Fuchs, und man liess denselben frei"
             ],
-            "references": ["415", "193/34"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "mraǧele u=taʕlo"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " marfal-le "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻer bat um den Fuchs, und man liess denselben freiʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "415"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " prs "
-              },
-              {
-                "kind": "ref",
-                "value": "193/34"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "mraǧele u=taʕlo, marfal-le ʻer bat um den Fuchs, und man liess denselben freiʼ; 415; prs 193/34;"
+            "references": ["415", "193/34"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "bitten;"
-        }
-      ]
+      }
     },
     {
       "stem": "III",
       "forms": ["marhamle", "marhəm"],
-      "conjugations": {
-        "Preterit": [
-          {
-            "turoyo": "Preterit",
-            "translations": [],
-            "references": [],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "Preterit"
-              }
-            ],
-            "text": "Preterit"
-          }
-        ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "to rain;"
-        }
-      ]
+      "conjugations": {}
     }
   ],
-  "idioms": null
+  "uncertain": false
 }

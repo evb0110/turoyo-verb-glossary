@@ -54,11 +54,13 @@ cd turoyo-verb-glossary
 
 # Install dependencies
 pnpm install
+```
 
-# Generate verb data
-python3 parser/parse_verbs.py
+Verb JSON data under `server/assets/verbs/` is already committed and ready to use. You only need the parser if you are updating the dataset from the DOCX sources (see **Parsing Pipeline** below).
 
-# Set up environment variables
+Set up environment variables:
+
+```bash
 cp .env.example .env
 # Add your database and OAuth credentials
 ```
@@ -105,10 +107,10 @@ turoyo-verb-glossary/
 │   ├── repositories/             # Data access layer
 │   ├── routes/                   # Custom routes
 │   └── services/                 # Business logic
-├── parser/                       # Python parser
-│   ├── parse_verbs.py            # Master parser
-│   ├── snapshot_baseline.py      # Validation baseline
-│   └── html_utils.py             # HTML utilities
+├── .devkit/                      # Parser + validation tooling (DOCX-based)
+│   ├── analysis/                 # Reports and parsed DOCX output
+│   ├── new-source-docx/          # DOCX source files (local only)
+│   └── scripts/                  # Parser + validation scripts
 ├── public/                       # Static assets
 └── nuxt.config.ts               # Nuxt configuration
 ```
@@ -137,14 +139,19 @@ The application follows a clean three-layer architecture:
 ### Data Pipeline
 
 ```
-Source HTML → Parser → JSON Files → API → Frontend
+DOCX source → DOCX parser → JSON files → API → Frontend
 ```
 
-- **Source**: Proprietary HTML glossary (not in repo)
-- **Parser**: `parser/parse_verbs.py` - Extracts and structures data
-- **Storage**: `server/assets/verbs/*.json` - Individual verb files
+- **Source**: `.devkit/new-source-docx/*.docx` (private DOCX files, not committed)
+- **Parser (production)**: `.devkit/scripts/parse_docx_v2_fixed.py`
+- **Parser output**:
+  - Combined: `.devkit/analysis/docx_v2_parsed.json`
+  - Per-verb: `.devkit/analysis/docx_v2_verbs/*.json`
+- **Storage**: `server/assets/verbs/*.json` (copied from `docx_v2_verbs`)
 - **API**: Nitro endpoints serve data via `useStorage('assets:server')`
 - **Stats**: Calculated dynamically from verb files
+
+For a detailed, step-by-step walkthrough of the parsing pipeline (including exact commands and rules), see `PARSING.md`.
 
 ## API Routes
 
@@ -158,28 +165,25 @@ GET /api/user/me            # Current user info
 
 ## Data Generation
 
-Verb data is generated from source HTML using the parser:
+Verb data used by the app is already generated and committed under `server/assets/verbs/`. You only need to run the parser if you are updating the dataset from the DOCX sources.
+
+### Regenerating from DOCX (recommended flow)
+
+See `PARSING.md` for the full pipeline. In short:
 
 ```bash
-# Generate all verb files
-python3 parser/parse_verbs.py
+# 1. Parse DOCX sources
+python3 .devkit/scripts/parse_docx_v2_fixed.py
 
-# With validation
-python3 parser/parse_verbs.py --validate
+# 2. Run comprehensive validation
+python3 .devkit/scripts/comprehensive_validation.py .devkit/analysis/docx_v2_verbs
 
-# Create validation baseline
-python3 parser/snapshot_baseline.py
+# 3. Deploy to Nitro assets (after validation passes)
+rm server/assets/verbs/*.json
+cp .devkit/analysis/docx_v2_verbs/*.json server/assets/verbs/
 ```
 
-The parser:
-
-- Extracts 1,696 verbs from HTML source
-- Generates individual JSON files
-- Adds homonym numbering
-- Creates validation reports
-- Validates against baseline (prevents regressions)
-
-**Note**: Generated verb files are not included in version control. Run the parser to generate them locally.
+Older HTML-based tooling has been deprecated and removed from the main pipeline. It is retained only for historical comparison and should not be used for new work.
 
 ## Environment Variables
 

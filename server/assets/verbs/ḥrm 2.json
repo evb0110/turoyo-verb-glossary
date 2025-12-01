@@ -10,7 +10,6 @@
       }
     ]
   },
-  "root_gloss": null,
   "cross_reference": null,
   "stems": [
     {
@@ -19,49 +18,12 @@
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ḥrəmme ḥḏoḏe",
-            "translations": ["sie exkommunizierten sich gegenseitig"],
-            "references": ["DD 392/4"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "ḥrəmme ḥḏoḏe "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻsie exkommunizierten sich gegenseitigʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "DD 392/4"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "ḥrəmme ḥḏoḏe ʻsie exkommunizierten sich gegenseitigʼ; DD 392/4;"
+            "turoyo": "ḥrəmmeḥḏoḏeDD 392/4;",
+            "translations": ["exkommunizierten", "gegenseitig"],
+            "references": ["392/4"]
           }
         ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "exkommunizieren"
-        },
-        {
-          "italic": false,
-          "text": ";"
-        }
-      ]
+      }
     },
     {
       "stem": "III",
@@ -69,148 +31,23 @@
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "i=naqqa d-ko-misakər mede ste ko-moṣən aʕle aw ko-maḥərmi aʕle people admonish him the one who committed a crime or excommunicate him’",
-            "translations": ["When something gets lost (i.e. ‘stolen"],
-            "references": ["94/52"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "i=naqqa d-ko-misakər mede ste ko-moṣən aʕle aw ko-maḥərmi aʕle "
-              },
-              {
-                "kind": "translation",
-                "value": "‘When something gets lost (i.e. ‘stolen’"
-              },
-              {
-                "kind": "punct",
-                "value": ")"
-              },
-              {
-                "kind": "punct",
-                "value": ","
-              },
-              {
-                "kind": "turoyo",
-                "value": " people admonish him "
-              },
-              {
-                "kind": "punct",
-                "value": "("
-              },
-              {
-                "kind": "turoyo",
-                "value": "the one who committed a crime"
-              },
-              {
-                "kind": "punct",
-                "value": ")"
-              },
-              {
-                "kind": "turoyo",
-                "value": " or excommunicate him’ "
-              },
-              {
-                "kind": "ref",
-                "value": "94/52"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
+            "turoyo": "i=naqqa d-ko-misakərmedeste ko-moṣənaʕle aw ko-maḥərmiaʕle",
+            "translations": [
+              "‘When something gets lost (",
+              "‘stolen’), people admonish him (the one who committed a crime) or excommunicate him’ 94/52;"
             ],
-            "text": "i=naqqa d-ko-misakər mede ste ko-moṣən aʕle aw ko-maḥərmi aʕle ‘When something gets lost (i.e. ‘stolen’), people admonish him (the one who committed a crime) or excommunicate him’ 94/52;"
+            "references": []
           }
-        ]
-      },
-      "label_gloss_tokens": [
-        {
-          "italic": false,
-          "text": "in den "
-        },
-        {
-          "italic": false,
-          "text": "Kirchenbann"
-        },
-        {
-          "italic": false,
-          "text": " tun, "
-        },
-        {
-          "italic": false,
-          "text": "ächten"
-        },
-        {
-          "italic": false,
-          "text": ";"
-        }
-      ]
-    },
-    {
-      "stem": "Detransitive",
-      "forms": [],
-      "conjugations": {
+        ],
         "Part. Pass.": [
           {
-            "turoyo": "maḥramto! mə səmlax b-aḥuni?",
-            "translations": [
-              "verfluchtes Weib! Was hast du mit meinem Bruder gemacht?"
-            ],
-            "references": ["181", "80/15"],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": "maḥramto! mə səmlax b-aḥuni? "
-              },
-              {
-                "kind": "translation",
-                "value": "ʻverfluchtes Weib! Was hast du mit meinem Bruder gemacht?ʼ"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "181"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              },
-              {
-                "kind": "turoyo",
-                "value": " "
-              },
-              {
-                "kind": "ref",
-                "value": "80/15"
-              },
-              {
-                "kind": "punct",
-                "value": ";"
-              }
-            ],
-            "text": "maḥramto! mə səmlax b-aḥuni? ʻverfluchtes Weib! Was hast du mit meinem Bruder gemacht?ʼ; 181; 80/15;"
-          },
-          {
-            "turoyo": "Значение не совпадает",
-            "translations": [],
-            "references": [],
-            "tokens": [
-              {
-                "kind": "turoyo",
-                "value": " Значение не совпадает"
-              }
-            ],
-            "text": "Значение не совпадает"
+            "turoyo": "maḥramto! məsəmlax b-aḥuni? 181; 80/15; Значениенесовпадает",
+            "translations": ["verfluchtes", "! Was hast du"],
+            "references": ["181; 80/15"]
           }
         ]
       }
     }
   ],
-  "idioms": null
+  "uncertain": false
 }
