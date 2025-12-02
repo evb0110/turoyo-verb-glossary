@@ -14,22 +14,84 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["rakəd", "rokəd"],
+      "forms": [
+        "rakəd",
+        "rokəd"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "u=maṭro rakəd, i=hawa baṭilo 88; 8/21;",
-            "translations": ["‘da liess der Regen nach, der Wind hörte auf’;"],
-            "references": ["88; 8/21"]
+            "turoyo": "u=maṭro rakəd i=hawa baṭilo",
+            "translations": [
+              "‘da liess der Regen nach, der Wind hörte auf’"
+            ],
+            "references": [
+              "88",
+              "8/21"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=maṭro rakəd"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=hawa baṭilo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘da liess der Regen nach, der Wind hörte auf’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "88"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "8/21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=maṭro rakəd, i=hawa baṭilo ‘da liess der Regen nach, der Wind hörte auf’; 88; 8/21;"
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": ["mrakadle", "mrakəd"],
+      "forms": [
+        "mrakadle",
+        "mrakəd"
+      ],
       "conjugations": {}
     }
+  ],
+  "idioms": [
+    "beruhigen;",
+    "1) beruhigen; 2) sich beruhigen"
   ],
   "uncertain": false
 }

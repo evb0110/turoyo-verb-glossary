@@ -14,19 +14,102 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mzarzəl", "mizarzəl"],
+      "forms": [
+        "mzarzəl",
+        "mizarzəl"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "daqnayye maṭi l-barkoṯayye, aǧ=ǧulaṯṯe mzarzli, a=tḥelataṯṯe nqiwi 796; 61/369; 62/109;",
+            "turoyo": "daqnayye maṭi l-barkoṯayye aǧ=ǧulaṯṯe mzarzli a=tḥelataṯṯe nqiwi",
             "translations": [
               "der Bart ging ihnen bis zu den Knien, ihre Kleider waren zerlumpt, ihre Lenden durchlöchert"
             ],
-            "references": ["796; 61/369", "62/109"]
+            "references": [
+              "796",
+              "61/369",
+              "62/109"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "daqnayye maṭi l-barkoṯayye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aǧ=ǧulaṯṯe mzarzli"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " a=tḥelataṯṯe nqiwi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Bart ging ihnen bis zu den Knien, ihre Kleider waren zerlumpt, ihre Lenden durchlöchertʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "796"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "61/369"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/109"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "daqnayye maṭi l-barkoṯayye, aǧ=ǧulaṯṯe mzarzli, a=tḥelataṯṯe nqiwi ʻder Bart ging ihnen bis zu den Knien, ihre Kleider waren zerlumpt, ihre Lenden durchlöchertʼ; 796; 61/369; 62/109;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) zerlumpt werden;"
   ],
   "uncertain": false
 }

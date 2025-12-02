@@ -14,17 +14,60 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["msarsaqle", "msarsəq"],
+      "forms": [
+        "msarsaqle",
+        "msarsəq"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "i=gəglo msársəqo 788;",
-            "translations": ["das Knäuel verwirrte sich"],
-            "references": ["788"]
+            "turoyo": "i=gəglo msársəqo",
+            "translations": [
+              "das Knäuel verwirrte sich"
+            ],
+            "references": [
+              "788"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=gəglo msársəqo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Knäuel verwirrte sichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "788"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=gəglo msársəqo ʻdas Knäuel verwirrte sichʼ; 788;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) sich verwirren, durcheinandergeraten (Knäuel);"
   ],
   "uncertain": false
 }

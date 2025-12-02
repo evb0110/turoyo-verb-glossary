@@ -14,88 +14,781 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mnaqele", "mnaqe"],
+      "forms": [
+        "mnaqele",
+        "mnaqe"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mnaqele səsto kayəsto m-bayn as=səsye 414; prs 148/14; 29/182; mnaqalle kačke šafərto 415; prs 56/24; mnaqəlle mə-ḥḏoḏe 416; 73/419; mobele tralfo suwariye aʕme d-mnaqele b-iḏe",
+            "turoyo": "mnaqele səsto kayəsto m-bayn as=səsye prs mnaqalle kačke šafərto prs mnaqəlle mə-ḥḏoḏe mobele tralfo suwariye aʕme d-mnaqele b-iḏe",
             "translations": [
               "er wählte ein schönes Ross aus seinem Stalle",
               "sie suchten ein schönes Mädchen aus",
               "er las sie (pl) auseinander",
-              "‘Er nahm 2000 Reiter mit, die er mit eigener Hand ausgesucht hatte’; 29/182"
+              "‘Er nahm 2000 Reiter mit, die er mit eigener Hand ausgesucht hatte’"
             ],
-            "references": ["414", "148/14"]
+            "references": [
+              "414",
+              "148/14",
+              "29/182",
+              "415",
+              "56/24",
+              "416",
+              "73/419",
+              "29/182"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mnaqele səsto kayəsto m-bayn as=səsye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wählte ein schönes Ross aus seinem Stalleʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "414"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "148/14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/182"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mnaqalle kačke šafərto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie suchten ein schönes Mädchen ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "415"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "56/24"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mnaqəlle mə-ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer las sie (pl) auseinanderʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "416"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/419"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mobele tralfo suwariye aʕme d-mnaqele b-iḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er nahm 2000 Reiter mit, die er mit eigener Hand ausgesucht hatte’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/182"
+              }
+            ],
+            "text": "mnaqele səsto kayəsto m-bayn as=səsye ʻer wählte ein schönes Ross aus seinem Stalleʼ; 414; prs 148/14; 29/182; mnaqalle kačke šafərto ʻsie suchten ein schönes Mädchen ausʼ; 415; prs 56/24; mnaqəlle mə-ḥḏoḏe ʻer las sie (pl) auseinanderʼ; 416; 73/419; mobele tralfo suwariye aʕme d-mnaqele b-iḏe ‘Er nahm 2000 Reiter mit, die er mit eigener Hand ausgesucht hatte’; 29/182"
           }
         ],
         "Preterit-wa": [
           {
-            "turoyo": "haṯi aṯi b-baxtux w b-u=wōždān diḏux, d-ono i=kačk-aṯi də-mnaqyó-way-li b-masale də-šruṭat w b-u=ʕaqəl, ono mnaqyó-way-li lăǧan ruḥi m-ann=abnoṯe də-Ṣṭambəl w d-i=arʕo, w d-elux makimolux l-qul ʕayni, hani šato d-yawmoṯe lə=ṭrelux d-ḥozina xēr mə-ḥḏoḏe 416; 105/137;",
+            "turoyo": "haṯi aṯi b-baxtux w b-u=wōždān diḏux d-ono i=kačk-aṯi də-mnaqyó-way-li b-masale də-šruṭat w b-u=ʕaqəl ono mnaqyó-way-li lăǧan ruḥi m-ann=abnoṯe də-Ṣṭambəl w d-i=arʕo w d-elux makimolux l-qul ʕayni hani šato d-yawmoṯe lə=ṭrelux d-ḥozina xēr mə-ḥḏoḏe",
             "translations": [
               "was ist dir ins Gewissen gekommen, dass du das Mädchen, dessen Verstand ich durch Prüfungsfragen erprobt, und das ich für mich ausgesucht hatte unter den Töchtern Stambuls und der ganzen Welt, dass du es meinen Augen angeschwärzt und uns ein Jahr lang gehindert hast, etwas gutes voneinander zu haben"
             ],
-            "references": ["416; 105/137"]
+            "references": [
+              "416",
+              "105/137"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "haṯi aṯi b-baxtux w b-u=wōždān diḏux"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-ono i=kačk-aṯi də-mnaqyó-way-li b-masale də-šruṭat w b-u=ʕaqəl"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono mnaqyó-way-li lăǧan ruḥi m-ann=abnoṯe də-Ṣṭambəl w d-i=arʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w d-elux makimolux l-qul ʕayni"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hani šato d-yawmoṯe lə=ṭrelux d-ḥozina xēr mə-ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwas ist dir ins Gewissen gekommen, dass du das Mädchen, dessen Verstand ich durch Prüfungsfragen erprobt, und das ich für mich ausgesucht hatte unter den Töchtern Stambuls und der ganzen Welt, dass du es meinen Augen angeschwärzt und uns ein Jahr lang gehindert hast, etwas gutes voneinander zu habenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "416"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "105/137"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "haṯi aṯi b-baxtux w b-u=wōždān diḏux, d-ono i=kačk-aṯi də-mnaqyó-way-li b-masale də-šruṭat w b-u=ʕaqəl, ono mnaqyó-way-li lăǧan ruḥi m-ann=abnoṯe də-Ṣṭambəl w d-i=arʕo, w d-elux makimolux l-qul ʕayni, hani šato d-yawmoṯe lə=ṭrelux d-ḥozina xēr mə-ḥḏoḏe ʻwas ist dir ins Gewissen gekommen, dass du das Mädchen, dessen Verstand ich durch Prüfungsfragen erprobt, und das ich für mich ausgesucht hatte unter den Töchtern Stambuls und der ganzen Welt, dass du es meinen Augen angeschwärzt und uns ein Jahr lang gehindert hast, etwas gutes voneinander zu habenʼ; 416; 105/137;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "fayəš kə-mnaqe kefe me-bayn i=arʕo 419; 75/171; gə-mnaqən ḥa b-ḥa mənne 420; 94/467; kul=šəkəl d-zād, k-xulṭina ʕalbe b-ḥḏoḏe (…). hul ṣafro lazəm mnaqut-ne, kul=šəkəl b-u=šəkl-ayḏe",
+            "turoyo": "fayəš kə-mnaqe kefe me-bayn i=arʕo gə-mnaqən ḥa b-ḥa mənne kul=šəkəl d-zād k-xulṭina ʕalbe b-ḥḏoḏe …. hul ṣafro lazəm mnaqut-ne kul=šəkəl b-u=šəkl-ayḏe -",
             "translations": [
               "nun, las er Steine aus der Erde",
               "sie suchen einen nach dem anderen von ihnen ab",
-              "‘We are going to mix one measure of every type of grain with another (…). And you have to sort them, each type of grain to its own kind’ 73/382-383;"
+              "‘We are going to mix one measure of every type of grain with another (…). And you have to sort them, each type of grain to its own kind’"
             ],
-            "references": ["419; 75/171", "420; 94/467"]
+            "references": [
+              "419",
+              "75/171",
+              "420",
+              "94/467",
+              "73/382",
+              "383"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "fayəš kə-mnaqe kefe me-bayn i=arʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnun, las er Steine aus der Erdeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "419"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/171"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " gə-mnaqən ḥa b-ḥa mənne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie suchen einen nach dem anderen von ihnen abʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "420"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/467"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kul=šəkəl d-zād"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-xulṭina ʕalbe b-ḥḏoḏe "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". hul ṣafro lazəm mnaqut-ne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kul=šəkəl b-u=šəkl-ayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘We are going to mix one measure of every type of grain with another (…). And you have to sort them, each type of grain to its own kind’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/382"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "383"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "fayəš kə-mnaqe kefe me-bayn i=arʕo ʻnun, las er Steine aus der Erdeʼ; 419; 75/171; gə-mnaqən ḥa b-ḥa mənne ʻsie suchen einen nach dem anderen von ihnen abʼ; 420; 94/467; kul=šəkəl d-zād, k-xulṭina ʕalbe b-ḥḏoḏe (…). hul ṣafro lazəm mnaqut-ne, kul=šəkəl b-u=šəkl-ayḏe ‘We are going to mix one measure of every type of grain with another (…). And you have to sort them, each type of grain to its own kind’ 73/382-383;"
           },
           {
-            "turoyo": "; Deve-Raš omər aʕli də-mnaqeno garmo b-garmo 421; prs 45/9;",
+            "turoyo": "Deve-Raš omər aʕli də-mnaqeno garmo b-garmo prs",
             "translations": [
-              "Deve-Rasch sprach: “Meine Sache sei es, dass ich Knochen zu Knochen sammle”"
+              "Deve-Rasch sprach: “Meine Sache sei es, dass ich Knochen zu Knochen sammle"
             ],
-            "references": ["421", "45/9"]
+            "references": [
+              "421",
+              "45/9"
+            ],
+            "tokens": [
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Deve-Raš omər aʕli də-mnaqeno garmo b-garmo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻDeve-Rasch sprach: “Meine Sache sei es, dass ich Knochen zu Knochen sammle”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "421"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "45/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "; Deve-Raš omər aʕli də-mnaqeno garmo b-garmo ʻDeve-Rasch sprach: “Meine Sache sei es, dass ich Knochen zu Knochen sammle”ʼ; 421; prs 45/9;"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "freḏo=freḏo gə-mnaqí-way-na-le, m-u=zizono, m-u=buġro, m-u=mede d-l=owe šafiro",
+            "turoyo": "freḏo=freḏo gə-mnaqí-way-na-le m-u=zizono m-u=buġro m-u=mede d-l=owe šafiro",
             "translations": [
-              "‘wir verlasen ihn (Weizengrütze) Korn um Korn, (säuberten ihn) vom Unkraut(samen), kleinen Steinchen, von allem, was nicht schön ist’ JL 17.5.16;"
+              "‘wir verlasen ihn (Weizengrütze) Korn um Korn, (säuberten ihn) vom Unkraut(samen), kleinen Steinchen, von allem, was nicht schön ist’"
             ],
-            "references": []
+            "references": [
+              "JL 17.5.16"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "freḏo=freḏo gə-mnaqí-way-na-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-u=zizono"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-u=buġro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-u=mede d-l=owe šafiro "
+              },
+              {
+                "kind": "translation",
+                "value": "‘wir verlasen ihn (Weizengrütze) Korn um Korn, (säuberten ihn) vom Unkraut(samen), kleinen Steinchen, von allem, was nicht schön ist’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 17.5.16"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "freḏo=freḏo gə-mnaqí-way-na-le, m-u=zizono, m-u=buġro, m-u=mede d-l=owe šafiro ‘wir verlasen ihn (Weizengrütze) Korn um Korn, (säuberten ihn) vom Unkraut(samen), kleinen Steinchen, von allem, was nicht schön ist’ JL 17.5.16;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "de zux l-i=ṭawle d-as=sisye, naqay-lox səsyo ṭowo izúx 422; 58/215; k-obaʕno hama bas naqewu-li u=zād-ano",
+            "turoyo": "de zux l-i=ṭawle d-as=sisye naqay-lox səsyo ṭowo izúx k-obaʕno hama bas naqewu-li u=zād-ano",
             "translations": [
               "geh in den Pferdestall, suche dir ein gutes Pferd aus und geh",
-              "‘I only want you to sort this grain for me’ 73/397;"
+              "‘I only want you to sort this grain for me’"
             ],
-            "references": ["422; 58/215"]
+            "references": [
+              "422",
+              "58/215",
+              "73/397"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "de zux l-i=ṭawle d-as=sisye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " naqay-lox səsyo ṭowo izúx "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻgeh in den Pferdestall, suche dir ein gutes Pferd aus und gehʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "422"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "58/215"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-obaʕno hama bas naqewu-li u=zād-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I only want you to sort this grain for me’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/397"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "de zux l-i=ṭawle d-as=sisye, naqay-lox səsyo ṭowo izúx ʻgeh in den Pferdestall, suche dir ein gutes Pferd aus und gehʼ; 422; 58/215; k-obaʕno hama bas naqewu-li u=zād-ano ‘I only want you to sort this grain for me’ 73/397;"
           }
-        ],
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
         "Part. Pass.": [
           {
-            "turoyo": "ḥəlle l-u=paša b-u=kăčal, hawi xōrt mnaqyo 424; prs 64/14; tarte tlaṯṭalme d-laḥmo d-ḥeṭe mnaqye 29/228",
+            "turoyo": "ḥəlle l-u=paša b-u=kăčal hawi xōrt mnaqyo prs tarte tlaṯ ṭalme d-laḥmo d-ḥeṭe mnaqye",
             "translations": [
               "der Fürst sah auf den Grindkopf; der war ein ausgezeichnet schöner Jüngling geworden",
-              "‘two-three selected rings of wheaten bread’; 44/43;"
+              "‘two-three selected rings of wheaten bread’"
             ],
-            "references": ["424", "64/14"]
+            "references": [
+              "424",
+              "64/14",
+              "44/43",
+              "29/228"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥəlle l-u=paša b-u=kăčal"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawi xōrt mnaqyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Fürst sah auf den Grindkopf; der war ein ausgezeichnet schöner Jüngling gewordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "424"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "64/14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " tarte tlaṯ ṭalme d-laḥmo d-ḥeṭe mnaqye "
+              },
+              {
+                "kind": "translation",
+                "value": "‘two-three selected rings of wheaten bread’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/43"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/228"
+              }
+            ],
+            "text": "ḥəlle l-u=paša b-u=kăčal, hawi xōrt mnaqyo ʻder Fürst sah auf den Grindkopf; der war ein ausgezeichnet schöner Jüngling gewordenʼ; 424; prs 64/14; tarte tlaṯ ṭalme d-laḥmo d-ḥeṭe mnaqye ‘two-three selected rings of wheaten bread’; 44/43; 29/228"
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "kul remuno mnaqele neqoyo 423; 73/358; bəṯṯər m-u=neqoy-awo g-maḥtína-nne b-ax=xurge",
+            "turoyo": "kul remuno mnaqele neqoyo bəṯṯər m-u=neqoy-awo g-maḥtína-nne b-ax=xurge",
             "translations": [
               "jeden Granatapfel suchte er sorgfältig aus",
               "nach dem Verlesen tun wir ihn in Tragsäcke"
             ],
-            "references": ["423; 73/358"]
+            "references": [
+              "423",
+              "73/358",
+              "JL 9.10.3"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kul remuno mnaqele neqoyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻjeden Granatapfel suchte er sorgfältig ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "423"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/358"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər m-u=neqoy-awo g-maḥtína-nne b-ax=xurge "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnach dem Verlesen tun wir ihn in Tragsäckeʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 9.10.3"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kul remuno mnaqele neqoyo ʻjeden Granatapfel suchte er sorgfältig ausʼ; 423; 73/358; bəṯṯər m-u=neqoy-awo g-maḥtína-nne b-ax=xurge ʻnach dem Verlesen tun wir ihn in Tragsäckeʼ JL 9.10.3;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "aussuchen, auslesen, aufsammeln;"
   ],
   "uncertain": false
 }

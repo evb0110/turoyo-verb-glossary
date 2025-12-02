@@ -14,17 +14,67 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ṣrəṭle", "ṣorəṭ"],
+      "forms": [
+        "ṣrəṭle",
+        "ṣorəṭ"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ṣrəṭle gawe 68; prs 222/21;",
-            "translations": ["er schlitzte ihm den Bauch auf"],
-            "references": ["68", "222/21"]
+            "turoyo": "ṣrəṭle gawe prs",
+            "translations": [
+              "er schlitzte ihm den Bauch auf"
+            ],
+            "references": [
+              "68",
+              "222/21"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṣrəṭle gawe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer schlitzte ihm den Bauch aufʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "68"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "222/21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ṣrəṭle gawe ʻer schlitzte ihm den Bauch aufʼ; 68; prs 222/21;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "aufschlitzen;"
   ],
   "uncertain": false
 }

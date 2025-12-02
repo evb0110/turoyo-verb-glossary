@@ -14,17 +14,54 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["txīl", "mətxəl"],
+      "forms": [
+        "txīl",
+        "mətxəl"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Infectum": [
           {
             "turoyo": "ko-mətxəl ʕal aloho",
             "translations": [],
-            "references": ["325"]
+            "references": [
+              "325"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mətxəl ʕal aloho"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "325"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-mətxəl ʕal aloho; 325;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) von tuxlono — Gottvertrauen;"
   ],
   "uncertain": false
 }

@@ -14,17 +14,59 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["qšīṭ", "məqšəṭ"],
+      "forms": [
+        "qšīṭ",
+        "məqšəṭ"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "qšīṭ 126;",
-            "translations": ["er machte sich davon"],
-            "references": ["126"]
+            "turoyo": "qšīṭ",
+            "translations": [
+              "er machte sich davon"
+            ],
+            "references": [
+              "126"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qšīṭ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer machte sich davonʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "126"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "qšīṭ ʻer machte sich davonʼ; 126;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(detrans.) davonmachen, wegscheren;"
   ],
   "uncertain": false
 }

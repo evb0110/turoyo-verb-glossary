@@ -14,19 +14,58 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["manṭaqle", "manṭəq"],
+      "forms": [
+        "manṭaqle",
+        "manṭəq"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "i=naqqa d-məlle hawxa, ḥḏo m-ak=kačkat manṭaqla məlla",
+            "turoyo": "i=naqqa d-məlle hawxa ḥḏo m-ak=kačkat manṭaqla məlla",
             "translations": [
-              "‘Als er so sprach, fing das eine der Mädchen zu reden an und sprach’; 29/257"
+              "‘Als er so sprach, fing das eine der Mädchen zu reden an und sprach’"
             ],
-            "references": []
+            "references": [
+              "29/257"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqqa d-məlle hawxa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥḏo m-ak=kačkat manṭaqla məlla "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Als er so sprach, fing das eine der Mädchen zu reden an und sprach’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/257"
+              }
+            ],
+            "text": "i=naqqa d-məlle hawxa, ḥḏo m-ak=kačkat manṭaqla məlla ‘Als er so sprach, fing das eine der Mädchen zu reden an und sprach’; 29/257"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "reden"
   ],
   "uncertain": false
 }

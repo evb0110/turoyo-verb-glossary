@@ -14,103 +14,775 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["frəsle", "forəs"],
+      "forms": [
+        "frəsle",
+        "forəs"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "1) qay lo=frə́slax-li ʕal i=goro? məsketo frə́sla-le lawġul w-larwal",
+            "turoyo": "qay lo=frə́slax-li ʕal i=goro? məsketo frə́sla-le lawġul w-larwal",
             "translations": [
-              "‘Why did not you make the bed for me on the roof?’; 41/4;",
-              "‘The poor thing made the bed for him inside and outside [the house]’; 41/6"
+              "‘Why did not you make the bed for me on the roof?’",
+              "‘The poor thing made the bed for him inside and outside [the house]’"
             ],
-            "references": ["1"]
+            "references": [
+              "1",
+              "41/4",
+              "41/6"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qay lo=frə́slax-li ʕal i=goro? "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Why did not you make the bed for me on the roof?’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "41/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " məsketo frə́sla-le lawġul w-larwal "
+              },
+              {
+                "kind": "translation",
+                "value": "‘The poor thing made the bed for him inside and outside [the house]’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "41/6"
+              }
+            ],
+            "text": "1) qay lo=frə́slax-li ʕal i=goro? ‘Why did not you make the bed for me on the roof?’; 41/4; məsketo frə́sla-le lawġul w-larwal ‘The poor thing made the bed for him inside and outside [the house]’; 41/6"
           },
           {
-            "turoyo": "hawi čax d-u=dmoxo. frəsla l-i=xatune ag=gale. damixo hiya w i=kačke w u=bani=sabʕa 68-69; prs 61/31; prs 1 46/15, 25; amṭalle nāylōn qṭiʕo w frəsse ʕal at=tart-anək b-u=axur-awo LB 66;",
+            "turoyo": "hawi čax d-u=dmoxo. frəsla l-i=xatune ag=gale. damixo hiya w i=kačke w u=bani=sabʕa - prs prs amṭalle nāylōn qṭiʕo w frəsse ʕal at=tart-anək b-u=axur-awo",
             "translations": [
               "als es Schlafenszeit wurde, breitete die Frau die Betten aus und legte sich nebst dem Mädchen und dem Löwenkönig schlafen",
               "sie brachten eine zerrissene Plastikplane und breiten sie auf diesen trockenen Kuhfladen im Stall aus"
             ],
-            "references": ["68", "69"]
-          },
-          {
-            "turoyo": "fayišo šato w-fəlge tre=əšne hul d-matəmla u=quṣr-ayḏa w-frəsla m-aǧ=ǧul-ani m-ab=bar-ani d-u=ʕaǧam",
-            "translations": [
-              "‘It was 1,5 to 2 years until she finished her castle. (Then) she furnished it with (fine) cloth and Persian carpets’ 77/187-188;"
+            "references": [
+              "68",
+              "69",
+              "61/31",
+              "1",
+              "46/15",
+              "25",
+              "LB 66"
             ],
-            "references": []
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hawi čax d-u=dmoxo. frəsla l-i=xatune ag=gale. damixo hiya w i=kačke w u=bani=sabʕa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals es Schlafenszeit wurde, breitete die Frau die Betten aus und legte sich nebst dem Mädchen und dem Löwenkönig schlafenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "68"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "69"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "61/31"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "46/15"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " amṭalle nāylōn qṭiʕo w frəsse ʕal at=tart-anək b-u=axur-awo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie brachten eine zerrissene Plastikplane und breiten sie auf diesen trockenen Kuhfladen im Stall ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 66"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hawi čax d-u=dmoxo. frəsla l-i=xatune ag=gale. damixo hiya w i=kačke w u=bani=sabʕa ʻals es Schlafenszeit wurde, breitete die Frau die Betten aus und legte sich nebst dem Mädchen und dem Löwenkönig schlafenʼ; 68-69; prs 61/31; prs 1 46/15, 25; amṭalle nāylōn qṭiʕo w frəsse ʕal at=tart-anək b-u=axur-awo ʻsie brachten eine zerrissene Plastikplane und breiten sie auf diesen trockenen Kuhfladen im Stall ausʼ; LB 66;"
           },
           {
-            "turoyo": "2) bəṯṯər me d-frəslan w našəf... g-malimí-way-na aḥ=ḥeṭ-anək d-similan barġal amṭele falqo d-galdo w-žnuka maḥatle u=baṣr-awo d-hawi xd-i=labəxto frəsle ʕal-u=falqo d-u=galdo",
+            "turoyo": "fayišo šato w-fəlge tre=əšne hul d-matəmla u=quṣr-ayḏa w-frəsla m-aǧ=ǧul-ani m-ab=bar-ani d-u=ʕaǧam -",
+            "translations": [
+              "‘It was 1,5 to 2 years until she finished her castle. (Then) she furnished it with (fine) cloth and Persian carpets’"
+            ],
+            "references": [
+              "77/187",
+              "188"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "fayišo šato w-fəlge tre=əšne hul d-matəmla u=quṣr-ayḏa w-frəsla m-aǧ=ǧul-ani m-ab=bar-ani d-u=ʕaǧam "
+              },
+              {
+                "kind": "translation",
+                "value": "‘It was 1,5 to 2 years until she finished her castle. (Then) she furnished it with (fine) cloth and Persian carpets’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "77/187"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "188"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "fayišo šato w-fəlge tre=əšne hul d-matəmla u=quṣr-ayḏa w-frəsla m-aǧ=ǧul-ani m-ab=bar-ani d-u=ʕaǧam ‘It was 1,5 to 2 years until she finished her castle. (Then) she furnished it with (fine) cloth and Persian carpets’ 77/187-188;"
+          },
+          {
+            "turoyo": "bəṯṯər me d-frəslan w našəf... g-malimí-way-na aḥ=ḥeṭ-anək d-similan barġal amṭele falqo d-galdo … w-žnuka maḥatle u=baṣr-awo d-hawi xd-i=labəxto frəsle ʕal-u=falqo d-u=galdo",
             "translations": [
               "nachdem wir ihn ausgebreitet hatten und er getrocknet war... sammelten wir diesen Weizen, den wir zum Weizengrütze gemacht hatten",
-              "‘He brough a piece of leather, put (on that piece of leather) the flesh (of a puppy), which turned into a mushy salve, and spread it on the piece of leather’ LuF 300/49;"
+              "‘He brough a piece of leather, put (on that piece of leather) the flesh (of a puppy), which turned into a mushy salve, and spread it on the piece of leather’"
             ],
-            "references": ["2"]
+            "references": [
+              "2",
+              "JL 17.5.14",
+              "LuF 300/49"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər me d-frəslan w našəf... g-malimí-way-na aḥ=ḥeṭ-anək d-similan barġal "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnachdem wir ihn ausgebreitet hatten und er getrocknet war... sammelten wir diesen Weizen, den wir zum Weizengrütze gemacht hattenʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 17.5.14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " amṭele falqo d-galdo "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-žnuka maḥatle u=baṣr-awo d-hawi xd-i=labəxto frəsle ʕal-u=falqo d-u=galdo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘He brough a piece of leather, put (on that piece of leather) the flesh (of a puppy), which turned into a mushy salve, and spread it on the piece of leather’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LuF 300/49"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) bəṯṯər me d-frəslan w našəf... g-malimí-way-na aḥ=ḥeṭ-anək d-similan barġal ʻnachdem wir ihn ausgebreitet hatten und er getrocknet war... sammelten wir diesen Weizen, den wir zum Weizengrütze gemacht hattenʼ JL 17.5.14; amṭele falqo d-galdo (…) w-žnuka maḥatle u=baṣr-awo d-hawi xd-i=labəxto frəsle ʕal-u=falqo d-u=galdo ‘He brough a piece of leather, put (on that piece of leather) the flesh (of a puppy), which turned into a mushy salve, and spread it on the piece of leather’ LuF 300/49;"
           },
           {
             "turoyo": "aṯyo ʕal i=šeno d-məḷḷe-le u=sowo aʕla maġela frəsla raġla",
             "translations": [
-              "‘She (the mother lion, f.) came to the cliff, about which the old man told him, lied down and stretched her leg’ 75/298;"
+              "‘She (the mother lion, f.) came to the cliff, about which the old man told him, lied down and stretched her leg’"
             ],
-            "references": []
+            "references": [
+              "75/298"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aṯyo ʕal i=šeno d-məḷḷe-le u=sowo aʕla maġela frəsla raġla "
+              },
+              {
+                "kind": "translation",
+                "value": "‘She (the mother lion, f.) came to the cliff, about which the old man told him, lied down and stretched her leg’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/298"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "aṯyo ʕal i=šeno d-məḷḷe-le u=sowo aʕla maġela frəsla raġla ‘She (the mother lion, f.) came to the cliff, about which the old man told him, lied down and stretched her leg’ 75/298;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "1) fursono lawġul, ko-moḥe-li; larwal, ko-moḥe-li, áydarbo saymono?",
+            "turoyo": "fursono lawġul ko-moḥe-li larwal ko-moḥe-li áydarbo saymono?",
             "translations": [
-              "‘I make the bed inside [the house] – he beats me; [I make the bed] outside [the house] – he beats me [as well]. What should I do?’; 41/17"
+              "‘I make the bed inside [the house] – he beats me; [I make the bed] outside [the house] – he beats me [as well]. What should I do?’"
             ],
-            "references": ["1"]
+            "references": [
+              "1",
+              "41/17"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " fursono lawġul"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-moḥe-li"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " larwal"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-moḥe-li"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " áydarbo saymono? "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I make the bed inside [the house] – he beats me; [I make the bed] outside [the house] – he beats me [as well]. What should I do?’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "41/17"
+              }
+            ],
+            "text": "1) fursono lawġul, ko-moḥe-li; larwal, ko-moḥe-li, áydarbo saymono? ‘I make the bed inside [the house] – he beats me; [I make the bed] outside [the house] – he beats me [as well]. What should I do?’; 41/17"
           },
           {
-            "turoyo": "2) k-fərsono ṯawbo d-šuqo ʕal fəlgo d-i=ǧaʕda d-u=darbo 101; 66/123;",
+            "turoyo": "k-fərsono ṯawbo d-šuqo ʕal fəlgo d-i=ǧaʕda d-u=darbo",
             "translations": [
               "ich werde ein Stück Leinen mitten auf der Strasse ausbreiten"
             ],
-            "references": ["2", "101; 66/123"]
+            "references": [
+              "2",
+              "101",
+              "66/123"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-fərsono ṯawbo d-šuqo ʕal fəlgo d-i=ǧaʕda d-u=darbo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich werde ein Stück Leinen mitten auf der Strasse ausbreitenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "101"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "66/123"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) k-fərsono ṯawbo d-šuqo ʕal fəlgo d-i=ǧaʕda d-u=darbo ʻich werde ein Stück Leinen mitten auf der Strasse ausbreitenʼ; 101; 66/123;"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "2) maḥtí-way-na i=danuk-ayo ʕal i=goro, tre=yawme, hawxa g-fərsí-way-na-la šafiro",
+            "turoyo": "maḥtí-way-na i=danuk-ayo ʕal i=goro tre=yawme hawxa g-fərsí-way-na-la šafiro",
             "translations": [
               "wir legten den gekochten Weizen auf das Dach, zwei Tage lang, wir breiteten ihn schön aus"
             ],
-            "references": ["2"]
+            "references": [
+              "2",
+              "JL 17.5.8"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥtí-way-na i=danuk-ayo ʕal i=goro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " tre=yawme"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawxa g-fərsí-way-na-la šafiro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir legten den gekochten Weizen auf das Dach, zwei Tage lang, wir breiteten ihn schön ausʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 17.5.8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) maḥtí-way-na i=danuk-ayo ʕal i=goro, tre=yawme, hawxa g-fərsí-way-na-la šafiro ʻwir legten den gekochten Weizen auf das Dach, zwei Tage lang, wir breiteten ihn schön ausʼ JL 17.5.8;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "1) fras-li lawġul!",
-            "translations": ["‘Make the bed for me inside [the house]’; 41/4"],
-            "references": ["1"]
+            "turoyo": "fras-li lawġul!",
+            "translations": [
+              "‘Make the bed for me inside [the house]’"
+            ],
+            "references": [
+              "1",
+              "41/4"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " fras-li lawġul! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Make the bed for me inside [the house]’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "41/4"
+              }
+            ],
+            "text": "1) fras-li lawġul! ‘Make the bed for me inside [the house]’; 41/4"
           },
           {
-            "turoyo": "3) fras raġlux LB 67;",
-            "translations": ["strecke deine Beine!"],
-            "references": ["3", "67"]
-          }
-        ],
-        "Part. Pass.": [
-          {
-            "turoyo": "2) am=mədone w i=qayikayḏi kalǝ́n kulle frise b-u=zabuqo 2/72; 77/204; 90/107;",
+            "turoyo": "fras raġlux",
             "translations": [
-              "die Sachen und das Faltboot sind alle auf der Strasse hingebreitet"
+              "strecke deine Beine!"
             ],
-            "references": ["2", "2/72"]
-          },
-          {
-            "turoyo": "aǧ=ǧule d-kət-ne ebe u=mede d-kət-yo ebe friso hēš ʕayno lo=ḥzalla",
-            "translations": [
-              "‘The cloth that was in it (castle, m.) and all the things that were laid out there – no eye has ever seen them’ 77/204; (возможно, идет в значение №1)"
+            "references": [
+              "3",
+              "LB 67"
             ],
-            "references": []
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " fras raġlux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻstrecke deine Beine!ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 67"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "3) fras raġlux ʻstrecke deine Beine!ʼ; LB 67;"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Part. Pass.": [
+          {
+            "turoyo": "am=mədone w i=qayikayḏi kalǝ́n kulle frise b-u=zabuqo",
+            "translations": [
+              "die Sachen und das Faltboot sind alle auf der Strasse hingebreitet"
+            ],
+            "references": [
+              "2",
+              "2/72",
+              "77/204",
+              "90/107"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " am=mədone w i=qayikayḏi kalǝ́n kulle frise b-u=zabuqo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Sachen und das Faltboot sind alle auf der Strasse hingebreitetʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/72"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "77/204"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "90/107"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) am=mədone w i=qayikayḏi kalǝ́n kulle frise b-u=zabuqo ʻdie Sachen und das Faltboot sind alle auf der Strasse hingebreitetʼ; 2/72; 77/204; 90/107;"
+          },
+          {
+            "turoyo": "aǧ=ǧule d-kət-ne ebe u=mede d-kət-yo ebe friso hēš ʕayno lo=ḥzalla возможно идет в значение №",
+            "translations": [
+              "‘The cloth that was in it (castle, m.) and all the things that were laid out there – no eye has ever seen them’"
+            ],
+            "references": [
+              "77/204",
+              "1"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aǧ=ǧule d-kət-ne ebe u=mede d-kət-yo ebe friso hēš ʕayno lo=ḥzalla "
+              },
+              {
+                "kind": "translation",
+                "value": "‘The cloth that was in it (castle, m.) and all the things that were laid out there – no eye has ever seen them’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "77/204"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "возможно"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " идет в значение №"
+              },
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "aǧ=ǧule d-kət-ne ebe u=mede d-kət-yo ebe friso hēš ʕayno lo=ḥzalla ‘The cloth that was in it (castle, m.) and all the things that were laid out there – no eye has ever seen them’ 77/204; (возможно, идет в значение №1)"
+          }
+        ]
+      },
+      "_awaiting_forms": true
     }
   ],
+  "idioms": null,
   "uncertain": false
 }

@@ -14,42 +14,281 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["xayər", "xoyər"],
+      "forms": [
+        "xayər",
+        "xoyər"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "xayər mə-raġla dgušto d-admo w zawqo. fayiḥo raġla 511; prs 63/16; bəṯṯər məd-qayiṯo i=ṣopa b-čike, m-u=ṣalḥo d-i=boriye xayər maye kome ʕal i=ṭərraḥayḏi i=kayəsto 2/23;",
+            "turoyo": "xayər mə-raġla dgušto d-admo w zawqo. fayiḥo raġla prs bəṯṯər məd-qayiṯo i=ṣopa b-čike m-u=ṣalḥo d-i=boriye xayər maye kome ʕal i=ṭərraḥayḏi i=kayəsto",
             "translations": [
               "von ihrem Bein floss ein ganzer Krug voll Blut und Eiter hinunter, und das Bein ward gesund",
               "als der Ofen ein wenig angegangen war, floss aus der Ritze des Rohres eine schwarze Brühe auf meinen schönsten Teppich"
             ],
-            "references": ["511", "63/16"]
+            "references": [
+              "511",
+              "63/16",
+              "2/23"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "xayər mə-raġla dgušto d-admo w zawqo. fayiḥo raġla "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻvon ihrem Bein floss ein ganzer Krug voll Blut und Eiter hinunter, und das Bein ward gesundʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "511"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "63/16"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər məd-qayiṯo i=ṣopa b-čike"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-u=ṣalḥo d-i=boriye xayər maye kome ʕal i=ṭərraḥayḏi i=kayəsto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals der Ofen ein wenig angegangen war, floss aus der Ritze des Rohres eine schwarze Brühe auf meinen schönsten Teppichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/23"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "xayər mə-raġla dgušto d-admo w zawqo. fayiḥo raġla ʻvon ihrem Bein floss ein ganzer Krug voll Blut und Eiter hinunter, und das Bein ward gesundʼ; 511; prs 63/16; bəṯṯər məd-qayiṯo i=ṣopa b-čike, m-u=ṣalḥo d-i=boriye xayər maye kome ʕal i=ṭərraḥayḏi i=kayəsto ʻals der Ofen ein wenig angegangen war, floss aus der Ritze des Rohres eine schwarze Brühe auf meinen schönsten Teppichʼ; 2/23;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "hano maməṯle b-ruḥe, lo=kə-mtane u=admo k-xoyər m-i=lašayḏe 517; 25/51; lalʕəl m-i=ʕayno kito aq=qəštoṯo. kə-mḥafḏ̣i i=ʕayno m-i=daḥṯo, də-k-xayro m-u=gwino 519; 3/8;",
+            "turoyo": "hano maməṯle b-ruḥe lo=kə-mtane u=admo k-xoyər m-i=lašayḏe lalʕəl m-i=ʕayno kito aq=qəštoṯo. kə-mḥafḏ̣i i=ʕayno m-i=daḥṯo də-k-xayro m-u=gwino",
             "translations": [
               "er stellte sich tot und erwiderte nichts, und das Blut floss ihm vom Leibe",
               "über den Augen sind die Augenbrauen; diese schützen das Auge vor dem Schweiss, der von der Stirne rinnt"
             ],
-            "references": ["517; 25/51", "519; 3/8"]
+            "references": [
+              "517",
+              "25/51",
+              "519",
+              "3/8"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hano maməṯle b-ruḥe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=kə-mtane u=admo k-xoyər m-i=lašayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer stellte sich tot und erwiderte nichts, und das Blut floss ihm vom Leibeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "517"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/51"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lalʕəl m-i=ʕayno kito aq=qəštoṯo. kə-mḥafḏ̣i i=ʕayno m-i=daḥṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " də-k-xayro m-u=gwino "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻüber den Augen sind die Augenbrauen; diese schützen das Auge vor dem Schweiss, der von der Stirne rinntʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "519"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "3/8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hano maməṯle b-ruḥe, lo=kə-mtane u=admo k-xoyər m-i=lašayḏe ʻer stellte sich tot und erwiderte nichts, und das Blut floss ihm vom Leibeʼ; 517; 25/51; lalʕəl m-i=ʕayno kito aq=qəštoṯo. kə-mḥafḏ̣i i=ʕayno m-i=daḥṯo, də-k-xayro m-u=gwino ʻüber den Augen sind die Augenbrauen; diese schützen das Auge vor dem Schweiss, der von der Stirne rinntʼ; 519; 3/8;"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "i=naqqa d-ŭṯe-wo maṭro, xayri-wo am=maye l-ann=awdayat 524; 1/17;",
-            "translations": ["wenn es regnete, floss das Wasser in die Zimmer"],
-            "references": ["524; 1/17"]
+            "turoyo": "i=naqqa d-ŭṯe-wo maṭro xayri-wo am=maye l-ann=awdayat",
+            "translations": [
+              "wenn es regnete, floss das Wasser in die Zimmer"
+            ],
+            "references": [
+              "524",
+              "1/17"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqqa d-ŭṯe-wo maṭro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " xayri-wo am=maye l-ann=awdayat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn es regnete, floss das Wasser in die Zimmerʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "524"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "1/17"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=naqqa d-ŭṯe-wo maṭro, xayri-wo am=maye l-ann=awdayat ʻwenn es regnete, floss das Wasser in die Zimmerʼ; 524; 1/17;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["maxər"],
-      "conjugations": {}
+      "forms": [
+        "maxər"
+      ],
+      "conjugations": {},
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "maxərle to shed"
+        }
+      ],
+      "label_raw": "maxərle to shed"
     }
+  ],
+  "idioms": [
+    "(aus)fliessen;",
+    "Omar, ‘Sōzyo ʕam Aloho lo+gmaxǝṇṇo admo mǝnxu.  ‘He says, ‘It’s a promise to God, I won’t shed any (more) blood from you’. [269 NE Story of Dawid 3: 24]"
   ],
   "uncertain": false
 }

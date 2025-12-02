@@ -14,17 +14,54 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mlawamle", "mlawəm"],
+      "forms": [
+        "mlawamle",
+        "mlawəm"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mlawamle 475;",
-            "translations": ["er fand ihn schuldig, tadelnswert"],
-            "references": ["475"]
+            "turoyo": "mlawamle",
+            "translations": [
+              "er fand ihn schuldig, tadelnswert"
+            ],
+            "references": [
+              "475"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mlawamle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer fand ihn schuldig, tadelnswertʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "475"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mlawamle ʻer fand ihn schuldig, tadelnswertʼ; 475;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "shuldig, tadelnswert finden"
   ],
   "uncertain": false
 }

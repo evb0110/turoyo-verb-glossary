@@ -14,17 +14,54 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mʕayawle", "mʕayu"],
+      "forms": [
+        "mʕayawle",
+        "mʕayu"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mʕayawla 483;",
-            "translations": ["ʻes ist wolkig gewordenʼ;"],
-            "references": ["483"]
+            "turoyo": "mʕayawla",
+            "translations": [
+              "es ist wolkig geworden"
+            ],
+            "references": [
+              "483"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mʕayawla "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes ist wolkig gewordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "483"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mʕayawla ʻes ist wolkig gewordenʼ; 483;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "wolkig werden;"
   ],
   "uncertain": false
 }

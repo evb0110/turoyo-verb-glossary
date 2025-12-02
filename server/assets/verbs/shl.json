@@ -14,26 +14,221 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["msahele", "msahəl"],
+      "forms": [
+        "msahele",
+        "msahəl"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mədə-ǧġīl aʕma, šmənto msahlo 311; 113/85;",
+            "turoyo": "msahele",
             "translations": [
-              "als er so mit ihr redete, beruhigte sie sich ein wenig"
+              "er tröstete ihn"
             ],
-            "references": ["311; 113/85"]
+            "references": [
+              "307",
+              "97/42"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "msahele "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer tröstete ihnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "307"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "97/42"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "msahele ʻer tröstete ihnʼ; 307; 97/42;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "d-misahəl 311; 113/56; Пример отсутствует в указанном месте",
-            "translations": ["dass er sich tröstet"],
-            "references": ["311; 113/56"]
+            "turoyo": "w-b-am=mʕazziyat aq=qaše i=naqqa d-moyəṯ miṯo ko-mlawəl-le w-bəṯṯər k-əzzən s-am=more d-u=miṯo kə-msahlən-ne goya d-lo ṭəʕni ġamo",
+            "translations": [
+              "‘In cases of death priests, when someone dies, follow him to his grave and then go to his relatives and comfort them so that they do not grieve too much’"
+            ],
+            "references": [
+              "94/49"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "w-b-am=mʕazziyat aq=qaše i=naqqa d-moyəṯ miṯo ko-mlawəl-le w-bəṯṯər k-əzzən s-am=more d-u=miṯo kə-msahlən-ne goya d-lo ṭəʕni ġamo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘In cases of death priests, when someone dies, follow him to his grave and then go to his relatives and comfort them so that they do not grieve too much’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/49"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "w-b-am=mʕazziyat aq=qaše i=naqqa d-moyəṯ miṯo ko-mlawəl-le w-bəṯṯər k-əzzən s-am=more d-u=miṯo kə-msahlən-ne goya d-lo ṭəʕni ġamo ‘In cases of death priests, when someone dies, follow him to his grave and then go to his relatives and comfort them so that they do not grieve too much’ 94/49;"
+          }
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "mədə-ǧġīl aʕma šmənto msahlo",
+            "translations": [
+              "als er so mit ihr redete, beruhigte sie sich ein wenig"
+            ],
+            "references": [
+              "311",
+              "113/85"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mədə-ǧġīl aʕma"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šmənto msahlo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals er so mit ihr redete, beruhigte sie sich ein wenigʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "311"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "113/85"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mədə-ǧġīl aʕma, šmənto msahlo ʻals er so mit ihr redete, beruhigte sie sich ein wenigʼ; 311; 113/85;"
+          }
+        ],
+        "Infectum": [
+          {
+            "turoyo": "d-misahəl Пример отсутствует в указанном месте",
+            "translations": [
+              "dass er sich tröstet"
+            ],
+            "references": [
+              "311",
+              "113/56"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "d-misahəl "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdass er sich tröstetʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "311"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "113/56"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Пример отсутствует в указанном месте"
+              }
+            ],
+            "text": "d-misahəl ʻdass er sich tröstetʼ; 311; 113/56; Пример отсутствует в указанном месте"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "trösten;"
   ],
   "uncertain": false
 }

@@ -14,74 +14,683 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["rəsle", "royəs"],
+      "forms": [
+        "rəsle",
+        "royəs"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "2) rəṣle l-u=paša dinore b-u=šuqo 570; prs 118/14;",
+            "turoyo": "rəṣle l-u=paša dinore b-u=šuqo prs",
             "translations": [
               "der Pascha liess Goldstücke auf dem Markt streuen"
             ],
-            "references": ["2", "570"]
+            "references": [
+              "2",
+              "570",
+              "118/14"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " rəṣle l-u=paša dinore b-u=šuqo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Pascha liess Goldstücke auf dem Markt streuenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "570"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "118/14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) rəṣle l-u=paša dinore b-u=šuqo ʻder Pascha liess Goldstücke auf dem Markt streuenʼ; 570; prs 118/14;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "1) b-u=yawmo d-u=Rəššayš u=kuhno k-moyəd parrat yaroqe d-ilono w k-ġaṭ-ṭe b-am=maye qadiše w b-i=ʕito k-royəṣʕal a=mhayəmne 12/11; 2) k-raysi-le malḥo 519; 89/84; Пример отсутствует в указанном месте;",
+            "turoyo": "b-u=yawmo d-u=Rəššayš u=kuhno k-moyəd parrat yaroqe d-ilono w k-ġaṭ-ṭe b-am=maye qadiše w b-i=ʕito k-royəṣ ʕal a=mhayəmne",
             "translations": [
-              "‘der Priester nimmt am Pfinsttage grüne Baumzweige, taucht sie in heiliges Wasser und sprengt es in der Kirche auf die Gläubigen’;",
-              "‘sie streuen Salz über ihn’;"
+              "‘der Priester nimmt am Pfinsttage grüne Baumzweige, taucht sie in heiliges Wasser und sprengt es in der Kirche auf die Gläubigen’"
             ],
-            "references": ["1", "12/11"]
+            "references": [
+              "1",
+              "12/11"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-u=yawmo d-u=Rəššayš u=kuhno k-moyəd parrat yaroqe d-ilono w k-ġaṭ-ṭe b-am=maye qadiše w b-i=ʕito k-royəṣ ʕal a=mhayəmne "
+              },
+              {
+                "kind": "translation",
+                "value": "‘der Priester nimmt am Pfinsttage grüne Baumzweige, taucht sie in heiliges Wasser und sprengt es in der Kirche auf die Gläubigen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "12/11"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) b-u=yawmo d-u=Rəššayš u=kuhno k-moyəd parrat yaroqe d-ilono w k-ġaṭ-ṭe b-am=maye qadiše w b-i=ʕito k-royəṣ ʕal a=mhayəmne ‘der Priester nimmt am Pfinsttage grüne Baumzweige, taucht sie in heiliges Wasser und sprengt es in der Kirche auf die Gläubigen’; 12/11;"
+          },
+          {
+            "turoyo": "k-raysi-le malḥo Пример отсутствует в указанном месте",
+            "translations": [
+              "‘sie streuen Salz über ihn’"
+            ],
+            "references": [
+              "2",
+              "519",
+              "89/84"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-raysi-le malḥo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘sie streuen Salz über ihn’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "519"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "89/84"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Пример отсутствует в указанном месте"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) k-raysi-le malḥo ‘sie streuen Salz über ihn’; 519; 89/84; Пример отсутствует в указанном месте;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "2) ruṣ b-u=šuqo dinore, ayna d-mŭyad-de, u=ganowo háwo-yo 570; prs 118/13;",
+            "turoyo": "ruṣ b-u=šuqo dinore ayna d-mŭyad-de u=ganowo háwo-yo prs",
             "translations": [
               "streue Goldstücke auf die Strasse; wer nach ihnen die Hände ausstreckt, der ist der Dieb"
             ],
-            "references": ["2", "570"]
+            "references": [
+              "2",
+              "570",
+              "118/13"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ruṣ b-u=šuqo dinore"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ayna d-mŭyad-de"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=ganowo háwo-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻstreue Goldstücke auf die Strasse; wer nach ihnen die Hände ausstreckt, der ist der Diebʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "570"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "118/13"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) ruṣ b-u=šuqo dinore, ayna d-mŭyad-de, u=ganowo háwo-yo ʻstreue Goldstücke auf die Strasse; wer nach ihnen die Hände ausstreckt, der ist der Diebʼ; 570; prs 118/13;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["marəsle", "marəs"],
+      "forms": [
+        "marəsle",
+        "marəs"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "1) marə́ṣlax-le beʕe qayəm azzé mtele kibe čŭwāl d-tawno; marəsle ʕal u=məšḥo ṭawwo, mkasele mtele i=nvinayḏe d-ag=gale maḥatle ʕul mine w daməx 571; 56/137; u=aṣṣubayayḏan mawfaqle … i=tfənge, i=kalaškofe d-i=ḥkuma w marəṣle",
+            "turoyo": "marə́ṣlax-le beʕe",
             "translations": [
-              "‘du (f) hast es (das Brot, m) mit Ei bespritzt’ JL",
-              "da geht er und holt einen Sack voll Häcksel, streut ihn auf die Butter, bedeckt sie ordentlich mit der Bettmatraze und legt sich oben darauf und legt sich schlafen",
+              "‘du (f) hast es (das Brot, m) mit Ei bespritzt’"
+            ],
+            "references": [
+              "1",
+              "JL 9.10.12"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  marə́ṣlax-le beʕe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘du (f) hast es (das Brot, m) mit Ei bespritzt’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 9.10.12"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) marə́ṣlax-le beʕe ‘du (f) hast es (das Brot, m) mit Ei bespritzt’ JL 9.10.12;"
+          },
+          {
+            "turoyo": "qayəm azzé mtele kibe čŭwāl d-tawno marəsle ʕal u=məšḥo ṭawwo mkasele mtele i=nvinayḏe d-ag=gale maḥatle ʕul mine w daməx",
+            "translations": [
+              "da geht er und holt einen Sack voll Häcksel, streut ihn auf die Butter, bedeckt sie ordentlich mit der Bettmatraze und legt sich oben darauf und legt sich schlafen"
+            ],
+            "references": [
+              "2",
+              "571",
+              "56/137"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qayəm azzé mtele kibe čŭwāl d-tawno"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " marəsle ʕal u=məšḥo ṭawwo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mkasele mtele i=nvinayḏe d-ag=gale maḥatle ʕul mine w daməx "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda geht er und holt einen Sack voll Häcksel, streut ihn auf die Butter, bedeckt sie ordentlich mit der Bettmatraze und legt sich oben darauf und legt sich schlafenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "571"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/137"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "2) qayəm azzé mtele kibe čŭwāl d-tawno; marəsle ʕal u=məšḥo ṭawwo, mkasele mtele i=nvinayḏe d-ag=gale maḥatle ʕul mine w daməx ʻda geht er und holt einen Sack voll Häcksel, streut ihn auf die Butter, bedeckt sie ordentlich mit der Bettmatraze und legt sich oben darauf und legt sich schlafenʼ; 571; 56/137;"
+          },
+          {
+            "turoyo": "u=aṣṣubayayḏan mawfaqle … i=tfənge i=kalaškofe d-i=ḥkuma w marəṣle",
+            "translations": [
               "unser Unteroffizier holte sein Gewehr, seine Dienstkalaschnikof und feuerte mehrere Schüsse"
             ],
-            "references": ["1", "571; 56/137"]
+            "references": [
+              "3",
+              "LB 344"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=aṣṣubayayḏan mawfaqle … i=tfənge"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=kalaškofe d-i=ḥkuma w marəṣle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻunser Unteroffizier holte sein Gewehr, seine Dienstkalaschnikof und feuerte mehrere Schüsseʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 344"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "3) u=aṣṣubayayḏan mawfaqle … i=tfənge, i=kalaškofe d-i=ḥkuma w marəṣle ʻunser Unteroffizier holte sein Gewehr, seine Dienstkalaschnikof und feuerte mehrere Schüsseʼ LB 344;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "1) g-maydina paške d-maye w g-mariṣína-le, l-foṯe d-u=laḥmo ; 2) marisina əšmo d-ʕuro 548; 94/24; b-u=qayṭo aʕ=ʕeze lo=k-amṭən-ne l-ab=bote ko-mmaġlən-ne b-ann=arʕoṯe (…) maltmi u=sarw-aṯṯe w-disane d-u=payəz ṭəʕni-le w-mariṣi-le b-ann=arʕoṯe",
+            "turoyo": "g-maydina paške d-maye w g-mariṣína-le l-foṯe d-u=laḥmo",
             "translations": [
-              "‘wir nehmen etwas Wasser und bespritzen es (das Brot, m), die Oberfläche des Brotes’ JL",
-              "wir streuen ein wenig feinen Häcksel hin",
-              "‘In the summer time goats… people do not bring them home, (but) they let them lie in fields (…) in order to collect their manure and in autumn to take it and to spread it over the fields’ LuF 304/65;"
+              "‘wir nehmen etwas Wasser und bespritzen es (das Brot, m), die Oberfläche des Brotes’"
             ],
-            "references": ["1", "2"]
+            "references": [
+              "1",
+              "JL 9.10.12"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-maydina paške d-maye w g-mariṣína-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-foṯe d-u=laḥmo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘wir nehmen etwas Wasser und bespritzen es (das Brot, m), die Oberfläche des Brotes’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 9.10.12"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) g-maydina paške d-maye w g-mariṣína-le, l-foṯe d-u=laḥmo ‘wir nehmen etwas Wasser und bespritzen es (das Brot, m), die Oberfläche des Brotes’ JL 9.10.12;"
           },
           {
-            "turoyo": "3) a=tfəngat m-i=arʕo m-i=šmayo ko-marisi aʕlayye 546; 71/23; w-bdalle i=ʕaskar ko-mariṣi m-u=darbo d-u=ṭrəmbēl hul l-u=qărăqōl w-ko-marṣi",
+            "turoyo": "marisina əšmo d-ʕuro b-u=qayṭo aʕ=ʕeze lo=k-amṭən-ne l-ab=bote ko-mmaġlən-ne b-ann=arʕoṯe … maltmi u=sarw-aṯṯe w-disane d-u=payəz ṭəʕni-le w-mariṣi-le b-ann=arʕoṯe",
+            "translations": [
+              "wir streuen ein wenig feinen Häcksel hin",
+              "‘In the summer time goats… people do not bring them home, (but) they let them lie in fields (…) in order to collect their manure and in autumn to take it and to spread it over the fields’"
+            ],
+            "references": [
+              "2",
+              "548",
+              "94/24",
+              "LuF 304/65"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " marisina əšmo d-ʕuro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir streuen ein wenig feinen Häcksel hinʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "548"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/24"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-u=qayṭo aʕ=ʕeze lo=k-amṭən-ne l-ab=bote ko-mmaġlən-ne b-ann=arʕoṯe "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maltmi u=sarw-aṯṯe w-disane d-u=payəz ṭəʕni-le w-mariṣi-le b-ann=arʕoṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘In the summer time goats… people do not bring them home, (but) they let them lie in fields (…) in order to collect their manure and in autumn to take it and to spread it over the fields’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LuF 304/65"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) marisina əšmo d-ʕuro ʻwir streuen ein wenig feinen Häcksel hinʼ; 548; 94/24; b-u=qayṭo aʕ=ʕeze lo=k-amṭən-ne l-ab=bote ko-mmaġlən-ne b-ann=arʕoṯe (…) maltmi u=sarw-aṯṯe w-disane d-u=payəz ṭəʕni-le w-mariṣi-le b-ann=arʕoṯe ‘In the summer time goats… people do not bring them home, (but) they let them lie in fields (…) in order to collect their manure and in autumn to take it and to spread it over the fields’ LuF 304/65;"
+          },
+          {
+            "turoyo": "a=tfəngat m-i=arʕo m-i=šmayo ko-marisi aʕlayye w-bdalle i=ʕaskar ko-mariṣi m-u=darbo d-u=ṭrəmbēl hul l-u=qărăqōl w-ko-marṣi",
             "translations": [
               "von der Erde und vom Himmel überschüttet man sie mit einem Gewehrhagel",
-              "‘Soldiers began firing shots (in the air), (while we were moving) from the highway all the way down to the gendarme station’ LB 345;"
+              "‘Soldiers began firing shots (in the air), (while we were moving) from the highway all the way down to the gendarme station’"
             ],
-            "references": ["3", "546; 71/23"]
+            "references": [
+              "3",
+              "546",
+              "71/23",
+              "LB 345"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " a=tfəngat m-i=arʕo m-i=šmayo ko-marisi aʕlayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻvon der Erde und vom Himmel überschüttet man sie mit einem Gewehrhagelʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "546"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "71/23"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-bdalle i=ʕaskar ko-mariṣi m-u=darbo d-u=ṭrəmbēl hul l-u=qărăqōl w-ko-marṣi "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Soldiers began firing shots (in the air), (while we were moving) from the highway all the way down to the gendarme station’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 345"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "3) a=tfəngat m-i=arʕo m-i=šmayo ko-marisi aʕlayye ʻvon der Erde und vom Himmel überschüttet man sie mit einem Gewehrhagelʼ; 546; 71/23; w-bdalle i=ʕaskar ko-mariṣi m-u=darbo d-u=ṭrəmbēl hul l-u=qărăqōl w-ko-marṣi ‘Soldiers began firing shots (in the air), (while we were moving) from the highway all the way down to the gendarme station’ LB 345;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "ryṣ → rys"
   ],
   "uncertain": false
 }

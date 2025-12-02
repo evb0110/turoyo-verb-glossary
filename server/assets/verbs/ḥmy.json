@@ -14,34 +14,236 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mḥamele", "mḥame"],
+      "forms": [
+        "mḥamele",
+        "mḥame"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mḥamele u=ahlayḏe m- 414;",
-            "translations": [],
-            "references": ["414"]
+            "turoyo": "mḥamele u=ahlayḏe m-",
+            "translations": [
+              "er schützte seine Familie vor"
+            ],
+            "references": [
+              "414"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mḥamele u=ahlayḏe m- "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer schützte seine Familie vorʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "414"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mḥamele u=ahlayḏe m- ʻer schützte seine Familie vorʼ; 414;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "lo=kə-mḥametumedemeni 419; hakka, aynad-ḥoḏ̣ərtamo, w də-mḥame u=saxlayḏa m-u=dew-awo d-qoṭe-le, u=məradayḏegəd-saymo-le 419; 67/221; ḥaminanšoyaʕ-wa feme d-u=hno d-u=naqwo d-ad=debure, w-ann=arbʕoḥrene, zəbṭi-waqayse, kətteappeṭarfe, daqanadə-mḥamənhawo d-kət-yoyatiwo, ʕal ad=debure",
+            "turoyo": "lo=kə-mḥame tu mede meni hakka ayna d-ḥoḏ̣ər tamo w də-mḥame u=saxlayḏa m-u=dew-awo d-qoṭe-le u=məradayḏe gəd-saymo-le ḥa minan šoyaʕ-wa feme d-u=hno d-u=naqwo d-ad=debure w-ann=arbʕo ḥrene zəbṭi-wa qayse kətte appe ṭarfe daqana də-mḥamən hawo d-kət-yo yatiwo ʕal ad=debure -",
             "translations": [
-              "und das Fohlen",
-              "der Wolf es",
-              "tun, was er",
-              "‘One of us would seal the entrance of the beehive, and the four other would take branches with leaves on them, so that they could protect the one, who was sitting (near the beehive), from the bees’ 72/3-4;"
+              "er enthält mir nichts vor",
+              "wenn einer dort zugegen ist und das Fohlen davor stürzt, dass der Wolf es tötet, so wird sie alles tun, was er wünscht",
+              "‘One of us would seal the entrance of the beehive, and the four other would take branches with leaves on them, so that they could protect the one, who was sitting (near the beehive), from the bees’"
             ],
-            "references": ["419", "419; 67/221"]
+            "references": [
+              "419",
+              "419",
+              "67/221",
+              "72/3",
+              "4"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lo=kə-mḥame tu mede meni "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer enthält mir nichts vorʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "419"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hakka"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ayna d-ḥoḏ̣ər tamo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w də-mḥame u=saxlayḏa m-u=dew-awo d-qoṭe-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=məradayḏe gəd-saymo-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn einer dort zugegen ist und das Fohlen davor stürzt, dass der Wolf es tötet, so wird sie alles tun, was er wünschtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "419"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "67/221"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥa minan šoyaʕ-wa feme d-u=hno d-u=naqwo d-ad=debure"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-ann=arbʕo ḥrene"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " zəbṭi-wa qayse"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kətte appe ṭarfe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " daqana də-mḥamən hawo d-kət-yo yatiwo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕal ad=debure "
+              },
+              {
+                "kind": "translation",
+                "value": "‘One of us would seal the entrance of the beehive, and the four other would take branches with leaves on them, so that they could protect the one, who was sitting (near the beehive), from the bees’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "72/3"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lo=kə-mḥame tu mede meni ʻer enthält mir nichts vorʼ; 419; hakka, ayna d-ḥoḏ̣ər tamo, w də-mḥame u=saxlayḏa m-u=dew-awo d-qoṭe-le, u=məradayḏe gəd-saymo-le ʻwenn einer dort zugegen ist und das Fohlen davor stürzt, dass der Wolf es tötet, so wird sie alles tun, was er wünschtʼ; 419; 67/221; ḥa minan šoyaʕ-wa feme d-u=hno d-u=naqwo d-ad=debure, w-ann=arbʕo ḥrene, zəbṭi-wa qayse, kətte appe ṭarfe, daqana də-mḥamən hawo d-kət-yo yatiwo, ʕal ad=debure ‘One of us would seal the entrance of the beehive, and the four other would take branches with leaves on them, so that they could protect the one, who was sitting (near the beehive), from the bees’ 72/3-4;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["maḥmele", "maḥme"],
+      "forms": [
+        "maḥmele",
+        "maḥme"
+      ],
       "conjugations": {}
     }
+  ],
+  "idioms": [
+    "schützen, verteidigen, enthalten;",
+    "schützen, verteidigen;",
+    "History of Bsorino ln. 1: Yani dukṯo ḥa dmaḥme ruḥe, d̥ṣotar bdukṯo ‘Like, a place where someone defends himself, where one finds shelter’."
   ],
   "uncertain": false
 }

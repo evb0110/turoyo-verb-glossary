@@ -14,17 +14,105 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mhandasle", "mhandəs"],
+      "forms": [
+        "mhandasle",
+        "mhandəs"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Part. Pass.": [
           {
-            "turoyo": "kət-le aṯto, mənaṯto? šafərmenalayto; w kət-la dahwo m-arkehul l-arke, lwəšto, mhandasto 778; 89/51;",
-            "translations": ["Frau, was für", "aufgeputzt"],
-            "references": ["778; 89/51"]
+            "turoyo": "kət-le aṯto mən aṯto? šafər mena layto w kət-la dahwo m-arke hul l-arke lwəšto mhandasto",
+            "translations": [
+              "er hatte eine Frau, was für eine Frau! Es gibt keine schönere, und sie hat von hier bis hier goldenen Schmuck an sich und ist fein angezogen und aufgeputzt"
+            ],
+            "references": [
+              "778",
+              "89/51"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kət-le aṯto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mən aṯto? šafər mena layto"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w kət-la dahwo m-arke hul l-arke"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lwəšto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mhandasto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hatte eine Frau, was für eine Frau! Es gibt keine schönere, und sie hat von hier bis hier goldenen Schmuck an sich und ist fein angezogen und aufgeputztʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "778"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "89/51"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kət-le aṯto, mən aṯto? šafər mena layto; w kət-la dahwo m-arke hul l-arke, lwəšto, mhandasto ʻer hatte eine Frau, was für eine Frau! Es gibt keine schönere, und sie hat von hier bis hier goldenen Schmuck an sich und ist fein angezogen und aufgeputztʼ; 778; 89/51;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "zurechtmachen, herausputzen, den Platz (zum Bauen) bereiten, passend finden;"
   ],
   "uncertain": false
 }

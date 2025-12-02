@@ -14,17 +14,139 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mpatpatle", "mpatpət"],
+      "forms": [
+        "mpatpatle",
+        "mpatpət"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "2) i=šeno ko-mipatpto; 801;",
-            "translations": [],
-            "references": ["2", "801"]
+            "turoyo": "u=šēx-ano lalyo imomo gə-mpatpət b-qarʕe d-u=malko w ko-mfasəd ʕal u=qaš-ano laḥatta mahlak-le -",
+            "translations": [
+              "der Scheich lag Tag und Nacht dem König in den Ohren und verleumdete den Pfarrer, um ihn ins Verderben zu stürzen"
+            ],
+            "references": [
+              "1",
+              "800",
+              "801",
+              "84/5"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=šēx-ano lalyo imomo gə-mpatpət b-qarʕe d-u=malko"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ko-mfasəd ʕal u=qaš-ano laḥatta mahlak-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Scheich lag Tag und Nacht dem König in den Ohren und verleumdete den Pfarrer, um ihn ins Verderben zu stürzenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "800"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "801"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "84/5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) u=šēx-ano lalyo imomo gə-mpatpət b-qarʕe d-u=malko, w ko-mfasəd ʕal u=qaš-ano laḥatta mahlak-le ʻder Scheich lag Tag und Nacht dem König in den Ohren und verleumdete den Pfarrer, um ihn ins Verderben zu stürzenʼ; 800-801; 84/5;"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "i=šeno ko-mipatpto",
+            "translations": [],
+            "references": [
+              "2",
+              "801"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=šeno ko-mipatpto"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "801"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) i=šeno ko-mipatpto; 801;"
+          }
+        ]
+      },
+      "_awaiting_forms": true
     }
   ],
+  "idioms": null,
   "uncertain": false
 }

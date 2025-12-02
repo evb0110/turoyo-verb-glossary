@@ -5,17 +5,67 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mǧarǧafle", "mǧarǧəf"],
+      "forms": [
+        "mǧarǧafle",
+        "mǧarǧəf"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mǧarǧafli ruḥi ʕal u=talgo 771; 91/29;",
-            "translations": ["ich kroch bäuchlings auf dem Schnee entlang"],
-            "references": ["771; 91/29"]
+            "turoyo": "mǧarǧafli ruḥi ʕal u=talgo",
+            "translations": [
+              "ich kroch bäuchlings auf dem Schnee entlang"
+            ],
+            "references": [
+              "771",
+              "91/29"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mǧarǧafli ruḥi ʕal u=talgo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich kroch bäuchlings auf dem Schnee entlangʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "771"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "91/29"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mǧarǧafli ruḥi ʕal u=talgo ʻich kroch bäuchlings auf dem Schnee entlangʼ; 771; 91/29;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "auf den Boden schleifen lassen, schieben;"
   ],
   "uncertain": false
 }

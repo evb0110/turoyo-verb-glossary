@@ -14,21 +14,93 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["hrəgle", "horəg"],
+      "forms": [
+        "hrəgle",
+        "horəg"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "gd-oṯe w gəd-horəg b-ad=darzat-ayḏe w-ko-qore 98; 60/146; b-ay=yawm-ani ko-hərgutu b-u=lešonoṭuroyo aw lo? ūrōyō 15/9;",
+            "turoyo": "gd-oṯe w gəd-horəg b-ad=darzat-ayḏe w-ko-qore b-ay=yawm-ani ko-hərgutu b-u=lešono ṭuroyo aw lo?",
             "translations": [
-              "ging (in sein Zimmer",
-              "Schulaufgaben",
-              "Tagen an der"
+              "er ging (in sein Zimmer zurück), versenkte sich in seine Schulaufgaben und las",
+              "arbeitet ihr in diesen Tagen an der Ṭūrōyō-Sprache oder nicht?"
             ],
-            "references": ["98; 60/146", "15/9"]
+            "references": [
+              "98",
+              "60/146",
+              "15/9"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gd-oṯe w gəd-horəg b-ad=darzat-ayḏe w-ko-qore "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer ging (in sein Zimmer zurück), versenkte sich in seine Schulaufgaben und lasʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "98"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "60/146"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-ay=yawm-ani ko-hərgutu b-u=lešono ṭuroyo aw lo? "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻarbeitet ihr in diesen Tagen an der Ṭūrōyō-Sprache oder nicht?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "15/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "gd-oṯe w gəd-horəg b-ad=darzat-ayḏe w-ko-qore ʻer ging (in sein Zimmer zurück), versenkte sich in seine Schulaufgaben und lasʼ; 98; 60/146; b-ay=yawm-ani ko-hərgutu b-u=lešono ṭuroyo aw lo? ʻarbeitet ihr in diesen Tagen an der Ṭūrōyō-Sprache oder nicht?ʼ; 15/9;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "sich hingeben, sich vertiefen; (скорее всего об интеллектуальной деятельности, глосса скорее контекстуальная, нужно потом поправить);"
   ],
   "uncertain": false
 }

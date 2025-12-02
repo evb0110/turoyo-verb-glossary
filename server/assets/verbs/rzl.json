@@ -14,19 +14,96 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["mtarzəl", "mitarzəl"],
+      "forms": [
+        "mtarzəl",
+        "mitarzəl"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "hawən aǧ=ǧulayḏe qṭiʕi, w marzəl, w xəlle l-aq=qalme, w hawi ġắlabe parišān m-u=ḥāl diḏe 306; 113/22;",
+            "turoyo": "hawən aǧ=ǧulayḏe qṭiʕi w marzəl w xəlle l-aq=qalme w hawi ġắlabe parišān m-u=ḥāl diḏe",
             "translations": [
               "seine Kleider wurde zerrissen und er wurde sehr elend, die Läusse frassen ihn auf, und er kam in einen sehr jämmerlichen Zustand"
             ],
-            "references": ["306; 113/22"]
+            "references": [
+              "306",
+              "113/22"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hawən aǧ=ǧulayḏe qṭiʕi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w marzəl"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w xəlle l-aq=qalme"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w hawi ġắlabe parišān m-u=ḥāl diḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻseine Kleider wurde zerrissen und er wurde sehr elend, die Läusse frassen ihn auf, und er kam in einen sehr jämmerlichen Zustandʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "306"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "113/22"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hawən aǧ=ǧulayḏe qṭiʕi, w marzəl, w xəlle l-aq=qalme, w hawi ġắlabe parišān m-u=ḥāl diḏe ʻseine Kleider wurde zerrissen und er wurde sehr elend, die Läusse frassen ihn auf, und er kam in einen sehr jämmerlichen Zustandʼ; 306; 113/22;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(Detrans.) in Elend und Schande geraten;"
   ],
   "uncertain": false
 }

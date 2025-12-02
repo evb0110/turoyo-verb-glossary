@@ -5,17 +5,60 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mpačpəč", "mipačpəč"],
+      "forms": [
+        "mpačpəč",
+        "mipačpəč"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "u=layš-ano mpačpəč 800;",
-            "translations": ["dieser Teig ist sauer geworden"],
-            "references": ["800"]
+            "turoyo": "u=layš-ano mpačpəč",
+            "translations": [
+              "dieser Teig ist sauer geworden"
+            ],
+            "references": [
+              "800"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=layš-ano mpačpəč "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdieser Teig ist sauer gewordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "800"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=layš-ano mpačpəč ʻdieser Teig ist sauer gewordenʼ; 800;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) sauer, ungeniessbar werden (Teig);"
   ],
   "uncertain": false
 }

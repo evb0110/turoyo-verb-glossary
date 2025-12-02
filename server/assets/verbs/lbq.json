@@ -14,19 +14,54 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mlabaqle", "mlabəq"],
+      "forms": [
+        "mlabaqle",
+        "mlabəq"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mlabaqli u=kṯow-ano bə-ḥḏoḏe 162;",
+            "turoyo": "mlabaqli u=kṯow-ano bə-ḥḏoḏe",
             "translations": [
               "ich habe das Buch einigermassen zusammengeflickt"
             ],
-            "references": ["162"]
+            "references": [
+              "162"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mlabaqli u=kṯow-ano bə-ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe das Buch einigermassen zusammengeflicktʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "162"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mlabaqli u=kṯow-ano bə-ḥḏoḏe ʻich habe das Buch einigermassen zusammengeflicktʼ; 162;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "flicken;"
   ],
   "uncertain": false
 }

@@ -5,26 +5,99 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mbarbaʕle", "mbarbəʕ"],
+      "forms": [
+        "mbarbaʕle",
+        "mbarbəʕ"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "l-u=kalbo mbarbaʕle u=zʕuro 770;",
+            "turoyo": "l-u=kalbo mbarbaʕle u=zʕuro",
             "translations": [
-              "ʻder Hund bellte den Jungen an, machte ihn Angstʼ;"
+              "der Hund bellte den Jungen an, machte ihn Angst"
             ],
-            "references": ["770"]
-          }
-        ],
-        "Infectum": [
-          {
-            "turoyo": "ko-mibarbəʕ 770;",
-            "translations": ["ʻer spricht mit bellender Stimmeʼ;"],
-            "references": ["770"]
+            "references": [
+              "770"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-u=kalbo mbarbaʕle u=zʕuro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Hund bellte den Jungen an, machte ihn Angstʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "770"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "l-u=kalbo mbarbaʕle u=zʕuro ʻder Hund bellte den Jungen an, machte ihn Angstʼ; 770;"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "ko-mibarbəʕ",
+            "translations": [
+              "er spricht mit bellender Stimme"
+            ],
+            "references": [
+              "770"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mibarbəʕ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer spricht mit bellender Stimmeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "770"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-mibarbəʕ ʻer spricht mit bellender Stimmeʼ; 770;"
+          }
+        ]
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "anbellen und Angst machen;"
   ],
   "uncertain": false
 }

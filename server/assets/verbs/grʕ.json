@@ -14,19 +14,75 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mgaraʕle", "mgarəʕ"],
+      "forms": [
+        "mgaraʕle",
+        "mgarəʕ"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "hiya qayimo mzalṭəno u=garmo, u=zaluṭo d-obó-la-yo mgarʕo ebe 165; 58/207;",
+            "turoyo": "hiya qayimo mzalṭəno u=garmo u=zaluṭo d-obó-la-yo mgarʕo ebe",
             "translations": [
               "sie hat den Knochen blossgeschält und ihr den blanken Knochen zum Knabbern gegeben"
             ],
-            "references": ["165; 58/207"]
+            "references": [
+              "165",
+              "58/207"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hiya qayimo mzalṭəno u=garmo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=zaluṭo d-obó-la-yo mgarʕo ebe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie hat den Knochen blossgeschält und ihr den blanken Knochen zum Knabbern gegebenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "165"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "58/207"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hiya qayimo mzalṭəno u=garmo, u=zaluṭo d-obó-la-yo mgarʕo ebe ʻsie hat den Knochen blossgeschält und ihr den blanken Knochen zum Knabbern gegebenʼ; 165; 58/207;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "nagen, knappern;"
   ],
   "uncertain": false
 }

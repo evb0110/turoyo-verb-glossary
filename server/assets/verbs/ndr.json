@@ -12,33 +12,263 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["mandalle", "mandər"],
+      "forms": [
+        "mandalle",
+        "mandər"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mandalle i=goro 260;",
-            "translations": ["er walzte das Dach"],
-            "references": ["260"]
+            "turoyo": "mandalle i=goro",
+            "translations": [
+              "er walzte das Dach"
+            ],
+            "references": [
+              "260"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mandalle i=goro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer walzte das Dachʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "260"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mandalle i=goro ʻer walzte das Dachʼ; 260;"
           }
         ],
         "Infectum and Infectum-wa": [
           {
-            "turoyo": "ašər mədli l-i=mandruniye, k-obaʕno mandanno əšmo i=goro 260; 75/142;",
+            "turoyo": "ašər mədli l-i=mandruniye k-obaʕno mandanno əšmo i=goro",
             "translations": [
               "ach, ich habe die Dachwalze genommen und wollte ein bisschen das Dach walzen"
             ],
-            "references": ["260; 75/142"]
+            "references": [
+              "260",
+              "75/142"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ašər mədli l-i=mandruniye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-obaʕno mandanno əšmo i=goro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻach, ich habe die Dachwalze genommen und wollte ein bisschen das Dach walzenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "260"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/142"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ašər mədli l-i=mandruniye, k-obaʕno mandanno əšmo i=goro ʻach, ich habe die Dachwalze genommen und wollte ein bisschen das Dach walzenʼ; 260; 75/142;"
           },
           {
-            "turoyo": "42. Ánnaqqa áydarbo ktowe? Azzə́n li+qamaytayḏe, mxamalle manduriye (manduriye, kefo, ha hawxa, ha hawxa ḥləmto, ha hawxa mandrí<w>ayna meqəm ann+igore. Naqqa dlatwa čimanto mandríwayna ann+igore eba).",
-            "translations": [
-              "Now then, how does it go? They went to meet him, they dressed up a roller (a roller, a stone, like so, so thick, formerly we used to flatten roofs this way. When there was no cement we used to flatten roofs with it). – Story of Joseph"
+            "turoyo": ". Ánnaqqa áydarbo ktowe? Azzə́n li+qamaytayḏe mxamalle manduriye manduriye kefo ha hawxa ha hawxa ḥləmto ha hawxa mandrí<w>ayna meqəm ann+igore. Naqqa dlatwa čimanto mandríwayna ann+igore eba.",
+            "translations": [],
+            "references": [
+              "42"
             ],
-            "references": ["42"]
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "42"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". Ánnaqqa áydarbo ktowe? Azzə́n li+qamaytayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mxamalle manduriye "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "manduriye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kefo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ha hawxa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ha hawxa ḥləmto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ha hawxa mandrí<w>ayna meqəm ann+igore. Naqqa dlatwa čimanto mandríwayna ann+igore eba"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": "."
+              }
+            ],
+            "text": "42. Ánnaqqa áydarbo ktowe? Azzə́n li+qamaytayḏe, mxamalle manduriye (manduriye, kefo, ha hawxa, ha hawxa ḥləmto, ha hawxa mandrí<w>ayna meqəm ann+igore. Naqqa dlatwa čimanto mandríwayna ann+igore eba)."
+          },
+          {
+            "turoyo": "Now then how does it go? They went to meet him they dressed up a roller a roller a stone like so so thick formerly we used to flatten roofs this way. When there was no cement we used to flatten roofs with it. – Story of Joseph",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Now then"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " how does it go? They went to meet him"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " they dressed up a roller "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "a roller"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " a stone"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " like so"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " so thick"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " formerly we used to flatten roofs this way. When there was no cement we used to flatten roofs with it"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". – Story of Joseph"
+              }
+            ],
+            "text": "Now then, how does it go? They went to meet him, they dressed up a roller (a roller, a stone, like so, so thick, formerly we used to flatten roofs this way. When there was no cement we used to flatten roofs with it). – Story of Joseph"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "walzen (Dach);"
   ],
   "uncertain": false
 }

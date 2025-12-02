@@ -14,17 +14,118 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["šḥīṭ", "məšḥəṭ"],
+      "forms": [
+        "šḥīṭ",
+        "məšḥəṭ"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "1) šḥīṭ u=ṣafuro 230; 2) šḥəṭno 231;",
-            "translations": ["Ziegenlamm"],
-            "references": ["1", "230; 2"]
+            "turoyo": "šḥīṭ u=ṣafuro",
+            "translations": [
+              "das Ziegenlamm blieb klein"
+            ],
+            "references": [
+              "1",
+              "230"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " šḥīṭ u=ṣafuro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Ziegenlamm blieb kleinʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "230"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) šḥīṭ u=ṣafuro ʻdas Ziegenlamm blieb kleinʼ; 230;"
+          },
+          {
+            "turoyo": "šḥəṭno",
+            "translations": [
+              "ich leide Durst, habe keine Kraft von Durst"
+            ],
+            "references": [
+              "2",
+              "231"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " šḥəṭno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich leide Durst, habe keine Kraft von Durstʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "231"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) šḥəṭno ʻich leide Durst, habe keine Kraft von Durstʼ; 231;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) 1) klein bleiben (Ziegenlamm, das zu wenig Milch bekommen hat); (Detrans.) 2) unter Durst leiden; (Detrans.) 3) sich ein unbedachtes Wort entfahren lassen, sich verplappern;"
   ],
   "uncertain": false
 }

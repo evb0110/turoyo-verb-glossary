@@ -14,17 +14,54 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mčamatle", "mčamət"],
+      "forms": [
+        "mčamatle",
+        "mčamət"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mčamatte 161;",
-            "translations": ["ʻsie zementiertenʼ;"],
-            "references": ["161"]
+            "turoyo": "mčamatte",
+            "translations": [
+              "sie zementierten"
+            ],
+            "references": [
+              "161"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mčamatte "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie zementiertenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "161"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mčamatte ʻsie zementiertenʼ; 161;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "zementieren;"
   ],
   "uncertain": false
 }

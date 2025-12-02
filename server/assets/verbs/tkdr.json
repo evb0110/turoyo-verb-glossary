@@ -14,17 +14,54 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mətkadalle", "mətkadər"],
+      "forms": [
+        "mətkadalle",
+        "mətkadər"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "lo=lazəmmətkadrət 805;",
-            "translations": [],
-            "references": ["805"]
+            "turoyo": "lo=lazəm mətkadrət",
+            "translations": [
+              "du brauchst dich nicht zu betrüben"
+            ],
+            "references": [
+              "805"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lo=lazəm mətkadrət "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu brauchst dich nicht zu betrübenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "805"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lo=lazəm mətkadrət ʻdu brauchst dich nicht zu betrübenʼ; 805;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "sich betrüben;"
   ],
   "uncertain": false
 }

@@ -14,28 +14,133 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mčanqele", "mčanqəl"],
+      "forms": [
+        "mčanqele",
+        "mčanqəl"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mčanqe-le u=tarʕo baroyo w daməx 772; 56/138;",
+            "turoyo": "mčanqe-le u=tarʕo baroyo w daməx",
             "translations": [
-              "ʻdie Aussentür hakt er ein und legt sich schlafenʼ;"
+              "die Aussentür hakt er ein und legt sich schlafen"
             ],
-            "references": ["772; 56/138"]
-          }
-        ],
-        "Part. Pass.": [
-          {
-            "turoyo": "ʕaṣriye aṯyo i=aṯto, k-məḥyo ʕal u=tarʕo u=tarʕo mčánqlo-yo 772; 56/139;",
-            "translations": [
-              "ʻam Abend kommt die Frau und klopft an die Türe. Sie ist eingehacktʼ;"
+            "references": [
+              "772",
+              "56/138"
             ],
-            "references": ["772; 56/139"]
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mčanqe-le u=tarʕo baroyo w daməx "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Aussentür hakt er ein und legt sich schlafenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "772"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/138"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mčanqe-le u=tarʕo baroyo w daməx ʻdie Aussentür hakt er ein und legt sich schlafenʼ; 772; 56/138;"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Part. Pass.": [
+          {
+            "turoyo": "ʕaṣriye aṯyo i=aṯto k-məḥyo ʕal u=tarʕo u=tarʕo mčánqlo-yo",
+            "translations": [
+              "am Abend kommt die Frau und klopft an die Türe. Sie ist eingehackt"
+            ],
+            "references": [
+              "772",
+              "56/139"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕaṣriye aṯyo i=aṯto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-məḥyo ʕal u=tarʕo u=tarʕo mčánqlo-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻam Abend kommt die Frau und klopft an die Türe. Sie ist eingehacktʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "772"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/139"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ʕaṣriye aṯyo i=aṯto, k-məḥyo ʕal u=tarʕo u=tarʕo mčánqlo-yo ʻam Abend kommt die Frau und klopft an die Türe. Sie ist eingehacktʼ; 772; 56/139;"
+          }
+        ]
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "einhaken, mit dem Haken schliessen;"
   ],
   "uncertain": false
 }

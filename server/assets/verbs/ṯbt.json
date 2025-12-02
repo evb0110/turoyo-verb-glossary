@@ -14,56 +14,433 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mṯabatle", "mṯabət"],
+      "forms": [
+        "mṯabatle",
+        "mṯabət"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "huldə-mṯabatlimenei=ḥəkkoye, mqarəmlišoni b-u=mamro 162; 11/264; XoriNomānmǝ́lle-lanḥəkkoye tarte, w mṯabtili b-i=makina d-u=šqolo d-u=ḥəs 11/149;",
+            "turoyo": "hul də-mṯabatli mene i=ḥəkkoye mqarəm lišoni b-u=mamro Xori Nomān mǝ́lle-lan ḥəkkoye tarte w mṯabtili b-i=makina d-u=šqolo d-u=ḥəs",
             "translations": [
-              "Geschichte",
-              "aufgenommen",
-              "ich mir den Mund",
-              "Chorbischof",
-              "Geschichten",
-              "Tonaufnahmegerät"
+              "bis ich von ihm die Geschichte aufgenommen hatte, hatte ich mir den Mund fusselig geredet",
+              "Chorbischof No‘man erzählte uns eine oder zwei Geschichten, und ich fixierte sie auf dem Tonaufnahmegerät"
             ],
-            "references": ["162; 11/264", "11/149"]
+            "references": [
+              "162",
+              "11/264",
+              "11/149"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hul də-mṯabatli mene i=ḥəkkoye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mqarəm lišoni b-u=mamro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻbis ich von ihm die Geschichte aufgenommen hatte, hatte ich mir den Mund fusselig geredetʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "162"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/264"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Xori Nomān mǝ́lle-lan ḥəkkoye tarte"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mṯabtili b-i=makina d-u=šqolo d-u=ḥəs "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻChorbischof No‘man erzählte uns eine oder zwei Geschichten, und ich fixierte sie auf dem Tonaufnahmegerätʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/149"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hul də-mṯabatli mene i=ḥəkkoye, mqarəm lišoni b-u=mamro ʻbis ich von ihm die Geschichte aufgenommen hatte, hatte ich mir den Mund fusselig geredetʼ; 162; 11/264; Xori Nomān mǝ́lle-lan ḥəkkoye tarte, w mṯabtili b-i=makina d-u=šqolo d-u=ḥəs ʻChorbischof No‘man erzählte uns eine oder zwei Geschichten, und ich fixierte sie auf dem Tonaufnahmegerätʼ; 11/149;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "iḏakānḥagnule me-ḥa, w u=ganowomsīkmede mine, g-miṯabtoaʕle, w gə-msalmina u=ganowo l-u=zlām, u=mede d-obəʕ, k-soyəmebe 83/49;",
-            "translations": ["betreffenden"],
-            "references": ["83/49"]
+            "turoyo": "w b-i=ḥarayto-ste u=tarīx ko-mṯabat-te komər u=med-ano d-k-əmmət-li lat-yo lat-yo hno. komər ono g-maṯbatn-ux ṣafro g-əzzano ḥəfrina u=qawro ‘He emir m. said – He replied",
+            "translations": [
+              "und schliesslich wird das von der Geschichte bestätigt",
+              "The thing that you are telling me is not true",
+              "I will show you. Tomorrow morning we shall go and dig (the grave)"
+            ],
+            "references": [
+              "167",
+              "68/36",
+              "74/150"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "w b-i=ḥarayto-ste u=tarīx ko-mṯabat-te "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻund schliesslich wird das von der Geschichte bestätigtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "167"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "68/36"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " komər u=med-ano d-k-əmmət-li lat-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lat-yo hno. komər ono g-maṯbatn-ux ṣafro g-əzzano"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥəfrina u=qawro "
+              },
+              {
+                "kind": "turoyo",
+                "value": "‘"
+              },
+              {
+                "kind": "turoyo",
+                "value": "He "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "emir"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " m."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " said"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“The thing that you are telling me is not true”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " – He replied"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“I will show you. Tomorrow morning we shall go and dig (the grave)”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "74/150"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "w b-i=ḥarayto-ste u=tarīx ko-mṯabat-te ʻund schliesslich wird das von der Geschichte bestätigtʼ; 167; 68/36; komər u=med-ano d-k-əmmət-li lat-yo, lat-yo hno. komər ono g-maṯbatn-ux ṣafro g-əzzano, ḥəfrina u=qawro ‘He (emir, m.) said: “The thing that you are telling me is not true” – He replied: “I will show you. Tomorrow morning we shall go and dig (the grave)” 74/150;"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "ʕam u=šqolo d-u=ḥəsmṯabátno-wo qole, w zmiryoṯo-ste-ne 11/187; i=naqla d-ʔu=mgalyūndə-mṯabát-way-le, ahla w sahla, ʕalʕayni LB 95;",
+            "turoyo": "ʕam u=šqolo d-u=ḥəs mṯabátno-wo qole w zmiryoṯo-ste-ne",
             "translations": [
-              "Geschichten",
-              "hochsyrische",
-              "und Lieder’;",
-              "(den Koran)"
+              "neben dem Aufnehmen (von Geschichten) fixierte ich auch hochsyrische Gesänge und Lieder’; 11/187; i=naqla d-ʔu=mgalyūn də-mṯabát-way-le, ahla w sahla, ʕal ʕayni ʻwenn die Bibel ihn (den Koran) erwähnen würde, hätte ich gerne daran geglaubt"
             ],
-            "references": ["11/187", "95"]
+            "references": [
+              "LB 95"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕam u=šqolo d-u=ḥəs mṯabátno-wo qole"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w zmiryoṯo-ste-ne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻneben dem Aufnehmen (von Geschichten) fixierte ich auch hochsyrische Gesänge und Lieder’; 11/187; i=naqla d-ʔu=mgalyūn də-mṯabát-way-le, ahla w sahla, ʕal ʕayni ʻwenn die Bibel ihn (den Koran) erwähnen würde, hätte ich gerne daran geglaubtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 95"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ʕam u=šqolo d-u=ḥəs mṯabátno-wo qole, w zmiryoṯo-ste-ne ʻneben dem Aufnehmen (von Geschichten) fixierte ich auch hochsyrische Gesänge und Lieder’; 11/187; i=naqla d-ʔu=mgalyūn də-mṯabát-way-le, ahla w sahla, ʕal ʕayni ʻwenn die Bibel ihn (den Koran) erwähnen würde, hätte ich gerne daran geglaubtʼ; LB 95;"
           }
         ]
       }
     },
     {
-      "stem": "III",
-      "forms": ["maṯbatle", "maṯbət"],
+      "stem": "Detransitive",
+      "forms": [
+        "III: maṯbatle",
+        "maṯbət"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ono g-maṯbatn-ux. ṣafro g-əzzano, ḥofrina u=qawro 74/150;",
-            "translations": ["und das Grab"],
-            "references": ["74/150"]
+            "turoyo": "iḏa kān ḥa gnule me-ḥa w u=ganowo msīk mede mine g-miṯabto aʕle w gə-msalmina u=ganowo l-u=zlām u=mede d-obəʕ k-soyəm ebe",
+            "translations": [
+              "wenn einer von einem anderen etwas gestohlen hat und irgend etwas von dem Diebe gefasst wird, dann wird dadurch (der Diebstahl) bewiesen, und wir liefern den Dieb dem betreffenden Manne aus; und er kann dann mit ihm machen, was er will"
+            ],
+            "references": [
+              "83/49"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "iḏa kān ḥa gnule me-ḥa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w u=ganowo msīk mede mine"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-miṯabto aʕle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w gə-msalmina u=ganowo l-u=zlām"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=mede d-obəʕ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-soyəm ebe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn einer von einem anderen etwas gestohlen hat und irgend etwas von dem Diebe gefasst wird, dann wird dadurch (der Diebstahl) bewiesen, und wir liefern den Dieb dem betreffenden Manne aus; und er kann dann mit ihm machen, was er willʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "83/49"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "iḏa kān ḥa gnule me-ḥa, w u=ganowo msīk mede mine, g-miṯabto aʕle, w gə-msalmina u=ganowo l-u=zlām, u=mede d-obəʕ, k-soyəm ebe ʻwenn einer von einem anderen etwas gestohlen hat und irgend etwas von dem Diebe gefasst wird, dann wird dadurch (der Diebstahl) bewiesen, und wir liefern den Dieb dem betreffenden Manne aus; und er kann dann mit ihm machen, was er willʼ; 83/49;"
+          },
+          {
+            "turoyo": "ono g-maṯbatn-ux. ṣafro g-əzzano ḥofrina u=qawro",
+            "translations": [
+              "ich werde es dir beweisen. Morgen wollen wir gehen und das Grab aufgraben"
+            ],
+            "references": [
+              "74/150"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ono g-maṯbatn-ux. ṣafro g-əzzano"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥofrina u=qawro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich werde es dir beweisen. Morgen wollen wir gehen und das Grab aufgrabenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "74/150"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ono g-maṯbatn-ux. ṣafro g-əzzano, ḥofrina u=qawro ʻich werde es dir beweisen. Morgen wollen wir gehen und das Grab aufgrabenʼ; 74/150;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "beweisen, bestätigen, fixieren;",
+    "beweisen;"
   ],
   "uncertain": false
 }

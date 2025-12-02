@@ -14,20 +14,140 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["qarəš", "qorəš"],
+      "forms": [
+        "qarəš",
+        "qorəš"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "u=mʕalləm maḥatle ʕal i=nəvine naḏ̣əfto w šafərt-aṯe baṭṭaniye, lăšan d-lo=qŭraš-li 10/6;nafiqi bəṯr i=qriṯo məḷḷe l-u=ḥolo omər alo ḥolo ko-qoraš-li g-doʕaṇṇo",
+            "turoyo": "u=mʕalləm maḥatle ʕal i=nəvine naḏ̣əfto w šafərt-aṯe baṭṭaniye lăšan d-lo=qŭraš-li nafiqi bəṯr i=qriṯo məḷḷe l-u=ḥolo omər alo ḥolo ko-qoraš-li g-doʕaṇṇo ‘They went out of the village. He the boy m. said to his uncle",
             "translations": [
-              "‘der Professor hat auf dieses saubere und schöne Bett eine Wolldecke legen lassen, damit ich nicht friere’;",
-              "‘They went out of the village. He (the boy, m.) said to (his) uncle: “God, uncle, I am cold, I am going back” 76/33;"
+              "‘der Professor hat auf dieses saubere und schöne Bett eine Wolldecke legen lassen, damit ich nicht friere’",
+              "God, uncle, I am cold, I am going back"
             ],
-            "references": ["10/6"]
+            "references": [
+              "10/6",
+              "76/33"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=mʕalləm maḥatle ʕal i=nəvine naḏ̣əfto w šafərt-aṯe baṭṭaniye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lăšan d-lo=qŭraš-li "
+              },
+              {
+                "kind": "translation",
+                "value": "‘der Professor hat auf dieses saubere und schöne Bett eine Wolldecke legen lassen, damit ich nicht friere’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "10/6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " nafiqi bəṯr i=qriṯo məḷḷe l-u=ḥolo omər alo ḥolo ko-qoraš-li g-doʕaṇṇo "
+              },
+              {
+                "kind": "turoyo",
+                "value": "‘"
+              },
+              {
+                "kind": "turoyo",
+                "value": "They went out of the village. He "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "the boy"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " m."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " said to "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "his"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " uncle"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“God, uncle, I am cold, I am going back”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "76/33"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=mʕalləm maḥatle ʕal i=nəvine naḏ̣əfto w šafərt-aṯe baṭṭaniye, lăšan d-lo=qŭraš-li ‘der Professor hat auf dieses saubere und schöne Bett eine Wolldecke legen lassen, damit ich nicht friere’; 10/6; nafiqi bəṯr i=qriṯo məḷḷe l-u=ḥolo omər alo ḥolo ko-qoraš-li g-doʕaṇṇo ‘They went out of the village. He (the boy, m.) said to (his) uncle: “God, uncle, I am cold, I am going back” 76/33;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "frieren;"
   ],
   "uncertain": false
 }

@@ -14,26 +14,134 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mzalṭalle", "mzalṭən"],
+      "forms": [
+        "mzalṭalle",
+        "mzalṭən"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "aṯi u=abro naʕimo, mədle mzalṭalle u=babo, g-forəx b-i=lašayḏe mʕaṣriye hul ṣafrayto 795; 99/9;",
+            "turoyo": "aṯi u=abro naʕimo mədle mzalṭalle u=babo g-forəx b-i=lašayḏe me ʕaṣriye hul ṣafrayto",
             "translations": [
               "der jüngste Sohn kam, nahm den Vater, zog ihn nackt aus und massierte ihn vom Abend bis zum Morgen"
             ],
-            "references": ["795; 99/9"]
+            "references": [
+              "795",
+              "99/9"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aṯi u=abro naʕimo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mədle mzalṭalle u=babo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-forəx b-i=lašayḏe me ʕaṣriye hul ṣafrayto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder jüngste Sohn kam, nahm den Vater, zog ihn nackt aus und massierte ihn vom Abend bis zum Morgenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "795"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "99/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "aṯi u=abro naʕimo, mədle mzalṭalle u=babo, g-forəx b-i=lašayḏe me ʕaṣriye hul ṣafrayto ʻder jüngste Sohn kam, nahm den Vater, zog ihn nackt aus und massierte ihn vom Abend bis zum Morgenʼ; 795; 99/9;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "hiya qaymo mzálṭəno u=garmo 795; 58/207;",
-            "translations": ["sie hat den Knochen blossgeschält"],
-            "references": ["795; 58/207"]
+            "turoyo": "hiya qaymo mzálṭəno u=garmo",
+            "translations": [
+              "sie hat den Knochen blossgeschält"
+            ],
+            "references": [
+              "795",
+              "58/207"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hiya qaymo mzálṭəno u=garmo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie hat den Knochen blossgeschältʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "795"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "58/207"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hiya qaymo mzálṭəno u=garmo ʻsie hat den Knochen blossgeschältʼ; 795; 58/207;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "nackt ausziehen, entblössen;"
   ],
   "uncertain": false
 }

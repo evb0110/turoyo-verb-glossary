@@ -14,30 +14,114 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ṣqəṭle", "ṣoqəṭ"],
+      "forms": [
+        "ṣqəṭle",
+        "ṣoqəṭ"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ṣqəṭle m-i=waָdifayḏe 216;",
-            "translations": ["er enthob ihn seines Amtes"],
-            "references": ["216"]
+            "turoyo": "ṣqəṭle m-i=waָdifayḏe",
+            "translations": [
+              "er enthob ihn seines Amtes"
+            ],
+            "references": [
+              "216"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṣqəṭle m-i=waָdifayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer enthob ihn seines Amtesʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "216"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ṣqəṭle m-i=waָdifayḏe ʻer enthob ihn seines Amtesʼ; 216;"
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": ["mṣaqaṭle", "mṣaqəṭ"],
+      "forms": [
+        "mṣaqaṭle",
+        "mṣaqəṭ"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "iḏe lo=mṣaqṭo 216;",
-            "translations": ["seine Hand verkrüppelte nicht"],
-            "references": ["216"]
+            "turoyo": "iḏe lo=mṣaqṭo",
+            "translations": [
+              "seine Hand verkrüppelte nicht"
+            ],
+            "references": [
+              "216"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "iḏe lo=mṣaqṭo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻseine Hand verkrüppelte nichtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "216"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "iḏe lo=mṣaqṭo ʻseine Hand verkrüppelte nichtʼ; 216;"
           }
         ]
-      }
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "ṣrd → ṣrḏ"
+        }
+      ],
+      "label_raw": "ṣrd → ṣrḏ"
     }
+  ],
+  "idioms": [
+    "des Amtes entheben;",
+    "lahm machen, lähmen;"
   ],
   "uncertain": false
 }

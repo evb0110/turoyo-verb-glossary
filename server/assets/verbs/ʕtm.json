@@ -12,28 +12,121 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ʕatəm", "ʕotəm"],
+      "forms": [
+        "ʕatəm",
+        "ʕotəm"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "qayəm ʕatəm aʕlayna ʕal qarʕe d-u=ṭuro, w lo muklo kət-lan w lo maštyo kət-lan, l-áḏiʕina mə gə-saymina 87; 91/35;",
+            "turoyo": "qayəm ʕatəm aʕlayna ʕal qarʕe d-u=ṭuro w lo muklo kət-lan w lo maštyo kət-lan l-áḏiʕina mə gə-saymina",
             "translations": [
-              "ʻnun war es über uns, auf dem Gipfel des Berges, dunkel geworden. Wir hatten nichts zu essen und nichts zu trinken und wussten nicht, was wir machen solltenʼ;"
+              "nun war es über uns, auf dem Gipfel des Berges, dunkel geworden. Wir hatten nichts zu essen und nichts zu trinken und wussten nicht, was wir machen sollten"
             ],
-            "references": ["87; 91/35"]
+            "references": [
+              "87",
+              "91/35"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qayəm ʕatəm aʕlayna ʕal qarʕe d-u=ṭuro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w lo muklo kət-lan w lo maštyo kət-lan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-áḏiʕina mə gə-saymina "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnun war es über uns, auf dem Gipfel des Berges, dunkel geworden. Wir hatten nichts zu essen und nichts zu trinken und wussten nicht, was wir machen solltenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "87"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "91/35"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "qayəm ʕatəm aʕlayna ʕal qarʕe d-u=ṭuro, w lo muklo kət-lan w lo maštyo kət-lan, l-áḏiʕina mə gə-saymina ʻnun war es über uns, auf dem Gipfel des Berges, dunkel geworden. Wir hatten nichts zu essen und nichts zu trinken und wussten nicht, was wir machen solltenʼ; 87; 91/35;"
           }
         ],
         "Preterit-wa": [
           {
             "turoyo": "ʕatəm-wa-ze hawxa əšmo",
             "translations": [
-              "ʻes war schon ein bisschen dämmerig gewordenʼ; JL 12.13.5;"
+              "es war schon ein bisschen dämmerig geworden"
             ],
-            "references": []
+            "references": [
+              "JL 12.13.5"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕatəm-wa-ze hawxa əšmo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes war schon ein bisschen dämmerig gewordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 12.13.5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ʕatəm-wa-ze hawxa əšmo ʻes war schon ein bisschen dämmerig gewordenʼ; JL 12.13.5;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "dunkel werden;"
   ],
   "uncertain": false
 }

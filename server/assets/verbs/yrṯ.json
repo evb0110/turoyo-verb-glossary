@@ -14,28 +14,190 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["irəṯle", "yorəṯ"],
+      "forms": [
+        "irəṯle",
+        "yorəṯ"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "irəṯle 656;",
-            "translations": [],
-            "references": ["656"]
+            "turoyo": "irəṯle",
+            "translations": [
+              "er erbte"
+            ],
+            "references": [
+              "656"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "irəṯle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer erbteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "656"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "irəṯle ʻer erbteʼ; 656;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "g-qŭtánno-le ḥatta d-lo=yorəṯ u=mal diḏi 658; 23/11 [MT], 40; tamo d-quṭlat-le hul d-uṯeno. m-u=sabab d-lo=yorəṯ u=mal diḏan! ‘ ; 23/40; kət-li tloṯo=abne, ḥa m-ann=abn-ayḏi, lə=k-yorəṯ u=mal diḏi",
+            "turoyo": "g-qŭtánno-le ḥatta d-lo=yorəṯ u=mal diḏi tamo d-quṭlat-le hul d-uṯeno. m-u=sabab d-lo=yorəṯ u=mal diḏan! kət-li tloṯo=abne ḥa m-ann=abn-ayḏi lə=k-yorəṯ u=mal diḏi",
             "translations": [
               "ich werde ihn töten, damit er nicht mein Geld erbt",
-              "Du sollst ihn dort töten, bis ich komme, damit er nicht unser Geld erbt!’",
-              "‘Ich habe drei Söhne; einer von meinen Söhnen erbt mein Vermögen nicht’; 26/8"
+              "‘ Du sollst ihn dort töten, bis ich komme, damit er nicht unser Geld erbt!’",
+              "‘Ich habe drei Söhne; einer von meinen Söhnen erbt mein Vermögen nicht’"
             ],
-            "references": ["658; 23/11", "40"]
+            "references": [
+              "658",
+              "23/11",
+              "40",
+              "23/40",
+              "26/8"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "g-qŭtánno-le ḥatta d-lo=yorəṯ u=mal diḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich werde ihn töten, damit er nicht mein Geld erbtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "658"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "23/11"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "40"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  tamo d-quṭlat-le hul d-uṯeno.  m-u=sabab d-lo=yorəṯ u=mal diḏan! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘ Du sollst ihn dort töten, bis ich komme, damit er nicht unser Geld erbt!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "23/40"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kət-li tloṯo=abne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥa m-ann=abn-ayḏi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=k-yorəṯ u=mal diḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Ich habe drei Söhne; einer von meinen Söhnen erbt mein Vermögen nicht’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/8"
+              }
+            ],
+            "text": "g-qŭtánno-le ḥatta d-lo=yorəṯ u=mal diḏi ʻich werde ihn töten, damit er nicht mein Geld erbtʼ; 658; 23/11 [MT], 40; tamo d-quṭlat-le hul d-uṯeno. m-u=sabab d-lo=yorəṯ u=mal diḏan! ‘ Du sollst ihn dort töten, bis ich komme, damit er nicht unser Geld erbt!’; 23/40; kət-li tloṯo=abne, ḥa m-ann=abn-ayḏi, lə=k-yorəṯ u=mal diḏi ‘Ich habe drei Söhne; einer von meinen Söhnen erbt mein Vermögen nicht’; 26/8"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "erben;"
   ],
   "uncertain": false
 }

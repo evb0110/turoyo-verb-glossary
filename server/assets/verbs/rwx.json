@@ -14,125 +14,1161 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["rawəx", "rowəx"],
+      "forms": [
+        "rawəx",
+        "rowəx"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "rawəxno b-u=wapōr 451; 10/11; u=abro maklele dōlmīš w rawixina u=abro naʕimo aṯi l-u=bayto, rawəx ʕal i=səst-ayḏe b-lalyo, azzé bəṯr u=ṭayro 21/13; húle-lin kul ḥa sisto, rawixi d-oṯən s-u=babaṯṯe ’; 21/69; Sittilbudūr <…> rawixo ʕal-i=sist-ayḏa, w-ann=arbʕi greʕ-ayḏa-ste aʕma rawixi nafiqi mqabə́l dəṯṯe ‘’; 24/172",
+            "turoyo": "rawəxno b-u=wapōr u=abro maklele dōlmīš w rawixina u=abro naʕimo aṯi l-u=bayto rawəx ʕal i=səst-ayḏe b-lalyo azzé bəṯr u=ṭayro húle-lin kul ḥa sisto rawixi d-oṯən s-u=babaṯṯe Sittilbudūr <…> rawixo ʕal-i=sist-ayḏa w-ann=arbʕi greʕ-ayḏa-ste aʕma rawixi nafiqi mqabə́l dəṯṯe",
             "translations": [
               "ich bestieg den Dampfer",
               "der Sohn hielt ein Dolmuş an, und wir stiegen",
-              "‘der jüngste Sohn ging nach Hause, setzte sich auf sein Pferd, in der Nacht, und ritt dem Vogel nach’;",
-              "‘Er gab jedem von ihnen ein Pferd, und sie saßen auf, um zu ihrem Vater zurückzukehren",
-              "Sittilbudūr <…> bestieg ihr Pferd und auch ihre vierzig Knechte stiegen mit ihr [auf die Pferde] und zogen aus, jenen entgegen"
+              "‘der jüngste Sohn ging nach Hause, setzte sich auf sein Pferd, in der Nacht, und ritt dem Vogel nach’",
+              "‘Er gab jedem von ihnen ein Pferd, und sie saßen auf, um zu ihrem Vater zurückzukehren’",
+              "‘Sittilbudūr <…> bestieg ihr Pferd und auch ihre vierzig Knechte stiegen mit ihr [auf die Pferde] und zogen aus, jenen entgegen’"
             ],
-            "references": ["451; 10/11", "21/13"]
+            "references": [
+              "451",
+              "10/11",
+              "LB 292",
+              "21/13",
+              "21/69",
+              "24/172"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "rawəxno b-u=wapōr "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich bestieg den Dampferʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "451"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "10/11"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=abro maklele dōlmīš w rawixina "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Sohn hielt ein Dolmuş an, und wir stiegenʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 292"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=abro naʕimo aṯi l-u=bayto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " rawəx ʕal i=səst-ayḏe b-lalyo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " azzé bəṯr u=ṭayro "
+              },
+              {
+                "kind": "translation",
+                "value": "‘der jüngste Sohn ging nach Hause, setzte sich auf sein Pferd, in der Nacht, und ritt dem Vogel nach’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/13"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " húle-lin kul ḥa sisto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " rawixi d-oṯən s-u=babaṯṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er gab jedem von ihnen ein Pferd, und sie saßen auf, um zu ihrem Vater zurückzukehren’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/69"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Sittilbudūr <…> rawixo ʕal-i=sist-ayḏa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-ann=arbʕi greʕ-ayḏa-ste aʕma rawixi nafiqi mqabə́l dəṯṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sittilbudūr <…> bestieg ihr Pferd und auch ihre vierzig Knechte stiegen mit ihr [auf die Pferde] und zogen aus, jenen entgegen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/172"
+              }
+            ],
+            "text": "rawəxno b-u=wapōr ʻich bestieg den Dampferʼ; 451; 10/11; u=abro maklele dōlmīš w rawixina ʻder Sohn hielt ein Dolmuş an, und wir stiegenʼ LB 292; u=abro naʕimo aṯi l-u=bayto, rawəx ʕal i=səst-ayḏe b-lalyo, azzé bəṯr u=ṭayro ‘der jüngste Sohn ging nach Hause, setzte sich auf sein Pferd, in der Nacht, und ritt dem Vogel nach’; 21/13; húle-lin kul ḥa sisto, rawixi d-oṯən s-u=babaṯṯe ‘Er gab jedem von ihnen ein Pferd, und sie saßen auf, um zu ihrem Vater zurückzukehren’; 21/69; Sittilbudūr <…> rawixo ʕal-i=sist-ayḏa, w-ann=arbʕi greʕ-ayḏa-ste aʕma rawixi nafiqi mqabə́l dəṯṯe ‘Sittilbudūr <…> bestieg ihr Pferd und auch ihre vierzig Knechte stiegen mit ihr [auf die Pferde] und zogen aus, jenen entgegen’; 24/172"
           },
           {
             "turoyo": "i=səsto d-Ḥusayn rawəx-la u=zʕuro",
             "translations": [
-              "‘Die Stute des",
-              "usayn bestieg der Jüngling’; 29/147"
+              "‘Die Stute des Ḥusayn bestieg der Jüngling’"
             ],
-            "references": []
+            "references": [
+              "29/147"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=səsto d-Ḥusayn rawəx-la u=zʕuro "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Die Stute des Ḥusayn bestieg der Jüngling’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/147"
+              }
+            ],
+            "text": "i=səsto d-Ḥusayn rawəx-la u=zʕuro ‘Die Stute des Ḥusayn bestieg der Jüngling’; 29/147"
           }
         ],
         "Preterit-wa": [
           {
-            "turoyo": "b-i=dʕarto d-daʕirina, ono lát-way-li mede, ġēr me ḥḏo=gamlo rawǝ́x-way-no aʕla 451; 52/192;add more examples",
+            "turoyo": "b-i=dʕarto d-daʕirina ono lát-way-li mede ġēr me ḥḏo=gamlo rawǝ́x-way-no aʕla add more examples",
             "translations": [
               "als ich mich auf den Heimweg machte, besass ich gar nichts ausser einem Kamele, auf dem ich geritten war"
             ],
-            "references": ["451; 52/192"]
+            "references": [
+              "451",
+              "52/192"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "b-i=dʕarto d-daʕirina"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono lát-way-li mede"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ġēr me ḥḏo=gamlo rawǝ́x-way-no aʕla "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals ich mich auf den Heimweg machte, besass ich gar nichts ausser einem Kamele, auf dem ich geritten warʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "451"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "52/192"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "add more examples"
+              }
+            ],
+            "text": "b-i=dʕarto d-daʕirina, ono lát-way-li mede, ġēr me ḥḏo=gamlo rawǝ́x-way-no aʕla ʻals ich mich auf den Heimweg machte, besass ich gar nichts ausser einem Kamele, auf dem ich geritten warʼ; 451; 52/192;add more examples"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "k-rowəx b-u=taks-ayḏe 453; 4/46; ṭro rawxo aʕli 454; prs 190/8; k-ruxi b-a=ṭrəmbelat 454; 4/49; m-darbə-d-fayšina b-u=ṭur-ano d-aloho l-alo kayəs məd-ruxina ʕal aq=qayse w-əzzano l-Məḏyaḏ lat-wo ḏḏ; 11/142",
+            "turoyo": "k-rowəx b-u=taks-ayḏe ṭro rawxo aʕli prs k-ruxi b-a=ṭrəmbelat m-darbə-d-fayšina b-u=ṭur-ano d-aloho l-alo kayəs məd-ruxina ʕal aq=qayse w-əzzano l-Məḏyaḏ lat-wo",
             "translations": [
               "er besteigt sein Taxi",
               "sie soll sich auf mich setzen",
               "sie steigen in die Autobusse",
-              "‘statt auf diesem Berge Gottes zu bleiben, war es das beste, auf dies Holz zu steigen und nach Mi",
-              "zu fahren’"
+              "‘statt auf diesem Berge Gottes zu bleiben, war es das beste, auf dies Holz zu steigen und nach Miḏyaḏ zu fahren’"
             ],
-            "references": ["453; 4/46", "454"]
+            "references": [
+              "453",
+              "4/46",
+              "454",
+              "190/8",
+              "454",
+              "4/49",
+              "11/142"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-rowəx b-u=taks-ayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer besteigt sein Taxiʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "453"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "4/46"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṭro rawxo aʕli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie soll sich auf mich setzenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "454"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "190/8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ruxi b-a=ṭrəmbelat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie steigen in die Autobusseʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "454"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "4/49"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-darbə-d-fayšina b-u=ṭur-ano d-aloho l-alo kayəs məd-ruxina ʕal aq=qayse w-əzzano l-Məḏyaḏ lat-wo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘statt auf diesem Berge Gottes zu bleiben, war es das beste, auf dies Holz zu steigen und nach Miḏyaḏ zu fahren’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/142"
+              }
+            ],
+            "text": "k-rowəx b-u=taks-ayḏe ʻer besteigt sein Taxiʼ; 453; 4/46; ṭro rawxo aʕli ʻsie soll sich auf mich setzenʼ; 454; prs 190/8; k-ruxi b-a=ṭrəmbelat ʻsie steigen in die Autobusseʼ; 454; 4/49; m-darbə-d-fayšina b-u=ṭur-ano d-aloho l-alo kayəs məd-ruxina ʕal aq=qayse w-əzzano l-Məḏyaḏ lat-wo ‘statt auf diesem Berge Gottes zu bleiben, war es das beste, auf dies Holz zu steigen und nach Miḏyaḏ zu fahren’; 11/142"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "bavo, qum, rwax bəṯri w malǝ́x zano 456; 69/382; 29/249; de qumu, rwaxu ʕal ag=gaml-aṯxu w-ʕal as=sistoṯ-aṯxu, w-zano l-u=bayto!",
+            "turoyo": "bavo qum rwax bəṯri w malǝ́x zano de qumu rwaxu ʕal ag=gaml-aṯxu w-ʕal as=sistoṯ-aṯxu w-zano l-u=bayto!",
             "translations": [
               "na, dann setz dich hinter mich, Junge, und lass uns gehen",
-              "‘Stehet auf, besteiget eure Kamele und eure Stuten, wir wollen nach Hause gehen’; 29/373 [MT]"
+              "‘Stehet auf, besteiget eure Kamele und eure Stuten, wir wollen nach Hause gehen’"
             ],
-            "references": ["456; 69/382", "29/249"]
+            "references": [
+              "456",
+              "69/382",
+              "29/249",
+              "29/373"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bavo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qum"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " rwax bəṯri w malǝ́x zano "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻna, dann setz dich hinter mich, Junge, und lass uns gehenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "456"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/382"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/249"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " de qumu"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " rwaxu ʕal ag=gaml-aṯxu w-ʕal as=sistoṯ-aṯxu"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-zano l-u=bayto! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Stehet auf, besteiget eure Kamele und eure Stuten, wir wollen nach Hause gehen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/373"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "bavo, qum, rwax bəṯri w malǝ́x zano ʻna, dann setz dich hinter mich, Junge, und lass uns gehenʼ; 456; 69/382; 29/249; de qumu, rwaxu ʕal ag=gaml-aṯxu w-ʕal as=sistoṯ-aṯxu, w-zano l-u=bayto! ‘Stehet auf, besteiget eure Kamele und eure Stuten, wir wollen nach Hause gehen’; 29/373 [MT]"
           }
         ],
         "Part act.": [
           {
-            "turoyo": "u=fayoto d-fayət, rawixo ʕal gámlo-we 457; 26/23, 24; 88/12; kulle rawixe d-as=səsye u=ʕaskar lawiše-ne",
+            "turoyo": "u=fayoto d-fayət rawixo ʕal gámlo-we kulle rawixe d-as=səsye u=ʕaskar lawiše-ne",
             "translations": [
               "der da vorbeikam, ritt auf einem Kamele",
-              "‘They were all sitting astride horses, dressed like soldiers’ LuF 268/21;"
+              "‘They were all sitting astride horses, dressed like soldiers’"
             ],
-            "references": ["457; 26/23", "24; 88/12"]
+            "references": [
+              "457",
+              "26/23",
+              "24",
+              "88/12",
+              "LuF 268/21"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=fayoto d-fayət"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " rawixo ʕal gámlo-we "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder da vorbeikam, ritt auf einem Kameleʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "457"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/23"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "88/12"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kulle rawixe d-as=səsye u=ʕaskar lawiše-ne "
+              },
+              {
+                "kind": "translation",
+                "value": "‘They were all sitting astride horses, dressed like soldiers’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LuF 268/21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=fayoto d-fayət, rawixo ʕal gámlo-we ʻder da vorbeikam, ritt auf einem Kameleʼ; 457; 26/23, 24; 88/12; kulle rawixe d-as=səsye u=ʕaskar lawiše-ne ‘They were all sitting astride horses, dressed like soldiers’ LuF 268/21;"
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "lə=k-oṯən b-kēr d-u=rwoxo 457; 65/388; 30/145",
-            "translations": ["zum Reiten taugen sie nicht"],
-            "references": ["457; 65/388", "30/145"]
+            "turoyo": "lə=k-oṯən b-kēr d-u=rwoxo",
+            "translations": [
+              "zum Reiten taugen sie nicht"
+            ],
+            "references": [
+              "457",
+              "65/388",
+              "30/145"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lə=k-oṯən b-kēr d-u=rwoxo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻzum Reiten taugen sie nichtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "457"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/388"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/145"
+              }
+            ],
+            "text": "lə=k-oṯən b-kēr d-u=rwoxo ʻzum Reiten taugen sie nichtʼ; 457; 65/388; 30/145"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["marwaxle", "marwəx"],
+      "forms": [
+        "marwaxle",
+        "marwəx"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "məd-šaməʕ u=təǧǧār-ano i=duʕwiṯ-āṯe də-dʕele aʕle ... marwaxle Skandar ʕal baġlo mənne 460; 60/278; bəṯṯər məd-mawfaqqe, marwaxxe ʕal-i=sisto, mamṭalle s-u=bab-ayḏe 21/87; marwəxole b-ḥusn w-rəḏ̣a, w-huwwe foṯayye l-u=ṭuro d-ʕabdulʕazīz",
+            "turoyo": "məd-šaməʕ u=təǧǧār-ano i=duʕwiṯ-āṯe də-dʕele aʕle ... marwaxle Skandar ʕal baġlo mənne bəṯṯər məd-mawfaqqe marwaxxe ʕal-i=sisto mamṭalle s-u=bab-ayḏe marwəxole b-ḥusn w-rəḏ̣a w-huwwe foṯayye l-u=ṭuro d-ʕabdulʕazīz",
             "translations": [
               "als der Kaufmann diese Verwünschung hörte, die jener gegen ihn aussprach, liess er Skändär auf einem seiner Maultiere reiten",
-              "‘Nachdem sie ihn herausgezogen hatten, setzten sie ihn aufs Pferd und brachten ihn zu seinem Vater’;",
-              "‘Der Jüngling setzte sie in Frieden und Freundschaft [auf das Reittier], und sie machten sich auf nach dem Berge ‘Abdulaziz’; 29/254"
+              "‘Nachdem sie ihn herausgezogen hatten, setzten sie ihn aufs Pferd und brachten ihn zu seinem Vater’",
+              "‘Der Jüngling setzte sie in Frieden und Freundschaft [auf das Reittier], und sie machten sich auf nach dem Berge ‘Abdulaziz’"
             ],
-            "references": ["460; 60/278", "21/87"]
+            "references": [
+              "460",
+              "60/278",
+              "21/87",
+              "29/254"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "məd-šaməʕ u=təǧǧār-ano i=duʕwiṯ-āṯe də-dʕele aʕle ... marwaxle Skandar ʕal baġlo mənne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals der Kaufmann diese Verwünschung hörte, die jener gegen ihn aussprach, liess er Skändär auf einem seiner Maultiere reitenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "460"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "60/278"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər məd-mawfaqqe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " marwaxxe ʕal-i=sisto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mamṭalle s-u=bab-ayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Nachdem sie ihn herausgezogen hatten, setzten sie ihn aufs Pferd und brachten ihn zu seinem Vater’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/87"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " marwəxole b-ḥusn w-rəḏ̣a"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-huwwe foṯayye l-u=ṭuro d-ʕabdulʕazīz "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Der Jüngling setzte sie in Frieden und Freundschaft [auf das Reittier], und sie machten sich auf nach dem Berge ‘Abdulaziz’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/254"
+              }
+            ],
+            "text": "məd-šaməʕ u=təǧǧār-ano i=duʕwiṯ-āṯe də-dʕele aʕle ... marwaxle Skandar ʕal baġlo mənne ʻals der Kaufmann diese Verwünschung hörte, die jener gegen ihn aussprach, liess er Skändär auf einem seiner Maultiere reitenʼ; 460; 60/278; bəṯṯər məd-mawfaqqe, marwaxxe ʕal-i=sisto, mamṭalle s-u=bab-ayḏe ‘Nachdem sie ihn herausgezogen hatten, setzten sie ihn aufs Pferd und brachten ihn zu seinem Vater’; 21/87; marwəxole b-ḥusn w-rəḏ̣a, w-huwwe foṯayye l-u=ṭuro d-ʕabdulʕazīz ‘Der Jüngling setzte sie in Frieden und Freundschaft [auf das Reittier], und sie machten sich auf nach dem Berge ‘Abdulaziz’; 29/254"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "k-marwax-le rawixe, w k-əzzeyo 462; 53/144; ádlalyo, falgə-d-lalyo, tam, gə-marwəxat-li b-ḥaṣə-d-i=Ṭayḥ-ayḏox <…> g-əzzano g-doʕrina w-gd-ubina foṯayna l-u=aṯro d-babox ḥ",
+            "turoyo": "k-marwax-le rawixe w k-əzzeyo ádlalyo falgə-d-lalyo tam gə-marwəxat-li b-ḥaṣə-d-i=Ṭayḥ-ayḏox <…> g-əzzano g-doʕrina w-gd-ubina foṯayna l-u=aṯro d-babox",
             "translations": [
               "er lässt Reiter aufsitzen und marschiert los",
-              "‘Heute Nacht, wenn es gerade Mitternacht ist, sollst du mich auf dem Rücken deiner",
-              "a <…> setzen und wir wollen losreiten und zurückkehren und uns nach der Heimat deines Vaters aufmachen!’; 29/113"
+              "‘Heute Nacht, wenn es gerade Mitternacht ist, sollst du mich auf dem Rücken deiner Ṭayḥa <…> setzen und wir wollen losreiten und zurückkehren und uns nach der Heimat deines Vaters aufmachen!’"
             ],
-            "references": ["462; 53/144"]
+            "references": [
+              "462",
+              "53/144",
+              "29/113"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-marwax-le rawixe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w k-əzzeyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer lässt Reiter aufsitzen und marschiert losʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "462"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "53/144"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ádlalyo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " falgə-d-lalyo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " tam"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gə-marwəxat-li b-ḥaṣə-d-i=Ṭayḥ-ayḏox <…> g-əzzano g-doʕrina w-gd-ubina foṯayna l-u=aṯro d-babox "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Heute Nacht, wenn es gerade Mitternacht ist, sollst du mich auf dem Rücken deiner Ṭayḥa <…> setzen und wir wollen losreiten und zurückkehren und uns nach der Heimat deines Vaters aufmachen!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/113"
+              }
+            ],
+            "text": "k-marwax-le rawixe, w k-əzzeyo ʻer lässt Reiter aufsitzen und marschiert losʼ; 462; 53/144; ádlalyo, falgə-d-lalyo, tam, gə-marwəxat-li b-ḥaṣə-d-i=Ṭayḥ-ayḏox <…> g-əzzano g-doʕrina w-gd-ubina foṯayna l-u=aṯro d-babox ‘Heute Nacht, wenn es gerade Mitternacht ist, sollst du mich auf dem Rücken deiner Ṭayḥa <…> setzen und wir wollen losreiten und zurückkehren und uns nach der Heimat deines Vaters aufmachen!’; 29/113"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "bəṯṯər məd-ḥəzyole aṯto hawxa baṭəlto <...> lazəm d-marwáx-wo-la ʕal i=səsto 462; 26/191-192;ánnaqla mamṭí-way-na, əmmí-way-na l-aq=qayse d-ab=baluṭe rbanắkat. hawxa əšmo ḥlime-wayne, w-marawxí-way-na-nne, kul=mətro, maḥtí-way-na ḥa, w-m-ag=gabe=ḥrene, b-u=yərxo ánnaqqa marawxí-way-na aʕlayye ag=gušre",
+            "turoyo": "bəṯṯər məd-ḥəzyole aṯto hawxa baṭəlto <...> lazəm d-marwáx-wo-la ʕal i=səsto - ánnaqla mamṭí-way-na əmmí-way-na l-aq=qayse d-ab=baluṭe rbanắkat. hawxa əšmo ḥlime-wayne w-marawxí-way-na-nne kul=mətro maḥtí-way-na ḥa w-m-ag=gabe=ḥrene b-u=yərxo ánnaqqa marawxí-way-na aʕlayye ag=gušre",
             "translations": [
               "als er sie sah,eine so müde Frau <…> er hätte sie auf dem Pferde reiten lassen",
-              "‘We brought … pieces of the durmast wood, which we called trunks. They were somewhat thick, and we put them, one per meter. And from the other side, to their length and over them we placed the beams’ JL 11.11.6;"
+              "‘We brought … pieces of the durmast wood, which we called trunks. They were somewhat thick, and we put them, one per meter. And from the other side, to their length and over them we placed the beams’"
             ],
-            "references": ["462; 26/191", "192"]
+            "references": [
+              "462",
+              "26/191",
+              "192",
+              "JL 11.11.6"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bəṯṯər məd-ḥəzyole aṯto hawxa baṭəlto <...> lazəm d-marwáx-wo-la ʕal i=səsto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals er sie sah,eine so müde Frau <…> er hätte sie auf dem Pferde reiten lassenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "462"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/191"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "192"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ánnaqla mamṭí-way-na"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " əmmí-way-na l-aq=qayse d-ab=baluṭe rbanắkat. hawxa əšmo ḥlime-wayne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-marawxí-way-na-nne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kul=mətro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥtí-way-na ḥa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-m-ag=gabe=ḥrene"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-u=yərxo ánnaqqa marawxí-way-na aʕlayye ag=gušre "
+              },
+              {
+                "kind": "translation",
+                "value": "‘We brought … pieces of the durmast wood, which we called trunks. They were somewhat thick, and we put them, one per meter. And from the other side, to their length and over them we placed the beams’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 11.11.6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "bəṯṯər məd-ḥəzyole aṯto hawxa baṭəlto <...> lazəm d-marwáx-wo-la ʕal i=səsto ʻals er sie sah,eine so müde Frau <…> er hätte sie auf dem Pferde reiten lassenʼ; 462; 26/191-192; ánnaqla mamṭí-way-na, əmmí-way-na l-aq=qayse d-ab=baluṭe rbanắkat. hawxa əšmo ḥlime-wayne, w-marawxí-way-na-nne, kul=mətro, maḥtí-way-na ḥa, w-m-ag=gabe=ḥrene, b-u=yərxo ánnaqqa marawxí-way-na aʕlayye ag=gušre ‘We brought … pieces of the durmast wood, which we called trunks. They were somewhat thick, and we put them, one per meter. And from the other side, to their length and over them we placed the beams’ JL 11.11.6;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "marwexu i=kalo 463; 59/78;",
-            "translations": ["setzet die Braut auf's Pferd"],
-            "references": ["463; 59/78"]
+            "turoyo": "marwexu i=kalo",
+            "translations": [
+              "setzet die Braut auf's Pferd"
+            ],
+            "references": [
+              "463",
+              "59/78"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "marwexu i=kalo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsetzet die Braut auf's Pferdʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "463"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "59/78"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "marwexu i=kalo ʻsetzet die Braut auf's Pferdʼ; 463; 59/78;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "aufsteigen, aufsitzen (auf einer Reittier ʕal);",
+    "reiten lassen, sitzen lassen;"
   ],
   "uncertain": false
 }

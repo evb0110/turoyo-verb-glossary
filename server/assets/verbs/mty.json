@@ -12,70 +12,464 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mtele", "mote"],
+      "forms": [
+        "mtele",
+        "mote"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "qayimo azzá, šləqla traḥṣar=beʕe, w kul ḥḏo simola lawn; w mtéla-le-ne 437; 51/77;",
+            "turoyo": "qayimo azzá šləqla traḥṣar=beʕe w kul ḥḏo simola lawn w mtéla-le-ne",
             "translations": [
               "sie ging, kochte zwölf Eier, färbte jedes anders und brachte sie ihm"
             ],
-            "references": ["437; 51/77"]
+            "references": [
+              "437",
+              "51/77"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qayimo azzá"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šləqla traḥṣar=beʕe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w kul ḥḏo simola lawn"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mtéla-le-ne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie ging, kochte zwölf Eier, färbte jedes anders und brachte sie ihmʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "437"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "51/77"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "qayimo azzá, šləqla traḥṣar=beʕe, w kul ḥḏo simola lawn; w mtéla-le-ne ʻsie ging, kochte zwölf Eier, färbte jedes anders und brachte sie ihmʼ; 437; 51/77;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "hat tawro, w k-azzé mote i=tərto, i=ḥurmayḏox tǝ́rto-yo 438; 54/77, 78;",
+            "turoyo": "hat tawro w k-azzé mote i=tərto i=ḥurmayḏox tǝ́rto-yo",
             "translations": [
               "du bist der Ochs, und er ist gegangen, deine Frau zu holen; deine Frau ist die Kuh"
             ],
-            "references": ["438; 54/77", "78"]
+            "references": [
+              "438",
+              "54/77",
+              "78"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hat tawro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w k-azzé mote i=tərto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=ḥurmayḏox tǝ́rto-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu bist der Ochs, und er ist gegangen, deine Frau zu holen; deine Frau ist die Kuhʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "438"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "54/77"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hat tawro, w k-azzé mote i=tərto, i=ḥurmayḏox tǝ́rto-yo ʻdu bist der Ochs, und er ist gegangen, deine Frau zu holen; deine Frau ist die Kuhʼ; 438; 54/77, 78;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "lazəm mamtát-way-le aʕmux … izúx, mtiy-e l-arke 438; 51/38; ḥ",
+            "turoyo": "lazəm mamtát-way-le aʕmux … izúx mtiy-e l-arke Mǝrla . Fox",
             "translations": [
               "du hättest ihn mitbringen müssen … geh, bring ihn hierher",
-              "Mǝrla “zox tayli u",
-              "alwo” (163:8; 02. 26 Fox)"
+              "zox tayli u ḥalwo"
             ],
-            "references": ["438; 51/38"]
+            "references": [
+              "438",
+              "51/38",
+              "163",
+              "8",
+              "02",
+              "26"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lazəm mamtát-way-le aʕmux … izúx"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mtiy-e l-arke "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu hättest ihn mitbringen müssen … geh, bring ihn hierherʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "438"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "51/38"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Mǝrla "
+              },
+              {
+                "kind": "translation",
+                "value": "“zox tayli u ḥalwo”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "ref",
+                "value": "163"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "ref",
+                "value": "8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "02"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". "
+              },
+              {
+                "kind": "ref",
+                "value": "26"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Fox"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "lazəm mamtát-way-le aʕmux … izúx, mtiy-e l-arke ʻdu hättest ihn mitbringen müssen … geh, bring ihn hierherʼ; 438; 51/38; Mǝrla “zox tayli u ḥalwo” (163:8; 02. 26 Fox)"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["mamtele", "mamte"],
+      "forms": [
+        "mamtele",
+        "mamte"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "tamo qṭəʕle qarʕe d-u=zlām, w mamtele traḥṣar=baġle-ste-ne maṭəʕne m-u=māl d-u=zlām ; 437; 57/164;",
+            "turoyo": "tamo qṭəʕle qarʕe d-u=zlām w mamtele traḥṣar=baġle-ste-ne maṭəʕne m-u=māl d-u=zlām",
             "translations": [
               "da schnitt er dem Manne den Kopf ab und nahm auch zwölf beladene Maultiere mit"
             ],
-            "references": ["437; 57/164"]
+            "references": [
+              "437",
+              "57/164"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "tamo qṭəʕle qarʕe d-u=zlām"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mamtele traḥṣar=baġle-ste-ne maṭəʕne m-u=māl d-u=zlām "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda schnitt er dem Manne den Kopf ab und nahm auch zwölf beladene Maultiere mitʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "437"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "57/164"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "tamo qṭəʕle qarʕe d-u=zlām, w mamtele traḥṣar=baġle-ste-ne maṭəʕne m-u=māl d-u=zlām ʻda schnitt er dem Manne den Kopf ab und nahm auch zwölf beladene Maultiere mitʼ; 437; 57/164;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "ko-mamtyo 392;",
-            "translations": ["sie bringt"],
-            "references": ["392"]
+            "turoyo": "ko-mamtyo",
+            "translations": [
+              "sie bringt"
+            ],
+            "references": [
+              "392"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mamtyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie bringtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "392"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-mamtyo ʻsie bringtʼ; 392;"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "lazəm mamtát-way-le aʕmux … izúx, mtiy-e l-arke 438; 51/38;",
+            "turoyo": "lazəm mamtát-way-le aʕmux … izúx mtiy-e l-arke",
             "translations": [
               "du hättest ihn mitbringen müssen … geh, bring ihn hierher"
             ],
-            "references": ["438; 51/38"]
+            "references": [
+              "438",
+              "51/38"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lazəm mamtát-way-le aʕmux … izúx"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mtiy-e l-arke "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu hättest ihn mitbringen müssen … geh, bring ihn hierherʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "438"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "51/38"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lazəm mamtát-way-le aʕmux … izúx, mtiy-e l-arke ʻdu hättest ihn mitbringen müssen … geh, bring ihn hierherʼ; 438; 51/38;"
           }
         ]
-      }
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "(t not ṭ?)"
+        }
+      ],
+      "label_raw": "(t not ṭ?)"
     }
+  ],
+  "idioms": [
+    "bringen, mitbringen, herbringen;",
+    "bringen;"
   ],
   "uncertain": false
 }

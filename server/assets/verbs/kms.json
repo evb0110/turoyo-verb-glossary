@@ -5,17 +5,54 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mkamasle", "mkaməs"],
+      "forms": [
+        "mkamasle",
+        "mkaməs"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mkamasle 163;",
-            "translations": ["Hand auf den"],
-            "references": ["163"]
+            "turoyo": "mkamasle",
+            "translations": [
+              "er schlug ihn mit der flachen Hand auf den Kopf"
+            ],
+            "references": [
+              "163"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mkamasle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer schlug ihn mit der flachen Hand auf den Kopfʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "163"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mkamasle ʻer schlug ihn mit der flachen Hand auf den Kopfʼ; 163;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "mit der flachen Hand auf den Kopf schlagen;"
   ],
   "uncertain": false
 }

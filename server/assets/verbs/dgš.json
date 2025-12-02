@@ -14,43 +14,338 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mdagəš", "midagəš"],
+      "forms": [
+        "mdagəš",
+        "midagəš"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mdagšina, marfelan daqno EL 89;",
-            "translations": [
-              "wir hatten uns verändert, hatten uns einen Bart wachsen lassen"
+            "turoyo": "Mdagašli aḥ ḥayayḏi l goran di walaye. I changed my life according to the city life. İlyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Mdagašli aḥ ḥayayḏi l goran di walaye. I changed my life according to the city life. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
             ],
-            "references": ["89"]
+            "text": "Mdagašli aḥ ḥayayḏi l goran di walaye. I changed my life according to the city life. (İlyas p.c)"
           },
           {
-            "turoyo": "Aš šuqoqone d Miḏyaḏ mǝdagši ġalabe. (İlyas p.c)",
+            "turoyo": "Meqǝm ono ġalabe mṣaʕrono wayno bas uʕdo mdagašli ruḥi. Earlier I used to be very scoldful but now I changed myself. İlyas p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Meqǝm ono ġalabe mṣaʕrono wayno bas uʕdo mdagašli ruḥi. Earlier I used to be very scoldful but now I changed myself. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Meqǝm ono ġalabe mṣaʕrono wayno bas uʕdo mdagašli ruḥi. Earlier I used to be very scoldful but now I changed myself. (İlyas p.c)"
+          },
+          {
+            "turoyo": "Lu qašo w lu malla mdagašše aḥ ḥmore b ḥḏoḏe. The priest and the Mollo excahnged the donkeys. İlyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Lu qašo w lu malla mdagašše aḥ ḥmore b ḥḏoḏe. The priest and the Mollo excahnged the donkeys. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Lu qašo w lu malla mdagašše aḥ ḥmore b ḥḏoḏe. The priest and the Mollo excahnged the donkeys. (İlyas p.c)"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "edi u=ḥol-awo-ste ko-midagəš, gəd-oṯe u=ḥaroyo d-kulle d-fayəš-wa, gəd-owe ḥolo 173; 94/357;",
-            "translations": [
-              "dann wechselt der “Onkel” wieder, und der letzte von allen, der übrig geblieben war, wird “Onkel”"
+            "turoyo": "Ramḥǝl gәmdagašno i ʕarabayḏi. İlyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Ramḥǝl gәmdagašno i ʕarabayḏi. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
             ],
-            "references": ["173; 94/357"]
+            "text": "Ramḥǝl gәmdagašno i ʕarabayḏi. (İlyas p.c)"
           },
           {
-            "turoyo": "Komidagšo briṯo kul yawmo.",
-            "translations": ["The word changes every day. (İlyas p.c)"],
-            "references": []
-          },
-          {
-            "turoyo": "I Gule hič lәgmidagšo.",
-            "translations": ["Gule never changes. (İlyas p.c)"],
-            "references": []
+            "turoyo": "Kul yawmo kәmdagašno aḥ ḥayayḏi. İlyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Kul yawmo kәmdagašno aḥ ḥayayḏi. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Kul yawmo kәmdagašno aḥ ḥayayḏi. (İlyas p.c)"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "mdagšina marfelan daqno",
+            "translations": [
+              "wir hatten uns verändert, hatten uns einen Bart wachsen lassen"
+            ],
+            "references": [
+              "EL 89"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mdagšina"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " marfelan daqno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir hatten uns verändert, hatten uns einen Bart wachsen lassenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "EL 89"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mdagšina, marfelan daqno ʻwir hatten uns verändert, hatten uns einen Bart wachsen lassenʼ; EL 89;"
+          },
+          {
+            "turoyo": "Aš šuqoqone d Miḏyaḏ mǝdagši ġalabe. İlyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Aš šuqoqone d Miḏyaḏ mǝdagši ġalabe.  "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Aš šuqoqone d Miḏyaḏ mǝdagši ġalabe. (İlyas p.c)"
+          }
+        ],
+        "Infectum": [
+          {
+            "turoyo": "edi u=ḥol-awo-ste ko-midagəš gəd-oṯe u=ḥaroyo d-kulle d-fayəš-wa gəd-owe ḥolo",
+            "translations": [
+              "dann wechselt der “Onkel” wieder, und der letzte von allen, der übrig geblieben war, wird “Onkel"
+            ],
+            "references": [
+              "173",
+              "94/357"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "edi u=ḥol-awo-ste ko-midagəš"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəd-oṯe u=ḥaroyo d-kulle d-fayəš-wa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəd-owe ḥolo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdann wechselt der “Onkel” wieder, und der letzte von allen, der übrig geblieben war, wird “Onkel”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "173"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/357"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "edi u=ḥol-awo-ste ko-midagəš, gəd-oṯe u=ḥaroyo d-kulle d-fayəš-wa, gəd-owe ḥolo ʻdann wechselt der “Onkel” wieder, und der letzte von allen, der übrig geblieben war, wird “Onkel”ʼ; 173; 94/357;"
+          },
+          {
+            "turoyo": "Komidagšo briṯo kul yawmo. The word changes every day. İlyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Komidagšo briṯo kul yawmo. The word changes every day. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Komidagšo briṯo kul yawmo. The word changes every day. (İlyas p.c)"
+          },
+          {
+            "turoyo": "I Gule hič lәgmidagšo. Gule never changes. İlyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "I Gule hič lәgmidagšo. Gule never changes. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "I Gule hič lәgmidagšo. Gule never changes. (İlyas p.c)"
+          }
+        ]
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "Wechseln, to be changed"
+        }
+      ],
+      "label_raw": "Wechseln, to be changed"
     }
+  ],
+  "idioms": [
+    "To change"
   ],
   "uncertain": false
 }

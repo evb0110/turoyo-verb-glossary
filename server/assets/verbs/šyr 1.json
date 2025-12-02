@@ -5,19 +5,144 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["šəlle(šayər)", "šoyər"],
+      "forms": [
+        "šəlle(šayər)",
+        "šoyər"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "šəlle 505; šayər 511; šayənno 513; i=naqqa d naḥətno, šayənnošmənto, qaləbnoʕəsri=qəlaybatʕəl me qarʕi",
+            "turoyo": "šəlle šayər šayənno i=naqqa d naḥətno šayənno šmənto qaləbno ʕəsri=qəlaybat ʕəl me qarʕi",
             "translations": [
-              "'When I was moving down, I slipped a bit and tumbled down, making twenty rolls' 93/50;"
+              "er glitt aus",
+              "er glitt aus",
+              "ich lief Ski",
+              "When I was moving down, I slipped a bit and tumbled down, making twenty rolls"
             ],
-            "references": ["505", "511"]
+            "references": [
+              "505",
+              "511",
+              "513",
+              "93/50"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "šəlle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer glitt ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "505"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " šayər "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer glitt ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "511"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " šayənno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich lief Skiʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "513"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naqqa d naḥətno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šayənno šmənto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qaləbno ʕəsri=qəlaybat ʕəl me qarʕi "
+              },
+              {
+                "kind": "translation",
+                "value": "'When I was moving down, I slipped a bit and tumbled down, making twenty rolls'"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "93/50"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "šəlle ʻer glitt ausʼ; 505; šayər ʻer glitt ausʼ; 511; šayənno ʻich lief Skiʼ; 513; i=naqqa d naḥətno, šayənno šmənto, qaləbno ʕəsri=qəlaybat ʕəl me qarʕi 'When I was moving down, I slipped a bit and tumbled down, making twenty rolls' 93/50;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "ausgleiten, Ski laufen;"
   ],
   "uncertain": false
 }

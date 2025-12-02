@@ -14,49 +14,321 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["rəzle", "royəz"],
+      "forms": [
+        "rəzle",
+        "royəz"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "fayəš ko-royəz abšoṯe m-i=dukṯo d-rəzle l-awo u=ḥreno 518; 44/40;",
+            "turoyo": "fayəš ko-royəz abšoṯe m-i=dukṯo d-rəzle l-awo u=ḥreno",
             "translations": [
               "He began strewing raisins from that place where the other had strewn"
             ],
-            "references": ["518; 44/40"]
+            "references": [
+              "518",
+              "44/40"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "fayəš ko-royəz abšoṯe m-i=dukṯo d-rəzle l-awo u=ḥreno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻHe began strewing raisins from that place where the other had strewnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "518"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/40"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "fayəš ko-royəz abšoṯe m-i=dukṯo d-rəzle l-awo u=ḥreno ʻHe began strewing raisins from that place where the other had strewnʼ; 518; 44/40;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "gər-royazno me-larwal m-i=qriṯo ṭlawḥe hul l-i=arʕo 522; 44/70; awwə́l d-nəfqat m-i=qriṯo, g-royazno abšoṯe b-u=darbo. w-talax b-u=šop-awo hul d-moṭat l-gabi!yəmkən hani nfolo nafili me-noše. huwe lo=ko-royəz hawxa əšmo. ašər g-əzzí bəṯr-ani aġ=ġalabe!",
+            "turoyo": "gər-royazno me-larwal m-i=qriṯo ṭlawḥe hul l-i=arʕo awwə́l d-nəfqat m-i=qriṯo g-royazno abšoṯe b-u=darbo. w-talax b-u=šop-awo hul d-moṭat l-gabi! yəmkən hani nfolo nafili me-noše. huwe lo=ko-royəz hawxa əšmo. ašər g-əzzí bəṯr-ani aġ=ġalabe!",
             "translations": [
               "I will be strewing lentils from the outside of the village till the field",
-              "‘As soon as you go out from the village I will strew raisins along the way. Follow this track unless you reach me!’; 44/38 [MT];",
-              "‘Perhaps, these [raisins] dropped out from somebody’s [pocket]. He does not strew so a few [raisins]. I will sure follow [the way where there are] many [raisins]’; 44/47"
+              "‘As soon as you go out from the village I will strew raisins along the way. Follow this track unless you reach me!’",
+              "‘Perhaps, these [raisins] dropped out from somebody’s [pocket]. He does not strew so a few [raisins]. I will sure follow [the way where there are] many [raisins]’"
             ],
-            "references": ["522; 44/70"]
+            "references": [
+              "522",
+              "44/70",
+              "44/38",
+              "44/47"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gər-royazno me-larwal m-i=qriṯo ṭlawḥe hul l-i=arʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻI will be strewing lentils from the outside of the village till the fieldʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "522"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/70"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " awwə́l d-nəfqat m-i=qriṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-royazno abšoṯe b-u=darbo. w-talax b-u=šop-awo hul d-moṭat l-gabi! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘As soon as you go out from the village I will strew raisins along the way. Follow this track unless you reach me!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/38"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " yəmkən hani nfolo nafili me-noše. huwe lo=ko-royəz hawxa əšmo. ašər g-əzzí bəṯr-ani aġ=ġalabe! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Perhaps, these [raisins] dropped out from somebody’s [pocket]. He does not strew so a few [raisins]. I will sure follow [the way where there are] many [raisins]’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/47"
+              }
+            ],
+            "text": "gər-royazno me-larwal m-i=qriṯo ṭlawḥe hul l-i=arʕo ʻI will be strewing lentils from the outside of the village till the fieldʼ; 522; 44/70; awwə́l d-nəfqat m-i=qriṯo, g-royazno abšoṯe b-u=darbo. w-talax b-u=šop-awo hul d-moṭat l-gabi! ‘As soon as you go out from the village I will strew raisins along the way. Follow this track unless you reach me!’; 44/38 [MT]; yəmkən hani nfolo nafili me-noše. huwe lo=ko-royəz hawxa əšmo. ašər g-əzzí bəṯr-ani aġ=ġalabe! ‘Perhaps, these [raisins] dropped out from somebody’s [pocket]. He does not strew so a few [raisins]. I will sure follow [the way where there are] many [raisins]’; 44/47"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "hawo royaz-wo ḥabṯo ḥabṯo, hano u=kačălōk rəzle ġắlabe 524; 44/41;",
+            "turoyo": "hawo royaz-wo ḥabṯo ḥabṯo hano u=kačălōk rəzle ġắlabe",
             "translations": [
               "That was strewing [raisins] grain by grain, this bald-headed [on the other hand] strewed [raisins] in handfuls"
             ],
-            "references": ["524; 44/41"]
-          }
-        ],
-        "Part. Pass.": [
-          {
-            "turoyo": "aʕ=ʕarše rize ʕal al=luġme ʕloye w taḥtóye-ne ; 534; 3/35; ga kal kīt abšoṯe rize b-u=darbo",
-            "translations": [
-              "'die Zähne sind aufgereiht auf der oberen und der unteren Kinnlade'",
-              "‘There are raisins scattered along the way’; 44/44"
+            "references": [
+              "524",
+              "44/41"
             ],
-            "references": ["534; 3/35"]
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hawo royaz-wo ḥabṯo ḥabṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hano u=kačălōk rəzle ġắlabe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻThat was strewing [raisins] grain by grain, this bald-headed [on the other hand] strewed [raisins] in handfulsʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "524"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/41"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hawo royaz-wo ḥabṯo ḥabṯo, hano u=kačălōk rəzle ġắlabe ʻThat was strewing [raisins] grain by grain, this bald-headed [on the other hand] strewed [raisins] in handfulsʼ; 524; 44/41;"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Part. Pass.": [
+          {
+            "turoyo": "aʕ=ʕarše rize ʕal al=luġme ʕloye w taḥtóye-ne ga kal kīt abšoṯe rize b-u=darbo",
+            "translations": [
+              "die Zähne sind aufgereiht auf der oberen und der unteren Kinnlade",
+              "‘There are raisins scattered along the way’"
+            ],
+            "references": [
+              "534",
+              "3/35",
+              "44/44"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aʕ=ʕarše rize ʕal al=luġme ʕloye w taḥtóye-ne "
+              },
+              {
+                "kind": "translation",
+                "value": "'die Zähne sind aufgereiht auf der oberen und der unteren Kinnlade'"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "534"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "3/35"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ga kal kīt abšoṯe rize b-u=darbo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘There are raisins scattered along the way’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/44"
+              }
+            ],
+            "text": "aʕ=ʕarše rize ʕal al=luġme ʕloye w taḥtóye-ne 'die Zähne sind aufgereiht auf der oberen und der unteren Kinnlade'; 534; 3/35; ga kal kīt abšoṯe rize b-u=darbo ‘There are raisins scattered along the way’; 44/44"
+          }
+        ]
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "streuen, aufreihen;"
   ],
   "uncertain": false
 }

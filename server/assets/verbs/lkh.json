@@ -14,26 +14,112 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mlakahle", "mlakəh"],
+      "forms": [
+        "mlakahle",
+        "mlakəh"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "u=ʕamo ġắlabe gə-mlakáh-li w ġắlabe g-soyəm ḥănak ... ebi ; 227; 95/105;",
+            "turoyo": "u=ʕamo ġắlabe gə-mlakáh-li w ġắlabe g-soyəm ḥănak ... ebi",
             "translations": [
               "die Leute werden meine Ehre beflecken und mich verspotten"
             ],
-            "references": ["227; 95/105"]
-          }
-        ],
-        "Part. Pass.": [
-          {
-            "turoyo": "mlakho 227;",
-            "translations": ["fleckig, befleckt"],
-            "references": ["227"]
+            "references": [
+              "227",
+              "95/105"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=ʕamo ġắlabe gə-mlakáh-li w ġắlabe g-soyəm ḥănak ... ebi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Leute werden meine Ehre beflecken und mich verspottenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "227"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "95/105"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=ʕamo ġắlabe gə-mlakáh-li w ġắlabe g-soyəm ḥănak ... ebi ʻdie Leute werden meine Ehre beflecken und mich verspottenʼ; 227; 95/105;"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Part. Pass.": [
+          {
+            "turoyo": "mlakho",
+            "translations": [
+              "fleckig, befleckt"
+            ],
+            "references": [
+              "227"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mlakho "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻfleckig, beflecktʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "227"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mlakho ʻfleckig, beflecktʼ; 227;"
+          }
+        ]
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "beflecken;"
   ],
   "uncertain": false
 }

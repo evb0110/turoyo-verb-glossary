@@ -14,20 +14,127 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mdaxele", "mdaxəl"],
+      "forms": [
+        "mdaxele",
+        "mdaxəl"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "1) u=Alman lə=k-mdaxəl b-u=ḥarb 309; 2) mdaxlina aʕle 310; 56/85; Надо расширить контекст. на скане отсутствуе страница с переводом",
+            "turoyo": "u=Alman lə=k-mdaxəl b-u=ḥarb",
             "translations": [
-              "Deutschland mischt sich nicht in den Krieg ein",
+              "Deutschland mischt sich nicht in den Krieg ein"
+            ],
+            "references": [
+              "1",
+              "309"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=Alman lə=k-mdaxəl b-u=ḥarb "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻDeutschland mischt sich nicht in den Krieg einʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "309"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) u=Alman lə=k-mdaxəl b-u=ḥarb ʻDeutschland mischt sich nicht in den Krieg einʼ; 309;"
+          },
+          {
+            "turoyo": "mdaxlina aʕle Надо расширить контекст. на скане отсутствуе страница с переводом",
+            "translations": [
               "wir wollen ihn um Gnade bitten"
             ],
-            "references": ["1", "309; 2"]
+            "references": [
+              "2",
+              "310",
+              "56/85"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mdaxlina aʕle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir wollen ihn um Gnade bittenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "310"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/85"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Надо расширить контекст. на скане отсутствуе страница с переводом"
+              }
+            ],
+            "text": "2) mdaxlina aʕle ʻwir wollen ihn um Gnade bittenʼ; 310; 56/85; Надо расширить контекст. на скане отсутствуе страница с переводом"
           }
         ]
       }
     }
   ],
+  "idioms": null,
   "uncertain": false
 }

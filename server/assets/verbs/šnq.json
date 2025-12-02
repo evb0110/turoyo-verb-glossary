@@ -14,31 +14,245 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["šnəqle", "šonəq"],
+      "forms": [
+        "šnəqle",
+        "šonəq"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "msikke l-i=ʕaskar <…> ḥalanamṭalle w-qṭəʕʕeqarʕešnəqqe b-i=durto d-i=saraye ‘’; 24/243 [MT]; hənmənayyeqṭələnnehənšnəqənne",
-            "translations": ["den Kopf ab,", "Hofe des Sarai auf"],
-            "references": ["24/243"]
+            "turoyo": "msikke l-i=ʕaskar <…> ḥalan amṭalle w-qṭəʕʕe qarʕe šnəqqe b-i=durto d-i=saraye hən mənayye qṭələnne hən šnəqənne",
+            "translations": [
+              "‘Die Soldaten packten ihn; <…> sie schnitten ihm den Kopf ab, hängten ihn im Hofe des Sarai auf’",
+              "‘Man hatte einen getötet und die anderen gehängt’"
+            ],
+            "references": [
+              "24/243",
+              "27/54"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "msikke l-i=ʕaskar <…> ḥalan amṭalle w-qṭəʕʕe qarʕe šnəqqe b-i=durto d-i=saraye "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Die Soldaten packten  ihn; <…> sie schnitten ihm den Kopf ab, hängten ihn im Hofe des Sarai auf’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/243"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hən mənayye qṭələnne hən šnəqənne "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Man hatte einen getötet und die anderen gehängt’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "27/54"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "msikke l-i=ʕaskar <…> ḥalan amṭalle w-qṭəʕʕe qarʕe šnəqqe b-i=durto d-i=saraye ‘Die Soldaten packten ihn; <…> sie schnitten ihm den Kopf ab, hängten ihn im Hofe des Sarai auf’; 24/243 [MT]; hən mənayye qṭələnne hən šnəqənne ‘Man hatte einen getötet und die anderen gehängt’; 27/54 [MT]"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "g-əzzíšənqal-le? 111; 69/57; qayṣd-kǝ́t-wo-le ahl l-u=waziro <...> lazəmkulle d-maytan-ne w-šənqən-ne b-u=durto d-u=šulṭono",
-            "translations": ["herbeiholen", "Hofe des Sultans"],
-            "references": ["111; 69/57"]
+            "turoyo": "g-əzzí šənqal-le? qayṣ d-kǝ́t-wo-le ahl l-u=waziro <...> lazəm kulle d-maytan-ne w-šənqən-ne b-u=durto d-u=šulṭono",
+            "translations": [
+              "werde ich ihn hängen lassen?",
+              "alle Verwandte, die der Wesir hatte, musste man herbeiholen und im Hofe des Sultans hängen"
+            ],
+            "references": [
+              "111",
+              "69/57",
+              "27/53"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "g-əzzí šənqal-le? "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwerde ich ihn hängen lassen?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "111"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/57"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qayṣ d-kǝ́t-wo-le ahl l-u=waziro <...> lazəm kulle d-maytan-ne w-šənqən-ne b-u=durto d-u=šulṭono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻalle Verwandte, die der Wesir hatte, musste man herbeiholen und im Hofe des Sultans hängenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "27/53"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "g-əzzí šənqal-le? ʻwerde ich ihn hängen lassen?ʼ; 111; 69/57; qayṣ d-kǝ́t-wo-le ahl l-u=waziro <...> lazəm kulle d-maytan-ne w-šənqən-ne b-u=durto d-u=šulṭono ʻalle Verwandte, die der Wesir hatte, musste man herbeiholen und im Hofe des Sultans hängenʼ; 27/53 [MT];"
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "k-omər l-u=šulṭono, huleamrodarḥal b-u=šnoqayḏe 123-124; 64/312;",
-            "translations": ["gab der Sultan", ") auf der Stelle"],
-            "references": ["123", "124; 64/312"]
+            "turoyo": "k-omər l-u=šulṭono hule amro darḥal b-u=šnoqayḏe -",
+            "translations": [
+              "da gab der Sultan Befehl, ihn (den Kahlkopf) auf der Stelle zu hängen"
+            ],
+            "references": [
+              "123",
+              "124",
+              "64/312"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-omər l-u=šulṭono"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hule amro darḥal b-u=šnoqayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda gab der Sultan Befehl, ihn (den Kahlkopf) auf der Stelle zu hängenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "123"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "124"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "64/312"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "k-omər l-u=šulṭono, hule amro darḥal b-u=šnoqayḏe ʻda gab der Sultan Befehl, ihn (den Kahlkopf) auf der Stelle zu hängenʼ; 123-124; 64/312;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "hängen;"
   ],
   "uncertain": false
 }

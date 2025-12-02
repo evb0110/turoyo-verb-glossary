@@ -5,28 +5,105 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mtawele", "mtawe"],
+      "forms": [
+        "mtawele",
+        "mtawe"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ḥa k-makrəx w ḥakə-mtawe b-i=segulike bara d-u=makərxono 618; 94/95;",
+            "turoyo": "ḥa k-makrəx w ḥa kə-mtawe b-i=segulike bara d-u=makərxono",
             "translations": [
-              "herausgedrängten",
-              "Getreideteile",
-              "auf die Tenne"
+              "einer drischt, und einer wirft mit der eisernen Forke, neben dem Drescher stehend, die herausgedrängten Getreideteile auf die Tenne zurück"
             ],
-            "references": ["618; 94/95"]
+            "references": [
+              "618",
+              "94/95"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥa k-makrəx w ḥa kə-mtawe b-i=segulike bara d-u=makərxono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻeiner drischt, und einer wirft mit der eisernen Forke, neben dem Drescher stehend, die herausgedrängten Getreideteile auf die Tenne zurückʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "618"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/95"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥa k-makrəx w ḥa kə-mtawe b-i=segulike bara d-u=makərxono ʻeiner drischt, und einer wirft mit der eisernen Forke, neben dem Drescher stehend, die herausgedrängten Getreideteile auf die Tenne zurückʼ; 618; 94/95;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "mtawáyaʕmi 618;",
-            "translations": ["auszudrücken"],
-            "references": ["618"]
+            "turoyo": "mtawáy aʕmi",
+            "translations": [
+              "hilf mir, es richtig auszudrücken"
+            ],
+            "references": [
+              "618"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mtawáy aʕmi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻhilf mir, es richtig auszudrückenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "618"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mtawáy aʕmi ʻhilf mir, es richtig auszudrückenʼ; 618;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "etwas zerstreutes an seinen Platz bringen, einem, der nicht richtig sprechen kann (z.B. Ausländer) mit eigenen Worten heraushelfen;"
   ],
   "uncertain": false
 }

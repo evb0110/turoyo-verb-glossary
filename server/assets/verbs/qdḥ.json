@@ -14,78 +14,492 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["qdəḥle", "qodəḥ"],
+      "forms": [
+        "qdəḥle",
+        "qodəḥ"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "2) qdəḥle i=parre d-u=ṭayro 187; prs 63/9; azzən yatiwi b-ṭuro ʕal i=šeno, qdəḥle l-u=maṣri, l-u=ǧən-awe, səmle nuro, maḥatle u=basmo ʕal i=nuro 187; prs 157/18;",
+            "turoyo": "qdəḥle i=parre d-u=ṭayro prs",
             "translations": [
-              "er steckte die Feder des Vögels in Brand;",
-              "im Gebirge setzten sie sich auf einen Felsen, der Ägypter, der Dämon, schlug Feuer und legte den Weihrauch auf das Feuer"
+              "er steckte die Feder des Vögels in Brand; 187; prs 63/9; azzən yatiwi b-ṭuro ʕal i=šeno, qdəḥle l-u=maṣri, l-u=ǧən-awe, səmle nuro, maḥatle u=basmo ʕal i=nuro ʻim Gebirge setzten sie sich auf einen Felsen, der Ägypter, der Dämon, schlug Feuer und legte den Weihrauch auf das Feuer"
             ],
-            "references": ["2", "187"]
+            "references": [
+              "2",
+              "187",
+              "157/18"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qdəḥle i=parre d-u=ṭayro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer steckte die Feder des Vögels in Brand; 187; prs 63/9; azzən yatiwi b-ṭuro ʕal i=šeno, qdəḥle l-u=maṣri, l-u=ǧən-awe, səmle nuro, maḥatle u=basmo ʕal i=nuro ʻim Gebirge setzten sie sich auf einen Felsen, der Ägypter, der Dämon, schlug Feuer und legte den Weihrauch auf das Feuerʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "187"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "157/18"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) qdəḥle i=parre d-u=ṭayro ʻer steckte die Feder des Vögels in Brand; 187; prs 63/9; azzən yatiwi b-ṭuro ʕal i=šeno, qdəḥle l-u=maṣri, l-u=ǧən-awe, səmle nuro, maḥatle u=basmo ʕal i=nuro ʻim Gebirge setzten sie sich auf einen Felsen, der Ägypter, der Dämon, schlug Feuer und legte den Weihrauch auf das Feuerʼ; 187; prs 157/18;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "1) nafəl leba b-u=kurrŭko ġắlabe, w ḥəlla bayn i=awərre d-bayn ʕayne, k-qodəḥ nuro 187; 29/430; ab=barqe k-qudḥi b-i=šmayo 8/19;",
+            "turoyo": "nafəl leba b-u=kurrŭko ġắlabe w ḥəlla bayn i=awərre d-bayn ʕayne k-qodəḥ nuro ab=barqe k-qudḥi b-i=šmayo",
             "translations": [
               "da fiel ihr Herz dem Knaben zu und sie schaute den stolzen Blick seiner Augen: der flammt wie Feuer",
-              "‘die Blitze flammen am Himmel’;"
+              "‘die Blitze flammen am Himmel’"
             ],
-            "references": ["1", "187; 29/430"]
+            "references": [
+              "1",
+              "187",
+              "29/430",
+              "8/19"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " nafəl leba b-u=kurrŭko ġắlabe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ḥəlla bayn i=awərre d-bayn ʕayne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-qodəḥ nuro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda fiel ihr Herz dem Knaben zu und sie schaute den stolzen Blick seiner Augen: der flammt wie Feuerʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "187"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/430"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ab=barqe k-qudḥi b-i=šmayo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘die Blitze flammen am Himmel’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "8/19"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) nafəl leba b-u=kurrŭko ġắlabe, w ḥəlla bayn i=awərre d-bayn ʕayne, k-qodəḥ nuro ʻda fiel ihr Herz dem Knaben zu und sie schaute den stolzen Blick seiner Augen: der flammt wie Feuerʼ; 187; 29/430; ab=barqe k-qudḥi b-i=šmayo ‘die Blitze flammen am Himmel’; 8/19;"
           },
           {
-            "turoyo": "3) k-ḥanno b-i=gaml-ayḏan, u=ġaḏ̣ab d-aloho k-qodəḥ mena",
+            "turoyo": "k-ḥanno b-i=gaml-ayḏan u=ġaḏ̣ab d-aloho k-qodəḥ mena",
             "translations": [
-              "‘Ich schaue auf unser Kamel: der Zorn Gottes flammt aus ihm’; 29/330"
+              "‘Ich schaue auf unser Kamel: der Zorn Gottes flammt aus ihm’"
             ],
-            "references": ["3"]
+            "references": [
+              "3",
+              "29/330"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ḥanno b-i=gaml-ayḏan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=ġaḏ̣ab d-aloho k-qodəḥ mena "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Ich schaue auf unser Kamel: der Zorn Gottes flammt aus ihm’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/330"
+              }
+            ],
+            "text": "3) k-ḥanno b-i=gaml-ayḏan, u=ġaḏ̣ab d-aloho k-qodəḥ mena ‘Ich schaue auf unser Kamel: der Zorn Gottes flammt aus ihm’; 29/330"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "2) meqəm kefo w qəddáḥa-wa, qudḥi-wa 187; 69/311;",
+            "turoyo": "meqəm kefo w qəddáḥa-wa qudḥi-wa",
             "translations": [
               "früher hatte man Feuerstein und Stahl, damit machte man Feuer"
             ],
-            "references": ["2", "187; 69/311"]
+            "references": [
+              "2",
+              "187",
+              "69/311"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " meqəm kefo w qəddáḥa-wa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qudḥi-wa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻfrüher hatte man Feuerstein und Stahl, damit machte man Feuerʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "187"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/311"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) meqəm kefo w qəddáḥa-wa, qudḥi-wa ʻfrüher hatte man Feuerstein und Stahl, damit machte man Feuerʼ; 187; 69/311;"
           }
         ],
         "Part act.": [
           {
-            "turoyo": "1) ʕayəq-la ġắlabe; b-u=săbab əšne ġắlabe i=kahrabiy-aṯe quma qaḏǝ́ḥto-wa, w ḥa yawmo m-ay=yawme d-aloho l-i=kahrabiy-aṯe lə=ǧġilo aʕma 187; 62/128;",
+            "turoyo": "ʕayəq-la ġắlabe b-u=săbab əšne ġắlabe i=kahrabiy-aṯe quma qaḏǝ́ḥto-wa w ḥa yawmo m-ay=yawme d-aloho l-i=kahrabiy-aṯe lə=ǧġilo aʕma",
             "translations": [
               "sie ärgerte sich sehr; denn viele Jahre brannte diese Lampe vor ihr, und nicht einen Tag von den Tagen Gottes hatte die Lampe mit ihr gesprochen"
             ],
-            "references": ["1", "187; 62/128"]
+            "references": [
+              "1",
+              "187",
+              "62/128"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕayəq-la ġắlabe"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-u=săbab əšne ġắlabe i=kahrabiy-aṯe quma qaḏǝ́ḥto-wa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ḥa yawmo m-ay=yawme d-aloho l-i=kahrabiy-aṯe lə=ǧġilo aʕma "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie ärgerte sich sehr; denn viele Jahre brannte diese Lampe vor ihr, und nicht einen Tag von den Tagen Gottes hatte die Lampe mit ihr gesprochenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "187"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/128"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) ʕayəq-la ġắlabe; b-u=săbab əšne ġắlabe i=kahrabiy-aṯe quma qaḏǝ́ḥto-wa, w ḥa yawmo m-ay=yawme d-aloho l-i=kahrabiy-aṯe lə=ǧġilo aʕma ʻsie ärgerte sich sehr; denn viele Jahre brannte diese Lampe vor ihr, und nicht einen Tag von den Tagen Gottes hatte die Lampe mit ihr gesprochenʼ; 187; 62/128;"
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": ["maqdaḥle", "maqdǝḥ"],
+      "forms": [
+        "maqdaḥle",
+        "maqdǝḥ"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "Kmaqḏaḥno u kuro. ‘I burn the hearth.’(Ilyas p.c)",
-            "translations": [],
-            "references": []
+            "turoyo": "Kmaqḏaḥno u kuro. Ilyas p.c",
+            "translations": [
+              "‘I burn the hearth.’"
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Kmaqḏaḥno u kuro. "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I burn the hearth.’"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Kmaqḏaḥno u kuro. ‘I burn the hearth.’ (Ilyas p.c)"
           },
           {
-            "turoyo": "Kmaqḏaḥno u qalorifer. ‘I burn the clorifer.’ (İlyas p.c)",
-            "translations": [],
-            "references": []
+            "turoyo": "Kmaqḏaḥno u qalorifer. İlyas p.c",
+            "translations": [
+              "‘I burn the clorifer.’"
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Kmaqḏaḥno u qalorifer. "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I burn the clorifer.’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Kmaqḏaḥno u qalorifer. ‘I burn the clorifer.’ (İlyas p.c)"
           },
           {
-            "turoyo": "Gmaqḏaḥno i soba. ‘I will burn the stove.’ (İlyas p.c)",
-            "translations": [],
-            "references": []
+            "turoyo": "Gmaqḏaḥno i soba. İlyas p.c",
+            "translations": [
+              "‘I will burn the stove.’"
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Gmaqḏaḥno i soba. "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I will burn the stove.’"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Gmaqḏaḥno i soba. ‘I will burn the stove.’ (İlyas p.c)"
           }
         ]
-      }
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "(İlyas pronounce d as ḏ and says this is the majority pronounciation)"
+        }
+      ],
+      "label_raw": "(İlyas pronounce d as ḏ and says this is the majority pronounciation)"
     }
+  ],
+  "idioms": [
+    "to burn, to light",
+    "Transitive"
   ],
   "uncertain": false
 }

@@ -14,33 +14,204 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mʔadəb", "miʔadəb"],
+      "forms": [
+        "mʔadəb",
+        "miʔadəb"
+      ],
       "conjugations": {
         "Imperative": [
           {
-            "turoyo": "HD 58: Məḷḷe, ‘Mbalu u+qašano, mḥāwle, mʔadēble!’ He said, ‘Take this priest, beat him, discipline him!‘",
-            "translations": [],
-            "references": ["58"]
+            "turoyo": "Məḷḷe He said ‘Take this priest beat him discipline him!‘",
+            "translations": [
+              "‘Mbalu u+qašano, mḥāwle, mʔadēble!’"
+            ],
+            "references": [
+              "HD 58"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "HD 58"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Məḷḷe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Mbalu u+qašano, mḥāwle, mʔadēble!’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " He said"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "turoyo",
+                "value": "‘"
+              },
+              {
+                "kind": "turoyo",
+                "value": "Take this priest"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " beat him"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " discipline him!"
+              },
+              {
+                "kind": "turoyo",
+                "value": "‘"
+              }
+            ],
+            "text": "HD 58: Məḷḷe, ‘Mbalu u+qašano, mḥāwle, mʔadēble!’ He said, ‘Take this priest, beat him, discipline him!‘"
           }
-        ],
+        ]
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "to teach (by punushment)"
+        }
+      ],
+      "label_raw": "to teach (by punushment)"
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mʔadəb 741;",
-            "translations": ["ʻer wurde artigʼ;"],
-            "references": ["741"]
+            "turoyo": "mʔadəb",
+            "translations": [
+              "er wurde artig"
+            ],
+            "references": [
+              "741"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mʔadəb "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wurde artigʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "741"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mʔadəb ʻer wurde artigʼ; 741;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "gabayna háwxa-yo, lăšan d-taybi d-miyadbi 741; prs 175/22;",
+            "turoyo": "gabayna háwxa-yo lăšan d-taybi d-miyadbi prs",
             "translations": [
-              "ʻdas ist bei uns so, damit sie bereuen und Zucht lernenʼ;"
+              "das ist bei uns so, damit sie bereuen und Zucht lernen"
             ],
-            "references": ["741", "175/22"]
+            "references": [
+              "741",
+              "175/22"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gabayna háwxa-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lăšan d-taybi d-miyadbi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas ist bei uns so, damit sie bereuen und Zucht lernenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "741"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "175/22"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "gabayna háwxa-yo, lăšan d-taybi d-miyadbi ʻdas ist bei uns so, damit sie bereuen und Zucht lernenʼ; 741; prs 175/22;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(Detrans.) artig werden, Zucht annehmen;"
   ],
   "uncertain": false
 }

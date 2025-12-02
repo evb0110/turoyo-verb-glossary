@@ -5,17 +5,60 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mfaykəs", "mifaykəs"],
+      "forms": [
+        "mfaykəs",
+        "mifaykəs"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ádyawma mfaykasno me-šuġli 776;",
-            "translations": ["heute bin ich zu spät zu meiner Arbeit gekommen"],
-            "references": ["776"]
+            "turoyo": "ádyawma mfaykasno me-šuġli",
+            "translations": [
+              "heute bin ich zu spät zu meiner Arbeit gekommen"
+            ],
+            "references": [
+              "776"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ádyawma mfaykasno me-šuġli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻheute bin ich zu spät zu meiner Arbeit gekommenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "776"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ádyawma mfaykasno me-šuġli ʻheute bin ich zu spät zu meiner Arbeit gekommenʼ; 776;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) eine Abhaltung haben;"
   ],
   "uncertain": false
 }

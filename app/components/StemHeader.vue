@@ -13,7 +13,7 @@ defineProps<{
     <template v-else>
         <div class="flex flex-wrap justify-items-start items-baseline gap-5">
             <h3 class="text-lg font-semibold">
-                Stem {{ stem.stem }}
+                {{ stem.stem }}
             </h3>
             <p>
                 {{ stem.formsListDisplay }}

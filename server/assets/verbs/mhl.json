@@ -14,19 +14,75 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mahele", "mahəl"],
+      "forms": [
+        "mahele",
+        "mahəl"
+      ],
       "conjugations": {
         "Imperativ": [
           {
-            "turoyo": "mahélul-li yarḥo d-yawmoṯo, ḥatta də-mḥayḏ̣anno u=mede d-kīt lazəm aʕmayxu 311; 24/129;",
+            "turoyo": "mahélul-li yarḥo d-yawmoṯo ḥatta də-mḥayḏ̣anno u=mede d-kīt lazəm aʕmayxu",
             "translations": [
               "gebt mir einen Monat Frist, damit ich das, was ich mitnehmen müsst, bereit mache"
             ],
-            "references": ["311; 24/129"]
+            "references": [
+              "311",
+              "24/129"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mahélul-li yarḥo d-yawmoṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥatta də-mḥayḏ̣anno u=mede d-kīt lazəm aʕmayxu "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻgebt mir einen Monat Frist, damit ich das, was ich mitnehmen müsst, bereit macheʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "311"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/129"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mahélul-li yarḥo d-yawmoṯo, ḥatta də-mḥayḏ̣anno u=mede d-kīt lazəm aʕmayxu ʻgebt mir einen Monat Frist, damit ich das, was ich mitnehmen müsst, bereit macheʼ; 311; 24/129;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "verlängern, Frist geben;"
   ],
   "uncertain": false
 }

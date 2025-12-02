@@ -14,63 +14,441 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["tari", "tore"],
+      "forms": [
+        "tari",
+        "tore"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "tari 348;",
-            "translations": [],
-            "references": ["348"]
+            "turoyo": "tari",
+            "translations": [
+              "er wurde feucht"
+            ],
+            "references": [
+              "348"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "tari "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wurde feuchtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "348"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "tari ʻer wurde feuchtʼ; 348;"
           },
           {
-            "turoyo": "aǧǧulayḏetarənmaṭro",
-            "translations": [", Berlin, 08.08.2016"],
-            "references": []
+            "turoyo": "aǧ ǧulayḏe kule tarən mu maṭro Yusuf Elitoq Berlin",
+            "translations": [],
+            "references": [
+              "08.08.2016"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aǧ ǧulayḏe kule tarən mu maṭro"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Yusuf Elitoq"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " Berlin"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "08.08.2016"
+              }
+            ],
+            "text": "aǧ ǧulayḏe kule tarən mu maṭro; Yusuf Elitoq, Berlin, 08.08.2016"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "ŭmanno d-tore l-ṣafrodə-mšaqaʕno a=sʕune d-an=noše prs 217/19;",
-            "translations": ["(die Haut m)", "feucht bis", "Morgen, so"],
-            "references": ["217/19"]
+            "turoyo": "ŭmanno d-tore l-ṣafro də-mšaqaʕno a=sʕune d-an=noše prs",
+            "translations": [
+              "ich dachte, sie (die Haut m) wird feucht bis zum Morgen, so dass ich sie zum Flicken benutzen kann"
+            ],
+            "references": [
+              "217/19"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ŭmanno d-tore l-ṣafro də-mšaqaʕno a=sʕune d-an=noše "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich dachte, sie (die Haut m) wird feucht bis zum Morgen, so dass ich sie zum Flicken benutzen kannʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "217/19"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ŭmanno d-tore l-ṣafro də-mšaqaʕno a=sʕune d-an=noše ʻich dachte, sie (die Haut m) wird feucht bis zum Morgen, so dass ich sie zum Flicken benutzen kannʼ; prs 217/19;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["matrele", "matre"],
+      "forms": [
+        "matrele",
+        "matre"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "matrelefoṯe, ḥləqledaqne384; 75/271; matrele u=laḥm-ayḏe – ‘",
-            "translations": ["He moistened his bread’"],
-            "references": ["384; 75/271"]
+            "turoyo": "matrele foṯe ḥləqle daqne matrele u=laḥm-ayḏe –",
+            "translations": [
+              "er feuchtete ihm das Gesicht an und rasierte ihm den Bart",
+              "‘He moistened his bread’"
+            ],
+            "references": [
+              "384",
+              "75/271",
+              "JL  15.6.5"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "matrele foṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥləqle daqne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer feuchtete ihm das Gesicht an und rasierte ihm den Bartʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "384"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/271"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " matrele u=laḥm-ayḏe – "
+              },
+              {
+                "kind": "translation",
+                "value": "‘He moistened his bread’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL  15.6.5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "matrele foṯe, ḥləqle daqne ʻer feuchtete ihm das Gesicht an und rasierte ihm den Bartʼ; 384; 75/271; matrele u=laḥm-ayḏe – ‘He moistened his bread’ JL 15.6.5;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "bəṯṯərgəm-matrənaḥ=ḥeṭešliq-anək 393-394; 94/248; k-oṯənmatral-le, w mʕaḏbi-le w mbašli-le b-i=nuro 398; prs 255/2;",
-            "translations": ["gesottenen"],
-            "references": ["393", "394; 94/248"]
+            "turoyo": "bəṯṯər gəm-matrən aḥ=ḥeṭe šliq-anək - k-oṯən matral-le w mʕaḏbi-le w mbašli-le b-i=nuro prs",
+            "translations": [
+              "nunmehr feuchten sie den gesottenen Weizen wieder an",
+              "man kommt und benetzt es, drückt es und kocht es am Feuer"
+            ],
+            "references": [
+              "393",
+              "394",
+              "94/248",
+              "398",
+              "255/2"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bəṯṯər gəm-matrən aḥ=ḥeṭe šliq-anək "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnunmehr feuchten sie den gesottenen Weizen wieder anʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "393"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "394"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/248"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-oṯən matral-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mʕaḏbi-le w mbašli-le b-i=nuro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻman kommt und benetzt es, drückt es und kocht es am Feuerʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "398"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "255/2"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "bəṯṯər gəm-matrən aḥ=ḥeṭe šliq-anək ʻnunmehr feuchten sie den gesottenen Weizen wieder anʼ; 393-394; 94/248; k-oṯən matral-le, w mʕaḏbi-le w mbašli-le b-i=nuro ʻman kommt und benetzt es, drückt es und kocht es am Feuerʼ; 398; prs 255/2;"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "bəṯṯərtre=yawmemanaḥtí-way-na-nnenaqqa=ḥreto, g-mašiġí-way-na-nne, matrí-way-na-nne b-am=maye, w moḥí-way-na-nne b-u=gurno",
-            "translations": ["feuchteten", "Wasser an und"],
-            "references": []
+            "turoyo": "bəṯṯər tre=yawme manaḥtí-way-na-nne naqqa=ḥreto g-mašiġí-way-na-nne matrí-way-na-nne b-am=maye w moḥí-way-na-nne b-u=gurno",
+            "translations": [
+              "nach zwei Tagen holten wir ihn wieder herunter, wuschen ihn, feuchteten ihn mit Wasser an und warfen ihn in den Mörser"
+            ],
+            "references": [
+              "JL 17.5.9"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bəṯṯər tre=yawme manaḥtí-way-na-nne naqqa=ḥreto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-mašiġí-way-na-nne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " matrí-way-na-nne b-am=maye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w moḥí-way-na-nne b-u=gurno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnach zwei Tagen holten wir ihn wieder herunter, wuschen ihn, feuchteten ihn mit Wasser an und warfen ihn in den Mörserʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 17.5.9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "bəṯṯər tre=yawme manaḥtí-way-na-nne naqqa=ḥreto, g-mašiġí-way-na-nne, matrí-way-na-nne b-am=maye, w moḥí-way-na-nne b-u=gurno ʻnach zwei Tagen holten wir ihn wieder herunter, wuschen ihn, feuchteten ihn mit Wasser an und warfen ihn in den Mörserʼ JL 17.5.9;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "matray-li tretloṯo=zawge d-čwerəx 408; 90/28;",
-            "translations": ["Schnürsohlen"],
-            "references": ["408; 90/28"]
+            "turoyo": "matray-li tre tloṯo=zawge d-čwerəx",
+            "translations": [
+              "weiche mir zwei, drei Paar Schnürsohlen ein"
+            ],
+            "references": [
+              "408",
+              "90/28"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "matray-li tre tloṯo=zawge d-čwerəx "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻweiche mir zwei, drei Paar Schnürsohlen einʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "408"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "90/28"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "matray-li tre tloṯo=zawge d-čwerəx ʻweiche mir zwei, drei Paar Schnürsohlen einʼ; 408; 90/28;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "feucht werden;",
+    "anfeuchten, befeuchten, einweichen;"
   ],
   "uncertain": false
 }

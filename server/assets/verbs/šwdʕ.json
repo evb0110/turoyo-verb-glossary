@@ -5,17 +5,60 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mšawdəʕ", "mišawdəʕ"],
+      "forms": [
+        "mšawdəʕ",
+        "mišawdəʕ"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "i=naqqadə-k-ḥozenoak=kurfe ko-mišawdəʕlebi 790;",
-            "translations": ["ich Schlangen"],
-            "references": ["790"]
+            "turoyo": "i=naqqa də-k-ḥozeno ak=kurfe ko-mišawdəʕ lebi",
+            "translations": [
+              "wenn ich Schlangen sehe, ekele ich mich"
+            ],
+            "references": [
+              "790"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqqa də-k-ḥozeno ak=kurfe ko-mišawdəʕ lebi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn ich Schlangen sehe, ekele ich michʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "790"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=naqqa də-k-ḥozeno ak=kurfe ko-mišawdəʕ lebi ʻwenn ich Schlangen sehe, ekele ich michʼ; 790;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) sich ekeln, dem Erbrechen nahe kommen (lēbe);"
   ],
   "uncertain": false
 }

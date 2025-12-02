@@ -14,17 +14,68 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ḥayəm", "ḥoyəm"],
+      "forms": [
+        "ḥayəm",
+        "ḥoyəm"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "m-i=naqla d-azzoxu w hul l-oʕdoḥayimoḥəmto b-qarʕe d-ənsane l-əṯyo 511; 112/206;",
-            "translations": ["Augenblick"],
-            "references": ["511; 112/206"]
+            "turoyo": "m-i=naqla d-azzoxu w hul l-oʕdo ḥayimo ḥəmto b-qarʕe d-ənsane l-əṯyo",
+            "translations": [
+              "seit dem Augenblick, da ihr gegangen seid, hat (mich) ein Fieber gepackt, wie es keinen Menschen befallen möge"
+            ],
+            "references": [
+              "511",
+              "112/206"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "m-i=naqla d-azzoxu w hul l-oʕdo ḥayimo ḥəmto b-qarʕe d-ənsane l-əṯyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻseit dem Augenblick, da ihr gegangen seid, hat (mich) ein Fieber gepackt, wie es keinen Menschen befallen mögeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "511"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "112/206"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "m-i=naqla d-azzoxu w hul l-oʕdo ḥayimo ḥəmto b-qarʕe d-ənsane l-əṯyo ʻseit dem Augenblick, da ihr gegangen seid, hat (mich) ein Fieber gepackt, wie es keinen Menschen befallen mögeʼ; 511; 112/206;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "Fieber bekommen; to burn (intr) (figuratively)",
+    "ḥayəm u=yawmo ʻder Tag wurde heissʼ; 511;"
   ],
   "uncertain": false
 }

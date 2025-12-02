@@ -14,59 +14,342 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["qasəm", "qosəm"],
+      "forms": [
+        "qasəm",
+        "qosəm"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "bəṯṯər u=sarmiyān gədə-mʔamər ʕal-ḥa m-an=naʕime d-i=laystke, aw hiye g-əzzé; axər g-əzzé ḥa m-an=naʕime d-u=ġŭrūb d-kət-ne ḥaroye, yaʕni u=ġŭrūb d-qasimi 213; 94/455;",
+            "turoyo": "bəṯṯər u=sarmiyān gədə-mʔamər ʕal-ḥa m-an=naʕime d-i=laystke aw hiye g-əzzé axər g-əzzé ḥa m-an=naʕime d-u=ġŭrūb d-kət-ne ḥaroye yaʕni u=ġŭrūb d-qasimi",
             "translations": [
               "dann gibt der Anführer - wenn er nicht selber geht - einem der Jungen von der hinteren Partei, der also, die beim Auslosen gewonnen hat, Befehl, und dieser geht, (setzt einem der vorderen Partei die Finger in den Rücken und schiebt ihn etwa sieben, acht Meter nach vorn)"
             ],
-            "references": ["213; 94/455"]
+            "references": [
+              "213",
+              "94/455"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bəṯṯər u=sarmiyān gədə-mʔamər ʕal-ḥa m-an=naʕime d-i=laystke"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aw hiye g-əzzé"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " axər g-əzzé ḥa m-an=naʕime d-u=ġŭrūb d-kət-ne ḥaroye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " yaʕni u=ġŭrūb d-qasimi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdann gibt der Anführer - wenn er nicht selber geht - einem der Jungen von der hinteren Partei, der also, die beim Auslosen gewonnen hat, Befehl, und dieser geht, (setzt einem der vorderen Partei die Finger in den Rücken und schiebt ihn etwa sieben, acht Meter nach vorn)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "213"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/455"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "bəṯṯər u=sarmiyān gədə-mʔamər ʕal-ḥa m-an=naʕime d-i=laystke, aw hiye g-əzzé; axər g-əzzé ḥa m-an=naʕime d-u=ġŭrūb d-kət-ne ḥaroye, yaʕni u=ġŭrūb d-qasimi ʻdann gibt der Anführer - wenn er nicht selber geht - einem der Jungen von der hinteren Partei, der also, die beim Auslosen gewonnen hat, Befehl, und dieser geht, (setzt einem der vorderen Partei die Finger in den Rücken und schiebt ihn etwa sieben, acht Meter nach vorn)ʼ; 213; 94/455;"
           }
         ],
         "Preterit-wa": [
           {
-            "turoyo": "a=tloṯo arbʕo gəm-maḥti aʕle b-ad=dokume. hiye-ste hul d-omər əšme d-u=ṭayrək-awo d-qasǝ́m-way-le 213; 94/449;",
+            "turoyo": "a=tloṯo arbʕo gəm-maḥti aʕle b-ad=dokume. hiye-ste hul d-omər əšme d-u=ṭayrək-awo d-qasǝ́m-way-le",
             "translations": [
               "drei, vier bearbeiten ihn mit Fäusten, bis er den Namen des Vogels, den er geraten hatte (noch einmal) sagt"
             ],
-            "references": ["213; 94/449"]
+            "references": [
+              "213",
+              "94/449"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "a=tloṯo arbʕo gəm-maḥti aʕle b-ad=dokume. hiye-ste hul d-omər əšme d-u=ṭayrək-awo d-qasǝ́m-way-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdrei, vier bearbeiten ihn mit Fäusten, bis er den Namen des Vogels, den er geraten hatte (noch einmal) sagtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "213"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/449"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "a=tloṯo arbʕo gəm-maḥti aʕle b-ad=dokume. hiye-ste hul d-omər əšme d-u=ṭayrək-awo d-qasǝ́m-way-le ʻdrei, vier bearbeiten ihn mit Fäusten, bis er den Namen des Vogels, den er geraten hatte (noch einmal) sagtʼ; 213; 94/449;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "iḏa d-lə=qosəm, gəd-obe i=šutke l-u=ḥawro d-bara diḏe 213; 94/441, 442;",
+            "turoyo": "iḏa d-lə=qosəm gəd-obe i=šutke l-u=ḥawro d-bara diḏe",
             "translations": [
               "wenn er nicht errät, gibt er den Wollgurt seinem Nebenmanne"
             ],
-            "references": ["213; 94/441", "442"]
+            "references": [
+              "213",
+              "94/441",
+              "442"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "iḏa d-lə=qosəm"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəd-obe i=šutke l-u=ḥawro d-bara diḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn er nicht errät, gibt er den Wollgurt seinem Nebenmanneʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "213"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/441"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "442"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "iḏa d-lə=qosəm, gəd-obe i=šutke l-u=ḥawro d-bara diḏe ʻwenn er nicht errät, gibt er den Wollgurt seinem Nebenmanneʼ; 213; 94/441, 442;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["maqsamle", "maqsəm"],
+      "forms": [
+        "maqsamle",
+        "maqsəm"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ko-maqəsmi ʕal i=laystke 213; 94/457; (пример отсутствует в указанном месте)",
-            "translations": ["sie losen zum Spiele aus"],
-            "references": ["213; 94/457"]
+            "turoyo": "ko-maqəsmi ʕal i=laystke пример отсутствует в указанном месте",
+            "translations": [
+              "sie losen zum Spiele aus"
+            ],
+            "references": [
+              "213",
+              "94/457"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-maqəsmi ʕal i=laystke "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie losen zum Spiele ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "213"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/457"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "пример отсутствует в указанном месте"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "ko-maqəsmi ʕal i=laystke ʻsie losen zum Spiele ausʼ; 213; 94/457; (пример отсутствует в указанном месте)"
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "bəṯṯər m-u=teqsimo ko-maḥti tarte=kefe naʕime barra də-ḥḏoḏe 213; 94/373;",
+            "turoyo": "bəṯṯər m-u=teqsimo ko-maḥti tarte=kefe naʕime barra də-ḥḏoḏe",
             "translations": [
               "nachdem Asulosen stellt man zwei kleine Steine nebeneinander"
             ],
-            "references": ["213; 94/373"]
+            "references": [
+              "213",
+              "94/373"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bəṯṯər m-u=teqsimo ko-maḥti tarte=kefe naʕime barra də-ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnachdem Asulosen stellt man zwei kleine Steine nebeneinanderʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "213"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/373"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "bəṯṯər m-u=teqsimo ko-maḥti tarte=kefe naʕime barra də-ḥḏoḏe ʻnachdem Asulosen stellt man zwei kleine Steine nebeneinanderʼ; 213; 94/373;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "erraten, beim Auslosen zum Spiel gewinnen (durch Erraten, in welcher Hand einer der Spieler einen kleinen Gegenstand hat);",
+    "auslosen beim Spiel;"
   ],
   "uncertain": false
 }

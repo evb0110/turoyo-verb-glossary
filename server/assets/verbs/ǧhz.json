@@ -14,29 +14,167 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mǧahazle", "mǧahəz"],
+      "forms": [
+        "mǧahazle",
+        "mǧahəz"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "moṣele d-mḥaḏ̣árral-le səsyo w-sayfo w-rumḥo, w-mǧahazle b-u=slāḥ 159; 36/72; [MT]; mǧaházle-le susyo w-mǧaházle-le fərqa d-ʕaskar",
+            "turoyo": "moṣele d-mḥaḏ̣árral-le səsyo w-sayfo w-rumḥo w-mǧahazle b-u=slāḥ mǧaházle-le susyo w-mǧaházle-le fərqa d-ʕaskar",
             "translations": [
               "he left instructions for them to prepare a horse, a sword and a lance for him, and equiped him with a weapon",
-              "‘he equipped him with a horse and with a division of soldiers’; 36/80"
+              "‘he equipped him with a horse and with a division of soldiers’"
             ],
-            "references": ["159; 36/72"]
-          }
-        ],
-        "Part. Pass.": [
-          {
-            "turoyo": "i=baladiye mšayaʕla zlamat mǧahze b-am=makkinat d-u=gāz 175; 1/35;",
-            "translations": [
-              "die Stadtverwaltung schickte Männer, die mit Petroleumgeräten ausgerüstet waren"
+            "references": [
+              "159",
+              "36/72",
+              "36/80"
             ],
-            "references": ["175; 1/35"]
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "moṣele d-mḥaḏ̣árral-le səsyo w-sayfo w-rumḥo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-mǧahazle b-u=slāḥ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻhe left instructions for them to prepare a horse, a sword and a lance for him, and equiped him with a weaponʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "159"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/72"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mǧaházle-le susyo w-mǧaházle-le fərqa d-ʕaskar "
+              },
+              {
+                "kind": "translation",
+                "value": "‘he equipped him with a horse and with a division of soldiers’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/80"
+              }
+            ],
+            "text": "moṣele d-mḥaḏ̣árral-le səsyo w-sayfo w-rumḥo, w-mǧahazle b-u=slāḥ ʻhe left instructions for them to prepare a horse, a sword and a lance for him, and equiped him with a weaponʼ; 159; 36/72; [MT]; mǧaházle-le susyo w-mǧaházle-le fərqa d-ʕaskar ‘he equipped him with a horse and with a division of soldiers’; 36/80"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Part. Pass.": [
+          {
+            "turoyo": "i=baladiye mšayaʕla zlamat mǧahze b-am=makkinat d-u=gāz",
+            "translations": [
+              "die Stadtverwaltung schickte Männer, die mit Petroleumgeräten ausgerüstet waren"
+            ],
+            "references": [
+              "175",
+              "1/35"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=baladiye mšayaʕla zlamat mǧahze b-am=makkinat d-u=gāz "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Stadtverwaltung schickte Männer, die mit Petroleumgeräten ausgerüstet warenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "175"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "1/35"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=baladiye mšayaʕla zlamat mǧahze b-am=makkinat d-u=gāz ʻdie Stadtverwaltung schickte Männer, die mit Petroleumgeräten ausgerüstet warenʼ; 175; 1/35;"
+          }
+        ]
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "ausrüsten;"
   ],
   "uncertain": false
 }

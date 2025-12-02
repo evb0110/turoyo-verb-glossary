@@ -14,19 +14,73 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mṣanǧər", "miṣanǧər"],
+      "forms": [
+        "mṣanǧər",
+        "miṣanǧər"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "i=arʕo mṣanǧro aʕle núro-yo 789; 57/53;",
+            "turoyo": "i=arʕo mṣanǧro aʕle núro-yo",
             "translations": [
               "die Erde ist glühend heiss für ihn geworden, wie Feuer"
             ],
-            "references": ["789; 57/53"]
+            "references": [
+              "789",
+              "57/53"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=arʕo mṣanǧro aʕle núro-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Erde ist glühend heiss für ihn geworden, wie Feuerʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "789"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "57/53"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=arʕo mṣanǧro aʕle núro-yo ʻdie Erde ist glühend heiss für ihn geworden, wie Feuerʼ; 789; 57/53;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) glühend heiss werden;"
   ],
   "uncertain": false
 }

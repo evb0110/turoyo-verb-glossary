@@ -14,17 +14,60 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mdalele", "mdaləl"],
+      "forms": [
+        "mdalele",
+        "mdaləl"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Part. Pass.": [
           {
-            "turoyo": "mdallo 497;",
-            "translations": [],
-            "references": ["497"]
+            "turoyo": "mdallo",
+            "translations": [
+              "verwöhnt (Kind)"
+            ],
+            "references": [
+              "497"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mdallo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻverwöhnt (Kind)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "497"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mdallo ʻverwöhnt (Kind)ʼ; 497;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "verwöhnen;"
   ],
   "uncertain": false
 }

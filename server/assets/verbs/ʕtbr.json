@@ -12,19 +12,83 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["məʕtaballe", "məʕtabər"],
+      "forms": [
+        "məʕtaballe",
+        "məʕtabər"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "u=ʕamo d-i=walay-ayḏi ko-rəfḏ̣i u=xabr-ayḏi, w-nošo mənne lə=k-məʕtabar-li ắbadan 807; 36/69; [MT]",
+            "turoyo": "u=ʕamo d-i=walay-ayḏi ko-rəfḏ̣i u=xabr-ayḏi w-nošo mənne lə=k-məʕtabar-li ắbadan",
             "translations": [
-              "ʻdas Volk meiner Stadt wies mein Wort zurück und keiner von ihnen achtete michʼ;"
+              "das Volk meiner Stadt wies mein Wort zurück und keiner von ihnen achtete mich"
             ],
-            "references": ["807; 36/69"]
+            "references": [
+              "807",
+              "36/69"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=ʕamo d-i=walay-ayḏi ko-rəfḏ̣i u=xabr-ayḏi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-nošo mənne lə=k-məʕtabar-li ắbadan "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Volk meiner Stadt wies mein Wort zurück und keiner von ihnen achtete michʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "807"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/69"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "u=ʕamo d-i=walay-ayḏi ko-rəfḏ̣i u=xabr-ayḏi, w-nošo mənne lə=k-məʕtabar-li ắbadan ʻdas Volk meiner Stadt wies mein Wort zurück und keiner von ihnen achtete michʼ; 807; 36/69; [MT]"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "achten, rechnen;"
   ],
   "uncertain": false
 }

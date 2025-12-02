@@ -5,17 +5,54 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mqarpele", "mqarpəl"],
+      "forms": [
+        "mqarpele",
+        "mqarpəl"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ayko mqarpelux 786;",
-            "translations": ["wohin hast du ihn verlegt"],
-            "references": ["786"]
+            "turoyo": "ayko mqarpelux",
+            "translations": [
+              "wohin hast du ihn verlegt"
+            ],
+            "references": [
+              "786"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ayko mqarpelux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwohin hast du ihn verlegtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "786"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ayko mqarpelux ʻwohin hast du ihn verlegtʼ; 786;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "verlegen (einen Gegestand);"
   ],
   "uncertain": false
 }

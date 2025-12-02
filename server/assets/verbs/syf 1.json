@@ -14,37 +14,170 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["sayəf", "soyəf"],
+      "forms": [
+        "sayəf",
+        "soyəf"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "2) sayəf u=arʕo d-i=qundrayḏi 571;",
-            "translations": ["meine Schuhsolen sind abgerieben"],
-            "references": ["2", "571"]
+            "turoyo": "sayəf u=arʕo d-i=qundrayḏi",
+            "translations": [
+              "meine Schuhsolen sind abgerieben"
+            ],
+            "references": [
+              "2",
+              "571"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " sayəf u=arʕo d-i=qundrayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmeine Schuhsolen sind abgeriebenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "571"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) sayəf u=arʕo d-i=qundrayḏi ʻmeine Schuhsolen sind abgeriebenʼ; 571;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "1) u=tḥol-ano soyəf 571; 113/98;",
-            "translations": ["dieser Schmerz im Zwerchfell hört auf"],
-            "references": ["1", "571; 113/98"]
+            "turoyo": "u=tḥol-ano soyəf",
+            "translations": [
+              "dieser Schmerz im Zwerchfell hört auf"
+            ],
+            "references": [
+              "1",
+              "571",
+              "113/98"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=tḥol-ano soyəf "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdieser Schmerz im Zwerchfell hört aufʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "571"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "113/98"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) u=tḥol-ano soyəf ʻdieser Schmerz im Zwerchfell hört aufʼ; 571; 113/98;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["masəfle", "masəf"],
+      "forms": [
+        "masəfle",
+        "masəf"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "masəfli u=qălam 571;",
-            "translations": ["ich habe den Bleistift abgerieben"],
-            "references": ["571"]
+            "turoyo": "masəfli u=qălam",
+            "translations": [
+              "ich habe den Bleistift abgerieben"
+            ],
+            "references": [
+              "571"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "masəfli u=qălam "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe den Bleistift abgeriebenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "571"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "masəfli u=qălam ʻich habe den Bleistift abgeriebenʼ; 571;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "abreiben, abwetzen;"
   ],
   "uncertain": false
 }

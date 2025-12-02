@@ -11,46 +11,330 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["maġele", "maġəl"],
+      "forms": [
+        "maġele",
+        "maġəl"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "məd-maṭən l-i=arʕo, azzé u=kalbo, w maġele ʕal u=šoʕo 630; 48/8; 96/346, 347; ko-štelan w raʕi-way-na sawiʕi-way-na mmaġelan ʕal i=arʕo",
+            "turoyo": "məd-maṭən l-i=arʕo azzé u=kalbo w maġele ʕal u=šoʕo ko-štelan w raʕi-way-na sawiʕi-way-na mmaġelan ʕal i=arʕo ʻwir hatten getrunken und gegrast wir waren satt. Dann hatten wir uns auf die Erde gelagert",
             "translations": [
-              "als sie zu dem Felde gekommen waren, ging der Hund und legte sich auf dem Felsen nieder",
-              "wir hatten getrunken und gegrast, wir waren satt. Dann hatten wir uns auf die Erde gelagert"
+              "als sie zu dem Felde gekommen waren, ging der Hund und legte sich auf dem Felsen nieder"
             ],
-            "references": ["630; 48/8", "96/346"]
+            "references": [
+              "630",
+              "48/8",
+              "96/346",
+              "347",
+              "MM 87"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "məd-maṭən l-i=arʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " azzé u=kalbo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w maġele ʕal u=šoʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals sie zu dem Felde gekommen waren, ging der Hund und legte sich auf dem Felsen niederʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "630"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "48/8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "96/346"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "347"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-štelan w raʕi-way-na sawiʕi-way-na mmaġelan ʕal i=arʕo "
+              },
+              {
+                "kind": "turoyo",
+                "value": "ʻ"
+              },
+              {
+                "kind": "turoyo",
+                "value": "wir hatten getrunken und gegrast"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " wir waren satt. Dann hatten wir uns auf die Erde gelagert "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 87"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "məd-maṭən l-i=arʕo, azzé u=kalbo, w maġele ʕal u=šoʕo ʻals sie zu dem Felde gekommen waren, ging der Hund und legte sich auf dem Felsen niederʼ; 630; 48/8; 96/346, 347; ko-štelan w raʕi-way-na sawiʕi-way-na mmaġelan ʕal i=arʕo ʻwir hatten getrunken und gegrast, wir waren satt. Dann hatten wir uns auf die Erde gelagert MM 87;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "g-əzzúx, gəd-oṯe u=kalbo d-u=ṣaydo aʕmux; w dukṯo, də-maġəl, tamo dwar! 630; 48/7, 21; b-u=qayṭo aʕ=ʕeze lo=k-amṭən-ne l-ab=bote ko-mmaġlən-ne b-ann=arʕoṯe",
+            "turoyo": "g-əzzúx gəd-oṯe u=kalbo d-u=ṣaydo aʕmux w dukṯo də-maġəl tamo dwar! b-u=qayṭo aʕ=ʕeze lo=k-amṭən-ne l-ab=bote ko-mmaġlən-ne b-ann=arʕoṯe",
             "translations": [
               "du wirst gehen, und der Jagdhund wird mit dir gehen. An der Stelle, wo er sich niederlegt, da pflüge",
-              "‘In the summer time goats… people do not bring them home, (but) they let them lie in fields’ LuF 304/65;"
+              "‘In the summer time goats… people do not bring them home, (but) they let them lie in fields’"
             ],
-            "references": ["630; 48/7", "21"]
+            "references": [
+              "630",
+              "48/7",
+              "21",
+              "LuF 304/65"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "g-əzzúx"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəd-oṯe u=kalbo d-u=ṣaydo aʕmux"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w dukṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " də-maġəl"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " tamo dwar! "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu wirst gehen, und der Jagdhund wird mit dir gehen. An der Stelle, wo er sich niederlegt, da pflügeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "630"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "48/7"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-u=qayṭo aʕ=ʕeze lo=k-amṭən-ne l-ab=bote ko-mmaġlən-ne b-ann=arʕoṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘In the summer time goats… people do not bring them home, (but) they let them lie in fields’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LuF 304/65"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "g-əzzúx, gəd-oṯe u=kalbo d-u=ṣaydo aʕmux; w dukṯo, də-maġəl, tamo dwar! ʻdu wirst gehen, und der Jagdhund wird mit dir gehen. An der Stelle, wo er sich niederlegt, da pflügeʼ; 630; 48/7, 21; b-u=qayṭo aʕ=ʕeze lo=k-amṭən-ne l-ab=bote ko-mmaġlən-ne b-ann=arʕoṯe ‘In the summer time goats… people do not bring them home, (but) they let them lie in fields’ LuF 304/65;"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "aḥna kǝ́t-way-lan hawxa ʕadat, maġlí-way-na-nne bayn ann=arʕoṯe b-lalyo",
+            "turoyo": "aḥna kǝ́t-way-lan hawxa ʕadat maġlí-way-na-nne bayn ann=arʕoṯe b-lalyo",
             "translations": [
-              "‘wir hatten die Gewohnheit, (die Tiere) bei Nach auf den Feldern lagern zu lassen’ JL 15.6.10;"
+              "‘wir hatten die Gewohnheit, (die Tiere) bei Nach auf den Feldern lagern zu lassen’"
             ],
-            "references": []
+            "references": [
+              "JL 15.6.10"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aḥna kǝ́t-way-lan hawxa ʕadat"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maġlí-way-na-nne bayn ann=arʕoṯe b-lalyo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘wir hatten die Gewohnheit, (die Tiere) bei Nach auf den Feldern lagern zu lassen’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 15.6.10"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "aḥna kǝ́t-way-lan hawxa ʕadat, maġlí-way-na-nne bayn ann=arʕoṯe b-lalyo ‘wir hatten die Gewohnheit, (die Tiere) bei Nach auf den Feldern lagern zu lassen’ JL 15.6.10;"
           }
         ],
         "Part act.": [
           {
             "turoyo": "maġalto",
             "translations": [],
-            "references": ["630"]
+            "references": [
+              "630"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maġalto"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "630"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "maġalto; 630;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "sich niederlegen, niederkauern (Tier), (das Vieh) lagern lassen; sich lagern;;"
   ],
   "uncertain": false
 }

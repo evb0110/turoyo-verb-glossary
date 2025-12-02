@@ -14,19 +14,76 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mdawalle", "mdawər"],
+      "forms": [
+        "mdawalle",
+        "mdawər"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Part. Pass.": [
           {
-            "turoyo": "k-əzzano l-u=ṭuro, w g-saymína-lan kozəke ḥeḏər mətro rwəḥto, w mdawarto hawxa jl. 8.11.4;",
+            "turoyo": "k-əzzano l-u=ṭuro w g-saymína-lan kozəke ḥeḏər mətro rwəḥto w mdawarto hawxa",
             "translations": [
               "wir gehen ins Gebirge und machen uns einen Ansitz (aus aufgeschichteten Steinen), etwa einen Meter breit, rund"
             ],
-            "references": ["8", "11"]
+            "references": [
+              "jl. 8.11.4"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-əzzano l-u=ṭuro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w g-saymína-lan kozəke ḥeḏər mətro rwəḥto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mdawarto hawxa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir gehen ins Gebirge und machen uns einen Ansitz (aus aufgeschichteten Steinen), etwa einen Meter breit, rundʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "jl. 8.11.4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "k-əzzano l-u=ṭuro, w g-saymína-lan kozəke ḥeḏər mətro rwəḥto, w mdawarto hawxa ʻwir gehen ins Gebirge und machen uns einen Ansitz (aus aufgeschichteten Steinen), etwa einen Meter breit, rundʼ; jl. 8.11.4;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "eine Wand aufrichten rings über der Decke (qṭoro) des Hauses, das gegiebelte Dachwerk rings auffüllen;"
   ],
   "uncertain": false
 }

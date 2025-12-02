@@ -14,24 +14,76 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["fḥəṣle", "foḥəṣ"],
+      "forms": [
+        "fḥəṣle",
+        "foḥəṣ"
+      ],
       "conjugations": {}
     },
     {
       "stem": "II",
-      "forms": ["mfaḥaṣle", "mfaḥəṣ"],
+      "forms": [
+        "mfaḥaṣle",
+        "mfaḥəṣ"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "xuna i=maləkṯo hawyo-li Frišo d-mfaḥṣo u=admo innahu u=adm-ano d-a=ənsáne-yo walla d-aḥ=ḥiyḗwən-yo? 197; 69/140;",
+            "turoyo": "xuna i=maləkṯo hawyo-li Frišo d-mfaḥṣo u=admo innahu u=adm-ano d-a=ənsáne-yo walla d-aḥ=ḥiyḗwən-yo?",
             "translations": [
               "ist die Königin mir vielleicht ein (französischer Arzt) Doktor Frisch geworden, dass sie das Blut untersucht, ob es Menschenblut oder Tierblut ist?"
             ],
-            "references": ["197; 69/140"]
+            "references": [
+              "197",
+              "69/140"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "xuna i=maləkṯo hawyo-li Frišo d-mfaḥṣo u=admo innahu u=adm-ano d-a=ənsáne-yo walla d-aḥ=ḥiyḗwən-yo?"
+              },
+              {
+                "kind": "translation",
+                "value": "ʻist die Königin mir vielleicht ein (französischer Arzt) Doktor Frisch geworden, dass sie das Blut untersucht, ob es Menschenblut oder Tierblut ist?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "197"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/140"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "xuna i=maləkṯo hawyo-li Frišo d-mfaḥṣo u=admo innahu u=adm-ano d-a=ənsáne-yo walla d-aḥ=ḥiyḗwən-yo?ʻist die Königin mir vielleicht ein (französischer Arzt) Doktor Frisch geworden, dass sie das Blut untersucht, ob es Menschenblut oder Tierblut ist?ʼ; 197; 69/140;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "untersuchen;",
+    "untersuchen;"
   ],
   "uncertain": false
 }

@@ -5,24 +5,87 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mkasmasle", "mkasməs"],
+      "forms": [
+        "mkasmasle",
+        "mkasməs"
+      ],
       "conjugations": {
         "Preterit": [
           {
             "turoyo": "mkasmsi ʕayne",
             "translations": [],
-            "references": ["783"]
+            "references": [
+              "783"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mkasmsi ʕayne"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "783"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mkasmsi ʕayne; 783;"
           }
-        ],
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
         "Part. Pass.": [
           {
             "turoyo": "ʕayne mkásmse-ne",
             "translations": [],
-            "references": ["783"]
+            "references": [
+              "783"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕayne mkásmse-ne"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "783"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ʕayne mkásmse-ne; 783;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "augen-, lidkrank werden;"
   ],
   "uncertain": false
 }

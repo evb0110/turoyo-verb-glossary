@@ -5,19 +5,67 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mlabaxle", "mlabəx"],
+      "forms": [
+        "mlabaxle",
+        "mlabəx"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mlabaxle l-u=taʕlo foṯe d-u=dewo w qarʕe b-u=ṭino 160; prs 215/23;",
+            "turoyo": "mlabaxle l-u=taʕlo foṯe d-u=dewo w qarʕe b-u=ṭino prs",
             "translations": [
               "der Fuchs bestrich Gesicht und Kopf des Wolfes mit dem Kot"
             ],
-            "references": ["160", "215/23"]
+            "references": [
+              "160",
+              "215/23"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mlabaxle l-u=taʕlo foṯe d-u=dewo w qarʕe b-u=ṭino "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Fuchs bestrich Gesicht und Kopf des Wolfes mit dem Kotʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "160"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "215/23"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mlabaxle l-u=taʕlo foṯe d-u=dewo w qarʕe b-u=ṭino ʻder Fuchs bestrich Gesicht und Kopf des Wolfes mit dem Kotʼ; 160; prs 215/23;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "beschmieren;"
   ],
   "uncertain": false
 }

@@ -5,19 +5,81 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mnaʕnaʕle", "mnaʕnəʕ"],
+      "forms": [
+        "mnaʕnaʕle",
+        "mnaʕnəʕ"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "u=kurrəko u=teḥiso d-maḥəsle ʕal ruḥe, ko-mnaʕnʕi ag=garmayḏe ʕal ḥḏoḏe 800; 107/127;",
+            "turoyo": "u=kurrəko u=teḥiso d-maḥəsle ʕal ruḥe ko-mnaʕnʕi ag=garmayḏe ʕal ḥḏoḏe",
             "translations": [
               "als der Junge wieder zu sich kam, waren ihm alle Knochen im Leibe zerschlagen"
             ],
-            "references": ["800; 107/127"]
+            "references": [
+              "800",
+              "107/127"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=kurrəko u=teḥiso d-maḥəsle ʕal ruḥe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-mnaʕnʕi ag=garmayḏe ʕal ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals der Junge wieder zu sich kam, waren ihm alle Knochen im Leibe zerschlagenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "800"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "107/127"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=kurrəko u=teḥiso d-maḥəsle ʕal ruḥe, ko-mnaʕnʕi ag=garmayḏe ʕal ḥḏoḏe ʻals der Junge wieder zu sich kam, waren ihm alle Knochen im Leibe zerschlagenʼ; 800; 107/127;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "zu Schanden schlagen, als ob man ihm die Knochen im Leibe zerschlüge;"
   ],
   "uncertain": false
 }

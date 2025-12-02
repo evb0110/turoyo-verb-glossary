@@ -14,17 +14,54 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ṭməšle", "ṭoməš"],
+      "forms": [
+        "ṭməšle",
+        "ṭoməš"
+      ],
       "conjugations": {
         "Imperativ": [
           {
-            "turoyo": "ṭmaš u=bəskwīt b-i=čaye 120;",
-            "translations": ["das Biscuit in den"],
-            "references": ["120"]
+            "turoyo": "ṭmaš u=bəskwīt b-i=čaye",
+            "translations": [
+              "stippe das Biscuit in den Tee"
+            ],
+            "references": [
+              "120"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṭmaš u=bəskwīt b-i=čaye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻstippe das Biscuit in den Teeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "120"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ṭmaš u=bəskwīt b-i=čaye ʻstippe das Biscuit in den Teeʼ; 120;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "stippen;"
   ],
   "uncertain": false
 }

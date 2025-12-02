@@ -12,19 +12,68 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mʕangər", "miʕangər"],
+      "forms": [
+        "mʕangər",
+        "miʕangər"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mʕangər k-omər: ya gəd-obát-li-yo ya lə=nofaqno m-arke 768;",
+            "turoyo": "mʕangər k-omər ya gəd-obát-li-yo ya lə=nofaqno m-arke",
             "translations": [
-              "ʻer blieb eigensinnig stehen und sprach: entweder gibst du ihn mir, oder ich gehe nicht weg von hierʼ;"
+              "er blieb eigensinnig stehen und sprach: entweder gibst du ihn mir, oder ich gehe nicht weg von hier"
             ],
-            "references": ["768"]
+            "references": [
+              "768"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mʕangər k-omər"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ya gəd-obát-li-yo ya lə=nofaqno m-arke "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer blieb eigensinnig stehen und sprach: entweder gibst du ihn mir, oder ich gehe nicht weg von hierʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "768"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mʕangər k-omər: ya gəd-obát-li-yo ya lə=nofaqno m-arke ʻer blieb eigensinnig stehen und sprach: entweder gibst du ihn mir, oder ich gehe nicht weg von hierʼ; 768;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) ärgerlich und eigensinnig sich irgendwo aufpflanzen, stehen bleiben;"
   ],
   "uncertain": false
 }

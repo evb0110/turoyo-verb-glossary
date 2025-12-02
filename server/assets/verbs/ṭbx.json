@@ -14,29 +14,213 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ṭbəxle", "ṭobəx"],
+      "forms": [
+        "ṭbəxle",
+        "ṭobəx"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "aṯibazərgān, maḥatlegabe w ṭbəxle l-u=bazərgānmuklo 68; prs 49/30; deriyawmoṭbəxlaḥamuṣo “məṭbəxlax?” ummo “ašər, ṭbəxliḥamuṣo” “qay lo=ṭbəxlaxḥalyo?” mḥéle-la",
+            "turoyo": "aṯi bazərgān maḥatle gabe w ṭbəxle l-u=bazərgān muklo prs deri yawmo ṭbəxla ḥamuṣo ummo mḥéle-la",
             "translations": [
-              "‘The next day she cooked sour [food]. “What have you cooked?” She says “I have cooked sour [food]” “Why have not you cooked sweet [food]?” [And] he hit her’; 41/9"
+              "dahin kam ein Kaufmann, stieg in seiner Nähe ab und kochte sein Essen",
+              "mə ṭbəxlax?",
+              "ašər, ṭbəxli ḥamuṣo",
+              "qay lo=ṭbəxlax ḥalyo?",
+              "‘The next day she cooked sour [food]. “What have you cooked?” She says “I have cooked sour [food]” “Why have not you cooked sweet [food]?” [And] he hit her’"
             ],
-            "references": ["68", "49/30"]
+            "references": [
+              "68",
+              "49/30",
+              "41/9"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aṯi bazərgān"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥatle gabe w ṭbəxle l-u=bazərgān muklo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdahin kam ein Kaufmann, stieg in seiner Nähe ab und kochte sein Essenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "68"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "49/30"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " deri yawmo ṭbəxla ḥamuṣo "
+              },
+              {
+                "kind": "translation",
+                "value": "“mə ṭbəxlax?”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ummo "
+              },
+              {
+                "kind": "translation",
+                "value": "“ašər, ṭbəxli ḥamuṣo”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“qay lo=ṭbəxlax ḥalyo?”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥéle-la "
+              },
+              {
+                "kind": "translation",
+                "value": "‘The next day she cooked sour [food]. “What have you cooked?” She says “I have cooked sour [food]” “Why have not you cooked sweet [food]?” [And] he hit her’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "41/9"
+              }
+            ],
+            "text": "aṯi bazərgān, maḥatle gabe w ṭbəxle l-u=bazərgān muklo ʻdahin kam ein Kaufmann, stieg in seiner Nähe ab und kochte sein Essenʼ; 68; prs 49/30; deri yawmo ṭbəxla ḥamuṣo “mə ṭbəxlax?” ummo “ašər, ṭbəxli ḥamuṣo” “qay lo=ṭbəxlax ḥalyo?” mḥéle-la ‘The next day she cooked sour [food]. “What have you cooked?” She says “I have cooked sour [food]” “Why have not you cooked sweet [food]?” [And] he hit her’; 41/9"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "u=kurrəkoko-ṭobəx l-u=ḥolo 99; 69/308; ṭubxonoḥalyo, ko-moḥe-li; ḥamuṣo ko-moḥe-li",
+            "turoyo": "u=kurrəko ko-ṭobəx l-u=ḥolo ṭubxono ḥalyo ko-moḥe-li ḥamuṣo ko-moḥe-li",
             "translations": [
-              "(also) für den",
-              "‘I cook sweet [food] – he beats me; [I cook] sour [food] – he [also] beats me’; 41/17"
+              "der Knabe kochte (also) für den Onkel",
+              "‘I cook sweet [food] – he beats me; [I cook] sour [food] – he [also] beats me’"
             ],
-            "references": ["99; 69/308"]
+            "references": [
+              "99",
+              "69/308",
+              "41/17"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=kurrəko ko-ṭobəx l-u=ḥolo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Knabe kochte (also) für den Onkelʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "99"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/308"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṭubxono ḥalyo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-moḥe-li"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥamuṣo ko-moḥe-li "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I cook sweet [food] – he beats me; [I cook] sour [food] – he [also] beats me’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "41/17"
+              }
+            ],
+            "text": "u=kurrəko ko-ṭobəx l-u=ḥolo ʻder Knabe kochte (also) für den Onkelʼ; 99; 69/308; ṭubxono ḥalyo, ko-moḥe-li; ḥamuṣo ko-moḥe-li ‘I cook sweet [food] – he beats me; [I cook] sour [food] – he [also] beats me’; 41/17"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "kochen;"
   ],
   "uncertain": false
 }

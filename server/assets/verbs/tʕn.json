@@ -5,17 +5,60 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mtaʕən", "mitaʕən"],
+      "forms": [
+        "mtaʕən",
+        "mitaʕən"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "lo=k-mitaʕnət 267;",
-            "translations": ["Herzen, es", "gleichgültig"],
-            "references": ["267"]
+            "turoyo": "lo=k-mitaʕnət",
+            "translations": [
+              "du nimmst es dir gar nicht zu Herzen, es ist dir ganz gleichgültig"
+            ],
+            "references": [
+              "267"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lo=k-mitaʕnət "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu nimmst es dir gar nicht zu Herzen, es ist dir ganz gleichgültigʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "267"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lo=k-mitaʕnət ʻdu nimmst es dir gar nicht zu Herzen, es ist dir ganz gleichgültigʼ; 267;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) sich zu Herzen nehmen, im Ehrgefühl getroffen sein;"
   ],
   "uncertain": false
 }

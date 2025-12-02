@@ -14,24 +14,140 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mčalakle", "mčalək"],
+      "forms": [
+        "mčalakle",
+        "mčalək"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "u=gubo mčalək 225;",
-            "translations": ["ʻdie Zisterne ist erschöpftʼ;"],
-            "references": ["225"]
+            "turoyo": "mčalakle maye m-u=gubo",
+            "translations": [
+              "er schöpfte mit kleinen Gefässen Wasser aus der fast leeren Zisterne"
+            ],
+            "references": [
+              "225"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mčalakle maye m-u=gubo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer schöpfte mit kleinen Gefässen Wasser aus der fast leeren Zisterneʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "225"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mčalakle maye m-u=gubo ʻer schöpfte mit kleinen Gefässen Wasser aus der fast leeren Zisterneʼ; 225;"
           }
-        ],
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
         "Infectum": [
           {
-            "turoyo": "Behn diḏi komičalak",
-            "translations": ["‘I'm out of breath’ (p.c. Ilyas 7/11/23)"],
-            "references": []
+            "turoyo": "Behn diḏi komičalak p.c. Ilyas",
+            "translations": [
+              "‘I'm out of breath’"
+            ],
+            "references": [
+              "7/11/23"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Behn diḏi komičalak "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I'm out of breath’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "p.c. Ilyas "
+              },
+              {
+                "kind": "ref",
+                "value": "7/11/23"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Behn diḏi komičalak ‘I'm out of breath’ (p.c. Ilyas 7/11/23)"
+          }
+        ],
+        "Preterit": [
+          {
+            "turoyo": "u=gubo mčalək",
+            "translations": [
+              "die Zisterne ist erschöpft"
+            ],
+            "references": [
+              "225"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=gubo mčalək "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Zisterne ist erschöpftʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "225"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=gubo mčalək ʻdie Zisterne ist erschöpftʼ; 225;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "erschöpfen, ganz ausschöpfen (Zisterne);"
   ],
   "uncertain": false
 }

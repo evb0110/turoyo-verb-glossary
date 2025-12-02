@@ -14,26 +14,224 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["knəfle", "konəf"],
+      "forms": [
+        "knəfle",
+        "konəf"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "1) knəfleqarʕe b-i=ǧubbayḏe 181; 2) mədlikefoknəfli b-qarʕe 182; 56/143;",
-            "translations": ["Kopf in sein", "Obergewand"],
-            "references": ["1", "181; 2"]
+            "turoyo": "knəfle qarʕe b-i=ǧubbayḏe",
+            "translations": [
+              "er hüllte seinen Kopf in sein Obergewand"
+            ],
+            "references": [
+              "1",
+              "181"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " knəfle qarʕe b-i=ǧubbayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hüllte seinen Kopf in sein Obergewandʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "181"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) knəfle qarʕe b-i=ǧubbayḏe ʻer hüllte seinen Kopf in sein Obergewandʼ; 181;"
+          },
+          {
+            "turoyo": "mədli kefo knəfli b-qarʕe",
+            "translations": [
+              "ich habe einen Stein genommen und ihm auf den Schädel verpasst"
+            ],
+            "references": [
+              "2",
+              "182",
+              "56/143"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mədli kefo knəfli b-qarʕe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe einen Stein genommen und ihm auf den Schädel verpasstʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "182"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/143"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) mədli kefo knəfli b-qarʕe ʻich habe einen Stein genommen und ihm auf den Schädel verpasstʼ; 182; 56/143;"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "1) gə-mkasyó-way-no-le g-maḥtó-way-no u=qalpāġaʕla, w tre=ǧulehawxa g-kunfó-way-no əmmó-way-no d-lo=ǧoməd",
-            "translations": [
-              "I covered it (rennet extract, m.), put a lid on it (cauldron, f.) and wrapped it with two shawls in order for it not to get cold’"
+            "turoyo": "gə-mkasyó-way-no-le g-maḥtó-way-no u=qalpāġ aʕla w tre=ǧule hawxa g-kunfó-way-no əmmó-way-no d-lo=ǧoməd ʻThen I covered it rennet extract m. put a lid on it cauldron f. and wrapped it with two shawls in order for it not to get cold’",
+            "translations": [],
+            "references": [
+              "1",
+              "JL 11.12.6"
             ],
-            "references": ["1"]
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " gə-mkasyó-way-no-le g-maḥtó-way-no u=qalpāġ aʕla"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w tre=ǧule hawxa g-kunfó-way-no əmmó-way-no d-lo=ǧoməd "
+              },
+              {
+                "kind": "turoyo",
+                "value": "ʻ"
+              },
+              {
+                "kind": "turoyo",
+                "value": "Then I covered it "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "rennet extract"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " m."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " put a lid on it "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "cauldron"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " f."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " and wrapped it with two shawls in order for it not to get cold’ "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 11.12.6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) gə-mkasyó-way-no-le g-maḥtó-way-no u=qalpāġ aʕla, w tre=ǧule hawxa g-kunfó-way-no əmmó-way-no d-lo=ǧoməd ʻThen I covered it (rennet extract, m.), put a lid on it (cauldron, f.) and wrapped it with two shawls in order for it not to get cold’ JL 11.12.6;"
           }
         ]
       }
     }
   ],
+  "idioms": null,
   "uncertain": false
 }

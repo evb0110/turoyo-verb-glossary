@@ -14,17 +14,62 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mətkanašle", "mətkanəš"],
+      "forms": [
+        "mətkanašle",
+        "mətkanəš"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "hat lat-lux ḥṭiṯo,ḥṭiṯo l-ani d-məṯkanašše DD 391/9;",
-            "translations": [],
-            "references": ["391/9"]
+            "turoyo": "hat lat-lux ḥṭiṯo ḥṭiṯo l-ani d-məṯkanašše",
+            "translations": [
+              "dich trifft keine Schuld, schuldig sind jene, die tagten"
+            ],
+            "references": [
+              "DD 391/9"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hat lat-lux ḥṭiṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥṭiṯo l-ani d-məṯkanašše "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdich trifft keine Schuld, schuldig sind jene, die tagtenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "DD 391/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hat lat-lux ḥṭiṯo, ḥṭiṯo l-ani d-məṯkanašše ʻdich trifft keine Schuld, schuldig sind jene, die tagtenʼ; DD 391/9;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "sich vereinigen, tagen;"
   ],
   "uncertain": false
 }

@@ -14,19 +14,75 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["fʕile", "foʕəl"],
+      "forms": [
+        "fʕile",
+        "foʕəl"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ḥzayu be mə səmme, w mən ṭralle mən fʕəlle harke 287; 58/263;",
+            "turoyo": "ḥzayu be mə səmme w mən ṭralle mən fʕəlle harke",
             "translations": [
               "seht, was sie getan und was sie gelassen haben, was sie hier angestellt haben"
             ],
-            "references": ["287; 58/263"]
+            "references": [
+              "287",
+              "58/263"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥzayu be mə səmme"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mən ṭralle mən fʕəlle harke "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻseht, was sie getan und was sie gelassen haben, was sie hier angestellt habenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "287"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "58/263"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥzayu be mə səmme, w mən ṭralle mən fʕəlle harke ʻseht, was sie getan und was sie gelassen haben, was sie hier angestellt habenʼ; 287; 58/263;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "anstellen;"
   ],
   "uncertain": false
 }

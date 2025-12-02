@@ -14,93 +14,788 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["bašəl", "bošəl"],
+      "forms": [
+        "bašəl",
+        "bošəl"
+      ],
       "conjugations": {
         "Preterit-wa": [
           {
             "turoyo": "bəṯṯər me d-bašilo-wa i=danuke g-məfqí-way-na-la",
             "translations": [
-              "ʻnachdem der Weizen gar gekocht war, holten wir ihn herausʼ JL 17.5.7;"
+              "nachdem der Weizen gar gekocht war, holten wir ihn heraus"
             ],
-            "references": []
+            "references": [
+              "JL 17.5.7"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bəṯṯər me d-bašilo-wa i=danuke g-məfqí-way-na-la "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnachdem der Weizen gar gekocht war, holten wir ihn herausʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 17.5.7"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "bəṯṯər me d-bašilo-wa i=danuke g-məfqí-way-na-la ʻnachdem der Weizen gar gekocht war, holten wir ihn herausʼ JL 17.5.7;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "tamo k-mibozi a=ṭlawḥe ʕal qḏole g-bəšli 296; 6/68;",
+            "turoyo": "tamo k-mibozi a=ṭlawḥe ʕal qḏole g-bəšli",
             "translations": [
-              "ʻda verschütten sich die kochenden Linsen auf seinem Nackenʼ;"
+              "da verschütten sich die kochenden Linsen auf seinem Nacken"
             ],
-            "references": ["296; 6/68"]
+            "references": [
+              "296",
+              "6/68"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "tamo k-mibozi a=ṭlawḥe ʕal qḏole g-bəšli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda verschütten sich die kochenden Linsen auf seinem Nackenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "296"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/68"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "tamo k-mibozi a=ṭlawḥe ʕal qḏole g-bəšli ʻda verschütten sich die kochenden Linsen auf seinem Nackenʼ; 296; 6/68;"
           },
           {
-            "turoyo": "bәšli, bәšli, bәšli ‘they boil, they boil, they boil’ (First interview of Nisane) Ilyas bәšli = rәṯḥi u baṣro, bәrġәl kobošal – the meet/bulgur is cooking (Ilyas p.c. 12/05/2024)",
-            "translations": [],
-            "references": ["12/05", "2024"]
+            "turoyo": "bәšli bәšli bәšli First interview of Nisane Ilyas bәšli = rәṯḥi u baṣro bәrġәl kobošal – the meet/bulgur is cooking Ilyas p.",
+            "translations": [
+              "‘they boil, they boil, they boil’"
+            ],
+            "references": [
+              "c. 12/05/2024"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bәšli"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " bәšli"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " bәšli "
+              },
+              {
+                "kind": "translation",
+                "value": "‘they boil, they boil, they boil’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "First interview of Nisane"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Ilyas bәšli = rәṯḥi \nu baṣro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " bәrġәl kobošal – the meet/bulgur is cooking "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p."
+              },
+              {
+                "kind": "ref",
+                "value": "c. 12/05/2024"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "bәšli, bәšli, bәšli ‘they boil, they boil, they boil’ (First interview of Nisane) Ilyas bәšli = rәṯḥi u baṣro, bәrġәl kobošal – the meet/bulgur is cooking (Ilyas p.c. 12/05/2024)"
           }
         ],
         "Part act.": [
           {
-            "turoyo": "ḥzele kle lalġul knišo, klay nawine frəsto, kle u=qalyūn ʕal i=mxadde, kle u=bišolo bašilo 300; prs 146/18;",
+            "turoyo": "ḥzele kle lalġul knišo klay nawine frəsto kle u=qalyūn ʕal i=mxadde kle u=bišolo bašilo prs",
             "translations": [
-              "ʻda sah er, dass drinnen gekehrt war, der Teppich hingebreitet, die Pfeife auf dem Sofakissen, das Essen gekochtʼ;"
+              "da sah er, dass drinnen gekehrt war, der Teppich hingebreitet, die Pfeife auf dem Sofakissen, das Essen gekocht"
             ],
-            "references": ["300", "146/18"]
+            "references": [
+              "300",
+              "146/18"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥzele kle lalġul knišo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " klay nawine frəsto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kle u=qalyūn ʕal i=mxadde"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kle u=bišolo bašilo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda sah er, dass drinnen gekehrt war, der Teppich hingebreitet, die Pfeife auf dem Sofakissen, das Essen gekochtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "300"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "146/18"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥzele kle lalġul knišo, klay nawine frəsto, kle u=qalyūn ʕal i=mxadde, kle u=bišolo bašilo ʻda sah er, dass drinnen gekehrt war, der Teppich hingebreitet, die Pfeife auf dem Sofakissen, das Essen gekochtʼ; 300; prs 146/18;"
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": ["mbašele", "mbašəl"],
+      "forms": [
+        "mbašele",
+        "mbašəl"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "l-i=ḥoṯo hahake səmla i=qroṭən-ayḏe, mbašéla-le paške də-ṭlawḥe, mḥayḏ̣alla u=səsy-ayḏe 307; 65/291; mʔamarle l-u=ʕmiro, w-nḥərre ʕarbo w-mbašalle w-səmme rezo qume haṯe i=ḥurma nḥəlla i=qazo w-mbašlola w-mqalyola",
+            "turoyo": "l-i=ḥoṯo hahake səmla i=qroṭən-ayḏe mbašéla-le paške də-ṭlawḥe mḥayḏ̣alla u=səsy-ayḏe mʔamarle l-u=ʕmiro w-nḥərre ʕarbo w-mbašalle w-səmme rezo qume haṯe i=ḥurma nḥəlla i=qazo w-mbašlola w-mqalyola",
             "translations": [
-              "ʻdie Schwester machte ihm geschwind das Früstück zurecht, kochte ihm ein Löffel Linsensuppe und machte sein Pferd bereitʼ;",
-              "‘Da gab der Emir Befehl, und man schlachtete ein Lamm und kochte es, und er ließ Reis davor legen’; 35/28;",
-              "‘This woman killed the goose, cooked and roasted it’; 44/43 [MT]"
+              "die Schwester machte ihm geschwind das Früstück zurecht, kochte ihm ein Löffel Linsensuppe und machte sein Pferd bereit",
+              "‘Da gab der Emir Befehl, und man schlachtete ein Lamm und kochte es, und er ließ Reis davor legen’",
+              "‘This woman killed the goose, cooked and roasted it’"
             ],
-            "references": ["307; 65/291"]
+            "references": [
+              "307",
+              "65/291",
+              "35/28",
+              "44/43"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-i=ḥoṯo hahake səmla i=qroṭən-ayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mbašéla-le paške də-ṭlawḥe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥayḏ̣alla u=səsy-ayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Schwester machte ihm geschwind das Früstück zurecht, kochte ihm ein Löffel Linsensuppe und machte sein Pferd bereitʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "307"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/291"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mʔamarle l-u=ʕmiro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-nḥərre ʕarbo w-mbašalle w-səmme rezo qume "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Da gab der Emir Befehl, und man schlachtete ein Lamm und kochte es, und er ließ Reis davor legen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "35/28"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " haṯe i=ḥurma nḥəlla i=qazo w-mbašlola w-mqalyola "
+              },
+              {
+                "kind": "translation",
+                "value": "‘This woman killed the goose, cooked and roasted it’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/43"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "l-i=ḥoṯo hahake səmla i=qroṭən-ayḏe, mbašéla-le paške də-ṭlawḥe, mḥayḏ̣alla u=səsy-ayḏe ʻdie Schwester machte ihm geschwind das Früstück zurecht, kochte ihm ein Löffel Linsensuppe und machte sein Pferd bereitʼ; 307; 65/291; mʔamarle l-u=ʕmiro, w-nḥərre ʕarbo w-mbašalle w-səmme rezo qume ‘Da gab der Emir Befehl, und man schlachtete ein Lamm und kochte es, und er ließ Reis davor legen’; 35/28; haṯe i=ḥurma nḥəlla i=qazo w-mbašlola w-mqalyola ‘This woman killed the goose, cooked and roasted it’; 44/43 [MT]"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "yaʕni, kə-mbašli šmənto d-baṣro, w k-šuqli baḏənǧān səmoqe, w gweto, w xyore, w laḥmo, w k-maydi šmənto d-malḥo, w kmo=səfoqe, w k-maləfən-ne, w k-maḥtən-ne b-as=sartule aw b-ač=čanṭat 309; 4/49;",
+            "turoyo": "yaʕni kə-mbašli šmənto d-baṣro w k-šuqli baḏənǧān səmoqe w gweto w xyore w laḥmo w k-maydi šmənto d-malḥo w kmo=səfoqe w k-maləfən-ne w k-maḥtən-ne b-as=sartule aw b-ač=čanṭat",
             "translations": [
-              "ʻdas heisst, sie kochen ein wenig Fleisch, kaufen Tomaten, Käse, Gurken und Brot, nehmen auch ein wenig Salz mit und Geschirr, packen das alles zusammen, tun es in Körbe oder Handtaschenʼ;"
+              "das heisst, sie kochen ein wenig Fleisch, kaufen Tomaten, Käse, Gurken und Brot, nehmen auch ein wenig Salz mit und Geschirr, packen das alles zusammen, tun es in Körbe oder Handtaschen"
             ],
-            "references": ["309; 4/49"]
+            "references": [
+              "309",
+              "4/49"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "yaʕni"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kə-mbašli šmənto d-baṣro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w k-šuqli baḏənǧān səmoqe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w gweto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w xyore"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w laḥmo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w k-maydi šmənto d-malḥo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w kmo=səfoqe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w k-maləfən-ne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w k-maḥtən-ne b-as=sartule aw b-ač=čanṭat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas heisst, sie kochen ein wenig Fleisch, kaufen Tomaten, Käse, Gurken und Brot, nehmen auch ein wenig Salz mit und Geschirr, packen das alles zusammen, tun es in Körbe oder Handtaschenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "309"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "4/49"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "yaʕni, kə-mbašli šmənto d-baṣro, w k-šuqli baḏənǧān səmoqe, w gweto, w xyore, w laḥmo, w k-maydi šmənto d-malḥo, w kmo=səfoqe, w k-maləfən-ne, w k-maḥtən-ne b-as=sartule aw b-ač=čanṭat ʻdas heisst, sie kochen ein wenig Fleisch, kaufen Tomaten, Käse, Gurken und Brot, nehmen auch ein wenig Salz mit und Geschirr, packen das alles zusammen, tun es in Körbe oder Handtaschenʼ; 309; 4/49;"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "u=muklayḏan mibašal-wo b-madbax naʕimo 311; 2/41;",
+            "turoyo": "u=Šibe mbašal-wo u=baṣro ʕal i=nuro sám-wo-le kăbāb w aḥna uxlína-wo w-b-u=saṯwo i=šərtan-ayo g-šayfí-way-na-la w-gə-mbašlí-way-na garso b-i=baroše",
             "translations": [
-              "ʻunser Essen wurde in einer kleinen Küchen gekochtʼ;"
+              "Schibe machte uns dann immer das Fleisch auf dem Feuer zurecht, briet es und wir assen",
+              "‘And in the winter we dissolved that dried curd and cooked the coarse meal in the pot’"
             ],
-            "references": ["311; 2/41"]
+            "references": [
+              "310",
+              "11/248",
+              "JL 12.14.11"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=Šibe mbašal-wo u=baṣro ʕal i=nuro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " sám-wo-le kăbāb"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w aḥna uxlína-wo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻSchibe machte uns dann immer das Fleisch auf dem Feuer zurecht, briet es und wir assenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "310"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/248"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-b-u=saṯwo i=šərtan-ayo g-šayfí-way-na-la"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-gə-mbašlí-way-na garso"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-i=baroše "
+              },
+              {
+                "kind": "translation",
+                "value": "‘And in the winter we dissolved that dried curd and cooked the coarse meal in the pot’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 12.14.11"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=Šibe mbašal-wo u=baṣro ʕal i=nuro, sám-wo-le kăbāb, w aḥna uxlína-wo ʻSchibe machte uns dann immer das Fleisch auf dem Feuer zurecht, briet es und wir assenʼ; 310; 11/248; w-b-u=saṯwo i=šərtan-ayo g-šayfí-way-na-la, w-gə-mbašlí-way-na garso, b-i=baroše ‘And in the winter we dissolved that dried curd and cooked the coarse meal in the pot’ JL 12.14.11;"
           }
         ],
         "Imperativ": [
           {
             "turoyo": "bašel-a mqaliy-a! gəd-uxlína-la",
             "translations": [
-              "‘Cook it (the goose, f) and roast it! We will eat it’; 36/114 [MT]"
+              "‘Cook it (the goose, f) and roast it! We will eat it’"
             ],
-            "references": []
+            "references": [
+              "36/114"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bašel-a mqaliy-a! gəd-uxlína-la "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Cook it (the goose, f) and roast it! We will eat it’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/114"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "bašel-a mqaliy-a! gəd-uxlína-la ‘Cook it (the goose, f) and roast it! We will eat it’; 36/114 [MT]"
+          }
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Infectum-wa": [
+          {
+            "turoyo": "u=muklayḏan mibašal-wo b-madbax naʕimo",
+            "translations": [
+              "unser Essen wurde in einer kleinen Küchen gekocht"
+            ],
+            "references": [
+              "311",
+              "2/41"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=muklayḏan mibašal-wo b-madbax naʕimo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻunser Essen wurde in einer kleinen Küchen gekochtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  "
+              },
+              {
+                "kind": "ref",
+                "value": "311"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/41"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=muklayḏan mibašal-wo b-madbax naʕimo ʻunser Essen wurde in einer kleinen Küchen gekochtʼ; 311; 2/41;"
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "bišolo 311; bəššolo 311;",
-            "translations": ["ʻdas gekochte Essenʼ;"],
-            "references": ["311", "311"]
+            "turoyo": "bišolo bəššolo",
+            "translations": [
+              "kochen",
+              "das gekochte Essen"
+            ],
+            "references": [
+              "311",
+              "311"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bišolo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻkochenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "311"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəššolo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas gekochte Essenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "311"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "bišolo ʻkochenʼ; 311; bəššolo ʻdas gekochte Essenʼ; 311;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "kochen; to boil (intr.)",
+    "kochen;"
   ],
   "uncertain": false
 }

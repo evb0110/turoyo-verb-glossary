@@ -14,29 +14,95 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ṯkəlle", "ṯokər"],
+      "forms": [
+        "ṯkəlle",
+        "ṯokər"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "haw ko-ṯəkrən-ne 256;",
-            "translations": [],
-            "references": ["256"]
+            "turoyo": "haw ko-ṯəkrən-ne",
+            "translations": [
+              "sie reden nicht mehr von ihnen"
+            ],
+            "references": [
+              "256"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "haw ko-ṯəkrən-ne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie reden nicht mehr von ihnenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "256"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "haw ko-ṯəkrən-ne ʻsie reden nicht mehr von ihnenʼ; 256;"
           }
         ],
         "Infinitiv": [
           {
             "turoyo": "ṯkoro",
             "translations": [],
-            "references": ["256"]
+            "references": [
+              "256"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṯkoro"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "256"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ṯkoro; 256;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["maṯkalle", "maṯkər"],
+      "forms": [
+        "maṯkalle",
+        "maṯkər"
+      ],
       "conjugations": {}
     }
+  ],
+  "idioms": [
+    "reden von, erinnern an;",
+    "reden von, erinnern an;"
   ],
   "uncertain": false
 }

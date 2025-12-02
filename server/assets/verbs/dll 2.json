@@ -14,17 +14,50 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mdalele", "mdaləl"],
+      "forms": [
+        "mdalele",
+        "mdaləl"
+      ],
       "conjugations": {
         "Part. Act.": [
           {
-            "turoyo": "marfele u=dalolo b-i=walaye d-Bəġdəd MM 105;",
-            "translations": ["Er schickte den Ausrufer durch die Stadt Bagdad"],
-            "references": ["105"]
+            "turoyo": "marfele u=dalolo b-i=walaye d-Bəġdəd",
+            "translations": [
+              "Er schickte den Ausrufer durch die Stadt Bagdad"
+            ],
+            "references": [
+              "MM 105"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "marfele u=dalolo b-i=walaye d-Bəġdəd "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻEr schickte den Ausrufer durch die Stadt Bagdadʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 105"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "marfele u=dalolo b-i=walaye d-Bəġdəd ʻEr schickte den Ausrufer durch die Stadt Bagdadʼ MM 105;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "verkünden;"
   ],
   "uncertain": false
 }

@@ -5,39 +5,260 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ʕǧəqle", "ʕoǧəq"],
+      "forms": [
+        "ʕǧəqle",
+        "ʕoǧəq"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ʕǧiqi aǧ+ǧulayḏi",
-            "translations": ["(Ilyas/Kfarze p.c.)"],
-            "references": []
-          },
-          {
-            "turoyo": "Aǧ+ǧule dan+naʕime ʕǧiqi",
-            "translations": [],
-            "references": []
+            "turoyo": "ʕǧəqli ǧuli",
+            "translations": [
+              "ich habe mir die Kleider schmutzig gemacht"
+            ],
+            "references": [
+              "69"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕǧəqli ǧuli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe mir die Kleider schmutzig gemachtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ʕǧəqli ǧuli ʻich habe mir die Kleider schmutzig gemachtʼ; 69;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "k-məʕǧoqi 130; U šaġolo maǧbur məʕǧəq",
+            "turoyo": "ko-ʕəǧqat",
             "translations": [
-              "ʻsie werden schmutzigʼ;",
-              "'the one who works necessarily gets dirty' RBP;"
+              "du machst schmutzig"
             ],
-            "references": ["130"]
+            "references": [
+              "100"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-ʕəǧqat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu machst schmutzigʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "100"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-ʕəǧqat ʻdu machst schmutzigʼ; 100;"
+          }
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "k-məʕǧoqi U šaġolo maǧbur məʕǧəq RBP",
+            "translations": [
+              "sie werden schmutzig",
+              "the one who works necessarily gets dirty"
+            ],
+            "references": [
+              "130"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-məʕǧoqi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie werden schmutzigʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "130"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " U šaġolo maǧbur məʕǧəq "
+              },
+              {
+                "kind": "translation",
+                "value": "'the one who works necessarily gets dirty'"
+              },
+              {
+                "kind": "turoyo",
+                "value": " RBP"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "k-məʕǧoqi ʻsie werden schmutzigʼ; 130; U šaġolo maǧbur məʕǧəq 'the one who works necessarily gets dirty' RBP;"
+          }
+        ],
+        "Preterit": [
+          {
+            "turoyo": "ʕǧiqi aǧ+ǧulayḏi Ilyas/Kfarze p.c.",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕǧiqi aǧ+ǧulayḏi "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas/Kfarze p.c."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "ʕǧiqi aǧ+ǧulayḏi (Ilyas/Kfarze p.c.)"
+          },
+          {
+            "turoyo": "Aǧ+ǧule dan+naʕime ʕǧiqi",
+            "translations": [],
+            "references": [
+              "HD 113"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Aǧ+ǧule dan+naʕime ʕǧiqi "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "ref",
+                "value": "HD 113"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Aǧ+ǧule dan+naʕime ʕǧiqi (HD 113)"
           }
         ],
         "Part. Pass.": [
           {
-            "turoyo": "ʕǧiqe 134; 94/254; ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ",
-            "translations": ["ʻbeschmutzt, schmutzigʼ;"],
-            "references": ["134; 94/254"]
+            "turoyo": "ʕǧiqe ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ",
+            "translations": [
+              "beschmutzt, schmutzig"
+            ],
+            "references": [
+              "134",
+              "94/254"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕǧiqe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻbeschmutzt, schmutzigʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "134"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/254"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ"
+              }
+            ],
+            "text": "ʕǧiqe ʻbeschmutzt, schmutzigʼ; 134; 94/254; ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "beschmutzen, schmutzig machen;"
   ],
   "uncertain": false
 }

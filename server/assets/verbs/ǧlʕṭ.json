@@ -14,17 +14,99 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mǧalʕaṭle", "mǧalʕəṭ"],
+      "forms": [
+        "mǧalʕaṭle",
+        "mǧalʕəṭ"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mǧalʕəṭ u=galdayḏi 771;",
-            "translations": ["meine Haut ist aufgeplatzt"],
-            "references": ["771"]
+            "turoyo": "l-i=qaṭən mǧalʕaṭla foṯi",
+            "translations": [
+              "die Katze hat mir das Gesicht zerkratzt"
+            ],
+            "references": [
+              "771"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-i=qaṭən mǧalʕaṭla foṯi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Katze hat mir das Gesicht zerkratztʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "771"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "l-i=qaṭən mǧalʕaṭla foṯi ʻdie Katze hat mir das Gesicht zerkratztʼ; 771;"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "mǧalʕəṭ u=galdayḏi",
+            "translations": [
+              "meine Haut ist aufgeplatzt"
+            ],
+            "references": [
+              "771"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mǧalʕəṭ u=galdayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmeine Haut ist aufgeplatztʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "771"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mǧalʕəṭ u=galdayḏi ʻmeine Haut ist aufgeplatztʼ; 771;"
+          }
+        ]
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "aufkratzen (auch verharschte Wunde), zerkratzen;"
   ],
   "uncertain": false
 }

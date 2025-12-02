@@ -14,24 +14,97 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["mtaqrəf", "mitaqrəf"],
+      "forms": [
+        "mtaqrəf",
+        "mitaqrəf"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ko-mitaqrafno m-i=štaġalyayḏux 156;",
-            "translations": ["mir wird übel von dem Gerede"],
-            "references": ["156"]
+            "turoyo": "ko-mitaqrafno m-i=štaġalyayḏux",
+            "translations": [
+              "mir wird übel von dem Gerede"
+            ],
+            "references": [
+              "156"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mitaqrafno m-i=štaġalyayḏux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmir wird übel von dem Geredeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "156"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-mitaqrafno m-i=štaġalyayḏux ʻmir wird übel von dem Geredeʼ; 156;"
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "tēqrifo 156;",
-            "translations": ["Übelkeit im Magen"],
-            "references": ["156"]
+            "turoyo": "tēqrifo",
+            "translations": [
+              "Übelkeit im Magen"
+            ],
+            "references": [
+              "156"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "tēqrifo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻÜbelkeit im Magenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "156"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "tēqrifo ʻÜbelkeit im Magenʼ; 156;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(Detrans.) übel werden;"
   ],
   "uncertain": false
 }

@@ -14,19 +14,81 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["rṭīm", "mərṭəm"],
+      "forms": [
+        "rṭīm",
+        "mərṭəm"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "latəm u=talgo b-i=baxča, w u=ṭarʕo rṭīm b-naqqa ḥḏo 126; 2/51;",
+            "turoyo": "latəm u=talgo b-i=baxča w u=ṭarʕo rṭīm b-naqqa ḥḏo",
             "translations": [
               "der Schnee sammelte sich im Garten an, und die Tür wurde gänzlich verweht"
             ],
-            "references": ["126; 2/51"]
+            "references": [
+              "126",
+              "2/51"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "latəm u=talgo b-i=baxča"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w u=ṭarʕo rṭīm b-naqqa ḥḏo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Schnee sammelte sich im Garten an, und die Tür wurde gänzlich verwehtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "126"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/51"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "latəm u=talgo b-i=baxča, w u=ṭarʕo rṭīm b-naqqa ḥḏo ʻder Schnee sammelte sich im Garten an, und die Tür wurde gänzlich verwehtʼ; 126; 2/51;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) zuwehen;"
   ],
   "uncertain": false
 }

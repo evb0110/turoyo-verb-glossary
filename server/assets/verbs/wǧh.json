@@ -12,17 +12,54 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mwaǧahle", "mwaǧəh"],
+      "forms": [
+        "mwaǧahle",
+        "mwaǧəh"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "gə-mwaǧhina a=dkoṯ-ani 166;",
-            "translations": ["wir wollen aufräumen"],
-            "references": ["166"]
+            "turoyo": "gə-mwaǧhina a=dkoṯ-ani",
+            "translations": [
+              "wir wollen aufräumen"
+            ],
+            "references": [
+              "166"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gə-mwaǧhina a=dkoṯ-ani "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir wollen aufräumenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "166"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "gə-mwaǧhina a=dkoṯ-ani ʻwir wollen aufräumenʼ; 166;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "aufräumen;"
   ],
   "uncertain": false
 }

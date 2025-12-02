@@ -14,24 +14,105 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mtaslamle", "mtasləm"],
+      "forms": [
+        "mtaslamle",
+        "mtasləm"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mtaslammeruḥayye 792;",
-            "translations": [],
-            "references": ["792"]
+            "turoyo": "mtaslamme ruḥayye",
+            "translations": [
+              "sie ergaben sich"
+            ],
+            "references": [
+              "792"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mtaslamme ruḥayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie ergaben sichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "792"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mtaslamme ruḥayye ʻsie ergaben sichʼ; 792;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "ko-ṭəlbolux d-oṯət l-reša d-ḥəzyolux w də-mtaslmoi=ruḥayḏa 792; 105/115;",
-            "translations": ["Todesengel"],
-            "references": ["792; 105/115"]
+            "turoyo": "ko-ṭəlbolux d-oṯət l-reša d-ḥəzyolux w də-mtaslmo i=ruḥayḏa",
+            "translations": [
+              "sie verlangt nach dir, dass du kommen möchtest, damit sie dann ihre Seele (dem Todesengel) übergeben kann"
+            ],
+            "references": [
+              "792",
+              "105/115"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-ṭəlbolux d-oṯət l-reša d-ḥəzyolux w də-mtaslmo i=ruḥayḏa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie verlangt nach dir, dass du kommen möchtest, damit sie dann ihre Seele (dem Todesengel) übergeben kannʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "792"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "105/115"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-ṭəlbolux d-oṯət l-reša d-ḥəzyolux w də-mtaslmo i=ruḥayḏa ʻsie verlangt nach dir, dass du kommen möchtest, damit sie dann ihre Seele (dem Todesengel) übergeben kannʼ; 792; 105/115;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "sich ergeben;"
   ],
   "uncertain": false
 }

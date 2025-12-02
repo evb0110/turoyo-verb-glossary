@@ -14,17 +14,54 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["mabəxle", "mabəx"],
+      "forms": [
+        "mabəxle",
+        "mabəx"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "u=reḥayḏe ko-mabəx aʕlayna 544;",
-            "translations": ["ʻer trifft uns mit seinem Gestankʼ;"],
-            "references": ["544"]
+            "turoyo": "u=reḥayḏe ko-mabəx aʕlayna",
+            "translations": [
+              "er trifft uns mit seinem Gestank"
+            ],
+            "references": [
+              "544"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=reḥayḏe ko-mabəx aʕlayna "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer trifft uns mit seinem Gestankʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "544"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=reḥayḏe ko-mabəx aʕlayna ʻer trifft uns mit seinem Gestankʼ; 544;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(heraus)spritzen, ausstossen, loslassen;"
   ],
   "uncertain": false
 }

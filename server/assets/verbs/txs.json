@@ -5,17 +5,54 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["txəsle", "toxəs"],
+      "forms": [
+        "txəsle",
+        "toxəs"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "txəsle b-gawe 72;",
-            "translations": ["(das Schwert) in den"],
-            "references": ["72"]
+            "turoyo": "txəsle b-gawe",
+            "translations": [
+              "er stopfte es in ihn hinein, stiess ihm (das Schwert) in den Bauch"
+            ],
+            "references": [
+              "72"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "txəsle b-gawe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer stopfte es in ihn hinein, stiess ihm (das Schwert) in den Bauchʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "72"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "txəsle b-gawe ʻer stopfte es in ihn hinein, stiess ihm (das Schwert) in den Bauchʼ; 72;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "hineinstopfen, stossen;"
   ],
   "uncertain": false
 }

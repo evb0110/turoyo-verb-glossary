@@ -14,81 +14,1001 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mhalaxle", "mhaləx"],
+      "forms": [
+        "mhalaxle",
+        "mhaləx"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "i=səst-ayḏebaṭiloḥatta d-naḥət m-i=səstomhalaxle 159; 21/14; [MT] i=saʕašwaḥ b-lalyonafəqina m-i=dayro, mhalaxlanhulQartmīn i=qriṯoQartmīn 11/137; mhalaxxe b-u=darbow-azzémədde d-šawʕo=yawme d-a=tmənyomhalaxlehulefoṯe l-aʕ=ʕarab d-aš=Šammarmhalaxla l-i=baġalṯo w-azzáʕal u=darbo d-Bəssorino, hul d-maṭyoqume d-u=tarʕo d-u=qadišo, išmeMor Dodo",
+            "turoyo": "i=səst-ayḏe baṭilo ḥatta d-naḥət m-i=səsto mhalaxle i=saʕa šwaḥ b-lalyo nafəqina m-i=dayro mhalaxlan hul Qartmīn i=qriṯo mhalaxxe b-u=darbo w-azzé mədde d-šawʕo=yawme d-a=tmənyo mhalaxle hule foṯe l-aʕ=ʕarab d-aš=Šammar mhalaxla l-i=baġalṯo w-azzá ʕal u=darbo d-Bəssorino hul d-maṭyo qume d-u=tarʕo d-u=qadišo išme Mor Dodo",
             "translations": [
-              "verliessen",
-              "das Kloster und",
-              "auf den Weg’; 26/20;",
-              "marschierte",
-              "Tage lang; am",
-              "Marschrichtung",
-              "Mauleselin",
-              "an die Tür des"
+              "sein Pferd wurde müde, so stieg er vom Pferde und ging zu Fuss weiter",
+              "abends um sieben Uhr verliessen wir das Kloster und gingen zu Fuss bis zu dem Dorfe Qartmīn",
+              "‘Sie machten sich auf den Weg’",
+              "‘Er marschierte sieben Tage lang; am achten nahm er Marschrichtung gegen die Schammar’",
+              "‘Die Mauleselin ging und schlug den Weg nach Bissorino ein, bis sie an die Tür des heiligen Mor Dodo gelangte’"
             ],
-            "references": ["159; 21/14", "11/137"]
+            "references": [
+              "1",
+              "159",
+              "21/14",
+              "11/137",
+              "26/20",
+              "29/11",
+              "35/69"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=səst-ayḏe baṭilo ḥatta d-naḥət m-i=səsto mhalaxle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsein Pferd wurde müde, so stieg er vom Pferde und ging zu Fuss weiterʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "159"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=saʕa šwaḥ b-lalyo nafəqina m-i=dayro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mhalaxlan hul Qartmīn i=qriṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻabends um sieben Uhr verliessen wir das Kloster und gingen zu Fuss bis zu dem Dorfe Qartmīnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/137"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mhalaxxe b-u=darbo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sie machten sich auf den Weg’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/20"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-azzé mədde d-šawʕo=yawme d-a=tmənyo mhalaxle hule foṯe l-aʕ=ʕarab d-aš=Šammar "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er marschierte sieben Tage lang; am achten nahm er Marschrichtung gegen die Schammar’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/11"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mhalaxla l-i=baġalṯo w-azzá ʕal u=darbo d-Bəssorino"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hul d-maṭyo qume d-u=tarʕo d-u=qadišo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " išme Mor Dodo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Die Mauleselin ging und schlug den Weg nach Bissorino ein, bis sie an die Tür des heiligen Mor Dodo gelangte’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "35/69"
+              }
+            ],
+            "text": "1) i=səst-ayḏe baṭilo ḥatta d-naḥət m-i=səsto mhalaxle ʻsein Pferd wurde müde, so stieg er vom Pferde und ging zu Fuss weiterʼ; 159; 21/14; [MT] i=saʕa šwaḥ b-lalyo nafəqina m-i=dayro, mhalaxlan hul Qartmīn i=qriṯo ʻabends um sieben Uhr verliessen wir das Kloster und gingen zu Fuss bis zu dem Dorfe Qartmīnʼ; 11/137; mhalaxxe b-u=darbo ‘Sie machten sich auf den Weg’; 26/20; w-azzé mədde d-šawʕo=yawme d-a=tmənyo mhalaxle hule foṯe l-aʕ=ʕarab d-aš=Šammar ‘Er marschierte sieben Tage lang; am achten nahm er Marschrichtung gegen die Schammar’; 29/11; mhalaxla l-i=baġalṯo w-azzá ʕal u=darbo d-Bəssorino, hul d-maṭyo qume d-u=tarʕo d-u=qadišo, išme Mor Dodo ‘Die Mauleselin ging und schlug den Weg nach Bissorino ein, bis sie an die Tür des heiligen Mor Dodo gelangte’; 35/69"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "kə-mhaləx b-u=šuqo, k-mosək u=šamʕo ad=dinore 164; prs 118/15; 52/19; 73/241, 242; am=may-ani ko-mhalxibayn i=baxč-ayoLB 208;u=šaxs d-lə=mhaləx b-aq=qonunedə-Mšiḥo…anǧax w anǧax u=noš-awo ko-mawfaq-n-e m-i=ʕito LB 104; hal uno lo=məlli-lox: larwal m-i=mašwara d-u=sowolə=mhalxət!? ‘’ 21/60ḥayrí-way-na b-ag=gušre, b-lalyo, naqqa g-ḥayrí-way-naak=kurfehawxa kal ko-mhalxibayn ag=gušre-va",
+            "turoyo": "kə-mhaləx b-u=šuqo k-mosək u=šamʕo ad=dinore prs am=may-ani ko-mhalxi bayn i=baxč-ayo u=šaxs d-lə=mhaləx b-aq=qonune də-Mšiḥo…anǧax w anǧax u=noš-awo ko-mawfaq-n-e m-i=ʕito hal uno lo=məlli-lox larwal m-i=mašwara d-u=sowo lə=mhalxət!? ḥayrí-way-na b-ag=gušre b-lalyo naqqa g-ḥayrí-way-na ak=kurfe hawxa kal ko-mhalxi bayn ag=gušre-va",
             "translations": [
-              "das Wachs die",
-              "Goldstücke",
-              "Bach floss",
-              "Rat des Alten",
-              "Dachbalken",
-              "die Schlangen,",
-              "Dachbalken"
+              "wenn er auf dem Markte umherging, so fasste das Wachs die Goldstücke",
+              "dieser Bach floss durch den Garten",
+              "nur den, der nicht nach den Geboten Christus wandelt,…nur und nur den weise ich aus der Kirche aus",
+              "‘Habe ich dir nicht gesagt, du sollest von dem Rat des Alten nicht abweichen?’",
+              "‘Wir schauten zu den Dachbalken, nachts, und schon sahen wir die Schlangen, wie sie zwischen den Dachbalken entlang krochen’"
             ],
-            "references": ["164", "118/15"]
+            "references": [
+              "1",
+              "164",
+              "118/15",
+              "52/19",
+              "73/241",
+              "242",
+              "LB 208",
+              "LB 104",
+              "21/60",
+              "JL 7.7.2"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kə-mhaləx b-u=šuqo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-mosək u=šamʕo ad=dinore "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn er auf dem Markte umherging, so fasste das Wachs die Goldstückeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "164"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "118/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "52/19"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/241"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "242"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " am=may-ani ko-mhalxi bayn i=baxč-ayo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdieser Bach floss durch den Gartenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 208"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=šaxs d-lə=mhaləx b-aq=qonune də-Mšiḥo…anǧax w anǧax u=noš-awo ko-mawfaq-n-e m-i=ʕito "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnur den, der nicht nach den Geboten Christus wandelt,…nur und nur den weise ich aus der Kirche ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 104"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hal uno lo=məlli-lox"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " larwal m-i=mašwara d-u=sowo lə=mhalxət!? "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Habe ich dir nicht gesagt, du sollest von dem Rat des Alten nicht abweichen?’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/60"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥayrí-way-na b-ag=gušre"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-lalyo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " naqqa g-ḥayrí-way-na ak=kurfe hawxa kal ko-mhalxi bayn ag=gušre-va "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wir schauten zu den Dachbalken, nachts, und schon sahen wir die Schlangen, wie sie zwischen den Dachbalken entlang krochen’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 7.7.2"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) kə-mhaləx b-u=šuqo, k-mosək u=šamʕo ad=dinore ʻwenn er auf dem Markte umherging, so fasste das Wachs die Goldstückeʼ; 164; prs 118/15; 52/19; 73/241, 242; am=may-ani ko-mhalxi bayn i=baxč-ayo ʻdieser Bach floss durch den Gartenʼ; LB 208; u=šaxs d-lə=mhaləx b-aq=qonune də-Mšiḥo…anǧax w anǧax u=noš-awo ko-mawfaq-n-e m-i=ʕito ʻnur den, der nicht nach den Geboten Christus wandelt,…nur und nur den weise ich aus der Kirche ausʼ; LB 104; hal uno lo=məlli-lox: larwal m-i=mašwara d-u=sowo lə=mhalxət!? ‘Habe ich dir nicht gesagt, du sollest von dem Rat des Alten nicht abweichen?’ 21/60; ḥayrí-way-na b-ag=gušre, b-lalyo, naqqa g-ḥayrí-way-na ak=kurfe hawxa kal ko-mhalxi bayn ag=gušre-va ‘Wir schauten zu den Dachbalken, nachts, und schon sahen wir die Schlangen, wie sie zwischen den Dachbalken entlang krochen’ JL 7.7.2;"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "mhalax-waʕalqarʕe d-u=quṣro w-ko-ḥoyər b-u=darbodə-GziroDschezīre 168; 35/54; hama d-mhalax-wa tarte=fašxat, w moyad-wa u=kero d-u=gel-awo w ṭoḥán-way-le hawxa w ʕoṣar-wa b-ʕayne, … g-nayḥi-waxədmeqəm 169; 57/176; mqadamle, b-imomokŭle-wo, w-b-lalyomalax-wo 369; 29/303 [MT]",
+            "turoyo": "mhalax-wa ʕal qarʕe d-u=quṣro w-ko-ḥoyər b-u=darbo də-Gziro hama d-mhalax-wa tarte=fašxat w moyad-wa u=kero d-u=gel-awo w ṭoḥán-way-le hawxa w ʕoṣar-wa b-ʕayne … g-nayḥi-wa xəd meqəm mqadamle b-imomo kŭle-wo w-b-lalyo malax-wo",
             "translations": [
-              "Dache des Schlosses und",
-              "auf den Weg",
-              "Grasstaude",
-              ", und in seine",
-              "auspresste",
-              "er Halt, des",
-              "marschierte"
+              "er erging sich gerade auf dem Dache des Schlosses und blickte auf den Weg nach Dschezīre",
+              "wenn er zwei Schritte ginge, die Grasstaude nähme und sie so zerriebe, und in seine Augen auspresste, … würden sie gesund werden wie zuvor",
+              "er zog vorwärts, am Tage machte er Halt, des Nachts marschierte er"
             ],
-            "references": ["168; 35/54", "169; 57/176"]
+            "references": [
+              "1",
+              "168",
+              "35/54",
+              "169",
+              "57/176",
+              "369",
+              "29/303"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mhalax-wa ʕal qarʕe d-u=quṣro w-ko-ḥoyər b-u=darbo də-Gziro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer erging sich gerade auf dem Dache des Schlosses und blickte auf den Weg nach Dschezīreʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "168"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "35/54"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hama d-mhalax-wa tarte=fašxat"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w moyad-wa u=kero d-u=gel-awo w ṭoḥán-way-le hawxa w ʕoṣar-wa b-ʕayne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " … g-nayḥi-wa xəd meqəm "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn er zwei Schritte ginge, die Grasstaude nähme und sie so zerriebe, und in seine Augen auspresste, … würden sie gesund werden wie zuvorʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "169"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "57/176"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mqadamle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-imomo kŭle-wo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-b-lalyo malax-wo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer zog vorwärts, am Tage machte er Halt, des Nachts marschierte erʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  "
+              },
+              {
+                "kind": "ref",
+                "value": "369"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/303"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) mhalax-wa ʕal qarʕe d-u=quṣro w-ko-ḥoyər b-u=darbo də-Gziro ʻer erging sich gerade auf dem Dache des Schlosses und blickte auf den Weg nach Dschezīreʼ; 168; 35/54; hama d-mhalax-wa tarte=fašxat, w moyad-wa u=kero d-u=gel-awo w ṭoḥán-way-le hawxa w ʕoṣar-wa b-ʕayne, … g-nayḥi-wa xəd meqəm ʻwenn er zwei Schritte ginge, die Grasstaude nähme und sie so zerriebe, und in seine Augen auspresste, … würden sie gesund werden wie zuvorʼ; 169; 57/176; mqadamle, b-imomo kŭle-wo, w-b-lalyo malax-wo ʻer zog vorwärts, am Tage machte er Halt, des Nachts marschierte erʼ 369; 29/303 [MT];"
           },
           {
-            "turoyo": "ḥayrí-way-naʕal i=goroʕal u=ʕafro, hawxamhalxi-waxdaš=šəšwone, aʕ=ʕeqarwe",
-            "translations": ["so auf das Dach, auf die"],
-            "references": []
+            "turoyo": "ḥayrí-way-na ʕal i=goro ʕal u=ʕafro hawxa mhalxi-wa xd aš=šəšwone aʕ=ʕeqarwe ‘Wir schauten so auf das Dach auf die Erde da liefen die Skorpione herum wie die Ameisen",
+            "translations": [],
+            "references": [
+              "2",
+              "JL 7.7.9"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥayrí-way-na ʕal i=goro ʕal u=ʕafro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawxa mhalxi-wa xd aš=šəšwone"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aʕ=ʕeqarwe "
+              },
+              {
+                "kind": "turoyo",
+                "value": "‘"
+              },
+              {
+                "kind": "turoyo",
+                "value": "Wir schauten so auf das Dach"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " auf die Erde"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " da liefen die Skorpione herum wie die Ameisen "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 7.7.9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) ḥayrí-way-na ʕal i=goro ʕal u=ʕafro, hawxa mhalxi-wa xd aš=šəšwone, aʕ=ʕeqarwe ‘Wir schauten so auf das Dach, auf die Erde, da liefen die Skorpione herum wie die Ameisen JL 7.7.9;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "hat lə=maḥtatxabro d-ḥamənne b-aḏnux, w lə=ḥayrat lo b-i=xaṣr-ayo, w lo b-ayo, yaʕni lo b-i=čape w lo b-i=raṣṭe; halǝ́x 169; 58/52, 55, 69; zbəṭṭe b-iḏoṯi w mərremhalaxaʕman! LB 64; tux halə́xaʕmi!",
-            "translations": ["mir!’; 29/479"],
-            "references": ["169; 58/52", "55"]
+            "turoyo": "hat lə=maḥtat xabro d-ḥa mənne b-aḏnux w lə=ḥayrat lo b-i=xaṣr-ayo w lo b-ayo yaʕni lo b-i=čape w lo b-i=raṣṭe halǝ́x zbəṭṭe b-iḏoṯi w mərre mhalax aʕman! tux halə́x aʕmi!",
+            "translations": [
+              "lass keins von diesen Worten dir ins Ohr dringen und schau nicht nach dieser Seite noch nach jener, das heisst, nicht nach links und nicht nach rechts! Reite vorwärts!",
+              "sie hielten meine Hände und sagten: “Komm mit uns!",
+              "‘Komm und geh mit mir!’"
+            ],
+            "references": [
+              "169",
+              "58/52",
+              "55",
+              "69",
+              "LB 64",
+              "29/479"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hat lə=maḥtat xabro d-ḥa mənne b-aḏnux"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w lə=ḥayrat lo b-i=xaṣr-ayo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w lo b-ayo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " yaʕni lo b-i=čape w lo b-i=raṣṭe"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " halǝ́x "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻlass keins von diesen Worten dir ins Ohr dringen und schau nicht nach dieser Seite noch nach jener, das heisst, nicht nach links und nicht nach rechts! Reite vorwärts!ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "169"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "58/52"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "55"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " zbəṭṭe b-iḏoṯi w mərre mhalax aʕman! "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie hielten meine Hände und sagten: “Komm mit uns!”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 64"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " tux halə́x aʕmi! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Komm und geh mit mir!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/479"
+              }
+            ],
+            "text": "hat lə=maḥtat xabro d-ḥa mənne b-aḏnux, w lə=ḥayrat lo b-i=xaṣr-ayo, w lo b-ayo, yaʕni lo b-i=čape w lo b-i=raṣṭe; halǝ́x ʻlass keins von diesen Worten dir ins Ohr dringen und schau nicht nach dieser Seite noch nach jener, das heisst, nicht nach links und nicht nach rechts! Reite vorwärts!ʼ; 169; 58/52, 55, 69; zbəṭṭe b-iḏoṯi w mərre mhalax aʕman! ʻsie hielten meine Hände und sagten: “Komm mit uns!”ʼ; LB 64; tux halə́x aʕmi! ‘Komm und geh mit mir!’; 29/479"
           }
         ],
         "Nomen Actionis": [
           {
-            "turoyo": "omərqumizóx l-u=bayto l-Ḥalab. azzémhalxono 170-171; prs 119/17; prs 130/34; u=darbo, d-azzanobuwemhalxone, kuleṭarəšyoṯo w kašat-you=greʕomhalaxlemhalxonobəṯre d-u=ʕmiro w-d-i=ʕaskarkárwanmhalxono-wame-walā́yel-walā́ye",
+            "turoyo": "omər qum izóx l-u=bayto l-Ḥalab. azzé mhalxono - prs prs u=darbo d-azzano buwe mhalxone kule ṭarəšyoṯo w kašat-yo u=greʕo mhalaxle mhalxono bəṯre d-u=ʕmiro w-d-i=ʕaskar kárwan mhalxono-wa me-walā́ye l-walā́ye",
             "translations": [
-              "Aleppo”. So",
-              "zurückkehren",
-              "Steineichen",
-              "‘the servant followed the emir and the army’; 36/75;",
+              "geh jetzt nach Hause, nach Aleppo”. So musste er zu Fusse dorthin zurückkehren",
+              "der Weg, auf dem wir zu Fuss gingen, führt durch lauter Steineichen und geht dauernd bergauf",
+              "‘the servant followed the emir and the army’",
               "‘One caravan was on its way from one city to another’"
             ],
-            "references": ["170", "171"]
+            "references": [
+              "170",
+              "171",
+              "119/17",
+              "130/34",
+              "11/98",
+              "36/75",
+              "LuF 274/2"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "omər qum izóx l-u=bayto l-Ḥalab. azzé mhalxono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ“geh jetzt nach Hause, nach Aleppo”. So musste er zu Fusse dorthin zurückkehrenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "170"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "171"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "119/17"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "130/34"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=darbo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-azzano buwe mhalxone"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kule ṭarəšyoṯo w kašat-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Weg, auf dem wir zu Fuss gingen, führt durch lauter Steineichen und geht dauernd bergaufʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/98"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=greʕo mhalaxle mhalxono bəṯre d-u=ʕmiro w-d-i=ʕaskar "
+              },
+              {
+                "kind": "translation",
+                "value": "‘the servant followed the emir and the army’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/75"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kárwan mhalxono-wa me-walā́ye l-walā́ye "
+              },
+              {
+                "kind": "translation",
+                "value": "‘One caravan was on its way from one city to another’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LuF 274/2"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "omər qum izóx l-u=bayto l-Ḥalab. azzé mhalxono ʻ“geh jetzt nach Hause, nach Aleppo”. So musste er zu Fusse dorthin zurückkehrenʼ; 170-171; prs 119/17; prs 130/34; u=darbo, d-azzano buwe mhalxone, kule ṭarəšyoṯo w kašat-yo ʻder Weg, auf dem wir zu Fuss gingen, führt durch lauter Steineichen und geht dauernd bergaufʼ; 11/98; u=greʕo mhalaxle mhalxono bəṯre d-u=ʕmiro w-d-i=ʕaskar ‘the servant followed the emir and the army’; 36/75; kárwan mhalxono-wa me-walā́ye l-walā́ye ‘One caravan was on its way from one city to another’ LuF 274/2;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "1) wandern, zu Fuss gehen, reiten; fliessen; gehen, folgen; kreichen",
+    "Action Noun"
   ],
   "uncertain": false
 }

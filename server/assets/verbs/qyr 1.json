@@ -14,58 +14,507 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["qayər", "qoyər"],
+      "forms": [
+        "qayər",
+        "qoyər"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "2) lebi qayər me-briṯo 511; 90/139;",
-            "translations": ["mein Herz erkaltete gegen die Welt"],
-            "references": ["2", "511; 90/139"]
+            "turoyo": "lebi qayər me-briṯo",
+            "translations": [
+              "mein Herz erkaltete gegen die Welt"
+            ],
+            "references": [
+              "2",
+              "511",
+              "90/139"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lebi qayər me-briṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmein Herz erkaltete gegen die Weltʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "511"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "90/139"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) lebi qayər me-briṯo ʻmein Herz erkaltete gegen die Weltʼ; 511; 90/139;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "d-qoyər 515;",
-            "translations": ["damit (der Schnaps) kalt wird"],
-            "references": ["515"]
+            "turoyo": "d-qoyər",
+            "translations": [
+              "damit (der Schnaps) kalt wird"
+            ],
+            "references": [
+              "515"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "d-qoyər "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdamit (der Schnaps) kalt wirdʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "515"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "d-qoyər ʻdamit (der Schnaps) kalt wirdʼ; 515;"
           },
           {
-            "turoyo": "2) i=ḥub-ayḏe <...> lo=k-qayro b-lebi 518; 26/110; i=aṯt-aṯe iḏa kan oʕdo hawxa b-foṯi k-ummo-li, ramḥəl ʕaǧaba d-samno adna quṣuriye, məqqa g-qoyər leba meni!",
+            "turoyo": "i=ḥub-ayḏe <...> lo=k-qayro b-lebi i=aṯt-aṯe iḏa kan oʕdo hawxa b-foṯi k-ummo-li ramḥəl ʕaǧaba d-samno adna quṣuriye məqqa g-qoyər leba meni!",
             "translations": [
               "die Liebe zu ihm <...> erkaltet nicht in meinem Herzen",
-              "‘Wenn diese Frau mir jetzt schon so ins Gesicht redet, wie kalt wird ihr Herz gegen mich werden, wenn ich morgen das Geringste versehe?’; 26/111 [MT]"
+              "‘Wenn diese Frau mir jetzt schon so ins Gesicht redet, wie kalt wird ihr Herz gegen mich werden, wenn ich morgen das Geringste versehe?’"
             ],
-            "references": ["2", "518; 26/110"]
+            "references": [
+              "2",
+              "518",
+              "26/110",
+              "26/111"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=ḥub-ayḏe <...> lo=k-qayro b-lebi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Liebe zu ihm <...> erkaltet nicht in meinem Herzenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "518"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/110"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=aṯt-aṯe iḏa kan oʕdo hawxa b-foṯi k-ummo-li"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ramḥəl ʕaǧaba d-samno adna quṣuriye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " məqqa g-qoyər leba meni! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wenn diese Frau mir jetzt schon so ins Gesicht redet, wie kalt wird ihr Herz gegen mich werden, wenn ich morgen das Geringste versehe?’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/111"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "2) i=ḥub-ayḏe <...> lo=k-qayro b-lebi ʻdie Liebe zu ihm <...> erkaltet nicht in meinem Herzenʼ; 518; 26/110; i=aṯt-aṯe iḏa kan oʕdo hawxa b-foṯi k-ummo-li, ramḥəl ʕaǧaba d-samno adna quṣuriye, məqqa g-qoyər leba meni! ‘Wenn diese Frau mir jetzt schon so ins Gesicht redet, wie kalt wird ihr Herz gegen mich werden, wenn ich morgen das Geringste versehe?’; 26/111 [MT]"
           }
         ],
         "Part act.": [
           {
-            "turoyo": "1) maxlaṣlan u=talān, w maṭina; w obína-le-yo hawxa, fako qayiro obína-le-yo 528; 78/100; ad-dəkoṯ-ani, xəd mbaḥasli meqəm, dəkoṯo basíme-ne, kulle dawme w hawa fayəḥto, w maye qayire kīt bənne 528; 4/51; prs 149/8; 4/51;",
+            "turoyo": "maxlaṣlan u=talān w maṭina w obína-le-yo hawxa fako qayiro obína-le-yo ad-dəkoṯ-ani xəd mbaḥasli meqəm dəkoṯo basíme-ne kulle dawme w hawa fayəḥto w maye qayire kīt bənne prs",
             "translations": [
               "wir haben das Vieh schon in Sicherheit gebracht und sind so weit gekommen, und nun sollen wir ihm dies als kalten Bissen abgeben?",
-              "‘diese Orte sind, wie ich schon angedeutet habe, sehr liebliche Orte, lauter Bäume und frische Luft und kühles Wasser gibt es dort’;"
+              "‘diese Orte sind, wie ich schon angedeutet habe, sehr liebliche Orte, lauter Bäume und frische Luft und kühles Wasser gibt es dort’"
             ],
-            "references": ["1", "528; 78/100"]
+            "references": [
+              "1",
+              "528",
+              "78/100",
+              "528",
+              "4/51",
+              "149/8",
+              "4/51"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maxlaṣlan u=talān"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w maṭina"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w obína-le-yo hawxa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " fako qayiro obína-le-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir haben das Vieh schon in Sicherheit gebracht und sind so weit gekommen, und nun sollen wir ihm dies als kalten Bissen abgeben?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "528"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/100"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ad-dəkoṯ-ani"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " xəd mbaḥasli meqəm"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " dəkoṯo basíme-ne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kulle dawme w hawa fayəḥto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w maye qayire kīt bənne "
+              },
+              {
+                "kind": "translation",
+                "value": "‘diese Orte sind, wie ich schon angedeutet habe, sehr liebliche Orte, lauter Bäume und frische Luft und kühles Wasser gibt es dort’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "528"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "4/51"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "149/8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "4/51"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) maxlaṣlan u=talān, w maṭina; w obína-le-yo hawxa, fako qayiro obína-le-yo ʻwir haben das Vieh schon in Sicherheit gebracht und sind so weit gekommen, und nun sollen wir ihm dies als kalten Bissen abgeben?ʼ; 528; 78/100; ad-dəkoṯ-ani, xəd mbaḥasli meqəm, dəkoṯo basíme-ne, kulle dawme w hawa fayəḥto, w maye qayire kīt bənne ‘diese Orte sind, wie ich schon angedeutet habe, sehr liebliche Orte, lauter Bäume und frische Luft und kühles Wasser gibt es dort’; 528; 4/51; prs 149/8; 4/51;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["maqəlle", "maqər"],
+      "forms": [
+        "maqəlle",
+        "maqər"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "u=lebo w-i=ḥubo, nošo laybe maqəl-la 544; 26/108; i=ḥubayḏa lo=g-maqənno-la 547; 26/113;",
+            "turoyo": "u=lebo w-i=ḥubo nošo laybe maqəl-la i=ḥubayḏa lo=g-maqənno-la",
             "translations": [
               "das Herz und die Liebe, die kann niemand zum Erkalten bringen",
               "ihre Liebe kann ich ja nicht zum Erkalten bringen"
             ],
-            "references": ["544; 26/108", "547; 26/113"]
+            "references": [
+              "544",
+              "26/108",
+              "547",
+              "26/113"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=lebo w-i=ḥubo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " nošo laybe maqəl-la "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Herz und die Liebe, die kann niemand zum Erkalten bringenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "544"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/108"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=ḥubayḏa lo=g-maqənno-la "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻihre Liebe kann ich ja nicht zum Erkalten bringenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "547"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/113"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=lebo w-i=ḥubo, nošo laybe maqəl-la ʻdas Herz und die Liebe, die kann niemand zum Erkalten bringenʼ; 544; 26/108; i=ḥubayḏa lo=g-maqənno-la ʻihre Liebe kann ich ja nicht zum Erkalten bringenʼ; 547; 26/113;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "1) erkalten, kalt werden; 2) (fig.) kalt werden (lebo, ḥubo)",
+    "(fig.) zum Erkalten bringen (lebo, ḥubo);"
   ],
   "uncertain": false
 }

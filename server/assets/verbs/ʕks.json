@@ -14,20 +14,90 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mʕakəs", "miʕakəs"],
+      "forms": [
+        "mʕakəs",
+        "miʕakəs"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "u=zʕuro mʕakəs mini 172; me d-hawxa məlli, mʕakəs mini",
+            "turoyo": "u=zʕuro mʕakəs mini me d-hawxa məlli mʕakəs mini",
             "translations": [
-              "ʻder Junge sträubte sich eigensinnig gegen mich (das, was ich sagte)ʼ;",
-              "‘als ich das sagte, nahm er es mir übel’ JL 19.6.17;"
+              "der Junge sträubte sich eigensinnig gegen mich (das, was ich sagte)",
+              "‘als ich das sagte, nahm er es mir übel’"
             ],
-            "references": ["172"]
+            "references": [
+              "172",
+              "JL 19.6.17"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=zʕuro mʕakəs mini "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Junge sträubte sich eigensinnig gegen mich (das, was ich sagte)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "172"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " me d-hawxa məlli"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mʕakəs mini "
+              },
+              {
+                "kind": "translation",
+                "value": "‘als ich das sagte, nahm er es mir übel’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 19.6.17"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=zʕuro mʕakəs mini ʻder Junge sträubte sich eigensinnig gegen mich (das, was ich sagte)ʼ; 172; me d-hawxa məlli, mʕakəs mini ‘als ich das sagte, nahm er es mir übel’ JL 19.6.17;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) im Gegensatz kommen, sträuben; sich ärgern (über) Lehrbuch 19.4;"
   ],
   "uncertain": false
 }

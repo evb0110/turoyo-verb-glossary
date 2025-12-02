@@ -14,19 +14,83 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["maġnele", "maġne"],
+      "forms": [
+        "maġnele",
+        "maġne"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "qayəm šqile u=zʕuro b-alfo=lirat d-dahwo; u=faqiro-ste maġnele, w hiye-ste hawi b-abro 385; 60/67;",
+            "turoyo": "qayəm šqile u=zʕuro b-alfo=lirat d-dahwo u=faqiro-ste maġnele w hiye-ste hawi b-abro",
             "translations": [
               "er kaufte den Knaben für tausend Goldpfund, machte den Armen reich und hatte nun einen Sohn"
             ],
-            "references": ["385; 60/67"]
+            "references": [
+              "385",
+              "60/67"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qayəm šqile u=zʕuro b-alfo=lirat d-dahwo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=faqiro-ste maġnele"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w hiye-ste hawi b-abro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer kaufte den Knaben für tausend Goldpfund, machte den Armen reich und hatte nun einen Sohnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "385"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "60/67"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "qayəm šqile u=zʕuro b-alfo=lirat d-dahwo; u=faqiro-ste maġnele, w hiye-ste hawi b-abro ʻer kaufte den Knaben für tausend Goldpfund, machte den Armen reich und hatte nun einen Sohnʼ; 385; 60/67;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "reich machen;"
   ],
   "uncertain": false
 }

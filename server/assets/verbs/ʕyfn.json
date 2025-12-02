@@ -14,31 +14,155 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mʕayfən", "miʕayfən"],
+      "forms": [
+        "mʕayfən",
+        "miʕayfən"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
             "turoyo": "mʕayfni",
             "translations": [],
-            "references": ["769"]
+            "references": [
+              "769"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mʕayfni"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "769"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mʕayfni; 769;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "u laḥmo d koʕotaq, komiʕayfan (Ilyas, p.c. 26.10. 2018) the old bread becomes mouldy.",
+            "turoyo": "u laḥmo d koʕotaq komiʕayfan Ilyas p.. 2018 the old bread becomes mouldy.",
             "translations": [],
-            "references": ["26", "10"]
+            "references": [
+              "c. 26.10"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u laḥmo d koʕotaq"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " komiʕayfan "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " p."
+              },
+              {
+                "kind": "ref",
+                "value": "c. 26.10"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". 2018"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " the old bread becomes mouldy."
+              }
+            ],
+            "text": "u laḥmo d koʕotaq, komiʕayfan (Ilyas, p.c. 26.10. 2018) the old bread becomes mouldy."
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "U zad lə miʕayfan-wo, ʕAmmo Išoʕ? 'Would the grain become mouldy, ʕAmmo Išoʕ?' (QM 2367)",
-            "translations": [],
-            "references": ["2367"]
+            "turoyo": "U zad lə miʕayfan-wo ʕAmmo Išoʕ?",
+            "translations": [
+              "Would the grain become mouldy, ʕAmmo Išoʕ?"
+            ],
+            "references": [
+              "QM 2367"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "U zad lə miʕayfan-wo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕAmmo Išoʕ? "
+              },
+              {
+                "kind": "translation",
+                "value": "'Would the grain become mouldy, ʕAmmo Išoʕ?'"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "ref",
+                "value": "QM 2367"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "U zad lə miʕayfan-wo, ʕAmmo Išoʕ? 'Would the grain become mouldy, ʕAmmo Išoʕ?' (QM 2367)"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(Detrans.) schimmelig werden;"
   ],
   "uncertain": false
 }

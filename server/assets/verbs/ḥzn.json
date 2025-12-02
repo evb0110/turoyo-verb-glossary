@@ -14,42 +14,226 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ḥzīn", "məḥzən"],
+      "forms": [
+        "ḥzīn",
+        "məḥzən"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "hanibə-kmo=əšneaqdam kali s-u=zlām-ano; w yawmomṭalalə=səmle, w yawmolə=ḥzīn 262; 66/62;",
-            "translations": ["Jahren bin ich", "Tag hat er"],
-            "references": ["262; 66/62"]
+            "turoyo": "hani bə-kmo=əšne aqdam kali s-u=zlām-ano w yawmo mṭala lə=səmle w yawmo lə=ḥzīn",
+            "translations": [
+              "seit soviel Jahren bin ich bei diesem Manne und keinen Tag hat er sich gegrämt und keinen Tag ist er traurig gewesen"
+            ],
+            "references": [
+              "262",
+              "66/62"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hani bə-kmo=əšne aqdam kali s-u=zlām-ano"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w yawmo mṭala lə=səmle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w yawmo lə=ḥzīn "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻseit soviel Jahren bin ich bei diesem Manne und keinen Tag hat er sich gegrämt und keinen Tag ist er traurig gewesenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "262"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "66/62"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hani bə-kmo=əšne aqdam kali s-u=zlām-ano; w yawmo mṭala lə=səmle, w yawmo lə=ḥzīn ʻseit soviel Jahren bin ich bei diesem Manne und keinen Tag hat er sich gegrämt und keinen Tag ist er traurig gewesenʼ; 262; 66/62;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "mə-bəṯər d-ḥzele: laytmánfaʕafayəš k-ṭoʕənġamo k-məḥzən ‘; 21/55 [MT];",
-            "translations": [", began er"],
-            "references": ["21/55"]
+            "turoyo": "mə-bəṯər d-ḥzele layt mánfaʕa fayəš k-ṭoʕən ġamo k-məḥzən",
+            "translations": [
+              "‘Da er sah, daß alles keinen Zweck hatte, began er sich zu grämen und traurig zu werden’"
+            ],
+            "references": [
+              "21/55"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mə-bəṯər d-ḥzele"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " layt mánfaʕa fayəš k-ṭoʕən ġamo k-məḥzən "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Da er sah, daß alles keinen Zweck hatte, began er sich zu grämen und traurig zu werden’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/55"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mə-bəṯər d-ḥzele: layt mánfaʕa fayəš k-ṭoʕən ġamo k-məḥzən ‘Da er sah, daß alles keinen Zweck hatte, began er sich zu grämen und traurig zu werden’; 21/55 [MT];"
           },
           {
-            "turoyo": "lašanuxkomәḥzәnno",
-            "translations": ["‘I am sad for you’"],
-            "references": []
+            "turoyo": "lašanux komәḥzәnno",
+            "translations": [
+              "‘I am sad for you’"
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lašanux komәḥzәnno "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I am sad for you’"
+              }
+            ],
+            "text": "lašanux komәḥzәnno ‘I am sad for you’"
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": ["mḥazən", "miḥazən"],
+      "forms": [
+        "mḥazən",
+        "miḥazən"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "xudhatumḥaznutuʕal i=ḥaṭoyuṯayḏi;bə-šroroyani i=ḥaznitiyedə-mḥazniaʕlan LB 378;",
-            "translations": ["aussergewöhnliche"],
-            "references": ["378"]
+            "turoyo": "xud hatu mḥaznutu ʕal i=ḥaṭoyuṯayḏi bə-šroro yani i=ḥaznitiye də-mḥazni aʕlan",
+            "translations": [
+              "so wie ihr um mich, den Sünder, getrauert habt…",
+              "sie haben sich wahrlich um mich aussergewöhnliche Sorgen gemacht"
+            ],
+            "references": [
+              "LB 371",
+              "LB 378"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "xud hatu mḥaznutu ʕal i=ḥaṭoyuṯayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻso wie ihr um mich, den Sünder, getrauert habt…ʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 371"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bə-šroro yani i=ḥaznitiye də-mḥazni aʕlan "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie haben sich wahrlich um mich aussergewöhnliche Sorgen gemachtʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 378"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "xud hatu mḥaznutu ʕal i=ḥaṭoyuṯayḏi ʻso wie ihr um mich, den Sünder, getrauert habt…ʼ LB 371; bə-šroro yani i=ḥaznitiye də-mḥazni aʕlan ʻsie haben sich wahrlich um mich aussergewöhnliche Sorgen gemachtʼ LB 378;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(Detrans.) traurig werden;",
+    "(Detrans.) traurig werden;"
   ],
   "uncertain": false
 }

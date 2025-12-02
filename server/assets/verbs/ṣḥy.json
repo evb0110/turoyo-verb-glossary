@@ -12,19 +12,52 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mṣaḥele", "mṣaḥe"],
+      "forms": [
+        "mṣaḥele",
+        "mṣaḥe"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "baš šubḥe d aloho mṣaḥela briṯo bahiro, ġalabe basəm",
+            "turoyo": "baš šubḥe d aloho mṣaḥela briṯo bahiro ġalabe basəm",
             "translations": [
-              "‘Durch Gottes gnädige Fügung klärte sich das Wetter auf, und es wurde hell. Er wurde sehr vergnügt.’ RT 66/114"
+              "‘Durch Gottes gnädige Fügung klärte sich das Wetter auf, und es wurde hell. Er wurde sehr vergnügt.’"
             ],
-            "references": []
+            "references": [
+              "RT 66/114"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "baš šubḥe d aloho mṣaḥela briṯo bahiro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ġalabe basəm "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Durch Gottes gnädige Fügung klärte sich das Wetter auf, und es wurde hell. Er wurde sehr vergnügt.’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "RT 66/114"
+              }
+            ],
+            "text": "baš šubḥe d aloho mṣaḥela briṯo bahiro, ġalabe basəm ‘Durch Gottes gnädige Fügung klärte sich das Wetter auf, und es wurde hell. Er wurde sehr vergnügt.’ RT 66/114"
           }
         ]
       }
     }
   ],
+  "idioms": null,
   "uncertain": false
 }

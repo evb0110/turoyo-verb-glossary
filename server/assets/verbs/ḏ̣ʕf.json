@@ -14,62 +14,407 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ḏ̣aʕəf", "ḏ̣oʕəf"],
+      "forms": [
+        "ḏ̣aʕəf",
+        "ḏ̣oʕəf"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "k-uḏʕat u=ḥāl d-aṣ=ṣuroye məqqa ḏ̣aʕəf 87; 33/74; ġắlabe ḏ̣aʕifət! bale bə-Ṣṭambul gəm-miʕadlət. bale i=waṣiy-ayḏi lox: lo=xušnət! 10/15-16;",
+            "turoyo": "k-uḏʕat u=ḥāl d-aṣ=ṣuroye məqqa ḏ̣aʕəf ġắlabe ḏ̣aʕifət! bale bə-Ṣṭambul gəm-miʕadlət. bale i=waṣiy-ayḏi lox lo=xušnət! -",
             "translations": [
               "du weisst, wie schwach die Sache der Christen geworden ist",
               "du bist recht dünn geworden, aber in Stambul wirst du schon wieder in Ordnung kommen; aber ich rate dir: Werde nicht zu dick!"
             ],
-            "references": ["87; 33/74", "10/15"]
+            "references": [
+              "87",
+              "33/74",
+              "10/15",
+              "16"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-uḏʕat u=ḥāl d-aṣ=ṣuroye məqqa ḏ̣aʕəf "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu weisst, wie schwach die Sache der Christen geworden istʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "87"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "33/74"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ġắlabe ḏ̣aʕifət! bale bə-Ṣṭambul gəm-miʕadlət. bale i=waṣiy-ayḏi lox"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=xušnət! "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu bist recht dünn geworden, aber in Stambul wirst du schon wieder in Ordnung kommen; aber ich rate dir: Werde nicht zu dick!ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "10/15"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "16"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "k-uḏʕat u=ḥāl d-aṣ=ṣuroye məqqa ḏ̣aʕəf ʻdu weisst, wie schwach die Sache der Christen geworden istʼ; 87; 33/74; ġắlabe ḏ̣aʕifət! bale bə-Ṣṭambul gəm-miʕadlət. bale i=waṣiy-ayḏi lox: lo=xušnət! ʻdu bist recht dünn geworden, aber in Stambul wirst du schon wieder in Ordnung kommen; aber ich rate dir: Werde nicht zu dick!ʼ; 10/15-16;"
           }
         ],
         "ko-Preterit": [
           {
-            "turoyo": "ga u=zlam-ayḏan, u=zangīn kale yatiwo qum šeno mede w-ko-yarəx daqne w-kale zalṭono w-ko-ḏ̣aʕəf ġálabe",
+            "turoyo": "ga u=zlam-ayḏan u=zangīn kale yatiwo qum šeno mede w-ko-yarəx daqne w-kale zalṭono w-ko-ḏ̣aʕəf ġálabe",
             "translations": [
-              "‘Here this rich man is sitting before a rock, his beard has grown, he is nacked and he has grown thin very much’; 43/32 [MT]"
+              "‘Here this rich man is sitting before a rock, his beard has grown, he is nacked and he has grown thin very much’"
             ],
-            "references": []
+            "references": [
+              "43/32"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ga u=zlam-ayḏan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=zangīn kale yatiwo qum šeno mede w-ko-yarəx daqne w-kale zalṭono w-ko-ḏ̣aʕəf ġálabe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Here this rich man is sitting before a rock, his beard has grown, he is nacked and he has grown thin very much’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "43/32"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "ga u=zlam-ayḏan, u=zangīn kale yatiwo qum šeno mede w-ko-yarəx daqne w-kale zalṭono w-ko-ḏ̣aʕəf ġálabe ‘Here this rich man is sitting before a rock, his beard has grown, he is nacked and he has grown thin very much’; 43/32 [MT]"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "i=zʕurt-aṯe ko-ḏ̣əḥfo m-az=zuḥṯe d-u=maktūb-awo d-mtarásle-la 99; 62/95;w k-ḏ̣oʕəf u=ṭalyo ġálabe m-u=ġamo d-u=qaṭlo ‘’; 21/56 [LTN]; ṭʕəlle ġamo, k-ḏ̣oʕəf yawmo b-yawmo ‘’; 24/43 [MT]",
+            "turoyo": "i=zʕurt-aṯe ko-ḏ̣əḥfo m-az=zuḥṯe d-u=maktūb-awo d-mtarásle-la w k-ḏ̣oʕəf u=ṭalyo ġálabe m-u=ġamo d-u=qaṭlo ṭʕəlle ġamo k-ḏ̣oʕəf yawmo b-yawmo",
             "translations": [
               "die junge Frau wurde immer schwächer und schwächer aus Furcht vor dem Brief, den er ihr geschickt hatte",
-              "der Junge wurde ganz mager aus Kummer über die bevorstehende Hinrichtung",
-              "Er grämte sich und wurde von Tag zu Tag magerer"
+              "‘der Junge wurde ganz mager aus Kummer über die bevorstehende Hinrichtung’",
+              "‘Er grämte sich und wurde von Tag zu Tag magerer’"
             ],
-            "references": ["99; 62/95", "21/56"]
+            "references": [
+              "99",
+              "62/95",
+              "21/56",
+              "24/43"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=zʕurt-aṯe ko-ḏ̣əḥfo m-az=zuḥṯe d-u=maktūb-awo d-mtarásle-la "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie junge Frau wurde immer schwächer und schwächer aus Furcht vor dem Brief, den er ihr geschickt hatteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "99"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/95"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "w k-ḏ̣oʕəf u=ṭalyo ġálabe m-u=ġamo d-u=qaṭlo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘der Junge wurde ganz mager aus Kummer über die bevorstehende Hinrichtung’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/56"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[LTN]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṭʕəlle ġamo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ḏ̣oʕəf yawmo b-yawmo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er grämte sich und wurde von Tag zu Tag magerer’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/43"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "i=zʕurt-aṯe ko-ḏ̣əḥfo m-az=zuḥṯe d-u=maktūb-awo d-mtarásle-la ʻdie junge Frau wurde immer schwächer und schwächer aus Furcht vor dem Brief, den er ihr geschickt hatteʼ; 99; 62/95;w k-ḏ̣oʕəf u=ṭalyo ġálabe m-u=ġamo d-u=qaṭlo ‘der Junge wurde ganz mager aus Kummer über die bevorstehende Hinrichtung’; 21/56 [LTN]; ṭʕəlle ġamo, k-ḏ̣oʕəf yawmo b-yawmo ‘Er grämte sich und wurde von Tag zu Tag magerer’; 24/43 [MT]"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["maḏ̣ʕafle", "maḏ̣ʕəf"],
+      "forms": [
+        "maḏ̣ʕafle",
+        "maḏ̣ʕəf"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "maḏ̣ʕafle 137;",
-            "translations": ["er ist mager geworden"],
-            "references": ["137"]
+            "turoyo": "maḏ̣ʕafle",
+            "translations": [
+              "er ist mager geworden"
+            ],
+            "references": [
+              "137"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maḏ̣ʕafle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer ist mager gewordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "137"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "maḏ̣ʕafle ʻer ist mager gewordenʼ; 137;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "i=zʕurto kul d-k-uṯyo ko-mazaḥfo, w ġắlabe hawyo ḏ̣ăʕīf w parišān 143; 62/25, 27; Не стоит ли для этого слова сделать соответствующий корень?",
+            "turoyo": "i=zʕurto kul d-k-uṯyo ko-mazaḥfo w ġắlabe hawyo ḏ̣ăʕīf w parišān Не стоит ли для этого слова сделать соответствующий корень?",
             "translations": [
               "die junge Frau nahm von Tag zu Tag immer mehr ab und wurde ganz schwach und elend"
             ],
-            "references": ["143; 62/25", "27"]
+            "references": [
+              "143",
+              "62/25",
+              "27"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=zʕurto kul d-k-uṯyo ko-mazaḥfo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ġắlabe hawyo ḏ̣ăʕīf w parišān "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie junge Frau nahm von Tag zu Tag immer mehr ab und wurde ganz schwach und elendʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "143"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/25"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "27"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Не стоит ли для этого слова сделать соответствующий корень?"
+              }
+            ],
+            "text": "i=zʕurto kul d-k-uṯyo ko-mazaḥfo, w ġắlabe hawyo ḏ̣ăʕīf w parišān ʻdie junge Frau nahm von Tag zu Tag immer mehr ab und wurde ganz schwach und elendʼ; 143; 62/25, 27; Не стоит ли для этого слова сделать соответствующий корень?"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "schwach werden, abmagern;",
+    "abnehmen, mager werden;"
   ],
   "uncertain": false
 }

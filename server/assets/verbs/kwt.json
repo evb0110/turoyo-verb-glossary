@@ -12,24 +12,131 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mkawət", "mikawət"],
+      "forms": [
+        "mkawət",
+        "mikawət"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "meqəmməd-howe u=dibəs, qamaytoko-mikawti am=mayeḥaly-anək 479; 94/135;",
-            "translations": ["Traubensirup"],
-            "references": ["479; 94/135"]
+            "turoyo": "meqəm məd-howe u=dibəs qamayto ko-mikawti am=maye ḥaly-anək",
+            "translations": [
+              "ehe Traubensirup daraus wird, wird zunächst der süsse Saft halb gekocht"
+            ],
+            "references": [
+              "479",
+              "94/135"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "meqəm məd-howe u=dibəs"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qamayto ko-mikawti am=maye ḥaly-anək "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻehe Traubensirup daraus wird, wird zunächst der süsse Saft halb gekochtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "479"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/135"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "meqəm məd-howe u=dibəs, qamayto ko-mikawti am=maye ḥaly-anək ʻehe Traubensirup daraus wird, wird zunächst der süsse Saft halb gekochtʼ; 479; 94/135;"
           }
         ],
         "Part. Pass.": [
           {
-            "turoyo": "qamayto ko-maḥti am=mayemkawte 479; 94/137;",
-            "translations": ["Flüssigkeit"],
-            "references": ["479; 94/137"]
+            "turoyo": "qamayto ko-maḥti am=maye mkawte",
+            "translations": [
+              "man tut zunächst die halb gekochte Flüssigkeit"
+            ],
+            "references": [
+              "479",
+              "94/137"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qamayto ko-maḥti am=maye mkawte "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻman tut zunächst die halb gekochte Flüssigkeitʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "479"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/137"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "qamayto ko-maḥti am=maye mkawte ʻman tut zunächst die halb gekochte Flüssigkeitʼ; 479; 94/137;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(Detrans.) halb gekocht werden;"
   ],
   "uncertain": false
 }

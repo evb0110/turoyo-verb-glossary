@@ -5,19 +5,60 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mparxəl", "miparxəl"],
+      "forms": [
+        "mparxəl",
+        "miparxəl"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Part. Pass.": [
           {
-            "turoyo": "šeno mparxalto 786;",
+            "turoyo": "šeno mparxalto",
             "translations": [
               "unbrauchbarer Stein, Felsstück, das Risse, Sprünge hat"
             ],
-            "references": ["786"]
+            "references": [
+              "786"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "šeno mparxalto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻunbrauchbarer Stein, Felsstück, das Risse, Sprünge hatʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "786"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "šeno mparxalto ʻunbrauchbarer Stein, Felsstück, das Risse, Sprünge hatʼ; 786;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) Sprünge, Risse bekommen, zertrümmen;"
   ],
   "uncertain": false
 }

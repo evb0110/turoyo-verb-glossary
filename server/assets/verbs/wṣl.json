@@ -14,24 +14,92 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mwaṣele", "mwaṣəl"],
+      "forms": [
+        "mwaṣele",
+        "mwaṣəl"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mwaṣele m-i=dukṯo raḥuqto 307;",
-            "translations": ["er liess ihn von einem fernen Ort gelangen"],
-            "references": ["307"]
+            "turoyo": "mwaṣele m-i=dukṯo raḥuqto",
+            "translations": [
+              "er liess ihn von einem fernen Ort gelangen"
+            ],
+            "references": [
+              "307"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mwaṣele m-i=dukṯo raḥuqto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer liess ihn von einem fernen Ort gelangenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "307"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mwaṣele m-i=dukṯo raḥuqto ʻer liess ihn von einem fernen Ort gelangenʼ; 307;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "mwaṣál i=parč-aṯi b-aṯi 310;",
-            "translations": ["stücke dieses Stück an dieses an"],
-            "references": ["310"]
+            "turoyo": "mwaṣál i=parč-aṯi b-aṯi",
+            "translations": [
+              "stücke dieses Stück an dieses an"
+            ],
+            "references": [
+              "310"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mwaṣál i=parč-aṯi b-aṯi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻstücke dieses Stück an dieses anʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "310"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mwaṣál i=parč-aṯi b-aṯi ʻstücke dieses Stück an dieses anʼ; 310;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "anstücken, gelangen lassen;"
   ],
   "uncertain": false
 }

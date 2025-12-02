@@ -149,11 +149,9 @@ class FixedDocxParser:
         has_stem = re.match(r'^([IVX]+|Pa\.|Af\.|Št\.|Šaf\.):\s*', text)
 
         if not has_stem:
-            if text == 'Detransitive':
-                return True
-
-            # BUGFIX: Recognize "Action Noun" and "Infinitiv" as stem headers
-            if text in ['Action Noun', 'Infinitiv']:
+            # BUGFIX: Recognize "Detransitive", "Action Noun", and "Infinitiv" as stem headers
+            # Use regex for robust matching (case insensitive, optional colon)
+            if re.match(r'^(Detransitive|Action Noun|Infinitiv):?$', text, re.IGNORECASE):
                 return True
 
             # BUGFIX: Detect freeform stem lines without explicit markers (e.g., "mǧəqle/moǧaq SL 23-8-2025: ...")
@@ -1783,7 +1781,15 @@ class FixedDocxParser:
                         para_text = para.text.strip()
 
                         # BUGFIX: Handle special stem types (Detransitive, Action Noun, Infinitiv)
-                        if para_text in ['Detransitive', 'Action Noun', 'Infinitiv']:
+                        # Use regex for more robust matching (case insensitive, optional colon)
+                        if re.match(r'^(Detransitive|Action Noun|Infinitiv):?$', para_text, re.IGNORECASE):
+                            # Normalize the stem name
+                            if re.match(r'^Detransitive', para_text, re.IGNORECASE):
+                                para_text = 'Detransitive'
+                            elif re.match(r'^Action Noun', para_text, re.IGNORECASE):
+                                para_text = 'Action Noun'
+                            elif re.match(r'^Infinitiv', para_text, re.IGNORECASE):
+                                para_text = 'Infinitiv'
                             # BUGFIX V2.1.7: Extract idioms before starting new stem
                             if self.in_idioms_section and self.pending_idiom_paras:
                                 all_verb_forms = []
@@ -1869,6 +1875,8 @@ class FixedDocxParser:
                                         'italic': has_italic,
                                         'text': label_gloss
                                     }]
+                                    # Fallback: always set label_raw to ensure we have the text
+                                    current_stem['label_raw'] = label_gloss
 
                                 if current_verb is not None:
                                     current_verb['stems'].append(current_stem)
@@ -1934,6 +1942,9 @@ class FixedDocxParser:
                                     gloss_tokens = self.tokenize_paragraph_runs(para, gloss_text)
                                     if gloss_tokens:
                                         current_stem['label_gloss_tokens'] = gloss_tokens
+                                    
+                                    # Fallback: always set label_raw to ensure we have the text
+                                    current_stem['label_raw'] = gloss_text
 
                                 # BUGFIX V2.1.8: Check for separate paragraph gloss
                                 # If no gloss on same line, look ahead to next paragraph
@@ -1960,6 +1971,8 @@ class FixedDocxParser:
                                             gloss_tokens = self.tokenize_paragraph_runs(next_p, next_text)
                                             if gloss_tokens:
                                                 current_stem['label_gloss_tokens'] = gloss_tokens
+                                                # Fallback: always set label_raw
+                                                current_stem['label_raw'] = next_text
                                                 # Mark this paragraph index as consumed
                                                 self.consumed_para_indices.add(j)
                                                 self.stats['separate_glosses_captured'] = self.stats.get('separate_glosses_captured', 0) + 1

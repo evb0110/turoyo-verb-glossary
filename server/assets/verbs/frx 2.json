@@ -14,29 +14,134 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mfaraxle", "mfarəx"],
+      "forms": [
+        "mfaraxle",
+        "mfarəx"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "aṯyo i=Deḥoqlalo, i=emo d-aǧ=ǧən, mfaraxla bayn aḥ=ḥeṭe mkawme b-i=arʕo tloṯo=farxe ḥ 161; prs 229/15;",
+            "turoyo": "aṯyo i=Deḥoqlalo i=emo d-aǧ=ǧən mfaraxla bayn aḥ=ḥeṭe mkawme b-i=arʕo tloṯo=farxe prs",
             "translations": [
-              "da kam die De",
-              "oqlâlo, die Elfenmutter, und warf in dem auf dem Felde aufgeschichteten Weizen Junge, drei an der Zahl"
+              "da kam die Deḥoqlâlo, die Elfenmutter, und warf in dem auf dem Felde aufgeschichteten Weizen Junge, drei an der Zahl"
             ],
-            "references": ["161", "229/15"]
+            "references": [
+              "161",
+              "229/15"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aṯyo i=Deḥoqlalo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=emo d-aǧ=ǧən"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mfaraxla bayn aḥ=ḥeṭe mkawme b-i=arʕo tloṯo=farxe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda kam die Deḥoqlâlo, die Elfenmutter, und warf in dem auf dem Felde aufgeschichteten Weizen Junge, drei an der Zahlʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "161"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "229/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "aṯyo i=Deḥoqlalo, i=emo d-aǧ=ǧən, mfaraxla bayn aḥ=ḥeṭe mkawme b-i=arʕo tloṯo=farxe ʻda kam die Deḥoqlâlo, die Elfenmutter, und warf in dem auf dem Felde aufgeschichteten Weizen Junge, drei an der Zahlʼ; 161; prs 229/15;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "kət-li mede kul šato kə-mfarəx tarte=naqlat 164; prs 254/33;",
+            "turoyo": "kət-li mede kul šato kə-mfarəx tarte=naqlat prs",
             "translations": [
               "ich weiss etwas, das bringt jedes Jahr zweimal Junge zur Welt"
             ],
-            "references": ["164", "254/33"]
+            "references": [
+              "164",
+              "254/33"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kət-li mede kul šato kə-mfarəx tarte=naqlat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich weiss etwas, das bringt jedes Jahr zweimal Junge zur Weltʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "164"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "254/33"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kət-li mede kul šato kə-mfarəx tarte=naqlat ʻich weiss etwas, das bringt jedes Jahr zweimal Junge zur Weltʼ; 164; prs 254/33;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "ausbrüten, zur Welt bringen;"
   ],
   "uncertain": false
 }

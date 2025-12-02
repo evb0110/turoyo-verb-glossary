@@ -14,15 +14,47 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mnaʕamle", "mnaʕəm"],
+      "forms": [
+        "mnaʕamle",
+        "mnaʕəm"
+      ],
       "conjugations": {
         "Infectum": [
           {
             "turoyo": "w gə-mnaʕmina ṭabí baṣro w baṣle",
             "translations": [
-              "‘und wir hacken Fleisch und Zwiebeln’; JL 18.6.9;"
+              "‘und wir hacken Fleisch und Zwiebeln’"
             ],
-            "references": []
+            "references": [
+              "JL 18.6.9"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "w gə-mnaʕmina ṭabí baṣro w baṣle "
+              },
+              {
+                "kind": "translation",
+                "value": "‘und wir hacken Fleisch und Zwiebeln’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 18.6.9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "w gə-mnaʕmina ṭabí baṣro w baṣle ‘und wir hacken Fleisch und Zwiebeln’; JL 18.6.9;"
           }
         ],
         "Infectum-wa": [
@@ -31,11 +63,39 @@
             "translations": [
               "ich nahm sie (der Käse f) aus dem Beutel heraus, und wir zerkleinerten sie"
             ],
-            "references": []
+            "references": [
+              "JL 11.12.10"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=gwet-ayo məfqó-way-no-la m-u=kiso w gə-mnaʕmí-way-na-la "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich nahm sie (der Käse f) aus dem Beutel heraus, und wir zerkleinerten sieʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 11.12.10"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=gwet-ayo məfqó-way-no-la m-u=kiso w gə-mnaʕmí-way-na-la ʻich nahm sie (der Käse f) aus dem Beutel heraus, und wir zerkleinerten sieʼ JL 11.12.10;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "zerkleinern;"
   ],
   "uncertain": false
 }

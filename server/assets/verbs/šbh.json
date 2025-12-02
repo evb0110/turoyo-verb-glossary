@@ -14,50 +14,552 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["šbəhle", "šobəh"],
+      "forms": [
+        "šbəhle",
+        "šobəh"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ummo: «hano g-məžbəh u=gawr-ayḏi-yo bale lakən i=sowuṯ-ayḏe lo=k-mitažbəh» 217; 29/334;",
-            "translations": [],
-            "references": ["217; 29/334"]
+            "turoyo": "mede lo=k-šobəh l-mede prs i=ʕayno k-šubho l-i=rəġaye d-kət-yo b-gawə-d-nuqro d-garmo mədle l-i=ṭaṣ-ayḏa maḥatle ṭaṣe ḥreto də-k-šəbho-la b-dukṯa w-nafəq b-u=tarʕo k-šubhət l-kalo hano lat-yo nošo əlla hano k-šobəh d-kət-yo malaxo m-d-aloho w-qadišo",
+            "translations": [
+              "kann nicht ein Ding dem andern gleichen",
+              "das Auge gleicht einer Murmel in einer Höhlung aus Knochen",
+              "‘Er nahm die Schale, stellte eine andere, ihr ähnliche, an ihre Stelle, und ging zur Tür hinaus’",
+              "‘Du siehst aus wie eine Braut’",
+              "‘Er ist kein Mensch, sondern es scheint, daß er ein Engel Gottes ist und ein Heiliger’"
+            ],
+            "references": [
+              "216",
+              "26/14",
+              "36",
+              "3/9",
+              "25/12",
+              "26/163",
+              "35/47"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mede lo=k-šobəh l-mede "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻkann nicht ein Ding dem andern gleichenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "216"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "26/14"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=ʕayno k-šubho l-i=rəġaye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-kət-yo b-gawə-d-nuqro d-garmo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Auge gleicht einer Murmel in einer Höhlung aus Knochenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "3/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mədle l-i=ṭaṣ-ayḏa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥatle ṭaṣe ḥreto də-k-šəbho-la b-dukṯa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-nafəq b-u=tarʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er nahm die Schale, stellte eine andere, ihr ähnliche, an ihre Stelle, und ging zur Tür hinaus’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/12"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-šubhət l-kalo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Du siehst aus wie eine Braut’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/163"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hano lat-yo nošo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " əlla hano k-šobəh d-kət-yo malaxo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-d-aloho w-qadišo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er ist kein Mensch, sondern es scheint, daß er ein Engel Gottes ist und ein Heiliger’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "35/47"
+              }
+            ],
+            "text": "mede lo=k-šobəh l-mede ʻkann nicht ein Ding dem andern gleichenʼ; 216; prs 26/14, 36; i=ʕayno k-šubho l-i=rəġaye, d-kət-yo b-gawə-d-nuqro d-garmo ʻdas Auge gleicht einer Murmel in einer Höhlung aus Knochenʼ; 3/9; mədle l-i=ṭaṣ-ayḏa, maḥatle ṭaṣe ḥreto də-k-šəbho-la b-dukṯa, w-nafəq b-u=tarʕo ‘Er nahm die Schale, stellte eine andere, ihr ähnliche, an ihre Stelle, und ging zur Tür hinaus’; 25/12; k-šubhət l-kalo ‘Du siehst aus wie eine Braut’; 26/163; hano lat-yo nošo, əlla hano k-šobəh d-kət-yo malaxo, m-d-aloho w-qadišo ‘Er ist kein Mensch, sondern es scheint, daß er ein Engel Gottes ist und ein Heiliger’; 35/47"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "ṣpáhi-wa i=kačke hiya-steġắlabe, w šəbho-wa l-Zine 216; 74/54; m-u=sabab d-šubhi-wo lə-ḥḏoḏe a=tre, a=greʕe, i=naqqa d-ḥuzán-wo-la <…>, ḥəšwí-wo-la: hiya hano u=rab-ayḏan-yoŠahrzamān-yoSchahrzamān’; 24/153-154 [MT]",
-            "translations": ["und war der Zine", ". Wenn die"],
-            "references": ["216; 74/54", "24/153"]
+            "turoyo": "ṣpáhi-wa i=kačke hiya-ste ġắlabe w šəbho-wa l-Zine m-u=sabab d-šubhi-wo lə-ḥḏoḏe a=tre a=greʕe i=naqqa d-ḥuzán-wo-la <…> ḥəšwí-wo-la hiya hano u=rab-ayḏan-yo Šahrzamān-yo -",
+            "translations": [
+              "sie war auch sehr schön und war der Zine ähnlich",
+              "‘Denn sie waren einander ähnlich. Wenn die Knechte sie <…> sahen, glaubten sie: dies ist unser Herr Schahrzamān’"
+            ],
+            "references": [
+              "216",
+              "74/54",
+              "24/153",
+              "154"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṣpáhi-wa i=kačke hiya-ste ġắlabe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w šəbho-wa l-Zine "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie war auch sehr schön und war der Zine ähnlichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "216"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "74/54"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-u=sabab d-šubhi-wo lə-ḥḏoḏe a=tre"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " a=greʕe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naqqa d-ḥuzán-wo-la <…>"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥəšwí-wo-la"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hiya hano u=rab-ayḏan-yo Šahrzamān-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Denn sie waren einander ähnlich. Wenn die Knechte sie <…> sahen, glaubten sie: dies ist unser Herr Schahrzamān’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/153"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "154"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "ṣpáhi-wa i=kačke hiya-ste ġắlabe, w šəbho-wa l-Zine ʻsie war auch sehr schön und war der Zine ähnlichʼ; 216; 74/54; m-u=sabab d-šubhi-wo lə-ḥḏoḏe a=tre, a=greʕe, i=naqqa d-ḥuzán-wo-la <…>, ḥəšwí-wo-la: hiya hano u=rab-ayḏan-yo Šahrzamān-yo ‘Denn sie waren einander ähnlich. Wenn die Knechte sie <…> sahen, glaubten sie: dies ist unser Herr Schahrzamān’; 24/153-154 [MT]"
           }
         ]
       }
     },
     {
-      "stem": "II",
-      "forms": ["mšabahle", "mšabəh"],
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "k-əbʕətdə-mšabhətaloho l-tašbihayaʕninaʕəmtoxd-i=šəmš-aṯe 217; 84/35;",
-            "translations": [],
-            "references": ["217; 84/35"]
+            "turoyo": "ummo «hano g-məžbəh u=gawr-ayḏi-yo bale lakən i=sowuṯ-ayḏe lo=k-mitažbəh»",
+            "translations": [
+              "dann dachte sie: «dies ist, scheint es, mein Mann, aber sein weisses Haar kann man nicht als ähnlich ansehen»"
+            ],
+            "references": [
+              "217",
+              "29/334"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ummo"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " «hano g-məžbəh u=gawr-ayḏi-yo bale lakən i=sowuṯ-ayḏe lo=k-mitažbəh» "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdann dachte sie: «dies ist, scheint es, mein Mann, aber sein weisses Haar kann man nicht als ähnlich ansehen»ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "217"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/334"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ummo: «hano g-məžbəh u=gawr-ayḏi-yo bale lakən i=sowuṯ-ayḏe lo=k-mitažbəh» ʻdann dachte sie: «dies ist, scheint es, mein Mann, aber sein weisses Haar kann man nicht als ähnlich ansehen»ʼ; 217; 29/334;"
+          }
+        ]
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "ähnlich sehen"
+        }
+      ],
+      "label_raw": "ähnlich sehen"
+    },
+    {
+      "stem": "II",
+      "forms": [
+        "mšabahle",
+        "mšabəh"
+      ],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "k-əbʕət də-mšabhət aloho l-tašbiha yaʕni naʕəmto xd-i=šəmš-aṯe",
+            "translations": [
+              "du willst Gott ähnlich machen einem so kleinen Ding wie diese Sonne?"
+            ],
+            "references": [
+              "217",
+              "84/35"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-əbʕət də-mšabhət aloho l-tašbiha yaʕni naʕəmto xd-i=šəmš-aṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu willst Gott ähnlich machen einem so kleinen Ding wie diese Sonne?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "217"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "84/35"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "k-əbʕət də-mšabhət aloho l-tašbiha yaʕni naʕəmto xd-i=šəmš-aṯe ʻdu willst Gott ähnlich machen einem so kleinen Ding wie diese Sonne?ʼ; 217; 84/35;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["mtašbəh", "mitašbəh"],
+      "forms": [
+        "mtašbəh",
+        "mitašbəh"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ummo: «hano g-məžbəh u=gawráyḏi-yo bale lakən i=sowuṯayḏe lo=k-mitažbəh» 217; 29/334;",
-            "translations": [],
-            "references": ["217; 29/334"]
+            "turoyo": "ummo «hano g-məžbəh u=gawráyḏi-yo bale lakən i=sowuṯayḏe lo=k-mitažbəh»",
+            "translations": [
+              "dann dachte sie: «dies ist, scheint es, mein Mann, aber sein weisses Haar kann man nicht als ähnlich ansehen»"
+            ],
+            "references": [
+              "217",
+              "29/334"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ummo"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " «hano g-məžbəh u=gawráyḏi-yo bale lakən i=sowuṯayḏe lo=k-mitažbəh» "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdann dachte sie: «dies ist, scheint es, mein Mann, aber sein weisses Haar kann man nicht als ähnlich ansehen»ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "217"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/334"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ummo: «hano g-məžbəh u=gawráyḏi-yo bale lakən i=sowuṯayḏe lo=k-mitažbəh» ʻdann dachte sie: «dies ist, scheint es, mein Mann, aber sein weisses Haar kann man nicht als ähnlich ansehen»ʼ; 217; 29/334;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "gleichen, ähnlich sein, so aussehen als ob (mit l- jemandem, etwas);",
+    "ähnlich finden, machen, den Eindruck haben, dass.",
+    "ähnlich sehen"
   ],
   "uncertain": false
 }

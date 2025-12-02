@@ -14,17 +14,48 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["rəkle", "royək"],
+      "forms": [
+        "rəkle",
+        "royək"
+      ],
       "conjugations": {
         "Infectum": [
           {
             "turoyo": "gabayna ko-raykina aš=šurone d-ab=bote",
             "translations": [],
-            "references": ["579"]
+            "references": [
+              "579"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gabayna ko-raykina aš=šurone d-ab=bote"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "579"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "gabayna ko-raykina aš=šurone d-ab=bote; 579;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "die Grundmauern eines Gebäudes mit Erde, Steinen u.a. auffüllen;"
   ],
   "uncertain": false
 }

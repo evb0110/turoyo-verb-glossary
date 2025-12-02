@@ -5,20 +5,101 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["mačlaṣle", "mačləṣ"],
+      "forms": [
+        "mačlaṣle",
+        "mačləṣ"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ánnaqla i=lašayḏe fayəš ko-mačalṣo, dahwo hawi 143; 75/148; am=maye d-u=baḥar d-ummət kəllən taḥtə-raġli k-mábrəqi w k-máčləṣi 4/15;",
+            "turoyo": "ánnaqla i=lašayḏe fayəš ko-mačalṣo dahwo hawi am=maye d-u=baḥar d-ummət kəllən taḥtə-raġli k-mábrəqi w k-máčləṣi",
             "translations": [
-              "ʻda begann sein Leib zu glänzen, und er wurde ganz goldenʼ;",
-              "ʻdas Wasser des Meeres blitzt und leuchtet sozusagen unter meinen Füssenʼ;"
+              "da begann sein Leib zu glänzen, und er wurde ganz golden",
+              "das Wasser des Meeres blitzt und leuchtet sozusagen unter meinen Füssen"
             ],
-            "references": ["143; 75/148", "4/15"]
+            "references": [
+              "143",
+              "75/148",
+              "4/15"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ánnaqla i=lašayḏe fayəš ko-mačalṣo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " dahwo hawi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda begann sein Leib zu glänzen, und er wurde ganz goldenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "143"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/148"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " am=maye d-u=baḥar d-ummət kəllən taḥtə-raġli k-mábrəqi w k-máčləṣi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Wasser des Meeres blitzt und leuchtet sozusagen unter meinen Füssenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "4/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ánnaqla i=lašayḏe fayəš ko-mačalṣo, dahwo hawi ʻda begann sein Leib zu glänzen, und er wurde ganz goldenʼ; 143; 75/148; am=maye d-u=baḥar d-ummət kəllən taḥtə-raġli k-mábrəqi w k-máčləṣi ʻdas Wasser des Meeres blitzt und leuchtet sozusagen unter meinen Füssenʼ; 4/15;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "glänzen, strahlen, funkeln;"
   ],
   "uncertain": false
 }

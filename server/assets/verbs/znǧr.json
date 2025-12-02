@@ -14,17 +14,77 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mzanǧalle", "mzanǧər"],
+      "forms": [
+        "mzanǧalle",
+        "mzanǧər"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Part. Pass.": [
           {
-            "turoyo": "mzanǧro b-az=zineǧər 795; 57/57; ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ",
-            "translations": ["angekettet"],
-            "references": ["795; 57/57"]
+            "turoyo": "mzanǧro b-az=zineǧər ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ",
+            "translations": [
+              "angekettet"
+            ],
+            "references": [
+              "795",
+              "57/57"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mzanǧro b-az=zineǧər "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻangekettetʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "795"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "57/57"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ"
+              }
+            ],
+            "text": "mzanǧro b-az=zineǧər ʻangekettetʼ; 795; 57/57; ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "anketten;"
   ],
   "uncertain": false
 }

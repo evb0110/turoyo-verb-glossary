@@ -14,69 +14,406 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mqalele", "mqale"],
+      "forms": [
+        "mqalele",
+        "mqale"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mqalela ḥəmṣe, maḥtila ʕal i=arʕo 415; prs 239/2; haṯe i=ḥurma nḥəlla i=qazo w-mbašlola w-mqalyola 415; 44/42;",
+            "turoyo": "mqalela ḥəmṣe maḥtila ʕal i=arʕo prs haṯe i=ḥurma nḥəlla i=qazo w-mbašlola w-mqalyola",
             "translations": [
               "sie röstete Erbsen und legte sie auf die Erde",
-              "‘This woman killed the goose, cooked and roasted it’;"
+              "‘This woman killed the goose, cooked and roasted it’"
             ],
-            "references": ["415", "239/2"]
+            "references": [
+              "415",
+              "239/2",
+              "415",
+              "44/42"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mqalela ḥəmṣe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥtila ʕal i=arʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie röstete Erbsen und legte sie auf die Erdeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "415"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "239/2"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " haṯe i=ḥurma nḥəlla i=qazo w-mbašlola w-mqalyola "
+              },
+              {
+                "kind": "translation",
+                "value": "‘This woman killed the goose, cooked and roasted it’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "415"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/42"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mqalela ḥəmṣe, maḥtila ʕal i=arʕo ʻsie röstete Erbsen und legte sie auf die Erdeʼ; 415; prs 239/2; haṯe i=ḥurma nḥəlla i=qazo w-mbašlola w-mqalyola ‘This woman killed the goose, cooked and roasted it’; 415; 44/42;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "ʕabiro l-i=mʕarṯo lawġul, d-saymo-le ṣfero, mqalyole kmo=beʕe 420; 75/81; kət-lan gḏayto taqənto, g-mqalyal-la",
+            "turoyo": "ʕabiro l-i=mʕarṯo lawġul d-saymo-le ṣfero mqalyole kmo=beʕe kət-lan gḏayto taqənto g-mqalyal-la",
             "translations": [
               "sie geht innen in die Höhle hinein, um ihm ein Omelett zu machen, ihm ein paar Eier zu braten",
-              "‘We have a fat hen which I am going to roast’; 44/68"
+              "‘We have a fat hen which I am going to roast’"
             ],
-            "references": ["420; 75/81"]
+            "references": [
+              "420",
+              "75/81",
+              "44/68"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕabiro l-i=mʕarṯo lawġul"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-saymo-le ṣfero"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mqalyole kmo=beʕe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie geht innen in die Höhle hinein, um ihm ein Omelett zu machen, ihm ein paar Eier zu bratenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "420"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/81"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kət-lan gḏayto taqənto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-mqalyal-la "
+              },
+              {
+                "kind": "translation",
+                "value": "‘We have a fat hen which I am going to roast’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/68"
+              }
+            ],
+            "text": "ʕabiro l-i=mʕarṯo lawġul, d-saymo-le ṣfero, mqalyole kmo=beʕe ʻsie geht innen in die Höhle hinein, um ihm ein Omelett zu machen, ihm ein paar Eier zu bratenʼ; 420; 75/81; kət-lan gḏayto taqənto, g-mqalyal-la ‘We have a fat hen which I am going to roast’; 44/68"
           }
         ],
         "Imperativ": [
           {
             "turoyo": "bašel-a mqaliy-a! gəd-uxlína-la",
             "translations": [
-              "‘Cook it (the goose, f) and roast it! We will eat it’; 36/114 [MT]"
+              "‘Cook it (the goose, f) and roast it! We will eat it’"
             ],
-            "references": []
+            "references": [
+              "36/114"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bašel-a mqaliy-a! gəd-uxlína-la "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Cook it (the goose, f) and roast it! We will eat it’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/114"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "bašel-a mqaliy-a! gəd-uxlína-la ‘Cook it (the goose, f) and roast it! We will eat it’; 36/114 [MT]"
           }
-        ],
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
         "Part. Pass.": [
           {
-            "turoyo": "mobele aʕme muklo, ḥamšo=kilowat tamre ʕǧine mqalye b-u=məšḥok-saymono ádyawma qazo mqalayto w-bardəš d-rezo",
+            "turoyo": "mobele aʕme muklo ḥamšo=kilowat tamre ʕǧine mqalye b-u=məšḥo k-saymono ádyawma qazo mqalayto w-bardəš d-rezo",
             "translations": [
-              "‘Er nahm Essen mit: fünf Kilo gepreßte Datteln, in Fett geröstet’; 29/48 [MT];",
-              "‘Today, I am going to cook a roasted goose and a pot of rice’; 44/37 [MT]"
+              "‘Er nahm Essen mit: fünf Kilo gepreßte Datteln, in Fett geröstet’",
+              "‘Today, I am going to cook a roasted goose and a pot of rice’"
             ],
-            "references": []
+            "references": [
+              "29/48",
+              "44/37"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mobele aʕme muklo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥamšo=kilowat tamre ʕǧine mqalye b-u=məšḥo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er nahm Essen mit: fünf Kilo gepreßte Datteln, in Fett geröstet’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/48"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-saymono ádyawma qazo mqalayto w-bardəš d-rezo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Today, I am going to cook a roasted goose and a pot of rice’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/37"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "mobele aʕme muklo, ḥamšo=kilowat tamre ʕǧine mqalye b-u=məšḥo ‘Er nahm Essen mit: fünf Kilo gepreßte Datteln, in Fett geröstet’; 29/48 [MT]; k-saymono ádyawma qazo mqalayto w-bardəš d-rezo ‘Today, I am going to cook a roasted goose and a pot of rice’; 44/37 [MT]"
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": ["mqalazle", "mqalәz"],
+      "forms": [
+        "mqalazle",
+        "mqalәz"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "u yawmo kule u dewo mqalazwa ʕal u qaṭʕo. (šabo p.c)",
+            "turoyo": "u yawmo kule u dewo mqalazwa ʕal u qaṭʕo. šabo p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u yawmo kule u dewo mqalazwa ʕal u qaṭʕo. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "šabo p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "u yawmo kule u dewo mqalazwa ʕal u qaṭʕo. (šabo p.c)"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "Komqalzi aṭ ṭayre mi šmayo ʕal a gyoṯe. (šabo p.c)",
+            "turoyo": "Komqalzi aṭ ṭayre mi šmayo ʕal a gyoṯe. šabo p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Komqalzi aṭ ṭayre mi šmayo ʕal a gyoṯe. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "šabo p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Komqalzi aṭ ṭayre mi šmayo ʕal a gyoṯe. (šabo p.c)"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "braten, rösten;",
+    "qlz",
+    "(looking for with a bad intention)"
   ],
   "uncertain": false
 }

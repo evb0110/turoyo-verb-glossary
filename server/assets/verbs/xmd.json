@@ -14,40 +14,198 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["xaməd", "xoməd"],
+      "forms": [
+        "xaməd",
+        "xoməd"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "b-u=šəkəl-ano ʕAlo i=nuro šaġilo aʕle l-u=goran d-i=ḥaqsiziye d-səmle ʕal af=faqire, w ʕal am=məskine, w hul d-xaməd w mayəṯ b-i=dukto ʕ RT 33;",
+            "turoyo": "b-u=šəkəl-ano ʕAlo i=nuro šaġilo aʕle l-u=goran d-i=ḥaqsiziye d-səmle ʕal af=faqire w ʕal am=məskine w hul d-xaməd w mayəṯ b-i=dukto",
             "translations": [
-              "so brannte das Feuer den",
-              "Alo, entsprechend dem Unrecht, das er an den Armen verübt hatte, bis er verkohlte und an Ort und Stelle starb"
+              "so brannte das Feuer den ʕAlo, entsprechend dem Unrecht, das er an den Armen verübt hatte, bis er verkohlte und an Ort und Stelle starb"
             ],
-            "references": ["33"]
+            "references": [
+              "RT 33"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "b-u=šəkəl-ano ʕAlo i=nuro šaġilo aʕle l-u=goran d-i=ḥaqsiziye d-səmle ʕal af=faqire"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ʕal am=məskine"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w hul d-xaməd w mayəṯ b-i=dukto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻso brannte das Feuer den ʕAlo, entsprechend dem Unrecht, das er an den Armen verübt hatte, bis er verkohlte und an Ort und Stelle starbʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "RT 33"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "b-u=šəkəl-ano ʕAlo i=nuro šaġilo aʕle l-u=goran d-i=ḥaqsiziye d-səmle ʕal af=faqire, w ʕal am=məskine, w hul d-xaməd w mayəṯ b-i=dukto ʻso brannte das Feuer den ʕAlo, entsprechend dem Unrecht, das er an den Armen verübt hatte, bis er verkohlte und an Ort und Stelle starbʼ; RT 33;"
           },
           {
-            "turoyo": "Qṭile, be áydarbo qṭile, Xandaq xamido",
+            "turoyo": "Qṭile be áydarbo qṭile Xandaq xamido NE_Boses and Shushan. Ilyas says that this verb is used typically to talk about thr fire so here he imagines that something similar happened. He also approved yığılma as a possible turkish translation Ilyas p.c.",
             "translations": [
-              "‘He killed him, at the moment he killed him, Xandeq collapsed/crumbled into dust’ (NE_Boses and Shushan). Ilyas says that this verb is used typically to talk about thr fire, so here he imagines that something similar happened. He also approved yığılma as a possible turkish translation(13/05/24 Ilyas p.c.)"
+              "‘He killed him, at the moment he killed him, Xandeq collapsed/crumbled into dust’"
             ],
-            "references": []
+            "references": [
+              "13/05/24"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Qṭile"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " be áydarbo qṭile"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " Xandaq xamido "
+              },
+              {
+                "kind": "translation",
+                "value": "‘He killed him, at the moment he killed him, Xandeq collapsed/crumbled into dust’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "NE_Boses and Shushan"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". Ilyas says that this verb is used typically to talk about thr fire"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " so here he imagines that something similar happened. He also approved yığılma as a possible turkish translation"
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "ref",
+                "value": "13/05/24"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Ilyas p.c."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Qṭile, be áydarbo qṭile, Xandaq xamido ‘He killed him, at the moment he killed him, Xandeq collapsed/crumbled into dust’ (NE_Boses and Shushan). Ilyas says that this verb is used typically to talk about thr fire, so here he imagines that something similar happened. He also approved yığılma as a possible turkish translation(13/05/24 Ilyas p.c.)"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["maxmadle", "maxməd"],
+      "forms": [
+        "maxmadle",
+        "maxməd"
+      ],
       "conjugations": {
         "Imperativ": [
           {
-            "turoyo": "maxmád 152;",
-            "translations": ["lösche aus"],
-            "references": ["152"]
+            "turoyo": "maxmád",
+            "translations": [
+              "lösche aus"
+            ],
+            "references": [
+              "152"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maxmád "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻlösche ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "152"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "maxmád ʻlösche ausʼ; 152;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "ausgelöscht werden, verkohlen;",
+    "auslöschen;"
   ],
   "uncertain": false
 }

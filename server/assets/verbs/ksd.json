@@ -5,29 +5,108 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ksədle", "kosəd"],
+      "forms": [
+        "ksədle",
+        "kosəd"
+      ],
       "conjugations": {
         "Infectum-wa": [
           {
-            "turoyo": "Saymiwaqaliyat w kəsdiwo u baṣro, mmalḥiwole, tulanwole bad daneqaliyat",
+            "turoyo": "Saymiwa qaliyat w kəsdiwo u baṣro mmalḥiwole tulanwole bad dane",
             "translations": [
-              "'People would make",
-              "and pickle (?) the meat, salt it and then put it in containers' (QM 2461)"
+              "People would make qaliyat and pickle (?) the meat, salt it and then put it in containers"
             ],
-            "references": []
+            "references": [
+              "QM 2461"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Saymiwa qaliyat w kəsdiwo u baṣro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mmalḥiwole"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " tulanwole bad dane "
+              },
+              {
+                "kind": "translation",
+                "value": "'People would make qaliyat and pickle (?) the meat, salt it and then put it in containers'"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "ref",
+                "value": "QM 2461"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Saymiwa qaliyat w kəsdiwo u baṣro, mmalḥiwole, tulanwole bad dane 'People would make qaliyat and pickle (?) the meat, salt it and then put it in containers' (QM 2461)"
           }
         ],
         "Part. pass.": [
           {
-            "turoyo": "U baṣroksido b mənmaḥtiwole?",
+            "turoyo": "U baṣro ksido b mən maḥtiwole?",
             "translations": [
-              "'Where would someone put pickled meat?' (QM 2464)"
+              "Where would someone put pickled meat?"
             ],
-            "references": []
+            "references": [
+              "QM 2464"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "U baṣro ksido b mən maḥtiwole? "
+              },
+              {
+                "kind": "translation",
+                "value": "'Where would someone put pickled meat?'"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "ref",
+                "value": "QM 2464"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "U baṣro ksido b mən maḥtiwole? 'Where would someone put pickled meat?' (QM 2464)"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "einsalzen, einpökeln;"
   ],
   "uncertain": false
 }

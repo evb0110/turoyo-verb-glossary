@@ -14,41 +14,225 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["barəz", "borəz"],
+      "forms": [
+        "barəz",
+        "borəz"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "məd-barizo ko-mqaṭʕi-la ko-saymi-la falqe, w ko-maḥti-la b-as=sanduqe d-u=ṭino 196; 94/141;",
+            "turoyo": "məd-barizo ko-mqaṭʕi-la ko-saymi-la falqe w ko-maḥti-la b-as=sanduqe d-u=ṭino",
             "translations": [
-              "ʻwenn sie so halbtrocken geworden ist, schneidet man sie in Stücke und legt sie in irdene Kistenʼ;"
+              "wenn sie so halbtrocken geworden ist, schneidet man sie in Stücke und legt sie in irdene Kisten"
             ],
-            "references": ["196; 94/141"]
+            "references": [
+              "196",
+              "94/141"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "məd-barizo ko-mqaṭʕi-la ko-saymi-la falqe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ko-maḥti-la b-as=sanduqe d-u=ṭino "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn sie so halbtrocken geworden ist, schneidet man sie in Stücke und legt sie in irdene Kistenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "196"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/141"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "məd-barizo ko-mqaṭʕi-la ko-saymi-la falqe, w ko-maḥti-la b-as=sanduqe d-u=ṭino ʻwenn sie so halbtrocken geworden ist, schneidet man sie in Stücke und legt sie in irdene Kistenʼ; 196; 94/141;"
           }
         ],
         "Infectum": [
           {
             "turoyo": "ko-bərzo",
             "translations": [],
-            "references": ["196"]
+            "references": [
+              "196"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-bərzo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "196"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-bərzo; 196;"
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": ["mbarazle", "mbarəz"],
+      "forms": [
+        "mbarazle",
+        "mbarəz"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "2) u=kalbo mbarəz qumi 196;",
+            "turoyo": "azzino ṭləbli u=qălam mine lúle-li-yo qayəm mbarázli-le",
             "translations": [
-              "ʻder Hund blieb eigensinnig, böse von mir stehenʼ;"
+              "ich ging und wollte den Schreibstift von ihm haben; er gab ihn mir nicht, da wurde ich ihm grob"
             ],
-            "references": ["2", "196"]
+            "references": [
+              "1",
+              "196"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " azzino ṭləbli u=qălam mine lúle-li-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qayəm mbarázli-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich ging und wollte den Schreibstift von ihm haben; er gab ihn mir nicht, da wurde ich ihm grobʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "196"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) azzino ṭləbli u=qălam mine lúle-li-yo, qayəm mbarázli-le ʻich ging und wollte den Schreibstift von ihm haben; er gab ihn mir nicht, da wurde ich ihm grobʼ; 196;"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "u=kalbo mbarəz qumi",
+            "translations": [
+              "der Hund blieb eigensinnig, böse von mir stehen"
+            ],
+            "references": [
+              "2",
+              "196"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=kalbo mbarəz qumi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Hund blieb eigensinnig, böse von mir stehenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "196"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) u=kalbo mbarəz qumi ʻder Hund blieb eigensinnig, böse von mir stehenʼ; 196;"
+          }
+        ]
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "leicht antrocken, trocken werden;"
   ],
   "uncertain": false
 }

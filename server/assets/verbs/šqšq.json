@@ -14,17 +14,80 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mšaqšaqle", "mšaqšəq"],
+      "forms": [
+        "mšaqšaqle",
+        "mšaqšəq"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Part. Pass.": [
           {
-            "turoyo": "2) k-aṯikurfokamtoġắlabepise w ḥaṣakulemšáqšəqo 802; 59/14;",
-            "translations": ["aufgeplatzt"],
-            "references": ["2", "802; 59/14"]
+            "turoyo": "k-aṯi kurfo kamto ġắlabe pise w ḥaṣa kule mšáqšəqo",
+            "translations": [
+              "es kommt auf einmal eine schwarze, sehr garstige Schlange; deren Rücken ist ganz aufgeplatzt"
+            ],
+            "references": [
+              "2",
+              "802",
+              "59/14"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-aṯi kurfo kamto ġắlabe pise w ḥaṣa kule mšáqšəqo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes kommt auf einmal eine schwarze, sehr garstige Schlange; deren Rücken ist ganz aufgeplatztʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "802"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "59/14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) k-aṯi kurfo kamto ġắlabe pise w ḥaṣa kule mšáqšəqo ʻes kommt auf einmal eine schwarze, sehr garstige Schlange; deren Rücken ist ganz aufgeplatztʼ; 802; 59/14;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
   ],
+  "idioms": null,
   "uncertain": false
 }

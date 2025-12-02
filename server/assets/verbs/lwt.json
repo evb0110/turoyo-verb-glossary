@@ -14,34 +14,344 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mlawatle", "mlawət"],
+      "forms": [
+        "mlawatle",
+        "mlawət"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "u=čakat mlawət, k-lozəm d-mitašəġ 475; w-daqnayye yarixo, an=naynuk-aṯṯe yarixi, mlawti",
+            "turoyo": "kal ko-mdadšalle as=səsye mlawtalle kula k-awyo ṭino w hno mlawto",
             "translations": [
-              "die Jacke ist schmutzig, sie muss gewaschen werden",
-              "‘Their beard became long, and their nails became long, they (nails) were dirty’ 73/165;"
+              "die Pferde hatten es getreten und beschmutzt und es ist ganz voller Dreck, ein schmutziges Ding"
             ],
-            "references": ["475"]
+            "references": [
+              "1",
+              "475",
+              "78/73"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kal ko-mdadšalle as=səsye mlawtalle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kula k-awyo ṭino w hno mlawto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Pferde hatten es getreten und beschmutzt und es ist ganz voller Dreck, ein schmutziges Dingʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "475"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/73"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) kal ko-mdadšalle as=səsye mlawtalle, kula k-awyo ṭino w hno mlawto ʻdie Pferde hatten es getreten und beschmutzt und es ist ganz voller Dreck, ein schmutziges Dingʼ; 475; 78/73;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "ǧule ḥuwore b-u=qayṭo xayifo k-milawtli 475-476;",
-            "translations": ["weiss Wäsche wird im Sommer schnell schmutzig"],
-            "references": ["475", "476"]
+            "turoyo": "ono-ste i=ṭabiʕayḏi d-u=isān-yo lə=ko-mlawtono w lə=ko-saymono mede d-aḥ-ḥayewən d-ko-saymile",
+            "translations": [
+              "nun ist ja meine Art die eines Menschen. Ich mache keinen Schmutz, ich tue nichts von dem, was Tiere tun"
+            ],
+            "references": [
+              "1",
+              "MM 99"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono-ste i=ṭabiʕayḏi d-u=isān-yo lə=ko-mlawtono w lə=ko-saymono mede d-aḥ-ḥayewən d-ko-saymile "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnun ist ja meine Art die eines Menschen. Ich mache keinen Schmutz, ich tue nichts von dem, was Tiere tunʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 99"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) ono-ste i=ṭabiʕayḏi d-u=isān-yo lə=ko-mlawtono w lə=ko-saymono mede d-aḥ-ḥayewən d-ko-saymile ʻnun ist ja meine Art die eines Menschen. Ich mache keinen Schmutz, ich tue nichts von dem, was Tiere tunʼ MM 99;"
+          }
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "u=čakat mlawət k-lozəm d-mitašəġ w-daqnayye yarixo an=naynuk-aṯṯe yarixi mlawti",
+            "translations": [
+              "die Jacke ist schmutzig, sie muss gewaschen werden",
+              "‘Their beard became long, and their nails became long, they (nails) were dirty’"
+            ],
+            "references": [
+              "475",
+              "73/165"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=čakat mlawət"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-lozəm d-mitašəġ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Jacke ist schmutzig, sie muss gewaschen werdenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "475"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-daqnayye yarixo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " an=naynuk-aṯṯe yarixi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mlawti "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Their beard became long, and their nails became long, they (nails) were dirty’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/165"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=čakat mlawət, k-lozəm d-mitašəġ ʻdie Jacke ist schmutzig, sie muss gewaschen werdenʼ; 475; w-daqnayye yarixo, an=naynuk-aṯṯe yarixi, mlawti ‘Their beard became long, and their nails became long, they (nails) were dirty’ 73/165;"
+          }
+        ],
+        "Infectum": [
+          {
+            "turoyo": "ǧule ḥuwore b-u=qayṭo xayifo k-milawtli -",
+            "translations": [
+              "weiss Wäsche wird im Sommer schnell schmutzig"
+            ],
+            "references": [
+              "475",
+              "476"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ǧule ḥuwore b-u=qayṭo xayifo k-milawtli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻweiss Wäsche wird im Sommer schnell schmutzigʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "475"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "476"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ǧule ḥuwore b-u=qayṭo xayifo k-milawtli ʻweiss Wäsche wird im Sommer schnell schmutzigʼ; 475-476;"
           }
         ],
         "Part. Pass.": [
           {
-            "turoyo": "məṯ! garwono mlawto! 476; 73/34, 92, 110;",
-            "translations": ["stirb, du dreckiger Kahlkopf!"],
-            "references": ["476; 73/34", "92"]
+            "turoyo": "məṯ! garwono mlawto!",
+            "translations": [
+              "stirb, du dreckiger Kahlkopf!"
+            ],
+            "references": [
+              "476",
+              "73/34",
+              "92",
+              "110"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "məṯ! garwono mlawto! "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻstirb, du dreckiger Kahlkopf!ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "476"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/34"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "92"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "110"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "məṯ! garwono mlawto! ʻstirb, du dreckiger Kahlkopf!ʼ; 476; 73/34, 92, 110;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "1) beschmutzen;",
+    "Action Noun",
+    "lewoto",
+    "dirtying;"
   ],
   "uncertain": false
 }

@@ -14,17 +14,48 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["malasle", "maləs"],
+      "forms": [
+        "malasle",
+        "maləs"
+      ],
       "conjugations": {
         "Infectum": [
           {
             "turoyo": "ko-maləs",
             "translations": [],
-            "references": ["631"]
+            "references": [
+              "631"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-maləs"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "631"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-maləs; 631;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "kauernd sitzen;"
   ],
   "uncertain": false
 }

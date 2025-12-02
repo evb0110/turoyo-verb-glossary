@@ -14,17 +14,60 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mḥaǧəm", "miḥaǧəm"],
+      "forms": [
+        "mḥaǧəm",
+        "miḥaǧəm"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "naw k-miḥaǧmi b-i=oda 200;",
-            "translations": ["in das Zimmer"],
-            "references": ["200"]
+            "turoyo": "naw k-miḥaǧmi b-i=oda",
+            "translations": [
+              "sie gehen nicht mehr in das Zimmer hinein, finden keinen platz mehr darin"
+            ],
+            "references": [
+              "200"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "naw k-miḥaǧmi b-i=oda "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie gehen nicht mehr in das Zimmer hinein, finden keinen platz mehr darinʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "200"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "naw k-miḥaǧmi b-i=oda ʻsie gehen nicht mehr in das Zimmer hinein, finden keinen platz mehr darinʼ; 200;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) hineingehen, Platz finden;"
   ],
   "uncertain": false
 }

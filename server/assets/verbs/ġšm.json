@@ -14,95 +14,740 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mġašamle", "mġašəm"],
+      "forms": [
+        "mġašamle",
+        "mġašəm"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ummo ayko howət Kandar? omər ayna Kandar? mġašamle b-ruḥe 160; prs 141/37; prs 241/24;",
+            "turoyo": "ummo ayko howət Kandar? omər ayna Kandar? mġašamle b-ruḥe prs prs",
             "translations": [
-              "“vielleicht bist du Kandar?” “Welcher Kandar?” fragte er, sich verstellend"
+              "vielleicht bist du Kandar?” “Welcher Kandar?” fragte er, sich verstellend"
             ],
-            "references": ["160", "141/37"]
+            "references": [
+              "160",
+              "141/37",
+              "241/24"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ummo ayko howət Kandar? omər ayna Kandar? mġašamle b-ruḥe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ“vielleicht bist du Kandar?” “Welcher Kandar?” fragte er, sich verstellendʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "160"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "141/37"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "241/24"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ummo ayko howət Kandar? omər ayna Kandar? mġašamle b-ruḥe ʻ“vielleicht bist du Kandar?” “Welcher Kandar?” fragte er, sich verstellendʼ; 160; prs 141/37; prs 241/24;"
           }
         ]
       }
     },
     {
       "stem": "I",
-      "forms": ["ġayər", "ġoyər"],
+      "forms": [
+        "ġayər",
+        "ġoyər"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "lo=k-əḏʕi mən-yo qay lə=g-zobəṭ u=talgo k-əmmi i=walaye ġayiro u=talgo lə=g-zobəṭ aʕla",
+            "turoyo": "lo=k-əḏʕi mən-yo qay lə=g-zobəṭ u=talgo k-əmmi i=walaye ġayiro u=talgo lə=g-zobəṭ aʕla ‘People did not know what it was why snow would not stay. Some said",
             "translations": [
-              "‘People did not know what it was, why snow would not stay. Some said: “The town is sunken, (that is why) the snow would not stay” 77/9;"
+              "The town is sunken, (that is why) the snow would not stay"
             ],
-            "references": []
+            "references": [
+              "77/9"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lo=k-əḏʕi mən-yo qay lə=g-zobəṭ u=talgo k-əmmi i=walaye ġayiro u=talgo lə=g-zobəṭ aʕla "
+              },
+              {
+                "kind": "turoyo",
+                "value": "‘"
+              },
+              {
+                "kind": "turoyo",
+                "value": "People did not know what it was"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " why snow would not stay. Some said"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“The town is sunken, (that is why) the snow would not stay”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "77/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lo=k-əḏʕi mən-yo qay lə=g-zobəṭ u=talgo k-əmmi i=walaye ġayiro u=talgo lə=g-zobəṭ aʕla ‘People did not know what it was, why snow would not stay. Some said: “The town is sunken, (that is why) the snow would not stay” 77/9;"
           }
         ],
         "Part. act.": [
           {
-            "turoyo": "w-i=walaye d-u=Fīl-aṯe b-Ṭuro d-aʕ=ʕabode-yo (…)uʕdo dukṯe d-i=walaye ġayərto-yo",
+            "turoyo": "w-i=walaye d-u=Fīl-aṯe b-Ṭuro d-aʕ=ʕabode-yo … uʕdo dukṯe d-i=walaye ġayərto-yo",
             "translations": [
-              "‘And this town of Fil is (situated) at the Mountain of Worshippers (…). Nowadays the (former) site of the town is under the earth’s surface’ 77/6;"
+              "‘And this town of Fil is (situated) at the Mountain of Worshippers (…). Nowadays the (former) site of the town is under the earth’s surface’"
             ],
-            "references": []
+            "references": [
+              "77/6"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "w-i=walaye d-u=Fīl-aṯe b-Ṭuro d-aʕ=ʕabode-yo "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " uʕdo dukṯe d-i=walaye ġayərto-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘And this town of Fil is (situated) at the Mountain of Worshippers (…). Nowadays the (former) site of the town is under the earth’s surface’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "77/6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "w-i=walaye d-u=Fīl-aṯe b-Ṭuro d-aʕ=ʕabode-yo (…) uʕdo dukṯe d-i=walaye ġayərto-yo ‘And this town of Fil is (situated) at the Mountain of Worshippers (…). Nowadays the (former) site of the town is under the earth’s surface’ 77/6;"
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": ["mġayalle", "mġayər"],
+      "forms": [
+        "mġayalle",
+        "mġayər"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mġayər u=rang-ayḏe aṯi rang ḥreno 490; 30/156; 43/47, 50; mġayro ač=čuwedər diṯṯe w-hənne i=waḏ̣ʕiye i=qiyaf-aṯṯe mġayro ‘; 24/201 [LTN]; ṣurte mġayro, w-d-əzzé bayn aq=qabayəl-ayḏe nošo lu=k-uḏaʕ-le",
+            "turoyo": "mġayarle əšme lo=məlle",
             "translations": [
-              "sein Gesicht hatte sich verändert und eine andere Farbe angenommen",
-              "Die Zelte sind verändert, und es ist alles anders bei ihnen, und ihr Aufzug ist verändert’",
-              "‘Sein Gesicht veränderte sich, und wenn er unter seine Stammesangehörigen ging, erkannte ihn niemand’; 30/24"
+              "úno-no",
+              "er änderte seinen Namen und sagte nicht: “Ich bin es"
             ],
-            "references": ["490; 30/156", "43/47"]
+            "references": [
+              "489",
+              "30/66"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mġayarle əšme"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=məlle "
+              },
+              {
+                "kind": "translation",
+                "value": "“úno-no”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer änderte seinen Namen und sagte nicht: “Ich bin es”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "489"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/66"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mġayarle əšme, lo=məlle “úno-no” ʻer änderte seinen Namen und sagte nicht: “Ich bin es”ʼ; 489; 30/66;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "məd-k-oṯe l-boli u=med-awo, d-nafəq m-iḏi ko-miġayər ʕaqəl diḏi 490; 52/178;",
+            "turoyo": "ʕabər lawġul d-i=dŭkano də-mġayər ǧule",
             "translations": [
-              "wenn mir diese Sache, die meiner hand entglitten ist, in den Sinn kommt, so verwirrt sich mein Verstand"
+              "er ging in den Laden hinein, um seine Kleider zu wechseln"
             ],
-            "references": ["490; 52/178"]
+            "references": [
+              "489",
+              "49/12"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕabər lawġul d-i=dŭkano"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " də-mġayər ǧule "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer ging in den Laden hinein, um seine Kleider zu wechselnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "489"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "49/12"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ʕabər lawġul d-i=dŭkano, də-mġayər ǧule ʻer ging in den Laden hinein, um seine Kleider zu wechselnʼ; 489; 49/12;"
           }
         ]
       }
     },
     {
-      "stem": "III",
-      "forms": ["maġəlle", "maġər"],
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "hani maġəlli tarte=kore i=gammiye d-u=gammičiy-awo 540; 96/235; i=gammiy-aṯe diḏan maġirole 540; 63/56;",
+            "turoyo": "mġayər u=rang-ayḏe aṯi rang ḥreno mġayro ač=čuwedər diṯṯe w-hənne i=waḏ̣ʕiye i=qiyaf-aṯṯe mġayro ṣurte mġayro w-d-əzzé bayn aq=qabayəl-ayḏe nošo lu=k-uḏaʕ-le",
             "translations": [
-              "ich habe zweimal das Schiff des Schiffers versenkt",
-              "unser Schiff versenkte er"
+              "sein Gesicht hatte sich verändert und eine andere Farbe angenommen",
+              "‘Die Zelte sind verändert, und es ist alles anders bei ihnen, und ihr Aufzug ist verändert’",
+              "‘Sein Gesicht veränderte sich, und wenn er unter seine Stammesangehörigen ging, erkannte ihn niemand’"
             ],
-            "references": ["540; 96/235", "540; 63/56"]
+            "references": [
+              "490",
+              "30/156",
+              "43/47",
+              "50",
+              "24/201",
+              "30/24"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mġayər u=rang-ayḏe aṯi rang ḥreno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsein Gesicht hatte sich verändert und eine andere Farbe angenommenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "490"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/156"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "43/47"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "50"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mġayro ač=čuwedər diṯṯe w-hənne i=waḏ̣ʕiye i=qiyaf-aṯṯe mġayro "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Die Zelte sind verändert, und es ist alles anders bei ihnen, und ihr Aufzug ist verändert’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/201"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[LTN]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṣurte mġayro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-d-əzzé bayn aq=qabayəl-ayḏe nošo lu=k-uḏaʕ-le "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sein Gesicht veränderte sich, und wenn er unter seine Stammesangehörigen ging, erkannte ihn niemand’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/24"
+              }
+            ],
+            "text": "mġayər u=rang-ayḏe aṯi rang ḥreno ʻsein Gesicht hatte sich verändert und eine andere Farbe angenommenʼ; 490; 30/156; 43/47, 50; mġayro ač=čuwedər diṯṯe w-hənne i=waḏ̣ʕiye i=qiyaf-aṯṯe mġayro ‘Die Zelte sind verändert, und es ist alles anders bei ihnen, und ihr Aufzug ist verändert’; 24/201 [LTN]; ṣurte mġayro, w-d-əzzé bayn aq=qabayəl-ayḏe nošo lu=k-uḏaʕ-le ‘Sein Gesicht veränderte sich, und wenn er unter seine Stammesangehörigen ging, erkannte ihn niemand’; 30/24"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "oʕdo ḥa g-maġər u=ḥreno taḥt i=arʕo 545; 115/193; u=təmamayḏe g-maġirína-le b-u=baḥar 548; 73/219;",
+            "turoyo": "məd-k-oṯe l-boli u=med-awo d-nafəq m-iḏi ko-miġayər ʕaqəl diḏi",
+            "translations": [
+              "wenn mir diese Sache, die meiner hand entglitten ist, in den Sinn kommt, so verwirrt sich mein Verstand"
+            ],
+            "references": [
+              "490",
+              "52/178"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "məd-k-oṯe l-boli u=med-awo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-nafəq m-iḏi ko-miġayər ʕaqəl diḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn mir diese Sache, die meiner hand entglitten ist, in den Sinn kommt, so verwirrt sich mein Verstandʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "490"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "52/178"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "məd-k-oṯe l-boli u=med-awo, d-nafəq m-iḏi ko-miġayər ʕaqəl diḏi ʻwenn mir diese Sache, die meiner hand entglitten ist, in den Sinn kommt, so verwirrt sich mein Verstandʼ; 490; 52/178;"
+          }
+        ]
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "sich verändern"
+        }
+      ],
+      "label_raw": "sich verändern"
+    },
+    {
+      "stem": "III",
+      "forms": [
+        "maġəlle",
+        "maġər"
+      ],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "hani maġəlli tarte=kore i=gammiye d-u=gammičiy-awo i=gammiy-aṯe diḏan maġirole",
+            "translations": [
+              "ich habe zweimal das Schiff des Schiffers versenkt",
+              "unser Schiff versenkte er"
+            ],
+            "references": [
+              "540",
+              "96/235",
+              "540",
+              "63/56"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hani maġəlli tarte=kore i=gammiye d-u=gammičiy-awo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe zweimal das Schiff des Schiffers versenktʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "540"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "96/235"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=gammiy-aṯe diḏan maġirole "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻunser Schiff versenkte erʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "540"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "63/56"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hani maġəlli tarte=kore i=gammiye d-u=gammičiy-awo ʻich habe zweimal das Schiff des Schiffers versenktʼ; 540; 96/235; i=gammiy-aṯe diḏan maġirole ʻunser Schiff versenkte erʼ; 540; 63/56;"
+          }
+        ],
+        "Infectum": [
+          {
+            "turoyo": "oʕdo ḥa g-maġər u=ḥreno taḥt i=arʕo u=təmamayḏe g-maġirína-le b-u=baḥar",
             "translations": [
               "jetzt wird der eine den anderen unter die Erde sinken lassen",
               "wir werden es (das Floss m) mit allem, was darauf ist, im Meere untergehen lassen"
             ],
-            "references": ["545; 115/193", "548; 73/219"]
+            "references": [
+              "545",
+              "115/193",
+              "548",
+              "73/219"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "oʕdo ḥa g-maġər u=ḥreno taḥt i=arʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻjetzt wird der eine den anderen unter die Erde sinken lassenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "545"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "115/193"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=təmamayḏe g-maġirína-le b-u=baḥar "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir werden es (das Floss m) mit allem, was darauf ist, im Meere untergehen lassenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "548"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/219"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "oʕdo ḥa g-maġər u=ḥreno taḥt i=arʕo ʻjetzt wird der eine den anderen unter die Erde sinken lassenʼ; 545; 115/193; u=təmamayḏe g-maġirína-le b-u=baḥar ʻwir werden es (das Floss m) mit allem, was darauf ist, im Meere untergehen lassenʼ; 548; 73/219;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "dumm, unwissend werden;",
+    "ġyr1 (< Arab. ġwr cf. Wehr 931: einfallen, einsinken)",
+    "versinken;",
+    "ġyr2 (< Arab. ġyr cf. Wehr 934: ändern, verändern, anders machen, wechseln;)",
+    "ändern, verändern, wechseln, verwandeln;",
+    "versenken, versinken lassen;"
   ],
   "uncertain": false
 }

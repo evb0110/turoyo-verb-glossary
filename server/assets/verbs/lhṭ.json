@@ -5,17 +5,67 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["lahəṭ", "lohəṭ"],
+      "forms": [
+        "lahəṭ",
+        "lohəṭ"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "lə=lahiṭo 88; 62/67;",
-            "translations": ["sie rührte sich nicht"],
-            "references": ["88; 62/67"]
+            "turoyo": "lə=lahiṭo",
+            "translations": [
+              "sie rührte sich nicht"
+            ],
+            "references": [
+              "88",
+              "62/67"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lə=lahiṭo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie rührte sich nichtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "88"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/67"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lə=lahiṭo ʻsie rührte sich nichtʼ; 88; 62/67;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "rühren;"
   ],
   "uncertain": false
 }

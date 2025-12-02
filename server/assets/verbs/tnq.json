@@ -5,17 +5,60 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mtanəq", "mitanəq"],
+      "forms": [
+        "mtanəq",
+        "mitanəq"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mtanaqno b-u=baxyo 231;",
-            "translations": [],
-            "references": ["231"]
+            "turoyo": "mtanaqno b-u=baxyo",
+            "translations": [
+              "ich erstickte in Tränen, konnte vor Weinen nicht sprechen"
+            ],
+            "references": [
+              "231"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mtanaqno b-u=baxyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich erstickte in Tränen, konnte vor Weinen nicht sprechenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "231"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mtanaqno b-u=baxyo ʻich erstickte in Tränen, konnte vor Weinen nicht sprechenʼ; 231;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) nicht gut sprechen, singen können;"
   ],
   "uncertain": false
 }

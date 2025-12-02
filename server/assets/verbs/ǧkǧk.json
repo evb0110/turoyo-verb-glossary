@@ -5,17 +5,65 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mǧakǧakle", "mǧakǧək"],
+      "forms": [
+        "mǧakǧakle",
+        "mǧakǧək"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mǧakǧakle ʕal i=arʕo; 797; 95/270; Пример отсутствует в указанном месте",
+            "turoyo": "mǧakǧakle ʕal i=arʕo Пример отсутствует в указанном месте",
             "translations": [],
-            "references": ["797; 95/270"]
+            "references": [
+              "797",
+              "95/270"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mǧakǧakle ʕal i=arʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "797"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "95/270"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Пример отсутствует в указанном месте"
+              }
+            ],
+            "text": "mǧakǧakle ʕal i=arʕo; 797; 95/270; Пример отсутствует в указанном месте"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "kriechen;"
   ],
   "uncertain": false
 }

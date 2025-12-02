@@ -12,24 +12,87 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["maḏǝrle", "maḏǝr"],
+      "forms": [
+        "maḏǝrle",
+        "maḏǝr"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "Li+ǧǝġara ġalabe maḏə́rlali. (İlyas p.c)",
+            "turoyo": "Li+ǧǝġara ġalabe maḏə́rlali. İlyas p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Li+ǧǝġara ġalabe maḏə́rlali. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Li+ǧǝġara ġalabe maḏə́rlali. (İlyas p.c)"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "U+ʕamo komitaḏǝr mu+aġa ‘suffers damage’",
+            "turoyo": "Lǝ kṭoreno noše d maḏǝr u Sargey I do not allow anybody do harm to S.",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Lǝ kṭoreno noše d maḏǝr u Sargey I do not allow anybody do harm to S."
+              }
+            ],
+            "text": "Lǝ kṭoreno noše d maḏǝr u Sargey I do not allow anybody do harm to S."
+          }
+        ]
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "to damage, destroy"
+        }
+      ],
+      "label_raw": "to damage, destroy"
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "U+ʕamo komitaḏǝr mu+aġa",
+            "translations": [
+              "‘suffers damage’"
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "U+ʕamo komitaḏǝr mu+aġa "
+              },
+              {
+                "kind": "translation",
+                "value": "‘suffers damage’"
+              }
+            ],
+            "text": "U+ʕamo komitaḏǝr mu+aġa ‘suffers damage’"
           }
         ]
       }
     }
   ],
+  "idioms": null,
   "uncertain": false
 }

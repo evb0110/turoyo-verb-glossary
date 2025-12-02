@@ -14,17 +14,54 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mharhazle", "mharhəz"],
+      "forms": [
+        "mharhazle",
+        "mharhəz"
+      ],
       "conjugations": {
         "Imperativ": [
           {
-            "turoyo": "mharház i=maṣa 778;",
-            "translations": [],
-            "references": ["778"]
+            "turoyo": "mharház i=maṣa",
+            "translations": [
+              "bring den Tisch zum Wackeln"
+            ],
+            "references": [
+              "778"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mharház i=maṣa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻbring den Tisch zum Wackelnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "778"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mharház i=maṣa ʻbring den Tisch zum Wackelnʼ; 778;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "ins Wackeln bringen;"
   ],
   "uncertain": false
 }

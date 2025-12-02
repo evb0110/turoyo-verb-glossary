@@ -5,19 +5,85 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mzawzəq", "mixawzəq"],
+      "forms": [
+        "mzawzəq",
+        "mixawzəq"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ko-qoyəm ko-mzawzəq ruḥe tamo-da w b-u=ḥawlo ko-noḥət, ko-ḥoyər ebe 796; 93/29; Не очень четкий перевод",
+            "turoyo": "ko-qoyəm ko-mzawzəq ruḥe tamo-da w b-u=ḥawlo ko-noḥət ko-ḥoyər ebe Не очень четкий перевод",
             "translations": [
               "er liess sich an dem Strick hinunter und sah es (Bienennest m) sich an"
             ],
-            "references": ["796; 93/29"]
+            "references": [
+              "796",
+              "93/29"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-qoyəm ko-mzawzəq ruḥe tamo-da w b-u=ḥawlo ko-noḥət"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-ḥoyər ebe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer liess sich an dem Strick hinunter und sah es (Bienennest m) sich anʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "796"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "93/29"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Не очень четкий перевод"
+              }
+            ],
+            "text": "ko-qoyəm ko-mzawzəq ruḥe tamo-da w b-u=ḥawlo ko-noḥət, ko-ḥoyər ebe ʻer liess sich an dem Strick hinunter und sah es (Bienennest m) sich anʼ; 796; 93/29; Не очень четкий перевод"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) sich anhängen;"
   ],
   "uncertain": false
 }

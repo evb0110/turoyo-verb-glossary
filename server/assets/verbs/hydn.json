@@ -14,31 +14,167 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mhaydən", "mihaydən"],
+      "forms": [
+        "mhaydən",
+        "mihaydən"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mhaydən 779;",
-            "translations": [],
-            "references": ["779"]
+            "turoyo": "mhaydən",
+            "translations": [
+              "er beruhigte sich"
+            ],
+            "references": [
+              "779"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mhaydən "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer beruhigte sichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "779"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mhaydən ʻer beruhigte sichʼ; 779;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "mḥele l-MīrMḥammaqumRamazān, hul d-hawiʕaṣriye d-ḥušabo, mara d-Ramazanomihaydən w d-omərheyaḥ 779; 65/205-206;",
-            "translations": ["auf Ramazan", "Vesperzeit", "vielleicht"],
-            "references": ["779; 65/205", "206"]
+            "turoyo": "mḥele l-Mīr Mḥamma qum Ramazān hul d-hawi ʕaṣriye d-ḥušabo mara d-Ramazano mihaydən w d-omər heya -",
+            "translations": [
+              "Mir Mḥamma redete auf Ramazan ein, bis es Vesperzeit wurde, um vielleicht zu erreichen, dass er sich beruhigte und “ja” sagte"
+            ],
+            "references": [
+              "779",
+              "65/205",
+              "206"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mḥele l-Mīr Mḥamma qum Ramazān"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hul d-hawi ʕaṣriye d-ḥušabo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mara d-Ramazano mihaydən w d-omər heya "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻMir Mḥamma redete auf Ramazan ein, bis es Vesperzeit wurde, um vielleicht zu erreichen, dass er sich beruhigte und “ja” sagteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "779"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/205"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "206"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mḥele l-Mīr Mḥamma qum Ramazān, hul d-hawi ʕaṣriye d-ḥušabo, mara d-Ramazano mihaydən w d-omər heya ʻMir Mḥamma redete auf Ramazan ein, bis es Vesperzeit wurde, um vielleicht zu erreichen, dass er sich beruhigte und “ja” sagteʼ; 779; 65/205-206;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "mihaydǝ́n; 779;",
+            "turoyo": "mihaydǝ́n",
             "translations": [],
-            "references": ["779"]
+            "references": [
+              "779"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mihaydǝ́n"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "779"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mihaydǝ́n; 779;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(Detrans.) sich beruhigen;"
   ],
   "uncertain": false
 }

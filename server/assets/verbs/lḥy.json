@@ -14,24 +14,99 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["lḥele", "loḥe"],
+      "forms": [
+        "lḥele",
+        "loḥe"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "l-u=darmono lḥele i=boqo 332;",
-            "translations": ["das Mittel hat die Wanzen vernichtet"],
-            "references": ["332"]
-          }
-        ],
-        "Infectum": [
-          {
-            "turoyo": "mede d-məkṯu lə=k-məlḥe DD 393/13;",
-            "translations": ["was geschrieben ist, wird nicht gelöscht"],
-            "references": ["393/13"]
+            "turoyo": "l-u=darmono lḥele i=boqo",
+            "translations": [
+              "das Mittel hat die Wanzen vernichtet"
+            ],
+            "references": [
+              "332"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-u=darmono lḥele i=boqo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Mittel hat die Wanzen vernichtetʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "332"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "l-u=darmono lḥele i=boqo ʻdas Mittel hat die Wanzen vernichtetʼ; 332;"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "mede d-məkṯu lə=k-məlḥe",
+            "translations": [
+              "was geschrieben ist, wird nicht gelöscht"
+            ],
+            "references": [
+              "DD 393/13"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mede d-məkṯu lə=k-məlḥe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwas geschrieben ist, wird nicht gelöschtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "DD 393/13"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mede d-məkṯu lə=k-məlḥe ʻwas geschrieben ist, wird nicht gelöschtʼ; DD 393/13;"
+          }
+        ]
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "vernichten;"
   ],
   "uncertain": false
 }

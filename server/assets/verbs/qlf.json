@@ -14,28 +14,124 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["qləfle", "qoləf"],
+      "forms": [
+        "qləfle",
+        "qoləf"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
             "turoyo": "hul arbaʕ w-ʕəsri saʕat qlif u=garw-awo w-qlif u=ǧídariy-awo mene w-nayəḥ-le",
             "translations": [
-              "‘innerhalb von 24 Stunden schälten sich die Pocken von ihm ab und er wurde gesund’; 30/23 [LTN] [MT]"
+              "‘innerhalb von 24 Stunden schälten sich die Pocken von ihm ab und er wurde gesund’"
             ],
-            "references": []
+            "references": [
+              "30/23"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hul arbaʕ w-ʕəsri saʕat qlif u=garw-awo w-qlif u=ǧídariy-awo mene w-nayəḥ-le "
+              },
+              {
+                "kind": "translation",
+                "value": "‘innerhalb von 24 Stunden schälten sich die Pocken von ihm ab und er wurde gesund’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/23"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[LTN]"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "hul arbaʕ w-ʕəsri saʕat qlif u=garw-awo w-qlif u=ǧídariy-awo mene w-nayəḥ-le ‘innerhalb von 24 Stunden schälten sich die Pocken von ihm ab und er wurde gesund’; 30/23 [LTN] [MT]"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "bəṯṯər b-tarte=saʕayat ko-mikalpət, yaʕni i=qlaft-ayḏe ko-məqlofo 94/251;",
+            "turoyo": "bəṯṯər b-tarte=saʕayat ko-mikalpət yaʕni i=qlaft-ayḏe ko-məqlofo",
             "translations": [
               "nach zwei Stunden schält sich (der Weizen) aus, d.h. die Schale trennt sich von ihm ab"
             ],
-            "references": ["94/251"]
+            "references": [
+              "94/251"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bəṯṯər b-tarte=saʕayat ko-mikalpət"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " yaʕni i=qlaft-ayḏe ko-məqlofo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnach zwei Stunden schält sich (der Weizen) aus, d.h. die Schale trennt sich von ihm abʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/251"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "bəṯṯər b-tarte=saʕayat ko-mikalpət, yaʕni i=qlaft-ayḏe ko-məqlofo ʻnach zwei Stunden schält sich (der Weizen) aus, d.h. die Schale trennt sich von ihm abʼ; 94/251;"
           }
         ]
-      }
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "sich abschälen"
+        }
+      ],
+      "label_raw": "sich abschälen"
     }
+  ],
+  "idioms": [
+    "abhäuten, schälen;"
   ],
   "uncertain": false
 }

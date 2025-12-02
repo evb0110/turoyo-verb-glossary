@@ -5,24 +5,92 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mkawrasle", "mkawrəs"],
+      "forms": [
+        "mkawrasle",
+        "mkawrəs"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mkawrasleṣaʕri 783;",
-            "translations": ["hat mir die Haare", "geschnitten"],
-            "references": ["783"]
+            "turoyo": "mkawrasle ṣaʕri",
+            "translations": [
+              "er hat mir die Haare schlecht geschnitten"
+            ],
+            "references": [
+              "783"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mkawrasle ṣaʕri "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hat mir die Haare schlecht geschnittenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "783"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mkawrasle ṣaʕri ʻer hat mir die Haare schlecht geschnittenʼ; 783;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "mkawrás ag=guliyatzowud-ani 783;",
-            "translations": ["überflüssigen"],
-            "references": ["783"]
+            "turoyo": "mkawrás ag=guliyat zowud-ani",
+            "translations": [
+              "kau diese überflüssigen Zweige ab"
+            ],
+            "references": [
+              "783"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mkawrás ag=guliyat zowud-ani "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻkau diese überflüssigen Zweige abʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "783"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mkawrás ag=guliyat zowud-ani ʻkau diese überflüssigen Zweige abʼ; 783;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "mit der Axt kurze Zweige abschneiden, einen Baum stutzen, (fig.) schlecht Haare schneiden);"
   ],
   "uncertain": false
 }

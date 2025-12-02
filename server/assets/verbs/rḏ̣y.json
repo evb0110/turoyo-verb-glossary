@@ -14,103 +14,1002 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["raḏ̣i", "roḏ̣e"],
+      "forms": [
+        "raḏ̣i",
+        "roḏ̣e"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "1) lo=raḏ̣i buno, raḏ̣i Zine 348; prs 4/21;",
+            "turoyo": "lo=raḏ̣i buno raḏ̣i Zine prs",
             "translations": [
               "dieser da hat mich verschmäht und an Sine gefallen gefunden"
             ],
-            "references": ["1", "348"]
+            "references": [
+              "1",
+              "348",
+              "4/21"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  lo=raḏ̣i buno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " raḏ̣i Zine "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdieser da hat mich verschmäht und an Sine gefallen gefundenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "348"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "4/21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) lo=raḏ̣i buno, raḏ̣i Zine ʻdieser da hat mich verschmäht und an Sine gefallen gefundenʼ; 348; prs 4/21;"
           },
           {
-            "turoyo": "2) bəṯṯər məd-aloho raḏ̣i yaʕni tloṯ=naqlat k-maḥət u=ṭayro ʕal qarʕe, lazəm huwe d-howe ḥakəm aʕlayna 348; 24/315;lo=raḏ̣yo, bal yawmo, tre, tloṯo maqənʕola b-u=ḥāl-ano 349; 24/263 [MT]; bəṯṯər məd-raḏ̣i u=abro d-ʕammi w-maqbele l-u=abro d-ʕammi, uno w-hat b-ḥalali də-ḥḏoḏe-na səmle lo=səmle Laḥdo d-maqnəʕ u=ʕulmo d-maqnəʕ u=malko lo=k-obəʕ i=barṯo d-u=malko lo=raḏ̣ən ḥ",
+            "turoyo": "bəṯṯər məd-aloho raḏ̣i yaʕni tloṯ=naqlat k-maḥət u=ṭayro ʕal qarʕe lazəm huwe d-howe ḥakəm aʕlayna lo=raḏ̣yo bal yawmo tre tloṯo maqənʕola b-u=ḥāl-ano bəṯṯər məd-raḏ̣i u=abro d-ʕammi w-maqbele l-u=abro d-ʕammi uno w-hat b-ḥalali də-ḥḏoḏe-na səmle lo=səmle Laḥdo d-maqnəʕ u=ʕulmo d-maqnəʕ u=malko lo=k-obəʕ i=barṯo d-u=malko lo=raḏ̣ən",
             "translations": [
               "nachdem Gott es so gefällt und der Vogel sich dreimal hintereinander auf den Kopf dieses Jünglings setzt, muss er Herr über uns werden",
               "sie wollte nichts davon wissen; aber nach ein, zwei, drei Tagen hatte jene sie beschwatzt",
-              "‘Nachdem mein Vetter einverstanden ist und das angenommen hat, gehören jetzt ich und du einander als rechte Ehegatten’; 26/255;",
-              "‘No matter how La",
-              "do tried to convince people and the king that he did not want (to marry) the king’s daughter, they did not listen to him’ 77/58;"
+              "‘Nachdem mein Vetter einverstanden ist und das angenommen hat, gehören jetzt ich und du einander als rechte Ehegatten’",
+              "‘No matter how Laḥdo tried to convince people and the king that he did not want (to marry) the king’s daughter, they did not listen to him’"
             ],
-            "references": ["2", "348; 24/315"]
+            "references": [
+              "2",
+              "348",
+              "24/315",
+              "349",
+              "24/263",
+              "26/255",
+              "77/58"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər məd-aloho raḏ̣i yaʕni tloṯ=naqlat k-maḥət u=ṭayro ʕal qarʕe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lazəm huwe d-howe ḥakəm aʕlayna "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnachdem Gott es so gefällt und der Vogel sich dreimal hintereinander auf den Kopf dieses Jünglings setzt, muss er Herr über uns werdenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "348"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/315"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "lo=raḏ̣yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " bal yawmo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " tre"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " tloṯo maqənʕola b-u=ḥāl-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie wollte nichts davon wissen; aber nach ein, zwei, drei Tagen hatte jene sie beschwatztʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "349"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/263"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər məd-raḏ̣i u=abro d-ʕammi w-maqbele l-u=abro d-ʕammi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " uno w-hat b-ḥalali də-ḥḏoḏe-na "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Nachdem mein Vetter einverstanden ist und das angenommen hat, gehören jetzt ich und du einander als rechte Ehegatten’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/255"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " səmle lo=səmle Laḥdo d-maqnəʕ u=ʕulmo d-maqnəʕ u=malko lo=k-obəʕ i=barṯo d-u=malko lo=raḏ̣ən "
+              },
+              {
+                "kind": "translation",
+                "value": "‘No matter how Laḥdo tried to convince people and the king that he did not want (to marry) the king’s daughter, they did not listen to him’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "77/58"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) bəṯṯər məd-aloho raḏ̣i yaʕni tloṯ=naqlat k-maḥət u=ṭayro ʕal qarʕe, lazəm huwe d-howe ḥakəm aʕlayna ʻnachdem Gott es so gefällt und der Vogel sich dreimal hintereinander auf den Kopf dieses Jünglings setzt, muss er Herr über uns werdenʼ; 348; 24/315;lo=raḏ̣yo, bal yawmo, tre, tloṯo maqənʕola b-u=ḥāl-ano ʻsie wollte nichts davon wissen; aber nach ein, zwei, drei Tagen hatte jene sie beschwatztʼ; 349; 24/263 [MT]; bəṯṯər məd-raḏ̣i u=abro d-ʕammi w-maqbele l-u=abro d-ʕammi, uno w-hat b-ḥalali də-ḥḏoḏe-na ‘Nachdem mein Vetter einverstanden ist und das angenommen hat, gehören jetzt ich und du einander als rechte Ehegatten’; 26/255; səmle lo=səmle Laḥdo d-maqnəʕ u=ʕulmo d-maqnəʕ u=malko lo=k-obəʕ i=barṯo d-u=malko lo=raḏ̣ən ‘No matter how Laḥdo tried to convince people and the king that he did not want (to marry) the king’s daughter, they did not listen to him’ 77/58;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "1) m-bəṯṯər a=tloṯo=yawme, d-aloho roḏ̣e, gəd-uṯyo hiya b-raġla sidox 356; 24/77; xuzi am=maye d-lo=k-rŭḏ̣etu bənne hŭwan-wo b-Mərde ’; [MT] 20/9; i=kačke k-saymi lə=k-saymi, d-rəḏ̣yo b-ḥa manne, lə=k-rəḏ̣ya-lle 366; 70/240; iḏa lə=k-roḏ̣ət b-uno, naqla ḥreto ġamo layt",
+            "turoyo": "m-bəṯṯər a=tloṯo=yawme d-aloho roḏ̣e gəd-uṯyo hiya b-raġla sidox xuzi am=maye d-lo=k-rŭḏ̣etu bənne hŭwan-wo b-Mərde i=kačke k-saymi lə=k-saymi d-rəḏ̣yo b-ḥa manne lə=k-rəḏ̣ya-lle iḏa lə=k-roḏ̣ət b-uno naqla ḥreto ġamo layt",
             "translations": [
               "nach drei Tage wird sie, wenn es Gott gefällt, selber auf eigenen Füssen zu dir kommen",
-              "‘(wollte Gott,) das Wasser, das ihnen nicht gefällt, wäre hier in Mardin!",
+              "‘(wollte Gott,) das Wasser, das ihnen nicht gefällt, wäre hier in Mardin!’",
               "das Mädchen aber, mochten sie tun und lassen, was sie wollten wollte von keinem von ihnen etwas wissen",
-              "‘Wenn du mich nicht leiden magst (etwas an mir auszusetzen hast), so schadet das nun weiter nichts’; 26/104"
+              "‘Wenn du mich nicht leiden magst (etwas an mir auszusetzen hast), so schadet das nun weiter nichts’"
             ],
-            "references": ["1", "356; 24/77"]
+            "references": [
+              "1",
+              "356",
+              "24/77",
+              "20/9",
+              "366",
+              "70/240",
+              "26/104"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-bəṯṯər a=tloṯo=yawme"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-aloho roḏ̣e"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəd-uṯyo hiya b-raġla sidox "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnach drei Tage wird sie, wenn es Gott gefällt, selber auf eigenen Füssen zu dir kommenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "356"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/77"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " xuzi am=maye d-lo=k-rŭḏ̣etu bənne hŭwan-wo b-Mərde "
+              },
+              {
+                "kind": "translation",
+                "value": "‘(wollte Gott,) das Wasser, das ihnen nicht gefällt, wäre hier in Mardin!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "20/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=kačke k-saymi lə=k-saymi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-rəḏ̣yo b-ḥa manne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=k-rəḏ̣ya-lle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Mädchen aber, mochten sie tun und lassen, was sie wollten wollte von keinem von ihnen etwas wissenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "366"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70/240"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " iḏa lə=k-roḏ̣ət b-uno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " naqla ḥreto ġamo layt "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wenn du mich nicht leiden magst (etwas an mir auszusetzen hast), so schadet das nun weiter nichts’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/104"
+              }
+            ],
+            "text": "1) m-bəṯṯər a=tloṯo=yawme, d-aloho roḏ̣e, gəd-uṯyo hiya b-raġla sidox ʻnach drei Tage wird sie, wenn es Gott gefällt, selber auf eigenen Füssen zu dir kommenʼ; 356; 24/77; xuzi am=maye d-lo=k-rŭḏ̣etu bənne hŭwan-wo b-Mərde ‘(wollte Gott,) das Wasser, das ihnen nicht gefällt, wäre hier in Mardin!’; [MT] 20/9; i=kačke k-saymi lə=k-saymi, d-rəḏ̣yo b-ḥa manne, lə=k-rəḏ̣ya-lle ʻdas Mädchen aber, mochten sie tun und lassen, was sie wollten wollte von keinem von ihnen etwas wissenʼ; 366; 70/240; iḏa lə=k-roḏ̣ət b-uno, naqla ḥreto ġamo layt ‘Wenn du mich nicht leiden magst (etwas an mir auszusetzen hast), so schadet das nun weiter nichts’; 26/104"
           },
           {
-            "turoyo": "2) maḥatli šart qəm d-i=məsketo: d-lo=dayqo, am=mədone, gəd-rŭḏ̣eno d-yutwo biya 2/68; huwe l-abəʕ d-roḏ̣e d-maqbəl tarte niše d-howən 1-ḥa=gawro ‘’; 24/229; uno lu=k-roḏ̣eno, lo=uno, uno xəd kulle hani qərš d-ubat-li!u=šafəʕ diḏa iḏa d-roḏ̣e aʕlax w-ʕal u=mede d-ṭulbat, gəd-omər ammīn",
+            "turoyo": "maḥatli šart qəm d-i=məsketo d-lo=dayqo am=mədone gəd-rŭḏ̣eno d-yutwo biya huwe l-abəʕ d-roḏ̣e d-maqbəl tarte niše d-howən -ḥa=gawro uno lu=k-roḏ̣eno lo=uno uno xəd kulle hani qərš d-ubat-li! u=šafəʕ diḏa iḏa d-roḏ̣e aʕlax w-ʕal u=mede d-ṭulbat gəd-omər ammīn",
             "translations": [
-              "‘da stellte ich der armen Frau eine Bedingung: Wenn sie nicht an die Sachen rühren wollte, so würde ich einverstanden sein, daß sie dort wohnte’;",
-              "Er wollte erst nicht einwilligen, anzunehmen das ein Mann zwei Frauen hat",
-              "‘Damit bin ich nicht zufrieden; du mußt mir wie allen anderen einen Krusch geben’; 25/61;",
-              "‘If its patron agrees with you and with what you are asking for he will say: “Amen”’; 44/123"
+              "‘da stellte ich der armen Frau eine Bedingung: Wenn sie nicht an die Sachen rühren wollte, so würde ich einverstanden sein, daß sie dort wohnte’",
+              "‘Er wollte erst nicht einwilligen, anzunehmen das ein Mann zwei Frauen hat’",
+              "‘Damit bin ich nicht zufrieden; du mußt mir wie allen anderen einen Krusch geben’",
+              "‘If its patron agrees with you and with what you are asking for he will say: “Amen”’"
             ],
-            "references": ["2", "2/68"]
+            "references": [
+              "2",
+              "2/68",
+              "1",
+              "24/229",
+              "25/61",
+              "44/123"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥatli šart qəm d-i=məsketo"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-lo=dayqo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " am=mədone"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəd-rŭḏ̣eno d-yutwo biya "
+              },
+              {
+                "kind": "translation",
+                "value": "‘da stellte ich der armen Frau eine Bedingung: Wenn sie nicht an die Sachen rühren wollte, so würde ich einverstanden sein, daß sie dort wohnte’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/68"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " huwe l-abəʕ d-roḏ̣e d-maqbəl tarte niše d-howən "
+              },
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-ḥa=gawro "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er wollte erst nicht einwilligen, anzunehmen das ein Mann zwei Frauen hat’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/229"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " uno lu=k-roḏ̣eno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=uno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " uno xəd kulle hani qərš d-ubat-li! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Damit bin ich nicht zufrieden; du mußt mir wie allen anderen einen Krusch geben’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/61"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=šafəʕ diḏa iḏa d-roḏ̣e aʕlax w-ʕal u=mede d-ṭulbat"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəd-omər ammīn "
+              },
+              {
+                "kind": "translation",
+                "value": "‘If its patron agrees with you and with what you are asking for he will say: “Amen”’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/123"
+              }
+            ],
+            "text": "2) maḥatli šart qəm d-i=məsketo: d-lo=dayqo, am=mədone, gəd-rŭḏ̣eno d-yutwo biya ‘da stellte ich der armen Frau eine Bedingung: Wenn sie nicht an die Sachen rühren wollte, so würde ich einverstanden sein, daß sie dort wohnte’; 2/68; huwe l-abəʕ d-roḏ̣e d-maqbəl tarte niše d-howən 1-ḥa=gawro ‘Er wollte erst nicht einwilligen, anzunehmen das ein Mann zwei Frauen hat’; 24/229; uno lu=k-roḏ̣eno, lo=uno, uno xəd kulle hani qərš d-ubat-li! ‘Damit bin ich nicht zufrieden; du mußt mir wie allen anderen einen Krusch geben’; 25/61; u=šafəʕ diḏa iḏa d-roḏ̣e aʕlax w-ʕal u=mede d-ṭulbat, gəd-omər ammīn ‘If its patron agrees with you and with what you are asking for he will say: “Amen”’; 44/123"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "rḏ̣áyul-li ʕal ḥḏo! i=wazara i=ḥḏo d-roḏ̣itu aʕla d-moṭítu-la ono maqəbloli 375; 69/48;",
+            "turoyo": "rḏ̣áyul-li ʕal ḥḏo! i=wazara i=ḥḏo d-roḏ̣itu aʕla d-moṭítu-la ono maqəbloli",
             "translations": [
               "sucht mir eine aus! Diejenige, die ihr Wesire für passend haltet und herbringt, die nehme ich an"
             ],
-            "references": ["375; 69/48"]
+            "references": [
+              "375",
+              "69/48"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "rḏ̣áyul-li ʕal ḥḏo! i=wazara i=ḥḏo d-roḏ̣itu aʕla d-moṭítu-la ono maqəbloli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsucht mir eine aus! Diejenige, die ihr Wesire für passend haltet und herbringt, die nehme ich anʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "375"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/48"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "rḏ̣áyul-li ʕal ḥḏo! i=wazara i=ḥḏo d-roḏ̣itu aʕla d-moṭítu-la ono maqəbloli ʻsucht mir eine aus! Diejenige, die ihr Wesire für passend haltet und herbringt, die nehme ich anʼ; 375; 69/48;"
           }
         ],
         "Part act.": [
           {
-            "turoyo": "lat-yo raḏ̣yo eba 375-376; 78/155; hal raḏ̣ye-hatu b-med-ano d-k-omər? 376; 24/105;",
+            "turoyo": "lat-yo raḏ̣yo eba - hal raḏ̣ye-hatu b-med-ano d-k-omər?",
             "translations": [
               "sie gefällt ihm nicht",
               "seid ihr einverstanden mit dem, was er sagt?"
             ],
-            "references": ["375", "376; 78/155"]
+            "references": [
+              "375",
+              "376",
+              "78/155",
+              "376",
+              "24/105"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lat-yo raḏ̣yo eba "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie gefällt ihm nichtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "375"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "376"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/155"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hal raḏ̣ye-hatu b-med-ano d-k-omər? "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻseid ihr einverstanden mit dem, was er sagt?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "376"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/105"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lat-yo raḏ̣yo eba ʻsie gefällt ihm nichtʼ; 375-376; 78/155; hal raḏ̣ye-hatu b-med-ano d-k-omər? ʻseid ihr einverstanden mit dem, was er sagt?ʼ; 376; 24/105;"
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "ašər m-u=rḏ̣oyo, šafíro-hat 377; 26/108;",
-            "translations": ["was das Leidenmögen anlangt, du bist schön"],
-            "references": ["377; 26/108"]
+            "turoyo": "ašər m-u=rḏ̣oyo šafíro-hat",
+            "translations": [
+              "was das Leidenmögen anlangt, du bist schön"
+            ],
+            "references": [
+              "377",
+              "26/108"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ašər m-u=rḏ̣oyo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šafíro-hat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwas das Leidenmögen anlangt, du bist schönʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "377"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/108"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ašər m-u=rḏ̣oyo, šafíro-hat ʻwas das Leidenmögen anlangt, du bist schönʼ; 377; 26/108;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["marḏ̣ele", "marḏ̣e"],
+      "forms": [
+        "marḏ̣ele",
+        "marḏ̣e"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ánnaqla yawmo ʕal yawmo, marḏ̣ela i=kačke 385; 88/54; bəṯṯər daʕər u=ʕmiro ḥzele aṯi amṭalle marḏ̣alle 386; 74/106;",
+            "turoyo": "ánnaqla yawmo ʕal yawmo marḏ̣ela i=kačke bəṯṯər daʕər u=ʕmiro ḥzele aṯi amṭalle marḏ̣alle",
             "translations": [
               "Tag für Tag (redete sie so) und erreichte schliesslich, dass das Mädchen einwilligte",
               "nachher kam der Emîr zurück, nachdem er gesehen hatte, dass er gekommen war, und man ihn hergebracht und beruhigt hatte"
             ],
-            "references": ["385; 88/54", "386; 74/106"]
+            "references": [
+              "385",
+              "88/54",
+              "386",
+              "74/106"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ánnaqla yawmo ʕal yawmo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " marḏ̣ela i=kačke "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻTag für Tag (redete sie so) und erreichte schliesslich, dass das Mädchen einwilligteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "385"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "88/54"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər daʕər u=ʕmiro ḥzele aṯi amṭalle marḏ̣alle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnachher kam der Emîr zurück, nachdem er gesehen hatte, dass er gekommen war, und man ihn hergebracht und beruhigt hatteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "386"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "74/106"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ánnaqla yawmo ʕal yawmo, marḏ̣ela i=kačke ʻTag für Tag (redete sie so) und erreichte schliesslich, dass das Mädchen einwilligteʼ; 385; 88/54; bəṯṯər daʕər u=ʕmiro ḥzele aṯi amṭalle marḏ̣alle ʻnachher kam der Emîr zurück, nachdem er gesehen hatte, dass er gekommen war, und man ihn hergebracht und beruhigt hatteʼ; 386; 74/106;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "w d-obəʕ maḥət qumayye muklo d-marḏ̣alle RT 26;",
+            "turoyo": "w d-obəʕ maḥət qumayye muklo d-marḏ̣alle",
             "translations": [
               "und wenn er ihnen ein Essen vorsetzen möchte, das sie zufriedenstellt"
             ],
-            "references": ["26"]
+            "references": [
+              "RT 26"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "w d-obəʕ maḥət qumayye muklo d-marḏ̣alle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻund wenn er ihnen ein Essen vorsetzen möchte, das sie zufriedenstelltʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "RT 26"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "w d-obəʕ maḥət qumayye muklo d-marḏ̣alle ʻund wenn er ihnen ein Essen vorsetzen möchte, das sie zufriedenstelltʼ; RT 26;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "einwilligen machen, beruhen;"
   ],
   "uncertain": false
 }

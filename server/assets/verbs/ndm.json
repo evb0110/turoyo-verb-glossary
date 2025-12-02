@@ -14,26 +14,125 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["mandamle", "mandəm"],
+      "forms": [
+        "mandamle",
+        "mandəm"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "yaqəḏ lebe, mandamle 137; prs 147/26;",
-            "translations": ["die Reue begann in seinem Herzen zu brennen"],
-            "references": ["137", "147/26"]
+            "turoyo": "yaqəḏ lebe mandamle prs",
+            "translations": [
+              "die Reue begann in seinem Herzen zu brennen"
+            ],
+            "references": [
+              "137",
+              "147/26"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "yaqəḏ lebe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mandamle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Reue begann in seinem Herzen zu brennenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "137"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "147/26"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "yaqəḏ lebe, mandamle ʻdie Reue begann in seinem Herzen zu brennenʼ; 137; prs 147/26;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "abrə-d-ʕammo! gə-mandimət aʕli! omər: lo, lu=k-owe d-mandamno",
+            "turoyo": "abrə-d-ʕammo! gə-mandimət aʕli! omər lo lu=k-owe d-mandamno",
             "translations": [
-              "‘Vetter! Du wirst es bereuen! Er sprach: Nein! Das kommt nicht in Frage, daß ich es bereue’; 26/221"
+              "‘Vetter! Du wirst es bereuen! Er sprach: Nein! Das kommt nicht in Frage, daß ich es bereue’"
             ],
-            "references": []
+            "references": [
+              "26/221"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "abrə-d-ʕammo! gə-mandimət aʕli! omər"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lu=k-owe d-mandamno "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Vetter! Du wirst es bereuen! Er sprach: Nein! Das kommt nicht in Frage, daß ich es bereue’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/221"
+              }
+            ],
+            "text": "abrə-d-ʕammo! gə-mandimət aʕli! omər: lo, lu=k-owe d-mandamno ‘Vetter! Du wirst es bereuen! Er sprach: Nein! Das kommt nicht in Frage, daß ich es bereue’; 26/221"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "bereuen;"
   ],
   "uncertain": false
 }

@@ -14,36 +14,204 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mʔaḏele", "mʔaḏe"],
+      "forms": [
+        "mʔaḏele",
+        "mʔaḏe"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "1) mʔaḏele 739; 2) mʔaḏele 739; 3) mʔaḏílele 739;",
+            "turoyo": "mʔaḏele",
             "translations": [
-              "ʻer quälte ihnʼ;",
-              "ʻer rief zum Gebetʼ;",
-              "ʻer gab ihm Erlaubnisʼ;"
+              "er quälte ihn"
             ],
-            "references": ["1", "739; 2"]
+            "references": [
+              "1",
+              "739"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mʔaḏele "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer quälte ihnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "739"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) mʔaḏele ʻer quälte ihnʼ; 739;"
+          },
+          {
+            "turoyo": "mʔaḏele",
+            "translations": [
+              "er rief zum Gebet"
+            ],
+            "references": [
+              "2",
+              "739"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mʔaḏele "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer rief zum Gebetʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "739"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "2) mʔaḏele ʻer rief zum Gebetʼ; 739;"
+          },
+          {
+            "turoyo": "mʔaḏílele",
+            "translations": [
+              "er gab ihm Erlaubnis"
+            ],
+            "references": [
+              "3",
+              "739"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mʔaḏílele "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer gab ihm Erlaubnisʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "739"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "3) mʔaḏílele ʻer gab ihm Erlaubnisʼ; 739;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["maʔḏele", "maʔḏe"],
+      "forms": [
+        "maʔḏele",
+        "maʔḏe"
+      ],
       "conjugations": {
         "Infectum": [
           {
             "turoyo": "howət tasal w-lo=mfakrət d-əzzino maʔḏe-ne mede băṣəṭ k-obaʕno d-samno aʕme",
             "translations": [
-              "‘Do not think that I am goint to hurt him. I would just like to do something innocuous to him’ 84/49;"
+              "‘Do not think that I am goint to hurt him. I would just like to do something innocuous to him’"
             ],
-            "references": []
+            "references": [
+              "84/49"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "howət tasal w-lo=mfakrət d-əzzino maʔḏe-ne mede băṣəṭ k-obaʕno d-samno aʕme "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Do not think that I am goint to hurt him. I would just like to do something innocuous to him’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "84/49"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "howət tasal w-lo=mfakrət d-əzzino maʔḏe-ne mede băṣəṭ k-obaʕno d-samno aʕme ‘Do not think that I am goint to hurt him. I would just like to do something innocuous to him’ 84/49;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "to hurt, to inflict pain;"
   ],
   "uncertain": false
 }

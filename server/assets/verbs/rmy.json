@@ -14,17 +14,67 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["rmele", "rome"],
+      "forms": [
+        "rmele",
+        "rome"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ko-roməl-la l-as=sefoqe 366; 94/139;",
-            "translations": ["sie verteilen sie auf die Teller"],
-            "references": ["366; 94/139"]
+            "turoyo": "ko-roməl-la l-as=sefoqe",
+            "translations": [
+              "sie verteilen sie auf die Teller"
+            ],
+            "references": [
+              "366",
+              "94/139"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-roməl-la l-as=sefoqe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie verteilen sie auf die Tellerʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "366"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/139"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-roməl-la l-as=sefoqe ʻsie verteilen sie auf die Tellerʼ; 366; 94/139;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "verteilen;"
   ],
   "uncertain": false
 }

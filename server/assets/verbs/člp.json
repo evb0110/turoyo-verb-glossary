@@ -14,30 +14,96 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["čləple", "čoləp"],
+      "forms": [
+        "čləple",
+        "čoləp"
+      ],
       "conjugations": {
         "Infectum": [
           {
             "turoyo": "ko-čoləp medone mine",
             "translations": [],
-            "references": ["225"]
+            "references": [
+              "225"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-čoləp medone mine"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "225"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-čoləp medone mine; 225;"
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": ["mčalaple", "mčaləp"],
+      "forms": [
+        "mčalaple",
+        "mčaləp"
+      ],
       "conjugations": {
         "Imperativ": [
           {
-            "turoyo": "mčaláp i=raġlo d-i=tfənge 225;",
-            "translations": ["ʻzieh den Abzugshahn des Gewehres anʼ;"],
-            "references": ["225"]
+            "turoyo": "mčaláp i=raġlo d-i=tfənge",
+            "translations": [
+              "zieh den Abzugshahn des Gewehres an"
+            ],
+            "references": [
+              "225"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mčaláp i=raġlo d-i=tfənge "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻzieh den Abzugshahn des Gewehres anʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "225"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mčaláp i=raġlo d-i=tfənge ʻzieh den Abzugshahn des Gewehres anʼ; 225;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "entwenden, mitnehmen und nicht wiederbringen;",
+    "abdrücken (Gewehr);"
   ],
   "uncertain": false
 }

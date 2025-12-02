@@ -14,19 +14,75 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mqawqašle", "mqawqəš"],
+      "forms": [
+        "mqawqašle",
+        "mqawqəš"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "lo=ṭralle ṣafuro, mqawqšənne kulle mublənne 787; 30/90;",
+            "turoyo": "lo=ṭralle ṣafuro mqawqšənne kulle mublənne",
             "translations": [
               "sie hatten nicht ein Ziegenböckchen übrig gelassen, sie hatten sie alle zusammengetrieben und weggeholt"
             ],
-            "references": ["787; 30/90"]
+            "references": [
+              "787",
+              "30/90"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lo=ṭralle ṣafuro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mqawqšənne kulle mublənne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie hatten nicht ein Ziegenböckchen übrig gelassen, sie hatten sie alle zusammengetrieben und weggeholtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "787"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/90"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lo=ṭralle ṣafuro, mqawqšənne kulle mublənne ʻsie hatten nicht ein Ziegenböckchen übrig gelassen, sie hatten sie alle zusammengetrieben und weggeholtʼ; 787; 30/90;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "zusammenraffen, zusammentreiben;"
   ],
   "uncertain": false
 }

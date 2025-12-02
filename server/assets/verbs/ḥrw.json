@@ -14,70 +14,651 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ḥaru", "ḥoru"],
+      "forms": [
+        "ḥaru",
+        "ḥoru"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "2) g-šotenaʕărāq, kānḥariwət g-tumġal-lux, w kānḥarwonotmaġ-li 283; prs 22/23;",
-            "translations": ["Stempel auf;"],
-            "references": ["2", "283"]
+            "turoyo": "g-šotena ʕărāq kān ḥariwət g-tumġal-lux w kān ḥarwono tmaġ-li prs",
+            "translations": [
+              "wir wollen Brantwein trinken, und wenn du betrunken wirst, so drücke ich dir einen Stempel auf; wenn aber ich betrunken werde, so drückst du mir ihn auf"
+            ],
+            "references": [
+              "2",
+              "283",
+              "22/23"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-šotena ʕărāq"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kān ḥariwət g-tumġal-lux"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w kān ḥarwono tmaġ-li "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir wollen Brantwein trinken, und wenn du betrunken wirst, so drücke ich dir einen Stempel auf; wenn aber ich betrunken werde, so drückst du mir ihn aufʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "283"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "22/23"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) g-šotena ʕărāq, kān ḥariwət g-tumġal-lux, w kān ḥarwono tmaġ-li ʻwir wollen Brantwein trinken, und wenn du betrunken wirst, so drücke ich dir einen Stempel auf; wenn aber ich betrunken werde, so drückst du mir ihn aufʼ; 283; prs 22/23;"
           },
           {
-            "turoyo": "3) hanohedika k-mamte i=bardəš d-u=ḥalwo k-maḥat-la ʕal i=nuro, w k-soyəmnurotaḥta k-foyər u=ḥalw-awokule k-qoləblə=ḥaru-le 283; 56/123; məḥaru-lax m-u=med-ano ko-mšaylatmən-yo u=sərrayḏi MM 65; hat mə́ ḥáru-lox? hat háw-li-yo, šqul i=lera!",
+            "turoyo": "hano hedika k-mamte i=bardəš d-u=ḥalwo k-maḥat-la ʕal i=nuro w k-soyəm nuro taḥta k-foyər u=ḥalw-awo kule k-qoləb lə=ḥaru-le mə ḥaru-lax m-u=med-ano ko-mšaylat mən-yo u=sərrayḏi hat mə́ ḥáru-lox? hat háw-li-yo šqul i=lera!",
             "translations": [
-              "an und die",
-              "an, das du",
-              "das dich an? Gib es (die",
-              ", m) mir und",
-              "das Pfund!’; 29/393"
+              "er holt sacht den Milchtopf und stellt ihn aufs Feuer. Er macht Feuer darunter an und die ganze Milch kocht über und verdampft; er kümmert sich nicht darum",
+              "was geht dich mein Geheimnis an, das du danach fragst",
+              "‘Was geht das dich an? Gib es (die Fuchsgaut, m) mir und nimm das Pfund!’"
             ],
-            "references": ["3", "283; 56/123"]
+            "references": [
+              "3",
+              "283",
+              "56/123",
+              "MM 65",
+              "29/393"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hano hedika k-mamte i=bardəš d-u=ḥalwo k-maḥat-la ʕal i=nuro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w k-soyəm nuro taḥta k-foyər u=ḥalw-awo kule k-qoləb lə=ḥaru-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer holt sacht den Milchtopf und stellt ihn aufs Feuer. Er macht Feuer darunter an und die ganze Milch kocht über und verdampft; er kümmert sich nicht darumʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "283"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/123"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mə ḥaru-lax m-u=med-ano ko-mšaylat mən-yo u=sərrayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwas geht dich mein Geheimnis an, das du danach fragstʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 65"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hat mə́ ḥáru-lox? hat háw-li-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šqul i=lera! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Was geht das dich an? Gib es (die Fuchsgaut, m) mir und nimm das Pfund!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/393"
+              }
+            ],
+            "text": "3) hano hedika k-mamte i=bardəš d-u=ḥalwo k-maḥat-la ʕal i=nuro, w k-soyəm nuro taḥta k-foyər u=ḥalw-awo kule k-qoləb lə=ḥaru-le ʻer holt sacht den Milchtopf und stellt ihn aufs Feuer. Er macht Feuer darunter an und die ganze Milch kocht über und verdampft; er kümmert sich nicht darumʼ; 283; 56/123; mə ḥaru-lax m-u=med-ano ko-mšaylat mən-yo u=sərrayḏi ʻwas geht dich mein Geheimnis an, das du danach fragstʼ; MM 65; hat mə́ ḥáru-lox? hat háw-li-yo, šqul i=lera! ‘Was geht das dich an? Gib es (die Fuchsgaut, m) mir und nimm das Pfund!’; 29/393"
           }
         ],
         "ko-Preterit": [
           {
-            "turoyo": "1) aṯi u=zlamḥəḷḷe ga i=arʕo ko-ḥariwo, aš=šuroneḥariwi, an=nuqroṯeṣxiri",
+            "turoyo": "aṯi u=zlam ḥəḷḷe ga i=arʕo ko-ḥariwo aš=šurone ḥariwi an=nuqroṯe ṣxiri",
             "translations": [
-              "‘The man came and saw: the field has been destroyed, the walls have been destroyed, the holes have been filled up’ 75/186;"
+              "‘The man came and saw: the field has been destroyed, the walls have been destroyed, the holes have been filled up’"
             ],
-            "references": ["1"]
+            "references": [
+              "1",
+              "75/186"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aṯi u=zlam ḥəḷḷe ga i=arʕo ko-ḥariwo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aš=šurone ḥariwi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " an=nuqroṯe ṣxiri "
+              },
+              {
+                "kind": "translation",
+                "value": "‘The man came and saw: the field has been destroyed, the walls have been destroyed, the holes have been filled up’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/186"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) aṯi u=zlam ḥəḷḷe ga i=arʕo ko-ḥariwo, aš=šurone ḥariwi, an=nuqroṯe ṣxiri ‘The man came and saw: the field has been destroyed, the walls have been destroyed, the holes have been filled up’ 75/186;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "1) tasisat d-ab=bŭwerikitofaqaṭkulyawmomədə-k-ḥorumede b-ab=bŭwerimayexd-i=ʕade lo=k-ŭṯe-li ʻ 20/18;",
-            "translations": ["Rohrinstallation", "das Wasser", "ordentlich"],
-            "references": ["1", "20/18"]
+            "turoyo": "tasisat d-ab=bŭweri kito faqaṭ kul yawmo mədə-k-ḥoru mede b-ab=bŭweri maye xd-i=ʕade lo=k-ŭṯe-li",
+            "translations": [
+              "es gibt zwar eine Rohrinstallation. Aber da daran täglich etwas kaput geht, kommt das Wasser nicht ordentlich bis zu mir"
+            ],
+            "references": [
+              "1",
+              "20/18"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " tasisat d-ab=bŭweri kito faqaṭ kul yawmo mədə-k-ḥoru mede b-ab=bŭweri maye xd-i=ʕade lo=k-ŭṯe-li "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes gibt zwar eine Rohrinstallation. Aber da daran täglich etwas kaput geht, kommt das Wasser nicht ordentlich bis zu mirʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "20/18"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) tasisat d-ab=bŭweri kito faqaṭ kul yawmo mədə-k-ḥoru mede b-ab=bŭweri maye xd-i=ʕade lo=k-ŭṯe-li ʻes gibt zwar eine Rohrinstallation. Aber da daran täglich etwas kaput geht, kommt das Wasser nicht ordentlich bis zu mirʼ; 20/18;"
           },
           {
-            "turoyo": "3) izúx hat l-i=ʕitoxəd i=ʕade w-lə=ḥoraw-lux me-mede m-ani 283; 47/65;heš ono b-aḥ=ḥay-ayaḏiʕrayto l=aṯi-li (…) ema gd-oṯe-lanʕraytoomər lo=mtanət lo=ḥaru-lux hat",
+            "turoyo": "izúx hat l-i=ʕito xəd i=ʕade w-lə=ḥoraw-lux me-mede m-ani heš ono b-aḥ=ḥay-ayaḏi ʕrayto l=aṯi-li … ema gd-oṯe-lan ʕrayto omər lo=mtanət lo=ḥaru-lux hat ‘In my whole life I have not had lunch. … When am I going to get lunch? – He the boy m. said",
             "translations": [
-              "to the church as usual and do not be sad about these",
-              "‘In my (whole) life I have not had lunch. (…) When am I going to get lunch? – He (the boy, m.) said: “Do not raise objections and do not bother!” 76/55;"
+              "Go to the church as usual and do not be sad about these things",
+              "Do not raise objections and do not bother!"
             ],
-            "references": ["3", "283; 47/65"]
+            "references": [
+              "3",
+              "283",
+              "47/65",
+              "76/55"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " izúx hat l-i=ʕito xəd i=ʕade w-lə=ḥoraw-lux me-mede m-ani "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻGo to the church as usual and do not be sad about these thingsʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "283"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "47/65"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " heš ono b-aḥ=ḥay-ayaḏi ʕrayto l=aṯi-li "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ema gd-oṯe-lan ʕrayto omər lo=mtanət lo=ḥaru-lux hat "
+              },
+              {
+                "kind": "turoyo",
+                "value": "‘"
+              },
+              {
+                "kind": "turoyo",
+                "value": "In my "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "whole"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " life I have not had lunch. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " When am I going to get lunch? – He "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "the boy"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " m."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " said"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“Do not raise objections and do not bother!”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "76/55"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "3) izúx hat l-i=ʕito xəd i=ʕade w-lə=ḥoraw-lux me-mede m-ani ʻGo to the church as usual and do not be sad about these thingsʼ; 283; 47/65; heš ono b-aḥ=ḥay-ayaḏi ʕrayto l=aṯi-li (…) ema gd-oṯe-lan ʕrayto omər lo=mtanət lo=ḥaru-lux hat ‘In my (whole) life I have not had lunch. (…) When am I going to get lunch? – He (the boy, m.) said: “Do not raise objections and do not bother!” 76/55;"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "1) u=mede d-sam-wa b-i=šira d-u=qašo, howe-wa, w u=mede d-sam-wa b-i=šira d-u=malla, ḥərwo-wa i=masale 282-283; 84/6;hōltloṯo=yarḥeḥrenequdrí-way-nauxlina b-až=žăbaš-anək. lo=ḥərwi-waaž=žabašfayši-wa",
+            "turoyo": "u=mede d-sam-wa b-i=šira d-u=qašo howe-wa w u=mede d-sam-wa b-i=šira d-u=malla ḥərwo-wa i=masale - hōl tloṯo=yarḥe ḥrene qudrí-way-na uxlina b-až=žăbaš-anək. lo=ḥərwi-wa až=žabaš fayši-wa",
             "translations": [
-              ", was er auf Rat des",
-              ", und das, was er auf Rat des",
+              "das, was er auf Rat des Pfarrers tat, das gelang, und das, was er auf Rat des Mollas tat, das misslang",
               "‘For the next three months we could eat those watermelons. They wouldn’t be off, but they would stay fresh’"
             ],
-            "references": ["1", "282"]
+            "references": [
+              "1",
+              "282",
+              "283",
+              "84/6",
+              "JL 7.8.8"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=mede d-sam-wa b-i=šira d-u=qašo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " howe-wa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w u=mede d-sam-wa b-i=šira d-u=malla"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥərwo-wa i=masale "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas, was er auf Rat des Pfarrers tat, das gelang, und das, was er auf Rat des Mollas tat, das misslangʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "282"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "283"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "84/6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hōl tloṯo=yarḥe ḥrene qudrí-way-na uxlina b-až=žăbaš-anək. lo=ḥərwi-wa až=žabaš fayši-wa "
+              },
+              {
+                "kind": "translation",
+                "value": "‘For the next three months we could eat those watermelons. They wouldn’t be off, but they would stay fresh’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 7.8.8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) u=mede d-sam-wa b-i=šira d-u=qašo, howe-wa, w u=mede d-sam-wa b-i=šira d-u=malla, ḥərwo-wa i=masale ʻdas, was er auf Rat des Pfarrers tat, das gelang, und das, was er auf Rat des Mollas tat, das misslangʼ; 282-283; 84/6; hōl tloṯo=yarḥe ḥrene qudrí-way-na uxlina b-až=žăbaš-anək. lo=ḥərwi-wa až=žabaš fayši-wa ‘For the next three months we could eat those watermelons. They wouldn’t be off, but they would stay fresh’ JL 7.8.8;"
           }
         ],
         "Part act.": [
           {
-            "turoyo": "1) i=goroḥaruto w nqúto-wa 1/16;",
-            "translations": [],
-            "references": ["1", "1/16"]
+            "turoyo": "i=goro ḥaruto w nqúto-wa",
+            "translations": [
+              "das Dach war schadhaft und voller Löcher"
+            ],
+            "references": [
+              "1",
+              "1/16"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=goro ḥaruto w nqúto-wa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Dach war schadhaft und voller Löcherʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "1/16"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) i=goro ḥaruto w nqúto-wa ʻdas Dach war schadhaft und voller Löcherʼ; 1/16;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "u-fəkər d-pers. ḥaru/ḥoru ʕal- ‘über j-m auf schlechte Gedanken kommen’: i=barṯo d-u=malko u=fəkər diḏa ḥaru aʕlayye ‘Die Tochter des Königs kam auf schlechte Gedanken’; 24/258; u=fəkər d-ann=ammoṯaṯṯe ḥariwo aʕlayye ʻdie Mütter hatten mit ihnen schlimmes im Sinneʼ; 283; 24/265;",
+    "ḥaru bayto + possessive suffix - used as a swear-word: ḥzalle ḥa kal ko-maḥatle feme qm-u=hno qm-u=nahro d-am=maye, ga paške d-maye lə=k-ṭore šopəʕ, w-k-omər: “hawara mayəṯno m-u=ṣahwo!” omər: “ḥaru baytux! u=qa nahr-ano, heš kəmmət mayəṯno m-u=ṣahwo?” ‘They saw: one man has put his mouth close to the stream of water. He was not letting any of it to pass by and was saying: “Help! I am dying of thirst”. He (Xangir) said: “To hell with you! (There is) this whole stream, but you say: “I am dying of thirst”? 73/266-267; ḥoru bayte d-eməx! alyaq mena layt ʻzum Donnerwetter! Ein hübscheres Mädel gibt es nichtʼ; 282; prs 24/6;"
   ],
   "uncertain": false
 }

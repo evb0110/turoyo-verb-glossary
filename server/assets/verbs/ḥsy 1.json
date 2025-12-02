@@ -14,17 +14,60 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ḥsele", "ḥose"],
+      "forms": [
+        "ḥsele",
+        "ḥose"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Part. Pass.": [
           {
-            "turoyo": "wazoḥsiṯo 381;",
-            "translations": [],
-            "references": ["381"]
+            "turoyo": "wazo ḥsiṯo",
+            "translations": [
+              "eine gefüllte Gans"
+            ],
+            "references": [
+              "381"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "wazo ḥsiṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻeine gefüllte Gansʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "381"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "wazo ḥsiṯo ʻeine gefüllte Gansʼ; 381;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "füllen;"
   ],
   "uncertain": false
 }

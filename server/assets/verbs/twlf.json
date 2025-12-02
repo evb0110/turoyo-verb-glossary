@@ -5,17 +5,75 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mtawlafle", "mtawləf"],
+      "forms": [
+        "mtawlafle",
+        "mtawləf"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "l-u=šaʕbqšəʕleḥḏoḏe, mtawlaffeḥḏoḏe 792; 70/56;",
-            "translations": ["ausgerottet", "gegenseitig", "umgebracht"],
-            "references": ["792; 70/56"]
+            "turoyo": "l-u=šaʕb qšəʕle ḥḏoḏe mtawlaffe ḥḏoḏe",
+            "translations": [
+              "die Leute haben sich schon fast ausgerottet und gegenseitig umgebracht"
+            ],
+            "references": [
+              "792",
+              "70/56"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-u=šaʕb qšəʕle ḥḏoḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mtawlaffe ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Leute haben sich schon fast ausgerottet und gegenseitig umgebrachtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "792"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70/56"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "l-u=šaʕb qšəʕle ḥḏoḏe, mtawlaffe ḥḏoḏe ʻdie Leute haben sich schon fast ausgerottet und gegenseitig umgebrachtʼ; 792; 70/56;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "vernichten, ausrotten;"
   ],
   "uncertain": false
 }

@@ -12,17 +12,71 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ḥəzle", "ḥoyəz"],
+      "forms": [
+        "ḥəzle",
+        "ḥoyəz"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "alohoḥayəz 512; 97/153; Примеротсутствует в указанномместе",
-            "translations": [],
-            "references": ["512; 97/153"]
+            "turoyo": "aloho ḥayəz Пример отсутствует в указанном месте",
+            "translations": [
+              "es beliebte Gott"
+            ],
+            "references": [
+              "512",
+              "97/153"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aloho ḥayəz "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes beliebte Gottʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "512"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "97/153"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Пример отсутствует в указанном месте"
+              }
+            ],
+            "text": "aloho ḥayəz ʻes beliebte Gottʼ; 512; 97/153; Пример отсутствует в указанном месте"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "belieben;"
   ],
   "uncertain": false
 }

@@ -14,62 +14,455 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["qawi", "qowe"],
+      "forms": [
+        "qawi",
+        "qowe"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "qay abri? hawi gušmux qawi w hawi foṯux saməq 617; 76/140; hano ġắlabe qawi b-lebe ḏ̣əd d-aloho hul dáraǧe, d-ko-mankər u=wuǧūd d-aloho",
+            "turoyo": "qay abri? hawi gušmux qawi w hawi foṯux saməq hano ġắlabe qawi b-lebe ḏ̣əd d-aloho hul dáraǧe d-ko-mankər u=wuǧūd d-aloho",
             "translations": [
               "wieso denn, mein Sohn? Ist denn dein Körper nicht schon kräftig und dein Gesicht frisch rot geworden?",
-              "‘He was strongly disaffected against God to such an extent that he denied the very existence of God’; 43/6 [MT]"
+              "‘He was strongly disaffected against God to such an extent that he denied the very existence of God’"
             ],
-            "references": ["617; 76/140"]
+            "references": [
+              "617",
+              "76/140",
+              "43/6"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qay abri? hawi gušmux qawi w hawi foṯux saməq "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwieso denn, mein Sohn? Ist denn dein Körper nicht schon kräftig und dein Gesicht frisch rot geworden?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "617"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "76/140"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hano ġắlabe qawi b-lebe ḏ̣əd d-aloho hul dáraǧe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-ko-mankər u=wuǧūd d-aloho "
+              },
+              {
+                "kind": "translation",
+                "value": "‘He was strongly disaffected against God to such an extent that he denied the very existence of God’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "43/6"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "qay abri? hawi gušmux qawi w hawi foṯux saməq ʻwieso denn, mein Sohn? Ist denn dein Körper nicht schon kräftig und dein Gesicht frisch rot geworden?ʼ; 617; 76/140; hano ġắlabe qawi b-lebe ḏ̣əd d-aloho hul dáraǧe, d-ko-mankər u=wuǧūd d-aloho ‘He was strongly disaffected against God to such an extent that he denied the very existence of God’; 43/6 [MT]"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "balki qowe əšmo 617; 76/133; kət-lan arwono g-nəḥrina-le saymina-le qaliyo w-gəd-muklina-le l-u=zʕur-ano balki qowe əšmo w-gušme miʕadəl",
+            "turoyo": "balki qowe əšmo kət-lan arwono g-nəḥrina-le saymina-le qaliyo w-gəd-muklina-le l-u=zʕur-ano balki qowe əšmo w-gušme miʕadəl",
             "translations": [
               "vielleicht wird er dann ein wenig kräftig",
-              "‘We have a calf. We are going to slaughter it and prepare a piece of meat from it and we are going to feed it to the boy. Perhaps he will get a bit stronger, and his body will be in a good condition’ 76/133;"
+              "‘We have a calf. We are going to slaughter it and prepare a piece of meat from it and we are going to feed it to the boy. Perhaps he will get a bit stronger, and his body will be in a good condition’"
             ],
-            "references": ["617; 76/133"]
+            "references": [
+              "617",
+              "76/133",
+              "76/133"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "balki qowe əšmo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻvielleicht wird er dann ein wenig kräftigʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "617"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "76/133"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kət-lan arwono g-nəḥrina-le saymina-le qaliyo w-gəd-muklina-le l-u=zʕur-ano balki qowe əšmo w-gušme miʕadəl "
+              },
+              {
+                "kind": "translation",
+                "value": "‘We have a calf. We are going to slaughter it and prepare a piece of meat from it and we are going to feed it to the boy. Perhaps he will get a bit stronger, and his body will be in a good condition’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "76/133"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "balki qowe əšmo ʻvielleicht wird er dann ein wenig kräftigʼ; 617; 76/133; kət-lan arwono g-nəḥrina-le saymina-le qaliyo w-gəd-muklina-le l-u=zʕur-ano balki qowe əšmo w-gušme miʕadəl ‘We have a calf. We are going to slaughter it and prepare a piece of meat from it and we are going to feed it to the boy. Perhaps he will get a bit stronger, and his body will be in a good condition’ 76/133;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["maqwele", "maqwe"],
+      "forms": [
+        "maqwele",
+        "maqwe"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ʕal d-maqwele foṯe ġắlabe, ašər, mḥéli-le lakmo ʕal foṯe 617; 43/53; ono… maqweli lebi116/32yawmo həngi maqwele ʕal u=babo omər adyawma lo=k-owe illa g-əzzino qm-aʕ=ʕeze ono w-hat g-məṯnoḥəthat maqwelux aʕli b-u=šeyolo w-hul d-məllilux u=mede d-kət-wa b-lebi",
+            "turoyo": "ʕal d-maqwele foṯe ġắlabe ašər mḥéli-le lakmo ʕal foṯe ono… maqweli lebi yawmo həngi maqwele ʕal u=babo omər adyawma lo=k-owe illa g-əzzino qm-aʕ=ʕeze ono w-hat g-məṯnoḥət",
             "translations": [
               "Since he was very importunate, sure I gave him a slap in the face",
-              "‘ich fasste mir ein Herz’;",
-              "‘One day he pestered his father, saying: “Today I am certainly going with the goats, and you are going to take a rest” 75/52;",
-              "‘You have pestered me with questions to the point that I told what was on my mind’ 82/37;"
+              "‘ich fasste mir ein Herz’",
+              "‘One day he pestered his father, saying: “Today I am certainly going with the goats, and you are going to take a rest” 75/52; hat maqwelux aʕli b-u=šeyolo w-hul d-məllilux u=mede d-kət-wa b-lebi ‘You have pestered me with questions to the point that I told what was on my mind’"
             ],
-            "references": ["617; 43/53", "116/32"]
+            "references": [
+              "617",
+              "43/53",
+              "116/32",
+              "82/37"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕal d-maqwele foṯe ġắlabe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ašər"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥéli-le lakmo ʕal foṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻSince he was very importunate, sure I gave him a slap in the faceʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "617"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "43/53"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono… maqweli lebi "
+              },
+              {
+                "kind": "translation",
+                "value": "‘ich fasste mir ein Herz’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "116/32"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " yawmo həngi maqwele ʕal u=babo omər adyawma lo=k-owe illa g-əzzino qm-aʕ=ʕeze ono w-hat g-məṯnoḥət "
+              },
+              {
+                "kind": "translation",
+                "value": "‘One day he pestered his father, saying: “Today I am certainly going with the goats, and you are going to take a rest” 75/52; hat maqwelux aʕli b-u=šeyolo w-hul d-məllilux u=mede d-kət-wa b-lebi ‘You have pestered me with questions to the point that I told what was on my mind’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "82/37"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ʕal d-maqwele foṯe ġắlabe, ašər, mḥéli-le lakmo ʕal foṯe ʻSince he was very importunate, sure I gave him a slap in the faceʼ; 617; 43/53; ono… maqweli lebi ‘ich fasste mir ein Herz’; 116/32; yawmo həngi maqwele ʕal u=babo omər adyawma lo=k-owe illa g-əzzino qm-aʕ=ʕeze ono w-hat g-məṯnoḥət ‘One day he pestered his father, saying: “Today I am certainly going with the goats, and you are going to take a rest” 75/52; hat maqwelux aʕli b-u=šeyolo w-hul d-məllilux u=mede d-kət-wa b-lebi ‘You have pestered me with questions to the point that I told what was on my mind’ 82/37;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "Omar: “Hul d kətno saġ (gmaqweno ak qawetyatayḏi ʕal ann abnayḏi stene) tark didux lǝgbǝn (= lobǝn). Towat hat waziro, hul d kətna saġ, towat waziro hat.”",
+            "turoyo": "hawxa ko-maqweno b-lebe d-ruḥi aḥunone",
             "translations": [
-              "He said: “As long as I am alive..., I will commit my instructions [by means of testament] also to my sons, they will not leave you [lit.: give your leaving]. You shall be vizier, as long as we are alive, you shall be vizier.”"
+              "‘so habe ich mir Mut zugesprochen, liebe Brüder’"
             ],
-            "references": []
+            "references": [
+              "LB 162"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hawxa ko-maqweno b-lebe d-ruḥi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aḥunone "
+              },
+              {
+                "kind": "translation",
+                "value": "‘so habe ich mir Mut zugesprochen, liebe Brüder’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 162"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hawxa ko-maqweno b-lebe d-ruḥi, aḥunone ‘so habe ich mir Mut zugesprochen, liebe Brüder’; LB 162;"
           },
           {
-            "turoyo": "",
-            "translations": ["(NI_Sultan_Wesir_und_Barbar p. 3, 8: 18)"],
-            "references": []
+            "turoyo": "Omar",
+            "translations": [
+              "Hul d kətno saġ (gmaqweno ak qawetyatayḏi ʕal ann abnayḏi stene) tark didux lǝgbǝn (= lobǝn). Towat hat waziro, hul d kətna saġ, towat waziro hat."
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Omar"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“Hul d kətno saġ (gmaqweno ak qawetyatayḏi  ʕal ann abnayḏi stene) tark didux lǝgbǝn (= lobǝn). Towat hat waziro, hul d kətna saġ, towat waziro hat.”"
+              }
+            ],
+            "text": "Omar: “Hul d kətno saġ (gmaqweno ak qawetyatayḏi ʕal ann abnayḏi stene) tark didux lǝgbǝn (= lobǝn). Towat hat waziro, hul d kətna saġ, towat waziro hat.”"
+          },
+          {
+            "turoyo": "He said",
+            "translations": [
+              "As long as I am alive..., I will commit my instructions [by means of testament] also to my sons, they will not leave you [lit.: give your leaving]. You shall be vizier, as long as we are alive, you shall be vizier."
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "He said"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“As long as I am alive..., I will commit my instructions [by means of testament] also to my sons, they will not leave you [lit.: give your leaving]. You shall be vizier, as long as we are alive, you shall be vizier.”"
+              }
+            ],
+            "text": "He said: “As long as I am alive..., I will commit my instructions [by means of testament] also to my sons, they will not leave you [lit.: give your leaving]. You shall be vizier, as long as we are alive, you shall be vizier.”"
+          },
+          {
+            "turoyo": "NI_Sultan_Wesir_und_Barbar",
+            "translations": [],
+            "references": [
+              "p. 3",
+              "8",
+              "18"
+            ],
+            "tokens": [
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "NI_Sultan_Wesir_und_Barbar "
+              },
+              {
+                "kind": "ref",
+                "value": "p. 3"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "8"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "18"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "(NI_Sultan_Wesir_und_Barbar p. 3, 8: 18)"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "stark, kräftig werden;",
+    "stark machen, (foṯe ʕal) zudringlich werden, jm. zusetzen;",
+    "qwy II:",
+    "maqwe/maqwele III to have a wish/desire; to make a testament/last will"
   ],
   "uncertain": false
 }

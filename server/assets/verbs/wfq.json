@@ -14,27 +14,175 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mwafaqle", "mwafəq"],
+      "forms": [
+        "mwafaqle",
+        "mwafəq"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mwafaqqe ʕam ḥḏoḏe 161;",
-            "translations": ["sie kamen überein"],
-            "references": ["161"]
+            "turoyo": "mwafaqqe ʕam ḥḏoḏe",
+            "translations": [
+              "sie kamen überein"
+            ],
+            "references": [
+              "161"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mwafaqqe ʕam ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie kamen übereinʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "161"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mwafaqqe ʕam ḥḏoḏe ʻsie kamen übereinʼ; 161;"
           }
-        ],
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
         "Infectum": [
           {
-            "turoyo": "iḏa aloho də-msaʕəd u=nsān m-ah=hawīr, k-miwafəq 173; 11/4, 224; i=naqqa, d-lo=k-miwafəq b-i=taǧara, kə-mḥaləq ruḥe l-i=qačaxčiye 11/224;",
+            "turoyo": "iḏa aloho də-msaʕəd u=nsān m-ah=hawīr k-miwafəq i=naqqa d-lo=k-miwafəq b-i=taǧara kə-mḥaləq ruḥe l-i=qačaxčiye",
             "translations": [
               "wenn Gott dem Menschen von allen Seiten Beistand gewährt, hat er Erfolg",
               "wenn er im Handel kein Glück hat, so wirft er sich auf den Schmuggel"
             ],
-            "references": ["173; 11/4", "224"]
+            "references": [
+              "173",
+              "11/4",
+              "224",
+              "11/224"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "iḏa aloho də-msaʕəd u=nsān m-ah=hawīr"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-miwafəq "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn Gott dem Menschen von allen Seiten Beistand gewährt, hat er Erfolgʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "173"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/4"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "224"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naqqa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-lo=k-miwafəq b-i=taǧara"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kə-mḥaləq ruḥe l-i=qačaxčiye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn er im Handel kein Glück hat, so wirft er sich auf den Schmuggelʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/224"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "iḏa aloho də-msaʕəd u=nsān m-ah=hawīr, k-miwafəq ʻwenn Gott dem Menschen von allen Seiten Beistand gewährt, hat er Erfolgʼ; 173; 11/4, 224; i=naqqa, d-lo=k-miwafəq b-i=taǧara, kə-mḥaləq ruḥe l-i=qačaxčiye ʻwenn er im Handel kein Glück hat, so wirft er sich auf den Schmuggelʼ; 11/224;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "übereinkommen, gelingen (detrans. + b-);"
   ],
   "uncertain": false
 }

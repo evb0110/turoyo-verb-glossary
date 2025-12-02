@@ -17,50 +17,384 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["bnele", "bone"],
+      "forms": [
+        "bnele",
+        "bone"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "lawġul lo=bnalli bale b-u=gomān diḏi kibe tmone aw ḥṣar=stuwan wayaxud qaʕdat m-i=arʕo d-u=gubo hul l-u=qṭoro 11/135; maʕlele i=farše l-u=kačal w-bníle-le ḥamšo w-ʕəsri=lġome bnele ḥa tre tloṯo hul təšʕo=tleṯi",
+            "turoyo": "lawġul lo=bnalli bale b-u=gomān diḏi kibe tmone aw ḥṣar=stuwan wayaxud qaʕdat m-i=arʕo d-u=gubo hul l-u=qṭoro maʕlele i=farše l-u=kačal w-bníle-le ḥamšo w-ʕəsri=lġome bnele ḥa tre tloṯo hul təšʕo=tleṯi",
             "translations": [
-              "ʻin inneren sind nach meiner Schätzung – ich habe sie nicht gezählt – etwa 8 oder 10 Säulen oder Stützpfeiler vom Erdboden der Zisterne bis zur Deckeʼ;",
-              "‘Der Grindkopf hob die Steinplatte auf und zählte ihm 25 Zäume hin’; 29/480",
-              "‘He counted: one, two, three… up until thirty-nine’ 83/70;"
+              "in inneren sind nach meiner Schätzung – ich habe sie nicht gezählt – etwa 8 oder 10 Säulen oder Stützpfeiler vom Erdboden der Zisterne bis zur Decke",
+              "‘Der Grindkopf hob die Steinplatte auf und zählte ihm 25 Zäume hin’",
+              "‘He counted: one, two, three… up until thirty-nine’"
             ],
-            "references": ["11/135"]
+            "references": [
+              "11/135",
+              "29/480",
+              "83/70"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lawġul lo=bnalli bale b-u=gomān diḏi kibe tmone aw ḥṣar=stuwan wayaxud qaʕdat m-i=arʕo d-u=gubo hul l-u=qṭoro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻin inneren sind nach meiner Schätzung – ich habe sie nicht gezählt – etwa 8 oder 10 Säulen oder Stützpfeiler vom Erdboden der Zisterne bis zur Deckeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/135"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maʕlele i=farše l-u=kačal w-bníle-le ḥamšo w-ʕəsri=lġome "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Der Grindkopf hob die Steinplatte auf und zählte ihm 25 Zäume hin’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/480"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bnele ḥa tre tloṯo hul təšʕo=tleṯi "
+              },
+              {
+                "kind": "translation",
+                "value": "‘He counted: one, two, three… up until thirty-nine’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "83/70"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lawġul lo=bnalli bale b-u=gomān diḏi kibe tmone aw ḥṣar=stuwan wayaxud qaʕdat m-i=arʕo d-u=gubo hul l-u=qṭoro ʻin inneren sind nach meiner Schätzung – ich habe sie nicht gezählt – etwa 8 oder 10 Säulen oder Stützpfeiler vom Erdboden der Zisterne bis zur Deckeʼ; 11/135; maʕlele i=farše l-u=kačal w-bníle-le ḥamšo w-ʕəsri=lġome ‘Der Grindkopf hob die Steinplatte auf und zählte ihm 25 Zäume hin’; 29/480; bnele ḥa tre tloṯo hul təšʕo=tleṯi ‘He counted: one, two, three… up until thirty-nine’ 83/70;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "fayəš ko-bone am=medone ḥalye xd-u=dawšo, xd-u=dəbəs, xd-ann=abšoṯe, w ġắlabe šəklat d-i=ḥalyuṯo 355; 51/3; 75/106; k-udʕət bonət kallat 358; prs 206/27;",
+            "turoyo": "fayəš ko-bone am=medone ḥalye xd-u=dawšo xd-u=dəbəs xd-ann=abšoṯe w ġắlabe šəklat d-i=ḥalyuṯo k-udʕət bonət kallat prs",
             "translations": [
-              "ʻer zählte alle süssen Dinge auf, wie Honig, Traubenhonig, Rosinen und viele andere Arten von Süssigkeitʼ;",
-              "ʻverstehst du Geld zu zählen?ʼ;"
+              "er zählte alle süssen Dinge auf, wie Honig, Traubenhonig, Rosinen und viele andere Arten von Süssigkeit",
+              "verstehst du Geld zu zählen?"
             ],
-            "references": ["355; 51/3", "75/106"]
+            "references": [
+              "355",
+              "51/3",
+              "75/106",
+              "358",
+              "206/27"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "fayəš ko-bone am=medone ḥalye xd-u=dawšo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " xd-u=dəbəs"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " xd-ann=abšoṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ġắlabe šəklat d-i=ḥalyuṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer zählte alle süssen Dinge auf, wie Honig, Traubenhonig, Rosinen und viele andere Arten von Süssigkeitʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "355"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "51/3"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/106"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-udʕət bonət kallat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻverstehst du Geld zu zählen?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "358"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "206/27"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "fayəš ko-bone am=medone ḥalye xd-u=dawšo, xd-u=dəbəs, xd-ann=abšoṯe, w ġắlabe šəklat d-i=ḥalyuṯo ʻer zählte alle süssen Dinge auf, wie Honig, Traubenhonig, Rosinen und viele andere Arten von Süssigkeitʼ; 355; 51/3; 75/106; k-udʕət bonət kallat ʻverstehst du Geld zu zählen?ʼ; 358; prs 206/27;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "klay b-u=tarʕo d-i=mʕarṯo, w bnay aʕ=ʕeze 372; 75/100, 105; hay arbʕi=dinore dahwo maḥet-ən b-kistux w-bnay-ene",
+            "turoyo": "klay b-u=tarʕo d-i=mʕarṯo w bnay aʕ=ʕeze hay arbʕi=dinore dahwo maḥet-ən b-kistux w-bnay-ene",
             "translations": [
-              "ʻstell dich am Eingang der Höhle auf und zähle die Ziegenʼ;",
-              "‘Here are forty dinars – put them in your bag and count them’ 83/67;"
+              "stell dich am Eingang der Höhle auf und zähle die Ziegen",
+              "‘Here are forty dinars – put them in your bag and count them’"
             ],
-            "references": ["372; 75/100", "105"]
+            "references": [
+              "372",
+              "75/100",
+              "105",
+              "83/67"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "klay b-u=tarʕo d-i=mʕarṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w bnay aʕ=ʕeze "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻstell dich am Eingang der Höhle auf und zähle die Ziegenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "372"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/100"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "105"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hay arbʕi=dinore dahwo maḥet-ən b-kistux w-bnay-ene "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Here are forty dinars – put them in your bag and count them’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "83/67"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "klay b-u=tarʕo d-i=mʕarṯo, w bnay aʕ=ʕeze ʻstell dich am Eingang der Höhle auf und zähle die Ziegenʼ; 372; 75/100, 105; hay arbʕi=dinore dahwo maḥet-ən b-kistux w-bnay-ene ‘Here are forty dinars – put them in your bag and count them’ 83/67;"
           }
-        ],
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [
+        "bani",
+        "məbne"
+      ],
+      "conjugations": {
         "Infectum-wa": [
           {
-            "turoyo": "u=ʕafro məbne-wo w aʕ-ʕărab lo=məbnan-wo 381; prs 141/29;",
+            "turoyo": "u=ʕafro məbne-wo w aʕ-ʕărab lo=məbnan-wo prs",
             "translations": [
-              "ʻder Staub war zu zählen, die Araber waren nicht zu zählenʼ;"
+              "der Staub war zu zählen, die Araber waren nicht zu zählen"
             ],
-            "references": ["381", "141/29"]
+            "references": [
+              "381",
+              "141/29"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=ʕafro məbne-wo w aʕ-ʕărab lo=məbnan-wo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Staub war zu zählen, die Araber waren nicht zu zählenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "381"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "141/29"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=ʕafro məbne-wo w aʕ-ʕărab lo=məbnan-wo ʻder Staub war zu zählen, die Araber waren nicht zu zählenʼ; 381; prs 141/29;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "count, number;",
+    "be counted, enumerated;"
   ],
   "uncertain": false
 }

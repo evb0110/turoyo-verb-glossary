@@ -5,17 +5,54 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mhawlable", "mhawləb"],
+      "forms": [
+        "mhawlable",
+        "mhawləb"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mhawlableiḏeaʕle 779;",
-            "translations": [],
-            "references": ["779"]
+            "turoyo": "mhawlable iḏe aʕle",
+            "translations": [
+              "er holte zum Schlagen mit der Hand gegen ihn aus"
+            ],
+            "references": [
+              "779"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mhawlable iḏe aʕle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer holte zum Schlagen mit der Hand gegen ihn ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "779"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mhawlable iḏe aʕle ʻer holte zum Schlagen mit der Hand gegen ihn ausʼ; 779;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "zum Schlagen mit der Hand ausholen;"
   ],
   "uncertain": false
 }

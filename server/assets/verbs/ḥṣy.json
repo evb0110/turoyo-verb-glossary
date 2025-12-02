@@ -11,17 +11,53 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["maḥṣele", "maḥṣe"],
+      "forms": [
+        "maḥṣele",
+        "maḥṣe"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "maḥṣele",
-            "translations": ["‘he shut’ ("],
-            "references": []
+            "turoyo": "maḥṣele Sterka Zera",
+            "translations": [
+              "‘he shut’"
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maḥṣele "
+              },
+              {
+                "kind": "translation",
+                "value": "‘he shut’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Sterka Zera"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "maḥṣele ‘he shut’ (Sterka Zera)"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "befestigen; (Tür) abschliessen;",
+    "ḥšf see ʕšf"
   ],
   "uncertain": false
 }

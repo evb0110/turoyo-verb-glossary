@@ -14,17 +14,59 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mwaxalle", "mwaxər"],
+      "forms": [
+        "mwaxalle",
+        "mwaxər"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "lə=miwaxrat 249;",
-            "translations": ["komm nicht zu spät"],
-            "references": ["249"]
+            "turoyo": "lə=miwaxrat",
+            "translations": [
+              "komm nicht zu spät"
+            ],
+            "references": [
+              "249"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lə=miwaxrat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻkomm nicht zu spätʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "249"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lə=miwaxrat ʻkomm nicht zu spätʼ; 249;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "sich verspäten;"
   ],
   "uncertain": false
 }

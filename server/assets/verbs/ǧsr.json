@@ -14,38 +14,252 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mǧasalle", "mǧasər"],
+      "forms": [
+        "mǧasalle",
+        "mǧasər"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ya zʕuro lo=mǧasrət, d-kət-at taḥt i=kon-ayḏi 257; 29/102;",
+            "turoyo": "ya zʕuro lo=mǧasrət d-kət-at taḥt i=kon-ayḏi",
             "translations": [
               "Jüngling, wage das nicht, solange du unter meinem Zelte bist"
             ],
-            "references": ["257; 29/102"]
+            "references": [
+              "257",
+              "29/102"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ya zʕuro lo=mǧasrət"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-kət-at taḥt i=kon-ayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻJüngling, wage das nicht, solange du unter meinem Zelte bistʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "257"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/102"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ya zʕuro lo=mǧasrət, d-kət-at taḥt i=kon-ayḏi ʻJüngling, wage das nicht, solange du unter meinem Zelte bistʼ; 257; 29/102;"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "əzzé-wo i=naqqa d-tam-wo aʕ=ʕeze aʕle, šŭqal-wo b-u=zōr; b-u=sayf-ayḏe, šŭqal-wo m-u=ʕulmo, w-maṭṭe-wo l-gabe. nošo lo=mǧasar-wo aʕle 257; 29/284; d-ŭwéno-wo b-u=bayto hat lo=mǧasrat-wo ʕal u=ṭarš-ayḏi d-mŭḥát-wo-le 257; 30/115;",
+            "turoyo": "əzzé-wo i=naqqa d-tam-wo aʕ=ʕeze aʕle šŭqal-wo b-u=zōr b-u=sayf-ayḏe šŭqal-wo m-u=ʕulmo w-maṭṭe-wo l-gabe. nošo lo=mǧasar-wo aʕle d-ŭwéno-wo b-u=bayto hat lo=mǧasrat-wo ʕal u=ṭarš-ayḏi d-mŭḥát-wo-le",
             "translations": [
               "jener pflegte immer, wenn ihm die Ziegen ausgingen, sich mit Gewalt, mit dem Schwerte, neue zu holen; er nahm sie den Leuten ab und holte sie zu sich. Niemand wagte sich an ihn heran",
               "wäre ich zuhause gewesen, so hättest du nicht gewagt, mein Vieh wegzutreiben"
             ],
-            "references": ["257; 29/284", "257; 30/115"]
+            "references": [
+              "257",
+              "29/284",
+              "257",
+              "30/115"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "əzzé-wo i=naqqa d-tam-wo aʕ=ʕeze aʕle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šŭqal-wo b-u=zōr"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-u=sayf-ayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " šŭqal-wo m-u=ʕulmo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-maṭṭe-wo l-gabe. nošo lo=mǧasar-wo aʕle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻjener pflegte immer, wenn ihm die Ziegen ausgingen, sich mit Gewalt, mit dem Schwerte, neue zu holen; er nahm sie den Leuten ab und holte sie zu sich. Niemand wagte sich an ihn heranʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "257"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/284"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-ŭwéno-wo b-u=bayto hat lo=mǧasrat-wo ʕal u=ṭarš-ayḏi d-mŭḥát-wo-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwäre ich zuhause gewesen, so hättest du nicht gewagt, mein Vieh wegzutreibenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "257"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/115"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "əzzé-wo i=naqqa d-tam-wo aʕ=ʕeze aʕle, šŭqal-wo b-u=zōr; b-u=sayf-ayḏe, šŭqal-wo m-u=ʕulmo, w-maṭṭe-wo l-gabe. nošo lo=mǧasar-wo aʕle ʻjener pflegte immer, wenn ihm die Ziegen ausgingen, sich mit Gewalt, mit dem Schwerte, neue zu holen; er nahm sie den Leuten ab und holte sie zu sich. Niemand wagte sich an ihn heranʼ; 257; 29/284; d-ŭwéno-wo b-u=bayto hat lo=mǧasrat-wo ʕal u=ṭarš-ayḏi d-mŭḥát-wo-le ʻwäre ich zuhause gewesen, so hättest du nicht gewagt, mein Vieh wegzutreibenʼ; 257; 30/115;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "lo=zayʕət! w-mǧasǝ́r lebox! həš l-ŭwe-lox fəkər 257; 29/88; здесь переходный?",
+            "turoyo": "lo=zayʕət! w-mǧasǝ́r lebox! həš l-ŭwe-lox fəkər здесь переходный?",
             "translations": [
               "fürchte nichts und mache dein Herz mutig, mach dir keine Gedanke"
             ],
-            "references": ["257; 29/88"]
+            "references": [
+              "257",
+              "29/88"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lo=zayʕət! w-mǧasǝ́r lebox! həš l-ŭwe-lox fəkər "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻfürchte nichts und mache dein Herz mutig, mach dir keine Gedankeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "257"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/88"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " здесь переходный?"
+              }
+            ],
+            "text": "lo=zayʕət! w-mǧasǝ́r lebox! həš l-ŭwe-lox fəkər ʻfürchte nichts und mache dein Herz mutig, mach dir keine Gedankeʼ; 257; 29/88; здесь переходный?"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "wagen, sich trauen;"
   ],
   "uncertain": false
 }

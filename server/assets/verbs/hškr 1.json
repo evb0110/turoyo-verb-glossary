@@ -12,26 +12,85 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mhaškalle", "mhaškər"],
+      "forms": [
+        "mhaškalle",
+        "mhaškər"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "k-ubʕonodə-mhaškratruḥuxaʕli 778; 61/308;",
-            "translations": ["offenbaren"],
-            "references": ["778; 61/308"]
+            "turoyo": "k-ubʕono də-mhaškrat ruḥux aʕli",
+            "translations": [
+              "du musst dich mir offenbaren"
+            ],
+            "references": [
+              "778",
+              "61/308"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-ubʕono də-mhaškrat ruḥux aʕli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu musst dich mir offenbarenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "778"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "61/308"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "k-ubʕono də-mhaškrat ruḥux aʕli ʻdu musst dich mir offenbarenʼ; 778; 61/308;"
           },
           {
-            "turoyo": "Maǧrútuwamhaškrútuwaruḥayxumšiḥoye",
-            "translations": [
-              "sǝryóyehatu",
-              "? IL. Did you dare to reveal",
-              "that you were Christians?"
+            "turoyo": ". Ilyas. Maǧrútuwa mhaškrútuwa ruḥayxu sǝryóyehatu mšiḥoye? IL. Did you dare to reveal yourselfs that you were Christians?",
+            "translations": [],
+            "references": [
+              "HD 205"
             ],
-            "references": []
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "HD 205"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". Ilyas. Maǧrútuwa mhaškrútuwa ruḥayxu sǝryóyehatu mšiḥoye? IL. Did you dare to reveal yourselfs that you were Christians?"
+              }
+            ],
+            "text": "HD 205. Ilyas. Maǧrútuwa mhaškrútuwa ruḥayxu sǝryóyehatu mšiḥoye? IL. Did you dare to reveal yourselfs that you were Christians?"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "offenbaren, bekannt machen; (is it reflexive only?)"
   ],
   "uncertain": false
 }

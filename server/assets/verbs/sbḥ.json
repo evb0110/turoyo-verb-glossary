@@ -14,17 +14,71 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["sbəḥle", "sobəḥ"],
+      "forms": [
+        "sbəḥle",
+        "sobəḥ"
+      ],
       "conjugations": {
         "Infectum-wa": [
           {
-            "turoyo": "sobaḥ-wo 114; 79/38; Пример отсутствует в указанном месте",
-            "translations": ["er konnte schwimmen"],
-            "references": ["114; 79/38"]
+            "turoyo": "sobaḥ-wo Пример отсутствует в указанном месте",
+            "translations": [
+              "er konnte schwimmen"
+            ],
+            "references": [
+              "114",
+              "79/38"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "sobaḥ-wo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer konnte schwimmenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "114"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "79/38"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Пример отсутствует в указанном месте"
+              }
+            ],
+            "text": "sobaḥ-wo ʻer konnte schwimmenʼ; 114; 79/38; Пример отсутствует в указанном месте"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "schwimmen;"
   ],
   "uncertain": false
 }

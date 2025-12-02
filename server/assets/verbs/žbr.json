@@ -14,17 +14,72 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["žbīr", "məžbər"],
+      "forms": [
+        "žbīr",
+        "məžbər"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "žbīr hano u=moro d-u=bayto žġīl 238; 57/151;",
-            "translations": ["da musste der Herr des Hauses zuerst sprechen"],
-            "references": ["238; 57/151"]
+            "turoyo": "žbīr hano u=moro d-u=bayto žġīl",
+            "translations": [
+              "da musste der Herr des Hauses zuerst sprechen"
+            ],
+            "references": [
+              "238",
+              "57/151"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "žbīr hano u=moro d-u=bayto žġīl "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda musste der Herr des Hauses zuerst sprechenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "238"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "57/151"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "žbīr hano u=moro d-u=bayto žġīl ʻda musste der Herr des Hauses zuerst sprechenʼ; 238; 57/151;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(Detrans.) zwingen;"
   ],
   "uncertain": false
 }

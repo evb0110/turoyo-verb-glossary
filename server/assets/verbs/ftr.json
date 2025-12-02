@@ -14,17 +14,48 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["fatər", "fotər"],
+      "forms": [
+        "fatər",
+        "fotər"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
             "turoyo": "fatiri am=maye",
             "translations": [],
-            "references": ["257"]
+            "references": [
+              "257"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "fatiri am=maye"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "257"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "fatiri am=maye; 257;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "lauwarm werden;"
   ],
   "uncertain": false
 }

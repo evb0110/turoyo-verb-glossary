@@ -14,17 +14,67 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mhamhamle", "mhamhəm"],
+      "forms": [
+        "mhamhamle",
+        "mhamhəm"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "aykodə-mhamhəm i=mʕárṯo-yo 799; prs 113/27;",
-            "translations": ["wiederhallt"],
-            "references": ["799", "113/27"]
+            "turoyo": "ayko də-mhamhəm i=mʕárṯo-yo prs",
+            "translations": [
+              "wo es wiederhallt, da ist die Höle"
+            ],
+            "references": [
+              "799",
+              "113/27"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ayko də-mhamhəm i=mʕárṯo-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwo es wiederhallt, da ist die Höleʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "799"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "113/27"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ayko də-mhamhəm i=mʕárṯo-yo ʻwo es wiederhallt, da ist die Höleʼ; 799; prs 113/27;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "dröhnen (Hohlraum);"
   ],
   "uncertain": false
 }

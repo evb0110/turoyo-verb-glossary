@@ -61,7 +61,7 @@ const groupedEtymons = computed(() => {
                 <p v-if="etymon.reference" class="text-xs text-muted">
                     Ref: {{ etymon.reference }}
                 </p>
-                <p v-if="etymon.raw" class="text-muted italic">
+                <p v-if="etymon.raw && etymon.raw !== etymon.notes" class="text-muted italic">
                     {{ etymon.raw }}
                 </p>
             </div>

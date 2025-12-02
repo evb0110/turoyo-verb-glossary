@@ -12,38 +12,405 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["mašəlle", "mašər"],
+      "forms": [
+        "mašəlle",
+        "mašər"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "azzehən a=tloṯo=abne l-gabe, w mašəḷḷeaʕlayye 538; 61/4; i=səstomašəllaaʕle 539; 58/128;",
-            "translations": ["und er gab", "Ratschläge", "Ratschläge"],
-            "references": ["538; 61/4", "539; 58/128"]
+            "turoyo": "azzehən a=tloṯo=abne l-gabe w mašəḷḷe aʕlayye i=səsto mašəlla aʕle",
+            "translations": [
+              "die drei Söhne gingen zu ihm und er gab ihnen Ratschläge",
+              "die Stute gab ihm Ratschläge"
+            ],
+            "references": [
+              "538",
+              "61/4",
+              "539",
+              "58/128"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "azzehən a=tloṯo=abne l-gabe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mašəḷḷe aʕlayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie drei Söhne gingen zu ihm und er gab ihnen Ratschlägeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "538"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "61/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=səsto mašəlla aʕle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Stute gab ihm Ratschlägeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "539"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "58/128"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "azzehən a=tloṯo=abne l-gabe, w mašəḷḷe aʕlayye ʻdie drei Söhne gingen zu ihm und er gab ihnen Ratschlägeʼ; 538; 61/4; i=səsto mašəlla aʕle ʻdie Stute gab ihm Ratschlägeʼ; 539; 58/128;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "yatusə-raġloṯe, ṭləblemene,ḥatta d-mašəraʕle 545; 21/30; iḏa d-máqəblət u=mamrayḏi ġ-mašənnoaʕlox 21/20; lázəm-yo d-maširituaʕli beməsoyamno 547; 113/126; g-mašənnoaʕloxšira, iḏa d-oṯe d-šəmʕat-li gə-maxləṣətaḥ=ḥaye d-aḥunox ‘’; 24/288",
-            "translations": [", will ich", ", was ich tun", "du das Leben"],
-            "references": ["545; 21/30", "21/20"]
+            "turoyo": "yatu sə-raġloṯe ṭləble mene ḥatta d-mašər aʕle iḏa d-máqəblət u=mamrayḏi ġ-mašənno aʕlox lázəm-yo d-maširitu aʕli be mə soyamno g-mašənno aʕlox šira iḏa d-oṯe d-šəmʕat-li gə-maxləṣət aḥ=ḥaye d-aḥunox",
+            "translations": [
+              "er setzte sich ihm zu Füssen und bat ihn, er möchte ihm einen Rat geben",
+              "‘wenn du annimmst, was ich dir sagen werde, will ich dir einen Rat geben’",
+              "ihr müsst mir einen Rat geben, was ich tun soll",
+              "‘Ich will dir einen Rat geben; wenn du auf mich hörst, kannst du das Leben deines Bruders retten’"
+            ],
+            "references": [
+              "545",
+              "21/30",
+              "21/20",
+              "547",
+              "113/126",
+              "24/288"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "yatu sə-raġloṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṭləble mene"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥatta d-mašər aʕle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer setzte sich ihm zu Füssen und bat ihn, er möchte ihm einen Rat gebenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "545"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/30"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  iḏa d-máqəblət u=mamrayḏi ġ-mašənno aʕlox "
+              },
+              {
+                "kind": "translation",
+                "value": "‘wenn du annimmst, was ich dir sagen werde, will ich dir einen Rat geben’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/20"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lázəm-yo d-maširitu aʕli be mə soyamno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻihr müsst mir einen Rat geben, was ich tun sollʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "547"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "113/126"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-mašənno aʕlox šira"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " iḏa d-oṯe d-šəmʕat-li gə-maxləṣət aḥ=ḥaye d-aḥunox "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Ich will dir einen Rat geben; wenn du auf mich hörst, kannst du das Leben deines Bruders retten’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/288"
+              }
+            ],
+            "text": "yatu sə-raġloṯe, ṭləble mene, ḥatta d-mašər aʕle ʻer setzte sich ihm zu Füssen und bat ihn, er möchte ihm einen Rat gebenʼ; 545; 21/30; iḏa d-máqəblət u=mamrayḏi ġ-mašənno aʕlox ‘wenn du annimmst, was ich dir sagen werde, will ich dir einen Rat geben’; 21/20; lázəm-yo d-maširitu aʕli be mə soyamno ʻihr müsst mir einen Rat geben, was ich tun sollʼ; 547; 113/126; g-mašənno aʕlox šira, iḏa d-oṯe d-šəmʕat-li gə-maxləṣət aḥ=ḥaye d-aḥunox ‘Ich will dir einen Rat geben; wenn du auf mich hörst, kannst du das Leben deines Bruders retten’; 24/288"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "1) ašǝ́raʕli k-matʕabi-li 550; prs 186/21; mašə́raʕli d-məssoyamno",
-            "translations": ["Rat, was ich tun"],
-            "references": ["1", "550"]
+            "turoyo": "ašǝ́r aʕli k-matʕabi-li prs mašə́r aʕli d-məs soyamno",
+            "translations": [
+              "gib mir einen Rat, dass man mich nicht so plage",
+              "‘Gib mir einen Rat, was ich tun soll’"
+            ],
+            "references": [
+              "1",
+              "550",
+              "186/21",
+              "35/24"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ašǝ́r aʕli k-matʕabi-li "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻgib mir einen Rat, dass man mich nicht so plageʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "550"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "186/21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mašə́r aʕli d-məs soyamno "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Gib mir einen Rat, was ich tun soll’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "35/24"
+              }
+            ],
+            "text": "1) ašǝ́r aʕli k-matʕabi-li ʻgib mir einen Rat, dass man mich nicht so plageʼ; 550; prs 186/21; mašə́r aʕli d-məs soyamno ‘Gib mir einen Rat, was ich tun soll’; 35/24"
           }
         ],
         "Part. act.": [
           {
-            "turoyo": "1) ono dayəmmaširóno-no ʕal u=ʕamo d-oṯe l-i=ʕito LB 105;",
-            "translations": ["Ratschläge", "Gottesdienst"],
-            "references": ["1", "105"]
+            "turoyo": "ono dayəm maširóno-no ʕal u=ʕamo d-oṯe l-i=ʕito",
+            "translations": [
+              "‘ich gebe (meinem) Volk dauernd gute Ratschläge, damit es den Gottesdienst besucht’"
+            ],
+            "references": [
+              "1",
+              "LB 105"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono dayəm maširóno-no ʕal u=ʕamo d-oṯe l-i=ʕito "
+              },
+              {
+                "kind": "translation",
+                "value": "‘ich gebe (meinem) Volk dauernd gute Ratschläge, damit es den Gottesdienst besucht’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 105"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) ono dayəm maširóno-no ʕal u=ʕamo d-oṯe l-i=ʕito ‘ich gebe (meinem) Volk dauernd gute Ratschläge, damit es den Gottesdienst besucht’; LB 105;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "Ratschläge geben;"
   ],
   "uncertain": false
 }

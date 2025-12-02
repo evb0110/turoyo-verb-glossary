@@ -14,48 +14,254 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mtaḥsəd", "mitaḥsəd"],
+      "forms": [
+        "mtaḥsəd",
+        "mitaḥsəd"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mtaḥsadnoġắlabe, w rḥəmli i=ǧəmǧəmt-ayhoké w u=čugan-awoké 791; 58/182;",
-            "translations": ["auf... ich mag", "und den Stock"],
-            "references": ["791; 58/182"]
+            "turoyo": "mtaḥsadno ġắlabe w rḥəmli i=ǧəmǧəmt-ayhoké w u=čugan-awoké",
+            "translations": [
+              "ich bin neidisch auf... ich mag sehr gern jenen Schädel dort und den Stock dort"
+            ],
+            "references": [
+              "791",
+              "58/182"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mtaḥsadno ġắlabe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w rḥəmli i=ǧəmǧəmt-ayhoké w u=čugan-awoké "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich bin neidisch auf... ich mag sehr gern jenen Schädel dort und den Stock dortʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "791"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "58/182"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mtaḥsadno ġắlabe, w rḥəmli i=ǧəmǧəmt-ayhoké w u=čugan-awoké ʻich bin neidisch auf... ich mag sehr gern jenen Schädel dort und den Stock dortʼ; 791; 58/182;"
           },
           {
             "turoyo": "mǝtḥasadli mu ǧiranayḏi",
-            "translations": ["‘I envied my neighbour’"],
-            "references": []
+            "translations": [
+              "‘I envied my neighbour’"
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mǝtḥasadli mu ǧiranayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I envied my neighbour’"
+              }
+            ],
+            "text": "mǝtḥasadli mu ǧiranayḏi ‘I envied my neighbour’"
           },
           {
             "turoyo": "mǝtḥasadwayno mu ǧiranayḏi",
-            "translations": ["‘I envied my neighbour’"],
-            "references": []
+            "translations": [
+              "‘I envied my neighbour’"
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mǝtḥasadwayno mu ǧiranayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I envied my neighbour’"
+              }
+            ],
+            "text": "mǝtḥasadwayno mu ǧiranayḏi ‘I envied my neighbour’"
           },
           {
-            "turoyo": "maḥsadli u Afrem  qarši d Gule (Notes 2018)",
+            "turoyo": "maḥsadli u Afrem qarši d Gule Notes 2018",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maḥsadli u Afrem  qarši d Gule "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Notes 2018"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "maḥsadli u Afrem qarši d Gule (Notes 2018)"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "lo=mitaḥəsditu w lo=gunwitu 791; prs 226/22; ko-mǝtḥasadno mu ǧiranayḏimaḥsadnoqarši",
+            "turoyo": "lo=mitaḥəsditu w lo=gunwitu prs ko-mǝtḥasadno mu ǧiranayḏi – this form deviates from what we have in the Verb table. Notes 2018 ko maḥsadno u Sergey qarši d Gule – I make Gule envious of Sergey.",
             "translations": [
-              "aufeinander",
-              "‘I envy my neighbour’ – this form deviates from what we have in the Verb table. (Notes 2018) ko",
-              "d Gule – I make Gule envious of Sergey."
+              "seid nicht neidisch aufeinander und stehlt nicht",
+              "‘I envy my neighbour’"
             ],
-            "references": ["791", "226/22"]
+            "references": [
+              "791",
+              "226/22"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lo=mitaḥəsditu w lo=gunwitu "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻseid nicht neidisch aufeinander und stehlt nichtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "791"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "226/22"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-mǝtḥasadno mu ǧiranayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I envy my neighbour’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " – this form deviates from what we have in the Verb table. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Notes 2018"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko maḥsadno u Sergey qarši d Gule – I make Gule envious of Sergey."
+              }
+            ],
+            "text": "lo=mitaḥəsditu w lo=gunwitu ʻseid nicht neidisch aufeinander und stehlt nichtʼ; 791; prs 226/22; ko-mǝtḥasadno mu ǧiranayḏi ‘I envy my neighbour’ – this form deviates from what we have in the Verb table. (Notes 2018) ko maḥsadno u Sergey qarši d Gule – I make Gule envious of Sergey."
           },
           {
-            "turoyo": "i+Ksenyakulnaqqakomәtḥasdo mini",
-            "translations": ["‘Ksusha constantly envies me’ (Ilyas p.c.)"],
-            "references": []
+            "turoyo": "i+Ksenya kul naqqa komәtḥasdo mini Ilyas p.c.",
+            "translations": [
+              "‘Ksusha constantly envies me’"
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i+Ksenya kul naqqa komәtḥasdo mini "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Ksusha constantly envies me’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p.c."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "i+Ksenya kul naqqa komәtḥasdo mini ‘Ksusha constantly envies me’ (Ilyas p.c.)"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(Detrans.) scharf, neidisch sein;"
   ],
   "uncertain": false
 }

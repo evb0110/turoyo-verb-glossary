@@ -5,19 +5,54 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mdapdaple", "mdapdəp"],
+      "forms": [
+        "mdapdaple",
+        "mdapdəp"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mdapdapli i=ṣopa 798;",
+            "turoyo": "mdapdapli i=ṣopa",
             "translations": [
               "ich habe den Ofen sehr stark gefüllt und angeheizt"
             ],
-            "references": ["798"]
+            "references": [
+              "798"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mdapdapli i=ṣopa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe den Ofen sehr stark gefüllt und angeheiztʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "798"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mdapdapli i=ṣopa ʻich habe den Ofen sehr stark gefüllt und angeheiztʼ; 798;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "stark heizen;"
   ],
   "uncertain": false
 }

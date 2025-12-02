@@ -14,19 +14,60 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mbalbele", "mbalbəl"],
+      "forms": [
+        "mbalbele",
+        "mbalbəl"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "k-mibalbli mə-ḥḏoḏe 796;",
+            "turoyo": "k-mibalbli mə-ḥḏoḏe",
             "translations": [
-              "ʻsie trennen sich von einander (etwa Brüder, die bisher zusammen wohnten)ʼ;"
+              "sie trennen sich von einander (etwa Brüder, die bisher zusammen wohnten)"
             ],
-            "references": ["796"]
+            "references": [
+              "796"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-mibalbli mə-ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie trennen sich von einander (etwa Brüder, die bisher zusammen wohnten)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "796"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "k-mibalbli mə-ḥḏoḏe ʻsie trennen sich von einander (etwa Brüder, die bisher zusammen wohnten)ʼ; 796;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "von einander trennen;"
   ],
   "uncertain": false
 }

@@ -14,19 +14,83 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["sləxle", "soləx"],
+      "forms": [
+        "sləxle",
+        "soləx"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "gava kalən qarʕe d-i=zlamat qṭiʕe, hən ko-səlxi, baṣro kule baṣro d-i=nsane 215; 87/84;",
+            "turoyo": "gava kalən qarʕe d-i=zlamat qṭiʕe hən ko-səlxi baṣro kule baṣro d-i=nsane",
             "translations": [
               "da sind abgeschnittene Köpfe von Männern; ein paar Leute sind mit Abhäuten beschäftigt; Fleisch, alles Menschenfleisch"
             ],
-            "references": ["215; 87/84"]
+            "references": [
+              "215",
+              "87/84"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gava kalən qarʕe d-i=zlamat qṭiʕe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hən ko-səlxi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " baṣro kule baṣro d-i=nsane "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda sind abgeschnittene Köpfe von Männern; ein paar Leute sind mit Abhäuten beschäftigt; Fleisch, alles Menschenfleischʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "215"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "87/84"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "gava kalən qarʕe d-i=zlamat qṭiʕe, hən ko-səlxi, baṣro kule baṣro d-i=nsane ʻda sind abgeschnittene Köpfe von Männern; ein paar Leute sind mit Abhäuten beschäftigt; Fleisch, alles Menschenfleischʼ; 215; 87/84;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "abhauten;"
   ],
   "uncertain": false
 }

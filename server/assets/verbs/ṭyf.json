@@ -14,34 +14,141 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ṭayəf", "ṭoyəf"],
+      "forms": [
+        "ṭayəf",
+        "ṭoyəf"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "ṭayəf u=lăgansemo w dahwo 511; prs 12/24; i=ṭaṣeṭayifoḥalwo 512;",
+            "turoyo": "ṭayəf u=lăgan semo w dahwo prs i=ṭaṣe ṭayifo ḥalwo",
             "translations": [
-              "Becken floss",
-              "Silber und",
-              "Milch in der Schale floss"
+              "das Becken floss über mit Silber und Gold",
+              "die Milch in der Schale floss über"
             ],
-            "references": ["511", "12/24"]
+            "references": [
+              "511",
+              "12/24",
+              "512"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṭayəf u=lăgan semo w dahwo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Becken floss über mit Silber und Goldʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "511"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "12/24"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=ṭaṣe ṭayifo ḥalwo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Milch in der Schale floss überʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "512"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ṭayəf u=lăgan semo w dahwo ʻdas Becken floss über mit Silber und Goldʼ; 511; prs 12/24; i=ṭaṣe ṭayifo ḥalwo ʻdie Milch in der Schale floss überʼ; 512;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["maṭəfle", "maṭəf"],
+      "forms": [
+        "maṭəfle",
+        "maṭəf"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "k-maṭifo 546;",
-            "translations": ["Milchkännchen", "Überfliessen"],
-            "references": ["546"]
+            "turoyo": "k-maṭifo",
+            "translations": [
+              "sie bringt (das Milchkännchen) zum Überfliessen"
+            ],
+            "references": [
+              "546"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-maṭifo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie bringt (das Milchkännchen) zum Überfliessenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "546"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "k-maṭifo ʻsie bringt (das Milchkännchen) zum Überfliessenʼ; 546;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "überfliessen;",
+    "überfliessen lassen;"
   ],
   "uncertain": false
 }

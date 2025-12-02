@@ -5,17 +5,60 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mtawəg", "mitawəg"],
+      "forms": [
+        "mtawəg",
+        "mitawəg"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ṣawʕitwirouʕdonayiḥofaqatmtawgo 479;",
-            "translations": ["Finger war", "beschädigt"],
-            "references": ["479"]
+            "turoyo": "ṣawʕi twiro uʕdo nayiḥo faqat mtawgo",
+            "translations": [
+              "mein Finger war gebrochen; jetzt ist er geheilt, ist aber beschädigt geblieben"
+            ],
+            "references": [
+              "479"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṣawʕi twiro uʕdo nayiḥo faqat mtawgo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmein Finger war gebrochen; jetzt ist er geheilt, ist aber beschädigt gebliebenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "479"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ṣawʕi twiro uʕdo nayiḥo faqat mtawgo ʻmein Finger war gebrochen; jetzt ist er geheilt, ist aber beschädigt gebliebenʼ; 479;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) nach einer Verletzung beschädigt bleiben;"
   ],
   "uncertain": false
 }

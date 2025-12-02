@@ -5,26 +5,86 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mǧawǧaqle", "mǧawǧəq"],
+      "forms": [
+        "mǧawǧaqle",
+        "mǧawǧəq"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "i=kef-aṯi lə=k-miǧawǧqo me-dukṯa 771;",
+            "turoyo": "i=kef-aṯi lə=k-miǧawǧqo me-dukṯa",
             "translations": [
               "der Stein lässt sich nicht von der Stelle bewegen"
             ],
-            "references": ["771"]
+            "references": [
+              "771"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=kef-aṯi lə=k-miǧawǧqo me-dukṯa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Stein lässt sich nicht von der Stelle bewegenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "771"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=kef-aṯi lə=k-miǧawǧqo me-dukṯa ʻder Stein lässt sich nicht von der Stelle bewegenʼ; 771;"
           }
         ],
         "Imperativ": [
           {
             "turoyo": "ǧawǧáq i=kef-aṯi əšmo me-dukṯe",
             "translations": [],
-            "references": ["771"]
+            "references": [
+              "771"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ǧawǧáq i=kef-aṯi əšmo me-dukṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "771"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ǧawǧáq i=kef-aṯi əšmo me-dukṯe; 771;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "von der Stelle bewegen;"
   ],
   "uncertain": false
 }

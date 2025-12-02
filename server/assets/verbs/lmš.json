@@ -5,17 +5,69 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mlamašle", "mlaməš"],
+      "forms": [
+        "mlamašle",
+        "mlaməš"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "i=qaṭən k-ubʕo d-milamšo 173-174;",
-            "translations": ["die Katze will gestreichelt werden"],
-            "references": ["173", "174"]
+            "turoyo": "i=qaṭən k-ubʕo d-milamšo -",
+            "translations": [
+              "die Katze will gestreichelt werden"
+            ],
+            "references": [
+              "173",
+              "174"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=qaṭən k-ubʕo d-milamšo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Katze will gestreichelt werdenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "173"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "174"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=qaṭən k-ubʕo d-milamšo ʻdie Katze will gestreichelt werdenʼ; 173-174;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "streicheln;"
   ],
   "uncertain": false
 }

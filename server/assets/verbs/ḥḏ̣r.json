@@ -14,102 +14,939 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ḥaḏ̣ər", "ḥoḏ̣ər"],
+      "forms": [
+        "ḥaḏ̣ər",
+        "ḥoḏ̣ər"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "naqqaḥzele, ko-ḥaḏ̣əru=ṭayrogabe 234; 52/154; aṯət l-arkeḥadirətʕal-ġafle, xud u=dewočikətbaynoṯayna",
-            "translations": ["unvermutet", "erschienen"],
-            "references": ["234; 52/154"]
+            "turoyo": "naqqa ḥzele ko-ḥaḏ̣ər u=ṭayro gabe aṯət l-arke ḥadirət ʕal-ġafle xud u=dewo čikət baynoṯayna",
+            "translations": [
+              "da sah er, wie auf einmal der Vogel bei ihm war",
+              "‘Du bist unvermutet hier erschienen und wie der Wolf zwischen uns gefahren’"
+            ],
+            "references": [
+              "234",
+              "52/154",
+              "30/119"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "naqqa ḥzele"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-ḥaḏ̣ər u=ṭayro gabe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda sah er, wie auf einmal der Vogel bei ihm warʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "234"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "52/154"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aṯət l-arke ḥadirət ʕal-ġafle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " xud u=dewo čikət baynoṯayna "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Du bist unvermutet hier erschienen und wie der Wolf zwischen uns gefahren’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/119"
+              }
+            ],
+            "text": "naqqa ḥzele, ko-ḥaḏ̣ər u=ṭayro gabe ʻda sah er, wie auf einmal der Vogel bei ihm warʼ; 234; 52/154; aṯət l-arke ḥadirət ʕal-ġafle, xud u=dewo čikət baynoṯayna ‘Du bist unvermutet hier erschienen und wie der Wolf zwischen uns gefahren’; 30/119"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "hakka, aynad-ḥoḏ̣ərtamo, w də-mḥame u=saxlayḏa m-u=dew-awo d-qoṭe-le, u=məradayḏegəd-saymo-le 235; 67/221; aynakelike, d-lozamnolăǧanux, g-maydat l-i=pərtk-aṯe g-məqḏat-la,gəd-ḥoḏ̣annogabux 235-236; 61/257; hat aydarboyašēxoʕdok-ḥuḏ̣rətharke?",
+            "turoyo": "hakka ayna d-ḥoḏ̣ər tamo w də-mḥame u=saxlayḏa m-u=dew-awo d-qoṭe-le u=məradayḏe gəd-saymo-le ayna kelike d-lozamno lăǧanux g-maydat l-i=pərtk-aṯe g-məqḏat-la gəd-ḥoḏ̣anno gabux - hat aydarbo ya šēx oʕdo k-ḥuḏ̣rət harke?",
             "translations": [
-              "und das Fohlen",
-              "der Wolf es",
-              "tun, was er",
-              "verbrennen",
-              "du, o Scheich,",
-              "aufgetaucht"
+              "wenn einer dort zugegen ist und das Fohlen davor stürzt, dass der Wolf es tötet, so wird sie alles tun, was er wünscht",
+              "wenn du meiner bedarfst, brauchst du nur dieses Federchen zu nehmen und zu verbrennen, dann werde ich bei dir sein",
+              "‘Wie bist du, o Scheich, jetzt auf einmal hier aufgetaucht?’"
             ],
-            "references": ["235; 67/221", "235"]
+            "references": [
+              "235",
+              "67/221",
+              "235",
+              "236",
+              "61/257",
+              "30/112"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hakka"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ayna d-ḥoḏ̣ər tamo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w də-mḥame u=saxlayḏa m-u=dew-awo d-qoṭe-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=məradayḏe gəd-saymo-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn einer dort zugegen ist und das Fohlen davor stürzt, dass der Wolf es tötet, so wird sie alles tun, was er wünschtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "235"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "67/221"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ayna kelike"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-lozamno lăǧanux"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-maydat l-i=pərtk-aṯe g-məqḏat-la"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəd-ḥoḏ̣anno gabux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn du meiner bedarfst, brauchst du nur dieses Federchen zu nehmen und zu verbrennen, dann werde ich bei dir seinʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "235"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "236"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "61/257"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hat aydarbo ya šēx oʕdo k-ḥuḏ̣rət harke? "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wie bist du, o Scheich, jetzt auf einmal hier aufgetaucht?’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/112"
+              }
+            ],
+            "text": "hakka, ayna d-ḥoḏ̣ər tamo, w də-mḥame u=saxlayḏa m-u=dew-awo d-qoṭe-le, u=məradayḏe gəd-saymo-le ʻwenn einer dort zugegen ist und das Fohlen davor stürzt, dass der Wolf es tötet, so wird sie alles tun, was er wünschtʼ; 235; 67/221; ayna kelike, d-lozamno lăǧanux, g-maydat l-i=pərtk-aṯe g-məqḏat-la, gəd-ḥoḏ̣anno gabux ʻwenn du meiner bedarfst, brauchst du nur dieses Federchen zu nehmen und zu verbrennen, dann werde ich bei dir seinʼ; 235-236; 61/257; hat aydarbo ya šēx oʕdo k-ḥuḏ̣rət harke? ‘Wie bist du, o Scheich, jetzt auf einmal hier aufgetaucht?’; 30/112"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "me-ṣafroafandəm, ṣafraytoitoxuqm-u=tarʕoḥḏ̣aru 236; 65/15, 66;",
-            "translations": [],
-            "references": ["236; 65/15", "66"]
+            "turoyo": "me-ṣafro afandəm ṣafrayto itoxu qm-u=tarʕo ḥḏ̣aru",
+            "translations": [
+              "kommt am frühen Morgen hier vor den (Zelt)eingang und erscheint bei mir"
+            ],
+            "references": [
+              "236",
+              "65/15",
+              "66"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "me-ṣafro afandəm"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṣafrayto itoxu qm-u=tarʕo ḥḏ̣aru "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻkommt am frühen Morgen hier vor den (Zelt)eingang und erscheint bei mirʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "236"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/15"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "66"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "me-ṣafro afandəm, ṣafrayto itoxu qm-u=tarʕo ḥḏ̣aru ʻkommt am frühen Morgen hier vor den (Zelt)eingang und erscheint bei mirʼ; 236; 65/15, 66;"
           }
         ],
         "Part act.": [
           {
-            "turoyo": "ŠēxʕAbdəlməṭṭaləblat-yoḥaḏ̣iroʕAbdalmuṭṭalib 237; 30/69, 90; 54/60; 65/352; u=mede d-əbʕatḥaḏ̣íro-yo 237; 64/130; ḥaḏ̣íre-neharke u=ahlayḏa d-aṯən me Awropa LB 7;",
-            "translations": ["Angehörigen"],
-            "references": ["237; 30/69", "90; 54/60"]
+            "turoyo": "Šēx ʕAbdəlməṭṭaləb lat-yo ḥaḏ̣iro u=mede d-əbʕat ḥaḏ̣íro-yo ḥaḏ̣íre-ne harke u=ahlayḏa d-aṯən me Awropa",
+            "translations": [
+              "Scheich ʕAbdalmuṭṭalib ist nicht anwesend",
+              "alles was du willst, ist bereit",
+              "anwesend sind hier auch ihre Angehörigen, die aus Europa gekommen sind"
+            ],
+            "references": [
+              "237",
+              "30/69",
+              "90",
+              "54/60",
+              "65/352",
+              "237",
+              "64/130",
+              "LB 7"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Šēx ʕAbdəlməṭṭaləb lat-yo ḥaḏ̣iro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻScheich ʕAbdalmuṭṭalib ist nicht anwesendʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "237"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/69"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "90"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "54/60"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/352"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=mede d-əbʕat ḥaḏ̣íro-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻalles was du willst, ist bereitʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "237"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "64/130"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥaḏ̣íre-ne harke u=ahlayḏa d-aṯən me Awropa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻanwesend sind hier auch ihre Angehörigen, die aus Europa gekommen sindʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 7"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "Šēx ʕAbdəlməṭṭaləb lat-yo ḥaḏ̣iro ʻScheich ʕAbdalmuṭṭalib ist nicht anwesendʼ; 237; 30/69, 90; 54/60; 65/352; u=mede d-əbʕat ḥaḏ̣íro-yo ʻalles was du willst, ist bereitʼ; 237; 64/130; ḥaḏ̣íre-ne harke u=ahlayḏa d-aṯən me Awropa ʻanwesend sind hier auch ihre Angehörigen, die aus Europa gekommen sindʼ; LB 7;"
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": ["mḥaḏ̣alle", "mḥaḏ̣ər"],
+      "forms": [
+        "mḥaḏ̣alle",
+        "mḥaḏ̣ər"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "qayəm u=greʕo, azzé, mḥaḏ̣alleas=səsye 244; 36/27; alohoobe-la i=dukṯ-ayodə-mḥaḏ̣role l-u=ənsānqamoyoLB 5;",
-            "translations": ["Diener ging,", "vorbereitet"],
-            "references": ["244; 36/27", "5"]
+            "turoyo": "qayəm u=greʕo azzé mḥaḏ̣alle as=səsye aloho obe-la i=dukṯ-ayo də-mḥaḏ̣role l-u=ənsān qamoyo",
+            "translations": [
+              "der Diener ging, machte die Pferde zurecht",
+              "Gott möge ihr den Ort zuweisen, den er dem ersten Menschen vorbereitet hat"
+            ],
+            "references": [
+              "244",
+              "36/27",
+              "LB 5"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qayəm u=greʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " azzé"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥaḏ̣alle as=səsye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Diener ging, machte die Pferde zurechtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "244"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/27"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aloho obe-la i=dukṯ-ayo də-mḥaḏ̣role l-u=ənsān qamoyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻGott möge ihr den Ort zuweisen, den er dem ersten Menschen vorbereitet hatʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "qayəm u=greʕo, azzé, mḥaḏ̣alle as=səsye ʻder Diener ging, machte die Pferde zurechtʼ; 244; 36/27; aloho obe-la i=dukṯ-ayo də-mḥaḏ̣role l-u=ənsān qamoyo ʻGott möge ihr den Ort zuweisen, den er dem ersten Menschen vorbereitet hatʼ; LB 5;"
           },
           {
-            "turoyo": "w-səmli i=ʕrayt-ayḏimḥaḏ̣rolii=taḥolomḥaḏ̣allamukloġálabebasimo",
+            "turoyo": "w-səmli i=ʕrayt-ayḏi mḥaḏ̣roli i=taḥolo mḥaḏ̣alla muklo ġálabe basimo",
             "translations": [
-              "Mittagessen",
-              "‘The aunt cooked very delicious food’; 44/96; 44/74;"
+              "‘und ich machte meine Mittagessen, bereitete es zu’",
+              "‘The aunt cooked very delicious food’"
             ],
-            "references": []
+            "references": [
+              "2",
+              "JL 6.10.6",
+              "44/96",
+              "44/74"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-səmli i=ʕrayt-ayḏi mḥaḏ̣roli "
+              },
+              {
+                "kind": "translation",
+                "value": "‘und ich machte meine Mittagessen, bereitete es zu’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 6.10.6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=taḥolo mḥaḏ̣alla muklo ġálabe basimo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘The aunt cooked very delicious food’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/96"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/74"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) w-səmli i=ʕrayt-ayḏi mḥaḏ̣roli ‘und ich machte meine Mittagessen, bereitete es zu’ JL 6.10.6; i=taḥolo mḥaḏ̣alla muklo ġálabe basimo ‘The aunt cooked very delicious food’; 44/96; 44/74;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "mənsə́mle-le l-u=ṣulṭono l-u=ʕmiro, ono gəd-mḥadárno-lux ṭawmene",
+            "turoyo": "mən sə́mle-le l-u=ṣulṭono l-u=ʕmiro ono gəd-mḥadárno-lux ṭaw mene",
             "translations": [
-              "‘I will prepare for you [an equipment] better than that the sultan did for the emir’; 36/87"
+              "‘I will prepare for you [an equipment] better than that the sultan did for the emir’"
             ],
-            "references": []
+            "references": [
+              "36/87"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mən sə́mle-le l-u=ṣulṭono l-u=ʕmiro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono gəd-mḥadárno-lux ṭaw mene "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I will prepare for you [an equipment] better than that the sultan did for the emir’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/87"
+              }
+            ],
+            "text": "mən sə́mle-le l-u=ṣulṭono l-u=ʕmiro, ono gəd-mḥadárno-lux ṭaw mene ‘I will prepare for you [an equipment] better than that the sultan did for the emir’; 36/87"
           },
           {
-            "turoyo": "hənne-stekə-mḥaḏ̣ri u=mukl-aṯṯe b-u=bayto 4/48;",
-            "translations": [],
-            "references": ["4/48"]
+            "turoyo": "hənne-ste kə-mḥaḏ̣ri u=mukl-aṯṯe b-u=bayto",
+            "translations": [
+              "diese Leute machen ihr Essen zu Hause zurecht"
+            ],
+            "references": [
+              "2",
+              "4/48"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hənne-ste kə-mḥaḏ̣ri u=mukl-aṯṯe b-u=bayto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdiese Leute machen ihr Essen zu Hause zurechtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "4/48"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) hənne-ste kə-mḥaḏ̣ri u=mukl-aṯṯe b-u=bayto ʻdiese Leute machen ihr Essen zu Hause zurechtʼ; 4/48;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "mḥaḏ̣ǝ́r u=taḥḏ̣īrdiḏuxba 248; 28/77; mḥaḏ̣ar-lantre=səsye d-əzzano!ḥaḏ̣érul-lebadle m-aǧ=ǧul-ayḏi l-u=ʕmiro!",
+            "turoyo": "mḥaḏ̣ǝ́r u=taḥḏ̣īr diḏux ba mḥaḏ̣ar-lan tre=səsye d-əzzano! ḥaḏ̣érul-le badle m-aǧ=ǧul-ayḏi l-u=ʕmiro!",
             "translations": [
-              "‘Prepare a suit from my clothes for the emir!’; 36/71"
+              "bereite alles vor, Papa",
+              "‘Mach uns zwei Pferde zurecht, damit wir gehen!’",
+              "‘Prepare a suit from my clothes for the emir!’"
             ],
-            "references": ["248; 28/77"]
+            "references": [
+              "248",
+              "28/77",
+              "36/26",
+              "36/71"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mḥaḏ̣ǝ́r u=taḥḏ̣īr diḏux ba "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻbereite alles vor, Papaʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "248"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "28/77"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥaḏ̣ar-lan tre=səsye d-əzzano! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Mach uns zwei Pferde zurecht, damit wir gehen!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/26"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥaḏ̣érul-le badle m-aǧ=ǧul-ayḏi l-u=ʕmiro! "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Prepare a suit from my clothes for the emir!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/71"
+              }
+            ],
+            "text": "mḥaḏ̣ǝ́r u=taḥḏ̣īr diḏux ba ʻbereite alles vor, Papaʼ; 248; 28/77; mḥaḏ̣ar-lan tre=səsye d-əzzano! ‘Mach uns zwei Pferde zurecht, damit wir gehen!’; 36/26; ḥaḏ̣érul-le badle m-aǧ=ǧul-ayḏi l-u=ʕmiro! ‘Prepare a suit from my clothes for the emir!’; 36/71"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["maḥḏ̣alle", "maḥḏ̣ər"],
+      "forms": [
+        "maḥḏ̣alle",
+        "maḥḏ̣ər"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "maytalle l-u=ḥŭḏ̣ūrdiḏe, maḥḏ̣alletamo i=hayye d-aw=wazire w-d-ar=rabe d-i=mamlake kula 239; 27/47;",
-            "translations": ["den Sultan), und", "und der Grossen des Reichs"],
-            "references": ["239; 27/47"]
+            "turoyo": "maytalle l-u=ḥŭḏ̣ūr diḏe maḥḏ̣alle tamo i=hayye d-aw=wazire w-d-ar=rabe d-i=mamlake kula",
+            "translations": [
+              "man brachte ihn (vor den Sultan), und dieser liess den gesamten Rat der Wesire und der Grossen des Reichs vor sich kommen"
+            ],
+            "references": [
+              "239",
+              "27/47"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maytalle l-u=ḥŭḏ̣ūr diḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥḏ̣alle tamo i=hayye d-aw=wazire w-d-ar=rabe d-i=mamlake kula "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻman brachte ihn (vor den Sultan), und dieser liess den gesamten Rat der Wesire und der Grossen des Reichs vor sich kommenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "239"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "27/47"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "maytalle l-u=ḥŭḏ̣ūr diḏe, maḥḏ̣alle tamo i=hayye d-aw=wazire w-d-ar=rabe d-i=mamlake kula ʻman brachte ihn (vor den Sultan), und dieser liess den gesamten Rat der Wesire und der Grossen des Reichs vor sich kommenʼ; 239; 27/47;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "sich einstellen, zugegen sein, erscheinen, anwesend sein, bereit werden;",
+    "1) bereit machen; 2) cook (стоит ли выделять?)",
+    "kommen lassen;"
   ],
   "uncertain": false
 }

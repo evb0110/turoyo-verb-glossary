@@ -14,33 +14,184 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ksəḥle", "kosəḥ"],
+      "forms": [
+        "ksəḥle",
+        "kosəḥ"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ko-ṭorən tarte tlaṯ=ʕaynoṯe, w ko-kəsḥi a=ḥrene 100; 94/110;",
-            "translations": [],
-            "references": ["100; 94/110"]
+            "turoyo": "ko-ṭorən tarte tlaṯ=ʕaynoṯe w ko-kəsḥi a=ḥrene",
+            "translations": [
+              "man lässt zwei, drei Augen übrig, die anderen schneidet man weg"
+            ],
+            "references": [
+              "100",
+              "94/110"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-ṭorən tarte tlaṯ=ʕaynoṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ko-kəsḥi a=ḥrene "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻman lässt zwei, drei Augen übrig, die anderen schneidet man wegʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "100"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/110"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-ṭorən tarte tlaṯ=ʕaynoṯe, w ko-kəsḥi a=ḥrene ʻman lässt zwei, drei Augen übrig, die anderen schneidet man wegʼ; 100; 94/110;"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "i=naqla d-kosaḥ-wa u=karmo, i=kurfodwəṣla b-ṣawʕe i=rabṯo",
+            "turoyo": "i=naqla d-kosaḥ-wa u=karmo i=kurfo dwəṣla b-ṣawʕe i=rabṯo",
             "translations": [
               "‘While he was cutting a vine, a snake bit him in his thumb’"
             ],
-            "references": []
+            "references": [
+              "LuF 302/55"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqla d-kosaḥ-wa u=karmo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=kurfo dwəṣla b-ṣawʕe i=rabṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘While he was cutting a vine, a snake bit him in his thumb’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LuF 302/55"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=naqla d-kosaḥ-wa u=karmo, i=kurfo dwəṣla b-ṣawʕe i=rabṯo ‘While he was cutting a vine, a snake bit him in his thumb’ LuF 302/55;"
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "dworo latte, ʕǧofo latte, mḥoyo d-marolayt. ksoḥo d-karmelaytgabayye 123; 115/5;",
-            "translations": ["beschneiden"],
-            "references": ["123; 115/5"]
+            "turoyo": "dworo latte ʕǧofo latte mḥoyo d-maro layt. ksoḥo d-karme layt gabayye",
+            "translations": [
+              "die Leute haben nicht zu ackern, nicht zu jäten, nicht mit dem Spaten zu arbeiten, keine Weinberge zu beschneiden"
+            ],
+            "references": [
+              "123",
+              "115/5"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "dworo latte"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕǧofo latte"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥoyo d-maro layt. ksoḥo d-karme layt gabayye  "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Leute haben nicht zu ackern, nicht zu jäten, nicht mit dem Spaten zu arbeiten, keine Weinberge zu beschneidenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "123"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "115/5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "dworo latte, ʕǧofo latte, mḥoyo d-maro layt. ksoḥo d-karme layt gabayye ʻdie Leute haben nicht zu ackern, nicht zu jäten, nicht mit dem Spaten zu arbeiten, keine Weinberge zu beschneidenʼ; 123; 115/5;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "ausputzen, schneiden, auslichten;"
   ],
   "uncertain": false
 }

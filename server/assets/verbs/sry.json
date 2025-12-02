@@ -14,17 +14,54 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["sari", "sore"],
+      "forms": [
+        "sari",
+        "sore"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "sari 348;",
-            "translations": ["verweste, verfaulte, wurde stinkend"],
-            "references": ["348"]
+            "turoyo": "sari",
+            "translations": [
+              "verweste, verfaulte, wurde stinkend"
+            ],
+            "references": [
+              "348"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "sari "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻverweste, verfaulte, wurde stinkendʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "348"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "sari ʻverweste, verfaulte, wurde stinkendʼ; 348;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "verwesten, verfaulen, stinkend werden;"
   ],
   "uncertain": false
 }

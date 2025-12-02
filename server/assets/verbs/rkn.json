@@ -14,19 +14,62 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mrakalle", "mrakən"],
+      "forms": [
+        "mrakalle",
+        "mrakən"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "kṯəwwe memre ʕamoye, mraknənne l-a=zmiroṯe DD 391/14;",
+            "turoyo": "kṯəwwe memre ʕamoye mraknənne l-a=zmiroṯe",
             "translations": [
               "sie schrieben volkstümliche Gedichte, und vertonten sie zu Liedern"
             ],
-            "references": ["391/14"]
+            "references": [
+              "DD 391/14"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kṯəwwe memre ʕamoye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mraknənne l-a=zmiroṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie schrieben volkstümliche Gedichte, und vertonten sie zu Liedernʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "DD 391/14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kṯəwwe memre ʕamoye, mraknənne l-a=zmiroṯe ʻsie schrieben volkstümliche Gedichte, und vertonten sie zu Liedernʼ; DD 391/14;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "vertonen;"
   ],
   "uncertain": false
 }

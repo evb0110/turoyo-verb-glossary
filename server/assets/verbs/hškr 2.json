@@ -14,17 +14,75 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mhaškalle", "mhaškər"],
+      "forms": [
+        "mhaškalle",
+        "mhaškər"
+      ],
       "conjugations": {
         "Imperativ": [
           {
-            "turoyo": "alḥamdəllamhaškǝ́r u=morayḏux, w alohorabo-yo 778; 69/26;",
-            "translations": ["Herrn! Gott"],
-            "references": ["778; 69/26"]
+            "turoyo": "alḥamdəlla mhaškǝ́r u=morayḏux w aloho rabo-yo",
+            "translations": [
+              "Gott sei gedankt! Danke deinem Herrn! Gott ist gross"
+            ],
+            "references": [
+              "778",
+              "69/26"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "alḥamdəlla mhaškǝ́r u=morayḏux"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w aloho rabo-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻGott sei gedankt! Danke deinem Herrn! Gott ist grossʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "778"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/26"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "alḥamdəlla mhaškǝ́r u=morayḏux, w aloho rabo-yo ʻGott sei gedankt! Danke deinem Herrn! Gott ist grossʼ; 778; 69/26;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "danken;"
   ],
   "uncertain": false
 }

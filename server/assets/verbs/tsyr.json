@@ -14,17 +14,75 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mtasyalle", "mtasyər"],
+      "forms": [
+        "mtasyalle",
+        "mtasyər"
+      ],
       "conjugations": {
         "Part act.": [
           {
-            "turoyo": "aṯyono me baynoṯe d-u=ʕăǧamhawyonomətsayər, d-šəqlonohawa 806; 105/97;",
-            "translations": [],
-            "references": ["806; 105/97"]
+            "turoyo": "aṯyono me baynoṯe d-u=ʕăǧam hawyono mətsayər d-šəqlono hawa",
+            "translations": [
+              "ich komme aus Persien und bin spazieren gegangen, um Luft zu schöpfen"
+            ],
+            "references": [
+              "806",
+              "105/97"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aṯyono me baynoṯe d-u=ʕăǧam hawyono mətsayər"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-šəqlono hawa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich komme aus Persien und bin spazieren gegangen, um Luft zu schöpfenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "806"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "105/97"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "aṯyono me baynoṯe d-u=ʕăǧam hawyono mətsayər, d-šəqlono hawa ʻich komme aus Persien und bin spazieren gegangen, um Luft zu schöpfenʼ; 806; 105/97;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "spazieren gehen;"
   ],
   "uncertain": false
 }

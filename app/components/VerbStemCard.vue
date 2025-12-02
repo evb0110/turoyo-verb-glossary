@@ -10,11 +10,8 @@ const transformedStem = computed(() => transformStemForDisplay(stem))
 </script>
 
 <template>
-    <UCard
-        :ui="{ body: 'space-y-4' }"
-        class="border border-transparent transition hover:border-primary/40"
-    >
+    <div class="space-y-4 mb-8">
         <StemHeader :stem="transformedStem"/>
-        <StemExamples :stem="transformedStem"/>
-    </UCard>
+        <VerbStemTable :stem="transformedStem"/>
+    </div>
 </template>

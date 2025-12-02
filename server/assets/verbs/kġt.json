@@ -14,24 +14,117 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mkaġatle", "mkaġət"],
+      "forms": [
+        "mkaġatle",
+        "mkaġət"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "2) mkaġatlikulmede m-an d-u=bayto w bəṯṯəraṯinolə-Ṣṭambəl 226-227;",
-            "translations": ["Hausbewohner"],
-            "references": ["2", "226"]
+            "turoyo": "mkaġatli kul mede m-an d-u=bayto w bəṯṯər aṯino lə-Ṣṭambəl -",
+            "translations": [
+              "ich brachte alles im Hause in Ordnung, besorgte den Bedarf der Hausbewohner und fuhr dann nach Stambul"
+            ],
+            "references": [
+              "2",
+              "226",
+              "227"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mkaġatli kul mede m-an d-u=bayto w bəṯṯər aṯino lə-Ṣṭambəl "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich brachte alles im Hause in Ordnung, besorgte den Bedarf der Hausbewohner und fuhr dann nach Stambulʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "226"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "227"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) mkaġatli kul mede m-an d-u=bayto w bəṯṯər aṯino lə-Ṣṭambəl ʻich brachte alles im Hause in Ordnung, besorgte den Bedarf der Hausbewohner und fuhr dann nach Stambulʼ; 226-227;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "1) mkaġát u=kṯow-ano 226;",
-            "translations": ["dieses Buch"],
-            "references": ["1", "226"]
+            "turoyo": "mkaġát u=kṯow-ano",
+            "translations": [
+              "packe dieses Buch ein"
+            ],
+            "references": [
+              "1",
+              "226"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mkaġát u=kṯow-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻpacke dieses Buch einʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "226"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) mkaġát u=kṯow-ano ʻpacke dieses Buch einʼ; 226;"
           }
         ]
       }
     }
   ],
+  "idioms": null,
   "uncertain": false
 }

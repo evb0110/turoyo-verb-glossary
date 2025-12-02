@@ -14,31 +14,195 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["myayṣalle", "myayṣər"],
+      "forms": [
+        "myayṣalle",
+        "myayṣər"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "myayṣálle-li tloṯo=yawme b-i=škafto 793;",
-            "translations": ["er hielt mich drei Tage in der Höhle gefangen"],
-            "references": ["793"]
+            "turoyo": "myayṣálle-li tloṯo=yawme b-i=škafto",
+            "translations": [
+              "er hielt mich drei Tage in der Höhle gefangen"
+            ],
+            "references": [
+              "793"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "myayṣálle-li tloṯo=yawme b-i=škafto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hielt mich drei Tage in der Höhle gefangenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "793"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "myayṣálle-li tloṯo=yawme b-i=škafto ʻer hielt mich drei Tage in der Höhle gefangenʼ; 793;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "Ono mozadno, hat mәzdat, hye mozad, hiya mәzdo, aḥna mәzdina, hatu mәzdutu, hәnnәk mәzdi, at (f) ?, ono (f) ?",
-            "translations": ["‘tru_IL_conj_yzd’"],
-            "references": []
+            "turoyo": "Ono mozadno hat mәzdat hye mozad hiya mәzdo aḥna mәzdina hatu mәzdutu hәnnәk mәzdi at f ? ono f ?",
+            "translations": [
+              "‘tru_IL_conj_yzd’"
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Ono mozadno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hat mәzdat"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hye mozad"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hiya mәzdo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aḥna mәzdina"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hatu mәzdutu"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hәnnәk mәzdi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " at "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "f"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  ?"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "f"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ?   "
+              },
+              {
+                "kind": "translation",
+                "value": "‘tru_IL_conj_yzd’"
+              }
+            ],
+            "text": "Ono mozadno, hat mәzdat, hye mozad, hiya mәzdo, aḥna mәzdina, hatu mәzdutu, hәnnәk mәzdi, at (f) ?, ono (f) ? ‘tru_IL_conj_yzd’"
           },
           {
-            "turoyo": "dayәm Aloho mozadle",
+            "turoyo": "dayәm Aloho mozadle – a way to thank s.o. for a dinner",
             "translations": [
-              "‘May God always increase it (muklo, food)’ – a way to thank s.o. for a dinner"
+              "‘May God always increase it (muklo, food)’"
             ],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "dayәm Aloho mozadle "
+              },
+              {
+                "kind": "translation",
+                "value": "‘May God always increase it (muklo, food)’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " – a way to thank s.o. for a dinner"
+              }
+            ],
+            "text": "dayәm Aloho mozadle ‘May God always increase it (muklo, food)’ – a way to thank s.o. for a dinner"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "gefangen halten;",
+    "yzd",
+    "III. mozadle/mozad",
+    "increase;"
   ],
   "uncertain": false
 }

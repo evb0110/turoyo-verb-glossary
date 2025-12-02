@@ -11,19 +11,76 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["slәgle", "solәg"],
+      "forms": [
+        "slәgle",
+        "solәg"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "‘’Ya rab xud dә slәglux u mohr d Aḏam bә Mšiḥo, d hat sәlgat aḥ ḥṭohayḏan’’ NE_254;9",
+            "turoyo": "Ya rab xud dә slәglux u mohr d Aḏam bә Mšiḥo d hat sәlgat aḥ ḥṭohayḏan’’ ’ NE_",
             "translations": [
-              ": ‘‘Oh Lord! As you deleted the seal of Adam in Christ, may you delete our sins!’’"
+              "‘’",
+              "‘‘Oh Lord! As you deleted the seal of Adam in Christ, may you delete our sins!’"
             ],
-            "references": ["254;9"]
+            "references": [
+              "254",
+              "9"
+            ],
+            "tokens": [
+              {
+                "kind": "translation",
+                "value": "‘’"
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ya rab xud dә slәglux u mohr d Aḏam bә Mšiḥo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d hat sәlgat aḥ ḥṭohayḏan’’ "
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "‘‘Oh Lord! As you deleted the seal of Adam in Christ, may you delete our sins!’"
+              },
+              {
+                "kind": "turoyo",
+                "value": "’ NE_"
+              },
+              {
+                "kind": "ref",
+                "value": "254"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "ref",
+                "value": "9"
+              }
+            ],
+            "text": "‘’Ya rab xud dә slәglux u mohr d Aḏam bә Mšiḥo, d hat sәlgat aḥ ḥṭohayḏan’’ : ‘‘Oh Lord! As you deleted the seal of Adam in Christ, may you delete our sins!’’ NE_254;9"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "To delete"
   ],
   "uncertain": false
 }

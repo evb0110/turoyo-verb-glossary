@@ -14,20 +14,86 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mbaxəl", "mibaxəl"],
+      "forms": [
+        "mbaxəl",
+        "mibaxəl"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ko-mibaxəl me-ḥa 311; kō-mībāxəl mīne 322;",
+            "turoyo": "ko-mibaxəl me-ḥa kō-mībāxəl mīne",
             "translations": [
-              "ʻer ist missgünstig gegen jemandemʼ;",
-              "ʻer gönnt ihm nichtsʼ;"
+              "er ist missgünstig gegen jemandem",
+              "er gönnt ihm nichts"
             ],
-            "references": ["311", "322"]
+            "references": [
+              "311",
+              "322"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mibaxəl me-ḥa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer ist missgünstig gegen jemandemʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "311"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kō-mībāxəl mīne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer gönnt ihm nichtsʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "322"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-mibaxəl me-ḥa ʻer ist missgünstig gegen jemandemʼ; 311; kō-mībāxəl mīne ʻer gönnt ihm nichtsʼ; 322;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) nicht gönnen;"
   ],
   "uncertain": false
 }

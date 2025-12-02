@@ -12,26 +12,118 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mʕartamle", "mʕartəm"],
+      "forms": [
+        "mʕartamle",
+        "mʕartəm"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mʕartamle gwine 768;",
-            "translations": ["ʻer machte ein finsteres, böses Gesichtʼ;"],
-            "references": ["768"]
-          }
-        ],
-        "Part. Pass.": [
-          {
-            "turoyo": "b-hawxa hawa mʕartamto ab=barqe w aš=šəʕaʕataṯṯe k-obi zuḥṯo rabṯo l-u=nsān 768; 8/20;",
+            "turoyo": "mʕartamle gwine",
             "translations": [
-              "ʻbei solch finsterem Wetter machen die Blitze und ihre Strahlen dem Menschen grosse Furchtʼ;"
+              "er machte ein finsteres, böses Gesicht"
             ],
-            "references": ["768; 8/20"]
+            "references": [
+              "768"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mʕartamle gwine "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer machte ein finsteres, böses Gesichtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "768"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mʕartamle gwine ʻer machte ein finsteres, böses Gesichtʼ; 768;"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Part. Pass.": [
+          {
+            "turoyo": "b-hawxa hawa mʕartamto ab=barqe w aš=šəʕaʕataṯṯe k-obi zuḥṯo rabṯo l-u=nsān",
+            "translations": [
+              "bei solch finsterem Wetter machen die Blitze und ihre Strahlen dem Menschen grosse Furcht"
+            ],
+            "references": [
+              "768",
+              "8/20"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "b-hawxa hawa mʕartamto ab=barqe w aš=šəʕaʕataṯṯe k-obi zuḥṯo rabṯo l-u=nsān "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻbei solch finsterem Wetter machen die Blitze und ihre Strahlen dem Menschen grosse Furchtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "768"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "8/20"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "b-hawxa hawa mʕartamto ab=barqe w aš=šəʕaʕataṯṯe k-obi zuḥṯo rabṯo l-u=nsān ʻbei solch finsterem Wetter machen die Blitze und ihre Strahlen dem Menschen grosse Furchtʼ; 768; 8/20;"
+          }
+        ]
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "dunkel werden"
+        }
+      ],
+      "label_raw": "dunkel werden"
     }
+  ],
+  "idioms": [
+    "finster machen"
   ],
   "uncertain": false
 }

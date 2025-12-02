@@ -11,17 +11,58 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mwašwašle", "mwašwəš"],
+      "forms": [
+        "mwašwašle",
+        "mwašwəš"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "kəzzə́n larwal, komwašwəšwi hḏoḏe",
-            "translations": ["'They went inside and whispered' 89/48;"],
-            "references": []
+            "turoyo": "kəzzə́n larwal komwašwəšwi hḏoḏe",
+            "translations": [
+              "They went inside and whispered"
+            ],
+            "references": [
+              "89/48"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kəzzə́n larwal"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " komwašwəšwi hḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "'They went inside and whispered'"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "89/48"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kəzzə́n larwal, komwašwəšwi hḏoḏe 'They went inside and whispered' 89/48;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "'to whisper'"
   ],
   "uncertain": false
 }

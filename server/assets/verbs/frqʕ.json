@@ -14,7 +14,15 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mfarqaʕle", "mfarqəʕ"],
+      "forms": [
+        "mfarqaʕle",
+        "mfarqəʕ"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Infectum": [
           {
@@ -22,11 +30,40 @@
             "translations": [
               "du hast mir den Nerv getötet und auch ich selbst platze schon bald"
             ],
-            "references": []
+            "references": [
+              "MM 71"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "šqilax i=ruhayḏi w ono-ste waxta d-mifarqʕono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu hast mir den Nerv getötet und auch ich selbst platze schon baldʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 71"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "šqilax i=ruhayḏi w ono-ste waxta d-mifarqʕono ʻdu hast mir den Nerv getötet und auch ich selbst platze schon baldʼ MM 71;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "in Stücke zerplatzen;"
   ],
   "uncertain": false
 }

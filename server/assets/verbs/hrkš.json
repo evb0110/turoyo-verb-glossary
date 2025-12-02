@@ -5,17 +5,99 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mharkašle", "mharkəš"],
+      "forms": [
+        "mharkašle",
+        "mharkəš"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mharkəš u=zlāmaʕli d-moḥe-li 779;",
-            "translations": [],
-            "references": ["779"]
+            "turoyo": "mharkašli u=kalbo aʕli",
+            "translations": [
+              "ich hetzte den Hund auf ihn"
+            ],
+            "references": [
+              "779"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mharkašli u=kalbo aʕli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich hetzte den Hund auf ihnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "779"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mharkašli u=kalbo aʕli ʻich hetzte den Hund auf ihnʼ; 779;"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "mharkəš u=zlām aʕli d-moḥe-li",
+            "translations": [
+              "der man stürzte sich auf mich, um mich zu schlagen"
+            ],
+            "references": [
+              "779"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mharkəš u=zlām aʕli d-moḥe-li "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder man stürzte sich auf mich, um mich zu schlagenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "779"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mharkəš u=zlām aʕli d-moḥe-li ʻder man stürzte sich auf mich, um mich zu schlagenʼ; 779;"
+          }
+        ]
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(den Hund) auf einen hetzen;"
   ],
   "uncertain": false
 }

@@ -14,33 +14,351 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["bʕele", "boʕe"],
+      "forms": [
+        "bʕele",
+        "boʕe"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "1) ḥzele nunto b-u=qawro, bʕele d-qŭte-la, omər ḥáyye-yo 733; prs 119/33;",
+            "turoyo": "ḥzele nunto b-u=qawro bʕele d-qŭte-la omər ḥáyye-yo prs",
             "translations": [
-              "ʻda erblickte er einen Fisch im Grabe; er wollte ihn töten, indem er dachte, es sei eine Schlangeʼ;"
+              "da erblickte er einen Fisch im Grabe; er wollte ihn töten, indem er dachte, es sei eine Schlange"
             ],
-            "references": ["1", "733"]
+            "references": [
+              "1",
+              "733",
+              "119/33"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥzele nunto b-u=qawro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " bʕele d-qŭte-la"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " omər ḥáyye-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda erblickte er einen Fisch im Grabe; er wollte ihn töten, indem er dachte, es sei eine Schlangeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "733"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "119/33"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) ḥzele nunto b-u=qawro, bʕele d-qŭte-la, omər ḥáyye-yo ʻda erblickte er einen Fisch im Grabe; er wollte ihn töten, indem er dachte, es sei eine Schlangeʼ; 733; prs 119/33;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "1) k-ubʕe d-moḥe-li ʕal d-naḥənno, mšamleli, w məlli i=abaḥīḏ 733; 40/14; hano d-obaʕ-li, gəd-šoqlal-le 733; 95/55; ya u=wab-ayḏi! k-ubʕeno menox d-ubat-li məqdār d-kallāt ‘; 24/47 2) k-əbʕe-ya d-qəṭlal-lux wya d-nəfqono m-i=qriṯ-aṯe 733; ya d-əbʕe d-qoṭaʕno qarʕux a qoṭanno ruḥi ono 734; 52/48; iḏa d-ubʕe-lox d-luzam-lox mal, kallāt, gd-ubéno-lox",
+            "turoyo": "k-ubʕe d-moḥe-li ʕal d-naḥənno mšamleli w məlli i=abaḥīḏ hano d-obaʕ-li gəd-šoqlal-le ya u=wab-ayḏi! k-ubʕeno menox d-ubat-li məqdār d-kallāt k-əbʕe-ya d-qəṭlal-lux wya d-nəfqono m-i=qriṯ-aṯe ya d-əbʕe d-qoṭaʕno qarʕux a qoṭanno ruḥi ono iḏa d-ubʕe-lox d-luzam-lox mal kallāt gd-ubéno-lox",
             "translations": [
-              "ʻer will mich schlagen, weil ich vorgetreten bin und geräuchert habe, und weil ich die Psalmen rezitiert und das Credo gesprochen habeʼ;",
-              "ʻwenn er mich haben will, werde ich ihn nehmenʼ;",
-              "Vater, ich möchte, daß du mir etwas Geld gibst’",
-              "ʻich muss dich töten oder dieses Dorf verlassenʼ;",
-              "ʻentweder muss ich dir den Kopf abschlagen oder mich selber tötenʼ;",
-              "‘Wenn du Geld und Gut brauchst und nötig hast, so gebe ich es dir’; 26/250"
+              "er will mich schlagen, weil ich vorgetreten bin und geräuchert habe, und weil ich die Psalmen rezitiert und das Credo gesprochen habe",
+              "wenn er mich haben will, werde ich ihn nehmen",
+              "‘Vater, ich möchte, daß du mir etwas Geld gibst’",
+              "ich muss dich töten oder dieses Dorf verlassen",
+              "entweder muss ich dir den Kopf abschlagen oder mich selber töten",
+              "‘Wenn du Geld und Gut brauchst und nötig hast, so gebe ich es dir’"
             ],
-            "references": ["1", "733; 40/14"]
+            "references": [
+              "1",
+              "733",
+              "40/14",
+              "733",
+              "95/55",
+              "24/47",
+              "2",
+              "733",
+              "734",
+              "52/48",
+              "26/250"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ubʕe d-moḥe-li ʕal d-naḥənno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mšamleli"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w məlli i=abaḥīḏ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer will mich schlagen, weil ich vorgetreten bin und geräuchert habe, und weil ich die Psalmen rezitiert und das Credo gesprochen habeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "733"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "40/14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hano d-obaʕ-li"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəd-šoqlal-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn er mich haben will, werde ich ihn nehmenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "733"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "95/55"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ya u=wab-ayḏi!  k-ubʕeno menox d-ubat-li  məqdār d-kallāt "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Vater, ich möchte, daß du mir etwas Geld gibst’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/47"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-əbʕe-ya d-qəṭlal-lux wya d-nəfqono m-i=qriṯ-aṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich muss dich töten oder dieses Dorf verlassenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "733"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ya d-əbʕe d-qoṭaʕno qarʕux a qoṭanno ruḥi ono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻentweder muss ich dir den Kopf abschlagen oder mich selber tötenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "734"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "52/48"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " iḏa d-ubʕe-lox d-luzam-lox mal"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kallāt"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gd-ubéno-lox "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wenn du Geld und Gut brauchst und nötig hast, so gebe ich es dir’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/250"
+              }
+            ],
+            "text": "1) k-ubʕe d-moḥe-li ʕal d-naḥənno, mšamleli, w məlli i=abaḥīḏ ʻer will mich schlagen, weil ich vorgetreten bin und geräuchert habe, und weil ich die Psalmen rezitiert und das Credo gesprochen habeʼ; 733; 40/14; hano d-obaʕ-li, gəd-šoqlal-le ʻwenn er mich haben will, werde ich ihn nehmenʼ; 733; 95/55; ya u=wab-ayḏi! k-ubʕeno menox d-ubat-li məqdār d-kallāt ‘Vater, ich möchte, daß du mir etwas Geld gibst’; 24/47 2) k-əbʕe-ya d-qəṭlal-lux wya d-nəfqono m-i=qriṯ-aṯe ʻich muss dich töten oder dieses Dorf verlassenʼ; 733; ya d-əbʕe d-qoṭaʕno qarʕux a qoṭanno ruḥi ono ʻentweder muss ich dir den Kopf abschlagen oder mich selber tötenʼ; 734; 52/48; iḏa d-ubʕe-lox d-luzam-lox mal, kallāt, gd-ubéno-lox ‘Wenn du Geld und Gut brauchst und nötig hast, so gebe ich es dir’; 26/250"
           }
         ]
       }
     }
   ],
+  "idioms": null,
   "uncertain": false
 }

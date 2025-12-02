@@ -14,78 +14,576 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["fayər", "foyər"],
+      "forms": [
+        "fayər",
+        "foyər"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "aṯi ṭayro, naḥət m-i=šmayo, mədle l-u=šayr-awo, w-fayər w-azzé 511; 24/143; 62/143; 70/36;",
+            "turoyo": "aṯi ṭayro naḥət m-i=šmayo mədle l-u=šayr-awo w-fayər w-azzé",
             "translations": [
               "ein Vogel kam, stiess herab vom Himmel, nahm das Armband und flog davon"
             ],
-            "references": ["511; 24/143", "62/143"]
+            "references": [
+              "511",
+              "24/143",
+              "62/143",
+              "70/36"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aṯi ṭayro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " naḥət m-i=šmayo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mədle l-u=šayr-awo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-fayər w-azzé "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻein Vogel kam, stiess herab vom Himmel, nahm das Armband und flog davonʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "511"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/143"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/143"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70/36"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "aṯi ṭayro, naḥət m-i=šmayo, mədle l-u=šayr-awo, w-fayər w-azzé ʻein Vogel kam, stiess herab vom Himmel, nahm das Armband und flog davonʼ; 511; 24/143; 62/143; 70/36;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "ṣafro k-ḥoze kala yawno k-fayro 518; 57/102; k-foyər u=ṭayro; w-b-u=ḥal-ano raḥəq u=ṭayro mənayye ġálabe ‘’; 24/145 [MT]",
+            "turoyo": "ṣafro k-ḥoze kala yawno k-fayro k-foyər u=ṭayro w-b-u=ḥal-ano raḥəq u=ṭayro mənayye ġálabe",
             "translations": [
               "(am nächsten) Morgen sah er eine Taube fliegen",
-              "Der Vogel flog fort und entfernte sich auf diese Weise sehr weit von ihnen"
+              "‘Der Vogel flog fort und entfernte sich auf diese Weise sehr weit von ihnen’"
             ],
-            "references": ["518; 57/102", "24/145"]
+            "references": [
+              "518",
+              "57/102",
+              "24/145"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṣafro k-ḥoze kala yawno k-fayro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ(am nächsten) Morgen sah er eine Taube fliegenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "518"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "57/102"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-foyər u=ṭayro"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-b-u=ḥal-ano raḥəq u=ṭayro mənayye ġálabe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Der Vogel flog fort und entfernte sich auf diese Weise sehr weit von ihnen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/145"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "ṣafro k-ḥoze kala yawno k-fayro ʻ(am nächsten) Morgen sah er eine Taube fliegenʼ; 518; 57/102; k-foyər u=ṭayro; w-b-u=ḥal-ano raḥəq u=ṭayro mənayye ġálabe ‘Der Vogel flog fort und entfernte sich auf diese Weise sehr weit von ihnen’; 24/145 [MT]"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "u=tōz d-u=faḥmo fŭyar-wo b-i=hawa 523; 2/32;",
-            "translations": ["der Kohlenstaub flog in die Luft"],
-            "references": ["523; 2/32"]
+            "turoyo": "u=tōz d-u=faḥmo fŭyar-wo b-i=hawa",
+            "translations": [
+              "der Kohlenstaub flog in die Luft"
+            ],
+            "references": [
+              "523",
+              "2/32"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=tōz d-u=faḥmo fŭyar-wo b-i=hawa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Kohlenstaub flog in die Luftʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  "
+              },
+              {
+                "kind": "ref",
+                "value": "523"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/32"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=tōz d-u=faḥmo fŭyar-wo b-i=hawa ʻder Kohlenstaub flog in die Luftʼ; 523; 2/32;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["mafəlle", "mafər"],
+      "forms": [
+        "mafəlle",
+        "mafər"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "1) fayiri ad=dədwone, mafərre barṯe d-u=ʕmiro aʕmayye 539; prs 170/17;",
+            "turoyo": "fayiri ad=dədwone mafərre barṯe d-u=ʕmiro aʕmayye prs",
             "translations": [
               "die Fliegen flogen weg und nahmen die Tochter des Fürsten mit sich in die Lüfte"
             ],
-            "references": ["1", "539"]
+            "references": [
+              "1",
+              "539",
+              "170/17"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " fayiri ad=dədwone"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mafərre barṯe d-u=ʕmiro aʕmayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Fliegen flogen weg und nahmen die Tochter des Fürsten mit sich in die Lüfteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "539"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "170/17"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) fayiri ad=dədwone, mafərre barṯe d-u=ʕmiro aʕmayye ʻdie Fliegen flogen weg und nahmen die Tochter des Fürsten mit sich in die Lüfteʼ; 539; prs 170/17;"
           },
           {
-            "turoyo": "2) tr-alfo=nafare lo=zayʕo ʕaynox, də-k-ḥŭzat-le b-ʕaynox? w də-mǧaraḥlox Ḥasan w Ḥusayn d-mafərlox iḏoṯayye? 539; 29/236;",
+            "turoyo": "tr-alfo=nafare lo=zayʕo ʕaynox də-k-ḥŭzat-le b-ʕaynox? w də-mǧaraḥlox Ḥasan w Ḥusayn d-mafərlox iḏoṯayye?",
             "translations": [
-              "zweitausend Mann: fürchtet sich dein Auge nicht, wenn du sie mit dem Auge siehst? Und dass du",
-              "usain verwundet, ihnen die Hände abgeschlagen hast?"
+              "zweitausend Mann: fürchtet sich dein Auge nicht, wenn du sie mit dem Auge siehst? Und dass du Ḥasan und Ḥusain verwundet, ihnen die Hände abgeschlagen hast?"
             ],
-            "references": ["2", "539; 29/236"]
+            "references": [
+              "2",
+              "539",
+              "29/236"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " tr-alfo=nafare lo=zayʕo ʕaynox"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " də-k-ḥŭzat-le b-ʕaynox? w də-mǧaraḥlox Ḥasan w Ḥusayn d-mafərlox iḏoṯayye? "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻzweitausend Mann: fürchtet sich dein Auge nicht, wenn du sie mit dem Auge siehst? Und dass du Ḥasan und Ḥusain verwundet, ihnen die Hände abgeschlagen hast?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "539"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/236"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) tr-alfo=nafare lo=zayʕo ʕaynox, də-k-ḥŭzat-le b-ʕaynox? w də-mǧaraḥlox Ḥasan w Ḥusayn d-mafərlox iḏoṯayye? ʻzweitausend Mann: fürchtet sich dein Auge nicht, wenn du sie mit dem Auge siehst? Und dass du Ḥasan und Ḥusain verwundet, ihnen die Hände abgeschlagen hast?ʼ; 539; 29/236;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "2) i=ṭabiʕayḏe ʕǝ́qṭo-yo oʕdo g-moḥe u=sayfo g-mafər qarʕe d-kulxu 544; 56/58; aḥna gəm-muḥena b-iḏe čappiye d-mafərína-la xd-u=pallo u=ḥa d-məqṭoʕo iḏe g-msaləm",
+            "turoyo": "i=ṭabiʕayḏe ʕǝ́qṭo-yo oʕdo g-moḥe u=sayfo g-mafər qarʕe d-kulxu aḥna gəm-muḥena b-iḏe čappiye d-mafərína-la xd-u=pallo u=ḥa d-məqṭoʕo iḏe g-msaləm",
             "translations": [
               "er ist von sehr hitziger Natur. Er wird jetzt gleich mit dem Schwerte dreinschlagen und euch allen die Köpfe davonfliegen lassen",
-              "‘Wir wollen auf die linke Hand des gegners schlagen und sie wie ein Flugholz davonfliegen lassen, und wessen Hand abgehauen wird, der ergibt sich!’; 29/151 [MT]"
+              "‘Wir wollen auf die linke Hand des gegners schlagen und sie wie ein Flugholz davonfliegen lassen, und wessen Hand abgehauen wird, der ergibt sich!’"
             ],
-            "references": ["2", "544; 56/58"]
+            "references": [
+              "2",
+              "544",
+              "56/58",
+              "29/151"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=ṭabiʕayḏe ʕǝ́qṭo-yo oʕdo g-moḥe u=sayfo g-mafər qarʕe d-kulxu "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer ist von sehr hitziger Natur. Er wird jetzt gleich mit dem Schwerte dreinschlagen und euch allen die Köpfe davonfliegen lassenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "544"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/58"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  aḥna gəm-muḥena b-iḏe čappiye d-mafərína-la xd-u=pallo u=ḥa d-məqṭoʕo iḏe g-msaləm "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wir wollen auf die linke Hand des gegners schlagen und sie wie ein Flugholz davonfliegen lassen, und wessen Hand abgehauen wird, der ergibt sich!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/151"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "2) i=ṭabiʕayḏe ʕǝ́qṭo-yo oʕdo g-moḥe u=sayfo g-mafər qarʕe d-kulxu ʻer ist von sehr hitziger Natur. Er wird jetzt gleich mit dem Schwerte dreinschlagen und euch allen die Köpfe davonfliegen lassenʼ; 544; 56/58; aḥna gəm-muḥena b-iḏe čappiye d-mafərína-la xd-u=pallo u=ḥa d-məqṭoʕo iḏe g-msaləm ‘Wir wollen auf die linke Hand des gegners schlagen und sie wie ein Flugholz davonfliegen lassen, und wessen Hand abgehauen wird, der ergibt sich!’; 29/151 [MT]"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "2) gud-lo=zayʕó-way-no m-aloho, oʕdo g-məḥyó-way-no u=sayf-ano ʕal qḏolux, mafiró-way-no rišux 548-549; jastr 268/20;",
+            "turoyo": "gud-lo=zayʕó-way-no m-aloho oʕdo g-məḥyó-way-no u=sayf-ano ʕal qḏolux mafiró-way-no rišux - jastr",
             "translations": [
               "wenn ich nicht Gott fürchtete, dann würde ich dir jetzt dieses Schwert auf den Hals schlagen und deinen Kopf davonfliegen lassen"
             ],
-            "references": ["2", "548"]
+            "references": [
+              "2",
+              "548",
+              "549",
+              "268/20"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " gud-lo=zayʕó-way-no m-aloho"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " oʕdo g-məḥyó-way-no u=sayf-ano ʕal qḏolux"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mafiró-way-no rišux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn ich nicht Gott fürchtete, dann würde ich dir jetzt dieses Schwert auf den Hals schlagen und deinen Kopf davonfliegen lassenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "548"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "549"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " jastr "
+              },
+              {
+                "kind": "ref",
+                "value": "268/20"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) gud-lo=zayʕó-way-no m-aloho, oʕdo g-məḥyó-way-no u=sayf-ano ʕal qḏolux, mafiró-way-no rišux ʻwenn ich nicht Gott fürchtete, dann würde ich dir jetzt dieses Schwert auf den Hals schlagen und deinen Kopf davonfliegen lassenʼ; 548-549; jastr 268/20;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "fliegen;",
+    "Nominal forms"
   ],
   "uncertain": false
 }

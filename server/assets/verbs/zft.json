@@ -14,29 +14,165 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mzafatle", "mzafət"],
+      "forms": [
+        "mzafatle",
+        "mzafət"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "qay (здесь я использовал довольно волную трактовку написанного в тексте) msəklox i=ḥurm-aṯi maḥtolox b-u=galdo w mzaftolox? 162; prs 242/4; l-babux mzafáṭle-li mqayádle-li maḥátle-li harke",
+            "turoyo": "qay здесь я использовал довольно волную трактовку написанного в тексте msəklox i=ḥurm-aṯi maḥtolox b-u=galdo w mzaftolox? prs l-babux mzafáṭle-li mqayádle-li maḥátle-li harke",
             "translations": [
               "weshalb hast du diese Frau verhaften, in die Haut stecken und mit Pech bestreichen lassen?",
-              "‘Dein Vater hat mich eingepicht und gefesselt und hier hineingesetzt’; 27/30 [MT]"
+              "‘Dein Vater hat mich eingepicht und gefesselt und hier hineingesetzt’"
             ],
-            "references": ["162", "242/4"]
+            "references": [
+              "162",
+              "242/4",
+              "27/30"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qay "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "здесь я использовал довольно волную трактовку написанного в тексте"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " msəklox i=ḥurm-aṯi maḥtolox b-u=galdo w mzaftolox? "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻweshalb hast du diese Frau verhaften, in die Haut stecken und mit Pech bestreichen lassen?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "162"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "242/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-babux mzafáṭle-li mqayádle-li maḥátle-li harke "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Dein Vater hat mich eingepicht und gefesselt und hier hineingesetzt’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "27/30"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "qay (здесь я использовал довольно волную трактовку написанного в тексте) msəklox i=ḥurm-aṯi maḥtolox b-u=galdo w mzaftolox? ʻweshalb hast du diese Frau verhaften, in die Haut stecken und mit Pech bestreichen lassen?ʼ; 162; prs 242/4; l-babux mzafáṭle-li mqayádle-li maḥátle-li harke ‘Dein Vater hat mich eingepicht und gefesselt und hier hineingesetzt’; 27/30 [MT]"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "ḥetu i=žənəke bayn galdo d-gumušo w zafétul-le b-qiro w zafto w ḥétul-la b-u=tarʕo d-i=walaye 170; prs 240/8;",
+            "turoyo": "ḥetu i=žənəke bayn galdo d-gumušo w zafétul-le b-qiro w zafto w ḥétul-la b-u=tarʕo d-i=walaye prs",
             "translations": [
               "steckt die Frau in eine Büffelhaut, verpicht sie mit Pech und Harz und legt sie in das Stadttor"
             ],
-            "references": ["170", "240/8"]
+            "references": [
+              "170",
+              "240/8"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥetu i=žənəke bayn galdo d-gumušo w zafétul-le b-qiro w zafto w ḥétul-la b-u=tarʕo d-i=walaye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsteckt die Frau in eine Büffelhaut, verpicht sie mit Pech und Harz und legt sie in das Stadttorʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "170"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "240/8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥetu i=žənəke bayn galdo d-gumušo w zafétul-le b-qiro w zafto w ḥétul-la b-u=tarʕo d-i=walaye ʻsteckt die Frau in eine Büffelhaut, verpicht sie mit Pech und Harz und legt sie in das Stadttorʼ; 170; prs 240/8;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(ein)pichen;",
+    "zfṭ → zft"
   ],
   "uncertain": false
 }

@@ -16,33 +16,183 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["qrəšle", "qorəš"],
+      "forms": [
+        "qrəšle",
+        "qorəš"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "2) ádyawma šqili radyo b-ḥamšə=noṭat me-məġaze, qrəšli ʕayne d-u=moro 230;",
+            "turoyo": "ádyawma šqili radyo b-ḥamšə=noṭat me-məġaze qrəšli ʕayne d-u=moro",
             "translations": [
               "heute habe ich einen Radioapparat aus einem Laden für fünfzig Türkpfund gekauft; der Ladenbesitzer merkte nicht, dass das zu wenig war"
             ],
-            "references": ["2", "230"]
+            "references": [
+              "2",
+              "230"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ádyawma šqili radyo b-ḥamšə=noṭat me-məġaze"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qrəšli ʕayne d-u=moro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻheute habe ich einen Radioapparat aus einem Laden für fünfzig Türkpfund gekauft; der Ladenbesitzer merkte nicht, dass das zu wenig warʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "230"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) ádyawma šqili radyo b-ḥamšə=noṭat me-məġaze, qrəšli ʕayne d-u=moro ʻheute habe ich einen Radioapparat aus einem Laden für fünfzig Türkpfund gekauft; der Ladenbesitzer merkte nicht, dass das zu wenig warʼ; 230;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "1) k-əzzǝ́n qərš́ən-ne 230; 94/126; (пример отсутствует в указанном месте)",
-            "translations": ["sie gehen, sie aufzusammeln"],
-            "references": ["1", "230; 94/126"]
+            "turoyo": "k-əzzǝ́n qərš́ən-ne пример отсутствует в указанном месте",
+            "translations": [
+              "sie gehen, sie aufzusammeln"
+            ],
+            "references": [
+              "1",
+              "230",
+              "94/126"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-əzzǝ́n qərš́ən-ne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie gehen, sie aufzusammelnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "230"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/126"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "пример отсутствует в указанном месте"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "1) k-əzzǝ́n qərš́ən-ne ʻsie gehen, sie aufzusammelnʼ; 230; 94/126; (пример отсутствует в указанном месте)"
           }
         ],
         "Part act.": [
           {
-            "turoyo": "i=kutupxane qarǝ́što-yo 122;",
-            "translations": ["in der Bibliothek ist es kalt"],
-            "references": ["122"]
+            "turoyo": "i=kutupxane qarǝ́što-yo",
+            "translations": [
+              "in der Bibliothek ist es kalt"
+            ],
+            "references": [
+              "122"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=kutupxane qarǝ́što-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻin der Bibliothek ist es kaltʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "122"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=kutupxane qarǝ́što-yo ʻin der Bibliothek ist es kaltʼ; 122;"
           }
         ]
       }
     }
   ],
+  "idioms": null,
   "uncertain": false
 }

@@ -14,17 +14,54 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ṣhəlle", "ṣohər"],
+      "forms": [
+        "ṣhəlle",
+        "ṣohər"
+      ],
       "conjugations": {
         "Part Act.": [
           {
-            "turoyo": "u=ṣaḥoro MM 110;",
-            "translations": ["der Zauberer"],
-            "references": ["110"]
+            "turoyo": "u=ṣaḥoro",
+            "translations": [
+              "der Zauberer"
+            ],
+            "references": [
+              "MM 110"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=ṣaḥoro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Zaubererʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 110"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=ṣaḥoro ʻder Zaubererʼ; MM 110;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "verzaubern;"
   ],
   "uncertain": false
 }

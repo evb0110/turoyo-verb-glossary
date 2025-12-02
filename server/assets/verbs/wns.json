@@ -14,19 +14,149 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mwanasle", "mwanəs"],
+      "forms": [
+        "mwanasle",
+        "mwanəs"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "walla mabṣūṭ-no, w ġắlabe mkayáfto-no, amma wansiye lə=k-miwansono 218; 69/52;",
+            "turoyo": "kət-lan i=yatəmt-aṯe lə=k-uḏʕo məžġolo lə=ko-mwanso-li",
             "translations": [
-              "bei Gott, mir geht es gut und ich bin ehr vergnügt, aber es fehlt mir an rechter, traulicher Unterhaltung"
+              "wir haben da dieses Waisenmädchen, die kann aber nicht reden und unterhält mich nicht"
             ],
-            "references": ["218; 69/52"]
+            "references": [
+              "218",
+              "69/53"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kət-lan i=yatəmt-aṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=k-uḏʕo məžġolo lə=ko-mwanso-li "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir haben da dieses Waisenmädchen, die kann aber nicht reden und unterhält mich nichtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "218"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/53"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kət-lan i=yatəmt-aṯe, lə=k-uḏʕo məžġolo lə=ko-mwanso-li ʻwir haben da dieses Waisenmädchen, die kann aber nicht reden und unterhält mich nichtʼ; 218; 69/53;"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "walla mabṣūṭ-no w ġắlabe mkayáfto-no amma wansiye lə=k-miwansono",
+            "translations": [
+              "bei Gott, mir geht es gut und ich bin ehr vergnügt, aber es fehlt mir an rechter, traulicher Unterhaltung"
+            ],
+            "references": [
+              "218",
+              "69/52"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "walla mabṣūṭ-no"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ġắlabe mkayáfto-no"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " amma wansiye lə=k-miwansono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻbei Gott, mir geht es gut und ich bin ehr vergnügt, aber es fehlt mir an rechter, traulicher Unterhaltungʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "218"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/52"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "walla mabṣūṭ-no, w ġắlabe mkayáfto-no, amma wansiye lə=k-miwansono ʻbei Gott, mir geht es gut und ich bin ehr vergnügt, aber es fehlt mir an rechter, traulicher Unterhaltungʼ; 218; 69/52;"
+          }
+        ]
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "traulich unterhalten, das Gefühl der Traulichkeit geben;"
   ],
   "uncertain": false
 }

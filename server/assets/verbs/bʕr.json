@@ -12,20 +12,75 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mbaʕalle", "mbaʕər"],
+      "forms": [
+        "mbaʕalle",
+        "mbaʕər"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ánnaqla ko-mbaʕri aʕ=ʕez-ani bayn i=arʕo, i=arʕo k-owe eba sarwo mbarbzo ṭowo",
+            "turoyo": "ánnaqla ko-mbaʕri aʕ=ʕez-ani bayn i=arʕo i=arʕo k-owe eba sarwo mbarbzo ṭowo",
             "translations": [
-              "ʻdie Ziegen lassen ihren Mist auf den Acker fallen, dort gibt es dann Dung, der so gut verstreut istʼ;",
-              "247; LuF 304/66;"
+              "die Ziegen lassen ihren Mist auf den Acker fallen, dort gibt es dann Dung, der so gut verstreut ist"
             ],
-            "references": []
+            "references": [
+              "247",
+              "LuF 304/66"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ánnaqla ko-mbaʕri aʕ=ʕez-ani bayn i=arʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=arʕo k-owe eba sarwo mbarbzo ṭowo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Ziegen lassen ihren Mist auf den Acker fallen, dort gibt es dann Dung, der so gut verstreut istʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "247"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LuF 304/66"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ánnaqla ko-mbaʕri aʕ=ʕez-ani bayn i=arʕo, i=arʕo k-owe eba sarwo mbarbzo ṭowo ʻdie Ziegen lassen ihren Mist auf den Acker fallen, dort gibt es dann Dung, der so gut verstreut istʼ; 247; LuF 304/66;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "Dung fallen lassen, Dung abwerfen;"
   ],
   "uncertain": false
 }

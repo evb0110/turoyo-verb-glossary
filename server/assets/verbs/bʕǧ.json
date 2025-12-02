@@ -12,26 +12,279 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["bʕəǧle", "boʕəǧ"],
+      "forms": [
+        "bʕəǧle",
+        "boʕəǧ"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mayəṯ m-u=qăhar, bʕīǧ 126; prs 83/4; prs 100/15;",
-            "translations": ["ʻer starb bald darauf vor Gram und Grimmʼ;"],
-            "references": ["126", "83/4"]
+            "turoyo": "maḥəsle l-u=greʕo maḥatle l-uBardawīl iḏe ʕal feme bʕəǧle prs",
+            "translations": [
+              "derselbe erwachte; aber Bärdawil drückte ihm seine Hand auf den Mund und erstickte ihn"
+            ],
+            "references": [
+              "68",
+              "39/37"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maḥəsle l-u=greʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥatle l-uBardawīl iḏe ʕal feme"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " bʕəǧle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻderselbe erwachte; aber Bärdawil drückte ihm seine Hand auf den Mund und erstickte ihnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "68"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "39/37"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "maḥəsle l-u=greʕo, maḥatle l-uBardawīl iḏe ʕal feme, bʕəǧle ʻderselbe erwachte; aber Bärdawil drückte ihm seine Hand auf den Mund und erstickte ihnʼ; 68; prs 39/37;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "tox sum aʕmi mqabəl d-u=ǧənnawi, ṭro məbʕəǧ 129; prs 70/6;",
+            "turoyo": "balki k-izúx qəṭlət-le? bəʕǧət-le ḥənqət-le",
             "translations": [
-              "ʻkomm, umarme mich vor dem Dschennâwi, lass ihn platzen vor Ärgerʼ;"
+              "vielleicht, gehst du und bringst ihn um, oder erwürgst, oder erstichst ihn?"
             ],
-            "references": ["129", "70/6"]
+            "references": [
+              "110",
+              "84/48"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "balki k-izúx qəṭlət-le? bəʕǧət-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥənqət-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻvielleicht, gehst du und bringst ihn um, oder erwürgst, oder erstichst ihn?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "110"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "84/48"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "balki k-izúx qəṭlət-le? bəʕǧət-le, ḥənqət-le ʻvielleicht, gehst du und bringst ihn um, oder erwürgst, oder erstichst ihn?ʼ; 110; 84/48;"
+          }
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "mayəṯ m-u=qăhar bʕīǧ prs prs",
+            "translations": [
+              "er starb bald darauf vor Gram und Grimm"
+            ],
+            "references": [
+              "126",
+              "83/4",
+              "100/15"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mayəṯ m-u=qăhar"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " bʕīǧ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer starb bald darauf vor Gram und Grimmʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "126"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "83/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "100/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mayəṯ m-u=qăhar, bʕīǧ ʻer starb bald darauf vor Gram und Grimmʼ; 126; prs 83/4; prs 100/15;"
+          }
+        ],
+        "Infectum": [
+          {
+            "turoyo": "tox sum aʕmi mqabəl d-u=ǧənnawi ṭro məbʕəǧ prs",
+            "translations": [
+              "komm, umarme mich vor dem Dschennâwi, lass ihn platzen vor Ärger"
+            ],
+            "references": [
+              "129",
+              "70/6"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "tox sum aʕmi mqabəl d-u=ǧənnawi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṭro məbʕəǧ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻkomm, umarme mich vor dem Dschennâwi, lass ihn platzen vor Ärgerʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "129"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "70/6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "tox sum aʕmi mqabəl d-u=ǧənnawi, ṭro məbʕəǧ ʻkomm, umarme mich vor dem Dschennâwi, lass ihn platzen vor Ärgerʼ; 129; prs 70/6;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "erwürgen, ersticken;"
   ],
   "uncertain": false
 }

@@ -14,49 +14,404 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mqatele", "mqatəl"],
+      "forms": [
+        "mqatele",
+        "mqatəl"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "azzeyo larwal. azzé mqatele ʕam i=aṯto d-ruḥe 307; 74/95; tarte=qaṭune ḥzalle falqo d-i=gweto (m)qatalle aʕle ‘’; 22/1; mqatalle mə-ṣafro ḥatta l-falgə-d-yawmo; qale, hawi baynotayye qale d-admo ‘’; 24/173; ʕasekər ġálabe latimi lḥḏore w-mqatalle ḥarb rabo b-as=sayfe w-b-ar=rəmaḥ",
+            "turoyo": "azzeyo larwal. azzé mqatele ʕam i=aṯto d-ruḥe tarte=qaṭune ḥzalle falqo d-i=gweto mqatalle aʕle mqatalle mə-ṣafro ḥatta l-falgə-d-yawmo qale hawi baynotayye qale d-admo ʕasekər ġálabe latimi lḥḏore w-mqatalle ḥarb rabo b-as=sayfe w-b-ar=rəmaḥ",
             "translations": [
               "er ging hinaus und fing einen Streit mit seiner Frau an",
-              "Zwei Katzerr fanden ein Stück Käse. Sie stritten sich darum",
-              "Sie hatten vom Morgen bis Mittag gekämpft, und blutiger Kampf war zwischen ihnen gewesen",
-              "‘Viele Soldaten umzingelten ihn und kämpften einen großen Krieg mit Schwertern und Lanzen’; 29/43 [LTN] [MT]"
+              "‘Zwei Katzerr fanden ein Stück Käse. Sie stritten sich darum’",
+              "‘Sie hatten vom Morgen bis Mittag gekämpft, und blutiger Kampf war zwischen ihnen gewesen’",
+              "‘Viele Soldaten umzingelten ihn und kämpften einen großen Krieg mit Schwertern und Lanzen’"
             ],
-            "references": ["307; 74/95", "22/1"]
+            "references": [
+              "307",
+              "74/95",
+              "22/1",
+              "24/173",
+              "29/43"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "azzeyo larwal. azzé mqatele ʕam i=aṯto d-ruḥe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer ging hinaus und fing einen Streit mit seiner Frau anʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "307"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "74/95"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " tarte=qaṭune ḥzalle falqo d-i=gweto "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "m"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": "qatalle aʕle "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Zwei Katzerr fanden ein Stück Käse. Sie stritten sich darum’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "22/1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mqatalle mə-ṣafro ḥatta l-falgə-d-yawmo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qale"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawi baynotayye qale d-admo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sie hatten vom Morgen bis Mittag gekämpft, und blutiger Kampf war zwischen ihnen gewesen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/173"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕasekər ġálabe latimi lḥḏore w-mqatalle ḥarb rabo b-as=sayfe w-b-ar=rəmaḥ "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Viele Soldaten umzingelten ihn und kämpften einen großen Krieg mit Schwertern und Lanzen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/43"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[LTN]"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "azzeyo larwal. azzé mqatele ʕam i=aṯto d-ruḥe ʻer ging hinaus und fing einen Streit mit seiner Frau anʼ; 307; 74/95; tarte=qaṭune ḥzalle falqo d-i=gweto (m)qatalle aʕle ‘Zwei Katzerr fanden ein Stück Käse. Sie stritten sich darum’; 22/1; mqatalle mə-ṣafro ḥatta l-falgə-d-yawmo; qale, hawi baynotayye qale d-admo ‘Sie hatten vom Morgen bis Mittag gekämpft, und blutiger Kampf war zwischen ihnen gewesen’; 24/173; ʕasekər ġálabe latimi lḥḏore w-mqatalle ḥarb rabo b-as=sayfe w-b-ar=rəmaḥ ‘Viele Soldaten umzingelten ihn und kämpften einen großen Krieg mit Schwertern und Lanzen’; 29/43 [LTN] [MT]"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "kalən ko-mqatli aʕla aḥ=ḥadode 309; 57/161; ono m-i=naqla d-ḥzeli-lux, l=abəʕno mqatanno aʕmux",
+            "turoyo": "kalən ko-mqatli aʕla aḥ=ḥadode ono m-i=naqla d-ḥzeli-lux l=abəʕno mqatanno aʕmux Ich habe schon als ich dich sah nicht mit dir kämpfen wollen",
             "translations": [
-              "Ich habe schon, als ich dich sah, nicht mit dir kämpfen wollen (731; 78/115"
+              "die Schmiede stritten sich um sie (das Messer f)"
             ],
-            "references": ["309; 57/161"]
+            "references": [
+              "309",
+              "57/161",
+              "731",
+              "78/115"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kalən ko-mqatli aʕla aḥ=ḥadode "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Schmiede stritten sich um sie (das Messer f)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "309"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "57/161"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono m-i=naqla d-ḥzeli-lux"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l=abəʕno mqatanno aʕmux Ich habe schon"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " als ich dich sah"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " nicht mit dir kämpfen wollen "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "ref",
+                "value": "731"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/115"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "kalən ko-mqatli aʕla aḥ=ḥadode ʻdie Schmiede stritten sich um sie (das Messer f)ʼ; 309; 57/161; ono m-i=naqla d-ḥzeli-lux, l=abəʕno mqatanno aʕmux Ich habe schon, als ich dich sah, nicht mit dir kämpfen wollen (731; 78/115)"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "mqatli-wo ʕam ar=rəmoye lo=maqbeli-wo u=ḥukm 310; prs 89/13;",
+            "turoyo": "mqatli-wo ʕam ar=rəmoye lo=maqbeli-wo u=ḥukm prs",
             "translations": [
               "sie führten Krieg gegen die Türken und wollten die Regierung nicht anerkennen"
             ],
-            "references": ["310", "89/13"]
+            "references": [
+              "310",
+              "89/13"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mqatli-wo ʕam ar=rəmoye lo=maqbeli-wo u=ḥukm "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie führten Krieg gegen die Türken und wollten die Regierung nicht anerkennenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "310"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "89/13"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mqatli-wo ʕam ar=rəmoye lo=maqbeli-wo u=ḥukm ʻsie führten Krieg gegen die Türken und wollten die Regierung nicht anerkennenʼ; 310; prs 89/13;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "qum izox šqu-la mene, kān l-awo-le qatelu 311; prs 137/15;",
+            "turoyo": "qum izox šqu-la mene kān l-awo-le qatelu prs",
             "translations": [
               "mach dich auf dich auf, geh hin und nimm sie ihm; wenn er sie nicht gutwillig gibt, so kämpft miteinander"
             ],
-            "references": ["311", "137/15"]
+            "references": [
+              "311",
+              "137/15"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qum izox šqu-la mene"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kān l-awo-le qatelu "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmach dich auf dich auf, geh hin und nimm sie ihm; wenn er sie nicht gutwillig gibt, so kämpft miteinanderʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "311"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "137/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "qum izox šqu-la mene, kān l-awo-le qatelu ʻmach dich auf dich auf, geh hin und nimm sie ihm; wenn er sie nicht gutwillig gibt, so kämpft miteinanderʼ; 311; prs 137/15;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "streiten;"
   ],
   "uncertain": false
 }

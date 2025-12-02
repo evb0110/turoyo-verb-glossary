@@ -14,17 +14,67 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mətʔaṯalle", "mətʔaṯər"],
+      "forms": [
+        "mətʔaṯalle",
+        "mətʔaṯər"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "hīšlə=mətʔaṯrutu 804; 68/51;",
-            "translations": [],
-            "references": ["804; 68/51"]
+            "turoyo": "hīš lə=mətʔaṯrutu",
+            "translations": [
+              "ihr braucht deswegen nicht betrübt zu sein"
+            ],
+            "references": [
+              "804",
+              "68/51"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hīš lə=mətʔaṯrutu "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻihr braucht deswegen nicht betrübt zu seinʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "804"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "68/51"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hīš lə=mətʔaṯrutu ʻihr braucht deswegen nicht betrübt zu seinʼ; 804; 68/51;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "bekümmern;"
   ],
   "uncertain": false
 }

@@ -14,47 +14,355 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["baxi", "boxe"],
+      "forms": [
+        "baxi",
+        "boxe"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "zməlle b-i=ʕayno w-baxi ʕal Zine 347; prs 3/21; 58/37; 64/44; 75/15; məd-məlle hawxa, Šahrzamān ġálabe qhir mʔaṯər, baxi, naḥiti ad=damʕ-ayḏe ‘’noše ġálabe mənne baxən ʕal u=mamro d-mə́r-way-le, liʔanno ko-tawro u=lebo",
+            "turoyo": "zməlle b-i=ʕayno w-baxi ʕal Zine prs məd-məlle hawxa Šahrzamān ġálabe qhir mʔaṯər baxi naḥiti ad=damʕ-ayḏe noše ġálabe mənne baxən ʕal u=mamro d-mə́r-way-le liʔanno ko-tawro u=lebo",
             "translations": [
-              "ʻer sang an der Quelle und weinte über Sineʼ;",
-              "Als er das sagte, wurde Schahrzamān sehr zornig und betrübt. Er weinte, seine Tränen flossen herab",
-              "‘Und viele Leute weinten über die Worte, die er gesungen hatte, weil das Lied zu Herzen geht’; 35/45 [MT]"
+              "er sang an der Quelle und weinte über Sine",
+              "‘Als er das sagte, wurde Schahrzamān sehr zornig und betrübt. Er weinte, seine Tränen flossen herab’",
+              "‘Und viele Leute weinten über die Worte, die er gesungen hatte, weil das Lied zu Herzen geht’"
             ],
-            "references": ["347", "3/21"]
+            "references": [
+              "347",
+              "3/21",
+              "58/37",
+              "64/44",
+              "75/15",
+              "24/239",
+              "35/45"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "zməlle b-i=ʕayno w-baxi ʕal Zine "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer sang an der Quelle und weinte über Sineʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "347"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "3/21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "58/37"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "64/44"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " məd-məlle hawxa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " Šahrzamān ġálabe qhir mʔaṯər"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " baxi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " naḥiti ad=damʕ-ayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Als er das sagte, wurde Schahrzamān sehr zornig und betrübt. Er weinte, seine Tränen flossen herab’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/239"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " noše ġálabe mənne baxən ʕal u=mamro d-mə́r-way-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " liʔanno ko-tawro u=lebo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Und viele Leute weinten über die Worte, die er gesungen hatte, weil das Lied zu Herzen geht’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "35/45"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "zməlle b-i=ʕayno w-baxi ʕal Zine ʻer sang an der Quelle und weinte über Sineʼ; 347; prs 3/21; 58/37; 64/44; 75/15; məd-məlle hawxa, Šahrzamān ġálabe qhir mʔaṯər, baxi, naḥiti ad=damʕ-ayḏe ‘Als er das sagte, wurde Schahrzamān sehr zornig und betrübt. Er weinte, seine Tränen flossen herab’; 24/239; noše ġálabe mənne baxən ʕal u=mamro d-mə́r-way-le, liʔanno ko-tawro u=lebo ‘Und viele Leute weinten über die Worte, die er gesungen hatte, weil das Lied zu Herzen geht’; 35/45 [MT]"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "i=ʕamṯo k-uzzá k-muṭyo l-u=ṭarʕo d-u=aḥunayḏa, b-aṯna d-kət-yo miṯo, w g-duryo brawo aʕle w g-buxyo 356; 6/37; madʕalle ḥa m-as=sow-anək d-kit-we tamo daworo k-boxe ‘; 24/234; ʕal mu g-boxət? ‘’; 24/285",
+            "turoyo": "i=ʕamṯo k-uzzá k-muṭyo l-u=ṭarʕo d-u=aḥunayḏa b-aṯna d-kət-yo miṯo w g-duryo brawo aʕle w g-buxyo madʕalle ḥa m-as=sow-anək d-kit-we tamo daworo k-boxe ʕal mu g-boxət?",
             "translations": [
-              "ʻdie Tante geht und kommt zu dem Türe ihres Bruders, - der ist ja (angeblich) tot -, stimmt die Totenklage über ihn an und weintʼ;",
-              "Einer der Alten, der dort pflügte, antwortete weinend’",
-              "Worüber weinst du?"
+              "die Tante geht und kommt zu dem Türe ihres Bruders, - der ist ja (angeblich) tot -, stimmt die Totenklage über ihn an und weint",
+              "‘Einer der Alten, der dort pflügte, antwortete weinend’",
+              "‘Worüber weinst du?’"
             ],
-            "references": ["356; 6/37", "24/234"]
+            "references": [
+              "356",
+              "6/37",
+              "24/234",
+              "24/285"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=ʕamṯo k-uzzá k-muṭyo l-u=ṭarʕo d-u=aḥunayḏa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-aṯna d-kət-yo miṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w g-duryo brawo aʕle w g-buxyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Tante geht und kommt zu dem Türe ihres Bruders, - der ist ja (angeblich) tot -, stimmt die Totenklage über ihn an und weintʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "356"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/37"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " madʕalle ḥa m-as=sow-anək d-kit-we tamo daworo k-boxe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Einer der Alten, der dort pflügte, antwortete weinend’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/234"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕal mu g-boxət? "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Worüber weinst du?’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/285"
+              }
+            ],
+            "text": "i=ʕamṯo k-uzzá k-muṭyo l-u=ṭarʕo d-u=aḥunayḏa, b-aṯna d-kət-yo miṯo, w g-duryo brawo aʕle w g-buxyo ʻdie Tante geht und kommt zu dem Türe ihres Bruders, - der ist ja (angeblich) tot -, stimmt die Totenklage über ihn an und weintʼ; 356; 6/37; madʕalle ḥa m-as=sow-anək d-kit-we tamo daworo k-boxe ‘Einer der Alten, der dort pflügte, antwortete weinend’; 24/234; ʕal mu g-boxət? ‘Worüber weinst du?’; 24/285"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["mabxele", "mabxe"],
+      "forms": [
+        "mabxele",
+        "mabxe"
+      ],
       "conjugations": {
         "Infectum": [
           {
             "turoyo": "hano lo=ko-mabxe-li u=med-ano bas ko-mabxe-li u=abr-ayḏi gawər ḥḏo Qaračiye",
             "translations": [
-              "‘This does not make me cry. But the fact that my son has married a gypsy makes me cry’ 82/71;"
+              "‘This does not make me cry. But the fact that my son has married a gypsy makes me cry’"
             ],
-            "references": []
+            "references": [
+              "82/71"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hano lo=ko-mabxe-li u=med-ano bas ko-mabxe-li u=abr-ayḏi gawər ḥḏo Qaračiye "
+              },
+              {
+                "kind": "translation",
+                "value": "‘This does not make me cry. But the fact that my son has married a gypsy makes me cry’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "82/71"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hano lo=ko-mabxe-li u=med-ano bas ko-mabxe-li u=abr-ayḏi gawər ḥḏo Qaračiye ‘This does not make me cry. But the fact that my son has married a gypsy makes me cry’ 82/71;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "weinen;",
+    "Action noun",
+    "crying, weeping;",
+    "weinen machen;"
   ],
   "uncertain": false
 }

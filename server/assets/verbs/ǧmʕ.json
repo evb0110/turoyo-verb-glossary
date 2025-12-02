@@ -14,19 +14,78 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ǧməʕle", "ǧoməʕ"],
+      "forms": [
+        "ǧməʕle",
+        "ǧoməʕ"
+      ],
       "conjugations": {
         "Infectum-wa": [
           {
-            "turoyo": "maḥat-wa-lle hani aṣ=ṣərṭawoṯ-ani ǧomaʕ-wa-lle MM 3;",
+            "turoyo": "maḥat-wa-lle hani aṣ=ṣərṭawoṯ-ani ǧomaʕ-wa-lle у Ястрова перевод по-другому зафиксирован нужно переделать",
             "translations": [
               "er befestigte diese Bilder (auf einem Stück Leinwand) und sammelte sie"
             ],
-            "references": ["3"]
+            "references": [
+              "MM 3"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maḥat-wa-lle hani aṣ=ṣərṭawoṯ-ani ǧomaʕ-wa-lle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer befestigte diese Bilder (auf einem Stück Leinwand) und sammelte sieʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "у Ястрова перевод по-другому зафиксирован"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " нужно переделать"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 3"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "maḥat-wa-lle hani aṣ=ṣərṭawoṯ-ani ǧomaʕ-wa-lle ʻer befestigte diese Bilder (auf einem Stück Leinwand) und sammelte sieʼ (у Ястрова перевод по-другому зафиксирован, нужно переделать); MM 3;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "sammeln;"
   ],
   "uncertain": false
 }

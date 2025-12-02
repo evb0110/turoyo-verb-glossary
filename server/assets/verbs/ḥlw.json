@@ -14,51 +14,322 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ḥlule", "ḥolu"],
+      "forms": [
+        "ḥlule",
+        "ḥolu"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ḥluwweḥalwomenasəmmeqaṭiro 272; prs 90/6; 94/193;",
-            "translations": ["die Milch dick"],
-            "references": ["272", "90/6"]
+            "turoyo": "ḥluwwe ḥalwo mena səmme qaṭiro prs",
+            "translations": [
+              "sie melkten sie und liessen die Milch dick werden"
+            ],
+            "references": [
+              "272",
+              "90/6",
+              "94/193"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥluwwe ḥalwo mena səmme qaṭiro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie melkten sie und liessen die Milch dick werdenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "272"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "90/6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/193"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥluwwe ḥalwo mena səmme qaṭiro ʻsie melkten sie und liessen die Milch dick werdenʼ; 272; prs 90/6; 94/193;"
           }
         ],
         "Preterit-wa": [
           {
-            "turoyo": "bəṯṯər me də-ḥlú-way-lanaʕ=ʕeze w at=tawroṯe, g-maḥtí-way-na-le b-i=baroše",
-            "translations": ["die Ziegen und", "(die Milch m) in"],
-            "references": []
+            "turoyo": "bəṯṯər me də-ḥlú-way-lan aʕ=ʕeze w at=tawroṯe g-maḥtí-way-na-le b-i=baroše",
+            "translations": [
+              "nachdem wir die Ziegen und Kühe gemolken hatten, taten wir (die Milch m) in einen Kochtopf"
+            ],
+            "references": [
+              "JL 12.14.1"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bəṯṯər me də-ḥlú-way-lan aʕ=ʕeze w at=tawroṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-maḥtí-way-na-le b-i=baroše "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnachdem wir die Ziegen und Kühe gemolken hatten, taten wir (die Milch m) in einen Kochtopfʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 12.14.1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "bəṯṯər me də-ḥlú-way-lan aʕ=ʕeze w at=tawroṯe, g-maḥtí-way-na-le b-i=baroše ʻnachdem wir die Ziegen und Kühe gemolken hatten, taten wir (die Milch m) in einen Kochtopfʼ JL 12.14.1;"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "ḥəlwí-way-na u=ḥalwo m-aʕ=ʕeze, w m-at=tawroṯe",
-            "translations": ["die Milch von den Ziegen und den"],
-            "references": []
+            "turoyo": "ḥəlwí-way-na u=ḥalwo m-aʕ=ʕeze w m-at=tawroṯe",
+            "translations": [
+              "wir melkten die Milch von den Ziegen und den Kühen"
+            ],
+            "references": [
+              "JL 11.12.1"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥəlwí-way-na u=ḥalwo m-aʕ=ʕeze"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w m-at=tawroṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir melkten die Milch von den Ziegen und den Kühenʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 11.12.1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥəlwí-way-na u=ḥalwo m-aʕ=ʕeze, w m-at=tawroṯe ʻwir melkten die Milch von den Ziegen und den Kühenʼ JL 11.12.1;"
           }
         ],
         "Part act.": [
           {
-            "turoyo": "kitohən m-u=săwāl, i=naqqa i=ḥalawto d-ko-ḥulwo i=tərto aw i=ʕezo aw i=ʕwonolə=k-obi u=ḥalwaṯṯekulehul d-lə=maḏ̣iri u=saxlaṯṯeaʕlayye, məd-maḏ̣ərre u=saxlaṯṯeaʕlayye, edi k-obi u=ḥalwaṯṯe 277; 94/191;",
+            "turoyo": "kito hən m-u=săwāl i=naqqa i=ḥalawto d-ko-ḥulwo i=tərto aw i=ʕezo aw i=ʕwono lə=k-obi u=ḥalwaṯṯe kule hul d-lə=maḏ̣iri u=saxlaṯṯe aʕlayye məd-maḏ̣ərre u=saxlaṯṯe aʕlayye edi k-obi u=ḥalwaṯṯe",
             "translations": [
-              "die Kuh, die",
-              "das Schaf,",
-              "Milch her,",
-              "Muttergefühle",
-              ". Tut man das, so"
+              "bei manchen Tieren gibt die Kuh, die Ziege oder das Schaf, wenn die Melkerin sie melkt, nicht ihre ganze Milch her, ehe man nicht (ihre Muttergefühle dadurch anregt, dass man) ihr Junges unter sie stellt. Tut man das, so geben sie ihre Milch her"
             ],
-            "references": ["277; 94/191"]
+            "references": [
+              "277",
+              "94/191"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kito hən m-u=săwāl"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naqqa i=ḥalawto d-ko-ḥulwo i=tərto aw i=ʕezo aw i=ʕwono lə=k-obi u=ḥalwaṯṯe kule hul d-lə=maḏ̣iri u=saxlaṯṯe aʕlayye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " məd-maḏ̣ərre u=saxlaṯṯe aʕlayye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " edi k-obi u=ḥalwaṯṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻbei manchen Tieren gibt die Kuh, die Ziege oder das Schaf, wenn die Melkerin sie melkt, nicht ihre ganze Milch her, ehe man nicht (ihre Muttergefühle dadurch anregt, dass man) ihr Junges unter sie stellt. Tut man das, so geben sie ihre Milch herʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "277"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/191"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kito hən m-u=săwāl, i=naqqa i=ḥalawto d-ko-ḥulwo i=tərto aw i=ʕezo aw i=ʕwono lə=k-obi u=ḥalwaṯṯe kule hul d-lə=maḏ̣iri u=saxlaṯṯe aʕlayye, məd-maḏ̣ərre u=saxlaṯṯe aʕlayye, edi k-obi u=ḥalwaṯṯe ʻbei manchen Tieren gibt die Kuh, die Ziege oder das Schaf, wenn die Melkerin sie melkt, nicht ihre ganze Milch her, ehe man nicht (ihre Muttergefühle dadurch anregt, dass man) ihr Junges unter sie stellt. Tut man das, so geben sie ihre Milch herʼ; 277; 94/191;"
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "i=barṯo d-u=šēx-ste, i=naqlad-k-uzzǝ́n l-u=ḥlowo, aw d-k-owən more l-u=săwāl, hiya-ste k-uzzayo l-tamo l-u=ḥlowoaʕmayye 277; 26/71 [MT];",
-            "translations": [],
-            "references": ["277; 26/71"]
+            "turoyo": "i=barṯo d-u=šēx-ste i=naqla d-k-uzzǝ́n l-u=ḥlowo aw d-k-owən more l-u=săwāl hiya-ste k-uzzayo l-tamo l-u=ḥlowo aʕmayye",
+            "translations": [
+              "wenn die Leute zum Melken gingen oder um das Vieh zu besorgen, ging auch die Tochter des Scheichs immer mit ihnen dorthin zum Melken"
+            ],
+            "references": [
+              "277",
+              "26/71"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=barṯo d-u=šēx-ste"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naqla d-k-uzzǝ́n l-u=ḥlowo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aw d-k-owən more l-u=săwāl"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hiya-ste k-uzzayo l-tamo l-u=ḥlowo aʕmayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn die Leute zum Melken gingen oder um das Vieh zu besorgen, ging auch die Tochter des Scheichs immer mit ihnen dorthin zum Melkenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "277"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/71"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=barṯo d-u=šēx-ste, i=naqla d-k-uzzǝ́n l-u=ḥlowo, aw d-k-owən more l-u=săwāl, hiya-ste k-uzzayo l-tamo l-u=ḥlowo aʕmayye ʻwenn die Leute zum Melken gingen oder um das Vieh zu besorgen, ging auch die Tochter des Scheichs immer mit ihnen dorthin zum Melkenʼ; 277; 26/71 [MT];"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "melken;"
   ],
   "uncertain": false
 }

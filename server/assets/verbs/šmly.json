@@ -14,42 +14,287 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mšamlele", "mšamle"],
+      "forms": [
+        "mšamlele",
+        "mšamle"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "naḥətno ono, mšamleli 789; 40/5, 14;",
-            "translations": ["went down and burned"],
-            "references": ["789; 40/5", "14"]
+            "turoyo": "naḥətno ono mšamleli",
+            "translations": [
+              "I went down and burned incense"
+            ],
+            "references": [
+              "789",
+              "40/5",
+              "14"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "naḥətno ono"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mšamleli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻI went down and burned incenseʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "789"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "40/5"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "naḥətno ono, mšamleli ʻI went down and burned incenseʼ; 789; 40/5, 14;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "hawičāx d-u=šəmloyo, aš=šamošelə=naḥiti d-mšamlən 789; 40/4;",
+            "turoyo": "hawi čāx d-u=šəmloyo aš=šamoše lə=naḥiti d-mšamlən",
             "translations": [
-              "it was time for burning of incense, deacons did not go down to burn"
+              "when it was time for burning of incense, deacons did not go down to burn incense"
             ],
-            "references": ["789; 40/4"]
+            "references": [
+              "789",
+              "40/4"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hawi čāx d-u=šəmloyo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aš=šamoše lə=naḥiti d-mšamlən "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwhen it was time for burning of incense, deacons did not go down to burn incenseʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "789"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "40/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hawi čāx d-u=šəmloyo, aš=šamoše lə=naḥiti d-mšamlən ʻwhen it was time for burning of incense, deacons did not go down to burn incenseʼ; 789; 40/4;"
           }
         ],
         "Part act.": [
           {
-            "turoyo": "ḥamənne k-owe mšamlono, w a=ḥrene k-əmmiqole 790; 94/37, 38;",
-            "translations": ["geistliche"],
-            "references": ["790; 94/37", "38"]
+            "turoyo": "ḥa mənne k-owe mšamlono w a=ḥrene k-əmmi qole",
+            "translations": [
+              "einer von ihnen schwingt das Rauchfass, die anderen singen geistliche Gesänge"
+            ],
+            "references": [
+              "790",
+              "94/37",
+              "38"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥa mənne k-owe mšamlono"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w a=ḥrene k-əmmi qole "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻeiner von ihnen schwingt das Rauchfass, die anderen singen geistliche Gesängeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "790"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/37"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "38"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥa mənne k-owe mšamlono, w a=ḥrene k-əmmi qole ʻeiner von ihnen schwingt das Rauchfass, die anderen singen geistliche Gesängeʼ; 790; 94/37, 38;"
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "hawičāx d-u=šəmloyo, aš=šamošelə=naḥitidə-mšamlən 789-790; 40/4;",
+            "turoyo": "hawi čāx d-u=šəmloyo aš=šamoše lə=naḥiti də-mšamlən -",
             "translations": [
-              "it was time for burning of incense, deacons did not go down to burn"
+              "when it was time for burning of incense, deacons did not go down to burn incense"
             ],
-            "references": ["789", "790; 40/4"]
+            "references": [
+              "789",
+              "790",
+              "40/4"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hawi čāx d-u=šəmloyo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aš=šamoše lə=naḥiti də-mšamlən "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwhen it was time for burning of incense, deacons did not go down to burn incenseʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "789"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "790"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "40/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hawi čāx d-u=šəmloyo, aš=šamoše lə=naḥiti də-mšamlən ʻwhen it was time for burning of incense, deacons did not go down to burn incenseʼ; 789-790; 40/4;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "räuchern (in der Kirche);"
   ],
   "uncertain": false
 }

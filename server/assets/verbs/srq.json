@@ -14,32 +14,98 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["srəqle", "sorəq"],
+      "forms": [
+        "srəqle",
+        "sorəq"
+      ],
       "conjugations": {
         "Preterit": [
           {
             "turoyo": "naḥət u=qašo azze l-u=šuqo d-u=săwāl w-šqile ḥmoro naʕimo ʕilo šafiro hawxa mamṭele l-u=bayto ḥəfle w-mhandazle w-srəqle",
             "translations": [
-              "‘The priest went to the cattle market and bought a beautiful colt. He tool him home, washed him, brushed him and combed him’ 84/21;"
+              "‘The priest went to the cattle market and bought a beautiful colt. He tool him home, washed him, brushed him and combed him’"
             ],
-            "references": []
+            "references": [
+              "84/21"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "naḥət u=qašo azze l-u=šuqo d-u=săwāl w-šqile ḥmoro naʕimo ʕilo šafiro hawxa mamṭele l-u=bayto ḥəfle w-mhandazle w-srəqle  "
+              },
+              {
+                "kind": "translation",
+                "value": "‘The priest went to the cattle market and bought a beautiful colt. He tool him home, washed him, brushed him and combed him’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "84/21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "naḥət u=qašo azze l-u=šuqo d-u=săwāl w-šqile ḥmoro naʕimo ʕilo šafiro hawxa mamṭele l-u=bayto ḥəfle w-mhandazle w-srəqle ‘The priest went to the cattle market and bought a beautiful colt. He tool him home, washed him, brushed him and combed him’ 84/21;"
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": ["msaraqle", "msarəq"],
+      "forms": [
+        "msaraqle",
+        "msarəq"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "msaraqli sawki 162;",
-            "translations": ["ich kämmte mich"],
-            "references": ["162"]
+            "turoyo": "msaraqli sawki",
+            "translations": [
+              "ich kämmte mich"
+            ],
+            "references": [
+              "162"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "msaraqli sawki "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich kämmte michʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "162"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "msaraqli sawki ʻich kämmte michʼ; 162;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "kämmen, striegeln;",
+    "kämmen;"
   ],
   "uncertain": false
 }

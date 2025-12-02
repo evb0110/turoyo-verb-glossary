@@ -5,17 +5,54 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["nǧəfle", "noǧəf"],
+      "forms": [
+        "nǧəfle",
+        "noǧəf"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "nǧəffe u=gubo 73;",
-            "translations": ["sie entschlammten die Zisterne"],
-            "references": ["73"]
+            "turoyo": "nǧəffe u=gubo",
+            "translations": [
+              "sie entschlammten die Zisterne"
+            ],
+            "references": [
+              "73"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "nǧəffe u=gubo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie entschlammten die Zisterneʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "nǧəffe u=gubo ʻsie entschlammten die Zisterneʼ; 73;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "entschlammen;"
   ],
   "uncertain": false
 }

@@ -14,21 +14,91 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mtambahle", "mtambəh"],
+      "forms": [
+        "mtambahle",
+        "mtambəh"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "bəṯṯər m-ayodə-mtambihileann=abn-ayḏekayiso, qayəm, mqadamlekibeḥamməšmo=suwariye, d-kət-ne yalife d-u=ḥarb 791; 29/14;",
+            "turoyo": "bəṯṯər m-ayo də-mtambihile ann=abn-ayḏe kayiso qayəm mqadamle kibe ḥamməšmo=suwariye d-kət-ne yalife d-u=ḥarb",
             "translations": [
-              "er seine Söhne gut",
-              "instruiert",
-              "kriegsgewohnte"
+              "danach, nachdem er seine Söhne gut instruiert hatte, schickte er etwa 500 kriegsgewohnte Reiter nach vorn"
             ],
-            "references": ["791; 29/14"]
+            "references": [
+              "791",
+              "29/14"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bəṯṯər m-ayo də-mtambihile ann=abn-ayḏe kayiso"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qayəm"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mqadamle kibe ḥamməšmo=suwariye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-kət-ne yalife d-u=ḥarb "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdanach, nachdem er seine Söhne gut instruiert hatte, schickte er etwa 500 kriegsgewohnte Reiter nach vornʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "791"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "bəṯṯər m-ayo də-mtambihile ann=abn-ayḏe kayiso, qayəm, mqadamle kibe ḥamməšmo=suwariye, d-kət-ne yalife d-u=ḥarb ʻdanach, nachdem er seine Söhne gut instruiert hatte, schickte er etwa 500 kriegsgewohnte Reiter nach vornʼ; 791; 29/14;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "instruieren;"
   ],
   "uncertain": false
 }

@@ -76,10 +76,8 @@ useHead({
         </div>
 
         <div class="space-y-6">
-            <UCard>
-                <template #header>
-                    <VerbHeader :verb="displayVerb!"/>
-                </template>
+            <div class="space-y-6 border-b border-gray-200 dark:border-gray-700 pb-6">
+                <VerbHeader :verb="displayVerb!"/>
 
                 <div v-if="editMode" class="space-y-4">
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
@@ -100,11 +98,11 @@ useHead({
                 <template v-else>
                     <EtymologyEditor v-model:etymology="(editableVerb as any).etymology"/>
                 </template>
-            </UCard>
+            </div>
 
             <div class="space-y-4">
                 <div class="flex items-center justify-between">
-                    <h2 class="text-xl font-semibold">
+                    <h2 class="text-xl font-semibold" v-if="false">
                         Stems
                     </h2>
                     <UButton
@@ -150,12 +148,13 @@ useHead({
                 </div>
             </div>
 
-            <UCard v-if="displayVerb?.idioms && displayVerb.idioms.length > 0">
-                <template #header>
-                    <h2 class="text-xl font-semibold">
-                        Idiomatic Phrases
-                    </h2>
-                </template>
+            <div
+                v-if="displayVerb?.idioms && displayVerb.idioms.length > 0"
+                class="space-y-4 border-t border-gray-200 dark:border-gray-700 pt-6"
+            >
+                <h2 class="text-xl font-semibold">
+                    Idiomatic Phrases
+                </h2>
                 <div class="space-y-3">
                     <div
                         v-for="(idiom, idx) in displayVerb.idioms"
@@ -165,7 +164,7 @@ useHead({
                         {{ idiom }}
                     </div>
                 </div>
-            </UCard>
+            </div>
         </div>
     </div>
 </template>

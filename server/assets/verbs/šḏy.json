@@ -14,63 +14,521 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["šḏele(šaḏi)", "šoḏe"],
+      "forms": [
+        "šḏele(šaḏi)",
+        "šoḏe"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "1) šḏele 440; 2) šḏelebətrehul d-čīk b-u=ḥŭdūddiḏe 440; 104/40; šdelebəṯr u=taʕloḥatta d-mŭsak-le 21/16; 4) šaḏibəṯre; 441;",
-            "translations": ["bis in sein"],
-            "references": ["1", "440; 2"]
+            "turoyo": "šḏele",
+            "translations": [
+              "er krempelte"
+            ],
+            "references": [
+              "1",
+              "440"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " šḏele "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer krempelteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "440"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) šḏele ʻer krempelteʼ; 440;"
+          },
+          {
+            "turoyo": "šḏele bətre hul d-čīk b-u=ḥŭdūd diḏe šdele bəṯr u=taʕlo ḥatta d-mŭsak-le",
+            "translations": [
+              "er verfolgte ihn bis in sein Gebiet hinein",
+              "‘er lief hinter dem Fuchse her, um ihn zu fangen’"
+            ],
+            "references": [
+              "2",
+              "440",
+              "104/40",
+              "21/16"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " šḏele bətre hul d-čīk b-u=ḥŭdūd diḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer verfolgte ihn bis in sein Gebiet hineinʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "440"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "104/40"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " šdele bəṯr u=taʕlo ḥatta d-mŭsak-le "
+              },
+              {
+                "kind": "translation",
+                "value": "‘er lief hinter dem Fuchse her, um ihn zu fangen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/16"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "2) šḏele bətre hul d-čīk b-u=ḥŭdūd diḏe ʻer verfolgte ihn bis in sein Gebiet hineinʼ; 440; 104/40; šdele bəṯr u=taʕlo ḥatta d-mŭsak-le ‘er lief hinter dem Fuchse her, um ihn zu fangen’; 21/16;"
+          },
+          {
+            "turoyo": "šaḏi bəṯre",
+            "translations": [],
+            "references": [
+              "4",
+              "441"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "4"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " šaḏi bəṯre"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "441"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "4) šaḏi bəṯre; 441;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "2) qay k-šoḏənbəṯrox 441; prs 175/26;",
-            "translations": [],
-            "references": ["2", "441"]
+            "turoyo": "qay k-šoḏən bəṯrox prs",
+            "translations": [
+              "weshalb laufen sie dir nach?"
+            ],
+            "references": [
+              "2",
+              "441",
+              "175/26"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qay k-šoḏən bəṯrox "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻweshalb laufen sie dir nach?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "441"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "175/26"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) qay k-šoḏən bəṯrox ʻweshalb laufen sie dir nach?ʼ; 441; prs 175/26;"
           },
           {
-            "turoyo": "Šoḏǝnwameqǝm",
-            "translations": ["used to card earlier, 2018_07_08_au_003_NE_1F;"],
-            "references": []
+            "turoyo": "Šoḏǝnwa meqǝm They used to card earlier 2018_07_08_au_003_NE_1F",
+            "translations": [],
+            "references": [
+              "1"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Šoḏǝnwa meqǝm"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " They used to card earlier"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " 2018_07_08_au_003_NE_1F"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) Šoḏǝnwa meqǝm, They used to card earlier, 2018_07_08_au_003_NE_1F;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "3) šḏayunuroeba 441; 113/115;",
-            "translations": [],
-            "references": ["3", "441; 113/115"]
-          }
-        ],
-        "Part. Pass.": [
-          {
-            "turoyo": "1) ketonošaḏyo 440; 65/305;",
-            "translations": ["gekrempelte"],
-            "references": ["1", "440; 65/305"]
+            "turoyo": "šḏayu nuro eba",
+            "translations": [
+              "lasst Feuer auf sie los"
+            ],
+            "references": [
+              "3",
+              "441",
+              "113/115"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " šḏayu nuro eba "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻlasst Feuer auf sie losʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "441"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "113/115"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "3) šḏayu nuro eba ʻlasst Feuer auf sie losʼ; 441; 113/115;"
           }
         ]
       }
     },
     {
-      "stem": "III",
-      "forms": ["mašḏele", "mašḏe"],
+      "stem": "Detransitive",
+      "forms": [
+        "III: mašḏele",
+        "mašḏe"
+      ],
       "conjugations": {
+        "Part. Pass.": [
+          {
+            "turoyo": "ketono šaḏyo",
+            "translations": [
+              "gekrempelte Baumwolle"
+            ],
+            "references": [
+              "1",
+              "440",
+              "65/305"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ketono šaḏyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻgekrempelte Baumwolleʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "440"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "65/305"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) ketono šaḏyo ʻgekrempelte Baumwolleʼ; 440; 65/305;"
+          }
+        ],
         "Preterit": [
           {
             "turoyo": "mašḏeli bəṯre",
             "translations": [],
-            "references": ["441"]
+            "references": [
+              "441"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mašḏeli bəṯre"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "441"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mašḏeli bəṯre; 441;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "Komašḏobəṯrekofəltobəṯreʕoraqḥretokoṯeʕ",
+            "turoyo": "Komašḏo bəṯre kofəlto bəṯre komahzam ʕoraq naqqa ḥreto koṯe ʕal u tanuro NE Terto Zare",
             "translations": [],
-            "references": []
+            "references": [
+              "270"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Komašḏo bəṯre"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kofəlto bəṯre"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " komahzam"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕoraq"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " naqqa ḥreto koṯe ʕal u tanuro "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "ref",
+                "value": "270"
+              },
+              {
+                "kind": "turoyo",
+                "value": " NE Terto Zare"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Komašḏo bəṯre, kofəlto bəṯre, komahzam, ʕoraq, naqqa ḥreto koṯe ʕal u tanuro (270 NE Terto Zare)"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "hinter jemand herstürzen, ihn verfolgen;"
   ],
   "uncertain": false
 }

@@ -14,17 +14,67 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mlawadle", "mlawəd"],
+      "forms": [
+        "mlawadle",
+        "mlawəd"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ko-mlawdi-la 464; 94/91;",
-            "translations": [],
-            "references": ["464; 94/91"]
+            "turoyo": "ko-mlawdi-la",
+            "translations": [
+              "sie häufen es (f)"
+            ],
+            "references": [
+              "464",
+              "94/91"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mlawdi-la "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie häufen es (f)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "464"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/91"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-mlawdi-la ʻsie häufen es (f)ʼ; 464; 94/91;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "häufen;"
   ],
   "uncertain": false
 }

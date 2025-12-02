@@ -14,19 +14,54 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mramadle", "mraməd"],
+      "forms": [
+        "mramadle",
+        "mraməd"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "l-i=aṯto d-ʕA mramadla ʕal qarʕe 215;",
+            "turoyo": "l-i=aṯto d-ʕA mramadla ʕal qarʕe",
             "translations": [
               "die Frau des A. schlug ihn mit der flachen Hand auf den Kopf (als ob sie Asche auf ihn schüttete)"
             ],
-            "references": ["215"]
+            "references": [
+              "215"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-i=aṯto d-ʕA mramadla ʕal qarʕe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Frau des A. schlug ihn mit der flachen Hand auf den Kopf (als ob sie Asche auf ihn schüttete)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "215"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "l-i=aṯto d-ʕA mramadla ʕal qarʕe ʻdie Frau des A. schlug ihn mit der flachen Hand auf den Kopf (als ob sie Asche auf ihn schüttete)ʼ; 215;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "Asche auf den Kopf werfen, mit der flachen Hand die entsprechende Bewegung machen, schlagen;"
   ],
   "uncertain": false
 }

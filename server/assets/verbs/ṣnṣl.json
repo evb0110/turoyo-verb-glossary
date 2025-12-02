@@ -12,24 +12,203 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mṣanṣele", "mṣanṣəl"],
+      "forms": [
+        "mṣanṣele",
+        "mṣanṣəl"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "2) ko-miṣanṣli aš=šomayḏe 789;",
-            "translations": ["sein Nasenschleim trauft"],
-            "references": ["2", "789"]
+            "turoyo": "ánnaqla haka ʕaṣriye i=emo amṭéla-la əšmo d-feyəḥto d-u=barġal am=maye d-ko-mṣanṣlən-ne m-u=barġal",
+            "translations": [
+              "abends brachte ihnen die Mutter etwa ein wenig Spülwasser von der Weizengrütze, von der Brühe, die man von der Weizengrütze abtraufen lässt"
+            ],
+            "references": [
+              "1",
+              "789",
+              "75/224",
+              "94/133"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ánnaqla haka ʕaṣriye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=emo amṭéla-la əšmo d-feyəḥto d-u=barġal"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " am=maye d-ko-mṣanṣlən-ne m-u=barġal "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻabends brachte ihnen die Mutter etwa ein wenig Spülwasser von der Weizengrütze, von der Brühe, die man von der Weizengrütze abtraufen lässtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "789"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/224"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/133"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) ánnaqla haka ʕaṣriye, i=emo amṭéla-la əšmo d-feyəḥto d-u=barġal, am=maye d-ko-mṣanṣlən-ne m-u=barġal ʻabends brachte ihnen die Mutter etwa ein wenig Spülwasser von der Weizengrütze, von der Brühe, die man von der Weizengrütze abtraufen lässtʼ; 789; 75/224; 94/133;"
           }
-        ],
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
         "Preterit": [
           {
-            "turoyo": "3) mṣanṣəl u=ʕamo 789;",
-            "translations": ["es kommen immer mehr Leute nach"],
-            "references": ["3", "789"]
+            "turoyo": "mṣanṣəl u=ʕamo",
+            "translations": [
+              "es kommen immer mehr Leute nach"
+            ],
+            "references": [
+              "3",
+              "789"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mṣanṣəl u=ʕamo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes kommen immer mehr Leute nachʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "789"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "3) mṣanṣəl u=ʕamo ʻes kommen immer mehr Leute nachʼ; 789;"
+          }
+        ],
+        "Infectum": [
+          {
+            "turoyo": "ko-miṣanṣli aš=šomayḏe",
+            "translations": [
+              "sein Nasenschleim trauft"
+            ],
+            "references": [
+              "2",
+              "789"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-miṣanṣli aš=šomayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsein Nasenschleim trauftʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "789"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) ko-miṣanṣli aš=šomayḏe ʻsein Nasenschleim trauftʼ; 789;"
           }
         ]
       }
     }
   ],
+  "idioms": null,
   "uncertain": false
 }

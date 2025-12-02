@@ -12,7 +12,6 @@ node_modules
 # Build directories
 dist
 build
-.output
 
 # Logs
 logs
@@ -103,3 +102,4 @@ data/baseline/
 !data/validation/regression_report.html
 !data/validation/regression_summary.json
 !data/validation/pattern_validation_report.json
+/.playwright-mcp/

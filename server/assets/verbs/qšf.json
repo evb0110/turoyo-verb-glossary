@@ -14,19 +14,73 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mqašəf", "miqašəf"],
+      "forms": [
+        "mqašəf",
+        "miqašəf"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mqašfi iḏoṯa 172; 113/146;",
+            "turoyo": "mqašfi iḏoṯa",
             "translations": [
               "ihre Hände sind ganz hart von Schwielen geworden"
             ],
-            "references": ["172; 113/146"]
+            "references": [
+              "172",
+              "113/146"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mqašfi iḏoṯa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻihre Hände sind ganz hart von Schwielen gewordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "172"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "113/146"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mqašfi iḏoṯa ʻihre Hände sind ganz hart von Schwielen gewordenʼ; 172; 113/146;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) schwielig werden, aufplatzen, verschmutzen;"
   ],
   "uncertain": false
 }

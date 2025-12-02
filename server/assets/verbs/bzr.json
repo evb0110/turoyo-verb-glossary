@@ -5,29 +5,92 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["bzəlle", "bozər"],
+      "forms": [
+        "bzəlle",
+        "bozər"
+      ],
       "conjugations": {
         "Preterit": [
           {
             "turoyo": "naqqa bzərle a=ṭlawḥe b-u=darbo",
             "translations": [
-              "‘He scattered the lentils along the way at once’; 44/73"
+              "‘He scattered the lentils along the way at once’"
             ],
-            "references": []
+            "references": [
+              "44/73"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "naqqa bzərle a=ṭlawḥe b-u=darbo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘He scattered the lentils along the way at once’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/73"
+              }
+            ],
+            "text": "naqqa bzərle a=ṭlawḥe b-u=darbo ‘He scattered the lentils along the way at once’; 44/73"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "bə-ḥḏo=naqla, bozár-way-n-e ; lə=bəzrí-way-na i=arʕo kula b-naqla",
+            "turoyo": "bə-ḥḏo=naqla bozár-way-n-e",
             "translations": [
-              "ʻI sowed it (the furrow) at one go’",
-              "ʻbesäten wir nicht das ganze Feld auf einmalʼ JL 10.11.6;"
+              "I sowed it (the furrow) at one go’ JL 10.11.4; lə=bəzrí-way-na i=arʕo kula b-naqla ʻbesäten wir nicht das ganze Feld auf einmal"
             ],
-            "references": []
+            "references": [
+              "JL 10.11.6"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bə-ḥḏo=naqla"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " bozár-way-n-e "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻI sowed it (the furrow) at one go’ JL 10.11.4; lə=bəzrí-way-na i=arʕo kula b-naqla ʻbesäten wir nicht das ganze Feld auf einmalʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 10.11.6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "bə-ḥḏo=naqla, bozár-way-n-e ʻI sowed it (the furrow) at one go’ JL 10.11.4; lə=bəzrí-way-na i=arʕo kula b-naqla ʻbesäten wir nicht das ganze Feld auf einmalʼ JL 10.11.6;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "säen, besäen;"
   ],
   "uncertain": false
 }

@@ -14,56 +14,775 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["mašəġle", "mašəġ"],
+      "forms": [
+        "mašəġle",
+        "mašəġ"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mašəġleiḏe w-foṯe 537; 60/104; hul d-mašəġlaiḏa; bəṯṯər me-d-matəmla u=layš-ayḏa 538; 78/190; mašəġġearʕe d-as=sefoqe 539; 44/63; mašəġliaǧ=ǧurḥe b-am=maye d-u=oksižan, manḏ̣əfili b-i=ispərto 540; 7/11; ʕdimomašəġolan w-lo=naḏ̣ifo 2/24; ašərmašəġġearʕe d-as=sefoqe",
+            "turoyo": "mašəġle iḏe w-foṯe hul d-mašəġla iḏa bəṯṯər me-d-matəmla u=layš-ayḏa mašəġġe arʕe d-as=sefoqe mašəġli aǧ=ǧurḥe b-am=maye d-u=oksižan manḏ̣əfili b-i=ispərto ʕdimo mašəġolan w-lo=naḏ̣ifo ašər mašəġġe arʕe d-as=sefoqe i.e. they ate all the food up",
             "translations": [
-              "den Boden der",
-              "Sauerstofflösung",
-              "‘They certainly licked the bottom of the plates clean’ (",
-              "they ate all the food up); 44/63"
+              "er wusch sich Hände und Gesicht",
+              "als sie mit dem Teig fertig war, wusch sie sich die Hände",
+              "sie putzten den Boden der Schüsseln blank",
+              "ich wusch mir die Wunden mit Sauerstofflösung und sauberte sie mit Alkohol",
+              "‘er (der Teppich, f) war hin. Wir wuschen ihn, aber er wurde nicht sauber’",
+              "‘They certainly licked the bottom of the plates clean’"
             ],
-            "references": ["537; 60/104", "538; 78/190"]
+            "references": [
+              "537",
+              "60/104",
+              "538",
+              "78/190",
+              "539",
+              "44/63",
+              "540",
+              "7/11",
+              "2/24",
+              "44/63"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mašəġle iḏe w-foṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wusch sich Hände und Gesichtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "537"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "60/104"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hul d-mašəġla iḏa"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər me-d-matəmla u=layš-ayḏa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals sie mit dem Teig fertig war, wusch sie sich die Händeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "538"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/190"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mašəġġe arʕe d-as=sefoqe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie putzten den Boden der Schüsseln blankʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "539"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/63"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mašəġli aǧ=ǧurḥe b-am=maye d-u=oksižan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " manḏ̣əfili b-i=ispərto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich wusch mir die Wunden mit Sauerstofflösung und sauberte sie mit Alkoholʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "540"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "7/11"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕdimo mašəġolan w-lo=naḏ̣ifo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘er (der Teppich, f) war hin. Wir wuschen ihn, aber er wurde nicht sauber’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/24"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ašər mašəġġe arʕe d-as=sefoqe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘They certainly licked the bottom of the plates clean’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "i.e. they ate all the food up"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/63"
+              }
+            ],
+            "text": "mašəġle iḏe w-foṯe ʻer wusch sich Hände und Gesichtʼ; 537; 60/104; hul d-mašəġla iḏa; bəṯṯər me-d-matəmla u=layš-ayḏa ʻals sie mit dem Teig fertig war, wusch sie sich die Händeʼ; 538; 78/190; mašəġġe arʕe d-as=sefoqe ʻsie putzten den Boden der Schüsseln blankʼ; 539; 44/63; mašəġli aǧ=ǧurḥe b-am=maye d-u=oksižan, manḏ̣əfili b-i=ispərto ʻich wusch mir die Wunden mit Sauerstofflösung und sauberte sie mit Alkoholʼ; 540; 7/11; ʕdimo mašəġolan w-lo=naḏ̣ifo ‘er (der Teppich, f) war hin. Wir wuschen ihn, aber er wurde nicht sauber’; 2/24; ašər mašəġġe arʕe d-as=sefoqe ‘They certainly licked the bottom of the plates clean’ (i.e. they ate all the food up); 44/63"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "aǧ=ǧulemlawte k-lozəm d-mitašiġi 552;",
-            "translations": ["schmutzige"],
-            "references": ["552"]
+            "turoyo": "ḥa mənne lə=qayəm w-húle-le i=məssine d-mašəġ k-mašiġo aǧ=ǧule - prs lo=k-mašəġan-ne b-am=maye də-k-məštən prs azzé hano amṭele taʕno d-salune maḥtile ʕal-u=tarʕohatta d-mašəġ-le w-mšaḥalle am=maye ġálabe",
+            "translations": [
+              "keiner von ihnen stand auf und gab ihm die Wasserkanne, dass er sich wüsche",
+              "sie wäscht die Wäsche",
+              "ich werde sie nicht in Trinkwasser waschen",
+              "‘er ging, holte eine Last Dornsträucher, legte sie vor die Tür, um ihn (Leiche, m) zu waschen, und machte das Wasser recht heiss’"
+            ],
+            "references": [
+              "544",
+              "36/15",
+              "545",
+              "546",
+              "3/31",
+              "548",
+              "147/29",
+              "25/48"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥa mənne lə=qayəm w-húle-le i=məssine d-mašəġ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻkeiner von ihnen stand auf und gab ihm die Wasserkanne, dass er sich wüscheʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "544"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-mašiġo aǧ=ǧule "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie wäscht die Wäscheʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "545"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "546"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "3/31"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=k-mašəġan-ne b-am=maye də-k-məštən "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich werde sie nicht in Trinkwasser waschenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "548"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "147/29"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " azzé hano amṭele taʕno d-salune"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥtile ʕal-u=tarʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": "hatta d-mašəġ-le w-mšaḥalle am=maye ġálabe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘er ging, holte eine Last Dornsträucher, legte  sie vor die Tür, um ihn (Leiche, m) zu waschen, und machte das Wasser recht heiss’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/48"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥa mənne lə=qayəm w-húle-le i=məssine d-mašəġ ʻkeiner von ihnen stand auf und gab ihm die Wasserkanne, dass er sich wüscheʼ; 544; 36/15; k-mašiġo aǧ=ǧule ʻsie wäscht die Wäscheʼ; 545-546; prs 3/31; lo=k-mašəġan-ne b-am=maye də-k-məštən ʻich werde sie nicht in Trinkwasser waschenʼ; 548; prs 147/29; azzé hano amṭele taʕno d-salune, maḥtile ʕal-u=tarʕo,hatta d-mašəġ-le w-mšaḥalle am=maye ġálabe ‘er ging, holte eine Last Dornsträucher, legte sie vor die Tür, um ihn (Leiche, m) zu waschen, und machte das Wasser recht heiss’; 25/48;"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "ḥzeliḥḏoʕal u=baḥar, mašəġo-wafoṯa 548; prs 119/25; əzzá-way-na, amṭí-way-naaḥ=ḥeṭe, maḥtí-way-na-nne b-lăganrabo, mašiġí-way-na-nnetre=feme b-mayeǧamude",
-            "translations": ["am Meere, die", "den Weizen,"],
-            "references": ["548", "119/25"]
+            "turoyo": "ḥzeli ḥḏo ʕal u=baḥar mašəġo-wa foṯa prs əzzá-way-na amṭí-way-na aḥ=ḥeṭe maḥtí-way-na-nne b-lăgan rabo mašiġí-way-na-nne tre=feme b-maye ǧamude",
+            "translations": [
+              "ich sah eine am Meere, die wusch ihr Gesicht",
+              "wir gingen und holten den Weizen, gaben ihn in einen grossen Bottich und wuschen ihn zweimal in kaltem Wasser"
+            ],
+            "references": [
+              "548",
+              "119/25",
+              "JL 17.5.1"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥzeli ḥḏo ʕal u=baḥar"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mašəġo-wa foṯa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich sah eine am Meere, die wusch ihr Gesichtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "548"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "119/25"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " əzzá-way-na"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " amṭí-way-na aḥ=ḥeṭe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥtí-way-na-nne b-lăgan rabo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mašiġí-way-na-nne tre=feme b-maye ǧamude "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir gingen und holten den Weizen, gaben ihn in einen grossen Bottich und wuschen ihn zweimal in kaltem Wasserʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 17.5.1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥzeli ḥḏo ʕal u=baḥar, mašəġo-wa foṯa ʻich sah eine am Meere, die wusch ihr Gesichtʼ; 548; prs 119/25; əzzá-way-na, amṭí-way-na aḥ=ḥeṭe, maḥtí-way-na-nne b-lăgan rabo, mašiġí-way-na-nne tre=feme b-maye ǧamude ʻwir gingen und holten den Weizen, gaben ihn in einen grossen Bottich und wuschen ihn zweimal in kaltem Wasserʼ JL 17.5.1;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "mgarwonofoṯa, məlle-la l-u=ḥakimo, omərašiġ-a b-u=baḥar, g-nayḥo 549; prs 119/19; mašiġuiḏe u foṯe",
-            "translations": [", und der Arzt"],
-            "references": ["549", "119/19"]
+            "turoyo": "mgarwono foṯa məlle-la l-u=ḥakimo omər ašiġ-a b-u=baḥar g-nayḥo prs mašiġu iḏe u foṯe",
+            "translations": [
+              "sie bekam Aussatz im Gesicht, und der Arzt hatte ihr befohlen, das Gesicht im Meere zu waschen, dann würde es gesund werden",
+              "wäscht ihm Hände und Gesicht"
+            ],
+            "references": [
+              "549",
+              "119/19",
+              "MM 77"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mgarwono foṯa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " məlle-la l-u=ḥakimo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " omər ašiġ-a b-u=baḥar"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-nayḥo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie bekam Aussatz im Gesicht, und der Arzt hatte ihr befohlen, das Gesicht im Meere zu waschen, dann würde es gesund werdenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "549"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "119/19"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mašiġu iḏe u foṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwäscht ihm Hände und Gesichtʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 77"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mgarwono foṯa, məlle-la l-u=ḥakimo, omər ašiġ-a b-u=baḥar, g-nayḥo ʻsie bekam Aussatz im Gesicht, und der Arzt hatte ihr befohlen, das Gesicht im Meere zu waschen, dann würde es gesund werdenʼ; 549; prs 119/19; mašiġu iḏe u foṯe ʻwäscht ihm Hände und Gesichtʼ MM 77;"
+          }
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "aǧ=ǧule mlawte k-lozəm d-mitašiġi",
+            "translations": [
+              "die schmutzige Wäsche muss gewaschen werden"
+            ],
+            "references": [
+              "552"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aǧ=ǧule mlawte k-lozəm d-mitašiġi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie schmutzige Wäsche muss gewaschen werdenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "552"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "aǧ=ǧule mlawte k-lozəm d-mitašiġi ʻdie schmutzige Wäsche muss gewaschen werdenʼ; 552;"
           }
         ],
         "Part. Pass.": [
           {
-            "turoyo": "ko-ḥoyər: kaʔanno as=sefoqayḏe-stemašiġe 552; 112/155; maqalbí-way-naaḥ=ḥeṭemašiġ-anəkbayn am=mayeraṯuḥeʕal i=nuroLehrbuch17.5.3;",
+            "turoyo": "ko-ḥoyər kaʔanno as=sefoqayḏe-ste mašiġe maqalbí-way-na aḥ=ḥeṭe mašiġ-anək bayn am=maye raṯuḥe ʕal i=nuro Lehrbuch",
             "translations": [
-              "abgewaschen",
-              "schütteten",
-              "gewaschenen",
-              "Weizen in das",
-              "Wasser auf"
+              "da sah er, dass die Schüsseln (wie) abgewaschen waren",
+              "wir schütteten den gewaschenen Weizen in das kochende Wasser auf dem Feuer"
             ],
-            "references": ["552; 112/155", "17"]
+            "references": [
+              "552",
+              "112/155",
+              "17.5.3"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-ḥoyər"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kaʔanno as=sefoqayḏe-ste mašiġe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda sah er, dass die Schüsseln (wie) abgewaschen warenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "552"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "112/155"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " maqalbí-way-na aḥ=ḥeṭe mašiġ-anək bayn am=maye raṯuḥe ʕal i=nuro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir schütteten den gewaschenen Weizen in das kochende Wasser auf dem Feuerʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Lehrbuch "
+              },
+              {
+                "kind": "ref",
+                "value": "17.5.3"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-ḥoyər: kaʔanno as=sefoqayḏe-ste mašiġe ʻda sah er, dass die Schüsseln (wie) abgewaschen warenʼ; 552; 112/155; maqalbí-way-na aḥ=ḥeṭe mašiġ-anək bayn am=maye raṯuḥe ʕal i=nuro ʻwir schütteten den gewaschenen Weizen in das kochende Wasser auf dem Feuerʼ; Lehrbuch 17.5.3;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "waschen, putzen;"
   ],
   "uncertain": false
 }

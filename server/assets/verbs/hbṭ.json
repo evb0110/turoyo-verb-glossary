@@ -5,20 +5,103 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["hbīṭ", "məhbəṭ"],
+      "forms": [
+        "hbīṭ",
+        "məhbəṭ"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "omərkle u=šamʕo b-iḏe. hbīṭ u=qašo, mayəṯ 126; prs 223/30; qāmazzinohul d-aṯyonodísaneməḷḷuxgd-oṯeno w-l=aṯəthīč l=qamayt-ayḏihbiṭono",
+            "turoyo": "omər kle u=šamʕo b-iḏe. hbīṭ u=qašo mayəṯ prs qām azzino hul d-aṯyono dísane məḷḷux gd-oṯeno w-l=aṯət hīč l=qamayt-ayḏi hbiṭono",
             "translations": [
-              ", die er in der Hand",
+              "dort ist die Kerze, die er in der Hand hält”, sagte der Pfaffe und starb vor Entsetzen",
               "‘I went (from home) until I came (to you). You have told me again and again: “I will come” – but you did not come toward me at all, and I was scared’"
             ],
-            "references": ["126", "223/30"]
+            "references": [
+              "126",
+              "223/30",
+              "JL 6.10.18"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "omər kle u=šamʕo b-iḏe. hbīṭ u=qašo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mayəṯ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ“dort ist die Kerze, die er in der Hand hält”, sagte der Pfaffe und starb vor Entsetzenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "126"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "223/30"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qām azzino hul d-aṯyono dísane məḷḷux gd-oṯeno w-l=aṯət hīč l=qamayt-ayḏi hbiṭono "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I went (from home) until I came (to you). You have told me again and again: “I will come” – but you did not come toward me at all, and I was scared’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 6.10.18"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "omər kle u=šamʕo b-iḏe. hbīṭ u=qašo, mayəṯ ʻ“dort ist die Kerze, die er in der Hand hält”, sagte der Pfaffe und starb vor Entsetzenʼ; 126; prs 223/30; qām azzino hul d-aṯyono dísane məḷḷux gd-oṯeno w-l=aṯət hīč l=qamayt-ayḏi hbiṭono ‘I went (from home) until I came (to you). You have told me again and again: “I will come” – but you did not come toward me at all, and I was scared’ JL 6.10.18;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.?) Schrecken bekommen;"
   ],
   "uncertain": false
 }

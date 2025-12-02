@@ -14,20 +14,92 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mḏ̣ele", "moḏ̣e"],
+      "forms": [
+        "mḏ̣ele",
+        "moḏ̣e"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "qayimi səmme waroqe, b-i=ḥəkume xd-i=ʕade, u=rayyis d-ǧəmhuriye u=wuzăra w kulle mḏ̣alle aʕlayye 57/149; awraqe me diḏi lo=mḏ̣alle d-qoṭaʕno əzzino l-u=ʕArāq",
+            "turoyo": "qayimi səmme waroqe b-i=ḥəkume xd-i=ʕade u=rayyis d-ǧəmhuriye u=wuzăra w kulle mḏ̣alle aʕlayye awraqe me diḏi lo=mḏ̣alle d-qoṭaʕno əzzino l-u=ʕArāq",
             "translations": [
               "da setzten sie Urkunden auf, bei der Regierung, wie es üblich war; der Präsident der Republik und der Wezir unterzeichneten",
-              "‘They did not sign my papers, for me to cross (the border) and go to Iraq’ EL 32;"
+              "‘They did not sign my papers, for me to cross (the border) and go to Iraq’"
             ],
-            "references": ["57/149"]
+            "references": [
+              "57/149",
+              "EL 32"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qayimi səmme waroqe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-i=ḥəkume xd-i=ʕade"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=rayyis d-ǧəmhuriye u=wuzăra w kulle mḏ̣alle aʕlayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda setzten sie Urkunden auf, bei der Regierung, wie es üblich war; der Präsident der Republik und der Wezir unterzeichnetenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "57/149"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " awraqe me diḏi lo=mḏ̣alle d-qoṭaʕno əzzino l-u=ʕArāq "
+              },
+              {
+                "kind": "translation",
+                "value": "‘They did not sign my papers, for me to cross (the border) and go to Iraq’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "EL 32"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "qayimi səmme waroqe, b-i=ḥəkume xd-i=ʕade, u=rayyis d-ǧəmhuriye u=wuzăra w kulle mḏ̣alle aʕlayye ʻda setzten sie Urkunden auf, bei der Regierung, wie es üblich war; der Präsident der Republik und der Wezir unterzeichnetenʼ; 57/149; awraqe me diḏi lo=mḏ̣alle d-qoṭaʕno əzzino l-u=ʕArāq ‘They did not sign my papers, for me to cross (the border) and go to Iraq’ EL 32;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "unterschreiben;"
   ],
   "uncertain": false
 }

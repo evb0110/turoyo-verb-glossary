@@ -14,58 +14,418 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["zməlle", "zomər"],
+      "forms": [
+        "zməlle",
+        "zomər"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "1) zmoro mkalaflan, zməlle 233; 35/46; mašmaʕ-li u=mede, də-zməlli! 11/212; zməlle b-i=ʕayno w-baxi ʕal Zine prs 3/21; zməlle i=zmart-ayḏe iḏəʕto d-k-ummi-la «lāviž»",
+            "turoyo": "zmoro mkalaflan zməlle mašmaʕ-li u=mede də-zməlli! zməlle b-i=ʕayno w-baxi ʕal Zine prs zməlle i=zmart-ayḏe iḏəʕto d-k-ummi-la «lāviž»",
             "translations": [
               "Gesang haben wir ihm auferlegt, und er hat gesungen",
               "las mich mal hören, was ich gesungen habe!",
               "er sang an der Quelle und weinte über Sine",
-              "‘Er sang sein berühmtes Lied,",
-              "das man auf kurdisch lāviž nennt’; 35/43"
+              "‘Er sang sein berühmtes Lied, das man auf kurdisch lāviž nennt’"
             ],
-            "references": ["1", "233; 35/46"]
+            "references": [
+              "1",
+              "233",
+              "35/46",
+              "11/212",
+              "3/21",
+              "35/43"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " zmoro mkalaflan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " zməlle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻGesang haben wir ihm auferlegt, und er hat gesungenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "233"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "35/46"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mašmaʕ-li u=mede"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " də-zməlli! "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻlas mich mal hören, was ich gesungen habe!ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/212"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " zməlle b-i=ʕayno w-baxi ʕal Zine "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer sang an der Quelle und weinte über Sineʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "3/21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " zməlle i=zmart-ayḏe iḏəʕto d-k-ummi-la «lāviž» "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er sang sein berühmtes Lied, das man auf kurdisch lāviž nennt’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "35/43"
+              }
+            ],
+            "text": "1) zmoro mkalaflan, zməlle ʻGesang haben wir ihm auferlegt, und er hat gesungenʼ; 233; 35/46; mašmaʕ-li u=mede, də-zməlli! ʻlas mich mal hören, was ich gesungen habe!ʼ; 11/212; zməlle b-i=ʕayno w-baxi ʕal Zine ʻer sang an der Quelle und weinte über Sineʼ; prs 3/21; zməlle i=zmart-ayḏe iḏəʕto d-k-ummi-la «lāviž» ‘Er sang sein berühmtes Lied, das man auf kurdisch lāviž nennt’; 35/43"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "1) u=Ḥann-ayḏan húle-la qərrēn, w-bdele k-zomər kurmānǧi k-obaʕno menux d-ádlalyo hat zumrat-te zmərto basəmto l-ay=yatiwe",
+            "turoyo": "u=Ḥann-ayḏan húle-la qərrēn w-bdele k-zomər kurmānǧi k-obaʕno menux d-ádlalyo hat zumrat-te zmərto basəmto l-ay=yatiwe",
             "translations": [
-              "anna erhob die Stimme und fing an auf kurdisch zu singen",
-              "‘Du sollst heute abend denen, die hier sitzen, ein schönes Lied vorsingen’; 35/41"
+              "unser Ḥanna erhob die Stimme und fing an auf kurdisch zu singen",
+              "‘Du sollst heute abend denen, die hier sitzen, ein schönes Lied vorsingen’"
             ],
-            "references": ["1"]
+            "references": [
+              "1",
+              "11/211",
+              "35/41"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=Ḥann-ayḏan húle-la qərrēn"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-bdele k-zomər kurmānǧi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻunser Ḥanna erhob die Stimme und fing an auf kurdisch zu singenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/211"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-obaʕno menux d-ádlalyo hat zumrat-te zmərto basəmto l-ay=yatiwe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Du sollst heute abend denen, die hier sitzen, ein schönes Lied vorsingen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "35/41"
+              }
+            ],
+            "text": "1) u=Ḥann-ayḏan húle-la qərrēn, w-bdele k-zomər kurmānǧi ʻunser Ḥanna erhob die Stimme und fing an auf kurdisch zu singenʼ; 11/211; k-obaʕno menux d-ádlalyo hat zumrat-te zmərto basəmto l-ay=yatiwe ‘Du sollst heute abend denen, die hier sitzen, ein schönes Lied vorsingen’; 35/41"
           },
           {
-            "turoyo": "ax=xōrtīn ko-šotən w-ko-rəqḏ̣i, w-am=məṭərb ko-zəmri 235; 45/5 [MT]",
+            "turoyo": "ax=xōrtīn ko-šotən w-ko-rəqḏ̣i w-am=məṭərb ko-zəmri",
             "translations": [
               "The young people were drinking and dancing, and the musician were playing music"
             ],
-            "references": ["235; 45/5"]
+            "references": [
+              "2",
+              "235",
+              "45/5"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ax=xōrtīn ko-šotən w-ko-rəqḏ̣i"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-am=məṭərb ko-zəmri "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻThe young people were drinking and dancing, and the musician were playing musicʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "235"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "45/5"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "2) ax=xōrtīn ko-šotən w-ko-rəqḏ̣i, w-am=məṭərb ko-zəmri ʻThe young people were drinking and dancing, and the musician were playing musicʼ; 235; 45/5 [MT]"
           }
         ],
         "Part act.": [
           {
-            "turoyo": "ḥa minayye zamoro w dayoqo d-kamána-we, w ġắlabe mašhūr-we 2/105;",
+            "turoyo": "ḥa minayye zamoro w dayoqo d-kamána-we w ġắlabe mašhūr-we",
             "translations": [
               "einer von ihnen war ein Musiker und Geigenspieler und sehr berühmt"
             ],
-            "references": ["2/105"]
+            "references": [
+              "2/105"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥa minayye zamoro w dayoqo d-kamána-we"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ġắlabe mašhūr-we "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻeiner von ihnen war ein Musiker und Geigenspieler und sehr berühmtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/105"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥa minayye zamoro w dayoqo d-kamána-we, w ġắlabe mašhūr-we ʻeiner von ihnen war ein Musiker und Geigenspieler und sehr berühmtʼ; 2/105;"
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "hən m-ax=xōrtīn, w m-ak=kačkat k-mubli aʕmayye makinat d-u=zmoro 237; 4/54;",
+            "turoyo": "hən m-ax=xōrtīn w m-ak=kačkat k-mubli aʕmayye makinat d-u=zmoro",
             "translations": [
               "manche Burschen und Mädchen bringen die Musikinstrumente mit"
             ],
-            "references": ["237; 4/54"]
+            "references": [
+              "237",
+              "4/54"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hən m-ax=xōrtīn"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w m-ak=kačkat k-mubli aʕmayye makinat d-u=zmoro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmanche Burschen und Mädchen bringen die Musikinstrumente mitʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "237"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "4/54"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hən m-ax=xōrtīn, w m-ak=kačkat k-mubli aʕmayye makinat d-u=zmoro ʻmanche Burschen und Mädchen bringen die Musikinstrumente mitʼ; 237; 4/54;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "1) singen, 2) aufspielen;"
   ],
   "uncertain": false
 }

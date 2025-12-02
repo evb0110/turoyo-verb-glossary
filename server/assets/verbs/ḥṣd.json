@@ -14,36 +14,320 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ḥṣədle", "ḥoṣəd"],
+      "forms": [
+        "ḥṣədle",
+        "ḥoṣəd"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "k-omər “ṭláwḥe-ne. k-mədwori, k-máwrəqi, k-məḥṣodi, k-mitákrəxi, w bəṯṯər g-məgrosi b-i=gurusto k-mitaḥtiʕal i=nuro, k-owənṭlawḥeḥa k-ŭxe-lən” 129; 6/52;",
-            "translations": ["gedroschen", "Linsengericht"],
-            "references": ["129; 6/52"]
+            "turoyo": "u=babo k-ḥoṣəd huwe lo=k-oṯe mene ḥoṣəd",
+            "translations": [
+              "der Vater schneidet Korn, er (der Sohn) bringt es nicht fertig, Korn zu schneiden"
+            ],
+            "references": [
+              "97",
+              "6/6",
+              "6/9"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=babo k-ḥoṣəd"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " huwe lo=k-oṯe mene ḥoṣəd "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Vater schneidet Korn, er (der Sohn) bringt es nicht fertig, Korn zu schneidenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "97"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/6"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=babo k-ḥoṣəd, huwe lo=k-oṯe mene ḥoṣəd ʻder Vater schneidet Korn, er (der Sohn) bringt es nicht fertig, Korn zu schneidenʼ; 97; 6/6, 6/9;"
           }
         ],
         "Part act.": [
           {
-            "turoyo": "ḥəlle: lo=k-nofəq m-ḥaq d-u=ḥṣodo; u=babomǝ́lle-le “abri, zux l-u=bayto, mqafay-lanḥaṣode” ; 6/7-8;",
+            "turoyo": "ḥəlle lo=k-nofəq m-ḥaq d-u=ḥṣodo u=babo mǝ́lle-le -",
             "translations": [
-              "ordentlich",
-              "es sein muss. Da",
-              ": “Mein Sohn,",
-              "Schnitter”"
+              "abri, zux l-u=bayto, mqafay-lan ḥaṣode",
+              "der Vater schaute: er schneidet nicht ordentlich, wie es sein muss. Da sprach er zu ihm: “Mein Sohn, geh nach Hause, suche uns Schnitter"
             ],
-            "references": ["6/7", "8"]
+            "references": [
+              "6/7",
+              "8"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥəlle"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=k-nofəq m-ḥaq d-u=ḥṣodo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=babo mǝ́lle-le "
+              },
+              {
+                "kind": "translation",
+                "value": "“abri, zux l-u=bayto, mqafay-lan ḥaṣode”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Vater schaute: er schneidet nicht ordentlich, wie es sein muss. Da sprach er zu ihm: “Mein Sohn, geh nach Hause, suche uns Schnitter”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/7"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥəlle: lo=k-nofəq m-ḥaq d-u=ḥṣodo; u=babo mǝ́lle-le “abri, zux l-u=bayto, mqafay-lan ḥaṣode” ʻder Vater schaute: er schneidet nicht ordentlich, wie es sein muss. Da sprach er zu ihm: “Mein Sohn, geh nach Hause, suche uns Schnitter”ʼ; 6/7-8;"
+          }
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Infectum": [
+          {
+            "turoyo": "k-omər",
+            "translations": [
+              "ṭláwḥe-ne. k-mədwori, k-máwrəqi, k-məḥṣodi, k-mitákrəxi, w bəṯṯər g-məgrosi b-i=gurusto k-mitaḥti ʕal i=nuro, k-owən ṭlawḥe ḥa k-ŭxe-lən",
+              "er sagt: “Linsen sind Linsen. Sie werden erst geackert, dann werden sie grün, dann werden sie geerntet, gedroschen und dann mit der Handmühle gemahlen und aufs Feuer gesetzt. Dann gibt es ein Linsengericht und das kann man essen"
+            ],
+            "references": [
+              "129",
+              "6/52"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-omər "
+              },
+              {
+                "kind": "translation",
+                "value": "“ṭláwḥe-ne. k-mədwori, k-máwrəqi, k-məḥṣodi, k-mitákrəxi, w bəṯṯər g-məgrosi b-i=gurusto k-mitaḥti ʕal i=nuro, k-owən ṭlawḥe ḥa k-ŭxe-lən”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer sagt: “Linsen sind Linsen. Sie werden erst geackert, dann werden sie grün, dann werden sie geerntet, gedroschen und dann mit der Handmühle gemahlen und aufs Feuer gesetzt. Dann gibt es ein Linsengericht und das kann man essen”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "129"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/52"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "k-omər “ṭláwḥe-ne. k-mədwori, k-máwrəqi, k-məḥṣodi, k-mitákrəxi, w bəṯṯər g-məgrosi b-i=gurusto k-mitaḥti ʕal i=nuro, k-owən ṭlawḥe ḥa k-ŭxe-lən” ʻer sagt: “Linsen sind Linsen. Sie werden erst geackert, dann werden sie grün, dann werden sie geerntet, gedroschen und dann mit der Handmühle gemahlen und aufs Feuer gesetzt. Dann gibt es ein Linsengericht und das kann man essen”ʼ; 129; 6/52;"
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "b-u=waxt d-u=ḥṣodoməlle l-u=abro: “abri qumgəd-əzzano l-u=ḥṣodo!” 123; 6/3, 5, 7;",
-            "translations": ["Kornschneidens", ": “Mein Sohn,", "Kornscheiden"],
-            "references": ["123; 6/3", "5"]
+            "turoyo": "b-u=waxt d-u=ḥṣodo məlle l-u=abro",
+            "translations": [
+              "abri qum gəd-əzzano l-u=ḥṣodo!",
+              "zur Zeit des Kornschneidens sprach er zu seinem Sohne: “Mein Sohn, mach dich auf, wir wollen zum Kornscheiden gehen!"
+            ],
+            "references": [
+              "123",
+              "6/3",
+              "5",
+              "7"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "b-u=waxt d-u=ḥṣodo məlle l-u=abro"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“abri qum gəd-əzzano l-u=ḥṣodo!”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻzur Zeit des Kornschneidens sprach er zu seinem Sohne: “Mein Sohn, mach dich auf, wir wollen zum Kornscheiden gehen!”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "123"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/3"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "5"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "7"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "b-u=waxt d-u=ḥṣodo məlle l-u=abro: “abri qum gəd-əzzano l-u=ḥṣodo!” ʻzur Zeit des Kornschneidens sprach er zu seinem Sohne: “Mein Sohn, mach dich auf, wir wollen zum Kornscheiden gehen!”ʼ; 123; 6/3, 5, 7;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "ernten, mähen;"
   ],
   "uncertain": false
 }

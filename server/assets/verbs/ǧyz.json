@@ -14,17 +14,76 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ǧəzle", "ǧoyəz"],
+      "forms": [
+        "ǧəzle",
+        "ǧoyəz"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "i=dukṯ-aṯi haw g-ǧoyáz-lan-yo 516-517; 96/27;",
-            "translations": ["dieser Platz ist für uns nicht mehr erlaubt"],
-            "references": ["516", "517; 96/27"]
+            "turoyo": "i=dukṯ-aṯi haw g-ǧoyáz-lan-yo -",
+            "translations": [
+              "dieser Platz ist für uns nicht mehr erlaubt"
+            ],
+            "references": [
+              "516",
+              "517",
+              "96/27"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=dukṯ-aṯi haw g-ǧoyáz-lan-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdieser Platz ist für uns nicht mehr erlaubtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "516"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "517"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "96/27"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=dukṯ-aṯi haw g-ǧoyáz-lan-yo ʻdieser Platz ist für uns nicht mehr erlaubtʼ; 516-517; 96/27;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "erlaubt sein, passen;"
   ],
   "uncertain": false
 }

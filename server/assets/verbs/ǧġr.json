@@ -14,24 +14,82 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ǧġəlle", "ǧoġər"],
+      "forms": [
+        "ǧġəlle",
+        "ǧoġər"
+      ],
       "conjugations": {
         "Preterit": [
           {
             "turoyo": "i=aṯto ǧġəḷḷa i=ṣopa",
-            "translations": ["‘The wife stoked the stove’ LB 258;"],
-            "references": []
+            "translations": [
+              "‘The wife stoked the stove’"
+            ],
+            "references": [
+              "LB 258"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=aṯto ǧġəḷḷa i=ṣopa "
+              },
+              {
+                "kind": "translation",
+                "value": "‘The wife stoked the stove’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 258"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=aṯto ǧġəḷḷa i=ṣopa ‘The wife stoked the stove’ LB 258;"
           }
         ],
         "Imperativ": [
           {
             "turoyo": "ǧġar i=ṣopa",
             "translations": [],
-            "references": ["249"]
+            "references": [
+              "249"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ǧġar i=ṣopa"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "249"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ǧġar i=ṣopa; 249;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "anheizen, anzünden, schüren;"
   ],
   "uncertain": false
 }

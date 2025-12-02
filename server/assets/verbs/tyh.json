@@ -14,24 +14,118 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["tayəh", "toyəh"],
+      "forms": [
+        "tayəh",
+        "toyəh"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "tayihi b-u=ṭuro 512; prs 152/29;",
-            "translations": [],
-            "references": ["512", "152/29"]
+            "turoyo": "tayihi b-u=ṭuro prs",
+            "translations": [
+              "sie irrten im Gebirge umher"
+            ],
+            "references": [
+              "512",
+              "152/29"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "tayihi b-u=ṭuro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie irrten im Gebirge umherʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "512"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "152/29"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "tayihi b-u=ṭuro ʻsie irrten im Gebirge umherʼ; 512; prs 152/29;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "k-tayhi m-i=taʕadda d-i=Ṭayuṯo 520; 11/40;",
-            "translations": ["verstreuen", "Übergriffe", "Muhammedanertums"],
-            "references": ["520; 11/40"]
+            "turoyo": "k-tayhi m-i=taʕadda d-i=Ṭayuṯo",
+            "translations": [
+              "sie verstreuen sich wegen der Übergriffe des Muhammedanertums"
+            ],
+            "references": [
+              "520",
+              "11/40"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-tayhi m-i=taʕadda d-i=Ṭayuṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie verstreuen sich wegen der Übergriffe des Muhammedanertumsʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "520"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/40"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "k-tayhi m-i=taʕadda d-i=Ṭayuṯo ʻsie verstreuen sich wegen der Übergriffe des Muhammedanertumsʼ; 520; 11/40;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "sich zerstreuen, umherirren;"
   ],
   "uncertain": false
 }

@@ -14,20 +14,75 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["xrəmle", "xorəm"],
+      "forms": [
+        "xrəmle",
+        "xorəm"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "u=ḥadodo azzele mamṭéle-le sayfo ḥreno. mamṭéle-le sayfo ḥreno mədle l-Ḥasané Aliki mḥele u=maxtuwo ʕal u=sayf-awo-ste, xrəmle u=sayf-awo-ste 72; 95/79;",
+            "turoyo": "u=ḥadodo azzele mamṭéle-le sayfo ḥreno. mamṭéle-le sayfo ḥreno mədle l-Ḥasané Aliki mḥele u=maxtuwo ʕal u=sayf-awo-ste xrəmle u=sayf-awo-ste",
             "translations": [
-              "der Schmied ging und brachte ein anderes Schwert.",
-              "asan Aliki schlug den Pfriem derauf, er durchlöcherte auch dieses"
+              "der Schmied ging und brachte ein anderes Schwert. Ḥasan Aliki schlug den Pfriem derauf, er durchlöcherte auch dieses"
             ],
-            "references": ["72; 95/79"]
+            "references": [
+              "72",
+              "95/79"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=ḥadodo azzele mamṭéle-le sayfo ḥreno. mamṭéle-le sayfo ḥreno mədle l-Ḥasané Aliki mḥele u=maxtuwo ʕal u=sayf-awo-ste"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " xrəmle u=sayf-awo-ste "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Schmied ging und brachte ein anderes Schwert. Ḥasan Aliki schlug den Pfriem derauf, er durchlöcherte auch diesesʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "72"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "95/79"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=ḥadodo azzele mamṭéle-le sayfo ḥreno. mamṭéle-le sayfo ḥreno mədle l-Ḥasané Aliki mḥele u=maxtuwo ʕal u=sayf-awo-ste, xrəmle u=sayf-awo-ste ʻder Schmied ging und brachte ein anderes Schwert. Ḥasan Aliki schlug den Pfriem derauf, er durchlöcherte auch diesesʼ; 72; 95/79;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "durchschlagen, durchbohren;"
   ],
   "uncertain": false
 }

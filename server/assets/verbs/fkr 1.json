@@ -14,19 +14,60 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mfakər", "mifakər"],
+      "forms": [
+        "mfakər",
+        "mifakər"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "lə-k-mifakanno b-u=tarʕo 249;",
+            "turoyo": "lə-k-mifakanno b-u=tarʕo",
             "translations": [
               "ich gehe nicht in die Tür hinein, (weil ich zu dick bin)"
             ],
-            "references": ["249"]
+            "references": [
+              "249"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lə-k-mifakanno b-u=tarʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich gehe nicht in die Tür hinein, (weil ich zu dick bin)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "249"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lə-k-mifakanno b-u=tarʕo ʻich gehe nicht in die Tür hinein, (weil ich zu dick bin)ʼ; 249;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(Detrans.) stecken, eingeklemmt bleiben;"
   ],
   "uncertain": false
 }

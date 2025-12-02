@@ -3,11 +3,17 @@ import type { IStructuredExample } from '~/types/IStructuredExample'
 
 defineProps<{
     structured: IStructuredExample
+    simple?: boolean
 }>()
 </script>
 
 <template>
-    <UCard :ui="{ body: 'space-y-3' }" class="border-l-4 border-primary/40" variant="soft">
+    <component
+        :is="simple ? 'div' : 'UCard'"
+        :ui="simple ? undefined : { body: 'space-y-3' }"
+        :class="simple ? '' : 'border-l-4 border-primary/40'"
+        :variant="simple ? undefined : 'soft'"
+    >
         <div class="text-lg leading-relaxed">
             <div v-if="structured && structured.items && structured.items.length">
                 <div v-if="structured.number" class="text-xl text-bold">
@@ -33,7 +39,7 @@ defineProps<{
                 <span class="turoyo-text">—</span>
             </template>
         </div>
-    </UCard>
+    </component>
 </template>
 
 <style scoped lang="scss">

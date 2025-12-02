@@ -12,50 +12,241 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["bʕəṭle", "boʕəṭ"],
+      "forms": [
+        "bʕəṭle",
+        "boʕəṭ"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "azzé u=qaṭuno, bʕəṭle, mawfaqle ak=kallat 67; prs 244/20; 96/258;",
+            "turoyo": "azzé u=qaṭuno bʕəṭle mawfaqle ak=kallat prs",
             "translations": [
-              "ʻda ging der Kater hin, kratzte das Geld herausʼ;"
+              "da ging der Kater hin, kratzte das Geld heraus"
             ],
-            "references": ["67", "244/20"]
+            "references": [
+              "67",
+              "244/20",
+              "96/258"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "azzé u=qaṭuno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " bʕəṭle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mawfaqle ak=kallat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda ging der Kater hin, kratzte das Geld herausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "67"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "244/20"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "96/258"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "azzé u=qaṭuno, bʕəṭle, mawfaqle ak=kallat ʻda ging der Kater hin, kratzte das Geld herausʼ; 67; prs 244/20; 96/258;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "lo=boḥṭət i=brinayḏi 97;",
-            "translations": ["ʻkratze meine Wunde nicht aufʼ;"],
-            "references": ["97"]
+            "turoyo": "lo=boḥṭət i=brinayḏi",
+            "translations": [
+              "kratze meine Wunde nicht auf"
+            ],
+            "references": [
+              "97"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lo=boḥṭət i=brinayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻkratze meine Wunde nicht aufʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "97"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lo=boḥṭət i=brinayḏi ʻkratze meine Wunde nicht aufʼ; 97;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "bʕaṭ əšmo u=ʕafr-awo, ono g-moḥeno b-ruḥi 120; 96/257;",
+            "turoyo": "bʕaṭ əšmo u=ʕafr-awo ono g-moḥeno b-ruḥi",
             "translations": [
-              "ʻscharre ein wenig von dieser Erde auf, dann kann ich mich losreissenʼ;"
+              "scharre ein wenig von dieser Erde auf, dann kann ich mich losreissen"
             ],
-            "references": ["120; 96/257"]
+            "references": [
+              "120",
+              "96/257"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bʕaṭ əšmo u=ʕafr-awo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono g-moḥeno b-ruḥi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻscharre ein wenig von dieser Erde auf, dann kann ich mich losreissenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "120"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "96/257"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "bʕaṭ əšmo u=ʕafr-awo, ono g-moḥeno b-ruḥi ʻscharre ein wenig von dieser Erde auf, dann kann ich mich losreissenʼ; 120; 96/257;"
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": ["mbaʕaṭle", "mbaʕəṭ"],
+      "forms": [
+        "mbaʕaṭle",
+        "mbaʕəṭ"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mbaʕaṭle b-u=zōl-awo ḥzele tarʕo 159;",
+            "turoyo": "mbaʕaṭle b-u=zōl-awo ḥzele tarʕo",
             "translations": [
-              "ʻer wühlte in dem Kehricht, da fand er eine Türeʼ;"
+              "er wühlte in dem Kehricht, da fand er eine Türe"
             ],
-            "references": ["159"]
+            "references": [
+              "159"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mbaʕaṭle b-u=zōl-awo ḥzele tarʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wühlte in dem Kehricht, da fand er eine Türeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "159"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mbaʕaṭle b-u=zōl-awo ḥzele tarʕo ʻer wühlte in dem Kehricht, da fand er eine Türeʼ; 159;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(auf)kratzen, (auf)scharren;",
+    "wühlen;"
   ],
   "uncertain": false
 }

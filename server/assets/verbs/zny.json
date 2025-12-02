@@ -14,19 +14,67 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["znele", "zone"],
+      "forms": [
+        "znele",
+        "zone"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "lo=kə-mṣale w lo=k-ṣoyəm w qoṭəl w g-zone w lo=g-zoyəʕ 356; prs 56/4;",
+            "turoyo": "lo=kə-mṣale w lo=k-ṣoyəm w qoṭəl w g-zone w lo=g-zoyəʕ prs",
             "translations": [
               "er betete nie und fastete nie, sondern mordete und schändete, ohne je vor etwas Angst zu haben"
             ],
-            "references": ["356", "56/4"]
+            "references": [
+              "356",
+              "56/4"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lo=kə-mṣale w lo=k-ṣoyəm w qoṭəl w g-zone w lo=g-zoyəʕ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer betete nie und fastete nie, sondern mordete und schändete, ohne je vor etwas Angst zu habenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "356"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "56/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lo=kə-mṣale w lo=k-ṣoyəm w qoṭəl w g-zone w lo=g-zoyəʕ ʻer betete nie und fastete nie, sondern mordete und schändete, ohne je vor etwas Angst zu habenʼ; 356; prs 56/4;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "Unzucht treiben;"
   ],
   "uncertain": false
 }

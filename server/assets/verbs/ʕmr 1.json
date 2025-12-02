@@ -14,81 +14,650 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ʕamər", "ʕomər"],
+      "forms": [
+        "ʕamər",
+        "ʕomər"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "alḥamdəlla, w šŭkūr d-ʕamər u=bayto w xəd meqəm 234; 29/374; ʕamər bayto. hama čike marfáy az=zineǧər-ani me-kaṯpoṯi 234; 57/77; ʕamiro i=qriṯo - Shabo",
+            "turoyo": "alḥamdəlla w šŭkūr d-ʕamər u=bayto w xəd meqəm ʕamər bayto. hama čike marfáy az=zineǧər-ani me-kaṯpoṯi ʕamiro i=qriṯo - Shabo",
             "translations": [
-              "ʻlob und dank sei Gott, dass das Haus neu belebt worden und wie früher istʼ;",
-              "ʻmöge dein Haus gedeihen, lockere doch ein wenig diese Ketten von meinen Schulternʼ;",
-              "ʻdas Dorf ist bewohnt wordenʼ;"
+              "lob und dank sei Gott, dass das Haus neu belebt worden und wie früher ist",
+              "möge dein Haus gedeihen, lockere doch ein wenig diese Ketten von meinen Schultern",
+              "das Dorf ist bewohnt worden"
             ],
-            "references": ["234; 29/374", "234; 57/77"]
+            "references": [
+              "234",
+              "29/374",
+              "234",
+              "57/77"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "alḥamdəlla"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w šŭkūr d-ʕamər u=bayto w xəd meqəm "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻlob und dank sei Gott, dass das Haus neu belebt worden und wie früher istʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "234"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/374"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕamər bayto. hama čike marfáy az=zineǧər-ani me-kaṯpoṯi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmöge dein Haus gedeihen, lockere doch ein wenig diese Ketten von meinen Schulternʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "234"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "57/77"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕamiro i=qriṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Dorf ist bewohnt wordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " - Shabo"
+              }
+            ],
+            "text": "alḥamdəlla, w šŭkūr d-ʕamər u=bayto w xəd meqəm ʻlob und dank sei Gott, dass das Haus neu belebt worden und wie früher istʼ; 234; 29/374; ʕamər bayto. hama čike marfáy az=zineǧər-ani me-kaṯpoṯi ʻmöge dein Haus gedeihen, lockere doch ein wenig diese Ketten von meinen Schulternʼ; 234; 57/77; ʕamiro i=qriṯo ʻdas Dorf ist bewohnt wordenʼ; - Shabo"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "ʕomər bayto 234; ʕomər bayte d-aloho, d-kət-wayt harke 234; 44/114; 97/45; ko-ʕomər u=ṭuro b-ay=yawm-ani - Shabo; way mo=kore ʕomər baytux",
+            "turoyo": "ʕomər bayto ʕomər bayte d-aloho d-kət-wayt harke ko-ʕomər u=ṭuro b-ay=yawm-ani - Shabo way mo=kore ʕomər baytux",
             "translations": [
-              "ʻdanke schönʼ;",
-              "ʻes ist ja ein Glück Gottes (wrtl. Gottes Haus möge belebt sein), dass du hier warstʼ;",
-              "ʻnowadays Tur Abdin is being populatedʼ;",
-              "ʻich danke dir herzlichst (wörtl.: einhundert Mal “möge dein Haus bewohnt sein!”)ʼ LB 283;"
+              "danke schön",
+              "es ist ja ein Glück Gottes (wrtl. Gottes Haus möge belebt sein), dass du hier warst",
+              "nowadays Tur Abdin is being populated",
+              "ich danke dir herzlichst (wörtl.: einhundert Mal “möge dein Haus bewohnt sein!”)"
             ],
-            "references": ["234", "234; 44/114"]
+            "references": [
+              "234",
+              "234",
+              "44/114",
+              "97/45",
+              "LB 283"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕomər bayto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdanke schönʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "234"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕomər bayte d-aloho"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-kət-wayt harke "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes ist ja ein Glück Gottes (wrtl. Gottes Haus möge belebt sein), dass du hier warstʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "234"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/114"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "97/45"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-ʕomər u=ṭuro b-ay=yawm-ani "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻnowadays Tur Abdin is being populatedʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " - Shabo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " way mo=kore ʕomər baytux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich danke dir herzlichst (wörtl.: einhundert Mal “möge dein Haus bewohnt sein!”)ʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 283"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ʕomər bayto ʻdanke schönʼ; 234; ʕomər bayte d-aloho, d-kət-wayt harke ʻes ist ja ein Glück Gottes (wrtl. Gottes Haus möge belebt sein), dass du hier warstʼ; 234; 44/114; 97/45; ko-ʕomər u=ṭuro b-ay=yawm-ani ʻnowadays Tur Abdin is being populatedʼ; - Shabo; way mo=kore ʕomər baytux ʻich danke dir herzlichst (wörtl.: einhundert Mal “möge dein Haus bewohnt sein!”)ʼ LB 283;"
           }
         ],
         "Part act.": [
           {
-            "turoyo": "huwe nafəq m-i=baxča, hule foṯe laf i=dukṯo d-kət-wayye a=greʕ-ayḏe w-i=aṯto b-i=baxč-ayo sakən ʕamire 237; 24/200 [MT]; i=qriṯo ʕamǝ́rto-yo, u=bayto ʕamíro-yo - Shabo; aḏəʕno qriṯo ʕamǝ́rto-yoLB 229; i=ṣufr-ayḏux ʕamərto-yo w-lo=ko-ḥozeno dukṯo, də-moyadno w-oxanno",
+            "turoyo": "huwe nafəq m-i=baxča hule foṯe laf i=dukṯo d-kət-wayye a=greʕ-ayḏe w-i=aṯto b-i=baxč-ayo sakən ʕamire i=qriṯo ʕamǝ́rto-yo u=bayto ʕamíro-yo - Shabo aḏəʕno qriṯo ʕamǝ́rto-yo i=ṣufr-ayḏux ʕamərto-yo w-lo=ko-ḥozeno dukṯo də-moyadno w-oxanno",
             "translations": [
-              "ʻda verliess er den Garten und wandte sich dem Orte zu, wo seine Knechte und seine Frau in jenem Garten sich häuslich niedergelassen hatten und wohntenʼ;",
-              "ʻich entnahm, dass es ein bewohntes Dorf warʼ;",
-              "‘Dein Tisch ist wohlbestellt, und ich sehe keine Stelle, wo ich zufassen und essen könnte’; 35/31"
+              "da verliess er den Garten und wandte sich dem Orte zu, wo seine Knechte und seine Frau in jenem Garten sich häuslich niedergelassen hatten und wohnten",
+              "ich entnahm, dass es ein bewohntes Dorf war",
+              "‘Dein Tisch ist wohlbestellt, und ich sehe keine Stelle, wo ich zufassen und essen könnte’"
             ],
-            "references": ["237; 24/200", "229"]
+            "references": [
+              "237",
+              "24/200",
+              "LB 229",
+              "35/31"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "huwe nafəq m-i=baxča"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hule foṯe laf i=dukṯo d-kət-wayye a=greʕ-ayḏe w-i=aṯto b-i=baxč-ayo sakən ʕamire "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda verliess er den Garten und wandte sich dem Orte zu, wo seine Knechte und seine Frau in jenem Garten sich häuslich niedergelassen hatten und wohntenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "237"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/200"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=qriṯo ʕamǝ́rto-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=bayto ʕamíro-yo - Shabo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aḏəʕno qriṯo ʕamǝ́rto-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich entnahm, dass es ein bewohntes Dorf warʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 229"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=ṣufr-ayḏux ʕamərto-yo w-lo=ko-ḥozeno dukṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " də-moyadno w-oxanno "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Dein Tisch ist wohlbestellt, und ich sehe keine Stelle, wo ich zufassen und essen könnte’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "35/31"
+              }
+            ],
+            "text": "huwe nafəq m-i=baxča, hule foṯe laf i=dukṯo d-kət-wayye a=greʕ-ayḏe w-i=aṯto b-i=baxč-ayo sakən ʕamire ʻda verliess er den Garten und wandte sich dem Orte zu, wo seine Knechte und seine Frau in jenem Garten sich häuslich niedergelassen hatten und wohntenʼ; 237; 24/200 [MT]; i=qriṯo ʕamǝ́rto-yo, u=bayto ʕamíro-yo - Shabo; aḏəʕno qriṯo ʕamǝ́rto-yo ʻich entnahm, dass es ein bewohntes Dorf warʼ; LB 229; i=ṣufr-ayḏux ʕamərto-yo w-lo=ko-ḥozeno dukṯo, də-moyadno w-oxanno ‘Dein Tisch ist wohlbestellt, und ich sehe keine Stelle, wo ich zufassen und essen könnte’; 35/31"
           },
           {
-            "turoyo": "ʕamuro:",
+            "turoyo": "ʕamuro",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕamuro"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              }
+            ],
+            "text": "ʕamuro:"
           },
           {
             "turoyo": "u=warzo ʕamúro-yo až=žăbaš ʕamúre-ne - Shabo",
             "translations": [
-              "ʻdas Melonenfeld ist eng bepflanztʼ;",
-              "ʻdie Wassermelonen sind eng bepflanztʼ;"
+              "das Melonenfeld ist eng bepflanzt",
+              "die Wassermelonen sind eng bepflanzt"
             ],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=warzo ʕamúro-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Melonenfeld ist eng bepflanztʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " až=žăbaš ʕamúre-ne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Wassermelonen sind eng bepflanztʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " - Shabo"
+              }
+            ],
+            "text": "u=warzo ʕamúro-yo ʻdas Melonenfeld ist eng bepflanztʼ; až=žăbaš ʕamúre-ne ʻdie Wassermelonen sind eng bepflanztʼ; - Shabo"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["maʕmalle", "maʕmər"],
+      "forms": [
+        "maʕmalle",
+        "maʕmər"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "“háno-yo u=bayto d-Be Qara Tāždīn” “háno-yo?” ummo: “e”. omər: “hano ono aloho maʕmal-le” 241; 66/188-189;",
+            "turoyo": "ummo . omər -",
             "translations": [
-              "ʻ“das ist das Haus von Kara Tadschdin”. “Dies ist es?” “Ja”. “Gott möge es gedeihen lassen”ʼ;"
+              "háno-yo u=bayto d-Be Qara Tāždīn",
+              "háno-yo?",
+              "e",
+              "hano ono aloho maʕmal-le",
+              "das ist das Haus von Kara Tadschdin”. “Dies ist es?” “Ja”. “Gott möge es gedeihen lassen"
             ],
-            "references": ["241; 66/188", "189"]
-          }
-        ],
-        "Part. Pass.": [
-          {
-            "turoyo": "ya abri hat nafiqət farəs ʕal d-u=bayto-ste-ne, w u=bayto máʕməro-yo 242; 29/372;",
-            "translations": [
-              "ʻdu, mein Sohn, hast dich als Ritter gezeigt, auch (dem Sohn) des Hauses gegenüber, und das Haus ist nun neu belebtʼ;"
+            "references": [
+              "241",
+              "66/188",
+              "189"
             ],
-            "references": ["242; 29/372"]
+            "tokens": [
+              {
+                "kind": "translation",
+                "value": "“háno-yo u=bayto d-Be Qara Tāždīn”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“háno-yo?”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ummo"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“e”"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". omər"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“hano ono aloho maʕmal-le”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ“das ist das Haus von Kara Tadschdin”. “Dies ist es?” “Ja”. “Gott möge es gedeihen lassen”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "241"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "66/188"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "189"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "“háno-yo u=bayto d-Be Qara Tāždīn” “háno-yo?” ummo: “e”. omər: “hano ono aloho maʕmal-le” ʻ“das ist das Haus von Kara Tadschdin”. “Dies ist es?” “Ja”. “Gott möge es gedeihen lassen”ʼ; 241; 66/188-189;"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Part. Pass.": [
+          {
+            "turoyo": "ya abri hat nafiqət farəs ʕal d-u=bayto-ste-ne w u=bayto máʕməro-yo",
+            "translations": [
+              "du, mein Sohn, hast dich als Ritter gezeigt, auch (dem Sohn) des Hauses gegenüber, und das Haus ist nun neu belebt"
+            ],
+            "references": [
+              "242",
+              "29/372"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ya abri hat nafiqət farəs ʕal d-u=bayto-ste-ne"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w u=bayto máʕməro-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu, mein Sohn, hast dich als Ritter gezeigt, auch (dem Sohn) des Hauses gegenüber, und das Haus ist nun neu belebtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "242"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/372"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ya abri hat nafiqət farəs ʕal d-u=bayto-ste-ne, w u=bayto máʕməro-yo ʻdu, mein Sohn, hast dich als Ritter gezeigt, auch (dem Sohn) des Hauses gegenüber, und das Haus ist nun neu belebtʼ; 242; 29/372;"
+          }
+        ]
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "1) beleben, wohnen; Pt. act.: ʕamiro – bewohnt; ʕamuro – eng bepflanzt (Pflanzen) – Shabo THIS ENTIRE ENTRY NEEDS TO BE REDONE.",
+    "1) gedeihen lassen;"
   ],
   "uncertain": false
 }

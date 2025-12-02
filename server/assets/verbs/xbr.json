@@ -14,28 +14,142 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mxaballe", "mxabər"],
+      "forms": [
+        "mxaballe",
+        "mxabər"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "hat ʕal d-aṯət w-mxabállux-li w-lə=tlelux meni, qum izúx mobel-e l-ruḥux, w-məṯnáḥ m-u=taʕb-ano 244; 47/14;",
+            "turoyo": "hat ʕal d-aṯət w-mxabállux-li w-lə=tlelux meni qum izúx mobel-e l-ruḥux w-məṯnáḥ m-u=taʕb-ano",
             "translations": [
               "Since you have come, have reported [this] to me and have not hidden yourself from me, go and take [the treasure] and rest from this trouble"
             ],
-            "references": ["244; 47/14"]
+            "references": [
+              "244",
+              "47/14"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hat ʕal d-aṯət w-mxabállux-li w-lə=tlelux meni"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qum izúx mobel-e l-ruḥux"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-məṯnáḥ m-u=taʕb-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻSince you have come, have reported [this] to me and have not hidden yourself from me, go and take [the treasure] and rest from this troubleʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "244"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "47/14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hat ʕal d-aṯət w-mxabállux-li w-lə=tlelux meni, qum izúx mobel-e l-ruḥux, w-məṯnáḥ m-u=taʕb-ano ʻSince you have come, have reported [this] to me and have not hidden yourself from me, go and take [the treasure] and rest from this troubleʼ; 244; 47/14;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "izolux mxabár ḥoli, amár k-aṯi Naro! 248; 69/569;",
+            "turoyo": "izolux mxabár ḥoli amár k-aṯi Naro!",
             "translations": [
               "geh und benachrichtige meinen Onkel, sage: Naro ist gekommen"
             ],
-            "references": ["248; 69/569"]
+            "references": [
+              "248",
+              "69/569"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "izolux mxabár ḥoli"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " amár k-aṯi Naro! "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻgeh und benachrichtige meinen Onkel, sage: Naro ist gekommenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "248"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/569"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "izolux mxabár ḥoli, amár k-aṯi Naro! ʻgeh und benachrichtige meinen Onkel, sage: Naro ist gekommenʼ; 248; 69/569;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "melden, benachrichtigen;"
   ],
   "uncertain": false
 }

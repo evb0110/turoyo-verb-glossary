@@ -12,29 +12,207 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["mašqele", "mašqe"],
+      "forms": [
+        "mašqele",
+        "mašqe"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "k-əzzeKandark-mašqeaǧ=ǧinaynat w g-doʕər 393; prs 22/17, 20;",
-            "translations": ["von nun an) ging Kander"],
-            "references": ["393", "22/17"]
+            "turoyo": "k-əzze Kandar k-mašqe aǧ=ǧinaynat w g-doʕər prs",
+            "translations": [
+              "(von nun an) ging Kander täglich die Gärten bewässern und kehrte wieder zurück"
+            ],
+            "references": [
+              "393",
+              "22/17",
+              "20"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-əzze Kandar k-mašqe aǧ=ǧinaynat w g-doʕər "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ(von nun an) ging Kander täglich die Gärten bewässern und kehrte wieder zurückʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "393"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "22/17"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "20"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "k-əzze Kandar k-mašqe aǧ=ǧinaynat w g-doʕər ʻ(von nun an) ging Kander täglich die Gärten bewässern und kehrte wieder zurückʼ; 393; prs 22/17, 20;"
           },
           {
-            "turoyo": "mašqenosayfayḏuxmašqenosayfayḏuxrəmḥayḏuxmašqena",
-            "translations": ["(269 5: 35) – I am going to sharpen your sword"],
-            "references": []
+            "turoyo": "ko mašqeno u sayfayḏux mašqeno u sayfayḏux i rəmḥayḏux mašqena – I am going to sharpen your sword",
+            "translations": [],
+            "references": [
+              "269",
+              "5",
+              "35"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": "  mašqeno u sayfayḏux"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mašqeno u sayfayḏux"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i rəmḥayḏux mašqena "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "ref",
+                "value": "269"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "5"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "35"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " – I am going to sharpen your sword"
+              }
+            ],
+            "text": "ko, mašqeno u sayfayḏux, mašqeno u sayfayḏux, i rəmḥayḏux mašqena (269 5: 35) – I am going to sharpen your sword"
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "maḥátle-lənmuklo w tušqiyo 409; prs 16/25;",
-            "translations": [],
-            "references": ["409", "16/25"]
+            "turoyo": "maḥátle-lən muklo w tušqiyo prs",
+            "translations": [
+              "da setzte er ihnen Speise und Trank vor"
+            ],
+            "references": [
+              "409",
+              "16/25"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maḥátle-lən muklo w tušqiyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda setzte er ihnen Speise und Trank vorʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "409"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "16/25"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "maḥátle-lən muklo w tušqiyo ʻda setzte er ihnen Speise und Trank vorʼ; 409; prs 16/25;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "begiessen, tränken (obsolote in the modern languge); sharpen"
   ],
   "uncertain": false
 }

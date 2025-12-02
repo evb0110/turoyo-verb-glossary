@@ -14,17 +14,54 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["mašlamle", "mašləm"],
+      "forms": [
+        "mašlamle",
+        "mašləm"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mašlamli 140;",
-            "translations": [],
-            "references": ["140"]
+            "turoyo": "mašlamli",
+            "translations": [
+              "ich brach das Fasten"
+            ],
+            "references": [
+              "140"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mašlamli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich brach das Fastenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "140"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mašlamli ʻich brach das Fastenʼ; 140;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "Fasten brechen;"
   ],
   "uncertain": false
 }

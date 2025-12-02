@@ -14,54 +14,367 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["labəṭ", "lobəṭ"],
+      "forms": [
+        "labəṭ",
+        "lobəṭ"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "yawmo m-ay=yawme d-aloho ḥəlle, am=maye labiṭi 88; 67/223, 224; mḥeli d-a=tre, lə=labiṭi LB 187;",
+            "turoyo": "yawmo m-ay=yawme d-aloho ḥəlle am=maye labiṭi mḥeli d-a=tre lə=labiṭi",
             "translations": [
               "eines Tages von den Tagen Gottes schaute er: das Wasser bewegte sich",
               "ich versuchte es zum zweiten Mal, sie (die Bretter) bewegten sich aber nicht"
             ],
-            "references": ["88; 67/223", "224"]
+            "references": [
+              "88",
+              "67/223",
+              "224",
+              "LB 187"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "yawmo m-ay=yawme d-aloho ḥəlle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " am=maye labiṭi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻeines Tages von den Tagen Gottes schaute er: das Wasser bewegte sichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "88"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "67/223"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "224"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥeli d-a=tre"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=labiṭi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich versuchte es zum zweiten Mal, sie (die Bretter) bewegten sich aber nichtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 187"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "yawmo m-ay=yawme d-aloho ḥəlle, am=maye labiṭi ʻeines Tages von den Tagen Gottes schaute er: das Wasser bewegte sichʼ; 88; 67/223, 224; mḥeli d-a=tre, lə=labiṭi ʻich versuchte es zum zweiten Mal, sie (die Bretter) bewegten sich aber nichtʼ; LB 187;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "izoxu, aqimu hiye w u=qenayḏe b-naqla; mamṭéwəl-le l-arke, d-lə=lobəṭ, w d-koyaw-le 99; 61/235; səmli w lə=səmli d-ləbṭi aʕli ad=dap-anəkLB 160;",
+            "turoyo": "izoxu aqimu hiye w u=qenayḏe b-naqla mamṭéwəl-le l-arke d-lə=lobəṭ w d-koyaw-le səmli w lə=səmli d-ləbṭi aʕli ad=dap-anək",
             "translations": [
               "geht und hebt ihn samt seinem Neste auf und holt ihn her, ohne dass er sich von der Stelle zu rühren braucht und es ihm wehe tut",
-              "‘ich versuchte mein Möglichstes, die Holzbretter über mich zu bewegen’;"
+              "‘ich versuchte mein Möglichstes, die Holzbretter über mich zu bewegen’"
             ],
-            "references": ["99; 61/235", "160"]
+            "references": [
+              "99",
+              "61/235",
+              "LB 160"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "izoxu"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aqimu hiye w u=qenayḏe b-naqla"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mamṭéwəl-le l-arke"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-lə=lobəṭ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w d-koyaw-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻgeht und hebt ihn samt seinem Neste auf und holt ihn her, ohne dass er sich von der Stelle zu rühren braucht und es ihm wehe tutʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "99"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "61/235"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " səmli w lə=səmli d-ləbṭi aʕli ad=dap-anək "
+              },
+              {
+                "kind": "translation",
+                "value": "‘ich versuchte mein Möglichstes, die Holzbretter über mich zu bewegen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 160"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "izoxu, aqimu hiye w u=qenayḏe b-naqla; mamṭéwəl-le l-arke, d-lə=lobəṭ, w d-koyaw-le ʻgeht und hebt ihn samt seinem Neste auf und holt ihn her, ohne dass er sich von der Stelle zu rühren braucht und es ihm wehe tutʼ; 99; 61/235; səmli w lə=səmli d-ləbṭi aʕli ad=dap-anək ‘ich versuchte mein Möglichstes, die Holzbretter über mich zu bewegen’; LB 160;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["malbaṭle", "malbəṭ"],
+      "forms": [
+        "malbaṭle",
+        "malbəṭ"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "səmle lə=səmle d-qodər malbaṭ-la 147; 61/160;",
+            "turoyo": "səmle lə=səmle d-qodər malbaṭ-la",
             "translations": [
               "was er auch tat, um ihn (den Loch) von der Stelle bewegen zu können"
             ],
-            "references": ["147; 61/160"]
+            "references": [
+              "147",
+              "61/160"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "səmle lə=səmle d-qodər malbaṭ-la "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwas er auch tat, um ihn (den Loch) von der Stelle bewegen zu könnenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "147"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "61/160"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "səmle lə=səmle d-qodər malbaṭ-la ʻwas er auch tat, um ihn (den Loch) von der Stelle bewegen zu könnenʼ; 147; 61/160;"
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "mamṭalle u=ṭayr-awo, hiye w u=qenayḏe, d-lo telbiṭo yaʕni d-lə=koyaw-le, mamṭalle l-gab u=malko 153; 61/237;",
+            "turoyo": "mamṭalle u=ṭayr-awo hiye w u=qenayḏe d-lo telbiṭo yaʕni d-lə=koyaw-le mamṭalle l-gab u=malko",
             "translations": [
               "sie holten jenen Vogel, ihn und sein Nest, ohne dass er sich von der Stelle zu rühren brauchte, das heisst, ohne dass ihm weh tat, und brachten ihn zu dem König"
             ],
-            "references": ["153; 61/237"]
+            "references": [
+              "153",
+              "61/237"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mamṭalle u=ṭayr-awo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hiye w u=qenayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-lo telbiṭo yaʕni d-lə=koyaw-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mamṭalle l-gab u=malko "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie holten jenen Vogel, ihn und sein Nest, ohne dass er sich von der Stelle zu rühren brauchte, das heisst, ohne dass ihm weh tat, und brachten ihn zu dem Königʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "153"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "61/237"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mamṭalle u=ṭayr-awo, hiye w u=qenayḏe, d-lo telbiṭo yaʕni d-lə=koyaw-le, mamṭalle l-gab u=malko ʻsie holten jenen Vogel, ihn und sein Nest, ohne dass er sich von der Stelle zu rühren brauchte, das heisst, ohne dass ihm weh tat, und brachten ihn zu dem Königʼ; 153; 61/237;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "sich rühren, sich bewegen;",
+    "bewegen;"
   ],
   "uncertain": false
 }

@@ -14,17 +14,67 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["dʕəkle", "doʕək"],
+      "forms": [
+        "dʕəkle",
+        "doʕək"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "dʕəkke u=nafal-awo 72; 96/164;",
-            "translations": ["sie haben den ganzen Klee niedergetrampelt"],
-            "references": ["72; 96/164"]
+            "turoyo": "dʕəkke u=nafal-awo",
+            "translations": [
+              "sie haben den ganzen Klee niedergetrampelt"
+            ],
+            "references": [
+              "72",
+              "96/164"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "dʕəkke u=nafal-awo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie haben den ganzen Klee niedergetrampeltʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "72"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "96/164"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "dʕəkke u=nafal-awo ʻsie haben den ganzen Klee niedergetrampeltʼ; 72; 96/164;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "trampeln;"
   ],
   "uncertain": false
 }

@@ -14,77 +14,963 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["abəʕ", "obəʕ"],
+      "forms": [
+        "abəʕ",
+        "obəʕ"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "1) mʔamalle, húle-le u=mede d-abəʕ, lirat dahwo w i=səstayḏe 731; 24/51; u=zlām-ano l-abəʕ gowər ʕal a=tre=naʕim-ani d-kət-ne gabe 731; 75/3; ono m-i=naqla d-ḥzéli-lux, l=abəʕno mqatanno aʕmux 731; 78/115; m-i=xaṣr-ayo w m-ayo ḥzele noṭure, k-nuṭri, as=sayfe b-iḏayye, abiʕi l-u=qaṭl-ayḏe, mazəʕí-wo-le 548; 21/39; b-u=gab-ano p-ano abəʕ d-ʕorəq m-u=ǧăwāb ʻsuchte der Antwort aus dem Wege zu gehenʼ; MM 27;",
+            "turoyo": "mʔamalle húle-le u=mede d-abəʕ lirat dahwo w i=səstayḏe u=zlām-ano l-abəʕ gowər ʕal a=tre=naʕim-ani d-kət-ne gabe ono m-i=naqla d-ḥzéli-lux l=abəʕno mqatanno aʕmux m-i=xaṣr-ayo w m-ayo ḥzele noṭure k-nuṭri as=sayfe b-iḏayye abiʕi l-u=qaṭl-ayḏe mazəʕí-wo-le b-u=gab-ano p-ano abəʕ d-ʕorəq m-u=ǧăwāb",
             "translations": [
-              "ʻer befahl, ihm zu geben, was er wollte: Goldpfunde und sein Pferdʼ;",
-              "ʻder Mann wollte zu den beiden Kindern, die bei ihm waren, nicht wieder eine Frau nehmenʼ;",
-              "ʻich habe schon, als ich dich sah, nicht mit dir kämpfen wollenʼ;",
-              "ʻauf jeder Seite sah er Wächter; die wachten mit dem Schwert in der Hand; sie wollten ihn töten, machten ihm Angstʼ;"
+              "er befahl, ihm zu geben, was er wollte: Goldpfunde und sein Pferd",
+              "der Mann wollte zu den beiden Kindern, die bei ihm waren, nicht wieder eine Frau nehmen",
+              "ich habe schon, als ich dich sah, nicht mit dir kämpfen wollen",
+              "auf jeder Seite sah er Wächter; die wachten mit dem Schwert in der Hand; sie wollten ihn töten, machten ihm Angst",
+              "suchte der Antwort aus dem Wege zu gehen"
             ],
-            "references": ["1", "731; 24/51"]
+            "references": [
+              "1",
+              "731",
+              "24/51",
+              "731",
+              "75/3",
+              "731",
+              "78/115",
+              "548",
+              "21/39",
+              "MM 27"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mʔamalle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " húle-le u=mede d-abəʕ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lirat dahwo w i=səstayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer befahl, ihm zu geben, was er wollte: Goldpfunde und sein Pferdʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "731"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/51"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=zlām-ano l-abəʕ gowər ʕal a=tre=naʕim-ani d-kət-ne gabe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Mann wollte zu den beiden Kindern, die bei ihm waren, nicht wieder eine Frau nehmenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "731"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/3"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ono m-i=naqla d-ḥzéli-lux"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l=abəʕno mqatanno aʕmux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe schon, als ich dich sah, nicht mit dir kämpfen wollenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "731"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/115"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " m-i=xaṣr-ayo w m-ayo ḥzele noṭure"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-nuṭri"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " as=sayfe b-iḏayye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " abiʕi l-u=qaṭl-ayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mazəʕí-wo-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻauf jeder Seite sah er Wächter; die wachten mit dem Schwert in der Hand; sie wollten ihn töten, machten ihm Angstʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "548"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/39"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-u=gab-ano p-ano abəʕ d-ʕorəq m-u=ǧăwāb "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsuchte der Antwort aus dem Wege zu gehenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 27"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) mʔamalle, húle-le u=mede d-abəʕ, lirat dahwo w i=səstayḏe ʻer befahl, ihm zu geben, was er wollte: Goldpfunde und sein Pferdʼ; 731; 24/51; u=zlām-ano l-abəʕ gowər ʕal a=tre=naʕim-ani d-kət-ne gabe ʻder Mann wollte zu den beiden Kindern, die bei ihm waren, nicht wieder eine Frau nehmenʼ; 731; 75/3; ono m-i=naqla d-ḥzéli-lux, l=abəʕno mqatanno aʕmux ʻich habe schon, als ich dich sah, nicht mit dir kämpfen wollenʼ; 731; 78/115; m-i=xaṣr-ayo w m-ayo ḥzele noṭure, k-nuṭri, as=sayfe b-iḏayye, abiʕi l-u=qaṭl-ayḏe, mazəʕí-wo-le ʻauf jeder Seite sah er Wächter; die wachten mit dem Schwert in der Hand; sie wollten ihn töten, machten ihm Angstʼ; 548; 21/39; b-u=gab-ano p-ano abəʕ d-ʕorəq m-u=ǧăwāb ʻsuchte der Antwort aus dem Wege zu gehenʼ; MM 27;"
           },
           {
-            "turoyo": "2) húle-le-ste u=mede d-abəʕ l-u=abro d-u=ʕammo, i=hadiyayḏe",
+            "turoyo": "húle-le-ste u=mede d-abəʕ l-u=abro d-u=ʕammo i=hadiyayḏe",
             "translations": [
-              "‘Er gab dem Vetter noch als Geschenk, was er haben mochte’; 26/257"
+              "‘Er gab dem Vetter noch als Geschenk, was er haben mochte’"
             ],
-            "references": ["2"]
+            "references": [
+              "2",
+              "26/257"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " húle-le-ste u=mede d-abəʕ l-u=abro d-u=ʕammo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=hadiyayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er gab dem Vetter noch als Geschenk, was er haben mochte’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/257"
+              }
+            ],
+            "text": "2) húle-le-ste u=mede d-abəʕ l-u=abro d-u=ʕammo, i=hadiyayḏe ‘Er gab dem Vetter noch als Geschenk, was er haben mochte’; 26/257"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "1) mə k-obəʕ? u=mede d-obəʕ háwu-le 731; 78/92; k-ubʕi ḥalwo d-aryo 731; 75/276; k-obaʕno də-mšadrət-li. lə=k-obaʕno d-ono-ze fašno b-i=dukṯo d-aḏ̣=ḏ̣arbe ; [ML]; d-izzóx s-i=armalt-ayo d-kət-yo ǧirān diḏan; kət-la ṭaṣe, d-gunwat-la w-amṭát-li-yo, mə́qqayəṣ d-ubʕət gd-ubéno-lox kaʕbe ‘’; 25/9 [MT]kurke, gḏayto i=naqla d-k-əbʕo saymo čičə́kat, g-maḥtina beʕe taḥta",
+            "turoyo": "mə k-obəʕ? u=mede d-obəʕ háwu-le k-ubʕi ḥalwo d-aryo k-obaʕno də-mšadrət-li. lə=k-obaʕno d-ono-ze fašno b-i=dukṯo d-aḏ̣=ḏ̣arbe d-izzóx s-i=armalt-ayo d-kət-yo ǧirān diḏan kət-la ṭaṣe d-gunwat-la w-amṭát-li-yo mə́qqayəṣ d-ubʕət gd-ubéno-lox kaʕbe kurke gḏayto i=naqla d-k-əbʕo saymo čičə́kat g-maḥtina beʕe taḥta",
             "translations": [
-              "ʻwas will er? Gebt ihm, was er haben willʼ;",
-              "ʻsie wollen Löwenmilchʼ;",
-              "‘ich will, dass Sie mich wegschicken. Auch ich will nicht da bleiben, wo es immer Schläge gibt (wörtl.: am Ort der Schläge);’ JL 19.6.19",
-              "Du sollst zu jener Witwe gehen, die unsere Nachbarin ist. Die hat eine Schale. Wenn du die stiehlst und mir bringst, gebe ich dir soviel Knöchel, als du haben willst",
-              "‘A brood hen, a hen, when she wants to hatch chicken, we put eggs beneath her’ JL 13.11.1;"
+              "was will er? Gebt ihm, was er haben will",
+              "sie wollen Löwenmilch",
+              "‘ich will, dass Sie mich wegschicken. Auch ich will nicht da bleiben, wo es immer Schläge gibt (wörtl.: am Ort der Schläge);’",
+              "‘Du sollst zu jener Witwe gehen, die unsere Nachbarin ist. Die hat eine Schale. Wenn du die stiehlst und mir bringst, gebe ich dir soviel Knöchel, als du haben willst’",
+              "‘A brood hen, a hen, when she wants to hatch chicken, we put eggs beneath her’"
             ],
-            "references": ["1", "731; 78/92"]
+            "references": [
+              "1",
+              "731",
+              "78/92",
+              "731",
+              "75/276",
+              "JL 19.6.19",
+              "25/9",
+              "JL 13.11.1"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mə k-obəʕ? u=mede d-obəʕ háwu-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwas will er? Gebt ihm, was er haben willʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "731"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/92"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ubʕi ḥalwo d-aryo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie wollen Löwenmilchʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "731"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/276"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-obaʕno də-mšadrət-li. lə=k-obaʕno d-ono-ze fašno b-i=dukṯo d-aḏ̣=ḏ̣arbe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘ich will, dass Sie mich wegschicken. Auch ich will nicht da bleiben, wo es immer Schläge gibt (wörtl.: am Ort der Schläge);’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 19.6.19"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[ML]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-izzóx s-i=armalt-ayo d-kət-yo ǧirān diḏan"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kət-la ṭaṣe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-gunwat-la w-amṭát-li-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mə́qqayəṣ d-ubʕət gd-ubéno-lox kaʕbe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Du sollst zu jener Witwe gehen, die unsere Nachbarin ist. Die hat eine Schale. Wenn du die stiehlst und mir bringst, gebe ich dir soviel Knöchel, als du haben willst’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/9"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kurke"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gḏayto i=naqla d-k-əbʕo saymo čičə́kat"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-maḥtina beʕe taḥta "
+              },
+              {
+                "kind": "translation",
+                "value": "‘A brood hen, a hen, when she wants to hatch chicken, we put eggs beneath her’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 13.11.1"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) mə k-obəʕ? u=mede d-obəʕ háwu-le ʻwas will er? Gebt ihm, was er haben willʼ; 731; 78/92; k-ubʕi ḥalwo d-aryo ʻsie wollen Löwenmilchʼ; 731; 75/276; k-obaʕno də-mšadrət-li. lə=k-obaʕno d-ono-ze fašno b-i=dukṯo d-aḏ̣=ḏ̣arbe ‘ich will, dass Sie mich wegschicken. Auch ich will nicht da bleiben, wo es immer Schläge gibt (wörtl.: am Ort der Schläge);’ JL 19.6.19; [ML]; d-izzóx s-i=armalt-ayo d-kət-yo ǧirān diḏan; kət-la ṭaṣe, d-gunwat-la w-amṭát-li-yo, mə́qqayəṣ d-ubʕət gd-ubéno-lox kaʕbe ‘Du sollst zu jener Witwe gehen, die unsere Nachbarin ist. Die hat eine Schale. Wenn du die stiehlst und mir bringst, gebe ich dir soviel Knöchel, als du haben willst’; 25/9 [MT]; kurke, gḏayto i=naqla d-k-əbʕo saymo čičə́kat, g-maḥtina beʕe taḥta ‘A brood hen, a hen, when she wants to hatch chicken, we put eggs beneath her’ JL 13.11.1;"
           },
           {
-            "turoyo": "2) ʕamṯux, ṣaʕra ġắlabe ʕamúro-yo, w k-obəʕ nošo mfale-la 732; 75/61; ṭr-oṯe l-arke oʕdo k-obaʕn-e MM 140; i=barṯo d-u=malko k-obaʕ-la ǧule k-obaʕ-la muklo k-obaʕ-la štoyo k-obaʕ-la medone ġălabe k-obaʕ-la ḥa t-owe aʕme kallawat gamlo ḥḏo lo=k-owe d-foyəš mine xud kət-yo k-obəʕ doʕər",
+            "turoyo": "ʕamṯux ṣaʕra ġắlabe ʕamúro-yo w k-obəʕ nošo mfale-la ṭr-oṯe l-arke oʕdo k-obaʕn-e i=barṯo d-u=malko k-obaʕ-la ǧule k-obaʕ-la muklo k-obaʕ-la štoyo k-obaʕ-la medone ġălabe k-obaʕ-la ḥa t-owe aʕme kallawat gamlo ḥḏo lo=k-owe d-foyəš mine xud kət-yo k-obəʕ doʕər по сути модальный глагол",
             "translations": [
-              "ʻdas Haar deiner Tante ist sehr dicht, jemand muss ihr die Läuse ablesenʼ;",
-              "ʻer soll hierher kommen, ich brauche ihn jetztʼ",
-              "‘The king’s daughter needs gowns, food, drinks and many other things. She needs someone who has money’ 77/56;",
-              "‘Not a single one camel should be left (with you). The whole (cattle) must be returned’ 78/104; (по сути, модальный глагол)"
+              "das Haar deiner Tante ist sehr dicht, jemand muss ihr die Läuse ablesen",
+              "er soll hierher kommen, ich brauche ihn jetzt",
+              "‘The king’s daughter needs gowns, food, drinks and many other things. She needs someone who has money’",
+              "‘Not a single one camel should be left (with you). The whole (cattle) must be returned’"
             ],
-            "references": ["2", "732; 75/61"]
+            "references": [
+              "2",
+              "732",
+              "75/61",
+              "MM 140",
+              "77/56",
+              "78/104"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕamṯux"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṣaʕra ġắlabe ʕamúro-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w k-obəʕ nošo mfale-la "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Haar deiner Tante ist sehr dicht, jemand muss ihr die Läuse ablesenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "732"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/61"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṭr-oṯe l-arke oʕdo k-obaʕn-e "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer soll hierher kommen, ich brauche ihn jetztʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 140"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=barṯo d-u=malko k-obaʕ-la ǧule k-obaʕ-la muklo k-obaʕ-la štoyo k-obaʕ-la medone ġălabe k-obaʕ-la ḥa t-owe aʕme kallawat "
+              },
+              {
+                "kind": "translation",
+                "value": "‘The king’s daughter needs gowns, food, drinks and many other things. She needs someone who has money’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "77/56"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " gamlo ḥḏo lo=k-owe d-foyəš mine xud kət-yo k-obəʕ doʕər "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Not a single one camel should be left (with you). The whole (cattle) must be returned’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "78/104"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "по сути"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " модальный глагол"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "2) ʕamṯux, ṣaʕra ġắlabe ʕamúro-yo, w k-obəʕ nošo mfale-la ʻdas Haar deiner Tante ist sehr dicht, jemand muss ihr die Läuse ablesenʼ; 732; 75/61; ṭr-oṯe l-arke oʕdo k-obaʕn-e ʻer soll hierher kommen, ich brauche ihn jetztʼ MM 140; i=barṯo d-u=malko k-obaʕ-la ǧule k-obaʕ-la muklo k-obaʕ-la štoyo k-obaʕ-la medone ġălabe k-obaʕ-la ḥa t-owe aʕme kallawat ‘The king’s daughter needs gowns, food, drinks and many other things. She needs someone who has money’ 77/56; gamlo ḥḏo lo=k-owe d-foyəš mine xud kət-yo k-obəʕ doʕər ‘Not a single one camel should be left (with you). The whole (cattle) must be returned’ 78/104; (по сути, модальный глагол)"
           },
           {
             "turoyo": "kətli arʕot-ayḏi k-obaʕʕe dworo",
-            "translations": ["‘I have fields, they require plowing’ 76/38;"],
-            "references": []
+            "translations": [
+              "‘I have fields, they require plowing’"
+            ],
+            "references": [
+              "76/38"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kətli arʕot-ayḏi k-obaʕʕe dworo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I have fields, they require plowing’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "76/38"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kətli arʕot-ayḏi k-obaʕʕe dworo ‘I have fields, they require plowing’ 76/38;"
           },
           {
-            "turoyo": "Əmmo: “U miṯo, me d mayəṯ, d əbʕe, d mətle i ǧanazayḏe.”Dəbʕe d amtenox u Šimo larke d qorenoxyo ‘I need to bring the Šḥimo (book) here and sing you (from) it’",
+            "turoyo": "Əmmo Dəbʕe d amtenox u Šimo larke d qorenoxyo Xori Caziz 2001 24b",
             "translations": [
-              "‘Wenn einer gestorben ist, muß man seine leiche begraben’ 96/311;",
-              "Xori Caziz 2001 24b;"
+              "U miṯo, me d mayəṯ, d əbʕe, d mətle i ǧanazayḏe.",
+              "‘Wenn einer gestorben ist, muß man seine leiche begraben’",
+              "‘I need to bring the Šḥimo (book) here and sing you (from) it’"
             ],
-            "references": []
+            "references": [
+              "96/311"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Əmmo"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“U miṯo, me d mayəṯ, d əbʕe, d mətle i ǧanazayḏe.”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wenn einer gestorben ist, muß man seine leiche begraben’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "96/311"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Dəbʕe d amtenox u Šimo larke d qorenoxyo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘I need to bring the Šḥimo (book) here and sing you (from) it’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Xori Caziz 2001 24b"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "Əmmo: “U miṯo, me d mayəṯ, d əbʕe, d mətle i ǧanazayḏe.” ‘Wenn einer gestorben ist, muß man seine leiche begraben’ 96/311; Dəbʕe d amtenox u Šimo larke d qorenoxyo ‘I need to bring the Šḥimo (book) here and sing you (from) it’ Xori Caziz 2001 24b;"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "1) u=abro zʕuro ġắlabe kasúlo-we, w l-ŭ́baʕ-wo d-soyəm šuġlo 732; 6/4; i=naqla d-obáʕ-way-no qoyamno qərrēn nofal-wa ebi LB 69; ubaʕ-wo d-mofaq-le ḥatta d-nuḥal-le tamo ʕal-u=qawro d-u=babo ‘’; 24/304; uno ubʕóno-wo barṯo hawxa d-əṯyo l-gabi d-msalyo-li m-u=sabab d-uno d-kət-no lḥuḏe",
+            "turoyo": "u=abro zʕuro ġắlabe kasúlo-we w l-ŭ́baʕ-wo d-soyəm šuġlo i=naqla d-obáʕ-way-no qoyamno qərrēn nofal-wa ebi ubaʕ-wo d-mofaq-le ḥatta d-nuḥal-le tamo ʕal-u=qawro d-u=babo uno ubʕóno-wo barṯo hawxa d-əṯyo l-gabi d-msalyo-li m-u=sabab d-uno d-kət-no lḥuḏe",
             "translations": [
-              "ʻder kleine Sohn war sehr faul und wollte keine Arbeit tunʼ;",
-              "ʻimmer wenn ich aufstehen wollte, musste ich laut schreienʼ;",
-              "Er wollte ihn herauszubringen, um ihn dort am Grabe seines Vaters zu schlachten",
-              "‘Ich hatte schon immer ein Verlangen, daß so ein Mädchen kommen und mich unterhalten möchte, weil ich allein bin’; 29/64 [MT]"
+              "der kleine Sohn war sehr faul und wollte keine Arbeit tun",
+              "immer wenn ich aufstehen wollte, musste ich laut schreien",
+              "‘Er wollte ihn herauszubringen, um ihn dort am Grabe seines Vaters zu schlachten’",
+              "‘Ich hatte schon immer ein Verlangen, daß so ein Mädchen kommen und mich unterhalten möchte, weil ich allein bin’"
             ],
-            "references": ["1", "732; 6/4"]
+            "references": [
+              "1",
+              "732",
+              "6/4",
+              "LB 69",
+              "24/304",
+              "29/64"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=abro zʕuro ġắlabe kasúlo-we"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w l-ŭ́baʕ-wo d-soyəm šuġlo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder kleine Sohn war sehr faul und wollte keine Arbeit tunʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "732"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "6/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naqla d-obáʕ-way-no qoyamno qərrēn nofal-wa ebi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻimmer wenn ich aufstehen wollte, musste ich laut schreienʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 69"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ubaʕ-wo d-mofaq-le ḥatta d-nuḥal-le tamo ʕal-u=qawro d-u=babo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er wollte ihn herauszubringen, um ihn dort am Grabe seines Vaters zu schlachten’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/304"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " uno ubʕóno-wo barṯo hawxa d-əṯyo l-gabi d-msalyo-li m-u=sabab d-uno d-kət-no lḥuḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Ich hatte schon immer ein Verlangen, daß so ein Mädchen kommen und mich unterhalten möchte, weil ich allein bin’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/64"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "1) u=abro zʕuro ġắlabe kasúlo-we, w l-ŭ́baʕ-wo d-soyəm šuġlo ʻder kleine Sohn war sehr faul und wollte keine Arbeit tunʼ; 732; 6/4; i=naqla d-obáʕ-way-no qoyamno qərrēn nofal-wa ebi ʻimmer wenn ich aufstehen wollte, musste ich laut schreienʼ; LB 69; ubaʕ-wo d-mofaq-le ḥatta d-nuḥal-le tamo ʕal-u=qawro d-u=babo ‘Er wollte ihn herauszubringen, um ihn dort am Grabe seines Vaters zu schlachten’; 24/304; uno ubʕóno-wo barṯo hawxa d-əṯyo l-gabi d-msalyo-li m-u=sabab d-uno d-kət-no lḥuḏe ‘Ich hatte schon immer ein Verlangen, daß so ein Mädchen kommen und mich unterhalten möchte, weil ich allein bin’; 29/64 [MT]"
           }
         ]
       }
     }
   ],
+  "idioms": null,
   "uncertain": false
 }

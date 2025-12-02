@@ -14,24 +14,122 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ḥaməṣ", "ḥoməṣ"],
+      "forms": [
+        "ḥaməṣ",
+        "ḥoməṣ"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "ḥaməṣlebi 86;",
-            "translations": [],
-            "references": ["86"]
+            "turoyo": "ḥaməṣ lebi",
+            "translations": [
+              "ich habe einen saueren Geschmack bekommen"
+            ],
+            "references": [
+              "86"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥaməṣ lebi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe einen saueren Geschmack bekommenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "86"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥaməṣ lebi ʻich habe einen saueren Geschmack bekommenʼ; 86;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "k-ḥoməṣlebi 97; g-fərsí-way-na-le ʕal i=goro, əmmí-way-na d-medelə=ǧore-le d-lə=ḥoməṣ",
-            "translations": ["Weizengrütze"],
-            "references": ["97"]
+            "turoyo": "k-ḥoməṣ lebi g-fərsí-way-na-le ʕal i=goro əmmí-way-na d-mede lə=ǧore-le d-lə=ḥoməṣ",
+            "translations": [
+              "ich habe einen saueren Geschmack im Munde",
+              "wir breiteten ihn (Weizengrütze m) nochmals auf dem Dach aus, damit ihm nichts passierte, damit er nicht sauer wurde"
+            ],
+            "references": [
+              "97",
+              "JL 17.5.13"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-ḥoməṣ lebi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe einen saueren Geschmack im Mundeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "97"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-fərsí-way-na-le ʕal i=goro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " əmmí-way-na d-mede lə=ǧore-le d-lə=ḥoməṣ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir breiteten ihn (Weizengrütze m) nochmals auf dem Dach aus, damit ihm nichts passierte, damit er nicht sauer wurdeʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 17.5.13"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "k-ḥoməṣ lebi ʻich habe einen saueren Geschmack im Mundeʼ; 97; g-fərsí-way-na-le ʕal i=goro, əmmí-way-na d-mede lə=ǧore-le d-lə=ḥoməṣ ʻwir breiteten ihn (Weizengrütze m) nochmals auf dem Dach aus, damit ihm nichts passierte, damit er nicht sauer wurdeʼ JL 17.5.13;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "sauer werden;"
   ],
   "uncertain": false
 }

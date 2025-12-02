@@ -12,26 +12,115 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mʕaražle", "mʕarəž"],
+      "forms": [
+        "mʕaražle",
+        "mʕarəž"
+      ],
       "conjugations": {
         "Infectum": [
           {
             "turoyo": "gd-əṯyo emo d-aryo raġla qəṣto-yo ko-mhalxo ko-mʕaržo me-raġla",
             "translations": [
-              "‘Then a mother lion shall come, her foot is swollen. She limps on her foot (while) she walks’ 75/283;"
+              "‘Then a mother lion shall come, her foot is swollen. She limps on her foot (while) she walks’"
             ],
-            "references": []
+            "references": [
+              "75/283"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gd-əṯyo emo d-aryo raġla qəṣto-yo ko-mhalxo ko-mʕaržo me-raġla "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Then a mother lion shall come, her foot is swollen. She limps on her foot (while) she walks’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/283"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "gd-əṯyo emo d-aryo raġla qəṣto-yo ko-mhalxo ko-mʕaržo me-raġla ‘Then a mother lion shall come, her foot is swollen. She limps on her foot (while) she walks’ 75/283;"
           },
           {
-            "turoyo": "29. I=bruske nayiḥo. Eló balé ṣaqaṭ yo. Ṣaqaṭ yo, komaʕrəǧ b ḥḏo raġlo.",
-            "translations": [
-              "The pain receded. But he became lame, we was limping with one of his legs (Sultan_Nisane)"
+            "turoyo": ". I=bruske nayiḥo. Eló balé ṣaqaṭ yo. Ṣaqaṭ yo komaʕrəǧ b ḥḏo raġlo.",
+            "translations": [],
+            "references": [
+              "29"
             ],
-            "references": ["29"]
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "29"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". I=bruske nayiḥo. Eló balé ṣaqaṭ yo. Ṣaqaṭ yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " komaʕrəǧ b ḥḏo raġlo."
+              }
+            ],
+            "text": "29. I=bruske nayiḥo. Eló balé ṣaqaṭ yo. Ṣaqaṭ yo, komaʕrəǧ b ḥḏo raġlo."
+          },
+          {
+            "turoyo": "The pain receded. But he became lame we was limping with one of his legs Sultan_Nisane",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "The pain receded. But he became lame"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " we was limping with one of his legs "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Sultan_Nisane"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "The pain receded. But he became lame, we was limping with one of his legs (Sultan_Nisane)"
           }
         ]
-      }
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "mʕaraǧle/mʕarəǧ"
+        }
+      ],
+      "label_raw": "mʕaraǧle/mʕarəǧ"
     }
+  ],
+  "idioms": [
+    "to limp"
   ],
   "uncertain": false
 }

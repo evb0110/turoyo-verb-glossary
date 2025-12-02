@@ -14,39 +14,291 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mfalele", "mfale"],
+      "forms": [
+        "mfalele",
+        "mfale"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "azzé l-qurniṯo d-bayto yatu ḥrele, w mfalele qṭile aq=qalme d-ruḥe 414; 95/53;",
+            "turoyo": "azzé l-qurniṯo d-bayto yatu ḥrele w mfalele qṭile aq=qalme d-ruḥe",
             "translations": [
               "er ging an die Ecke eines Hauses, kackte, las sich die Läuse ab und knackte sie tot"
             ],
-            "references": ["414; 95/53"]
+            "references": [
+              "414",
+              "95/53"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "azzé l-qurniṯo d-bayto yatu ḥrele"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mfalele qṭile aq=qalme d-ruḥe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer ging an die Ecke eines Hauses, kackte, las sich die Läuse ab und knackte sie totʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "414"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "95/53"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "azzé l-qurniṯo d-bayto yatu ḥrele, w mfalele qṭile aq=qalme d-ruḥe ʻer ging an die Ecke eines Hauses, kackte, las sich die Läuse ab und knackte sie totʼ; 414; 95/53;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "kə-mfale-la u=zoġo. mədle l-u=taʕlo l-u=qḏola, ḥniqo-le, axilo-le 419; prs 211/36; 75/63; annaqla ṣafro qayimi ko-mfalən i=arʕo feloyo, ʕaṣro=zlamat ko-kurxi eba",
+            "turoyo": "kə-mfale-la u=zoġo. mədle l-u=taʕlo l-u=qḏola ḥniqo-le axilo-le prs annaqla ṣafro qayimi ko-mfalən i=arʕo feloyo ʕaṣro=zlamat ko-kurxi eba",
             "translations": [
               "während der Hahn ihn (den Hasen f (на самом деле, слово “заяц”, судя по всему, может употребляться в обоих родах. Тут надо сделать какую-то пометку на этот счет)) lauste, packte der Fuchs ihn an der Gurgel und erwürgte ihn",
-              "‘This time they woke up in the morning and searched the field thoroughly. Ten people were looking for it (hole, m.)’ LuF 306/70;"
+              "‘This time they woke up in the morning and searched the field thoroughly. Ten people were looking for it (hole, m.)’"
             ],
-            "references": ["419", "211/36"]
+            "references": [
+              "419",
+              "211/36",
+              "75/63",
+              "LuF 306/70"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kə-mfale-la u=zoġo. mədle l-u=taʕlo l-u=qḏola"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥniqo-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " axilo-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwährend der Hahn ihn (den Hasen f (на самом деле, слово “заяц”, судя по всему, может употребляться в обоих родах. Тут надо сделать какую-то пометку на этот счет)) lauste, packte der Fuchs ihn an der Gurgel und erwürgte ihnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "419"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "211/36"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/63"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " annaqla ṣafro qayimi ko-mfalən i=arʕo feloyo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕaṣro=zlamat ko-kurxi eba "
+              },
+              {
+                "kind": "translation",
+                "value": "‘This time they woke up in the morning and searched the field thoroughly. Ten people were looking for it (hole, m.)’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LuF 306/70"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kə-mfale-la u=zoġo. mədle l-u=taʕlo l-u=qḏola, ḥniqo-le, axilo-le ʻwährend der Hahn ihn (den Hasen f (на самом деле, слово “заяц”, судя по всему, может употребляться в обоих родах. Тут надо сделать какую-то пометку на этот счет)) lauste, packte der Fuchs ihn an der Gurgel und erwürgte ihnʼ; 419; prs 211/36; 75/63; annaqla ṣafro qayimi ko-mfalən i=arʕo feloyo, ʕaṣro=zlamat ko-kurxi eba ‘This time they woke up in the morning and searched the field thoroughly. Ten people were looking for it (hole, m.)’ LuF 306/70;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "tōx falay-li 422; prs 80/8; komər ooox ʕamṯo hani aq=qalme d-qarʕax məqqa basime-ne kəmmo kure-m pa mfali-li maṯnaḥlux-li",
+            "turoyo": "tōx falay-li prs komər ooox ʕamṯo hani aq=qalme d-qarʕax məqqa basime-ne kəmmo kure-m pa mfali-li maṯnaḥlux-li ‘He said – She said .",
             "translations": [
               "komm und lause mich",
-              "“Oh my dear aunt, the lice from your head are so tasty!” – She said: “My dear boy, delouse me! You have provided peace for me”. 75/66;"
+              "Oh my dear aunt, the lice from your head are so tasty!",
+              "My dear boy, delouse me! You have provided peace for me"
             ],
-            "references": ["422", "80/8"]
+            "references": [
+              "422",
+              "80/8",
+              "75/66"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "tōx falay-li "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻkomm und lause michʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "422"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "80/8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " komər ooox ʕamṯo hani aq=qalme d-qarʕax məqqa basime-ne kəmmo kure-m pa mfali-li maṯnaḥlux-li "
+              },
+              {
+                "kind": "turoyo",
+                "value": "‘"
+              },
+              {
+                "kind": "turoyo",
+                "value": "He said"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“Oh my dear aunt, the lice from your head are so tasty!”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " – She said"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“My dear boy, delouse me!  You have provided peace for me”"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". "
+              },
+              {
+                "kind": "ref",
+                "value": "75/66"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "tōx falay-li ʻkomm und lause michʼ; 422; prs 80/8; komər ooox ʕamṯo hani aq=qalme d-qarʕax məqqa basime-ne kəmmo kure-m pa mfali-li maṯnaḥlux-li ‘He said: “Oh my dear aunt, the lice from your head are so tasty!” – She said: “My dear boy, delouse me! You have provided peace for me”. 75/66;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "lausen; search;"
   ],
   "uncertain": false
 }

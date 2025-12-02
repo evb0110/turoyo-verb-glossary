@@ -14,17 +14,54 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mnawele", "mnawəl"],
+      "forms": [
+        "mnawele",
+        "mnawəl"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mnawéli-le u=qălam 476;",
-            "translations": ["ich warf ihm den Bleistift zu"],
-            "references": ["476"]
+            "turoyo": "mnawéli-le u=qălam",
+            "translations": [
+              "ich warf ihm den Bleistift zu"
+            ],
+            "references": [
+              "476"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mnawéli-le u=qălam "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich warf ihm den Bleistift zuʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "476"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mnawéli-le u=qălam ʻich warf ihm den Bleistift zuʼ; 476;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "zuwerfen, in die Hand geben, reichen;"
   ],
   "uncertain": false
 }

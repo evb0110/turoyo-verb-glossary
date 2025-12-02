@@ -14,17 +14,75 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mšamele", "mšaməl"],
+      "forms": [
+        "mšamele",
+        "mšaməl"
+      ],
       "conjugations": {
         "Part act.": [
           {
-            "turoyo": "ḥamənne k-owe mšamlono, w a=ḥrene k-əmmiqole 311; 94/37;",
-            "translations": ["geistliche"],
-            "references": ["311; 94/37"]
+            "turoyo": "ḥa mənne k-owe mšamlono w a=ḥrene k-əmmi qole",
+            "translations": [
+              "einer von ihnen schwingt das Rauchfass, die anderen singen geistliche Gesänge"
+            ],
+            "references": [
+              "311",
+              "94/37"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥa mənne k-owe mšamlono"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w a=ḥrene k-əmmi qole "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻeiner von ihnen schwingt das Rauchfass, die anderen singen geistliche Gesängeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "311"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/37"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥa mənne k-owe mšamlono, w a=ḥrene k-əmmi qole ʻeiner von ihnen schwingt das Rauchfass, die anderen singen geistliche Gesängeʼ; 311; 94/37;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "räuchern (in der Kirche);"
   ],
   "uncertain": false
 }

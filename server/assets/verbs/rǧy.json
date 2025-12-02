@@ -14,24 +14,85 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mraǧele", "mraǧe"],
+      "forms": [
+        "mraǧele",
+        "mraǧe"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mraǧele u=taʕlo, marfal-le 415; prs 193/34;",
+            "turoyo": "mraǧele u=taʕlo marfal-le prs",
             "translations": [
               "er bat um den Fuchs, und man liess denselben frei"
             ],
-            "references": ["415", "193/34"]
+            "references": [
+              "415",
+              "193/34"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mraǧele u=taʕlo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " marfal-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer bat um den Fuchs, und man liess denselben freiʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "415"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "193/34"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mraǧele u=taʕlo, marfal-le ʻer bat um den Fuchs, und man liess denselben freiʼ; 415; prs 193/34;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["marhamle", "marhəm"],
+      "forms": [
+        "marhamle",
+        "marhəm"
+      ],
       "conjugations": {}
     }
+  ],
+  "idioms": [
+    "bitten;",
+    "rhm",
+    "to rain;"
   ],
   "uncertain": false
 }

@@ -14,17 +14,73 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["bʕəžle", "boʕəž"],
+      "forms": [
+        "bʕəžle",
+        "boʕəž"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Part. Pass.": [
           {
-            "turoyo": "wayla bʕəšto 133; 96/151;",
-            "translations": ["ʻha, du verruchter Stein!ʼ;"],
-            "references": ["133; 96/151"]
+            "turoyo": "wayla bʕəšto",
+            "translations": [
+              "ha, du verruchter Stein!"
+            ],
+            "references": [
+              "133",
+              "96/151"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "wayla bʕəšto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻha, du verruchter Stein!ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "133"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "96/151"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "wayla bʕəšto ʻha, du verruchter Stein!ʼ; 133; 96/151;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "verrecken;"
   ],
   "uncertain": false
 }

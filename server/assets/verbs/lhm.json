@@ -14,19 +14,86 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["malhamle", "malhəm"],
+      "forms": [
+        "malhamle",
+        "malhəm"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "w bdeli b-u=kṯowo, xəd u=mede, l-aloho d-malhámle-li 137; 4/10;",
+            "turoyo": "w bdeli b-u=kṯowo xəd u=mede l-aloho d-malhámle-li",
             "translations": [
               "und ich fing an, etwas zu schreiben, wie es mir Gott eingab"
             ],
-            "references": ["137; 4/10"]
+            "references": [
+              "137",
+              "4/10"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "w bdeli b-u=kṯowo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " xəd u=mede"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-aloho d-malhámle-li "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻund ich fing an, etwas zu schreiben, wie es mir Gott eingabʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "137"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "4/10"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "w bdeli b-u=kṯowo, xəd u=mede, l-aloho d-malhámle-li ʻund ich fing an, etwas zu schreiben, wie es mir Gott eingabʼ; 137; 4/10;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(ein)geben;",
+    "lḥk ‘to eat quickly and voraciously (verschingen)’ (on humans) [lḥk 'лизать' SL 684?]",
+    "hǝngi d kafǝnno lḥǝkli u laḥmo ‘when I became hungry I ... the bread’ (ḥiṣo = quickly)",
+    "Ḥanna Dewo: Lo, saymiwa u laḥmo, mbayḏiwayna, saymiwayna ṣobat ʕal i qalto, d ǝmmina hawxa bu zabuqo, w saymiwa a hne ... tamo wayne, at tanure. Saymiwa u laḥmano, obiwaylan tarte, tlaṯ ṭalme iiiii, bi gavayo luḥkiwaynale, mḥalqiwaynale (Hanna Dewo 5, p. 9. 21: 13)"
   ],
   "uncertain": false
 }

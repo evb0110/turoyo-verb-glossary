@@ -14,31 +14,154 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["daləq", "doləq"],
+      "forms": [
+        "daləq",
+        "doləq"
+      ],
       "conjugations": {}
     },
     {
       "stem": "III",
-      "forms": ["madlaqle", "madləq"],
+      "forms": [
+        "madlaqle",
+        "madləq"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ġắlabe goraš-wa məṭala, w sam-wa măraq, d-l-aloho lə=manhalle u=kukwayḏe, lə=madlaqle i=šroġayḏe 139-140; 112/3;",
+            "turoyo": "ġắlabe goraš-wa məṭala w sam-wa măraq d-l-aloho lə=manhalle u=kukwayḏe lə=madlaqle i=šroġayḏe -",
             "translations": [
               "er grämte und härmte sich gar sehr, dass Gott seinen Stern nicht hatte aufgehen lassen und sein Licht nicht entzündet hatte"
             ],
-            "references": ["139", "140; 112/3"]
+            "references": [
+              "139",
+              "140",
+              "112/3"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ġắlabe goraš-wa məṭala"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w sam-wa măraq"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-l-aloho lə=manhalle u=kukwayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=madlaqle i=šroġayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer grämte und härmte sich gar sehr, dass Gott seinen Stern nicht hatte aufgehen lassen und sein Licht nicht entzündet hatteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "139"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "140"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "112/3"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ġắlabe goraš-wa məṭala, w sam-wa măraq, d-l-aloho lə=manhalle u=kukwayḏe, lə=madlaqle i=šroġayḏe ʻer grämte und härmte sich gar sehr, dass Gott seinen Stern nicht hatte aufgehen lassen und sein Licht nicht entzündet hatteʼ; 139-140; 112/3;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "ko-madəlqo ǧġara 143;",
-            "translations": ["sie steckt sich eine Zigarette an"],
-            "references": ["143"]
+            "turoyo": "ko-madəlqo ǧġara",
+            "translations": [
+              "sie steckt sich eine Zigarette an"
+            ],
+            "references": [
+              "143"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-madəlqo ǧġara "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie steckt sich eine Zigarette anʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "143"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-madəlqo ǧġara ʻsie steckt sich eine Zigarette anʼ; 143;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "Preterit Intransitive",
+    "-Dear Jan, what is dalǝq/dolǝq?",
+    "-ignite, burn",
+    "-can you give a couple of sentences as examples?",
+    "- Dalëq nuro, Kdolëq nuro, Dalëq bayto bi šawṯo, Kdolëq lahbe d nuro",
+    "(šawṯo şauṯo f Stadtviertel Ş· ع; S·Mḏ)",
+    "Idiomatic phrases (???)",
+    "omər: “daləq babo! hēš k-ummət: míṯo-no w hat ko-məǧġolət? hano mə l-alo šqile menux? ʻ“du verwünschter Kerl! Du sagst immer: Ich bin tot, und redest dabei? Du bist wohl verrückt geworden?ʼ; 46/39;",
+    "anzünden, brennen lassen, anstecken;"
   ],
   "uncertain": false
 }

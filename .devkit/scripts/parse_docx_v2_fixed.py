@@ -44,6 +44,7 @@ class FixedDocxParser:
         self.verbs = []
         self.stats = defaultdict(int)
         self.contextual_roots = []
+        self.pending_idiom_paras = []
 
     def is_letter_header(self, para):
         return para.style and para.style.name == 'Heading 1'
@@ -97,6 +98,17 @@ class FixedDocxParser:
         if not has_stem:
             if text.startswith('Detransitive'):
                 return True
+
+            # BUGFIX: Detect unprefixed Štaʔ/Paʕʕel stems by their characteristic prefixes
+            # Examples: məthaymən (Št. of hymn), mḥabasle (Pa. of ḥbs)
+            # Pattern: Single word starting with m- prefix, all Turoyo chars, no spaces except /
+            turoyo_word = r'^(mə[tṭ]|ma[tṭ]?|m[ṣṭḥš])[ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūə/\u0300-\u036F]+$'
+            if re.match(turoyo_word, text, re.UNICODE):
+                # Only accept if it's italic (Turoyo text) and short (< 50 chars = likely a form, not an idiom)
+                has_italic = any(r.italic for r in para.runs if r.text.strip())
+                if has_italic and len(text) < 50:
+                    return True
+
             return False
 
         # If it matches stem pattern, accept it
@@ -423,12 +435,13 @@ class FixedDocxParser:
         if match:
             stem_num = match.group(1)
             forms_text = match.group(2).strip()
-            forms_match = re.match(r'^([^\s]+(?:/[^\s]+)*)', forms_text)
+            forms_match = re.match(r'^([^\s]+(?:/[^\s]+)*)\s*(.*)', forms_text)
             if forms_match:
                 forms_str = forms_match.group(1)
+                gloss = forms_match.group(2).strip() if forms_match.group(2) else None
                 forms = [f.strip() for f in forms_str.split('/') if f.strip()]
-                return stem_num, forms
-        return None, []
+                return stem_num, forms, gloss
+        return None, [], None
 
     def extract_translations_improved(self, cell_text):
         """Extract translations with comprehensive quote handling"""
@@ -438,6 +451,14 @@ class FixedDocxParser:
         # Use non-greedy to avoid spanning multiple quotes
         curly = re.findall(r'ʻ(.+?)ʼ', cell_text, re.DOTALL)
         translations.extend([self.normalize_whitespace(t) for t in curly if len(t.strip()) > 3])
+
+        # Pattern 1b: Typographic single quotes ‘ … ’ (U+2018/U+2019)
+        curly_single = re.findall(r'‘(.+?)’', cell_text, re.DOTALL)
+        translations.extend([self.normalize_whitespace(t) for t in curly_single if len(t.strip()) > 3])
+
+        # Pattern 1c: Typographic double quotes “ … ” (U+201C/U+201D)
+        curly_double = re.findall(r'“(.+?)”', cell_text, re.DOTALL)
+        translations.extend([self.normalize_whitespace(t) for t in curly_double if len(t.strip()) > 3])
 
         # Pattern 2: Straight single quotes '...' (U+0027)
         # Use non-greedy and require substantial length to avoid Turoyo contractions
@@ -464,6 +485,128 @@ class FixedDocxParser:
                 unique_translations.append(t_clean)
 
         return unique_translations
+
+    def _split_raw_to_tokens(self, raw: str):
+        """Split non-italic raw text into translation/ref/note/punct/text tokens
+        while preserving exact character content and order.
+        Returns list of dicts: { 'kind': str, 'value': str }
+        """
+        tokens = []
+        i = 0
+        n = len(raw)
+
+        def push(kind, value):
+            if not value:
+                return
+            tokens.append({'kind': kind, 'value': value})
+
+        # Quote pairs we recognize
+        quote_pairs = {
+            'ʻ': 'ʼ',  # Modifier letter quotes (U+02BB/U+02BC)
+            '\u2018': '\u2019',  # Curly single quotes ' '
+            '\u201C': '\u201D',  # Curly double quotes " "
+            "'": "'",  # Straight single quote
+            '"': '"',  # Straight double quote
+        }
+
+        # Reference patterns (in order of specificity):
+        # 1. + Leb Beg s.66/100 (cross-ref with lowercase abbrev)
+        # 2. s.66/100 or s. 66/100 (lowercase abbreviation + numbers)
+        # 3. LB 147 (2-3 uppercase letters + numbers) - NOT month names!
+        # 4. 24/147, 66/100 (numbers with / or .)
+        # 5. Simple numbers NOT preceded by digit (to avoid matching inside years)
+        ref_regex = re.compile(
+            r'(?:'
+            r'\+\s*[A-Z][a-zA-Z\s]+[a-z]+\.\s*\d+(?:[./]\d+)*'  # + Leb Beg s.66/100
+            r'|(?<![A-Za-z])[a-z]+\.\s*\d+(?:[./]\d+)*'  # s.66/100 or s. 66/100
+            r'|(?<![A-Za-z])[A-Z][A-Za-z]{1,2}\s+\d+(?:[./]\d+)*'  # LB 147 (2-3 letters only, not July/August)
+            r'|(?<!\d)\d+[./]\d+(?:[./]\d+)*'  # 24/147, 66/100 (MUST have / or .)
+            r'|(?<!\d)\d{1,3}(?!\d)'  # 1-3 digit numbers, not part of larger number
+            r')(?=(?:[^\w]|$))'
+        )
+
+        def is_apostrophe_not_quote(pos):
+            """Check if character at pos is an apostrophe in a word (not a closing quote)"""
+            if pos <= 0 or pos >= n - 1:
+                return False
+            # Apostrophe if: preceded AND followed by letter
+            # Examples: "mother's", "Aren't", "it's"
+            return raw[pos - 1].isalpha() and raw[pos + 1].isalpha()
+
+        while i < n:
+            c = raw[i]
+
+            # Translation in quotes
+            if c in quote_pairs:
+                close = quote_pairs[c]
+
+                # Find closing quote, but skip apostrophes within words
+                j = i + 1
+                while j < n:
+                    if raw[j] == close:
+                        # Check if this is an apostrophe (not a closing quote)
+                        if is_apostrophe_not_quote(j):
+                            j += 1  # Skip this apostrophe, keep looking
+                            continue
+                        # Found real closing quote
+                        break
+                    j += 1
+
+                if j < n:  # Found closing quote
+                    push('translation', raw[i:j+1])
+                    i = j + 1
+                    continue
+                # No closing - treat as text
+                push('text', c)
+                i += 1
+                continue
+
+            # Note [ ... ]
+            if c == '[':
+                j = raw.find(']', i + 1)
+                if j != -1:
+                    push('note', raw[i:j+1])
+                    i = j + 1
+                    continue
+                push('text', c)
+                i += 1
+                continue
+
+            # Reference (but not dates or years)
+            m = ref_regex.match(raw, i)
+            if m:
+                ref_value = m.group(0)
+                # Check if this looks like a date component (year or "Month DD")
+                # Look back to check if preceded by month name
+                lookback = raw[max(0, i-15):i]
+                is_date = (
+                    re.match(r'^(?:19|20)\d{2}$', ref_value) or  # Years
+                    re.search(r'(?:January|February|March|April|May|June|July|August|September|October|November|December)\s*$', lookback)
+                )
+                if is_date:
+                    push('turoyo', ref_value)
+                else:
+                    push('ref', ref_value)
+                i = m.end()
+                continue
+
+            # Punctuation we want explicit
+            if c in ';,:()':
+                push('punct', c)
+                i += 1
+                continue
+
+            # Whitespace or other text - accumulate until next special
+            j = i + 1
+            while j < n:
+                cj = raw[j]
+                if (cj in quote_pairs) or cj == '[' or cj in ';,:()' or ref_regex.match(raw, j):
+                    break
+                j += 1
+            push('text', raw[i:j])
+            i = j
+
+        return tokens
 
     def is_valid_translation(self, text):
         """Filter out references, notes, and non-translation text"""
@@ -672,94 +815,238 @@ class FixedDocxParser:
 
         return merged
 
-    def parse_table_cell(self, cell):
-        """Parse examples from table cell using run formatting to separate Turoyo from translations
+    def _extract_reference_groups(self, tokens):
+        """
+        Extract reference strings from tokens exactly as tokenized.
+        The tokenizer already captures full references like "LuF 286/44" or "147".
+        """
+        refs = []
+        for token in tokens:
+            if token.get('kind') == 'ref':
+                refs.append(token.get('value', '').strip())
+        return refs
 
-        ENHANCED VERSION (2025-10-31): Handle 5 categories of empty Turoyo cases:
-        1. Form-only entries (single form + reference)
-        2. Numbered list items with italic Turoyo
-        3. Reference-only lines
-        4. Story excerpts
-        5. Variant form lists
+    def parse_table_cell(self, cell):
+        """
+        Extract examples from a DOCX table cell using robust heuristics:
+        - Prefer italic runs as Turoyo when present
+        - Otherwise, detect Turoyo via character heuristics
+        - Extract translations from quoted segments
+        - Extract references as-is from tokenizer (e.g., "LuF 286/44", "147", "jl 18.7.11")
+        - Merge consecutive Turoyo/translation-only lines
         """
         examples = []
 
         for para in cell.paragraphs:
-            full_para_text = para.text.strip()
-
-            if not full_para_text:
+            para_text = para.text
+            full_text = para_text.strip()
+            if not full_text:
                 continue
 
-            if self.is_reference_only(full_para_text):
+            # Skip reference-only lines like "611;" or "LB 89;"
+            if re.match(r'^[\d\s;/,]+$', full_text):
                 continue
 
-            turoyo_parts = []
-            translation_parts = []
+            # Split paragraph into numbered items when present (e.g., "1) ... 2) ...")
+            # Find all occurrences of "N) " and build segments
+            # BUGFIX: Only match small numbers 1-9 to avoid matching years like "2020)"
+            indices = []
+            for m in re.finditer(r'(?:^|[;\n])[ \t]*([1-9])\)\s', para_text):
+                # Start at the digit position (exclude leading whitespace)
+                indices.append(m.start(1))
+            if not indices:
+                indices = [0]
+            indices.append(len(para_text))
 
-            for run in para.runs:
-                text = run.text.strip()
-                if not text:
+            for i in range(len(indices) - 1):
+                start = indices[i]
+                end = indices[i + 1]
+                if start >= end:
                     continue
+                item_plain = para_text[start:end]
+                item_plain_norm = self.normalize_whitespace(item_plain)
 
-                if run.italic is True:
-                    turoyo_parts.append(run.text)
-                elif run.italic is False:
-                    if len(text) > 2:
-                        translation_parts.append(text)
-                else:
-                    if self.is_likely_turoyo(text):
-                        turoyo_parts.append(run.text)
-                    elif len(text) > 2:
-                        translation_parts.append(text)
+                # Tokenize by content only (don't rely on italics)
+                tokens = self._split_raw_to_tokens(item_plain)
+                # Convert plain text tokens to turoyo by default
+                for tkn in tokens:
+                    if tkn.get('kind') == 'text':
+                        tkn['kind'] = 'turoyo'
 
-            turoyo_text = ''.join(turoyo_parts)
+                # Extract derived fields for search/filter
+                translations = [
+                    self.normalize_whitespace(tok['value'].strip('ʻʼ“”"\''))
+                    for tok in tokens if tok['kind'] == 'translation'
+                ]
 
-            if self.is_form_only_entry(full_para_text):
-                forms, refs = self.extract_variant_forms(full_para_text)
-                if forms:
-                    turoyo_text = '; '.join(forms)
-                    example = {
+                # no italic-based fallback; turoyo will be formed from non-translation tokens
+
+                # References: extract as-is from tokenizer (e.g., "LB 147", "LuF 286/44", "jl 18.7.11")
+                references = self._extract_reference_groups(tokens)
+
+                # Join all turoyo tokens for a searchable turoyo_text snapshot
+                turoyo_text = self.normalize_whitespace(''.join(
+                    (tok['value'] for tok in tokens if tok['kind'] == 'turoyo')
+                )) if tokens else ''
+
+                if turoyo_text or translations or tokens:
+                    examples.append({
                         'turoyo': turoyo_text,
-                        'translations': [],
-                        'references': refs
-                    }
-                    examples.append(example)
-                    continue
+                        'translations': translations,
+                        'references': references if references else [],
+                        'tokens': tokens,
+                        'text': self.normalize_whitespace(item_plain),
+                    })
 
-            translations = []
-            for t in translation_parts:
-                normalized = self.normalize_whitespace(t)
-
-                if self.is_form_only_entry(normalized):
-                    forms, refs = self.extract_variant_forms(normalized)
-                    if forms:
-                        if not turoyo_text:
-                            turoyo_text = '; '.join(forms)
-                        continue
-
-                if self.is_likely_turoyo(normalized) and not turoyo_text:
-                    turoyo_text = normalized
-                    continue
-
-                if self.is_valid_translation(normalized):
-                    translations.append(normalized)
-
-            if turoyo_text or translations:
-                references = re.findall(r'\d+(?:;\s*\d+)?(?:/\d+)?', turoyo_text)
-
-                example = {
-                    'turoyo': self.normalize_whitespace(turoyo_text),
-                    'translations': translations,
-                    'references': references[:2] if references else []
-                }
-
-                if example['turoyo'] or example['translations']:
-                    examples.append(example)
-
-        # AGENT 1 FIX: Merge split Turoyo+translation pairs (recovers 12 cases)
+        # Merge split Turoyo/translation pairs
         examples = self.merge_split_examples(examples)
 
         return examples
+
+    def is_in_table(self, para):
+        """Check if paragraph is inside a table"""
+        return para._element.getparent().tag.endswith('tbl')
+
+    def is_idiom_paragraph(self, text, verb_forms):
+        """
+        Detect if a paragraph is an idiomatic expression.
+
+        Args:
+            text: Paragraph text
+            verb_forms: List of verb forms for this root (e.g., ['obe', 'hule', 'mahwele'])
+
+        Returns:
+            bool: True if this looks like an idiomatic expression
+        """
+        if not text or len(text) < 10:
+            return False
+
+        has_verb_form = any(form in text for form in verb_forms if form)
+        has_quotation = bool(re.search(r'[ʻʼ\'''"""\"]', text))
+
+        if has_verb_form and has_quotation:
+            return True
+
+        turoyo_chars = r'ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūə'
+        starts_with_turoyo = bool(re.match(rf'^[{turoyo_chars}]', text, re.UNICODE))
+
+        if starts_with_turoyo and has_quotation and len(text) > 30:
+            return True
+
+        turoyo_sequences = re.findall(rf'[{turoyo_chars}]+', text, re.UNICODE)
+        if len(turoyo_sequences) >= 3 and has_quotation:
+            return True
+
+        return False
+
+    def parse_idiom_paragraph(self, text):
+        """
+        Parse an idiomatic expression paragraph into structured data.
+
+        Returns:
+            dict or None: Idiom data with phrase, meaning, and examples
+        """
+        text = text.strip()
+
+        quotes = re.findall(r'[ʻʼ\'''"""\"]([^ʻʼ\'''""\"]+)[ʻʼ\'''""\"]', text)
+
+        if not quotes:
+            return {
+                'phrase': '',
+                'meaning': '',
+                'examples': [{
+                    'turoyo': text[:200],
+                    'translation': '',
+                    'reference': None
+                }]
+            }
+
+        meaning = quotes[0] if quotes else ''
+
+        first_quote_pos = text.find(f"'{meaning}'") if meaning else 0
+        if first_quote_pos < 0:
+            first_quote_pos = text.find(f"ʻ{meaning}ʼ")
+        if first_quote_pos < 0:
+            first_quote_pos = text.find(f'"{meaning}"')
+
+        phrase = text[:first_quote_pos].strip() if first_quote_pos > 0 else ''
+        phrase = re.sub(r':+$', '', phrase).strip()
+
+        example_start = first_quote_pos + len(meaning) + 2 if first_quote_pos >= 0 else 0
+        example_text = text[example_start:].strip()
+        example_text = re.sub(r'^:\s*', '', example_text)
+
+        turoyo_part = ''
+        translation_part = ''
+
+        if len(quotes) > 1:
+            translation_part = quotes[1]
+
+            second_quote_pos = example_text.find(f"'{translation_part}'")
+            if second_quote_pos < 0:
+                second_quote_pos = example_text.find(f"ʻ{translation_part}ʼ")
+            if second_quote_pos < 0:
+                second_quote_pos = example_text.find(f'"{translation_part}"')
+
+            if second_quote_pos > 0:
+                turoyo_part = example_text[:second_quote_pos].strip()
+            else:
+                turoyo_part = example_text
+        else:
+            turoyo_part = example_text
+
+        reference = None
+        ref_match = re.search(r'\b(\d+/\d+|\d+:\d+)\b', text)
+        if ref_match:
+            reference = ref_match.group(1)
+
+        return {
+            'phrase': phrase,
+            'meaning': meaning,
+            'examples': [{
+                'turoyo': turoyo_part[:300] if turoyo_part else '',
+                'translation': translation_part[:300] if translation_part else '',
+                'reference': reference
+            }] if turoyo_part or translation_part else []
+        }
+
+    def extract_idioms(self, paragraphs, verb_forms):
+        """
+        Extract ALL non-table text after stems as raw idiom paragraphs.
+
+        Simple approach: preserve everything verbatim without parsing.
+
+        Args:
+            paragraphs: List of paragraph objects
+            verb_forms: List of verb forms for this root (unused in simple mode)
+
+        Returns:
+            list or None: List of raw text strings, or None if no content found
+        """
+        idiom_texts = []
+
+        for para in paragraphs:
+            if self.is_in_table(para):
+                continue
+
+            text = para.text.strip()
+
+            if not text or len(text) < 3:
+                continue
+
+            # BUGFIX: Skip headers (with flexible matching for variations like "Idiomatic phrases:")
+            if re.match(r'^(Detransitive|Idiomatic phrases?:?|Idioms?:?|Examples?:?|Collocations?:?)$', text, re.IGNORECASE):
+                continue
+
+            # Skip numbered general meaning lists (but keep if it has specific idioms)
+            # Pattern: "1) meaning; 2) meaning; 3) meaning" with semicolons between
+            if re.match(r'^\d+\)\s+.+;\s*\d+\)\s+.+;', text):
+                continue
+
+            # Keep everything else
+            idiom_texts.append(text)
+
+        return idiom_texts if idiom_texts else None
 
     def parse_document_with_tables(self, docx_path):
         """Parse document using element tree to get table positions"""
@@ -810,6 +1097,15 @@ class FixedDocxParser:
 
                 if is_root:
                     if current_verb:
+                        if self.pending_idiom_paras:
+                            all_verb_forms = []
+                            for stem in current_verb.get('stems', []):
+                                all_verb_forms.extend(stem.get('forms', []))
+                            idioms = self.extract_idioms(self.pending_idiom_paras, all_verb_forms)
+                            if idioms:
+                                current_verb['idioms'] = idioms
+                                self.stats['idioms_extracted'] = self.stats.get('idioms_extracted', 0) + len(idioms)
+
                         self.verbs.append(current_verb)
                         self.stats['verbs_parsed'] += 1
 
@@ -822,34 +1118,59 @@ class FixedDocxParser:
                             'etymology': etymology,
                             'cross_reference': None,
                             'stems': [],
+                            'idioms': None,
                             'uncertain': '???' in para.text
                         }
                         current_stem = None
+                        self.pending_idiom_paras = []
 
                         if not is_root_strict:
                             self.contextual_roots.append(root)
                             self.stats['contextual_roots'] += 1
-
-                elif self.is_stem_header(para):
-                    stem_num, forms = self.extract_stem_info(para.text)
-                    if stem_num and current_verb is not None:
-                        current_stem = {
-                            'stem': stem_num,
-                            'forms': forms,
-                            'conjugations': {}
-                        }
-                        current_verb['stems'].append(current_stem)
-                        self.stats['stems_parsed'] += 1
 
                 elif 'Detransitive' in para.text and current_verb:
                     if not any(s['stem'] == 'Detransitive' for s in current_verb['stems']):
                         current_stem = {
                             'stem': 'Detransitive',
                             'forms': [],
-                            'conjugations': {}
+                            'conjugations': {},
+                            '_awaiting_forms': True
                         }
                         current_verb['stems'].append(current_stem)
                         self.stats['detransitive_entries'] += 1
+
+                elif current_stem and current_stem.get('_awaiting_forms'):
+                    text = para.text.strip()
+                    if '/' in text and len(text) < 30:
+                        forms = [f.strip() for f in text.split('/') if f.strip()]
+                        current_stem['forms'] = forms
+                    elif text and len(text) < 50 and not any(c in text for c in '();:'):
+                        if not current_stem.get('label_gloss_tokens'):
+                            current_stem['label_gloss_tokens'] = []
+                        current_stem['label_gloss_tokens'].append({'italic': False, 'text': text})
+                        current_stem['label_raw'] = text
+                        del current_stem['_awaiting_forms']
+                    else:
+                        if '_awaiting_forms' in current_stem:
+                            del current_stem['_awaiting_forms']
+                        self.pending_idiom_paras.append(para)
+
+                elif self.is_stem_header(para):
+                    stem_num, forms, gloss = self.extract_stem_info(para.text)
+                    if stem_num and current_verb is not None:
+                        current_stem = {
+                            'stem': stem_num,
+                            'forms': forms,
+                            'conjugations': {}
+                        }
+                        if gloss:
+                            current_stem['label_gloss_tokens'] = [{'italic': False, 'text': gloss}]
+                            current_stem['label_raw'] = gloss
+                        current_verb['stems'].append(current_stem)
+                        self.stats['stems_parsed'] += 1
+
+                elif current_verb is not None and current_verb.get('stems'):
+                    self.pending_idiom_paras.append(para)
 
             elif elem_type == 'table':
                 table = elem
@@ -863,14 +1184,28 @@ class FixedDocxParser:
                         examples = self.parse_table_cell(examples_cell)
 
                         if conj_type and examples:
-                            current_stem['conjugations'][conj_type] = examples
+                            if conj_type in current_stem['conjugations']:
+                                current_stem['conjugations'][conj_type].extend(examples)
+                            else:
+                                current_stem['conjugations'][conj_type] = examples
                             self.stats['examples_parsed'] += len(examples)
 
         if current_verb:
+            if self.pending_idiom_paras:
+                all_verb_forms = []
+                for stem in current_verb.get('stems', []):
+                    all_verb_forms.extend(stem.get('forms', []))
+                idioms = self.extract_idioms(self.pending_idiom_paras, all_verb_forms)
+                if idioms:
+                    current_verb['idioms'] = idioms
+                    self.stats['idioms_extracted'] = self.stats.get('idioms_extracted', 0) + len(idioms)
+
             self.verbs.append(current_verb)
             self.stats['verbs_parsed'] += 1
 
         print(f"   ✓ {self.stats['verbs_parsed']} verbs, {self.stats['stems_parsed']} stems, {self.stats['examples_parsed']} examples")
+        if self.stats.get('idioms_extracted'):
+            print(f"   💬 {self.stats['idioms_extracted']} idiomatic expressions extracted")
         if self.stats.get('contextual_roots'):
             print(f"   🔍 {self.stats['contextual_roots']} roots found via contextual validation")
 

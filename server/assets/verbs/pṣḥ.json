@@ -14,26 +14,131 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["pṣīḥ", "məpṣəḥ"],
+      "forms": [
+        "pṣīḥ",
+        "məpṣəḥ"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ánnaqqa u=malko áydarbo pṣīḥ b-u=ṭayr-ano 125; 70/100;",
-            "translations": ["oh, wie sich da der König über den Vogel freute"],
-            "references": ["125; 70/100"]
+            "turoyo": "ánnaqqa u=malko áydarbo pṣīḥ b-u=ṭayr-ano",
+            "translations": [
+              "oh, wie sich da der König über den Vogel freute"
+            ],
+            "references": [
+              "125",
+              "70/100"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ánnaqqa u=malko áydarbo pṣīḥ b-u=ṭayr-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻoh, wie sich da der König über den Vogel freuteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "125"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70/100"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ánnaqqa u=malko áydarbo pṣīḥ b-u=ṭayr-ano ʻoh, wie sich da der König über den Vogel freuteʼ; 125; 70/100;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "u=ṭayráyḏi-yo, ko-məpṣəḥ aʕmi! gəd-oṯe-la kēf 130; 70/130;",
+            "turoyo": "u=ṭayráyḏi-yo ko-məpṣəḥ aʕmi! gəd-oṯe-la kēf",
             "translations": [
               "es ist mein Vogel, er treibt Scherz mit mir, und wird vergnügt werden"
             ],
-            "references": ["130; 70/130"]
+            "references": [
+              "130",
+              "70/130"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=ṭayráyḏi-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-məpṣəḥ aʕmi! gəd-oṯe-la kēf "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes ist mein Vogel, er treibt Scherz mit mir, und wird vergnügt werdenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "130"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70/130"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=ṭayráyḏi-yo, ko-məpṣəḥ aʕmi! gəd-oṯe-la kēf ʻes ist mein Vogel, er treibt Scherz mit mir, und wird vergnügt werdenʼ; 130; 70/130;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(Detrans.) sich freuen, Scherz treiben;"
   ],
   "uncertain": false
 }

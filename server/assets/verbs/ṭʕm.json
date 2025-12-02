@@ -14,24 +14,112 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mṭaʕamle", "mṭaʕəm"],
+      "forms": [
+        "mṭaʕamle",
+        "mṭaʕəm"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "d-ʔa+nošeəmṭaʕmidkəmḥalfileḥrenoyaʕnidkəmḥalfi‿ʔḥrenokomṭaʕmimaʕ+ʕaynoṯeʔiloneḥrenekəmmilei+ʕayno",
-            "translations": ["(p.c. Ilyas Iran, July 2024)"],
-            "references": []
+            "turoyo": "Dinnaqa d-ʔa+noše dkəmṭaʕmi u+ilono dkəmḥalfile lfiro ḥreno yaʕni dkəmḥalfi u+ilono l‿ʔilono ḥreno komṭaʕmi u+ilono maʕ+ʕaynoṯe d-ʔilone ḥrene … hano kəmmile i+ʕayno du+ilono p.c. Ilyas Iran July 2024",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Dinnaqa d-ʔa+noše dkəmṭaʕmi u+ilono"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " dkəmḥalfile lfiro ḥreno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " yaʕni dkəmḥalfi u+ilono l‿ʔilono ḥreno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " komṭaʕmi u+ilono maʕ+ʕaynoṯe d-ʔilone ḥrene … hano kəmmile i+ʕayno du+ilono "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "p.c. Ilyas Iran"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " July 2024"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Dinnaqa d-ʔa+noše dkəmṭaʕmi u+ilono, dkəmḥalfile lfiro ḥreno, yaʕni dkəmḥalfi u+ilono l‿ʔilono ḥreno, komṭaʕmi u+ilono maʕ+ʕaynoṯe d-ʔilone ḥrene … hano kəmmile i+ʕayno du+ilono (p.c. Ilyas Iran, July 2024)"
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "ṭeʕomo 171;",
-            "translations": [],
-            "references": ["171"]
+            "turoyo": "ṭeʕomo",
+            "translations": [
+              "pfropfen, okulieren"
+            ],
+            "references": [
+              "171"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṭeʕomo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻpfropfen, okulierenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "171"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ṭeʕomo ʻpfropfen, okulierenʼ; 171;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "pfropfen, okulieren;"
   ],
   "uncertain": false
 }

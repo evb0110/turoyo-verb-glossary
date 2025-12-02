@@ -12,22 +12,57 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mkamašle", "mkaməš"],
+      "forms": [
+        "mkamašle",
+        "mkaməš"
+      ],
       "conjugations": {
         "Preterit": [
           {
             "turoyo": "mkamašle",
             "translations": [],
-            "references": ["229"]
+            "references": [
+              "229"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mkamašle"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "229"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mkamašle; 229;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["makmašle", "makməš"],
+      "forms": [
+        "makmašle",
+        "makməš"
+      ],
       "conjugations": {}
     }
+  ],
+  "idioms": [
+    "mit der flachen Hand auf den Kopf schlagen;",
+    "mit der flachen Hand auf den Kopf schlagen;"
   ],
   "uncertain": false
 }

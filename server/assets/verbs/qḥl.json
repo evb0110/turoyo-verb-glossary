@@ -5,24 +5,101 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["qaḥəl", "qoḥəl"],
+      "forms": [
+        "qaḥəl",
+        "qoḥəl"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "ab=bote qaḥili 325;",
-            "translations": ["die (alten) Häuser brachen zusammen"],
-            "references": ["325"]
+            "turoyo": "ab=bote qaḥili",
+            "translations": [
+              "die (alten) Häuser brachen zusammen"
+            ],
+            "references": [
+              "325"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ab=bote qaḥili "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie (alten) Häuser brachen zusammenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "325"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ab=bote qaḥili ʻdie (alten) Häuser brachen zusammenʼ; 325;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "I+tərto lo kəmqaḥmo ʕal u+čelikayḏa (Ilyas p.c. 5-01-2021)",
+            "turoyo": "I+tərto lo kəmqaḥmo ʕal u+čelikayḏa Ilyas p.--2021",
             "translations": [],
-            "references": ["5", "01"]
+            "references": [
+              "c. 5",
+              "01"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "I+tərto lo kəmqaḥmo ʕal u+čelikayḏa "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Ilyas p."
+              },
+              {
+                "kind": "ref",
+                "value": "c. 5"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "01"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-2021"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "I+tərto lo kəmqaḥmo ʕal u+čelikayḏa (Ilyas p.c. 5-01-2021)"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "brechen;",
+    "qḥm",
+    "II ‘to love’ (mostly about animals and their small ones). The basic meaning is about a cow, a she-goat, etc.: she either accepts her new-born or not. This is what qḥm II initially means"
   ],
   "uncertain": false
 }

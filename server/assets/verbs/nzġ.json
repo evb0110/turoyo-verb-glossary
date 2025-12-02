@@ -14,17 +14,54 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mnazaġle", "mnazəġ"],
+      "forms": [
+        "mnazaġle",
+        "mnazəġ"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "l-ab=baṣle mnazaġġe 230;",
-            "translations": ["die Zwiebeln schlugen aus"],
-            "references": ["230"]
+            "turoyo": "l-ab=baṣle mnazaġġe",
+            "translations": [
+              "die Zwiebeln schlugen aus"
+            ],
+            "references": [
+              "230"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-ab=baṣle mnazaġġe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Zwiebeln schlugen ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "230"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "l-ab=baṣle mnazaġġe ʻdie Zwiebeln schlugen ausʼ; 230;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "ausschlagen;"
   ],
   "uncertain": false
 }

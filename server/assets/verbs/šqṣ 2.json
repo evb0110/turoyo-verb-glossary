@@ -14,17 +14,54 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["šqəṣle", "šoqəṣ"],
+      "forms": [
+        "šqəṣle",
+        "šoqəṣ"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "kə-mšaqaṣnoruḥi l-i=muxtariye 231;",
-            "translations": ["Schulzenamt"],
-            "references": ["231"]
+            "turoyo": "kə-mšaqaṣno ruḥi l-i=muxtariye",
+            "translations": [
+              "ich biete mich für das Schulzenamt an"
+            ],
+            "references": [
+              "231"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kə-mšaqaṣno ruḥi l-i=muxtariye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich biete mich für das Schulzenamt anʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "231"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kə-mšaqaṣno ruḥi l-i=muxtariye ʻich biete mich für das Schulzenamt anʼ; 231;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(ruḥe) sich selbst für ein Tun oder ein Amt anbieten;"
   ],
   "uncertain": false
 }

@@ -12,17 +12,46 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["xtәmle", "xotәm"],
+      "forms": [
+        "xtәmle",
+        "xotәm"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "Lu Sergey xtәmle U=Mgalin/U=Qurʕan = matәmle (İlyas p.c);",
+            "turoyo": "Lu Sergey xtәmle U=Mgalin/U=Qurʕan = matәmle İlyas p.c",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": " Lu Sergey xtәmle U=Mgalin/U=Qurʕan = matәmle "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "Lu Sergey xtәmle U=Mgalin/U=Qurʕan = matәmle (İlyas p.c);"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "To finish reading,"
   ],
   "uncertain": false
 }

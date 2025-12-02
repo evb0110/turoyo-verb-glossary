@@ -14,24 +14,104 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mšaḥlafle", "mšaḥləf"],
+      "forms": [
+        "mšaḥlafle",
+        "mšaḥləf"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "l-Mār Tuma mšaḥlafle am=maye l-u=ḥamro 789;",
-            "translations": ["verwandelte", "das Wasser in"],
-            "references": ["789"]
+            "turoyo": "l-Mār Tuma mšaḥlafle am=maye l-u=ḥamro",
+            "translations": [
+              "Mar Tuma verwandelte das Wasser in Wein"
+            ],
+            "references": [
+              "789"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-Mār Tuma mšaḥlafle am=maye l-u=ḥamro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻMar Tuma verwandelte das Wasser in Weinʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "789"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "l-Mār Tuma mšaḥlafle am=maye l-u=ḥamro ʻMar Tuma verwandelte das Wasser in Weinʼ; 789;"
           }
-        ],
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
         "Infectum": [
           {
-            "turoyo": "u=lawno d-ʕayne d-hen m-annoše ko-mišaḥləf ‘",
-            "translations": ["Augenfarbe", "’ (Gabriel from Guetersloh, p.c.)"],
-            "references": []
+            "turoyo": "u=lawno d-ʕayne d-hen m-annoše ko-mišaḥləf Gabriel from Guetersloh p.c.",
+            "translations": [
+              "‘Die Augenfarbe von manschen Leuten ändert sich’"
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=lawno d-ʕayne d-hen m-annoše ko-mišaḥləf  "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Die Augenfarbe von manschen  Leuten ändert sich’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "Gabriel from Guetersloh"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " p.c."
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "u=lawno d-ʕayne d-hen m-annoše ko-mišaḥləf ‘Die Augenfarbe von manschen Leuten ändert sich’ (Gabriel from Guetersloh, p.c.)"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "wechseln, versetzen, verlegen, verwandeln;"
   ],
   "uncertain": false
 }

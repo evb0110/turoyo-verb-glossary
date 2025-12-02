@@ -12,17 +12,48 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mʕanṭele", "mʕanṭəl"],
+      "forms": [
+        "mʕanṭele",
+        "mʕanṭəl"
+      ],
       "conjugations": {
         "Infectum": [
           {
             "turoyo": "kə-mʕanṭanno aš=šuġlone kulle",
             "translations": [],
-            "references": ["768"]
+            "references": [
+              "768"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kə-mʕanṭanno aš=šuġlone kulle"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "768"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kə-mʕanṭanno aš=šuġlone kulle; 768;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "liegen lassen, verschieben (Arbeit);"
   ],
   "uncertain": false
 }

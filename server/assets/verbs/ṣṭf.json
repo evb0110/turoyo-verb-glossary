@@ -14,17 +14,54 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mṣaṭafle", "mṣaṭəf"],
+      "forms": [
+        "mṣaṭafle",
+        "mṣaṭəf"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "kə-mṣaṭəf 164;",
-            "translations": [],
-            "references": ["164"]
+            "turoyo": "kə-mṣaṭəf",
+            "translations": [
+              "er zerkleinert (Stein, Holz, Fleisch)"
+            ],
+            "references": [
+              "164"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kə-mṣaṭəf "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer zerkleinert (Stein, Holz, Fleisch)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "164"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kə-mṣaṭəf ʻer zerkleinert (Stein, Holz, Fleisch)ʼ; 164;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "zerkleinern;"
   ],
   "uncertain": false
 }

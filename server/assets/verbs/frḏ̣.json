@@ -14,19 +14,101 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["frəḏ̣le", "forəḏ̣"],
+      "forms": [
+        "frəḏ̣le",
+        "forəḏ̣"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "lazəm d-əzzano l-i=walay-aṯe d-qoṭəʕ i=šariʕayḏan, ənkān eli g-furḏ̣o aw elux gəd-furḏ̣o 99; 60/26, 123, 127;",
+            "turoyo": "lazəm d-əzzano l-i=walay-aṯe d-qoṭəʕ i=šariʕayḏan ənkān eli g-furḏ̣o aw elux gəd-furḏ̣o",
             "translations": [
               "wir müssen in die Stadt gehen, damit er unseren Rechtsfall entscheidet, ob sie von Rechtswegen mir oder dir gehören soll"
             ],
-            "references": ["99; 60/26", "123"]
+            "references": [
+              "99",
+              "60/26",
+              "123",
+              "127"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lazəm d-əzzano l-i=walay-aṯe d-qoṭəʕ i=šariʕayḏan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ənkān eli g-furḏ̣o aw elux gəd-furḏ̣o "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir müssen in die Stadt gehen, damit er unseren Rechtsfall entscheidet, ob sie von Rechtswegen mir oder dir gehören sollʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "99"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "60/26"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "123"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "127"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lazəm d-əzzano l-i=walay-aṯe d-qoṭəʕ i=šariʕayḏan, ənkān eli g-furḏ̣o aw elux gəd-furḏ̣o ʻwir müssen in die Stadt gehen, damit er unseren Rechtsfall entscheidet, ob sie von Rechtswegen mir oder dir gehören sollʼ; 99; 60/26, 123, 127;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "von Rechtswegen gehören;"
   ],
   "uncertain": false
 }

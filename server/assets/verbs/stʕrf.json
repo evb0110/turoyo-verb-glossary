@@ -14,19 +14,67 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["məstaʕrafle", "məstaʕrəf"],
+      "forms": [
+        "məstaʕrafle",
+        "məstaʕrəf"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "k-məstáʕrəfo i=aṯt-aṯi taḥt iḏi 810; prs 226/34;",
+            "turoyo": "k-məstáʕrəfo i=aṯt-aṯi taḥt iḏi prs",
             "translations": [
               "diese Frau legt mir eben eine geheime Beichte ab"
             ],
-            "references": ["810", "226/34"]
+            "references": [
+              "810",
+              "226/34"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-məstáʕrəfo i=aṯt-aṯi taḥt iḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdiese Frau legt mir eben eine geheime Beichte abʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "810"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "226/34"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "k-məstáʕrəfo i=aṯt-aṯi taḥt iḏi ʻdiese Frau legt mir eben eine geheime Beichte abʼ; 810; prs 226/34;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "beichten;"
   ],
   "uncertain": false
 }

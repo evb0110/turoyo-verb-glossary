@@ -5,17 +5,54 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["maxəšle", "maxəš"],
+      "forms": [
+        "maxəšle",
+        "maxəš"
+      ],
       "conjugations": {
         "Imperativ": [
           {
-            "turoyo": "maxəš-li u=daynayḏux 582;",
-            "translations": ["begleiche mir deine Schuld"],
-            "references": ["582"]
+            "turoyo": "maxəš-li u=daynayḏux",
+            "translations": [
+              "begleiche mir deine Schuld"
+            ],
+            "references": [
+              "582"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maxəš-li u=daynayḏux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻbegleiche mir deine Schuldʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "582"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "maxəš-li u=daynayḏux ʻbegleiche mir deine Schuldʼ; 582;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "begleichen (Schuld);"
   ],
   "uncertain": false
 }

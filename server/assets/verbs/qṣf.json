@@ -14,28 +14,128 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["qṣəfle", "qoṣəf"],
+      "forms": [
+        "qṣəfle",
+        "qoṣəf"
+      ],
       "conjugations": {
         "Infectum-wa": [
           {
-            "turoyo": "1) aloho d-qoṣaf-wa ʕomre d-u=zlām-awo 213; 57/85;",
+            "turoyo": "aloho d-qoṣaf-wa ʕomre d-u=zlām-awo",
             "translations": [
               "wenn Gott das Leben jenes Mannes verkürzen möchte"
             ],
-            "references": ["1", "213; 57/85"]
-          }
-        ],
-        "Preterit": [
-          {
-            "turoyo": "2) u=zʕur-ano hēš me-naʕmiṯe qṣīf 214;",
-            "translations": [
-              "dieser Knabe ist schon von Jungen auf in der Entwicklung zurückgeblieben"
+            "references": [
+              "1",
+              "213",
+              "57/85"
             ],
-            "references": ["2", "214"]
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aloho d-qoṣaf-wa ʕomre d-u=zlām-awo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn Gott das Leben jenes Mannes verkürzen möchteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "213"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "57/85"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) aloho d-qoṣaf-wa ʕomre d-u=zlām-awo ʻwenn Gott das Leben jenes Mannes verkürzen möchteʼ; 213; 57/85;"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "u=zʕur-ano hēš me-naʕmiṯe qṣīf",
+            "translations": [
+              "dieser Knabe ist schon von Jungen auf in der Entwicklung zurückgeblieben"
+            ],
+            "references": [
+              "2",
+              "214"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=zʕur-ano hēš me-naʕmiṯe qṣīf "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdieser Knabe ist schon von Jungen auf in der Entwicklung zurückgebliebenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "214"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) u=zʕur-ano hēš me-naʕmiṯe qṣīf ʻdieser Knabe ist schon von Jungen auf in der Entwicklung zurückgebliebenʼ; 214;"
+          }
+        ]
+      },
+      "_awaiting_forms": true
     }
   ],
+  "idioms": null,
   "uncertain": false
 }

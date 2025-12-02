@@ -14,17 +14,91 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mkafalle", "mkafən"],
+      "forms": [
+        "mkafalle",
+        "mkafən"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "maytele u=kafan, mkafalle, maḥatle-steʕal i=naḥšo 263; 25/53; [MT]",
-            "translations": ["Leichentuch"],
-            "references": ["263; 25/53"]
+            "turoyo": "maytele u=kafan mkafalle maḥatle-ste ʕal i=naḥšo",
+            "translations": [
+              "er holte das Leichentuch, wickelte ihn hinein und legte ihn auf die Bahre"
+            ],
+            "references": [
+              "263",
+              "25/53"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maytele u=kafan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mkafalle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥatle-ste ʕal i=naḥšo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer holte das Leichentuch, wickelte ihn hinein und legte ihn auf die Bahreʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "263"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/53"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "maytele u=kafan, mkafalle, maḥatle-ste ʕal i=naḥšo ʻer holte das Leichentuch, wickelte ihn hinein und legte ihn auf die Bahreʼ; 263; 25/53; [MT]"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "in ein Leichentuch hüllen;"
   ],
   "uncertain": false
 }

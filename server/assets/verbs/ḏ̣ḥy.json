@@ -14,17 +14,54 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mḏ̣aḥele", "mḏ̣aḥe"],
+      "forms": [
+        "mḏ̣aḥele",
+        "mḏ̣aḥe"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ayna mənxu gə-mḏ̣aḥe b-nafše 419;",
-            "translations": ["wer von euch wird sich aufopfern?"],
-            "references": ["419"]
+            "turoyo": "ayna mənxu gə-mḏ̣aḥe b-nafše",
+            "translations": [
+              "wer von euch wird sich aufopfern?"
+            ],
+            "references": [
+              "419"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ayna mənxu gə-mḏ̣aḥe b-nafše "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwer von euch wird sich aufopfern?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "419"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ayna mənxu gə-mḏ̣aḥe b-nafše ʻwer von euch wird sich aufopfern?ʼ; 419;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "aufopfern;"
   ],
   "uncertain": false
 }

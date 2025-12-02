@@ -14,67 +14,719 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["gnule", "gonu"],
+      "forms": [
+        "gnule",
+        "gonu"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "gnīw me-gabaye tre=ʕeze b-ramšəl 278; 115/9; tarʕo me diḏan lə=ftīḥ. w áydarbo u=ʕazl-ano gnīw? mamṭila-le maṯle <…> u=šayro aydarbo gniw ‘; 24/223",
+            "turoyo": "gnule i=ṭaṣe d-u=malko prs prs prs gəd-izzano bayn-aq=qawre tamo k-fulġina ak=kallat-ani də-gnulan m-i=xazne d-u=šulṭono u=mede d-məžġanno haw ǧuwāb diḏi! ḥatta d-maxəlṣina m-u=qaṭlo-ste w-u=mede də-gnuwwe-ste foyəš lašanayna",
             "translations": [
-              "zwei Ziegen sind gestern gestohlen worden",
-              "keine unserer Türen ist aufgebrochen worden. Wie ist dann dieses Wollgarn gestohlen worden?",
-              "Sie brachte die Rede <…> wie dann das Armband gestohlen wurde’"
+              "er hat den Becher des Königs gestolen",
+              "Wir wollen zwischen die Gräber gehen; dort teilen wir das Geld, das wir aus dem Schatzhaus des Sultans gestohlen haben",
+              "‘Was ich sagen werde, darauf antworte, damit wir uns vor dem Totgeschlagen werden retten und außerdem das, was sie gestohlen haben, für uns bleibt!’"
             ],
-            "references": ["278; 115/9", "24/223"]
+            "references": [
+              "271",
+              "19/27",
+              "85/25",
+              "26",
+              "117/31",
+              "25/57",
+              "25/59"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gnule i=ṭaṣe d-u=malko "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hat den Becher des Königs gestolenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "271"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "19/27"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "85/25"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "117/31"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəd-izzano bayn-aq=qawre"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " tamo k-fulġina ak=kallat-ani"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " də-gnulan m-i=xazne d-u=šulṭono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻWir wollen zwischen die Gräber gehen; dort teilen wir das Geld, das wir aus dem Schatzhaus des Sultans gestohlen habenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/57"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=mede d-məžġanno haw ǧuwāb diḏi! ḥatta d-maxəlṣina m-u=qaṭlo-ste"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-u=mede də-gnuwwe-ste foyəš lašanayna "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Was ich sagen werde, darauf antworte, damit wir uns vor dem Totgeschlagen werden retten und außerdem das, was sie gestohlen haben, für uns bleibt!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/59"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "gnule i=ṭaṣe d-u=malko ʻer hat den Becher des Königs gestolenʼ; 271; prs 19/27; prs 85/25, 26; prs 117/31; gəd-izzano bayn-aq=qawre, tamo k-fulġina ak=kallat-ani, də-gnulan m-i=xazne d-u=šulṭono ʻWir wollen zwischen die Gräber gehen; dort teilen wir das Geld, das wir aus dem Schatzhaus des Sultans gestohlen habenʼ; 25/57 [MT]; u=mede d-məžġanno haw ǧuwāb diḏi! ḥatta d-maxəlṣina m-u=qaṭlo-ste, w-u=mede də-gnuwwe-ste foyəš lašanayna ‘Was ich sagen werde, darauf antworte, damit wir uns vor dem Totgeschlagen werden retten und außerdem das, was sie gestohlen haben, für uns bleibt!’; 25/59 [MT]"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "maḥatle l-u=paša qm-i=xazne qiro w zafto w rəṣle aʕle ʕafro, ayna d-oṯe gonu g-miġəṭ b-u=qiro w b-u=zafto, lo=k-nofəq, g-mŭsak-le u=paša 275; prs 117/9; prs 119/32; Šahrzamān, i=naqqa <…> d-damixo Sittilbudūr, azzé ʕabər l-u=čadər diḏa ḥatta d-gonu mede mena ‘’; 24/139; d-izzóx s-i=armalt-ayo d-kət-yo ǧirān diḏan; kət-la ṭaṣe, d-gunwat-la w-amṭát-li-yo, mə́qqayəṣ d-ubʕət gd-ubéno-lox kaʕbe ‘’; 25/9 [MT]i=barṯ-ayḏux azzayo b-ramšəl b-lalyo d-gunwo u=zlām-ano u=nuxroyo d-aṯi gaban",
+            "turoyo": "maḥatle l-u=paša qm-i=xazne qiro w zafto w rəṣle aʕle ʕafro ayna d-oṯe gonu g-miġəṭ b-u=qiro w b-u=zafto lo=k-nofəq g-mŭsak-le u=paša prs prs Šahrzamān i=naqqa <…> d-damixo Sittilbudūr azzé ʕabər l-u=čadər diḏa ḥatta d-gonu mede mena d-izzóx s-i=armalt-ayo d-kət-yo ǧirān diḏan kət-la ṭaṣe d-gunwat-la w-amṭát-li-yo mə́qqayəṣ d-ubʕət gd-ubéno-lox kaʕbe i=barṯ-ayḏux azzayo b-ramšəl b-lalyo d-gunwo u=zlām-ano u=nuxroyo d-aṯi gaban",
             "translations": [
               "der Statthalter hatte vor dem Schatze eine Grube voll Pech und Harz angelegt und Erde darüber streuen lassen, damit jeder, der etwa stehlen würde, in das Pech und Harz einsinke und nicht mehr herauskomme, so dass man ihn fassen könne",
-              "Schahrzamān ging, als <…> Sittilbudūr schlief, in das Zelt seiner [Frau], um ihr etwas wegzunehmen",
-              "Du sollst zu jener Witwe gehen, die unsere Nachbarin ist. Die hat eine Schale. Wenn du die stiehlst und mir bringst, gebe ich dir soviel Knöchel, als du haben willst",
-              "‘Last night your daughter went to rob this foreign man who came to us’ 83/91;"
+              "‘Schahrzamān ging, als <…> Sittilbudūr schlief, in das Zelt seiner [Frau], um ihr etwas wegzunehmen’",
+              "‘Du sollst zu jener Witwe gehen, die unsere Nachbarin ist. Die hat eine Schale. Wenn du die stiehlst und mir bringst, gebe ich dir soviel Knöchel, als du haben willst’",
+              "‘Last night your daughter went to rob this foreign man who came to us’"
             ],
-            "references": ["275", "117/9"]
+            "references": [
+              "275",
+              "117/9",
+              "119/32",
+              "24/139",
+              "25/9",
+              "83/91"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maḥatle l-u=paša qm-i=xazne qiro w zafto w rəṣle aʕle ʕafro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ayna d-oṯe gonu g-miġəṭ b-u=qiro w b-u=zafto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=k-nofəq"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-mŭsak-le u=paša "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Statthalter hatte vor dem Schatze eine Grube voll Pech und Harz angelegt und Erde darüber streuen lassen, damit jeder, der etwa stehlen würde, in das Pech und Harz einsinke und nicht mehr herauskomme, so dass man ihn fassen könneʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "275"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "117/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "119/32"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Šahrzamān"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naqqa <…> d-damixo Sittilbudūr"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " azzé ʕabər l-u=čadər diḏa ḥatta d-gonu mede mena "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Schahrzamān ging, als <…> Sittilbudūr schlief, in das Zelt seiner [Frau], um ihr etwas wegzunehmen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/139"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-izzóx s-i=armalt-ayo d-kət-yo ǧirān diḏan"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kət-la ṭaṣe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-gunwat-la w-amṭát-li-yo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mə́qqayəṣ d-ubʕət gd-ubéno-lox kaʕbe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Du sollst zu jener Witwe gehen, die unsere Nachbarin ist. Die hat eine Schale. Wenn du die stiehlst und mir bringst, gebe ich dir soviel Knöchel, als du haben willst’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/9"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=barṯ-ayḏux azzayo b-ramšəl b-lalyo d-gunwo u=zlām-ano u=nuxroyo d-aṯi gaban "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Last night your daughter went to rob this foreign man who came to us’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "83/91"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "maḥatle l-u=paša qm-i=xazne qiro w zafto w rəṣle aʕle ʕafro, ayna d-oṯe gonu g-miġəṭ b-u=qiro w b-u=zafto, lo=k-nofəq, g-mŭsak-le u=paša ʻder Statthalter hatte vor dem Schatze eine Grube voll Pech und Harz angelegt und Erde darüber streuen lassen, damit jeder, der etwa stehlen würde, in das Pech und Harz einsinke und nicht mehr herauskomme, so dass man ihn fassen könneʼ; 275; prs 117/9; prs 119/32; Šahrzamān, i=naqqa <…> d-damixo Sittilbudūr, azzé ʕabər l-u=čadər diḏa ḥatta d-gonu mede mena ‘Schahrzamān ging, als <…> Sittilbudūr schlief, in das Zelt seiner [Frau], um ihr etwas wegzunehmen’; 24/139; d-izzóx s-i=armalt-ayo d-kət-yo ǧirān diḏan; kət-la ṭaṣe, d-gunwat-la w-amṭát-li-yo, mə́qqayəṣ d-ubʕət gd-ubéno-lox kaʕbe ‘Du sollst zu jener Witwe gehen, die unsere Nachbarin ist. Die hat eine Schale. Wenn du die stiehlst und mir bringst, gebe ich dir soviel Knöchel, als du haben willst’; 25/9 [MT]; i=barṯ-ayḏux azzayo b-ramšəl b-lalyo d-gunwo u=zlām-ano u=nuxroyo d-aṯi gaban ‘Last night your daughter went to rob this foreign man who came to us’ 83/91;"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "ʕŭbar-wo l-ab=bote gŭnaw-wo laḥmo, mŭḥán-wo-le 276; prs 179/12;",
+            "turoyo": "ʕŭbar-wo l-ab=bote gŭnaw-wo laḥmo mŭḥán-wo-le prs",
             "translations": [
               "er pflegte in die Häuser zu gehen und Brot zu stehlen, und die Leute schlugen ihn"
             ],
-            "references": ["276", "179/12"]
+            "references": [
+              "276",
+              "179/12"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕŭbar-wo l-ab=bote gŭnaw-wo laḥmo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mŭḥán-wo-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer pflegte in die Häuser zu gehen und Brot zu stehlen, und die Leute schlugen ihnʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "276"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "179/12"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ʕŭbar-wo l-ab=bote gŭnaw-wo laḥmo, mŭḥán-wo-le ʻer pflegte in die Häuser zu gehen und Brot zu stehlen, und die Leute schlugen ihnʼ; 276; prs 179/12;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "mqawamlan ak=kallat ʕal u=naqwo, gnáwun-ne m-lalġul 277; prs 239/24;",
+            "turoyo": "mqawamlan ak=kallat ʕal u=naqwo gnáwun-ne m-lalġul prs",
             "translations": [
               "wir haben das Geld vor dem Neste aufgehäuft, stehlt es von innen"
             ],
-            "references": ["277", "239/24"]
+            "references": [
+              "277",
+              "239/24"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mqawamlan ak=kallat ʕal u=naqwo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " gnáwun-ne m-lalġul "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir haben das Geld vor dem Neste aufgehäuft, stehlt es von innenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "277"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "239/24"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mqawamlan ak=kallat ʕal u=naqwo, gnáwun-ne m-lalġul ʻwir haben das Geld vor dem Neste aufgehäuft, stehlt es von innenʼ; 277; prs 239/24;"
           }
         ],
         "Part act.": [
           {
             "turoyo": "ganowo",
             "translations": [],
-            "references": ["277"]
+            "references": [
+              "277"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ganowo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "277"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ganowo; 277;"
+          }
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "gnīw me-gabaye tre=ʕeze b-ramšəl tarʕo me diḏan lə=ftīḥ. w áydarbo u=ʕazl-ano gnīw? mamṭila-le maṯle <…> u=šayro aydarbo gniw",
+            "translations": [
+              "zwei Ziegen sind gestern gestohlen worden",
+              "keine unserer Türen ist aufgebrochen worden. Wie ist dann dieses Wollgarn gestohlen worden?",
+              "‘Sie brachte die Rede <…> wie dann das Armband gestohlen wurde’"
+            ],
+            "references": [
+              "278",
+              "115/9",
+              "JL 17.6.5",
+              "24/223"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gnīw me-gabaye tre=ʕeze b-ramšəl "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻzwei Ziegen sind gestern gestohlen wordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "278"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "115/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " tarʕo me diḏan lə=ftīḥ. w áydarbo u=ʕazl-ano gnīw? "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻkeine unserer Türen ist aufgebrochen worden. Wie ist dann dieses Wollgarn gestohlen worden?ʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 17.6.5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mamṭila-le maṯle <…> u=šayro aydarbo gniw "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sie brachte die Rede <…> wie dann das Armband gestohlen wurde’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/223"
+              }
+            ],
+            "text": "gnīw me-gabaye tre=ʕeze b-ramšəl ʻzwei Ziegen sind gestern gestohlen wordenʼ; 278; 115/9; tarʕo me diḏan lə=ftīḥ. w áydarbo u=ʕazl-ano gnīw? ʻkeine unserer Türen ist aufgebrochen worden. Wie ist dann dieses Wollgarn gestohlen worden?ʼ JL 17.6.5; mamṭila-le maṯle <…> u=šayro aydarbo gniw ‘Sie brachte die Rede <…> wie dann das Armband gestohlen wurde’; 24/223"
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "gnowo gnŭwo-lox? zwono zwŭno-lox? 277; prs 141/21; 60/55;",
+            "turoyo": "gnowo gnŭwo-lox? zwono zwŭno-lox? prs",
             "translations": [
               "hast du sie gestohlen? Oder hast du sie gekauft?"
             ],
-            "references": ["277", "141/21"]
+            "references": [
+              "277",
+              "141/21",
+              "60/55"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gnowo gnŭwo-lox? zwono zwŭno-lox? "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻhast du sie gestohlen? Oder hast du sie gekauft?ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "277"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "141/21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "60/55"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "gnowo gnŭwo-lox? zwono zwŭno-lox? ʻhast du sie gestohlen? Oder hast du sie gekauft?ʼ; 277; prs 141/21; 60/55;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "stehlen;"
   ],
   "uncertain": false
 }

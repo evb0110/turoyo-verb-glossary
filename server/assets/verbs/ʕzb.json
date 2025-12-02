@@ -14,19 +14,62 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mʕazable", "mʕazəb"],
+      "forms": [
+        "mʕazable",
+        "mʕazəb"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "k-obaʕno d-quṭlútəl-li w bas mʕazbútəl-li, g-moyaṯno LB 171;",
+            "turoyo": "k-obaʕno d-quṭlútəl-li w bas mʕazbútəl-li g-moyaṯno",
             "translations": [
-              "ʻich möchte, dass ihr mich umbringt. Quält mich nicht mehr, ich werde sterbenʼ;"
+              "ich möchte, dass ihr mich umbringt. Quält mich nicht mehr, ich werde sterben"
             ],
-            "references": ["171"]
+            "references": [
+              "LB 171"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-obaʕno d-quṭlútəl-li w bas mʕazbútəl-li"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-moyaṯno "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich möchte, dass ihr mich umbringt. Quält mich nicht mehr, ich werde sterbenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 171"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "k-obaʕno d-quṭlútəl-li w bas mʕazbútəl-li, g-moyaṯno ʻich möchte, dass ihr mich umbringt. Quält mich nicht mehr, ich werde sterbenʼ; LB 171;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "quälen, bemühen, belästigen;"
   ],
   "uncertain": false
 }

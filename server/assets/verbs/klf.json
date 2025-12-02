@@ -14,41 +14,340 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mkalafle", "mkaləf"],
+      "forms": [
+        "mkalafle",
+        "mkaləf"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "1) qayimo i=maləkṯo,mkalaflatre=wazire, húla-lleamroəmmo: “g-əzzoxu, gəd-məstaʔǧrítəl-le qunāġlarwal d-u=balad” 161; 87/39; zmoromkalaflan, zmərle",
-            "translations": ["beauftragte", "ausserhalb", ", und er hat"],
-            "references": ["1", "161; 87/39"]
+            "turoyo": "qayimo i=maləkṯo mkalafla tre=wazire húla-lle amro əmmo zmoro mkalaflan zmərle",
+            "translations": [
+              "g-əzzoxu, gəd-məstaʔǧrítəl-le qunāġ larwal d-u=balad",
+              "da beauftragte die Königin zwei Wesire, befahl ihnen und sprach: “Ihr werdet gehen und für ihn ein Wohnhaus ausserhalb der Stadt mieten",
+              "‘Wir haben ihm Gesang auferlegt, und er hat gesungen’"
+            ],
+            "references": [
+              "1",
+              "161",
+              "87/39",
+              "35/46"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " qayimo i=maləkṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mkalafla tre=wazire"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " húla-lle amro əmmo"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“g-əzzoxu, gəd-məstaʔǧrítəl-le qunāġ larwal d-u=balad”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda beauftragte die Königin zwei Wesire, befahl ihnen und sprach: “Ihr werdet gehen und für ihn ein Wohnhaus ausserhalb der Stadt mieten”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "161"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "87/39"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " zmoro mkalaflan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " zmərle "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Wir haben ihm Gesang auferlegt, und er hat gesungen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "35/46"
+              }
+            ],
+            "text": "1) qayimo i=maləkṯo, mkalafla tre=wazire, húla-lle amro əmmo: “g-əzzoxu, gəd-məstaʔǧrítəl-le qunāġ larwal d-u=balad” ʻda beauftragte die Königin zwei Wesire, befahl ihnen und sprach: “Ihr werdet gehen und für ihn ein Wohnhaus ausserhalb der Stadt mieten”ʼ; 161; 87/39; zmoro mkalaflan, zmərle ‘Wir haben ihm Gesang auferlegt, und er hat gesungen’; 35/46"
           },
           {
-            "turoyo": "3) i=naqqa d-u=zʕuro d-məlle u=maṯl-ano, w-də-mkalafle i=žġaliy-aṯe l-i=kačke, ḥaqiqiaṯi-la qanaʕa l-i=kačke, ki hanogawro",
+            "turoyo": "i=naqqa d-u=zʕuro d-məlle u=maṯl-ano w-də-mkalafle i=žġaliy-aṯe l-i=kačke ḥaqiqi aṯi-la qanaʕa l-i=kačke ki hano gawro",
             "translations": [
-              "‘Als der Jüngling dies",
-              "Mädchen die",
-              "Überzeugung",
-              "Mann sei’; 29/111"
+              "‘Als der Jüngling dies sagte und dem Mädchen vortrug, da kam dem Mädchen die Überzeugung, dass dies wirklich ein Mann sei’"
             ],
-            "references": ["3"]
+            "references": [
+              "3",
+              "29/111"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naqqa d-u=zʕuro d-məlle u=maṯl-ano"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-də-mkalafle i=žġaliy-aṯe l-i=kačke"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥaqiqi aṯi-la qanaʕa l-i=kačke"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ki hano gawro "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Als der Jüngling dies sagte und dem Mädchen vortrug, da kam dem Mädchen die Überzeugung, dass dies wirklich ein Mann sei’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/111"
+              }
+            ],
+            "text": "3) i=naqqa d-u=zʕuro d-məlle u=maṯl-ano, w-də-mkalafle i=žġaliy-aṯe l-i=kačke, ḥaqiqi aṯi-la qanaʕa l-i=kačke, ki hano gawro ‘Als der Jüngling dies sagte und dem Mädchen vortrug, da kam dem Mädchen die Überzeugung, dass dies wirklich ein Mann sei’; 29/111"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "2) “məqqagə-mkalfo” omər “ḥamməšmo=liratdahwo” 165; 57/194;",
-            "translations": ["Fünfhundert", "Goldpfunde”"],
-            "references": ["2", "165; 57/194"]
+            "turoyo": "omər",
+            "translations": [
+              "məqqa gə-mkalfo",
+              "ḥamməšmo=lirat dahwo",
+              "was soll es (das Armband f) kosten?” “Fünfhundert Goldpfunde"
+            ],
+            "references": [
+              "2",
+              "165",
+              "57/194"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“məqqa gə-mkalfo”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " omər "
+              },
+              {
+                "kind": "translation",
+                "value": "“ḥamməšmo=lirat dahwo”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ“was soll es (das Armband f) kosten?” “Fünfhundert Goldpfunde”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "165"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "57/194"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) “məqqa gə-mkalfo” omər “ḥamməšmo=lirat dahwo” ʻ“was soll es (das Armband f) kosten?” “Fünfhundert Goldpfunde”ʼ; 165; 57/194;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "1) mkaléf u=păpāz d-zomər 170; 35/37;",
-            "translations": ["Geistlichen"],
-            "references": ["1", "170; 35/37"]
+            "turoyo": "mkaléf u=păpāz d-zomər",
+            "translations": [
+              "erlege dem Geistlichen auf, zu singen"
+            ],
+            "references": [
+              "1",
+              "170",
+              "35/37"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mkaléf u=păpāz d-zomər "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻerlege dem Geistlichen auf, zu singenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "170"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "35/37"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) mkaléf u=păpāz d-zomər ʻerlege dem Geistlichen auf, zu singenʼ; 170; 35/37;"
           }
         ]
       }
     }
   ],
+  "idioms": null,
   "uncertain": false
 }

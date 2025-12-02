@@ -14,39 +14,289 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mṣaʕaḷḷe", "mṣaʕər"],
+      "forms": [
+        "mṣaʕaḷḷe",
+        "mṣaʕər"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mṣaʕálle-le l-u=abro 243; prs 213/13;",
-            "translations": ["er scholt den Sohn aus"],
-            "references": ["243", "213/13"]
+            "turoyo": "mṣaʕálle-le l-u=abro prs",
+            "translations": [
+              "er scholt den Sohn aus"
+            ],
+            "references": [
+              "243",
+              "213/13"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mṣaʕálle-le l-u=abro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer scholt den Sohn ausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "243"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "213/13"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mṣaʕálle-le l-u=abro ʻer scholt den Sohn ausʼ; 243; prs 213/13;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "hano u=sobo ko-mšayəl u=ṭaboxo ʕal u=dayroyo naʕimo w-ko-mṣaʕal-le 246; 42/4, 5; b-u=ḥal-ano hənnək ku-mṣaʕri l-ḥḏoḏe, u=ṭaboxo ko-mbalaġ-ġe šlomefayəš ko-mṣaʕro l-ruḥa w-l-i=saʕa d-ḥzela eba u=kačalōk",
+            "turoyo": "hano u=sobo ko-mšayəl u=ṭaboxo ʕal u=dayroyo naʕimo w-ko-mṣaʕal-le b-u=ḥal-ano hənnək ku-mṣaʕri l-ḥḏoḏe u=ṭaboxo ko-mbalaġ-ġe šlome fayəš ko-mṣaʕro l-ruḥa w-l-i=saʕa d-ḥzela eba u=kačalōk",
             "translations": [
               "this old [monk] asked the cook about the young monk and abused him",
-              "‘Thus, they would abuse each other [and] the cook would send them regards’; 42/8;",
-              "‘She began to scold herself and the hour when she had seen the bald-headed’; 44/115"
+              "‘Thus, they would abuse each other [and] the cook would send them regards’",
+              "‘She began to scold herself and the hour when she had seen the bald-headed’"
             ],
-            "references": ["246; 42/4", "5"]
+            "references": [
+              "246",
+              "42/4",
+              "5",
+              "42/8",
+              "44/115"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hano u=sobo ko-mšayəl u=ṭaboxo ʕal u=dayroyo naʕimo w-ko-mṣaʕal-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻthis old [monk] asked the cook about the young monk and abused himʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "246"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "42/4"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-u=ḥal-ano hənnək ku-mṣaʕri l-ḥḏoḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=ṭaboxo ko-mbalaġ-ġe šlome "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Thus, they would abuse each other [and] the cook would send them regards’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "42/8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " fayəš ko-mṣaʕro l-ruḥa w-l-i=saʕa d-ḥzela eba u=kačalōk "
+              },
+              {
+                "kind": "translation",
+                "value": "‘She began to scold herself and the hour when she had seen the bald-headed’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/115"
+              }
+            ],
+            "text": "hano u=sobo ko-mšayəl u=ṭaboxo ʕal u=dayroyo naʕimo w-ko-mṣaʕal-le ʻthis old [monk] asked the cook about the young monk and abused himʼ; 246; 42/4, 5; b-u=ḥal-ano hənnək ku-mṣaʕri l-ḥḏoḏe, u=ṭaboxo ko-mbalaġ-ġe šlome ‘Thus, they would abuse each other [and] the cook would send them regards’; 42/8; fayəš ko-mṣaʕro l-ruḥa w-l-i=saʕa d-ḥzela eba u=kačalōk ‘She began to scold herself and the hour when she had seen the bald-headed’; 44/115"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "i=naqqa d-marfan-wo aq=qarqure qum d-a=ʕwone, u=qarqur-ano mṣaʕar-wo 59/88; ənkān layto. lə=ko-mṣaʕro-wa l-babi 64/52; gəd-oṯe l-gabi me-darbe d-ono əzzí l-gabe, w-bəṯṯər m-aqqa ṣ=ṣurʕ-anək d-mṣaʕár-wayno-le",
+            "turoyo": "i=naqqa d-marfan-wo aq=qarqure qum d-a=ʕwone u=qarqur-ano mṣaʕar-wo ənkān layto. lə=ko-mṣaʕro-wa l-babi gəd-oṯe l-gabi me-darbe d-ono əzzí l-gabe w-bəṯṯər m-aqqa ṣ=ṣurʕ-anək d-mṣaʕár-wayno-le",
             "translations": [
               "wenn sie die Lämmer zu den Mutterschafen liessen, schimpfte dieses Lamm immer",
               "es ist unmöglich. Sie würde meinen Vater nicht beschimpfen",
-              "‘He will come to me instead of me coming to him after those insults with which I used to abuse him’; 42/14"
+              "‘He will come to me instead of me coming to him after those insults with which I used to abuse him’"
             ],
-            "references": ["59/88", "64/52"]
+            "references": [
+              "59/88",
+              "64/52",
+              "42/14"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqqa d-marfan-wo aq=qarqure qum d-a=ʕwone"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=qarqur-ano mṣaʕar-wo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn sie die Lämmer zu den Mutterschafen liessen, schimpfte dieses Lamm immerʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "59/88"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ənkān layto. lə=ko-mṣaʕro-wa l-babi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes ist unmöglich. Sie würde meinen Vater nicht beschimpfenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "64/52"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " gəd-oṯe l-gabi me-darbe d-ono əzzí l-gabe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-bəṯṯər m-aqqa ṣ=ṣurʕ-anək d-mṣaʕár-wayno-le "
+              },
+              {
+                "kind": "translation",
+                "value": "‘He will come to me instead of me coming to him after those insults with which I used to abuse him’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "42/14"
+              }
+            ],
+            "text": "i=naqqa d-marfan-wo aq=qarqure qum d-a=ʕwone, u=qarqur-ano mṣaʕar-wo ʻwenn sie die Lämmer zu den Mutterschafen liessen, schimpfte dieses Lamm immerʼ; 59/88; ənkān layto. lə=ko-mṣaʕro-wa l-babi ʻes ist unmöglich. Sie würde meinen Vater nicht beschimpfenʼ; 64/52; gəd-oṯe l-gabi me-darbe d-ono əzzí l-gabe, w-bəṯṯər m-aqqa ṣ=ṣurʕ-anək d-mṣaʕár-wayno-le ‘He will come to me instead of me coming to him after those insults with which I used to abuse him’; 42/14"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "ausschelten, schimpfen;"
   ],
   "uncertain": false
 }

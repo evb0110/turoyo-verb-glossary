@@ -5,53 +5,368 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["raməš", "roməš"],
+      "forms": [
+        "raməš",
+        "roməš"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "lə=raməš, w hawxa-ste d-u=zlām, hawo-ste lə=raməš 88; 44/159; raməš u=zlam-ayḏa, aṯi-le ruḥo ‘",
+            "turoyo": "lə=raməš w hawxa-ste d-u=zlām hawo-ste lə=raməš raməš u=zlam-ayḏa aṯi-le ruḥo",
             "translations": [
               "[the bald-headed] did not move and thus [they did with] the man and he also did not move",
-              "The man moved and regained his consciousness’ LuF 278/12;"
+              "‘The man moved and regained his consciousness’"
             ],
-            "references": ["88; 44/159"]
+            "references": [
+              "88",
+              "44/159",
+              "LuF 278/12"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lə=raməš"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w hawxa-ste d-u=zlām"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawo-ste lə=raməš "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ[the bald-headed] did not move and thus [they did with] the man and he also did not moveʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "88"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/159"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " raməš u=zlam-ayḏa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aṯi-le ruḥo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘The man moved and regained his consciousness’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LuF 278/12"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lə=raməš, w hawxa-ste d-u=zlām, hawo-ste lə=raməš ʻ[the bald-headed] did not move and thus [they did with] the man and he also did not moveʼ; 88; 44/159; raməš u=zlam-ayḏa, aṯi-le ruḥo ‘The man moved and regained his consciousness’ LuF 278/12;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "bu-zor də-k-marmišo aḥ=ḥarakat diḏa, də-k-rumšo ‘’; 24/82 [MT]; lə=k-qadər nošo m-ann=aḥunon-aṯṯe aw m-i=ʕašir-aṯṯe d-roməš b-galde ḥzela kibe heš ruḥo ko-rəmšo",
+            "turoyo": "bu-zor də-k-marmišo aḥ=ḥarakat diḏa də-k-rumšo lə=k-qadər nošo m-ann=aḥunon-aṯṯe aw m-i=ʕašir-aṯṯe d-roməš b-galde ḥzela kibe heš ruḥo ko-rəmšo",
             "translations": [
-              "Nur mit größter Mühe brachte sie ihre Bewegungen zu Stande, regte sie sich",
-              "‘Keiner von seinen Brüdern oder Stammesgenossen konnte sich in seiner Haut rühren’; 30/95;",
-              "‘She saw that he still had a glimmer of life in him’ LuF 276/10;"
+              "‘Nur mit größter Mühe brachte sie ihre Bewegungen zu Stande, regte sie sich’",
+              "‘Keiner von seinen Brüdern oder Stammesgenossen konnte sich in seiner Haut rühren’",
+              "‘She saw that he still had a glimmer of life in him’"
             ],
-            "references": ["24/82"]
+            "references": [
+              "24/82",
+              "30/95",
+              "LuF 276/10"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bu-zor də-k-marmišo aḥ=ḥarakat diḏa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " də-k-rumšo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Nur mit größter Mühe brachte sie ihre Bewegungen zu Stande, regte sie sich’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/82"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=k-qadər nošo m-ann=aḥunon-aṯṯe aw m-i=ʕašir-aṯṯe d-roməš b-galde "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Keiner von seinen Brüdern oder Stammesgenossen konnte sich in seiner Haut rühren’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/95"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥzela kibe heš ruḥo ko-rəmšo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘She saw that he still had a glimmer of life in him’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LuF 276/10"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "bu-zor də-k-marmišo aḥ=ḥarakat diḏa, də-k-rumšo ‘Nur mit größter Mühe brachte sie ihre Bewegungen zu Stande, regte sie sich’; 24/82 [MT]; lə=k-qadər nošo m-ann=aḥunon-aṯṯe aw m-i=ʕašir-aṯṯe d-roməš b-galde ‘Keiner von seinen Brüdern oder Stammesgenossen konnte sich in seiner Haut rühren’; 30/95; ḥzela kibe heš ruḥo ko-rəmšo ‘She saw that he still had a glimmer of life in him’ LuF 276/10;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["marmašle", "marməš"],
+      "forms": [
+        "marmašle",
+        "marməš"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "lə … marmašle maye b-galde 140; 107/139; (пример отсутствует в указанном месте)",
-            "translations": [],
-            "references": ["140; 107/139"]
+            "turoyo": "lə … marmašle maye b-galde пример отсутствует в указанном месте",
+            "translations": [
+              "er rührte sich nicht (so dass das Wasser auf seiner Haut sich nicht bewegte)"
+            ],
+            "references": [
+              "140",
+              "107/139"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lə … marmašle maye b-galde "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer rührte sich nicht (so dass das Wasser auf seiner Haut sich nicht bewegte)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "140"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "107/139"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "пример отсутствует в указанном месте"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "lə … marmašle maye b-galde ʻer rührte sich nicht (so dass das Wasser auf seiner Haut sich nicht bewegte)ʼ; 140; 107/139; (пример отсутствует в указанном месте)"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "lə=k-owe d-marəmšət maye b-galdux ʻdu darfst dich nicht rührenʼ; 144; bu-zor də-k-marmišo aḥ=ḥarakat diḏa, də-k-rumšo ‘’; 24/82 [MT]",
+            "turoyo": "lə=k-owe d-marəmšət maye b-galdux bu-zor də-k-marmišo aḥ=ḥarakat diḏa də-k-rumšo",
             "translations": [
-              "Nur mit größter Mühe brachte sie ihre Bewegungen zu Stande, regte sie sich"
+              "du darfst dich nicht rühren",
+              "‘Nur mit größter Mühe brachte sie ihre Bewegungen zu Stande, regte sie sich’"
             ],
-            "references": ["144", "24/82"]
+            "references": [
+              "144",
+              "24/82"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lə=k-owe d-marəmšət maye b-galdux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu darfst dich nicht rührenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "144"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bu-zor də-k-marmišo aḥ=ḥarakat diḏa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " də-k-rumšo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Nur mit größter Mühe brachte sie ihre Bewegungen zu Stande, regte sie sich’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/82"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "lə=k-owe d-marəmšət maye b-galdux ʻdu darfst dich nicht rührenʼ; 144; bu-zor də-k-marmišo aḥ=ḥarakat diḏa, də-k-rumšo ‘Nur mit größter Mühe brachte sie ihre Bewegungen zu Stande, regte sie sich’; 24/82 [MT]"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "sich rühren;",
+    "sich rühren; rühren"
   ],
   "uncertain": false
 }

@@ -14,39 +14,312 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["təqle", "toyəq"],
+      "forms": [
+        "təqle",
+        "toyəq"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "k-tayqibambayat 520;",
-            "translations": ["Feuerwerkskörper"],
-            "references": ["520"]
+            "turoyo": "k-tayqi bambayat",
+            "translations": [
+              "sie bringen Feuerwerkskörper zum Platzen"
+            ],
+            "references": [
+              "520"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-tayqi bambayat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie bringen Feuerwerkskörper zum Platzenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "520"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "k-tayqi bambayat ʻsie bringen Feuerwerkskörper zum Platzenʼ; 520;"
           }
-        ],
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ab=bambat-anək w ab=buġr-anəkkulletiqiʕal u=zəh-awo u=rabo 531; 63/139;",
-            "translations": ["und das Schrot", "zerplatzten"],
-            "references": ["531; 63/139"]
+            "turoyo": "ab=bambat-anək w ab=buġr-anək kulle tiqi ʕal u=zəh-awo u=rabo",
+            "translations": [
+              "all die Bomben und das Schrot zerplatzten auf der grossen Schlange"
+            ],
+            "references": [
+              "531",
+              "63/139"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ab=bambat-anək w ab=buġr-anək kulle tiqi ʕal u=zəh-awo u=rabo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻall die Bomben und das Schrot zerplatzten auf der grossen Schlangeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "531"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "63/139"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ab=bambat-anək w ab=buġr-anək kulle tiqi ʕal u=zəh-awo u=rabo ʻall die Bomben und das Schrot zerplatzten auf der grossen Schlangeʼ; 531; 63/139;"
           },
           {
-            "turoyo": "Kətlanḥmórestemaḥtilanlawġulfəlge+dlalyolǝ+gnəfqida+ḥmorea+tloṯoḥmoreHə",
+            "turoyo": "97HD. Kətlan ḥmóreste maḥtilan lawġul. E qay fəlge+dlalyo lǝ+gnəfqi ab+bexwadiya da+ḥmore a+tloṯo ḥmore. Hăḷḷa Hăḷḷa! Nafiqi . Omaṇṇo We had donkeys too we put them inside. Right why don’t those goddamned donkeys go out in the middle of the night all three donkeys? Good grief! They went out clop-clop clop-clop. I say",
             "translations": [
-              "ab+bexwadiya",
-              "!’ We had donkeys too, we put them inside. Right, why don’t those goddamned donkeys go out in the middle of the night, all three donkeys? Good grief! They went out, clop-clop, clop-clop. ‘Hey, by God!’ I say, ‘It blew up!’"
+              "‘Raq, raq, raq, raq’",
+              "‘Hə! B Aloho!’",
+              "‘Tiqo!’",
+              "‘Hey, by God!’",
+              "‘It blew up!’"
             ],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "97HD.  Kətlan ḥmóreste"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maḥtilan lawġul. E qay fəlge+dlalyo lǝ+gnəfqi ab+bexwadiya da+ḥmore"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " a+tloṯo ḥmore. Hăḷḷa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " Hăḷḷa! Nafiqi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Raq, raq, raq, raq’"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Hə! B Aloho!’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Omaṇṇo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Tiqo!’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " We had donkeys too"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " we put them inside. Right"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " why don’t those goddamned donkeys go out in the middle of the night"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " all three donkeys? Good grief! They went out"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " clop-clop"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " clop-clop. "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Hey, by God!’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " I say"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "‘It blew up!’"
+              }
+            ],
+            "text": "97HD. Kətlan ḥmóreste, maḥtilan lawġul. E qay fəlge+dlalyo lǝ+gnəfqi ab+bexwadiya da+ḥmore, a+tloṯo ḥmore. Hăḷḷa, Hăḷḷa! Nafiqi, ‘Raq, raq, raq, raq’. ‘Hə! B Aloho!’ Omaṇṇo, ‘Tiqo!’ We had donkeys too, we put them inside. Right, why don’t those goddamned donkeys go out in the middle of the night, all three donkeys? Good grief! They went out, clop-clop, clop-clop. ‘Hey, by God!’ I say, ‘It blew up!’"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "i=naqqa d-ummi-wo hawxa, u=kăčalŭbaʕ-wo d-mitaq-wo 533; 29/462;",
-            "translations": [],
-            "references": ["533; 29/462"]
+            "turoyo": "i=naqqa d-ummi-wo hawxa u=kăčal ŭbaʕ-wo d-mitaq-wo",
+            "translations": [
+              "als sie so sprachen, wollte der Grindkopf wohl platzen (vor Wut)"
+            ],
+            "references": [
+              "533",
+              "29/462"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqqa d-ummi-wo hawxa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=kăčal ŭbaʕ-wo d-mitaq-wo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals sie so sprachen, wollte der Grindkopf wohl platzen (vor Wut)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "533"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/462"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=naqqa d-ummi-wo hawxa, u=kăčal ŭbaʕ-wo d-mitaq-wo ʻals sie so sprachen, wollte der Grindkopf wohl platzen (vor Wut)ʼ; 533; 29/462;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "platzen; (fig.) platzen (vor Wut)"
   ],
   "uncertain": false
 }

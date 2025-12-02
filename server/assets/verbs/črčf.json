@@ -14,19 +14,67 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mčarčafle", "mčarčəf"],
+      "forms": [
+        "mčarčafle",
+        "mčarčəf"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "hawi ṣafrayto qayimo i=barṯo mčarčafla ruḥa 772; 105/17;",
+            "turoyo": "hawi ṣafrayto qayimo i=barṯo mčarčafla ruḥa",
             "translations": [
-              "ʻals es Morgen ward, stand die Tochter auf, legte ihren Strassenüberwurf anʼ;"
+              "als es Morgen ward, stand die Tochter auf, legte ihren Strassenüberwurf an"
             ],
-            "references": ["772; 105/17"]
+            "references": [
+              "772",
+              "105/17"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hawi ṣafrayto qayimo i=barṯo mčarčafla ruḥa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻals es Morgen ward, stand die Tochter auf, legte ihren Strassenüberwurf anʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "772"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "105/17"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hawi ṣafrayto qayimo i=barṯo mčarčafla ruḥa ʻals es Morgen ward, stand die Tochter auf, legte ihren Strassenüberwurf anʼ; 772; 105/17;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "den Frauenumhang überwerfen, um auf die Strasse zu gehen;"
   ],
   "uncertain": false
 }

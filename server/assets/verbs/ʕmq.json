@@ -14,42 +14,237 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ʕaməq", "ʕoməq"],
+      "forms": [
+        "ʕaməq",
+        "ʕoməq"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "ʕamiqi b-i=briṯo 88; prs 9/18; ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ",
-            "translations": ["ʻsie gingen tief in die Welt hineinʼ;"],
-            "references": ["88", "9/18"]
+            "turoyo": "ʕamiqi b-i=briṯo prs ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ",
+            "translations": [
+              "sie gingen tief in die Welt hinein"
+            ],
+            "references": [
+              "88",
+              "9/18"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕamiqi b-i=briṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie gingen tief in die Welt hineinʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "88"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "9/18"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ"
+              }
+            ],
+            "text": "ʕamiqi b-i=briṯo ʻsie gingen tief in die Welt hineinʼ; 88; prs 9/18; ПРИМЕР ОТСУТСТВУЕТ В УКАЗАННОМ МЕСТЕ"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["maʕmaqle", "maʕməq"],
+      "forms": [
+        "maʕmaqle",
+        "maʕməq"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "kīt ḥakəm b-Dyārbakər ftəḥle i=arʕo; arbʕi=droʕe maʕamqole arbʕi marawḥole 140; 67/59; u=adm-ayḏi šaʕəṯ me-diḏe-wa. ko-mətfakaṇṇo m-iḏe d-lo=ʕamiqo i=mḥato ġắlabe, lo=maʕamqoli xtoṯe",
+            "turoyo": "kīt ḥakəm b-Dyārbakər ftəḥle i=arʕo arbʕi=droʕe maʕamqole arbʕi marawḥole u=adm-ayḏi šaʕəṯ me-diḏe-wa. ko-mətfakaṇṇo m-iḏe d-lo=ʕamiqo i=mḥato ġắlabe lo=maʕamqoli xtoṯe",
             "translations": [
-              "ʻes gibt einen Fürsten von Diyarbekir; der hat (einen Graben) in der Erde ausheben lassen; er hat in vierzig Ellen tief und vierzig Ellen breit gemachtʼ;",
-              "‘My blood was brighter than his. I think, that is because the needle was not (stuck) very deep, I did not make it go (as deep) as he (did)’ JL 20.7.46;"
+              "es gibt einen Fürsten von Diyarbekir; der hat (einen Graben) in der Erde ausheben lassen; er hat in vierzig Ellen tief und vierzig Ellen breit gemacht",
+              "‘My blood was brighter than his. I think, that is because the needle was not (stuck) very deep, I did not make it go (as deep) as he (did)’"
             ],
-            "references": ["140; 67/59"]
+            "references": [
+              "140",
+              "67/59",
+              "JL 20.7.46"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kīt ḥakəm b-Dyārbakər ftəḥle i=arʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " arbʕi=droʕe maʕamqole arbʕi marawḥole "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes gibt einen Fürsten von Diyarbekir; der hat (einen Graben) in der Erde ausheben lassen; er hat in vierzig Ellen tief und vierzig Ellen breit gemachtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "140"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "67/59"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=adm-ayḏi šaʕəṯ me-diḏe-wa. ko-mətfakaṇṇo m-iḏe d-lo=ʕamiqo i=mḥato ġắlabe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=maʕamqoli xtoṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "‘My blood was brighter than his. I think, that is because the needle was not (stuck) very deep, I did not make it go (as deep) as he (did)’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 20.7.46"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kīt ḥakəm b-Dyārbakər ftəḥle i=arʕo; arbʕi=droʕe maʕamqole arbʕi marawḥole ʻes gibt einen Fürsten von Diyarbekir; der hat (einen Graben) in der Erde ausheben lassen; er hat in vierzig Ellen tief und vierzig Ellen breit gemachtʼ; 140; 67/59; u=adm-ayḏi šaʕəṯ me-diḏe-wa. ko-mətfakaṇṇo m-iḏe d-lo=ʕamiqo i=mḥato ġắlabe, lo=maʕamqoli xtoṯe ‘My blood was brighter than his. I think, that is because the needle was not (stuck) very deep, I did not make it go (as deep) as he (did)’ JL 20.7.46;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "qoyəm ḥofər ḥeḏore, k-ḥofər g-maʕməq g-maʕməq; g-nofəq taḥte kefo 143; 75/25;",
+            "turoyo": "qoyəm ḥofər ḥeḏore k-ḥofər g-maʕməq g-maʕməq g-nofəq taḥte kefo",
             "translations": [
-              "ʻer macht sich daran, gräbt um sie (die Kichererbsenstaude m) herum, gräbt immer tiefer und tiefer, da kommt unter ihr ein Stein herausʼ;"
+              "er macht sich daran, gräbt um sie (die Kichererbsenstaude m) herum, gräbt immer tiefer und tiefer, da kommt unter ihr ein Stein heraus"
             ],
-            "references": ["143; 75/25"]
+            "references": [
+              "143",
+              "75/25"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qoyəm ḥofər ḥeḏore"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ḥofər g-maʕməq g-maʕməq"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-nofəq taḥte kefo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer macht sich daran, gräbt um sie (die Kichererbsenstaude m) herum, gräbt immer tiefer und tiefer, da kommt unter ihr ein Stein herausʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "143"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/25"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "qoyəm ḥofər ḥeḏore, k-ḥofər g-maʕməq g-maʕməq; g-nofəq taḥte kefo ʻer macht sich daran, gräbt um sie (die Kichererbsenstaude m) herum, gräbt immer tiefer und tiefer, da kommt unter ihr ein Stein herausʼ; 143; 75/25;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "tief werden;",
+    "tief machen;"
   ],
   "uncertain": false
 }

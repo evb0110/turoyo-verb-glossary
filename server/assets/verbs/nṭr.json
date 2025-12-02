@@ -14,93 +14,862 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["nṭəlle", "noṭər"],
+      "forms": [
+        "nṭəlle",
+        "noṭər"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "1) nṭəlle hul d-oṯe-le u=muklo 254; 69/523;",
+            "turoyo": "nṭəlle hul d-oṯe-le u=muklo",
             "translations": [
               "er wartete, bis das Essen käme, ihm gebracht würde"
             ],
-            "references": ["1", "254; 69/523"]
+            "references": [
+              "1",
+              "254",
+              "69/523"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " nṭəlle hul d-oṯe-le u=muklo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wartete, bis das Essen käme, ihm gebracht würdeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "254"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/523"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) nṭəlle hul d-oṯe-le u=muklo ʻer wartete, bis das Essen käme, ihm gebracht würdeʼ; 254; 69/523;"
           },
           {
-            "turoyo": "2) nṭərre u=tarʕo 255; prs 65/27; hat-ste izóx, nṭar u=ḥabušo; bale l-owət xud-aḥunonox, hani d-lo=nṭərre, damixi, mobile l-u=ṭayro 21/11 bəṯṯər məd-mawbele l-i=maqbara tamo maḥatle b-gubo ḥḏo d-kət-wa ftəḥto, w-nṭəlle u=laly-awo",
+            "turoyo": "nṭərre u=tarʕo prs hat-ste izóx nṭar u=ḥabušo bale l-owət xud-aḥunonox hani d-lo=nṭərre damixi mobile l-u=ṭayro bəṯṯər məd-mawbele l-i=maqbara tamo maḥatle b-gubo ḥḏo d-kət-wa ftəḥto w-nṭəlle u=laly-awo",
             "translations": [
               "sie bewachten die Türe",
-              "‘geh du auch und bewache den Apfel, aber sei nicht wie deine Brüder, die ihn nicht bewacht haben, sondern eingeschlafen sind, so dass der Vogel den Apfel weggeholt hat!’;",
-              "‘Nachdem er ihn zum Friedhof gebracht hatte, legte er ihn in ein Kuppelgrab, das offen stand, und hielt die Nacht hindurch Wache bei ihm’; 25/55"
+              "‘geh du auch und bewache den Apfel, aber sei nicht wie deine Brüder, die ihn nicht bewacht haben, sondern eingeschlafen sind, so dass der Vogel den Apfel weggeholt hat!’",
+              "‘Nachdem er ihn zum Friedhof gebracht hatte, legte er ihn in ein Kuppelgrab, das offen stand, und hielt die Nacht hindurch Wache bei ihm’"
             ],
-            "references": ["2", "255"]
+            "references": [
+              "2",
+              "255",
+              "65/27",
+              "21/11",
+              "25/55"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " nṭərre u=tarʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie bewachten die Türeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "255"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "65/27"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " hat-ste izóx"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " nṭar u=ḥabušo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bale l-owət xud-aḥunonox"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hani d-lo=nṭərre"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " damixi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mobile l-u=ṭayro "
+              },
+              {
+                "kind": "translation",
+                "value": "‘geh du auch und bewache den Apfel, aber sei nicht wie deine Brüder, die ihn nicht bewacht haben, sondern eingeschlafen sind, so dass der Vogel den Apfel weggeholt hat!’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/11"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər məd-mawbele l-i=maqbara tamo maḥatle b-gubo ḥḏo d-kət-wa ftəḥto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-nṭəlle u=laly-awo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Nachdem er ihn zum Friedhof gebracht hatte, legte er ihn in ein Kuppelgrab, das offen stand, und hielt die Nacht hindurch Wache bei ihm’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "25/55"
+              }
+            ],
+            "text": "2) nṭərre u=tarʕo ʻsie bewachten die Türeʼ; 255; prs 65/27; hat-ste izóx, nṭar u=ḥabušo; bale l-owət xud-aḥunonox, hani d-lo=nṭərre, damixi, mobile l-u=ṭayro ‘geh du auch und bewache den Apfel, aber sei nicht wie deine Brüder, die ihn nicht bewacht haben, sondern eingeschlafen sind, so dass der Vogel den Apfel weggeholt hat!’; 21/11 bəṯṯər məd-mawbele l-i=maqbara tamo maḥatle b-gubo ḥḏo d-kət-wa ftəḥto, w-nṭəlle u=laly-awo ‘Nachdem er ihn zum Friedhof gebracht hatte, legte er ihn in ein Kuppelgrab, das offen stand, und hielt die Nacht hindurch Wache bei ihm’; 25/55"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "1) k-məǧbər ḥa noṭər saʕa aw tarte b-i=ṣira d-ann=otobusat 254; 4/62; 54/72; ya myaqro mʕalləm! Məḏyaḏ, w aq=qəryawoṯayḏa, kulle, k-nuṭri-lxu b-ann=arbaʕ=ʕaynoṯo ḏḏ 11/325;",
+            "turoyo": "k-məǧbər ḥa noṭər saʕa aw tarte b-i=ṣira d-ann=otobusat ya myaqro mʕalləm! Məḏyaḏ w aq=qəryawoṯayḏa kulle k-nuṭri-lxu b-ann=arbaʕ=ʕaynoṯo",
             "translations": [
               "man muss ein zwei Stunden warten und für die Autobusse Schlange stehen",
-              "‘sehr geehrter Herr Professor! Mi",
-              "und seine Dörfer, sie alle erwarten Euch mit vier Augen’;"
+              "‘sehr geehrter Herr Professor! Miḏyaḏ und seine Dörfer, sie alle erwarten Euch mit vier Augen’"
             ],
-            "references": ["1", "254; 4/62"]
+            "references": [
+              "1",
+              "254",
+              "4/62",
+              "54/72",
+              "11/325"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-məǧbər ḥa noṭər saʕa aw tarte b-i=ṣira d-ann=otobusat "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻman muss ein zwei Stunden warten und für die Autobusse Schlange stehenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "254"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "4/62"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "54/72"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ya myaqro mʕalləm! Məḏyaḏ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w aq=qəryawoṯayḏa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kulle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-nuṭri-lxu b-ann=arbaʕ=ʕaynoṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘sehr geehrter Herr Professor! Miḏyaḏ und seine Dörfer, sie alle erwarten Euch mit vier Augen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/325"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) k-məǧbər ḥa noṭər saʕa aw tarte b-i=ṣira d-ann=otobusat ʻman muss ein zwei Stunden warten und für die Autobusse Schlange stehenʼ; 254; 4/62; 54/72; ya myaqro mʕalləm! Məḏyaḏ, w aq=qəryawoṯayḏa, kulle, k-nuṭri-lxu b-ann=arbaʕ=ʕaynoṯo ‘sehr geehrter Herr Professor! Miḏyaḏ und seine Dörfer, sie alle erwarten Euch mit vier Augen’; 11/325;"
           },
           {
-            "turoyo": "2) səmme w-lə=səmme; noše b-kəre-ste, w-b-ḥaq-ste l-aṯi aʕmayye d-əzzeyo d-noṭər u=qawro d-bab-aṯṯe 255; 61/26; u=abro azzé d-noṭar-le 21/4;faqat aḥna k-nəṭrina ruḥayna, w-ko-xəlṣina m-bayn al=lappatt-ayḏa 257; 92/33;",
+            "turoyo": "səmme w-lə=səmme noše b-kəre-ste w-b-ḥaq-ste l-aṯi aʕmayye d-əzzeyo d-noṭər u=qawro d-bab-aṯṯe u=abro azzé d-noṭar-le faqat aḥna k-nəṭrina ruḥayna w-ko-xəlṣina m-bayn al=lappatt-ayḏa",
             "translations": [
               "aber was sie auch anstellten, auch für Mietlohn und Bezahlung liess sich niemand herbei, zu gehen und das Grab ihres Vaters zu bewachen",
-              "‘der Sohn ging, um ihn (der Baum, m) zu bewachen’;",
+              "‘der Sohn ging, um ihn (der Baum, m) zu bewachen’",
               "aber wir waren auf unserer Hut und entgingen ihren Fängen"
             ],
-            "references": ["2", "255; 61/26"]
+            "references": [
+              "2",
+              "255",
+              "61/26",
+              "21/4",
+              "257",
+              "92/33"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " səmme w-lə=səmme"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " noše b-kəre-ste"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-b-ḥaq-ste l-aṯi aʕmayye d-əzzeyo d-noṭər u=qawro d-bab-aṯṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻaber was sie auch anstellten, auch für Mietlohn und Bezahlung liess sich niemand herbei, zu gehen und das Grab ihres Vaters zu bewachenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "255"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "61/26"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=abro azzé d-noṭar-le "
+              },
+              {
+                "kind": "translation",
+                "value": "‘der Sohn ging, um ihn (der Baum, m) zu bewachen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  faqat aḥna k-nəṭrina ruḥayna"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-ko-xəlṣina m-bayn al=lappatt-ayḏa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻaber wir waren auf unserer Hut und entgingen ihren Fängenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "257"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "92/33"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) səmme w-lə=səmme; noše b-kəre-ste, w-b-ḥaq-ste l-aṯi aʕmayye d-əzzeyo d-noṭər u=qawro d-bab-aṯṯe ʻaber was sie auch anstellten, auch für Mietlohn und Bezahlung liess sich niemand herbei, zu gehen und das Grab ihres Vaters zu bewachenʼ; 255; 61/26; u=abro azzé d-noṭar-le ‘der Sohn ging, um ihn (der Baum, m) zu bewachen’; 21/4; faqat aḥna k-nəṭrina ruḥayna, w-ko-xəlṣina m-bayn al=lappatt-ayḏa ʻaber wir waren auf unserer Hut und entgingen ihren Fängenʼ; 257; 92/33;"
           },
           {
-            "turoyo": "10. Məḷḷe, ‘Ašə́r, lo+konoṭaṇṇo’. Elo məḷḷe w azzé, čəkle bu+ḥappəs. Čəkle bu+ḥappəs tloṯo+yawme .",
+            "turoyo": ". Məḷḷe . Elo məḷḷe w azzé čəkle bu+ḥappəs. Čəkle bu+ḥappəs tloṯo+yawme .",
             "translations": [
-              "[The king] said, ‘Really, I wouldn’t expect it’. Nevertheless, he went and put him in prison. He put him in prison for three days. (NE, the story of Joseph)"
+              "‘Ašə́r, lo+konoṭaṇṇo’"
             ],
-            "references": ["10"]
+            "references": [
+              "3",
+              "10"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "3"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "10"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". Məḷḷe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Ašə́r, lo+konoṭaṇṇo’"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". Elo məḷḷe w azzé"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " čəkle bu+ḥappəs. Čəkle bu+ḥappəs tloṯo+yawme ."
+              }
+            ],
+            "text": "3) 10. Məḷḷe, ‘Ašə́r, lo+konoṭaṇṇo’. Elo məḷḷe w azzé, čəkle bu+ḥappəs. Čəkle bu+ḥappəs tloṯo+yawme ."
+          },
+          {
+            "turoyo": "said . Nevertheless he went and put him in prison. He put him in prison for three days. NE the story of Joseph",
+            "translations": [
+              "‘Really, I wouldn’t expect it’"
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "note",
+                "value": "[The king]"
+              },
+              {
+                "kind": "turoyo",
+                "value": " said"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Really, I wouldn’t expect it’"
+              },
+              {
+                "kind": "turoyo",
+                "value": ". Nevertheless"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " he went and put him in prison. He put him in prison for three days. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "NE"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " the story of Joseph"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "[The king] said, ‘Really, I wouldn’t expect it’. Nevertheless, he went and put him in prison. He put him in prison for three days. (NE, the story of Joseph)"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "2) yŭtaw-wo w nŭṭar-wo ʕal riše d-an=naqwe, d-fayti-wo aʕ=ʕubbugre bənne 255; 1/49;",
+            "turoyo": "yŭtaw-wo w nŭṭar-wo ʕal riše d-an=naqwe d-fayti-wo aʕ=ʕubbugre bənne",
             "translations": [
               "er (der Hund) setzte sich dann hin und bewachte die Ausgänge der Löcher, durch welche die Ratten hindurchkamen"
             ],
-            "references": ["2", "255; 1/49"]
+            "references": [
+              "2",
+              "255",
+              "1/49"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " yŭtaw-wo w nŭṭar-wo ʕal riše d-an=naqwe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-fayti-wo aʕ=ʕubbugre bənne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer (der Hund) setzte sich dann hin und bewachte die Ausgänge der Löcher, durch welche die Ratten hindurchkamenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "255"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "1/49"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) yŭtaw-wo w nŭṭar-wo ʕal riše d-an=naqwe, d-fayti-wo aʕ=ʕubbugre bənne ʻer (der Hund) setzte sich dann hin und bewachte die Ausgänge der Löcher, durch welche die Ratten hindurchkamenʼ; 255; 1/49;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "2) nṭar u=ḥabušo ḥatta d-u=ṭayro d-l-oṯe mŭbe-le 255; 21/8;",
+            "turoyo": "nṭar u=ḥabušo ḥatta d-u=ṭayro d-l-oṯe mŭbe-le",
             "translations": [
               "bewache den Apfel, damit der Vogel nicht kommt und ihn wegholt"
             ],
-            "references": ["2", "255; 21/8"]
+            "references": [
+              "2",
+              "255",
+              "21/8"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " nṭar u=ḥabušo ḥatta d-u=ṭayro d-l-oṯe mŭbe-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻbewache den Apfel, damit der Vogel nicht kommt und ihn wegholtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "255"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "21/8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) nṭar u=ḥabušo ḥatta d-u=ṭayro d-l-oṯe mŭbe-le ʻbewache den Apfel, damit der Vogel nicht kommt und ihn wegholtʼ; 255; 21/8;"
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": ["mnaṭalle", "mnaṭər"],
+      "forms": [
+        "mnaṭalle",
+        "mnaṭər"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "aloho mnaṭal-lox 255; 68/4;",
-            "translations": ["Gott möge dich bewahren"],
-            "references": ["255; 68/4"]
+            "turoyo": "aloho mnaṭal-lox",
+            "translations": [
+              "Gott möge dich bewahren"
+            ],
+            "references": [
+              "255",
+              "68/4"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aloho mnaṭal-lox "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻGott möge dich bewahrenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "255"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "68/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "aloho mnaṭal-lox ʻGott möge dich bewahrenʼ; 255; 68/4;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "ya ḥurma, naṭár klay 255; 66/27;",
-            "translations": ["Frau, warte doch"],
-            "references": ["255; 66/27"]
+            "turoyo": "ya ḥurma naṭár klay",
+            "translations": [
+              "Frau, warte doch"
+            ],
+            "references": [
+              "255",
+              "66/27"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ya ḥurma"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " naṭár klay "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻFrau, warte dochʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "255"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "66/27"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ya ḥurma, naṭár klay ʻFrau, warte dochʼ; 255; 66/27;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "bewahren, warten;"
   ],
   "uncertain": false
 }

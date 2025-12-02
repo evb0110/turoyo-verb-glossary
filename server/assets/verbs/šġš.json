@@ -5,33 +5,207 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["šġәšle", "šoġәš"],
+      "forms": [
+        "šġәšle",
+        "šoġәš"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "Šğǝšhawnibaḥḥaye du yulfono. (İlyas p.c)",
+            "turoyo": "U zlam šġәšle hawna di ḥurma İlyas p.cthe man confused the woman’s mind she is not sure whether he is going to marry her lan=naʕime šġǝšše hawni by producing noize",
             "translations": [
-              "my mind has been confused by the life of learning."
+              "‘the children took away (?) my mind’"
             ],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "U zlam šġәšle hawna di ḥurma "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": "the man confused the woman’s mind "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "she is not sure whether he is going to marry her"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": "\nlan=naʕime šġǝšše hawni "
+              },
+              {
+                "kind": "translation",
+                "value": "‘the children took away (?) my mind’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "by producing noize"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "U zlam šġәšle hawna di ḥurma (İlyas p.c)the man confused the woman’s mind (she is not sure whether he is going to marry her) lan=naʕime šġǝšše hawni ‘the children took away (?) my mind’ (by producing noize)"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "U malfonošoġašwahawne dan naʕime. (İlyas p.c)",
-            "translations": ["(he told them something strange)"],
-            "references": []
+            "turoyo": "U malfono šoġašwa hawne dan naʕime. he told them something strange İlyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "U malfono šoġašwa hawne dan naʕime. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "he told them something strange"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "U malfono šoġašwa hawne dan naʕime. (he told them something strange) (İlyas p.c)"
+          }
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "Šğǝš hawni baḥ ḥaye du yulfono. İlyas p.c my mind has been confused by the life of learning.",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Šğǝš hawni baḥ ḥaye du yulfono. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " my mind has been confused by the life of learning."
+              }
+            ],
+            "text": "Šğǝš hawni baḥ ḥaye du yulfono. (İlyas p.c) my mind has been confused by the life of learning."
           }
         ],
         "Infectum": [
           {
-            "turoyo": "Uʕdokomәšġәšhawni. (İlyas p.c) Now my mind is being confused.",
+            "turoyo": "Uʕdo komәšġәš hawni. İlyas p.c Now my mind is being confused.",
             "translations": [],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Uʕdo komәšġәš hawni. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Now my mind is being confused."
+              }
+            ],
+            "text": "Uʕdo komәšġәš hawni. (İlyas p.c) Now my mind is being confused."
+          }
+        ],
+        "Imperativ": [
+          {
+            "turoyo": "?",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "?"
+              }
+            ],
+            "text": "?"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "to confuse, perplex;",
+    "to be confused, misled;"
   ],
   "uncertain": false
 }

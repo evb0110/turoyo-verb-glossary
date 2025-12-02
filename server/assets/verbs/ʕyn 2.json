@@ -12,19 +12,54 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["maʕəlle", "maʕən"],
+      "forms": [
+        "maʕəlle",
+        "maʕən"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ḥāl diḏi lo bas-li-yo k-oṯat maʕinat ʕal lebi 573;",
+            "turoyo": "ḥāl diḏi lo bas-li-yo k-oṯat maʕinat ʕal lebi",
             "translations": [
-              "ʻgeht es mir nicht schlimm genug, dass du kommst und meinem Herzen noch mehr Schmerzen machstʼ;"
+              "geht es mir nicht schlimm genug, dass du kommst und meinem Herzen noch mehr Schmerzen machst"
             ],
-            "references": ["573"]
+            "references": [
+              "573"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥāl diḏi lo bas-li-yo k-oṯat maʕinat ʕal lebi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻgeht es mir nicht schlimm genug, dass du kommst und meinem Herzen noch mehr Schmerzen machstʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "573"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥāl diḏi lo bas-li-yo k-oṯat maʕinat ʕal lebi ʻgeht es mir nicht schlimm genug, dass du kommst und meinem Herzen noch mehr Schmerzen machstʼ; 573;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "Schmerz machen;"
   ],
   "uncertain": false
 }

@@ -14,17 +14,54 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["nawəḥ", "nowəḥ"],
+      "forms": [
+        "nawəḥ",
+        "nowəḥ"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "ḥa mənne nawəḥ b-u=ḥăbīs 466;",
-            "translations": ["einer von ihnen verschied im Gefängnis"],
-            "references": ["466"]
+            "turoyo": "ḥa mənne nawəḥ b-u=ḥăbīs",
+            "translations": [
+              "einer von ihnen verschied im Gefängnis"
+            ],
+            "references": [
+              "466"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥa mənne nawəḥ b-u=ḥăbīs "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻeiner von ihnen verschied im Gefängnisʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "466"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥa mənne nawəḥ b-u=ḥăbīs ʻeiner von ihnen verschied im Gefängnisʼ; 466;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "Ruhe finden, sterben, verscheiden;"
   ],
   "uncertain": false
 }

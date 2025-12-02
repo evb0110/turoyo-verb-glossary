@@ -14,60 +14,344 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["nqəšle", "noqəš"],
+      "forms": [
+        "nqəšle",
+        "noqəš"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ko-nəqšo u=naqšayḏa 208; 62/63;",
-            "translations": ["sie stickt in ihrer Stickerei"],
-            "references": ["208; 62/63"]
-          }
-        ],
-        "Part. Pass.": [
-          {
-            "turoyo": "u=qṭoro d-u=bayt-ayḏan kule mzayno w-nqíšo-we 208; 1/22; k-ḥoze xort šafiro, ʕayne kome, nqišeKǝtli ǧulo kule mnaqšo yo ban naqšat šafire.",
+            "turoyo": "ko-nəqšo u=naqšayḏa",
             "translations": [
-              "die Decke in unserem Hause war ganz mit Zierat und Malerei bemalt",
-              "‘Er sieht plötzlich einen schönen Jüngling, die Augen schwarz, [wie] geschminkt’; 29/308"
+              "sie stickt in ihrer Stickerei"
             ],
-            "references": ["208; 1/22"]
-          },
-          {
-            "turoyo": ". (İlyas p.c) I ʕitayḏan di qriṯo kula mnaqašto yo ban naqšat ʕatiqe. (İlyas p.c)",
-            "translations": [
-              "I have a dress which is all painted with beautiful drawings",
-              "Our church in the village is all painted with all paintings."
+            "references": [
+              "208",
+              "62/63"
             ],
-            "references": []
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-nəqšo u=naqšayḏa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie stickt in ihrer Stickereiʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "208"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/63"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-nəqšo u=naqšayḏa ʻsie stickt in ihrer Stickereiʼ; 208; 62/63;"
           }
         ]
       }
     },
     {
-      "stem": "II",
-      "forms": ["mnaqašle", "mnaqəš"],
+      "stem": "Detransitive",
+      "forms": [
+        "II: mnaqašle",
+        "mnaqəš"
+      ],
       "conjugations": {
         "Part. Pass.": [
           {
-            "turoyo": "mnaqašto kula ḥaṣa gawə-d-ab=bote b-ak=kefe mnaqše mzáyno-yo 11/18;",
+            "turoyo": "u=qṭoro d-u=bayt-ayḏan kule mzayno w-nqíšo-we k-ḥoze xort šafiro ʕayne kome nqiše Kǝtli ǧulo kule mnaqšo yo ban naqšat šafire.",
+            "translations": [
+              "die Decke in unserem Hause war ganz mit Zierat und Malerei bemalt",
+              "‘Er sieht plötzlich einen schönen Jüngling, die Augen schwarz, [wie] geschminkt’"
+            ],
+            "references": [
+              "208",
+              "1/22",
+              "29/308"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=qṭoro d-u=bayt-ayḏan kule mzayno w-nqíšo-we "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Decke in unserem Hause war ganz mit Zierat und Malerei bemaltʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "208"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "1/22"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ḥoze xort šafiro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕayne kome"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " nqiše "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er sieht plötzlich einen schönen Jüngling, die Augen schwarz, [wie] geschminkt’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/308"
+              },
+              {
+                "kind": "turoyo",
+                "value": "   Kǝtli ǧulo kule mnaqšo yo ban naqšat šafire."
+              }
+            ],
+            "text": "u=qṭoro d-u=bayt-ayḏan kule mzayno w-nqíšo-we ʻdie Decke in unserem Hause war ganz mit Zierat und Malerei bemaltʼ; 208; 1/22; k-ḥoze xort šafiro, ʕayne kome, nqiše ‘Er sieht plötzlich einen schönen Jüngling, die Augen schwarz, [wie] geschminkt’; 29/308 Kǝtli ǧulo kule mnaqšo yo ban naqšat šafire."
+          },
+          {
+            "turoyo": "I have a dress which is all painted with beautiful drawings. İlyas p.c I ʕitayḏan di qriṯo kula mnaqašto yo ban naqšat ʕatiqe.Our church in the village is all painted with all paintings. İlyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "I have a dress which is all painted with beautiful drawings. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": "         I ʕitayḏan di qriṯo kula mnaqašto yo ban naqšat ʕatiqe.Our church in the village is all painted with all paintings. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "I have a dress which is all painted with beautiful drawings. (İlyas p.c) I ʕitayḏan di qriṯo kula mnaqašto yo ban naqšat ʕatiqe.Our church in the village is all painted with all paintings. (İlyas p.c)"
+          },
+          {
+            "turoyo": "mnaqašto kula ḥaṣa gawə-d-ab=bote b-ak=kefe mnaqše mzáyno-yo",
             "translations": [
               "ihr (der Schlange) ganzer Rücken war gezeichnet",
-              "‘das Innere der Häuser ist mit schön behauenen Steinen geschmückt’;"
+              "‘das Innere der Häuser ist mit schön behauenen Steinen geschmückt’"
             ],
-            "references": ["11/18"]
+            "references": [
+              "208",
+              "116/21",
+              "11/18"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mnaqašto kula ḥaṣa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻihr (der Schlange) ganzer Rücken war gezeichnetʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "208"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "116/21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " gawə-d-ab=bote b-ak=kefe mnaqše mzáyno-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘das Innere der Häuser ist mit schön behauenen Steinen geschmückt’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/18"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mnaqašto kula ḥaṣa ʻihr (der Schlange) ganzer Rücken war gezeichnetʼ; 208; 116/21; gawə-d-ab=bote b-ak=kefe mnaqše mzáyno-yo ‘das Innere der Häuser ist mit schön behauenen Steinen geschmückt’; 11/18;"
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "ann=alat d-i=dazga d-aš=šalfe hanine: … w aq=qălame d-u=neqóšo-ne 208; 94/15;",
+            "turoyo": "ann=alat d-i=dazga d-aš=šalfe hanine … w aq=qălame d-u=neqóšo-ne",
             "translations": [
               "die Geräte der Messer(schmiede) sind: …, die Stifte zum Anbringen der Verzierungen"
             ],
-            "references": ["208; 94/15"]
+            "references": [
+              "208",
+              "94/15"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ann=alat d-i=dazga d-aš=šalfe hanine"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " … w aq=qălame d-u=neqóšo-ne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Geräte der Messer(schmiede) sind: …, die Stifte zum Anbringen der Verzierungenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "208"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/15"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ann=alat d-i=dazga d-aš=šalfe hanine: … w aq=qălame d-u=neqóšo-ne ʻdie Geräte der Messer(schmiede) sind: …, die Stifte zum Anbringen der Verzierungenʼ; 208; 94/15;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "sticken, bemalen, schminken;",
+    "schmücken, verzieren;"
   ],
   "uncertain": false
 }

@@ -5,17 +5,67 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["nzəlle", "nozər"],
+      "forms": [
+        "nzəlle",
+        "nozər"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "ko-nəzri taḥt u=šifo 260; 94/17;",
-            "translations": ["sie machen unter der Steinplatte eine Rille"],
-            "references": ["260; 94/17"]
+            "turoyo": "ko-nəzri taḥt u=šifo",
+            "translations": [
+              "sie machen unter der Steinplatte eine Rille"
+            ],
+            "references": [
+              "260",
+              "94/17"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-nəzri taḥt u=šifo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie machen unter der Steinplatte eine Rilleʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "260"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/17"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-nəzri taḥt u=šifo ʻsie machen unter der Steinplatte eine Rilleʼ; 260; 94/17;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "eine Rille machen;"
   ],
   "uncertain": false
 }

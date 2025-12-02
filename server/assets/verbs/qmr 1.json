@@ -14,69 +14,463 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["qməlle", "qomər"],
+      "forms": [
+        "qməlle",
+        "qomər"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "qməlle l-abre d-i=pire ak=kaʕbe d-Zahar 233; prs 66/5; 64/41;",
-            "translations": ["der Sohn der Alten gewann die Knöchel Sahar’s"],
-            "references": ["233", "66/5"]
+            "turoyo": "qməlle l-abre d-i=pire ak=kaʕbe d-Zahar prs",
+            "translations": [
+              "der Sohn der Alten gewann die Knöchel Sahar’s"
+            ],
+            "references": [
+              "233",
+              "66/5",
+              "64/41"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qməlle l-abre d-i=pire ak=kaʕbe d-Zahar "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Sohn der Alten gewann die Knöchel Sahar’sʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "233"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "66/5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "64/41"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "qməlle l-abre d-i=pire ak=kaʕbe d-Zahar ʻder Sohn der Alten gewann die Knöchel Sahar’sʼ; 233; prs 66/5; 64/41;"
           }
         ],
         "Preterit-wa": [
           {
-            "turoyo": "u=ḥa d-maṣəb i=ġare d-u=ḥreno, ko-qoṭe-le, k-əmmina, w ko-šoqəl aʕ=ʕənnat də-qmǝ́r-way-le-ste mene 233; 94/315;",
+            "turoyo": "u=ḥa d-maṣəb i=ġare d-u=ḥreno ko-qoṭe-le k-əmmina w ko-šoqəl aʕ=ʕənnat də-qmǝ́r-way-le-ste mene",
             "translations": [
               "wer die Murmel des anderen trifft, der “tötet” ihn, wie wir sagen, und nimmt ihm auch die Geldstücke ab, die er gewonnen hatte"
             ],
-            "references": ["233; 94/315"]
+            "references": [
+              "233",
+              "94/315"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=ḥa d-maṣəb i=ġare d-u=ḥreno"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-qoṭe-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-əmmina"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w ko-šoqəl aʕ=ʕənnat də-qmǝ́r-way-le-ste mene "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwer die Murmel des anderen trifft, der “tötet” ihn, wie wir sagen, und nimmt ihm auch die Geldstücke ab, die er gewonnen hatteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "233"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/315"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=ḥa d-maṣəb i=ġare d-u=ḥreno, ko-qoṭe-le, k-əmmina, w ko-šoqəl aʕ=ʕənnat də-qmǝ́r-way-le-ste mene ʻwer die Murmel des anderen trifft, der “tötet” ihn, wie wir sagen, und nimmt ihm auch die Geldstücke ab, die er gewonnen hatteʼ; 233; 94/315;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "i=naqqa d-oṯe u=čəft-ano ʕal-ḥḏo m-at=tarte=xaṣawər-ani, yaʕni d-ko-məštaʕən ebe, yaʕni ko-maydi-le b-iḏayye ko-mḥalqəl-le ʕal i=arʕo, aw ko-mašili-le k-əmmína-le, lə=k-owe mede, yaʕni lə=ko-qomər w lə=ko-maqmər tešilo 235; 94/292, 316;",
+            "turoyo": "i=naqqa d-oṯe u=čəft-ano ʕal-ḥḏo m-at=tarte=xaṣawər-ani yaʕni d-ko-məštaʕən ebe yaʕni ko-maydi-le b-iḏayye ko-mḥalqəl-le ʕal i=arʕo aw ko-mašili-le k-əmmína-le lə=k-owe mede yaʕni lə=ko-qomər w lə=ko-maqmər",
             "translations": [
-              "wenn das (Knöchel-)paar so fällt, das eine dieser (Breit-)seiten nach oben zu liegen kommt (A + A oder B + B oder A + B), d.h. wenn man damit spielt, d.h. sie in die Hand nimmt und sie auf die Erde wirft - wir nennen das",
-              "(= Schleudern) - so erfolgt gar nichts, der Spieler gewinnt weder noch verliert er"
+              "wenn das (Knöchel-)paar so fällt, das eine dieser (Breit-)seiten nach oben zu liegen kommt (A + A oder B + B oder A + B), d.h. wenn man damit spielt, d.h. sie in die Hand nimmt und sie auf die Erde wirft - wir nennen das tešilo (= Schleudern) - so erfolgt gar nichts, der Spieler gewinnt weder noch verliert er"
             ],
-            "references": ["235; 94/292", "316"]
+            "references": [
+              "235",
+              "94/292",
+              "316"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqqa d-oṯe u=čəft-ano ʕal-ḥḏo m-at=tarte=xaṣawər-ani"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " yaʕni d-ko-məštaʕən ebe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " yaʕni ko-maydi-le b-iḏayye ko-mḥalqəl-le ʕal i=arʕo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aw ko-mašili-le k-əmmína-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=k-owe mede"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " yaʕni lə=ko-qomər w lə=ko-maqmər "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn das (Knöchel-)paar so fällt, das eine dieser (Breit-)seiten nach oben zu liegen kommt (A + A oder B + B oder A + B), d.h. wenn man damit spielt, d.h. sie in die Hand nimmt und sie auf die Erde wirft - wir nennen das tešilo (= Schleudern) - so erfolgt gar nichts, der Spieler gewinnt weder noch verliert erʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "235"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/292"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "316"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=naqqa d-oṯe u=čəft-ano ʕal-ḥḏo m-at=tarte=xaṣawər-ani, yaʕni d-ko-məštaʕən ebe, yaʕni ko-maydi-le b-iḏayye ko-mḥalqəl-le ʕal i=arʕo, aw ko-mašili-le k-əmmína-le, lə=k-owe mede, yaʕni lə=ko-qomər w lə=ko-maqmər ʻwenn das (Knöchel-)paar so fällt, das eine dieser (Breit-)seiten nach oben zu liegen kommt (A + A oder B + B oder A + B), d.h. wenn man damit spielt, d.h. sie in die Hand nimmt und sie auf die Erde wirft - wir nennen das tešilo (= Schleudern) - so erfolgt gar nichts, der Spieler gewinnt weder noch verliert erʼ; 235; 94/292, 316;"
           }
         ],
         "Part. Act.": [
           {
-            "turoyo": "qamoro SB;",
-            "translations": [],
-            "references": []
+            "turoyo": "qamoro SB",
+            "translations": [
+              "‘Sieger’"
+            ],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qamoro "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Sieger’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " SB"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "qamoro ‘Sieger’; SB;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["maqmalle", "maqmər"],
+      "forms": [
+        "maqmalle",
+        "maqmər"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ono qməlli hat maqmallux BS; Syrianska w Assyriska i=šabṯ-aṯe a=tre maqmarre BS;",
+            "turoyo": "ono qməlli hat maqmallux BS Syrianska w Assyriska i=šabṯ-aṯe a=tre maqmarre BS",
             "translations": [
-              "ich habe gewonnen und du hast verloren",
-              "Syrianska und Assyriaska haben beide in dieser Woche (ihre Spiele) verloren"
+              "‘ich habe gewonnen und du hast verloren’",
+              "‘Syrianska und Assyriaska haben beide in dieser Woche (ihre Spiele) verloren’"
             ],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ono qməlli hat maqmallux "
+              },
+              {
+                "kind": "translation",
+                "value": "‘ich habe gewonnen und du hast verloren’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " BS"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Syrianska w Assyriska i=šabṯ-aṯe a=tre maqmarre "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Syrianska und Assyriaska haben beide in dieser Woche (ihre Spiele) verloren’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " BS"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ono qməlli hat maqmallux ‘ich habe gewonnen und du hast verloren’; BS; Syrianska w Assyriska i=šabṯ-aṯe a=tre maqmarre ‘Syrianska und Assyriaska haben beide in dieser Woche (ihre Spiele) verloren’; BS;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "i=naqqa d-oṯe u=čəft-ano ʕal-ḥḏo m-at=tarte=xaṣawər-ani, k-əmmína-le, lə=k-owe mede, yaʕni lə=ko-qomər w lə=ko-maqmər 235; 94/292, 316; ṭrele d-maqmanno ak=kallatayḏi kulle BS;",
+            "turoyo": "i=naqqa d-oṯe u=čəft-ano ʕal-ḥḏo m-at=tarte=xaṣawər-ani k-əmmína-le lə=k-owe mede yaʕni lə=ko-qomər w lə=ko-maqmər ṭrele d-maqmanno ak=kallatayḏi kulle BS",
             "translations": [
               "wenn das (Knöchel-)paar so fällt, das eine dieser (Breit-)seiten nach oben zu liegen kommt, sagen wir, es ist nichts daraus geworden, das heisst, weder gewinnt (der Spieler) noch verliert er",
-              "er hat mich mein ganzes Geld verlieren lassen"
+              "‘er hat mich mein ganzes Geld verlieren lassen’"
             ],
-            "references": ["235; 94/292", "316"]
+            "references": [
+              "235",
+              "94/292",
+              "316"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=naqqa d-oṯe u=čəft-ano ʕal-ḥḏo m-at=tarte=xaṣawər-ani"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-əmmína-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=k-owe mede"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " yaʕni lə=ko-qomər w lə=ko-maqmər "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn das (Knöchel-)paar so fällt, das eine dieser (Breit-)seiten nach oben zu liegen kommt, sagen wir, es ist nichts daraus geworden, das heisst, weder gewinnt (der Spieler) noch verliert erʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "235"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "94/292"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "316"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṭrele d-maqmanno ak=kallatayḏi kulle "
+              },
+              {
+                "kind": "translation",
+                "value": "‘er hat mich mein ganzes Geld verlieren lassen’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " BS"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=naqqa d-oṯe u=čəft-ano ʕal-ḥḏo m-at=tarte=xaṣawər-ani, k-əmmína-le, lə=k-owe mede, yaʕni lə=ko-qomər w lə=ko-maqmər ʻwenn das (Knöchel-)paar so fällt, das eine dieser (Breit-)seiten nach oben zu liegen kommt, sagen wir, es ist nichts daraus geworden, das heisst, weder gewinnt (der Spieler) noch verliert erʼ; 235; 94/292, 316; ṭrele d-maqmanno ak=kallatayḏi kulle ‘er hat mich mein ganzes Geld verlieren lassen’; BS;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "gewinnen;",
+    "verlieren (im Spiel);"
   ],
   "uncertain": false
 }

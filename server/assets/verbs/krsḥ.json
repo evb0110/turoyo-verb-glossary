@@ -14,24 +14,105 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mkarsaḥle", "mkarsəḥ"],
+      "forms": [
+        "mkarsaḥle",
+        "mkarsəḥ"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "l-u=zlāmmkarsaḥle u=baṣro 782;",
-            "translations": [],
-            "references": ["782"]
+            "turoyo": "l-u=zlām mkarsaḥle u=baṣro",
+            "translations": [
+              "er zerhaute das Fleisch"
+            ],
+            "references": [
+              "782"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-u=zlām mkarsaḥle u=baṣro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer zerhaute das Fleischʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "782"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "l-u=zlām mkarsaḥle u=baṣro ʻer zerhaute das Fleischʼ; 782;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "məqqa d-ko-mšayəʕ l-riše w ko-mkarsaḥ-ḥe w ko-madʕar-re 783; 53/122;",
-            "translations": ["losschickt"],
-            "references": ["783; 53/122"]
+            "turoyo": "məqqa d-ko-mšayəʕ l-riše w ko-mkarsaḥ-ḥe w ko-madʕar-re",
+            "translations": [
+              "so viel er auch gegen ihn losschickt, er haut sie zusammen und schlägt sie zurück"
+            ],
+            "references": [
+              "783",
+              "53/122"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "məqqa d-ko-mšayəʕ l-riše w ko-mkarsaḥ-ḥe w ko-madʕar-re "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻso viel er auch gegen ihn losschickt, er haut sie zusammen und schlägt sie zurückʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "783"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "53/122"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "məqqa d-ko-mšayəʕ l-riše w ko-mkarsaḥ-ḥe w ko-madʕar-re ʻso viel er auch gegen ihn losschickt, er haut sie zusammen und schlägt sie zurückʼ; 783; 53/122;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "auslichten (Weinberg), (fig.) zerhauen, zusammenhauen, abhauen;"
   ],
   "uncertain": false
 }

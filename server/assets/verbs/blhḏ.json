@@ -5,17 +5,60 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mbalhaḏle", "mbalhəḏ"],
+      "forms": [
+        "mbalhaḏle",
+        "mbalhəḏ"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mbalhəḏ aʕli 770;",
-            "translations": ["ʻer wurde ärgerlich über michʼ;"],
-            "references": ["770"]
+            "turoyo": "mbalhəḏ aʕli",
+            "translations": [
+              "er wurde ärgerlich über mich"
+            ],
+            "references": [
+              "770"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mbalhəḏ aʕli "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wurde ärgerlich über michʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "770"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mbalhəḏ aʕli ʻer wurde ärgerlich über michʼ; 770;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "ärgerlich, nervös werden, die Fassung verlieren;"
   ],
   "uncertain": false
 }

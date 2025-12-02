@@ -14,17 +14,109 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mgawtalle", "mgawtər"],
+      "forms": [
+        "mgawtalle",
+        "mgawtər"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "2) ḥəs diḏi mgawtər; 778;",
-            "translations": [],
-            "references": ["2", "778"]
+            "turoyo": "mgawtalli ḥəs diḏi",
+            "translations": [
+              "ich habe mit lauter Stimme gesungen"
+            ],
+            "references": [
+              "1",
+              "778"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mgawtalli ḥəs diḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe mit lauter Stimme gesungenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "778"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) mgawtalli ḥəs diḏi ʻich habe mit lauter Stimme gesungenʼ; 778;"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "ḥəs diḏi mgawtər",
+            "translations": [],
+            "references": [
+              "2",
+              "778"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥəs diḏi mgawtər"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "778"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) ḥəs diḏi mgawtər; 778;"
+          }
+        ]
+      },
+      "_awaiting_forms": true
     }
   ],
+  "idioms": null,
   "uncertain": false
 }

@@ -14,19 +14,75 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["məstafhamle", "məstafhəm"],
+      "forms": [
+        "məstafhamle",
+        "məstafhəm"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "aṯino d-məstafhamno ayna ʕašǝ́rto-yo haṯe, aṯyo ḏ̣ayfo gabayna 810; 53/24;",
+            "turoyo": "aṯino d-məstafhamno ayna ʕašǝ́rto-yo haṯe aṯyo ḏ̣ayfo gabayna",
             "translations": [
               "ich bin gekommen, um herauszufinden, was für ein Stamm dies ist, der als Gast zu uns gekommen ist"
             ],
-            "references": ["810; 53/24"]
+            "references": [
+              "810",
+              "53/24"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aṯino d-məstafhamno ayna ʕašǝ́rto-yo haṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aṯyo ḏ̣ayfo gabayna "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich bin gekommen, um herauszufinden, was für ein Stamm dies ist, der als Gast zu uns gekommen istʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "810"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "53/24"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "aṯino d-məstafhamno ayna ʕašǝ́rto-yo haṯe, aṯyo ḏ̣ayfo gabayna ʻich bin gekommen, um herauszufinden, was für ein Stamm dies ist, der als Gast zu uns gekommen istʼ; 810; 53/24;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "herausfinden;"
   ],
   "uncertain": false
 }

@@ -5,17 +5,54 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mqanqele", "mqanqəl"],
+      "forms": [
+        "mqanqele",
+        "mqanqəl"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mqanqelux aḏnoṯayna 786;",
-            "translations": ["du hast uns die Ohren voll geredet"],
-            "references": ["786"]
+            "turoyo": "mqanqelux aḏnoṯayna",
+            "translations": [
+              "du hast uns die Ohren voll geredet"
+            ],
+            "references": [
+              "786"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mqanqelux aḏnoṯayna "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdu hast uns die Ohren voll geredetʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "786"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mqanqelux aḏnoṯayna ʻdu hast uns die Ohren voll geredetʼ; 786;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "einem die Ohren voll reden;"
   ],
   "uncertain": false
 }

@@ -5,17 +5,54 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mkafele", "mkafe"],
+      "forms": [
+        "mkafele",
+        "mkafe"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "meqəmdə-mkafət 421;",
-            "translations": ["fortfährst"],
-            "references": ["421"]
+            "turoyo": "meqəm də-mkafət",
+            "translations": [
+              "ehe du fortfährst"
+            ],
+            "references": [
+              "421"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "meqəm də-mkafət "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻehe du fortfährstʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "421"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "meqəm də-mkafət ʻehe du fortfährstʼ; 421;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "fortfahren;"
   ],
   "uncertain": false
 }

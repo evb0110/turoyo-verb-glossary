@@ -14,28 +14,366 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["čəlle", "čoyər"],
+      "forms": [
+        "čəlle",
+        "čoyər"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "1) i=dukṯo d-friṭo aw d-čiro, lo=k-miḥoṭo, w lo=k-mišayrizo 531; 9/22;",
+            "turoyo": "čəlle ǧule fayəš zalṭono prs prs mḥalaqli u=kṯowo d-kət-wo b-iḏi ʕal foṯe. čəlle u=kṯowo-ste",
             "translations": [
-              "die Stelle, die aufgeplatzt oder gerissen ist, kann man weder nähen noch kleben"
+              "er zerriss seine Kleider, so dass er nackt wurde",
+              "ich warf ihm das Buch, das ich in der Hand hatte, ins Gesicht. Er zerriss auch das Buch"
             ],
-            "references": ["1", "531; 9/22"]
+            "references": [
+              "1",
+              "506",
+              "30/14",
+              "145/16",
+              "7/9"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " čəlle ǧule"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " fayəš zalṭono "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer zerriss seine Kleider, so dass er nackt wurdeʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "506"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "30/14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "145/16"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mḥalaqli u=kṯowo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-kət-wo b-iḏi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ʕal foṯe. čəlle u=kṯowo-ste "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich warf ihm das Buch, das ich in der Hand hatte, ins Gesicht. Er zerriss auch das Buchʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "7/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              }
+            ],
+            "text": "1) čəlle ǧule, fayəš zalṭono ʻer zerriss seine Kleider, so dass er nackt wurdeʼ; 506; prs 30/14; prs 145/16; mḥalaqli u=kṯowo, d-kət-wo b-iḏi, ʕal foṯe. čəlle u=kṯowo-ste ʻich warf ihm das Buch, das ich in der Hand hatte, ins Gesicht. Er zerriss auch das Buchʼ; 7/9;"
+          },
+          {
+            "turoyo": "k-omər həngi d-ʕaǧizo Farxuṣā́f məlla",
+            "translations": [
+              "kwīž baytux čǝ́llux-li me-ʕaṣriye d-aloho",
+              "Färchusaf wurde das so müde, dass sie sprach: “Zum Teufel auch! Du hast mich schon den ganzen Abend Gottes zur Verzweiflung gebracht!"
+            ],
+            "references": [
+              "2",
+              "508",
+              "62/293"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-omər həngi d-ʕaǧizo Farxuṣā́f məlla"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“kwīž baytux čǝ́llux-li me-ʕaṣriye d-aloho”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻFärchusaf wurde das so müde, dass sie sprach: “Zum Teufel auch! Du hast mich schon den ganzen Abend Gottes zur Verzweiflung gebracht!”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "508"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "62/293"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) k-omər həngi d-ʕaǧizo Farxuṣā́f məlla: “kwīž baytux čǝ́llux-li me-ʕaṣriye d-aloho” ʻFärchusaf wurde das so müde, dass sie sprach: “Zum Teufel auch! Du hast mich schon den ganzen Abend Gottes zur Verzweiflung gebracht!”ʼ; 508; 62/293;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "1) k-čayiro ǧula, k-ummo Malke 519; prs 149/19;",
+            "turoyo": "k-čayiro ǧula k-ummo Malke prs",
             "translations": [
-              "sie zerriss ihre Kleider und rief fortwährend: “Malke”"
+              "sie zerriss ihre Kleider und rief fortwährend: “Malke"
             ],
-            "references": ["1", "519"]
+            "references": [
+              "1",
+              "519",
+              "149/19"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-čayiro ǧula"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-ummo Malke "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie zerriss ihre Kleider und rief fortwährend: “Malke”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "519"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "149/19"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) k-čayiro ǧula, k-ummo Malke ʻsie zerriss ihre Kleider und rief fortwährend: “Malke”ʼ; 519; prs 149/19;"
+          }
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "i=dukṯo d-friṭo aw d-čiro lo=k-miḥoṭo w lo=k-mišayrizo",
+            "translations": [
+              "die Stelle, die aufgeplatzt oder gerissen ist, kann man weder nähen noch kleben"
+            ],
+            "references": [
+              "1",
+              "531",
+              "9/22"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=dukṯo d-friṭo aw d-čiro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lo=k-miḥoṭo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w lo=k-mišayrizo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Stelle, die aufgeplatzt oder gerissen ist, kann man weder nähen noch klebenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "531"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "9/22"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) i=dukṯo d-friṭo aw d-čiro, lo=k-miḥoṭo, w lo=k-mišayrizo ʻdie Stelle, die aufgeplatzt oder gerissen ist, kann man weder nähen noch klebenʼ; 531; 9/22;"
           }
         ]
       }
     }
   ],
+  "idioms": null,
   "uncertain": false
 }

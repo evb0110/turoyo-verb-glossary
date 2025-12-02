@@ -12,28 +12,126 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mʕayašle", "mʕayəš"],
+      "forms": [
+        "mʕayašle",
+        "mʕayəš"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mabramle i=rumḥo b-iḏoṯe, w mʕayašle 485; prs 15/30;",
+            "turoyo": "mabramle i=rumḥo b-iḏoṯe w mʕayašle prs",
             "translations": [
-              "ʻda schwang er seine Lanze mit der Hand und besichtigte (die Lage)ʼ;"
+              "da schwang er seine Lanze mit der Hand und besichtigte (die Lage)"
             ],
-            "references": ["485", "15/30"]
+            "references": [
+              "485",
+              "15/30"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mabramle i=rumḥo b-iḏoṯe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mʕayašle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda schwang er seine Lanze mit der Hand und besichtigte (die Lage)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "485"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "15/30"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mabramle i=rumḥo b-iḏoṯe, w mʕayašle ʻda schwang er seine Lanze mit der Hand und besichtigte (die Lage)ʼ; 485; prs 15/30;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "saliqo i=xatune l-u=quṣro kə-mʕayšo u=darbo də-Slaymānbak 486; prs 129/30;",
+            "turoyo": "saliqo i=xatune l-u=quṣro kə-mʕayšo u=darbo də-Slaymānbak prs",
             "translations": [
-              "ʻdie Prinzessin stieg gerade aufs Schloss hinauf, den Weg Ssleiman-Bek's zu beobachtenʼ;"
+              "die Prinzessin stieg gerade aufs Schloss hinauf, den Weg Ssleiman-Bek's zu beobachten"
             ],
-            "references": ["486", "129/30"]
+            "references": [
+              "486",
+              "129/30"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "saliqo i=xatune l-u=quṣro kə-mʕayšo u=darbo də-Slaymānbak "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Prinzessin stieg gerade aufs Schloss hinauf, den Weg Ssleiman-Bek's zu beobachtenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "486"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "129/30"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "saliqo i=xatune l-u=quṣro kə-mʕayšo u=darbo də-Slaymānbak ʻdie Prinzessin stieg gerade aufs Schloss hinauf, den Weg Ssleiman-Bek's zu beobachtenʼ; 486; prs 129/30;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "beobachten, erspähen, zielen;"
   ],
   "uncertain": false
 }

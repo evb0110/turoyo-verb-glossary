@@ -14,30 +14,310 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["bəṭle", "boyəṭ"],
+      "forms": [
+        "bəṭle",
+        "boyəṭ"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "msawaḥle l-u=ǧənnawi, fayiši šawto, bīṭ u=ǧənnawi 530; prs 70/8; fayəš d-əmmat fəššakke mibəṭ lə=bīṭ 530; 91/14; biṭo i=ṭəbbe 530;",
+            "turoyo": "azzé u=quzo axile u=zoġo azzé u=dewo bəṭle ḥmoro prs prs",
             "translations": [
-              "ʻdarauf wurde der Dschennawi ruhiger; es dauerte eine Weile, da platzte er auseinanderʼ;",
-              "ʻwenn man meinte, eine Patrone würde losgehen, sie ging nicht losʼ;",
-              "ʻder Ball ist geplatztʼ;"
+              "der Marder ging den Hahn fressen, der Wolf ging hin und zerriss den Esel"
             ],
-            "references": ["530", "70/8"]
+            "references": [
+              "504",
+              "196/25",
+              "211/31"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "azzé u=quzo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " axile u=zoġo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " azzé u=dewo bəṭle ḥmoro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Marder ging den Hahn fressen, der Wolf ging hin und zerriss den Eselʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "504"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "196/25"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "211/31"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "azzé u=quzo, axile u=zoġo, azzé u=dewo bəṭle ḥmoro ʻder Marder ging den Hahn fressen, der Wolf ging hin und zerriss den Eselʼ; 504; prs 196/25; prs 211/31;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "frəsla raġla, qoyəm hiye gorəš i=rumḥayḏe, w moḥe-la b-raġla, g-boyəṭ raġla 516; 75/298;",
+            "turoyo": "frəsla raġla qoyəm hiye gorəš i=rumḥayḏe w moḥe-la b-raġla g-boyəṭ raġla",
             "translations": [
-              "ʻsie streckte ihren Fuss hin; da zog er seine Lanze hervor, stach sie in den Fuss und brachte ihm zum Aufplatzenʼ;"
+              "sie streckte ihren Fuss hin; da zog er seine Lanze hervor, stach sie in den Fuss und brachte ihm zum Aufplatzen"
             ],
-            "references": ["516; 75/298"]
+            "references": [
+              "516",
+              "75/298"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "frəsla raġla"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " qoyəm hiye gorəš i=rumḥayḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w moḥe-la b-raġla"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-boyəṭ raġla "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie streckte ihren Fuss hin; da zog er seine Lanze hervor, stach sie in den Fuss und brachte ihm zum Aufplatzenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "516"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/298"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "frəsla raġla, qoyəm hiye gorəš i=rumḥayḏe, w moḥe-la b-raġla, g-boyəṭ raġla ʻsie streckte ihren Fuss hin; da zog er seine Lanze hervor, stach sie in den Fuss und brachte ihm zum Aufplatzenʼ; 516; 75/298;"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "msawaḥle l-u=ǧənnawi fayiši šawto bīṭ u=ǧənnawi prs fayəš d-əmmat fəššakke mibəṭ lə=bīṭ biṭo i=ṭəbbe",
+            "translations": [
+              "darauf wurde der Dschennawi ruhiger; es dauerte eine Weile, da platzte er auseinander",
+              "wenn man meinte, eine Patrone würde losgehen, sie ging nicht los",
+              "der Ball ist geplatzt"
+            ],
+            "references": [
+              "530",
+              "70/8",
+              "530",
+              "91/14",
+              "530"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "msawaḥle l-u=ǧənnawi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " fayiši šawto"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " bīṭ u=ǧənnawi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdarauf wurde der Dschennawi ruhiger; es dauerte eine Weile, da platzte er auseinanderʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "530"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "70/8"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " fayəš d-əmmat fəššakke mibəṭ lə=bīṭ "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn man meinte, eine Patrone würde losgehen, sie ging nicht losʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "530"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "91/14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " biṭo i=ṭəbbe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Ball ist geplatztʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "530"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "msawaḥle l-u=ǧənnawi, fayiši šawto, bīṭ u=ǧənnawi ʻdarauf wurde der Dschennawi ruhiger; es dauerte eine Weile, da platzte er auseinanderʼ; 530; prs 70/8; fayəš d-əmmat fəššakke mibəṭ lə=bīṭ ʻwenn man meinte, eine Patrone würde losgehen, sie ging nicht losʼ; 530; 91/14; biṭo i=ṭəbbe ʻder Ball ist geplatztʼ; 530;"
+          }
+        ]
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "(auf)platzen, aufreissen, losgehen;"
   ],
   "uncertain": false
 }

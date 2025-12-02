@@ -12,32 +12,95 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["hǧərle", "hoǧər"],
+      "forms": [
+        "hǧərle",
+        "hoǧər"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "HǧәrleMḥammad(İlyas p.c)",
-            "translations": ["me Makka l Madina."],
-            "references": []
+            "turoyo": "Hǧәrle lә Mḥammad me Makka l Madina. İlyas p.c",
+            "translations": [],
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Hǧәrle lә Mḥammad me Makka l Madina. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "Hǧәrle lә Mḥammad me Makka l Madina. (İlyas p.c)"
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": ["mhaǧarle", "mhaǧar"],
+      "forms": [
+        "mhaǧarle",
+        "mhaǧar"
+      ],
       "conjugations": {
         "Infectum - wa": [
           {
-            "turoyo": "Kul naqqamḥaǧriwa, ǝzzǝnwamahəzmiwalarwal.‘2019_13_01_Malfono_Ishaq,16’",
+            "turoyo": "Kul naqqa mḥaǧriwa ǝzzǝnwa mahəzmiwa larwal. Each time they left they went they fled outside.",
             "translations": [
-              "Each time they left, they went, they fled outside."
+              "‘2019_13_01_Malfono_Ishaq,16’"
             ],
-            "references": ["2019", "13"]
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Kul naqqa mḥaǧriwa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ǝzzǝnwa mahəzmiwa larwal. Each time they left"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " they went"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " they fled outside. "
+              },
+              {
+                "kind": "translation",
+                "value": "‘2019_13_01_Malfono_Ishaq,16’"
+              }
+            ],
+            "text": "Kul naqqa mḥaǧriwa, ǝzzǝnwa mahəzmiwa larwal. Each time they left, they went, they fled outside. ‘2019_13_01_Malfono_Ishaq,16’"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "to migrate, leave one's home for another place"
   ],
   "uncertain": false
 }

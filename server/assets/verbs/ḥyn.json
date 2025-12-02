@@ -14,17 +14,93 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["maḥəlle", "maḥən"],
+      "forms": [
+        "maḥəlle",
+        "maḥən"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "aḥnaleban ko-foyəšmaḥənaʕlayye 545; 73/203; i=tərto lo=k-maḥinoʕal u=farxayḏa 546;",
-            "translations": ["Muttergefühl"],
-            "references": ["545; 73/203", "546"]
+            "turoyo": "aḥna leban ko-foyəš maḥən aʕlayye i=tərto lo=k-maḥino ʕal u=farxayḏa",
+            "translations": [
+              "unser Herz sehnt sich nun nach ihnen",
+              "die Kuh hat kein Muttergefühl für ihr Kälbchen"
+            ],
+            "references": [
+              "545",
+              "73/203",
+              "546"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aḥna leban ko-foyəš maḥən aʕlayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻunser Herz sehnt sich nun nach ihnenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "545"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/203"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=tərto lo=k-maḥino ʕal u=farxayḏa "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Kuh hat kein Muttergefühl für ihr Kälbchenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "546"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "aḥna leban ko-foyəš maḥən aʕlayye ʻunser Herz sehnt sich nun nach ihnenʼ; 545; 73/203; i=tərto lo=k-maḥino ʕal u=farxayḏa ʻdie Kuh hat kein Muttergefühl für ihr Kälbchenʼ; 546;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "sehnen;"
   ],
   "uncertain": false
 }

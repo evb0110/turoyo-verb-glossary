@@ -5,17 +5,67 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mbaʕele", "mbaʕe"],
+      "forms": [
+        "mbaʕele",
+        "mbaʕe"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "kə-mbaʕyo i=ʕezo 420; prs 198/23;",
-            "translations": ["ʻdie Ziege meckertʼ;"],
-            "references": ["420", "198/23"]
+            "turoyo": "kə-mbaʕyo i=ʕezo prs",
+            "translations": [
+              "die Ziege meckert"
+            ],
+            "references": [
+              "420",
+              "198/23"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kə-mbaʕyo i=ʕezo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Ziege meckertʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "420"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "198/23"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kə-mbaʕyo i=ʕezo ʻdie Ziege meckertʼ; 420; prs 198/23;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "meckern;"
   ],
   "uncertain": false
 }

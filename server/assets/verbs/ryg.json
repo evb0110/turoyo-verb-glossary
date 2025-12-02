@@ -14,17 +14,74 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["rəgle", "royəg"],
+      "forms": [
+        "rəgle",
+        "royəg"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "lə=ko-royag-li muklo 515; 49/21;",
-            "translations": ["ich habe keine Esslust"],
-            "references": ["515; 49/21"]
+            "turoyo": "lə=ko-royag-li muklo",
+            "translations": [
+              "ich habe keine Esslust"
+            ],
+            "references": [
+              "515",
+              "49/21"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lə=ko-royag-li muklo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich habe keine Esslustʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "515"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "49/21"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lə=ko-royag-li muklo ʻich habe keine Esslustʼ; 515; 49/21;"
           }
         ]
-      }
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "(09-08-2020 Ilyas: rayəg/royag/rōg)"
+        }
+      ],
+      "label_raw": "(09-08-2020 Ilyas: rayəg/royag/rōg)"
     }
+  ],
+  "idioms": [
+    "wünschen;"
   ],
   "uncertain": false
 }

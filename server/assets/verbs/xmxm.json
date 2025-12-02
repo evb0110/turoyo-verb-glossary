@@ -14,17 +14,54 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mxamxamle", "mxamxəm"],
+      "forms": [
+        "mxamxamle",
+        "mxamxəm"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "l-u=radyo mxamxmole 802;",
-            "translations": [],
-            "references": ["802"]
+            "turoyo": "l-u=radyo mxamxmole",
+            "translations": [
+              "das Radio hat schön gespielt (nur in diesem Ausdruck)"
+            ],
+            "references": [
+              "802"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "l-u=radyo mxamxmole "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdas Radio hat schön gespielt (nur in diesem Ausdruck)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "802"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "l-u=radyo mxamxmole ʻdas Radio hat schön gespielt (nur in diesem Ausdruck)ʼ; 802;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "spielen (Radio);"
   ],
   "uncertain": false
 }

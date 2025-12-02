@@ -14,19 +14,54 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mdašdašle", "mdašdəš"],
+      "forms": [
+        "mdašdašle",
+        "mdašdəš"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "kət-wo ʕamo w ʕulmo ġắlabe mdašdašše ḥḏoḏe 798;",
+            "turoyo": "kət-wo ʕamo w ʕulmo ġắlabe mdašdašše ḥḏoḏe",
             "translations": [
               "es waren so viel Leute da, dass sie sich drängten und stiessen und einer dem anderen auf die Füsse trat"
             ],
-            "references": ["798"]
+            "references": [
+              "798"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kət-wo ʕamo w ʕulmo ġắlabe mdašdašše ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes waren so viel Leute da, dass sie sich drängten und stiessen und einer dem anderen auf die Füsse tratʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "798"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kət-wo ʕamo w ʕulmo ġắlabe mdašdašše ḥḏoḏe ʻes waren so viel Leute da, dass sie sich drängten und stiessen und einer dem anderen auf die Füsse tratʼ; 798;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "herumtrampeln, drängen, stossen;"
   ],
   "uncertain": false
 }

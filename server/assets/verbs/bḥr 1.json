@@ -14,17 +14,54 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["bḥəlle", "boḥər"],
+      "forms": [
+        "bḥəlle",
+        "boḥər"
+      ],
       "conjugations": {
         "Part act.": [
           {
-            "turoyo": "aloho u=baḥoro d-al=lebe 236;",
-            "translations": ["ʻGott, der Erforscher der Herzenʼ;"],
-            "references": ["236"]
+            "turoyo": "aloho u=baḥoro d-al=lebe",
+            "translations": [
+              "Gott, der Erforscher der Herzen"
+            ],
+            "references": [
+              "236"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aloho u=baḥoro d-al=lebe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻGott, der Erforscher der Herzenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "236"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "aloho u=baḥoro d-al=lebe ʻGott, der Erforscher der Herzenʼ; 236;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "erforschen;"
   ],
   "uncertain": false
 }

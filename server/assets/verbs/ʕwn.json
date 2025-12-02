@@ -14,68 +14,551 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mʕawalle", "mʕawən"],
+      "forms": [
+        "mʕawalle",
+        "mʕawən"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "aloho mʕawalle i=ḥaṭoyuṯayḏiLB 223; kət-way-lan ḥa me-Gziro, maʕmūr (…) mʕawálle-lan ġắlabe. hawi-lan moro",
+            "turoyo": "aloho mʕawalle i=ḥaṭoyuṯayḏi kət-way-lan ḥa me-Gziro maʕmūr … mʕawálle-lan ġắlabe. hawi-lan moro -",
             "translations": [
-              "ʻGott half mir, dem Sünderʼ;",
-              "‘There was one official from Cizre, he helped us a lot, he took care of us’ EL 61-62;"
+              "Gott half mir, dem Sünder",
+              "‘There was one official from Cizre, he helped us a lot, he took care of us’"
             ],
-            "references": ["223"]
+            "references": [
+              "LB 223",
+              "EL 61",
+              "62"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aloho mʕawalle i=ḥaṭoyuṯayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻGott half mir, dem Sünderʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 223"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " kət-way-lan ḥa me-Gziro"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maʕmūr "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mʕawálle-lan ġắlabe. hawi-lan moro "
+              },
+              {
+                "kind": "translation",
+                "value": "‘There was one official from Cizre, he helped us a lot, he took care of us’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "EL 61"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "62"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "aloho mʕawalle i=ḥaṭoyuṯayḏi ʻGott half mir, dem Sünderʼ; LB 223; kət-way-lan ḥa me-Gziro, maʕmūr (…) mʕawálle-lan ġắlabe. hawi-lan moro ‘There was one official from Cizre, he helped us a lot, he took care of us’ EL 61-62;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "ko-mʕawən u=ḥolo, k-uzzé w oṯe b-aq=qanyone 472; 76/53; u=muklo hēš meqəm d-məbləʕ k-məlʕəs b-aʕ=ʕarše. u=lišono kə-mʕawan-ne b-u=šuġl-ano 3/36-37; lu=k-mawbanno aʕmi ʕarab w-nošo d-mʕawal-li ġēr m-aloho oʕdo hani tarte=əšne aṯina l-Ṣṭambəl w-aḏiʕina l-u=profesor Ritter, w-oʕdo ko-mʕawnína-le əšmo b-u=lišono ṭuroyo (94/1);",
+            "turoyo": "ko-mʕawən u=ḥolo k-uzzé w oṯe b-aq=qanyone u=muklo hēš meqəm d-məbləʕ k-məlʕəs b-aʕ=ʕarše. u=lišono kə-mʕawan-ne b-u=šuġl-ano - lu=k-mawbanno aʕmi ʕarab w-nošo d-mʕawal-li ġēr m-aloho oʕdo hani tarte=əšne aṯina l-Ṣṭambəl w-aḏiʕina l-u=profesor Ritter w-oʕdo ko-mʕawnína-le əšmo b-u=lišono ṭuroyo ʻjetzt vor zwei Jahren sind wir nach Stambul gekommen und haben Professor Ritter kennengelernt und jetzt helfen wir ihm ein wenig bei der Ṭūrūyosprache’",
             "translations": [
-              "ʻer hilft dem Onkel, geht mit den Rindern vorwärts und zurückʼ;",
-              "ʻdie Speise wird, ehe sie heruntergeschluckt wird, mit den Zähnen gekaut. Die Zunge ist ihnen dabei behilflichʼ;",
-              "‘Ich nehme keine Araber mit und niemanden, der mir hilft, außer Gott’; 29/53;",
-              "ʻjetzt vor zwei Jahren sind wir nach Stambul gekommen und haben Professor Ritter kennengelernt, und jetzt helfen wir ihm ein wenig bei der Ṭūrūyosprache’;"
+              "er hilft dem Onkel, geht mit den Rindern vorwärts und zurück",
+              "die Speise wird, ehe sie heruntergeschluckt wird, mit den Zähnen gekaut. Die Zunge ist ihnen dabei behilflich",
+              "‘Ich nehme keine Araber mit und niemanden, der mir hilft, außer Gott’"
             ],
-            "references": ["472; 76/53", "3/36"]
+            "references": [
+              "472",
+              "76/53",
+              "3/36",
+              "37",
+              "29/53",
+              "94/1"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ko-mʕawən u=ḥolo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-uzzé w oṯe b-aq=qanyone "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer hilft dem Onkel, geht mit den Rindern vorwärts und zurückʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "472"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "76/53"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=muklo hēš meqəm d-məbləʕ k-məlʕəs b-aʕ=ʕarše. u=lišono kə-mʕawan-ne b-u=šuġl-ano "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Speise wird, ehe sie heruntergeschluckt wird, mit den Zähnen gekaut. Die Zunge ist ihnen dabei behilflichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "3/36"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "37"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lu=k-mawbanno aʕmi ʕarab w-nošo d-mʕawal-li ġēr m-aloho "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Ich nehme keine Araber mit und niemanden, der  mir hilft, außer Gott’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/53"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " oʕdo hani tarte=əšne aṯina l-Ṣṭambəl w-aḏiʕina l-u=profesor Ritter"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-oʕdo ko-mʕawnína-le əšmo b-u=lišono ṭuroyo "
+              },
+              {
+                "kind": "turoyo",
+                "value": "ʻ"
+              },
+              {
+                "kind": "turoyo",
+                "value": "jetzt vor zwei Jahren sind wir nach Stambul gekommen und haben Professor Ritter kennengelernt"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " und jetzt helfen wir ihm ein wenig bei der Ṭūrūyosprache’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "ref",
+                "value": "94/1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ko-mʕawən u=ḥolo, k-uzzé w oṯe b-aq=qanyone ʻer hilft dem Onkel, geht mit den Rindern vorwärts und zurückʼ; 472; 76/53; u=muklo hēš meqəm d-məbləʕ k-məlʕəs b-aʕ=ʕarše. u=lišono kə-mʕawan-ne b-u=šuġl-ano ʻdie Speise wird, ehe sie heruntergeschluckt wird, mit den Zähnen gekaut. Die Zunge ist ihnen dabei behilflichʼ; 3/36-37; lu=k-mawbanno aʕmi ʕarab w-nošo d-mʕawal-li ġēr m-aloho ‘Ich nehme keine Araber mit und niemanden, der mir hilft, außer Gott’; 29/53; oʕdo hani tarte=əšne aṯina l-Ṣṭambəl w-aḏiʕina l-u=profesor Ritter, w-oʕdo ko-mʕawnína-le əšmo b-u=lišono ṭuroyo ʻjetzt vor zwei Jahren sind wir nach Stambul gekommen und haben Professor Ritter kennengelernt, und jetzt helfen wir ihm ein wenig bei der Ṭūrūyosprache’; (94/1);"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "mdaballe i=walay-ayo dəṯṯe ġắlabe ṭowo w šafiro. u=aḥunayḏe-ste, hawo-ste mʕawán-wo-le b-u=ḥəkəm 472; 24/317-318; aṭ=ṭay-anək d-l=owan-wa tamo, i=naql-ayo d-lə=mʕawní-way-lan, balki moḥǝ́n-way-lan EL 85;",
+            "turoyo": "mdaballe i=walay-ayo dəṯṯe ġắlabe ṭowo w šafiro. u=aḥunayḏe-ste hawo-ste mʕawán-wo-le b-u=ḥəkəm - aṭ=ṭay-anək d-l=owan-wa tamo i=naql-ayo d-lə=mʕawní-way-lan balki moḥǝ́n-way-lan",
             "translations": [
-              "ʻer verwaltete ihre Stadt sehr gut und schön. Sein Bruder half ihm bei der Regierungʼ;",
-              "ʻwenn diese Muslime nicht dort gewesen wären und uns damals nicht zu Hilfe gekommen wären, hätten sie uns geschlagenʼ;"
+              "er verwaltete ihre Stadt sehr gut und schön. Sein Bruder half ihm bei der Regierung",
+              "wenn diese Muslime nicht dort gewesen wären und uns damals nicht zu Hilfe gekommen wären, hätten sie uns geschlagen"
             ],
-            "references": ["472; 24/317", "318"]
+            "references": [
+              "472",
+              "24/317",
+              "318",
+              "EL 85"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mdaballe i=walay-ayo dəṯṯe ġắlabe ṭowo w šafiro. u=aḥunayḏe-ste"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hawo-ste mʕawán-wo-le b-u=ḥəkəm "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer verwaltete ihre Stadt sehr gut und schön. Sein Bruder half ihm bei der Regierungʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "472"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/317"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "318"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aṭ=ṭay-anək d-l=owan-wa tamo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naql-ayo d-lə=mʕawní-way-lan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " balki moḥǝ́n-way-lan "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn diese Muslime nicht dort gewesen wären und uns damals nicht zu Hilfe gekommen wären, hätten sie uns geschlagenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "EL 85"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mdaballe i=walay-ayo dəṯṯe ġắlabe ṭowo w šafiro. u=aḥunayḏe-ste, hawo-ste mʕawán-wo-le b-u=ḥəkəm ʻer verwaltete ihre Stadt sehr gut und schön. Sein Bruder half ihm bei der Regierungʼ; 472; 24/317-318; aṭ=ṭay-anək d-l=owan-wa tamo, i=naql-ayo d-lə=mʕawní-way-lan, balki moḥǝ́n-way-lan ʻwenn diese Muslime nicht dort gewesen wären und uns damals nicht zu Hilfe gekommen wären, hätten sie uns geschlagenʼ; EL 85;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "hat mʕawǝ́n aġ=ġắlabe qṭal ann=əšmo 472; 69/445;",
+            "turoyo": "hat mʕawǝ́n aġ=ġắlabe qṭal ann=əšmo",
             "translations": [
-              "ʻhilf (lieber) den vielen und töte die wenigenʼ;"
+              "hilf (lieber) den vielen und töte die wenigen"
             ],
-            "references": ["472; 69/445"]
+            "references": [
+              "472",
+              "69/445"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "hat mʕawǝ́n aġ=ġắlabe qṭal ann=əšmo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻhilf (lieber) den vielen und töte die wenigenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "472"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/445"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "hat mʕawǝ́n aġ=ġắlabe qṭal ann=əšmo ʻhilf (lieber) den vielen und töte die wenigenʼ; 472; 69/445;"
           }
         ],
         "Part act.": [
           {
-            "turoyo": "ya moran Yešōʕ Mšiḥo hat-tət u=mʕawnono d-kul LB 143; ya u=abr-ayḏi! mu k-lozəm d-əzzóx hat ḥa bəlḥuḏe? uno masuli, lat-li noše mʕawnone ‘’; 24/48 [MT]",
+            "turoyo": "ya moran Yešōʕ Mšiḥo hat-tət u=mʕawnono d-kul ya u=abr-ayḏi! mu k-lozəm d-əzzóx hat ḥa bəlḥuḏe? uno masuli lat-li noše mʕawnone",
             "translations": [
-              "ʻoh Herr Jesus Christus, du bist der Helfer allerʼ;",
-              "Mein Sohn! Was mußt du so allein fortgehen? Ich bin alt geworden und habe keine Helfer"
+              "oh Herr Jesus Christus, du bist der Helfer aller",
+              "‘Mein Sohn! Was mußt du so allein fortgehen? Ich bin alt geworden und habe keine Helfer’"
             ],
-            "references": ["143", "24/48"]
+            "references": [
+              "LB 143",
+              "24/48"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ya moran Yešōʕ Mšiḥo hat-tət u=mʕawnono d-kul "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻoh Herr Jesus Christus, du bist der Helfer allerʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 143"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ya u=abr-ayḏi! mu k-lozəm d-əzzóx hat ḥa bəlḥuḏe? uno masuli"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lat-li noše mʕawnone "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Mein Sohn! Was mußt du so allein fortgehen? Ich bin alt geworden und habe keine Helfer’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/48"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "ya moran Yešōʕ Mšiḥo hat-tət u=mʕawnono d-kul ʻoh Herr Jesus Christus, du bist der Helfer allerʼ; LB 143; ya u=abr-ayḏi! mu k-lozəm d-əzzóx hat ḥa bəlḥuḏe? uno masuli, lat-li noše mʕawnone ‘Mein Sohn! Was mußt du so allein fortgehen? Ich bin alt geworden und habe keine Helfer’; 24/48 [MT]"
           }
         ],
         "Infinitiv": [
           {
             "turoyo": "ʕəwono",
             "translations": [],
-            "references": ["472"]
+            "references": [
+              "472"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕəwono"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "472"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ʕəwono; 472;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "helfen;"
   ],
   "uncertain": false
 }

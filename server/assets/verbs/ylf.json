@@ -14,102 +14,996 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["yaləf", "yoləf"],
+      "forms": [
+        "yaləf",
+        "yoləf"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "yaləf u=kurrəko qroyo, msəkle as=saḥrat b-i=qrayto 656; prs 157/25; iləfla qroyo? omər iləfla mayiṯo 656; prs 201/6; b-i=qriṯ-ayḏan kət-lan rawmo rabṯo, eba yaləfno l-i=soba bəṯṯər məd-yariwi maḥtənne b-am=makatib b-am=madaris, yalifi ʕələm w-hawən b-ṭarbiye naḏ̣əfto ‘’; 24/257 2)yalǝfno lu kewano. I got accustomed to this illness.(İlyas p.c)",
+            "turoyo": "yaləf u=kurrəko qroyo msəkle as=saḥrat b-i=qrayto prs iləfla qroyo? omər iləfla mayiṯo prs b-i=qriṯ-ayḏan kət-lan rawmo rabṯo eba yaləfno l-i=soba bəṯṯər məd-yariwi maḥtənne b-am=makatib b-am=madaris yalifi ʕələm w-hawən b-ṭarbiye naḏ̣əfto yalǝfno lu kewano. I got accustomed to this illness.İlyas p.c",
             "translations": [
               "der Junge lernte lesen, und durch das Lesen empfing er Zauberkräfte",
-              "“hat es (das Kamel f) denn lesen gelernt?” “Ja, es hat's gelernt und ist gestorben”",
+              "hat es (das Kamel f) denn lesen gelernt?” “Ja, es hat's gelernt und ist gestorben",
               "in unserem Dorf haben wir einen grossen Teich, in dem habe ich schwimmen gelernt",
-              "Als sie heranwuchsen, tat man sie in die Schulen, sie lernten Wissenschaft und wurden wohlerzogene Knaben"
+              "‘Als sie heranwuchsen, tat man sie in die Schulen, sie lernten Wissenschaft und wurden wohlerzogene Knaben’"
             ],
-            "references": ["656", "157/25"]
+            "references": [
+              "656",
+              "157/25",
+              "656",
+              "201/6",
+              "JL 9.9.11",
+              "24/257",
+              "2"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "yaləf u=kurrəko qroyo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " msəkle as=saḥrat b-i=qrayto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Junge lernte lesen, und durch das Lesen empfing er Zauberkräfteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "656"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "157/25"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " iləfla qroyo? omər iləfla mayiṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ“hat es (das Kamel f) denn lesen gelernt?” “Ja, es hat's gelernt und ist gestorben”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "656"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "201/6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-i=qriṯ-ayḏan kət-lan rawmo rabṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " eba yaləfno l-i=soba "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻin unserem Dorf haben wir einen grossen Teich, in dem habe ich schwimmen gelerntʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 9.9.11"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " bəṯṯər məd-yariwi maḥtənne b-am=makatib b-am=madaris"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " yalifi ʕələm w-hawən b-ṭarbiye naḏ̣əfto "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Als sie heranwuchsen, tat man sie in die Schulen, sie lernten Wissenschaft und wurden wohlerzogene Knaben’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "24/257"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": "yalǝfno lu kewano. I got accustomed to this illness."
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "yaləf u=kurrəko qroyo, msəkle as=saḥrat b-i=qrayto ʻder Junge lernte lesen, und durch das Lesen empfing er Zauberkräfteʼ; 656; prs 157/25; iləfla qroyo? omər iləfla mayiṯo ʻ“hat es (das Kamel f) denn lesen gelernt?” “Ja, es hat's gelernt und ist gestorben”ʼ; 656; prs 201/6; b-i=qriṯ-ayḏan kət-lan rawmo rabṯo, eba yaləfno l-i=soba ʻin unserem Dorf haben wir einen grossen Teich, in dem habe ich schwimmen gelerntʼ JL 9.9.11; bəṯṯər məd-yariwi maḥtənne b-am=makatib b-am=madaris, yalifi ʕələm w-hawən b-ṭarbiye naḏ̣əfto ‘Als sie heranwuchsen, tat man sie in die Schulen, sie lernten Wissenschaft und wurden wohlerzogene Knaben’; 24/257 2)yalǝfno lu kewano. I got accustomed to this illness.(İlyas p.c)"
           }
         ],
         "Preterit Transitive": [
           {
-            "turoyo": "Naqqa qašti ... veǧa aḥuni bi+ḥaraytaṯe , moḥewa, sṓmwayla ṭawtošuqo) very good",
-            "translations": [
-              "Once my grandmother… then my brother in the last times learned (the craft of the loom), he used to pull (to set the loom in motion), he produced it (i"
+            "turoyo": "Naqqa qašti ... veǧa aḥuni bi+ḥaraytaṯe ilәfle moḥewa sṓmwayla ṭawto 006_NE_GALA_CHUCK Once my grandmother… then my brother in the last times learned the craft of the loom he used to pull to set the loom in motion he produced it i+šuqo very good",
+            "translations": [],
+            "references": [
+              "66"
             ],
-            "references": []
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "Naqqa qašti ... veǧa aḥuni bi+ḥaraytaṯe ilәfle"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " moḥewa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " sṓmwayla ṭawto "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "006_NE_GALA_CHUCK "
+              },
+              {
+                "kind": "ref",
+                "value": "66"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Once my grandmother… then my brother in the last times learned "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "the craft of the loom"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " he used to pull "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "to set the loom in motion"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " he produced it "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "i+šuqo"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " very good"
+              }
+            ],
+            "text": "Naqqa qašti ... veǧa aḥuni bi+ḥaraytaṯe ilәfle, moḥewa, sṓmwayla ṭawto (006_NE_GALA_CHUCK 66) Once my grandmother… then my brother in the last times learned (the craft of the loom), he used to pull (to set the loom in motion), he produced it (i+šuqo) very good"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "húle-le kṯowo, omər iláf qroyo 658; prs 157/23;",
-            "translations": ["er gab ihm ein Buch und sagte: “Lerne lesen”"],
-            "references": ["658", "157/23"]
+            "turoyo": "húle-le kṯowo omər iláf qroyo prs",
+            "translations": [
+              "er gab ihm ein Buch und sagte: “Lerne lesen"
+            ],
+            "references": [
+              "658",
+              "157/23"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "húle-le kṯowo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " omər iláf qroyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer gab ihm ein Buch und sagte: “Lerne lesen”ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "658"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "157/23"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "húle-le kṯowo, omər iláf qroyo ʻer gab ihm ein Buch und sagte: “Lerne lesen”ʼ; 658; prs 157/23;"
           }
         ],
         "Part act.": [
           {
-            "turoyo": "m-u=yawmo d-awino hēš lo=raxuno ʕal gamlo, lat-no yalifo 658; prs 166/6; 70/225; Ono yalifono lu kewano. I am accustomed to the disease. (İlyas p.c)",
+            "turoyo": "m-u=yawmo d-awino hēš lo=raxuno ʕal gamlo lat-no yalifo prs Ono yalifono lu kewano. I am accustomed to the disease. İlyas p.c",
             "translations": [
               "vom Tage meiner Geburt an habe ich noch nie auf einem Kamele gesessen, ich bin's nicht gewohnt"
             ],
-            "references": ["658", "166/6"]
+            "references": [
+              "658",
+              "166/6",
+              "70/225"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "m-u=yawmo d-awino hēš lo=raxuno ʕal gamlo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lat-no yalifo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻvom Tage meiner Geburt an habe ich noch nie auf einem Kamele gesessen, ich bin's nicht gewohntʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "658"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "166/6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "70/225"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Ono yalifono lu kewano. I am accustomed to the disease. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "m-u=yawmo d-awino hēš lo=raxuno ʕal gamlo, lat-no yalifo ʻvom Tage meiner Geburt an habe ich noch nie auf einem Kamele gesessen, ich bin's nicht gewohntʼ; 658; prs 166/6; 70/225; Ono yalifono lu kewano. I am accustomed to the disease. (İlyas p.c)"
           }
-        ],
+        ]
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "(+ iləfle)"
+        }
+      ],
+      "label_raw": "(+ iləfle)"
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
         "Infectum": [
           {
-            "turoyo": "k-miləf 659;",
-            "translations": ["es wird gelernt"],
-            "references": ["659"]
+            "turoyo": "k-miləf",
+            "translations": [
+              "es wird gelernt"
+            ],
+            "references": [
+              "659"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "k-miləf "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes wird gelerntʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "659"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "k-miləf ʻes wird gelerntʼ; 659;"
           }
         ],
         "Infinitiv": [
           {
-            "turoyo": "ilofo 659;w-ʕal aṭ=ṭuron-anək məblí-way-na-la, w-eba (…) moḥi-way-na ab=buġre, l-u=ilofo",
+            "turoyo": "ilofo w-ʕal aṭ=ṭuron-anək məblí-way-na-la w-eba … moḥi-way-na ab=buġre l-u=ilofo",
             "translations": [
-              "‘We brought it (cannon, f.) to the mountains and we fired cannon balls with it for",
-              "practice’ JL 19.6.22;"
+              "‘We brought it (cannon, f.) to the mountains and we fired cannon balls with it for practice’"
             ],
-            "references": ["659"]
+            "references": [
+              "659",
+              "JL 19.6.22"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ilofo"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "659"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "w-ʕal aṭ=ṭuron-anək məblí-way-na-la"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-eba "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "…"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " moḥi-way-na ab=buġre"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " l-u=ilofo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘We brought it (cannon, f.) to the mountains and we fired cannon balls with it for practice’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 19.6.22"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ilofo; 659;w-ʕal aṭ=ṭuron-anək məblí-way-na-la, w-eba (…) moḥi-way-na ab=buġre, l-u=ilofo ‘We brought it (cannon, f.) to the mountains and we fired cannon balls with it for practice’ JL 19.6.22;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["mawlafle", "mawləf"],
+      "forms": [
+        "mawlafle",
+        "mawləf"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "i=ləġ-aṯe məlfo harke 663;",
-            "translations": ["die Sprache wurde hier gelehrt"],
-            "references": ["663"]
+            "turoyo": "msǝ́kle-li l-u=ǧənnawi mawláfle-li qroyo prs molafle u=maymūn ʕal u=raqḏo",
+            "translations": [
+              "der Dämon hat mich gefangen, hat mich Lesen gelehrt",
+              "lehrte er den Affen tanzen"
+            ],
+            "references": [
+              "660",
+              "157/31",
+              "MM 40"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "msǝ́kle-li  l-u=ǧənnawi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mawláfle-li qroyo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻder Dämon hat mich gefangen, hat mich Lesen gelehrtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "660"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "157/31"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " molafle u=maymūn ʕal u=raqḏo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻlehrte er den Affen tanzenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 40"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "msǝ́kle-li l-u=ǧənnawi, mawláfle-li qroyo ʻder Dämon hat mich gefangen, hat mich Lesen gelehrtʼ; 660; prs 157/31; molafle u=maymūn ʕal u=raqḏo ʻlehrte er den Affen tanzenʼ; MM 40;"
+          },
+          {
+            "turoyo": "i=ləġ-aṯe məlfo harke",
+            "translations": [
+              "die Sprache wurde hier gelehrt"
+            ],
+            "references": [
+              "663"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=ləġ-aṯe məlfo harke "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Sprache wurde hier gelehrtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "663"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=ləġ-aṯe məlfo harke ʻdie Sprache wurde hier gelehrtʼ; 663;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "ádyawma hən m-ak=kalbe k-mitawlife l-u=šuġl-ano, w k-mḥawən darbo l-ax=xōrtīn, də-kə-mvayʕi ʕaynayye b-u=ḥarb 663; 3/30;",
+            "turoyo": "d-mawlaf-fe k-máwlifi l-an=naʕim-ani taʕlīm masiḥi w-ṣlawoṯo uʕdo k-molafno b-i=kulliye d-Mōr Seweryōs b-Bayrūt d-as=Səryoye",
+            "translations": [
+              "damit er sie (pl) lehre",
+              "sie (die Mönche) unterrichten diese Kinder in Christenlehre und Gebeten",
+              "‘Zur Zeit bin ich Lehrer an der höheren Schule Mor Severios der Syrer in Beirut’"
+            ],
+            "references": [
+              "661",
+              "11/104",
+              "32/2"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "d-mawlaf-fe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdamit er sie (pl) lehreʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "661"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-máwlifi l-an=naʕim-ani taʕlīm masiḥi w-ṣlawoṯo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie (die Mönche) unterrichten diese Kinder in Christenlehre und Gebetenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/104"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " uʕdo k-molafno b-i=kulliye d-Mōr  Seweryōs b-Bayrūt d-as=Səryoye "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Zur Zeit bin ich Lehrer an der höheren Schule Mor Severios der Syrer in Beirut’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "32/2"
+              }
+            ],
+            "text": "d-mawlaf-fe ʻdamit er sie (pl) lehreʼ; 661; k-máwlifi l-an=naʕim-ani taʕlīm masiḥi w-ṣlawoṯo ʻsie (die Mönche) unterrichten diese Kinder in Christenlehre und Gebetenʼ; 11/104; uʕdo k-molafno b-i=kulliye d-Mōr Seweryōs b-Bayrūt d-as=Səryoye ‘Zur Zeit bin ich Lehrer an der höheren Schule Mor Severios der Syrer in Beirut’; 32/2"
+          },
+          {
+            "turoyo": "ádyawma hən m-ak=kalbe k-mitawlife l-u=šuġl-ano w k-mḥawən darbo l-ax=xōrtīn də-kə-mvayʕi ʕaynayye b-u=ḥarb",
             "translations": [
               "heute werden gewisse Hunde zu diesem Zwecke abgerichtet, und sie zeigen den jungen Leuten, die ihre Augen im Krieg verlieren, den Weg"
             ],
-            "references": ["663; 3/30"]
+            "references": [
+              "663",
+              "3/30"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ádyawma hən m-ak=kalbe k-mitawlife l-u=šuġl-ano"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w k-mḥawən darbo l-ax=xōrtīn"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " də-kə-mvayʕi ʕaynayye b-u=ḥarb "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻheute werden gewisse Hunde zu diesem Zwecke abgerichtet, und sie zeigen den jungen Leuten, die ihre Augen im Krieg verlieren, den Wegʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "663"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "3/30"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ádyawma hən m-ak=kalbe k-mitawlife l-u=šuġl-ano, w k-mḥawən darbo l-ax=xōrtīn, də-kə-mvayʕi ʕaynayye b-u=ḥarb ʻheute werden gewisse Hunde zu diesem Zwecke abgerichtet, und sie zeigen den jungen Leuten, die ihre Augen im Krieg verlieren, den Wegʼ; 663; 3/30;"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "moláf-way-lan Malfono Dawīḏ, d-bəṯṯər hawi qašo l-Bəssorino iest in Bəssorino 662; 37/4;",
-            "translations": ["The teacher David who later became a pr"],
-            "references": ["662; 37/4"]
+            "turoyo": "moláf-way-lan Malfono Dawīḏ d-bəṯṯər hawi qašo l-Bəssorino",
+            "translations": [
+              "The teacher David who later became a priest in Bəssorino taught us"
+            ],
+            "references": [
+              "662",
+              "37/4"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "moláf-way-lan Malfono Dawīḏ"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-bəṯṯər hawi qašo l-Bəssorino "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻThe teacher David who later became a priest in Bəssorino taught usʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "662"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "37/4"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "moláf-way-lan Malfono Dawīḏ, d-bəṯṯər hawi qašo l-Bəssorino ʻThe teacher David who later became a priest in Bəssorino taught usʼ; 662; 37/4;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "awfequ i=ʕaskar ḥaṯt-aṯi, awléful-la taʕlīm 662; prs 10/31;",
+            "turoyo": "awfequ i=ʕaskar ḥaṯt-aṯi awléful-la taʕlīm prs",
             "translations": [
               "holt die neuen Soldaten herbei und exerziert sie ein"
             ],
-            "references": ["662", "10/31"]
+            "references": [
+              "662",
+              "10/31"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "awfequ i=ʕaskar ḥaṯt-aṯi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " awléful-la taʕlīm "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻholt die neuen Soldaten herbei und exerziert sie einʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "662"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "10/31"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "awfequ i=ʕaskar ḥaṯt-aṯi, awléful-la taʕlīm ʻholt die neuen Soldaten herbei und exerziert sie einʼ; 662; prs 10/31;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "1)lernen, sich gewöhnen an; 2) to get accustomed to smt bad",
+    "lehren;"
   ],
   "uncertain": false
 }

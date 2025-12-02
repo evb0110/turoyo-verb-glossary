@@ -14,24 +14,93 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mparpaṭle", "mparpəṭ"],
+      "forms": [
+        "mparpaṭle",
+        "mparpəṭ"
+      ],
       "conjugations": {
         "Infectum": [
           {
             "turoyo": "kə-mparpəṭ ruḥe",
             "translations": [],
-            "references": ["785"]
-          }
-        ],
-        "Part. Pass.": [
-          {
-            "turoyo": "kaġad mparpṭo 785;",
-            "translations": ["ein zerfetztes Papier"],
-            "references": ["785"]
+            "references": [
+              "785"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kə-mparpəṭ ruḥe"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "785"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kə-mparpəṭ ruḥe; 785;"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Part. Pass.": [
+          {
+            "turoyo": "kaġad mparpṭo",
+            "translations": [
+              "ein zerfetztes Papier"
+            ],
+            "references": [
+              "785"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "kaġad mparpṭo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻein zerfetztes Papierʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "785"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "kaġad mparpṭo ʻein zerfetztes Papierʼ; 785;"
+          }
+        ]
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "zerfetzen, zerreissen, (ruḥe) zappeln beim Geschlachtet werden (Vogel, z.B. Hahn), (fig.) Lügen erzählen, aufschneiden (wenn einer z.B. behauptet, er habe einen 20m langen Fisch gesehen);"
   ],
   "uncertain": false
 }

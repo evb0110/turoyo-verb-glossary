@@ -14,75 +14,565 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["glele(gali)", "gole"],
+      "forms": [
+        "glele(gali)",
+        "gole"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "gle ṣadra d-i=aṯto 378; 97/62;",
-            "translations": ["die Brust (seiner) Frau entblösste sich"],
-            "references": ["378; 97/62"]
+            "turoyo": "glalle ṭizayye. mšaḥalle u=məhər b-i=nuro w mḥele b-ṭizayye tməġile prs prs gali druʕi",
+            "translations": [
+              "sie entblössten also ihre Hintern, und er machte sein Siegel am Feuer heiss, drückte es ihnen auf und stempelte sie",
+              "mein Arm entblösste sich"
+            ],
+            "references": [
+              "335",
+              "63/35",
+              "111/7",
+              "347"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "glalle ṭizayye. mšaḥalle u=məhər b-i=nuro w mḥele b-ṭizayye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " tməġile "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie entblössten also ihre Hintern, und er machte sein Siegel am Feuer heiss, drückte es ihnen auf und stempelte sieʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "335"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "63/35"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "111/7"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " gali druʕi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻmein Arm entblösste sichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "347"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "glalle ṭizayye. mšaḥalle u=məhər b-i=nuro w mḥele b-ṭizayye, tməġile ʻsie entblössten also ihre Hintern, und er machte sein Siegel am Feuer heiss, drückte es ihnen auf und stempelte sieʼ; 335; prs 63/35; prs 111/7; gali druʕi ʻmein Arm entblösste sichʼ; 347;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "glawu ṭizayye 374; prs 64/18; prs 111/7;",
-            "translations": ["entblösst ihre Hintern"],
-            "references": ["374", "64/18"]
+            "turoyo": "glawu ṭizayye prs prs",
+            "translations": [
+              "entblösst ihre Hintern"
+            ],
+            "references": [
+              "374",
+              "64/18",
+              "111/7"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "glawu ṭizayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻentblösst ihre Hinternʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "374"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "64/18"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "111/7"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "glawu ṭizayye ʻentblösst ihre Hinternʼ; 374; prs 64/18; prs 111/7;"
+          }
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "gle ṣadra d-i=aṯto",
+            "translations": [
+              "die Brust (seiner) Frau entblösste sich"
+            ],
+            "references": [
+              "378",
+              "97/62"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "gle ṣadra d-i=aṯto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Brust (seiner) Frau entblösste sichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "378"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "97/62"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "gle ṣadra d-i=aṯto ʻdie Brust (seiner) Frau entblösste sichʼ; 378; 97/62;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "lo lăšan i=šaxsiyayḏi, omanno lăšan at=tešəbḥoṯo də-Mšiḥo d-məgloyi b-u=ʕulmo, d-u=med-ano hawi ʕam i=ḥaṭoyuṯayḏi LB 215;",
+            "turoyo": "lo lăšan i=šaxsiyayḏi omanno lăšan at=tešəbḥoṯo də-Mšiḥo d-məgloyi b-u=ʕulmo d-u=med-ano hawi ʕam i=ḥaṭoyuṯayḏi",
             "translations": [
               "(ich freute mich) nicht nur für mich, sondern dafür, dass die Wunder Christi in der Welt offenbar werden, durch das, was mir, dem Sünder, geschehen ist"
             ],
-            "references": ["215"]
+            "references": [
+              "LB 215"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lo lăšan i=šaxsiyayḏi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " omanno lăšan at=tešəbḥoṯo də-Mšiḥo d-məgloyi b-u=ʕulmo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-u=med-ano hawi ʕam i=ḥaṭoyuṯayḏi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻ(ich freute mich) nicht nur für mich, sondern dafür, dass die Wunder Christi in der Welt offenbar werden, durch das, was mir, dem Sünder, geschehen istʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 215"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lo lăšan i=šaxsiyayḏi, omanno lăšan at=tešəbḥoṯo də-Mšiḥo d-məgloyi b-u=ʕulmo, d-u=med-ano hawi ʕam i=ḥaṭoyuṯayḏi ʻ(ich freute mich) nicht nur für mich, sondern dafür, dass die Wunder Christi in der Welt offenbar werden, durch das, was mir, dem Sünder, geschehen istʼ; LB 215;"
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": ["mgalele", "mgale"],
+      "forms": [
+        "mgalele",
+        "mgale"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "mgalele u=sefoqo ḥzele kal kīt ḥḏaḥṣar=beʕe w i=ṭlamṯo d-u=laḥmo twərto 414; 51/46; mgalele ʕal ruḥe 414; mšaḥalla am=maye w məlla: “mgali raġlux!” mgaleli hul l-i=kaboke, hul l-arke ṭino",
+            "turoyo": "mgalele u=sefoqo ḥzele kal kīt ḥḏaḥṣar=beʕe w i=ṭlamṯo d-u=laḥmo twərto mgalele ʕal ruḥe mšaḥalla am=maye w məlla mgaleli hul l-i=kaboke hul l-arke ṭino",
             "translations": [
               "er deckte die Schüssel auf und sah, dass nur elf Eier darin waren und dass das Brot angebrochen war",
               "er entblösste sich",
+              "mgali raġlux!",
               "sie erhitzte das Wasser und sagte: “Lege deine Füsse frei!” Ich legte meine Füsse bis zu den Knien frei, bis dahin waren sie voller Matsch"
             ],
-            "references": ["414; 51/46", "414"]
+            "references": [
+              "414",
+              "51/46",
+              "414",
+              "LB 261"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mgalele u=sefoqo ḥzele kal kīt ḥḏaḥṣar=beʕe w i=ṭlamṯo d-u=laḥmo twərto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer deckte die Schüssel auf und sah, dass nur elf Eier darin waren und dass das Brot angebrochen warʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "414"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "51/46"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mgalele ʕal ruḥe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer entblösste sichʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "414"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mšaḥalla am=maye w məlla"
+              },
+              {
+                "kind": "punct",
+                "value": ":"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "translation",
+                "value": "“mgali raġlux!”"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mgaleli hul l-i=kaboke"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " hul l-arke ṭino "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie erhitzte das Wasser und sagte: “Lege deine Füsse frei!” Ich legte meine Füsse bis zu den Knien frei, bis dahin waren sie voller Matschʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 261"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mgalele u=sefoqo ḥzele kal kīt ḥḏaḥṣar=beʕe w i=ṭlamṯo d-u=laḥmo twərto ʻer deckte die Schüssel auf und sah, dass nur elf Eier darin waren und dass das Brot angebrochen warʼ; 414; 51/46; mgalele ʕal ruḥe ʻer entblösste sichʼ; 414; mšaḥalla am=maye w məlla: “mgali raġlux!” mgaleli hul l-i=kaboke, hul l-arke ṭino ʻsie erhitzte das Wasser und sagte: “Lege deine Füsse frei!” Ich legte meine Füsse bis zu den Knien frei, bis dahin waren sie voller Matschʼ LB 261;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "galewu ʕal ṭizayye ḥzawu ad=daġat d-ʕal ṭizayye 422; 75/359; mgali raġlux",
+            "turoyo": "galewu ʕal ṭizayye ḥzawu ad=daġat d-ʕal ṭizayye mgali raġlux",
             "translations": [
               "entblösset ihre Hintern und seht die Brandstempel darauf",
               "lege deine Füsse frei!"
             ],
-            "references": ["422; 75/359"]
+            "references": [
+              "422",
+              "75/359",
+              "LB 261"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "galewu ʕal ṭizayye ḥzawu ad=daġat d-ʕal ṭizayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻentblösset ihre Hintern und seht die Brandstempel daraufʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "422"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "75/359"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " mgali raġlux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻlege deine Füsse frei!ʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "LB 261"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "galewu ʕal ṭizayye ḥzawu ad=daġat d-ʕal ṭizayye ʻentblösset ihre Hintern und seht die Brandstempel daraufʼ; 422; 75/359; mgali raġlux ʻlege deine Füsse frei!ʼ LB 261;"
           }
         ]
       }
     },
     {
       "stem": "III",
-      "forms": ["maglele", "magle"],
+      "forms": [
+        "maglele",
+        "magle"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "naqla maglalle ʕal ṭize d-u=kačălōk w-mdawaġġe 385; 44/158; [MT]",
+            "turoyo": "naqla maglalle ʕal ṭize d-u=kačălōk w-mdawaġġe",
             "translations": [
               "He bared the bald-headed’s buttocks at once and branded them"
             ],
-            "references": ["385; 44/158"]
+            "references": [
+              "385",
+              "44/158"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "naqla maglalle ʕal ṭize d-u=kačălōk w-mdawaġġe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻHe bared the bald-headed’s buttocks at once and branded themʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "385"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "44/158"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "naqla maglalle ʕal ṭize d-u=kačălōk w-mdawaġġe ʻHe bared the bald-headed’s buttocks at once and branded themʼ; 385; 44/158; [MT]"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "entblössen; offenbaren;",
+    "entblössen, aufdecken;",
+    "entblössen;"
   ],
   "uncertain": false
 }

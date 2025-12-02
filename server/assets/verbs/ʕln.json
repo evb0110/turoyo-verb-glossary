@@ -14,26 +14,126 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["maʕlele", "maʕle"],
+      "forms": [
+        "maʕlele",
+        "maʕle"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "maʕlalle u=ḥarb ʕal-ḥḏoḏe 445; 56/33;",
-            "translations": ["ʻsie erklärten einander Kriegʼ;"],
-            "references": ["445; 56/33"]
+            "turoyo": "maʕlalle u=ḥarb ʕal-ḥḏoḏe",
+            "translations": [
+              "sie erklärten einander Krieg"
+            ],
+            "references": [
+              "445",
+              "56/33"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "maʕlalle u=ḥarb ʕal-ḥḏoḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie erklärten einander Kriegʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "445"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/33"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "maʕlalle u=ḥarb ʕal-ḥḏoḏe ʻsie erklärten einander Kriegʼ; 445; 56/33;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "aw gd-obat-li šawʕo=qantore d-dahwo, aw g-maʕleno u=ḥarb aʕlux 445; 56/27;",
+            "turoyo": "aw gd-obat-li šawʕo=qantore d-dahwo aw g-maʕleno u=ḥarb aʕlux",
             "translations": [
-              "ʻentweder gibst du mir sieben Zentner Gold oder ich erkläre dir Kriegʼ;"
+              "entweder gibst du mir sieben Zentner Gold oder ich erkläre dir Krieg"
             ],
-            "references": ["445; 56/27"]
+            "references": [
+              "445",
+              "56/27"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aw gd-obat-li šawʕo=qantore d-dahwo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " aw g-maʕleno u=ḥarb aʕlux "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻentweder gibst du mir sieben Zentner Gold oder ich erkläre dir Kriegʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "445"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/27"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "aw gd-obat-li šawʕo=qantore d-dahwo, aw g-maʕleno u=ḥarb aʕlux ʻentweder gibst du mir sieben Zentner Gold oder ich erkläre dir Kriegʼ; 445; 56/27;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "erklären;"
   ],
   "uncertain": false
 }

@@ -14,17 +14,107 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ṭbəʕle", "ṭobəʕ"],
+      "forms": [
+        "ṭbəʕle",
+        "ṭobəʕ"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "qŭréna-wo, w mṣaḥḥína-wo u=kṯowo d-aš=šəʕəratfarisi, d-ubʕína-wo, d-ṭubʕína-le 104; 2/61; Briṯokoṭǝbʕo bam mǝlyonekṯowe. (İlyas p.c)",
-            "translations": ["korrigierten", "Gedichtbuch"],
-            "references": ["104; 2/61"]
+            "turoyo": "qŭréna-wo w mṣaḥḥína-wo u=kṯowo d-aš=šəʕərat farisi d-ubʕína-wo d-ṭubʕína-le Briṯo koṭǝbʕo bam mǝlyone kṯowe. İlyas p.c",
+            "translations": [
+              "wir lasen und korrigierten das persische Gedichtbuch, das wir drucken wollten"
+            ],
+            "references": [
+              "104",
+              "2/61"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "qŭréna-wo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mṣaḥḥína-wo u=kṯowo d-aš=šəʕərat farisi"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-ubʕína-wo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-ṭubʕína-le "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir lasen und korrigierten das persische Gedichtbuch, das wir drucken wolltenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "104"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "2/61"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  Briṯo koṭǝbʕo bam mǝlyone kṯowe. "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "İlyas p.c"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              }
+            ],
+            "text": "qŭréna-wo, w mṣaḥḥína-wo u=kṯowo d-aš=šəʕərat farisi, d-ubʕína-wo, d-ṭubʕína-le ʻwir lasen und korrigierten das persische Gedichtbuch, das wir drucken wolltenʼ; 104; 2/61; Briṯo koṭǝbʕo bam mǝlyone kṯowe. (İlyas p.c)"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "drucken;"
   ],
   "uncertain": false
 }

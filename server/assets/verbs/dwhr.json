@@ -5,19 +5,67 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["mdawhalle", "mdawhər"],
+      "forms": [
+        "mdawhalle",
+        "mdawhər"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "aḏəʕ u=muxtār aḏəʕ u=qašo mdawhalle 774; 116/61;",
+            "turoyo": "aḏəʕ u=muxtār aḏəʕ u=qašo mdawhalle",
             "translations": [
               "da wusste der Schultheiss, dass der Pfarrer ihn beiseite geschafft hatte"
             ],
-            "references": ["774; 116/61"]
+            "references": [
+              "774",
+              "116/61"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "aḏəʕ u=muxtār aḏəʕ u=qašo mdawhalle "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda wusste der Schultheiss, dass der Pfarrer ihn beiseite geschafft hatteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "774"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "116/61"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "aḏəʕ u=muxtār aḏəʕ u=qašo mdawhalle ʻda wusste der Schultheiss, dass der Pfarrer ihn beiseite geschafft hatteʼ; 774; 116/61;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "verloren gehen lassen;"
   ],
   "uncertain": false
 }

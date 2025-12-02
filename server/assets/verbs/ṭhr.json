@@ -14,17 +14,75 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mṭahalle", "mṭahər"],
+      "forms": [
+        "mṭahalle",
+        "mṭahər"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "nafəqhuwe w i=ʕašərtayḏe s-u=kirīvdiḏe, ko-mṭahəru=abro b-sefe 246; 53/142;",
-            "translations": ["beschneiden"],
-            "references": ["246; 53/142"]
+            "turoyo": "nafəq huwe w i=ʕašərtayḏe s-u=kirīv diḏe ko-mṭahər u=abro b-sefe",
+            "translations": [
+              "er war mit seinem Stamme zu seinem Gevatter geritten. Er lässt dessen Sohn auf seinem Schosse beschneiden"
+            ],
+            "references": [
+              "246",
+              "53/142"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "nafəq huwe w i=ʕašərtayḏe s-u=kirīv diḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-mṭahər u=abro b-sefe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer war mit seinem Stamme zu seinem Gevatter geritten. Er lässt dessen Sohn auf seinem Schosse beschneidenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "246"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "53/142"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "nafəq huwe w i=ʕašərtayḏe s-u=kirīv diḏe, ko-mṭahər u=abro b-sefe ʻer war mit seinem Stamme zu seinem Gevatter geritten. Er lässt dessen Sohn auf seinem Schosse beschneidenʼ; 246; 53/142;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "beschneiden;"
   ],
   "uncertain": false
 }

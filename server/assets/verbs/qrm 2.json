@@ -14,28 +14,85 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mqarəm", "miqarəm"],
+      "forms": [
+        "mqarəm",
+        "miqarəm"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "i=gḏayto ko-miqarmo ʕal ab=beʕe ḥeḏər ʕəsri=yawmeIT;",
+            "turoyo": "i=gḏayto ko-miqarmo ʕal ab=beʕe ḥeḏər ʕəsri=yawme IT",
             "translations": [
-              "‘die Henne brütet die Eier etwa zwanzig Tage (lang)’;"
+              "‘die Henne brütet die Eier etwa zwanzig Tage (lang)’"
             ],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=gḏayto ko-miqarmo ʕal ab=beʕe ḥeḏər ʕəsri=yawme "
+              },
+              {
+                "kind": "translation",
+                "value": "‘die Henne brütet die Eier etwa zwanzig Tage (lang)’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " IT"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=gḏayto ko-miqarmo ʕal ab=beʕe ḥeḏər ʕəsri=yawme ‘die Henne brütet die Eier etwa zwanzig Tage (lang)’; IT;"
           }
         ],
         "Part. Pass.": [
           {
-            "turoyo": "i=qaqwoniṯo mqarámto-wa ʕal ač=čičəkayḏa i=naqla d-ḥəzyoli taḥt i=satoIT;",
+            "turoyo": "i=qaqwoniṯo mqarámto-wa ʕal ač=čičəkayḏa i=naqla d-ḥəzyoli taḥt i=sato IT",
             "translations": [
-              "‘das Steinhuhn brütete gerade seine Küken als ich es unter dem Weinstock entdeckte’;"
+              "‘das Steinhuhn brütete gerade seine Küken als ich es unter dem Weinstock entdeckte’"
             ],
-            "references": []
+            "references": [],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "i=qaqwoniṯo mqarámto-wa ʕal ač=čičəkayḏa i=naqla d-ḥəzyoli taḥt i=sato "
+              },
+              {
+                "kind": "translation",
+                "value": "‘das Steinhuhn brütete gerade seine Küken als ich es unter dem Weinstock entdeckte’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " IT"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "i=qaqwoniṯo mqarámto-wa ʕal ač=čičəkayḏa i=naqla d-ḥəzyoli taḥt i=sato ‘das Steinhuhn brütete gerade seine Küken als ich es unter dem Weinstock entdeckte’; IT;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(Detrans.) brüten;"
   ],
   "uncertain": false
 }

@@ -14,19 +14,56 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mraṣaʕle", "mraṣəʕ"],
+      "forms": [
+        "mraṣaʕle",
+        "mraṣəʕ"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Part. Pass.": [
           {
-            "turoyo": "u=qṭoro w i=dašama d-u=hayklo d-i=ʕito mraṣʕo b-am=mozayəq w b-u=dáhwo-yo ; 11/115",
+            "turoyo": "u=qṭoro w i=dašama d-u=hayklo d-i=ʕito mraṣʕo b-am=mozayəq w b-u=dáhwo-yo",
             "translations": [
               "‘Decke und Fussboden des Schiffes der Kirche sind mit Mosaiken und Gold eingelegt’"
             ],
-            "references": ["11/115"]
+            "references": [
+              "11/115"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=qṭoro w i=dašama d-u=hayklo d-i=ʕito mraṣʕo b-am=mozayəq w b-u=dáhwo-yo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Decke und Fussboden des Schiffes der Kirche sind mit Mosaiken und Gold eingelegt’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/115"
+              }
+            ],
+            "text": "u=qṭoro w i=dašama d-u=hayklo d-i=ʕito mraṣʕo b-am=mozayəq w b-u=dáhwo-yo ‘Decke und Fussboden des Schiffes der Kirche sind mit Mosaiken und Gold eingelegt’; 11/115"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "einlegen;"
   ],
   "uncertain": false
 }

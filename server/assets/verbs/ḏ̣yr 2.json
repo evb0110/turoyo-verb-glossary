@@ -14,20 +14,82 @@
   "stems": [
     {
       "stem": "III",
-      "forms": ["maḏ̣əlle", "maḏ̣ər"],
+      "forms": [
+        "maḏ̣əlle",
+        "maḏ̣ər"
+      ],
       "conjugations": {
         "Infectum": [
           {
-            "turoyo": "moṣele i=ʕaskar d-nošo lo=mqaru laf-elayye w-maḏ̣ər-re b-medek-maḏ̣ər ruḥe 545;",
+            "turoyo": "moṣele i=ʕaskar d-nošo lo=mqaru laf-elayye w-maḏ̣ər-re b-mede k-maḏ̣ər ruḥe",
             "translations": [
-              "‘he commanded the army not to near them and not to damage them anything’; 36/105;",
-              "schadet sich, (weil er zuviel raucht)"
+              "‘he commanded the army not to near them and not to damage them anything’",
+              "er schadet sich, (weil er zuviel raucht)"
             ],
-            "references": ["545"]
+            "references": [
+              "36/105",
+              "545"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "moṣele i=ʕaskar d-nošo lo=mqaru laf-elayye w-maḏ̣ər-re b-mede "
+              },
+              {
+                "kind": "translation",
+                "value": "‘he commanded the army not to near them and not to damage them anything’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "36/105"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " k-maḏ̣ər ruḥe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer schadet sich, (weil er zuviel raucht)ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "545"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "moṣele i=ʕaskar d-nošo lo=mqaru laf-elayye w-maḏ̣ər-re b-mede ‘he commanded the army not to near them and not to damage them anything’; 36/105; k-maḏ̣ər ruḥe ʻer schadet sich, (weil er zuviel raucht)ʼ; 545;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "schaden;",
+    "farq: soyəm farq (cf. Kurd. ferq kirin, Omar 1992 204: unterscheiden, auseinander halten, bemerken; cf. Tur. fark etmek, Steuerwald 292: unterscheiden, auseinander halten, trennen; (be-)merken;) see frq",
+    "unterscheiden;              А зачем было это сюда помещать, если отсылка к frq идет?"
   ],
   "uncertain": false
 }

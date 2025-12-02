@@ -14,65 +14,622 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["lazəm", "lozəm"],
+      "forms": [
+        "lazəm",
+        "lozəm"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "2) húle-le u=mede d-lázəm-le, i=xarǧiyayḏe lazəm ḥa minan d-foyəš harke 207; 60/114; d-howe-wo u=taǧər-awo aṣīl, kayso, i=naqqa d-mǝ́lle-la hawxa, lazəm d-mŭyad-wo u=bahro-ste quma, maqəṯ-wo u=bahro quma, mhalax-wo aʕma 207; 26/132, 134;",
+            "turoyo": "húle-le u=mede d-lázəm-le i=xarǧiyayḏe - lazəm ḥa minan d-foyəš harke d-howe-wo u=taǧər-awo aṣīl kayso i=naqqa d-mǝ́lle-la hawxa lazəm d-mŭyad-wo u=bahro-ste quma maqəṯ-wo u=bahro quma mhalax-wo aʕma",
             "translations": [
               "er gab ihm das Reisegeld und das, was er sonst brauchte",
               "einer von uns muss hierbleiben",
               "wenn der Kaufmann edel gewesen wäre und gut, so hätte er, als er das zu ihr sagte, das Licht (eine Laterne) vor ihr in die Hand nehmen und vor ihr anzünden müssen, und er hätte mit ihr gehen müssen"
             ],
-            "references": ["2", "207; 60/114"]
+            "references": [
+              "2",
+              "206",
+              "207",
+              "97/48",
+              "207",
+              "60/114",
+              "207",
+              "26/132",
+              "134"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " húle-le u=mede d-lázəm-le"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=xarǧiyayḏe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer gab ihm das Reisegeld und das, was er sonst brauchteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "206"
+              },
+              {
+                "kind": "turoyo",
+                "value": "-"
+              },
+              {
+                "kind": "ref",
+                "value": "207"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "97/48"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " lazəm ḥa minan d-foyəš harke "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻeiner von uns muss hierbleibenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "207"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "60/114"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-howe-wo u=taǧər-awo aṣīl"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " kayso"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " i=naqqa d-mǝ́lle-la hawxa"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lazəm d-mŭyad-wo u=bahro-ste quma"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " maqəṯ-wo u=bahro quma"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " mhalax-wo aʕma "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwenn der Kaufmann edel gewesen wäre und gut, so hätte er, als er das zu ihr sagte, das Licht (eine Laterne) vor ihr in die Hand nehmen und vor ihr anzünden müssen, und er hätte mit ihr gehen müssenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "207"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/132"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "134"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) húle-le u=mede d-lázəm-le, i=xarǧiyayḏe ʻer gab ihm das Reisegeld und das, was er sonst brauchteʼ; 206-207; 97/48; lazəm ḥa minan d-foyəš harke ʻeiner von uns muss hierbleibenʼ; 207; 60/114; d-howe-wo u=taǧər-awo aṣīl, kayso, i=naqqa d-mǝ́lle-la hawxa, lazəm d-mŭyad-wo u=bahro-ste quma, maqəṯ-wo u=bahro quma, mhalax-wo aʕma ʻwenn der Kaufmann edel gewesen wäre und gut, so hätte er, als er das zu ihr sagte, das Licht (eine Laterne) vor ihr in die Hand nehmen und vor ihr anzünden müssen, und er hätte mit ihr gehen müssenʼ; 207; 26/132, 134;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "1) balki ṣafro u=malk-ano lozəm u=abro 206; 69/138; ko-lozamme ʕazlo, d-saymi ak=kisaṯṯe",
+            "turoyo": "balki ṣafro u=malk-ano lozəm u=abro ko-lozamme ʕazlo d-saymi ak=kisaṯṯe “They needed wool yarn so that they could make the sacks for squeezing out the grapes",
             "translations": [
-              "vielleicht bedarf morgen dieser König seines Sohnes",
-              "“They needed wool yarn, so that they could make the sacks (for squeezing out the grapes) JL 17.6.3;"
+              "vielleicht bedarf morgen dieser König seines Sohnes"
             ],
-            "references": ["1", "206; 69/138"]
+            "references": [
+              "1",
+              "206",
+              "69/138",
+              "JL 17.6.3"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "1"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " balki ṣafro u=malk-ano lozəm u=abro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻvielleicht bedarf morgen dieser König seines Sohnesʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "206"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "69/138"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-lozamme ʕazlo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-saymi ak=kisaṯṯe "
+              },
+              {
+                "kind": "turoyo",
+                "value": "“"
+              },
+              {
+                "kind": "turoyo",
+                "value": "They needed wool yarn"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " so that they could make the sacks "
+              },
+              {
+                "kind": "punct",
+                "value": "("
+              },
+              {
+                "kind": "turoyo",
+                "value": "for squeezing out the grapes"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 17.6.3"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "1) balki ṣafro u=malk-ano lozəm u=abro ʻvielleicht bedarf morgen dieser König seines Sohnesʼ; 206; 69/138; ko-lozamme ʕazlo, d-saymi ak=kisaṯṯe “They needed wool yarn, so that they could make the sacks (for squeezing out the grapes) JL 17.6.3;"
           },
           {
-            "turoyo": "2) awwal naqqa k-lozəm hani d-mitánḏ̣əfiʻzuerst 207; 9/9; aḥna u=šarṭ-ayḏan, d-i=ṭayuṯo d-gaban, u=zlām d-oṯe l-i=ʕaskariye, ko-lozəm mšahəd Lehrbuch 18.7.5; ax=xodume kalye u=mede d-lózəm-lan k-amṭəl-lan ko-xədmi-lan uno g-lozəm d-səyamno zīd mene aṣliye ǧuwameriye gə-lŭzám-lox-ne hul d-moṭət l-i=ʕašir-ayḏox",
+            "turoyo": "awwal naqqa k-lozəm hani d-mitánḏ̣əfi aḥna u=šarṭ-ayḏan d-i=ṭayuṯo d-gaban u=zlām d-oṯe l-i=ʕaskariye ko-lozəm mšahəd Lehrbuch ax=xodume kalye u=mede d-lózəm-lan k-amṭəl-lan ko-xədmi-lan uno g-lozəm d-səyamno zīd mene aṣliye ǧuwameriye gə-lŭzám-lox-ne hul d-moṭət l-i=ʕašir-ayḏox",
             "translations": [
-              "müssen diese gereinigt werden",
-              "‘bei uns ist es Bedingung, in der islamischen Religion, die bei uns herrscht, dass",
-              "jeder Mann, der zum Militärdienst kommt, das islamische Glaubensbekenntnis ablegen muss’;",
+              "zuerst müssen diese gereinigt werden",
+              "‘bei uns ist es Bedingung, in der islamischen Religion, die bei uns herrscht, dass jeder Mann, der zum Militärdienst kommt, das islamische Glaubensbekenntnis ablegen muss’",
               "die Diener stehen da und bedienen uns, sie bringen uns, was wir brauchen",
-              "‘Darum muß ich noch mehr Edelmut und Ritterlichkeit zeigen als er’; 26/210;",
-              "‘Du wirst sie (die Pfunde, pl) nötig haben, bis du zu deinem Stamm kommst’; 30/28"
+              "‘Darum muß ich noch mehr Edelmut und Ritterlichkeit zeigen als er’",
+              "‘Du wirst sie (die Pfunde, pl) nötig haben, bis du zu deinem Stamm kommst’"
             ],
-            "references": ["2", "207; 9/9"]
+            "references": [
+              "2",
+              "207",
+              "9/9",
+              "18.7.5",
+              "MM 78",
+              "26/210",
+              "30/28"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " awwal naqqa k-lozəm hani d-mitánḏ̣əfi "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻzuerst müssen diese gereinigt werdenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "207"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "9/9"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " aḥna u=šarṭ-ayḏan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-i=ṭayuṯo d-gaban"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " u=zlām d-oṯe l-i=ʕaskariye"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ko-lozəm mšahəd "
+              },
+              {
+                "kind": "translation",
+                "value": "‘bei uns ist es Bedingung, in der islamischen Religion, die bei uns herrscht, dass jeder Mann, der zum Militärdienst kommt, das islamische Glaubensbekenntnis ablegen muss’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Lehrbuch "
+              },
+              {
+                "kind": "ref",
+                "value": "18.7.5"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ax=xodume kalye u=mede d-lózəm-lan k-amṭəl-lan ko-xədmi-lan "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Diener stehen da und bedienen uns, sie bringen uns, was wir brauchenʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "MM 78"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " uno g-lozəm d-səyamno zīd mene aṣliye ǧuwameriye "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Darum muß ich noch mehr Edelmut und Ritterlichkeit zeigen als er’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "26/210"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " gə-lŭzám-lox-ne hul d-moṭət l-i=ʕašir-ayḏox "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Du wirst sie (die Pfunde, pl) nötig haben, bis du zu deinem Stamm kommst’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "30/28"
+              }
+            ],
+            "text": "2) awwal naqqa k-lozəm hani d-mitánḏ̣əfi ʻzuerst müssen diese gereinigt werdenʼ; 207; 9/9; aḥna u=šarṭ-ayḏan, d-i=ṭayuṯo d-gaban, u=zlām d-oṯe l-i=ʕaskariye, ko-lozəm mšahəd ‘bei uns ist es Bedingung, in der islamischen Religion, die bei uns herrscht, dass jeder Mann, der zum Militärdienst kommt, das islamische Glaubensbekenntnis ablegen muss’; Lehrbuch 18.7.5; ax=xodume kalye u=mede d-lózəm-lan k-amṭəl-lan ko-xədmi-lan ʻdie Diener stehen da und bedienen uns, sie bringen uns, was wir brauchenʼ MM 78; uno g-lozəm d-səyamno zīd mene aṣliye ǧuwameriye ‘Darum muß ich noch mehr Edelmut und Ritterlichkeit zeigen als er’; 26/210; gə-lŭzám-lox-ne hul d-moṭət l-i=ʕašir-ayḏox ‘Du wirst sie (die Pfunde, pl) nötig haben, bis du zu deinem Stamm kommst’; 30/28"
           }
         ],
         "Infectum-wa": [
           {
-            "turoyo": "2) sŭyam-wo ġēr šuġlone də-k-lŭzam-wo l-u=ṭyoro 207; 1/41;",
+            "turoyo": "sŭyam-wo ġēr šuġlone də-k-lŭzam-wo l-u=ṭyoro",
             "translations": [
               "er tat andere Arbeiten, deren der Garten bedurfte"
             ],
-            "references": ["2", "207; 1/41"]
+            "references": [
+              "2",
+              "207",
+              "1/41"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " sŭyam-wo ġēr šuġlone də-k-lŭzam-wo l-u=ṭyoro "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer tat andere Arbeiten, deren der Garten bedurfteʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "207"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "1/41"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) sŭyam-wo ġēr šuġlone də-k-lŭzam-wo l-u=ṭyoro ʻer tat andere Arbeiten, deren der Garten bedurfteʼ; 207; 1/41;"
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": ["mlazamle", "mlazəm"],
+      "forms": [
+        "mlazamle",
+        "mlazəm"
+      ],
       "conjugations": {
         "Imperativ": [
           {
-            "turoyo": "mlazám aʕle d-oṯe l-arke 207;",
-            "translations": ["zwinge ihn, herzukommen"],
-            "references": ["207"]
+            "turoyo": "mlazám aʕle d-oṯe l-arke",
+            "translations": [
+              "zwinge ihn, herzukommen"
+            ],
+            "references": [
+              "207"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mlazám aʕle d-oṯe l-arke "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻzwinge ihn, herzukommenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "207"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "mlazám aʕle d-oṯe l-arke ʻzwinge ihn, herzukommenʼ; 207;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "verbindlich machen, zwingen;"
   ],
   "uncertain": false
 }

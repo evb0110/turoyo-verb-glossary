@@ -14,47 +14,539 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ṣxəlle", "ṣoxər"],
+      "forms": [
+        "ṣxəlle",
+        "ṣoxər"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "lo=korəx femayye d-məšġoli, ṣxīr femayye 237; prs 32/29;",
+            "turoyo": "ṣxəlle u=tarʕo d-i=awda nošo d-lo=mahzəm prs w-aḥna-ze ṣxəḷḷan behən diḏan lə=g-maǧrina marfina behən hul d-ʔaṯi me bəṯran-va bəṯr i=kōzke",
             "translations": [
-              "ihr Mund bewegte sich nicht mehr zum Reden, sondern er war wie verschlossen"
+              "da verriegelte er die Zimmertüre, damit keiner entfliehen könne",
+              "‘And we held our breath, we didn’t dare breathe until he passed us and our trench’"
             ],
-            "references": ["237", "32/29"]
+            "references": [
+              "232",
+              "144/22",
+              "47/6",
+              "JL 8.11.14"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṣxəlle u=tarʕo d-i=awda"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " nošo d-lo=mahzəm "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda verriegelte er die Zimmertüre, damit keiner entfliehen könneʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "232"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "144/22"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "47/6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " w-aḥna-ze ṣxəḷḷan behən diḏan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " lə=g-maǧrina marfina behən hul d-ʔaṯi me bəṯran-va bəṯr i=kōzke "
+              },
+              {
+                "kind": "translation",
+                "value": "‘And we held our breath, we didn’t dare breathe until he passed us and our trench’"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 8.11.14"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ṣxəlle u=tarʕo d-i=awda, nošo d-lo=mahzəm ʻda verriegelte er die Zimmertüre, damit keiner entfliehen könneʼ; 232; prs 144/22; 47/6; w-aḥna-ze ṣxəḷḷan behən diḏan, lə=g-maǧrina marfina behən hul d-ʔaṯi me bəṯran-va bəṯr i=kōzke ‘And we held our breath, we didn’t dare breathe until he passed us and our trench’ JL 8.11.14;"
           }
         ],
         "Infectum": [
           {
-            "turoyo": "g-ṣəxri aʕlan, w hul ṣafro lazəm mnaqínan-ne 235; 73/388; g-ṣuxrina ḥeḏər i=kōzke kula b-aṭ=ṭarfe, d-lo=qudri ḥozən",
+            "turoyo": "g-ṣəxri aʕlan w hul ṣafro lazəm mnaqínan-ne g-ṣuxrina ḥeḏər i=kōzke kula b-aṭ=ṭarfe d-lo=qudri ḥozən",
             "translations": [
               "sie werden uns einschliessen und bis zum Morgen müssen wir (das Getreide) auseinandergelesen haben",
               "wir verkleiden (wörtl.: schliessen) rings um den Ansitz herum alles mit Laubzweigen, damit sie nichts sehen können"
             ],
-            "references": ["235; 73/388"]
+            "references": [
+              "235",
+              "73/388",
+              "JL 8.11.6"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "g-ṣəxri aʕlan"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w hul ṣafro lazəm mnaqínan-ne "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻsie werden uns einschliessen und bis zum Morgen müssen wir (das Getreide) auseinandergelesen habenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "235"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "73/388"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " g-ṣuxrina ḥeḏər i=kōzke kula b-aṭ=ṭarfe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " d-lo=qudri ḥozən "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻwir verkleiden (wörtl.: schliessen) rings um den Ansitz herum alles mit Laubzweigen, damit sie nichts sehen könnenʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 8.11.6"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "g-ṣəxri aʕlan, w hul ṣafro lazəm mnaqínan-ne ʻsie werden uns einschliessen und bis zum Morgen müssen wir (das Getreide) auseinandergelesen habenʼ; 235; 73/388; g-ṣuxrina ḥeḏər i=kōzke kula b-aṭ=ṭarfe, d-lo=qudri ḥozən ʻwir verkleiden (wörtl.: schliessen) rings um den Ansitz herum alles mit Laubzweigen, damit sie nichts sehen könnenʼ JL 8.11.6;"
           }
         ],
         "Imperativ": [
           {
-            "turoyo": "ya tarʕe d-kǝ́t-tatu ftiḥe, məṣxeru qume, w a=ṣxire, məfteḥu qume 238; 64/141;",
+            "turoyo": "ṣxaru at=tarʕe w zano l-u=bayto ṣxar femux zlām ṣuroyo-hət",
+            "translations": [
+              "schliesst die Türen und lasst uns nach Hause gehen",
+              "halt den Mund, du bist ein Christ"
+            ],
+            "references": [
+              "236",
+              "43/11",
+              "64/202",
+              "JL 14.8.16"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ṣxaru at=tarʕe w zano l-u=bayto "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻschliesst die Türen und lasst uns nach Hause gehenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "236"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "43/11"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "64/202"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṣxar femux"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " zlām ṣuroyo-hət "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻhalt den Mund, du bist ein Christʼ"
+              },
+              {
+                "kind": "turoyo",
+                "value": "  "
+              },
+              {
+                "kind": "ref",
+                "value": "JL 14.8.16"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ṣxaru at=tarʕe w zano l-u=bayto ʻschliesst die Türen und lasst uns nach Hause gehenʼ; 236; 43/11; 64/202; ṣxar femux, zlām ṣuroyo-hət ʻhalt den Mund, du bist ein Christʼ JL 14.8.16;"
+          }
+        ]
+      }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Preterit": [
+          {
+            "turoyo": "lo=korəx femayye d-məšġoli ṣxīr femayye prs",
+            "translations": [
+              "ihr Mund bewegte sich nicht mehr zum Reden, sondern er war wie verschlossen"
+            ],
+            "references": [
+              "237",
+              "32/29"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "lo=korəx femayye d-məšġoli"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ṣxīr femayye "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻihr Mund bewegte sich nicht mehr zum Reden, sondern er war wie verschlossenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "237"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "32/29"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "lo=korəx femayye d-məšġoli, ṣxīr femayye ʻihr Mund bewegte sich nicht mehr zum Reden, sondern er war wie verschlossenʼ; 237; prs 32/29;"
+          }
+        ],
+        "Imperativ": [
+          {
+            "turoyo": "ya tarʕe d-kǝ́t-tatu ftiḥe məṣxeru qume w a=ṣxire məfteḥu qume",
             "translations": [
               "ihr Türen, die ihr offen steht, schliesset euch vor ihm, und ihr geschlossenen Türen öffnet euch vor ihm!"
             ],
-            "references": ["238; 64/141"]
+            "references": [
+              "238",
+              "64/141"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ya tarʕe d-kǝ́t-tatu ftiḥe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " məṣxeru qume"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w a=ṣxire"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " məfteḥu qume "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻihr Türen, die ihr offen steht, schliesset euch vor ihm, und ihr geschlossenen Türen öffnet euch vor ihm!ʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "238"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "64/141"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ya tarʕe d-kǝ́t-tatu ftiḥe, məṣxeru qume, w a=ṣxire, məfteḥu qume ʻihr Türen, die ihr offen steht, schliesset euch vor ihm, und ihr geschlossenen Türen öffnet euch vor ihm!ʼ; 238; 64/141;"
           }
         ],
         "Part. Pass.": [
           {
-            "turoyo": "ḥzalle mʕarṯo, feme d-i=mʕarṯo kle ṣxiro b-kefe 238; prs 108/37; 64/141, 143, 206;",
+            "turoyo": "ḥzalle mʕarṯo feme d-i=mʕarṯo kle ṣxiro b-kefe prs",
             "translations": [
               "da entdeckten sie eine Höle, deren Eingang mit Steinen verschlossen war"
             ],
-            "references": ["238", "108/37"]
+            "references": [
+              "238",
+              "108/37",
+              "64/141",
+              "143",
+              "206"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥzalle mʕarṯo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " feme d-i=mʕarṯo kle ṣxiro b-kefe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻda entdeckten sie eine Höle, deren Eingang mit Steinen verschlossen warʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "238"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " prs "
+              },
+              {
+                "kind": "ref",
+                "value": "108/37"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "64/141"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "143"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "206"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥzalle mʕarṯo, feme d-i=mʕarṯo kle ṣxiro b-kefe ʻda entdeckten sie eine Höle, deren Eingang mit Steinen verschlossen warʼ; 238; prs 108/37; 64/141, 143, 206;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "schliessen;"
   ],
   "uncertain": false
 }

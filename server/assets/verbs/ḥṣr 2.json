@@ -14,37 +14,188 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ḥṣīr", "məḥṣər"],
+      "forms": [
+        "ḥṣīr",
+        "məḥṣər"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ḥṣīr b-i=qalʕo 238;",
-            "translations": [],
-            "references": ["238"]
+            "turoyo": "ḥṣīr b-i=qalʕo",
+            "translations": [
+              "er wurde in der Festung belagert"
+            ],
+            "references": [
+              "238"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ḥṣīr b-i=qalʕo "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer wurde in der Festung belagertʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "238"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ḥṣīr b-i=qalʕo ʻer wurde in der Festung belagertʼ; 238;"
           }
         ],
         "Nomen Patiens": [
           {
-            "turoyo": "u=ʕamo d-ʕIwardoḥṣiróye-way-ne ġắlabeʕIwärdo 238; 33/3;",
-            "translations": [],
-            "references": ["238; 33/3"]
+            "turoyo": "u=ʕamo d-ʕIwardo ḥṣiróye-way-ne ġắlabe",
+            "translations": [
+              "die Leute von ʕIwärdo waren lange belagert gewesen"
+            ],
+            "references": [
+              "238",
+              "33/3"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "u=ʕamo d-ʕIwardo ḥṣiróye-way-ne ġắlabe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻdie Leute von ʕIwärdo waren lange belagert gewesenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "238"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "33/3"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "u=ʕamo d-ʕIwardo ḥṣiróye-way-ne ġắlabe ʻdie Leute von ʕIwärdo waren lange belagert gewesenʼ; 238; 33/3;"
           }
         ]
       }
     },
     {
       "stem": "II",
-      "forms": ["mḥaṣər", "miḥaṣər"],
+      "forms": [
+        "mḥaṣər",
+        "miḥaṣər"
+      ],
       "conjugations": {
         "Part. Pass.": [
           {
-            "turoyo": "2) ŭnokət-no l-ḥuḏe, w mḥaṣarto b-i=kōn-aṯe 249; 29/64;",
-            "translations": ["eingesperrt"],
-            "references": ["2", "249; 29/64"]
+            "turoyo": "ŭno kət-no l-ḥuḏe w mḥaṣarto b-i=kōn-aṯe",
+            "translations": [
+              "ich bin allein und in diesem Zelt eingesperrt"
+            ],
+            "references": [
+              "2",
+              "249",
+              "29/64"
+            ],
+            "tokens": [
+              {
+                "kind": "ref",
+                "value": "2"
+              },
+              {
+                "kind": "punct",
+                "value": ")"
+              },
+              {
+                "kind": "turoyo",
+                "value": " ŭno kət-no l-ḥuḏe"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " w mḥaṣarto b-i=kōn-aṯe "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻich bin allein und in diesem Zelt eingesperrtʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "249"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/64"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "2) ŭno kət-no l-ḥuḏe, w mḥaṣarto b-i=kōn-aṯe ʻich bin allein und in diesem Zelt eingesperrtʼ; 249; 29/64;"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "(Detrans.) eingesperrt werden;",
+    "(Detrans.) eingesperrt werden;"
   ],
   "uncertain": false
 }

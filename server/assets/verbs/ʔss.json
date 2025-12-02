@@ -14,19 +14,81 @@
   "stems": [
     {
       "stem": "II",
-      "forms": ["mʔasasle", "masəs"],
+      "forms": [
+        "mʔasasle",
+        "masəs"
+      ],
+      "conjugations": {}
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "bəṯṯər mə-Mšiḥo, b-arbaʕmo=əšne mássiso 741; 11/23;",
+            "turoyo": "bəṯṯər mə-Mšiḥo b-arbaʕmo=əšne mássiso",
             "translations": [
-              "ʻes (das Kloster f) ist 400 Jahre nach Christus gegründet wordenʼ;"
+              "es (das Kloster f) ist 400 Jahre nach Christus gegründet worden"
             ],
-            "references": ["741; 11/23"]
+            "references": [
+              "741",
+              "11/23"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "bəṯṯər mə-Mšiḥo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " b-arbaʕmo=əšne mássiso "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻes (das Kloster f) ist 400 Jahre nach Christus gegründet wordenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "741"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "11/23"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "bəṯṯər mə-Mšiḥo, b-arbaʕmo=əšne mássiso ʻes (das Kloster f) ist 400 Jahre nach Christus gegründet wordenʼ; 741; 11/23;"
           }
         ]
-      }
+      },
+      "_awaiting_forms": true
     }
+  ],
+  "idioms": [
+    "gründen;"
   ],
   "uncertain": false
 }

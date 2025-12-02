@@ -14,26 +14,117 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ʕǧəlle", "ʕoǧən"],
+      "forms": [
+        "ʕǧəlle",
+        "ʕoǧən"
+      ],
       "conjugations": {
         "Preterit": [
           {
-            "turoyo": "ʕǧənle am=məšməš 261;",
-            "translations": ["ʻer stampfte die Aprikosen zusammenʼ;"],
-            "references": ["261"]
-          }
-        ],
-        "Part. Pass.": [
-          {
-            "turoyo": "mobele aʕme muklo, ḥamšo=kilowat tamre ʕǧine mqalye b-u=məšḥo",
+            "turoyo": "ʕǧənle am=məšməš",
             "translations": [
-              "‘Er nahm Essen mit: fünf Kilo gepreßte Datteln, in Fett geröstet’; 29/48 [MT]"
+              "er stampfte die Aprikosen zusammen"
             ],
-            "references": []
+            "references": [
+              "261"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ʕǧənle am=məšməš "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer stampfte die Aprikosen zusammenʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "261"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              }
+            ],
+            "text": "ʕǧənle am=məšməš ʻer stampfte die Aprikosen zusammenʼ; 261;"
           }
         ]
       }
+    },
+    {
+      "stem": "Detransitive",
+      "forms": [],
+      "conjugations": {
+        "Part. Pass.": [
+          {
+            "turoyo": "mobele aʕme muklo ḥamšo=kilowat tamre ʕǧine mqalye b-u=məšḥo",
+            "translations": [
+              "‘Er nahm Essen mit: fünf Kilo gepreßte Datteln, in Fett geröstet’"
+            ],
+            "references": [
+              "29/48"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "mobele aʕme muklo"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " ḥamšo=kilowat tamre ʕǧine mqalye b-u=məšḥo "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Er nahm Essen mit: fünf Kilo gepreßte Datteln, in Fett geröstet’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "29/48"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "note",
+                "value": "[MT]"
+              }
+            ],
+            "text": "mobele aʕme muklo, ḥamšo=kilowat tamre ʕǧine mqalye b-u=məšḥo ‘Er nahm Essen mit: fünf Kilo gepreßte Datteln, in Fett geröstet’; 29/48 [MT]"
+          }
+        ]
+      },
+      "label_gloss_tokens": [
+        {
+          "italic": false,
+          "text": "ненадежный пример III породы, 30/13"
+        }
+      ],
+      "label_raw": "ненадежный пример III породы, 30/13"
     }
+  ],
+  "idioms": [
+    "stampfen;"
   ],
   "uncertain": false
 }

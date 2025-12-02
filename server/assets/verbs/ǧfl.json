@@ -14,28 +14,118 @@
   "stems": [
     {
       "stem": "I",
-      "forms": ["ǧafəl", "ǧofəl"],
+      "forms": [
+        "ǧafəl",
+        "ǧofəl"
+      ],
       "conjugations": {
         "Preterit Intransitive": [
           {
-            "turoyo": "ǧafəl 294; 56/86, 87; Надо расширить контекст. В скане отсутствует страница",
+            "turoyo": "ǧafəl Надо расширить контекст. В скане отсутствует страница",
             "translations": [
               "er fuhr erschreckt zusammen, er fuhr (aus dem Schlafe) auf"
             ],
-            "references": ["294; 56/86", "87"]
+            "references": [
+              "294",
+              "56/86",
+              "87"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ǧafəl "
+              },
+              {
+                "kind": "translation",
+                "value": "ʻer fuhr erschreckt zusammen, er fuhr (aus dem Schlafe) aufʼ"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "294"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "56/86"
+              },
+              {
+                "kind": "punct",
+                "value": ","
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "87"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " Надо расширить контекст. В скане отсутствует страница"
+              }
+            ],
+            "text": "ǧafəl ʻer fuhr erschreckt zusammen, er fuhr (aus dem Schlafe) aufʼ; 294; 56/86, 87; Надо расширить контекст. В скане отсутствует страница"
           }
         ],
         "Infectum": [
           {
             "turoyo": "ya u=abr-ayḏi! qay hawxa ko-zayʕat? qay hawxa ko-ǧəflat?",
             "translations": [
-              "‘Oh, my son! Why are you so scared? Why are you shuddering?’; 40/26"
+              "‘Oh, my son! Why are you so scared? Why are you shuddering?’"
             ],
-            "references": []
+            "references": [
+              "40/26"
+            ],
+            "tokens": [
+              {
+                "kind": "turoyo",
+                "value": "ya u=abr-ayḏi! qay hawxa ko-zayʕat? qay hawxa ko-ǧəflat? "
+              },
+              {
+                "kind": "translation",
+                "value": "‘Oh, my son! Why are you so scared? Why are you shuddering?’"
+              },
+              {
+                "kind": "punct",
+                "value": ";"
+              },
+              {
+                "kind": "turoyo",
+                "value": " "
+              },
+              {
+                "kind": "ref",
+                "value": "40/26"
+              }
+            ],
+            "text": "ya u=abr-ayḏi! qay hawxa ko-zayʕat? qay hawxa ko-ǧəflat? ‘Oh, my son! Why are you so scared? Why are you shuddering?’; 40/26"
           }
         ]
       }
     }
+  ],
+  "idioms": [
+    "auffahren, zusammenfahren;"
   ],
   "uncertain": false
 }
