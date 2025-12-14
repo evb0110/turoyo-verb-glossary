@@ -102,7 +102,7 @@ useHead({
 
             <div class="space-y-4">
                 <div class="flex items-center justify-between">
-                    <h2 class="text-xl font-semibold" v-if="false">
+                    <h2 v-if="false" class="text-xl font-semibold">
                         Stems
                     </h2>
                     <UButton

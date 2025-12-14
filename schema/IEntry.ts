@@ -1,52 +1,76 @@
 interface IExample {
     text: string
-    translation?: string
+    translations?: string[]
     references?: string[]
+    notes?: string
 }
 
 interface IExamples {
     meaningNumber?: number
     items: IExample[]
+    notes?: string
 }
 
-type TShape = 'Preterit'
-    | 'Infectum'
-    | 'Infectum-wa'
-    | 'Imperativ'
-    | 'Preterit-wa'
-    | 'Action noun'
+type TShape
+    = | 'Preterit'
+        | 'Preterit Intransitive'
+        | 'Preterit Transitive'
+        | 'ko-Preterit'
+        | 'Preterit-wa'
+        | 'Infectum'
+        | 'Infectum-wa'
+        | 'Imperativ'
+        | 'Part act.'
+        | 'Part. Pass.'
+        | 'Infinitiv'
+        | 'Action noun'
+        | 'Nomen Actionis'
+        | 'Nomen Patiens'
+        | 'Nomen agentis'
 
-type TRow = {
+interface IRow {
     shape: TShape
     examples: IExamples[]
+    notes?: string
 }
 
 interface IMeaning {
     meaningNumber: number
     meaning: string
+    notes?: string
 }
 
 type TStemNumber = 'I' | 'II' | 'III'
 
 interface IStem {
     stemNumber: TStemNumber
-    stemForms: string // qayəm/qoyəm
+    stemForms: string
     meanings?: IMeaning[]
-    transitive: TRow[] // as opposed to detransitive
-    detransitive?: TRow[]
+    transitive: IRow[]
+    detransitive?: IRow[]
     idiomaticPhrases?: IExample[]
+    notes?: string
 }
 
 interface IEtymology {
-    provenance: string // Arab
-    source: string // qfz
-    references: string[] // Wehr 1046-1047
-    meaning: string // springen
+    provenance?: string
+    text: string
+    notes?: string
 }
 
-interface IEntry {
-    lemma: string // qbz
-    etymologies?: IEtymology[]
+interface IIdiom {
+    text: string
+    translation?: string
+    notes?: string
+}
+
+export interface IEntry {
+    lemma: string
+    homonymNumber?: number
+    etymology?: IEtymology
     stems?: IStem[]
-    notes: string
+    idioms?: IIdiom[]
+    crossReference?: string
+    uncertain?: boolean
+    notes?: string
 }
