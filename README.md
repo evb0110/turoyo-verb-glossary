@@ -215,21 +215,8 @@ Pre-commit hooks automatically:
 
 ### Parser Changes
 
-When modifying the parser:
-
-```bash
-# 1. Create baseline (first time)
-python3 parser/snapshot_baseline.py
-
-# 2. Make changes
-vim parser/parse_verbs.py
-
-# 3. Validate (prevents regressions)
-python3 parser/parse_verbs.py --validate
-
-# 4. Check results
-open data/validation/regression_report.html
-```
+See `PARSING.md`: regenerate with `python3 -m parser.glossary`, then keep
+`python3 -m parser.glossary.roundtrip` at 100% and `python3 -m unittest parser.glossary.test_glossary` green.
 
 ## Code Style
 

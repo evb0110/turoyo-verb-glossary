@@ -27,7 +27,7 @@ date of its newest file. This is the authoritative source for `parser/parse_docx
 
 `Turoyo_all_2024.html` (SHA-256 `b7103a070ded9d065d61de12afe96315af8e179551bed72fe19f10dc7e4efd5c`),
 the single-file export the first parser (`parser/parse_verbs.py`) read. The DOCX volumes replaced
-it in October 2025; it is kept for the provenance of `.backup/html-parsed-verbs/`.
+it in October 2025; it is kept as the record of the glossary's 2024 state.
 
 ## Elsewhere
 
