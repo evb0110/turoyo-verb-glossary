@@ -219,17 +219,18 @@ function proposalStem(proposal: NonNullable<typeof data.value>['proposals'][numb
             || proposal.target.exampleId?.startsWith(`${stem.id}.`)
     )?.id
 }
+function isIdiomProposal(proposal: NonNullable<typeof data.value>['proposals'][number]) {
+    return proposal.kind === 'new-idiom' || !!proposal.target.exampleId?.includes('.idiom.')
+}
 function stemProposals(stemId: string) {
     return (data.value?.proposals || []).filter(
-        proposal => proposal.kind !== 'new-idiom' && proposalStem(proposal) === stemId
+        proposal => !isIdiomProposal(proposal) && proposalStem(proposal) === stemId
     )
 }
-const idiomProposals = computed(() =>
-    (data.value?.proposals || []).filter(proposal => proposal.kind === 'new-idiom')
-)
+const idiomProposals = computed(() => (data.value?.proposals || []).filter(isIdiomProposal))
 const entryProposals = computed(() =>
     (data.value?.proposals || []).filter(
-        proposal => proposal.kind !== 'new-idiom' && !proposalStem(proposal)
+        proposal => !isIdiomProposal(proposal) && !proposalStem(proposal)
     )
 )
 const outline = computed(() => {

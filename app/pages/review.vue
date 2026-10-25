@@ -117,6 +117,11 @@
                         Open entry ↗
                     </NuxtLink>
                 </div>
+                <ProposalTarget
+                    v-if="activeEntry?.entry?.id === active.entryId"
+                    :entry="activeEntry.entry"
+                    :proposal="active"
+                />
                 <ProposalCard :key="active.id" :proposal="active" @reviewed="advance"/>
             </div>
         </div>
@@ -193,6 +198,14 @@ const filtered = computed(() =>
 )
 const active = computed(
     () => filtered.value.find(item => item.id === selectedId.value) || filtered.value[0]
+)
+const activeEntryId = computed(() => active.value?.entryId || '')
+const { data: activeEntry } = useFetch(
+    () => `/api/glossary/entries/${encodeURIComponent(activeEntryId.value)}`,
+    {
+        immediate: !!activeEntryId.value,
+        watch: [activeEntryId],
+    }
 )
 function advance() {
     if (active.value) selectedId.value = active.value.id
