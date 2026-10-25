@@ -1,0 +1,532 @@
+[
+  {
+    "id": "e21259206c46",
+    "entryId": "sym",
+    "kind": "new-sense",
+    "stage": "synthesis",
+    "target": {
+      "stemId": "sym.I",
+      "sense": "3"
+    },
+    "summary": "A causative use: to appoint someone to a role",
+    "before": null,
+    "after": "to appoint; jemanden einsetzen",
+    "data": {
+      "gloss": "jemanden einsetzen; to appoint",
+      "extends": "1"
+    },
+    "rationale": "Illustrative fixture: compare the predicate and its arguments with the numbered glossary senses. This proposal is not a verified linguistic finding.",
+    "evidence": [
+      {
+        "textId": "R024",
+        "v": 4,
+        "cite": "24/4"
+      },
+      {
+        "textId": "R024",
+        "v": 5,
+        "cite": "24/5"
+      }
+    ],
+    "priority": 1,
+    "provenance": {
+      "model": "development-fixture",
+      "effort": "none",
+      "protocol": "UI verification",
+      "run": "site-rework",
+      "date": "2026-10-25"
+    }
+  },
+  {
+    "id": "56ec7a1f78c5",
+    "entryId": "sym",
+    "kind": "gloss-change",
+    "stage": "synthesis",
+    "target": {
+      "stemId": "sym.I",
+      "sense": "2"
+    },
+    "summary": "Clarify the eventive reading of sense 2",
+    "before": "səmle u ktobo",
+    "after": "səmle u ktowo ʕal u ṭawle",
+    "data": {
+      "gloss": "machen, tun; to make, do (an action)"
+    },
+    "rationale": "Illustrative fixture: compare the predicate and its arguments with the numbered glossary senses. This proposal is not a verified linguistic finding.",
+    "evidence": [
+      {
+        "textId": "R024",
+        "v": 4,
+        "cite": "24/4"
+      },
+      {
+        "textId": "R024",
+        "v": 5,
+        "cite": "24/5"
+      }
+    ],
+    "priority": 1,
+    "provenance": {
+      "model": "development-fixture",
+      "effort": "none",
+      "protocol": "UI verification",
+      "run": "site-rework",
+      "date": "2026-10-25"
+    }
+  },
+  {
+    "id": "60d9c190fe5f",
+    "entryId": "sym",
+    "kind": "add-example",
+    "stage": "synthesis",
+    "target": {
+      "stemId": "sym.I",
+      "boxId": "sym.I.t.preterit",
+      "sense": "1"
+    },
+    "summary": "A placement example with an explicit location",
+    "before": null,
+    "after": "səmle u ktowo ʕal u ṭawle",
+    "data": {
+      "turoyo": "səmle u ktowo ʕal u ṭawle",
+      "translation": "Er legte das Buch auf den Tisch.",
+      "gate": {
+        "ok": false,
+        "reason": "Fixture: quotation differs from the cited verse; check the edition translation."
+      }
+    },
+    "rationale": "Illustrative fixture: compare the predicate and its arguments with the numbered glossary senses. This proposal is not a verified linguistic finding.",
+    "evidence": [
+      {
+        "textId": "R024",
+        "v": 4,
+        "cite": "24/4"
+      },
+      {
+        "textId": "R024",
+        "v": 5,
+        "cite": "24/5"
+      }
+    ],
+    "priority": 1,
+    "provenance": {
+      "model": "development-fixture",
+      "effort": "none",
+      "protocol": "UI verification",
+      "run": "site-rework",
+      "date": "2026-10-25"
+    }
+  },
+  {
+    "id": "552c4717fbf3",
+    "entryId": "sym",
+    "kind": "new-idiom",
+    "stage": "synthesis",
+    "target": {},
+    "summary": "Record the phrase “to take notice”",
+    "before": null,
+    "after": "səmle b-bole",
+    "data": {
+      "headword": "səmle b-bole",
+      "translation": "to take notice",
+      "gate": {
+        "ok": false,
+        "reason": "Fixture: quotation differs from the cited verse; check the edition translation."
+      }
+    },
+    "rationale": "Illustrative fixture: compare the predicate and its arguments with the numbered glossary senses. This proposal is not a verified linguistic finding.",
+    "evidence": [
+      {
+        "textId": "R024",
+        "v": 4,
+        "cite": "24/4"
+      },
+      {
+        "textId": "R024",
+        "v": 5,
+        "cite": "24/5"
+      }
+    ],
+    "priority": 2,
+    "provenance": {
+      "model": "development-fixture",
+      "effort": "none",
+      "protocol": "UI verification",
+      "run": "site-rework",
+      "date": "2026-10-25"
+    }
+  },
+  {
+    "id": "f1d6a91ed88b",
+    "entryId": "sym",
+    "kind": "new-stem",
+    "stage": "synthesis",
+    "target": {
+      "stemId": "sym.Pa."
+    },
+    "summary": "New stem for editorial review",
+    "before": null,
+    "after": "msayəm / msəymle",
+    "data": {
+      "stem": "Pa.",
+      "forms": "msayəm / msəymle"
+    },
+    "rationale": "Illustrative fixture: compare the predicate and its arguments with the numbered glossary senses. This proposal is not a verified linguistic finding.",
+    "evidence": [
+      {
+        "textId": "R024",
+        "v": 4,
+        "cite": "24/4"
+      },
+      {
+        "textId": "R024",
+        "v": 5,
+        "cite": "24/5"
+      }
+    ],
+    "priority": 2,
+    "provenance": {
+      "model": "development-fixture",
+      "effort": "none",
+      "protocol": "UI verification",
+      "run": "site-rework",
+      "date": "2026-10-25"
+    }
+  },
+  {
+    "id": "16d61c311397",
+    "entryId": "sym",
+    "kind": "new-form",
+    "stage": "synthesis",
+    "target": {
+      "stemId": "sym.I"
+    },
+    "summary": "New form for editorial review",
+    "before": null,
+    "after": "msəymle",
+    "data": {
+      "forms": "msəymle"
+    },
+    "rationale": "Illustrative fixture: compare the predicate and its arguments with the numbered glossary senses. This proposal is not a verified linguistic finding.",
+    "evidence": [
+      {
+        "textId": "R024",
+        "v": 4,
+        "cite": "24/4"
+      },
+      {
+        "textId": "R024",
+        "v": 5,
+        "cite": "24/5"
+      }
+    ],
+    "priority": 2,
+    "provenance": {
+      "model": "development-fixture",
+      "effort": "none",
+      "protocol": "UI verification",
+      "run": "site-rework",
+      "date": "2026-10-25"
+    }
+  },
+  {
+    "id": "b09009ada4d2",
+    "entryId": "sym",
+    "kind": "move-example",
+    "stage": "synthesis",
+    "target": {
+      "stemId": "sym.I",
+      "boxId": "sym.I.t.preterit",
+      "sense": "1",
+      "exampleId": "sym.I.t.preterit.1"
+    },
+    "summary": "Move example for editorial review",
+    "before": "səmle u ktobo",
+    "after": "səmle u ktowo",
+    "data": {
+      "from": "1",
+      "to": "2"
+    },
+    "rationale": "Illustrative fixture: compare the predicate and its arguments with the numbered glossary senses. This proposal is not a verified linguistic finding.",
+    "evidence": [
+      {
+        "textId": "R024",
+        "v": 4,
+        "cite": "24/4"
+      },
+      {
+        "textId": "R024",
+        "v": 5,
+        "cite": "24/5"
+      }
+    ],
+    "priority": 2,
+    "provenance": {
+      "model": "development-fixture",
+      "effort": "none",
+      "protocol": "UI verification",
+      "run": "site-rework",
+      "date": "2026-10-25"
+    }
+  },
+  {
+    "id": "748eebd1cd32",
+    "entryId": "sym",
+    "kind": "fix-citation",
+    "stage": "citation-check",
+    "target": {
+      "stemId": "sym.I",
+      "boxId": "sym.I.t.preterit",
+      "sense": "1",
+      "exampleId": "sym.I.t.preterit.1"
+    },
+    "summary": "Fix citation for editorial review",
+    "before": "24/46",
+    "after": "24/4",
+    "data": {},
+    "rationale": "Illustrative fixture: compare the predicate and its arguments with the numbered glossary senses. This proposal is not a verified linguistic finding.",
+    "evidence": [
+      {
+        "textId": "R024",
+        "v": 4,
+        "cite": "24/4"
+      },
+      {
+        "textId": "R024",
+        "v": 5,
+        "cite": "24/5"
+      }
+    ],
+    "priority": 2,
+    "provenance": {
+      "model": "development-fixture",
+      "effort": "none",
+      "protocol": "UI verification",
+      "run": "site-rework",
+      "date": "2026-10-25"
+    }
+  },
+  {
+    "id": "f43c767aa014",
+    "entryId": "sym",
+    "kind": "fix-text",
+    "stage": "proofreading",
+    "target": {
+      "stemId": "sym.I",
+      "boxId": "sym.I.t.preterit",
+      "sense": "1",
+      "exampleId": "sym.I.t.preterit.1"
+    },
+    "summary": "Fix text for editorial review",
+    "before": "səmle u ktobo",
+    "after": "səmle u ktowo",
+    "data": {
+      "confidence": "high"
+    },
+    "rationale": "Illustrative fixture: compare the predicate and its arguments with the numbered glossary senses. This proposal is not a verified linguistic finding.",
+    "evidence": [
+      {
+        "textId": "R024",
+        "v": 4,
+        "cite": "24/4"
+      },
+      {
+        "textId": "R024",
+        "v": 5,
+        "cite": "24/5"
+      }
+    ],
+    "priority": 2,
+    "provenance": {
+      "model": "development-fixture",
+      "effort": "none",
+      "protocol": "UI verification",
+      "run": "site-rework",
+      "date": "2026-10-25"
+    }
+  },
+  {
+    "id": "ce72fbd1c065",
+    "entryId": "sym",
+    "kind": "fix-structure",
+    "stage": "proofreading",
+    "target": {
+      "stemId": "sym.I",
+      "boxId": "sym.I.t.preterit",
+      "sense": "1",
+      "exampleId": "sym.I.t.preterit.1"
+    },
+    "summary": "Fix structure for editorial review",
+    "before": "3. placement",
+    "after": "1. placement",
+    "data": {
+      "confidence": "medium"
+    },
+    "rationale": "Illustrative fixture: compare the predicate and its arguments with the numbered glossary senses. This proposal is not a verified linguistic finding.",
+    "evidence": [
+      {
+        "textId": "R024",
+        "v": 4,
+        "cite": "24/4"
+      },
+      {
+        "textId": "R024",
+        "v": 5,
+        "cite": "24/5"
+      }
+    ],
+    "priority": 3,
+    "provenance": {
+      "model": "development-fixture",
+      "effort": "none",
+      "protocol": "UI verification",
+      "run": "site-rework",
+      "date": "2026-10-25"
+    }
+  },
+  {
+    "id": "389440479c70",
+    "entryId": "sym",
+    "kind": "duplicate-entry",
+    "stage": "proofreading",
+    "target": {},
+    "summary": "Duplicate entry for editorial review",
+    "before": "səmle u ktobo",
+    "after": "səmle u ktowo",
+    "data": {
+      "confidence": "low"
+    },
+    "rationale": "Illustrative fixture: compare the predicate and its arguments with the numbered glossary senses. This proposal is not a verified linguistic finding.",
+    "evidence": [
+      {
+        "textId": "R024",
+        "v": 4,
+        "cite": "24/4"
+      },
+      {
+        "textId": "R024",
+        "v": 5,
+        "cite": "24/5"
+      }
+    ],
+    "priority": 3,
+    "provenance": {
+      "model": "development-fixture",
+      "effort": "none",
+      "protocol": "UI verification",
+      "run": "site-rework",
+      "date": "2026-10-25"
+    }
+  },
+  {
+    "id": "c51048b7325d",
+    "entryId": "sym",
+    "kind": "note",
+    "stage": "proofreading",
+    "target": {
+      "stemId": "sym.I"
+    },
+    "summary": "An experiencer construction deserves comparison",
+    "before": null,
+    "after": "səmle u ktowo ʕal u ṭawle",
+    "data": {
+      "confidence": "high",
+      "type": "research"
+    },
+    "rationale": "Illustrative fixture: compare the predicate and its arguments with the numbered glossary senses. This proposal is not a verified linguistic finding.",
+    "evidence": [
+      {
+        "textId": "R024",
+        "v": 4,
+        "cite": "24/4"
+      },
+      {
+        "textId": "R024",
+        "v": 5,
+        "cite": "24/5"
+      }
+    ],
+    "priority": 3,
+    "provenance": {
+      "model": "development-fixture",
+      "effort": "none",
+      "protocol": "UI verification",
+      "run": "site-rework",
+      "date": "2026-10-25"
+    }
+  },
+  {
+    "id": "3b2be2e26344",
+    "entryId": "sym",
+    "kind": "question",
+    "stage": "proofreading",
+    "target": {
+      "stemId": "sym.I"
+    },
+    "summary": "Does this form mark an experiencer?",
+    "before": null,
+    "after": "səmle u ktowo ʕal u ṭawle",
+    "data": {
+      "confidence": "medium"
+    },
+    "rationale": "Illustrative fixture: compare the predicate and its arguments with the numbered glossary senses. This proposal is not a verified linguistic finding.",
+    "evidence": [
+      {
+        "textId": "R024",
+        "v": 4,
+        "cite": "24/4"
+      },
+      {
+        "textId": "R024",
+        "v": 5,
+        "cite": "24/5"
+      }
+    ],
+    "priority": 3,
+    "provenance": {
+      "model": "development-fixture",
+      "effort": "none",
+      "protocol": "UI verification",
+      "run": "site-rework",
+      "date": "2026-10-25"
+    }
+  },
+  {
+    "id": "fixture-extension",
+    "entryId": "sym",
+    "kind": "note",
+    "stage": "proofreading",
+    "target": {
+      "stemId": "sym.I"
+    },
+    "summary": "Extension note fixture",
+    "before": null,
+    "after": "səmle u ktowo ʕal u ṭawle",
+    "data": {
+      "type": "extension",
+      "note": "Compare additional arguments.",
+      "confidence": "low"
+    },
+    "rationale": "Illustrative fixture: compare the predicate and its arguments with the numbered glossary senses. This proposal is not a verified linguistic finding.",
+    "evidence": [
+      {
+        "textId": "R024",
+        "v": 4,
+        "cite": "24/4"
+      },
+      {
+        "textId": "R024",
+        "v": 5,
+        "cite": "24/5"
+      }
+    ],
+    "priority": 3,
+    "provenance": {
+      "model": "development-fixture",
+      "effort": "none",
+      "protocol": "UI verification",
+      "run": "site-rework",
+      "date": "2026-10-25"
+    }
+  }
+]

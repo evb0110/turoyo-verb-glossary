@@ -1,3 +1,141 @@
+<template>
+    <AdminPageShell description="Users · Manage access and permissions.">
+        <UCard class="mt-4">
+            <div class="mt-4 overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+                    <thead>
+                        <tr>
+                            <th
+                                class="px-6 py-3 text-left text-xs font-medium text-gray-500
+                                    dark:text-gray-400 uppercase tracking-wider"
+                            >
+                                User
+                            </th>
+                            <th
+                                class="px-6 py-3 text-left text-xs font-medium text-gray-500
+                                    dark:text-gray-400 uppercase tracking-wider"
+                            >
+                                Email
+                            </th>
+                            <th
+                                class="px-6 py-3 text-left text-xs font-medium text-gray-500
+                                    dark:text-gray-400 uppercase tracking-wider"
+                            >
+                                Role
+                            </th>
+                            <th
+                                class="px-6 py-3 text-left text-xs font-medium text-gray-500
+                                    dark:text-gray-400 uppercase tracking-wider"
+                            >
+                                Joined
+                            </th>
+                            <th
+                                class="px-6 py-3 text-right text-xs font-medium text-gray-500
+                                    dark:text-gray-400 uppercase tracking-wider"
+                            >
+                                Actions
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+                        <tr
+                            v-for="u in users"
+                            :key="u.id"
+                            class="hover:bg-gray-50 dark:hover:bg-gray-800/50"
+                        >
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <UAvatar
+                                        :src="u.image || ''"
+                                        :alt="u.name"
+                                        size="sm"
+                                        class="mr-3"
+                                    />
+                                    <div
+                                        class="text-sm font-medium text-gray-900 dark:text-white"
+                                    >
+                                        {{ u.name }}
+                                        <span
+                                            v-if="u.id === user?.id"
+                                            class="ml-2 text-xs text-gray-500 dark:text-gray-400"
+                                        >
+                                            (You)
+                                        </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td
+                                class="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400"
+                            >
+                                {{ u.email }}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <UBadge
+                                    :color="getRoleBadgeColor(u.role)"
+                                    variant="subtle"
+                                >
+                                    {{ u.role }}
+                                </UBadge>
+                            </td>
+                            <td
+                                class="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400"
+                            >
+                                {{ formatDateTime(u.createdAt) }}
+                            </td>
+                            <td
+                                class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium"
+                            >
+                                <div class="flex justify-end gap-2">
+                                    <UButton
+                                        v-if="u.role === 'pending'"
+                                        size="xs"
+                                        color="success"
+                                        variant="outline"
+                                        :loading="loading === u.id"
+                                        @click="approveUser(u.id)"
+                                    >
+                                        Approve
+                                    </UButton>
+                                    <UButton
+                                        v-if="u.role === 'user' && u.id !== user?.id"
+                                        size="xs"
+                                        color="error"
+                                        variant="outline"
+                                        :loading="loading === u.id"
+                                        @click="blockUser(u.id)"
+                                    >
+                                        Block
+                                    </UButton>
+                                    <UButton
+                                        v-if="u.role === 'blocked'"
+                                        size="xs"
+                                        color="success"
+                                        variant="outline"
+                                        :loading="loading === u.id"
+                                        @click="unblockUser(u.id)"
+                                    >
+                                        Unblock
+                                    </UButton>
+                                    <span
+                                        v-if="u.id === user?.id"
+                                        class="text-xs text-gray-400 dark:text-gray-600 px-2 py-1"
+                                    ></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </UCard>
+
+        <div v-if="!users || users.length === 0" class="text-center py-12">
+            <p class="text-gray-500 dark:text-gray-400">
+                No users found
+            </p>
+        </div>
+    </AdminPageShell>
+</template>
+
 <script setup lang="ts">
 import { formatDateTime } from '~/utils/formatDateTime'
 
@@ -111,126 +249,3 @@ const getRoleBadgeColor = (role: string) => {
     }
 }
 </script>
-
-<template>
-    <AdminPageShell description="Users · Manage access and permissions.">
-        <UCard class="mt-4">
-            <div class="mt-4 overflow-x-auto">
-                <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-                    <thead>
-                        <tr>
-                            <th
-                                class="px-6 py-3 text-left text-xs font-medium text-gray-500
-                                dark:text-gray-400 uppercase tracking-wider"
-                            >
-                                User
-                            </th>
-                            <th
-                                class="px-6 py-3 text-left text-xs font-medium text-gray-500
-                                dark:text-gray-400 uppercase tracking-wider"
-                            >
-                                Email
-                            </th>
-                            <th
-                                class="px-6 py-3 text-left text-xs font-medium text-gray-500
-                                dark:text-gray-400 uppercase tracking-wider"
-                            >
-                                Role
-                            </th>
-                            <th
-                                class="px-6 py-3 text-left text-xs font-medium text-gray-500
-                                dark:text-gray-400 uppercase tracking-wider"
-                            >
-                                Joined
-                            </th>
-                            <th
-                                class="px-6 py-3 text-right text-xs font-medium text-gray-500
-                                dark:text-gray-400 uppercase tracking-wider"
-                            >
-                                Actions
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
-                        <tr v-for="u in users" :key="u.id" class="hover:bg-gray-50 dark:hover:bg-gray-800/50">
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="flex items-center">
-                                    <UAvatar
-                                        :src="u.image || ''"
-                                        :alt="u.name"
-                                        size="sm"
-                                        class="mr-3"
-                                    />
-                                    <div class="text-sm font-medium text-gray-900 dark:text-white">
-                                        {{ u.name }}
-                                        <span
-                                            v-if="u.id === user?.id"
-                                            class="ml-2 text-xs text-gray-500
-                                            dark:text-gray-400"
-                                        >(You)</span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">
-                                {{ u.email }}
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
-                                <UBadge :color="getRoleBadgeColor(u.role)" variant="subtle">
-                                    {{ u.role }}
-                                </UBadge>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400">
-                                {{ formatDateTime(u.createdAt) }}
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                <div class="flex justify-end gap-2">
-                                    <UButton
-                                        v-if="u.role === 'pending'"
-                                        size="xs"
-                                        color="success"
-                                        variant="outline"
-                                        :loading="loading === u.id"
-                                        @click="approveUser(u.id)"
-                                    >
-                                        Approve
-                                    </UButton>
-                                    <UButton
-                                        v-if="u.role === 'user' && u.id !== user?.id"
-                                        size="xs"
-                                        color="error"
-                                        variant="outline"
-                                        :loading="loading === u.id"
-                                        @click="blockUser(u.id)"
-                                    >
-                                        Block
-                                    </UButton>
-                                    <UButton
-                                        v-if="u.role === 'blocked'"
-                                        size="xs"
-                                        color="success"
-                                        variant="outline"
-                                        :loading="loading === u.id"
-                                        @click="unblockUser(u.id)"
-                                    >
-                                        Unblock
-                                    </UButton>
-                                    <span
-                                        v-if="u.id === user?.id"
-                                        class="text-xs text-gray-400
-                                        dark:text-gray-600 px-2 py-1"
-                                    ></span>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </UCard>
-
-        <div v-if="!users || users.length === 0" class="text-center py-12">
-            <p class="text-gray-500 dark:text-gray-400">
-                No users found
-            </p>
-        </div>
-    </AdminPageShell>
-</template>

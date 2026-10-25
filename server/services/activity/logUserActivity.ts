@@ -58,6 +58,7 @@ export async function logUserActivity(
     event: H3Event,
     input: ILogUserActivityInput
 ) {
+    if (import.meta.dev && process.env.NUXT_DEV_AUTH_BYPASS === '1') return
     try {
         const session = await auth.api.getSession({ headers: event.headers })
 

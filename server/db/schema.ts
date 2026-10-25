@@ -1,7 +1,5 @@
-import { pgTable, text, timestamp, boolean, pgEnum, integer, jsonb } from 'drizzle-orm/pg-core'
+import { pgTable, text, timestamp, boolean, pgEnum, integer, jsonb, index } from 'drizzle-orm/pg-core'
 import { activityEventTypes } from '../../shared/config/activityEventTypes'
-import type { IEtymology } from '../../shared/types/IEtymology'
-import type { IStem } from '../../shared/types/IStem'
 
 export const userRoleEnum = pgEnum('user_role', ['admin', 'user', 'pending', 'blocked'])
 export const activityEventTypeEnum = pgEnum('activity_event_type', activityEventTypes)
@@ -105,15 +103,29 @@ export const userActivityLog = pgTable('user_activity_log', {
     createdAt: timestamp('created_at').defaultNow().notNull(),
 })
 
+// Retained for schema continuity. The site reads glossary assets, but future
+// generated migrations must not interpret retiring the UI as dropping data.
 export const verbs = pgTable('verbs', {
     root: text('root').primaryKey(),
-    etymology: jsonb('etymology').$type<IEtymology | null>(),
+    etymology: jsonb('etymology'),
     crossReference: text('cross_reference'),
-    stems: jsonb('stems').$type<IStem[]>().notNull(),
-    idioms: jsonb('idioms').$type<string[] | null>(),
+    stems: jsonb('stems').notNull(),
+    idioms: jsonb('idioms'),
     createdAt: timestamp('created_at').defaultNow().notNull(),
-    updatedAt: timestamp('updated_at')
-        .defaultNow()
-        .$onUpdate(() => new Date())
-        .notNull(),
+    updatedAt: timestamp('updated_at').defaultNow().$onUpdate(() => new Date()).notNull(),
 })
+
+export const proposalVerdictEnum = pgEnum('proposal_verdict', ['accept', 'reject', 'discuss'])
+
+export const proposalReview = pgTable('proposal_review', {
+    id: text('id').primaryKey(),
+    proposalId: text('proposal_id').notNull(),
+    entryId: text('entry_id').notNull(),
+    userId: text('user_id').notNull().references(() => user.id, { onDelete: 'cascade' }),
+    verdict: proposalVerdictEnum('verdict').notNull(),
+    comment: text('comment'),
+    createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
+}, table => [
+    index('proposal_review_proposal_created_idx').on(table.proposalId, table.createdAt),
+    index('proposal_review_entry_idx').on(table.entryId),
+])

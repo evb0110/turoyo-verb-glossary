@@ -2,16 +2,26 @@
 
 > Modern web application for browsing and searching Turoyo verbs with etymology and conjugations.
 
-A comprehensive digital glossary featuring **1,696 Turoyo verbs** with full conjugation tables, etymological information, and cross-references. Built with modern web technologies for fast, responsive browsing.
+A scholarly reference for Turoyo verbs, their numbered senses and corpus evidence, with an editorial workflow for reviewing machine proposals.
 
 ## Features
 
-- **🔍 Smart Search** - Search by root, meaning, or full-text across all examples
-- **📚 Comprehensive Data** - 3,553 stems, 4,685 conjugation examples
-- **🌐 Etymology** - 10+ source languages (Arabic, Middle Eastern Aramaic, Kurdish, Turkish, etc.)
-- **⚡ Fast SSR** - Server-side rendering for instant page loads
-- **🎨 Modern UI** - Clean interface built with Tailwind CSS 4
-- **🔐 Authentication** - Google OAuth integration via Better Auth
+- Dictionary entries at `/entry/:id` preserve roots, stems, numbered senses, detransitives, idioms and source references. Old `/verbs/:root` links redirect.
+- Examples switch between sense order and glossary boxes. A clickable coverage matrix marks cells with three or fewer examples.
+- Machine proposals appear at their targets with additions, corrections, notes, diffs, provenance and verse evidence. Glossary-only and proposal-only views are available.
+- Approved users accept, reject or discuss proposals with comments and full review history. `/review` filters by kind, stage, priority, status, text and root; j/k/a/r/d/o drive the queue.
+- `/texts` groups the corpus by collection. The reader shows aligned translations, analysed verbs, proposed occurrences and alignment flags; `?v=N` opens a verse.
+- A virtual root index and Cmd/Ctrl-K search cover roots, attested forms, German/English glosses, examples and corpus passages. Plain search preserves consonant diacritics while ignoring stress, vowel marks and joiners. Regex search is available.
+- `/research` collects question-tagged observations; `/about` explains the editorial workflow.
+- Self-hosted Gentium Plus, responsive layouts, dark mode and SSR. Google authentication, pending/blocked flows and user/session/activity administration are preserved.
+
+## Glossary data and reviews
+
+The binding format is [docs/data-contract.md](docs/data-contract.md). Nitro reads `server/assets/glossary/index.json`, `entries/*.json`, `texts/*.json` and `proposals/*.json`. The search index is built once per server instance; restart after regenerating assets. Corpus editions are private and must be present locally for a complete Vercel CLI deployment.
+
+Reviews are append-only Postgres records; the latest review determines status. Acceptance records a decision without rewriting source assets. Generate/apply the reviewed Drizzle migration through the normal database workflow before enabling production review. `0005_proposal_review.sql` is additive and leaves the retired `verbs` table untouched. The app no longer reads that table or the legacy JSON/SQLite adapters.
+
+For isolated UI verification, `.devkit/site-fixture/` contains illustrative data covering all proposal kinds. Start with `NUXT_SITE_FIXTURE=1 NUXT_DEV_AUTH_BYPASS=1 pnpm dev`. Both switches require a development build. The bypass supplies an approved development user and uses process-local review history, with no database writes. Neither switch works in production. Leave the flags unset for real auth and data. To verify access denial locally, `NUXT_DEV_AUTH_ROLE=pending`, `blocked` or `guest` changes the bypass role.
 
 ## Tech Stack
 
@@ -56,7 +66,7 @@ cd turoyo-verb-glossary
 pnpm install
 ```
 
-Verb JSON data under `server/assets/verbs/` is already committed and ready to use. You only need the parser if you are updating the dataset from the DOCX sources (see **Parsing Pipeline** below).
+Glossary entries and proposals live under `server/assets/glossary/`. Corpus texts are staged privately before deployment. See `docs/data-contract.md` and `parser/glossary/`.
 
 Set up environment variables:
 
@@ -68,7 +78,7 @@ cp .env.example .env
 ### Development
 
 ```bash
-# Start dev server at http://localhost:3456
+# Start dev server at https://turoyo-verb-glossary.lvh.me:3456
 pnpm run dev
 
 # Type checking
@@ -101,7 +111,7 @@ turoyo-verb-glossary/
 │   └── plugins/                  # Nuxt plugins
 ├── server/                       # Nitro server
 │   ├── api/                      # API routes
-│   ├── assets/verbs/             # Verb JSON files (generated)
+│   ├── assets/glossary/             # Verb JSON files (generated)
 │   ├── db/                       # Database schema
 │   ├── lib/                      # Server utilities
 │   ├── repositories/             # Data access layer
@@ -136,67 +146,34 @@ The application follows a clean three-layer architecture:
    - Database queries
    - Storage access
 
-### Data Pipeline
+### Data pipeline
 
-```
-DOCX source → DOCX parser → JSON files → API → Frontend
-```
+DOCX sources → `parser/glossary/` → `server/assets/glossary/entries/` and `index.json`.
+Corpus readers produce `texts/` occurrences and `proposals/`; the website treats all three as read-only assets. Reviews alone are written to Postgres.
 
-- **Source**: `source/glossary-docx/2026-10-21/*.docx` (catalogue in `source/README.md`)
-- **Parser (production)**: `.devkit/scripts/parse_docx_v2_fixed.py`
-- **Parser output**:
-  - Combined: `.devkit/analysis/docx_v2_parsed.json`
-  - Per-verb: `.devkit/analysis/docx_v2_verbs/*.json`
-- **Storage**: `server/assets/verbs/*.json` (copied from `docx_v2_verbs`)
-- **API**: Nitro endpoints serve data via `useStorage('assets:server')`
-- **Stats**: Calculated dynamically from verb files
+## API routes
 
-For a detailed, step-by-step walkthrough of the parsing pipeline (including exact commands and rules), see `PARSING.md`.
+- `GET /api/glossary/roots`, `/stats`, `/search?q=…&regex=true`
+- `GET /api/glossary/entries/:id` (entry and its proposals)
+- `GET /api/glossary/texts`, `/texts/:id` (`?v=N` returns ±3 context verses)
+- `GET /api/glossary/proposals`, `/reviews`, `/research`
+- `POST /api/glossary/proposals/:id/review` with `{ verdict, comment? }`
+- Existing `/api/auth/*`, `/api/user/me`, `/api/admin/*`
 
-## API Routes
-
-```
-GET /api/verbs              # Search verbs (query params: q, type)
-GET /api/verbs/:root        # Get specific verb by root
-GET /api/stats              # Get dataset statistics
-GET /api/auth/*             # Authentication endpoints
-GET /api/user/me            # Current user info
-```
-
-## Data Generation
-
-Verb data used by the app is already generated and committed under `server/assets/verbs/`. You only need to run the parser if you are updating the dataset from the DOCX sources.
-
-### Regenerating from DOCX (recommended flow)
-
-See `PARSING.md` for the full pipeline. In short:
-
-```bash
-# 1. Parse DOCX sources
-python3 .devkit/scripts/parse_docx_v2_fixed.py
-
-# 2. Run comprehensive validation
-python3 .devkit/scripts/comprehensive_validation.py .devkit/analysis/docx_v2_verbs
-
-# 3. Deploy to Nitro assets (after validation passes)
-rm server/assets/verbs/*.json
-cp .devkit/analysis/docx_v2_verbs/*.json server/assets/verbs/
-```
-
-Older HTML-based tooling has been deprecated and removed from the main pipeline. It is retained only for historical comparison and should not be used for new work.
+Glossary APIs require an approved user. Missing entries/texts return 404. Reviews validate proposal IDs, verdicts and comment length server-side.
 
 ## Environment Variables
 
 ```bash
 # Database
-DATABASE_URL=postgresql://...
+NUXT_DATABASE_URL=postgresql://...
 
 # Better Auth
-BETTER_AUTH_SECRET=...  # Generate: openssl rand -base64 32
+NUXT_BETTER_AUTH_SECRET=...  # Generate: openssl rand -base64 32
 
 # Google OAuth
-GOOGLE_CLIENT_ID=...
-GOOGLE_CLIENT_SECRET=...
+NUXT_GOOGLE_CLIENT_ID=...
+NUXT_GOOGLE_CLIENT_SECRET=...
 
 # Site URL (auto-detected on Vercel)
 NUXT_PUBLIC_SITE_URL=http://localhost:3456

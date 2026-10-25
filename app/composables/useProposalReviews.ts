@@ -1,0 +1,85 @@
+import type { IProposalReview } from '#shared/types/IProposalReview'
+import type { TReviewVerdict } from '#shared/types/TReviewVerdict'
+
+export function useProposalReviews() {
+    const reviews = useState<IProposalReview[]>('proposal-reviews', () => [])
+    const loaded = useState('proposal-reviews-loaded', () => false)
+    const error = useState('proposal-reviews-error', () => '')
+    const pending = useState<string[]>('proposal-reviews-pending', () => [])
+    const request = useRequestFetch()
+    const { user } = useAuth()
+    async function load() {
+        if (loaded.value) return
+        try {
+            reviews.value = await request<IProposalReview[]>('/api/glossary/reviews')
+            loaded.value = true
+        }
+        catch {
+            error.value
+                = 'Review history could not be loaded. The proposal review migration may be pending.'
+        }
+    }
+    function history(id: string) {
+        return reviews.value.filter(review => review.proposalId === id)
+    }
+    function status(id: string) {
+        const verdict = history(id)[0]?.verdict
+        return verdict === 'accept'
+            ? 'accepted'
+            : verdict === 'reject'
+                ? 'rejected'
+                : verdict || 'open'
+    }
+    async function review(
+        proposalId: string,
+        entryId: string,
+        verdict: TReviewVerdict,
+        comment = ''
+    ) {
+        if (pending.value.includes(proposalId) || !user.value) return false
+        const optimistic: IProposalReview = {
+            id: `pending:${proposalId}`,
+            proposalId,
+            entryId,
+            verdict,
+            comment: comment || null,
+            userId: user.value.id,
+            userName: user.value.name,
+            createdAt: new Date().toISOString(),
+        }
+        error.value = ''
+        reviews.value.unshift(optimistic)
+        pending.value.push(proposalId)
+        try {
+            const saved = await $fetch<IProposalReview>(
+                `/api/glossary/proposals/${proposalId}/review`,
+                {
+                    method: 'POST',
+                    body: {
+                        verdict,
+                        comment,
+                    },
+                }
+            )
+            reviews.value = reviews.value.map(item => (item.id === optimistic.id ? saved : item))
+            return true
+        }
+        catch {
+            reviews.value = reviews.value.filter(item => item.id !== optimistic.id)
+            error.value = 'Review was not saved. Please retry.'
+            return false
+        }
+        finally {
+            pending.value = pending.value.filter(id => id !== proposalId)
+        }
+    }
+    return {
+        reviews,
+        error,
+        pending,
+        load,
+        history,
+        status,
+        review,
+    }
+}

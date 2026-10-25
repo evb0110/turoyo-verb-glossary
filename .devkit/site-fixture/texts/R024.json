@@ -1,0 +1,133 @@
+{
+  "id": "R024",
+  "cite": "24",
+  "title": "Š_ʕ Placement and action · development fixture",
+  "collection": "Development fixture",
+  "file": "fixture",
+  "lang": "GERMAN",
+  "verses": [
+    {
+      "v": 0,
+      "tur": "Kətwo malke.",
+      "tr": "Es war ein König."
+    },
+    {
+      "v": 1,
+      "tur": "U malke kətle abro.",
+      "tr": "Der König hatte einen Sohn."
+    },
+    {
+      "v": 2,
+      "tur": "U abro ḥze u ktowo.",
+      "tr": "Der Sohn sah das Buch."
+    },
+    {
+      "v": 3,
+      "tur": "U ktowo kətwo harke.",
+      "tr": "Das Buch war hier."
+    },
+    {
+      "v": 4,
+      "tur": "səmle u ktowo ʕal u ṭawle.",
+      "tr": "Er legte das Buch auf den Tisch."
+    },
+    {
+      "v": 5,
+      "tur": "səmle šuġlo ṭowo.",
+      "tr": "Er machte gute Arbeit."
+    },
+    {
+      "v": 6,
+      "tur": "ko-soyəm u ktowo.",
+      "tr": "Er legt das Buch hin."
+    },
+    {
+      "v": 7,
+      "tur": "sim u ktowo harke.",
+      "tr": "Lege das Buch hierhin."
+    },
+    {
+      "v": 8,
+      "tur": "U abro zəlle.",
+      "tr": "Der Sohn ging weg."
+    },
+    {
+      "v": 9,
+      "tur": "Harke saliq i ḥəkkoye.",
+      "tr": "Hier endet die Geschichte."
+    }
+  ],
+  "occurrences": [
+    {
+      "v": 4,
+      "form": "səmle",
+      "entryId": "sym",
+      "root": "sym",
+      "stem": "I",
+      "detransitive": false,
+      "box": "Preterit",
+      "sense": "1",
+      "senseFit": "exact",
+      "meaning": "placed the book",
+      "arguments": "agent, theme, location",
+      "observations": "Compare the role of the experiencer across contexts.",
+      "rq": ["RQ-experiencer"],
+      "decision": "add",
+      "criterion": "Illustrative UI fixture",
+      "proposalIds": ["60d9c190fe5f"],
+      "note": "Check the location phrase against the edition.",
+      "newSenseGloss": "put someone in charge",
+      "newSenseType": "extension"
+    },
+    {
+      "v": 5,
+      "form": "səmle",
+      "entryId": "sym",
+      "root": "sym",
+      "stem": "I",
+      "detransitive": false,
+      "box": "Preterit",
+      "sense": "2",
+      "senseFit": "exact",
+      "meaning": "did good work",
+      "arguments": "agent, theme, location",
+      "observations": "Compare the role of the experiencer across contexts.",
+      "rq": ["RQ-experiencer"],
+      "decision": "no-add",
+      "criterion": "Illustrative UI fixture",
+      "proposalIds": [],
+      "note": null,
+      "newSenseGloss": null,
+      "newSenseType": null
+    },
+    {
+      "v": 6,
+      "form": "ko-soyəm",
+      "entryId": "sym",
+      "root": "sym",
+      "stem": "I",
+      "detransitive": false,
+      "box": "Infectum",
+      "sense": "1",
+      "senseFit": "exact",
+      "meaning": "places the book",
+      "arguments": "agent, theme, location",
+      "observations": "Compare the role of the experiencer across contexts.",
+      "rq": ["RQ-experiencer"],
+      "decision": "add",
+      "criterion": "Illustrative UI fixture",
+      "proposalIds": [],
+      "note": null,
+      "newSenseGloss": null,
+      "newSenseType": null
+    }
+  ],
+  "alignment": [
+    {
+      "v": 5,
+      "status": "partial",
+      "note": "Illustrative alignment flag: verify the predicate correspondence."
+    }
+  ],
+  "reading": "partial"
+}

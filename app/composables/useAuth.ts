@@ -62,23 +62,9 @@ export const useAuth = () => {
         sessionStatus.value = 'loading'
 
         try {
-            const session = await client.getSession()
-
-            if (session.data?.user) {
-                const response = await $fetch<IAuthUser | null>('/api/user/me')
-                if (response) {
-                    user.value = response
-                    sessionStatus.value = 'authenticated'
-                }
-                else {
-                    user.value = null
-                    sessionStatus.value = 'guest'
-                }
-            }
-            else {
-                user.value = null
-                sessionStatus.value = 'guest'
-            }
+            const response = await $fetch<IAuthUser | null>('/api/user/me')
+            user.value = response
+            sessionStatus.value = response ? 'authenticated' : 'guest'
         }
         catch (error) {
             console.error('Session check error:', error)

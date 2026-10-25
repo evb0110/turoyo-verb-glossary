@@ -60,7 +60,7 @@ __pycache__/
 *.pyc
 .archive/
 
-# DevKit temporary files
+# DevKit temporary files and agent reports
 .devkit/analysis/
 .devkit/tmp/
 .devkit/debug/
@@ -102,3 +102,4 @@ data/baseline/
 
 # Corpus texts (third-party editions, from the private aramaictexts repo); built locally by the pipeline
 server/assets/glossary/texts/
+.devkit/site-rework/

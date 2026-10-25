@@ -1,0 +1,157 @@
+{
+  "id": "sym",
+  "root": "sym",
+  "homonym": null,
+  "head": "sym · səmle / soyəm. To put, place; to make. Compare Syriac sām.",
+  "crossRefs": ["ḥwy-2"],
+  "notes": [
+    "Idiomatic phrases",
+    "Development fixture. Illustrative examples for interface verification, not corpus findings."
+  ],
+  "stems": [
+    {
+      "id": "sym.I",
+      "stem": "I",
+      "forms": "səmle / soyəm",
+      "senses": [
+        {
+          "n": "1",
+          "gloss": "setzen, stellen, legen; to put, place"
+        },
+        {
+          "n": "2",
+          "gloss": "machen, tun; to make, do"
+        }
+      ],
+      "sensesRaw": "1. setzen, stellen, legen; 2. machen, tun.",
+      "detransitiveSenses": [
+        {
+          "n": "1",
+          "gloss": "gesetzt werden; to be placed"
+        }
+      ],
+      "detransitiveSensesRaw": "1. gesetzt werden.",
+      "boxes": [
+        {
+          "id": "sym.I.t.preterit",
+          "label": "Preterit",
+          "rawLabel": "Preterit",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "sym.I.t.preterit.1",
+              "sense": "1",
+              "turoyo": "səmle u ktowo ʕal u ṭawle",
+              "translation": "Er legte das Buch auf den Tisch.",
+              "refs": [
+                {
+                  "raw": "24/4",
+                  "kind": "text",
+                  "textId": "R024",
+                  "verse": 4
+                }
+              ],
+              "note": null,
+              "raw": "səmle u ktowo ʕal u ṭawle ‘Er legte das Buch auf den Tisch.’ 24/4"
+            },
+            {
+              "id": "sym.I.t.preterit.2",
+              "sense": "2",
+              "turoyo": "səmle šuġlo ṭowo",
+              "translation": "Er machte gute Arbeit.",
+              "refs": [
+                {
+                  "raw": "24/5",
+                  "kind": "text",
+                  "textId": "R024",
+                  "verse": 5
+                }
+              ],
+              "note": null,
+              "raw": "səmle šuġlo ṭowo ‘Er machte gute Arbeit.’ 24/5"
+            }
+          ]
+        },
+        {
+          "id": "sym.I.t.infectum",
+          "label": "Infectum",
+          "rawLabel": "Infectum",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "sym.I.t.infectum.1",
+              "sense": "1",
+              "turoyo": "ko-soyəm u ktowo",
+              "translation": "Er legt das Buch hin.",
+              "refs": [
+                {
+                  "raw": "24/4",
+                  "kind": "text",
+                  "textId": "R024",
+                  "verse": 4
+                }
+              ],
+              "note": null,
+              "raw": "ko-soyəm u ktowo ‘Er legt das Buch hin.’ 24/4"
+            }
+          ]
+        },
+        {
+          "id": "sym.I.t.imperativ",
+          "label": "Imperativ",
+          "rawLabel": "Imperativ",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "sym.I.t.imperativ.1",
+              "sense": "1",
+              "turoyo": "sim u ktowo harke",
+              "translation": "Lege das Buch hierhin.",
+              "refs": [
+                {
+                  "raw": "24/4",
+                  "kind": "text",
+                  "textId": "R024",
+                  "verse": 4
+                }
+              ],
+              "note": null,
+              "raw": "sim u ktowo harke ‘Lege das Buch hierhin.’ 24/4"
+            }
+          ]
+        },
+        {
+          "id": "sym.I.d.preterit",
+          "label": "Preterit",
+          "rawLabel": "Preterit",
+          "detransitive": true,
+          "examples": [
+            {
+              "id": "sym.I.d.preterit.1",
+              "sense": "1",
+              "turoyo": "səm u ktowo",
+              "translation": "Das Buch wurde hingelegt.",
+              "refs": [],
+              "note": null,
+              "raw": "səm u ktowo Das Buch wurde hingelegt."
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "The distinction between placement and an event merits further comparison."
+      ]
+    }
+  ],
+  "idioms": [
+    {
+      "id": "sym.idiom.1",
+      "headword": "səmle b-bole",
+      "raw": "soyəm/səmle ṣulḥ ‘Frieden schließen, sich versöhnen’: hatu izoxu bə-šlomo ‘Ihr gehet in Frieden’; 24/4 [MT]; JL 5.10.2"
+    }
+  ],
+  "source": {
+    "volume": "Development fixture",
+    "order": 1
+  }
+}

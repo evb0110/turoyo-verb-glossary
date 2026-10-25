@@ -68,7 +68,7 @@ export default withNuxt(
                     'CONTENT',
                 ],
             }],
-            'vue/block-order': ['error', { order: ['script', 'template', 'style'] }],
+            'vue/block-order': ['error', { order: ['template', 'script', 'style'] }],
             'vue/multi-word-component-names': 'off',
             'vue/no-v-html': 'off',
 

@@ -11,6 +11,7 @@ export default defineNuxtRouteMiddleware(async (to) => {
 
             useState('auth:user').value = userData
             useState('auth:sessionStatus').value = userData ? 'authenticated' : 'guest'
+            if (userData?.role === 'pending' && to.path !== '/') return navigateTo('/')
 
             const {
                 shouldRedirect,
@@ -21,9 +22,13 @@ export default defineNuxtRouteMiddleware(async (to) => {
             }
         }
         catch (error) {
-            console.error('Server auth check error:', error)
+            if ((error as { statusCode?: number }).statusCode !== 401) {
+                console.error('Server auth check error:', error)
+            }
             useState('auth:user').value = null
             useState('auth:sessionStatus').value = 'guest'
+            const decision = authorizeNavigation(null, to.path)
+            if (decision.shouldRedirect && decision.redirectTo) return navigateTo(decision.redirectTo)
         }
         return
     }
@@ -36,6 +41,8 @@ export default defineNuxtRouteMiddleware(async (to) => {
     if (sessionStatus.value === 'idle' || sessionStatus.value === 'loading') {
         return
     }
+
+    if (user.value?.role === 'pending' && to.path !== '/') return navigateTo('/')
 
     const {
         shouldRedirect,

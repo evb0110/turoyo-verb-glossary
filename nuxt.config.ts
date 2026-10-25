@@ -24,6 +24,13 @@ export default defineNuxtConfig({
             ],
             link: [
                 {
+                    rel: 'preload',
+                    href: '/fonts/GentiumPlus-Regular.ttf',
+                    as: 'font',
+                    type: 'font/ttf',
+                    crossorigin: 'anonymous',
+                },
+                {
                     rel: 'icon',
                     type: 'image/svg+xml',
                     href: '/favicon.svg?v=2',
@@ -42,7 +49,10 @@ export default defineNuxtConfig({
         databaseUrl: '',
         googleClientId: '',
         googleClientSecret: '',
-        public: { siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://turoyo-verb-glossary.lvh.me:3456' },
+        public: {
+            siteFixture: process.env.NUXT_SITE_FIXTURE === '1' && process.env.NODE_ENV !== 'production',
+            siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://turoyo-verb-glossary.lvh.me:3456',
+        },
     },
     dir: { public: 'public' },
     srcDir: 'app',
@@ -112,6 +122,12 @@ export default defineNuxtConfig({
                 semi: false,
                 commaDangle: 'never',
             },
+        },
+    },
+    fonts: {
+        providers: {
+            google: false,
+            googleicons: false,
         },
     },
 
