@@ -329,7 +329,7 @@ const evidence = computed(() => {
     }
     function parse(text: string, label: string) {
         for (const match of text.matchAll(
-            /(?<![\p{L}\d])(?:R)?(\d{1,3})\/(\d+)(?:[-–](\d+))?/gu
+            /(?<![\p{L}\d.][ \u00A0]?)(?:R)?(\d{1,3})\/(\d+)(?:[-–](\d+))?/gu
         )) {
             const end = Math.min(Number(match[3] || match[2]), Number(match[2]) + 8)
             for (let v = Number(match[2]); v <= end; v++)
@@ -364,9 +364,11 @@ const evidence = computed(() => {
             )
     if (props.proposal.kind === 'fix-citation')
         parse(props.proposal.before || '', 'Current reference')
-    for (const value of [props.proposal.data.ref, props.proposal.data.reference]) {
-        if (typeof value === 'string') parse(value, 'Source of the suggested addition')
-    }
+    // the bundle already resolves an addition's reference into evidence; parse it only as a fallback
+    if (!props.proposal.evidence.length)
+        for (const value of [props.proposal.data.ref, props.proposal.data.reference]) {
+            if (typeof value === 'string') parse(value, 'Source of the suggested addition')
+        }
     return rows
 })
 function verdictLabel(verdict: TReviewVerdict) {
@@ -440,6 +442,7 @@ ins {
 del + ins { margin-left: .12em; }
 .proposed-text {
   font-size: 1.3rem;
+  white-space: pre-line;
 }
 .decision-history {
   border-left: 3px solid var(--accent);
