@@ -59,6 +59,7 @@
 </template>
 
 <script setup lang="ts">
+useHead({ title: 'Sign in' })
 const {
     signIn,
     loading,

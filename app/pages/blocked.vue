@@ -51,6 +51,7 @@
 </template>
 
 <script setup lang="ts">
+useHead({ title: 'Access blocked' })
 const {
     signOut,
     user,

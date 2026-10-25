@@ -197,6 +197,8 @@ import type { IAdminSessionsResponse } from '#shared/types/IAdminSessionsRespons
 import type { IUserSessionActivity } from '#shared/types/IUserSessionActivity'
 import type { LocationQueryValue } from 'vue-router'
 
+useHead({ title: 'Sessions' })
+
 const PAGE_SIZE = 25
 const route = useRoute()
 const router = useRouter()

@@ -139,6 +139,8 @@
 <script setup lang="ts">
 import { formatDateTime } from '~/utils/formatDateTime'
 
+useHead({ title: 'Users' })
+
 const { user } = useAuth()
 const clientPathHeader = useClientPathHeader()
 

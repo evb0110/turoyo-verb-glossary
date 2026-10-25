@@ -235,6 +235,8 @@ import type { IAdminActivityResponse } from '#shared/types/IAdminActivityRespons
 import type { LocationQueryValue } from 'vue-router'
 import { activityEventTypes } from '#shared/config/activityEventTypes'
 
+useHead({ title: 'Activity' })
+
 const PAGE_SIZE = 25
 const route = useRoute()
 const router = useRouter()
