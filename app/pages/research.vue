@@ -105,7 +105,7 @@ select {
 .verse-link {
     margin-left: auto;
     color: var(--accent);
-    font-size: 0.75rem;
+    font-size: .889rem;
 }
 .research-note h3 {
     margin: 1rem 0 0.5rem;
@@ -118,11 +118,11 @@ select {
     font-size: 1.25rem;
 }
 .meaning {
-    font-size: 0.75rem;
+    font-size: .889rem;
     margin: 0.6rem 0;
 }
 .note-links {
-    font-size: 0.72rem;
+    font-size: .889rem;
     margin-top: 1rem;
 }
 </style>

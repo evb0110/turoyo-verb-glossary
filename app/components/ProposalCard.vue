@@ -1,351 +1,498 @@
 <template>
     <article
         :id="`proposal-${proposal.id}`"
-        class="proposal"
-        :class="`family-${proposalFamily(proposal.kind)}`"
+        class="proposal stack"
+        :class="{ 'queue-card': queue }"
     >
-        <div class="proposal-meta">
-            <span class="machine-label">Machine proposal</span>
-            <span>{{ proposal.kind.replaceAll('-', ' ') }}</span>
-            <span
-                v-if="proposal.kind === 'note' && proposal.data.type"
-                class="pill"
-            >{{ proposal.data.type }} note</span>
-            <span
-                v-if="proposal.data.confidence"
-                class="pill confidence"
-            >Confidence: {{ proposal.data.confidence }}</span>
-            <span v-if="proposal.target.sense">Sense {{ proposal.target.sense }}</span>
-            <span class="pill" :data-status="status(proposal.id)">
-                {{ status(proposal.id) }}
-            </span>
-            <span class="priority">P{{ proposal.priority }}</span>
-        </div>
-        <h4>{{ proposal.summary }}</h4>
-        <p v-if="gate && !gate.ok" class="gate-warning" role="alert">
-            <strong>Citation check failed.</strong>
-            {{ gate.reason || 'The cited text or translation could not be verified.' }}
-        </p>
-        <div v-if="proposal.before !== null" class="proposal-diff">
-            <del>{{ proposal.before }}</del>
-            <span aria-label="changes to">→</span>
-            <ins>{{ proposal.after || 'Remove' }}</ins>
-        </div>
-        <p
-            v-else-if="proposal.after"
-            class="proposed-text serif"
-            :class="{ turoyo: proposal.kind === 'add-example' || proposal.kind === 'new-form' }"
-        >
-            {{ proposal.after }}
-        </p>
-        <dl v-if="fields.length" class="proposal-fields">
-            <div v-for="field in fields" :key="field.key">
-                <dt>{{ field.label }}</dt>
-                <dd :class="{ turoyo: field.key === 'turoyo' || field.key === 'forms' }">
-                    {{ field.value }}
-                </dd>
-            </div>
-        </dl>
-        <details class="proposal-details">
-            <summary>
-                Reason, evidence & review history
-                <span class="muted">({{ history(proposal.id).length }})</span>
-            </summary>
-            <p>{{ proposal.rationale }}</p>
-            <div class="row evidence-links">
-                <span class="eyebrow">Evidence</span>
-                <button
-                    v-for="ref in proposal.evidence"
-                    :key="`${ref.textId}:${ref.v}`"
-                    class="verse-ref"
-                    @click="open(ref.textId, ref.v, ref.cite)"
-                >
-                    {{ ref.cite }}
-                </button>
-                <span v-if="!proposal.evidence.length" class="muted">
-                    No verse evidence supplied
-                </span>
-            </div>
-            <p class="provenance">
-                {{ proposal.provenance.model }} · {{ proposal.provenance.effort }} ·
-                {{ proposal.stage }} · {{ proposal.provenance.date }}
-                <br/>
-                {{ proposal.provenance.protocol }} / {{ proposal.provenance.run }}
+        <h2 class="summary">
+            {{ plainProposalText(proposal.summary) }}
+        </h2>
+        <ProposalTarget :entry="entry" :proposal="proposal"/>
+        <section class="stack change-section">
+            <h3>{{ question ? "Question for the editors" : "Suggested change" }}</h3>
+            <p v-if="proposal.kind === 'move-example'">
+                {{ moveDescription }}
             </p>
-            <ol v-if="history(proposal.id).length" class="history">
-                <li v-for="item in history(proposal.id)" :key="item.id">
-                    <strong>{{ item.userName }}</strong>
-                    · {{ item.verdict }} ·
-                    <time :datetime="item.createdAt">
-                        {{ formatDate(item.createdAt) }}
-                    </time>
-                    <p v-if="item.comment">
-                        {{ item.comment }}
-                    </p>
-                </li>
-            </ol>
-            <p v-else class="muted">
-                No reviews yet.
+            <p v-else-if="proposal.kind === 'duplicate-entry'">
+                Compare
+                <NuxtLink :to="entryHref(proposal.entryId)">{{
+                    entry?.root || proposal.entryId
+                }}</NuxtLink>
+                with
+                <NuxtLink :to="entryHref(duplicateRoot)">{{
+                    duplicateRoot.replaceAll("-", " ")
+                }}</NuxtLink>.
+                {{ plainProposalText(proposal.summary) }}
+            </p>
+            <p v-else-if="question">
+                {{ plainProposalText(proposal.summary) }}
+            </p>
+            <p
+                v-else-if="diff.length"
+                class="inline-diff serif"
+                :class="{ turoyo: isTuroyo }"
+            >
+                <template v-for="(part, i) in diff" :key="i">
+                    <del v-if="part.kind === 'delete'"><span class="sr-only">Remove: </span>{{ part.text }}</del>
+                    <template v-else-if="part.kind === 'insert'">
+                        <wbr v-if="diff[i - 1]?.kind === 'delete'"/><ins>
+                            <span class="sr-only">Add: </span>{{ part.text }}</ins>
+                    </template>
+                    <template v-else>
+                        {{ part.text }}
+                    </template>
+                </template>
+            </p>
+            <p
+                v-else-if="proposal.after"
+                class="serif proposed-text"
+                :class="{ turoyo: ['add-example', 'new-form', 'new-idiom'].includes(proposal.kind) }"
+            >
+                {{ proposal.after }}
+            </p>
+            <template v-else-if="addition">
+                <p v-if="proposal.data.turoyo || proposal.data.forms" class="turoyo">
+                    {{ proposal.data.turoyo || proposal.data.forms }}
+                </p>
+                <p
+                    v-if="proposal.data.gloss || proposal.data.translation"
+                    class="serif"
+                >
+                    {{ proposal.data.gloss || proposal.data.translation }}
+                </p>
+            </template>
+            <p v-else>
+                {{ plainProposalText(proposal.summary) }}
+            </p>
+            <p v-if="proposal.data.translation && proposal.after" class="serif">
+                {{ proposal.data.translation }}
+            </p>
+            <p v-if="proposal.before && proposal.after === ''" class="caption">
+                The marked text would be removed.
+            </p>
+        </section>
+        <section class="stack why-section">
+            <h3>Why</h3>
+            <p>{{ plainProposalText(proposal.rationale) }}</p>
+            <p v-if="confidence" class="caption">
+                {{ confidence }}
+            </p>
+            <p v-if="gateWarning" class="error">
+                The cited text could not be verified. {{ gateWarning }}
+            </p>
+        </section>
+        <section v-if="evidence.length" class="stack">
+            <h3>From the texts</h3>
+            <ProposalEvidence
+                v-for="ref in evidence"
+                :key="`${ref.textId}:${ref.v}`"
+                :reference="ref"
+                :label="ref.label"
+            />
+        </section>
+        <p v-else class="caption">
+            No text passage was cited for this suggestion.
+        </p>
+        <section
+            v-if="latest"
+            class="decision-history stack"
+            aria-label="Current decision"
+        >
+            <p>
+                <strong>{{ verdictLabel(latest.verdict) }}</strong> ·
+                {{ latest.userName }}<br/><time :datetime="latest.createdAt">{{
+                    formatDate(latest.createdAt)
+                }}</time>
+            </p>
+            <p v-if="latest.comment">
+                {{ latest.comment }}
+            </p>
+            <p class="caption">
+                You can change this decision below.
+            </p>
+        </section>
+        <details v-if="history(proposal.id).length > 1" class="history">
+            <summary>
+                Earlier decisions ({{ history(proposal.id).length - 1 }})
+            </summary>
+            <p v-for="item in history(proposal.id).slice(1)" :key="item.id">
+                {{ verdictLabel(item.verdict) }} · {{ item.userName }} ·
+                {{ formatDate(item.createdAt) }}<br/>{{ item.comment }}
             </p>
         </details>
-        <form v-if="isApproved" class="review-form" @submit.prevent>
-            <label class="sr-only" :for="`comment-${proposal.id}`">
-                Optional comment for {{ proposal.summary }}
-            </label>
-            <input
-                :id="`comment-${proposal.id}`"
-                v-model="comment"
-                placeholder="Optional review comment…"
-                maxlength="5000"
-            />
-            <div class="row">
+        <form v-if="isApproved" class="review-form stack" @submit.prevent>
+            <div v-if="commentOpen" :id="`comment-area-${proposal.id}`" class="stack">
+                <label :for="`comment-${proposal.id}`">Comment (optional)</label>
+                <textarea
+                    :id="`comment-${proposal.id}`"
+                    v-model="comment"
+                    rows="3"
+                    maxlength="5000"
+                ></textarea>
+            </div>
+            <p v-if="saveError" role="alert" class="error">
+                {{ saveError }}
+            </p>
+            <div class="decision-bar" :class="{ 'decision-bar-fixed': queue }">
                 <button
-                    v-for="action in actions"
-                    :key="action.verdict"
-                    class="quiet review-action"
-                    :data-verdict="action.verdict"
-                    :disabled="pending.includes(proposal.id)"
-                    @click="submit(action.verdict)"
+                    class="text-button comment-toggle"
+                    :aria-expanded="commentOpen"
+                    :aria-controls="`comment-area-${proposal.id}`"
+                    @click="toggleComment"
                 >
-                    {{ action.label }}
+                    {{ commentOpen ? 'Hide comment' : 'Add a comment' }}
                 </button>
+                <button class="accept" :disabled="saving" @click="submit('accept')">
+                    {{ question ? "Noted" : "Accept" }}
+                </button>
+                <button
+                    class="quiet reject"
+                    :disabled="saving"
+                    @click="submit('reject')"
+                >
+                    {{ question ? "Dismiss" : "Reject" }}
+                </button>
+                <button
+                    class="quiet later"
+                    :disabled="saving"
+                    @click="submit('discuss')"
+                >
+                    {{ question ? "Discuss later" : "Decide later" }}
+                </button>
+                <span
+                    v-if="saving"
+                    class="sr-only"
+                    role="status"
+                >Saving decision…</span>
             </div>
         </form>
-        <p v-if="history(proposal.id)[0]" class="latest-review muted" aria-live="polite">
-            {{ history(proposal.id)[0]?.userName }} ·
-            {{ formatDate(history(proposal.id)[0]!.createdAt) }}
-        </p>
-        <p v-if="saveError" role="alert" class="error">
-            {{ saveError }}
+        <p v-if="saved" role="status">
+            Saved.
+            <button class="text-button" :disabled="undoing" @click="undoSaved">
+                Undo
+            </button>
         </p>
     </article>
 </template>
 
 <script setup lang="ts">
+import { inlineDiff } from '~/utils/inlineDiff'
+import { plainProposalText } from '~/utils/plainProposalText'
+import { proposalContext } from '~/utils/proposalContext'
+import type { IEntry } from '#shared/types/IEntry'
 import type { IProposal } from '#shared/types/IProposal'
+import type { IProposalReview } from '#shared/types/IProposalReview'
 import type { TReviewVerdict } from '#shared/types/TReviewVerdict'
-import { proposalFamily } from '#shared/utils/proposalFamily'
+import { entryHref } from '#shared/utils/entryHref'
+import { glossarySenses } from '#shared/utils/glossarySenses'
 
-const props = defineProps<{ proposal: IProposal }>()
-const emit = defineEmits<{ reviewed: [] }>()
+const props = withDefaults(
+    defineProps<{ proposal: IProposal
+        entry: IEntry | null
+        queue?: boolean }>(),
+    { queue: false }
+)
+const emit = defineEmits<{ reviewed: [review: IProposalReview] }>()
 const {
     history,
-    status,
     pending,
     review,
+    undo,
 } = useProposalReviews()
 const { isApproved } = useAuth()
-const { open } = useEvidence()
+const context = computed(() => proposalContext(props.entry, props.proposal))
 const comment = ref('')
-const saveError = ref('')
-const gate = computed(() => {
-    const value = props.proposal.data.gate
-    if (!value || typeof value !== 'object' || !('ok' in value) || typeof value.ok !== 'boolean')
-        return null
-    return {
-        ok: value.ok,
-        reason: 'reason' in value ? String(value.reason || '') : '',
+const commentOpen = ref(false)
+async function toggleComment() {
+    commentOpen.value = !commentOpen.value
+    if (commentOpen.value) {
+        await nextTick()
+        const field = document.getElementById(`comment-${props.proposal.id}`)
+        field?.focus({ preventScroll: true })
+        field?.scrollIntoView({ block: 'center' })
     }
-})
-const fields = computed(() =>
-    Object.entries(props.proposal.data).flatMap(([key, value]) => {
-        if (
-            value === null
-            || value === undefined
-            || value === ''
-            || key.endsWith('Id')
-            || key === 'confidence'
-            || (key === 'type' && props.proposal.kind === 'note')
-        )
-            return []
-        if (typeof value !== 'string' && typeof value !== 'number' && typeof value !== 'boolean')
-            return []
-        if (String(value) === props.proposal.after) return []
-        return [
-            {
-                key,
-                label: key.replace(/([A-Z])/gu, ' $1').replaceAll('_', ' '),
-                value: String(value),
-            },
-        ]
-    })
+}
+const saveError = ref('')
+const saved = ref<IProposalReview | null>(null)
+const undoing = ref(false)
+const saving = computed(() => pending.value.includes(props.proposal.id))
+const latest = computed(() => history(props.proposal.id)[0])
+const question = computed(() =>
+    ['question', 'note'].includes(props.proposal.kind)
 )
-const actions: { verdict: TReviewVerdict
-    label: string }[] = [
-    {
-        verdict: 'accept',
-        label: 'Accept',
-    },
-    {
-        verdict: 'reject',
-        label: 'Reject',
-    },
-    {
-        verdict: 'discuss',
-        label: 'Discuss',
-    },
-]
-function formatDate(value: string) {
-    return (
-        new Date(value).toLocaleString('en-GB', {
-            dateStyle: 'medium',
-            timeStyle: 'short',
-            timeZone: 'UTC',
-        }) + ' UTC'
+const addition = computed(() =>
+    [
+        'new-sense',
+        'add-example',
+        'new-idiom',
+        'new-stem',
+        'new-form',
+        'new-root',
+    ].includes(props.proposal.kind)
+)
+const isTuroyo = computed(() =>
+    ['turoyo', 'forms'].includes(props.proposal.target.field || '')
+)
+const diff = computed(() => {
+    const {
+        before,
+        after,
+    } = props.proposal
+    if (before === null || after === null || question.value) return []
+    const current = context.value.current
+    const full = before && current.includes(before) ? current : before
+    const proposed
+        = before && current.includes(before) ? current.replace(before, after) : after
+    return inlineDiff(full, proposed)
+})
+const confidence = computed(() =>
+    props.proposal.data.confidence === 'high'
+        ? 'The machine is fairly sure.'
+        : props.proposal.data.confidence === 'medium'
+            ? 'The machine is unsure. Please check carefully.'
+            : props.proposal.data.confidence === 'low'
+                ? 'The machine is uncertain. An editor’s judgement is needed.'
+                : ''
+)
+const gateWarning = computed(() => {
+    const gate = props.proposal.data.gate
+    return gate && typeof gate === 'object' && 'ok' in gate && gate.ok === false
+        ? 'reason' in gate
+            ? String(gate.reason)
+            : 'Check the printed source.'
+        : ''
+})
+const duplicateRoot = computed(() =>
+    String(
+        props.proposal.data.duplicate_of
+        || props.proposal.data.duplicate_of_entry
+        || props.proposal.data.duplicate_entry
+        || props.proposal.data.merge_entry
+        || props.proposal.data.keep_entry
+        || props.proposal.data.retain_entry
+        || props.proposal.data.other_entry
+        || props.proposal.entryId
     )
+)
+const moveDescription = computed(() => {
+    const {
+        stem,
+        box,
+        example,
+    } = context.value
+    const data = props.proposal.data
+    const toStemId = String(data.to_stem || data.to_stem_id || stem?.id || '')
+    const toStem
+        = props.entry?.stems.find(item => item.id === toStemId) || stem
+    const toSense = String(data.to_sense || '')
+    const targetSense
+        = toStem
+            && glossarySenses(toStem).find(
+                item => item.key === toSense || item.n === toSense
+            )
+    const from = context.value.sense
+        ? `meaning ${context.value.sense.key} “${context.value.sense.gloss}”`
+        : example?.sense
+            ? `meaning ${example.sense}`
+            : box?.label || 'its current position'
+    const rawBox = String(
+        data.to_box_label || data.to_box || data.to_box_id || ''
+    )
+    const toBox
+        = toStem?.boxes.find(item => item.id === rawBox)?.label || rawBox
+    const destination = [
+        toSense
+        && `meaning ${toSense}${targetSense ? ` “${targetSense.gloss}”` : ' (not defined in this entry)'}`,
+        toBox && `form ${toBox}`,
+        toStemId !== stem?.id && toStemId && `Stem ${toStem?.stem || toStemId}`,
+        data.to_entry && `verb ${data.to_entry}`,
+    ]
+        .filter(Boolean)
+        .join(' · ')
+    return destination
+        ? `Move from ${from}${box ? ` · ${box.label}` : ''} to ${destination}.`
+        : plainProposalText(props.proposal.summary)
+})
+const evidence = computed(() => {
+    const rows: { textId: string
+        v: number
+        cite: string
+        label: string }[] = []
+    function add(textId: string, v: number, cite: string, label: string) {
+        if (!rows.some(item => item.textId === textId && item.v === v))
+            rows.push({
+                textId,
+                v,
+                cite,
+                label,
+            })
+    }
+    function parse(text: string, label: string) {
+        for (const match of text.matchAll(
+            /(?<![\p{L}\d])(?:R)?(\d{1,3})\/(\d+)(?:[-–](\d+))?/gu
+        )) {
+            const end = Math.min(Number(match[3] || match[2]), Number(match[2]) + 8)
+            for (let v = Number(match[2]); v <= end; v++)
+                add(
+                    `R${match[1]!.padStart(3, '0')}`,
+                    v,
+                    `${Number(match[1])}/${v}`,
+                    label
+                )
+        }
+        for (const match of text.matchAll(/JL\s*(\d+)\.(\d+)\.(\d+)/gu))
+            add(
+                `JL${match[1]!.padStart(2, '0')}.${match[2]!.padStart(2, '0')}`,
+                Number(match[3]),
+                match[0],
+                label
+            )
+    }
+    if (props.proposal.kind === 'fix-citation')
+        parse(props.proposal.after || '', 'Suggested reference')
+    for (const ref of props.proposal.evidence)
+        add(ref.textId, ref.v, ref.cite, 'Cited passage')
+    for (const ref of context.value.example?.refs || [])
+        if (ref.textId && ref.verse !== null)
+            add(
+                ref.textId,
+                ref.verse,
+                ref.raw,
+                props.proposal.kind === 'fix-citation'
+                    ? 'Current reference'
+                    : 'Example in the text'
+            )
+    if (props.proposal.kind === 'fix-citation')
+        parse(props.proposal.before || '', 'Current reference')
+    for (const value of [props.proposal.data.ref, props.proposal.data.reference]) {
+        if (typeof value === 'string') parse(value, 'Source of the suggested addition')
+    }
+    return rows
+})
+function verdictLabel(verdict: TReviewVerdict) {
+    return verdict === 'accept'
+        ? question.value
+            ? 'Noted'
+            : 'Accepted'
+        : verdict === 'reject'
+            ? question.value
+                ? 'Dismissed'
+                : 'Rejected'
+            : 'For discussion later'
+}
+function formatDate(value: string) {
+    return new Date(value).toLocaleString('en-GB', {
+        dateStyle: 'medium',
+        timeStyle: 'short',
+        timeZone: 'UTC',
+    }) + ' UTC'
 }
 async function submit(verdict: TReviewVerdict) {
     saveError.value = ''
-    if (await review(props.proposal.id, props.proposal.entryId, verdict, comment.value)) {
+    const result = await review(
+        props.proposal.id,
+        props.proposal.entryId,
+        verdict,
+        comment.value
+    )
+    if (result) {
+        saved.value = result
         comment.value = ''
-        emit('reviewed')
+        emit('reviewed', result)
     }
-    else saveError.value = 'Review was not saved. Please retry.'
+    else saveError.value = 'Your decision was not saved. Please try again.'
+}
+async function undoSaved() {
+    if (!saved.value) return
+    undoing.value = true
+    if (await undo(saved.value)) saved.value = null
+    else saveError.value = 'The decision could not be undone. Please try again.'
+    undoing.value = false
 }
 </script>
 
 <style scoped>
 .proposal {
-    --family: var(--addition);
-    border-left: 3px solid var(--family);
-    background: color-mix(in srgb, var(--family) 5%, var(--paper));
-    padding: 0.9rem 1.1rem;
-    margin: 0.9rem 0;
-    font-size: 0.83rem;
+  gap: 1.5rem;
 }
-.family-correction {
-    --family: var(--correction);
+.summary {
+  font-size: 1.65rem;
 }
-.family-note {
-    --family: var(--note);
+.change-section,
+.why-section {
+  gap: 0.7rem;
 }
-.proposal-meta {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.55rem;
-    color: var(--family);
-    font-size: 0.65rem;
-}
-.machine-label {
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-}
-.priority {
-    margin-left: auto;
-}
-h4 {
-    font-weight: 600;
-    margin: 0.5rem 0;
-    font-size: 0.9rem;
-}
-.gate-warning {
-    border: 1px solid var(--correction);
-    color: var(--correction);
-    background: color-mix(in srgb, var(--correction) 8%, var(--paper));
-    padding: 0.6rem 0.8rem;
-    margin: 0.6rem 0;
-}
-.proposal-fields {
-    display: grid;
-    gap: 0.3rem;
-    margin-top: 0.7rem;
-}
-.proposal-fields > div {
-    display: grid;
-    grid-template-columns: 6rem 1fr;
-    gap: 0.6rem;
-}
-.proposal-fields dt {
-    color: var(--muted);
-    font-size: 0.65rem;
-    text-transform: capitalize;
-}
-.proposal-fields dd {
-    overflow-wrap: anywhere;
-    font-family: var(--font-serif);
-    font-size: 1.05rem;
-}
-.proposed-text {
-    font-size: 1.2rem;
-    white-space: pre-wrap;
-}
-.proposal-diff {
-    display: flex;
-    gap: 0.7rem;
-    align-items: baseline;
-    flex-wrap: wrap;
-    font-family: var(--font-serif);
-    font-size: 1.15rem;
-    white-space: pre-wrap;
+.inline-diff {
+  white-space: pre-wrap;
+  font-size: 1.3rem;
 }
 del {
-    color: var(--muted);
-    text-decoration-color: var(--correction);
+  color: var(--deletion);
+  background: color-mix(in srgb, var(--deletion) 8%, var(--paper));
+  text-decoration-thickness: 2px;
 }
 ins {
-    text-decoration: none;
-    background: color-mix(in srgb, var(--addition) 12%, transparent);
+  color: var(--addition);
+  background: color-mix(in srgb, var(--addition) 10%, var(--paper));
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
-.proposal-details {
-    margin-top: 0.7rem;
+del + ins { margin-left: .12em; }
+.proposed-text {
+  font-size: 1.3rem;
 }
-summary {
-    cursor: pointer;
-    color: var(--muted);
-    font-size: 0.75rem;
+.decision-history {
+  border-left: 3px solid var(--accent);
+  background: var(--panel);
+  padding: 1rem;
+  gap: 0.5rem;
 }
-.proposal-details p {
-    margin-top: 0.7rem;
+.history p {
+  margin: 0.8rem 0;
 }
-.evidence-links {
-    margin: 0.8rem 0;
+.comment-toggle {
+  grid-column: 1 / -1;
+  order: 2;
+  justify-self: center;
 }
-.verse-ref {
-    color: var(--accent);
-    text-decoration: underline;
-    font-size: 0.8rem;
+.decision-bar {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.6rem;
+  padding: 0.7rem 0;
 }
-.provenance {
-    font-size: 0.65rem;
-    color: var(--muted);
-    overflow-wrap: anywhere;
+.decision-bar button {
+  flex: 1;
+  min-height: 54px;
+  padding: 0.55rem;
 }
-.review-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.55rem;
-    margin-top: 0.9rem;
+.accept {
+  background: var(--accent);
+  color: var(--paper);
+  border-radius: 6px;
+  font-weight: 600;
 }
-.review-form input {
-    flex: 1;
-    min-width: 160px;
-    font-size: 0.75rem;
-    background: transparent;
+.reject {
+  color: var(--deletion);
 }
-.review-action {
-    font-size: 0.72rem;
-}
-.review-action[data-verdict='accept'] {
-    color: var(--addition);
-}
-.review-action[data-verdict='reject'] {
-    color: var(--correction);
-}
-.history {
+@media (max-width: 760px) {
+  .queue-card {
+    padding-bottom: 8rem;
+  }
+  .decision-bar-fixed {
+    position: fixed;
+    z-index: 20;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.65rem max(0.6rem, env(safe-area-inset-right))
+      calc(0.65rem + env(safe-area-inset-bottom));
+    background: var(--paper);
     border-top: 1px solid var(--rule);
-    margin-top: 0.7rem;
-    padding-top: 0.7rem;
-    display: grid;
-    gap: 0.5rem;
-    font-size: 0.72rem;
-}
-.latest-review {
-    margin-top: 0.5rem;
-    font-size: 0.65rem;
-}
-[data-status='rejected'] {
-    opacity: 0.7;
+    gap: 0.4rem;
+  }
+  .decision-bar-fixed button {
+    font-size: 0.889rem;
+  }
 }
 </style>

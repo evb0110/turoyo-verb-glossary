@@ -2,7 +2,7 @@
     <USlideover
         :open="!!selected"
         :title="`Verse ${selected?.cite || ''}`"
-        description="Evidence in context · three verses on either side"
+        description="Read the passage and the verses around it"
         @update:open="
             (value) => {
                 if (!value) selected = null

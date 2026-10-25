@@ -1,78 +1,58 @@
 <template>
-    <section v-if="location || example || idiom" class="target">
-        <p v-if="location" class="eyebrow">
-            {{ location }}
+    <section class="target stack">
+        <h3>In the glossary now</h3>
+        <p v-if="context.location" class="caption">
+            {{ context.location }}
         </p>
-        <template v-if="example">
-            <p class="turoyo serif">
-                <span v-if="example.sense" class="muted">{{ example.sense }}</span>
-                {{ example.turoyo || example.raw }}
+        <template v-if="context.example">
+            <p class="turoyo">
+                {{ context.example.turoyo || context.example.raw }}
             </p>
-            <p v-if="example.translation" class="serif">
-                {{ example.translation }}
+            <p v-if="context.example.translation" class="serif translation">
+                {{ context.example.translation }}
             </p>
-            <p class="refs muted">
-                {{ example.refs.map(ref => ref.raw).join(' · ') }}
+            <p v-if="context.example.refs.length" class="caption">
+                {{ context.example.refs.map((ref) => ref.raw).join(" · ") }}
+            </p>
+            <p v-if="context.example.note">
+                {{ context.example.note }}
             </p>
         </template>
-        <p v-else-if="idiom" class="serif">
-            {{ idiom.raw }}
+        <p v-else-if="context.idiom" class="serif">
+            {{ context.idiom.raw }}
+        </p>
+        <p v-else-if="context.current" class="serif">
+            {{ context.current }}
+        </p>
+        <p v-else-if="context.stem" class="serif">
+            {{ context.stem.forms }}<br/>{{ context.stem.sensesRaw }}
+        </p>
+        <p v-else-if="entry" class="serif">
+            {{ entry.head }}
+        </p>
+        <p v-else>
+            This verb is not in the glossary yet.
         </p>
     </section>
 </template>
 
 <script setup lang="ts">
+import { proposalContext } from '~/utils/proposalContext'
 import type { IEntry } from '#shared/types/IEntry'
 import type { IProposal } from '#shared/types/IProposal'
 
 const props = defineProps<{ entry: IEntry | null
     proposal: IProposal }>()
-
-const stem = computed(() =>
-    props.entry?.stems.find(
-        item =>
-            item.id === props.proposal.target.stemId
-            || props.proposal.target.boxId?.startsWith(`${item.id}.`)
-            || props.proposal.target.exampleId?.startsWith(`${item.id}.`)
-    ) || null
-)
-const box = computed(() =>
-    stem.value?.boxes.find(
-        item =>
-            item.id === props.proposal.target.boxId
-            || props.proposal.target.exampleId?.startsWith(`${item.id}.`)
-    ) || null
-)
-const example = computed(
-    () => box.value?.examples.find(item => item.id === props.proposal.target.exampleId) || null
-)
-const idiom = computed(
-    () => props.entry?.idioms.find(item => item.id === props.proposal.target.exampleId) || null
-)
-const location = computed(() => {
-    const parts: string[] = []
-    if (stem.value) parts.push(`Stem ${stem.value.stem}`)
-    if (box.value) parts.push(`${box.value.detransitive ? 'Detransitive ' : ''}${box.value.label}`)
-    if (idiom.value) parts.push('Idiomatic phrase')
-    return parts.join(' · ')
-})
+const context = computed(() => proposalContext(props.entry, props.proposal))
 </script>
 
 <style scoped>
 .target {
-    margin: 0 0 1rem;
-    padding: 0.8rem 1rem;
-    border: 1px solid var(--rule);
-    border-radius: 4px;
+  gap: 0.6rem;
+  padding-bottom: 1.3rem;
+  border-bottom: 1px solid var(--rule);
 }
-.turoyo {
-    font-style: italic;
-}
-.turoyo .muted {
-    font-style: normal;
-    margin-right: 0.5rem;
-}
-.refs {
-    font-size: 0.8rem;
+.translation {
+  font-size: 1.2rem;
 }
 </style>

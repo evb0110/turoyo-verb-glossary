@@ -13,10 +13,11 @@ export function useProposalReviews() {
         try {
             reviews.value = await request<IProposalReview[]>('/api/glossary/reviews')
             loaded.value = true
+            error.value = ''
         }
         catch {
             error.value
-                = 'Review history could not be loaded. The proposal review migration may be pending.'
+                = 'Earlier decisions could not be loaded. Please try again before reviewing.'
         }
     }
     function history(id: string) {
@@ -61,8 +62,10 @@ export function useProposalReviews() {
                     },
                 }
             )
-            reviews.value = reviews.value.map(item => (item.id === optimistic.id ? saved : item))
-            return true
+            reviews.value = reviews.value.map(item =>
+                item.id === optimistic.id ? saved : item
+            )
+            return saved
         }
         catch {
             reviews.value = reviews.value.filter(item => item.id !== optimistic.id)
@@ -73,6 +76,27 @@ export function useProposalReviews() {
             pending.value = pending.value.filter(id => id !== proposalId)
         }
     }
+    async function undo(item: IProposalReview) {
+        if (pending.value.includes(item.proposalId)) return false
+        pending.value.push(item.proposalId)
+        error.value = ''
+        try {
+            await $fetch(`/api/glossary/proposals/${item.proposalId}/review`, {
+                method: 'DELETE',
+                body: { reviewId: item.id },
+            })
+            reviews.value = reviews.value.filter(review => review.id !== item.id)
+            return true
+        }
+        catch {
+            error.value
+                = 'The decision could not be undone. It may have been changed by another editor. Reload to see the latest decision.'
+            return false
+        }
+        finally {
+            pending.value = pending.value.filter(id => id !== item.proposalId)
+        }
+    }
     return {
         reviews,
         error,
@@ -81,5 +105,6 @@ export function useProposalReviews() {
         history,
         status,
         review,
+        undo,
     }
 }

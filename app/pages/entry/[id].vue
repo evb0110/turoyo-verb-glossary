@@ -1,139 +1,98 @@
 <template>
-    <div v-if="data" class="entry-page">
-        <div class="entry-crumb">
-            <NuxtLink to="/">Glossary</NuxtLink>
-            <span>/</span>
-            <span>{{ rootLabel }}</span>
-            <span class="muted source">
-                {{ entry?.source.volume || 'Proposed entry' }}
-            </span>
-        </div>
-        <header class="entry-heading">
-            <p class="eyebrow">
-                {{ entry ? 'Dictionary entry' : 'Proposed new root' }}
-            </p>
+    <div v-if="data">
+        <NuxtLink to="/glossary" class="back-link">← Glossary</NuxtLink>
+        <header class="entry-heading stack">
             <h1>{{ rootLabel }}</h1>
             <p v-if="entry" class="entry-head serif">
                 {{ entry.head }}
             </p>
-            <div v-if="entry?.crossRefs.length" class="row cross-refs">
-                <span class="eyebrow">See also</span>
-                <NuxtLink v-for="ref in entry.crossRefs" :key="ref" :to="entryHref(ref)">
-                    {{ ref.replaceAll('-', ' ') }} ↗
-                </NuxtLink>
+            <p v-else class="muted">
+                Suggested new verb. This entry is not in the glossary yet.
+            </p>
+            <div v-if="entry?.crossRefs.length" class="row">
+                <span>See also</span><NuxtLink
+                    v-for="ref in entry.crossRefs"
+                    :key="ref"
+                    :to="entryHref(ref)"
+                >{{ ref.replaceAll("-", " ") }}</NuxtLink>
             </div>
         </header>
-        <div v-if="entry" class="entry-controls">
-            <div>
-                <p class="eyebrow control-label">
-                    Layers
-                </p>
-                <div class="segmented">
-                    <button
-                        v-for="item in layers"
-                        :key="item.value"
-                        :aria-pressed="layer === item.value"
-                        @click="layer = item.value"
-                    >
-                        {{ item.label }}
-                    </button>
-                </div>
-            </div>
-            <div>
-                <p class="eyebrow control-label">
-                    Examples
-                </p>
-                <div class="segmented">
-                    <button :aria-pressed="view === 'sense'" @click="view = 'sense'">
-                        By sense
-                    </button>
-                    <button :aria-pressed="view === 'box'" @click="view = 'box'">
-                        As in the glossary
-                    </button>
-                </div>
-            </div>
-        </div>
-        <p v-if="reviewError" class="error" role="alert">
+        <label
+            v-if="data.proposals.length"
+            class="suggestion-switch"
+        ><input v-model="showSuggestions" type="checkbox" role="switch"/> Show
+            machine suggestions ({{ data.proposals.length }})</label>
+        <p v-if="reviewError" role="alert" class="error">
             {{ reviewError }}
         </p>
-        <div v-if="layer !== 'glossary'" class="proposal-legend">
-            <span class="addition">● Additions</span>
-            <span class="correction">● Corrections</span>
-            <span class="note">● Notes & questions</span>
-            <span>
-                {{ data.proposals.length }} machine {{ data.proposals.length === 1 ? 'proposal' : 'proposals' }}
-                for this entry; a review records your decision and leaves the glossary text unchanged
-            </span>
-        </div>
-        <p v-if="!entry" class="proposed-root-note">
-            This root is absent from the glossary. Review the proposals and their evidence below.
-        </p>
-        <div class="entry-body">
-            <EntryOutline :items="outline"/>
-            <div class="entry-content">
-                <EntryStem
-                    v-for="stem in stems"
-                    :key="stem.id"
-                    :stem="stem"
-                    :proposals="stemProposals(stem.id)"
+        <EntryStem
+            v-for="stem in stems"
+            :key="stem.id"
+            :stem="stem"
+            :proposals="
+                visibleProposals.filter(
+                    (item) => proposalStem(item) === stem.id && !isIdiom(item)
+                )
+            "
+        />
+        <section
+            v-if="entry?.idioms.length || idiomProposals.length"
+            class="rule-section"
+        >
+            <h2>Idiomatic phrases</h2>
+            <div v-for="idiom in entry?.idioms" :key="idiom.id">
+                <GlossaryIdiom :idiom="idiom" :text-ids="data.textIds"/><ProposalNote
+                    v-for="proposal in idiomProposals.filter(
+                        (item) => item.target.exampleId === idiom.id
+                    )"
+                    :key="proposal.id"
+                    :proposal="proposal"
                 />
-                <section
-                    v-if="
-                        (layer !== 'proposals' && entry?.idioms.length)
-                            || (layer !== 'glossary' && idiomProposals.length)
-                    "
-                    id="entry-idioms"
-                    class="rule-section"
-                >
-                    <h2>Idiomatic phrases</h2>
-                    <template v-if="layer !== 'proposals'">
-                        <GlossaryIdiom
-                            v-for="idiom in entry?.idioms"
-                            :key="idiom.id"
-                            :idiom="idiom"
-                            :text-ids="data.textIds"
-                        />
-                    </template>
-                    <template v-if="layer !== 'glossary'">
-                        <ProposalCard
-                            v-for="proposal in idiomProposals"
-                            :key="proposal.id"
-                            :proposal="proposal"
-                        />
-                    </template>
-                </section>
-                <section
-                    v-if="
-                        (layer !== 'proposals' && entryNotes.length)
-                            || (layer !== 'glossary' && entryProposals.length)
-                    "
-                    id="entry-notes"
-                    class="rule-section"
-                >
-                    <h2>Notes & proposals</h2>
-                    <template v-if="layer !== 'proposals'">
-                        <p v-for="(note, n) in entryNotes" :key="n" class="entry-note serif">
-                            {{ note }}
-                        </p>
-                    </template>
-                    <ProposalCard
-                        v-for="proposal in layer === 'glossary' ? [] : entryProposals"
-                        :key="proposal.id"
-                        :proposal="proposal"
-                    />
-                </section>
-                <p v-if="layer === 'proposals' && !data.proposals.length" class="empty">
-                    No machine proposals for this entry yet.
-                </p>
             </div>
-        </div>
+            <ProposalNote
+                v-for="proposal in idiomProposals.filter(
+                    (item) =>
+                        !entry?.idioms.some((idiom) => idiom.id === item.target.exampleId)
+                )"
+                :key="proposal.id"
+                :proposal="proposal"
+            />
+        </section>
+        <section
+            v-if="entryNotes.length || entryProposals.length"
+            class="rule-section stack"
+        >
+            <h2>Notes</h2>
+            <p v-for="(note, n) in entryNotes" :key="n" class="serif">
+                {{ note }}
+            </p>
+            <ProposalNote
+                v-for="proposal in entryProposals"
+                :key="proposal.id"
+                :proposal="proposal"
+            />
+        </section>
+        <nav
+            class="root-navigation rule-section"
+            aria-label="Previous and next root"
+        >
+            <NuxtLink
+                v-if="previous"
+                :to="entryHref(previous.id)"
+            >← {{ previous.root
+            }}<span class="caption">Previous root</span></NuxtLink><NuxtLink
+                v-if="next"
+                :to="entryHref(next.id)"
+            >{{ next.root }} →<span class="caption">Next root</span></NuxtLink>
+        </nav>
     </div>
 </template>
 
 <script setup lang="ts">
+import type { IEntry } from '#shared/types/IEntry'
+import type { IProposal } from '#shared/types/IProposal'
 import type { IStem } from '#shared/types/IStem'
 import { entryHref } from '#shared/utils/entryHref'
-import { glossarySenses } from '#shared/utils/glossarySenses'
 
 const route = useRoute()
 const id = computed(() => String(route.params.id))
@@ -146,72 +105,57 @@ const {
 if (error.value)
     throw createError({
         statusCode: error.value.statusCode || 500,
-        statusMessage: error.value.data?.message || 'Entry could not be loaded.',
+        statusMessage: 'Entry could not be loaded.',
     })
-const entry = computed(() => data.value?.entry)
+const entry = computed<IEntry | null>(() => data.value?.entry || null)
+provide('glossary-entry', entry)
 const rootLabel = computed(
     () =>
         entry.value?.root
         || String(
-            data.value?.proposals.find(proposal => proposal.kind === 'new-root')?.data.root
-            || id.value
+            data.value?.proposals.find(item => item.kind === 'new-root')?.data
+                .root || id.value
         )
 )
-const preferences = useGlossaryPreferences()
-const { view } = preferences
-const layer = computed({
-    get: () => (entry.value ? preferences.layer.value : 'with'),
-    set: (value) => {
-        preferences.layer.value = value
-    },
-})
-const entryNotes = computed(() =>
-    (entry.value?.notes || []).filter(note => !/^idiomatic phrases\s*[:.]?$/iu.test(note.trim()))
-)
+const { isApproved } = useAuth()
+const showSuggestions = ref(isApproved.value)
 const {
     load,
     error: reviewError,
 } = useProposalReviews()
 await load()
-useHead({ title: rootLabel })
-const layers = [
-    {
-        value: 'glossary',
-        label: 'Glossary only',
-    },
-    {
-        value: 'with',
-        label: 'With proposals',
-    },
-    {
-        value: 'proposals',
-        label: 'Proposals only',
-    },
-] as const
+const visibleProposals = computed(() =>
+    showSuggestions.value ? data.value?.proposals || [] : []
+)
+const entryNotes = computed(() =>
+    (entry.value?.notes || []).filter(
+        note => !/^idiomatic phrases\s*[:.]?$/iu.test(note.trim())
+    )
+)
 const stems = computed(() => {
     const items: IStem[] = [...(entry.value?.stems || [])]
-    for (const proposal of layer.value === 'glossary' ? [] : data.value?.proposals || []) {
+    for (const proposal of visibleProposals.value)
         if (
-            proposal.kind !== 'new-stem'
-            || !proposal.target.stemId
-            || items.some(stem => stem.id === proposal.target.stemId)
+            proposal.kind === 'new-stem'
+            && proposal.target.stemId
+            && !items.some(stem => stem.id === proposal.target.stemId)
         )
-            continue
-        items.push({
-            id: proposal.target.stemId,
-            stem: String(proposal.data.stem || proposal.target.stemId.split('.').at(-1)),
-            forms: String(proposal.data.forms || ''),
-            senses: [],
-            sensesRaw: '',
-            detransitiveSenses: [],
-            detransitiveSensesRaw: null,
-            boxes: [],
-            notes: [],
-        })
-    }
+            items.push({
+                id: proposal.target.stemId,
+                stem: String(
+                    proposal.data.stem || proposal.target.stemId.split('.').at(-1)
+                ),
+                forms: '',
+                senses: [],
+                sensesRaw: '',
+                detransitiveSenses: [],
+                detransitiveSensesRaw: null,
+                boxes: [],
+                notes: [],
+            })
     return items
 })
-function proposalStem(proposal: NonNullable<typeof data.value>['proposals'][number]) {
+function proposalStem(proposal: IProposal) {
     return stems.value.find(
         stem =>
             proposal.target.stemId === stem.id
@@ -219,166 +163,74 @@ function proposalStem(proposal: NonNullable<typeof data.value>['proposals'][numb
             || proposal.target.exampleId?.startsWith(`${stem.id}.`)
     )?.id
 }
-function isIdiomProposal(proposal: NonNullable<typeof data.value>['proposals'][number]) {
-    return proposal.kind === 'new-idiom' || !!proposal.target.exampleId?.includes('.idiom.')
-}
-function stemProposals(stemId: string) {
-    return (data.value?.proposals || []).filter(
-        proposal => !isIdiomProposal(proposal) && proposalStem(proposal) === stemId
+function isIdiom(proposal: IProposal) {
+    return (
+        proposal.kind === 'new-idiom'
+        || !!entry.value?.idioms.some(
+            item => item.id === proposal.target.exampleId
+        )
+        || !!proposal.target.exampleId?.includes('.idiom.')
     )
 }
-const idiomProposals = computed(() => (data.value?.proposals || []).filter(isIdiomProposal))
+const idiomProposals = computed(() => visibleProposals.value.filter(isIdiom))
 const entryProposals = computed(() =>
-    (data.value?.proposals || []).filter(
-        proposal => !isIdiomProposal(proposal) && !proposalStem(proposal)
+    visibleProposals.value.filter(
+        item => !isIdiom(item) && !proposalStem(item)
     )
 )
-const outline = computed(() => {
-    const items: { id: string
-        label: string
-        depth?: number }[] = []
-    for (const stem of stems.value) {
-        items.push({
-            id: stem.id,
-            label: `Stem ${stem.stem}`,
-        })
-        for (const sense of glossarySenses(stem))
-            if (layer.value !== 'proposals')
-                items.push({
-                    id: `${stem.id}-sense-${sense.key}`,
-                    label: `${sense.key} · ${sense.gloss}`,
-                    depth: 1,
-                })
-        if (
-            (layer.value !== 'proposals' && stem.notes.length)
-            || (layer.value !== 'glossary'
-                && stemProposals(stem.id).some(p => ['note', 'question'].includes(p.kind)))
-        )
-            items.push({
-                id: `${stem.id}-notes`,
-                label: 'Notes',
-                depth: 1,
-            })
-    }
-    if (
-        (layer.value !== 'proposals' && entry.value?.idioms.length)
-        || (layer.value !== 'glossary' && idiomProposals.value.length)
-    )
-        items.push({
-            id: 'entry-idioms',
-            label: 'Idiomatic phrases',
-        })
-    if (
-        (layer.value !== 'proposals' && entryNotes.value.length)
-        || (layer.value !== 'glossary' && entryProposals.value.length)
-    )
-        items.push({
-            id: 'entry-notes',
-            label: 'Notes & proposals',
-        })
-    return items
-})
+const { data: index } = await useFetch('/api/glossary/roots')
+const position = computed(
+    () => index.value?.findIndex(item => item.id === id.value) ?? -1
+)
+const previous = computed(() =>
+    position.value > 0 ? index.value?.[position.value - 1] : null
+)
+const next = computed(() =>
+    position.value >= 0 ? index.value?.[position.value + 1] : null
+)
+useHead({ title: rootLabel })
 </script>
 
 <style scoped>
-.entry-body {
-    min-width: 0;
-}
-.entry-content {
-    min-width: 0;
-}
-.entry-content :deep([id]) {
-    scroll-margin-top: 24px;
-}
-@media (max-width: 1279px) {
-    .entry-content :deep([id]) {
-        scroll-margin-top: 60px;
-    }
-}
-@media (max-width: 780px) {
-    .entry-content :deep([id]) {
-        scroll-margin-top: 95px;
-    }
-}
-.proposed-root-note {
-    color: var(--muted);
-    margin: 1.5rem 0;
-}
-@media (min-width: 1280px) {
-    .entry-body {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) 175px;
-        gap: 2rem;
-    }
-    .entry-content {
-        grid-column: 1;
-        grid-row: 1;
-    }
-}
-
-.entry-crumb {
-    display: flex;
-    gap: 0.7rem;
-    align-items: center;
-    font-size: 0.7rem;
-    color: var(--muted);
-    margin: 0.2rem 0 2rem;
-}
-.source {
-    margin-left: auto;
-    font-size: 0.6rem;
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  margin-bottom: 1rem;
 }
 .entry-heading h1 {
-    font-size: clamp(3.5rem, 7vw, 5.4rem);
-    margin: 0.3rem 0 0.9rem;
+  font-size: 4rem;
 }
 .entry-head {
-    font-size: 1.25rem;
-    max-width: 52rem;
-    line-height: 1.65;
+  font-size: 1.3rem;
 }
-.cross-refs {
-    margin-top: 0.8rem;
-    font-size: 0.9rem;
+.entry-heading .row a {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
 }
-.entry-controls {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
-    margin: 2rem 0 1rem;
-    padding: 1.2rem 0;
-    border-top: 1px solid var(--rule);
-    border-bottom: 1px solid var(--rule);
+.suggestion-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 56px;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  padding: 1rem 0;
 }
-.control-label {
-    margin-bottom: 0.4rem;
-    font-size: 0.6rem;
+.root-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }
-.proposal-legend {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    font-size: 0.65rem;
-    color: var(--muted);
-    margin-bottom: 1.5rem;
+.root-navigation a {
+  display: grid;
+  gap: 0.3rem;
+  min-height: 48px;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
 }
-.addition {
-    color: var(--addition);
-}
-.correction {
-    color: var(--correction);
-}
-.note {
-    color: var(--note);
-}
-.entry-note {
-    margin: 0.7rem 0;
-    color: var(--muted);
-    font-size: 1.1rem;
-}
-.idiom {
-    margin: 1rem 0;
-    font-size: 1.2rem;
+.root-navigation .caption {
+  font-family: var(--font-sans);
 }
 </style>

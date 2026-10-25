@@ -1,315 +1,128 @@
 <template>
-    <div class="home-page">
-        <header class="home-intro">
-            <h1>Ṭuroyo verb glossary</h1>
-            <p>A working reference for the glossary, corpus readings and editorial review.</p>
-        </header>
-        <SearchExplorer/>
-        <section v-if="stats" class="run-section">
-            <div class="run-heading">
-                <h2>Reading the corpus</h2>
-                <NuxtLink to="/texts">Explore texts ↗</NuxtLink>
-            </div>
-            <p class="muted">
-                Agents compare each occurrence with the glossary. Every proposed change keeps its
-                evidence and awaits an editor’s judgement.
+    <div class="stack home">
+        <section
+            v-if="isApproved"
+            class="review-welcome stack"
+            aria-labelledby="review-title"
+        >
+            <p class="caption">
+                For the editors
             </p>
-            <div class="run-numbers">
-                <div>
-                    <strong>{{ stats.entries.toLocaleString() }}</strong>
-                    <span>glossary roots</span>
-                </div>
-                <div>
-                    <strong>
-                        {{ stats.read }}
-                        <small>/ {{ stats.texts }}</small>
-                    </strong>
-                    <span>texts read</span>
-                </div>
-                <div>
-                    <strong>{{ stats.proposals }}</strong>
-                    <span>machine proposals</span>
-                </div>
-                <div>
-                    <strong>{{ reviewed }}</strong>
-                    <span>proposals reviewed</span>
-                </div>
-            </div>
-            <progress
-                :value="stats.read"
-                :max="stats.texts || 1"
-                :aria-label="`${stats.read} of ${stats.texts} texts read`"
-            ></progress>
-            <p class="reading-total muted">
-                {{ stats.read }} read · {{ stats.partial }} partially read ·
-                {{ stats.texts - stats.read - stats.partial }} unread
+            <h1 id="review-title">
+                Review the suggested changes
+            </h1>
+            <p v-if="proposals">
+                The machine has suggested
+                {{ proposals.length.toLocaleString() }} changes to the glossary. You
+                have decided {{ decided.toLocaleString() }}.
             </p>
-            <div class="collection-progress">
-                <div
-                    v-for="item in stats.collections"
-                    :key="item.collection"
-                    class="collection-reading"
-                >
-                    <div>
-                        <NuxtLink to="/texts">{{ item.collection }}</NuxtLink>
-                        <span>{{ item.read }} read · {{ item.partial }} partial ·
-                            {{ item.unread }} unread</span>
-                    </div>
-                    <progress
-                        :value="item.read"
-                        :max="item.total || 1"
-                        :aria-label="`${item.collection}: ${item.read} read,
-                        ${item.partial} partial, ${item.unread} unread`"
-                    ></progress>
-                </div>
-            </div>
-            <div class="kind-summary">
-                <span v-for="(count, kind) in stats.kinds" :key="kind">
-                    {{ kind.replaceAll('-', ' ') }}
-                    <strong>{{ count }}</strong>
-                </span>
-            </div>
-        </section>
-        <p v-if="reviewError" class="error">
-            {{ reviewError }}
-        </p>
-        <section class="recent-proposals rule-section">
-            <div class="run-heading">
-                <h2>Recently proposed</h2>
-                <NuxtLink to="/review">Review queue ↗</NuxtLink>
-            </div>
-            <p class="muted recent-caption">
-                Open proposals, highest priority first.
+            <p v-else class="error">
+                Suggested changes could not be loaded. Please try again.
             </p>
             <NuxtLink
-                v-for="proposal in recent"
-                :key="proposal.id"
-                :to="`/review?proposal=${encodeURIComponent(proposal.id)}`"
-                class="recent-proposal"
-            >
-                <span class="pill">P{{ proposal.priority }}</span>
-                <span><strong>{{ proposal.entryId.replaceAll('-', ' ') }}</strong> ·
-                    {{ proposal.summary }}</span>
-                <small>{{ proposal.kind.replaceAll('-', ' ') }}</small>
-            </NuxtLink>
-            <p v-if="!recent.length" class="empty">
-                No open proposals yet.
-            </p>
-            <p v-if="proposalError" class="error">
-                Proposals could not be loaded.
-            </p>
+                to="/review"
+                class="primary"
+            >Start reviewing <span aria-hidden="true">→</span></NuxtLink>
         </section>
-        <div class="home-links">
-            <NuxtLink to="/review">
-                <span class="eyebrow">Editorial work</span>
-                <h3>Review the proposals ↗</h3>
-                <p>Compare a suggestion with its evidence and record a decision.</p>
-            </NuxtLink>
-            <NuxtLink to="/research">
-                <span class="eyebrow">Research notebook</span>
-                <h3>Questions from the texts ↗</h3>
-                <p>Trace recurring constructions and open linguistic questions.</p>
-            </NuxtLink>
-        </div>
+        <section class="lookup stack">
+            <h2>Find a verb</h2>
+            <form class="home-search" @submit.prevent="search">
+                <label for="home-query">Find a verb: root, form or meaning</label>
+                <input
+                    id="home-query"
+                    v-model="query"
+                    type="search"
+                    placeholder="e.g. sym or put"
+                />
+                <button class="primary" type="submit">
+                    Search
+                </button>
+            </form>
+            <NuxtLink to="/glossary" class="browse-link">Browse all verbs →</NuxtLink>
+        </section>
+        <section class="rule-section stack">
+            <h2>How this works</h2>
+            <p>
+                This glossary brings together Turoyo verbs and examples from the texts.
+                The machine has read the texts and suggested changes for the editors to
+                check. Your decisions are saved for the team; they do not change the
+                glossary text.
+            </p>
+            <NuxtLink to="/help">Read the guide →</NuxtLink>
+        </section>
+        <p v-if="reviewError" class="error" role="alert">
+            {{ reviewError }}
+        </p>
     </div>
 </template>
 
 <script setup lang="ts">
-const { data: stats } = await useFetch('/api/glossary/stats')
 const {
-    data: proposals,
-    error: proposalError,
-} = await useFetch('/api/glossary/proposals')
+    isApproved,
+    user,
+} = useAuth()
+const { data: proposals } = await useFetch('/api/glossary/proposals')
 const {
     reviews,
     load,
     error: reviewError,
-    status,
 } = useProposalReviews()
 await load()
-const reviewed = computed(
+const decided = computed(
     () =>
         new Set(
             reviews.value
-                .filter(review =>
-                    proposals.value?.some(proposal => proposal.id === review.proposalId)
+                .filter(
+                    item =>
+                        item.userId === user.value?.id
+                        && proposals.value?.some(p => p.id === item.proposalId)
                 )
-                .map(review => review.proposalId)
+                .map(item => item.proposalId)
         ).size
 )
-const recent = computed(() =>
-    (proposals.value || [])
-        .filter(proposal => status(proposal.id) === 'open')
-        .sort(
-            (a, b) =>
-                a.priority - b.priority
-                || b.provenance.date.localeCompare(a.provenance.date)
-                || a.id.localeCompare(b.id)
-        )
-        .slice(0, 6)
-)
-useHead({ title: 'Glossary' })
+const query = ref('')
+function search() {
+    return navigateTo({
+        path: '/glossary',
+        query: query.value.trim() ? { q: query.value.trim() } : {},
+    })
+}
+useHead({ title: 'Welcome' })
 </script>
 
 <style scoped>
-.home-page {
-    max-width: 960px;
-    margin: auto;
+.home {
+  gap: 2rem;
 }
-.home-intro {
-    padding: 1.5rem 0;
+.review-welcome {
+  border: 1px solid var(--rule);
+  border-top: 4px solid var(--accent);
+  border-radius: 8px;
+  padding: clamp(1.1rem, 4vw, 2rem);
+  background: var(--panel);
 }
-.home-intro h1 {
-    font-size: clamp(2rem, 3vw, 2.8rem);
-    margin: 0 0 0.7rem;
+.review-welcome h1 {
+  font-size: 2.2rem;
 }
-.home-intro em {
-    color: var(--accent);
-    font-weight: 400;
+.review-welcome .primary {
+  justify-self: start;
+  gap: 1.2rem;
 }
-.home-intro p:last-child {
-    color: var(--muted);
-    line-height: 1.8;
-    font-size: 0.9rem;
+.home-search {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.7rem;
 }
-.run-section {
-    border-top: 1px solid var(--rule);
-    margin-top: 3rem;
-    padding-top: 2rem;
+.home-search label {
+  grid-column: 1 / -1;
 }
-.run-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 1rem;
-    margin-bottom: 0.7rem;
+.browse-link {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-self: start;
 }
-.run-heading a {
-    font-size: 0.75rem;
-    white-space: nowrap;
-}
-.run-section > p {
-    font-size: 0.85rem;
-    max-width: 44rem;
-}
-.run-numbers {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 2rem 0 1.2rem;
-}
-.run-numbers > div {
-    border-left: 1px solid var(--rule);
-    padding-left: 1rem;
-}
-.run-numbers > div:first-child {
-    border: 0;
-    padding-left: 0;
-}
-.run-numbers strong {
-    font-family: var(--font-serif);
-    font-size: 2.4rem;
-    font-weight: 400;
-    display: block;
-    line-height: 1.2;
-}
-.run-numbers small {
-    font-size: 1.2rem;
-    color: var(--muted);
-}
-.run-numbers span {
-    font-size: 0.67rem;
-    color: var(--muted);
-}
-progress {
-    width: 100%;
-    height: 3px;
-    accent-color: var(--accent);
-    display: block;
-}
-.reading-total {
-    font-size: 0.7rem;
-    margin-top: 0.5rem;
-}
-.collection-progress {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
-    gap: 1rem 1.5rem;
-    margin-top: 1.5rem;
-}
-.collection-reading > div {
-    display: grid;
-    font-size: 0.7rem;
-    margin-bottom: 0.4rem;
-}
-.collection-reading span {
-    color: var(--muted);
-    font-size: 0.65rem;
-}
-.recent-caption {
-    font-size: 0.75rem;
-}
-.recent-proposal {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 0.6rem;
-    padding: 0.8rem 0;
-    border-bottom: 1px solid var(--rule);
-    text-decoration: none;
-    font-size: 0.8rem;
-}
-.recent-proposal small {
-    color: var(--muted);
-    margin-left: auto;
-}
-.kind-summary {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem 1rem;
-    font-size: 0.65rem;
-    color: var(--muted);
-    margin-top: 1rem;
-}
-.kind-summary strong {
-    color: var(--ink);
-    margin-left: 0.3rem;
-}
-.home-links {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    border-top: 1px solid var(--rule);
-    padding-top: 2rem;
-    margin-top: 2rem;
-}
-.home-links a {
-    text-decoration: none;
-    color: var(--ink);
-}
-.home-links h3 {
-    margin: 0.5rem 0;
-}
-.home-links p {
-    color: var(--muted);
-    font-size: 0.8rem;
-}
-@media (max-width: 600px) {
-    .home-intro {
-        padding-top: 1.8rem;
-    }
-    .run-numbers {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
-    }
-    .run-numbers > div:nth-child(3) {
-        border: 0;
-        padding-left: 0;
-    }
-    .home-links {
-        grid-template-columns: 1fr;
-    }
-    .desktop-break {
-        display: none;
-    }
+.rule-section {
+  margin-top: 0;
 }
 </style>

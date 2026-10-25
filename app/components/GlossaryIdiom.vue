@@ -60,12 +60,12 @@ const { open } = useEvidence()
 .verse-ref {
     color: var(--accent);
     text-decoration: underline;
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-family: var(--font-sans);
 }
 .idiom-raw {
     color: var(--muted);
-    font-size: 0.7rem;
+    font-size: .889rem;
     margin-top: 0.3rem;
 }
 .idiom-raw summary {

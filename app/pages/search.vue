@@ -1,16 +1,17 @@
 <template>
-    <div>
-        <header class="page-heading">
-            <p class="eyebrow">
-                Glossary & corpus
-            </p>
-            <h1>Search</h1>
-        </header>
-        <SearchExplorer :initial="String(route.query.q || '')" autofocus/>
-    </div>
+    <p>Opening the glossary…</p>
 </template>
 
 <script setup lang="ts">
 const route = useRoute()
-useHead({ title: 'Search' })
+await navigateTo(
+    {
+        path: '/glossary',
+        query: route.query,
+    },
+    {
+        redirectCode: 301,
+        replace: true,
+    }
+)
 </script>

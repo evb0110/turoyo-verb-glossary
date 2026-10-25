@@ -1,59 +1,50 @@
 <template>
     <div class="search-explorer">
         <form class="search-form" @submit.prevent="run">
-            <label class="sr-only" :for="inputId">
-                Search roots, forms, glosses and texts
-            </label>
+            <label :for="inputId">Find a verb: root, form or meaning</label>
             <input
                 :id="inputId"
-                ref="input"
                 v-model="query"
-                :autofocus="autofocus"
-                placeholder="A root, a word, a meaning…"
+                type="search"
+                placeholder="e.g. sym or put"
                 autocomplete="off"
             />
-            <button class="quiet" type="submit">
-                Search ↗
+            <button class="primary" type="submit">
+                Search
             </button>
         </form>
-        <div class="search-options">
-            <label>
-                <input v-model="regex" type="checkbox"/>
-                Regular expression
-            </label>
-            <span>Transcription-aware · stress and vowel marks optional</span>
-        </div>
-        <p v-if="regex" class="regex-help muted">
-            For example: s[əe]m.* or \bbook\b. Matching ignores case.
-        </p>
-        <p v-if="pending" role="status" class="muted">
+        <details class="search-options">
+            <summary>More options</summary>
+            <label class="row"><input v-model="regex" type="checkbox"/> Use a regular
+                expression</label>
+            <p class="caption">
+                Special transcription marks are optional in ordinary searches.
+            </p>
+        </details>
+        <p v-if="pending" role="status">
             Searching…
         </p>
-        <p v-else-if="error" role="alert" class="error">
+        <p v-else-if="error" class="error" role="alert">
             {{ error }}
         </p>
         <template v-else-if="response">
-            <p class="result-count muted" aria-live="polite">
-                {{ response.total }} matches · up to 30 shown per group
+            <p class="muted" aria-live="polite">
+                {{ response.total }} matches. Up to 30 shown in each group.
             </p>
             <section v-for="group in groups" :key="group.type" class="result-group">
-                <h3>
-                    {{ group.label }}
-                    <span class="muted">{{ response.counts[group.type] }}</span>
-                </h3>
+                <h2>{{ group.label }}</h2>
                 <NuxtLink
                     v-for="result in group.results"
                     :key="result.id"
                     :to="result.to"
                     class="search-result"
-                    @click="emit('navigate')"
                 >
                     <span class="result-title">{{ result.title }}</span>
                     <MatchSnippet :text="result.snippet" :ranges="result.ranges"/>
                 </NuxtLink>
             </section>
             <p v-if="!response.total" class="empty">
-                No matches. Try a base form or a shorter phrase.
+                No matches. Try a shorter word or a different spelling.
             </p>
         </template>
     </div>
@@ -63,12 +54,8 @@
 import { watchDebounced } from '@vueuse/core'
 import type { ISearchResult } from '#shared/types/ISearchResult'
 
-const props = defineProps<{ autofocus?: boolean
-    initial?: string }>()
-const emit = defineEmits<{ navigate: [] }>()
+const query = defineModel<string>({ default: '' })
 const inputId = useId()
-const input = ref<HTMLInputElement | null>(null)
-const query = ref(props.initial || '')
 const regex = ref(false)
 const pending = ref(false)
 const error = ref('')
@@ -100,7 +87,7 @@ async function run() {
         if (current === requestId)
             error.value
                 = (cause as { data?: { message?: string } }).data?.message
-                    || 'Search failed.'
+                    || 'Search could not be completed. Please try again.'
     }
     finally {
         if (current === requestId) pending.value = false
@@ -108,15 +95,14 @@ async function run() {
 }
 watchDebounced([query, regex], run, { debounce: 300 })
 onMounted(() => {
-    if (props.autofocus) input.value?.focus()
     if (query.value) run()
 })
 const labels = {
     root: 'Roots',
-    form: 'Attested forms',
-    gloss: 'Senses & meanings',
+    form: 'Turoyo forms',
+    gloss: 'Meanings',
     example: 'Glossary examples',
-    text: 'Corpus passages',
+    text: 'From the texts',
 }
 const groups = computed(() =>
     Object.entries(labels)
@@ -124,7 +110,7 @@ const groups = computed(() =>
             type,
             label,
             results:
-                response.value?.results.filter(result => result.type === type) || [],
+        response.value?.results.filter(result => result.type === type) || [],
         }))
         .filter(group => group.results.length)
 )
@@ -132,64 +118,33 @@ const groups = computed(() =>
 
 <style scoped>
 .search-form {
-    display: flex;
-    gap: 0.5rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.7rem;
 }
-.search-form input {
-    flex: 1;
-    width: 100%;
-    font-family: var(--font-serif);
-    font-size: 1.4rem;
-    padding: 0.7rem 1rem;
+.search-form label {
+  grid-column: 1 / -1;
 }
 .search-options {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 0.4rem;
-    margin: 0.6rem 0 1.2rem;
-    color: var(--muted);
-    font-size: 0.7rem;
+  margin: 0.7rem 0 1.4rem;
 }
-.search-options label {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-}
-.regex-help {
-    font-size: 0.75rem;
-}
-.result-count {
-    font-size: 0.72rem;
-    margin-bottom: 1.5rem;
+.search-options .caption {
+  margin-top: 0.7rem;
 }
 .result-group {
-    margin: 1.5rem 0;
-}
-.result-group h3 {
-    font-size: 1.3rem;
-    border-bottom: 1px solid var(--rule);
-    padding-bottom: 0.4rem;
-}
-.result-group h3 span {
-    font-family: var(--font-sans);
-    font-size: 0.65rem;
-    margin-left: 0.6rem;
+  margin-top: 1.8rem;
 }
 .search-result {
-    display: grid;
-    gap: 0.15rem;
-    padding: 0.8rem 0;
-    border-bottom: 1px solid var(--rule);
-    text-decoration: none;
-    color: var(--ink);
-    font-size: 0.85rem;
-}
-.search-result:hover {
-    background: var(--panel);
+  display: grid;
+  gap: 0.4rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--rule);
+  color: var(--ink);
+  text-decoration: none;
 }
 .result-title {
-    color: var(--accent);
-    font-size: 0.75rem;
+  color: var(--accent);
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
 }
 </style>

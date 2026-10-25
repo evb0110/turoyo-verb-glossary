@@ -1,58 +1,98 @@
 <template>
     <div v-if="data">
         <header class="page-heading">
-            <NuxtLink to="/texts" class="back-link">← Text corpus</NuxtLink>
-            <p class="eyebrow">
+            <NuxtLink to="/texts" class="back-link">← Texts</NuxtLink>
+            <p class="caption">
                 {{ data.collection }} · {{ data.cite }}
             </p>
             <h1>{{ data.title }}</h1>
-            <p v-if="data.speakerPlace" class="speaker-place">
+            <p v-if="data.speakerPlace">
                 Speaker/place: {{ data.speakerPlace }}
             </p>
-            <p>
-                {{ data.verses.length }} verses ·
+            <p class="caption">
                 {{
-                    data.lang
-                        ? `${data.lang === 'GERMAN' ? 'German' : 'English'} translation`
-                        : 'Untranslated'
+                    data.lang === "GERMAN"
+                        ? "German translation"
+                        : data.lang === "ENGLISH"
+                            ? "English translation"
+                            : "No translation available"
                 }}
-                ·
-                {{
-                    data.occurrences === undefined
-                        ? 'Awaiting agent reading'
-                        : `${data.occurrences.length} analysed occurrences`
-                }}
+                · {{ data.occurrences?.length ? "Verbs analysed" : "Not analysed yet" }}
             </p>
         </header>
-        <div class="reader-legend">
-            <span>Solid underline · analysed verb</span>
-            <span class="suggested-key">Dashed underline · suggested addition</span>
-            <span class="proposed-key">Double underline · linked proposal</span>
-            <span>Hover for analysis · tap to inspect · open the linked sense</span>
-        </div>
-        <div class="reader-head">
-            <span></span>
-            <span>Ṭuroyo</span>
-            <span>Translation</span>
-        </div>
+        <p class="reader-instruction">
+            Tap an underlined verb to see its meaning and open the glossary entry.
+        </p>
         <CorpusVerse
             v-for="verse in data.verses"
             :key="verse.v"
             :verse="verse"
-            :occurrences="(data.occurrences || []).filter((item) => item.v === verse.v)"
+            :occurrences="
+                (data.occurrences || []).filter((item) => item.v === verse.v)
+            "
             :flags="(data.alignment || []).filter((item) => item.v === verse.v)"
             :selected="verse.v === targetVerse"
         />
         <p
-            v-if="targetVerse !== null && !data.verses.some((verse) => verse.v === targetVerse)"
+            v-if="
+                targetVerse !== null
+                    && !data.verses.some((verse) => verse.v === targetVerse)
+            "
             class="error"
         >
             Verse {{ targetVerse }} is not present in this text.
         </p>
+        <UModal
+            :open="!!selected"
+            :title="
+                selected
+                    ? `${selected.verb.root} · Stem ${selected.verb.stem}`
+                    : 'Verb meaning'
+            "
+            description="Meaning of this verb in the text"
+            :ui="{
+                content:
+                    'max-sm:bottom-0 max-sm:top-auto max-sm:translate-y-0 max-sm:rounded-b-none'
+            }"
+            @update:open="
+                (value) => {
+                    if (!value) selected = null;
+                }
+            "
+        >
+            <template #body>
+                <div v-if="selected" class="stack verb-panel">
+                    <p class="turoyo">
+                        {{ selected.verb.form }}
+                    </p>
+                    <p>{{ selected.verb.meaning }}</p>
+                    <NuxtLink
+                        v-if="selected.verb.entryId"
+                        class="primary"
+                        :to="
+                            entryHref(
+                                selected.verb.entryId,
+                                `${selected.verb.entryId}.${selected.verb.stem}`,
+                                selected.verb.sense
+                            )
+                        "
+                        @click="selected = null"
+                    >Open glossary entry →</NuxtLink>
+                    <p v-else>
+                        This verb is not in the glossary yet.
+                    </p>
+                    <button class="quiet" @click="selected = null">
+                        Close
+                    </button>
+                </div>
+            </template>
+        </UModal>
     </div>
 </template>
 
 <script setup lang="ts">
+import { entryHref } from '#shared/utils/entryHref'
+
 const route = useRoute()
 const {
     data,
@@ -65,6 +105,11 @@ if (error.value)
         statusCode: error.value.statusCode || 500,
         statusMessage: 'Text could not be loaded.',
     })
+const { selected } = useReaderVerb()
+selected.value = null
+onBeforeUnmount(() => {
+    selected.value = null
+})
 const targetVerse = computed(() =>
     route.query.v !== undefined && Number.isSafeInteger(Number(route.query.v))
         ? Number(route.query.v)
@@ -85,42 +130,19 @@ useHead({ title: computed(() => data.value?.title || 'Text') })
 
 <style scoped>
 .back-link {
-    font-size: 0.75rem;
-    display: inline-block;
-    margin-bottom: 1.5rem;
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  margin-bottom: 0.7rem;
 }
 .page-heading h1 {
-    font-size: clamp(2rem, 4vw, 3.2rem);
-    max-width: 55rem;
+  margin-top: 0.6rem;
 }
-.reader-legend {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 1.5rem;
-    color: var(--accent);
-    font-size: 0.65rem;
-    margin-bottom: 1.5rem;
+.reader-instruction {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--rule);
 }
-.proposed-key {
-    color: var(--note);
-}
-.suggested-key {
-    color: var(--correction);
-}
-.reader-head {
-    display: grid;
-    grid-template-columns: 2rem 1fr 1fr;
-    gap: 1.5rem;
-    padding: 0.5rem 1rem;
-    border-bottom: 1px solid var(--rule);
-    font-size: 0.65rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--muted);
-}
-@media (max-width: 680px) {
-    .reader-head {
-        display: none;
-    }
+.verb-panel {
+  font-size: 1rem;
 }
 </style>

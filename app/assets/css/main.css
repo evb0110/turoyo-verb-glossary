@@ -1,46 +1,275 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-@font-face { font-family: Gentium; src: url('/fonts/GentiumPlus-Regular.ttf') format('truetype'); font-style: normal; font-weight: 400 700; font-display: swap; }
-@font-face { font-family: Gentium; src: url('/fonts/GentiumPlus-Italic.ttf') format('truetype'); font-style: italic; font-weight: 400 700; font-display: swap; }
-@theme { --font-sans: ui-sans-serif, system-ui, sans-serif; --font-serif: Gentium, 'Noto Serif', Georgia, serif; }
-:root { --paper: #fbf9f4; --panel: #f2efe6; --ink: #292c28; --muted: #6e7168; --rule: #d9d9cd; --accent: #346958; --addition: #276f60; --correction: #956028; --note: #69619a; --ui-primary: #346958; --ui-bg: var(--paper); --ui-text: var(--ink); }
-.dark { --paper: #1b201e; --panel: #242c28; --ink: #e3e5db; --muted: #a6afa4; --rule: #3c4840; --accent: #a1c5b2; --addition: #9ad0bb; --correction: #e1b77c; --note: #bcb1e2; --ui-primary: #a1c5b2; }
-html { background: var(--paper); color: var(--ink); scroll-behavior: smooth; scroll-padding-top: 5rem; }
-body { margin: 0; font-size: 15px; line-height: 1.65; }
-h1, h2, h3, h4, p { margin: 0; }
-h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 400; }
-h1 { font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.12; }
-h2 { font-size: 2rem; line-height: 1.25; }
-h3 { font-size: 1.45rem; line-height: 1.35; }
-a { color: var(--accent); text-underline-offset: .2em; }
-button, input, select, textarea { font: inherit; }
-button, a { -webkit-tap-highlight-color: transparent; }
-button { cursor: pointer; }
-button:disabled { cursor: wait; opacity: .55; }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
-input, select, textarea { background: var(--paper); color: var(--ink); border: 1px solid var(--rule); border-radius: 4px; padding: .5rem .7rem; min-width: 0; }
-input[type=checkbox] { accent-color: var(--accent); }
-textarea { width: 100%; resize: vertical; }
-button.quiet, .quiet { border: 1px solid var(--rule); border-radius: 4px; padding: .35rem .65rem; background: transparent; color: var(--ink); font-size: .82rem; text-decoration: none; }
-button.quiet:hover, a.quiet:hover { background: var(--panel); }
-.eyebrow { font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
-.muted { color: var(--muted); }
-.turoyo { font-family: var(--font-serif); font-style: italic; font-size: 1.22em; }
-.page-heading { padding: 2rem 0; border-bottom: 1px solid var(--rule); margin-bottom: 2rem; }
-.page-heading p { max-width: 45rem; margin-top: 1rem; color: var(--muted); }
-.page-heading .eyebrow { margin-bottom: .6rem; }
-.stack { display: grid; gap: 1rem; }
-.row { display: flex; align-items: center; flex-wrap: wrap; gap: .6rem; }
-.segmented { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--rule); border-radius: 5px; padding: 3px; gap: 3px; }
-.segmented button { padding: .35rem .6rem; border-radius: 3px; color: var(--muted); font-size: .78rem; }
-.segmented button[aria-pressed=true] { background: var(--ink); color: var(--paper); }
-.pill { font-size: .68rem; border: 1px solid currentColor; padding: .05rem .4rem; border-radius: 3px; display: inline-block; white-space: nowrap; }
-.rule-section { border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: 1.5rem; }
-.empty { padding: 2rem 0; color: var(--muted); }
-.error { color: var(--correction); padding: 1rem 0; }
-mark { background: #e9da9f; color: #302d20; padding: 0 .05em; }
-.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
-[id] { scroll-margin-top: 5rem; }
-::selection { background: color-mix(in srgb, var(--accent) 25%, transparent); }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@font-face {
+  font-family: Gentium;
+  src: url("/fonts/GentiumPlus-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: Gentium;
+  src: url("/fonts/GentiumPlus-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+}
+@theme {
+  --font-sans: ui-sans-serif, system-ui, sans-serif;
+  --font-serif: Gentium, Georgia, serif;
+  --text-xs: 0.889rem;
+  --text-sm: 1rem;
+}
+:root {
+  --paper: #fbf9f4;
+  --panel: #f0eee5;
+  --ink: #252c28;
+  --muted: #505b54;
+  --rule: #b8c0b7;
+  --accent: #245e4b;
+  --addition: #216044;
+  --correction: #754815;
+  --deletion: #9b302c;
+  --note: #59477c;
+  --ui-primary: #245e4b;
+  --ui-bg: var(--paper);
+  --ui-text: var(--ink);
+  --ui-text-muted: var(--muted);
+  --ui-text-dimmed: var(--muted);
+}
+.dark {
+  --paper: #1b231f;
+  --panel: #28332c;
+  --ink: #f1f1e7;
+  --muted: #bec9bf;
+  --rule: #66766a;
+  --accent: #acd9bf;
+  --addition: #a4dfb7;
+  --correction: #efc58e;
+  --deletion: #ffb5ab;
+  --note: #d4c0f3;
+  --ui-primary: #acd9bf;
+}
+html {
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.55;
+  scroll-padding-top: 1rem;
+}
+body {
+  margin: 0;
+  font-size: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+.serif {
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
+h1 {
+  font-size: clamp(2.3rem, 6vw, 3rem);
+  line-height: 1.15;
+}
+h2 {
+  font-size: 1.8rem;
+  line-height: 1.25;
+}
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.35;
+}
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button,
+a,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+button,
+input:not([type="checkbox"]),
+select,
+summary,
+[role="button"] {
+  min-height: 48px;
+}
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+input,
+select,
+textarea {
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 0.65rem 0.75rem;
+  min-width: 0;
+  max-width: 100%;
+}
+input[type="checkbox"] {
+  accent-color: var(--accent);
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+textarea {
+  width: 100%;
+  resize: vertical;
+}
+button.quiet,
+.quiet {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 48px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 0.5rem 0.8rem;
+  background: var(--paper);
+  color: var(--ink);
+  text-decoration: none;
+}
+button.quiet:hover,
+a.quiet:hover {
+  background: var(--panel);
+}
+.primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--paper);
+  text-decoration: none;
+  font-weight: 600;
+}
+.text-button {
+  color: var(--accent);
+  text-decoration: underline;
+  padding: 0.5rem 0.25rem;
+}
+.eyebrow,
+.caption {
+  font-size: 0.889rem;
+  color: var(--muted);
+}
+.muted {
+  color: var(--muted);
+}
+.turoyo {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.55;
+}
+.page-heading {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+.page-heading p {
+  margin-top: 0.8rem;
+}
+.stack {
+  display: grid;
+  gap: 1rem;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+.pill {
+  font-size: 0.889rem;
+}
+.rule-section {
+  border-top: 1px solid var(--rule);
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+.empty {
+  padding: 1.5rem 0;
+  color: var(--muted);
+}
+.error {
+  color: var(--deletion);
+  padding: 1rem 0;
+}
+mark {
+  background: #eedc99;
+  color: #302d20;
+}
+summary {
+  cursor: pointer;
+  padding: 0.65rem 0;
+  color: var(--accent);
+}
+details[open] > summary {
+  margin-bottom: 0.6rem;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+[id] {
+  scroll-margin-top: 1rem;
+}
+::selection {
+  background: color-mix(in srgb, var(--accent) 25%, transparent);
+}
+.site-main {
+  overflow-wrap: anywhere;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+input::placeholder, textarea::placeholder { color: var(--muted); opacity: 1; }
+
+:where(a[href]) {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    min-width: 48px;
+}
+button { min-width: 48px; }
