@@ -2,6 +2,7 @@ import { randomUUID } from 'node:crypto'
 import { getDatabase } from '~~/server/db'
 import { proposalReview } from '~~/server/db/schema'
 import { devReviews } from '~~/server/repositories/reviews/devReviews'
+import { ensureProposalReviewTable } from '~~/server/repositories/reviews/ensureProposalReviewTable'
 import type { IProposalReview } from '#shared/types/IProposalReview'
 
 export async function saveProposalReview(input: Omit<IProposalReview, 'id' | 'createdAt'>): Promise<IProposalReview> {
@@ -14,6 +15,7 @@ export async function saveProposalReview(input: Omit<IProposalReview, 'id' | 'cr
         devReviews.unshift(review)
         return review
     }
+    await ensureProposalReviewTable()
     const [saved] = await getDatabase().insert(proposalReview).values({
         id: review.id,
         proposalId: input.proposalId,
