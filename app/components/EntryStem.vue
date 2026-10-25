@@ -20,18 +20,18 @@
             @toggle="matrixOpen = ($event.target as HTMLDetailsElement).open"
         >
             <summary>
-                {{ matrixSenses.length }} senses × {{ stem.boxes.length }} boxes ·
-                {{ thinCells }} thin cells
+                Examples by sense and form: {{ matrixSenses.length }}
+                {{ matrixSenses.length === 1 ? 'sense' : 'senses' }} × {{ stem.boxes.length }}
+                {{ stem.boxes.length === 1 ? 'form' : 'forms' }}<template v-if="thinCells">
+                    · {{ thinCells }} {{ thinCells === 1 ? 'cell' : 'cells' }} with three examples or
+                    fewer
+                </template>
             </summary>
             <div class="matrix-scroll">
                 <table class="coverage-matrix">
-                    <caption>
-                        Examples by sense and box
-                        <span>· dotted cells have 1–3 examples; blanks have none</span>
-                    </caption>
                     <thead>
                         <tr>
-                            <th scope="col">
+                            <th scope="col" class="sense-col">
                                 Sense
                             </th>
                             <th v-for="box in stem.boxes" :key="box.id" scope="col">
@@ -40,28 +40,25 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr v-for="sense in matrixSenses" :key="sense.key" :title="sense.gloss">
-                            <th
-                                scope="row"
-                                tabindex="0"
-                                :aria-label="`${sense.key}: ${sense.gloss}`"
-                            >
-                                {{ sense.key === '?' ? 'Unnumbered' : sense.key }}
-                                <span class="matrix-gloss">{{ sense.gloss }}</span>
+                        <tr v-for="sense in matrixSenses" :key="sense.key">
+                            <th scope="row" class="sense-col" :title="sense.gloss">
+                                <span class="matrix-key">{{ sense.key === '?' ? '—' : sense.key }}</span>
+                                <span class="matrix-gloss">{{ sense.gloss || 'Unnumbered examples' }}</span>
                             </th>
                             <td v-for="box in stem.boxes" :key="box.id">
                                 <button
                                     v-if="count(box, sense.key)"
                                     :class="{
-                                        thin:
-                                            count(box, sense.key) > 0 && count(box, sense.key) <= 3,
+                                        thin: count(box, sense.key) <= 3,
                                         chosen: focus?.box === box.id && focus.sense === sense.key
                                     }"
                                     :aria-label="cellLabel(box, sense.key)"
+                                    :title="cellLabel(box, sense.key)"
                                     @click="jump(sense.key, box.id)"
                                 >
                                     {{ count(box, sense.key) }}
                                 </button>
+                                <span v-else class="empty" aria-hidden="true">·</span>
                             </td>
                         </tr>
                     </tbody>
@@ -349,62 +346,64 @@ function jump(sense: string, box: string) {
 .matrix-scroll {
     overflow-x: auto;
 }
-.matrix-gloss {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 18rem;
-    white-space: normal;
-    padding: 0.5rem;
-    background: var(--paper);
-    border: 1px solid var(--rule);
-    z-index: 3;
-}
-th[scope='row'] {
-    position: relative;
-}
-tr:hover .matrix-gloss,
-th:focus .matrix-gloss {
-    display: block;
-}
 .coverage-matrix {
-    border-collapse: separate;
-    border-spacing: 4px;
-    font-size: 0.65rem;
-    min-width: 100%;
-}
-caption {
-    text-align: left;
-    color: var(--muted);
-    padding-bottom: 0.5rem;
-}
-caption span {
-    font-size: 0.6rem;
+    border-collapse: collapse;
+    font-size: 0.75rem;
 }
 th {
     font-weight: 400;
     color: var(--muted);
     white-space: nowrap;
+    text-align: center;
+    padding: 0.3rem 0.6rem;
+    border-bottom: 1px solid var(--rule);
+}
+td {
+    text-align: center;
+    padding: 0.2rem 0.6rem;
+    border-bottom: 1px solid var(--rule);
+}
+.sense-col {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: var(--paper);
     text-align: left;
-    padding: 0.2rem 0.3rem;
+    max-width: 16rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 0;
+}
+.matrix-key {
+    display: inline-block;
+    min-width: 1.6rem;
+    color: var(--ink);
+}
+.matrix-gloss {
+    color: var(--muted);
 }
 td button {
-    width: 100%;
-    min-width: 2.4rem;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    padding: 0.2rem;
+    min-width: 2rem;
+    border: 0;
+    border-radius: 3px;
+    padding: 0.15rem 0.4rem;
     color: var(--accent);
-    background: transparent;
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    cursor: pointer;
+}
+td button:hover {
+    background: color-mix(in srgb, var(--accent) 24%, transparent);
 }
 td .thin {
-    border-style: dotted;
-    border-color: var(--correction);
+    color: var(--correction);
+    background: color-mix(in srgb, var(--correction) 10%, transparent);
 }
 td .chosen {
     background: var(--accent);
     color: var(--paper);
+}
+.empty {
+    color: var(--rule);
 }
 .sense-section {
     margin: 1.7rem 0;
