@@ -1,30 +1,19 @@
 <template>
-    <div
-        v-if="isPending"
-        class="bg-orange-50 dark:bg-orange-900/20 border-b border-orange-200 dark:border-orange-800"
-    >
-        <div class="container mx-auto px-4 py-4 max-w-5xl">
-            <div class="flex flex-col items-center gap-3 text-center">
-                <Icon
-                    name="i-heroicons-clock"
-                    class="w-6 h-6 text-orange-600 dark:text-orange-400"
-                />
-                <div>
-                    <h3
-                        class="text-sm font-semibold text-orange-900 dark:text-orange-200"
-                    >
-                        Account Pending Approval
-                    </h3>
-                    <p class="text-sm text-orange-700 dark:text-orange-300">
-                        Your account is pending approval. An admin will review your
-                        request shortly.
-                    </p>
-                </div>
-            </div>
-        </div>
+    <div v-if="isPending" class="pending" role="status">
+        <strong>Your account is waiting for approval.</strong>
+        The project team will approve it soon; you will then see the glossary and the suggested changes.
     </div>
 </template>
 
 <script setup lang="ts">
 const { isPending } = useAuth()
 </script>
+
+<style scoped>
+.pending {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--rule);
+    background: var(--panel);
+    text-align: center;
+}
+</style>
