@@ -50,7 +50,7 @@ print("=" * 80)
 print("SEARCHING FOR MISSING ETYMOLOGIES IN DOCX SOURCE")
 print("=" * 80)
 
-docx_dir = Path('.devkit/new-source-docx')
+docx_dir = Path('source/glossary-docx/2026-10-21')
 docx_files = sorted(docx_dir.glob('*.docx'))
 
 for root in missing_roots:

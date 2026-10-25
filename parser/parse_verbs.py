@@ -811,7 +811,7 @@ def main():
     print("TUROYO VERB GLOSSARY - MASTER PARSER")
     print("=" * 80)
 
-    parser = TuroyoVerbParser('source/Turoyo_all_2024.html')
+    parser = TuroyoVerbParser('source/glossary-html/Turoyo_all_2024.html')
 
     parser.parse_all()
 

@@ -355,7 +355,7 @@ class ParsingValidator:
 def main():
     """Run validation."""
     validator = ParsingValidator(
-        docx_dir='.devkit/new-source-docx',
+        docx_dir='source/glossary-docx/2026-10-21',
         json_dir='.devkit/analysis/docx_v2_verbs'
     )
 

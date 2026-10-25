@@ -4,7 +4,7 @@
 
 **`parse_docx_production.py`** - Production DOCX parser
 
-- **Source:** `.devkit/new-source-docx/*.docx` (7 DOCX files organized by letter)
+- **Source:** `source/glossary-docx/2026-10-21/*.docx` (7 DOCX files organized by letter)
 - **Output:** `server/assets/verbs/*.json` (1,502 individual verb files)
 - **Status:** ✅ PRODUCTION - Use this parser
 
@@ -47,7 +47,7 @@ cp .devkit/analysis/docx_v2_verbs/*.json server/assets/verbs/
 
 **`parse_verbs.py`** - Old HTML-based parser
 
-- **Source:** `source/Turoyo_all_2024.html` (single HTML file)
+- **Source:** `source/glossary-html/Turoyo_all_2024.html` (single HTML file)
 - **Status:** ⚠️ DEPRECATED - Do not use
 - **Replaced by:** DOCX parser (better accuracy, formatting-based extraction)
 

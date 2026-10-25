@@ -9,7 +9,7 @@ import re
 from pathlib import Path
 
 # Open the DOCX file
-doc = Document('.devkit/new-source-docx/3. h,ḥ,k.docx')
+doc = Document('source/glossary-docx/2026-10-21/3. h,ḥ,k.docx')
 
 # Find hyw 1 paragraphs (roughly 142-194 based on previous investigation)
 turoyo_chars = r'ʔʕbčdfgġǧhḥklmnpqrsṣštṭvwxyzžḏṯẓāēīūə'

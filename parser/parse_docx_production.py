@@ -2204,7 +2204,7 @@ class FixedDocxParser:
 
 def main():
     parser = FixedDocxParser()
-    parser.parse_all_files('.devkit/new-source-docx')
+    parser.parse_all_files('source/glossary-docx/2026-10-21')
 
     parser.save_json('.devkit/analysis/docx_v2_parsed.json')
     parser.split_into_files('.devkit/analysis/docx_v2_verbs')

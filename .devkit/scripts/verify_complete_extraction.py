@@ -11,7 +11,7 @@ print("PART 1: VERIFY TABLE EXTRACTION")
 print("="*80)
 
 # Extract from DOCX tables
-doc = Document('.devkit/new-source-docx/3. h,ḥ,k.docx')
+doc = Document('source/glossary-docx/2026-10-21/3. h,ḥ,k.docx')
 
 root_pattern = re.compile(r'^(hyw\s+1)\s*[<(]', re.UNICODE)
 in_hyw1 = False
@@ -92,7 +92,7 @@ print("PART 2: VERIFY NON-TABLE EXTRACTION")
 print("="*80)
 
 # Extract non-table paragraphs from DOCX
-doc = Document('.devkit/new-source-docx/3. h,ḥ,k.docx')
+doc = Document('source/glossary-docx/2026-10-21/3. h,ḥ,k.docx')
 
 in_hyw1 = False
 has_stem = False

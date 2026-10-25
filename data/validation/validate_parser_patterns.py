@@ -13,7 +13,7 @@ import json
 from pathlib import Path
 from collections import defaultdict
 
-SOURCE_HTML = Path('source/Turoyo_all_2024.html')
+SOURCE_HTML = Path('source/glossary-html/Turoyo_all_2024.html')
 
 
 def load_source_html():

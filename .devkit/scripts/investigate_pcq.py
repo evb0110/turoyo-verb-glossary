@@ -8,7 +8,7 @@ Actual: "prčq cf. Kurd. p'erçiqandin vt. (-p'erçiq-). 1"
 from docx import Document
 import re
 
-docx_path = '.devkit/new-source-docx/4. l,m,n,p.docx'
+docx_path = 'source/glossary-docx/2026-10-21/4. l,m,n,p.docx'
 doc = Document(docx_path)
 
 print("=" * 80)

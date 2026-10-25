@@ -5,7 +5,7 @@ from lxml import etree
 from pathlib import Path
 import html
 
-DOCX_DIR = ".devkit/new-source-docx"
+DOCX_DIR = "source/glossary-docx/2026-10-21"
 OUTPUT_FILE = ".devkit/analysis/turoyo_verbs_reference.html"
 XMLNS = {
     'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main',

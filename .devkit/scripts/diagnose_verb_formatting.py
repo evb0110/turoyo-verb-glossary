@@ -67,7 +67,7 @@ def diagnose_verb(docx_path, target_root):
                 break
 
 def main():
-    docx_dir = Path('.devkit/new-source-docx')
+    docx_dir = Path('source/glossary-docx/2026-10-21')
 
     diagnose_verb(docx_dir / '4. l,m,n,p.docx', 'pčq')
     diagnose_verb(docx_dir / '6. š,t,ṭ,ṯ.docx', 'ṯny')

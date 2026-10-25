@@ -8,7 +8,7 @@ import re
 from pathlib import Path
 from docx import Document
 
-DOCX_DIR = Path(".devkit/new-source-docx")
+DOCX_DIR = Path("source/glossary-docx/2026-10-21")
 JSON_DIR = Path("server/assets/verbs")
 
 DOCX_FILES = {

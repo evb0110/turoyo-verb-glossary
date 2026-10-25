@@ -13,7 +13,7 @@ from parse_docx_production import FixedDocxParser
 parser = FixedDocxParser()
 
 # Load the DOCX file
-doc = Document('.devkit/new-source-docx/6. š,t,ṭ,ṯ.docx')
+doc = Document('source/glossary-docx/2026-10-21/6. š,t,ṭ,ṯ.docx')
 
 # Build element map
 elements = []

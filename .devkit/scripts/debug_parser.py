@@ -28,7 +28,7 @@ def is_stem_header(para):
     has_stem = re.match(r'^([IVX]+):\s*', para.text.strip())
     return has_bold and has_italic and has_14pt and has_stem
 
-doc = Document('.devkit/new-source-docx/4. l,m,n,p.docx')
+doc = Document('source/glossary-docx/2026-10-21/4. l,m,n,p.docx')
 
 # Build elements
 elements = []

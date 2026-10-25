@@ -6,7 +6,7 @@ from docx.table import Table
 from pathlib import Path
 
 # Find all DOCX files
-docx_dir = Path('.devkit/new-source-docx')
+docx_dir = Path('source/glossary-docx/2026-10-21')
 docx_files = sorted(docx_dir.glob('*.docx'))
 
 print("Searching for 'str' verb in DOCX files...")

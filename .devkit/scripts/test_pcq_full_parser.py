@@ -18,7 +18,7 @@ print("=" * 80)
 parser = FixedDocxParser()
 
 # Load the DOCX
-docx_path = '.devkit/new-source-docx/4. l,m,n,p.docx'
+docx_path = 'source/glossary-docx/2026-10-21/4. l,m,n,p.docx'
 doc = Document(docx_path)
 
 print(f"\n📖 Loading: {docx_path}")

@@ -156,7 +156,7 @@ cases = [
 ]
 
 def main():
-    docx_dir = Path('.devkit/new-source-docx')
+    docx_dir = Path('source/glossary-docx/2026-10-21')
 
     print("="*80)
     print("EMPTY TUROYO CASE ANALYSIS")

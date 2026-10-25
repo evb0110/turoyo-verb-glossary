@@ -60,18 +60,14 @@ __pycache__/
 *.pyc
 .archive/
 
-# DevKit temporary and source files
+# DevKit temporary files
 .devkit/analysis/
-.devkit/new-source-docx/
 .devkit/tmp/
 .devkit/debug/
 
 # ==========================================
 # PRIVATE DATA (not for version control)
 # ==========================================
-
-# Source data (proprietary HTML source)
-source/
 
 # App data (user-specific data)
 server/assets/appdata/

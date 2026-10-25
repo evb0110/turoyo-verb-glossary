@@ -3,7 +3,7 @@
 
 from docx import Document
 
-doc = Document('.devkit/new-source-docx/3. h,ḥ,k.docx')
+doc = Document('source/glossary-docx/2026-10-21/3. h,ḥ,k.docx')
 
 # Find the paragraph with ʕafu
 for para in doc.paragraphs:

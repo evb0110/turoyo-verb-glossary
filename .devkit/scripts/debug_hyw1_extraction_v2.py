@@ -10,7 +10,7 @@ import re
 
 parser = FixedDocxParser()
 
-doc = Document('.devkit/new-source-docx/3. h,ḥ,k.docx')
+doc = Document('source/glossary-docx/2026-10-21/3. h,ḥ,k.docx')
 
 root_pattern = re.compile(r'^(hyw\s+1)\s*[<(]', re.UNICODE)
 stem_pattern = re.compile(r'^([IVX]+|Pa\.|Af\.|Št\.|Šaf\.):\s*', re.UNICODE)

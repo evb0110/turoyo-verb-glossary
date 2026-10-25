@@ -4,7 +4,7 @@
 from docx import Document
 import re
 
-doc = Document('.devkit/new-source-docx/3. h,ḥ,k.docx')
+doc = Document('source/glossary-docx/2026-10-21/3. h,ḥ,k.docx')
 
 root_pattern = re.compile(r'^(hyw\s+1)\s*[<(]', re.UNICODE)
 

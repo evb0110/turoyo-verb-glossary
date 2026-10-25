@@ -109,8 +109,8 @@ turoyo-verb-glossary/
 │   └── services/                 # Business logic
 ├── .devkit/                      # Parser + validation tooling (DOCX-based)
 │   ├── analysis/                 # Reports and parsed DOCX output
-│   ├── new-source-docx/          # DOCX source files (local only)
 │   └── scripts/                  # Parser + validation scripts
+├── source/                       # Primary sources (see source/README.md)
 ├── public/                       # Static assets
 └── nuxt.config.ts               # Nuxt configuration
 ```
@@ -142,7 +142,7 @@ The application follows a clean three-layer architecture:
 DOCX source → DOCX parser → JSON files → API → Frontend
 ```
 
-- **Source**: `.devkit/new-source-docx/*.docx` (private DOCX files, not committed)
+- **Source**: `source/glossary-docx/2026-10-21/*.docx` (catalogue in `source/README.md`)
 - **Parser (production)**: `.devkit/scripts/parse_docx_v2_fixed.py`
 - **Parser output**:
   - Combined: `.devkit/analysis/docx_v2_parsed.json`

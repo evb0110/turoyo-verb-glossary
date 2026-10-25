@@ -40,7 +40,7 @@ from parse_docx_debug import FixedDocxParser
 
 print("Running parser with debug output...\n")
 parser = FixedDocxParser()
-parser.parse_document_with_tables(Path('.devkit/new-source-docx/4. l,m,n,p.docx'))
+parser.parse_document_with_tables(Path('source/glossary-docx/2026-10-21/4. l,m,n,p.docx'))
 
 nql = next((v for v in parser.verbs if v['root'] == 'nql'), None)
 

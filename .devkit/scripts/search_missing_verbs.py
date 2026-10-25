@@ -398,7 +398,7 @@ def main():
     searcher = MissingVerbSearcher()
 
     # Search all files
-    findings = searcher.search_all_files('.devkit/new-source-docx')
+    findings = searcher.search_all_files('source/glossary-docx/2026-10-21')
 
     # Analyze failures
     searcher.analyze_parser_failures()

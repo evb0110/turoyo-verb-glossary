@@ -31,7 +31,7 @@ def analyze_paragraph(para, max_text=100):
     return result
 
 def main():
-    docx_path = Path('.devkit/new-source-docx/1. ʔ, ʕ, b, č.docx')
+    docx_path = Path('source/glossary-docx/2026-10-21/1. ʔ, ʕ, b, č.docx')
 
     print("=" * 80)
     print(f"ANALYZING: {docx_path.name}")

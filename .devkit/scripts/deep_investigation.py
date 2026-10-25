@@ -111,14 +111,14 @@ def find_and_analyze_verb(docx_path, verb_root):
 def main():
     # High-priority verbs to investigate
     investigations = [
-        ('.devkit/new-source-docx/2. d, f, g, ġ, ǧ.docx', 'ḏyr'),  # 11 stems - HIGHEST
-        ('.devkit/new-source-docx/6. š,t,ṭ,ṯ.docx', 'šry'),         # 3 stems - should work?
-        ('.devkit/new-source-docx/6. š,t,ṭ,ṯ.docx', 'th'),          # 3 stems
-        ('.devkit/new-source-docx/2. d, f, g, ġ, ǧ.docx', 'gʕgs'),  # 2 stems
-        ('.devkit/new-source-docx/6. š,t,ṭ,ṯ.docx', 'šbḥ'),         # 2 stems
-        ('.devkit/new-source-docx/1. ʔ, ʕ, b, č.docx', 'bzr'),      # 1 stem
-        ('.devkit/new-source-docx/6. š,t,ṭ,ṯ.docx', 'tky'),         # 1 stem - should work?
-        ('.devkit/new-source-docx/7. v, w, x, y, z, ž.docx', 'zyr 2'), # 1 stem - should work?
+        ('source/glossary-docx/2026-10-21/2. d, f, g, ġ, ǧ.docx', 'ḏyr'),  # 11 stems - HIGHEST
+        ('source/glossary-docx/2026-10-21/6. š,t,ṭ,ṯ.docx', 'šry'),         # 3 stems - should work?
+        ('source/glossary-docx/2026-10-21/6. š,t,ṭ,ṯ.docx', 'th'),          # 3 stems
+        ('source/glossary-docx/2026-10-21/2. d, f, g, ġ, ǧ.docx', 'gʕgs'),  # 2 stems
+        ('source/glossary-docx/2026-10-21/6. š,t,ṭ,ṯ.docx', 'šbḥ'),         # 2 stems
+        ('source/glossary-docx/2026-10-21/1. ʔ, ʕ, b, č.docx', 'bzr'),      # 1 stem
+        ('source/glossary-docx/2026-10-21/6. š,t,ṭ,ṯ.docx', 'tky'),         # 1 stem - should work?
+        ('source/glossary-docx/2026-10-21/7. v, w, x, y, z, ž.docx', 'zyr 2'), # 1 stem - should work?
     ]
 
     for docx_path, verb_root in investigations:

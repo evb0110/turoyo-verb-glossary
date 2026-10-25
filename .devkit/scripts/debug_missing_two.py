@@ -15,7 +15,7 @@ print("DEBUGGING STILL-MISSING ETYMOLOGIES")
 print("=" * 80)
 
 for root, filename in roots_to_debug.items():
-    docx_path = Path(f'.devkit/new-source-docx/{filename}')
+    docx_path = Path(f'source/glossary-docx/2026-10-21/{filename}')
     doc = Document(docx_path)
 
     print(f"\n{'=' * 80}")

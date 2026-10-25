@@ -11,7 +11,7 @@ from docx import Document
 parser = FixedDocxParser()
 
 # Open the DOCX file with hyw 1
-doc = Document('.devkit/new-source-docx/3. h,ḥ,k.docx')
+doc = Document('source/glossary-docx/2026-10-21/3. h,ḥ,k.docx')
 
 # Find hyw 1 manually
 import re

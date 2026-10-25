@@ -199,7 +199,7 @@ def main():
     empty_cases = load_empty_cases()
     print(f"\n📋 Found {len(empty_cases)} empty Turoyo cases\n")
 
-    docx_dir = Path('.devkit/new-source-docx')
+    docx_dir = Path('source/glossary-docx/2026-10-21')
 
     # Group by root for efficiency
     cases_by_root = defaultdict(list)

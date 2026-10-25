@@ -3,7 +3,7 @@ import re
 from pathlib import Path
 from docx import Document
 
-doc = Document('.devkit/new-source-docx/6. š,t,ṭ,ṯ.docx')
+doc = Document('source/glossary-docx/2026-10-21/6. š,t,ṭ,ṯ.docx')
 
 elements = []
 for el in doc.element.body:

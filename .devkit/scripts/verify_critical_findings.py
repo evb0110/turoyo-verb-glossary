@@ -65,7 +65,7 @@ def main():
 
     th_variants = ['th', 'thy', 'thw', 'thʕ', 'tho', 'tha']
     results = search_for_variants(
-        Path('.devkit/new-source-docx/6. š,t,ṭ,ṯ.docx'),
+        Path('source/glossary-docx/2026-10-21/6. š,t,ṭ,ṯ.docx'),
         'th',
         th_variants
     )

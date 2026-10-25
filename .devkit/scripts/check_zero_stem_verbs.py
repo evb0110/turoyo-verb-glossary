@@ -60,7 +60,7 @@ def check_verb_in_docx(docx_path, target_root):
     print(f'\n{target_root} not found in {docx_path.name}')
     return None
 
-docx_dir = Path('.devkit/new-source-docx')
+docx_dir = Path('source/glossary-docx/2026-10-21')
 output_dir = Path('.devkit/analysis/docx_v2_verbs')
 
 zero_stem_verbs = []

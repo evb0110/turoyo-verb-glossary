@@ -6,7 +6,7 @@ from lxml import etree
 import zipfile
 from docx import Document
 
-DOCX_DIR = ".devkit/new-source-docx"
+DOCX_DIR = "source/glossary-docx/2026-10-21"
 HTML_FILE = ".devkit/analysis/turoyo_verbs_reference.html"
 VALIDATION_REPORT = ".devkit/analysis/html_conversion_validation.json"
 

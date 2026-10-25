@@ -146,8 +146,8 @@ def main():
 
     # Parse only the files containing our target verbs
     files = [
-        '.devkit/new-source-docx/6. š,t,ṭ,ṯ.docx',
-        '.devkit/new-source-docx/7. v, w, x, y, z, ž.docx'
+        'source/glossary-docx/2026-10-21/6. š,t,ṭ,ṯ.docx',
+        'source/glossary-docx/2026-10-21/7. v, w, x, y, z, ž.docx'
     ]
 
     parser.parse_files(files)

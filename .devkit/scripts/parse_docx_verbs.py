@@ -319,7 +319,7 @@ def main():
     print("=" * 80)
 
     parser = DocxVerbParser()
-    parser.parse_all_files('.devkit/new-source-docx')
+    parser.parse_all_files('source/glossary-docx/2026-10-21')
 
     parser.save_json('.devkit/analysis/docx_parsed.json')
 

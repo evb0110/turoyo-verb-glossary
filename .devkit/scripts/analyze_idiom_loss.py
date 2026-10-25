@@ -140,7 +140,7 @@ class IdiomLossAnalyzer:
 
     def analyze_all(self):
         """Analyze all DOCX files in the source directory"""
-        source_dir = Path('.devkit/new-source-docx')
+        source_dir = Path('source/glossary-docx/2026-10-21')
         docx_files = sorted(source_dir.glob('*.docx'))
 
         if not docx_files:

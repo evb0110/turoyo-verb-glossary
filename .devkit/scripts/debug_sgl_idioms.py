@@ -77,7 +77,7 @@ FixedDocxParser.parse_document = debug_parse
 # Run parser on the specific DOCX file
 if __name__ == '__main__':
     parser = FixedDocxParser()
-    docx_path = '/Users/evb/WebstormProjects/turoyo-verb-glossary/.devkit/new-source-docx/6. š,t,ṭ,ṯ.docx'
+    docx_path = '/Users/evb/WebstormProjects/turoyo-verb-glossary/source/glossary-docx/2026-10-21/6. š,t,ṭ,ṯ.docx'
 
     print("=" * 80)
     print("DEBUG: Parsing šġl verbs from DOCX")

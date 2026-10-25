@@ -11,7 +11,7 @@ print("=" * 80)
 print("FINDING VERBS WITH MALFORMED PARENTHESES")
 print("=" * 80)
 
-docx_files = sorted(Path('.devkit/new-source-docx').glob('*.docx'))
+docx_files = sorted(Path('source/glossary-docx/2026-10-21').glob('*.docx'))
 
 total_cases = 0
 cases_by_file = {}

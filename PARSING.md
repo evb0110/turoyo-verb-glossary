@@ -8,8 +8,8 @@ If you need to touch the data, follow this file and **do not edit JSON by hand**
 
 ## Single Source of Truth
 
-- **Source DOCX files**: `.devkit/new-source-docx/*.docx`  
-  (private, not committed; 7 files grouped by letters)
+- **Source DOCX files**: `source/glossary-docx/2026-10-21/*.docx`  
+  (7 volumes grouped by letters; catalogue in `source/README.md`)
 - **Production parser**: `.devkit/scripts/parse_docx_v2_fixed.py`
 - **Parser output (combined)**: `.devkit/analysis/docx_v2_parsed.json`
 - **Parser output (per-verb)**: `.devkit/analysis/docx_v2_verbs/*.json`
@@ -24,7 +24,7 @@ All server API routes read from `server/assets/verbs` via Nitro storage (`useSto
 From DOCX to deployed JSON:
 
 ```text
-.devkit/new-source-docx/*.docx
+source/glossary-docx/2026-10-21/*.docx
       │
       │  (1) parse_docx_v2_fixed.py
       ▼
@@ -54,7 +54,7 @@ python3 .devkit/scripts/parse_docx_v2_fixed.py
 
 This will:
 
-- Read all `.devkit/new-source-docx/*.docx`
+- Read all `source/glossary-docx/2026-10-21/*.docx`
 - Produce `.devkit/analysis/docx_v2_parsed.json`
 - Produce `.devkit/analysis/docx_v2_verbs/*.json` (one file per root)
 
@@ -116,7 +116,7 @@ These files are bundled by Nitro and used by:
 
 If you see a data problem:
 
-1. Reproduce it by inspecting the DOCX source under `.devkit/new-source-docx`.
+1. Reproduce it by inspecting the DOCX source under `source/glossary-docx/2026-10-21`.
 2. Fix the relevant logic in `.devkit/scripts/parse_docx_v2_fixed.py` (or a dedicated helper script if you are doing a temporary experiment).
 3. Re-run the full pipeline:
    - `parse_docx_v2_fixed.py`
