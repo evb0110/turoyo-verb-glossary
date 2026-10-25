@@ -61,8 +61,8 @@
             <span class="correction">● Corrections</span>
             <span class="note">● Notes & questions</span>
             <span>
-                {{ data.proposals.length }} proposals · accepting records a decision; source text
-                stays visible
+                {{ data.proposals.length }} machine {{ data.proposals.length === 1 ? 'proposal' : 'proposals' }}
+                for this entry; a review records your decision and leaves the glossary text unchanged
             </span>
         </div>
         <p v-if="!entry" class="proposed-root-note">
