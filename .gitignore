@@ -99,3 +99,6 @@ data/baseline/
 !data/validation/regression_summary.json
 !data/validation/pattern_validation_report.json
 /.playwright-mcp/
+
+# Corpus texts (third-party editions, from the private aramaictexts repo); built locally by the pipeline
+server/assets/glossary/texts/

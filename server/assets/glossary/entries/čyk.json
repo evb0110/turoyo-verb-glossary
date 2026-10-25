@@ -1,0 +1,752 @@
+{
+  "id": "čyk",
+  "root": "čyk",
+  "homonym": null,
+  "head": "čyk (< Kurd. çeqandin cf. Ku 156: колоть, втыкать;)",
+  "crossRefs": [],
+  "notes": [
+    "Idiomatic phrases:"
+  ],
+  "stems": [
+    {
+      "id": "čyk.I",
+      "stem": "I",
+      "forms": "čəkle/čoyək",
+      "senses": [
+        {
+          "n": "1",
+          "gloss": "hineinstecken, stiessen, schieben,"
+        },
+        {
+          "n": "2",
+          "gloss": "schlüpfen, hineinkriechen, schleichen, durchdrängen, geraten (mit ruḥo) ???,"
+        }
+      ],
+      "sensesRaw": "1) hineinstecken, stiessen, schieben, 2) schlüpfen, hineinkriechen, schleichen, durchdrängen, geraten (mit ruḥo) ???,",
+      "detransitiveSenses": [
+        {
+          "n": "2",
+          "gloss": "čīk/mičək schleichen, geraten, durchdringen;"
+        },
+        {
+          "n": "3",
+          "gloss": "(ḥarb) entbrennen (Kampf),"
+        },
+        {
+          "n": "4",
+          "gloss": "(lebe) sich verlieben;"
+        },
+        {
+          "n": "5",
+          "gloss": "‘to plunge’ (into water)"
+        }
+      ],
+      "detransitiveSensesRaw": "čīk/mičək\n2) schleichen, geraten, durchdringen; 3) (ḥarb) entbrennen (Kampf), 4) (lebe) sich verlieben; 5) ‘to plunge’ (into water)",
+      "boxes": [
+        {
+          "id": "čyk.I.t.preterit",
+          "label": "Preterit",
+          "rawLabel": "Preterit",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "čyk.I.t.preterit.1",
+              "sense": "1",
+              "turoyo": "čəkle u=sayfo b-gawe",
+              "translation": "er stiess ihm das Schwert in den Bauch",
+              "refs": [
+                {
+                  "raw": "506",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "prs 106/13",
+                  "kind": "prs",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "1) čəkle u=sayfo b-gawe ʻer stiess ihm das Schwert in den Bauchʼ; 506; prs 106/13;"
+            },
+            {
+              "id": "čyk.I.t.preterit.2",
+              "sense": "1",
+              "turoyo": "čəkle u=rawš-ayḏe taḥt i=walaye",
+              "translation": "er schob seine Schaufel unter die Stadt",
+              "refs": [
+                {
+                  "raw": "506",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "73/429",
+                  "kind": "text",
+                  "textId": "R073",
+                  "verse": 429
+                }
+              ],
+              "note": null,
+              "raw": "čəkle u=rawš-ayḏe taḥt i=walaye ʻer schob seine Schaufel unter die Stadtʼ; 506; 73/429;"
+            },
+            {
+              "id": "čyk.I.t.preterit.3",
+              "sense": "1",
+              "turoyo": "čəkla b-u=naqwo",
+              "translation": "sie steckte ihn in das Loch",
+              "refs": [
+                {
+                  "raw": "506",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "prs 184/7",
+                  "kind": "prs",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "čəkla b-u=naqwo ʻsie steckte ihn in das Lochʼ; 506; prs 184/7;"
+            },
+            {
+              "id": "čyk.I.t.preterit.4",
+              "sense": "2",
+              "turoyo": "čəkle ruḥe taḥt i=kone",
+              "translation": "er schlüpfte unter das Zelt",
+              "refs": [
+                {
+                  "raw": "506",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "29/62",
+                  "kind": "text",
+                  "textId": "R029",
+                  "verse": 62
+                }
+              ],
+              "note": null,
+              "raw": "2) čəkle ruḥe taḥt i=kone ʻer schlüpfte unter das Zeltʼ; 506; 29/62;"
+            },
+            {
+              "id": "čyk.I.t.preterit.5",
+              "sense": "2",
+              "turoyo": "azzé dūz doġri čəkle ruḥe bayn ar=rəšwone",
+              "translation": "Er ging gerade zu und schlüpfte zwischen die Packsättel der Esel",
+              "refs": [
+                {
+                  "raw": "29/400",
+                  "kind": "text",
+                  "textId": "R029",
+                  "verse": 400
+                }
+              ],
+              "note": null,
+              "raw": "azzé dūz doġri čəkle ruḥe bayn ar=rəšwone ‘Er ging gerade zu und schlüpfte zwischen die Packsättel der Esel’; 29/400"
+            }
+          ]
+        },
+        {
+          "id": "čyk.I.t.infectum",
+          "label": "Infectum",
+          "rawLabel": "Infectum",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "čyk.I.t.infectum.1",
+              "sense": "1",
+              "turoyo": "k-čoyək iḏe b-aḏne d-u=ḥmoro",
+              "translation": "da streckte er seine Pfote in das Ohr des Esels hinein",
+              "refs": [
+                {
+                  "raw": "518",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "prs 191/31",
+                  "kind": "prs",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "45/6",
+                  "kind": "text",
+                  "textId": "R045",
+                  "verse": 6
+                },
+                {
+                  "raw": "94/466",
+                  "kind": "text",
+                  "textId": "R094",
+                  "verse": 466
+                }
+              ],
+              "note": null,
+              "raw": "1) k-čoyək iḏe b-aḏne d-u=ḥmoro ʻda streckte er seine Pfote in das Ohr des Esels hineinʼ; 518; prs 191/31; 45/6; 94/466;"
+            },
+            {
+              "id": "čyk.I.t.infectum.2",
+              "sense": "1",
+              "turoyo": "ko-čoyakn-e b-i=nuro, mšaḥann-e w loyafn-e ʕal-ḥḏoḏe w mḥalaqn-e l-tamho",
+              "translation": "ich stecke (das Schwert) in's Feuer, mache es heiss, wickele es zusammen und werfe es weg",
+              "refs": [
+                {
+                  "raw": "522",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "52/178",
+                  "kind": "text",
+                  "textId": "R052",
+                  "verse": 178
+                }
+              ],
+              "note": null,
+              "raw": "ko-čoyakn-e b-i=nuro, mšaḥann-e w loyafn-e ʕal-ḥḏoḏe w mḥalaqn-e l-tamho ʻich stecke (das Schwert) in's Feuer, mache es heiss, wickele es zusammen und werfe es wegʼ; 522; 52/178;"
+            },
+            {
+              "id": "čyk.I.t.infectum.3",
+              "sense": "2",
+              "turoyo": "g-čakno ruḥi b-u=gubo",
+              "translation": "ich stürze mich in die Zisterne",
+              "refs": [
+                {
+                  "raw": "522",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "112/61",
+                  "kind": "text",
+                  "textId": "R112",
+                  "verse": 61
+                }
+              ],
+              "note": null,
+              "raw": "2) g-čakno ruḥi b-u=gubo ʻich stürze mich in die Zisterneʼ; 522; 112/61;"
+            },
+            {
+              "id": "čyk.I.t.infectum.4",
+              "sense": "2",
+              "turoyo": "čiki b-i=qamayt-ayḏe",
+              "translation": "(nicht dass) sie ihn aufhalten",
+              "refs": [
+                {
+                  "raw": "LB 290",
+                  "kind": "lb",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "čiki b-i=qamayt-ayḏe ʻ(nicht dass) sie ihn aufhaltenʼ; LB 290;"
+            }
+          ]
+        },
+        {
+          "id": "čyk.I.t.imperativ",
+          "label": "Imperativ",
+          "rawLabel": "Imperativ",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "čyk.I.t.imperativ.1",
+              "sense": "1",
+              "turoyo": "čuk-e b-gawe, ṣraṭ gawe",
+              "translation": "stich es (das Schwert) ihm in den Bauch und schlitze ihm denselben auf",
+              "refs": [
+                {
+                  "raw": "526",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "prs 106/11",
+                  "kind": "prs",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "1) čuk-e b-gawe, ṣraṭ gawe ʻstich es (das Schwert) ihm in den Bauch und schlitze ihm denselben aufʼ; 526; prs 106/11;"
+            },
+            {
+              "id": "čyk.I.t.imperativ.2",
+              "sense": "1",
+              "turoyo": "čək u=rawšo taḥt i=walaye w-tlay-a",
+              "translation": "Place the shovel under the city and raise it",
+              "refs": [
+                {
+                  "raw": "73/428",
+                  "kind": "text",
+                  "textId": "R073",
+                  "verse": 428
+                }
+              ],
+              "note": null,
+              "raw": "čək u=rawšo taḥt i=walaye w-tlay-a ‘Place the shovel under the city and raise it’ 73/428;"
+            }
+          ]
+        },
+        {
+          "id": "čyk.I.d.preterit",
+          "label": "Preterit",
+          "rawLabel": "Preterit",
+          "detransitive": true,
+          "examples": [
+            {
+              "id": "čyk.I.d.preterit.1",
+              "sense": "2",
+              "turoyo": "čīk baynalle w l-u=sabʕo",
+              "translation": "er trat zwischen sie und den Löwen",
+              "refs": [
+                {
+                  "raw": "530",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "61/112",
+                  "kind": "text",
+                  "textId": "R061",
+                  "verse": 112
+                }
+              ],
+              "note": null,
+              "raw": "2)čīk baynalle w l-u=sabʕo ʻer trat zwischen sie und den Löwenʼ; 530; 61/112;"
+            },
+            {
+              "id": "čyk.I.d.preterit.2",
+              "sense": "2",
+              "turoyo": "čīk u=šiḏo b-lebi",
+              "translation": "der Satan schlich mir ins Herz",
+              "refs": [
+                {
+                  "raw": "530",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "52/174",
+                  "kind": "text",
+                  "textId": "R052",
+                  "verse": 174
+                },
+                {
+                  "raw": "88/177",
+                  "kind": "text",
+                  "textId": "R088",
+                  "verse": 177
+                }
+              ],
+              "note": null,
+              "raw": "čīk u=šiḏo b-lebi ʻder Satan schlich mir ins Herzʼ; 530; 52/174; 88/177;"
+            },
+            {
+              "id": "čyk.I.d.preterit.3",
+              "sense": "2",
+              "turoyo": "fəlge d-u=gald-ayḏa lə=čīk b-femi",
+              "translation": "nicht einmal die Hälfte davon habe ich in den Mund gesteckt",
+              "refs": [
+                {
+                  "raw": "LB 109",
+                  "kind": "lb",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "fəlge d-u=gald-ayḏa lə=čīk b-femi ʻnicht einmal die Hälfte davon habe ich in den Mund gestecktʼ; LB 109;"
+            },
+            {
+              "id": "čyk.I.d.preterit.4",
+              "sense": "2",
+              "turoyo": "čīk b-i=qamayt-ayḏan, maklelelan",
+              "translation": "sie überholten uns und hielten uns an",
+              "refs": [
+                {
+                  "raw": "EL 79",
+                  "kind": "other",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "čīk b-i=qamayt-ayḏan, maklelelan ʻsie überholten uns und hielten uns anʼ EL 79;"
+            },
+            {
+              "id": "čyk.I.d.preterit.5",
+              "sense": "2",
+              "turoyo": "iḏi čiko ʕul m-i=dapṯo ḥreto, grəšli i=dapṯ-ayo-ste",
+              "translation": "meine Hand gelangte über das nächste Brett, dass ich dann auch herunterzog",
+              "refs": [
+                {
+                  "raw": "LB 191",
+                  "kind": "lb",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "iḏi čiko ʕul m-i=dapṯo ḥreto, grəšli i=dapṯ-ayo-ste ʻmeine Hand gelangte über das nächste Brett, dass ich dann auch herunterzogʼ; LB 191;"
+            },
+            {
+              "id": "čyk.I.d.preterit.6",
+              "sense": "2",
+              "turoyo": "ánnaqla ko-ḥanno kale-yo čuko, ko-čīk baytək b-u=bayt-aṯṯe <…> omər: “hano ádṣafro mḥalaqle <…> čīk lawġəl gaban <…> hat-ste oʕdo ʕabirət, bəṯṯər me d-čikət b-i=səṭra d-u=baytayḏy d-maqṭanno aqqa naʕim-ani qumux, k-oben-ux soz ono lə=g-ṭoreno mede oṯe aʕlux”",
+              "translation": "nun, ich schaute so, siehe, da war ein Vogel, da war ein Sperling in ihr Haus geflogen. <…> Er sagte: “Dieser (Vogel) ist heute morgen zu uns geflogen, <…> er ist zu uns hinein geflogen <…>. Du bist jetzt auch hineingekommen und nachdem du dich unter den Schutz meines Hauses gestellt hast, gebe ich dir mein Versprechen, auch wenn ich alle diese Kinder deinetwegen töten liesse, würde ich nicht erlauben, dass dir etwas zustösst!’’ʼ;",
+              "refs": [
+                {
+                  "raw": "LB 280–282",
+                  "kind": "lb",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "ánnaqla ko-ḥanno kale-yo čuko, ko-čīk baytək b-u=bayt-aṯṯe <…> omər: “hano ádṣafro mḥalaqle <…> čīk lawġəl gaban <…> hat-ste oʕdo ʕabirət, bəṯṯər me d-čikət b-i=səṭra d-u=baytayḏy d-maqṭanno aqqa naʕim-ani qumux, k-oben-ux soz ono lə=g-ṭoreno mede oṯe aʕlux” ʻnun, ich schaute so, siehe, da war ein Vogel, da war ein Sperling in ihr Haus geflogen. <…> Er sagte: “Dieser (Vogel) ist heute morgen zu uns geflogen, <…> er ist zu uns hinein geflogen <…>. Du bist jetzt auch hineingekommen und nachdem du dich unter den Schutz meines Hauses gestellt hast, gebe ich dir mein Versprechen, auch wenn ich alle diese Kinder deinetwegen töten liesse, würde ich nicht erlauben, dass dir etwas zustösst!’’ʼ; LB 280–282;"
+            },
+            {
+              "id": "čyk.I.d.preterit.7",
+              "sense": "3",
+              "turoyo": "ko-čik ḥarb b-qarʕe d-u=ṭuro",
+              "translation": "auf dem Gipfel des Berges ist gerade ein Kampf entbrannt",
+              "refs": [
+                {
+                  "raw": "530",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "65/466",
+                  "kind": "text",
+                  "textId": "R065",
+                  "verse": 466
+                }
+              ],
+              "note": null,
+              "raw": "3) ko-čik ḥarb b-qarʕe d-u=ṭuro ʻauf dem Gipfel des Berges ist gerade ein Kampf entbranntʼ; 530; 65/466;"
+            },
+            {
+              "id": "čyk.I.d.preterit.8",
+              "sense": "4",
+              "turoyo": "lebe čik eba",
+              "translation": "er verliebte sich in sie",
+              "refs": [
+                {
+                  "raw": "530",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "64/9",
+                  "kind": "text",
+                  "textId": "R064",
+                  "verse": 9
+                },
+                {
+                  "raw": "66/119",
+                  "kind": "text",
+                  "textId": "R066",
+                  "verse": 119
+                }
+              ],
+              "note": null,
+              "raw": "4) lebe čik eba ʻer verliebte sich in sieʼ; 530; 64/9; 66/119;"
+            },
+            {
+              "id": "čyk.I.d.preterit.9",
+              "sense": "5",
+              "turoyo": "Mother Mary 12. Ŭ laš+šalqat mballe, mballe… ṭār, ṭār mi+gamiye, čīk bu+baḥar.",
+              "translation": "And the waves took him away, they took him away… he flew off, he flew off the boat, he plunged into the sea.",
+              "refs": [],
+              "note": null,
+              "raw": "5) Mother Mary 12. Ŭ laš+šalqat mballe, mballe… ṭār, ṭār mi+gamiye, čīk bu+baḥar.\nAnd the waves took him away, they took him away… he flew off, he flew off the boat, he plunged into the sea."
+            }
+          ]
+        },
+        {
+          "id": "čyk.I.d.infectum",
+          "label": "Infectum",
+          "rawLabel": "Infectum",
+          "detransitive": true,
+          "examples": [
+            {
+              "id": "čyk.I.d.infectum.1",
+              "sense": "2",
+              "turoyo": "čīk baynaṯṯe xud u=dewo d-mičək bayn aʕ=ʕeze",
+              "translation": "er fuhr unter sie, wie der Wolf unter die Ziegen fährt",
+              "refs": [
+                {
+                  "raw": "532",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "78/113",
+                  "kind": "text",
+                  "textId": "R078",
+                  "verse": 113
+                },
+                {
+                  "raw": "68/462",
+                  "kind": "text",
+                  "textId": "R068",
+                  "verse": 462
+                }
+              ],
+              "note": null,
+              "raw": "2) čīk baynaṯṯe xud u=dewo d-mičək bayn aʕ=ʕeze ʻer fuhr unter sie, wie der Wolf unter die Ziegen fährtʼ; 532; 78/113; 68/462;"
+            },
+            {
+              "id": "čyk.I.d.infectum.2",
+              "sense": "2",
+              "turoyo": "mičokət bayn al=lappat d-i=maraḥt-ayo",
+              "translation": "du gerätst dem frechen Weib in die Klauen",
+              "refs": [
+                {
+                  "raw": "532",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "75/122",
+                  "kind": "text",
+                  "textId": "R075",
+                  "verse": 122
+                }
+              ],
+              "note": null,
+              "raw": "mičokət bayn al=lappat d-i=maraḥt-ayo ʻdu gerätst dem frechen Weib in die Klauenʼ; 532; 75/122;"
+            },
+            {
+              "id": "čyk.I.d.infectum.3",
+              "sense": "2",
+              "turoyo": "ko-mičoqi ak=kube b-ḥaṣi",
+              "translation": "(dabei) stachen mir Dornen in meinen Rücken",
+              "refs": [
+                {
+                  "raw": "LB 55",
+                  "kind": "lb",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "ko-mičoqi ak=kube b-ḥaṣi ʻ(dabei) stachen mir Dornen in meinen Rückenʼ; LB 55;"
+            },
+            {
+              "id": "čyk.I.d.infectum.4",
+              "sense": "2",
+              "turoyo": "bas mədə-k-mičoko b-alfo=naqwe naʕime w-ṣalḥe lo=k-minaḏ̣fo",
+              "translation": "aber da sie (die Wanze) in Tausend kleine Löcher und Ritzen schlüpft, lässt sie sich doch nicht ganz wegfegen",
+              "refs": [
+                {
+                  "raw": "1/31",
+                  "kind": "text",
+                  "textId": "R001",
+                  "verse": 31
+                }
+              ],
+              "note": null,
+              "raw": "bas mədə-k-mičoko b-alfo=naqwe naʕime w-ṣalḥe lo=k-minaḏ̣fo ʻaber da sie (die Wanze) in Tausend kleine Löcher und Ritzen schlüpft, lässt sie sich doch nicht ganz wegfegenʼ; 1/31;"
+            },
+            {
+              "id": "čyk.I.d.infectum.5",
+              "sense": "2",
+              "turoyo": "ḥəlli ko-mičəkno b-u=ṣalon-aṯṯe d-ko-ʕobər l-u=bayt-aṯṯe",
+              "translation": "ich merkte, dass ich beinahe in ihrem Flur, der in das Hausinnere führte, wäre",
+              "refs": [
+                {
+                  "raw": "LB 203",
+                  "kind": "lb",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": "[+JL 9.9.7];",
+              "raw": "ḥəlli ko-mičəkno b-u=ṣalon-aṯṯe d-ko-ʕobər l-u=bayt-aṯṯe ʻich merkte, dass ich beinahe in ihrem Flur, der in das Hausinnere führte, wäreʼ; LB 203; [+JL 9.9.7];"
+            },
+            {
+              "id": "čyk.I.d.infectum.6",
+              "sense": "2",
+              "turoyo": "ubaʕno <…> duʕanno l-i=qabil-ayḏi w-l-u=kursiy-ayḏi, d-mičəkno bayn aʕ=ʕašair d-kət-ne ʕayəd diḏi",
+              "translation": "Ich möchte <…> daß ich zu meinem Stamme zurückkehren kann und zu meinem Herrensitz, daß ich mich unter die Stämme begeben kann, die mir angehören",
+              "refs": [
+                {
+                  "raw": "29/243",
+                  "kind": "text",
+                  "textId": "R029",
+                  "verse": 243
+                }
+              ],
+              "note": null,
+              "raw": "ubaʕno <…> duʕanno l-i=qabil-ayḏi w-l-u=kursiy-ayḏi, d-mičəkno bayn aʕ=ʕašair d-kət-ne ʕayəd diḏi ‘Ich möchte <…> daß ich zu meinem Stamme zurückkehren kann und zu meinem Herrensitz, daß ich mich unter die Stämme begeben kann, die mir angehören’; 29/243;"
+            },
+            {
+              "id": "čyk.I.d.infectum.7",
+              "sense": "2",
+              "turoyo": "gd-oṯe g-mičək b-i=nuqr-aṯe, w-g-maqlibina u=ʕafro aʕle, w-gəm-məfṭəṣ b-u=ʕafro g-xulṣina mene",
+              "translation": "Dann wird er kommen und in diese Grube hineingeraten, und dann stülpen wir die Erde auf ihn, und er wird im dem Erdreich ersticken und wir werden ihn los",
+              "refs": [
+                {
+                  "raw": "29/275",
+                  "kind": "text",
+                  "textId": "R029",
+                  "verse": 275
+                },
+                {
+                  "raw": "[MT]",
+                  "kind": "other",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "gd-oṯe g-mičək b-i=nuqr-aṯe, w-g-maqlibina u=ʕafro aʕle, w-gəm-məfṭəṣ b-u=ʕafro g-xulṣina mene ‘Dann wird er kommen und in diese Grube hineingeraten, und dann stülpen wir die Erde auf ihn, und er wird im dem Erdreich ersticken und wir werden ihn los’; 29/275 [MT];"
+            },
+            {
+              "id": "čyk.I.d.infectum.8",
+              "sense": "2",
+              "turoyo": "b-lalyo ko-mičək b-šqifo mede hul ṣafro",
+              "translation": "At night he used to penetrate in some earth cleft and [stay there] till morning",
+              "refs": [
+                {
+                  "raw": "43/28",
+                  "kind": "text",
+                  "textId": "R043",
+                  "verse": 28
+                }
+              ],
+              "note": null,
+              "raw": "b-lalyo ko-mičək b-šqifo mede hul ṣafro ‘At night he used to penetrate in some earth cleft and [stay there] till morning’; 43/28"
+            }
+          ]
+        },
+        {
+          "id": "čyk.I.d.infectum-wa",
+          "label": "Infectum-wa",
+          "rawLabel": "Infectum-wa",
+          "detransitive": true,
+          "examples": [
+            {
+              "id": "čyk.I.d.infectum-wa.1",
+              "sense": null,
+              "turoyo": "i=kelike d-šotí-way-na i=ǧġar-ayḏan mičokí-way-na b-aq=qamyon-ayḏan",
+              "translation": "wenn wir unsere Zigarette rauchten, zogen wir uns in unsere Lastwagen zurück",
+              "refs": [
+                {
+                  "raw": "EL 71",
+                  "kind": "other",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "i=kelike d-šotí-way-na i=ǧġar-ayḏan mičokí-way-na b-aq=qamyon-ayḏan ʻwenn wir unsere Zigarette rauchten, zogen wir uns in unsere Lastwagen zurückʼ; EL 71;"
+            },
+            {
+              "id": "čyk.I.d.infectum-wa.2",
+              "sense": null,
+              "turoyo": "w mḥaláq-way-no l-u=laġno mičə́k-way-no b-u=fəlgo",
+              "translation": "und ich warf (das Saatgut) auf dem Saatstreifen aus, in dessen Mitten ich mich begab",
+              "refs": [
+                {
+                  "raw": "JL 10.11.3",
+                  "kind": "jl",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "w mḥaláq-way-no l-u=laġno mičə́k-way-no b-u=fəlgo ʻund ich warf (das Saatgut) auf dem Saatstreifen aus, in dessen Mitten ich mich begabʼ JL 10.11.3;"
+            }
+          ]
+        },
+        {
+          "id": "čyk.I.d.imperativ",
+          "label": "Imperativ",
+          "rawLabel": "Imperativ",
+          "detransitive": true,
+          "examples": [
+            {
+              "id": "čyk.I.d.imperativ.1",
+              "sense": null,
+              "turoyo": "kīt mʕarṯo naʕimto d-u=medayḏi ... mičík biya qud ḥozena",
+              "translation": "ich habe ein kleines Gelass für meine Habseligkeiten... krieche dort hinein, bis wir sehen, (was weiter zu tun ist)",
+              "refs": [
+                {
+                  "raw": "533",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "prs 69/37",
+                  "kind": "prs",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "prs 202/10, 13",
+                  "kind": "prs",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "prs 227/17, 18",
+                  "kind": "prs",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "kīt mʕarṯo naʕimto d-u=medayḏi ... mičík biya qud ḥozena ʻich habe ein kleines Gelass für meine Habseligkeiten... krieche dort hinein, bis wir sehen, (was weiter zu tun ist)ʼ; 533; prs 69/37; prs 202/10, 13; prs 227/17, 18;"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "I: čəkle/čoyək",
+        "Detransitive"
+      ]
+    }
+  ],
+  "idioms": [
+    {
+      "id": "čyk.idiom.1",
+      "raw": "čəkno b-băxt d-alo w diḏəx ʻich bitte dich um Gottes willenʼ; MM 113;",
+      "headword": "čəkno b-băxt d-alo w diḏəx"
+    },
+    {
+      "id": "čyk.idiom.2",
+      "raw": "Omar, ‘Yade, kobaʕno, yade, d̥ṭorat mini. Koḏaʕno qquṭli ʕammi, w Ăḷah, qquṭli aš+šawʕo+abnáyḏestene. D̥ šәmʕat xabri, yade … žboyi d̥xaṭәr  … čikno baxt du+qawre  dbábistene w dbábaxstene, kobaʕno d̥ṭorat mini (OA, AA)",
+      "headword": "Omar,"
+    }
+  ],
+  "source": {
+    "volume": "1. ʔ, ʕ, b, č.docx",
+    "order": 1793
+  }
+}

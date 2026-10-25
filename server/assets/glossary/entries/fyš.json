@@ -1,0 +1,909 @@
+{
+  "id": "fyš",
+  "root": "fyš",
+  "homonym": null,
+  "head": "fyš (< MEA pwš cf. SL 1174-1175: to stay, wait; to turn out, result, become; to remain;)",
+  "crossRefs": [],
+  "notes": [
+    "Idiomatic phrases"
+  ],
+  "stems": [
+    {
+      "id": "fyš.I",
+      "stem": "I",
+      "forms": "fayəš/foyəš",
+      "senses": [
+        {
+          "n": "1",
+          "gloss": "a) bleiben, verbleiben, übrig bleiben, b) am Leben bleiben, c) nunmehr werden/sein;"
+        },
+        {
+          "n": "2",
+          "gloss": "(lebe) übelnehmen, böse sein auf (mene);"
+        },
+        {
+          "n": "3",
+          "gloss": "als erstarrtes unflektiertes Hilfsverbum zur Bezeichnung des Anfangs einer fortgesetzten Handlung im Sinne von: anfangen, beginnen;"
+        },
+        {
+          "n": "4",
+          "gloss": "in negativen Sätzen: nicht mehr, nicht länger, nicht wieder;"
+        }
+      ],
+      "sensesRaw": "1) a) bleiben, verbleiben, übrig bleiben, b) am Leben bleiben, c) nunmehr werden/sein; 2) (lebe) übelnehmen, böse sein auf (mene); 3) als erstarrtes unflektiertes Hilfsverbum zur Bezeichnung des Anfangs einer fortgesetzten Handlung im Sinne von: anfangen, beginnen; 4) in negativen Sätzen: nicht mehr, nicht länger, nicht wieder;",
+      "detransitiveSenses": [],
+      "detransitiveSensesRaw": null,
+      "boxes": [
+        {
+          "id": "fyš.I.t.preterit-intransitive",
+          "label": "Preterit Intransitive",
+          "rawLabel": "Preterit Intransitive",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "fyš.I.t.preterit-intransitive.1",
+              "sense": "1",
+              "turoyo": "a) mərre, b-i=saḥ-aṯe meqəm kət-wo dayro; bas lo=fayəš mena aṯar",
+              "translation": "man sagte, auf dem Grundstück habe früher ein Kloster gestanden, aber davon ist keine Spur mehr übrig",
+              "refs": [
+                {
+                  "raw": "552-553",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "1/2",
+                  "kind": "text",
+                  "textId": "R001",
+                  "verse": 2
+                }
+              ],
+              "note": null,
+              "raw": "1) a) mərre, b-i=saḥ-aṯe meqəm kət-wo dayro; bas lo=fayəš mena aṯar ʻman sagte, auf dem Grundstück habe früher ein Kloster gestanden, aber davon ist keine Spur mehr übrigʼ; 552-553; 1/2;"
+            },
+            {
+              "id": "fyš.I.t.preterit-intransitive.2",
+              "sense": "1",
+              "turoyo": "tre m-ann=aḥunon-ayḏi, ḥa mənayye kmo=šabe, u=ḥreno kmo=yarḥe, fayiši sidi ḏ̣ayfe",
+              "translation": "zwei meiner Brüder waren bei mir zu Gast, einer von ihnen für einige Wochen, der andere einige Monate",
+              "refs": [
+                {
+                  "raw": "1/61",
+                  "kind": "text",
+                  "textId": "R001",
+                  "verse": 61
+                }
+              ],
+              "note": null,
+              "raw": "tre m-ann=aḥunon-ayḏi, ḥa mənayye kmo=šabe, u=ḥreno kmo=yarḥe, fayiši sidi ḏ̣ayfe ʻzwei meiner Brüder waren bei mir zu Gast, einer von ihnen für einige Wochen, der andere einige Monateʼ; 1/61;"
+            },
+            {
+              "id": "fyš.I.t.preterit-intransitive.3",
+              "sense": "1",
+              "turoyo": "kit-wo malko,  lat-wo-le naʕime. bəṯṯər fayəš b-u=ġamo ġálabe",
+              "translation": "Es war einmal ein König, der hatte keine Kinder. Da grämte er sich sehr",
+              "refs": [
+                {
+                  "raw": "24/2",
+                  "kind": "text",
+                  "textId": "R024",
+                  "verse": 2
+                },
+                {
+                  "raw": "[LTN]",
+                  "kind": "other",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "kit-wo malko,  lat-wo-le naʕime. bəṯṯər fayəš b-u=ġamo ġálabe ‘Es war einmal ein König, der hatte keine Kinder. Da grämte er sich sehr’; 24/2 [LTN];"
+            },
+            {
+              "id": "fyš.I.t.preterit-intransitive.4",
+              "sense": "1",
+              "turoyo": "fayəš mədde də-tloṯ=išne tamo, s-u=malko b-u=muklo w-u=štoyo, b-u=kef w-b-u=ṣafa",
+              "translation": "Er blieb drei Jahre dort, bei dem König, mit Essen und Trinken und Vergnügen und frohem Sinn",
+              "refs": [
+                {
+                  "raw": "24/112",
+                  "kind": "text",
+                  "textId": "R024",
+                  "verse": 112
+                }
+              ],
+              "note": null,
+              "raw": "fayəš mədde də-tloṯ=išne tamo, s-u=malko b-u=muklo w-u=štoyo, b-u=kef w-b-u=ṣafa ‘Er blieb drei Jahre dort, bei dem König, mit Essen und Trinken und Vergnügen und frohem Sinn’; 24/112;"
+            },
+            {
+              "id": "fyš.I.t.preterit-intransitive.5",
+              "sense": "1",
+              "turoyo": "fayəš məqdār d-saʕa d-muṭena l-u=ʕafr-ayḏox",
+              "translation": "Es ist noch eine Stunde, bis wir zu deinem Grund und Boden kommen",
+              "refs": [
+                {
+                  "raw": "29/176",
+                  "kind": "text",
+                  "textId": "R029",
+                  "verse": 176
+                }
+              ],
+              "note": null,
+              "raw": "fayəš məqdār d-saʕa d-muṭena l-u=ʕafr-ayḏox ‘Es ist noch eine Stunde, bis wir zu deinem Grund und Boden kommen’; 29/176;"
+            },
+            {
+              "id": "fyš.I.t.preterit-intransitive.6",
+              "sense": "1",
+              "turoyo": "mbálle l-i=ʕaskaríye w-fayišo faṭə́me táne",
+              "translation": "They took him (fiancé, m.) away for the military service, and Faṭima stayed all alone",
+              "refs": [
+                {
+                  "raw": "LuF I.4",
+                  "kind": "luf",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "mbálle l-i=ʕaskaríye w-fayišo faṭə́me táne ‘They took him (fiancé, m.) away for the military service, and Faṭima stayed all alone’ LuF I.4;"
+            },
+            {
+              "id": "fyš.I.t.preterit-intransitive.7",
+              "sense": "1",
+              "turoyo": "b) aṯi emi w-babi l-boli, sobe-wayye; ʕaǧaba ḥal dəṯṯe áydarbo hawi? mayiṯi aw fayiši?",
+              "translation": "Nur  meine Mutter und mein Vater kamen mir in den Sinn - sie waren ja alt-, was mag aus ihnen geworden sein? Sind sie gestorben oder leben sie noch?",
+              "refs": [
+                {
+                  "raw": "24/118",
+                  "kind": "text",
+                  "textId": "R024",
+                  "verse": 118
+                }
+              ],
+              "note": null,
+              "raw": "b) aṯi emi w-babi l-boli, sobe-wayye; ʕaǧaba ḥal dəṯṯe áydarbo hawi? mayiṯi aw fayiši? ‘Nur  meine Mutter und mein Vater kamen mir in den Sinn - sie waren ja alt-, was mag aus ihnen geworden sein? Sind sie gestorben oder leben sie noch?’; 24/118"
+            },
+            {
+              "id": "fyš.I.t.preterit-intransitive.8",
+              "sense": "1",
+              "turoyo": "c) mʔamálle-le hawxa w-fayəš u=aṣəl u=babo",
+              "translation": "Er gab diese Anordnungen,und der eigentliche (Herrscher) war nunmehr der (neue) Vater",
+              "refs": [
+                {
+                  "raw": "28/49",
+                  "kind": "text",
+                  "textId": "R028",
+                  "verse": 49
+                }
+              ],
+              "note": null,
+              "raw": "c) mʔamálle-le hawxa w-fayəš u=aṣəl u=babo ‘Er gab diese Anordnungen,und der eigentliche (Herrscher) war nunmehr der (neue) Vater’; 28/49"
+            },
+            {
+              "id": "fyš.I.t.preterit-intransitive.9",
+              "sense": "2",
+              "turoyo": "fayəš lebe mine",
+              "translation": "ich bin ihm böse",
+              "refs": [
+                {
+                  "raw": "555",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "2) fayəš lebe mine ʻich bin ihm böseʼ; 555;"
+            },
+            {
+              "id": "fyš.I.t.preterit-intransitive.10",
+              "sense": "3",
+              "turoyo": "maḥkíla-le l-u=darwīš, w fayəš g-xŭdam-la",
+              "translation": "da erzälte sie dem Derwisch alles, und er blieb für immer ihr Diener",
+              "refs": [
+                {
+                  "raw": "555",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "prs 13/13",
+                  "kind": "prs",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "3) maḥkíla-le l-u=darwīš, w fayəš g-xŭdam-la ʻda erzälte sie dem Derwisch alles, und er blieb für immer ihr Dienerʼ; 555; prs 13/13;"
+            },
+            {
+              "id": "fyš.I.t.preterit-intransitive.11",
+              "sense": "3",
+              "turoyo": "fayəš ko-šotən dexono",
+              "translation": "sie begannen zu rauchen",
+              "refs": [
+                {
+                  "raw": "11/116",
+                  "kind": "text",
+                  "textId": "R011",
+                  "verse": 116
+                }
+              ],
+              "note": null,
+              "raw": "fayəš ko-šotən dexono ʻsie begannen zu rauchenʼ; 11/116;"
+            },
+            {
+              "id": "fyš.I.t.preterit-intransitive.12",
+              "sense": "3",
+              "turoyo": "fayəš ko-toleno u=ʕafro b-iḏi",
+              "translation": "ich räumte mit den Händen das Erdreich fort",
+              "refs": [
+                {
+                  "raw": "116/32",
+                  "kind": "text",
+                  "textId": "R116",
+                  "verse": 32
+                }
+              ],
+              "note": null,
+              "raw": "fayəš ko-toleno u=ʕafro b-iḏi ʻich räumte mit den Händen das Erdreich fortʼ; 116/32;"
+            },
+            {
+              "id": "fyš.I.t.preterit-intransitive.13",
+              "sense": "3",
+              "turoyo": "mə-bəṯər d-ḥzele: layt mánfaʕa fayəš k-ṭoʕən ġamo k-məḥzən",
+              "translation": "Da er sah, daß alles keinen Zweck hatte, began er sich zu grämen und traurig zu werden",
+              "refs": [
+                {
+                  "raw": "21/55",
+                  "kind": "text",
+                  "textId": "R021",
+                  "verse": 55
+                },
+                {
+                  "raw": "[MT]",
+                  "kind": "other",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "mə-bəṯər d-ḥzele: layt mánfaʕa fayəš k-ṭoʕən ġamo k-məḥzən ‘Da er sah, daß alles keinen Zweck hatte, began er sich zu grämen und traurig zu werden’; 21/55 [MT];"
+            },
+            {
+              "id": "fyš.I.t.preterit-intransitive.14",
+              "sense": "3",
+              "turoyo": "u=aḥuno ḥreno məd-hawi ʕaṣriye aṯi lə=ḥzele u=aḥun-ayḏe fayəš g-boxe aʕle",
+              "translation": "Als es Abend wurde, kam der andere Bruder und fand seinen Bruder nicht vor. Da began er über ihn zu weinen",
+              "refs": [
+                {
+                  "raw": "24/280",
+                  "kind": "text",
+                  "textId": "R024",
+                  "verse": 280
+                }
+              ],
+              "note": null,
+              "raw": "u=aḥuno ḥreno məd-hawi ʕaṣriye aṯi lə=ḥzele u=aḥun-ayḏe fayəš g-boxe aʕle ‘Als es Abend wurde, kam der andere Bruder und fand seinen Bruder nicht vor. Da began er über ihn zu weinen’;  24/280"
+            },
+            {
+              "id": "fyš.I.t.preterit-intransitive.15",
+              "sense": "4",
+              "turoyo": "lo=fayəš saymət hawxa",
+              "translation": "tue das nicht wieder",
+              "refs": [
+                {
+                  "raw": "556",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "prs 175/6",
+                  "kind": "prs",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "4) lo=fayəš saymət hawxa ʻtue das nicht wiederʼ; 556; prs 175/6;"
+            },
+            {
+              "id": "fyš.I.t.preterit-intransitive.16",
+              "sense": "4",
+              "turoyo": "bas haw fayəš mitaḥmilo-wa",
+              "translation": "aber es war nicht mehr zu ertragen",
+              "refs": [
+                {
+                  "raw": "2/55",
+                  "kind": "text",
+                  "textId": "R002",
+                  "verse": 55
+                }
+              ],
+              "note": null,
+              "raw": "bas haw fayəš mitaḥmilo-wa ʻaber es war nicht mehr zu ertragenʼ; 2/55;"
+            },
+            {
+              "id": "fyš.I.t.preterit-intransitive.17",
+              "sense": "4",
+              "turoyo": "w-əlla d-oṯe d-lu=šəmʕat-li, aḥunox azzé; lo-fayəš g-ḥuzat-le",
+              "translation": "Wenn du nicht auf mich hörst, so ist dein Bruder verloren. Du wirst nicht mehr ihn sehen",
+              "refs": [
+                {
+                  "raw": "24/289",
+                  "kind": "text",
+                  "textId": "R024",
+                  "verse": 289
+                },
+                {
+                  "raw": "[MT]",
+                  "kind": "other",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "w-əlla d-oṯe d-lu=šəmʕat-li, aḥunox azzé; lo-fayəš g-ḥuzat-le ‘Wenn du nicht auf mich hörst, so ist dein Bruder verloren. Du wirst nicht mehr ihn sehen’; 24/289 [MT]"
+            }
+          ]
+        },
+        {
+          "id": "fyš.I.t.preterit",
+          "label": "Preterit",
+          "rawLabel": "Preterit",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "fyš.I.t.preterit.1",
+              "sense": "4",
+              "turoyo": "m-u=sabab d-sobe-wayye lə-fəšše qudri-wo mdabri-wo i=mamlaxṯo",
+              "translation": "Denn sie waren alt und konnten das Reich nicht mehr verwalten",
+              "refs": [
+                {
+                  "raw": "247",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "24/114",
+                  "kind": "text",
+                  "textId": "R024",
+                  "verse": 114
+                },
+                {
+                  "raw": "[MT]",
+                  "kind": "other",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "4) m-u=sabab d-sobe-wayye lə-fəšše qudri-wo mdabri-wo i=mamlaxṯo ‘Denn sie waren alt und konnten das Reich nicht mehr verwalten’; 247; 24/114 [MT]"
+            }
+          ]
+        },
+        {
+          "id": "fyš.I.t.preterit-wa",
+          "label": "Preterit-wa",
+          "rawLabel": "Preterit-wa",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "fyš.I.t.preterit-wa.1",
+              "sense": null,
+              "turoyo": "1a) məd-li fayǝ́š-wo-li šerīt deri yawmo, hawino maǧbūr, d-sŭyanno aq=qole d-u=šamošo m-u=šerīt d-i=makina",
+              "translation": "da ich aber kein Tonband mehr hatte, musste ich am nächsten Tage die Lieder des Diakonen vom Tonband tilgen",
+              "refs": [
+                {
+                  "raw": "11/302",
+                  "kind": "text",
+                  "textId": "R011",
+                  "verse": 302
+                }
+              ],
+              "note": null,
+              "raw": "1a) məd-li fayǝ́š-wo-li šerīt deri yawmo, hawino maǧbūr, d-sŭyanno aq=qole d-u=šamošo m-u=šerīt d-i=makina ʻda ich aber kein Tonband mehr hatte, musste ich am nächsten Tage die Lieder des Diakonen vom Tonband tilgenʼ; 11/302;"
+            },
+            {
+              "id": "fyš.I.t.preterit-wa.2",
+              "sense": null,
+              "turoyo": "hani kulle azzən-wo l-u=hawar, fayəš-wo an=niše lḥuḏe b-i=kone d-u=šēx",
+              "translation": "Auf den Ruf hin waren sie alle losgestürmt, nur die Frauen waren allein im Zelte des Scheichs geblieben",
+              "refs": [
+                {
+                  "raw": "29/423",
+                  "kind": "text",
+                  "textId": "R029",
+                  "verse": 423
+                },
+                {
+                  "raw": "[MT]",
+                  "kind": "other",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "hani kulle azzən-wo l-u=hawar, fayəš-wo an=niše lḥuḏe b-i=kone d-u=šēx ‘Auf den Ruf hin waren sie alle losgestürmt, nur die Frauen waren allein im Zelte des Scheichs geblieben’; 29/423 [MT];"
+            },
+            {
+              "id": "fyš.I.t.preterit-wa.3",
+              "sense": null,
+              "turoyo": "u=ʕamo d-i=qriṯo yatiwi-wa b-u=ḥarb-awo, elo an=noše d-fayiši-wa b-gawe d-u=ḥarbo, əšmo-wayne",
+              "translation": "Die Leute des Dorfes hatten diese Ruine besetzt, aber die Leute, die in der Ruine blieben, waren wenig an Zahl",
+              "refs": [
+                {
+                  "raw": "678",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "33/11",
+                  "kind": "text",
+                  "textId": "R033",
+                  "verse": 11
+                }
+              ],
+              "note": null,
+              "raw": "u=ʕamo d-i=qriṯo yatiwi-wa b-u=ḥarb-awo, elo an=noše d-fayiši-wa b-gawe d-u=ḥarbo, əšmo-wayne ʻDie Leute des Dorfes hatten diese Ruine besetzt, aber die Leute, die in der Ruine blieben, waren wenig an Zahlʼ; 678; 33/11;"
+            },
+            {
+              "id": "fyš.I.t.preterit-wa.4",
+              "sense": null,
+              "turoyo": "húwwal-le muklo d-arʕi d-am=mabbaxiyat, u=muklo d-owe yaqiḏo, lo munasəb, u=mede d-fayəš-wo qm-aṣ=ṣəferi",
+              "translation": "da gaben sie ihm Essen vom Boden der Kochgeschirre, angebranntes, nicht anständiges Essen, das, was bei den Kesseln übrig geblieben war",
+              "refs": [
+                {
+                  "raw": "554",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "29/403",
+                  "kind": "text",
+                  "textId": "R029",
+                  "verse": 403
+                }
+              ],
+              "note": null,
+              "raw": "húwwal-le muklo d-arʕi d-am=mabbaxiyat, u=muklo d-owe yaqiḏo, lo munasəb, u=mede d-fayəš-wo qm-aṣ=ṣəferi ʻda gaben sie ihm Essen vom Boden der Kochgeschirre, angebranntes, nicht anständiges Essen, das, was bei den Kesseln übrig geblieben warʼ; 554; 29/403"
+            },
+            {
+              "id": "fyš.I.t.preterit-wa.5",
+              "sense": null,
+              "turoyo": "qayimo šqíla-le fayəš-wa kmo=qŭrūšat aʕma, kmo=qamariye fayəš-wa aʕma, qayimo azzá šqíla-le ǧule",
+              "translation": "da machte sie sich auf, - sie hatte noch ein paar Groschen, ein paar Heller - machte sich auf und kaufte ihm Kleider",
+              "refs": [
+                {
+                  "raw": "554",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "77/88",
+                  "kind": "text",
+                  "textId": "R077",
+                  "verse": 88
+                }
+              ],
+              "note": null,
+              "raw": "qayimo šqíla-le fayəš-wa kmo=qŭrūšat aʕma, kmo=qamariye fayəš-wa aʕma, qayimo azzá šqíla-le ǧule ʻda machte sie sich auf, - sie hatte noch ein paar Groschen, ein paar Heller - machte sich auf und kaufte ihm Kleiderʼ; 554; 77/88;"
+            },
+            {
+              "id": "fyš.I.t.preterit-wa.6",
+              "sense": "2",
+              "turoyo": "hiya-ze leba fayəš-wa m-u=abro həngi məqqa d-saymo-wa lo=saymo-wa lo=qoyam-wa l=əzze-wa lo=šoġal-wa",
+              "translation": "Her heart had been filled with grief because of her son. No matter what she did he would not get up and go to work",
+              "refs": [
+                {
+                  "raw": "77/73",
+                  "kind": "text",
+                  "textId": "R077",
+                  "verse": 73
+                }
+              ],
+              "note": null,
+              "raw": "2) hiya-ze leba fayəš-wa m-u=abro həngi məqqa d-saymo-wa lo=saymo-wa lo=qoyam-wa l=əzze-wa lo=šoġal-wa ‘Her heart had been filled with grief because of her son. No matter what she did he would not get up and go to work’ 77/73;"
+            }
+          ]
+        },
+        {
+          "id": "fyš.I.t.infectum",
+          "label": "Infectum",
+          "rawLabel": "Infectum",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "fyš.I.t.infectum.1",
+              "sense": "1",
+              "turoyo": "a) aḥ=ḥanfani g-fayši b-i=nakfuṯ-aṯṯe",
+              "translation": "diese Barbaren werden beschämt werden",
+              "refs": [
+                {
+                  "raw": "LB 216",
+                  "kind": "lb",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "1) a) aḥ=ḥanfani g-fayši b-i=nakfuṯ-aṯṯe ʻdiese Barbaren werden beschämt werdenʼ; LB 216;"
+            },
+            {
+              "id": "fyš.I.t.infectum.2",
+              "sense": "1",
+              "turoyo": "lo=k-obaʕno d-ʔono ze fašno b-i=dukṯo d-aḏ̣=ḏ̣arbe",
+              "translation": "auch ich will nicht da bleiben, wo es immer Schläge gibt (wörtl.: am Ort der Schläge)",
+              "refs": [
+                {
+                  "raw": "Lehrbuch 19.6.19",
+                  "kind": "other",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "[ML]",
+                  "kind": "other",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "lo=k-obaʕno d-ʔono ze fašno b-i=dukṯo d-aḏ̣=ḏ̣arbe ‘auch ich will nicht da bleiben, wo es immer Schläge gibt (wörtl.: am Ort der Schläge)’; Lehrbuch 19.6.19; [ML];"
+            },
+            {
+              "id": "fyš.I.t.infectum.3",
+              "sense": "1",
+              "turoyo": "uno walaw fiyašno dayəm hawxa d-lo aṯto ġer menəx lu=šuqanno",
+              "translation": "Wenn ich immer ohne Frau bleiben müßte, eine andere als dich nehme ich nicht",
+              "refs": [
+                {
+                  "raw": "24/34",
+                  "kind": "text",
+                  "textId": "R024",
+                  "verse": 34
+                }
+              ],
+              "note": null,
+              "raw": "uno walaw fiyašno dayəm hawxa d-lo aṯto ġer menəx lu=šuqanno ‘Wenn ich immer ohne Frau bleiben müßte, eine andere als dich nehme ich nicht’; 24/34;"
+            },
+            {
+              "id": "fyš.I.t.infectum.4",
+              "sense": "1",
+              "turoyo": "bəṯṯər gəf-fayšitu hawxa w-d-lo=ḥlowo w-d-lo=paške d-ḥalwo",
+              "translation": "später werdet ihr so bleiben ohne Melken und ohne einen tropfen Milch",
+              "refs": [
+                {
+                  "raw": "29/18",
+                  "kind": "text",
+                  "textId": "R029",
+                  "verse": 18
+                }
+              ],
+              "note": null,
+              "raw": "bəṯṯər gəf-fayšitu hawxa w-d-lo=ḥlowo w-d-lo=paške d-ḥalwo ‘später werdet ihr so bleiben ohne Melken und ohne einen tropfen Milch’; 29/18;"
+            },
+            {
+              "id": "fyš.I.t.infectum.5",
+              "sense": "1",
+              "turoyo": "b) u=malk-aṯxu k-foyəš ani lo?",
+              "translation": "lebt euer König noch oder nicht?",
+              "refs": [
+                {
+                  "raw": "24/233",
+                  "kind": "text",
+                  "textId": "R024",
+                  "verse": 233
+                }
+              ],
+              "note": null,
+              "raw": "b) u=malk-aṯxu k-foyəš ani lo? ‘lebt euer König noch oder nicht?’; 24/233;"
+            },
+            {
+              "id": "fyš.I.t.infectum.6",
+              "sense": "1",
+              "turoyo": "c) bəṯṯər mədə-k-mayṣi u=admo, u=msokaṯṯe šmənto k-foyəš băṣīṭ",
+              "translation": "wenn sie (die Wanzen) das Blut erst gesaugt haben, dann ist es ziemlich einfach, sie zu fangen",
+              "refs": [
+                {
+                  "raw": "554",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "1/25",
+                  "kind": "text",
+                  "textId": "R001",
+                  "verse": 25
+                }
+              ],
+              "note": null,
+              "raw": "c) bəṯṯər mədə-k-mayṣi u=admo, u=msokaṯṯe šmənto k-foyəš băṣīṭ ʻwenn sie (die Wanzen) das Blut erst gesaugt haben, dann ist es ziemlich einfach, sie zu fangenʼ; 554; 1/25;"
+            },
+            {
+              "id": "fyš.I.t.infectum.7",
+              "sense": "2",
+              "turoyo": "ayna d-obeno w d-l-obeno gə-foyəš lebe meni",
+              "translation": "wenn ich dem einen (eine zur Frau) gebe und dem andern (eine) versage, so nimmt dieser mir's übel",
+              "refs": [
+                {
+                  "raw": "555",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "prs 42/7",
+                  "kind": "prs",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "2) ayna d-obeno w d-l-obeno gə-foyəš lebe meni ʻwenn ich dem einen (eine zur Frau) gebe und dem andern (eine) versage, so nimmt dieser mir's übelʼ; 555; prs 42/7;"
+            },
+            {
+              "id": "fyš.I.t.infectum.8",
+              "sense": "2",
+              "turoyo": "lə=k-fayšo fəlge=d-saʕaye g-noyaḥ-la",
+              "translation": "It won’t take half an hour till she is cured",
+              "refs": [
+                {
+                  "raw": "78/224",
+                  "kind": "text",
+                  "textId": "R078",
+                  "verse": 224
+                }
+              ],
+              "note": "(не знаю, в какое значение)",
+              "raw": "lə=k-fayšo fəlge=d-saʕaye g-noyaḥ-la ‘It won’t take half an hour till she is cured’ 78/224; (не знаю, в какое значение)"
+            }
+          ]
+        },
+        {
+          "id": "fyš.I.t.infectum-wa",
+          "label": "Infectum-wa",
+          "rawLabel": "Infectum-wa",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "fyš.I.t.infectum-wa.1",
+              "sense": "1",
+              "turoyo": "a); fayšat-wa hul ṣafro! m-u=săbab balki məǧġólo-wa aʕmux m-iḏe d-ṣafro",
+              "translation": "wärest du doch bis zum Morgen geblieben! Vielleicht hätte sie beim Anbruch des Morgens mit dir gesprochen",
+              "refs": [
+                {
+                  "raw": "555",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "62/208",
+                  "kind": "text",
+                  "textId": "R062",
+                  "verse": 208
+                }
+              ],
+              "note": null,
+              "raw": "1) a); fayšat-wa hul ṣafro! m-u=săbab balki məǧġólo-wa aʕmux m-iḏe d-ṣafro ʻwärest du doch bis zum Morgen geblieben! Vielleicht hätte sie beim Anbruch des Morgens mit dir gesprochenʼ; 555; 62/208;"
+            },
+            {
+              "id": "fyš.I.t.infectum-wa.2",
+              "sense": "1",
+              "turoyo": "g-faš-wa yawmo, anǧax g-ṭorína-le yawmo qm i=šəmšo naqla=ḥreto",
+              "translation": "It (wheat, pl.) remained lying for a day, we let it lie under the sun for one day only that time",
+              "refs": [
+                {
+                  "raw": "JL 17.5.14",
+                  "kind": "jl",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "g-faš-wa yawmo, anǧax g-ṭorína-le yawmo qm i=šəmšo naqla=ḥreto ‘It (wheat, pl.) remained lying for a day, we let it lie under the sun for one day only that time’ JL 17.5.14;"
+            },
+            {
+              "id": "fyš.I.t.infectum-wa.3",
+              "sense": "1",
+              "turoyo": "b) aʕ=ʕeqarwe kuḏʕət mən=ne latyo hawxa? (...) i=ḥḏo d-huyo-wa šawʕo=warṣălat, u=ḥa d-duṣo-way-le b-naqqa moyaṯ-wa. lo=foyaš-wa balki saʕaye, moyaṯ-wa u=īnsān",
+              "translation": "Du weisst doch, was Skorpione sind, wahr nicht? (...) Ein Skorpion, [dessen Schwanz] aus sieben Gliedern bestand - wenn der einen Menschen Stach, dann starb er sofort. Er blieb vielleicht keine Stunde mehr am Leben, dann starb er.",
+              "refs": [
+                {
+                  "raw": "JL 7.7.4-7",
+                  "kind": "jl",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "b) aʕ=ʕeqarwe kuḏʕət mən=ne latyo hawxa? (...) i=ḥḏo d-huyo-wa šawʕo=warṣălat, u=ḥa d-duṣo-way-le b-naqqa moyaṯ-wa. lo=foyaš-wa balki saʕaye, moyaṯ-wa u=īnsān ‘Du weisst doch, was Skorpione sind, wahr nicht? (...) Ein Skorpion, [dessen Schwanz] aus sieben Gliedern bestand - wenn der einen Menschen Stach, dann starb er sofort. Er blieb vielleicht keine Stunde mehr am Leben, dann starb er.’ JL 7.7.4-7;"
+            },
+            {
+              "id": "fyš.I.t.infectum-wa.4",
+              "sense": "1",
+              "turoyo": "i=emo hēš sāġ-wa fayšo-wa",
+              "translation": "His mother was still alive",
+              "refs": [
+                {
+                  "raw": "81/104",
+                  "kind": "text",
+                  "textId": "R081",
+                  "verse": 104
+                }
+              ],
+              "note": null,
+              "raw": "i=emo hēš sāġ-wa fayšo-wa ‘His mother was still alive’ 81/104;"
+            }
+          ]
+        },
+        {
+          "id": "fyš.I.t.imperativ",
+          "label": "Imperativ",
+          "rawLabel": "Imperativ",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "fyš.I.t.imperativ.1",
+              "sense": "1",
+              "turoyo": "fuš b-u=tarʕo",
+              "translation": "warte an der Türe",
+              "refs": [
+                {
+                  "raw": "555",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "prs 27/3",
+                  "kind": "prs",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "1) fuš b-u=tarʕo ʻwarte an der Türeʼ; 555; prs 27/3;"
+            },
+            {
+              "id": "fyš.I.t.imperativ.2",
+              "sense": "1",
+              "turoyo": "fuš ádlalyo harke",
+              "translation": "bleib diese Nacht hier",
+              "refs": [
+                {
+                  "raw": "555",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "prs 117/28",
+                  "kind": "prs",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "fuš ádlalyo harke ʻbleib diese Nacht hierʼ; 555; prs 117/28;"
+            },
+            {
+              "id": "fyš.I.t.imperativ.3",
+              "sense": "1",
+              "turoyo": "fuš gab-babax, w aḥna g-dəʕrina b-u=šlomo w hat fuš tamo",
+              "translation": "bleib du bei deinem Vater, wir werden dann in Frieden zurückkehren und du bleibe dort",
+              "refs": [
+                {
+                  "raw": "555",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "62/353",
+                  "kind": "text",
+                  "textId": "R062",
+                  "verse": 353
+                },
+                {
+                  "raw": "74/22",
+                  "kind": "text",
+                  "textId": "R074",
+                  "verse": 22
+                },
+                {
+                  "raw": "81/48",
+                  "kind": "text",
+                  "textId": "R081",
+                  "verse": 48
+                },
+                {
+                  "raw": "115/140",
+                  "kind": "text",
+                  "textId": "R115",
+                  "verse": 140
+                }
+              ],
+              "note": null,
+              "raw": "fuš gab-babax, w aḥna g-dəʕrina b-u=šlomo w hat fuš tamo ʻbleib du bei deinem Vater, wir werden dann in Frieden zurückkehren und du bleibe dortʼ; 555; 62/353; 74/22; 81/48; 115/140;"
+            }
+          ]
+        },
+        {
+          "id": "fyš.I.t.infinitiv",
+          "label": "Infinitiv",
+          "rawLabel": "Infinitiv",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "fyš.I.t.infinitiv.1",
+              "sense": null,
+              "turoyo": "1b) u=nḥor-ayḏi ṭaw m-u=fyoš-ayḏi-yo",
+              "translation": "dass ich abgeschlachtet werde, ist besser, als ich am Leben bleibe",
+              "refs": [
+                {
+                  "raw": "555",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "29/232",
+                  "kind": "text",
+                  "textId": "R029",
+                  "verse": 232
+                },
+                {
+                  "raw": "[MT]",
+                  "kind": "other",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "1b) u=nḥor-ayḏi ṭaw m-u=fyoš-ayḏi-yo ʻdass ich abgeschlachtet werde, ist besser, als ich am Leben bleibeʼ; 555; 29/232 [MT];"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "I: fayəš/foyəš"
+      ]
+    }
+  ],
+  "idioms": [
+    {
+      "id": "fyš.idiom.1",
+      "raw": "foyəš/fayəš b-i=dukṯo (in Midən)/b-dukṯe ‘sofort sterben’: i=naqla d-šaməʕ u=rabano fayəš b-dukṯe ‘Als er das hörte, war der Arme auf der Stelle tot’; 2/121",
+      "headword": "foyəš/fayəš b-i=dukṯo (in Midən)/b-dukṯe"
+    },
+    {
+      "id": "fyš.idiom.2",
+      "raw": "fayəš be-pežən ʻer nahm nichts wahrʼ; jl 12. 11;",
+      "headword": "fayəš be-pežən"
+    },
+    {
+      "id": "fyš.idiom.3",
+      "raw": "amma be-pežən fayiši, madde hawxa ʻsie blieben eine ganze Weile, ohne etwas zuhörenʼ; JL 12.13.13; see hawi be-pežən ‘es wurde still’;",
+      "headword": "amma be-pežən fayiši, madde hawxa"
+    },
+    {
+      "id": "fyš.idiom.4",
+      "raw": "fuš/fušu b-u=šlomo ʻauf Wiedersehen!ʼ: fušu b-u=šlomo! ʻbleibt gesund!ʼ; 15/10;",
+      "headword": "fuš/fušu b-u=šlomo"
+    }
+  ],
+  "source": {
+    "volume": "2. d, f, g, ġ, ǧ.docx",
+    "order": 1266
+  }
+}

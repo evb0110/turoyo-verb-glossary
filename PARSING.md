@@ -1,139 +1,38 @@
-# Parsing Pipeline (DOCX → JSON → App)
+# Parsing pipeline (DOCX → JSON → site)
 
-This document describes the **authoritative** way verb data is parsed from the DOCX sources and shipped to the Nuxt app. It replaces the old HTML-based pipeline.
+The glossary data is generated; **never edit the JSON by hand**. Fix the parser and regenerate.
 
-If you need to touch the data, follow this file and **do not edit JSON by hand**.
+## Sources and outputs
 
----
+- **Source**: the seven Word volumes in `source/glossary-docx/<snapshot>/` (catalogue: `source/README.md`).
+- **Parser**: `parser/glossary/` (Python standard library only).
+- **Output**: `server/assets/glossary/entries/<entryId>.json` and `server/assets/glossary/index.json`, in the
+  format of `docs/data-contract.md` (`IEntry`): stems, numbered senses, boxes and examples split into
+  Turoyo, translation, references and notes, with stable ids.
 
-## Single Source of Truth
-
-- **Source DOCX files**: `source/glossary-docx/2026-10-21/*.docx`  
-  (7 volumes grouped by letters; catalogue in `source/README.md`)
-- **Production parser**: `.devkit/scripts/parse_docx_v2_fixed.py`
-- **Parser output (combined)**: `.devkit/analysis/docx_v2_parsed.json`
-- **Parser output (per-verb)**: `.devkit/analysis/docx_v2_verbs/*.json`
-- **Runtime storage (Nitro assets)**: `server/assets/verbs/*.json`
-
-All server API routes read from `server/assets/verbs` via Nitro storage (`useStorage('assets:server')`).
-
----
-
-## End-to-End Pipeline
-
-From DOCX to deployed JSON:
-
-```text
-source/glossary-docx/2026-10-21/*.docx
-      │
-      │  (1) parse_docx_v2_fixed.py
-      ▼
-.devkit/analysis/docx_v2_parsed.json
-.devkit/analysis/docx_v2_verbs/*.json
-      │
-      │  (2) comprehensive_validation.py
-      ▼
-[validation reports under .devkit/analysis]
-      │
-      │  (3) copy into Nitro assets
-      ▼
-server/assets/verbs/*.json
-      │
-      │  (4) read in API
-      ▼
-Nuxt app (search + detail views)
-```
-
-### 1. Run the DOCX parser (v2, production)
-
-From the repo root:
+## Commands
 
 ```bash
-python3 .devkit/scripts/parse_docx_v2_fixed.py
+python3 -m parser.glossary              # regenerate entries and index (--source DIR for another snapshot)
+python3 -m parser.glossary.roundtrip    # prove every character of the DOCX is in the output (must be 100%)
+python3 -m unittest parser.glossary.test_glossary -v
 ```
 
-This will:
+Run them from the repository root. A new snapshot of the Word files goes into a new dated folder under
+`source/glossary-docx/`; update `SOURCE` in `parser/glossary/parse.py` and rerun all three.
 
-- Read all `source/glossary-docx/2026-10-21/*.docx`
-- Produce `.devkit/analysis/docx_v2_parsed.json`
-- Produce `.devkit/analysis/docx_v2_verbs/*.json` (one file per root)
+## What the parser guarantees
 
-The v2 parser includes:
+- Every non-empty paragraph and table cell is accounted for (round trip 100%); text is kept verbatim
+  (NFC). Nothing is corrected: errors in the glossary are reported by the proofreading stage as
+  proposals, not silently fixed.
+- Italic runs are Turoyo, roman runs translation; this splits examples whose quotes are missing.
+- Sense numbers are kept as written, including gaps; examples numbered with a sense absent from the
+  stem's list are listed in `parser/glossary/summary.json`.
 
-- Combining-diacritic fixes (ḏ̣, etc.)
-- Homonym numbering
-- Contextual root recovery
-- Empty-Turoyo and null-etymology fixes
+Details, counts and design decisions: `parser/glossary/REPORT.md` and `REPORT-ROUND2.md`.
 
-### 2. Run comprehensive validation
+## Machine proposals and corpus texts
 
-Always validate new parser output before deploying:
-
-```bash
-python3 .devkit/scripts/comprehensive_validation.py .devkit/analysis/docx_v2_verbs
-```
-
-This:
-
-- Compares DOCX parser output against historic baselines
-- Checks verb counts, stem counts, example counts
-- Verifies etymology extraction completeness (see detailed reports in `.devkit/analysis`)
-
-If validation flags new regressions, fix the parser and re-run; **do not “patch” JSON files**.
-
-### 3. Deploy verb JSONs into Nitro assets
-
-Once validation looks good:
-
-```bash
-# Backup current assets
-cp -r server/assets/verbs server/assets/verbs.backup_$(date +%Y%m%d%H%M%S)
-
-# Replace with fresh DOCX-based JSON
-rm server/assets/verbs/*.json
-cp .devkit/analysis/docx_v2_verbs/*.json server/assets/verbs/
-```
-
-These files are bundled by Nitro and used by:
-
-- `/api/verb/:root`
-- `/api/search/roots`
-- `/api/search/fulltext`
-- `/api/stats`
-
----
-
-## Rules and Invariants
-
-**Hard rules:**
-
-- **Never edit JSON directly** in:
-  - `server/assets/verbs/*.json`
-  - `.devkit/analysis/docx_v2_verbs/*.json`
-  - `.devkit/analysis/docx_v2_parsed.json`
-- **Always fix the parser**, then regenerate + validate.
-- **DOCX is authoritative**.
-
-If you see a data problem:
-
-1. Reproduce it by inspecting the DOCX source under `source/glossary-docx/2026-10-21`.
-2. Fix the relevant logic in `.devkit/scripts/parse_docx_v2_fixed.py` (or a dedicated helper script if you are doing a temporary experiment).
-3. Re-run the full pipeline:
-   - `parse_docx_v2_fixed.py`
-   - `comprehensive_validation.py`
-   - Copy into `server/assets/verbs`.
-
----
-
-## Where to Learn More
-
-For deeper technical details and historical context:
-
-- `.devkit/analysis/FINAL_PRODUCTION_SUMMARY.md`
-- `.devkit/analysis/ETYMOLOGY_100_PERCENT.md`
-- `.devkit/analysis/COMPLETE_SUCCESS_SUMMARY.md`
-- `.devkit/analysis/PHASE2_CONTEXTUAL_VALIDATION.md`
-
-For overall project guidelines and architecture, see:
-
-- `.claude/CLAUDE.md`
+`server/assets/glossary/proposals/` and `texts/` are written by the agent pipeline in
+`.devkit/analysis/corpus-run/` (`build_bundle.py`); see `docs/data-contract.md`.

@@ -1,0 +1,634 @@
+{
+  "id": "dry",
+  "root": "dry",
+  "homonym": null,
+  "head": "dry (< MEA dry cf. SL 322: to scatter, disperse; to winnow;)",
+  "crossRefs": [],
+  "notes": [],
+  "stems": [
+    {
+      "id": "dry.I",
+      "stem": "I",
+      "forms": "drele/dore",
+      "senses": [
+        {
+          "n": "1",
+          "gloss": "zur Erde niederwerfen, fallen lassen;"
+        },
+        {
+          "n": "2",
+          "gloss": "(šlomo) grüssen, den Gruss entbieten;"
+        },
+        {
+          "n": "3",
+          "gloss": "ertönen lassen, erheben"
+        },
+        {
+          "n": "4",
+          "gloss": "hineingeben, hinzufügen jl S. 143;"
+        },
+        {
+          "n": "5",
+          "gloss": "verlieren (???)\n[We probably need to split ("
+        },
+        {
+          "n": "1",
+          "gloss": "into two meanings:"
+        },
+        {
+          "n": "1",
+          "gloss": "zur Erde niederwerfen,"
+        },
+        {
+          "n": "2",
+          "gloss": "fallen lassen; the example LB 155 is different situation: ("
+        },
+        {
+          "n": "1",
+          "gloss": "is intentional agentive accomplishment, ("
+        },
+        {
+          "n": "2",
+          "gloss": "is nonintentional agentive accomplishment. The meanings are different, but I am not sure, do we need that level of precision in this dictionary? I also hesitated to split the ("
+        },
+        {
+          "n": "1",
+          "gloss": "meaning in hwy ‘werden, entstehen’: we have werden-entstehen ‘возникать’ and werden-verwandeln ‘становиться кем-то или чем-то’. I think in the case of hwy this range of meaning of werden is natural, like in old Russian становиться has these two meanings (И стал свет), though in modern Russian it is impossible (И появился свет). But I think the case with dry is a little different: intuitively there are many languages which has two different lexemes for"
+        },
+        {
+          "n": "1",
+          "gloss": "zur Erde niederwerfen,"
+        },
+        {
+          "n": "2",
+          "gloss": "fallen lassen, like  Italian abbattere vs. lasciar cadere, French faire tomber vs. laisser tomber, Turkish düşürmek vs devirmek]"
+        }
+      ],
+      "sensesRaw": "1) zur Erde niederwerfen, fallen lassen; 2) (šlomo) grüssen, den Gruss entbieten; 3) ertönen lassen, erheben  4) hineingeben, hinzufügen jl S. 143; 5) verlieren (???)\n[We probably need to split (1) into two meanings: 1) zur Erde niederwerfen, 2) fallen lassen; the example LB 155 is different situation: (1) is intentional agentive accomplishment, (2) is nonintentional agentive accomplishment. The meanings are different, but I am not sure, do we need that level of precision in this dictionary? I also hesitated to split the (1) meaning in hwy ‘werden, entstehen’: we have werden-entstehen ‘возникать’ and werden-verwandeln ‘становиться кем-то или чем-то’. I think in the case of hwy this range of meaning of werden is natural, like in old Russian становиться has these two meanings (И стал свет), though in modern Russian it is impossible (И появился свет). But I think the case with dry is a little different: intuitively there are many languages which has two different lexemes for 1) zur Erde niederwerfen, 2) fallen lassen, like  Italian abbattere vs. lasciar cadere, French faire tomber vs. laisser tomber, Turkish düşürmek vs devirmek]",
+      "detransitiveSenses": [],
+      "detransitiveSensesRaw": null,
+      "boxes": [
+        {
+          "id": "dry.I.t.preterit",
+          "label": "Preterit",
+          "rawLabel": "Preterit",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "dry.I.t.preterit.1",
+              "sense": "1",
+              "turoyo": "drele u=malko m-i=səsto",
+              "translation": "der König wurde (dadurch) vom Pferde heruntergeworfen",
+              "refs": [
+                {
+                  "raw": "332",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "prs 66/30",
+                  "kind": "prs",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "1) drele u=malko m-i=səsto ʻder König wurde (dadurch) vom Pferde heruntergeworfenʼ; 332; prs 66/30;"
+            },
+            {
+              "id": "dry.I.t.preterit.2",
+              "sense": "1",
+              "turoyo": "dralle u=šuro ʕal aṭ=ṭaye",
+              "translation": "sie stürzten die Mauer über die Kurden",
+              "refs": [
+                {
+                  "raw": "335",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "33/30",
+                  "kind": "text",
+                  "textId": "R033",
+                  "verse": 30
+                }
+              ],
+              "note": null,
+              "raw": "dralle u=šuro ʕal aṭ=ṭaye ʻsie stürzten die Mauer über die Kurdenʼ; 335; 33/30;"
+            },
+            {
+              "id": "dry.I.t.preterit.3",
+              "sense": "2",
+              "turoyo": "aṯi u=tagoro drele šlomo aʕlayye",
+              "translation": "der Kaufmann erschien und begrüsste sie",
+              "refs": [
+                {
+                  "raw": "MM 148",
+                  "kind": "mm",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "2) aṯi u=tagoro drele šlomo aʕlayye ʻder Kaufmann erschien und begrüsste sieʼ; MM 148;"
+            },
+            {
+              "id": "dry.I.t.preterit.4",
+              "sense": "2",
+              "turoyo": "ʕabiri l-u=čadər diḏe, dralle šlomo aʕle",
+              "translation": "Sie traten in sein Zelt ein und begrüßten ihn",
+              "refs": [
+                {
+                  "raw": "26/35",
+                  "kind": "text",
+                  "textId": "R026",
+                  "verse": 35
+                },
+                {
+                  "raw": "29/131",
+                  "kind": "text",
+                  "textId": "R029",
+                  "verse": 131
+                }
+              ],
+              "note": null,
+              "raw": "ʕabiri l-u=čadər diḏe, dralle šlomo aʕle ‘Sie traten in sein Zelt ein und begrüßten ihn’; 26/35; 29/131;"
+            },
+            {
+              "id": "dry.I.t.preterit.5",
+              "sense": "2",
+              "turoyo": "lo=šlomo drele aʕle w-lo=mede",
+              "translation": "Er begrüßte [den Jungen] mit keinem Gruß und nichts",
+              "refs": [
+                {
+                  "raw": "29/311",
+                  "kind": "text",
+                  "textId": "R029",
+                  "verse": 311
+                },
+                {
+                  "raw": "30/15",
+                  "kind": "text",
+                  "textId": "R030",
+                  "verse": 15
+                },
+                {
+                  "raw": "39/9",
+                  "kind": "text",
+                  "textId": "R039",
+                  "verse": 9
+                }
+              ],
+              "note": null,
+              "raw": "lo=šlomo drele aʕle w-lo=mede ‘Er begrüßte [den Jungen] mit keinem Gruß und nichts’; 29/311; 30/15; 39/9"
+            },
+            {
+              "id": "dry.I.t.preterit.6",
+              "sense": "3",
+              "turoyo": "dreli hawār ʕal ḥoli",
+              "translation": "I called my uncle for help",
+              "refs": [
+                {
+                  "raw": "337",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "44/112",
+                  "kind": "text",
+                  "textId": "R044",
+                  "verse": 112
+                }
+              ],
+              "note": null,
+              "raw": "3) dreli hawār ʕal ḥoli ʻI called my uncle for helpʼ; 337; 44/112;"
+            },
+            {
+              "id": "dry.I.t.preterit.7",
+              "sense": "3",
+              "turoyo": "drele hawār w-haydān ʕal i=ʕašire; nafəq-le ḥamšalfo l-qamuṯ-ayḏe",
+              "translation": "[Der Scheich] stieß den Hilferuf aus über den Stamm; da kamen fünftausend zu ihm heraus",
+              "refs": [
+                {
+                  "raw": "29/415",
+                  "kind": "text",
+                  "textId": "R029",
+                  "verse": 415
+                }
+              ],
+              "note": null,
+              "raw": "drele hawār w-haydān ʕal i=ʕašire; nafəq-le ḥamšalfo l-qamuṯ-ayḏe ‘[Der Scheich] stieß den Hilferuf aus über den Stamm; da kamen fünftausend zu ihm heraus’; 29/415"
+            },
+            {
+              "id": "dry.I.t.preterit.8",
+              "sense": "5",
+              "turoyo": "ḥa mənne yăqīn dralle u=qufl-awo b-u=darbo",
+              "translation": "einen von ihnen hatte wohl das Schloss unterwegs verloren",
+              "refs": [
+                {
+                  "raw": "LB 155",
+                  "kind": "lb",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "5) ḥa mənne yăqīn dralle u=qufl-awo b-u=darbo ʻeinen von ihnen hatte wohl das Schloss unterwegs verlorenʼ; LB 155;"
+            }
+          ]
+        },
+        {
+          "id": "dry.I.t.infectum",
+          "label": "Infectum",
+          "rawLabel": "Infectum",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "dry.I.t.infectum.1",
+              "sense": "1",
+              "turoyo": "greʕuno kibe d-moḥe b-u=šuro g-dore-le",
+              "translation": "(He was) a young man who could punch a wall and knock it down",
+              "refs": [
+                {
+                  "raw": "77/83",
+                  "kind": "text",
+                  "textId": "R077",
+                  "verse": 83
+                }
+              ],
+              "note": null,
+              "raw": "1) greʕuno kibe d-moḥe b-u=šuro g-dore-le ‘(He was) a young man who could punch a wall and knock it down’ 77/83;"
+            },
+            {
+              "id": "dry.I.t.infectum.2",
+              "sense": "3",
+              "turoyo": "k-moṭe l-larwal d-u=ṭarʕo d-i=ʕamṯo g-dore bərawo “mən masále-yo?” k-nufqo i=ʕamṯo, k-omər “mayəṯ babi”",
+              "translation": "als er aussen an die Tür der Tante kommt, stimmt er die (im k mit brāo! (Bruder) beginnende) Totenklage an. “Was ist denn los?” Die Tante kommt heraus. Er spricht: “Mein Vater ist gestorben!”",
+              "refs": [
+                {
+                  "raw": "355",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "6/23-24",
+                  "kind": "text",
+                  "textId": "R006",
+                  "verse": 23
+                },
+                {
+                  "raw": "6/37",
+                  "kind": "text",
+                  "textId": "R006",
+                  "verse": 37
+                }
+              ],
+              "note": null,
+              "raw": "3) k-moṭe l-larwal d-u=ṭarʕo d-i=ʕamṯo g-dore bərawo “mən masále-yo?” k-nufqo i=ʕamṯo, k-omər “mayəṯ babi” ʻals er aussen an die Tür der Tante kommt, stimmt er die (im k mit brāo! (Bruder) beginnende) Totenklage an. “Was ist denn los?” Die Tante kommt heraus. Er spricht: “Mein Vater ist gestorben!”ʼ; 355; 6/23-24; 6/37;"
+            },
+            {
+              "id": "dry.I.t.infectum.3",
+              "sense": "4",
+              "turoyo": "w-u=barġal, ko-saymína-le g-maḥtina tre=sahme d-maye w-ḥa d-barġal, w-am=maye g-rəṯḥi g-maḥtina i=malḥo w-g-dorina u=barġal-ayḏan, w-g-bošəl",
+              "translation": "As for the wheat groats, we took two parts water and one part wheat groats, and as the water began boiling, we put salt in it, then we added the wheat groats, and they became ready",
+              "refs": [
+                {
+                  "raw": "JL 18.6.11",
+                  "kind": "jl",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "4) w-u=barġal, ko-saymína-le g-maḥtina tre=sahme d-maye w-ḥa d-barġal, w-am=maye g-rəṯḥi g-maḥtina i=malḥo w-g-dorina u=barġal-ayḏan, w-g-bošəl ‘As for the wheat groats, we took two parts water and one part wheat groats, and as the water began boiling, we put salt in it, then we added the wheat groats, and they became ready’ JL 18.6.11;"
+            },
+            {
+              "id": "dry.I.t.infectum.4",
+              "sense": "4",
+              "turoyo": "Azzá dmaḥto ddәryo ṭlawḥe bi bardәš (Keze Ilyas 22)",
+              "translation": null,
+              "refs": [],
+              "note": "Azzá dmaḥto ddәryo ṭlawḥe bi bardәš (Keze Ilyas 22)",
+              "raw": "Azzá dmaḥto ddәryo ṭlawḥe bi bardәš (Keze Ilyas 22)"
+            }
+          ]
+        },
+        {
+          "id": "dry.I.t.infectum-wa",
+          "label": "Infectum-wa",
+          "rawLabel": "Infectum-wa",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "dry.I.t.infectum-wa.1",
+              "sense": "1",
+              "turoyo": "kǝ́t-wo-le abro, xōrt məštaʕe-wo b-u=dəbolo, nošo lo=doré-wo-le",
+              "translation": "sein Sohn war ein schmucker Jüngling, den im Ringkampf niemand niederzuwerfen vermochte",
+              "refs": [
+                {
+                  "raw": "369",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "prs 108/18",
+                  "kind": "prs",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "1) kǝ́t-wo-le abro, xōrt məštaʕe-wo b-u=dəbolo, nošo lo=doré-wo-le ʻsein Sohn war ein schmucker Jüngling, den im Ringkampf niemand niederzuwerfen vermochteʼ; 369; prs 108/18;"
+            },
+            {
+              "id": "dry.I.t.infectum-wa.2",
+              "sense": "2",
+              "turoyo": "qṭí-wa-lle ġắlabe m-ḥḏoḏe, ḥatta l-u=šlomo d-aloho lə=dorən-wa ʕal ḥḏoḏe",
+              "translation": "jeder hatte von den Leuten des anderen viele getötet; sie entboten einander nicht einmal mehr Gottes Gruss",
+              "refs": [
+                {
+                  "raw": "369",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "65/4",
+                  "kind": "text",
+                  "textId": "R065",
+                  "verse": 4
+                }
+              ],
+              "note": null,
+              "raw": "2) qṭí-wa-lle ġắlabe m-ḥḏoḏe, ḥatta l-u=šlomo d-aloho lə=dorən-wa ʕal ḥḏoḏe ʻjeder hatte von den Leuten des anderen viele getötet; sie entboten einander nicht einmal mehr Gottes Grussʼ; 369; 65/4;"
+            }
+          ]
+        },
+        {
+          "id": "dry.I.t.imperativ",
+          "label": "Imperativ",
+          "rawLabel": "Imperativ",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "dry.I.t.imperativ.1",
+              "sense": null,
+              "turoyo": "gamlo kle u=malaxo, dray ṣlibo l-foṯux w ʕamǝ́ṣ ʕaynux, xayifo d-šoqər ruḥux, elo mʕawaqlan u=malaxo, gə-mqatəl Mšiḥo aʕme",
+              "translation": "Kamel, da ist der Engel, schlag ein Kreuz über dein Gesicht und schliesse die Augen; er hat's eilig, deine Seele zu holen, aber wir haben ihn aufgehalten, der Messias wird mit ihm zanken",
+              "refs": [
+                {
+                  "raw": "372",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "prs 215/25",
+                  "kind": "prs",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "gamlo kle u=malaxo, dray ṣlibo l-foṯux w ʕamǝ́ṣ ʕaynux, xayifo d-šoqər ruḥux, elo mʕawaqlan u=malaxo, gə-mqatəl Mšiḥo aʕme ʻKamel, da ist der Engel, schlag ein Kreuz über dein Gesicht und schliesse die Augen; er hat's eilig, deine Seele zu holen, aber wir haben ihn aufgehalten, der Messias wird mit ihm zankenʼ; 372; prs 215/25;"
+            },
+            {
+              "id": "dry.I.t.imperativ.2",
+              "sense": null,
+              "turoyo": "drawu u=taʕlo",
+              "translation": "so legt den Fuchs hin",
+              "refs": [
+                {
+                  "raw": "374",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "prs 188/21",
+                  "kind": "prs",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "drawu u=taʕlo ʻso legt den Fuchs hinʼ; 374; prs 188/21;"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "I: drele/dore"
+      ]
+    },
+    {
+      "id": "dry.II",
+      "stem": "II",
+      "forms": "mdarele/mdare",
+      "senses": [
+        {
+          "n": "1",
+          "gloss": "worfeln;"
+        }
+      ],
+      "sensesRaw": "worfeln;",
+      "detransitiveSenses": [],
+      "detransitiveSensesRaw": null,
+      "boxes": [
+        {
+          "id": "dry.II.t.preterit",
+          "label": "Preterit",
+          "rawLabel": "Preterit",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "dry.II.t.preterit.1",
+              "sense": null,
+              "turoyo": "mdarele u=qaṭmo",
+              "translation": "er verstreute die Asche",
+              "refs": [
+                {
+                  "raw": "414",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "mdarele u=qaṭmo ʻer verstreute die Ascheʼ; 414;"
+            }
+          ]
+        },
+        {
+          "id": "dry.II.t.preterit-wa",
+          "label": "Preterit-wa",
+          "rawLabel": "Preterit-wa",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "dry.II.t.preterit-wa.1",
+              "sense": null,
+              "turoyo": "me d-mdarǝ́n-way-lan ṣafro hedika kǝ́t-way-lan ṣarodo, ṣərdí-way-na-nne b-u=ṣarodo",
+              "translation": "wenn wir sie geworfelt hatten, siebten wir sie dann am Morgen mit dem ṣarodo (groben Sieb)",
+              "refs": [
+                {
+                  "raw": "JL 13.12.11",
+                  "kind": "jl",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "me d-mdarǝ́n-way-lan ṣafro hedika kǝ́t-way-lan ṣarodo, ṣərdí-way-na-nne b-u=ṣarodo ʻwenn wir sie geworfelt hatten, siebten wir sie dann am Morgen mit dem ṣarodo (groben Sieb)ʼ JL 13.12.11;"
+            }
+          ]
+        },
+        {
+          "id": "dry.II.t.infectum",
+          "label": "Infectum",
+          "rawLabel": "Infectum",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "dry.II.t.infectum.1",
+              "sense": null,
+              "turoyo": "bəṯṯər g-malimi-le disa, mdarəl-le, ʕərwi-le w saymi-le disa qatakiri",
+              "translation": "dann sammeln sie sie (die Weizengrütze m) wieder ein, worfeln sie, sieben sie und schlagen die Steinchen mit dem Backblech heraus",
+              "refs": [
+                {
+                  "raw": "420",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "94/253",
+                  "kind": "text",
+                  "textId": "R094",
+                  "verse": 253
+                }
+              ],
+              "note": "91. Ánnaqqa gəmdaranne, maydiwanne malḥoyo Now then, they winnow them, they took along (each one) a winnowing-shovel (2019_13_01_Malf_Ish. )",
+              "raw": "bəṯṯər g-malimi-le disa, mdarəl-le, ʕərwi-le w saymi-le disa qatakiri ʻdann sammeln sie sie (die Weizengrütze m) wieder ein, worfeln sie, sieben sie und schlagen die Steinchen mit dem Backblech herausʼ; 420; 94/253; 91. Ánnaqqa gəmdaranne, maydiwanne malḥoyo Now then, they winnow them, they took along (each one) a winnowing-shovel (2019_13_01_Malf_Ish. )"
+            }
+          ]
+        },
+        {
+          "id": "dry.II.t.infectum-wa",
+          "label": "Infectum-wa",
+          "rawLabel": "Infectum-wa",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "dry.II.t.infectum-wa.1",
+              "sense": null,
+              "turoyo": "g-fayší-way-na b-i=adro hul ṣafro, gə-mdarí-way-na aḥ=ḥeṭe, gə-mdarí-way-na a=ṭlawḥe, gə-mdarí-way-na a=ṣʕore",
+              "translation": "wir blieben bis zum Morgen auf der Tenne und worfelten den Weizen, die Linsen oder die Gerste",
+              "refs": [
+                {
+                  "raw": "JL 13.12.10",
+                  "kind": "jl",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "g-fayší-way-na b-i=adro hul ṣafro, gə-mdarí-way-na aḥ=ḥeṭe, gə-mdarí-way-na a=ṭlawḥe, gə-mdarí-way-na a=ṣʕore ʻwir blieben bis zum Morgen auf der Tenne und worfelten den Weizen, die Linsen oder die Gersteʼ JL 13.12.10;"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "II: mdarele/mdare"
+      ]
+    },
+    {
+      "id": "dry.III",
+      "stem": "III",
+      "forms": "madrele/madre",
+      "senses": [
+        {
+          "n": "1",
+          "gloss": "niederwerfen lassen; sich niederwerfen (mit ruḥo"
+        },
+        {
+          "n": "2",
+          "gloss": "loose"
+        }
+      ],
+      "sensesRaw": "1) niederwerfen lassen; sich niederwerfen (mit ruḥo 2) loose",
+      "detransitiveSenses": [],
+      "detransitiveSensesRaw": null,
+      "boxes": [
+        {
+          "id": "dry.III.t.preterit",
+          "label": "Preterit",
+          "rawLabel": "Preterit",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "dry.III.t.preterit.1",
+              "sense": "1",
+              "turoyo": "qoyəm maṭalle i=baġalṯayḏe, d-meqəm rawəx aʕla, húwwal-le ḥaṭro b-iḏe, w tloṯ=kore marwaxla l-i=baġalṯo, a=tloṯ=kore maxṣūṣ madrele ruḥe l-i=arʕo",
+              "translation": "da brachten sie das Maultier, auf dem er vorher geritten war und gaben ihm einen Stock in die Hand. Dreimal liess ihn das Maultier aufsitzen, dreimal liess er sich absichtlich abwerfen",
+              "refs": [
+                {
+                  "raw": "384",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "29/433",
+                  "kind": "text",
+                  "textId": "R029",
+                  "verse": 433
+                }
+              ],
+              "note": null,
+              "raw": "1) qoyəm maṭalle i=baġalṯayḏe, d-meqəm rawəx aʕla, húwwal-le ḥaṭro b-iḏe, w tloṯ=kore marwaxla l-i=baġalṯo, a=tloṯ=kore maxṣūṣ madrele ruḥe l-i=arʕo ʻda brachten sie das Maultier, auf dem er vorher geritten war und gaben ihm einen Stock in die Hand. Dreimal liess ihn das Maultier aufsitzen, dreimal liess er sich absichtlich abwerfenʼ; 384; 29/433;"
+            },
+            {
+              "id": "dry.III.t.preterit.2",
+              "sense": "1",
+              "turoyo": "ġắlabe noše madrela m-i=martabaṯṯe",
+              "translation": "sie hat viele Leute um Rang und Würden gebracht",
+              "refs": [
+                {
+                  "raw": "385",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "ġắlabe noše madrela m-i=martabaṯṯe ʻsie hat viele Leute um Rang und Würden gebrachtʼ; 385;"
+            },
+            {
+              "id": "dry.III.t.preterit.3",
+              "sense": "2",
+              "turoyo": "U+Šamʕən du+Išk̇o súriwa, əzzawayle  l Súriya. Ánnaqqa kә́twayle palәk̇at d̥ Súriya aʕme, kә́twayle palәk̇at d̥ Suriya aʕme. Qām aṯi li+qriṯo, aṯi li+qriṯo, madrile, mṣakrile.",
+              "translation": "Šamʕən of Išk̇o was Syrian, he went to Syria. Now then, he had Syrian papers with him, he had Syrian papers with him. He up and came to the village, he came to the village, he dropped them, he lost them.",
+              "refs": [],
+              "note": null,
+              "raw": "2) U+Šamʕən du+Išk̇o súriwa, əzzawayle  l Súriya. Ánnaqqa kә́twayle palәk̇at d̥ Súriya aʕme, kә́twayle palәk̇at d̥ Suriya aʕme. Qām aṯi li+qriṯo, aṯi li+qriṯo, madrile, mṣakrile.‘ Šamʕən of Išk̇o was Syrian, he went to Syria. Now then, he had Syrian papers with him, he had Syrian papers with him. He up and came to the village, he came to the village, he dropped them, he lost them."
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "III: madrele/madre"
+      ]
+    }
+  ],
+  "idioms": [],
+  "source": {
+    "volume": "2. d, f, g, ġ, ǧ.docx",
+    "order": 352
+  }
+}
