@@ -89,6 +89,8 @@ interface IIdiom {
 ```
 
 `index.json`: `[{ id, root, homonym, stems: [{ stem, forms }], glossPreview, exampleCount, volume }]`.
+`glossPreview` is the first sense; for an entry without senses it is "see …" for a cross-reference
+(`ʔkl → ʔxl`), otherwise the rest of the heading after the root.
 
 Source strings are Unicode NFC, with outer whitespace trimmed and internal text preserved.
 `head`, `sensesRaw`, `detransitiveSensesRaw`, `rawLabel`, example/idiom `raw`, and `notes`

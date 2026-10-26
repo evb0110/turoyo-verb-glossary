@@ -7,6 +7,7 @@ export default defineEventHandler(async (event) => {
         statusCode: 404,
         message: 'Text not found.',
     })
+    setResponseHeader(event, 'cache-control', 'private, max-age=600')
     const value = getQuery(event).v
     if (value !== undefined) {
         const v = Number(value)

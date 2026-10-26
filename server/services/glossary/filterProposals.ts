@@ -1,17 +1,19 @@
 import type { IEntryIndex } from '#shared/types/IEntryIndex'
-import type { IProposal } from '#shared/types/IProposal'
-import type { IProposalFilters } from '#shared/types/IProposalFilters'
+import type { IProposalIndex } from '#shared/types/IProposalIndex'
 import { normalizeTuroyo } from '#shared/utils/normalizeTuroyo'
 
-export function filterProposals(proposals: IProposal[], index: IEntryIndex[], filters: IProposalFilters): IProposal[] {
-    const root = normalizeTuroyo(filters.root)
-    const text = filters.text.trim().toLowerCase()
-    if (!root && !text) return proposals
+// textMatches: ids of the proposals matching the text filter, or null when there is none.
+export function filterProposals(
+    proposals: IProposalIndex[],
+    index: IEntryIndex[],
+    rootFilter: string,
+    textMatches: ReadonlySet<string> | null
+): IProposalIndex[] {
+    const root = normalizeTuroyo(rootFilter)
+    if (!root && !textMatches) return proposals
     const roots = new Map(index.map(item => [item.id, item.root]))
     return proposals.filter(item =>
         normalizeTuroyo(roots.get(item.entryId) || item.entryId).includes(root)
-        && (!text
-            || item.evidence.some(ref => `${ref.textId} ${ref.cite}`.toLowerCase().includes(text))
-            || `${item.before || ''} ${item.after || ''} ${item.summary} ${item.rationale}`.toLowerCase().includes(text))
+        && (!textMatches || textMatches.has(item.id))
     )
 }

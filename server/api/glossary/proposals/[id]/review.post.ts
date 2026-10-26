@@ -1,4 +1,4 @@
-import { getGlossaryCatalog } from '~~/server/repositories/glossary/getGlossaryCatalog'
+import { getProposal } from '~~/server/repositories/glossary/getProposal'
 import { saveProposalReview } from '~~/server/repositories/reviews/saveProposalReview'
 import { logUserActivity } from '~~/server/services/activity/logUserActivity'
 import { requireApproved } from '~~/server/services/auth/requireApproved'
@@ -25,7 +25,7 @@ export default defineEventHandler(async (event) => {
         statusCode: 400,
         message: 'Comment is too long (maximum 5000).',
     })
-    const proposal = (await getGlossaryCatalog()).proposals.find(item => item.id === getRouterParam(event, 'id', { decode: true }))
+    const proposal = await getProposal(getRouterParam(event, 'id', { decode: true }) || '')
     if (!proposal) throw createError({
         statusCode: 404,
         message: 'Proposal not found.',

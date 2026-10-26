@@ -1,7 +1,7 @@
-import type { IProposal } from '#shared/types/IProposal'
+import type { IProposalIndex } from '#shared/types/IProposalIndex'
 import type { IProposalQueue } from '#shared/types/IProposalQueue'
 
-export function buildProposalQueue(proposals: IProposal[], group: string, proposalId: string): IProposalQueue {
+export function buildProposalQueue(proposals: IProposalIndex[], group: string, proposalId: string): IProposalQueue {
     const selected = group || proposals.find(item => item.id === proposalId)?.kind || ''
     return {
         group: selected,

@@ -1,11 +1,12 @@
-import { getGlossaryCatalog } from '~~/server/repositories/glossary/getGlossaryCatalog'
+import { getEntry } from '~~/server/repositories/glossary/getEntry'
+import { getEntryProposals } from '~~/server/repositories/glossary/getEntryProposals'
+import { getTextIndex } from '~~/server/repositories/glossary/getTextIndex'
 import { logUserActivity } from '~~/server/services/activity/logUserActivity'
 
 export default defineEventHandler(async (event) => {
     const id = getRouterParam(event, 'id', { decode: true }) || ''
-    const catalog = await getGlossaryCatalog()
-    const entry = catalog.entries.find(entry => entry.id === id) || null
-    const proposals = catalog.proposals.filter(proposal => proposal.entryId === id)
+    const entry = await getEntry(id)
+    const proposals = await getEntryProposals(id)
     if (!entry && !proposals.some(proposal => proposal.kind === 'new-root')) {
         throw createError({
             statusCode: 404,
@@ -20,6 +21,6 @@ export default defineEventHandler(async (event) => {
     return {
         entry,
         proposals,
-        textIds: catalog.textIndex.map(text => text.id),
+        textIds: (await getTextIndex()).map(text => text.id),
     }
 })

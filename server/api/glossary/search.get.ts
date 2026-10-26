@@ -1,4 +1,4 @@
-import { getGlossaryCatalog } from '~~/server/repositories/glossary/getGlossaryCatalog'
+import { getSearchIndex } from '~~/server/repositories/glossary/getSearchIndex'
 import { logUserActivity } from '~~/server/services/activity/logUserActivity'
 import { searchGlossary } from '~~/server/services/glossary/searchGlossary'
 
@@ -11,7 +11,7 @@ export default defineEventHandler(async (event) => {
         total: 0,
     }
     try {
-        const result = searchGlossary((await getGlossaryCatalog()).search, q, query.regex === 'true')
+        const result = searchGlossary(await getSearchIndex(), q, query.regex === 'true')
         await logUserActivity(event, {
             eventType: 'search_fulltext',
             query: q,

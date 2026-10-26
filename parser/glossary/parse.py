@@ -420,11 +420,21 @@ def parse_volumes(source=SOURCE):
     return reader.finish()
 
 
-def index_record(entry):
+def gloss_preview(entry):
+    """The first sense; for an entry without senses, its cross-reference or the rest of its heading."""
     glosses = [sense["gloss"] for s in entry["stems"] for sense in (s["senses"] or s["detransitiveSenses"])]
+    if glosses:
+        return glosses[0]
+    rest = re.sub(rf"^{re.escape(entry['root'])}(\s+\d+)?", "", entry["head"]).strip()
+    if entry["crossRefs"] and re.match(r"(→|see\b|sieh\b)", rest):
+        return "see " + ", ".join(ref.replace("-", " ") for ref in entry["crossRefs"])
+    return rest
+
+
+def index_record(entry):
     return {"id": entry["id"], "root": entry["root"], "homonym": entry["homonym"],
             "stems": [{"stem": s["stem"], "forms": s["forms"]} for s in entry["stems"]],
-            "glossPreview": glosses[0] if glosses else "",
+            "glossPreview": gloss_preview(entry),
             "exampleCount": sum(len(b["examples"]) for s in entry["stems"] for b in s["boxes"]),
             "volume": entry["source"]["volume"]}
 

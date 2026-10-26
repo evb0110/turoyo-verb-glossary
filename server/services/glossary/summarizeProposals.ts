@@ -1,11 +1,11 @@
-import type { IProposal } from '#shared/types/IProposal'
+import type { IProposalIndex } from '#shared/types/IProposalIndex'
 import type { IProposalReview } from '#shared/types/IProposalReview'
 import type { IProposalSummary } from '#shared/types/IProposalSummary'
 import type { TProposalGroup } from '#shared/types/TProposalGroup'
 
 export function summarizeProposals(
-    proposals: IProposal[],
-    matching: IProposal[],
+    proposals: IProposalIndex[],
+    matching: IProposalIndex[],
     reviews: IProposalReview[],
     userId: string,
     resumeId: string,

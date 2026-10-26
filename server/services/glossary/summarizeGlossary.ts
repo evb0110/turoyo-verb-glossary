@@ -1,15 +1,17 @@
-import type { IGlossaryCatalog } from '#shared/types/IGlossaryCatalog'
+import type { IEntryIndex } from '#shared/types/IEntryIndex'
+import type { IProposalIndex } from '#shared/types/IProposalIndex'
+import type { ITextIndex } from '#shared/types/ITextIndex'
 
-export function summarizeGlossary(catalog: IGlossaryCatalog) {
+export function summarizeGlossary(index: IEntryIndex[], textIndex: ITextIndex[], proposals: IProposalIndex[]) {
     const kinds: Record<string, number> = {}
-    for (const proposal of catalog.proposals) kinds[proposal.kind] = (kinds[proposal.kind] || 0) + 1
+    for (const proposal of proposals) kinds[proposal.kind] = (kinds[proposal.kind] || 0) + 1
     return {
-        entries: catalog.index.length,
-        texts: catalog.textIndex.length,
-        read: catalog.textIndex.filter(text => text.reading === 'read').length,
-        partial: catalog.textIndex.filter(text => text.reading === 'partial').length,
-        collections: [...new Set(catalog.textIndex.map(text => text.collection))].map((collection) => {
-            const texts = catalog.textIndex.filter(text => text.collection === collection)
+        entries: index.length,
+        texts: textIndex.length,
+        read: textIndex.filter(text => text.reading === 'read').length,
+        partial: textIndex.filter(text => text.reading === 'partial').length,
+        collections: [...new Set(textIndex.map(text => text.collection))].map((collection) => {
+            const texts = textIndex.filter(text => text.collection === collection)
             return {
                 collection,
                 total: texts.length,
@@ -18,7 +20,7 @@ export function summarizeGlossary(catalog: IGlossaryCatalog) {
                 unread: texts.filter(text => text.reading === 'unread').length,
             }
         }),
-        proposals: catalog.proposals.length,
+        proposals: proposals.length,
         kinds,
     }
 }

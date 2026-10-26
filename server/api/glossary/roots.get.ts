@@ -1,13 +1,19 @@
-import { getGlossaryCatalog } from '~~/server/repositories/glossary/getGlossaryCatalog'
+import { getEntryIndex } from '~~/server/repositories/glossary/getEntryIndex'
+import { getEntryProposals } from '~~/server/repositories/glossary/getEntryProposals'
+import { getProposalIndex } from '~~/server/repositories/glossary/getProposalIndex'
 
-export default defineEventHandler(async () => {
-    const catalog = await getGlossaryCatalog()
-    const roots = [...catalog.index]
-    for (const proposal of catalog.proposals) {
-        if (proposal.kind !== 'new-root' || roots.some(root => root.id === proposal.entryId)) continue
+export default defineEventHandler(async (event) => {
+    const roots = [...await getEntryIndex()]
+    const known = new Set(roots.map(root => root.id))
+    const newRoots = new Set((await getProposalIndex())
+        .filter(row => row.kind === 'new-root' && !known.has(row.entryId))
+        .map(row => row.entryId))
+    for (const entryId of newRoots) {
+        const proposal = (await getEntryProposals(entryId)).find(item => item.kind === 'new-root')
+        if (!proposal) continue
         roots.push({
-            id: proposal.entryId,
-            root: String(proposal.data.root || proposal.entryId.replaceAll('-', ' ')),
+            id: entryId,
+            root: String(proposal.data.root || entryId.replaceAll('-', ' ')),
             homonym: null,
             stems: [],
             glossPreview: proposal.summary,
@@ -16,5 +22,7 @@ export default defineEventHandler(async () => {
             proposed: true,
         })
     }
+    // Glossary data changes only with a deploy; keep it in the browser for a few minutes.
+    setResponseHeader(event, 'cache-control', 'private, max-age=600')
     return roots
 })
