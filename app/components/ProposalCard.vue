@@ -80,6 +80,10 @@
             <p v-if="gateWarning" class="error">
                 The cited text could not be verified. {{ gateWarning }}
             </p>
+            <p v-if="machineTranslation" class="caption">
+                The English translation of this passage is a machine translation made for this project; check it
+                against the Turoyo.
+            </p>
         </section>
         <section v-if="evidence.length" class="stack">
             <h3>From the texts</h3>
@@ -261,6 +265,10 @@ const gateWarning = computed(() => {
             ? String(gate.reason)
             : 'Check the printed source.'
         : ''
+})
+const machineTranslation = computed(() => {
+    const gate = props.proposal.data.gate
+    return !!gate && typeof gate === 'object' && 'machineTranslation' in gate && !!gate.machineTranslation
 })
 const duplicateRoot = computed(() =>
     String(

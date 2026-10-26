@@ -6,6 +6,7 @@ export interface ITextIndex {
     collection: string
     file: string
     lang: 'GERMAN' | 'ENGLISH' | null
+    translationSource?: 'edition' | 'machine' | null
     verses: number
     translated: number
     words: number

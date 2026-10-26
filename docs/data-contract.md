@@ -113,6 +113,7 @@ interface IText {
   collection: string;
   file: string;
   lang: "GERMAN" | "ENGLISH" | null; // translation language; null = untranslated
+  translationSource?: "edition" | "machine" | null; // "machine": this project's translation (Jan Beṯ-Şawoce)
   verses: { v: number; tur: string; tr: string | null }[];
   reading?: "unread" | "partial" | "read";
   occurrences?: IOccurrence[]; // present once the text has been read

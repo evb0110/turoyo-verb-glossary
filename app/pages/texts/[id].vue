@@ -11,11 +11,13 @@
             </p>
             <p class="caption">
                 {{
-                    data.lang === "GERMAN"
-                        ? "German translation"
-                        : data.lang === "ENGLISH"
-                            ? "English translation"
-                            : "No translation available"
+                    data.translationSource === "machine"
+                        ? "English machine translation made for this project, not a published one"
+                        : data.lang === "GERMAN"
+                            ? "German translation"
+                            : data.lang === "ENGLISH"
+                                ? "English translation"
+                                : "No translation available"
                 }}
                 · {{ data.occurrences?.length ? "Verbs analysed" : "Not analysed yet" }}
             </p>

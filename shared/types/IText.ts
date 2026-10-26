@@ -10,6 +10,7 @@ export interface IText {
     collection: string
     file: string
     lang: 'GERMAN' | 'ENGLISH' | null
+    translationSource?: 'edition' | 'machine' | null
     verses: IVerse[]
     reading?: 'unread' | 'partial' | 'read'
     occurrences?: IOccurrence[]
