@@ -1,5 +1,13 @@
 <template>
     <AdminPageShell description="Users · Manage access and permissions.">
+        <section class="stack decision-export">
+            <h2>Download review decisions</h2>
+            <p>All current team decisions, including edited wording, for applying to the Word glossary.</p>
+            <div class="export-links">
+                <a href="/api/admin/decisions?format=csv" download>Download CSV</a>
+                <a href="/api/admin/decisions?format=json" download>Download JSON</a>
+            </div>
+        </section>
         <UCard class="mt-4">
             <div class="mt-4 overflow-x-auto">
                 <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
@@ -251,3 +259,16 @@ const getRoleBadgeColor = (role: string) => {
     }
 }
 </script>
+
+<style scoped>
+.decision-export { padding: 1rem 0; }
+.export-links { display: flex; flex-wrap: wrap; gap: 1rem; }
+.export-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 54px;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+}
+</style>

@@ -10,7 +10,35 @@
         <ProposalTarget :entry="entry" :proposal="proposal"/>
         <section class="stack change-section">
             <h3>{{ question ? "Question for the editors" : "Suggested change" }}</h3>
-            <p v-if="proposal.kind === 'move-example'">
+            <div v-if="editing" ref="editArea" class="edit-fields stack">
+                <p>Check the wording below, then save and accept.</p>
+                <template v-if="edit.headword !== undefined">
+                    <label :for="`edit-headword-${proposal.id}`">Idiom heading</label>
+                    <textarea
+                        :id="`edit-headword-${proposal.id}`"
+                        v-model="edit.headword"
+                        rows="3"
+                        maxlength="5000"
+                    ></textarea>
+                </template>
+                <label :for="`edit-text-${proposal.id}`">{{ editLabel }}</label>
+                <textarea
+                    :id="`edit-text-${proposal.id}`"
+                    v-model="edit.text"
+                    rows="5"
+                    maxlength="20000"
+                ></textarea>
+                <template v-if="edit.translation !== undefined">
+                    <label :for="`edit-translation-${proposal.id}`">Translation</label>
+                    <textarea
+                        :id="`edit-translation-${proposal.id}`"
+                        v-model="edit.translation"
+                        rows="5"
+                        maxlength="20000"
+                    ></textarea>
+                </template>
+            </div>
+            <p v-else-if="proposal.kind === 'move-example'">
                 {{ moveDescription }}
             </p>
             <p v-else-if="proposal.kind === 'duplicate-entry'">
@@ -64,10 +92,10 @@
             <p v-else>
                 {{ plainProposalText(proposal.summary) }}
             </p>
-            <p v-if="proposal.data.translation && proposal.after" class="serif">
+            <p v-if="!editing && proposal.data.translation && proposal.after" class="serif">
                 {{ proposal.data.translation }}
             </p>
-            <p v-if="proposal.before && proposal.after === ''" class="caption">
+            <p v-if="!editing && proposal.before && proposal.after === ''" class="caption">
                 The marked text would be removed.
             </p>
         </section>
@@ -103,11 +131,25 @@
             aria-label="Current decision"
         >
             <p>
-                <strong>{{ verdictLabel(latest.verdict) }}</strong> ·
+                <strong>{{ latest.edited ? "Accepted with changes" : verdictLabel(latest.verdict) }}</strong> ·
                 {{ latest.userName }}<br/><time :datetime="latest.createdAt">{{
                     formatDate(latest.createdAt)
                 }}</time>
             </p>
+            <div v-if="latest.edited" class="edited-wording stack">
+                <p v-if="latest.edited.headword" class="serif">
+                    {{ latest.edited.headword }}
+                </p>
+                <p class="serif proposed-text">
+                    {{ latest.edited.text }}
+                </p>
+                <p v-if="latest.edited.translation" class="serif proposed-text">
+                    {{ latest.edited.translation }}
+                </p>
+                <p v-else-if="latest.edited.translation === ''" class="caption">
+                    No translation.
+                </p>
+            </div>
             <p v-if="latest.comment">
                 {{ latest.comment }}
             </p>
@@ -115,13 +157,37 @@
                 You can change this decision below.
             </p>
         </section>
-        <details v-if="history(proposal.id).length > 1" class="history">
-            <summary>
-                Earlier decisions ({{ history(proposal.id).length - 1 }})
-            </summary>
-            <p v-for="item in history(proposal.id).slice(1)" :key="item.id">
-                {{ verdictLabel(item.verdict) }} · {{ item.userName }} ·
-                {{ formatDate(item.createdAt) }}<br/>{{ item.comment }}
+        <details class="history" @toggle="loadAudit">
+            <summary>Decision history</summary>
+            <p v-if="auditError" role="alert">
+                {{ auditError }}
+            </p>
+            <p v-else-if="auditLoading">
+                Loading decisions…
+            </p>
+            <p v-else-if="!audit.length">
+                No decisions yet.
+            </p>
+            <div v-for="item in audit" :key="item.id" class="audit-item stack">
+                <p>
+                    {{ auditLabel(item) }}
+                    · {{ item.userName }} · {{ formatDate(item.createdAt) }}
+                </p>
+                <p v-if="item.edited?.headword">
+                    {{ item.edited.headword }}
+                </p>
+                <p v-if="item.edited" class="proposed-text">
+                    {{ item.edited.text }}
+                </p>
+                <p v-if="item.edited?.translation" class="proposed-text">
+                    {{ item.edited.translation }}
+                </p>
+                <p v-if="item.comment">
+                    {{ item.comment }}
+                </p>
+            </div>
+            <p v-if="audit.length === 100" class="caption">
+                Showing the most recent 100 events.
             </p>
         </details>
         <form v-if="isApproved" class="review-form stack" @submit.prevent>
@@ -146,10 +212,32 @@
                 >
                     {{ commentOpen ? 'Hide comment' : 'Add a comment' }}
                 </button>
-                <button class="accept" :disabled="saving" @click="submit('accept')">
+                <template v-if="editing">
+                    <button class="accept save-edit" :disabled="saving || !edit.text.trim() || edit.headword === ''" @click="submit('accept', true)">
+                        Save and accept
+                    </button>
+                    <button class="quiet cancel-edit" :disabled="saving" @click="editing = false">
+                        Cancel
+                    </button>
+                </template>
+                <button
+                    v-if="!editing && !question"
+                    class="quiet edit-toggle"
+                    :disabled="saving"
+                    @click="startEditing"
+                >
+                    Edit before accepting
+                </button>
+                <button
+                    v-if="!editing"
+                    class="accept"
+                    :disabled="saving"
+                    @click="submit('accept')"
+                >
                     {{ question ? "Noted" : "Accept" }}
                 </button>
                 <button
+                    v-if="!editing"
                     class="quiet reject"
                     :disabled="saving"
                     @click="submit('reject')"
@@ -157,6 +245,7 @@
                     {{ question ? "Dismiss" : "Reject" }}
                 </button>
                 <button
+                    v-if="!editing"
                     class="quiet later"
                     :disabled="saving"
                     @click="submit('discuss')"
@@ -185,7 +274,9 @@ import { plainProposalText } from '~/utils/plainProposalText'
 import { proposalContext } from '~/utils/proposalContext'
 import type { IEntry } from '#shared/types/IEntry'
 import type { IProposal } from '#shared/types/IProposal'
+import type { IProposalEdit } from '#shared/types/IProposalEdit'
 import type { IProposalReview } from '#shared/types/IProposalReview'
+import type { IProposalReviewEvent } from '#shared/types/IProposalReviewEvent'
 import type { TReviewVerdict } from '#shared/types/TReviewVerdict'
 import { entryHref } from '#shared/utils/entryHref'
 import { glossarySenses } from '#shared/utils/glossarySenses'
@@ -221,6 +312,54 @@ const saved = ref<IProposalReview | null>(null)
 const undoing = ref(false)
 const saving = computed(() => pending.value.includes(props.proposal.id))
 const latest = computed(() => history(props.proposal.id)[0])
+const editing = ref(false)
+const edit = ref<IProposalEdit>({ text: '' })
+const editArea = ref<HTMLElement | null>(null)
+const editLabel = computed(() => {
+    if (['add-example', 'new-form', 'new-idiom'].includes(props.proposal.kind)) return 'Turoyo wording'
+    if (['new-sense', 'gloss-change'].includes(props.proposal.kind)) return 'Meaning'
+    if (props.proposal.kind === 'new-stem') return 'Stem forms'
+    if (['move-example', 'duplicate-entry'].includes(props.proposal.kind)
+        || (props.proposal.kind === 'fix-structure' && props.proposal.after === null)) return 'Instructions for the editor'
+    return 'Proposed wording'
+})
+async function startEditing() {
+    const proposal = props.proposal
+    const initial: IProposalEdit = {
+        text: proposal.after
+            ?? String(proposal.data.turoyo ?? proposal.data.forms ?? proposal.data.gloss ?? proposal.summary),
+    }
+    if (['add-example', 'new-form', 'new-idiom'].includes(proposal.kind)
+        || typeof proposal.data.translation === 'string') initial.translation = String(proposal.data.translation ?? '')
+    if (proposal.kind === 'new-idiom' && typeof proposal.data.headword === 'string')
+        initial.headword = proposal.data.headword
+    edit.value = latest.value?.edited ? { ...latest.value.edited } : initial
+    editing.value = true
+    await nextTick()
+    editArea.value?.scrollIntoView({
+        block: 'start',
+        behavior: 'instant',
+    })
+    document.getElementById(`edit-text-${proposal.id}`)?.focus({ preventScroll: true })
+}
+const audit = ref<IProposalReviewEvent[]>([])
+const auditLoading = ref(false)
+const auditError = ref('')
+function auditLabel(item: IProposalReviewEvent) {
+    return item.undoneReviewId
+        ? 'Decision undone'
+        : item.edited ? 'Accepted with changes' : item.verdict ? verdictLabel(item.verdict) : ''
+}
+async function loadAudit(event: Event) {
+    if (!(event.target as HTMLDetailsElement).open) return
+    auditLoading.value = true
+    auditError.value = ''
+    try {
+        audit.value = await $fetch(`/api/glossary/reviews/${props.proposal.id}`)
+    }
+    catch { auditError.value = 'Decision history could not be loaded. Close and reopen to try again.' }
+    finally { auditLoading.value = false }
+}
 const question = computed(() =>
     ['question', 'note'].includes(props.proposal.kind)
 )
@@ -397,15 +536,17 @@ function formatDate(value: string) {
         timeZone: 'UTC',
     }) + ' UTC'
 }
-async function submit(verdict: TReviewVerdict) {
+async function submit(verdict: TReviewVerdict, withChanges = false) {
     saveError.value = ''
     const result = await review(
         props.proposal.id,
         props.proposal.entryId,
         verdict,
-        comment.value
+        comment.value,
+        withChanges ? edit.value : null
     )
     if (result) {
+        editing.value = false
         saved.value = result
         comment.value = ''
         emit('reviewed', result)
@@ -458,6 +599,23 @@ del + ins { margin-left: .12em; }
   padding: 1rem;
   gap: 0.5rem;
 }
+.audit-item {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.edit-fields textarea {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.edit-fields {
+  scroll-margin-top: 1rem;
+}
+.edit-toggle {
+  grid-column: 1 / -1;
+}
+.save-edit {
+  grid-column: span 2;
+}
 .history p {
   margin: 0.8rem 0;
 }
@@ -488,7 +646,7 @@ del + ins { margin-left: .12em; }
 }
 @media (max-width: 760px) {
   .queue-card {
-    padding-bottom: 8rem;
+    padding-bottom: 12rem;
   }
   .decision-bar-fixed {
     position: fixed;

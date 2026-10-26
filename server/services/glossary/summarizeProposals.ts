@@ -11,8 +11,8 @@ export function summarizeProposals(
     resumeId: string,
     resumeGroup: string
 ): IProposalSummary {
-    // The review queue uses the latest team decision; the home count is personal.
-    // Sets also exclude superseded decisions and reviews of removed proposals.
+    // Repositories supply one current decision per proposal, never the audit history.
+    // The home count is decisions currently attributed to this reviewer. Ignore removed proposals.
     const ids = new Set(proposals.map(item => item.id))
     const decided = new Set(reviews.filter(item => ids.has(item.proposalId)).map(item => item.proposalId))
     const ownDecided = new Set(reviews.filter(item => item.userId === userId && ids.has(item.proposalId))

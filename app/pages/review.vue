@@ -17,7 +17,7 @@
             <span>Saved.
                 {{
                     lastSaved.verdict === "accept"
-                        ? "Accepted"
+                        ? lastSaved.edited ? "Accepted with changes" : "Accepted"
                         : lastSaved.verdict === "reject"
                             ? "Rejected"
                             : "For discussion later"
@@ -427,8 +427,8 @@ progress {
 }
 @media (max-width: 760px) {
   .card-navigation {
-    margin-top: -6rem;
-    padding-bottom: 8rem;
+    margin-top: -10rem;
+    padding-bottom: 12rem;
     position: relative;
   }
 }

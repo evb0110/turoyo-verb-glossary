@@ -8,7 +8,9 @@ The site shows three layers. Each has one producer and is stored as JSON under `
 | The text corpus                               | agent pipeline (`.devkit/analysis/corpus-run/build_corpus.py`) from `aramaictexts` | `texts/<textId>.json` (`IText`), `texts/index.json`                |
 | Machine proposals (additions and corrections) | agent pipeline (reading, synthesis, citation check, proofreading)                  | `proposals/<entryId>.json` (`IProposal[]`), `proposals/index.json` |
 
-Reviews of proposals are the only data the site writes; they live in Postgres (`proposal_review`).
+Editorial decisions live in Postgres: `proposal_decision` contains one current team decision per proposal,
+and `proposal_review_event` retains decision snapshots and undo events. See [review-storage.md](review-storage.md).
+The site also writes authentication and activity data. Static glossary assets are never rewritten by a review.
 
 `entries/`, `index.json` and `proposals/` are committed (the glossary and its quotations are public in this
 repository). `texts/` is not: the editions are third-party works kept in the private `aramaictexts`

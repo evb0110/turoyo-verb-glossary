@@ -1,3 +1,4 @@
+import type { IProposalEdit } from '#shared/types/IProposalEdit'
 import type { IProposalReview } from '#shared/types/IProposalReview'
 import type { TReviewVerdict } from '#shared/types/TReviewVerdict'
 
@@ -35,7 +36,8 @@ export function useProposalReviews() {
         proposalId: string,
         entryId: string,
         verdict: TReviewVerdict,
-        comment = ''
+        comment = '',
+        edited: IProposalEdit | null = null
     ) {
         if (pending.value.includes(proposalId) || !user.value) return false
         const optimistic: IProposalReview = {
@@ -43,6 +45,7 @@ export function useProposalReviews() {
             proposalId,
             entryId,
             verdict,
+            edited,
             comment: comment || null,
             userId: user.value.id,
             userName: user.value.name,
@@ -59,12 +62,12 @@ export function useProposalReviews() {
                     body: {
                         verdict,
                         comment,
+                        edited,
+                        acceptWithChanges: !!edited,
                     },
                 }
             )
-            reviews.value = reviews.value.map(item =>
-                item.id === optimistic.id ? saved : item
-            )
+            reviews.value = [saved, ...reviews.value.filter(item => item.proposalId !== proposalId)]
             return saved
         }
         catch {
@@ -85,7 +88,14 @@ export function useProposalReviews() {
                 method: 'DELETE',
                 body: { reviewId: item.id },
             })
-            reviews.value = reviews.value.filter(review => review.id !== item.id)
+            // Undo may restore another editor's previous decision. Refresh only this proposal's
+            // current row, so decisions saved meanwhile for other proposals stay in place.
+            const current = (await request<IProposalReview[]>('/api/glossary/reviews'))
+                .find(review => review.proposalId === item.proposalId)
+            reviews.value = [
+                ...(current ? [current] : []),
+                ...reviews.value.filter(review => review.proposalId !== item.proposalId),
+            ]
             return true
         }
         catch {

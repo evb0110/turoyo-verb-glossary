@@ -9,7 +9,7 @@ A scholarly reference for Turoyo verbs, their numbered senses and corpus evidenc
 - Dictionary entries at `/entry/:id` preserve roots, stems, numbered senses, detransitives, idioms and source references. Old `/verbs/:root` links redirect.
 - Examples switch between sense order and glossary boxes. A clickable coverage matrix marks cells with three or fewer examples.
 - Machine proposals appear at their targets with additions, corrections, notes, diffs, provenance and verse evidence. Glossary-only and proposal-only views are available.
-- Approved users accept, reject or discuss proposals with comments and full review history. `/review` filters by kind, stage, priority, status, text and root; j/k/a/r/d/o drive the queue.
+- Approved users accept, reject or discuss proposals with comments and full review history, and can edit a proposal's wording before accepting it. `/review` goes through one group of suggestions at a time and filters by verb or text.
 - `/texts` groups the corpus by collection. The reader shows aligned translations, analysed verbs, proposed occurrences and alignment flags; `?v=N` opens a verse.
 - A virtual root index and Cmd/Ctrl-K search cover roots, attested forms, German/English glosses, examples and corpus passages. Plain search preserves consonant diacritics while ignoring stress, vowel marks and joiners. Regex search is available.
 - `/research` collects question-tagged observations; `/about` explains the editorial workflow.
@@ -19,7 +19,7 @@ A scholarly reference for Turoyo verbs, their numbered senses and corpus evidenc
 
 The binding format is [docs/data-contract.md](docs/data-contract.md). Nitro reads `server/assets/glossary/index.json`, `entries/*.json`, `texts/*.json` and `proposals/*.json`. The search index is built once per server instance; restart after regenerating assets. Corpus editions are private and must be present locally for a complete Vercel CLI deployment.
 
-Reviews are append-only Postgres records; the latest review determines status. Acceptance records a decision without rewriting source assets. Generate/apply the reviewed Drizzle migration through the normal database workflow before enabling production review. `0005_proposal_review.sql` is additive and leaves the retired `verbs` table untouched. The app no longer reads that table or the legacy JSON/SQLite adapters.
+Reviews are stored in Postgres as one current decision per proposal (with any edited wording) plus an append-only history for undo and audit; see `docs/review-storage.md`. Decisions never rewrite the source assets; admins export them as CSV or JSON for the editors. The server brings the database to the current schema on its first request (`server/middleware/0.databaseSchema.ts`), so production needs no manual migration. The retired `verbs` table is kept but unused.
 
 For isolated UI verification, `.devkit/site-fixture/` contains illustrative data covering all proposal kinds. Start with `NUXT_SITE_FIXTURE=1 NUXT_DEV_AUTH_BYPASS=1 pnpm dev`. Both switches require a development build. The bypass supplies an approved development user and uses process-local review history, with no database writes. Neither switch works in production. Leave the flags unset for real auth and data. To verify access denial locally, `NUXT_DEV_AUTH_ROLE=pending`, `blocked` or `guest` changes the bypass role.
 
@@ -156,11 +156,12 @@ Corpus readers produce `texts/` occurrences and `proposals/`; the website treats
 - `GET /api/glossary/roots`, `/stats`, `/search?q=…&regex=true`
 - `GET /api/glossary/entries/:id` (entry and its proposals)
 - `GET /api/glossary/texts`, `/texts/:id` (`?v=N` returns ±3 context verses)
-- `GET /api/glossary/proposals`, `/reviews`, `/research`
-- `POST /api/glossary/proposals/:id/review` with `{ verdict, comment? }`
+- `GET /api/glossary/proposals/summary`, `/proposals/queue`, `/proposals/:id`, `/reviews` (current decisions), `/reviews/:id` (one proposal's history), `/research`
+- `POST /api/glossary/proposals/:id/review` with `{ verdict, comment?, edited?, acceptWithChanges? }`; `DELETE` with `{ reviewId }` undoes it
+- `GET /api/admin/decisions?format=csv|json` (admins)
 - Existing `/api/auth/*`, `/api/user/me`, `/api/admin/*`
 
-Glossary APIs require an approved user. Missing entries/texts return 404. Reviews validate proposal IDs, verdicts and comment length server-side.
+Glossary APIs require an approved user. Missing entries/texts return 404. Reviews validate proposal IDs, verdicts, edited wording and comment length server-side.
 
 ## Environment Variables
 
