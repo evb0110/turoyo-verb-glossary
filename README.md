@@ -7,12 +7,12 @@ A scholarly reference for Turoyo verbs, their numbered senses and corpus evidenc
 ## Features
 
 - Dictionary entries at `/entry/:id` preserve roots, stems, numbered senses, detransitives, idioms and source references. Old `/verbs/:root` links redirect.
-- Examples switch between sense order and glossary boxes. A clickable coverage matrix marks cells with three or fewer examples.
-- Machine proposals appear at their targets with additions, corrections, notes, diffs, provenance and verse evidence. Glossary-only and proposal-only views are available.
-- Approved users accept, reject or discuss proposals with comments and full review history, and can edit a proposal's wording before accepting it. `/review` goes through one group of suggestions at a time and filters by verb or text.
-- `/texts` groups the corpus by collection. The reader shows aligned translations, analysed verbs, proposed occurrences and alignment flags; `?v=N` opens a verse.
-- A virtual root index and Cmd/Ctrl-K search cover roots, attested forms, German/English glosses, examples and corpus passages. Plain search preserves consonant diacritics while ignoring stress, vowel marks and joiners. Regex search is available.
-- `/research` collects question-tagged observations; `/about` explains the editorial workflow.
+- Examples are listed by meaning and form, with Turoyo, translation and references side by side. A clickable matrix under each stem counts the examples for each meaning and form.
+- Machine proposals sit, fully visible, beside the material they change: kind, target, summary, diff or proposed wording with translation, cited verses and decision buttons. Rationale, full passages and history open on demand. An entry shows all, only undecided, or no suggestions.
+- Approved users accept, reject or discuss proposals with comments and full review history, and can edit a proposal's wording before accepting it. `/review` goes through one group of suggestions at a time, filters by verb or text, and has keyboard shortcuts (ignored while typing).
+- `/texts` lists every text on one line, grouped by collection, with one filter. The reader shows each verse beside its translation, labels machine translations, and explains an analysed verb in place with links to its entry and suggestions; `?v=N` opens and highlights verse N. "Back" links return to the previous page at the same scroll position.
+- The glossary list (with suggestion counts) and the header search cover roots, attested forms, German/English glosses, examples and corpus passages. Plain search preserves consonant diacritics while ignoring stress, vowel marks and joiners. Regex search is available.
+- `/research` pages through question-tagged observations by question and root; `/help` explains the pages (`/about` redirects there).
 - Self-hosted Gentium Plus, responsive layouts, dark mode and SSR. Google authentication, pending/blocked flows and user/session/activity administration are preserved.
 
 ## Glossary data and reviews
@@ -153,10 +153,10 @@ Corpus readers produce `texts/` occurrences and `proposals/`; the website treats
 
 ## API routes
 
-- `GET /api/glossary/roots`, `/stats`, `/search?q=…&regex=true`
-- `GET /api/glossary/entries/:id` (entry and its proposals)
+- `GET /api/glossary/roots` (with each root's proposal count), `/stats`, `/search?q=…&regex=true`
+- `GET /api/glossary/entries/:id` (entry, its proposals and the previous/next roots)
 - `GET /api/glossary/texts`, `/texts/:id` (`?v=N` returns ±3 context verses)
-- `GET /api/glossary/proposals/summary`, `/proposals/queue`, `/proposals/:id`, `/reviews` (current decisions), `/reviews/:id` (one proposal's history), `/research`
+- `GET /api/glossary/proposals/summary`, `/proposals/undecided` (undecided count per entry), `/proposals/queue`, `/proposals/:id`, `/reviews` (current decisions), `/reviews/:id` (one proposal's history), `/research?question=…&root=…&page=N` (100 notes a page)
 - `POST /api/glossary/proposals/:id/review` with `{ verdict, comment?, edited?, acceptWithChanges? }`; `DELETE` with `{ reviewId }` undoes it
 - `GET /api/admin/decisions?format=csv|json` (admins)
 - Existing `/api/auth/*`, `/api/user/me`, `/api/admin/*`

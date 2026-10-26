@@ -1,6 +1,6 @@
 <template>
     <AdminPageShell description="Users · Manage access and permissions.">
-        <section class="stack decision-export">
+        <section class="decision-export">
             <h2>Download review decisions</h2>
             <p>All current team decisions, including edited wording, for applying to the Word glossary.</p>
             <div class="export-links">
@@ -8,37 +8,37 @@
                 <a href="/api/admin/decisions?format=json" download>Download JSON</a>
             </div>
         </section>
-        <UCard class="mt-4">
-            <div class="mt-4 overflow-x-auto">
+        <UCard class="mt-3">
+            <div class="overflow-x-auto">
                 <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
                     <thead>
                         <tr>
                             <th
-                                class="px-6 py-3 text-left text-xs font-medium text-gray-500
+                                class="px-3 py-1.5 text-left text-xs font-medium text-gray-500
                                     dark:text-gray-400 uppercase tracking-wider"
                             >
                                 User
                             </th>
                             <th
-                                class="px-6 py-3 text-left text-xs font-medium text-gray-500
+                                class="px-3 py-1.5 text-left text-xs font-medium text-gray-500
                                     dark:text-gray-400 uppercase tracking-wider"
                             >
                                 Email
                             </th>
                             <th
-                                class="px-6 py-3 text-left text-xs font-medium text-gray-500
+                                class="px-3 py-1.5 text-left text-xs font-medium text-gray-500
                                     dark:text-gray-400 uppercase tracking-wider"
                             >
                                 Role
                             </th>
                             <th
-                                class="px-6 py-3 text-left text-xs font-medium text-gray-500
+                                class="px-3 py-1.5 text-left text-xs font-medium text-gray-500
                                     dark:text-gray-400 uppercase tracking-wider"
                             >
                                 Joined
                             </th>
                             <th
-                                class="px-6 py-3 text-right text-xs font-medium text-gray-500
+                                class="px-3 py-1.5 text-right text-xs font-medium text-gray-500
                                     dark:text-gray-400 uppercase tracking-wider"
                             >
                                 Actions
@@ -51,7 +51,7 @@
                             :key="u.id"
                             class="hover:bg-gray-50 dark:hover:bg-gray-800/50"
                         >
-                            <td class="px-6 py-4 whitespace-nowrap">
+                            <td class="px-3 py-1.5 whitespace-nowrap">
                                 <div class="flex items-center">
                                     <UAvatar
                                         :src="u.image || ''"
@@ -73,11 +73,11 @@
                                 </div>
                             </td>
                             <td
-                                class="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400"
+                                class="px-3 py-1.5 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400"
                             >
                                 {{ u.email }}
                             </td>
-                            <td class="px-6 py-4 whitespace-nowrap">
+                            <td class="px-3 py-1.5 whitespace-nowrap">
                                 <UBadge
                                     :color="getRoleBadgeColor(u.role)"
                                     variant="subtle"
@@ -86,12 +86,12 @@
                                 </UBadge>
                             </td>
                             <td
-                                class="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400"
+                                class="px-3 py-1.5 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400"
                             >
                                 {{ formatDateTime(u.createdAt) }}
                             </td>
                             <td
-                                class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium"
+                                class="px-3 py-1.5 whitespace-nowrap text-right text-sm font-medium"
                             >
                                 <div class="flex justify-end gap-2">
                                     <UButton
@@ -136,7 +136,7 @@
             </div>
         </UCard>
 
-        <div v-if="!users || users.length === 0" class="text-center py-12">
+        <div v-if="!users || users.length === 0" class="text-center py-6">
             <p class="text-gray-500 dark:text-gray-400">
                 No users found
             </p>
@@ -261,14 +261,13 @@ const getRoleBadgeColor = (role: string) => {
 </script>
 
 <style scoped>
-.decision-export { padding: 1rem 0; }
-.export-links { display: flex; flex-wrap: wrap; gap: 1rem; }
-.export-links a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 54px;
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--rule);
-  border-radius: 6px;
+.decision-export {
+  display: grid;
+  gap: 0.3rem;
+}
+.export-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 </style>

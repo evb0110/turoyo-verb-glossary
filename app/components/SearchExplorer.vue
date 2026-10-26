@@ -1,46 +1,40 @@
 <template>
-    <div class="search-explorer">
-        <form class="search-form" @submit.prevent="run">
-            <label :for="inputId">Find a verb: root, form or meaning</label>
+    <div class="search">
+        <form class="search-form" role="search" @submit.prevent="run">
+            <label :for="inputId" class="sr-only">Search roots, forms, meanings, examples and texts</label>
             <input
                 :id="inputId"
                 v-model="query"
                 type="search"
-                placeholder="e.g. sym or put"
+                placeholder="Search roots, forms, meanings, examples and texts, e.g. sym or wollen"
                 autocomplete="off"
             />
-            <button class="primary" type="submit">
-                Search
-            </button>
+            <label class="regex small"><input v-model="regex" type="checkbox"/> Regular expression</label>
+            <span class="small muted">Vowel and stress marks are optional.</span>
         </form>
-        <details class="search-options">
-            <summary>More options</summary>
-            <label class="row"><input v-model="regex" type="checkbox"/> Use a regular
-                expression</label>
-            <p class="caption">
-                Special transcription marks are optional in ordinary searches.
-            </p>
-        </details>
-        <p v-if="pending" role="status">
+        <p v-if="pending" role="status" class="small">
             Searching…
         </p>
         <p v-else-if="error" class="error" role="alert">
             {{ error }}
         </p>
         <template v-else-if="response">
-            <p class="muted" aria-live="polite">
-                {{ response.total }} matches. Up to 30 shown in each group.
+            <p class="small muted" aria-live="polite">
+                {{ response.total.toLocaleString("en") }} matches.
             </p>
             <section v-for="group in groups" :key="group.type" class="result-group">
-                <h2>{{ group.label }}</h2>
+                <h2>
+                    {{ group.label }}
+                    <span class="small muted">{{ groupCount(group) }}</span>
+                </h2>
                 <NuxtLink
                     v-for="result in group.results"
                     :key="result.id"
                     :to="result.to"
-                    class="search-result"
+                    class="result"
                 >
-                    <span class="result-title">{{ result.title }}</span>
-                    <MatchSnippet :text="result.snippet" :ranges="result.ranges"/>
+                    <span class="result-title serif" v-text="result.title"></span>
+                    <MatchSnippet class="result-snippet" :text="result.snippet" :ranges="result.ranges"/>
                 </NuxtLink>
             </section>
             <p v-if="!response.total" class="empty">
@@ -85,9 +79,8 @@ async function run() {
     }
     catch (cause) {
         if (current === requestId)
-            error.value
-                = (cause as { data?: { message?: string } }).data?.message
-                    || 'Search could not be completed. Please try again.'
+            error.value = (cause as { data?: { message?: string } }).data?.message
+                || 'Search could not be completed. Please try again.'
     }
     finally {
         if (current === requestId) pending.value = false
@@ -104,13 +97,17 @@ const labels = {
     example: 'Glossary examples',
     text: 'From the texts',
 }
+function groupCount(group: { count: number
+    results: ISearchResult[] }) {
+    return group.count > group.results.length ? `${group.count}, first ${group.results.length} shown` : `${group.count}`
+}
 const groups = computed(() =>
     Object.entries(labels)
         .map(([type, label]) => ({
             type,
             label,
-            results:
-        response.value?.results.filter(result => result.type === type) || [],
+            count: response.value?.counts[type] || 0,
+            results: response.value?.results.filter(result => result.type === type) || [],
         }))
         .filter(group => group.results.length)
 )
@@ -118,33 +115,54 @@ const groups = computed(() =>
 
 <style scoped>
 .search-form {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 1rem;
 }
-.search-form label {
-  grid-column: 1 / -1;
+.search-form input[type="search"] {
+  flex: 1 1 24rem;
+  max-width: 44rem;
 }
-.search-options {
-  margin: 0.7rem 0 1.4rem;
+.regex {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
 }
-.search-options .caption {
-  margin-top: 0.7rem;
+.search > p {
+  margin-top: 0.5rem;
 }
 .result-group {
-  margin-top: 1.8rem;
+  margin-top: 1rem;
 }
-.search-result {
+.result-group h2 {
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid var(--ink);
+  font-size: 1rem;
+}
+.result {
   display: grid;
-  gap: 0.4rem;
-  padding: 1rem 0;
+  grid-template-columns: 16rem minmax(0, 1fr);
+  gap: 0 1rem;
+  padding: 0.2rem 0;
   border-bottom: 1px solid var(--rule);
   color: var(--ink);
+  font-size: 0.9375rem;
   text-decoration: none;
+}
+.result:hover {
+  background: var(--bg-soft);
 }
 .result-title {
   color: var(--accent);
-  font-family: var(--font-serif);
-  font-size: 1.4rem;
+  font-size: 1rem;
+}
+.result:hover .result-title {
+  text-decoration: underline;
+}
+@media (max-width: 760px) {
+  .result {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 </style>

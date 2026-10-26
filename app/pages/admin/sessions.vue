@@ -4,20 +4,20 @@
             <div
                 v-for="card in summaryCards"
                 :key="card.label"
-                class="rounded-lg border border-gray-100 bg-gray-50/80 p-3 dark:border-gray-800 dark:bg-gray-900/40"
+                class="rounded border border-gray-100 bg-gray-50/80 px-3 py-2 dark:border-gray-800 dark:bg-gray-900/40"
             >
                 <p
                     class="text-xs font-medium uppercase tracking-wide text-gray-500 dark:text-gray-400"
                 >
                     {{ card.label }}
                 </p>
-                <p class="mt-2 text-xl font-semibold text-gray-900 dark:text-white">
+                <p class="mt-1 text-lg font-semibold text-gray-900 dark:text-white">
                     {{ card.value.toLocaleString() }}
                 </p>
             </div>
         </div>
 
-        <UCard class="mt-6 space-y-4">
+        <UCard class="mt-3 space-y-3">
             <div
                 class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between"
             >
@@ -50,7 +50,7 @@
 
             <div
                 v-if="sessions.length === 0 && !pending"
-                class="rounded-xl border border-dashed px-6 py-12 text-center text-sm
+                class="rounded-xl border border-dashed px-6 py-6 text-center text-sm
                     text-gray-500 dark:border-gray-800 dark:text-gray-400"
             >
                 No sessions have been recorded yet.
@@ -63,27 +63,27 @@
                     <thead class="bg-gray-50 dark:bg-gray-900/30">
                         <tr>
                             <th
-                                class="px-4 py-3 text-left font-semibold text-gray-600 dark:text-gray-300"
+                                class="px-3 py-1.5 text-left font-semibold text-gray-600 dark:text-gray-300"
                             >
                                 User
                             </th>
                             <th
-                                class="px-4 py-3 text-left font-semibold text-gray-600 dark:text-gray-300"
+                                class="px-3 py-1.5 text-left font-semibold text-gray-600 dark:text-gray-300"
                             >
                                 Device
                             </th>
                             <th
-                                class="px-4 py-3 text-left font-semibold text-gray-600 dark:text-gray-300"
+                                class="px-3 py-1.5 text-left font-semibold text-gray-600 dark:text-gray-300"
                             >
                                 Activity
                             </th>
                             <th
-                                class="px-4 py-3 text-left font-semibold text-gray-600 dark:text-gray-300"
+                                class="px-3 py-1.5 text-left font-semibold text-gray-600 dark:text-gray-300"
                             >
                                 Requests
                             </th>
                             <th
-                                class="px-4 py-3 text-left font-semibold text-gray-600 dark:text-gray-300"
+                                class="px-3 py-1.5 text-left font-semibold text-gray-600 dark:text-gray-300"
                             >
                                 Last search
                             </th>
@@ -95,7 +95,7 @@
                             :key="session.id"
                             class="align-top"
                         >
-                            <td class="px-4 py-4">
+                            <td class="px-3 py-1.5">
                                 <div class="font-medium text-gray-900 dark:text-gray-100">
                                     {{ session.userName || 'Unknown user' }}
                                 </div>
@@ -106,7 +106,7 @@
                                     Session ID: {{ session.sessionId }}
                                 </div>
                             </td>
-                            <td class="space-y-1 px-4 py-4">
+                            <td class="space-y-1 px-3 py-1.5">
                                 <p class="text-sm text-gray-700 dark:text-gray-200">
                                     {{ session.ipAddress || 'Unknown IP' }}
                                 </p>
@@ -116,7 +116,7 @@
                                     {{ session.userAgent || '—' }}
                                 </p>
                             </td>
-                            <td class="space-y-1 px-4 py-4">
+                            <td class="space-y-1 px-3 py-1.5">
                                 <div class="text-sm text-gray-900 dark:text-gray-100">
                                     Last: {{ formatDateTime(session.lastActivityAt) }}
                                 </div>
@@ -124,7 +124,7 @@
                                     Started: {{ formatDateTime(session.createdAt) }}
                                 </div>
                             </td>
-                            <td class="px-4 py-4">
+                            <td class="px-3 py-1.5">
                                 <div
                                     class="text-sm font-semibold text-gray-900 dark:text-gray-100"
                                 >
@@ -135,7 +135,7 @@
                                     · {{ session.statsRequests.toLocaleString() }} stats
                                 </div>
                             </td>
-                            <td class="px-4 py-4">
+                            <td class="px-3 py-1.5">
                                 <div class="text-sm text-gray-900 dark:text-gray-100">
                                     {{ session.lastSearchQuery || '—' }}
                                 </div>

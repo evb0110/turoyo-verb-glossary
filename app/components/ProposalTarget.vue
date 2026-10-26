@@ -1,20 +1,19 @@
 <template>
-    <section class="target stack">
-        <h3>In the glossary now</h3>
-        <p v-if="context.location" class="caption">
+    <div class="target">
+        <p v-if="context.location" class="small muted">
             {{ context.location }}
         </p>
         <template v-if="context.example">
-            <p class="turoyo">
+            <p class="tur">
                 {{ context.example.turoyo || context.example.raw }}
             </p>
-            <p v-if="context.example.translation" class="serif translation">
+            <p v-if="context.example.translation">
                 {{ context.example.translation }}
             </p>
-            <p v-if="context.example.refs.length" class="caption">
+            <p v-if="context.example.refs.length" class="small muted">
                 {{ context.example.refs.map((ref) => ref.raw).join(" · ") }}
             </p>
-            <p v-if="context.example.note">
+            <p v-if="context.example.note" class="small">
                 {{ context.example.note }}
             </p>
         </template>
@@ -24,16 +23,21 @@
         <p v-else-if="context.current" class="serif">
             {{ context.current }}
         </p>
-        <p v-else-if="context.stem" class="serif">
-            {{ context.stem.forms }}<br/>{{ context.stem.sensesRaw }}
-        </p>
+        <template v-else-if="context.stem">
+            <p class="tur">
+                {{ context.stem.forms }}
+            </p>
+            <p class="serif">
+                {{ context.stem.sensesRaw }}
+            </p>
+        </template>
         <p v-else-if="entry" class="serif">
             {{ entry.head }}
         </p>
-        <p v-else>
+        <p v-else class="muted">
             This verb is not in the glossary yet.
         </p>
-    </section>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -48,11 +52,7 @@ const context = computed(() => proposalContext(props.entry, props.proposal))
 
 <style scoped>
 .target {
-  gap: 0.6rem;
-  padding-bottom: 1.3rem;
-  border-bottom: 1px solid var(--rule);
-}
-.translation {
-  font-size: 1.2rem;
+  display: grid;
+  gap: 0.15rem;
 }
 </style>

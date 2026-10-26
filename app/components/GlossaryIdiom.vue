@@ -1,78 +1,46 @@
 <template>
-    <article :id="idiom.id" class="idiom">
-        <p class="idiom-text serif">
-            <template v-for="(token, i) in tokens" :key="i">
-                <strong
-                    v-if="token.kind === 'headword'"
-                    class="idiom-headword"
-                >{{ token.text }}
-                </strong>
-                <button
-                    v-else-if="token.kind === 'ref'"
-                    class="verse-ref"
-                    @click="open(token.textId!, token.verse!, token.text)"
-                >
-                    {{ token.text }}
-                </button>
-                <span v-else :class="token.kind">{{ token.text }}</span>
-            </template>
-        </p>
-        <details class="idiom-raw">
-            <summary>Original text</summary>
-            <p>{{ idiom.raw }}</p>
-        </details>
-    </article>
+    <p :id="idiom.id" class="idiom serif">
+        <template v-for="(token, i) in tokens" :key="i">
+            <strong v-if="token.kind === 'headword'" class="headword">{{ token.text }}</strong>
+            <NuxtLink
+                v-else-if="token.kind === 'ref'"
+                class="ref"
+                :to="verseHref(token.textId!, token.verse!)"
+            >{{ token.text }}</NuxtLink>
+            <span v-else :class="token.kind">{{ token.text }}</span>
+        </template>
+    </p>
 </template>
 
 <script setup lang="ts">
 import { idiomTokens } from '~/utils/idiomTokens'
+import { verseHref } from '~/utils/verseHref'
 import type { IIdiom } from '#shared/types/IIdiom'
 
 const props = defineProps<{ idiom: IIdiom
     textIds: string[] }>()
 const tokens = computed(() => idiomTokens(props.idiom.raw, new Set(props.textIds)))
-const { open } = useEvidence()
 </script>
 
 <style scoped>
 .idiom {
-    margin: 1.3rem 0;
+  padding: 0.3rem 0;
+  border-top: 1px solid var(--rule);
+  font-size: 1.0625rem;
+  white-space: pre-wrap;
 }
-.idiom-text {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    white-space: pre-wrap;
-}
-.idiom-headword {
-    font-style: italic;
-    font-weight: 600;
-}
+.headword,
 .turoyo {
-    font-size: inherit;
+  font-style: italic;
 }
-.translation,
+.headword {
+  font-weight: 700;
+}
 .annotation {
-    font-style: normal;
+  color: var(--muted);
 }
-.annotation {
-    color: var(--muted);
-}
-.verse-ref {
-    color: var(--accent);
-    text-decoration: underline;
-    font-size: 1rem;
-    font-family: var(--font-sans);
-}
-.idiom-raw {
-    color: var(--muted);
-    font-size: .889rem;
-    margin-top: 0.3rem;
-}
-.idiom-raw summary {
-    cursor: pointer;
-}
-.idiom-raw p {
-    white-space: pre-wrap;
-    margin-top: 0.4rem;
+.ref {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
 }
 </style>

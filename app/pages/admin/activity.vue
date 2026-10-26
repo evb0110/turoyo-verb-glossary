@@ -6,20 +6,20 @@
             <div
                 v-for="type in activityEventTypes"
                 :key="type"
-                class="rounded-lg border border-gray-100 bg-gray-50/80 p-3 dark:border-gray-800 dark:bg-gray-900/40"
+                class="rounded border border-gray-100 bg-gray-50/80 px-3 py-2 dark:border-gray-800 dark:bg-gray-900/40"
             >
                 <p
                     class="text-xs font-medium uppercase tracking-wide text-gray-500 dark:text-gray-400"
                 >
                     {{ eventLabels[type] }}
                 </p>
-                <p class="mt-2 text-xl font-semibold text-gray-900 dark:text-white">
+                <p class="mt-1 text-lg font-semibold text-gray-900 dark:text-white">
                     {{ Number(counts[type] ?? 0).toLocaleString() }}
                 </p>
             </div>
         </div>
 
-        <UCard class="mt-6 space-y-4">
+        <UCard class="mt-3 space-y-3">
             <div class="grid gap-3 md:grid-cols-4">
                 <UInput
                     v-model="searchInput"
@@ -62,7 +62,7 @@
 
             <div
                 v-if="events.length === 0 && !pending"
-                class="rounded-xl border border-dashed px-6 py-12 text-center text-sm
+                class="rounded-xl border border-dashed px-6 py-6 text-center text-sm
                     text-gray-500 dark:border-gray-800 dark:text-gray-400"
             >
                 No activity has been recorded for this filter.
@@ -75,22 +75,22 @@
                     <thead class="bg-gray-50 dark:bg-gray-900/30">
                         <tr>
                             <th
-                                class="px-4 py-3 text-left font-semibold text-gray-600 dark:text-gray-300"
+                                class="px-3 py-1.5 text-left font-semibold text-gray-600 dark:text-gray-300"
                             >
                                 When
                             </th>
                             <th
-                                class="px-4 py-3 text-left font-semibold text-gray-600 dark:text-gray-300"
+                                class="px-3 py-1.5 text-left font-semibold text-gray-600 dark:text-gray-300"
                             >
                                 User & Event
                             </th>
                             <th
-                                class="px-4 py-3 text-left font-semibold text-gray-600 dark:text-gray-300"
+                                class="px-3 py-1.5 text-left font-semibold text-gray-600 dark:text-gray-300"
                             >
                                 Payload
                             </th>
                             <th
-                                class="px-4 py-3 text-left font-semibold text-gray-600 dark:text-gray-300"
+                                class="px-3 py-1.5 text-left font-semibold text-gray-600 dark:text-gray-300"
                             >
                                 Response
                             </th>
@@ -99,14 +99,14 @@
                     <tbody class="divide-y divide-gray-100 dark:divide-gray-800">
                         <tr v-for="entry in events" :key="entry.id" class="align-top">
                             <td
-                                class="px-4 py-4 text-sm text-gray-900 dark:text-gray-100"
+                                class="px-3 py-1.5 text-sm text-gray-900 dark:text-gray-100"
                             >
                                 <div>{{ formatDateTime(entry.createdAt) }}</div>
                                 <div class="text-xs text-gray-500 dark:text-gray-400">
                                     Session: {{ entry.sessionId || 'n/a' }}
                                 </div>
                             </td>
-                            <td class="px-4 py-4">
+                            <td class="px-3 py-1.5">
                                 <div class="font-medium text-gray-900 dark:text-gray-100">
                                     {{ entry.userName || 'Unknown user' }}
                                 </div>
@@ -122,7 +122,7 @@
                                     {{ eventLabels[entry.eventType] }}
                                 </UBadge>
                             </td>
-                            <td class="space-y-2 px-4 py-4">
+                            <td class="space-y-2 px-3 py-1.5">
                                 <div
                                     v-if="entry.query"
                                     class="text-sm text-gray-900 dark:text-gray-100"
@@ -172,7 +172,7 @@
                                     Host: {{ entry.host || 'unknown' }}
                                 </p>
                             </td>
-                            <td class="space-y-1 px-4 py-4">
+                            <td class="space-y-1 px-3 py-1.5">
                                 <div class="flex items-center gap-2">
                                     <UBadge
                                         :color="statusColor(entry.statusCode)"

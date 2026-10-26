@@ -1,160 +1,185 @@
 <template>
-    <div>
-        <header v-if="!group" class="page-heading">
-            <h1>Review suggested changes</h1>
-            <p>
-                Check one machine suggestion at a time and choose Accept, Reject or
-                Decide later.
+    <div class="review" :class="{ 'has-group': !!group }">
+        <aside class="review-side">
+            <h1>Review</h1>
+            <p class="small">
+                <strong>{{ decided.toLocaleString("en") }}</strong> of {{ (summary?.total || 0).toLocaleString("en") }}
+                decided by the team
             </p>
-        </header>
-        <p v-if="error || queueError || proposalError || reviewError" class="error" role="alert">
-            {{
-                reviewError
-                    || "Suggested changes could not be loaded. Please try again."
-            }}
-        </p>
-        <div v-if="lastSaved" class="saved-notice" role="status">
-            <span>Saved.
-                {{
-                    lastSaved.verdict === "accept"
-                        ? lastSaved.edited ? "Accepted with changes" : "Accepted"
-                        : lastSaved.verdict === "reject"
-                            ? "Rejected"
-                            : "For discussion later"
-                }}.</span>
-            <button class="text-button" :disabled="undoing" @click="undoLast">
-                Undo
-            </button>
-        </div>
-        <template v-if="!group">
-            <section class="progress-section stack">
-                <p>
-                    <strong>{{ decided.toLocaleString() }} of
-                        {{ (summary?.total || 0).toLocaleString() }} decided</strong>
+            <progress
+                :value="decided"
+                :max="summary?.total || 1"
+                :aria-label="`${decided} of ${summary?.total || 0} decided`"
+            ></progress>
+            <div class="filters">
+                <label for="review-root">Verb</label>
+                <input
+                    id="review-root"
+                    v-model="rootInput"
+                    type="search"
+                    placeholder="e.g. sym"
+                />
+                <label for="review-text">Text</label>
+                <input
+                    id="review-text"
+                    v-model="textInput"
+                    type="search"
+                    placeholder="e.g. 24/48 or R024"
+                />
+            </div>
+            <label class="group-select small">
+                Group
+                <select :value="group" @change="start(($event.target as HTMLSelectElement).value)">
+                    <option v-for="item in allGroups" :key="item.kind" :value="item.kind">
+                        {{ item.label }} ({{ item.undecided.toLocaleString("en") }})
+                    </option>
+                </select>
+            </label>
+            <nav class="groups" aria-label="Suggestion groups">
+                <p class="small muted">
+                    Group · undecided
                 </p>
-                <progress
-                    :value="decided"
-                    :max="(summary?.total || 0) || 1"
-                    :aria-label="`${decided} of ${(summary?.total || 0)} decided`"
-                ></progress>
                 <button
-                    v-if="summary?.resume"
-                    class="primary resume-button"
-                    @click="continueReview"
-                >
-                    Continue where you left off →
-                </button>
-            </section>
-            <details class="filter-disclosure">
-                <summary>Filter by verb or text</summary>
-                <div class="stack">
-                    <label for="review-root">Verb root</label><input id="review-root" v-model="root" placeholder="e.g. sym"/>
-                    <label for="review-text">Text reference</label><input
-                        id="review-text"
-                        v-model="text"
-                        placeholder="e.g. 24/48 or R024"
-                    />
-                </div>
-            </details>
-            <p v-if="summaryPending" role="status">
-                Loading suggested changes…
-            </p>
-            <div class="groups" aria-label="Suggestion groups">
-                <button
-                    v-if="important"
-                    class="group-row important"
-                    :disabled="summaryPending"
-                    @click="start('important')"
-                >
-                    <strong>Most important first</strong><span>{{ important.undecided }} still undecided ·
-                        {{ important.total }} total</span><span class="group-arrow" aria-hidden="true">→</span>
-                </button>
-                <button
-                    v-for="item in groups"
+                    v-for="item in allGroups"
                     :key="item.kind"
-                    class="group-row"
+                    type="button"
+                    class="group"
+                    :aria-current="item.kind === group ? 'true' : undefined"
                     :disabled="summaryPending"
                     @click="start(item.kind)"
                 >
-                    <strong>{{ item.label }}</strong><span>{{ item.undecided }} still undecided ·
-                        {{ item.total }} total</span><span class="group-arrow" aria-hidden="true">→</span>
+                    <span>{{ item.label }}</span>
+                    <span class="num">{{ item.undecided.toLocaleString("en") }}</span>
                 </button>
-            </div>
-            <p v-if="!groups.length && !error && !summaryPending" class="empty">
-                No suggestions match. Try clearing the verb or text filter.
-            </p>
-            <p class="caption rule-section">
-                Your decisions are saved for the team. The glossary text stays
-                unchanged.
-            </p>
-        </template>
-        <template v-else>
-            <NuxtLink to="/review" class="back-link">← Back to groups</NuxtLink>
-            <header ref="cardHeading" class="card-heading stack" tabindex="-1">
-                <p v-if="!queuePending">
-                    {{ position + 1 }} of {{ queue.length }} · {{ groupLabel }}
+                <p v-if="!allGroups.length && !error && !summaryPending" class="empty small">
+                    No suggestions match. Clear the verb or text filter.
                 </p>
-                <h1 v-if="active">
-                    <NuxtLink
-                        :to="
-                            entryHref(
-                                active.entryId,
-                                active.target.stemId,
-                                active.target.sense
-                            )
-                        "
-                    >{{ detail?.entry?.root || active.entryId }}</NuxtLink>
-                </h1>
-            </header>
-            <p v-if="queuePending || proposalPending" role="status">
-                Loading the glossary passage…
+            </nav>
+        </aside>
+        <section class="review-main" aria-label="Current suggestion">
+            <p v-if="error || queueError || proposalError || reviewError" class="error" role="alert">
+                {{ reviewError || "Suggested changes could not be loaded. Please try again." }}
             </p>
-            <p v-else-if="proposalError" class="error">
-                The glossary passage could not be loaded.
-                <button class="text-button" @click="refreshProposal()">
-                    Try again
+            <p v-if="lastSaved" class="saved" role="status">
+                Saved: {{ savedLabel }}.
+                <button
+                    type="button"
+                    class="btn-link"
+                    :disabled="undoing"
+                    @click="undoLast"
+                >
+                    Undo
                 </button>
             </p>
-            <template v-else-if="active">
-                <ProposalCard
-                    :key="active.id"
-                    :proposal="active"
-                    :entry="detail?.entry || null"
-                    queue
-                    @reviewed="advance"
-                />
-                <nav class="card-navigation" aria-label="Move between suggestions">
-                    <button class="quiet" :disabled="position <= 0" @click="move(-1)">
-                        ← Previous
-                    </button>
-                    <button class="text-button" @click="skip">
-                        Skip
+            <template v-if="!group">
+                <h2>Choose a group</h2>
+                <p>
+                    Pick a group of suggestions from the list. Each suggestion opens on its own with the glossary
+                    text it changes, the proposed wording, the machine’s reasons and the cited passages. After a
+                    decision the next undecided suggestion opens.
+                </p>
+                <p class="start">
+                    <button
+                        v-if="summary?.resume"
+                        type="button"
+                        class="btn btn-primary"
+                        @click="continueReview"
+                    >
+                        Continue where you left off
                     </button>
                     <button
-                        class="quiet"
+                        v-if="allGroups.some((item) => item.kind === 'important')"
+                        type="button"
+                        :class="summary?.resume ? 'btn' : 'btn btn-primary'"
+                        @click="start('important')"
+                    >
+                        Start with the most important
+                    </button>
+                </p>
+                <p class="small muted">
+                    Decisions are saved for the team; the glossary text itself does not change.
+                </p>
+            </template>
+            <template v-else>
+                <div class="card-bar">
+                    <p class="small">
+                        <template v-if="!queuePending">
+                            {{ position + 1 }} of {{ queue.length.toLocaleString("en") }} · {{ groupLabel }} ·
+                            {{ remaining(queue).toLocaleString("en") }} undecided
+                        </template>
+                    </p>
+                    <button
+                        type="button"
+                        class="btn"
+                        :disabled="position <= 0"
+                        @click="move(-1)"
+                    >
+                        ← Previous
+                    </button>
+                    <button
+                        type="button"
+                        class="btn"
                         :disabled="position >= queue.length - 1"
                         @click="move(1)"
                     >
                         Next →
                     </button>
-                </nav>
-            </template>
-            <div v-else class="stack completed">
-                <h2>You have reached the end of this group</h2>
-                <p>
-                    {{ remaining(queue) }} suggestions remain undecided. You can return to
-                    a previous suggestion to change a decision.
+                </div>
+                <p v-if="queuePending || proposalPending" role="status">
+                    Loading the suggestion…
                 </p>
-                <button class="quiet" @click="openFirst">
-                    Review this group again
-                </button><NuxtLink to="/review" class="primary">Back to groups</NuxtLink>
-            </div>
-        </template>
+                <p v-else-if="proposalError" class="error">
+                    The suggestion could not be loaded.
+                    <button type="button" class="btn-link" @click="refreshProposal()">
+                        Try again
+                    </button>
+                </p>
+                <template v-else-if="active">
+                    <h2 ref="cardHeading" class="card-root serif" tabindex="-1">
+                        <NuxtLink :to="entryHref(active.entryId, active.target.stemId, active.target.sense)">
+                            <span v-text="detail?.entry?.root || active.entryId"></span>
+                        </NuxtLink>
+                    </h2>
+                    <ProposalCard
+                        :key="active.id"
+                        :proposal="active"
+                        :entry="detail?.entry || null"
+                        queue
+                        @reviewed="advance"
+                        @undone="undoneOnCard"
+                    />
+                    <p class="keys small muted">
+                        Keys: <kbd>A</kbd> {{ question ? "noted" : "accept" }} ·
+                        <template v-if="!question">
+                            <kbd>E</kbd> edit and accept ·
+                        </template>
+                        <kbd>R</kbd> {{ question ? "dismiss" : "reject" }} ·
+                        <kbd>D</kbd> {{ question ? "discuss later" : "decide later" }} ·
+                        <kbd>C</kbd> comment · <kbd>U</kbd> undo the last decision ·
+                        <kbd>J</kbd> or <kbd>→</kbd> next · <kbd>K</kbd> or <kbd>←</kbd> previous.
+                        Keys do nothing while you type in a field.
+                    </p>
+                </template>
+                <div v-else class="done">
+                    <h2>End of this group</h2>
+                    <p>
+                        {{ remaining(queue).toLocaleString("en") }} suggestions in this group remain undecided.
+                        Use Previous to return to a suggestion and change its decision.
+                    </p>
+                    <button type="button" class="btn" @click="openFirst">
+                        Start this group again
+                    </button>
+                </div>
+            </template>
+        </section>
     </div>
 </template>
 
 <script setup lang="ts">
+import { refDebounced, useEventListener } from '@vueuse/core'
+import { isEditableTarget } from '~/utils/isEditableTarget'
 import { proposalLabels } from '~/utils/proposalLabels'
+import { verdictLabel } from '~/utils/verdictLabel'
 import type { IProposalDetail } from '#shared/types/IProposalDetail'
 import type { IProposalQueue } from '#shared/types/IProposalQueue'
 import type { IProposalReview } from '#shared/types/IProposalReview'
@@ -173,8 +198,10 @@ const resume = useCookie<{ group: string
         maxAge: 31536000,
     }
 )
-const root = ref('')
-const text = ref('')
+const rootInput = ref('')
+const textInput = ref('')
+const root = refDebounced(rootInput, 350)
+const text = refDebounced(textInput, 350)
 const {
     load,
     status,
@@ -197,23 +224,36 @@ const {
     watch: false,
 })
 watch([root, text], () => refreshSummary())
-const groups = computed(() => Object.entries(proposalLabels).flatMap(([kind, label]) => {
-    const counts = summary.value?.groups.find(item => item.kind === kind)
-    return counts
-        ? [{
-                ...counts,
-                label,
-            }]
-        : []
-}))
-const important = computed(() => summary.value?.groups.find(item => item.kind === 'important'))
+const allGroups = computed(() => {
+    const important = summary.value?.groups.find(item => item.kind === 'important')
+    return [
+        ...(important
+            ? [{
+                    ...important,
+                    label: 'Most important first',
+                }]
+            : []),
+        ...Object.entries(proposalLabels).flatMap(([kind, label]) => {
+            const counts = summary.value?.groups.find(item => item.kind === kind)
+            return counts
+                ? [{
+                        ...counts,
+                        label,
+                    }]
+                : []
+        }),
+    ]
+})
 const decided = computed(() => summary.value?.decided || 0)
 const requestedGroup = computed(() => String(route.query.group || ''))
 // A proposal-only deep link resolves its group on the server. Normal navigation
 // keeps this key unchanged, so moving between cards reuses the group's id list.
 const queueKey = computed(() => JSON.stringify([
-    'proposal-queue', requestedGroup.value,
-    requestedGroup.value ? '' : String(route.query.proposal || ''), root.value, text.value,
+    'proposal-queue',
+    requestedGroup.value,
+    requestedGroup.value ? '' : String(route.query.proposal || ''),
+    root.value,
+    text.value,
 ]))
 const {
     data: queueData,
@@ -260,11 +300,16 @@ const {
         : Promise.resolve(null)
 )
 const active = computed(() => detail.value?.proposal.id === activeProposalId.value ? detail.value.proposal : null)
+const question = computed(() => !!active.value && ['question', 'note'].includes(active.value.kind))
 const position = computed(() => activeProposalId.value
     ? queue.value.indexOf(activeProposalId.value)
     : queue.value.length - 1)
 const lastSaved = ref<IProposalReview | null>(null)
 const lastSavedGroup = ref('')
+const lastSavedQuestion = ref(false)
+const savedLabel = computed(() => lastSaved.value
+    ? `${verdictLabel(lastSaved.value.verdict, lastSavedQuestion.value, !!lastSaved.value.edited)} (${lastSaved.value.entryId.replaceAll('-', ' ')})`
+    : '')
 const undoing = ref(false)
 const cardHeading = ref<HTMLElement | null>(null)
 function remaining(ids: string[]) {
@@ -299,22 +344,19 @@ function move(delta: number) {
     const next = queue.value[position.value + delta]
     if (next) return select(group.value, next)
 }
-function skip() {
-    const next = queue.value[position.value + 1] || queue.value[0]
-    if (next) return select(group.value, next)
-}
 function openFirst() {
     if (queue.value[0]) return select(group.value, queue.value[0])
 }
 async function advance(saved: IProposalReview) {
     lastSaved.value = saved
     lastSavedGroup.value = group.value
+    lastSavedQuestion.value = question.value
     const candidates = [...queue.value.slice(position.value + 1), ...queue.value.slice(0, position.value)]
     const next = candidates.find(id => status(id) === 'open')
     await Promise.all([select(group.value, next || 'done'), refreshSummary()])
 }
 async function undoLast() {
-    if (!lastSaved.value) return
+    if (!lastSaved.value || undoing.value) return
     undoing.value = true
     if (await undo(lastSaved.value)) {
         const id = lastSaved.value.proposalId
@@ -323,6 +365,25 @@ async function undoLast() {
     }
     undoing.value = false
 }
+// Undo from the card itself, for example after going back to an earlier decision.
+function undoneOnCard(proposalId: string) {
+    if (lastSaved.value?.proposalId === proposalId) lastSaved.value = null
+    refreshSummary()
+}
+// Navigation and undo keys. Decision keys live on the card (ProposalDecision).
+useEventListener('keydown', (event: KeyboardEvent) => {
+    if (event.defaultPrevented || event.repeat || event.metaKey || event.ctrlKey || event.altKey
+        || !group.value || isEditableTarget(event.target)) return
+    const key = event.key.toLowerCase()
+    const action = key === 'j' || key === 'arrowright'
+        ? () => move(1)
+        : key === 'k' || key === 'arrowleft'
+            ? () => move(-1)
+            : key === 'u' && lastSaved.value ? () => undoLast() : null
+    if (!action) return
+    event.preventDefault()
+    action()
+})
 watch(group, (value) => {
     if (!value) refreshSummary()
 })
@@ -345,91 +406,127 @@ useHead({ title: 'Review suggested changes' })
 </script>
 
 <style scoped>
-.progress-section {
-  margin: 1.5rem 0;
+.review {
+  display: grid;
+  grid-template-columns: 17rem minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+.review-side {
+  position: sticky;
+  top: 0.75rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.5rem;
+  max-height: calc(100vh - 1.5rem);
+  overflow-y: auto;
 }
 progress {
   width: 100%;
+  height: 0.5rem;
   accent-color: var(--accent);
-  height: 12px;
 }
-.resume-button {
-  justify-self: start;
+.filters {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 0.3rem 0.5rem;
+  font-size: 0.875rem;
 }
-.filter-disclosure {
-  margin-bottom: 1rem;
+.group-select {
+  display: none;
 }
 .groups {
-  border-top: 1px solid var(--rule);
-}
-.group-row {
-  width: 100%;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 0.35rem 1rem;
+}
+.group {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.2rem 0.4rem;
+  border-left: 3px solid transparent;
+  color: var(--ink);
+  font-size: 0.9375rem;
   text-align: left;
-  padding: 1.2rem 0.4rem;
-  border-bottom: 1px solid var(--rule);
 }
-.group-row strong {
-  font-weight: 500;
-  font-size: 1.1rem;
+.group:hover:not(:disabled) {
+  background: var(--bg-soft);
 }
-.group-row > span:not(.group-arrow) {
-  font-size: 0.889rem;
+.group[aria-current="true"] {
+  border-left-color: var(--accent);
+  background: var(--bg-soft);
+  font-weight: 600;
+}
+.group .num {
   color: var(--muted);
 }
-.group-arrow {
-  grid-column: 2;
-  grid-row: 1 / 3;
-  align-self: center;
-  color: var(--accent);
+.review-main {
+  display: grid;
+  gap: 0.6rem;
+  max-width: 90rem;
 }
-.important {
-  background: var(--panel);
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.back-link {
-  display: inline-flex;
-  min-height: 48px;
-  align-items: center;
-  margin-bottom: 0.6rem;
-}
-.card-heading {
+.saved {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
   gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  padding: 0.25rem 0.6rem;
+  border-left: 3px solid var(--accent);
+  background: var(--bg-soft);
 }
-.card-heading h1 {
-  font-size: 3rem;
-}
-.card-heading h1 a {
-  text-decoration: none;
-}
-.saved-notice {
+.card-bar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.7rem;
-  padding: 0.4rem 1rem;
-  margin-bottom: 0.8rem;
-  background: var(--panel);
-  border-left: 4px solid var(--accent);
+  gap: 0.4rem;
 }
-.card-navigation {
+.card-bar p {
+  flex: 1;
+}
+.card-root {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.card-root a {
+  text-decoration: none;
+}
+.card-root a:hover {
+  text-decoration: underline;
+}
+.start {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 0.5rem;
-  margin-top: 1.5rem;
 }
-.completed {
-  margin-top: 2rem;
+.done {
+  display: grid;
+  justify-items: start;
+  gap: 0.4rem;
 }
-@media (max-width: 760px) {
-  .card-navigation {
-    margin-top: -10rem;
-    padding-bottom: 12rem;
-    position: relative;
+@media (max-width: 900px) {
+  .review {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+  .review-side {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+  .has-group .groups,
+  .has-group .filters,
+  .has-group progress {
+    display: none;
+  }
+  .has-group .group-select {
+    display: grid;
+    gap: 0.15rem;
+  }
+  .has-group .review-main {
+    padding-bottom: 4rem;
+  }
+  .keys {
+    display: none;
   }
 }
 </style>

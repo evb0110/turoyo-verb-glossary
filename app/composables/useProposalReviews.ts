@@ -2,17 +2,22 @@ import type { IProposalEdit } from '#shared/types/IProposalEdit'
 import type { IProposalReview } from '#shared/types/IProposalReview'
 import type { TReviewVerdict } from '#shared/types/TReviewVerdict'
 
+// The current team decision per proposal, keyed by proposal ID. The server sends one
+// current row per proposal; the audit history is loaded separately per card.
 export function useProposalReviews() {
-    const reviews = useState<IProposalReview[]>('proposal-reviews', () => [])
+    const decisions = useState<Record<string, IProposalReview>>('proposal-decisions', () => ({}))
     const loaded = useState('proposal-reviews-loaded', () => false)
     const error = useState('proposal-reviews-error', () => '')
     const pending = useState<string[]>('proposal-reviews-pending', () => [])
     const request = useRequestFetch()
     const { user } = useAuth()
+    function index(rows: IProposalReview[]) {
+        return Object.fromEntries(rows.map(row => [row.proposalId, row]))
+    }
     async function load() {
         if (loaded.value) return
         try {
-            reviews.value = await request<IProposalReview[]>('/api/glossary/reviews')
+            decisions.value = index(await request<IProposalReview[]>('/api/glossary/reviews'))
             loaded.value = true
             error.value = ''
         }
@@ -21,11 +26,11 @@ export function useProposalReviews() {
                 = 'Earlier decisions could not be loaded. Please try again before reviewing.'
         }
     }
-    function history(id: string) {
-        return reviews.value.filter(review => review.proposalId === id)
+    function decision(id: string): IProposalReview | null {
+        return decisions.value[id] || null
     }
     function status(id: string) {
-        const verdict = history(id)[0]?.verdict
+        const verdict = decisions.value[id]?.verdict
         return verdict === 'accept'
             ? 'accepted'
             : verdict === 'reject'
@@ -40,7 +45,8 @@ export function useProposalReviews() {
         edited: IProposalEdit | null = null
     ) {
         if (pending.value.includes(proposalId) || !user.value) return false
-        const optimistic: IProposalReview = {
+        const previous = decisions.value[proposalId]
+        decisions.value[proposalId] = {
             id: `pending:${proposalId}`,
             proposalId,
             entryId,
@@ -52,7 +58,6 @@ export function useProposalReviews() {
             createdAt: new Date().toISOString(),
         }
         error.value = ''
-        reviews.value.unshift(optimistic)
         pending.value.push(proposalId)
         try {
             const saved = await $fetch<IProposalReview>(
@@ -67,11 +72,12 @@ export function useProposalReviews() {
                     },
                 }
             )
-            reviews.value = [saved, ...reviews.value.filter(item => item.proposalId !== proposalId)]
+            decisions.value[proposalId] = saved
             return saved
         }
         catch {
-            reviews.value = reviews.value.filter(item => item.id !== optimistic.id)
+            if (previous) decisions.value[proposalId] = previous
+            else Reflect.deleteProperty(decisions.value, proposalId)
             error.value = 'Review was not saved. Please retry.'
             return false
         }
@@ -91,11 +97,9 @@ export function useProposalReviews() {
             // Undo may restore another editor's previous decision. Refresh only this proposal's
             // current row, so decisions saved meanwhile for other proposals stay in place.
             const current = (await request<IProposalReview[]>('/api/glossary/reviews'))
-                .find(review => review.proposalId === item.proposalId)
-            reviews.value = [
-                ...(current ? [current] : []),
-                ...reviews.value.filter(review => review.proposalId !== item.proposalId),
-            ]
+                .find(row => row.proposalId === item.proposalId)
+            if (current) decisions.value[item.proposalId] = current
+            else Reflect.deleteProperty(decisions.value, item.proposalId)
             return true
         }
         catch {
@@ -108,11 +112,11 @@ export function useProposalReviews() {
         }
     }
     return {
-        reviews,
+        decisions,
         error,
         pending,
         load,
-        history,
+        decision,
         status,
         review,
         undo,

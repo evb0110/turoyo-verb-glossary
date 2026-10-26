@@ -1,9 +1,9 @@
 <template>
     <main class="auth-page">
-        <div class="auth-box stack">
+        <div class="auth-box">
             <h1>Turoyo Verb Glossary</h1>
             <p>Sign in with your Google account to use the glossary and review suggested changes.</p>
-            <button class="primary sign-in" :disabled="loading" @click="signIn">
+            <button class="btn btn-primary sign-in" :disabled="loading" @click="signIn">
                 <svg class="google" aria-hidden="true" viewBox="0 0 24 24">
                     <path
                         fill="currentColor"
@@ -50,20 +50,18 @@ definePageMeta({ layout: false })
     padding: 1.5rem;
 }
 .auth-box {
-    max-width: 30rem;
-    gap: 1.2rem;
-}
-h1 {
-    font-size: 2.2rem;
-    line-height: 1.2;
+    display: grid;
+    gap: 0.75rem;
+    max-width: 26rem;
 }
 .sign-in {
-    gap: 0.7rem;
+    gap: 0.6rem;
     width: 100%;
-    font-size: 1.1rem;
+    min-height: 2.5rem;
+    font-size: 1rem;
 }
 .google {
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 1.1rem;
+    height: 1.1rem;
 }
 </style>

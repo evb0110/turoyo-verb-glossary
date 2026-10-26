@@ -1,54 +1,50 @@
 <template>
-    <div class="stack home">
-        <section
-            v-if="isApproved"
-            class="review-welcome stack"
-            aria-labelledby="review-title"
-        >
-            <p class="caption">
-                For the editors
-            </p>
-            <h1 id="review-title">
-                Review the suggested changes
-            </h1>
-            <p v-if="summary">
-                The machine has suggested
-                {{ summary.total.toLocaleString() }} changes to the glossary. You
-                have decided {{ summary.ownDecided.toLocaleString() }}.
-            </p>
-            <p v-else class="error">
-                Suggested changes could not be loaded. Please try again.
-            </p>
-            <NuxtLink
-                to="/review"
-                class="primary"
-            >Start reviewing <span aria-hidden="true">→</span></NuxtLink>
-        </section>
-        <section class="lookup stack">
-            <h2>Find a verb</h2>
-            <form class="home-search" @submit.prevent="search">
-                <label for="home-query">Find a verb: root, form or meaning</label>
+    <div class="home">
+        <h1>Turoyo Verb Glossary</h1>
+        <p class="muted">
+            Turoyo verbs with their stems, meanings and examples from the texts, and machine suggestions for
+            the editors to check.
+        </p>
+        <form class="home-search" role="search" @submit.prevent="search">
+            <label for="home-query">Search roots, forms, meanings, examples and texts</label>
+            <div class="row">
                 <input
                     id="home-query"
                     v-model="query"
                     type="search"
-                    placeholder="e.g. sym or put"
+                    placeholder="e.g. sym, wollen or put"
+                    autocomplete="off"
                 />
-                <button class="primary" type="submit">
+                <button class="btn btn-primary" type="submit">
                     Search
                 </button>
-            </form>
-            <NuxtLink to="/glossary" class="browse-link">Browse all verbs →</NuxtLink>
-        </section>
-        <section class="rule-section stack">
-            <h2>How this works</h2>
-            <p>
-                This glossary brings together Turoyo verbs and examples from the texts.
-                The machine has read the texts and suggested changes for the editors to
-                check. Your decisions are saved for the team; they do not change the
-                glossary text.
+            </div>
+        </form>
+        <section v-if="isApproved" class="block">
+            <h2>Review</h2>
+            <p v-if="summary">
+                {{ summary.decided.toLocaleString("en") }} of {{ summary.total.toLocaleString("en") }} suggestions
+                decided by the team, {{ summary.ownDecided.toLocaleString("en") }} of them by you.
             </p>
-            <NuxtLink to="/help">Read the guide →</NuxtLink>
+            <p v-else class="error">
+                Suggested changes could not be loaded. Please try again.
+            </p>
+            <NuxtLink to="/review" class="btn btn-primary">
+                {{ summary?.decided ? "Continue reviewing" : "Start reviewing" }}
+            </NuxtLink>
+        </section>
+        <section class="block">
+            <h2>Browse</h2>
+            <ul class="links">
+                <li>
+                    <NuxtLink to="/glossary">Glossary</NuxtLink>: every root with its first meaning and its suggestions
+                </li>
+                <li><NuxtLink to="/texts">Texts</NuxtLink>: the corpus with translations and the analysed verbs</li>
+                <li>
+                    <NuxtLink to="/research">Research notes</NuxtLink>: observations from the texts by research question
+                </li>
+                <li><NuxtLink to="/help">Help</NuxtLink>: how the pages and the review work</li>
+            </ul>
         </section>
     </div>
 </template>
@@ -68,37 +64,34 @@ useHead({ title: 'Welcome' })
 
 <style scoped>
 .home {
-  gap: 2rem;
-}
-.review-welcome {
-  border: 1px solid var(--rule);
-  border-top: 4px solid var(--accent);
-  border-radius: 8px;
-  padding: clamp(1.1rem, 4vw, 2rem);
-  background: var(--panel);
-}
-.review-welcome h1 {
-  font-size: 2.2rem;
-}
-.review-welcome .primary {
-  justify-self: start;
-  gap: 1.2rem;
+  display: grid;
+  gap: 0.75rem;
+  max-width: 48rem;
 }
 .home-search {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 0.7rem;
+  gap: 0.25rem;
 }
 .home-search label {
-  grid-column: 1 / -1;
+  font-size: 0.875rem;
+  font-weight: 600;
 }
-.browse-link {
-  display: inline-flex;
-  min-height: 48px;
-  align-items: center;
-  justify-self: start;
+.row {
+  display: flex;
+  gap: 0.5rem;
 }
-.rule-section {
-  margin-top: 0;
+.row input {
+  flex: 1;
+}
+.block {
+  display: grid;
+  justify-items: start;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+.links {
+  margin: 0;
+  padding-left: 1.1rem;
+  list-style: disc;
 }
 </style>
