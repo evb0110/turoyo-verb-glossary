@@ -11,10 +11,10 @@
             <h1 id="review-title">
                 Review the suggested changes
             </h1>
-            <p v-if="proposals">
+            <p v-if="summary">
                 The machine has suggested
-                {{ proposals.length.toLocaleString() }} changes to the glossary. You
-                have decided {{ decided.toLocaleString() }}.
+                {{ summary.total.toLocaleString() }} changes to the glossary. You
+                have decided {{ summary.ownDecided.toLocaleString() }}.
             </p>
             <p v-else class="error">
                 Suggested changes could not be loaded. Please try again.
@@ -50,36 +50,12 @@
             </p>
             <NuxtLink to="/help">Read the guide →</NuxtLink>
         </section>
-        <p v-if="reviewError" class="error" role="alert">
-            {{ reviewError }}
-        </p>
     </div>
 </template>
 
 <script setup lang="ts">
-const {
-    isApproved,
-    user,
-} = useAuth()
-const { data: proposals } = await useFetch('/api/glossary/proposals')
-const {
-    reviews,
-    load,
-    error: reviewError,
-} = useProposalReviews()
-await load()
-const decided = computed(
-    () =>
-        new Set(
-            reviews.value
-                .filter(
-                    item =>
-                        item.userId === user.value?.id
-                        && proposals.value?.some(p => p.id === item.proposalId)
-                )
-                .map(item => item.proposalId)
-        ).size
-)
+const { isApproved } = useAuth()
+const { data: summary } = await useFetch('/api/glossary/proposals/summary')
 const query = ref('')
 function search() {
     return navigateTo({

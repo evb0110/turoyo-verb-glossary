@@ -7,7 +7,7 @@
                 Decide later.
             </p>
         </header>
-        <p v-if="error || reviewError" class="error" role="alert">
+        <p v-if="error || queueError || proposalError || reviewError" class="error" role="alert">
             {{
                 reviewError
                     || "Suggested changes could not be loaded. Please try again."
@@ -30,15 +30,15 @@
             <section class="progress-section stack">
                 <p>
                     <strong>{{ decided.toLocaleString() }} of
-                        {{ proposals.length.toLocaleString() }} decided</strong>
+                        {{ (summary?.total || 0).toLocaleString() }} decided</strong>
                 </p>
                 <progress
                     :value="decided"
-                    :max="proposals.length || 1"
-                    :aria-label="`${decided} of ${proposals.length} decided`"
+                    :max="(summary?.total || 0) || 1"
+                    :aria-label="`${decided} of ${(summary?.total || 0)} decided`"
                 ></progress>
                 <button
-                    v-if="resume && proposals.some((item) => item.id === resume?.id)"
+                    v-if="summary?.resume"
                     class="primary resume-button"
                     @click="continueReview"
                 >
@@ -56,26 +56,31 @@
                     />
                 </div>
             </details>
+            <p v-if="summaryPending" role="status">
+                Loading suggested changes…
+            </p>
             <div class="groups" aria-label="Suggestion groups">
                 <button
-                    v-if="important.length"
+                    v-if="important"
                     class="group-row important"
+                    :disabled="summaryPending"
                     @click="start('important')"
                 >
-                    <strong>Most important first</strong><span>{{ remaining(important) }} still undecided ·
-                        {{ important.length }} total</span><span class="group-arrow" aria-hidden="true">→</span>
+                    <strong>Most important first</strong><span>{{ important.undecided }} still undecided ·
+                        {{ important.total }} total</span><span class="group-arrow" aria-hidden="true">→</span>
                 </button>
                 <button
                     v-for="item in groups"
                     :key="item.kind"
                     class="group-row"
+                    :disabled="summaryPending"
                     @click="start(item.kind)"
                 >
-                    <strong>{{ item.label }}</strong><span>{{ remaining(item.items) }} still undecided ·
-                        {{ item.items.length }} total</span><span class="group-arrow" aria-hidden="true">→</span>
+                    <strong>{{ item.label }}</strong><span>{{ item.undecided }} still undecided ·
+                        {{ item.total }} total</span><span class="group-arrow" aria-hidden="true">→</span>
                 </button>
             </div>
-            <p v-if="!groups.length && !error" class="empty">
+            <p v-if="!groups.length && !error && !summaryPending" class="empty">
                 No suggestions match. Try clearing the verb or text filter.
             </p>
             <p class="caption rule-section">
@@ -86,7 +91,9 @@
         <template v-else>
             <NuxtLink to="/review" class="back-link">← Back to groups</NuxtLink>
             <header ref="cardHeading" class="card-heading stack" tabindex="-1">
-                <p>{{ position + 1 }} of {{ queue.length }} · {{ groupLabel }}</p>
+                <p v-if="!queuePending">
+                    {{ position + 1 }} of {{ queue.length }} · {{ groupLabel }}
+                </p>
                 <h1 v-if="active">
                     <NuxtLink
                         :to="
@@ -96,24 +103,23 @@
                                 active.target.sense
                             )
                         "
-                    >{{ roots.get(active.entryId) || active.entryId }}</NuxtLink>
+                    >{{ detail?.entry?.root || active.entryId }}</NuxtLink>
                 </h1>
             </header>
-            <template v-if="active">
-                <p v-if="entryPending" role="status">
-                    Loading the glossary passage…
-                </p>
-                <p v-else-if="entryError" class="error">
-                    The glossary passage could not be loaded.
-                    <button class="text-button" @click="refreshEntry()">
-                        Try again
-                    </button>
-                </p>
+            <p v-if="queuePending || proposalPending" role="status">
+                Loading the glossary passage…
+            </p>
+            <p v-else-if="proposalError" class="error">
+                The glossary passage could not be loaded.
+                <button class="text-button" @click="refreshProposal()">
+                    Try again
+                </button>
+            </p>
+            <template v-else-if="active">
                 <ProposalCard
-                    v-else-if="activeEntry"
                     :key="active.id"
                     :proposal="active"
-                    :entry="activeEntry.entry"
+                    :entry="detail?.entry || null"
                     queue
                     @reviewed="advance"
                 />
@@ -149,26 +155,15 @@
 
 <script setup lang="ts">
 import { proposalLabels } from '~/utils/proposalLabels'
-import type { IProposal } from '#shared/types/IProposal'
+import type { IProposalDetail } from '#shared/types/IProposalDetail'
+import type { IProposalQueue } from '#shared/types/IProposalQueue'
 import type { IProposalReview } from '#shared/types/IProposalReview'
 import type { TProposalKind } from '#shared/types/TProposalKind'
 import { entryHref } from '#shared/utils/entryHref'
-import { normalizeTuroyo } from '#shared/utils/normalizeTuroyo'
 
-const {
-    data,
-    error,
-} = await useFetch('/api/glossary/proposals')
-const { data: index } = await useFetch('/api/glossary/roots')
-const {
-    load,
-    status,
-    undo,
-    error: reviewError,
-} = useProposalReviews()
-await load()
 const route = useRoute()
 const router = useRouter()
+const request = useRequestFetch()
 const { user } = useAuth()
 const resume = useCookie<{ group: string
     id: string } | null>(
@@ -178,113 +173,113 @@ const resume = useCookie<{ group: string
         maxAge: 31536000,
     }
 )
-const proposals = computed(() => data.value || [])
-const roots = computed(
-    () => new Map((index.value || []).map(item => [item.id, item.root]))
-)
 const root = ref('')
 const text = ref('')
-const matching = computed(() =>
-    proposals.value.filter(
-        item =>
-            normalizeTuroyo(roots.value.get(item.entryId) || item.entryId).includes(
-                normalizeTuroyo(root.value)
-            )
-            && (!text.value.trim()
-                || item.evidence.some(ref =>
-                    `${ref.textId} ${ref.cite}`
-                        .toLowerCase()
-                        .includes(text.value.trim().toLowerCase())
-                )
-                || `${item.before || ''} ${item.after || ''} ${item.summary} ${item.rationale}`
-                    .toLowerCase()
-                    .includes(text.value.trim().toLowerCase()))
-    )
-)
-const groups = computed(() =>
-    Object.entries(proposalLabels)
-        .map(([kind, label]) => ({
-            kind,
-            label,
-            items: matching.value.filter(item => item.kind === kind),
-        }))
-        .filter(item => item.items.length)
-)
-const important = computed(() =>
-    matching.value.filter(item => item.priority === 1)
-)
-const decided = computed(
-    () => proposals.value.filter(item => status(item.id) !== 'open').length
-)
-const group = computed(() =>
-    String(
-        route.query.group
-        || (route.query.proposal
-            ? proposals.value.find(item => item.id === route.query.proposal)
-                ?.kind || ''
-            : '')
-    )
-)
-const groupLabel = computed(() =>
-    group.value === 'important'
-        ? 'Most important first'
-        : proposalLabels[group.value as TProposalKind] || 'Suggested changes'
-)
-const queue = computed(() =>
-    matching.value
-        .filter(item =>
-            group.value === 'important'
-                ? item.priority === 1
-                : item.kind === group.value
-        )
-        .toSorted((a, b) => a.priority - b.priority || a.id.localeCompare(b.id))
-)
-const active = computed(() =>
-    route.query.proposal === 'done'
-        ? null
-        : queue.value.find(item => item.id === route.query.proposal)
-            || queue.value.find(item => status(item.id) === 'open')
-            || queue.value[0]
-            || null
-)
-const position = computed(() =>
-    active.value
-        ? queue.value.findIndex(item => item.id === active.value?.id)
-        : queue.value.length - 1
-)
-const activeId = computed(() => active.value?.entryId || '')
 const {
-    data: activeEntry,
-    pending: entryPending,
-    error: entryError,
-    refresh: refreshEntry,
-} = await useFetch(
-    () => `/api/glossary/entries/${encodeURIComponent(activeId.value)}`,
-    {
-        immediate: !!activeId.value,
-        watch: false,
-    }
-)
-watch(activeId, (id) => {
-    if (id) refreshEntry()
+    load,
+    status,
+    undo,
+    error: reviewError,
+} = useProposalReviews()
+await load()
+const {
+    data: summary,
+    error,
+    pending: summaryPending,
+    refresh: refreshSummary,
+} = await useFetch('/api/glossary/proposals/summary', {
+    query: computed(() => ({
+        root: root.value,
+        text: text.value,
+        resume: resume.value?.id || '',
+        resumeGroup: resume.value?.group || '',
+    })),
+    watch: false,
 })
+watch([root, text], () => refreshSummary())
+const groups = computed(() => Object.entries(proposalLabels).flatMap(([kind, label]) => {
+    const counts = summary.value?.groups.find(item => item.kind === kind)
+    return counts
+        ? [{
+                ...counts,
+                label,
+            }]
+        : []
+}))
+const important = computed(() => summary.value?.groups.find(item => item.kind === 'important'))
+const decided = computed(() => summary.value?.decided || 0)
+const requestedGroup = computed(() => String(route.query.group || ''))
+// A proposal-only deep link resolves its group on the server. Normal navigation
+// keeps this key unchanged, so moving between cards reuses the group's id list.
+const queueKey = computed(() => JSON.stringify([
+    'proposal-queue', requestedGroup.value,
+    requestedGroup.value ? '' : String(route.query.proposal || ''), root.value, text.value,
+]))
+const {
+    data: queueData,
+    pending: queuePending,
+    error: queueError,
+} = await useAsyncData<IProposalQueue>(queueKey, () => {
+    const proposal = requestedGroup.value ? '' : String(route.query.proposal || '')
+    return requestedGroup.value || (proposal && proposal !== 'done')
+        ? request('/api/glossary/proposals/queue', {
+                query: {
+                    group: requestedGroup.value,
+                    proposal,
+                    root: root.value,
+                    text: text.value,
+                },
+            })
+        : Promise.resolve({
+                group: '',
+                ids: [],
+            })
+})
+const group = computed(() => requestedGroup.value || queueData.value?.group || '')
+const groupLabel = computed(() => group.value === 'important'
+    ? 'Most important first'
+    : proposalLabels[group.value as TProposalKind] || 'Suggested changes')
+const queue = computed(() => queueData.value?.ids || [])
+const activeProposalId = computed(() => {
+    if (!group.value || queuePending.value || route.query.proposal === 'done') return ''
+    const requested = String(route.query.proposal || '')
+    if (queue.value.includes(requested)) return requested
+    const remembered = resume.value?.group === group.value ? resume.value.id : ''
+    if (!requested && queue.value.includes(remembered) && status(remembered) === 'open') return remembered
+    return queue.value.find(id => status(id) === 'open') || queue.value[0] || ''
+})
+const {
+    data: detail,
+    pending: proposalPending,
+    error: proposalError,
+    refresh: refreshProposal,
+} = await useAsyncData<IProposalDetail | null>(
+    computed(() => `proposal-detail-${activeProposalId.value}`),
+    () => activeProposalId.value
+        ? request(`/api/glossary/proposals/${encodeURIComponent(activeProposalId.value)}`)
+        : Promise.resolve(null)
+)
+const active = computed(() => detail.value?.proposal.id === activeProposalId.value ? detail.value.proposal : null)
+const position = computed(() => activeProposalId.value
+    ? queue.value.indexOf(activeProposalId.value)
+    : queue.value.length - 1)
 const lastSaved = ref<IProposalReview | null>(null)
+const lastSavedGroup = ref('')
 const undoing = ref(false)
 const cardHeading = ref<HTMLElement | null>(null)
-function remaining(items: IProposal[]) {
-    return items.filter(item => status(item.id) === 'open').length
+function remaining(ids: string[]) {
+    return ids.filter(id => status(id) === 'open').length
 }
-async function select(kind: string, id: string) {
-    if (id !== 'done')
-        resume.value = {
-            group: kind,
-            id,
-        }
+async function select(kind: string, id?: string) {
+    if (id && id !== 'done') resume.value = {
+        group: kind,
+        id,
+    }
     await router.push({
         path: '/review',
         query: {
             group: kind,
-            proposal: id,
+            ...(id ? { proposal: id } : {}),
         },
     })
     await nextTick()
@@ -295,46 +290,28 @@ async function select(kind: string, id: string) {
     })
 }
 function start(kind: string) {
-    const items
-        = kind === 'important'
-            ? important.value
-            : matching.value.filter(item => item.kind === kind)
-    const remembered
-        = resume.value?.group === kind
-            ? items.find(
-                    item => item.id === resume.value?.id && status(item.id) === 'open'
-                )
-            : null
-    const first
-        = remembered
-            || items
-                .toSorted((a, b) => a.priority - b.priority || a.id.localeCompare(b.id))
-                .find(item => status(item.id) === 'open')
-                || items[0]
-    if (first) return select(kind, first.id)
+    return select(kind)
 }
 function continueReview() {
-    if (resume.value) return select(resume.value.group, resume.value.id)
+    if (summary.value?.resume) return select(summary.value.resume.group, summary.value.resume.id)
 }
 function move(delta: number) {
     const next = queue.value[position.value + delta]
-    if (next) return select(group.value, next.id)
+    if (next) return select(group.value, next)
 }
 function skip() {
     const next = queue.value[position.value + 1] || queue.value[0]
-    if (next) return select(group.value, next.id)
+    if (next) return select(group.value, next)
 }
 function openFirst() {
-    if (queue.value[0]) return select(group.value, queue.value[0].id)
+    if (queue.value[0]) return select(group.value, queue.value[0])
 }
 async function advance(saved: IProposalReview) {
     lastSaved.value = saved
-    const candidates = [
-        ...queue.value.slice(position.value + 1),
-        ...queue.value.slice(0, position.value),
-    ]
-    const next = candidates.find(item => status(item.id) === 'open')
-    await select(group.value, next?.id || 'done')
+    lastSavedGroup.value = group.value
+    const candidates = [...queue.value.slice(position.value + 1), ...queue.value.slice(0, position.value)]
+    const next = candidates.find(id => status(id) === 'open')
+    await Promise.all([select(group.value, next || 'done'), refreshSummary()])
 }
 async function undoLast() {
     if (!lastSaved.value) return
@@ -342,26 +319,27 @@ async function undoLast() {
     if (await undo(lastSaved.value)) {
         const id = lastSaved.value.proposalId
         lastSaved.value = null
-        await select(
-            group.value || proposals.value.find(item => item.id === id)?.kind || '',
-            id
-        )
+        await Promise.all([select(group.value || lastSavedGroup.value, id), refreshSummary()])
     }
     undoing.value = false
 }
+watch(group, (value) => {
+    if (!value) refreshSummary()
+})
 onMounted(() => {
-    if (active.value) {
+    watch([activeProposalId, group], ([id, kind]) => {
+        if (!id || !kind) return
         resume.value = {
-            group: group.value,
-            id: active.value.id,
+            group: kind,
+            id,
         }
         if (!route.query.proposal) router.replace({
             query: {
-                group: group.value,
-                proposal: active.value.id,
+                group: kind,
+                proposal: id,
             },
         })
-    }
+    }, { immediate: true })
 })
 useHead({ title: 'Review suggested changes' })
 </script>
