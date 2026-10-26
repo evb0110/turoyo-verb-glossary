@@ -5,7 +5,7 @@
             <p class="caption">
                 {{ data.collection }} · {{ data.cite }}
             </p>
-            <h1>{{ data.title }}</h1>
+            <h1>{{ data.title || data.cite }}</h1>
             <p v-if="data.speakerPlace">
                 Speaker/place: {{ data.speakerPlace }}
             </p>
@@ -127,7 +127,7 @@ function scrollToVerse() {
 }
 onMounted(scrollToVerse)
 watch(targetVerse, scrollToVerse)
-useHead({ title: computed(() => data.value?.title || 'Text') })
+useHead({ title: computed(() => data.value?.title || data.value?.cite || 'Text') })
 </script>
 
 <style scoped>
