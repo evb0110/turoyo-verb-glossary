@@ -7,6 +7,9 @@
                 <NuxtLink v-for="link in links" :key="link.to" :to="link.to">{{
                     link.label
                 }}</NuxtLink>
+                <button v-if="user" class="text-button" @click="logout">
+                    Sign out
+                </button>
             </nav>
             <button
                 class="quiet menu-toggle"
@@ -29,15 +32,8 @@
                 :to="link.to"
                 @click="menu = false"
             >{{ link.label }}</NuxtLink>
-            <NuxtLink
-                v-if="isAdmin"
-                to="/admin"
-                @click="menu = false"
-            >Admin</NuxtLink>
             <button class="text-button" @click="toggleColor">
-                {{
-                    colorMode.value === "dark" ? "Use light colours" : "Use dark colours"
-                }}
+                {{ colorLabel }}
             </button>
             <button v-if="user" class="text-button" @click="logout">
                 Sign out
@@ -49,6 +45,9 @@
         </main>
         <footer class="site-footer">
             <NuxtLink to="/help">Help with the glossary</NuxtLink>
+            <button class="text-button" @click="toggleColor">
+                {{ colorLabel }}
+            </button>
         </footer>
         <EvidencePanel v-if="selected"/>
     </div>
@@ -65,7 +64,7 @@ const colorMode = useColorMode()
 const menu = ref(false)
 const { selected } = useEvidence()
 const route = useRoute()
-const links = [
+const links = computed(() => [
     {
         to: '/review',
         label: 'Review',
@@ -82,7 +81,16 @@ const links = [
         to: '/help',
         label: 'Help',
     },
-]
+    ...(isAdmin.value
+        ? [
+                {
+                    to: '/admin',
+                    label: 'Admin',
+                },
+            ]
+        : []),
+])
+const colorLabel = computed(() => (colorMode.value === 'dark' ? 'Use light colours' : 'Use dark colours'))
 watch(
     () => route.path,
     () => {
@@ -104,7 +112,7 @@ function toggleColor() {
   align-items: center;
   gap: 1rem;
   min-height: 76px;
-  padding: 0.5rem max(1rem, calc((100vw - 1100px) / 2));
+  padding: 0.5rem max(1rem, calc((100% - 760px) / 2));
   border-bottom: 1px solid var(--rule);
 }
 .wordmark {
@@ -113,52 +121,49 @@ function toggleColor() {
   font-size: 1.25rem;
   text-decoration: none;
   color: var(--ink);
-  padding: 0.5rem 0;
 }
 .top-nav {
   display: flex;
+  align-items: center;
   gap: 1.2rem;
 }
-.top-nav a {
-  display: flex;
-  align-items: center;
-  min-height: 48px;
+.top-nav a,
+.top-nav .text-button {
+  min-width: 0;
+  padding: 0;
   text-decoration: none;
 }
 .top-nav .router-link-active {
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }
+.menu-toggle {
+  display: none;
+}
 .site-menu {
   display: grid;
+  justify-items: start;
   gap: 0.3rem;
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 1rem;
+  padding: 0.5rem max(1rem, calc((100% - 760px) / 2)) 1rem;
   border-bottom: 1px solid var(--rule);
 }
-.site-menu a {
-  display: flex;
-  align-items: center;
+.site-menu .text-button {
   min-height: 48px;
-}
-.site-menu button {
-  justify-self: start;
+  padding: 0;
 }
 .site-main {
   width: min(100% - 2rem, 760px);
   margin: 2rem auto 4rem;
 }
 .site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
   width: min(100% - 2rem, 760px);
   margin: 2rem auto;
   padding-top: 1rem;
   border-top: 1px solid var(--rule);
-}
-.site-footer a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 48px;
 }
 .skip-link {
   position: fixed;
@@ -173,6 +178,9 @@ function toggleColor() {
 @media (max-width: 760px) {
   .top-nav {
     display: none;
+  }
+  .menu-toggle {
+    display: inline-flex;
   }
   .site-header {
     gap: 0.5rem;
