@@ -195,21 +195,21 @@
 
 <script setup lang="ts">
 import { createReusableTemplate } from '@vueuse/core'
-import { formatReviewDate } from '~/utils/formatReviewDate'
 import { inlineDiff } from '~/utils/inlineDiff'
-import { plainProposalText } from '~/utils/plainProposalText'
-import { proposalContext } from '~/utils/proposalContext'
 import { proposalEvidence } from '~/utils/proposalEvidence'
-import { proposalKindLabels } from '~/utils/proposalKindLabels'
-import { proposalTarget } from '~/utils/proposalTarget'
-import { verdictLabel } from '~/utils/verdictLabel'
 import { verseHref } from '~/utils/verseHref'
 import type { IEntry } from '#shared/types/IEntry'
 import type { IProposal } from '#shared/types/IProposal'
 import type { IProposalReview } from '#shared/types/IProposalReview'
 import { entryHref } from '#shared/utils/entryHref'
+import { formatReviewDate } from '#shared/utils/formatReviewDate'
 import { glossarySenses } from '#shared/utils/glossarySenses'
+import { plainProposalText } from '#shared/utils/plainProposalText'
+import { proposalContext } from '#shared/utils/proposalContext'
 import { proposalFamily } from '#shared/utils/proposalFamily'
+import { proposalKindLabels } from '#shared/utils/proposalKindLabels'
+import { proposalTarget } from '#shared/utils/proposalTarget'
+import { verdictLabel } from '#shared/utils/verdictLabel'
 
 const props = withDefaults(
     defineProps<{ proposal: IProposal

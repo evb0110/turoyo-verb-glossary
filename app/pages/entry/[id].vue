@@ -133,11 +133,11 @@
 </template>
 
 <script setup lang="ts">
-import { stemLayout } from '~/utils/stemLayout'
 import type { IEntry } from '#shared/types/IEntry'
 import type { IProposal } from '#shared/types/IProposal'
 import type { IStem } from '#shared/types/IStem'
 import { entryHref } from '#shared/utils/entryHref'
+import { stemLayout } from '#shared/utils/stemLayout'
 
 const route = useRoute()
 const id = computed(() => String(route.params.id))

@@ -27,9 +27,9 @@
 </template>
 
 <script setup lang="ts">
-import { formatReviewDate } from '~/utils/formatReviewDate'
-import { verdictLabel } from '~/utils/verdictLabel'
 import type { IProposalReviewEvent } from '#shared/types/IProposalReviewEvent'
+import { formatReviewDate } from '#shared/utils/formatReviewDate'
+import { verdictLabel } from '#shared/utils/verdictLabel'
 
 const props = defineProps<{ proposalId: string
     question: boolean }>()

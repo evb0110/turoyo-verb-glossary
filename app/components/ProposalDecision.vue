@@ -129,11 +129,11 @@
 <script setup lang="ts">
 import { useEventListener } from '@vueuse/core'
 import { isEditableTarget } from '~/utils/isEditableTarget'
-import { verdictLabel } from '~/utils/verdictLabel'
 import type { IProposal } from '#shared/types/IProposal'
 import type { IProposalEdit } from '#shared/types/IProposalEdit'
 import type { IProposalReview } from '#shared/types/IProposalReview'
 import type { TReviewVerdict } from '#shared/types/TReviewVerdict'
+import { verdictLabel } from '#shared/utils/verdictLabel'
 
 const props = withDefaults(
     defineProps<{ proposal: IProposal

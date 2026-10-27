@@ -41,9 +41,9 @@
 </template>
 
 <script setup lang="ts">
-import { proposalContext } from '~/utils/proposalContext'
 import type { IEntry } from '#shared/types/IEntry'
 import type { IProposal } from '#shared/types/IProposal'
+import { proposalContext } from '#shared/utils/proposalContext'
 
 const props = defineProps<{ entry: IEntry | null
     proposal: IProposal }>()

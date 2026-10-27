@@ -1,5 +1,5 @@
-import type { proposalContext } from '~/utils/proposalContext'
 import type { IProposal } from '#shared/types/IProposal'
+import type { proposalContext } from '#shared/utils/proposalContext'
 
 const fieldLabels: Record<string, string> = {
     turoyo: 'Turoyo',

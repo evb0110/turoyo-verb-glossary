@@ -179,12 +179,12 @@
 import { refDebounced, useEventListener } from '@vueuse/core'
 import { isEditableTarget } from '~/utils/isEditableTarget'
 import { proposalLabels } from '~/utils/proposalLabels'
-import { verdictLabel } from '~/utils/verdictLabel'
 import type { IProposalDetail } from '#shared/types/IProposalDetail'
 import type { IProposalQueue } from '#shared/types/IProposalQueue'
 import type { IProposalReview } from '#shared/types/IProposalReview'
 import type { TProposalKind } from '#shared/types/TProposalKind'
 import { entryHref } from '#shared/utils/entryHref'
+import { verdictLabel } from '#shared/utils/verdictLabel'
 
 const route = useRoute()
 const router = useRouter()

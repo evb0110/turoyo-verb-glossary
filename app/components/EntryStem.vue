@@ -105,8 +105,8 @@
 </template>
 
 <script setup lang="ts">
-import type { stemLayout } from '~/utils/stemLayout'
 import type { IEntry } from '#shared/types/IEntry'
+import type { stemLayout } from '#shared/utils/stemLayout'
 
 const props = defineProps<{ layout: ReturnType<typeof stemLayout>
     entry: IEntry | null }>()

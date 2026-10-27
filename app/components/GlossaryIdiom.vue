@@ -13,9 +13,9 @@
 </template>
 
 <script setup lang="ts">
-import { idiomTokens } from '~/utils/idiomTokens'
 import { verseHref } from '~/utils/verseHref'
 import type { IIdiom } from '#shared/types/IIdiom'
+import { idiomTokens } from '#shared/utils/idiomTokens'
 
 const props = defineProps<{ idiom: IIdiom
     textIds: string[] }>()
