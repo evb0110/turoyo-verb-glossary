@@ -9,6 +9,7 @@
                     :key="link.to"
                     :to="link.to"
                     :class="{ active: section === link.to }"
+                    :data-label="link.label"
                 >{{ link.label }}</NuxtLink>
             </nav>
             <form
@@ -131,10 +132,22 @@ async function logout() {
   gap: 0 1.1rem;
 }
 .site-nav a {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0.3rem 0;
   border-bottom: 2px solid transparent;
   color: var(--ink);
   text-decoration: none;
+}
+/* An invisible bold copy of the label reserves the bold width, so the active link
+   does not push the links after it sideways. */
+.site-nav a::after {
+  content: attr(data-label);
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-weight: 600;
 }
 .site-nav a:hover {
   color: var(--accent);
