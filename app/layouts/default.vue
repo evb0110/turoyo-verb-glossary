@@ -3,7 +3,7 @@
         <a href="#main-content" class="skip-link">Skip to content</a>
         <header class="site-header">
             <NuxtLink to="/" class="wordmark">Turoyo Verb Glossary</NuxtLink>
-            <nav class="site-nav" aria-label="Main">
+            <nav v-if="isApproved" class="site-nav" aria-label="Main">
                 <NuxtLink
                     v-for="link in links"
                     :key="link.to"
@@ -13,7 +13,7 @@
                 >{{ link.label }}</NuxtLink>
             </nav>
             <form
-                v-if="user && section !== '/glossary'"
+                v-if="isApproved && section !== '/glossary'"
                 class="site-search"
                 role="search"
                 @submit.prevent="search"
@@ -53,6 +53,7 @@ import { useMounted } from '@vueuse/core'
 
 const {
     isAdmin,
+    isApproved,
     isPending,
     user,
     signOut,

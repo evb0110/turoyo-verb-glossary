@@ -20,7 +20,7 @@
                 </button>
             </div>
         </form>
-        <section v-if="isApproved" class="block">
+        <section class="block">
             <h2>Review</h2>
             <p v-if="summary">
                 {{ summary.decided.toLocaleString("en") }} of {{ summary.total.toLocaleString("en") }} suggestions
@@ -50,7 +50,6 @@
 </template>
 
 <script setup lang="ts">
-const { isApproved } = useAuth()
 const { data: summary } = await useFetch('/api/glossary/proposals/summary')
 const query = ref('')
 function search() {

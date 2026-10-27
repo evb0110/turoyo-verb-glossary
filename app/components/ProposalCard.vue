@@ -70,17 +70,6 @@
                 </div>
             </template>
         </DefineBody>
-        <DefineDetailsToggle>
-            <button
-                type="button"
-                class="btn-link"
-                :aria-expanded="detailsOpen"
-                :aria-controls="`details-${proposal.id}`"
-                @click="detailsOpen = !detailsOpen"
-            >
-                {{ detailsOpen ? "Hide details" : "Details" }}
-            </button>
-        </DefineDetailsToggle>
         <p class="proposal-head">
             <span v-if="proposal.priority === 1" class="flag">Important</span>
             <strong class="action" v-text="action"></strong>
@@ -129,19 +118,23 @@
             <strong>Comment from {{ latest.userName }}:</strong> {{ latest.comment }}
         </p>
         <ProposalDecision
-            v-if="isApproved"
             :proposal="proposal"
             :shortcuts="queue"
             :dock="queue"
             @reviewed="emit('reviewed', $event)"
             @undone="emit('undone', $event)"
         >
-            <DetailsToggle v-if="!queue"/>
+            <button
+                v-if="!queue"
+                type="button"
+                class="btn-link"
+                :aria-expanded="detailsOpen"
+                :aria-controls="`details-${proposal.id}`"
+                @click="detailsOpen = !detailsOpen"
+            >
+                {{ detailsOpen ? "Hide details" : "Details" }}
+            </button>
         </ProposalDecision>
-        <p v-else-if="latest || !queue" class="read-only">
-            <ProposalStatus v-if="latest" :review="latest" :question="question"/>
-            <DetailsToggle v-if="!queue"/>
-        </p>
         <div v-if="queue || detailsOpen" :id="`details-${proposal.id}`" class="details">
             <p v-if="proposal.rationale || confidence">
                 <strong>Reason:</strong> {{ plainProposalText(proposal.rationale) }}
@@ -194,10 +187,8 @@ const props = withDefaults(
 const emit = defineEmits<{ reviewed: [review: IProposalReview]
     undone: [proposalId: string] }>()
 const [DefineBody, Body] = createReusableTemplate()
-const [DefineDetailsToggle, DetailsToggle] = createReusableTemplate()
 const [DefineSources, Sources] = createReusableTemplate()
 const { decision } = useProposalReviews()
-const { isApproved } = useAuth()
 const context = computed(() => proposalContext(props.entry, props.proposal))
 const latest = computed(() => decision(props.proposal.id))
 const question = computed(() => ['question', 'note'].includes(props.proposal.kind))
@@ -472,12 +463,6 @@ ins.replaces {
 .accepted-wording {
   display: grid;
   gap: 0.1rem;
-}
-.read-only {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0 0.6rem;
 }
 .details {
   display: grid;
