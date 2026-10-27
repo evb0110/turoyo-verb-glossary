@@ -28,6 +28,7 @@
             :key="proposal.id"
             :proposal="proposal"
             :entry="entry"
+            placement="example"
         />
     </div>
 </template>

@@ -2,8 +2,7 @@
     <div class="decision" :class="{ docked: dock }">
         <div v-if="editing" class="edit-fields">
             <p class="small muted">
-                Change the wording below. Saving accepts the suggestion with your wording; the machine’s
-                version is kept.
+                Change the wording, then accept it. The machine’s version is kept for reference.
             </p>
             <template v-if="edit.headword !== undefined">
                 <label :for="`edit-headword-${proposal.id}`">Idiom heading</label>
@@ -33,7 +32,7 @@
             </template>
         </div>
         <div v-if="commentOpen" :id="`comment-area-${proposal.id}`" class="comment-field">
-            <label :for="`comment-${proposal.id}`">Comment, saved with your next decision</label>
+            <label :for="`comment-${proposal.id}`">Comment, saved with your decision</label>
             <textarea
                 :id="`comment-${proposal.id}`"
                 v-model="comment"
@@ -44,7 +43,12 @@
         <p v-if="saveError" role="alert" class="error small">
             {{ saveError }}
         </p>
-        <div class="decision-bar" role="group" aria-label="Decision">
+        <div
+            ref="bar"
+            class="decision-bar"
+            role="group"
+            aria-label="Decision"
+        >
             <template v-if="editing">
                 <button
                     type="button"
@@ -52,7 +56,7 @@
                     :disabled="saving || !edit.text.trim() || edit.headword === ''"
                     @click="submit('accept', true)"
                 >
-                    Save and accept
+                    Accept with changes
                 </button>
                 <button
                     type="button"
@@ -63,10 +67,11 @@
                     Cancel
                 </button>
             </template>
+            <ProposalStatus v-else-if="latest && !changing" :review="latest" :question="question"/>
             <template v-else>
                 <button
                     type="button"
-                    class="btn verdict-accept"
+                    class="btn verdict verdict-accept"
                     :aria-pressed="current === 'accept'"
                     :disabled="saving"
                     @click="submit('accept')"
@@ -76,16 +81,16 @@
                 <button
                     v-if="!question"
                     type="button"
-                    class="btn verdict-accept"
+                    class="btn verdict verdict-accept"
                     :aria-pressed="current === 'edited'"
                     :disabled="saving"
                     @click="startEditing"
                 >
-                    Edit and accept
+                    Edit
                 </button>
                 <button
                     type="button"
-                    class="btn verdict-reject"
+                    class="btn verdict verdict-reject"
                     :aria-pressed="current === 'reject'"
                     :disabled="saving"
                     @click="submit('reject')"
@@ -94,7 +99,7 @@
                 </button>
                 <button
                     type="button"
-                    class="btn verdict-later"
+                    class="btn verdict verdict-later"
                     :aria-pressed="current === 'discuss'"
                     :disabled="saving"
                     @click="submit('discuss')"
@@ -102,26 +107,48 @@
                     {{ question ? "Discuss later" : "Decide later" }}
                 </button>
             </template>
-            <button
-                type="button"
-                class="btn-link"
-                :aria-expanded="commentOpen"
-                :aria-controls="`comment-area-${proposal.id}`"
-                @click="toggleComment"
-            >
-                {{ commentOpen ? "Hide comment" : "Comment" }}
-            </button>
-            <button
-                v-if="canUndo"
-                type="button"
-                class="btn-link"
-                :disabled="saving"
-                @click="undoLatest"
-            >
-                Undo
-            </button>
+            <span class="links">
+                <template v-if="latest && !changing && !editing">
+                    <button
+                        ref="changeButton"
+                        type="button"
+                        class="btn-link"
+                        :disabled="saving"
+                        @click="startChanging"
+                    >
+                        Change
+                    </button>
+                    <button
+                        v-if="canUndo"
+                        type="button"
+                        class="btn-link"
+                        :disabled="saving"
+                        @click="undoLatest"
+                    >
+                        Undo
+                    </button>
+                </template>
+                <button
+                    v-else
+                    type="button"
+                    class="btn-link"
+                    :aria-expanded="commentOpen"
+                    :aria-controls="`comment-area-${proposal.id}`"
+                    @click="toggleComment"
+                >
+                    {{ commentOpen ? "Hide comment" : "Comment" }}
+                </button>
+                <button
+                    v-if="changing && !editing"
+                    type="button"
+                    class="btn-link"
+                    @click="stopChanging"
+                >
+                    Keep the decision
+                </button>
+                <slot></slot>
+            </span>
             <span class="sr-only" role="status">{{ saving ? "Saving decision…" : announcement }}</span>
-            <span v-if="$slots.default" class="decision-extra"><slot></slot></span>
         </div>
     </div>
 </template>
@@ -166,6 +193,10 @@ const commentOpen = ref(false)
 const saveError = ref('')
 const announcement = ref('')
 const editing = ref(false)
+// A decided suggestion shows who decided what; "Change" brings the decision buttons back.
+const changing = ref(false)
+const bar = ref<HTMLElement | null>(null)
+const changeButton = ref<HTMLButtonElement | null>(null)
 const edit = ref<IProposalEdit>({ text: '' })
 const turoyoWording = computed(() => ['add-example', 'new-form', 'new-idiom'].includes(props.proposal.kind))
 const editLabel = computed(() => {
@@ -182,9 +213,31 @@ async function focusField(id: string) {
     field?.focus({ preventScroll: true })
     field?.scrollIntoView({ block: 'nearest' })
 }
+// Keeps keyboard focus in the bar when the button that had it is replaced.
+async function keepFocus(target: () => HTMLElement | null | undefined) {
+    const active = document.activeElement
+    if (active && active !== document.body && !bar.value?.contains(active)) return
+    await nextTick()
+    target()?.focus({ preventScroll: true })
+}
+async function startChanging() {
+    changing.value = true
+    await keepFocus(() => bar.value?.querySelector<HTMLElement>('.verdict[aria-pressed="true"]')
+        || bar.value?.querySelector<HTMLElement>('.verdict'))
+}
+async function stopChanging() {
+    changing.value = false
+    commentOpen.value = false
+    // Keeping the decision abandons the comment, so a later change does not send it unseen.
+    comment.value = ''
+    await keepFocus(() => changeButton.value)
+}
 async function toggleComment() {
     commentOpen.value = !commentOpen.value
-    if (commentOpen.value) await focusField(`comment-${props.proposal.id}`)
+    if (commentOpen.value) {
+        if (latest.value) changing.value = true
+        await focusField(`comment-${props.proposal.id}`)
+    }
 }
 // The initial wording follows the edit contract in docs/review-storage.md.
 async function startEditing() {
@@ -212,9 +265,11 @@ async function submit(verdict: TReviewVerdict, withChanges = false) {
     )
     if (result) {
         editing.value = false
+        changing.value = false
         commentOpen.value = false
         comment.value = ''
         announcement.value = `Saved: ${verdictLabel(result.verdict, question.value, !!result.edited)}.`
+        if (!props.shortcuts) await keepFocus(() => changeButton.value)
         emit('reviewed', result)
     }
     else saveError.value = 'Your decision was not saved. Please try again.'
@@ -225,6 +280,7 @@ async function undoLatest() {
     const proposalId = latest.value.proposalId
     if (await undo(latest.value)) {
         announcement.value = 'Decision undone.'
+        await keepFocus(() => changeButton.value || bar.value?.querySelector<HTMLElement>('.verdict'))
         emit('undone', proposalId)
     }
     else saveError.value = 'The decision could not be undone. It may have been changed by another editor; reload to see the latest decision.'
@@ -270,8 +326,12 @@ if (props.shortcuts)
   align-items: center;
   gap: 0.35rem;
 }
-.decision-extra {
-  display: contents;
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 0.6rem;
+  margin-left: 0.4rem;
 }
 .decision-bar .verdict-accept[aria-pressed="true"] {
   border-color: var(--addition);

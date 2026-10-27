@@ -1,5 +1,8 @@
 <template>
     <div v-if="data" class="entry">
+        <DefineTocCount v-slot="{ count }">
+            <span v-if="count" class="num">{{ count }}<span class="sr-only"> undecided</span></span>
+        </DefineTocCount>
         <BackLink/>
         <header class="entry-head">
             <div class="entry-title">
@@ -36,17 +39,18 @@
             <aside class="entry-side">
                 <fieldset v-if="data.proposals.length" class="filter">
                     <legend>Machine suggestions</legend>
-                    <label><input v-model="mode" type="radio" value="all"/> All ({{ data.proposals.length }})</label>
-                    <label><input v-model="mode" type="radio" value="open"/> Undecided ({{ openCount }})</label>
-                    <label><input v-model="mode" type="radio" value="off"/> Hide</label>
+                    <p class="counts">
+                        {{ data.proposals.length }} in this entry, {{ openCount }} undecided
+                    </p>
+                    <label><input v-model="mode" type="radio" value="all"/> Show all</label>
+                    <label><input v-model="mode" type="radio" value="open"/> Show only undecided</label>
+                    <label><input v-model="mode" type="radio" value="off"/> Hide all</label>
                 </fieldset>
-                <div class="export small">
-                    <DocumentDownload :href="exportHref" label="Download"/>
-                    <label v-if="data.proposals.length">
-                        <input v-model="withSuggestions" type="checkbox"/> with suggestions and decisions
-                    </label>
-                </div>
-                <nav class="toc small" aria-label="Contents of this entry">
+                <nav v-if="hasContents" class="toc small" aria-labelledby="toc-title">
+                    <p class="toc-head">
+                        <span id="toc-title">Contents</span>
+                        <span v-if="counting" aria-hidden="true">undecided</span>
+                    </p>
                     <ul>
                         <li v-for="layout in layouts" :key="layout.stem.id">
                             <a
@@ -57,20 +61,17 @@
                                 <li v-for="sense in layout.senses" :key="sense.key">
                                     <a :href="`#${encodeURIComponent(sense.id)}`">
                                         <span class="toc-n">{{ sense.key }}</span>
-                                        <span class="toc-gloss" :title="sense.gloss">
-                                            {{ sense.proposed ? "suggested" : sense.gloss }}
+                                        <span v-if="sense.proposed" v-overflow-title class="toc-gloss">
+                                            <span class="toc-new">new</span> {{ suggestedGloss(sense.lead) }}
                                         </span>
-                                        <span v-if="openIn(sense.all)" class="num">{{
-                                            openIn(sense.all)
-                                        }}</span>
+                                        <span v-else v-overflow-title class="toc-gloss">{{ sense.gloss }}</span>
+                                        <TocCount :count="openIn(sense.all)"/>
                                     </a>
                                 </li>
                                 <li v-if="layout.remaining.length">
                                     <a :href="`#${encodeURIComponent(`${layout.stem.id}-other`)}`">
                                         <span class="toc-gloss">Other suggestions</span>
-                                        <span v-if="openIn(layout.remaining)" class="num">{{
-                                            openIn(layout.remaining)
-                                        }}</span>
+                                        <TocCount :count="openIn(layout.remaining)"/>
                                     </a>
                                 </li>
                             </ul>
@@ -78,20 +79,23 @@
                         <li v-if="entry?.idioms.length || idiomProposals.length">
                             <a href="#idioms">
                                 <span class="toc-gloss">Idiomatic phrases</span>
-                                <span v-if="openIn(idiomProposals)" class="num">{{ openIn(idiomProposals) }}</span>
+                                <TocCount :count="openIn(idiomProposals)"/>
                             </a>
                         </li>
                         <li v-if="entryNotes.length || entryProposals.length">
                             <a href="#notes">
                                 <span class="toc-gloss">Notes and questions</span>
-                                <span v-if="openIn(entryProposals)" class="num">{{ openIn(entryProposals) }}</span>
+                                <TocCount :count="openIn(entryProposals)"/>
                             </a>
                         </li>
                     </ul>
-                    <p v-if="mode !== 'off' && data.proposals.length" class="muted">
-                        Numbers count undecided suggestions.
-                    </p>
                 </nav>
+                <div class="export small">
+                    <DocumentDownload :href="exportHref" label="Download"/>
+                    <label v-if="data.proposals.length">
+                        <input v-model="withSuggestions" type="checkbox"/> with suggestions and decisions
+                    </label>
+                </div>
             </aside>
             <div class="entry-main">
                 <p v-if="reviewError" role="alert" class="error">
@@ -112,6 +116,7 @@
                             :key="proposal.id"
                             :proposal="proposal"
                             :entry="entry"
+                            placement="example"
                         />
                     </div>
                     <ProposalCard
@@ -139,6 +144,7 @@
 </template>
 
 <script setup lang="ts">
+import { createReusableTemplate } from '@vueuse/core'
 import type { IEntry } from '#shared/types/IEntry'
 import type { IProposal } from '#shared/types/IProposal'
 import { entryHref } from '#shared/utils/entryHref'
@@ -182,6 +188,14 @@ const openCount = computed(() => proposals.value.filter(item => status(item.id) 
 function openIn(items: IProposal[]) {
     return items.filter(item => status(item.id) === 'open').length
 }
+const [DefineTocCount, TocCount] = createReusableTemplate<{ count: number }>()
+// The contents count undecided suggestions while suggestions are shown.
+const counting = computed(() => mode.value !== 'off' && proposals.value.length > 0)
+// A meaning that exists only as a suggestion is listed with the wording the machine suggests for it.
+function suggestedGloss(lead: IProposal[]) {
+    const gloss = lead.find(item => item.kind === 'new-sense')?.data.gloss
+    return typeof gloss === 'string' && gloss ? gloss : 'meaning'
+}
 // "Undecided" keeps the suggestions that were undecided when it was chosen, so a card
 // does not vanish while it is being decided.
 const undecidedAtSwitch = ref<Set<string>>(new Set())
@@ -206,6 +220,9 @@ const idiomProposals = computed(() => placement.value.idiomProposals)
 const unplacedIdiomProposals = computed(() => placement.value.unplacedIdiomProposals)
 const entryProposals = computed(() => placement.value.entryProposals)
 const entryNotes = computed(() => placement.value.notes)
+// Cross-reference entries such as ʔkl → ʔxl have nothing to list.
+const hasContents = computed(() => !!(layouts.value.length || entry.value?.idioms.length
+    || idiomProposals.value.length || entryNotes.value.length || entryProposals.value.length))
 const previous = computed(() => data.value?.previous || null)
 const next = computed(() => data.value?.next || null)
 useHead({ title: rootLabel })
@@ -285,6 +302,21 @@ useHead({ title: rootLabel })
   align-items: center;
   gap: 0.4rem;
 }
+.counts {
+  margin-bottom: 0.15rem;
+  color: var(--muted);
+}
+.toc-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.15rem;
+  color: var(--muted);
+}
+.toc-head span:first-child {
+  color: var(--ink);
+  font-weight: 600;
+}
 .toc ul {
   margin: 0;
   padding: 0;
@@ -322,8 +354,9 @@ useHead({ title: rootLabel })
 .toc .num {
   color: var(--muted);
 }
-.toc p {
-  margin-top: 0.4rem;
+.toc-new {
+  color: var(--addition);
+  font-weight: 600;
 }
 .block {
   margin-bottom: 1.5rem;
@@ -350,7 +383,8 @@ useHead({ title: rootLabel })
     flex-wrap: wrap;
     gap: 0.25rem 1rem;
   }
-  .filter legend {
+  .filter legend,
+  .counts {
     width: 100%;
   }
   .toc {

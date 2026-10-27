@@ -61,16 +61,22 @@
                             {{ letter }}
                         </th>
                     </tr>
-                    <tr v-for="root in items" :key="root.id">
+                    <tr
+                        v-for="root in items"
+                        :key="root.id"
+                        class="root-row"
+                        @click="openRow($event, root)"
+                        @auxclick="openRow($event, root)"
+                    >
                         <td class="root serif">
                             <NuxtLink :to="entryHref(root.id)">
                                 <span v-text="root.root"></span>
                             </NuxtLink>
                         </td>
-                        <td class="stems" :title="stemsLabel(root)">
+                        <td v-overflow-title class="stems">
                             {{ stemsLabel(root) }}
                         </td>
-                        <td class="gloss" :title="root.glossPreview">
+                        <td v-overflow-title class="gloss">
                             <span v-if="root.proposed" class="new">Suggested new verb.</span>
                             {{ root.glossPreview }}
                         </td>
@@ -118,6 +124,15 @@ function undecided(root: IRootIndexRow) {
 }
 function stemsLabel(root: IRootIndexRow) {
     return root.stems.map(stem => `${stem.stem} ${stem.forms}`.trim()).join(' · ')
+}
+// The whole row opens the entry, as the root's link does; the link stays the keyboard and screen reader target.
+// Clicks on links and the end of a text selection are left alone, so forms can still be copied.
+function openRow(event: MouseEvent, root: IRootIndexRow) {
+    if ((event.target as Element).closest('a') || getSelection()?.toString()) return
+    if (event.type === 'auxclick' && event.button !== 1) return
+    const href = entryHref(root.id)
+    if (event.button === 1 || event.metaKey || event.ctrlKey) window.open(href, '_blank', 'noopener')
+    else navigateTo(href)
 }
 // Downloads: the whole glossary, one of the team's Word volumes or one letter, without suggestions.
 const part = ref('')
@@ -202,7 +217,8 @@ td.root {
 td.root a {
   text-decoration: none;
 }
-td.root a:hover {
+td.root a:hover,
+.root-row:hover td.root a {
   text-decoration: underline;
 }
 .stems {
@@ -228,7 +244,10 @@ td.open {
   color: var(--addition);
   font-weight: 600;
 }
-tbody tr:not(.letter-row):hover {
+.root-row {
+  cursor: pointer;
+}
+.root-row:hover {
   background: var(--bg-soft);
 }
 @media (max-width: 760px) {

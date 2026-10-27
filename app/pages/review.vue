@@ -75,8 +75,8 @@
             <template v-if="!group">
                 <h2>Choose a group</h2>
                 <p>
-                    Pick a group of suggestions from the list. Each suggestion opens on its own with the glossary
-                    text it changes, the proposed wording, the machine’s reasons and the cited passages. After a
+                    Pick a group of suggestions from the list. Each suggestion opens on its own: what the machine
+                    suggests, the glossary text as it is now, the machine’s reason and the passages it cites. After a
                     decision the next undecided suggestion opens.
                 </p>
                 <p class="start">
@@ -152,7 +152,7 @@
                     <p class="keys small muted">
                         Keys: <kbd>A</kbd> {{ question ? "noted" : "accept" }} ·
                         <template v-if="!question">
-                            <kbd>E</kbd> edit and accept ·
+                            <kbd>E</kbd> edit ·
                         </template>
                         <kbd>R</kbd> {{ question ? "dismiss" : "reject" }} ·
                         <kbd>D</kbd> {{ question ? "discuss later" : "decide later" }} ·

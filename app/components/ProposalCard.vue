@@ -4,81 +4,32 @@
         class="proposal"
         :class="[`family-${proposalFamily(proposal.kind)}`, { decided: !!latest, queue }]"
     >
-        <DefineTools>
-            <span class="proposal-tools small">
-                <span v-for="group in citeGroups" :key="group.label" class="cites">
-                    <span v-text="`${group.label}: `"></span>
-                    <NuxtLink
-                        v-for="ref in group.refs"
-                        :key="`${ref.textId}:${ref.v}`"
-                        class="cite"
-                        :to="verseHref(ref.textId, ref.v)"
-                    >
-                        <span v-text="ref.cite"></span>
-                    </NuxtLink>
-                </span>
-                <button
-                    v-if="!queue && (proposal.rationale || confidence)"
-                    type="button"
-                    class="btn-link"
-                    :aria-expanded="panel === 'why'"
-                    @click="toggle('why')"
+        <DefineSources>
+            <span class="sources small">
+                <NuxtLink
+                    v-for="ref in sources"
+                    :key="`${ref.textId}:${ref.v}`"
+                    class="ref"
+                    :to="verseHref(ref.textId, ref.v)"
                 >
-                    Why
-                </button>
-                <button
-                    v-if="!queue && evidence.length"
-                    type="button"
-                    class="btn-link"
-                    :aria-expanded="panel === 'passages'"
-                    @click="toggle('passages')"
-                >
-                    Passages ({{ evidence.length }})
-                </button>
-                <button
-                    type="button"
-                    class="btn-link"
-                    :aria-expanded="panel === 'history'"
-                    @click="toggle('history')"
-                >
-                    History
-                </button>
-                <span v-if="!queue && proposal.priority === 1" class="muted">Priority 1</span>
+                    <span v-text="ref.cite"></span>
+                </NuxtLink>
             </span>
-        </DefineTools>
-        <header class="proposal-head">
-            <span class="proposal-kind">{{ proposalKindLabels[proposal.kind] }}</span>
-            <span v-if="target" class="proposal-target">{{ target }}</span>
-            <span class="proposal-status" :class="{ open: !latest }">{{ statusText }}</span>
-        </header>
-        <p v-if="showSummary" class="proposal-summary">
-            {{ plainProposalText(proposal.summary) }}
-        </p>
-        <div class="proposal-body" :class="{ compare: queue }">
-            <section v-if="queue" class="side">
-                <h3 class="side-label">
-                    In the glossary now
-                </h3>
-                <ProposalTarget :entry="entry" :proposal="proposal"/>
-            </section>
-            <section class="side">
-                <h3 v-if="queue" class="side-label">
-                    {{ question ? "For the editors" : "Suggested" }}
-                </h3>
-                <p v-if="content === 'move'">
-                    {{ moveDescription }}
-                </p>
-                <p v-else-if="content === 'duplicate'">
-                    Compare
-                    <NuxtLink :to="entryHref(proposal.entryId)">{{ entry?.root || proposal.entryId }}</NuxtLink>
-                    with
-                    <NuxtLink :to="entryHref(duplicateRoot)">{{ duplicateRoot.replaceAll("-", " ") }}</NuxtLink>.
-                    {{ plainProposalText(proposal.summary) }}
-                </p>
-                <p v-else-if="content === 'question' || content === 'summary'">
-                    {{ plainProposalText(proposal.summary) }}
-                </p>
-                <p v-else-if="content === 'diff'" class="diff" :class="diffClass">
+        </DefineSources>
+        <DefineBody>
+            <p v-if="content === 'move'">
+                {{ moveDescription }}
+                <Sources v-if="sourcesAt === 'body'"/>
+            </p>
+            <p v-else-if="content === 'duplicate'">
+                Compare
+                <NuxtLink :to="entryHref(proposal.entryId)">{{ entry?.root || proposal.entryId }}</NuxtLink>
+                with
+                <NuxtLink :to="entryHref(duplicateRoot)">{{ duplicateRoot.replaceAll("-", " ") }}</NuxtLink>.
+                <Sources v-if="sourcesAt === 'body'"/>
+            </p>
+            <template v-else-if="content === 'diff'">
+                <p class="diff" :class="diffClass">
                     <template v-for="(part, i) in diffParts" :key="i">
                         <span v-if="part.lead" v-text="part.lead"></span>
                         <del v-if="part.kind === 'delete'">
@@ -94,34 +45,72 @@
                         </ins>
                         <span v-else v-text="part.text"></span>
                     </template>
+                    <Sources v-if="sourcesAt === 'body'"/>
                 </p>
-                <div v-else class="wording" :class="{ pair: !!(wording.text && wording.translation) }">
-                    <p v-if="wording.text" :class="wording.turoyo ? 'tur' : 'serif'">
+                <p v-if="proposal.after && typeof proposal.data.translation === 'string'" class="small">
+                    {{ proposal.data.translation }}
+                </p>
+            </template>
+            <template v-else>
+                <p v-if="headword" class="serif headword">
+                    {{ headword }}
+                </p>
+                <div class="wording" :class="{ 'pair': pair, 'with-refs': sourcesAt === 'pair' }">
+                    <p :class="wording.turoyo ? 'tur' : 'serif'">
                         {{ wording.text }}
+                        <Sources v-if="sourcesAt === 'body'"/>
                     </p>
-                    <p v-if="wording.translation">
+                    <p v-if="wording.translation" class="translation">
                         {{ wording.translation }}
                         <span v-if="machineTranslation" class="small muted">(machine translation)</span>
                     </p>
+                    <p v-if="sourcesAt === 'pair'" class="refs">
+                        <Sources/>
+                    </p>
                 </div>
-                <p v-if="content === 'diff' && proposal.after && proposal.data.translation" class="small">
-                    {{ proposal.data.translation }}
-                </p>
-                <p v-if="proposal.before && proposal.after === ''" class="small muted">
-                    The marked text would be removed.
-                </p>
-                <p v-if="machineTranslation && content !== 'data' && content !== 'after'" class="small muted">
-                    The translation of the cited passage is a machine translation made for this project; check it
-                    against the Turoyo.
-                </p>
+            </template>
+        </DefineBody>
+        <DefineDetailsToggle>
+            <button
+                type="button"
+                class="btn-link"
+                :aria-expanded="detailsOpen"
+                :aria-controls="`details-${proposal.id}`"
+                @click="detailsOpen = !detailsOpen"
+            >
+                {{ detailsOpen ? "Hide details" : "Details" }}
+            </button>
+        </DefineDetailsToggle>
+        <p class="proposal-head">
+            <span v-if="proposal.priority === 1" class="flag">Important</span>
+            <strong class="action" v-text="action"></strong>
+            <span v-if="place" class="muted" v-text="` in ${place}`"></span>
+            <span v-if="detail" v-text="`: ${detail}`"></span>
+            <Sources v-if="sourcesAt === 'head'"/>
+        </p>
+        <div v-if="queue" class="compare" :class="{ single: !hasBody }">
+            <section class="side">
+                <h3 class="side-label">
+                    In the glossary now
+                </h3>
+                <ProposalTarget :entry="entry" :proposal="proposal"/>
             </section>
+            <section v-if="hasBody" class="side">
+                <h3 class="side-label">
+                    Suggested
+                </h3>
+                <Body/>
+            </section>
+        </div>
+        <div v-else-if="hasBody" class="body">
+            <Body/>
         </div>
         <p v-if="gateWarning" class="error small">
             The cited text could not be verified. {{ gateWarning }}
         </p>
         <div v-if="latest?.edited" class="accepted-wording">
             <p class="small">
-                <strong>Accepted wording</strong> · {{ latest.userName }}
+                <strong>Accepted wording</strong>
             </p>
             <p v-if="latest.edited.headword" class="serif">
                 {{ latest.edited.headword }}
@@ -137,28 +126,8 @@
             </p>
         </div>
         <p v-if="latest?.comment" class="small">
-            <strong>Comment</strong> · {{ latest.userName }}: {{ latest.comment }}
+            <strong>Comment from {{ latest.userName }}:</strong> {{ latest.comment }}
         </p>
-        <section v-if="queue && (proposal.rationale || confidence)" class="why">
-            <h3 class="side-label">
-                Why
-            </h3>
-            <p>{{ plainProposalText(proposal.rationale) }}</p>
-            <p v-if="confidence" class="small muted">
-                {{ confidence }}
-            </p>
-        </section>
-        <section v-if="queue && evidence.length" class="passages">
-            <h3 class="side-label">
-                From the texts
-            </h3>
-            <ProposalEvidence
-                v-for="ref in evidence"
-                :key="`${ref.textId}:${ref.v}`"
-                :reference="ref"
-                :label="ref.label"
-            />
-        </section>
         <ProposalDecision
             v-if="isApproved"
             :proposal="proposal"
@@ -167,75 +136,82 @@
             @reviewed="emit('reviewed', $event)"
             @undone="emit('undone', $event)"
         >
-            <ToolsRow v-if="!queue"/>
+            <DetailsToggle v-if="!queue"/>
         </ProposalDecision>
-        <ToolsRow v-if="queue || !isApproved"/>
-        <div v-if="panel === 'why'" class="panel">
-            <p>{{ plainProposalText(proposal.rationale) }}</p>
-            <p v-if="confidence" class="small muted">
-                {{ confidence }}
+        <p v-else-if="latest || !queue" class="read-only">
+            <ProposalStatus v-if="latest" :review="latest" :question="question"/>
+            <DetailsToggle v-if="!queue"/>
+        </p>
+        <div v-if="queue || detailsOpen" :id="`details-${proposal.id}`" class="details">
+            <p v-if="proposal.rationale || confidence">
+                <strong>Reason:</strong> {{ plainProposalText(proposal.rationale) }}
+                <span v-if="confidence" class="muted">{{ confidence }}</span>
             </p>
+            <div v-if="evidence.length" class="passages">
+                <p><strong>In the texts:</strong></p>
+                <ProposalEvidence
+                    v-for="ref in evidence"
+                    :key="`${ref.textId}:${ref.v}`"
+                    :reference="ref"
+                    :label="ref.label === 'Cited passage' ? '' : ref.label"
+                />
+            </div>
+            <p v-if="!queue && !proposal.rationale && !confidence && !evidence.length" class="muted">
+                The machine gave no reason or passages for this {{ question ? proposal.kind : "suggestion" }}.
+            </p>
+            <ProposalHistory :proposal-id="proposal.id" :question="question" :quiet="queue"/>
         </div>
-        <div v-if="panel === 'passages'" class="panel passages">
-            <ProposalEvidence
-                v-for="ref in evidence"
-                :key="`${ref.textId}:${ref.v}`"
-                :reference="ref"
-                :label="ref.label"
-            />
-        </div>
-        <ProposalHistory
-            v-if="panel === 'history'"
-            class="panel"
-            :proposal-id="proposal.id"
-            :question="question"
-        />
     </article>
 </template>
 
 <script setup lang="ts">
 import { createReusableTemplate } from '@vueuse/core'
+import type { TProposalPlacement } from '~/types/TProposalPlacement'
 import { inlineDiff } from '~/utils/inlineDiff'
+import { proposalAction } from '~/utils/proposalAction'
 import { proposalEvidence } from '~/utils/proposalEvidence'
+import { proposalPlace } from '~/utils/proposalPlace'
 import { verseHref } from '~/utils/verseHref'
 import type { IEntry } from '#shared/types/IEntry'
 import type { IProposal } from '#shared/types/IProposal'
 import type { IProposalReview } from '#shared/types/IProposalReview'
 import { entryHref } from '#shared/utils/entryHref'
-import { formatReviewDate } from '#shared/utils/formatReviewDate'
 import { glossarySenses } from '#shared/utils/glossarySenses'
 import { plainProposalText } from '#shared/utils/plainProposalText'
 import { proposalContext } from '#shared/utils/proposalContext'
 import { proposalFamily } from '#shared/utils/proposalFamily'
-import { proposalKindLabels } from '#shared/utils/proposalKindLabels'
-import { proposalTarget } from '#shared/utils/proposalTarget'
-import { verdictLabel } from '#shared/utils/verdictLabel'
 
 const props = withDefaults(
     defineProps<{ proposal: IProposal
         entry: IEntry | null
-        queue?: boolean }>(),
-    { queue: false }
+        queue?: boolean
+        placement?: TProposalPlacement }>(),
+    {
+        queue: false,
+        placement: 'entry',
+    }
 )
 const emit = defineEmits<{ reviewed: [review: IProposalReview]
     undone: [proposalId: string] }>()
-const [DefineTools, ToolsRow] = createReusableTemplate()
+const [DefineBody, Body] = createReusableTemplate()
+const [DefineDetailsToggle, DetailsToggle] = createReusableTemplate()
+const [DefineSources, Sources] = createReusableTemplate()
 const { decision } = useProposalReviews()
 const { isApproved } = useAuth()
 const context = computed(() => proposalContext(props.entry, props.proposal))
-const target = computed(() => proposalTarget(context.value, props.proposal))
 const latest = computed(() => decision(props.proposal.id))
 const question = computed(() => ['question', 'note'].includes(props.proposal.kind))
-const statusText = computed(() => latest.value
-    ? `${verdictLabel(latest.value.verdict, question.value, !!latest.value.edited)} · ${latest.value.userName} · ${formatReviewDate(latest.value.createdAt)}`
-    : 'Undecided')
-const panel = ref<'why' | 'passages' | 'history' | null>(null)
-function toggle(name: 'why' | 'passages' | 'history') {
-    panel.value = panel.value === name ? null : name
-}
+const detailsOpen = ref(false)
 const addition = computed(() =>
     ['new-sense', 'add-example', 'new-idiom', 'new-stem', 'new-form', 'new-root'].includes(props.proposal.kind)
 )
+// The card's first words say what accepting it does; the location is added only where the card's
+// place on the page does not show it (the review queue shows it under "In the glossary now").
+// Under the heading "Notes and questions for the editors" a note or question needs no more than its kind.
+const action = computed(() => question.value && props.placement === 'entry' && !props.queue
+    ? props.proposal.kind === 'note' ? 'Note' : 'Question'
+    : proposalAction(props.proposal))
+const place = computed(() => proposalPlace(context.value, props.proposal, props.queue ? 'queue' : props.placement))
 // Turoyo in italic, meanings and headings in the serif as in the entry, translations and references plain.
 const diffClass = computed(() => {
     const field = props.proposal.target.field || ''
@@ -289,6 +265,12 @@ const wording = computed(() => {
                 turoyo: false,
             }
 })
+// A new idiom's heading, shown above its example as in the glossary.
+const headword = computed(() =>
+    props.proposal.kind === 'new-idiom' && typeof props.proposal.data.headword === 'string'
+        ? props.proposal.data.headword
+        : ''
+)
 const duplicateRoot = computed(() =>
     String(
         props.proposal.data.duplicate_of
@@ -313,11 +295,11 @@ const moveDescription = computed(() => {
     const toSense = String(data.to_sense || '')
     const targetSense = toStem
         && glossarySenses(toStem).find(item => item.key === toSense || item.n === toSense)
-    const from = context.value.sense
+    const meaning = context.value.sense
         ? `meaning ${context.value.sense.key} “${context.value.sense.gloss}”`
-        : example?.sense
-            ? `meaning ${example.sense}`
-            : box?.label || 'its current position'
+        : example?.sense ? `meaning ${example.sense}` : ''
+    const from = [meaning, box && `${box.label}${meaning ? '' : ' (unnumbered)'}`]
+        .filter(Boolean).join(', ') || 'its current place'
     const rawBox = String(data.to_box_label || data.to_box || data.to_box_id || '')
     const toBox = toStem?.boxes.find(item => item.id === rawBox)?.label || rawBox
     const destination = [
@@ -326,24 +308,28 @@ const moveDescription = computed(() => {
         toBox && `form ${toBox}`,
         toStemId !== stem?.id && toStemId && `Stem ${toStem?.stem || toStemId}`,
         data.to_entry && `verb ${data.to_entry}`,
-    ].filter(Boolean).join(' · ')
-    return destination ? `Move from ${from}${box ? ` · ${box.label}` : ''} to ${destination}.` : ''
+    ].filter(Boolean).join(', ')
+    return destination ? `From ${from} to ${destination}.` : ''
 })
 const content = computed(() => {
     const kind = props.proposal.kind
     if (kind === 'move-example' && moveDescription.value) return 'move'
-    if (kind === 'duplicate-entry') return 'duplicate'
+    // A duplicate within the same entry has no other entry to compare with; its summary says what to do.
+    if (kind === 'duplicate-entry' && duplicateRoot.value !== props.proposal.entryId) return 'duplicate'
     if (question.value) return 'question'
     if (diff.value.length) return 'diff'
     if (props.proposal.after) return 'after'
     if (addition.value && wording.value.text) return 'data'
     return 'summary'
 })
-// The summary is the content itself for notes, questions and suggestions without wording.
-// A summary that only repeats the proposed wording is left out.
-const showSummary = computed(() => !['question', 'summary', 'duplicate'].includes(content.value)
-    && !(wording.value.text && ['after', 'data'].includes(content.value)
-        && props.proposal.summary.includes(wording.value.text)))
+const hasBody = computed(() => !['question', 'summary'].includes(content.value))
+// The machine's summary follows the action when it says something of its own: the text of a note or
+// question, or what a correction changes. Summaries of additions only repeat the place and wording.
+const detail = computed(() =>
+    addition.value || props.proposal.kind === 'gloss-change'
+        ? hasBody.value ? '' : plainProposalText(props.proposal.summary)
+        : plainProposalText(props.proposal.summary)
+)
 const confidence = computed(() =>
     props.proposal.data.confidence === 'high'
         ? 'The machine is fairly sure.'
@@ -364,18 +350,16 @@ const machineTranslation = computed(() => {
     return !!gate && typeof gate === 'object' && 'machineTranslation' in gate && !!gate.machineTranslation
 })
 const evidence = computed(() => proposalEvidence(props.proposal, context.value.example))
-const citeGroups = computed(() => {
-    const groups: Array<{ label: string
-        refs: typeof evidence.value }> = []
-    for (const ref of evidence.value) {
-        const group = groups.find(item => item.label === ref.label)
-        if (group) group.refs.push(ref)
-        else groups.push({
-            label: ref.label,
-            refs: [ref],
-        })
-    }
-    return groups
+// The passages the suggestion cites. An addition lists them at the right like an example's references,
+// other suggestions after their text; the example's own references are linked on its row above the card.
+// The review queue shows them in full under the card.
+const sources = computed(() => evidence.value.filter(ref =>
+    ['Cited passage', 'Source of the suggested addition'].includes(ref.label)))
+const pair = computed(() => !!(wording.value.text && wording.value.translation))
+const sourcesAt = computed(() => {
+    if (props.queue || !sources.value.length) return ''
+    if (!hasBody.value) return 'head'
+    return ['data', 'after'].includes(content.value) && pair.value ? 'pair' : 'body'
 })
 </script>
 
@@ -383,7 +367,8 @@ const citeGroups = computed(() => {
 .proposal {
   --family: var(--correction);
   display: grid;
-  gap: 0.3rem;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.3rem 1.5rem;
   margin: 0.4rem 0 0.6rem;
   padding: 0.15rem 0 0.15rem 0.75rem;
   border-left: 3px solid var(--family);
@@ -397,40 +382,59 @@ const citeGroups = computed(() => {
 .decided {
   border-left-style: dotted;
 }
-.proposal-head {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0 0.75rem;
-  font-size: 0.875rem;
+.sources {
+  margin-left: 0.5rem;
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-style: normal;
 }
-.proposal-kind {
+.refs .sources {
+  margin-left: 0;
+}
+.ref + .ref::before {
+  display: inline-block;
+  margin-right: 0.3em;
+  color: var(--muted);
+  content: ";";
+}
+.proposal-head {
+  font-size: 0.9375rem;
+}
+.flag {
+  margin-right: 0.45rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.action {
   color: var(--family);
   font-weight: 700;
 }
-.proposal-target {
-  color: var(--muted);
-}
-.proposal-status {
-  margin-left: auto;
-  font-weight: 600;
-}
-.proposal-status.open {
-  color: var(--muted);
-  font-weight: 400;
-}
-.proposal-summary {
-  font-size: 0.9375rem;
+.headword {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  font-style: italic;
 }
 .wording.pair {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
   gap: 0 1.5rem;
+  align-items: baseline;
+}
+.wording.with-refs {
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) 8rem;
+}
+.translation {
+  font-size: 0.9375rem;
 }
 .compare {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 0.5rem 2rem;
+}
+.compare.single {
+  grid-template-columns: minmax(0, 1fr);
 }
 .compare .wording.pair {
   grid-template-columns: minmax(0, 1fr);
@@ -462,12 +466,6 @@ ins {
 ins.replaces {
   margin-left: 0.12em;
 }
-.cite + .cite::before {
-  display: inline-block;
-  margin-right: 0.3em;
-  color: var(--muted);
-  content: ",";
-}
 .keep-lines {
   white-space: pre-line;
 }
@@ -475,27 +473,22 @@ ins.replaces {
   display: grid;
   gap: 0.1rem;
 }
-.why,
-.passages {
-  display: grid;
-  gap: 0.35rem;
-}
-.proposal-tools {
+.read-only {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 0 0.9rem;
-  margin-left: 0.6rem;
+  gap: 0 0.6rem;
 }
-.queue .proposal-tools {
-  margin-left: 0;
-}
-.cites {
-  color: var(--muted);
-}
-.panel {
-  padding: 0.35rem 0 0.35rem 0.75rem;
+.details {
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.3rem 0 0.3rem 0.75rem;
   border-left: 1px solid var(--rule);
+  font-size: 0.9375rem;
+}
+.passages {
+  display: grid;
+  gap: 0.35rem;
 }
 .queue {
   gap: 0.6rem;
@@ -503,17 +496,30 @@ ins.replaces {
   padding: 0;
   border-left: 0;
 }
-.queue .proposal-summary {
+.queue .proposal-head {
   font-size: 1.0625rem;
-  font-weight: 600;
+}
+.queue .details {
+  padding: 0;
+  border-left: 0;
+  font-size: 1rem;
+}
+@media (max-width: 1100px) {
+  .wording.with-refs {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+  .refs {
+    grid-column: 2;
+  }
 }
 @media (max-width: 760px) {
   .wording.pair,
+  .wording.with-refs,
   .compare {
     grid-template-columns: minmax(0, 1fr);
   }
-  .proposal-status {
-    margin-left: 0;
+  .refs {
+    grid-column: 1;
   }
 }
 </style>

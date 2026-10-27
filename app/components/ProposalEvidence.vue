@@ -2,7 +2,7 @@
     <div class="passage">
         <p class="small">
             <NuxtLink :to="verseHref(reference.textId, reference.v)">{{ reference.cite }}</NuxtLink>
-            <span class="muted"> · {{ label }}<template v-if="data?.title"> · {{ data.title }}</template></span>
+            <span class="muted" v-text="about"></span>
         </p>
         <p v-if="status === 'idle' || status === 'pending'" role="status" class="small muted">
             Loading text…
@@ -49,6 +49,8 @@ const {
     }
 )
 const verse = computed(() => data.value?.verses.find(item => item.v === props.reference.v))
+// What kind of reference this is, where that needs saying, and the title of the text.
+const about = computed(() => [props.label, data.value?.title].filter(Boolean).map(item => ` · ${item}`).join(''))
 </script>
 
 <style scoped>

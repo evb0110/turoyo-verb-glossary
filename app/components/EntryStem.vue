@@ -21,7 +21,7 @@
                 </thead>
                 <tbody>
                     <tr v-for="row in matrix" :key="row.key">
-                        <th scope="row" :title="row.gloss">
+                        <th v-overflow-title scope="row">
                             {{ row.key === "?" ? "" : `${row.key}.` }} {{ row.gloss }}
                         </th>
                         <td v-for="cell in row.cells" :key="cell.box">
@@ -51,6 +51,7 @@
                 :key="proposal.id"
                 :proposal="proposal"
                 :entry="entry"
+                placement="meaning"
             />
             <div
                 v-for="group in sense.groups"
@@ -73,6 +74,7 @@
                     :key="proposal.id"
                     :proposal="proposal"
                     :entry="entry"
+                    placement="form"
                 />
             </div>
             <ProposalCard
@@ -80,6 +82,7 @@
                 :key="proposal.id"
                 :proposal="proposal"
                 :entry="entry"
+                placement="meaning"
             />
         </section>
         <section v-if="layout.remaining.length" :id="`${stem.id}-other`" class="sense">
@@ -91,6 +94,7 @@
                 :key="proposal.id"
                 :proposal="proposal"
                 :entry="entry"
+                placement="stem"
             />
         </section>
         <section v-if="stem.notes.length" :id="`${stem.id}-notes`" class="sense">
