@@ -2,8 +2,12 @@
     <AdminPageShell description="Users · Manage access and permissions.">
         <section class="decision-export">
             <h2>Download review decisions</h2>
-            <p>All current team decisions, including edited wording, for applying to the Word glossary.</p>
+            <p>
+                All current team decisions, including edited wording, for applying to the Word glossary. The Word and
+                PDF documents group them by letter, root and stem; CSV and JSON add reviewer IDs for processing.
+            </p>
             <div class="export-links">
+                <DocumentDownload href="/api/glossary/export/decisions" label="Document"/>
                 <a href="/api/admin/decisions?format=csv" download>Download CSV</a>
                 <a href="/api/admin/decisions?format=json" download>Download JSON</a>
             </div>
@@ -268,6 +272,7 @@ const getRoleBadgeColor = (role: string) => {
 .export-links {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
   gap: 1rem;
 }
 </style>

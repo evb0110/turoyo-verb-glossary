@@ -11,6 +11,7 @@
                 :max="summary?.total || 1"
                 :aria-label="`${decided} of ${summary?.total || 0} decided`"
             ></progress>
+            <DocumentDownload href="/api/glossary/export/decisions" label="Decisions so far"/>
             <div class="filters">
                 <label for="review-root">Verb</label>
                 <input

@@ -3,6 +3,25 @@
         <div class="page-head">
             <h1>Glossary</h1>
             <span class="small muted">{{ roots.length.toLocaleString("en") }} roots</span>
+            <span class="glossary-export small">
+                <label for="glossary-part" class="sr-only">Part of the glossary to download</label>
+                <select id="glossary-part" v-model="part">
+                    <option value="">
+                        Whole glossary
+                    </option>
+                    <optgroup label="Volumes">
+                        <option v-for="volume in volumes" :key="volume.value" :value="volume.value">
+                            {{ volume.label }}
+                        </option>
+                    </optgroup>
+                    <optgroup label="Letters">
+                        <option v-for="letter in letters" :key="letter" :value="`letter=${encodeURIComponent(letter)}`">
+                            Letter {{ letter }}
+                        </option>
+                    </optgroup>
+                </select>
+                <DocumentDownload :href="`/api/glossary/export/glossary${part ? `?${part}` : ''}`"/>
+            </span>
         </div>
         <SearchExplorer v-model="query"/>
         <template v-if="!query.trim()">
@@ -77,6 +96,8 @@
 <script setup lang="ts">
 import type { IRootIndexRow } from '#shared/types/IRootIndexRow'
 import { entryHref } from '#shared/utils/entryHref'
+import { rootLetter } from '#shared/utils/rootLetter'
+import { volumeLabel } from '#shared/utils/volumeLabel'
 
 const route = useRoute()
 const router = useRouter()
@@ -98,10 +119,19 @@ function undecided(root: IRootIndexRow) {
 function stemsLabel(root: IRootIndexRow) {
     return root.stems.map(stem => `${stem.stem} ${stem.forms}`.trim()).join(' · ')
 }
+// Downloads: the whole glossary, one of the team's Word volumes or one letter, without suggestions.
+const part = ref('')
+const volumes = computed(() => [...new Set(roots.value.filter(root => !root.proposed).map(root => root.volume))]
+    .map(volume => ({
+        value: `volume=${/^\d+/u.exec(volume)?.[0] || ''}`,
+        label: volumeLabel(volume),
+    })))
+const letters = computed(() => [...new Set(roots.value.filter(root => !root.proposed)
+    .map(root => rootLetter(root.root)))])
 const groups = computed(() => {
     const map = new Map<string, IRootIndexRow[]>()
     for (const root of roots.value) {
-        const letter = [...root.root][0] || '?'
+        const letter = rootLetter(root.root)
         map.set(letter, [...(map.get(letter) || []), root])
     }
     return [...map.entries()]
@@ -110,6 +140,16 @@ useHead({ title: 'Glossary' })
 </script>
 
 <style scoped>
+.glossary-export {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.6rem;
+  margin-left: auto;
+}
+.glossary-export select {
+  padding: 0.1rem 0.4rem;
+}
 .letters {
   display: flex;
   flex-wrap: wrap;

@@ -50,6 +50,11 @@
                 <tr class="collection-row">
                     <th colspan="6" scope="colgroup">
                         {{ collection }}
+                        <DocumentDownload
+                            class="collection-export"
+                            :href="`/api/glossary/export/collection?collection=${encodeURIComponent(collection)}`"
+                            :label="`All ${collectionSize(collection)} texts`"
+                        />
                     </th>
                 </tr>
                 <tr v-for="text in items" :key="text.id">
@@ -113,6 +118,9 @@ const countLabel = computed(() => {
     const shown = collections.value.reduce((sum, [, items]) => sum + items.length, 0)
     return shown === texts.value.length ? `${shown} texts` : `${shown} of ${texts.value.length} texts`
 })
+function collectionSize(collection: string) {
+    return texts.value.filter(text => text.collection === collection).length
+}
 function collectionId(collection: string) {
     return `collection-${collection.replace(/\W+/gu, '-')}`
 }
@@ -162,6 +170,9 @@ useHead({ title: 'Texts' })
   border-bottom: 2px solid var(--ink);
   font-size: 1rem;
   font-weight: 600;
+}
+.collection-export {
+  margin-left: 1rem;
 }
 .cite {
   width: 6rem;

@@ -100,3 +100,9 @@ preserved. JSON keeps structured edit fields. CSV quotes values, doubles embedde
 BOM and CRLF, and prefixes potential spreadsheet formulas with an apostrophe. JSON retains the exact values.
 Review/history/export responses use `private, no-store`. The dev auth bypass uses an equivalent in-memory
 current/event store and never writes reviews to Neon.
+
+`GET /api/glossary/export/decisions?format=docx|pdf` writes the same rows (from `getProposalDecisionExport`, which
+also carries each decision's entry ID) as a Word or PDF document for the editors, grouped by letter, root and stem,
+with the suggestion, verdict, edited wording, comment, reviewer and date. Any approved user may download it: every
+approved user already sees each decision, reviewer, comment and edit on the site and through
+`/api/glossary/reviews`, and the document omits the reviewer IDs that the admin CSV/JSON carry. It is never cached.

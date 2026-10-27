@@ -13,6 +13,10 @@
             <p v-if="machine" class="machine small">
                 The translation is a machine translation made for this project, not a published one.
             </p>
+            <DocumentDownload
+                :href="`/api/glossary/export/text/${encodeURIComponent(data.id)}`"
+                label="Download this text"
+            />
         </header>
         <p v-if="targetVerse !== null && !data.verses.some((verse) => verse.v === targetVerse)" class="error">
             Verse {{ targetVerse }} is not present in this text.

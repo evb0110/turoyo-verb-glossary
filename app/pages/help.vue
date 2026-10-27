@@ -13,6 +13,7 @@
             <a href="#suggestions">Suggestions and decisions</a>
             <a href="#review">Review</a>
             <a href="#texts">Texts</a>
+            <a href="#downloads">Word and PDF</a>
             <a href="#contact">Contact</a>
         </nav>
 
@@ -165,6 +166,33 @@
             <p>
                 <NuxtLink to="/research">Research notes</NuxtLink> collects the readers’ observations by research
                 question, each linked to its verse and entry.
+            </p>
+        </section>
+
+        <section id="downloads">
+            <h2>Word and PDF</h2>
+            <p>
+                The pages offer Word and PDF downloads of what they show: an entry (with its machine suggestions and
+                the team’s decisions, or the entry alone), the whole glossary, one of its seven volumes or one letter,
+                a text, a whole collection, the research notes with the current question and root, and all current
+                decisions (on the Review page, for the editors who apply them to the Word volumes). Suggestions and
+                machine translations are labelled as such in the documents too.
+            </p>
+            <p>
+                The documents are built for finding your way through them. In Word, letters, roots, stems and
+                meanings use the Heading 1–4 styles, so the Navigation pane lists them, and the table of contents at
+                the start links to each heading; Word offers to update it when the file opens, which adds the page
+                numbers. In a PDF the bookmarks panel shows the same headings, and the table of contents has page
+                numbers. The page header names the root or text on the page. “See also” references link to their root
+                when it is in the same document.
+            </p>
+            <p>
+                A large document takes a few seconds to prepare. One that would be too large for a single download,
+                such as the whole glossary as PDF, comes in parts, which are listed beside the link. If a decision is
+                saved while you download the parts of a decisions document, you are asked to list the parts again,
+                so that the parts fit together. The texts are
+                third-party editions, for use within the project only. Word documents are set in Gentium Plus; with
+                the font installed (free from SIL) they look like the PDF, otherwise Word substitutes another font.
             </p>
         </section>
 

@@ -40,6 +40,12 @@
                     <label><input v-model="mode" type="radio" value="open"/> Undecided ({{ openCount }})</label>
                     <label><input v-model="mode" type="radio" value="off"/> Hide</label>
                 </fieldset>
+                <div class="export small">
+                    <DocumentDownload :href="exportHref" label="Download"/>
+                    <label v-if="data.proposals.length">
+                        <input v-model="withSuggestions" type="checkbox"/> with suggestions and decisions
+                    </label>
+                </div>
                 <nav class="toc small" aria-label="Contents of this entry">
                     <ul>
                         <li v-for="layout in layouts" :key="layout.stem.id">
@@ -135,9 +141,8 @@
 <script setup lang="ts">
 import type { IEntry } from '#shared/types/IEntry'
 import type { IProposal } from '#shared/types/IProposal'
-import type { IStem } from '#shared/types/IStem'
 import { entryHref } from '#shared/utils/entryHref'
-import { stemLayout } from '#shared/utils/stemLayout'
+import { entryLayout } from '#shared/utils/entryLayout'
 
 const route = useRoute()
 const id = computed(() => String(route.params.id))
@@ -191,47 +196,16 @@ const visibleProposals = computed(() =>
             ? proposals.value.filter(item => undecidedAtSwitch.value.has(item.id))
             : proposals.value
 )
-const entryNotes = computed(() =>
-    (entry.value?.notes || []).filter(note => !/^idiomatic phrases\s*[:.]?$/iu.test(note.trim()))
-)
-const stems = computed(() => {
-    const items: IStem[] = [...(entry.value?.stems || [])]
-    for (const proposal of visibleProposals.value)
-        if (proposal.kind === 'new-stem' && proposal.target.stemId
-            && !items.some(stem => stem.id === proposal.target.stemId))
-            items.push({
-                id: proposal.target.stemId,
-                stem: String(proposal.data.stem || proposal.target.stemId.split('.').at(-1)),
-                forms: '',
-                senses: [],
-                sensesRaw: '',
-                detransitiveSenses: [],
-                detransitiveSensesRaw: null,
-                boxes: [],
-                notes: [],
-            })
-    return items
-})
-function proposalStem(proposal: IProposal) {
-    return stems.value.find(stem =>
-        proposal.target.stemId === stem.id
-        || proposal.target.boxId?.startsWith(`${stem.id}.`)
-        || proposal.target.exampleId?.startsWith(`${stem.id}.`)
-    )?.id
-}
-function isIdiom(proposal: IProposal) {
-    return proposal.kind === 'new-idiom'
-        || !!entry.value?.idioms.some(item => item.id === proposal.target.exampleId)
-        || !!proposal.target.exampleId?.includes('.idiom.')
-}
-const layouts = computed(() => stems.value.map(stem => stemLayout(
-    stem,
-    visibleProposals.value.filter(item => !isIdiom(item) && proposalStem(item) === stem.id)
-)))
-const idiomProposals = computed(() => visibleProposals.value.filter(isIdiom))
-const unplacedIdiomProposals = computed(() => idiomProposals.value
-    .filter(item => !entry.value?.idioms.some(idiom => idiom.id === item.target.exampleId)))
-const entryProposals = computed(() => visibleProposals.value.filter(item => !isIdiom(item) && !proposalStem(item)))
+// The download includes the suggestions, with the team's decisions, when the page shows them.
+const withSuggestions = ref(mode.value !== 'off')
+const exportHref = computed(() => `/api/glossary/export/entry/${encodeURIComponent(id.value)}${
+    withSuggestions.value && proposals.value.length ? '?suggestions=1' : ''}`)
+const placement = computed(() => entryLayout(entry.value, visibleProposals.value))
+const layouts = computed(() => placement.value.layouts)
+const idiomProposals = computed(() => placement.value.idiomProposals)
+const unplacedIdiomProposals = computed(() => placement.value.unplacedIdiomProposals)
+const entryProposals = computed(() => placement.value.entryProposals)
+const entryNotes = computed(() => placement.value.notes)
 const previous = computed(() => data.value?.previous || null)
 const next = computed(() => data.value?.next || null)
 useHead({ title: rootLabel })
@@ -298,6 +272,15 @@ useHead({ title: rootLabel })
   font-weight: 600;
 }
 .filter label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.export {
+  display: grid;
+  gap: 0.1rem;
+}
+.export label {
   display: flex;
   align-items: center;
   gap: 0.4rem;

@@ -1,8 +1,16 @@
+import { existsSync, readdirSync } from 'node:fs'
 import { homedir } from 'node:os'
-import { join } from 'node:path'
+import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import mkcert from 'vite-plugin-mkcert'
 
 const mkcertDir = join(homedir(), '.vite-plugin-mkcert')
+const rootDir = dirname(fileURLToPath(import.meta.url))
+// The dated folder of the glossary Word volumes the data is parsed from (source/README.md), named in exports.
+const docxSnapshots = join(rootDir, 'source/glossary-docx')
+const glossarySnapshot = existsSync(docxSnapshots)
+    ? readdirSync(docxSnapshots).filter(name => /^\d{4}-\d{2}-\d{2}$/u.test(name)).sort().at(-1) || ''
+    : ''
 
 export default defineNuxtConfig({
     modules: ['@nuxt/eslint', '@nuxt/ui'],
@@ -49,6 +57,7 @@ export default defineNuxtConfig({
         databaseUrl: '',
         googleClientId: '',
         googleClientSecret: '',
+        glossarySnapshot,
         public: {
             siteFixture: process.env.NUXT_SITE_FIXTURE === '1' && process.env.NODE_ENV !== 'production',
             siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://turoyo-verb-glossary.lvh.me:3456',
@@ -78,7 +87,18 @@ export default defineNuxtConfig({
             baseURL: '/',
         }],
         ignore: process.env.VERCEL ? ['server/routes/data/api/**'] : [],
+        // The first request for a multi-part export writes the whole document (up to about 12 s);
+        // 60 s is allowed on every Vercel plan.
+        vercel: { functions: { maxDuration: 60 } },
         scanDirs: ['server'],
+        // pdfkit needs @noble/hashes 1.x and better-auth 2.x. Traced side by side, the 1.x copy's import of
+        // itself resolves to 2.x and the server fails to start, so pdfkit and its crypto helpers are bundled.
+        externals: { inline: ['pdfkit', '@noble/hashes', '@noble/ciphers'] },
+        // Gentium Plus for the PDF exports, bundled into the server from the files the site serves.
+        serverAssets: [{
+            baseName: 'fonts',
+            dir: join(rootDir, 'public/fonts'),
+        }],
     },
     vite: {
         plugins: [

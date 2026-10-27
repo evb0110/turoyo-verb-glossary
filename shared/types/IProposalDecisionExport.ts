@@ -4,6 +4,7 @@ import type { IProposalReview } from '#shared/types/IProposalReview'
 
 export interface IProposalDecisionExport {
     proposalId: string
+    entryId: string
     verb: string
     kind: string
     citationTarget: { target: IProposal['target']

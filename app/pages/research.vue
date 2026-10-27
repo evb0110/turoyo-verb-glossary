@@ -28,10 +28,11 @@
             Research notes could not be loaded.
         </p>
         <template v-else-if="data">
-            <p class="small" role="status">
-                {{ data.total.toLocaleString("en") }} notes<template v-if="data.pages > 1">
+            <p class="small status">
+                <span role="status">{{ data.total.toLocaleString("en") }} notes<template v-if="data.pages > 1">
                     · page {{ data.page }} of {{ data.pages }}
-                </template>
+                </template></span>
+                <DocumentDownload v-if="data.total" :href="exportHref" label="Download all of them"/>
             </p>
             <article v-for="note in data.notes" :key="note.id" class="note">
                 <p class="note-head">
@@ -110,6 +111,11 @@ const {
         page: page.value,
     })),
 })
+// Every note with the current question and root filter, not only this page.
+const exportHref = computed(() => `/api/glossary/export/research?${new URLSearchParams({
+    question: question.value,
+    root: root.value,
+})}`)
 function go(target: number) {
     page.value = target
     window.scrollTo({
@@ -132,6 +138,12 @@ useHead({ title: 'Research notes' })
 }
 .intro {
   margin-bottom: 0.5rem;
+}
+.status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 1.5rem;
 }
 .note {
   display: grid;

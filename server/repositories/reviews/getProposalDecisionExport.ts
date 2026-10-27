@@ -26,6 +26,7 @@ export async function getProposalDecisionExport(): Promise<IProposalDecisionExpo
         }
         return {
             proposalId: review.proposalId,
+            entryId: review.entryId,
             verb: roots.get(review.entryId) || review.entryId,
             kind: proposal?.kind || 'unavailable',
             citationTarget: {
