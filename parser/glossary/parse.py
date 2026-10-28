@@ -7,20 +7,31 @@ from pathlib import Path
 import re
 
 from .docx import Text, read_volume
-from .examples import NUMBER, parse_example, split_examples
+from .examples import parse_example, split_examples
 
 REPO = Path(__file__).resolve().parents[2]
 SOURCE = REPO / "source/glossary-docx/2026-10-21"
 OUTPUT = REPO / "server/assets/glossary"
 CONSONANTS = "ʔʕbčdfgġǧhḥklmnpqrsṣštṭṯvwxyzžḏḍẓḷṛ\u0300-\u036f"
-ROOT = re.compile(rf"^([{CONSONANTS}]{{2,8}}(?:\s*\d+)?)(?=\s*(?:\(|<|$|→|see\b|cf\.|[‘ʻ]))")
-ROMAN_ROOT = re.compile(rf"^([{CONSONANTS}]{{2,8}}\s+[IVX]+)(?=\s*(?:\(|:$))")
+ROOT_TOKEN = rf"[{CONSONANTS}{CONSONANTS.upper()}Хх][{CONSONANTS}х]{{1,7}}"
+ROOT = re.compile(rf"^({ROOT_TOKEN}(?:\s*[\d¹²³⁴⁵⁶⁷⁸⁹]+)?)(?=\s*(?:\(|<|$|→|see\b|cf\.|[‘ʻ:,/]))")
+ROMAN_ROOT = re.compile(rf"^({ROOT_TOKEN}\s+[IVX]+)(?=\s*(?:\(|:$))")
 INLINE_ROOT = re.compile(rf"^([{CONSONANTS}]{{2,8}})(?:\s+(\d+))?\s+(I{{1,3}})\s+(.*)$")
-STEM = re.compile(r"^\s*(I{1,3}’?(?: \(or II\?\))?|IV|Pa\.|Af\.|Q|Quadri\w*|Št\.|Šaf\.)(?:\s*:\s*|\.\s+|\s+)")
-BARE_STEM = re.compile(r"^\s*(I{1,3}’?|IV|Pa\.|Af\.|Q|Št\.|Šaf\.)\s*:\s*$")
+STEM = re.compile(r"^\s*(I{1,3}’?(?: \(or II\?\))?|IV|Pa\.|Af\.|Q|Quadri\w*|Št\.|Šaf\.)(?:\s*:\s*|\.\s*|\s+)")
+BARE_STEM = re.compile(r"^\s*(I{1,3}’?|IV|Pa\.|Af\.|Q|Št\.|Šaf\.)\s*:?\s*$")
 IDIOMS = re.compile(r"^\s*(?:Idiomatic\s+ph[ra]+ses?|Idioms)\b", re.I)
 DETRANS = re.compile(r"^\s*Detransitive\b", re.I)
 DETRANS_GLOSS = re.compile(r"^\s*\(Detrans[^)]*\)\s*", re.I)
+
+
+def is_editorial(text):
+    """Positive editorial/citation cues, independent of the text's script."""
+    return bool(re.match(
+        r"^(?:[→←]|More examples\b|Не уверен\b|Употребляется\b|Значения\b|Занятно\b"
+        r"|(?:SL|Shabo|Kfarze):|See(?:\s+also|\s+under)?\b|\[We\b|Two informants\b"
+        r"|History of\b|Detr\.\s*Pret\.|[A-Z][a-z]+,\s*[‘ʻ]"
+        r"|\S+(?:le|li)(?::|\s.+\bexamples\b)|(?:PrS|M·\s*t)\s+\d+/\d+"
+        r"|\([^()]+[<>][^()]+\)$)", text.strip(), re.I))
 
 
 def entry_id(root):
@@ -67,8 +78,42 @@ def canonical_label(raw):
     return None
 
 
+SENSE_NUMBER = re.compile(r"(?<![\w/:.\-])(\d{1,2})(?:\)|\.(?!\d)|-(?!\d))(?=\s|[^\W\d_]|[‘ʻ\"(\[]|$)\s*")
+
+
+def sense_markers(raw):
+    """List numbers outside commentary and explicit references to senses."""
+    protected, brackets = set(), []
+    candidates = list(SENSE_NUMBER.finditer(raw))
+    # A source qualifier can lack its own closing bracket before the next
+    # list marker: '(der Regen; 5) laufen' or '(mit ruḥo 2) loose'.
+    list_closes = {m.start() + len(m[1]) for m in candidates
+                   if (re.search(r";\s*$", raw[:m.start()])
+                       or re.search(r"\((?:mit|with)\s+[^()]+\s+$", raw[:m.start()], re.I))
+                   and re.match(r"[^\W\d_]", raw[m.end():])}
+    for i, char in enumerate(raw):
+        # '(1) gloss, (2) gloss' is a source list, not commentary.
+        list_open = (char == "(" and re.match(r"\d{1,2}\)", raw[i + 1:])
+                     and (i == 0 or raw[i - 1].isspace() or raw[i - 1] in ";,"))
+        if char in "([" and not list_open:
+            brackets.append((char, i))
+        elif char == ")" and i in list_closes:
+            continue
+        elif brackets and char == {"(": ")", "[": "]"}[brackets[-1][0]]:
+            _, start = brackets.pop()
+            protected.update(range(start, i + 1))
+    markers = []
+    for marker in candidates:
+        i = marker.start()
+        reference = re.search(r"\b(?:gloss(?:es)?|sense(?:s)?|meaning(?:s)?|see|cf\.)\s+"
+                              r"(?:\d{1,2}\)\s*(?:and|,)\s*)*\(?$", raw[:i], re.I)
+        if i not in protected and not reference:
+            markers.append(marker)
+    return markers
+
+
 def senses(raw):
-    markers = list(NUMBER.finditer(raw))
+    markers = sense_markers(raw)
     if not markers:
         return [{"n": "1", "gloss": raw.strip()}] if raw.strip() else []
     result = []
@@ -113,6 +158,8 @@ class Reader:
         self.mode = "root"
         self.detransitive = False
         self.seen_table = False
+        self.expect_detransitive_forms = False
+        self.correspondence = False
         self.pending = []
         self.volume = ""
 
@@ -126,14 +173,18 @@ class Reader:
         self.account(unit, (prefix + ("notes", len(owner["notes"]) - 1), None, None))
 
     def start_entry(self, unit, root, order):
-        identifier = entry_id(root)
+        # Normalize only the identifier of source-attested nonstandard heads.
+        # Literal head/root text is retained, including capitals and Cyrillic х.
+        normalized_root = (root[0].lower() + root[1:]).translate(str.maketrans("¹²³⁴⁵⁶⁷⁸⁹х", "123456789x"))
+        normalized_root = re.sub(r"(?<=\D)(\d+)$", r" \1", normalized_root) if any(c in root for c in "¹²³⁴⁵⁶⁷⁸⁹") else normalized_root
+        identifier = entry_id(normalized_root)
         repeated = identifier in self.by_id
         if repeated:
             self.entry = self.by_id[identifier]
             self.note(unit)
             self.result.diagnostics.append({"kind": "repeated-root", "root": root, "volume": self.volume, "unit": unit.key})
         else:
-            homonym = re.search(r"(\d+)$", root)
+            homonym = re.search(r"(\d+)$", normalized_root)
             self.entry = {"id": identifier, "root": root, "homonym": int(homonym[1]) if homonym else None,
                           "head": unit.text.strip(), "crossRefs": [], "notes": [], "stems": [], "idioms": [],
                           "source": {"volume": self.volume, "order": order}}
@@ -142,6 +193,7 @@ class Reader:
             self.account(unit, (("head",), None, None))
         self.stem = self.box = None
         self.mode, self.detransitive, self.seen_table = "root", False, False
+        self.correspondence = False
         for volume, pending in self.pending:
             current_volume, self.volume = self.volume, volume
             self.note(pending)
@@ -156,9 +208,12 @@ class Reader:
         self.entry["stems"].append(self.stem)
         self.si = len(self.entry["stems"]) - 1
         self.box, self.mode, self.detransitive, self.seen_table = None, "stem", False, False
+        self.correspondence = False
         if account:
             # Retain the literal heading, including its marker and punctuation.
             self.note(unit, stem=True)
+        self.sense_sections = {"senses": (0, 0), "detransitiveSenses": (0, 0)}
+        self.mixed_detransitive = False
         tail = unit.text[content_start:]
         inline_detransitive = re.match(r"\s*Detransitive\s+", tail, re.I)
         if inline_detransitive:
@@ -175,6 +230,8 @@ class Reader:
         if unit.italic and unit.italic[start]:
             text = unit.text
             while end < len(text) and text[end] != "\n":
+                if end > start and re.match(r"(?:More examples\b|Не уверен\b|Употребляется\b)", text[end:]):
+                    break
                 if (text[end].isalpha() and not unit.italic[end]) or text[end] in "‘ʻ\"":
                     break
                 if text[end] == "(":
@@ -191,7 +248,7 @@ class Reader:
             if text[start:end].rstrip().endswith("="):
                 end = len(text) if text.find("\n", end) < 0 else text.find("\n", end)
         else:
-            form = re.match(r"[^\s/]+\s*/\s*\S+|[^\s/]+", unit.text[start:])
+            form = re.match(r"[^\s/]+\s*/\s*\S+(?:\s*//\s*[^\s/]+\s*/\s*\S+)*|[^\s/]+", unit.text[start:])
             token = form[0] if form else ""
             # A few headings are gloss-only ('II: breathe').
             if "/" in token or any(c in token for c in "əәǝāēīūʕʔḏḥṭṣšġǧ") or re.match(r"m\w+le\b", token):
@@ -207,29 +264,59 @@ class Reader:
             self.stem["forms"] = self.stem["forms"][:-1].rstrip()
         rest = unit.cut(end)
         # Some inserted headers put the stem marker after the slash forms.
-        if not account and re.match(r"\s*I{1,3}\s+", rest.text):
-            rest = rest.cut(re.match(r"\s*I{1,3}\s+", rest.text).end())
+        trailing_marker = re.match(rf"\s*{re.escape(label)}\s+", rest.text)
+        if trailing_marker:
+            rest = rest.cut(trailing_marker.end())
         if rest.text.strip():
-            if not gloss_follows and rest.text.lstrip().startswith(("(", "SL ", "Kfarze")):
+            if is_editorial(rest.text):
+                return  # Editorial requests remain in the literal heading note.
+            lexical_parenthesis = re.match(r"\s*\(to\s+", rest.text)
+            if not gloss_follows and not lexical_parenthesis and rest.text.lstrip().startswith(("(", "SL ", "Kfarze")):
                 # Already retained verbatim as part of the heading note.
                 return
             self.add_senses(rest, account=False)
 
-    def add_senses(self, unit, account=True):
-        raw_key = "detransitiveSensesRaw" if self.detransitive else "sensesRaw"
-        list_key = "detransitiveSenses" if self.detransitive else "senses"
+    def append_sense_text(self, raw, detransitive):
+        raw_key = "detransitiveSensesRaw" if detransitive else "sensesRaw"
+        list_key = "detransitiveSenses" if detransitive else "senses"
         old = self.stem[raw_key] or ""
         start = len(old) + (1 if old else 0)
-        raw = unit.text.strip()
         self.stem[raw_key] = old + ("\n" if old else "") + raw
-        self.stem[list_key] = senses(self.stem[raw_key])
+        section_start, sense_count = self.sense_sections[list_key]
+        self.stem[list_key] = self.stem[list_key][:sense_count] + senses(self.stem[raw_key][section_start:])
+        return (("stems", self.si, raw_key), start, start + len(raw))
+
+    def add_senses(self, unit, account=True):
+        raw = unit.text.strip()
+        # Explicit editorial requests can follow a lexical list in the same
+        # paragraph. Move that suffix with its own ordered coverage address.
+        editorial = re.search(r"\s*-\s*(?:no examples\b|перенесена\b)", raw, re.I)
+        gloss = raw[:editorial.start()].rstrip() if editorial else raw
+        sections = [(0, self.detransitive)]
+        for marker in sense_markers(gloss):
+            detransitive = self.detransitive or bool(DETRANS_GLOSS.match(gloss[marker.end():]))
+            if detransitive != sections[-1][1]:
+                sections.append((marker.start(), detransitive))
+        paths = []
+        for i, (start, detransitive) in enumerate(sections):
+            end = sections[i + 1][0] if i + 1 < len(sections) else len(gloss)
+            fragment = gloss[start:end].strip()
+            if fragment:
+                paths.append(self.append_sense_text(fragment, detransitive))
+                if detransitive and not self.detransitive:
+                    self.mixed_detransitive = True
+        if editorial:
+            self.stem["notes"].append(raw[editorial.start():].strip())
+            paths.append((("stems", self.si, "notes", len(self.stem["notes"]) - 1), None, None))
         if account:
-            self.account(unit, (("stems", self.si, raw_key), start, start + len(raw)))
+            self.account(unit, *paths)
 
     def paragraph(self, unit, order):
         text = unit.text.strip()
         if not text:
             return
+        detransitive_header = self.expect_detransitive_forms
+        self.expect_detransitive_forms = False
         if unit.style == "Heading1":
             if self.entry:
                 self.note(unit)
@@ -247,7 +334,20 @@ class Reader:
             self.pending.append((self.volume, unit))
             return
         match = STEM.match(unit.text) or BARE_STEM.match(unit.text)
+        if match and not re.search(r"[:.]", match[0]) and unit.text[match.end():].strip():
+            # The article in 'I kalo ...' and English 'I read ...' are prose.
+            # Real colonless headings supply initial base forms or a quoted gloss.
+            tail = unit.text[match.end():].lstrip()
+            if not re.match(r"(?:\S+/\S+|m\w+(?:\s|$)|[‘ʻ\"])", tail):
+                match = None
         if match:
+            tail = unit.text[match.end():].strip()
+            if (detransitive_header and self.stem and match[1] == self.stem["stem"]
+                    and re.fullmatch(r"[^\s/]+/[^\s/]+", tail)):
+                self.note(unit, stem=True)
+                if not self.stem["forms"]:
+                    self.stem["forms"] = tail
+                return
             self.start_stem(unit, match[1], match.end())
             return
         # Two newly inserted entries have a stem embedded in their root line.
@@ -260,22 +360,38 @@ class Reader:
         if IDIOMS.match(text):
             self.note(unit)
             self.mode = "idiom"
+            self.correspondence = False
             return
         if DETRANS.match(text):
             self.note(unit, stem=True)
             self.detransitive, self.mode, self.seen_table, self.box = True, "stem", False, None
+            self.correspondence = False
             trailing = DETRANS.sub("", text).strip(" :")
+            self.expect_detransitive_forms = not trailing
+            if self.stem and self.mixed_detransitive:
+                old = self.stem["detransitiveSensesRaw"] or ""
+                self.sense_sections["detransitiveSenses"] = (
+                    len(old) + (1 if old else 0), len(self.stem["detransitiveSenses"]))
+                self.mixed_detransitive = False
             if self.stem and trailing and not trailing.startswith(("(", "III")) and "/" not in trailing:
                 self.add_senses(Text(trailing), account=False)
+            return
+        label = canonical_label(text)
+        if (self.mode == "idiom" and self.stem and label
+                and not re.search(r"[\t\n‘ʻʼ’\"]", text)):
+            self.mode = "stem"
+            self.start_box(unit, label)
             return
         if self.mode == "idiom":
             self.idiom([unit])
             return
-        label = canonical_label(text)
         if self.stem and self.seen_table and label:
             # An explicit heading can introduce a one-cell table, e.g. the
             # Action Noun section following ʔṣr's passive participles.
             self.start_box(unit, label)
+            return
+        if self.stem and (label or re.fullmatch(r"(?:In)?transitive", text, re.I)):
+            self.note(unit, stem=True)
             return
         if not self.stem:
             # Unlabelled base-form lines (fyṭ, mǧq, qwy II) are still stems.
@@ -286,9 +402,25 @@ class Reader:
             else:
                 self.note(unit)
             return
-        if DETRANS_GLOSS.match(text) and not self.seen_table:
+        if re.match(r"^-?\s*Dear\b", text):
+            self.correspondence = True
+        if self.correspondence or is_editorial(text):
+            self.note(unit, stem=True)
+            return
+        detransitive_gloss = DETRANS_GLOSS.match(text)
+        if (detransitive_gloss and not self.detransitive
+                and (not self.seen_table or "?" not in detransitive_gloss[0])):
             self.detransitive = True
-        if not self.seen_table and not re.match(r"^(?:→|←|More examples|[А-Яа-яЁё]|(?:SL|Shabo|Kfarze):)", text):
+            self.seen_table, self.box = False, None
+        if not self.seen_table and re.fullmatch(r"[^\s/]+/[^\s/]+", text):
+            # A separate forms line is not a definition. The contract has no
+            # Detransitive-forms field; retain it in notes without replacing
+            # the ordinary forms. An otherwise empty stem can use these forms.
+            if not self.stem["forms"]:
+                self.stem["forms"] = text
+            self.note(unit, stem=True)
+            return
+        if not self.seen_table:
             self.add_senses(unit)
         else:
             self.note(unit, stem=True)
@@ -335,9 +467,15 @@ class Reader:
         self.account(unit, (("stems", self.si, "boxes", self.bi, "rawLabel"), None, None))
 
     def table(self, rows):
+        self.expect_detransitive_forms = False
+        self.correspondence = False
         for cells in rows:
             if not any(c.text.strip() for c in cells):
                 continue
+            # Physical OOXML rows can have several empty cells before the
+            # heading. Keep the real cell/key, without merged-cell aliases.
+            first = next(i for i, cell in enumerate(cells) if cell.text.strip())
+            cells = cells[first:]
             if self.entry is None:
                 self.pending.extend((self.volume, c) for c in cells if c.text.strip())
                 continue
@@ -383,14 +521,17 @@ class Reader:
         target_pattern = re.compile("(?:" + "|".join(re.escape(a) for a in sorted(aliases, key=len, reverse=True)) + r")(?![\w\u0300-\u036f])")
         for entry in self.result.entries:
             refs = []
-            for paragraph in [entry["head"], *entry["notes"]]:
-                for match in re.finditer(r"(?:see(?:\s+also)?|also\s+sieh|sieh|cf\.|→)\s*([^;()]+)", paragraph):
+            paragraphs = [entry["head"], *entry["notes"], *(n for s in entry["stems"] for n in s["notes"])]
+            for paragraph in paragraphs:
+                for match in re.finditer(r"(?:\bsee(?:\s+(?:also|under))?|also\s+sieh|\bsieh|\bcf\.|→)\s*([^;()]+)", paragraph, re.I):
                     target = match[1].strip()
                     found = target_pattern.match(target)
-                    if found:
+                    while found:
                         root = aliases[found[0]]
                         if root != entry["id"] and root not in refs:
                             refs.append(root)
+                        separator = re.match(r"\s*(?:,|\band\b)\s*", target[found.end():], re.I)
+                        found = target_pattern.match(target, found.end() + separator.end()) if separator else None
             entry["crossRefs"] = refs
         return self.result
 

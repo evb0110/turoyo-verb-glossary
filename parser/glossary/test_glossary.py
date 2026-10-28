@@ -259,8 +259,8 @@ class SourceExamplesTest(unittest.TestCase):
         self.assertEqual(stems["rkw.I"]["senses"][0]["gloss"], "seine Stelle einnehmen;")
         self.assertEqual(stems["ḥyl.III"]["forms"], "maḥəlla/maḥilo (f.) = mqaḥamla/mqaḥmo")
         self.assertEqual(stems["ḥyl.III"]["senses"], [])
-        self.assertEqual(stems["frʕ-2.II~2"]["forms"], "mfaradle/mfarad")
-        self.assertTrue(stems["frʕ-2.II~2"]["sensesRaw"].startswith("(trans.) to crumble"))
+        self.assertEqual(stems["frd.II"]["forms"], "mfaradle/mfarad")
+        self.assertTrue(stems["frd.II"]["sensesRaw"].startswith("(trans.) to crumble"))
         self.assertEqual([s["id"] for s in stems.values() if s["forms"].count("(") != s["forms"].count(")")], [])
 
 
