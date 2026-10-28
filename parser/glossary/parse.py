@@ -173,10 +173,23 @@ class Reader:
         # on the same line must not leak into forms.
         end = start
         if unit.italic and unit.italic[start]:
-            while end < len(unit.text):
-                if (unit.text[end].isalpha() and not unit.italic[end]) or unit.text[end] in "‘ʻ\"":
+            text = unit.text
+            while end < len(text) and text[end] != "\n":
+                if (text[end].isalpha() and not unit.italic[end]) or text[end] in "‘ʻ\"":
                     break
+                if text[end] == "(":
+                    # A bracket opened after the forms ('maḥəlla/maḥilo (f.) = mqaḥamla/mqaḥmo',
+                    # 'rʕele (alt. raʕi)/roʕe') belongs to them up to its closing bracket on the
+                    # same line, roman or not. Without one, or after 'forms:', it starts the rest.
+                    close = text.find(")", end)
+                    line_end = text.find("\n", end)
+                    if close < 0 or (0 <= line_end < close) or text[start:end].rstrip().endswith(":"):
+                        break
+                    end = close
                 end += 1
+            # 'maḥəlla/maḥilo (f.) = mqaḥamla/mqaḥmo' equates two sets of forms; the second is roman.
+            if text[start:end].rstrip().endswith("="):
+                end = len(text) if text.find("\n", end) < 0 else text.find("\n", end)
         else:
             form = re.match(r"[^\s/]+\s*/\s*\S+|[^\s/]+", unit.text[start:])
             token = form[0] if form else ""
@@ -188,12 +201,16 @@ class Reader:
                 if "/" not in token and second:
                     end += second.end()
         self.stem["forms"] = unit.text[start:end].strip()
+        # 'mfaradle/mfarad: (trans.) to crumble': after a colon, the rest is the meaning, bracket or not.
+        gloss_follows = self.stem["forms"].endswith(":")
+        if gloss_follows:
+            self.stem["forms"] = self.stem["forms"][:-1].rstrip()
         rest = unit.cut(end)
         # Some inserted headers put the stem marker after the slash forms.
         if not account and re.match(r"\s*I{1,3}\s+", rest.text):
             rest = rest.cut(re.match(r"\s*I{1,3}\s+", rest.text).end())
         if rest.text.strip():
-            if rest.text.lstrip().startswith(("(", "SL ", "Kfarze")):
+            if not gloss_follows and rest.text.lstrip().startswith(("(", "SL ", "Kfarze")):
                 # Already retained verbatim as part of the heading note.
                 return
             self.add_senses(rest, account=False)

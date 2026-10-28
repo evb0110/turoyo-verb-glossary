@@ -251,6 +251,18 @@ class SourceExamplesTest(unittest.TestCase):
         self.assertNotIn("11", [s["n"] for s in self.entries["sym"]["stems"][0]["senses"]])
         self.assertEqual(self.entries["ʔḏʕ"]["stems"][0]["detransitiveSenses"], [])
 
+    def test_bracket_after_stem_forms_is_not_a_meaning(self):
+        stems = {s["id"]: s for e in self.parsed.entries for s in e["stems"]}
+        self.assertEqual(stems["rʕy.I"]["forms"], "rʕele (alt. raʕi)/roʕe")
+        self.assertEqual(stems["rʕy.I"]["sensesRaw"], "weiden; abweiden")
+        self.assertEqual(stems["rkw.I"]["forms"], "raku/roku (rokaw Kfarze)")
+        self.assertEqual(stems["rkw.I"]["senses"][0]["gloss"], "seine Stelle einnehmen;")
+        self.assertEqual(stems["ḥyl.III"]["forms"], "maḥəlla/maḥilo (f.) = mqaḥamla/mqaḥmo")
+        self.assertEqual(stems["ḥyl.III"]["senses"], [])
+        self.assertEqual(stems["frʕ-2.II~2"]["forms"], "mfaradle/mfarad")
+        self.assertTrue(stems["frʕ-2.II~2"]["sensesRaw"].startswith("(trans.) to crumble"))
+        self.assertEqual([s["id"] for s in stems.values() if s["forms"].count("(") != s["forms"].count(")")], [])
+
 
 if __name__ == "__main__":
     unittest.main()
