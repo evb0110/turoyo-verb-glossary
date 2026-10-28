@@ -118,7 +118,7 @@ interface IText {
   file: string;
   lang: "GERMAN" | "ENGLISH" | null; // translation language; null = untranslated
   translationSource?: "edition" | "machine" | null; // "machine": this project's translation (Jan Beṯ-Şawoce)
-  verses: { v: number; tur: string; tr: string | null }[];
+  verses: { v: number; tur: string; tr: string | null; rangeEnd?: number }[];
   reading?: "unread" | "partial" | "read";
   occurrences?: IOccurrence[]; // present once the text has been read
   alignment?: {
@@ -147,8 +147,18 @@ interface IOccurrence {
   decision: "add" | "no-add";
   criterion: string;
   proposalIds: string[];
+  glossaryTarget?: { entryId: string; stemId?: string; sense?: string } | null;
 }
 ```
+
+`rangeEnd` preserves a printed combined passage (e.g. 97–99) under its first verse number;
+the builder does not invent boundaries or duplicate its text. Other verse numbers are unchanged.
+`glossaryTarget` is the validated reader link: an existing meaning, otherwise its stem, otherwise
+its entry. Unknown roots have no target. Analysis labels remain separate from link destinations.
+Proposal association uses the canonical root even when the root is only proposed and `entryId` is null.
+Detransitive proposal targets and occurrence meanings use `D<n>` keys; source sense numbers stay raw.
+Corrections are omitted when their targeted field changed since the agent's input snapshot, or when
+their nonempty `before` span is absent. Array-valued legacy reference snapshots are joined with `; `.
 
 ## Proposals (`IProposal`)
 

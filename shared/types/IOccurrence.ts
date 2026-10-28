@@ -18,4 +18,9 @@ export interface IOccurrence {
     decision: 'add' | 'no-add'
     criterion: string
     proposalIds: string[]
+    glossaryTarget?: {
+        entryId: string
+        stemId?: string
+        sense?: string
+    } | null
 }

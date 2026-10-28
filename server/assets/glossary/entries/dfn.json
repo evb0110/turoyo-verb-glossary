@@ -4,14 +4,58 @@
   "homonym": null,
   "head": "dfn (< Arab. dfn cf. Wehr 398: begraben, beerdigen; verbergen, geheimhalten;)",
   "crossRefs": [],
-  "notes": [
-    "I",
-    "Detransitive",
-    "begraben werden",
-    "Infectum",
-    "l-ayko d-əzzá i=baġalṯ-aṯi, gəd-mədfən, g-məqwər u=mafəryono tamo, b-i=ʕit-ayo ʻda, wo diese Mauleselin hingeht, soll der Erzbischof begraben, beerdigt werdenʼ; 35/68; [MT]"
-  ],
+  "notes": [],
   "stems": [
+    {
+      "id": "dfn.I",
+      "stem": "I",
+      "forms": "",
+      "senses": [],
+      "sensesRaw": "",
+      "detransitiveSenses": [
+        {
+          "n": "1",
+          "gloss": "begraben werden"
+        }
+      ],
+      "detransitiveSensesRaw": "begraben werden",
+      "boxes": [
+        {
+          "id": "dfn.I.d.infectum",
+          "label": "Infectum",
+          "rawLabel": "Infectum",
+          "detransitive": true,
+          "examples": [
+            {
+              "id": "dfn.I.d.infectum.1",
+              "sense": null,
+              "turoyo": "l-ayko d-əzzá i=baġalṯ-aṯi, gəd-mədfən, g-məqwər u=mafəryono tamo, b-i=ʕit-ayo",
+              "translation": "da, wo diese Mauleselin hingeht, soll der Erzbischof begraben, beerdigt werden",
+              "refs": [
+                {
+                  "raw": "35/68",
+                  "kind": "text",
+                  "textId": "R035",
+                  "verse": 68
+                },
+                {
+                  "raw": "[MT]",
+                  "kind": "other",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "l-ayko d-əzzá i=baġalṯ-aṯi, gəd-mədfən, g-məqwər u=mafəryono tamo, b-i=ʕit-ayo ʻda, wo diese Mauleselin hingeht, soll der Erzbischof begraben, beerdigt werdenʼ; 35/68; [MT]"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "I",
+        "Detransitive"
+      ]
+    },
     {
       "id": "dfn.II",
       "stem": "II",

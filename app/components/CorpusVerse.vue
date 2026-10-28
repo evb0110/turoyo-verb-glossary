@@ -58,8 +58,8 @@
             </p>
             <p class="verb-links small">
                 <NuxtLink
-                    v-if="verb.entryId"
-                    :to="entryHref(verb.entryId, `${verb.entryId}.${verb.stem}`, verb.sense)"
+                    v-if="verb.glossaryTarget"
+                    :to="entryHref(verb.glossaryTarget.entryId, verb.glossaryTarget.stemId, verb.glossaryTarget.sense)"
                 >
                     Open the entry {{ verb.root }}
                 </NuxtLink>

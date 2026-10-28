@@ -20,10 +20,10 @@
       "detransitiveSenses": [
         {
           "n": "1",
-          "gloss": "ǧriḥ/məǧrəḥ\nbe injured;"
+          "gloss": "be injured;"
         }
       ],
-      "detransitiveSensesRaw": "ǧriḥ/məǧrəḥ\nbe injured;",
+      "detransitiveSensesRaw": "be injured;",
       "boxes": [
         {
           "id": "ǧrḥ.I.t.preterit",
@@ -117,8 +117,15 @@
               "id": "ǧrḥ.I.d.part-pass.2",
               "sense": null,
               "turoyo": "omər qay abri ṣawʕux maṣərto-yo omər ǧriḥo",
-              "translation": "He said: “Why is your finger bound up, my son?” – He (his son) replied: “It is injured” 75/133-134;",
-              "refs": [],
+              "translation": "He said: “Why is your finger bound up, my son?” – He (his son) replied: “It is injured”",
+              "refs": [
+                {
+                  "raw": "75/133-134",
+                  "kind": "text",
+                  "textId": "R075",
+                  "verse": 133
+                }
+              ],
               "note": null,
               "raw": "omər qay abri ṣawʕux maṣərto-yo omər ǧriḥo ‘He said: “Why is your finger bound up, my son?” – He (his son) replied: “It is injured” 75/133-134;"
             }
@@ -190,6 +197,7 @@
       "notes": [
         "I: ǧrəḥle/ǧorəḥ",
         "Detransitive",
+        "ǧriḥ/məǧrəḥ",
         "ǧroḥo, ǧərḥ",
         "wound, injury;"
       ]
@@ -325,85 +333,7 @@
       ],
       "notes": [
         "II: mǧaraḥle/mǧarəḥ",
-        "Detransitive",
-        "ǧrm: (< Arabic, Engl. Wehr 121 to commit an offence; II stem to incriminate)"
-      ]
-    },
-    {
-      "id": "ǧrḥ.III",
-      "stem": "III",
-      "forms": "maǧram/maǧramle",
-      "senses": [
-        {
-          "n": "1",
-          "gloss": "to impose a fine (Geldstrafe); ‘to punish’"
-        }
-      ],
-      "sensesRaw": "to impose a fine (Geldstrafe); ‘to punish’",
-      "detransitiveSenses": [],
-      "detransitiveSensesRaw": null,
-      "boxes": [
-        {
-          "id": "ǧrḥ.III.t.preterit",
-          "label": "Preterit",
-          "rawLabel": "Preterit",
-          "detransitive": false,
-          "examples": [
-            {
-              "id": "ǧrḥ.III.t.preterit.1",
-              "sense": null,
-              "turoyo": "Bəṯr med qṭili, hedika maǧramme u ʕamo (209 FG 14: 47)",
-              "translation": null,
-              "refs": [],
-              "note": null,
-              "raw": "Bəṯr med qṭili, hedika maǧramme u ʕamo (209 FG 14: 47)"
-            },
-            {
-              "id": "ǧrḥ.III.t.preterit.2",
-              "sense": null,
-              "turoyo": "ʕal d qṭil Maǧido, l be Maǧido maǧramme i qriṯo kula",
-              "translation": null,
-              "refs": [
-                {
-                  "raw": "(Ilyas pc)",
-                  "kind": "other",
-                  "textId": null,
-                  "verse": null
-                }
-              ],
-              "note": null,
-              "raw": "ʕal d qṭil Maǧido, l be Maǧido maǧramme i qriṯo kula (Ilyas pc)"
-            },
-            {
-              "id": "ǧrḥ.III.t.preterit.3",
-              "sense": null,
-              "turoyo": "Yaʕni maǧrmənne, aydarbo? (209 FG 17: 32)",
-              "translation": "they punished them, in what way",
-              "refs": [],
-              "note": null,
-              "raw": "Yaʕni maǧrmənne, aydarbo? (209 FG 17: 32) ‘they punished them, in what way’"
-            },
-            {
-              "id": "ǧrḥ.III.t.preterit.4",
-              "sense": null,
-              "turoyo": "ʕal d gniw u tawro du aġa, mḥalaqle ǧǝrm  ʕal u ʕamo/ maǧramle",
-              "translation": null,
-              "refs": [
-                {
-                  "raw": "(Ilyas pc)",
-                  "kind": "other",
-                  "textId": null,
-                  "verse": null
-                }
-              ],
-              "note": null,
-              "raw": "ʕal d gniw u tawro du aġa, mḥalaqle ǧǝrm  ʕal u ʕamo/ maǧramle (Ilyas pc)"
-            }
-          ]
-        }
-      ],
-      "notes": [
-        "III: maǧram/maǧramle"
+        "Detransitive"
       ]
     }
   ],

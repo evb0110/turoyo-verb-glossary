@@ -51,7 +51,7 @@
       "detransitiveSenses": [
         {
           "n": "1",
-          "gloss": "qṭiʕ/məqṭəʕ abgeschnitten, abgerissen werden, abreissen, zerreissen;"
+          "gloss": "abgeschnitten, abgerissen werden, abreissen, zerreissen;"
         },
         {
           "n": "2",
@@ -62,7 +62,7 @@
           "gloss": "break off ???"
         }
       ],
-      "detransitiveSensesRaw": "qṭiʕ/məqṭəʕ\n1) abgeschnitten, abgerissen werden, abreissen, zerreissen; 2) zu fliessen aufhören, stocken (Blutkreislauf); 3) break off ???",
+      "detransitiveSensesRaw": "1) abgeschnitten, abgerissen werden, abreissen, zerreissen; 2) zu fliessen aufhören, stocken (Blutkreislauf); 3) break off ???",
       "boxes": [
         {
           "id": "qṭʕ-1.I.t.preterit",
@@ -841,11 +841,72 @@
               "raw": "2) obo-la hawxa qappāl qṭiʕo pīs ʻsie hat ihr einen zerrissenen, schäbigen Lumpen gegebenʼ; 190; 58/208;"
             }
           ]
+        },
+        {
+          "id": "qṭʕ-1.I.d.nomen-actionis",
+          "label": "Nomen actionis",
+          "rawLabel": "Action noun",
+          "detransitive": true,
+          "examples": []
+        },
+        {
+          "id": "qṭʕ-1.I.d.infinitiv",
+          "label": "Infinitiv",
+          "rawLabel": "Infinitiv",
+          "detransitive": true,
+          "examples": [
+            {
+              "id": "qṭʕ-1.I.d.infinitiv.1",
+              "sense": "1",
+              "turoyo": "naqqa mḥeli bə-ḥḏo=ḏ̣arbo qṭəʕli əšto=qarʕe m-diḏe. fayəš ḥa d-lo qṭoʕo",
+              "translation": "mit einem Male schlug ich zu und haute ihm mit einem Streich sechs von seinen Köpfen ab, einer blieb unabgeschnitten",
+              "refs": [
+                {
+                  "raw": "189",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "52/117",
+                  "kind": "text",
+                  "textId": "R052",
+                  "verse": 117
+                }
+              ],
+              "note": null,
+              "raw": "1) naqqa mḥeli bə-ḥḏo=ḏ̣arbo qṭəʕli əšto=qarʕe m-diḏe. fayəš ḥa d-lo qṭoʕo ʻmit einem Male schlug ich zu und haute ihm mit einem Streich sechs von seinen Köpfen ab, einer blieb unabgeschnittenʼ; 189; 52/117;"
+            },
+            {
+              "id": "qṭʕ-1.I.d.infinitiv.2",
+              "sense": "2",
+              "turoyo": "menox fayəš u=qṭoʕo d-i=šariʕa",
+              "translation": "das fehlte dir noch, Recht zu sprechen",
+              "refs": [
+                {
+                  "raw": "189",
+                  "kind": "grammar-page",
+                  "textId": null,
+                  "verse": null
+                },
+                {
+                  "raw": "prs 214/36",
+                  "kind": "prs",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
+              "raw": "2) menox fayəš u=qṭoʕo d-i=šariʕa ʻdas fehlte dir noch, Recht zu sprechenʼ; 189; prs 214/36;"
+            }
+          ]
         }
       ],
       "notes": [
         "I: qṭəʕle(qaṭəʕ)/qoṭəʕ",
-        "Detransitive"
+        "Detransitive",
+        "qṭiʕ/məqṭəʕ",
+        "1) cutting; 2) stumbling of speech;"
       ]
     },
     {
@@ -1007,21 +1068,6 @@
       "id": "qṭʕ-1.idiom.4",
       "raw": "a=hnavat qṭiʕi ‘to become frightened, to freeze from fear’: ak=kukwe haw ko-mibayni u=qolo i=qyamto hano maskin a=hnav-ayḏe qṭiʕi ‘The stars could no longer be seen. (There) was a roar, a great noise! This (boy), poor thing, froze from fear’ 73/42;",
       "headword": "a=hnavat qṭiʕi"
-    },
-    {
-      "id": "qṭʕ-1.idiom.5",
-      "raw": "Action noun",
-      "headword": null
-    },
-    {
-      "id": "qṭʕ-1.idiom.6",
-      "raw": "1) cutting; 2) stumbling of speech;",
-      "headword": "1) cutting; 2) stumbling of speech;"
-    },
-    {
-      "id": "qṭʕ-1.idiom.7",
-      "raw": "Infinitiv\n1) naqqa mḥeli bə-ḥḏo=ḏ̣arbo qṭəʕli əšto=qarʕe m-diḏe. fayəš ḥa d-lo qṭoʕo ʻmit einem Male schlug ich zu und haute ihm mit einem Streich sechs von seinen Köpfen ab, einer blieb unabgeschnittenʼ; 189; 52/117; 2) menox fayəš u=qṭoʕo d-i=šariʕa ʻdas fehlte dir noch, Recht zu sprechenʼ; 189; prs 214/36;",
-      "headword": null
     }
   ],
   "source": {

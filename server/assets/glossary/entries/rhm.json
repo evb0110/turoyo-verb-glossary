@@ -21,6 +21,30 @@
       "detransitiveSensesRaw": null,
       "boxes": [
         {
+          "id": "rhm.III.t.infectum",
+          "label": "Infectum",
+          "rawLabel": "Infectum",
+          "detransitive": false,
+          "examples": [
+            {
+              "id": "rhm.III.t.infectum.1",
+              "sense": null,
+              "turoyo": "b-u=payəz me d-marhamla an=noše yaʕni ad=dawore kosaymi dukṯe d-u=falḥono ḥeṭe",
+              "translation": "In autumn, after the rains, people, that is, ploughmen turn their vegetable fields into wheat fields",
+              "refs": [
+                {
+                  "raw": "94/54",
+                  "kind": "text",
+                  "textId": "R094",
+                  "verse": 54
+                }
+              ],
+              "note": null,
+              "raw": "b-u=payəz me d-marhamla an=noše yaʕni ad=dawore kosaymi dukṯe d-u=falḥono ḥeṭe ‘In autumn, after the rains, people, that is, ploughmen turn their vegetable fields into wheat fields’ 94/54;"
+            }
+          ]
+        },
+        {
           "id": "rhm.III.t.preterit",
           "label": "Preterit",
           "rawLabel": "Preterit",
@@ -29,19 +53,24 @@
             {
               "id": "rhm.III.t.preterit.1",
               "sense": null,
-              "turoyo": "Tlaṯ əšnaye maṭro l aṯi, ḥəngi u ʕamo ḥaṭi, ḥaṭi, kafər. Tamo lo marhamle, u qliḏo di raḥme, kəmmina, b iḏe yo. (261 NE 0:35)",
+              "turoyo": "Tlaṯ əšnaye maṭro l aṯi, ḥəngi u ʕamo ḥaṭi, ḥaṭi, kafər. Tamo lo marhamle, u qliḏo di raḥme, kəmmina, b iḏe yo.",
               "translation": null,
-              "refs": [],
-              "note": "Tlaṯ əšnaye maṭro l aṯi, ḥəngi u ʕamo ḥaṭi, ḥaṭi, kafər. Tamo lo marhamle, u qliḏo di raḥme, kəmmina, b iḏe yo. (261 NE 0:35)",
+              "refs": [
+                {
+                  "raw": "(261 NE 0:35)",
+                  "kind": "other",
+                  "textId": null,
+                  "verse": null
+                }
+              ],
+              "note": null,
               "raw": "Tlaṯ əšnaye maṭro l aṯi, ḥəngi u ʕamo ḥaṭi, ḥaṭi, kafər. Tamo lo marhamle, u qliḏo di raḥme, kəmmina, b iḏe yo. (261 NE 0:35)"
             }
           ]
         }
       ],
       "notes": [
-        "III: marhamle/marhəm",
-        "Infectum",
-        "b-u=payəz me d-marhamla an=noše yaʕni ad=dawore kosaymi dukṯe d-u=falḥono ḥeṭe ‘In autumn, after the rains, people, that is, ploughmen turn their vegetable fields into wheat fields’ 94/54;"
+        "III: marhamle/marhəm"
       ]
     }
   ],

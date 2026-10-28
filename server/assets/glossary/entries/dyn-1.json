@@ -17,8 +17,13 @@
         }
       ],
       "sensesRaw": "entleihen, ein Darlehen aufnehmen, ausleihen, borgen;",
-      "detransitiveSenses": [],
-      "detransitiveSensesRaw": null,
+      "detransitiveSenses": [
+        {
+          "n": "1",
+          "gloss": "to borrow (money)"
+        }
+      ],
+      "detransitiveSensesRaw": "to borrow (money)",
       "boxes": [
         {
           "id": "dyn-1.II.t.preterit",
@@ -115,35 +120,15 @@
               "raw": "zbāṭ məlle l-oḏər omər ya oḏər. omər ḥa. omər dayal-li tre=yawme d-samno šeliye ʻda sprach der Februar zum März: “März, borge mir zwei Tage, damit ich frieren lasse”ʼ; 488; prs 257/3; 86/5;"
             }
           ]
-        }
-      ],
-      "notes": [
-        "II: mdayalle/mdayən",
-        "Detransitive"
-      ]
-    },
-    {
-      "id": "dyn-1.II~2",
-      "stem": "II",
-      "forms": "mdayən/midayən",
-      "senses": [
+        },
         {
-          "n": "1",
-          "gloss": "to borrow (money)"
-        }
-      ],
-      "sensesRaw": "to borrow (money)",
-      "detransitiveSenses": [],
-      "detransitiveSensesRaw": null,
-      "boxes": [
-        {
-          "id": "dyn-1.II~2.t.infectum",
+          "id": "dyn-1.II.d.infectum",
           "label": "Infectum",
           "rawLabel": "Infectum",
-          "detransitive": false,
+          "detransitive": true,
           "examples": [
             {
-              "id": "dyn-1.II~2.t.infectum.1",
+              "id": "dyn-1.II.d.infectum.1",
               "sense": null,
               "turoyo": "Šalliṭa ko-mdayən ḥamšo=quruš w-k-moyad-de b-u=zor w-Balliṭa k-middayən w-lo=k-obe mede",
               "translation": "Šalliṭa would lend five farthings and would take it (back) with force. And Balliṭa would borrow (money) and would not give it (back)",
@@ -162,6 +147,8 @@
         }
       ],
       "notes": [
+        "II: mdayalle/mdayən",
+        "Detransitive",
         "II: mdayən/midayən"
       ]
     }
