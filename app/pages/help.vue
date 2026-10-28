@@ -31,6 +31,11 @@
                 “Regular expression” for pattern searches. The search field in the page header does the same from any
                 page.
             </p>
+            <p>
+                Tick “Roots only” to narrow the list of roots itself instead: it keeps the roots whose letters contain
+                what you type. With “Regular expression”, <code>^ʔ.r$</code> finds three-letter roots beginning with ʔ
+                and ending in r, and <code>^ʔmr$</code> finds both ʔmr 1 and ʔmr 2.
+            </p>
         </section>
 
         <section id="entry">

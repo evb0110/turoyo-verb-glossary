@@ -1,15 +1,16 @@
 <template>
     <div class="search">
         <form class="search-form" role="search" @submit.prevent="run">
-            <label :for="inputId" class="sr-only">Search roots, forms, meanings, examples and texts</label>
+            <label :for="inputId" class="sr-only">{{ placeholder }}</label>
             <input
                 :id="inputId"
                 v-model="query"
                 type="search"
-                placeholder="Search roots, forms, meanings, examples and texts, e.g. sym or wollen"
+                :placeholder="placeholder"
                 autocomplete="off"
             />
-            <label class="regex small"><input v-model="regex" type="checkbox"/> Regular expression</label>
+            <label class="option small"><input v-model="rootsOnly" type="checkbox"/> Roots only</label>
+            <label class="option small"><input v-model="regex" type="checkbox"/> Regular expression</label>
             <span class="small muted">Vowel and stress marks are optional.</span>
         </form>
         <p v-if="pending" role="status" class="small">
@@ -18,7 +19,7 @@
         <p v-else-if="error" class="error" role="alert">
             {{ error }}
         </p>
-        <template v-else-if="response">
+        <template v-else-if="response && !rootsOnly">
             <p class="small muted" aria-live="polite">
                 {{ response.total.toLocaleString("en") }} matches.
             </p>
@@ -49,8 +50,13 @@ import { watchDebounced } from '@vueuse/core'
 import type { ISearchResult } from '#shared/types/ISearchResult'
 
 const query = defineModel<string>({ default: '' })
+// With roots only, the page filters its own list of roots, so nothing is fetched here.
+const rootsOnly = defineModel<boolean>('rootsOnly', { default: false })
+const regex = defineModel<boolean>('regex', { default: false })
 const inputId = useId()
-const regex = ref(false)
+const placeholder = computed(() => (rootsOnly.value
+    ? 'Search roots, e.g. sym or, as an expression, ^ʔ.r$'
+    : 'Search roots, forms, meanings, examples and texts, e.g. sym or wollen'))
 const pending = ref(false)
 const error = ref('')
 const response = ref<{
@@ -61,9 +67,10 @@ const response = ref<{
 let requestId = 0
 async function run() {
     const current = ++requestId
-    if (!query.value.trim()) {
+    if (!query.value.trim() || rootsOnly.value) {
         response.value = null
         pending.value = false
+        error.value = ''
         return
     }
     pending.value = true
@@ -86,7 +93,7 @@ async function run() {
         if (current === requestId) pending.value = false
     }
 }
-watchDebounced([query, regex], run, { debounce: 300 })
+watchDebounced([query, regex, rootsOnly], run, { debounce: 300 })
 onMounted(() => {
     if (query.value) run()
 })
@@ -124,7 +131,7 @@ const groups = computed(() =>
   flex: 1 1 24rem;
   max-width: 44rem;
 }
-.regex {
+.option {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;

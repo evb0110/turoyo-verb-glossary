@@ -2,7 +2,7 @@
     <div>
         <div class="page-head">
             <h1>Glossary</h1>
-            <span class="small muted">{{ roots.length.toLocaleString("en") }} roots</span>
+            <span class="small muted">{{ countLabel }}</span>
             <span class="glossary-export small">
                 <label for="glossary-part" class="sr-only">Part of the glossary to download</label>
                 <select id="glossary-part" v-model="part">
@@ -23,8 +23,14 @@
                 <DocumentDownload :href="`/api/glossary/export/glossary${part ? `?${part}` : ''}`"/>
             </span>
         </div>
-        <SearchExplorer v-model="query"/>
-        <template v-if="!query.trim()">
+        <SearchExplorer v-model="query" v-model:roots-only="rootsOnly" v-model:regex="regex"/>
+        <p v-if="filter.error" class="error" role="alert">
+            {{ filter.error }}
+        </p>
+        <p v-else-if="filtering && !shown.length" class="empty">
+            No roots match. Try fewer letters, or clear Roots only to search everything.
+        </p>
+        <template v-if="!query.trim() || (rootsOnly && shown.length)">
             <nav class="letters serif" aria-label="Jump to a letter">
                 <a
                     v-for="[letter] in groups"
@@ -100,6 +106,7 @@
 </template>
 
 <script setup lang="ts">
+import { rootMatcher } from '~/utils/rootMatcher'
 import type { IRootIndexRow } from '#shared/types/IRootIndexRow'
 import { entryHref } from '#shared/utils/entryHref'
 import { rootLetter } from '#shared/utils/rootLetter'
@@ -108,9 +115,18 @@ import { volumeLabel } from '#shared/utils/volumeLabel'
 const route = useRoute()
 const router = useRouter()
 const query = ref(String(route.query.q || ''))
-watch(query, value => router.replace({ query: value ? { q: value } : {} }))
-watch(() => route.query.q, (value) => {
-    query.value = String(value || '')
+const rootsOnly = ref(route.query.roots === '1')
+const regex = ref(false)
+// The search and the Roots only choice live in the address, so Back returns to them.
+watch([query, rootsOnly], ([q, roots]) => router.replace({
+    query: {
+        ...(q ? { q } : {}),
+        ...(roots ? { roots: '1' } : {}),
+    },
+}))
+watch(() => route.query, (value) => {
+    query.value = String(value.q || '')
+    rootsOnly.value = value.roots === '1'
 })
 const {
     data,
@@ -143,9 +159,38 @@ const volumes = computed(() => [...new Set(roots.value.filter(root => !root.prop
     })))
 const letters = computed(() => [...new Set(roots.value.filter(root => !root.proposed)
     .map(root => rootLetter(root.root)))])
+// Roots only filters this list in place instead of showing search results.
+const filtering = computed(() => rootsOnly.value && !!query.value.trim())
+const filter = computed(() => {
+    if (!filtering.value) return {
+        matches: null,
+        error: '',
+    }
+    try {
+        return {
+            matches: rootMatcher(query.value, regex.value),
+            error: '',
+        }
+    }
+    catch {
+        return {
+            matches: null,
+            error: 'This is not a valid regular expression.',
+        }
+    }
+})
+const shown = computed(() => {
+    const matches = filter.value.matches
+    if (filter.value.error) return []
+    return matches ? roots.value.filter(root => matches(root.root)) : roots.value
+})
+const countLabel = computed(() => {
+    const total = roots.value.length.toLocaleString('en')
+    return filtering.value ? `${shown.value.length.toLocaleString('en')} of ${total} roots` : `${total} roots`
+})
 const groups = computed(() => {
     const map = new Map<string, IRootIndexRow[]>()
-    for (const root of roots.value) {
+    for (const root of shown.value) {
         const letter = rootLetter(root.root)
         map.set(letter, [...(map.get(letter) || []), root])
     }
