@@ -199,10 +199,30 @@ const resume = useCookie<{ group: string
         maxAge: 31536000,
     }
 )
-const rootInput = ref('')
-const textInput = ref('')
+// The Verb and Text filters live in the address, so returning from an entry keeps them.
+const rootInput = ref(String(route.query.root || ''))
+const textInput = ref(String(route.query.text || ''))
 const root = refDebounced(rootInput, 350)
 const text = refDebounced(textInput, 350)
+function filterQuery() {
+    return {
+        ...(root.value ? { root: root.value } : {}),
+        ...(text.value ? { text: text.value } : {}),
+    }
+}
+watch([root, text], () => router.replace({
+    query: {
+        ...route.query,
+        root: root.value || undefined,
+        text: text.value || undefined,
+    },
+}))
+// Back and Forward change the address; the filters' own updates (already applied) are left alone,
+// so typing goes on undisturbed.
+watch(() => [route.query.root, route.query.text], ([rootQuery, textQuery]) => {
+    if (String(rootQuery || '') !== root.value) rootInput.value = String(rootQuery || '')
+    if (String(textQuery || '') !== text.value) textInput.value = String(textQuery || '')
+})
 const {
     load,
     status,
@@ -326,6 +346,7 @@ async function select(kind: string, id?: string) {
         query: {
             group: kind,
             ...(id ? { proposal: id } : {}),
+            ...filterQuery(),
         },
     })
     await nextTick()
@@ -399,6 +420,7 @@ onMounted(() => {
             query: {
                 group: kind,
                 proposal: id,
+                ...filterQuery(),
             },
         })
     }, { immediate: true })

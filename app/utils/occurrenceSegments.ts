@@ -9,9 +9,16 @@ export function occurrenceSegments(text: string, occurrences: IOccurrence[]) {
     const hits: Array<{ start: number
         end: number
         occurrence: IOccurrence }> = []
-    for (const occurrence of occurrences.toSorted((a, b) => b.form.length - a.form.length)) {
+    // The analyses of one form are listed in verse order, so the n-th match of the form gets the n-th
+    // analysis (in PrS 32/3 the first ḥzele finds a cave, the second sees the giant). Matches beyond the
+    // analyses keep the last one. Longer forms go first, so a short form inside a longer one is skipped.
+    const byForm = new Map<string, IOccurrence[]>()
+    for (const occurrence of occurrences) {
         const form = normalizeTuroyo(occurrence.form)
-        if (!form) continue
+        if (form) byForm.set(form, [...(byForm.get(form) || []), occurrence])
+    }
+    for (const [form, analyses] of [...byForm].toSorted(([a], [b]) => b.length - a.length)) {
+        let matched = 0
         let pos = normalized.indexOf(form)
         while (pos !== -1) {
             const start = offsets[pos] ?? pos
@@ -22,7 +29,7 @@ export function occurrenceSegments(text: string, occurrences: IOccurrence[]) {
                 && !hits.some(hit => start < hit.end && end > hit.start)) hits.push({
                 start,
                 end,
-                occurrence,
+                occurrence: analyses[Math.min(matched++, analyses.length - 1)]!,
             })
             pos = normalized.indexOf(form, pos + form.length)
         }

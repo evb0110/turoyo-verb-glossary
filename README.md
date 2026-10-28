@@ -158,7 +158,7 @@ Corpus readers produce `texts/` occurrences and `proposals/`; the website treats
 - `GET /api/glossary/entries/:id` (entry, its proposals and the previous/next roots)
 - `GET /api/glossary/texts`, `/texts/:id` (`?v=N` returns ±3 context verses)
 - `GET /api/glossary/proposals/summary`, `/proposals/undecided` (undecided count per entry), `/proposals/queue`, `/proposals/:id`, `/reviews` (current decisions), `/reviews/:id` (one proposal's history), `/research?question=…&root=…&page=N` (100 notes a page)
-- `POST /api/glossary/proposals/:id/review` with `{ verdict, comment?, edited?, acceptWithChanges? }`; `DELETE` with `{ reviewId }` undoes it
+- `POST /api/glossary/proposals/:id/review` with `{ verdict, comment?, edited?, acceptWithChanges? }`; `DELETE` with `{ reviewId }` undoes it and returns `{ undone, current }`, the decision now in force (or null)
 - `GET /api/admin/decisions?format=csv|json` (admins)
 - `GET /api/glossary/export/entry/:id`, `/export/glossary` (`?volume=N` or `?letter=ʔ`), `/export/text/:id`, `/export/collection?collection=…`, `/export/research?question=…&root=…`, `/export/decisions`, each with `format=docx|pdf`; `suggestions=1` adds an entry's suggestions and decisions. A document too large for one download answers `300 Multiple Choices` with `{ revision, parts: [{ part, label, bytes }] }`; request each with `&part=N&rev=…`. A part of an older revision (decisions changed, or a new deploy) answers `409`; an invalid `part` answers `400`.
 - Existing `/api/auth/*`, `/api/user/me`, `/api/admin/*`

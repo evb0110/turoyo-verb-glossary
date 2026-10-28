@@ -24,6 +24,12 @@
             </span>
         </div>
         <SearchExplorer v-model="query" v-model:roots-only="rootsOnly" v-model:regex="regex"/>
+        <p v-if="undecidedError" class="error" role="alert">
+            The Undecided counts could not be loaded, so that column is empty.
+            <button type="button" class="btn-link" @click="refreshUndecided()">
+                Try again
+            </button>
+        </p>
         <p v-if="filter.error" class="error" role="alert">
             {{ filter.error }}
         </p>
@@ -116,17 +122,19 @@ const route = useRoute()
 const router = useRouter()
 const query = ref(String(route.query.q || ''))
 const rootsOnly = ref(route.query.roots === '1')
-const regex = ref(false)
-// The search and the Roots only choice live in the address, so Back returns to them.
-watch([query, rootsOnly], ([q, roots]) => router.replace({
+const regex = ref(route.query.regex === '1')
+// The search, Roots only and Regular expression live in the address, so Back returns to them.
+watch([query, rootsOnly, regex], ([q, roots, pattern]) => router.replace({
     query: {
         ...(q ? { q } : {}),
         ...(roots ? { roots: '1' } : {}),
+        ...(pattern ? { regex: '1' } : {}),
     },
 }))
 watch(() => route.query, (value) => {
     query.value = String(value.q || '')
     rootsOnly.value = value.roots === '1'
+    regex.value = value.regex === '1'
 })
 const {
     data,
@@ -134,7 +142,11 @@ const {
 } = await useFetch('/api/glossary/roots')
 const roots = computed(() => data.value || [])
 // Counted on the server, which ignores decisions on suggestions no longer in the data.
-const { data: undecidedByEntry } = await useFetch('/api/glossary/proposals/undecided')
+const {
+    data: undecidedByEntry,
+    error: undecidedError,
+    refresh: refreshUndecided,
+} = await useFetch('/api/glossary/proposals/undecided')
 function undecided(root: IRootIndexRow) {
     return undecidedByEntry.value?.[root.id] || 0
 }

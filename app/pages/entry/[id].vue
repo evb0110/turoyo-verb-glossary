@@ -168,6 +168,7 @@ const rootLabel = computed(() =>
 )
 const {
     load,
+    reads,
     status,
     error: reviewError,
 } = useProposalReviews()
@@ -203,6 +204,15 @@ watch([mode, proposals], () => {
     if (mode.value === 'open')
         undecidedAtSwitch.value = new Set(proposals.value.filter(item => status(item.id) === 'open').map(item => item.id))
 }, { immediate: true })
+// Decisions read again after arriving can reopen suggestions (another editor's undo); they join the
+// list, and suggestions decided here meanwhile stay.
+watch(reads, () => {
+    if (mode.value !== 'open') return
+    const reopened = proposals.value
+        .filter(item => status(item.id) === 'open' && !undecidedAtSwitch.value.has(item.id))
+        .map(item => item.id)
+    if (reopened.length) undecidedAtSwitch.value = new Set([...undecidedAtSwitch.value, ...reopened])
+})
 const visibleProposals = computed(() =>
     mode.value === 'off'
         ? []
